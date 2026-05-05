@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "Thomas Chandy", "party": "NCP", "votes": 60010, "votePct": 50.81, "alliance": "OTHER" },
-        { "name": "K. C. Joseph", "party": "KC(M)", "votes": 52039, "votePct": 44.06, "alliance": "LDF" },
+        { "name": "K. C. Joseph", "party": "KC(M)", "votes": 52039, "votePct": 44.06, "alliance": "UDF" },
         { "name": "K. Soman", "party": "BJP", "votes": 4395, "votePct": 3.72, "alliance": "NDA" }
       ],
       "margin": 7971,
@@ -25,7 +25,7 @@
       "reason": null,
       "candidates": [
         { "name": "Thomas Chandy", "party": "NCP", "votes": 50114, "votePct": 38.52, "alliance": "OTHER" },
-        { "name": "Jacob Abraham", "party": "KC(M)", "votes": 45223, "votePct": 34.76, "alliance": "LDF" },
+        { "name": "Jacob Abraham", "party": "KC(M)", "votes": 45223, "votePct": 34.76, "alliance": "UDF" },
         { "name": "Subash Vasu", "party": "BDJS", "votes": 33044, "votePct": 25.40, "alliance": "NDA" }
       ],
       "margin": 4891,

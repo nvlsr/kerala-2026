@@ -9,7 +9,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. M. Mani", "party": "KC(M)", "votes": 61239, "votePct": 49.14, "alliance": "LDF" },
+        { "name": "K. M. Mani", "party": "KC(M)", "votes": 61239, "votePct": 49.14, "alliance": "UDF" },
         { "name": "Mani C. Kappan", "party": "NCP", "votes": 55980, "votePct": 44.92, "alliance": "OTHER" },
         { "name": "B. Vijayakumar", "party": "BJP", "votes": 6359, "votePct": 5.1, "alliance": "NDA" },
         { "name": "C. V. John", "party": "Independent", "votes": 576, "votePct": 0.46, "alliance": "OTHER" },
@@ -26,7 +26,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. M. Mani", "party": "KC(M)", "votes": 58884, "votePct": 42.13, "alliance": "LDF" },
+        { "name": "K. M. Mani", "party": "KC(M)", "votes": 58884, "votePct": 42.13, "alliance": "UDF" },
         { "name": "Mani C. Kappan", "party": "NCP", "votes": 54181, "votePct": 38.78, "alliance": "OTHER" },
         { "name": "N. Hari", "party": "BJP", "votes": 24821, "votePct": 17.76, "alliance": "NDA" },
         { "name": "Jose Thomas Padiyammakkal", "party": "Independent", "votes": 489, "votePct": 0.35, "alliance": "OTHER" },
@@ -44,7 +44,7 @@
       "reason": "Death of sitting MLA K. M. Mani in April 2019",
       "candidates": [
         { "name": "Mani C. Kappan", "party": "NCP", "votes": 54137, "votePct": 42.55, "alliance": "OTHER" },
-        { "name": "Jose Tom Pulikkunnel", "party": "KC(M)", "votes": 51194, "votePct": 40.24, "alliance": "LDF" },
+        { "name": "Jose Tom Pulikkunnel", "party": "KC(M)", "votes": 51194, "votePct": 40.24, "alliance": "UDF" },
         { "name": "N. Hari", "party": "BJP", "votes": 18044, "votePct": 14.18, "alliance": "NDA" },
         { "name": "C. J. Philip", "party": "Independent", "votes": 1085, "votePct": 0.85, "alliance": "OTHER" },
         { "name": "Maju Puthenkandam", "party": "Independent", "votes": 1012, "votePct": 0.8, "alliance": "OTHER" }

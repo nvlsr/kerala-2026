@@ -9,7 +9,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "N. Jayaraj", "party": "KC(M)", "votes": 57021, "votePct": 50.40, "alliance": "LDF" },
+        { "name": "N. Jayaraj", "party": "KC(M)", "votes": 57021, "votePct": 50.40, "alliance": "UDF" },
         { "name": "Suresh T. Nair", "party": "CPI", "votes": 44815, "votePct": 39.61, "alliance": "LDF" },
         { "name": "Rajamohan", "party": "BJP", "votes": 8037, "votePct": 7.10, "alliance": "NDA" },
         { "name": "P. K. Geetha Krishnan", "party": "BSP", "votes": 3268, "votePct": 2.89, "alliance": "OTHER" }
@@ -25,7 +25,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "N. Jayaraj", "party": "KC(M)", "votes": 53126, "votePct": 38.86, "alliance": "LDF" },
+        { "name": "N. Jayaraj", "party": "KC(M)", "votes": 53126, "votePct": 38.86, "alliance": "UDF" },
         { "name": "V. B. Binu", "party": "CPI", "votes": 49236, "votePct": 36.02, "alliance": "LDF" },
         { "name": "V. N. Manoj", "party": "BJP", "votes": 31411, "votePct": 22.98, "alliance": "NDA" },
         { "name": "Arun M. John", "party": "BSP", "votes": 1113, "votePct": 0.81, "alliance": "OTHER" },

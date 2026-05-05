@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "P. Aisha Potty", "party": "CPI(M)", "votes": 74069, "votePct": 53.89, "alliance": "LDF" },
-        { "name": "N. M. Murali", "party": "KC(B)", "votes": 53477, "votePct": 38.91, "alliance": "LDF" },
+        { "name": "N. M. Murali", "party": "KC(B)", "votes": 53477, "votePct": 38.91, "alliance": "UDF" },
         { "name": "Vayakkal Madhu", "party": "BJP", "votes": 6370, "votePct": 4.63, "alliance": "NDA" },
         { "name": "Dhaneshlal Panavely", "party": "Independent", "votes": 1063, "votePct": 0.77, "alliance": "OTHER" },
         { "name": "P. T. Prasanna Kumar", "party": "BSP", "votes": 911, "votePct": 0.66, "alliance": "OTHER" }

@@ -9,7 +9,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Thomas Unniyadan", "party": "KC(M)", "votes": 68445, "votePct": 51.70, "alliance": "LDF" },
+        { "name": "Thomas Unniyadan", "party": "KC(M)", "votes": 68445, "votePct": 51.70, "alliance": "UDF" },
         { "name": "K. R. Vijaya", "party": "CPI(M)", "votes": 56041, "votePct": 42.33, "alliance": "LDF" },
         { "name": "K. C. Venu", "party": "BJP", "votes": 6669, "votePct": 5.04, "alliance": "NDA" },
         { "name": "T. V. Sivadasan", "party": "Independent", "votes": 772, "votePct": 0.58, "alliance": "OTHER" },
@@ -27,7 +27,7 @@
       "reason": null,
       "candidates": [
         { "name": "K. U. Arunan", "party": "CPI(M)", "votes": 59380, "votePct": 40.00, "alliance": "LDF" },
-        { "name": "Thomas Unniyadan", "party": "KC(M)", "votes": 57019, "votePct": 38.18, "alliance": "LDF" },
+        { "name": "Thomas Unniyadan", "party": "KC(M)", "votes": 57019, "votePct": 38.18, "alliance": "UDF" },
         { "name": "Santhosh Cherkalam", "party": "BJP", "votes": 30420, "votePct": 20.37, "alliance": "NDA" },
         { "name": "V. C. Unnikrishnan", "party": "BSP", "votes": 639, "votePct": 0.43, "alliance": "OTHER" },
         { "name": "Davis Chatheli", "party": "Independent", "votes": 345, "votePct": 0.23, "alliance": "OTHER" }

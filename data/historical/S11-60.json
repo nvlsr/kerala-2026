@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "M. Chandran", "party": "CPI(M)", "votes": 66977, "votePct": 57.72, "alliance": "LDF" },
-        { "name": "K. Kusalakumar", "party": "KC(M)", "votes": 42236, "votePct": 36.4, "alliance": "LDF" },
+        { "name": "K. Kusalakumar", "party": "KC(M)", "votes": 42236, "votePct": 36.4, "alliance": "UDF" },
         { "name": "K. A. Sulaiman", "party": "BJP", "votes": 5460, "votePct": 4.71, "alliance": "NDA" },
         { "name": "P. D. Paulose", "party": "BSP", "votes": 1372, "votePct": 1.18, "alliance": "OTHER" }
       ],
@@ -26,7 +26,7 @@
       "reason": null,
       "candidates": [
         { "name": "K. D. Prasenan", "party": "CPI(M)", "votes": 71206, "votePct": 55.35, "alliance": "LDF" },
-        { "name": "K. Kusalakumar", "party": "KC(M)", "votes": 35146, "votePct": 27.32, "alliance": "LDF" },
+        { "name": "K. Kusalakumar", "party": "KC(M)", "votes": 35146, "votePct": 27.32, "alliance": "UDF" },
         { "name": "M. P. Sreekumar", "party": "BJP", "votes": 19610, "votePct": 15.24, "alliance": "NDA" },
         { "name": "Krishnankutty K.", "party": "BSP", "votes": 1010, "votePct": 0.79, "alliance": "OTHER" }
       ],

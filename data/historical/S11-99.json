@@ -9,7 +9,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. F. Thomas", "party": "KC(M)", "votes": 51019, "votePct": 47.13, "alliance": "LDF" },
+        { "name": "C. F. Thomas", "party": "KC(M)", "votes": 51019, "votePct": 47.13, "alliance": "UDF" },
         { "name": "B. Ekbal", "party": "CPI(M)", "votes": 48465, "votePct": 44.77, "alliance": "LDF" },
         { "name": "M. B. Rajagopal", "party": "BJP", "votes": 6281, "votePct": 5.80, "alliance": "NDA" },
         { "name": "Mathews John", "party": "BSP", "votes": 1058, "votePct": 0.98, "alliance": "OTHER" },
@@ -26,7 +26,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. F. Thomas", "party": "KC(M)", "votes": 50371, "votePct": 40.04, "alliance": "LDF" },
+        { "name": "C. F. Thomas", "party": "KC(M)", "votes": 50371, "votePct": 40.04, "alliance": "UDF" },
         { "name": "K. C. Joseph", "party": "JKC", "votes": 48522, "votePct": 38.57, "alliance": "OTHER" },
         { "name": "Ettumanoor Radhakrishnan", "party": "BJP", "votes": 21455, "votePct": 17.06, "alliance": "NDA" },
         { "name": "Althaph Hassan", "party": "SDPI", "votes": 1797, "votePct": 1.43, "alliance": "OTHER" },

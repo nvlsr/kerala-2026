@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "K. Suresh Kurup", "party": "CPI(M)", "votes": 57381, "votePct": 48.52, "alliance": "LDF" },
-        { "name": "Thomas Chazhikadan", "party": "KC(M)", "votes": 55580, "votePct": 47.0, "alliance": "LDF" },
+        { "name": "Thomas Chazhikadan", "party": "KC(M)", "votes": 55580, "votePct": 47.0, "alliance": "UDF" },
         { "name": "V. G. Gopakumar", "party": "BJP", "votes": 3385, "votePct": 2.86, "alliance": "NDA" },
         { "name": "K. T. Thomas", "party": "BSP", "votes": 763, "votePct": 0.65, "alliance": "OTHER" },
         { "name": "Justin Mathew", "party": "Independent", "votes": 466, "votePct": 0.39, "alliance": "OTHER" }
@@ -27,7 +27,7 @@
       "reason": null,
       "candidates": [
         { "name": "K. Suresh Kurup", "party": "CPI(M)", "votes": 53085, "votePct": 40.67, "alliance": "LDF" },
-        { "name": "Thomas Chazhikadan", "party": "KC(M)", "votes": 44906, "votePct": 33.94, "alliance": "LDF" },
+        { "name": "Thomas Chazhikadan", "party": "KC(M)", "votes": 44906, "votePct": 33.94, "alliance": "UDF" },
         { "name": "A. G. Thankappan", "party": "BDJS", "votes": 27540, "votePct": 20.82, "alliance": "NDA" },
         { "name": "Josemon Mundackal", "party": "Independent", "votes": 3774, "votePct": 2.85, "alliance": "OTHER" },
         { "name": "Abdul Nazar", "party": "SDPI", "votes": 706, "votePct": 0.53, "alliance": "OTHER" }

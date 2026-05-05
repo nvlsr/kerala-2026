@@ -9,7 +9,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. U. Kuruvilla", "party": "KC(M)", "votes": 52924, "votePct": 49.26, "alliance": "LDF" },
+        { "name": "T. U. Kuruvilla", "party": "KC(M)", "votes": 52924, "votePct": 49.26, "alliance": "UDF" },
         { "name": "Skariah Thomas", "party": "Independent", "votes": 40702, "votePct": 37.88, "alliance": "OTHER" },
         { "name": "K. Radhakrishnan", "party": "BJP", "votes": 5769, "votePct": 5.37, "alliance": "NDA" },
         { "name": "Shine Muhammed", "party": "SDPI", "votes": 4691, "votePct": 4.37, "alliance": "OTHER" }
@@ -26,7 +26,7 @@
       "reason": null,
       "candidates": [
         { "name": "Antony John", "party": "CPI(M)", "votes": 65467, "votePct": 50.98, "alliance": "LDF" },
-        { "name": "T. U. Kuruvilla", "party": "KC(M)", "votes": 46185, "votePct": 35.96, "alliance": "LDF" },
+        { "name": "T. U. Kuruvilla", "party": "KC(M)", "votes": 46185, "votePct": 35.96, "alliance": "UDF" },
         { "name": "P. C. Cyriac", "party": "Independent", "votes": 12926, "votePct": 10.06, "alliance": "OTHER" },
         { "name": "Anas N. A.", "party": "SDPI", "votes": 1490, "votePct": 1.16, "alliance": "OTHER" }
       ],

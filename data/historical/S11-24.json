@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "K. Kunhammad", "party": "CPI(M)", "votes": 70248, "votePct": 51.91, "alliance": "LDF" },
-        { "name": "Mohammad Ikbal", "party": "KC(M)", "votes": 54979, "votePct": 40.62, "alliance": "LDF" },
+        { "name": "Mohammad Ikbal", "party": "KC(M)", "votes": 54979, "votePct": 40.62, "alliance": "UDF" },
         { "name": "P. Chandrika", "party": "BJP", "votes": 7214, "votePct": 5.33, "alliance": "NDA" },
         { "name": "T. K. Kunammad Faisy", "party": "SDPI", "votes": 1494, "votePct": 1.10, "alliance": "OTHER" },
         { "name": "Akhilkumar", "party": "Independent", "votes": 801, "votePct": 0.59, "alliance": "OTHER" }
@@ -27,7 +27,7 @@
       "reason": null,
       "candidates": [
         { "name": "T. P. Ramakrishnan", "party": "CPI(M)", "votes": 72359, "votePct": 47.14, "alliance": "LDF" },
-        { "name": "Muhammad Ikbal", "party": "KC(M)", "votes": 68258, "votePct": 44.46, "alliance": "LDF" },
+        { "name": "Muhammad Ikbal", "party": "KC(M)", "votes": 68258, "votePct": 44.46, "alliance": "UDF" },
         { "name": "Sukumaran Nair", "party": "BDJS", "votes": 8561, "votePct": 5.58, "alliance": "NDA" },
         { "name": "Razak Paleri", "party": "WPOI", "votes": 1673, "votePct": 1.09, "alliance": "OTHER" },
         { "name": "K. P. Gopi", "party": "SDPI", "votes": 1036, "votePct": 0.67, "alliance": "OTHER" }

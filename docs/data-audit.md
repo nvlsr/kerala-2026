@@ -20,8 +20,8 @@ Each candidate's alliance lives directly on their record in `data/kerala-2026.js
 |---:|---:|
 | 2026 | 0 of 140 |
 | 2021 | 17 of 140 |
-| 2016 | 33 of 140 |
-| 2011 | 44 of 140 |
+| 2016 | 26 of 140 |
+| 2011 | 33 of 140 |
 
 ## 2026
 
@@ -157,15 +157,9 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 
 ## 2016
 
-33 seats missing one or more main-alliance candidates.
+26 seats missing one or more main-alliance candidates.
 
 For each seat below: which alliance is missing, then the OTHER-classified candidates in that seat sorted by vote share. Reclassify the most likely one.
-
-### Seat 8 — TALIPARAMBA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Ibrahim Thiruvatoor | SDPI | 0.8% |
 
 ### Seat 14 — KUTHUPARAMBA — missing UDF
 
@@ -203,13 +197,6 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | C. K. Nanu | JD(S) | 38.0% |
 | Manayath Chandran | JD(U) | 30.6% |
 | P. Abdul Hameed | SDPI | 2.1% |
-
-### Seat 24 — PERAMBRA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Razak Paleri | WPOI | 1.1% |
-| K. P. Gopi | SDPI | 0.7% |
 
 ### Seat 26 — ELATHUR — missing UDF
 
@@ -251,19 +238,6 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | K. Krishnakutty | JD(S) | 44.9% |
 | Mayilswamy | AIADMK | 4.0% |
 
-### Seat 60 — ALATHUR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Krishnankutty K. | BSP | 0.8% |
-
-### Seat 70 — IRINJALAKUDA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| V. C. Unnikrishnan | BSP | 0.4% |
-| Davis Chatheli | Independent | 0.2% |
-
 ### Seat 75 — ANGAMALY — missing LDF, NDA
 
 | Candidate | Party | Vote % |
@@ -271,20 +245,14 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | Benny Moonjely | JD(S) | 42.2% |
 | Jayanthi Avinash | BSP | 0.5% |
 
-### Seat 87 — KOTHAMANGALAM — missing UDF, NDA
+### Seat 87 — KOTHAMANGALAM — missing NDA
 
 | Candidate | Party | Vote % |
 |---|---|---:|
 | P. C. Cyriac | Independent | 10.1% |
 | Anas N. A. | SDPI | 1.2% |
 
-### Seat 90 — THODUPUZHA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Roy Arackal | SDPI | 0.9% |
-
-### Seat 91 — IDUKKI — missing UDF
+### Seat 91 — IDUKKI — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -292,7 +260,7 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | Sabu Kochuparambil | BSP | 0.4% |
 | P. T. Poomkudy | Independent | 0.3% |
 
-### Seat 93 — PALA — missing UDF
+### Seat 93 — PALA — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -300,7 +268,7 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | Jose Thomas Padiyammakkal | Independent | 0.3% |
 | Anthony | Independent | 0.2% |
 
-### Seat 94 — KADUTHURUTHY — missing UDF, NDA
+### Seat 94 — KADUTHURUTHY — missing LDF, NDA
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -308,14 +276,7 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | Stephen Chazhikkadan | Kerala Congress (Thomas) | 13.8% |
 | Ginish John M | BSP | 1.2% |
 
-### Seat 96 — ETTUMANOOR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Josemon Mundackal | Independent | 2.9% |
-| Abdul Nazar | SDPI | 0.5% |
-
-### Seat 99 — CHANGANASSERY — missing UDF
+### Seat 99 — CHANGANASSERY — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -323,14 +284,7 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | Althaph Hassan | SDPI | 1.4% |
 | Sojan Paviyanose | Independent | 0.8% |
 
-### Seat 100 — KANJIRAPPALLY — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Arun M. John | BSP | 0.8% |
-| Muhammed Siyad | SDPI | 0.6% |
-
-### Seat 101 — POONJAR — missing UDF
+### Seat 101 — POONJAR — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -345,13 +299,13 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | K. S. Shan | SDPI | 1.2% |
 | R. Arjunan | SUCI(C) | 1.1% |
 
-### Seat 106 — KUTTANAD — missing UDF
+### Seat 106 — KUTTANAD — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
 | Thomas Chandy | NCP | 38.5% |
 
-### Seat 111 — THIRUVALLA — missing UDF
+### Seat 111 — THIRUVALLA — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -403,16 +357,9 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 
 ## 2011
 
-44 seats missing one or more main-alliance candidates.
+33 seats missing one or more main-alliance candidates.
 
 For each seat below: which alliance is missing, then the OTHER-classified candidates in that seat sorted by vote share. Reclassify the most likely one.
-
-### Seat 8 — TALIPARAMBA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Muhammadali S. P. | SDPI | 1.3% |
-| Nidheesh Thillankeri | BSP | 0.6% |
 
 ### Seat 11 — KANNUR — missing LDF
 
@@ -450,13 +397,6 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | C. K. Nanu | JD(S) | 41.0% |
 | N. Venu | Independent | 8.8% |
 | Saalim Azhiyur | SDPI | 3.0% |
-
-### Seat 24 — PERAMBRA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| T. K. Kunammad Faisy | SDPI | 1.1% |
-| Akhilkumar | Independent | 0.6% |
 
 ### Seat 26 — ELATHUR — missing UDF
 
@@ -511,12 +451,6 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | P. K. Majeed Pedikkat | JD(U) | 2.0% |
 | Ravi Pallatheri | BSP | 1.1% |
 
-### Seat 60 — ALATHUR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| P. D. Paulose | BSP | 1.2% |
-
 ### Seat 68 — NATTIKA — missing UDF
 
 | Candidate | Party | Vote % |
@@ -533,13 +467,6 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | M. M. Manoj | Independent | 0.8% |
 | P. A. Kuttapan | BSP | 0.7% |
 
-### Seat 70 — IRINJALAKUDA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| T. V. Sivadasan | Independent | 0.6% |
-| Subramanian | BSP | 0.3% |
-
 ### Seat 75 — ANGAMALY — missing LDF
 
 | Candidate | Party | Vote % |
@@ -548,14 +475,14 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | Johnson I. T. | Independent | 1.1% |
 | M. G. Purushottaman | BSP | 0.6% |
 
-### Seat 87 — KOTHAMANGALAM — missing UDF
+### Seat 87 — KOTHAMANGALAM — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
 | Skariah Thomas | Independent | 37.9% |
 | Shine Muhammed | SDPI | 4.4% |
 
-### Seat 90 — THODUPUZHA — missing UDF
+### Seat 90 — THODUPUZHA — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -563,14 +490,7 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | M. A. Najeeb | SDPI | 4.2% |
 | Binu Sebastian | BSP | 0.5% |
 
-### Seat 91 — IDUKKI — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Kanchiyar Peethambaran | Independent | 0.3% |
-| M. K. Narayanan | Independent | 0.2% |
-
-### Seat 93 — PALA — missing UDF
+### Seat 93 — PALA — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -578,39 +498,12 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | C. V. John | Independent | 0.5% |
 | James Joseph | Independent | 0.2% |
 
-### Seat 94 — KADUTHURUTHY — missing UDF
+### Seat 94 — KADUTHURUTHY — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
 | Stephen George | KC(AMG) | 37.5% |
 | M. D. Thomas | BSP | 1.8% |
-
-### Seat 96 — ETTUMANOOR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. T. Thomas | BSP | 0.7% |
-| Justin Mathew | Independent | 0.4% |
-
-### Seat 99 — CHANGANASSERY — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Mathews John | BSP | 1.0% |
-| Mansoor | SDPI | 0.8% |
-
-### Seat 100 — KANJIRAPPALLY — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| P. K. Geetha Krishnan | BSP | 2.9% |
-
-### Seat 101 — POONJAR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| V. M. Sulaiman Moulavi | SDPI | 3.0% |
-| P. P. Joshy | BSP | 2.5% |
 
 ### Seat 103 — CHERTHALA — missing UDF
 
@@ -620,7 +513,7 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | K. R. Rajeevan | BSP | 0.7% |
 | Shajimon | Independent | 0.7% |
 
-### Seat 106 — KUTTANAD — missing UDF
+### Seat 106 — KUTTANAD — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -634,7 +527,7 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | R. Rajeesh | Independent | 0.9% |
 | Subhash Mankamkuzhy | BSP | 0.6% |
 
-### Seat 111 — THIRUVALLA — missing UDF
+### Seat 111 — THIRUVALLA — missing LDF
 
 | Candidate | Party | Vote % |
 |---|---|---:|
@@ -664,20 +557,6 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 |---|---|---:|
 | Thulaseedharan Pallickal | SDPI | 1.6% |
 | Vallikunnam Prasad | Independent | 0.9% |
-
-### Seat 119 — KOTTARAKKARA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Dhaneshlal Panavely | Independent | 0.8% |
-| P. T. Prasanna Kumar | BSP | 0.7% |
-
-### Seat 120 — PATHANAPURAM — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Aneesh Anthony | Independent | 1.3% |
-| Punalur Salim | BSP | 0.7% |
 
 ### Seat 125 — ERAVIPURAM — missing LDF
 
@@ -739,37 +618,37 @@ Currently mapped to **LDF**. Records before 2020 should be **UDF**.
 
 | Year | Seat # | Seat | Candidate | Currently | Should be |
 |---:|---:|---|---|---|---|
-| 2011 | 8 | TALIPARAMBA | Job Michel | LDF | UDF |
-| 2016 | 8 | TALIPARAMBA | Rajesh Nambiar | LDF | UDF |
-| 2011 | 24 | PERAMBRA | Mohammad Ikbal | LDF | UDF |
-| 2016 | 24 | PERAMBRA | Muhammad Ikbal | LDF | UDF |
-| 2011 | 60 | ALATHUR | K. Kusalakumar | LDF | UDF |
-| 2016 | 60 | ALATHUR | K. Kusalakumar | LDF | UDF |
-| 2011 | 70 | IRINJALAKUDA | Thomas Unniyadan | LDF | UDF |
-| 2016 | 70 | IRINJALAKUDA | Thomas Unniyadan | LDF | UDF |
-| 2011 | 87 | KOTHAMANGALAM | T. U. Kuruvilla | LDF | UDF |
-| 2016 | 87 | KOTHAMANGALAM | T. U. Kuruvilla | LDF | UDF |
-| 2011 | 90 | THODUPUZHA | P. J. Joseph | LDF | UDF |
-| 2016 | 90 | THODUPUZHA | P. J. Joseph | LDF | UDF |
-| 2011 | 91 | IDUKKI | Roshy Augustine | LDF | UDF |
-| 2016 | 91 | IDUKKI | Roshy Augustine | LDF | UDF |
-| 2011 | 93 | PALA | K. M. Mani | LDF | UDF |
-| 2016 | 93 | PALA | K. M. Mani | LDF | UDF |
-| 2019 | 93 | PALA | Jose Tom Pulikkunnel | LDF | UDF |
-| 2011 | 94 | KADUTHURUTHY | Mons Joseph | LDF | UDF |
-| 2016 | 94 | KADUTHURUTHY | Mons Joseph | LDF | UDF |
-| 2011 | 96 | ETTUMANOOR | Thomas Chazhikadan | LDF | UDF |
-| 2016 | 96 | ETTUMANOOR | Thomas Chazhikadan | LDF | UDF |
-| 2011 | 99 | CHANGANASSERY | C. F. Thomas | LDF | UDF |
-| 2016 | 99 | CHANGANASSERY | C. F. Thomas | LDF | UDF |
-| 2011 | 100 | KANJIRAPPALLY | N. Jayaraj | LDF | UDF |
-| 2016 | 100 | KANJIRAPPALLY | N. Jayaraj | LDF | UDF |
-| 2011 | 101 | POONJAR | P. C. George | LDF | UDF |
-| 2016 | 101 | POONJAR | Georgekutty Augustine | LDF | UDF |
-| 2011 | 106 | KUTTANAD | K. C. Joseph | LDF | UDF |
-| 2016 | 106 | KUTTANAD | Jacob Abraham | LDF | UDF |
-| 2011 | 111 | THIRUVALLA | Victor T. Thomas | LDF | UDF |
-| 2016 | 111 | THIRUVALLA | Joseph M. Puthussery | LDF | UDF |
+| 2011 | 8 | TALIPARAMBA | Job Michel | UDF | UDF |
+| 2016 | 8 | TALIPARAMBA | Rajesh Nambiar | UDF | UDF |
+| 2011 | 24 | PERAMBRA | Mohammad Ikbal | UDF | UDF |
+| 2016 | 24 | PERAMBRA | Muhammad Ikbal | UDF | UDF |
+| 2011 | 60 | ALATHUR | K. Kusalakumar | UDF | UDF |
+| 2016 | 60 | ALATHUR | K. Kusalakumar | UDF | UDF |
+| 2011 | 70 | IRINJALAKUDA | Thomas Unniyadan | UDF | UDF |
+| 2016 | 70 | IRINJALAKUDA | Thomas Unniyadan | UDF | UDF |
+| 2011 | 87 | KOTHAMANGALAM | T. U. Kuruvilla | UDF | UDF |
+| 2016 | 87 | KOTHAMANGALAM | T. U. Kuruvilla | UDF | UDF |
+| 2011 | 90 | THODUPUZHA | P. J. Joseph | UDF | UDF |
+| 2016 | 90 | THODUPUZHA | P. J. Joseph | UDF | UDF |
+| 2011 | 91 | IDUKKI | Roshy Augustine | UDF | UDF |
+| 2016 | 91 | IDUKKI | Roshy Augustine | UDF | UDF |
+| 2011 | 93 | PALA | K. M. Mani | UDF | UDF |
+| 2016 | 93 | PALA | K. M. Mani | UDF | UDF |
+| 2019 | 93 | PALA | Jose Tom Pulikkunnel | UDF | UDF |
+| 2011 | 94 | KADUTHURUTHY | Mons Joseph | UDF | UDF |
+| 2016 | 94 | KADUTHURUTHY | Mons Joseph | UDF | UDF |
+| 2011 | 96 | ETTUMANOOR | Thomas Chazhikadan | UDF | UDF |
+| 2016 | 96 | ETTUMANOOR | Thomas Chazhikadan | UDF | UDF |
+| 2011 | 99 | CHANGANASSERY | C. F. Thomas | UDF | UDF |
+| 2016 | 99 | CHANGANASSERY | C. F. Thomas | UDF | UDF |
+| 2011 | 100 | KANJIRAPPALLY | N. Jayaraj | UDF | UDF |
+| 2016 | 100 | KANJIRAPPALLY | N. Jayaraj | UDF | UDF |
+| 2011 | 101 | POONJAR | P. C. George | UDF | UDF |
+| 2016 | 101 | POONJAR | Georgekutty Augustine | UDF | UDF |
+| 2011 | 106 | KUTTANAD | K. C. Joseph | UDF | UDF |
+| 2016 | 106 | KUTTANAD | Jacob Abraham | UDF | UDF |
+| 2011 | 111 | THIRUVALLA | Victor T. Thomas | UDF | UDF |
+| 2016 | 111 | THIRUVALLA | Joseph M. Puthussery | UDF | UDF |
 
 Affected count: **31**.
 
@@ -781,8 +660,8 @@ Currently mapped to **LDF**. Records before 2016 should be **UDF**.
 
 | Year | Seat # | Seat | Candidate | Currently | Should be |
 |---:|---:|---|---|---|---|
-| 2011 | 119 | KOTTARAKKARA | N. M. Murali | LDF | UDF |
-| 2011 | 120 | PATHANAPURAM | K. B. Ganesh Kumar | LDF | UDF |
+| 2011 | 119 | KOTTARAKKARA | N. M. Murali | UDF | UDF |
+| 2011 | 120 | PATHANAPURAM | K. B. Ganesh Kumar | UDF | UDF |
 
 Affected count: **2**.
 
