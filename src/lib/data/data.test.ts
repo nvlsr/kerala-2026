@@ -7,9 +7,12 @@ import {
   get2021Baseline,
   getAllianceTrendData,
   getPartyTrendData,
+  getPastCandidates,
+  getPastWinners,
   getStateSummary,
 } from "./aggregates"
 import { buildCandidateRows } from "./candidate-rows"
+import { sortCandidateRows } from "@/lib/candidate-sort"
 
 const ALUVA = constituencies.find((c) => c.constituencyNumber === 76)!
 
@@ -215,5 +218,110 @@ describe("buildCandidateRows", () => {
       (aluvaWinnerRow!.votes / total) * 100,
       5
     )
+  })
+})
+
+describe("getPastWinners (Aluva 76)", () => {
+  test("returns one row per past election + 2026, sorted by year", () => {
+    const winners = getPastWinners(76)
+    expect(winners.length).toBeGreaterThanOrEqual(2)
+    const years = winners.map((w) => w.year)
+    const sorted = [...years].sort((a, b) => a - b)
+    expect(years).toEqual(sorted)
+    expect(years).toContain(2026)
+  })
+
+  test("every row is the election winner (isWinnerOfElection)", () => {
+    const winners = getPastWinners(76)
+    for (const w of winners) {
+      expect(w.didNotContest).toBe(false)
+      expect(w.isWinnerOfElection).toBe(true)
+      expect(w.margin).toBeGreaterThan(0)
+    }
+  })
+
+  test("only the 2026 row is marked isCurrent", () => {
+    const winners = getPastWinners(76)
+    const current = winners.filter((w) => w.isCurrent)
+    expect(current).toHaveLength(1)
+    expect(current[0]!.year).toBe(2026)
+  })
+})
+
+describe("getPastCandidates (Aluva 76, party-scoped)", () => {
+  test("INC: contested every election; runner-up rows have negative margin", () => {
+    const incRows = getPastCandidates(76, "Indian National Congress")
+    expect(incRows.length).toBeGreaterThanOrEqual(2)
+    for (const r of incRows) {
+      expect(r.party).toBe("Indian National Congress")
+      expect(r.didNotContest).toBe(false)
+      if (!r.isWinnerOfElection) {
+        expect(r.margin).toBeLessThan(0)
+      } else {
+        expect(r.margin).toBeGreaterThan(0)
+      }
+    }
+  })
+
+  test("a party that didn't contest a year produces a didNotContest stub", () => {
+    const rows = getPastCandidates(76, "Nonexistent Party Xyz")
+    expect(rows.length).toBeGreaterThan(0)
+    expect(rows.every((r) => r.didNotContest)).toBe(true)
+    for (const r of rows) {
+      expect(r.votes).toBe(0)
+      expect(r.share).toBe(0)
+      expect(r.isWinnerOfElection).toBe(false)
+    }
+  })
+})
+
+describe("getPastCandidates / getPastWinners edge cases", () => {
+  test("invalid constituency number returns empty array", () => {
+    expect(getPastCandidates(99999)).toEqual([])
+    expect(getPastWinners(99999)).toEqual([])
+  })
+})
+
+describe("sortCandidateRows", () => {
+  const rows = buildCandidateRows(null)
+
+  test("desc by votes lists highest first", () => {
+    const sorted = sortCandidateRows(rows, "votes", "desc")
+    expect(sorted[0]!.votes).toBeGreaterThanOrEqual(sorted[1]!.votes)
+    expect(sorted[0]!.votes).toBeGreaterThanOrEqual(
+      sorted[sorted.length - 1]!.votes
+    )
+  })
+
+  test("asc by constituency uses numeric AC number, not string", () => {
+    const sorted = sortCandidateRows(rows, "constituency", "asc")
+    for (let i = 1; i < sorted.length; i++) {
+      expect(
+        sorted[i]!.constituency.constituencyNumber
+      ).toBeGreaterThanOrEqual(sorted[i - 1]!.constituency.constituencyNumber)
+    }
+  })
+
+  test("nullable shareDelta asc pushes nulls to the end; non-null is sorted ascending", () => {
+    const asc = sortCandidateRows(rows, "shareDelta", "asc")
+    const firstNull = asc.findIndex((r) => r.shareDelta2021 == null)
+    if (firstNull !== -1) {
+      for (let i = firstNull; i < asc.length; i++) {
+        expect(asc[i]!.shareDelta2021).toBeNull()
+      }
+      const head = asc.slice(0, firstNull)
+      for (let i = 1; i < head.length; i++) {
+        expect(head[i]!.shareDelta2021!).toBeGreaterThanOrEqual(
+          head[i - 1]!.shareDelta2021!
+        )
+      }
+    }
+  })
+
+  test("does not mutate input array", () => {
+    const subset = rows.slice(0, 5)
+    const before = subset.map((r) => r.candidate.name)
+    sortCandidateRows(subset, "votes", "asc")
+    expect(subset.map((r) => r.candidate.name)).toEqual(before)
   })
 })

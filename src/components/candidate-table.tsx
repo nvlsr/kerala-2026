@@ -27,6 +27,7 @@ import {
   partyShort,
   type CandidateRow,
 } from "@/lib/data"
+import { sortCandidateRows } from "@/lib/candidate-sort"
 import type {
   FilterAction,
   Filters,
@@ -68,54 +69,10 @@ export function CandidateTable({ filters, dispatch }: Props) {
     })
   }, [allRows, query, result, alliance, party])
 
-  const sorted = useMemo(() => {
-    const list = [...filtered]
-    const dir = sortDir === "asc" ? 1 : -1
-    switch (sortColumn) {
-      case "constituency":
-        list.sort(
-          (a, b) =>
-            dir *
-            (a.constituency.constituencyNumber -
-              b.constituency.constituencyNumber)
-        )
-        break
-      case "candidate":
-        list.sort(
-          (a, b) => dir * a.candidateDisplay.localeCompare(b.candidateDisplay)
-        )
-        break
-      case "party":
-        list.sort((a, b) => dir * a.partyShort.localeCompare(b.partyShort))
-        break
-      case "share":
-        list.sort((a, b) => dir * (a.share - b.share))
-        break
-      case "shareDelta":
-        list.sort((a, b) => {
-          if (a.shareDelta2021 == null && b.shareDelta2021 == null) return 0
-          if (a.shareDelta2021 == null) return 1
-          if (b.shareDelta2021 == null) return -1
-          return dir * (a.shareDelta2021 - b.shareDelta2021)
-        })
-        break
-      case "votes":
-        list.sort((a, b) => dir * (a.votes - b.votes))
-        break
-      case "margin":
-        list.sort((a, b) => dir * (a.margin - b.margin))
-        break
-      case "marginDelta":
-        list.sort((a, b) => {
-          if (a.marginDelta2021 == null && b.marginDelta2021 == null) return 0
-          if (a.marginDelta2021 == null) return 1
-          if (b.marginDelta2021 == null) return -1
-          return dir * (a.marginDelta2021 - b.marginDelta2021)
-        })
-        break
-    }
-    return list
-  }, [filtered, sortColumn, sortDir])
+  const sorted = useMemo(
+    () => sortCandidateRows(filtered, sortColumn, sortDir),
+    [filtered, sortColumn, sortDir]
+  )
 
   const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE))
   const safePage = Math.min(page, totalPages)

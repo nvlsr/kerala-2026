@@ -14,6 +14,15 @@ import { getHistoricalFor } from "@/lib/data/historical"
 import { alliancesMeta } from "@/lib/data/loaders"
 import { canonicalPartyName, partyShort } from "@/lib/data/parties"
 
+function ensureMapEntry<K, V>(map: Map<K, V>, key: K, factory: () => V): V {
+  let entry = map.get(key)
+  if (!entry) {
+    entry = factory()
+    map.set(key, entry)
+  }
+  return entry
+}
+
 // ─── State-level summary ────────────────────────────────────────────────
 
 export type StateSummary = {
@@ -479,23 +488,17 @@ export function getAllianceTrendData(
     }
   >()
 
-  const ensureYear = (year: number) => {
-    let entry = yearTotals.get(year)
-    if (!entry) {
-      entry = {
-        totalVotes: 0,
-        perAlliance: {
-          UDF: { seats: 0, contested: 0, votes: 0 },
-          LDF: { seats: 0, contested: 0, votes: 0 },
-          NDA: { seats: 0, contested: 0, votes: 0 },
-          OTHER: { seats: 0, contested: 0, votes: 0 },
-          NOTA: { seats: 0, contested: 0, votes: 0 },
-        },
-      }
-      yearTotals.set(year, entry)
-    }
-    return entry
-  }
+  const ensureYear = (year: number) =>
+    ensureMapEntry(yearTotals, year, () => ({
+      totalVotes: 0,
+      perAlliance: {
+        UDF: { seats: 0, contested: 0, votes: 0 },
+        LDF: { seats: 0, contested: 0, votes: 0 },
+        NDA: { seats: 0, contested: 0, votes: 0 },
+        OTHER: { seats: 0, contested: 0, votes: 0 },
+        NOTA: { seats: 0, contested: 0, votes: 0 },
+      },
+    }))
 
   for (const c of list) {
     const hist = getHistoricalFor(c.constituencyNumber)
@@ -576,14 +579,13 @@ export function getPartyTrendData(
     { seats: number; contested: number; votes: number; totalVotes: number }
   >()
 
-  const ensureYear = (year: number) => {
-    let entry = yearMap.get(year)
-    if (!entry) {
-      entry = { seats: 0, contested: 0, votes: 0, totalVotes: 0 }
-      yearMap.set(year, entry)
-    }
-    return entry
-  }
+  const ensureYear = (year: number) =>
+    ensureMapEntry(yearMap, year, () => ({
+      seats: 0,
+      contested: 0,
+      votes: 0,
+      totalVotes: 0,
+    }))
 
   for (const c of list) {
     const hist = getHistoricalFor(c.constituencyNumber)
