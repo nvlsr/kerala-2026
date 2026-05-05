@@ -395,18 +395,6 @@ for (const key of driftKeys) {
         (a.cumulative[a.gainer] - a.cumulative[a.loser])
     )
     .forEach((d) => {
-      const trail = (a: AllianceCode) => {
-        const points = [
-          d.shares[2011][a],
-          d.shares[2016]?.[a],
-          d.shares[2021]?.[a],
-          d.shares[2026][a],
-        ]
-          .filter((v): v is number => v != null)
-          .map((v) => v.toFixed(0).padStart(2))
-          .join("→")
-        return `${a} ${points}`
-      }
       console.log(
         `  ${PAD(d.seat, 22)}  cum: UDF ${DELTA(d.cumulative.UDF)}  LDF ${DELTA(d.cumulative.LDF)}  NDA ${DELTA(d.cumulative.NDA)}  ` +
           `[${d.consistentCycles}/3 same direction]`

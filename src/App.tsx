@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom"
 
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { DashboardPage } from "@/pages/dashboard-page"
+import { FlowsPage } from "@/pages/flows-page"
 import { InsightsPage } from "@/pages/insights-page"
 
 export function App() {
@@ -10,6 +11,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<DashboardPage />} />
         <Route path="/insights" element={<InsightsPage />} />
+        <Route path="/flows" element={<FlowsPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </TooltipProvider>
