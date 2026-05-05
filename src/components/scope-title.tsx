@@ -86,7 +86,6 @@ function Breadcrumb({ crumbs }: { crumbs: Crumb[] }) {
               aria-hidden
             />
             <span className="inline-flex items-center gap-1 rounded-full border bg-muted/40 px-2 py-0.5 font-medium">
-
               {c.label}
               <button
                 type="button"

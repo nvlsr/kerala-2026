@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useReducer } from "react"
 
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { ScopeTitle } from "@/components/scope-title"
@@ -7,61 +7,51 @@ import { AllianceSection } from "@/components/alliance-section"
 import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
 import { ConstituencySection } from "@/components/constituency-section"
-import { constituencies, type AllianceCode } from "@/lib/data"
+import { constituencies } from "@/lib/data"
+import { filtersReducer, initialFilters } from "@/lib/filters"
 
 export function App() {
-  const [scope, setScope] = useState<string | null>(null)
-  const [selectedSeat, setSelectedSeat] = useState<number | null>(null)
-  const [selectedAlliance, setSelectedAlliance] = useState<AllianceCode | null>(
-    null
-  )
-  const [selectedParty, setSelectedParty] = useState<string | null>(null)
+  const [filters, dispatch] = useReducer(filtersReducer, initialFilters)
 
   const selectedConstituency =
-    selectedSeat != null
-      ? (constituencies.find((c) => c.constituencyNumber === selectedSeat) ??
+    filters.seat != null
+      ? (constituencies.find((c) => c.constituencyNumber === filters.seat) ??
         null)
       : null
-
-  const handleSelectAlliance = (code: AllianceCode | null) => {
-    setSelectedAlliance(code)
-    if (code !== selectedAlliance) setSelectedParty(null)
-  }
 
   return (
     <TooltipProvider delay={200}>
       <div className="min-h-svh bg-background text-foreground">
         <ScopeTitle
-          scope={scope}
-          selectedAlliance={selectedAlliance}
-          selectedParty={selectedParty}
-          selectedSeat={selectedSeat}
-          onClearScope={() => setScope(null)}
-          onClearAlliance={() => handleSelectAlliance(null)}
-          onClearParty={() => setSelectedParty(null)}
-          onClearSeat={() => setSelectedSeat(null)}
+          scope={filters.district}
+          selectedAlliance={filters.alliance}
+          selectedParty={filters.party}
+          selectedSeat={filters.seat}
+          onClearScope={() => dispatch({ type: "clear-district" })}
+          onClearAlliance={() => dispatch({ type: "clear-alliance" })}
+          onClearParty={() => dispatch({ type: "clear-party" })}
+          onClearSeat={() => dispatch({ type: "clear-seat" })}
         />
-        <KeralaMap scope={scope} onSelect={setScope} />
+        <KeralaMap
+          scope={filters.district}
+          onSelect={(district) => dispatch({ type: "set-district", district })}
+        />
         <AllianceSection
-          scope={scope}
-          selectedAlliance={selectedAlliance}
-          onSelectAlliance={handleSelectAlliance}
+          scope={filters.district}
+          selectedAlliance={filters.alliance}
+          onSelectAlliance={(alliance) =>
+            dispatch({ type: "set-alliance", alliance })
+          }
         />
-        {selectedAlliance && (
+        {filters.alliance && (
           <PartySection
-            scope={scope}
-            alliance={selectedAlliance}
-            selectedParty={selectedParty}
-            onSelectParty={setSelectedParty}
+            scope={filters.district}
+            alliance={filters.alliance}
+            selectedParty={filters.party}
+            onSelectParty={(party) => dispatch({ type: "set-party", party })}
           />
         )}
-        <CandidateTable
-          scope={scope}
-          alliance={selectedAlliance}
-          party={selectedParty}
-          selectedConstituency={selectedSeat}
-          onSelectConstituency={setSelectedSeat}
-        />
+        <CandidateTable filters={filters} dispatch={dispatch} />
         {selectedConstituency && (
           <ConstituencySection
             key={selectedConstituency.constituencyNumber}

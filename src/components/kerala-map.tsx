@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react"
 
 import paths from "@data/kerala-districts-paths.json"
+import { Section } from "@/components/section"
 import {
   formatPercent,
   getAlliance,
@@ -48,69 +49,60 @@ export function KeralaMap({ scope, onSelect }: Props) {
   }, [])
 
   return (
-    <section className="border-t">
-      <div className="mx-auto max-w-6xl px-6 py-6">
-        <h2 className="mb-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-          Map
-          <span className="ml-1.5 font-normal text-muted-foreground/70 normal-case">
-            · click a district to filter
-          </span>
-        </h2>
-
-        <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-5">
-          <div className="relative flex justify-center lg:col-span-3">
-            <svg
-              viewBox={`0 0 ${paths.width} ${paths.height}`}
-              role="img"
-              aria-label="Kerala districts map"
-              className="h-auto w-full max-w-md"
-            >
-              {paths.districts.map((d) => {
-                const isSelected = scope === d.id
-                const isHovered = hovered === d.id
-                const fill = districtFills.get(d.id)!
-                return (
-                  <path
-                    key={d.id}
-                    d={d.pathD}
-                    role="button"
-                    aria-label={d.name}
-                    aria-pressed={isSelected}
-                    tabIndex={0}
-                    fill={fill.fill}
-                    fillOpacity={
-                      isSelected
-                        ? 0.95
-                        : isHovered
-                          ? Math.min(1, fill.opacity + 0.2)
-                          : fill.opacity
+    <Section title="Map" subtitle="click a district to filter">
+      <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-5">
+        <div className="relative flex justify-center lg:col-span-3">
+          <svg
+            viewBox={`0 0 ${paths.width} ${paths.height}`}
+            role="img"
+            aria-label="Kerala districts map"
+            className="h-auto w-full max-w-md"
+          >
+            {paths.districts.map((d) => {
+              const isSelected = scope === d.id
+              const isHovered = hovered === d.id
+              const fill = districtFills.get(d.id)!
+              return (
+                <path
+                  key={d.id}
+                  d={d.pathD}
+                  role="button"
+                  aria-label={d.name}
+                  aria-pressed={isSelected}
+                  tabIndex={0}
+                  fill={fill.fill}
+                  fillOpacity={
+                    isSelected
+                      ? 0.95
+                      : isHovered
+                        ? Math.min(1, fill.opacity + 0.2)
+                        : fill.opacity
+                  }
+                  stroke={
+                    isSelected ? "var(--foreground)" : "var(--background)"
+                  }
+                  strokeWidth={isSelected ? 2 : 1}
+                  className="cursor-pointer transition-opacity outline-none focus-visible:stroke-foreground focus-visible:[stroke-width:2]"
+                  onClick={() => onSelect(isSelected ? null : d.id)}
+                  onMouseEnter={() => setHovered(d.id)}
+                  onMouseLeave={() => setHovered(null)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault()
+                      onSelect(isSelected ? null : d.id)
                     }
-                    stroke={
-                      isSelected ? "var(--foreground)" : "var(--background)"
-                    }
-                    strokeWidth={isSelected ? 2 : 1}
-                    className="cursor-pointer transition-opacity outline-none focus-visible:stroke-foreground focus-visible:[stroke-width:2]"
-                    onClick={() => onSelect(isSelected ? null : d.id)}
-                    onMouseEnter={() => setHovered(d.id)}
-                    onMouseLeave={() => setHovered(null)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault()
-                        onSelect(isSelected ? null : d.id)
-                      }
-                    }}
-                  />
-                )
-              })}
-            </svg>
-          </div>
+                  }}
+                />
+              )
+            })}
+          </svg>
+        </div>
 
-          <div className="lg:col-span-2">
-            <DistrictPanel id={hovered ?? scope ?? null} />
-          </div>
+        <div className="lg:col-span-2">
+          <DistrictPanel id={hovered ?? scope ?? null} />
         </div>
       </div>
-    </section>
+    </Section>
   )
 }
 

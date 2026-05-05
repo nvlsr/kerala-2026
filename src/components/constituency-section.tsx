@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import { IconCheck } from "@tabler/icons-react"
 
 import { AlliancePill } from "@/components/alliance-pill"
+import { Section } from "@/components/section"
+import { Stat } from "@/components/stat"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { HistoricalChart } from "@/components/historical-chart"
 import { PastWinners } from "@/components/past-winners"
@@ -63,121 +65,121 @@ export function ConstituencySection({ constituency }: Props) {
   const highlightParty = isRoster ? null : selectedParty
 
   return (
-    <section ref={sectionRef} className="scroll-mt-4 border-t">
-      <div className="mx-auto max-w-6xl px-6 py-6">
-        <h2 className="mb-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-          Constituency ·{" "}
-          <span className="font-normal text-muted-foreground/70 normal-case">
-            {displayConstituencyName(constituency)}
-            {district && (
-              <span className="text-muted-foreground/60">
-                {" · "}
-                {district.name} district
+    <Section
+      refEl={sectionRef}
+      className="scroll-mt-4"
+      title="Constituency"
+      subtitle={
+        <>
+          {displayConstituencyName(constituency)}
+          {district && (
+            <span className="text-muted-foreground/60">
+              {" · "}
+              {district.name} district
+            </span>
+          )}
+        </>
+      }
+    >
+      <div className="mb-4 overflow-hidden rounded-lg border bg-muted/40">
+        <div
+          className="h-1 w-full"
+          style={{ backgroundColor: winnerAlliance.color }}
+          aria-hidden
+        />
+        <div className="flex flex-wrap items-baseline justify-between gap-3 p-4">
+          <div className="min-w-0">
+            <div className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
+              Winner
+            </div>
+            <div className="flex items-baseline gap-2">
+              <span className="truncate font-heading text-lg font-semibold">
+                {normalizeCandidateName(winner.name)}
               </span>
-            )}
-          </span>
-        </h2>
-
-        <div className="mb-4 overflow-hidden rounded-lg border bg-muted/40">
-          <div
-            className="h-1 w-full"
-            style={{ backgroundColor: winnerAlliance.color }}
-            aria-hidden
-          />
-          <div className="flex flex-wrap items-baseline justify-between gap-3 p-4">
-            <div className="min-w-0">
-              <div className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
-                Winner
-              </div>
-              <div className="flex items-baseline gap-2">
-                <span className="truncate font-heading text-lg font-semibold">
-                  {normalizeCandidateName(winner.name)}
-                </span>
-                <span
-                  className="text-sm text-muted-foreground"
-                  title={winner.party}
-                >
-                  {partyShort(winner.party)}
-                </span>
-                <AlliancePill code={winnerAllianceCode} />
-              </div>
-            </div>
-            <div className="flex items-baseline gap-6 text-sm">
-              <Stat label="Share" value={formatPercent(winnerShare / 100, 1)} />
-              <Stat
-                label="Margin"
-                value={`+${formatPercent(winnerMarginPct / 100, 1)}`}
-              />
-              <Stat label="Votes" value={formatNumber(winner.votes)} />
-            </div>
-          </div>
-        </div>
-
-        <ToggleGroup
-          value={[selectedKey]}
-          onValueChange={(v) => {
-            const next = (v[0] as string | undefined) ?? WINNERS_KEY
-            setSelectedKey(next)
-          }}
-          variant="outline"
-          size="sm"
-          spacing={2}
-          className="mb-3"
-        >
-          <ToggleGroupItem value={WINNERS_KEY} className="rounded-full">
-            Winners
-          </ToggleGroupItem>
-          <ToggleGroupItem value={ROSTER_KEY} className="rounded-full">
-            2026 roster
-          </ToggleGroupItem>
-          {partyOptions.map((p) => {
-            const active = selectedKey === p.party
-            return (
-              <ToggleGroupItem
-                key={p.party}
-                value={p.party}
-                className="rounded-full"
-                style={
-                  active
-                    ? {
-                        backgroundColor: p.color,
-                        borderColor: p.color,
-                        color: "#fff",
-                      }
-                    : undefined
-                }
+              <span
+                className="text-sm text-muted-foreground"
+                title={winner.party}
               >
-                <span
-                  className="mr-1 inline-block h-1.5 w-1.5 rounded-full"
-                  style={{ backgroundColor: p.color }}
-                  aria-hidden
-                />
-                {p.partyShort}
-              </ToggleGroupItem>
-            )
-          })}
-        </ToggleGroup>
-
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
-          <div className="overflow-hidden rounded-lg border bg-muted/40 p-4 lg:col-span-3">
-            {isRoster ? (
-              <RosterTable constituency={constituency} />
-            ) : (
-              <PastWinners
-                constituencyNumber={constituency.constituencyNumber}
-                selectedParty={selectedParty}
-              />
-            )}
+                {partyShort(winner.party)}
+              </span>
+              <AlliancePill code={winnerAllianceCode} />
+            </div>
           </div>
-          <div className="rounded-lg border bg-muted/40 p-4 lg:col-span-2">
-            <HistoricalChart
-              constituencyNumber={constituency.constituencyNumber}
-              highlightParty={highlightParty}
+          <div className="flex items-baseline gap-6 text-sm">
+            <Stat label="Share" value={formatPercent(winnerShare / 100, 1)} />
+            <Stat
+              label="Margin"
+              value={`+${formatPercent(winnerMarginPct / 100, 1)}`}
             />
+            <Stat label="Votes" value={formatNumber(winner.votes)} />
           </div>
         </div>
       </div>
-    </section>
+
+      <ToggleGroup
+        value={[selectedKey]}
+        onValueChange={(v) => {
+          const next = (v[0] as string | undefined) ?? WINNERS_KEY
+          setSelectedKey(next)
+        }}
+        variant="outline"
+        size="sm"
+        spacing={2}
+        className="mb-3"
+      >
+        <ToggleGroupItem value={WINNERS_KEY} className="rounded-full">
+          Winners
+        </ToggleGroupItem>
+        <ToggleGroupItem value={ROSTER_KEY} className="rounded-full">
+          2026 roster
+        </ToggleGroupItem>
+        {partyOptions.map((p) => {
+          const active = selectedKey === p.party
+          return (
+            <ToggleGroupItem
+              key={p.party}
+              value={p.party}
+              className="rounded-full"
+              style={
+                active
+                  ? {
+                      backgroundColor: p.color,
+                      borderColor: p.color,
+                      color: "#fff",
+                    }
+                  : undefined
+              }
+            >
+              <span
+                className="mr-1 inline-block h-1.5 w-1.5 rounded-full"
+                style={{ backgroundColor: p.color }}
+                aria-hidden
+              />
+              {p.partyShort}
+            </ToggleGroupItem>
+          )
+        })}
+      </ToggleGroup>
+
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
+        <div className="overflow-hidden rounded-lg border bg-muted/40 p-4 lg:col-span-3">
+          {isRoster ? (
+            <RosterTable constituency={constituency} />
+          ) : (
+            <PastWinners
+              constituencyNumber={constituency.constituencyNumber}
+              selectedParty={selectedParty}
+            />
+          )}
+        </div>
+        <div className="rounded-lg border bg-muted/40 p-4 lg:col-span-2">
+          <HistoricalChart
+            constituencyNumber={constituency.constituencyNumber}
+            highlightParty={highlightParty}
+          />
+        </div>
+      </div>
+    </Section>
   )
 }
 
@@ -276,16 +278,5 @@ function RosterRow({
         {formatPercent(marginPct / 100, 1)}
       </span>
     </li>
-  )
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <div className="text-xs tracking-wide text-muted-foreground uppercase">
-        {label}
-      </div>
-      <div className="text-base font-medium tabular-nums">{value}</div>
-    </div>
   )
 }

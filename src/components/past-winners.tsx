@@ -1,3 +1,4 @@
+import { tint } from "@/lib/color"
 import { cn } from "@/lib/utils"
 import {
   formatPercent,
@@ -90,7 +91,7 @@ function PastCandidateRow({
           className="shrink-0 rounded px-1 py-px text-[9px] font-semibold tracking-wider uppercase"
           style={{
             color: meta.color,
-            backgroundColor: meta.color + "1A",
+            backgroundColor: tint.bg(meta.color),
           }}
         >
           won
@@ -101,7 +102,7 @@ function PastCandidateRow({
           className="shrink-0 rounded px-1 py-px text-[9px] font-semibold tracking-wider uppercase"
           style={{
             color: meta.color,
-            backgroundColor: meta.color + "1A",
+            backgroundColor: tint.bg(meta.color),
           }}
         >
           current

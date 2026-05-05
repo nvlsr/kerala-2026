@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import { tint } from "@/lib/color"
 import { cn } from "@/lib/utils"
 import { getAlliance, isMainFront, type AllianceCode } from "@/lib/data"
 
@@ -27,7 +28,7 @@ export function AlliancePill({ code, className }: Props) {
       className={cn(baseClass, className)}
       style={{
         color: alliance.color,
-        backgroundColor: alliance.color + "1A",
+        backgroundColor: tint.bg(alliance.color),
       }}
     >
       {alliance.code}
