@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from "react"
+import { useEffect, useMemo, useReducer } from "react"
 
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { ScopeTitle } from "@/components/scope-title"
@@ -11,6 +11,7 @@ import { ConstituencySection } from "@/components/constituency-section"
 import { constituencies } from "@/lib/data"
 import {
   filtersReducer,
+  getFilteredConstituencyNumbers,
   initialFilters,
   parseFilters,
   serializeFilters,
@@ -36,6 +37,11 @@ export function App() {
       : window.location.pathname
     window.history.replaceState(null, "", url)
   }, [filters])
+
+  const inFilterSet = useMemo(
+    () => getFilteredConstituencyNumbers(filters),
+    [filters]
+  )
 
   const selectedConstituency =
     filters.seat != null
@@ -77,7 +83,7 @@ export function App() {
         )}
         <CandidateTable filters={filters} dispatch={dispatch} />
         <ConstituencyMap
-          scope={filters.district}
+          inFilterSet={inFilterSet}
           selectedSeat={filters.seat}
           onSelect={(seat) => dispatch({ type: "set-seat", seat })}
         />

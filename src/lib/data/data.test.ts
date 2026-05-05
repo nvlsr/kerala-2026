@@ -2,11 +2,7 @@ import { describe, expect, test } from "vitest"
 
 import { canonicalPartyName, partyShort } from "./parties"
 import { allianceForRawParty } from "./alliances"
-import {
-  constituencies,
-  totalVotesIn,
-  winnerOf,
-} from "./constituencies"
+import { constituencies, totalVotesIn, winnerOf } from "./constituencies"
 import {
   get2021Baseline,
   getAllianceTrendData,
@@ -32,9 +28,7 @@ describe("canonicalPartyName", () => {
   })
 
   test("resolves alternate spelling via partyAliases", () => {
-    expect(canonicalPartyName("CPM")).toBe(
-      "Communist Party of India (Marxist)"
-    )
+    expect(canonicalPartyName("CPM")).toBe("Communist Party of India (Marxist)")
     expect(canonicalPartyName("Muslim League")).toBe(
       "Indian Union Muslim League"
     )
@@ -179,7 +173,10 @@ describe("buildCandidateRows", () => {
     for (const r of rows) {
       if (r.isWinner) {
         const num = r.constituency.constituencyNumber
-        winnersByConstituency.set(num, (winnersByConstituency.get(num) ?? 0) + 1)
+        winnersByConstituency.set(
+          num,
+          (winnersByConstituency.get(num) ?? 0) + 1
+        )
       }
     }
     for (const [, count] of winnersByConstituency) {

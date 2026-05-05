@@ -1,4 +1,9 @@
-import type { AllianceCode } from "@/lib/data"
+import {
+  allianceForCandidate,
+  canonicalPartyName,
+  constituenciesIn,
+  type AllianceCode,
+} from "@/lib/data"
 
 export type ResultFilter = "winners" | "losers" | "all"
 
@@ -170,4 +175,32 @@ export function parseFilters(params: URLSearchParams): Filters {
   }
 
   return filters
+}
+
+/**
+ * Constituency numbers that contain at least one candidate matching the active
+ * structural filters (district + alliance + party + result). Used by the AC
+ * map to dim out-of-set seats. Free-text search is intentionally excluded —
+ * search is a refinement within the table view, not a constituency-level
+ * filter.
+ */
+export function getFilteredConstituencyNumbers(filters: Filters): Set<number> {
+  const result = new Set<number>()
+  for (const c of constituenciesIn(filters.district)) {
+    for (const cand of c.candidates) {
+      if (cand.isNota) continue
+      if (filters.result === "winners" && cand.status !== "won") continue
+      if (filters.result === "losers" && cand.status === "won") continue
+      if (
+        filters.alliance &&
+        allianceForCandidate(c, cand) !== filters.alliance
+      )
+        continue
+      if (filters.party && canonicalPartyName(cand.party) !== filters.party)
+        continue
+      result.add(c.constituencyNumber)
+      break
+    }
+  }
+  return result
 }
