@@ -86,6 +86,7 @@ export function App() {
         )}
         <CandidateTable filters={filters} dispatch={dispatch} />
         <ConstituencyMap
+          filters={filters}
           inFilterSet={inFilterSet}
           selectedSeat={filters.seat}
           onSelect={(seat) => dispatch({ type: "set-seat", seat })}

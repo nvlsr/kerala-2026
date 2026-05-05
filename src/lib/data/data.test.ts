@@ -17,7 +17,12 @@ import {
   filtersReducer,
   hasActiveFilters,
   initialFilters,
+  type Filters,
 } from "@/lib/filters"
+import {
+  computeSeatEncodings,
+  encodingModeFor,
+} from "@/lib/seat-encoding"
 
 const ALUVA = constituencies.find((c) => c.constituencyNumber === 76)!
 
@@ -328,6 +333,82 @@ describe("sortCandidateRows", () => {
     const before = subset.map((r) => r.candidate.name)
     sortCandidateRows(subset, "votes", "asc")
     expect(subset.map((r) => r.candidate.name)).toEqual(before)
+  })
+})
+
+describe("encodingModeFor / computeSeatEncodings", () => {
+  const ALL_SEATS = new Set(constituencies.map((c) => c.constituencyNumber))
+
+  test("default filters → alliance mode", () => {
+    expect(encodingModeFor(initialFilters)).toBe("alliance")
+  })
+
+  test("result=all + sort=margin → magnitude mode", () => {
+    const f: Filters = {
+      ...initialFilters,
+      result: "all",
+      sort: { column: "margin", dir: "desc" },
+    }
+    expect(encodingModeFor(f)).toBe("magnitude")
+  })
+
+  test("result=all + sort=shareDelta → diverging mode", () => {
+    const f: Filters = {
+      ...initialFilters,
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    }
+    expect(encodingModeFor(f)).toBe("diverging")
+  })
+
+  test("result=all + categorical sort → falls back to alliance", () => {
+    const f: Filters = {
+      ...initialFilters,
+      result: "all",
+      sort: { column: "constituency", dir: "asc" },
+    }
+    expect(encodingModeFor(f)).toBe("alliance")
+  })
+
+  test("alliance mode covers every seat with a color/opacity", () => {
+    const enc = computeSeatEncodings(initialFilters, ALL_SEATS)
+    expect(enc.size).toBe(140)
+    for (const [, e] of enc) {
+      expect(typeof e.color).toBe("string")
+      expect(e.opacity).toBeGreaterThan(0)
+      expect(e.opacity).toBeLessThanOrEqual(1)
+    }
+  })
+
+  test("magnitude mode: highest sort value gets the highest opacity", () => {
+    const f: Filters = {
+      ...initialFilters,
+      result: "all",
+      sort: { column: "votes", dir: "desc" },
+    }
+    const enc = computeSeatEncodings(f, ALL_SEATS)
+    const opacities = [...enc.values()].map((e) => e.opacity)
+    expect(Math.max(...opacities)).toBeGreaterThan(Math.min(...opacities))
+  })
+
+  test("diverging mode: positive deltas use a different color than negative", () => {
+    const f: Filters = {
+      ...initialFilters,
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    }
+    const enc = computeSeatEncodings(f, ALL_SEATS)
+    const colors = new Set([...enc.values()].map((e) => e.color))
+    // expect at least 2 distinct hues (gain + loss); no-data fills add a third
+    expect(colors.size).toBeGreaterThanOrEqual(2)
+  })
+
+  test("out-of-filter seats are dimmed", () => {
+    const inSet = new Set([76]) // only Aluva
+    const enc = computeSeatEncodings(initialFilters, inSet)
+    const aluva = enc.get(76)!
+    const other = enc.get(1)!
+    expect(other.opacity).toBeLessThan(aluva.opacity)
   })
 })
 

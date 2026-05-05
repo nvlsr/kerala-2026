@@ -9,32 +9,39 @@ import {
   displayConstituencyName,
   formatPercent,
   getAlliance,
-  isMainFront,
   partyShort,
   totalVotesIn,
   winnerOf,
 } from "@/lib/data"
+import type { Filters } from "@/lib/filters"
+import {
+  computeSeatEncodings,
+  encodingModeFor,
+} from "@/lib/seat-encoding"
 
 type Props = {
+  filters: Filters
   inFilterSet: Set<number>
   selectedSeat: number | null
   onSelect: (n: number | null) => void
 }
 
 export function ConstituencyMap({
+  filters,
   inFilterSet,
   selectedSeat,
   onSelect,
 }: Props) {
   const [hovered, setHovered] = useState<number | null>(null)
 
-  const fills = useMemo(() => computeFills(), [])
+  const fills = useMemo(
+    () => computeSeatEncodings(filters, inFilterSet),
+    [filters, inFilterSet]
+  )
+  const mode = encodingModeFor(filters)
 
   const focusedSeat = hovered ?? selectedSeat
-  const subtitle =
-    inFilterSet.size === paths.constituencies.length
-      ? "click a seat to drill in"
-      : `${inFilterSet.size} of ${paths.constituencies.length} seats in current filter`
+  const subtitle = describeSubtitle(filters, inFilterSet.size, mode)
 
   return (
     <Section title="Constituency map" subtitle={subtitle}>
@@ -50,12 +57,11 @@ export function ConstituencyMap({
               const num = c.constituencyNumber
               const isSelected = selectedSeat === num
               const isHovered = hovered === num
-              const inSet = inFilterSet.has(num)
               const fill = fills.get(num) ?? {
                 color: "var(--muted)",
                 opacity: 0.2,
               }
-              const baseOpacity = inSet ? fill.opacity : fill.opacity * 0.2
+              const baseOpacity = fill.opacity
               return (
                 <path
                   key={num}
@@ -96,7 +102,7 @@ export function ConstituencyMap({
           {focusedSeat != null ? (
             <SeatPanel constituencyNumber={focusedSeat} />
           ) : (
-            <Hint />
+            <Hint mode={mode} />
           )}
         </div>
       </div>
@@ -104,20 +110,41 @@ export function ConstituencyMap({
   )
 }
 
-type Fill = { color: string; opacity: number }
+function describeSubtitle(
+  filters: Filters,
+  inFilterSize: number,
+  mode: ReturnType<typeof encodingModeFor>
+): string {
+  const subset =
+    inFilterSize === paths.constituencies.length
+      ? null
+      : `${inFilterSize} of ${paths.constituencies.length} seats`
+  const encoding =
+    mode === "magnitude"
+      ? `colored by ${sortLabel(filters.sort.column)}`
+      : mode === "diverging"
+        ? `colored by ${sortLabel(filters.sort.column)} (gain / loss)`
+        : filters.result === "losers"
+          ? "colored by runner-up's alliance"
+          : "colored by winning alliance"
+  return [subset, encoding].filter(Boolean).join(" · ")
+}
 
-function computeFills(): Map<number, Fill> {
-  const map = new Map<number, Fill>()
-  for (const c of allConstituencies) {
-    const winner = winnerOf(c)
-    const allianceCode = allianceForCandidate(c, winner)
-    const allianceMeta = getAlliance(allianceCode)
-    map.set(c.constituencyNumber, {
-      color: allianceMeta.color,
-      opacity: isMainFront(allianceCode) ? 0.7 : 0.25,
-    })
+function sortLabel(col: import("@/lib/filters").SortColumn): string {
+  switch (col) {
+    case "votes":
+      return "votes"
+    case "share":
+      return "vote share"
+    case "margin":
+      return "margin"
+    case "shareDelta":
+      return "Δ share '21"
+    case "marginDelta":
+      return "Δ margin '21"
+    default:
+      return "winner"
   }
-  return map
 }
 
 function SeatPanel({ constituencyNumber }: { constituencyNumber: number }) {
@@ -168,15 +195,20 @@ function Stat({ label, value }: { label: string; value: string }) {
   )
 }
 
-function Hint() {
+function Hint({ mode }: { mode: ReturnType<typeof encodingModeFor> }) {
+  const explainer =
+    mode === "magnitude"
+      ? "Polygons use a single hue with darker shades for higher values on the active sort column."
+      : mode === "diverging"
+        ? "Polygons turn green for gains over 2021 and rose for losses, with darker shades for larger swings."
+        : "Polygons are colored by alliance: winners by default, runner-up's alliance when the table is filtered to losers."
   return (
     <div className="rounded-lg border border-dashed p-4 text-xs text-muted-foreground">
       <div className="mb-2 font-medium tracking-wide text-foreground/70 uppercase">
         Hover or click a seat
       </div>
-      Polygons are colored by 2026 winning alliance. Out-of-filter seats fade —
-      pick a party or apply an Insights chip to see the spatial distribution of
-      that filter.
+      {explainer} Out-of-filter seats fade — apply an Insights chip or sort to
+      change what the map encodes.
     </div>
   )
 }
