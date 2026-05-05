@@ -18,12 +18,12 @@ export function InsightsTeaser() {
             A treat for the curious
           </h3>
           <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-            Glad you're digging in. I'm sure you'll enjoy the curated questions
-            I've been working through — each with a top-5 table, a focused
-            constituency map, and a one-click path back to the full dashboard.
-            Started this to answer my own questions about the 2026 results;
-            sharing in case it's useful for yours. Free, open source, no
-            signup.{" "}
+            Most readers stop at the headline numbers; you didn't. I'm sure
+            you'll enjoy the curated questions I've been working through —
+            each with a top-5 table, a focused constituency map, and a
+            one-click path back to the full dashboard. Started this to answer
+            my own questions about the 2026 results; sharing in case it's
+            useful for yours. Free, open source, no signup.{" "}
             <Link
               to="/insights"
               className="group font-medium text-foreground underline-offset-2 hover:underline"
