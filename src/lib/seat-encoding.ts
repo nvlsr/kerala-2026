@@ -31,6 +31,10 @@ const SCALAR_COLUMNS: ReadonlySet<SortColumn> = new Set([
   "share",
   "margin",
 ])
+const MAGNITUDE_COLUMNS: ReadonlySet<SortColumn> = new Set([
+  ...SCALAR_COLUMNS,
+  ...DELTA_COLUMNS,
+])
 
 export function encodingModeFor(filters: Filters): EncodingMode {
   if (filters.result !== "all") return "alliance"
@@ -90,31 +94,26 @@ export function computeSeatEncodings(
 
   const mode = encodingModeFor(filters)
   const sortCol = filters.sort.column
+  const isMagSort = MAGNITUDE_COLUMNS.has(sortCol)
 
-  const visibleValues: number[] = []
-  if (mode !== "alliance" || SCALAR_COLUMNS.has(sortCol)) {
+  let minAbs = 0
+  let maxAbs = 0
+  if (isMagSort) {
+    const visibleAbs: number[] = []
     for (const [num, subj] of subjectByNum) {
       if (!inFilterSet.has(num) || !subj) continue
       const v = valueForSort(subj, sortCol)
-      if (v != null) visibleValues.push(v)
+      if (v != null) visibleAbs.push(Math.abs(v))
     }
-  }
-
-  let absMax = 0
-  let scalarMin = 0
-  let scalarMax = 0
-  if (visibleValues.length > 0) {
-    if (mode === "diverging") {
-      absMax = Math.max(...visibleValues.map(Math.abs))
-    } else {
-      scalarMin = Math.min(...visibleValues)
-      scalarMax = Math.max(...visibleValues)
+    if (visibleAbs.length > 0) {
+      minAbs = Math.min(...visibleAbs)
+      maxAbs = Math.max(...visibleAbs)
     }
   }
 
   const out = new Map<number, SeatEncoding>()
   for (const [num, subj] of subjectByNum) {
-    out.set(num, encodeSeat(subj, mode, sortCol, scalarMin, scalarMax, absMax))
+    out.set(num, encodeSeat(subj, mode, sortCol, isMagSort, minAbs, maxAbs))
   }
 
   for (const [num, enc] of out) {
@@ -133,43 +132,37 @@ function encodeSeat(
   subj: CandidateRow | null,
   mode: EncodingMode,
   sortCol: SortColumn,
-  scalarMin: number,
-  scalarMax: number,
-  absMax: number
+  isMagSort: boolean,
+  minAbs: number,
+  maxAbs: number
 ): SeatEncoding {
   if (!subj) return { color: NO_DATA_FILL, opacity: NO_DATA_OPACITY }
+
+  const v = isMagSort ? valueForSort(subj, sortCol) : null
+  const magOpacity =
+    v == null ? null : rangeOpacity(Math.abs(v), minAbs, maxAbs)
 
   if (mode === "alliance") {
     const meta = getAlliance(subj.allianceCode)
     const flat = isMainFront(subj.allianceCode) ? 0.7 : 0.25
-    if (SCALAR_COLUMNS.has(sortCol)) {
-      const v = valueForSort(subj, sortCol)
-      const opacity =
-        v == null ? flat : magnitudeOpacity(v, scalarMin, scalarMax)
-      return { color: meta.color, opacity }
-    }
-    return { color: meta.color, opacity: flat }
+    return { color: meta.color, opacity: magOpacity ?? flat }
   }
-
   if (mode === "magnitude") {
-    const v = valueForSort(subj, sortCol)
-    if (v == null) return { color: NO_DATA_FILL, opacity: NO_DATA_OPACITY }
-    return {
-      color: NEUTRAL_HUE,
-      opacity: magnitudeOpacity(v, scalarMin, scalarMax),
-    }
+    if (v == null || magOpacity == null)
+      return { color: NO_DATA_FILL, opacity: NO_DATA_OPACITY }
+    return { color: NEUTRAL_HUE, opacity: magOpacity }
   }
-
-  // diverging
-  const v = valueForSort(subj, sortCol)
-  if (v == null) return { color: NO_DATA_FILL, opacity: NO_DATA_OPACITY }
-  const color = v >= 0 ? POSITIVE_HUE : NEGATIVE_HUE
-  const opacity = absMax > 0 ? 0.25 + (Math.abs(v) / absMax) * 0.7 : 0.25
-  return { color, opacity }
+  if (v == null || magOpacity == null)
+    return { color: NO_DATA_FILL, opacity: NO_DATA_OPACITY }
+  return {
+    color: v >= 0 ? POSITIVE_HUE : NEGATIVE_HUE,
+    opacity: magOpacity,
+  }
 }
 
-function magnitudeOpacity(value: number, min: number, max: number): number {
-  if (max <= min) return 0.7
-  const t = (value - min) / (max - min)
-  return 0.25 + t * 0.7
+function rangeOpacity(absValue: number, minAbs: number, maxAbs: number): number {
+  if (maxAbs <= minAbs) return 0.7
+  const t = (absValue - minAbs) / (maxAbs - minAbs)
+  const clamped = Math.max(0, Math.min(1, t))
+  return 0.25 + clamped * 0.7
 }

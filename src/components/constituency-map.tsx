@@ -198,17 +198,16 @@ function Stat({ label, value }: { label: string; value: string }) {
 function Hint({ mode }: { mode: ReturnType<typeof encodingModeFor> }) {
   const explainer =
     mode === "magnitude"
-      ? "Polygons use a single hue with darker shades for higher values on the active sort column."
+      ? "Single neutral hue; darker shades = higher values on the active sort column."
       : mode === "diverging"
-        ? "Polygons turn green for gains over 2021 and rose for losses, with darker shades for larger swings."
-        : "Polygons are colored by alliance: winners by default, runner-up's alliance when the table is filtered to losers."
+        ? "Green = gain over 2021, rose = loss; darker shades = larger swings."
+        : "Polygons are colored by alliance (winner's by default, runner-up's when the table is filtered to losers); when sorted by a numeric column, darker shades mean a bigger value or swing."
   return (
     <div className="rounded-lg border border-dashed p-4 text-xs text-muted-foreground">
       <div className="mb-2 font-medium tracking-wide text-foreground/70 uppercase">
         Hover or click a seat
       </div>
-      {explainer} Out-of-filter seats fade — apply an Insights chip or sort to
-      change what the map encodes.
+      {explainer} Out-of-filter seats fade.
     </div>
   )
 }

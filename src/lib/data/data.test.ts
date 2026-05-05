@@ -410,6 +410,47 @@ describe("encodingModeFor / computeSeatEncodings", () => {
     const other = enc.get(1)!
     expect(other.opacity).toBeLessThan(aluva.opacity)
   })
+
+  test("alliance mode + delta sort scales opacity by |delta| (not flat)", () => {
+    const f: Filters = {
+      ...initialFilters,
+      result: "losers",
+      party: "Bharatiya Janata Party",
+      sort: { column: "shareDelta", dir: "asc" },
+    }
+    const enc = computeSeatEncodings(f, ALL_SEATS)
+    const inSetOpacities = [...enc.entries()]
+      .filter(([num]) => ALL_SEATS.has(num))
+      .map(([, e]) => e.opacity)
+      .filter((o) => o > 0.2) // skip dimmed/no-data
+    expect(new Set(inSetOpacities).size).toBeGreaterThan(1)
+  })
+
+  test("losers + sort=margin: top runner-up with biggest |margin| is darkest", () => {
+    const f: Filters = {
+      ...initialFilters,
+      result: "losers",
+      sort: { column: "margin", dir: "asc" },
+    }
+    const all = buildCandidateRows(null)
+    const topRunnerUpByNum = new Map<number, (typeof all)[number]>()
+    for (const r of all) {
+      if (r.isWinner) continue
+      const n = r.constituency.constituencyNumber
+      const cur = topRunnerUpByNum.get(n)
+      if (!cur || r.votes > cur.votes) topRunnerUpByNum.set(n, r)
+    }
+    const enc = computeSeatEncodings(f, ALL_SEATS)
+    let darkest = { num: -1, opacity: -1 }
+    for (const [num, e] of enc) {
+      if (e.opacity > darkest.opacity) darkest = { num, opacity: e.opacity }
+    }
+    const subject = topRunnerUpByNum.get(darkest.num)!
+    const maxAbs = Math.max(
+      ...[...topRunnerUpByNum.values()].map((r) => Math.abs(r.margin))
+    )
+    expect(Math.abs(subject.margin)).toBeCloseTo(maxAbs, 5)
+  })
 })
 
 describe("filtersReducer reset + hasActiveFilters", () => {
