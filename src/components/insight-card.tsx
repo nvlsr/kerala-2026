@@ -138,7 +138,7 @@ function pickNotes(sortColumn: SortColumn): string[] {
   const notes: string[] = []
   if (sortColumn === "share" || sortColumn === "shareDelta") {
     notes.push(
-      "Δ values only count seats where the party fielded a candidate in both 2021 and 2026 — a delta needs a baseline."
+      "Vote share changes are calculated only for seats where the same party contested both 2021 and 2026 — without a 2021 baseline there's nothing to compare against."
     )
   }
   if (sortColumn === "margin" || sortColumn === "marginDelta") {
@@ -147,7 +147,7 @@ function pickNotes(sortColumn: SortColumn): string[] {
     )
     if (sortColumn === "marginDelta") {
       notes.push(
-        "For 2026 winners, positive Δ margin means a wider win than 2021. For runners-up, positive Δ margin means a smaller gap (closer to winning)."
+        "Comparing 2021 and 2026 margins shows who got safer (winners widening their lead) and who closed in (runners-up narrowing the gap to winning)."
       )
     }
   }
