@@ -11,7 +11,6 @@ import {
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
-import { AlliancePill } from "@/components/alliance-pill"
 import { DeltaPercent } from "@/components/delta-percent"
 import { InfoIcon } from "@/components/info-icon"
 import { InsightsChips } from "@/components/insights-chips"
@@ -358,11 +357,8 @@ function CandidateTr({
         </span>
       </td>
       <td className="px-3 py-2">
-        <span className="flex items-center gap-1.5">
-          <span className="truncate" title={row.candidate.party}>
-            {row.partyShort}
-          </span>
-          <AlliancePill code={row.allianceCode} />
+        <span className="truncate" title={row.candidate.party}>
+          {row.partyShort}
         </span>
       </td>
       <td className="px-3 py-2 text-right tabular-nums">
