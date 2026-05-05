@@ -1,6 +1,12 @@
 import type { Filters } from "@/lib/filters"
 
-export type InsightParty = "BJP" | "BDJS" | "INC" | "IUML" | "CPI(M)"
+export type InsightParty =
+  | "BJP"
+  | "BDJS"
+  | "INC"
+  | "IUML"
+  | "CPI(M)"
+  | "CPI"
 
 export type InsightAlliance = "UDF" | "LDF" | "NDA"
 
@@ -33,6 +39,7 @@ const ALLIANCE_FOR_PARTY: Record<InsightParty, InsightAlliance> = {
   INC: "UDF",
   IUML: "UDF",
   "CPI(M)": "LDF",
+  CPI: "LDF",
 }
 
 /** Which alliance a party belongs to. Drives the "BJP filter also shows
@@ -153,6 +160,26 @@ export const curatedInsights: CuratedInsight[] = [
     tags: { party: "CPI(M)", theme: "vote-share" },
   },
   {
+    id: "cpi-gains",
+    question: "Where did CPI gain the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Communist Party of India",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+    tags: { party: "CPI", theme: "vote-share" },
+  },
+  {
+    id: "cpi-declines",
+    question: "Where did CPI lose the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Communist Party of India",
+      result: "all",
+      sort: { column: "shareDelta", dir: "asc" },
+    },
+    tags: { party: "CPI", theme: "vote-share" },
+  },
+  {
     id: "closest-2026-contests",
     question: "What were the closest 2026 contests?",
     filters: {
@@ -237,6 +264,16 @@ export const curatedInsights: CuratedInsight[] = [
       sort: { column: "margin", dir: "asc" },
     },
     tags: { party: "CPI(M)", theme: "margins" },
+  },
+  {
+    id: "cpi-closest-wins",
+    question: "Where did CPI win by the smallest margin?",
+    filters: {
+      party: "Communist Party of India",
+      result: "winners",
+      sort: { column: "margin", dir: "asc" },
+    },
+    tags: { party: "CPI", theme: "margins" },
   },
   {
     id: "udf-gap-closers",
@@ -367,6 +404,16 @@ export const curatedInsights: CuratedInsight[] = [
     tags: { party: "CPI(M)", theme: "margin-movement" },
   },
   {
+    id: "cpi-gap-closers",
+    question: "Where is CPI gaining ground in losing seats?",
+    filters: {
+      party: "Communist Party of India",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { party: "CPI", theme: "margin-movement" },
+  },
+  {
     id: "bjp-at-risk-wins",
     question: "Where is BJP losing ground in winning seats?",
     filters: {
@@ -416,10 +463,27 @@ export const curatedInsights: CuratedInsight[] = [
     },
     tags: { party: "CPI(M)", theme: "margin-movement" },
   },
+  {
+    id: "cpi-at-risk-wins",
+    question: "Where is CPI losing ground in winning seats?",
+    filters: {
+      party: "Communist Party of India",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { party: "CPI", theme: "margin-movement" },
+  },
 ]
 
 /** Stable display order for party filter pills (grouped by alliance: NDA, UDF, LDF). */
-const PARTY_ORDER: InsightParty[] = ["BJP", "BDJS", "INC", "IUML", "CPI(M)"]
+const PARTY_ORDER: InsightParty[] = [
+  "BJP",
+  "BDJS",
+  "INC",
+  "IUML",
+  "CPI(M)",
+  "CPI",
+]
 
 /** Stable display order for theme filter pills. */
 const THEME_ORDER: InsightTheme[] = [
