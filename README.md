@@ -1,21 +1,74 @@
-# React + TypeScript + Vite + shadcn/ui
+# Kerala 2026
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+An interactive results dashboard for the 2026 Kerala Legislative Assembly election. All 140 constituencies, three alliances (UDF, LDF, NDA), and historical context back to earlier cycles, in a single page that you drill into by clicking the map, alliance table, party row, or seat polygon.
 
-## Adding components
+## What's in it
 
-To add components to your app, run the following command:
+- **District map** — clickable choropleth that scopes every section below it.
+- **Alliance + party tables** — seat tallies, vote shares, and 2021→2026 deltas, with sparkline trend charts for selected fronts/parties.
+- **Candidate table** — every contesting candidate with vote share, margin, and Δ-from-2021 columns; full text search; result and sort filters with shareable URLs.
+- **Constituency map** — 140-AC choropleth whose color encoding tracks the active filter (winning alliance / runner-up alliance / magnitude / gain-loss diverging) so the spatial view always matches the table.
+- **Insights chips** — curated combos like "BJP gains 2021→2026" or "Closest contests" that apply multiple filters at once.
+- **Per-seat detail** — clicking a constituency opens an inline panel with a candidate roster, past winners, and a multi-cycle trend chart.
+
+All filter state is URL-synced, so any view is shareable as a link.
+
+## Stack
+
+- **Vite 7 + React 19 + TypeScript** with the `@/` path alias.
+- **Tailwind CSS v4** + **shadcn/ui** (style: `base-nova`, on `@base-ui/react`).
+- **Recharts** for line charts; SVG-rendered maps with `d3-geo` paths pre-projected at build time.
+- **Bun** as the runtime and package manager.
+- **Vitest** for unit tests.
+
+## Getting started
 
 ```bash
-npx shadcn@latest add button
+bun install
+bun run dev          # serves at http://localhost:5173 (Vite default)
 ```
 
-This will place the ui components in the `src/components` directory.
+Other scripts:
 
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button"
+```bash
+bun run typecheck    # tsc --noEmit
+bun run lint         # eslint .
+bun run test         # vitest run
+bun run build        # tsc -b && vite build
+bun run format       # prettier --write
 ```
+
+## Project layout
+
+```
+data/                 source JSON (election + historical + map paths)
+src/
+  App.tsx             page composition + URL state plumbing
+  components/         section components + shadcn/ui primitives
+  lib/
+    data/             data layer: parties, alliances, constituencies,
+                      historical, aggregates, candidate-rows
+    filters.ts        Filters reducer + URL serialization
+    seat-encoding.ts  result/sort-aware AC map encoding
+    candidate-sort.ts column comparators for the candidate table
+    insights.ts       curated chip definitions
+docs/
+  architecture.md     read this before adding a section/feature
+  maintainability.md  open refactor backlog
+```
+
+`docs/architecture.md` is the contract for how new sections, filters, and data fields fit in. Read it before you build anything bigger than a one-line tweak.
+
+## Data
+
+Election results are sourced from the Election Commission of India (`results.eci.gov.in`). Historical cycles, alliance metadata, and constituency geometry are bundled in `data/` as JSON. There is no runtime API call — the entire dataset is shipped with the build.
+
+## Contributing
+
+Bug reports, data corrections, and pull requests are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the workflow.
+
+For feedback or issues, the GitHub issue tracker is the right place: https://github.com/nvlsr/kerala-2026/issues
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
