@@ -1,9 +1,25 @@
 import type { Filters } from "@/lib/filters"
 
+export type InsightParty = "BJP" | "INC" | "IUML" | "CPI(M)"
+
+export type InsightTheme =
+  | "vote-share"
+  | "margins"
+  | "margin-movement"
+  | "multi-cycle"
+  | "geographic"
+
 export type CuratedInsight = {
   id: string
   question: string
   filters: Partial<Filters>
+  tags: {
+    /** Party this card is about. Omit for cross-party / state-level cards. */
+    party?: InsightParty
+    /** The dimension being measured. Direction (gains vs losses) is encoded
+     *  in the filters' sort dir, not the tag — paired questions share a tag. */
+    theme: InsightTheme
+  }
 }
 
 /**
@@ -14,6 +30,7 @@ export type CuratedInsight = {
  *
  * Adding a new insight: append a record. The `filters` field is the same
  * partial-Filters shape used by InsightChip presets in src/lib/insights.ts.
+ * Tag the card so the /insights filter bar can group it with related cards.
  */
 export const curatedInsights: CuratedInsight[] = [
   {
@@ -24,6 +41,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "all",
       sort: { column: "shareDelta", dir: "desc" },
     },
+    tags: { party: "BJP", theme: "vote-share" },
   },
   {
     id: "bjp-declines",
@@ -33,6 +51,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "all",
       sort: { column: "shareDelta", dir: "asc" },
     },
+    tags: { party: "BJP", theme: "vote-share" },
   },
   {
     id: "inc-gains",
@@ -42,6 +61,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "all",
       sort: { column: "shareDelta", dir: "desc" },
     },
+    tags: { party: "INC", theme: "vote-share" },
   },
   {
     id: "inc-declines",
@@ -51,6 +71,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "all",
       sort: { column: "shareDelta", dir: "asc" },
     },
+    tags: { party: "INC", theme: "vote-share" },
   },
   {
     id: "iuml-gains",
@@ -60,6 +81,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "all",
       sort: { column: "shareDelta", dir: "desc" },
     },
+    tags: { party: "IUML", theme: "vote-share" },
   },
   {
     id: "iuml-declines",
@@ -69,6 +91,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "all",
       sort: { column: "shareDelta", dir: "asc" },
     },
+    tags: { party: "IUML", theme: "vote-share" },
   },
   {
     id: "cpim-gains",
@@ -78,6 +101,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "all",
       sort: { column: "shareDelta", dir: "desc" },
     },
+    tags: { party: "CPI(M)", theme: "vote-share" },
   },
   {
     id: "cpim-declines",
@@ -87,5 +111,46 @@ export const curatedInsights: CuratedInsight[] = [
       result: "all",
       sort: { column: "shareDelta", dir: "asc" },
     },
+    tags: { party: "CPI(M)", theme: "vote-share" },
   },
 ]
+
+/** Stable display order for party filter pills. */
+const PARTY_ORDER: InsightParty[] = ["BJP", "INC", "IUML", "CPI(M)"]
+
+/** Stable display order for theme filter pills. */
+const THEME_ORDER: InsightTheme[] = [
+  "vote-share",
+  "margins",
+  "margin-movement",
+  "multi-cycle",
+  "geographic",
+]
+
+const THEME_LABELS: Record<InsightTheme, string> = {
+  "vote-share": "Vote share",
+  margins: "Margins",
+  "margin-movement": "Margin movement",
+  "multi-cycle": "Multi-cycle",
+  geographic: "Geographic",
+}
+
+export function themeLabel(theme: InsightTheme): string {
+  return THEME_LABELS[theme]
+}
+
+/** Parties that appear in at least one curated insight, in stable order. */
+export function getAvailableParties(): InsightParty[] {
+  const present = new Set<InsightParty>()
+  for (const i of curatedInsights) {
+    if (i.tags.party) present.add(i.tags.party)
+  }
+  return PARTY_ORDER.filter((p) => present.has(p))
+}
+
+/** Themes that appear in at least one curated insight, in stable order. */
+export function getAvailableThemes(): InsightTheme[] {
+  const present = new Set<InsightTheme>()
+  for (const i of curatedInsights) present.add(i.tags.theme)
+  return THEME_ORDER.filter((t) => present.has(t))
+}
