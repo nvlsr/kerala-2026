@@ -97,8 +97,17 @@ export function App() {
             constituency={selectedConstituency}
           />
         )}
-        <footer className="mx-auto max-w-6xl px-6 pt-2 pb-10 text-xs text-muted-foreground">
-          Source: Election Commission of India · results.eci.gov.in
+        <footer className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-2 gap-y-1 px-6 pt-2 pb-10 text-xs text-muted-foreground">
+          <span>Source: Election Commission of India · results.eci.gov.in</span>
+          <span aria-hidden>·</span>
+          <a
+            href="https://github.com/nvlsr/kerala-2026/issues/new"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline-offset-2 hover:text-foreground hover:underline"
+          >
+            Report an issue or share feedback
+          </a>
         </footer>
       </div>
     </TooltipProvider>
