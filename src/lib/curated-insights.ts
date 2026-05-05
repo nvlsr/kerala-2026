@@ -2,6 +2,8 @@ import type { Filters } from "@/lib/filters"
 
 export type InsightParty = "BJP" | "BDJS" | "INC" | "IUML" | "CPI(M)"
 
+export type InsightAlliance = "UDF" | "LDF" | "NDA"
+
 export type InsightTheme =
   | "vote-share"
   | "margins"
@@ -16,10 +18,27 @@ export type CuratedInsight = {
   tags: {
     /** Party this card is about. Omit for cross-party / state-level cards. */
     party?: InsightParty
+    /** Alliance this card is about. A party-pill selection also surfaces the
+     *  matching alliance's cards (e.g. clicking BJP shows NDA cards too). */
+    alliance?: InsightAlliance
     /** The dimension being measured. Direction (gains vs losses) is encoded
      *  in the filters' sort dir, not the tag — paired questions share a tag. */
     theme: InsightTheme
   }
+}
+
+const ALLIANCE_FOR_PARTY: Record<InsightParty, InsightAlliance> = {
+  BJP: "NDA",
+  BDJS: "NDA",
+  INC: "UDF",
+  IUML: "UDF",
+  "CPI(M)": "LDF",
+}
+
+/** Which alliance a party belongs to. Drives the "BJP filter also shows
+ *  NDA-level cards" behaviour on /insights. */
+export function allianceForInsightParty(party: InsightParty): InsightAlliance {
+  return ALLIANCE_FOR_PARTY[party]
 }
 
 /**
@@ -159,7 +178,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "losers",
       sort: { column: "marginDelta", dir: "desc" },
     },
-    tags: { theme: "margin-movement" },
+    tags: { alliance: "UDF", theme: "margin-movement" },
   },
   {
     id: "udf-at-risk-wins",
@@ -169,7 +188,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "winners",
       sort: { column: "marginDelta", dir: "asc" },
     },
-    tags: { theme: "margin-movement" },
+    tags: { alliance: "UDF", theme: "margin-movement" },
   },
   {
     id: "ldf-gap-closers",
@@ -179,7 +198,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "losers",
       sort: { column: "marginDelta", dir: "desc" },
     },
-    tags: { theme: "margin-movement" },
+    tags: { alliance: "LDF", theme: "margin-movement" },
   },
   {
     id: "ldf-at-risk-wins",
@@ -189,7 +208,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "winners",
       sort: { column: "marginDelta", dir: "asc" },
     },
-    tags: { theme: "margin-movement" },
+    tags: { alliance: "LDF", theme: "margin-movement" },
   },
   {
     id: "nda-gap-closers",
@@ -199,7 +218,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "losers",
       sort: { column: "marginDelta", dir: "desc" },
     },
-    tags: { theme: "margin-movement" },
+    tags: { alliance: "NDA", theme: "margin-movement" },
   },
   {
     id: "nda-at-risk-wins",
@@ -209,7 +228,7 @@ export const curatedInsights: CuratedInsight[] = [
       result: "winners",
       sort: { column: "marginDelta", dir: "asc" },
     },
-    tags: { theme: "margin-movement" },
+    tags: { alliance: "NDA", theme: "margin-movement" },
   },
 ]
 

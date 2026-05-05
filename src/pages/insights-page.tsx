@@ -10,6 +10,7 @@ import {
 import { SiteFooter } from "@/components/site-footer"
 import { ThemeToggle } from "@/components/theme-toggle"
 import {
+  allianceForInsightParty,
   curatedInsights,
   getAvailableParties,
   getAvailableThemes,
@@ -21,8 +22,11 @@ export function InsightsPage() {
 
   const visibleInsights = useMemo(() => {
     return curatedInsights.filter((insight) => {
-      if (partyFilter !== "all" && insight.tags.party !== partyFilter) {
-        return false
+      if (partyFilter !== "all") {
+        const partyMatch = insight.tags.party === partyFilter
+        const allianceMatch =
+          insight.tags.alliance === allianceForInsightParty(partyFilter)
+        if (!partyMatch && !allianceMatch) return false
       }
       if (themeFilter !== "all" && insight.tags.theme !== themeFilter) {
         return false
