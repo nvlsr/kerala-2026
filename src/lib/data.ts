@@ -187,21 +187,6 @@ export function winnerOf(c: Constituency): Candidate {
   return w
 }
 
-function realCandidatesByVotes(c: Constituency): Candidate[] {
-  return c.candidates
-    .filter((x) => !x.isNota)
-    .slice()
-    .sort((a, b) => b.votes - a.votes)
-}
-
-export function runnerUpOf(c: Constituency): Candidate {
-  return realCandidatesByVotes(c)[1]!
-}
-
-export function secondRunnerUpOf(c: Constituency): Candidate | null {
-  return realCandidatesByVotes(c)[2] ?? null
-}
-
 export function totalVotesIn(c: Constituency): number {
   return c.candidates.reduce((s, x) => s + x.votes, 0)
 }
@@ -929,119 +914,35 @@ export function getPartyTrendData(
   }
 }
 
-export type PartyLens =
-  | "top-share"
-  | "won"
-  | "closest-losses"
-  | "biggest-gains"
-  | "biggest-declines"
-
-export type PartyConstituencyRow = {
-  constituencyNumber: number
-  constituencyName: string
-  candidateName: string
-  votes: number
-  share: number
-  margin: number
+export type Party2021Baseline = {
+  sharePct: number
   marginPct: number
-  isWinner: boolean
-  rank: number
-  winnerName: string
-  winnerParty: string
-  winnerPartyShort: string
-  winnerAllianceCode: AllianceCode
-  shareDelta: number | null
 }
 
-const PARTY_TABLE_LIMIT = 10
+export function get2021Baseline(
+  c: Constituency,
+  partyCanonical: string
+): Party2021Baseline | null {
+  if (partyCanonical === "Independent") return null
+  const hist = getHistoricalFor(c.constituencyNumber)
+  if (!hist) return null
+  const prev = hist.elections.find(
+    (e) => e.type === "general" && e.year === 2021
+  )
+  if (!prev || prev.candidates.length === 0) return null
 
-export function getPartyConstituencies(
-  party: string,
-  lens: PartyLens,
-  districtId: string | null = null
-): PartyConstituencyRow[] {
-  const list = constituenciesIn(districtId)
-  const rows: PartyConstituencyRow[] = []
+  const prevCand = prev.candidates.find(
+    (cd) => canonicalPartyName(cd.party) === partyCanonical
+  )
+  if (!prevCand) return null
 
-  for (const c of list) {
-    const total = totalVotesIn(c)
-    if (total === 0) continue
-
-    const candidate = c.candidates.find(
-      (x) => !x.isNota && canonicalPartyName(x.party) === party
-    )
-    if (!candidate) continue
-
-    const winner = winnerOf(c)
-    const isWinner = candidate === winner
-    const realCands = c.candidates
-      .filter((x) => !x.isNota)
-      .sort((a, b) => b.votes - a.votes)
-    const rank = realCands.findIndex((x) => x === candidate) + 1
-
-    const margin = isWinner ? candidate.margin : candidate.votes - winner.votes
-    const marginPct = total > 0 ? (margin / total) * 100 : 0
-    const share = (candidate.votes / total) * 100
-
-    let shareDelta: number | null = null
-    const hist = getHistoricalFor(c.constituencyNumber)
-    if (hist) {
-      const prev = hist.elections.find(
-        (e) => e.type === "general" && e.year === 2021
-      )
-      if (prev) {
-        const prevCand = prev.candidates.find(
-          (cd) => canonicalPartyName(cd.party) === party
-        )
-        const prevTotal = prev.candidates.reduce((s, cd) => s + cd.votes, 0)
-        if (prevCand && prevTotal > 0) {
-          shareDelta = share - (prevCand.votes / prevTotal) * 100
-        }
-      }
-    }
-
-    rows.push({
-      constituencyNumber: c.constituencyNumber,
-      constituencyName: displayConstituencyName(c),
-      candidateName: candidate.name,
-      votes: candidate.votes,
-      share,
-      margin,
-      marginPct,
-      isWinner,
-      rank,
-      winnerName: winner.name,
-      winnerParty: canonicalPartyName(winner.party),
-      winnerPartyShort: partyShort(winner.party),
-      winnerAllianceCode: allianceForCandidate(c, winner),
-      shareDelta,
-    })
-  }
-
-  switch (lens) {
-    case "top-share":
-      return rows.sort((a, b) => b.share - a.share).slice(0, PARTY_TABLE_LIMIT)
-    case "won":
-      return rows
-        .filter((r) => r.isWinner)
-        .sort((a, b) => b.share - a.share)
-        .slice(0, PARTY_TABLE_LIMIT)
-    case "closest-losses":
-      return rows
-        .filter((r) => !r.isWinner)
-        .sort((a, b) => b.margin - a.margin)
-        .slice(0, PARTY_TABLE_LIMIT)
-    case "biggest-gains":
-      return rows
-        .filter((r) => r.shareDelta != null)
-        .sort((a, b) => (b.shareDelta ?? 0) - (a.shareDelta ?? 0))
-        .slice(0, PARTY_TABLE_LIMIT)
-    case "biggest-declines":
-      return rows
-        .filter((r) => r.shareDelta != null)
-        .sort((a, b) => (a.shareDelta ?? 0) - (b.shareDelta ?? 0))
-        .slice(0, PARTY_TABLE_LIMIT)
-  }
+  const sorted = [...prev.candidates].sort((a, b) => b.votes - a.votes)
+  const prevWinner = sorted[0]!
+  const wasWinner = prevCand === prevWinner
+  const marginPct = wasWinner
+    ? prevWinner.votePct - (sorted[1]?.votePct ?? 0)
+    : prevCand.votePct - prevWinner.votePct
+  return { sharePct: prevCand.votePct, marginPct }
 }
 
 export function formatNumber(n: number): string {

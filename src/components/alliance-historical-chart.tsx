@@ -17,7 +17,7 @@ import {
 export type AllianceMode = "share" | "seats"
 
 type Props = {
-  selected: AllianceCode
+  selected: AllianceCode | null
   scope: string | null
   mode: AllianceMode
 }
@@ -104,7 +104,9 @@ export function AllianceHistoricalChart({ selected, scope, mode }: Props) {
         />
         {FRONTS.map((code) => {
           const meta = getAlliance(code)
+          const noSelection = selected === null
           const isSelected = code === selected
+          const dimmed = !noSelection && !isSelected
           return (
             <Line
               key={code}
@@ -112,12 +114,12 @@ export function AllianceHistoricalChart({ selected, scope, mode }: Props) {
               type="monotone"
               stroke={meta.color}
               strokeWidth={isSelected ? 3 : 2}
-              strokeOpacity={isSelected ? 1 : 0.35}
+              strokeOpacity={dimmed ? 0.35 : 1}
               dot={{
                 r: isSelected ? 4 : 3,
                 fill: meta.color,
                 strokeWidth: 0,
-                opacity: isSelected ? 1 : 0.4,
+                opacity: dimmed ? 0.4 : 1,
               }}
               activeDot={{
                 r: 5,

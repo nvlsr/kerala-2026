@@ -5,7 +5,7 @@ import { canonicalPartyName, partyShort } from "@/lib/data"
 
 type Props = {
   party: string
-  onSelect: ((party: string) => void) | null | undefined
+  onSelect?: ((party: string) => void) | null
   className?: string
   title?: string
   children?: ReactNode

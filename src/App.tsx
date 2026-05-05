@@ -1,12 +1,12 @@
 import { useState } from "react"
 
+import { TooltipProvider } from "@/components/ui/tooltip"
 import { ScopeTitle } from "@/components/scope-title"
-import { StateHeader } from "@/components/state-header"
 import { DistrictStrip } from "@/components/district-strip"
-import { SeatGrid } from "@/components/seat-grid"
+import { AllianceSection } from "@/components/alliance-section"
+import { PartySection } from "@/components/party-section"
+import { CandidateTable } from "@/components/candidate-table"
 import { ConstituencyDetail } from "@/components/constituency-detail"
-import { AllianceDetail } from "@/components/alliance-detail"
-import { PartyDetail } from "@/components/party-detail"
 import { constituencies, type AllianceCode } from "@/lib/data"
 
 export function App() {
@@ -23,40 +23,48 @@ export function App() {
         null)
       : null
 
+  const handleSelectAlliance = (code: AllianceCode | null) => {
+    setSelectedAlliance(code)
+    if (code !== selectedAlliance) setSelectedParty(null)
+  }
+
   return (
-    <div className="min-h-svh bg-background text-foreground">
-      <ScopeTitle scope={scope} />
-      <DistrictStrip scope={scope} onSelect={setScope} />
-      <StateHeader scope={scope} onSelectAlliance={setSelectedAlliance} />
-      <SeatGrid scope={scope} onSelect={setSelectedSeat} />
-      <ConstituencyDetail
-        constituency={selectedConstituency}
-        onClose={() => setSelectedSeat(null)}
-        onSelectDistrict={(districtId) => {
-          setScope(districtId)
-          setSelectedSeat(null)
-        }}
-        onSelectParty={setSelectedParty}
-      />
-      <AllianceDetail
-        alliance={selectedAlliance}
-        scope={scope}
-        onClose={() => setSelectedAlliance(null)}
-        onSelectParty={setSelectedParty}
-      />
-      <PartyDetail
-        party={selectedParty}
-        scope={scope}
-        onClose={() => setSelectedParty(null)}
-        onSelectConstituency={(n) => {
-          setSelectedParty(null)
-          setSelectedSeat(n)
-        }}
-      />
-      <footer className="mx-auto max-w-6xl px-6 pt-2 pb-10 text-xs text-muted-foreground">
-        Source: Election Commission of India · results.eci.gov.in
-      </footer>
-    </div>
+    <TooltipProvider delay={200}>
+      <div className="min-h-svh bg-background text-foreground">
+        <ScopeTitle scope={scope} />
+        <DistrictStrip scope={scope} onSelect={setScope} />
+        <AllianceSection
+          scope={scope}
+          selectedAlliance={selectedAlliance}
+          onSelectAlliance={handleSelectAlliance}
+        />
+        {selectedAlliance && (
+          <PartySection
+            scope={scope}
+            alliance={selectedAlliance}
+            selectedParty={selectedParty}
+            onSelectParty={setSelectedParty}
+          />
+        )}
+        <CandidateTable
+          scope={scope}
+          alliance={selectedAlliance}
+          party={selectedParty}
+          onSelectConstituency={setSelectedSeat}
+        />
+        <ConstituencyDetail
+          constituency={selectedConstituency}
+          onClose={() => setSelectedSeat(null)}
+          onSelectDistrict={(districtId) => {
+            setScope(districtId)
+            setSelectedSeat(null)
+          }}
+        />
+        <footer className="mx-auto max-w-6xl px-6 pt-2 pb-10 text-xs text-muted-foreground">
+          Source: Election Commission of India · results.eci.gov.in
+        </footer>
+      </div>
+    </TooltipProvider>
   )
 }
 

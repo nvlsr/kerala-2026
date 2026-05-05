@@ -152,7 +152,7 @@ function DistrictChip({
                     <span className="font-medium text-foreground/80">
                       {code === "OTHER" ? "Oth" : code}
                     </span>{" "}
-                    {row.seats} / {formatPercent(row.voteShare, 0)}
+                    {row.seats} / {formatPercent(row.voteShare, 1)}
                   </span>
                 </span>
               )

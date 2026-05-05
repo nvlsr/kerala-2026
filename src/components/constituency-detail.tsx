@@ -37,14 +37,12 @@ type Props = {
   constituency: Constituency | null
   onClose: () => void
   onSelectDistrict: (districtId: string) => void
-  onSelectParty: (party: string) => void
 }
 
 export function ConstituencyDetail({
   constituency,
   onClose,
   onSelectDistrict,
-  onSelectParty,
 }: Props) {
   return (
     <Sheet
@@ -61,7 +59,6 @@ export function ConstituencyDetail({
           <DetailBody
             constituency={constituency}
             onSelectDistrict={onSelectDistrict}
-            onSelectParty={onSelectParty}
           />
         )}
       </SheetContent>
@@ -72,11 +69,9 @@ export function ConstituencyDetail({
 function DetailBody({
   constituency,
   onSelectDistrict,
-  onSelectParty,
 }: {
   constituency: Constituency
   onSelectDistrict: (districtId: string) => void
-  onSelectParty: (party: string) => void
 }) {
   const [mode, setMode] = useState<DrawerMode>("share")
   const winner = winnerOf(constituency)
@@ -162,7 +157,6 @@ function DetailBody({
               </div>
               <PartyLink
                 party={winner.party}
-                onSelect={onSelectParty}
                 className="block text-sm text-muted-foreground"
               />
             </div>
@@ -210,7 +204,6 @@ function DetailBody({
                 winnerVotes={winner.votes}
                 isWinner={false}
                 mode={mode}
-                onSelectParty={onSelectParty}
               />
             ))}
           </ol>
@@ -221,7 +214,6 @@ function DetailBody({
               rank={null}
               constituency={constituency}
               mode={mode}
-              onSelectParty={onSelectParty}
             />
           )}
 
@@ -241,7 +233,6 @@ function DetailBody({
                     rank={i + 4}
                     constituency={constituency}
                     mode={mode}
-                    onSelectParty={onSelectParty}
                   />
                 ))}
               </ul>
@@ -271,7 +262,6 @@ function CandidateRow({
   winnerVotes,
   isWinner,
   mode,
-  onSelectParty,
 }: {
   candidate: Candidate
   rank: number
@@ -279,7 +269,6 @@ function CandidateRow({
   winnerVotes: number
   isWinner: boolean
   mode: DrawerMode
-  onSelectParty: (party: string) => void
 }) {
   const allianceCode = allianceForCandidate(constituency, candidate)
   const alliance = getAlliance(allianceCode)
@@ -332,11 +321,7 @@ function CandidateRow({
             )}
           </div>
           <div className="flex items-center gap-1.5 truncate text-xs text-muted-foreground">
-            <PartyLink
-              party={candidate.party}
-              onSelect={onSelectParty}
-              className="truncate"
-            />
+            <PartyLink party={candidate.party} className="truncate" />
             <AlliancePill code={allianceCode} />
           </div>
         </div>
@@ -362,13 +347,11 @@ function CompactRow({
   rank,
   constituency,
   mode,
-  onSelectParty,
 }: {
   candidate: Candidate
   rank: number | null
   constituency: Constituency
   mode: DrawerMode
-  onSelectParty: (party: string) => void
 }) {
   const allianceCode = allianceForCandidate(constituency, candidate)
   const alliance = getAlliance(allianceCode)
@@ -401,11 +384,7 @@ function CompactRow({
           : normalizeCandidateName(candidate.name)}
       </span>
       <span className="shrink-0 text-muted-foreground">
-        {candidate.isNota ? (
-          ""
-        ) : (
-          <PartyLink party={candidate.party} onSelect={onSelectParty} />
-        )}
+        {candidate.isNota ? "" : <PartyLink party={candidate.party} />}
       </span>
       <span className="w-16 shrink-0 text-right tabular-nums">
         {mode === "share"
