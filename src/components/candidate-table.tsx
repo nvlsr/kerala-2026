@@ -19,15 +19,13 @@ import { Section } from "@/components/section"
 import { cn } from "@/lib/utils"
 import {
   buildCandidateRows,
-  type CandidateRow,
-} from "@/lib/data/candidate-rows"
-import {
   formatNumber,
   formatPercent,
   getAlliance,
   getDistrict,
   isMainFront,
   partyShort,
+  type CandidateRow,
 } from "@/lib/data"
 import type {
   FilterAction,

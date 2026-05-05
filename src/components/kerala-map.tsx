@@ -3,18 +3,18 @@ import { useMemo, useState } from "react"
 import paths from "@data/kerala-districts-paths.json"
 import { Section } from "@/components/section"
 import {
+  COMPARABLE_ALLIANCE_CODES,
   formatPercent,
   getAlliance,
   getDemographicsFor,
   getReligion,
   getStateSummary,
+  MAIN_FRONT_CODES,
   type AllianceCode,
   type ReligionCode,
 } from "@/lib/data"
 
-const COMP_ALLIANCES: AllianceCode[] = ["UDF", "LDF", "NDA", "OTHER"]
 const COMP_RELIGIONS: ReligionCode[] = ["hindu", "muslim", "christian"]
-const FRONTS: AllianceCode[] = ["UDF", "LDF", "NDA"]
 
 type Props = {
   scope: string | null
@@ -31,7 +31,7 @@ export function KeralaMap({ scope, onSelect }: Props) {
       const total = summary.totalSeats || 1
       let topCode: AllianceCode = "OTHER"
       let topSeats = 0
-      for (const code of FRONTS) {
+      for (const code of MAIN_FRONT_CODES) {
         const row = summary.rows.find((r) => r.code === code)!
         if (row.seats > topSeats) {
           topSeats = row.seats
@@ -126,7 +126,7 @@ function DistrictPanel({ id }: { id: string | null }) {
 
       <CompositionRow
         label="Seats"
-        segments={COMP_ALLIANCES.map((code) => {
+        segments={COMPARABLE_ALLIANCE_CODES.map((code) => {
           const row = seatRow(code)
           return {
             key: code,
@@ -140,7 +140,7 @@ function DistrictPanel({ id }: { id: string | null }) {
       />
       <CompositionRow
         label="Votes"
-        segments={COMP_ALLIANCES.map((code) => {
+        segments={COMPARABLE_ALLIANCE_CODES.map((code) => {
           const row = seatRow(code)
           return {
             key: code,
@@ -159,7 +159,7 @@ function DistrictPanel({ id }: { id: string | null }) {
       />
 
       <div className="mt-3 flex flex-wrap gap-x-2 gap-y-0.5 text-[10px] text-muted-foreground tabular-nums">
-        {COMP_ALLIANCES.map((code) => {
+        {COMPARABLE_ALLIANCE_CODES.map((code) => {
           const row = seatRow(code)
           const meta = getAlliance(code)
           return (

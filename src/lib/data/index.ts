@@ -16,6 +16,7 @@
  */
 export * from "./alliances"
 export * from "./aggregates"
+export * from "./candidate-rows"
 export * from "./constituencies"
 export * from "./demographics"
 export * from "./districts"

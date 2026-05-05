@@ -2,6 +2,7 @@ import {
   allianceForCandidate,
   canonicalPartyName,
   constituenciesIn,
+  isAllianceCode,
   type AllianceCode,
 } from "@/lib/data"
 
@@ -116,7 +117,6 @@ const SORT_COLUMNS: SortColumn[] = [
   "margin",
   "marginDelta",
 ]
-const ALLIANCE_CODES = ["UDF", "LDF", "NDA", "OTHER", "NOTA"] as const
 const RESULT_VALUES: ResultFilter[] = ["winners", "losers", "all"]
 
 /**
@@ -149,10 +149,8 @@ export function parseFilters(params: URLSearchParams): Filters {
   const district = params.get("district")
   if (district) filters.district = district
 
-  const alliance = params.get("alliance") as AllianceCode | null
-  if (alliance && (ALLIANCE_CODES as readonly string[]).includes(alliance)) {
-    filters.alliance = alliance
-  }
+  const alliance = params.get("alliance")
+  if (isAllianceCode(alliance)) filters.alliance = alliance
 
   const party = params.get("party")
   if (party) filters.party = party

@@ -11,6 +11,7 @@ import {
   formatPercent,
   getAlliance,
   getAllianceTrendData,
+  MAIN_FRONT_CODES,
   type AllianceCode,
 } from "@/lib/data"
 
@@ -22,15 +23,13 @@ type Props = {
   mode: AllianceMode
 }
 
-const FRONTS: AllianceCode[] = ["UDF", "LDF", "NDA"]
-
 export function AllianceHistoricalChart({ selected, scope, mode }: Props) {
   const trend = useMemo(() => getAllianceTrendData(scope), [scope])
 
   if (trend.years.length === 0) return null
 
   const chartConfig: ChartConfig = Object.fromEntries(
-    FRONTS.map((code) => {
+    MAIN_FRONT_CODES.map((code) => {
       const meta = getAlliance(code)
       return [code, { label: meta.code, color: meta.color }]
     })
@@ -38,7 +37,7 @@ export function AllianceHistoricalChart({ selected, scope, mode }: Props) {
 
   const data = trend.years.map((year, i) => {
     const point: Record<string, number | string> = { year }
-    for (const code of FRONTS) {
+    for (const code of MAIN_FRONT_CODES) {
       const p = trend.series[code][i]
       point[code] = mode === "share" ? p.share : p.seats
     }
@@ -102,7 +101,7 @@ export function AllianceHistoricalChart({ selected, scope, mode }: Props) {
             />
           }
         />
-        {FRONTS.map((code) => {
+        {MAIN_FRONT_CODES.map((code) => {
           const meta = getAlliance(code)
           const noSelection = selected === null
           const isSelected = code === selected

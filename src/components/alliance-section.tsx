@@ -6,6 +6,7 @@ import { InfoIcon } from "@/components/info-icon"
 import { Section } from "@/components/section"
 import { cn } from "@/lib/utils"
 import {
+  COMPARABLE_ALLIANCE_CODES,
   formatPercent,
   getAlliance,
   getAllianceBreakdown,
@@ -20,8 +21,6 @@ type Props = {
   onSelectAlliance: (code: AllianceCode | null) => void
 }
 
-const ALLIANCE_CODES: AllianceCode[] = ["UDF", "LDF", "NDA", "OTHER"]
-
 export function AllianceSection({
   scope,
   selectedAlliance,
@@ -32,7 +31,7 @@ export function AllianceSection({
 
   const rows = useMemo(
     () =>
-      ALLIANCE_CODES.map((code) => {
+      COMPARABLE_ALLIANCE_CODES.map((code) => {
         const breakdown = getAllianceBreakdown(code, scope)
         const series = trend.series[code]
         const point2026 = series[series.length - 1]

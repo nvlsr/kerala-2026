@@ -27,6 +27,7 @@ import {
 
 const WINNERS_KEY = "__winners__"
 const ROSTER_KEY = "__roster__"
+// Hide candidates polling under 1% from the default roster view
 const ROSTER_THRESHOLD = 0.01
 
 type Props = {
