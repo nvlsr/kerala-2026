@@ -171,6 +171,74 @@ export const curatedInsights: CuratedInsight[] = [
     tags: { theme: "margins" },
   },
   {
+    id: "plurality-winners",
+    question: "Where did the winner take the smallest share of the vote?",
+    filters: {
+      result: "winners",
+      sort: { column: "share", dir: "asc" },
+    },
+    tags: { theme: "margins" },
+  },
+  {
+    id: "high-share-losers",
+    question: "Which losing candidates took the biggest share of the vote?",
+    filters: {
+      result: "losers",
+      sort: { column: "share", dir: "desc" },
+    },
+    tags: { theme: "margins" },
+  },
+  {
+    id: "bjp-closest-wins",
+    question: "Where did BJP win by the smallest margin?",
+    filters: {
+      party: "Bharatiya Janata Party",
+      result: "winners",
+      sort: { column: "margin", dir: "asc" },
+    },
+    tags: { party: "BJP", theme: "margins" },
+  },
+  {
+    id: "bdjs-closest-wins",
+    question: "Where did BDJS win by the smallest margin?",
+    filters: {
+      party: "Bharath Dharma Jana Sena",
+      result: "winners",
+      sort: { column: "margin", dir: "asc" },
+    },
+    tags: { party: "BDJS", theme: "margins" },
+  },
+  {
+    id: "inc-closest-wins",
+    question: "Where did INC win by the smallest margin?",
+    filters: {
+      party: "Indian National Congress",
+      result: "winners",
+      sort: { column: "margin", dir: "asc" },
+    },
+    tags: { party: "INC", theme: "margins" },
+  },
+  {
+    id: "iuml-closest-wins",
+    question: "Where did IUML win by the smallest margin?",
+    filters: {
+      party: "Indian Union Muslim League",
+      result: "winners",
+      sort: { column: "margin", dir: "asc" },
+    },
+    tags: { party: "IUML", theme: "margins" },
+  },
+  {
+    id: "cpim-closest-wins",
+    question: "Where did CPI(M) win by the smallest margin?",
+    filters: {
+      party: "Communist Party of India (Marxist)",
+      result: "winners",
+      sort: { column: "margin", dir: "asc" },
+    },
+    tags: { party: "CPI(M)", theme: "margins" },
+  },
+  {
     id: "udf-gap-closers",
     question: "Where is UDF gaining ground in losing seats?",
     filters: {
@@ -229,6 +297,124 @@ export const curatedInsights: CuratedInsight[] = [
       sort: { column: "marginDelta", dir: "asc" },
     },
     tags: { alliance: "NDA", theme: "margin-movement" },
+  },
+  {
+    id: "statewide-gap-closers",
+    question: "Across Kerala, where did losing candidates close the biggest gap?",
+    filters: {
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { theme: "margin-movement" },
+  },
+  {
+    id: "statewide-at-risk-wins",
+    question: "Across Kerala, where did winning margins shrink the most?",
+    filters: {
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { theme: "margin-movement" },
+  },
+  {
+    id: "bjp-gap-closers",
+    question: "Where is BJP gaining ground in losing seats?",
+    filters: {
+      party: "Bharatiya Janata Party",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { party: "BJP", theme: "margin-movement" },
+  },
+  {
+    id: "bdjs-gap-closers",
+    question: "Where is BDJS gaining ground in losing seats?",
+    filters: {
+      party: "Bharath Dharma Jana Sena",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { party: "BDJS", theme: "margin-movement" },
+  },
+  {
+    id: "inc-gap-closers",
+    question: "Where is INC gaining ground in losing seats?",
+    filters: {
+      party: "Indian National Congress",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { party: "INC", theme: "margin-movement" },
+  },
+  {
+    id: "iuml-gap-closers",
+    question: "Where is IUML gaining ground in losing seats?",
+    filters: {
+      party: "Indian Union Muslim League",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { party: "IUML", theme: "margin-movement" },
+  },
+  {
+    id: "cpim-gap-closers",
+    question: "Where is CPI(M) gaining ground in losing seats?",
+    filters: {
+      party: "Communist Party of India (Marxist)",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { party: "CPI(M)", theme: "margin-movement" },
+  },
+  {
+    id: "bjp-at-risk-wins",
+    question: "Where is BJP losing ground in winning seats?",
+    filters: {
+      party: "Bharatiya Janata Party",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { party: "BJP", theme: "margin-movement" },
+  },
+  {
+    id: "bdjs-at-risk-wins",
+    question: "Where is BDJS losing ground in winning seats?",
+    filters: {
+      party: "Bharath Dharma Jana Sena",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { party: "BDJS", theme: "margin-movement" },
+  },
+  {
+    id: "inc-at-risk-wins",
+    question: "Where is INC losing ground in winning seats?",
+    filters: {
+      party: "Indian National Congress",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { party: "INC", theme: "margin-movement" },
+  },
+  {
+    id: "iuml-at-risk-wins",
+    question: "Where is IUML losing ground in winning seats?",
+    filters: {
+      party: "Indian Union Muslim League",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { party: "IUML", theme: "margin-movement" },
+  },
+  {
+    id: "cpim-at-risk-wins",
+    question: "Where is CPI(M) losing ground in winning seats?",
+    filters: {
+      party: "Communist Party of India (Marxist)",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { party: "CPI(M)", theme: "margin-movement" },
   },
 ]
 
