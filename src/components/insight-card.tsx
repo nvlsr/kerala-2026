@@ -1,6 +1,6 @@
-import { useMemo, type ReactNode } from "react"
+import { useMemo, useState, type ReactNode } from "react"
 import { Link } from "react-router-dom"
-import { IconArrowUpRight } from "@tabler/icons-react"
+import { IconArrowUpRight, IconCheck, IconLink } from "@tabler/icons-react"
 
 import { DeltaPercent } from "@/components/delta-percent"
 import { MiniACMap } from "@/components/mini-ac-map"
@@ -89,25 +89,62 @@ export function InsightCard({ insight }: Props) {
 
   const dashboardUrl = `/?${serializeFilters(filters).toString()}`
 
+  const [copied, setCopied] = useState(false)
+  const handleCopyPermalink = async () => {
+    const url = `${window.location.origin}/insights#${insight.id}`
+    try {
+      await navigator.clipboard.writeText(url)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1800)
+    } catch {
+      // Older browsers / insecure contexts: silently no-op. The hash is
+      // already in the address bar after click via the href fallback.
+    }
+  }
+
   return (
-    <article className="rounded-lg border bg-card/50 p-6 transition hover:border-foreground/40">
+    <article
+      id={insight.id}
+      className="scroll-mt-24 rounded-lg border bg-card/50 p-6 transition hover:border-foreground/40 target:border-foreground/60 target:ring-2 target:ring-foreground/30"
+    >
       <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
         <div className="flex flex-col lg:col-span-2">
-          <h2 className="text-base leading-snug font-semibold sm:text-lg">
-            <Link
-              to={dashboardUrl}
-              className="group inline-flex items-baseline gap-2 hover:text-foreground/80"
-              aria-label={`${insight.question} — open in dashboard`}
+          <div className="flex items-start justify-between gap-3">
+            <h2 className="min-w-0 flex-1 text-base leading-snug font-semibold sm:text-lg">
+              <Link
+                to={dashboardUrl}
+                className="group inline-flex items-baseline gap-2 hover:text-foreground/80"
+                aria-label={`${insight.question} — open in dashboard`}
+              >
+                <span className="underline-offset-4 group-hover:underline">
+                  {insight.question}
+                </span>
+                <IconArrowUpRight
+                  aria-hidden
+                  className="h-4 w-4 shrink-0 self-center text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground"
+                />
+              </Link>
+            </h2>
+            <a
+              href={`#${insight.id}`}
+              onClick={(e) => {
+                e.preventDefault()
+                window.history.replaceState(null, "", `#${insight.id}`)
+                void handleCopyPermalink()
+              }}
+              aria-label={
+                copied ? "Permalink copied" : "Copy permalink to this card"
+              }
+              title={copied ? "Copied" : "Copy permalink"}
+              className="shrink-0 rounded-md p-1.5 text-muted-foreground/50 transition-colors hover:bg-foreground/5 hover:text-foreground"
             >
-              <span className="underline-offset-4 group-hover:underline">
-                {insight.question}
-              </span>
-              <IconArrowUpRight
-                aria-hidden
-                className="h-4 w-4 shrink-0 self-center text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground"
-              />
-            </Link>
-          </h2>
+              {copied ? (
+                <IconCheck className="h-4 w-4" aria-hidden />
+              ) : (
+                <IconLink className="h-4 w-4" aria-hidden />
+              )}
+            </a>
+          </div>
           <div className="mt-5">
             <TopRowsTable rows={topRows} sortColumn={filters.sort.column} />
           </div>
