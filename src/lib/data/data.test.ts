@@ -329,6 +329,35 @@ describe("sortCandidateRows", () => {
     }
   })
 
+  test("nullable shareDelta desc pushes nulls to the end; non-null is sorted descending", () => {
+    const desc = sortCandidateRows(rows, "shareDelta", "desc")
+    const firstNull = desc.findIndex((r) => r.shareDelta2021 == null)
+    expect(firstNull).toBeGreaterThan(0)
+    for (let i = firstNull; i < desc.length; i++) {
+      expect(desc[i]!.shareDelta2021).toBeNull()
+    }
+    const head = desc.slice(0, firstNull)
+    for (let i = 1; i < head.length; i++) {
+      expect(head[i]!.shareDelta2021!).toBeLessThanOrEqual(
+        head[i - 1]!.shareDelta2021!
+      )
+    }
+  })
+
+  test("nullable marginDelta puts nulls last for both directions", () => {
+    for (const dir of ["asc", "desc"] as const) {
+      const sorted = sortCandidateRows(rows, "marginDelta", dir)
+      const lastNonNullIdx = sorted.findIndex(
+        (r, i, arr) => r.marginDelta2021 != null && arr[i + 1]?.marginDelta2021 == null
+      )
+      if (lastNonNullIdx !== -1) {
+        for (let i = lastNonNullIdx + 1; i < sorted.length; i++) {
+          expect(sorted[i]!.marginDelta2021).toBeNull()
+        }
+      }
+    }
+  })
+
   test("does not mutate input array", () => {
     const subset = rows.slice(0, 5)
     const before = subset.map((r) => r.candidate.name)
