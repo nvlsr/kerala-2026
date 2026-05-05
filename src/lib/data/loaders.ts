@@ -22,7 +22,6 @@ export const alliancesMeta = alliancesJson as {
   partyToAlliance: Record<string, AllianceCode>
   partyAbbreviation: Record<string, string>
   partyAliases: Record<string, string>
-  independentOverrides: Record<string, AllianceCode | string>
 }
 
 export const abbreviationToFull: Record<string, string> = {}

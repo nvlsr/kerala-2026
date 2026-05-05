@@ -151,13 +151,5 @@
     "SJ(D)": "Indian Socialist Janata Dal",
     "PDP": "People's Democratic Party",
     "AIADMK": "All India Anna Dravida Munnetra Kazhagam"
-  },
-  "independentOverrides": {
-    "_comment": "Per-candidate alliance for Independents. Key = `<constituencyNumber>:<candidateName>` (ECI raw form). Default is OTHER. Used when an Independent candidate has alliance backing that the bare 'Independent' party label doesn't capture.",
-    "6:V. KUNHIKRISHNAN": "UDF",
-    "8:T K GOVINDAN MASTER S/O KUNHIKKANNAN NAMBIAR": "UDF",
-    "93:MANI C KAPPEN": "UDF",
-    "105:G.SUDHAKARAN": "UDF",
-    "134:SUDHIR KARAMANA": "LDF"
   }
 }

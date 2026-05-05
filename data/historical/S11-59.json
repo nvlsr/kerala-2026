@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. Chethamarakshan", "party": "CPI(M)", "votes": 64169, "votePct": 47.86 },
-        { "name": "M. V. Raghavan", "party": "CMP", "votes": 55475, "votePct": 41.38 },
-        { "name": "N. Sivarajan", "party": "BJP", "votes": 9123, "votePct": 6.80 },
-        { "name": "Sakeer Hussain", "party": "SDPI", "votes": 1809, "votePct": 1.41 },
-        { "name": "Chandran", "party": "BSP", "votes": 1484, "votePct": 1.11 }
+        { "name": "V. Chethamarakshan", "party": "CPI(M)", "votes": 64169, "votePct": 47.86, "alliance": "LDF" },
+        { "name": "M. V. Raghavan", "party": "CMP", "votes": 55475, "votePct": 41.38, "alliance": "UDF" },
+        { "name": "N. Sivarajan", "party": "BJP", "votes": 9123, "votePct": 6.80, "alliance": "NDA" },
+        { "name": "Sakeer Hussain", "party": "SDPI", "votes": 1809, "votePct": 1.41, "alliance": "OTHER" },
+        { "name": "Chandran", "party": "BSP", "votes": 1484, "votePct": 1.11, "alliance": "OTHER" }
       ],
       "margin": 8694,
       "marginPct": 6.48,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Babu", "party": "CPI(M)", "votes": 66316, "votePct": 42.90 },
-        { "name": "A. V. Gopinathan", "party": "INC", "votes": 58908, "votePct": 38.11 },
-        { "name": "N. Sivarajan", "party": "BJP", "votes": 23096, "votePct": 14.94 },
-        { "name": "Menaka K.", "party": "AIADMK", "votes": 2186, "votePct": 1.41 },
-        { "name": "Ajith Kumar", "party": "WPOI", "votes": 772, "votePct": 0.50 }
+        { "name": "K. Babu", "party": "CPI(M)", "votes": 66316, "votePct": 42.90, "alliance": "LDF" },
+        { "name": "A. V. Gopinathan", "party": "INC", "votes": 58908, "votePct": 38.11, "alliance": "UDF" },
+        { "name": "N. Sivarajan", "party": "BJP", "votes": 23096, "votePct": 14.94, "alliance": "NDA" },
+        { "name": "Menaka K.", "party": "AIADMK", "votes": 2186, "votePct": 1.41, "alliance": "OTHER" },
+        { "name": "Ajith Kumar", "party": "WPOI", "votes": 772, "votePct": 0.50, "alliance": "OTHER" }
       ],
       "margin": 7408,
       "marginPct": 4.79,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Babu", "party": "CPI(M)", "votes": 80145, "votePct": 52.89 },
-        { "name": "C. N. Vijayakrishnan", "party": "CMP", "votes": 51441, "votePct": 33.95 },
-        { "name": "A. N. Anurag", "party": "BDJS", "votes": 16666, "votePct": 11.00 },
-        { "name": "Prakash. C", "party": "BSP", "votes": 1350, "votePct": 0.89 },
-        { "name": "Babu S/o Kunchu", "party": "Independent", "votes": 863, "votePct": 0.57 }
+        { "name": "K. Babu", "party": "CPI(M)", "votes": 80145, "votePct": 52.89, "alliance": "LDF" },
+        { "name": "C. N. Vijayakrishnan", "party": "CMP", "votes": 51441, "votePct": 33.95, "alliance": "UDF" },
+        { "name": "A. N. Anurag", "party": "BDJS", "votes": 16666, "votePct": 11.00, "alliance": "NDA" },
+        { "name": "Prakash. C", "party": "BSP", "votes": 1350, "votePct": 0.89, "alliance": "OTHER" },
+        { "name": "Babu S/o Kunchu", "party": "Independent", "votes": 863, "votePct": 0.57, "alliance": "OTHER" }
       ],
       "margin": 28704,
       "marginPct": 18.94,

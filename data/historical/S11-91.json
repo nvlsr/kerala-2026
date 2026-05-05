@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Roshy Augustine", "party": "KC(M)", "votes": 65734, "votePct": 54.88 },
-        { "name": "C. V. Varghese", "party": "CPI(M)", "votes": 49928, "votePct": 41.69 },
-        { "name": "C. C. Krishnan", "party": "BJP", "votes": 3013, "votePct": 2.52 },
-        { "name": "Kanchiyar Peethambaran", "party": "Independent", "votes": 389, "votePct": 0.32 },
-        { "name": "M. K. Narayanan", "party": "Independent", "votes": 226, "votePct": 0.19 }
+        { "name": "Roshy Augustine", "party": "KC(M)", "votes": 65734, "votePct": 54.88, "alliance": "LDF" },
+        { "name": "C. V. Varghese", "party": "CPI(M)", "votes": 49928, "votePct": 41.69, "alliance": "LDF" },
+        { "name": "C. C. Krishnan", "party": "BJP", "votes": 3013, "votePct": 2.52, "alliance": "NDA" },
+        { "name": "Kanchiyar Peethambaran", "party": "Independent", "votes": 389, "votePct": 0.32, "alliance": "OTHER" },
+        { "name": "M. K. Narayanan", "party": "Independent", "votes": 226, "votePct": 0.19, "alliance": "OTHER" }
       ],
       "margin": 15806,
       "marginPct": 13.19,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Roshy Augustine", "party": "KC(M)", "votes": 60556, "votePct": 42.86 },
-        { "name": "K. Francis George", "party": "JKC", "votes": 50758, "votePct": 36.26 },
-        { "name": "Biju Madhavan", "party": "BDJS", "votes": 27403, "votePct": 19.40 },
-        { "name": "Sabu Kochuparambil", "party": "BSP", "votes": 566, "votePct": 0.40 },
-        { "name": "P. T. Poomkudy", "party": "Independent", "votes": 436, "votePct": 0.31 }
+        { "name": "Roshy Augustine", "party": "KC(M)", "votes": 60556, "votePct": 42.86, "alliance": "LDF" },
+        { "name": "K. Francis George", "party": "JKC", "votes": 50758, "votePct": 36.26, "alliance": "OTHER" },
+        { "name": "Biju Madhavan", "party": "BDJS", "votes": 27403, "votePct": 19.40, "alliance": "NDA" },
+        { "name": "Sabu Kochuparambil", "party": "BSP", "votes": 566, "votePct": 0.40, "alliance": "OTHER" },
+        { "name": "P. T. Poomkudy", "party": "Independent", "votes": 436, "votePct": 0.31, "alliance": "OTHER" }
       ],
       "margin": 9323,
       "marginPct": 6.60,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Roshy Augustine", "party": "KC(M)", "votes": 62368, "votePct": 47.48 },
-        { "name": "K. Francis George", "party": "KEC", "votes": 56795, "votePct": 43.24 },
-        { "name": "Sangeetha Viswanathan", "party": "BDJS", "votes": 9148, "votePct": 7.07 },
-        { "name": "Babu Varghese Vattoli", "party": "BSP", "votes": 1106, "votePct": 0.84 },
-        { "name": "Bijeesh Thomas", "party": "Independent", "votes": 610, "votePct": 0.46 }
+        { "name": "Roshy Augustine", "party": "KC(M)", "votes": 62368, "votePct": 47.48, "alliance": "LDF" },
+        { "name": "K. Francis George", "party": "KEC", "votes": 56795, "votePct": 43.24, "alliance": "UDF" },
+        { "name": "Sangeetha Viswanathan", "party": "BDJS", "votes": 9148, "votePct": 7.07, "alliance": "NDA" },
+        { "name": "Babu Varghese Vattoli", "party": "BSP", "votes": 1106, "votePct": 0.84, "alliance": "OTHER" },
+        { "name": "Bijeesh Thomas", "party": "Independent", "votes": 610, "votePct": 0.46, "alliance": "OTHER" }
       ],
       "margin": 5573,
       "marginPct": 4.24,

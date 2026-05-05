@@ -1,6 +1,9 @@
+import type { AllianceCode } from "@/lib/data/alliances"
+
 export type HistoricalCandidate = {
   name: string
   party: string
+  alliance: AllianceCode
   votes: number
   votePct: number
 }

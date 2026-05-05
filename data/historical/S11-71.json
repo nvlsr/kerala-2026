@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. Raveendranath", "party": "CPI(M)", "votes": 73047, "votePct": 52.84 },
-        { "name": "K. P. Vishwanathan", "party": "INC", "votes": 46565, "votePct": 33.68 },
-        { "name": "Sobha Surendran", "party": "BJP", "votes": 14425, "votePct": 10.43 },
-        { "name": "P. J. Monsy", "party": "Independent", "votes": 2084, "votePct": 1.51 },
-        { "name": "P. C. Pushpakaran", "party": "BSP", "votes": 1013, "votePct": 0.73 }
+        { "name": "C. Raveendranath", "party": "CPI(M)", "votes": 73047, "votePct": 52.84, "alliance": "LDF" },
+        { "name": "K. P. Vishwanathan", "party": "INC", "votes": 46565, "votePct": 33.68, "alliance": "UDF" },
+        { "name": "Sobha Surendran", "party": "BJP", "votes": 14425, "votePct": 10.43, "alliance": "NDA" },
+        { "name": "P. J. Monsy", "party": "Independent", "votes": 2084, "votePct": 1.51, "alliance": "OTHER" },
+        { "name": "P. C. Pushpakaran", "party": "BSP", "votes": 1013, "votePct": 0.73, "alliance": "OTHER" }
       ],
       "margin": 26482,
       "marginPct": 19.16,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. Raveendranath", "party": "CPI(M)", "votes": 79464, "votePct": 50.07 },
-        { "name": "Sundaran Kunnathully", "party": "INC", "votes": 40986, "votePct": 25.82 },
-        { "name": "A. Nagesh", "party": "BJP", "votes": 35833, "votePct": 22.58 },
-        { "name": "Asif Niyas", "party": "PDP", "votes": 519, "votePct": 0.33 },
-        { "name": "C. V. Vijayan", "party": "Independent", "votes": 431, "votePct": 0.27 }
+        { "name": "C. Raveendranath", "party": "CPI(M)", "votes": 79464, "votePct": 50.07, "alliance": "LDF" },
+        { "name": "Sundaran Kunnathully", "party": "INC", "votes": 40986, "votePct": 25.82, "alliance": "UDF" },
+        { "name": "A. Nagesh", "party": "BJP", "votes": 35833, "votePct": 22.58, "alliance": "NDA" },
+        { "name": "Asif Niyas", "party": "PDP", "votes": 519, "votePct": 0.33, "alliance": "OTHER" },
+        { "name": "C. V. Vijayan", "party": "Independent", "votes": 431, "votePct": 0.27, "alliance": "OTHER" }
       ],
       "margin": 38478,
       "marginPct": 24.25,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. K. Ramachandran", "party": "CPI(M)", "votes": 73365, "votePct": 46.94 },
-        { "name": "Sunil Anthikad", "party": "INC", "votes": 46012, "votePct": 29.44 },
-        { "name": "A. Nagesh", "party": "BJP", "votes": 34893, "votePct": 22.33 },
-        { "name": "Rajesh Appat", "party": "CPI(M-L)", "votes": 489, "votePct": 0.31 },
-        { "name": "P. C. Pushpakaran", "party": "BSP", "votes": 455, "votePct": 0.29 }
+        { "name": "K. K. Ramachandran", "party": "CPI(M)", "votes": 73365, "votePct": 46.94, "alliance": "LDF" },
+        { "name": "Sunil Anthikad", "party": "INC", "votes": 46012, "votePct": 29.44, "alliance": "UDF" },
+        { "name": "A. Nagesh", "party": "BJP", "votes": 34893, "votePct": 22.33, "alliance": "NDA" },
+        { "name": "Rajesh Appat", "party": "CPI(M-L)", "votes": 489, "votePct": 0.31, "alliance": "LDF" },
+        { "name": "P. C. Pushpakaran", "party": "BSP", "votes": 455, "votePct": 0.29, "alliance": "OTHER" }
       ],
       "margin": 27353,
       "marginPct": 17.50,

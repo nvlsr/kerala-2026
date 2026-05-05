@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. K. Jayachandran", "party": "CPI(M)", "votes": 56923, "votePct": 51.48 },
-        { "name": "Jossy Sebastian", "party": "INC", "votes": 47090, "votePct": 42.59 },
-        { "name": "Narayana Raju", "party": "BJP", "votes": 3836, "votePct": 3.47 },
-        { "name": "Muhammed Sharafudeen", "party": "SDPI", "votes": 1331, "votePct": 1.20 },
-        { "name": "Benny Thomas", "party": "BSP", "votes": 714, "votePct": 0.65 }
+        { "name": "K. K. Jayachandran", "party": "CPI(M)", "votes": 56923, "votePct": 51.48, "alliance": "LDF" },
+        { "name": "Jossy Sebastian", "party": "INC", "votes": 47090, "votePct": 42.59, "alliance": "UDF" },
+        { "name": "Narayana Raju", "party": "BJP", "votes": 3836, "votePct": 3.47, "alliance": "NDA" },
+        { "name": "Muhammed Sharafudeen", "party": "SDPI", "votes": 1331, "votePct": 1.20, "alliance": "OTHER" },
+        { "name": "Benny Thomas", "party": "BSP", "votes": 714, "votePct": 0.65, "alliance": "OTHER" }
       ],
       "margin": 9833,
       "marginPct": 8.89,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. M. Mani", "party": "CPI(M)", "votes": 50813, "votePct": 40.32 },
-        { "name": "Senapathy Venu", "party": "INC", "votes": 49704, "votePct": 39.44 },
-        { "name": "Saji Parambath", "party": "BDJS", "votes": 21799, "votePct": 17.30 },
-        { "name": "B. Soman", "party": "AIADMK", "votes": 1651, "votePct": 1.31 },
-        { "name": "Shanavas Baker", "party": "SDPI", "votes": 831, "votePct": 0.66 }
+        { "name": "M. M. Mani", "party": "CPI(M)", "votes": 50813, "votePct": 40.32, "alliance": "LDF" },
+        { "name": "Senapathy Venu", "party": "INC", "votes": 49704, "votePct": 39.44, "alliance": "UDF" },
+        { "name": "Saji Parambath", "party": "BDJS", "votes": 21799, "votePct": 17.30, "alliance": "NDA" },
+        { "name": "B. Soman", "party": "AIADMK", "votes": 1651, "votePct": 1.31, "alliance": "OTHER" },
+        { "name": "Shanavas Baker", "party": "SDPI", "votes": 831, "votePct": 0.66, "alliance": "OTHER" }
       ],
       "margin": 1109,
       "marginPct": 0.88,
@@ -43,10 +43,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. M. Mani", "party": "CPI(M)", "votes": 77381, "votePct": 61.80 },
-        { "name": "E. M. Augusthy", "party": "INC", "votes": 39076, "votePct": 31.21 },
-        { "name": "Santhosh Madhavan", "party": "BDJS", "votes": 7208, "votePct": 5.76 },
-        { "name": "A. C. Biju", "party": "BSP", "votes": 867, "votePct": 0.69 }
+        { "name": "M. M. Mani", "party": "CPI(M)", "votes": 77381, "votePct": 61.80, "alliance": "LDF" },
+        { "name": "E. M. Augusthy", "party": "INC", "votes": 39076, "votePct": 31.21, "alliance": "UDF" },
+        { "name": "Santhosh Madhavan", "party": "BDJS", "votes": 7208, "votePct": 5.76, "alliance": "NDA" },
+        { "name": "A. C. Biju", "party": "BSP", "votes": 867, "votePct": 0.69, "alliance": "OTHER" }
       ],
       "margin": 38305,
       "marginPct": 30.59,

@@ -13,32 +13,27 @@
           "name": "K. Muhammedunni Haji",
           "party": "IUML",
           "votes": 67998,
-          "votePct": 56.82
-        },
+          "votePct": 56.82, "alliance": "UDF" },
         {
           "name": "P. C. Naushad",
           "party": "CPI(M)",
           "votes": 39849,
-          "votePct": 33.3
-        },
+          "votePct": 33.3, "alliance": "LDF" },
         {
           "name": "Kumari Sukumaran",
           "party": "BJP",
           "votes": 6840,
-          "votePct": 5.72
-        },
+          "votePct": 5.72, "alliance": "NDA" },
         {
           "name": "Abdu Rahman P. T.",
           "party": "SDPI",
           "votes": 2026,
-          "votePct": 1.69
-        },
+          "votePct": 1.69, "alliance": "OTHER" },
         {
           "name": "T. K. Mammunni Haji",
           "party": "Independent",
           "votes": 1817,
-          "votePct": 1.52
-        }
+          "votePct": 1.52, "alliance": "OTHER" }
       ],
       "margin": 28149,
       "marginPct": 23.52,
@@ -55,62 +50,52 @@
           "name": "T. V. Ibrahim",
           "party": "Indian Union Muslim League",
           "votes": 69668,
-          "votePct": 46.58
-        },
+          "votePct": 46.58, "alliance": "UDF" },
         {
           "name": "K. P. Beerankutty",
           "party": "Independent (LDF)",
           "votes": 59014,
-          "votePct": 39.46
-        },
+          "votePct": 39.46, "alliance": "LDF" },
         {
           "name": "K. Ramachandran",
           "party": "BJP",
           "votes": 12513,
-          "votePct": 8.37
-        },
+          "votePct": 8.37, "alliance": "NDA" },
         {
           "name": "Nazarudheen Elamaram",
           "party": "SDPI",
           "votes": 3667,
-          "votePct": 2.45
-        },
+          "votePct": 2.45, "alliance": "OTHER" },
         {
           "name": "Saleem Vazhakkad",
           "party": "WPI",
           "votes": 2344,
-          "votePct": 1.57
-        },
+          "votePct": 1.57, "alliance": "OTHER" },
         {
           "name": "Abdul Gaffoor Vavoor",
           "party": "PDP",
           "votes": 566,
-          "votePct": 0.38
-        },
+          "votePct": 0.38, "alliance": "OTHER" },
         {
           "name": "K. P. Veerankutty",
           "party": "Independent",
           "votes": 442,
-          "votePct": 0.3
-        },
+          "votePct": 0.3, "alliance": "OTHER" },
         {
           "name": "Sulfikar Ali Ambal",
           "party": "Independent",
           "votes": 316,
-          "votePct": 0.21
-        },
+          "votePct": 0.21, "alliance": "OTHER" },
         {
           "name": "K. Kadeeja",
           "party": "AITC",
           "votes": 267,
-          "votePct": 0.18
-        },
+          "votePct": 0.18, "alliance": "OTHER" },
         {
           "name": "Ibrahim Cholakkad",
           "party": "Independent",
           "votes": 176,
-          "votePct": 0.12
-        }
+          "votePct": 0.12, "alliance": "OTHER" }
       ],
       "margin": 10654,
       "marginPct": 7.12,
@@ -127,44 +112,37 @@
           "name": "T. V. Ibrahim",
           "party": "Indian Union Muslim League",
           "votes": 82759,
-          "votePct": 50.42
-        },
+          "votePct": 50.42, "alliance": "UDF" },
         {
           "name": "Kattuppurathy Sulaiman Haji",
           "party": "Independent (LDF)",
           "votes": 65093,
-          "votePct": 39.66
-        },
+          "votePct": 39.66, "alliance": "LDF" },
         {
           "name": "Sheeba Unnikrishnan",
           "party": "BJP",
           "votes": 11114,
-          "votePct": 6.77
-        },
+          "votePct": 6.77, "alliance": "NDA" },
         {
           "name": "Razaq Paleri",
           "party": "WPI",
           "votes": 2579,
-          "votePct": 1.57
-        },
+          "votePct": 1.57, "alliance": "OTHER" },
         {
           "name": "T. Sivadasan",
           "party": "BSP",
           "votes": 908,
-          "votePct": 0.55
-        },
+          "votePct": 0.55, "alliance": "OTHER" },
         {
           "name": "Sulaiman Haji",
           "party": "Independent",
           "votes": 905,
-          "votePct": 0.55
-        },
+          "votePct": 0.55, "alliance": "OTHER" },
         {
           "name": "C. V. Ibrahim s/o Muhammed",
           "party": "Independent",
           "votes": 233,
-          "votePct": 0.14
-        }
+          "votePct": 0.14, "alliance": "OTHER" }
       ],
       "margin": 17666,
       "marginPct": 10.76,

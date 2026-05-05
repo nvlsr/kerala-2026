@@ -13,26 +13,22 @@
           "name": "K. T. Jaleel",
           "party": "LDF Independent",
           "votes": 57729,
-          "votePct": 47.2
-        },
+          "votePct": 47.2, "alliance": "OTHER" },
         {
           "name": "V. V. Prakash",
           "party": "INC",
           "votes": 50875,
-          "votePct": 41.6
-        },
+          "votePct": 41.6, "alliance": "UDF" },
         {
           "name": "Nirmala Kuttikrishnan Punnakkal",
           "party": "BJP",
           "votes": 7107,
-          "votePct": 5.81
-        },
+          "votePct": 5.81, "alliance": "NDA" },
         {
           "name": "Nurul Hack",
           "party": "SDPI",
           "votes": 3116,
-          "votePct": 2.55
-        }
+          "votePct": 2.55, "alliance": "OTHER" }
       ],
       "margin": 6854,
       "marginPct": 5.6,
@@ -49,26 +45,22 @@
           "name": "K. T. Jaleel",
           "party": "Independent (LDF)",
           "votes": 68179,
-          "votePct": 47.97
-        },
+          "votePct": 47.97, "alliance": "LDF" },
         {
           "name": "Ifthiquarudheen Master",
           "party": "INC",
           "votes": 51115,
-          "votePct": 35.96
-        },
+          "votePct": 35.96, "alliance": "UDF" },
         {
           "name": "Ravi Thelath",
           "party": "BJP",
           "votes": 15801,
-          "votePct": 11.12
-        },
+          "votePct": 11.12, "alliance": "NDA" },
         {
           "name": "P. K. Jaleel Parakkuzhiyil",
           "party": "SDPI",
           "votes": 2649,
-          "votePct": 1.86
-        }
+          "votePct": 1.86, "alliance": "OTHER" }
       ],
       "margin": 17064,
       "marginPct": 12.01,
@@ -85,26 +77,22 @@
           "name": "K. T. Jaleel",
           "party": "Independent (LDF)",
           "votes": 69358,
-          "votePct": 46.46
-        },
+          "votePct": 46.46, "alliance": "LDF" },
         {
           "name": "Firos Kunnamparambil",
           "party": "INC",
           "votes": 67794,
-          "votePct": 44.77
-        },
+          "votePct": 44.77, "alliance": "UDF" },
         {
           "name": "Ramesh Kottayapurath",
           "party": "BDJS",
           "votes": 9914,
-          "votePct": 6.55
-        },
+          "votePct": 6.55, "alliance": "NDA" },
         {
           "name": "Hassan Chiyanoor",
           "party": "SDPI",
           "votes": 1747,
-          "votePct": 1.15
-        }
+          "votePct": 1.15, "alliance": "OTHER" }
       ],
       "margin": 2185,
       "marginPct": 1.69,

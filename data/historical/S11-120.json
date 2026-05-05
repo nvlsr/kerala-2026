@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. B. Ganesh Kumar", "party": "KC(B)", "votes": 71421, "votePct": 55.64 },
-        { "name": "K. Rajagopal", "party": "CPI(M)", "votes": 51019, "votePct": 39.74 },
-        { "name": "R. Subhash Pattazhy", "party": "BJP", "votes": 2839, "votePct": 2.21 },
-        { "name": "Aneesh Anthony", "party": "Independent", "votes": 1613, "votePct": 1.26 },
-        { "name": "Punalur Salim", "party": "BSP", "votes": 864, "votePct": 0.67 }
+        { "name": "K. B. Ganesh Kumar", "party": "KC(B)", "votes": 71421, "votePct": 55.64, "alliance": "LDF" },
+        { "name": "K. Rajagopal", "party": "CPI(M)", "votes": 51019, "votePct": 39.74, "alliance": "LDF" },
+        { "name": "R. Subhash Pattazhy", "party": "BJP", "votes": 2839, "votePct": 2.21, "alliance": "NDA" },
+        { "name": "Aneesh Anthony", "party": "Independent", "votes": 1613, "votePct": 1.26, "alliance": "OTHER" },
+        { "name": "Punalur Salim", "party": "BSP", "votes": 864, "votePct": 0.67, "alliance": "OTHER" }
       ],
       "margin": 20402,
       "marginPct": 15.90,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. B. Ganesh Kumar", "party": "KC(B)", "votes": 74429, "votePct": 52.39 },
-        { "name": "P. V. Jagadish Kumar", "party": "INC", "votes": 49867, "votePct": 35.10 },
-        { "name": "Raghu Damodharan", "party": "BJP", "votes": 11700, "votePct": 8.24 },
-        { "name": "Faizy M. Pasha", "party": "SDPI", "votes": 3843, "votePct": 2.71 },
-        { "name": "Perinadu Gopalakrishnan", "party": "BSP", "votes": 846, "votePct": 0.60 }
+        { "name": "K. B. Ganesh Kumar", "party": "KC(B)", "votes": 74429, "votePct": 52.39, "alliance": "LDF" },
+        { "name": "P. V. Jagadish Kumar", "party": "INC", "votes": 49867, "votePct": 35.10, "alliance": "UDF" },
+        { "name": "Raghu Damodharan", "party": "BJP", "votes": 11700, "votePct": 8.24, "alliance": "NDA" },
+        { "name": "Faizy M. Pasha", "party": "SDPI", "votes": 3843, "votePct": 2.71, "alliance": "OTHER" },
+        { "name": "Perinadu Gopalakrishnan", "party": "BSP", "votes": 846, "votePct": 0.60, "alliance": "OTHER" }
       ],
       "margin": 24562,
       "marginPct": 17.29,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. B. Ganesh Kumar", "party": "KC(B)", "votes": 67276, "votePct": 49.09 },
-        { "name": "Jyothikumar Chamakkala", "party": "INC", "votes": 52940, "votePct": 38.63 },
-        { "name": "V. S. Jithin Dev", "party": "BJP", "votes": 12398, "votePct": 9.05 },
-        { "name": "P. Krishnammal", "party": "MCPI(U)", "votes": 2091, "votePct": 1.53 },
-        { "name": "Faizy M. Pasha", "party": "SDPI", "votes": 1192, "votePct": 0.87 }
+        { "name": "K. B. Ganesh Kumar", "party": "KC(B)", "votes": 67276, "votePct": 49.09, "alliance": "LDF" },
+        { "name": "Jyothikumar Chamakkala", "party": "INC", "votes": 52940, "votePct": 38.63, "alliance": "UDF" },
+        { "name": "V. S. Jithin Dev", "party": "BJP", "votes": 12398, "votePct": 9.05, "alliance": "NDA" },
+        { "name": "P. Krishnammal", "party": "MCPI(U)", "votes": 2091, "votePct": 1.53, "alliance": "OTHER" },
+        { "name": "Faizy M. Pasha", "party": "SDPI", "votes": 1192, "votePct": 0.87, "alliance": "OTHER" }
       ],
       "margin": 14336,
       "marginPct": 10.47,

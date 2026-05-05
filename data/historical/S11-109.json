@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "R. Rajesh", "party": "CPI(M)", "votes": 65903, "votePct": 49.30 },
-        { "name": "K. K. Shaju", "party": "JSS", "votes": 60754, "votePct": 45.45 },
-        { "name": "S. Girija", "party": "BJP", "votes": 4984, "votePct": 3.73 },
-        { "name": "R. Rajeesh", "party": "Independent", "votes": 1185, "votePct": 0.89 },
-        { "name": "Subhash Mankamkuzhy", "party": "BSP", "votes": 860, "votePct": 0.64 }
+        { "name": "R. Rajesh", "party": "CPI(M)", "votes": 65903, "votePct": 49.30, "alliance": "LDF" },
+        { "name": "K. K. Shaju", "party": "JSS", "votes": 60754, "votePct": 45.45, "alliance": "OTHER" },
+        { "name": "S. Girija", "party": "BJP", "votes": 4984, "votePct": 3.73, "alliance": "NDA" },
+        { "name": "R. Rajeesh", "party": "Independent", "votes": 1185, "votePct": 0.89, "alliance": "OTHER" },
+        { "name": "Subhash Mankamkuzhy", "party": "BSP", "votes": 860, "votePct": 0.64, "alliance": "OTHER" }
       ],
       "margin": 5149,
       "marginPct": 3.85,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "R. Rajesh", "party": "CPI(M)", "votes": 74555, "votePct": 49.81 },
-        { "name": "Baiju Kalasala", "party": "INC", "votes": 43013, "votePct": 28.74 },
-        { "name": "P. M. Velayudhan", "party": "BJP", "votes": 30929, "votePct": 20.66 },
-        { "name": "Asha T.", "party": "SUCI(C)", "votes": 242, "votePct": 0.16 },
-        { "name": "Kattanam Suresh", "party": "BSP", "votes": 213, "votePct": 0.14 }
+        { "name": "R. Rajesh", "party": "CPI(M)", "votes": 74555, "votePct": 49.81, "alliance": "LDF" },
+        { "name": "Baiju Kalasala", "party": "INC", "votes": 43013, "votePct": 28.74, "alliance": "UDF" },
+        { "name": "P. M. Velayudhan", "party": "BJP", "votes": 30929, "votePct": 20.66, "alliance": "NDA" },
+        { "name": "Asha T.", "party": "SUCI(C)", "votes": 242, "votePct": 0.16, "alliance": "OTHER" },
+        { "name": "Kattanam Suresh", "party": "BSP", "votes": 213, "votePct": 0.14, "alliance": "OTHER" }
       ],
       "margin": 31542,
       "marginPct": 21.07,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. S. Arun Kumar", "party": "CPI(M)", "votes": 71743, "votePct": 47.61 },
-        { "name": "K. K. Shaju", "party": "INC", "votes": 47026, "votePct": 31.21 },
-        { "name": "K. Sanju", "party": "BJP", "votes": 30955, "votePct": 20.54 },
-        { "name": "Suresh Nooranad", "party": "API", "votes": 165, "votePct": 0.11 },
-        { "name": "K. Sasikumar", "party": "SUCI(C)", "votes": 151, "votePct": 0.10 }
+        { "name": "M. S. Arun Kumar", "party": "CPI(M)", "votes": 71743, "votePct": 47.61, "alliance": "LDF" },
+        { "name": "K. K. Shaju", "party": "INC", "votes": 47026, "votePct": 31.21, "alliance": "UDF" },
+        { "name": "K. Sanju", "party": "BJP", "votes": 30955, "votePct": 20.54, "alliance": "NDA" },
+        { "name": "Suresh Nooranad", "party": "API", "votes": 165, "votePct": 0.11, "alliance": "OTHER" },
+        { "name": "K. Sasikumar", "party": "SUCI(C)", "votes": 151, "votePct": 0.10, "alliance": "OTHER" }
       ],
       "margin": 24717,
       "marginPct": 16.40,

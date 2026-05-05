@@ -13,32 +13,27 @@
           "name": "A. K. Saseendran",
           "party": "Nationalist Congress Party - Sharadchandra Pawar",
           "votes": 67143,
-          "votePct": 50.14
-        },
+          "votePct": 50.14, "alliance": "LDF" },
         {
           "name": "Shaik P. Harris",
           "party": "Indian Socialist Janata Dal",
           "votes": 52489,
-          "votePct": 39.2
-        },
+          "votePct": 39.2, "alliance": "LDF" },
         {
           "name": "V. V. Rajan",
           "party": "BJP",
           "votes": 11901,
-          "votePct": 8.89
-        },
+          "votePct": 8.89, "alliance": "NDA" },
         {
           "name": "Sasindran",
           "party": "Independent",
           "votes": 1402,
-          "votePct": 1.05
-        },
+          "votePct": 1.05, "alliance": "OTHER" },
         {
           "name": "Ramesh Nanmanda",
           "party": "BSP",
           "votes": 971,
-          "votePct": 0.73
-        }
+          "votePct": 0.73, "alliance": "OTHER" }
       ],
       "margin": 14654,
       "marginPct": 10.94,
@@ -55,38 +50,32 @@
           "name": "A. K. Saseendran",
           "party": "Nationalist Congress Party - Sharadchandra Pawar",
           "votes": 76387,
-          "votePct": 48.66
-        },
+          "votePct": 48.66, "alliance": "LDF" },
         {
           "name": "Pottangadi Kishan Chand",
           "party": "Janata Dal (United)",
           "votes": 47330,
-          "votePct": 30.15
-        },
+          "votePct": 30.15, "alliance": "OTHER" },
         {
           "name": "V. V. Rajan",
           "party": "BJP",
           "votes": 29070,
-          "votePct": 18.52
-        },
+          "votePct": 18.52, "alliance": "NDA" },
         {
           "name": "Kotteappatt Krishnan",
           "party": "Independent",
           "votes": 1724,
-          "votePct": 1.1
-        },
+          "votePct": 1.1, "alliance": "OTHER" },
         {
           "name": "Raghu Kallikkad",
           "party": "BSP",
           "votes": 1142,
-          "votePct": 0.73
-        },
+          "votePct": 0.73, "alliance": "OTHER" },
         {
           "name": "P. M. Useffali",
           "party": "Independent",
           "votes": 367,
-          "votePct": 0.23
-        }
+          "votePct": 0.23, "alliance": "OTHER" }
       ],
       "margin": 29057,
       "marginPct": 18.51,
@@ -103,32 +92,27 @@
           "name": "A. K. Saseendran",
           "party": "Nationalist Congress Party - Sharadchandra Pawar",
           "votes": 83639,
-          "votePct": 50.89
-        },
+          "votePct": 50.89, "alliance": "LDF" },
         {
           "name": "Sulfikar Mayoori",
           "party": "Nationalist Congress Kerala",
           "votes": 45137,
-          "votePct": 27.46
-        },
+          "votePct": 27.46, "alliance": "UDF" },
         {
           "name": "T. P. Jayachandran Master",
           "party": "BJP",
           "votes": 32010,
-          "votePct": 19.48
-        },
+          "votePct": 19.48, "alliance": "NDA" },
         {
           "name": "Tahir Mokandi",
           "party": "WPI",
           "votes": 2000,
-          "votePct": 1.22
-        },
+          "votePct": 1.22, "alliance": "OTHER" },
         {
           "name": "P. K. Radhakrishnan",
           "party": "Independent",
           "votes": 580,
-          "votePct": 0.35
-        }
+          "votePct": 0.35, "alliance": "OTHER" }
       ],
       "margin": 38502,
       "marginPct": 23.43,

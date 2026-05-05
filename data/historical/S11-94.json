@@ -13,26 +13,22 @@
           "name": "Mons Joseph",
           "party": "KC(M)",
           "votes": 68787,
-          "votePct": 56.37
-        },
+          "votePct": 56.37, "alliance": "LDF" },
         {
           "name": "Stephen George",
           "party": "KC(AMG)",
           "votes": 45730,
-          "votePct": 37.48
-        },
+          "votePct": 37.48, "alliance": "OTHER" },
         {
           "name": "P. G. Bijukumar",
           "party": "BJP",
           "votes": 5340,
-          "votePct": 4.38
-        },
+          "votePct": 4.38, "alliance": "NDA" },
         {
           "name": "M. D. Thomas",
           "party": "BSP",
           "votes": 2169,
-          "votePct": 1.78
-        }
+          "votePct": 1.78, "alliance": "OTHER" }
       ],
       "margin": 23057,
       "marginPct": 18.89,
@@ -49,26 +45,22 @@
           "name": "Mons Joseph",
           "party": "KC(M)",
           "votes": 73793,
-          "votePct": 58.03
-        },
+          "votePct": 58.03, "alliance": "LDF" },
         {
           "name": "Scaria Thomas",
           "party": "Kerala Congress (Skaria Thomas)",
           "votes": 31537,
-          "votePct": 24.8
-        },
+          "votePct": 24.8, "alliance": "OTHER" },
         {
           "name": "Stephen Chazhikkadan",
           "party": "Kerala Congress (Thomas)",
           "votes": 17536,
-          "votePct": 13.79
-        },
+          "votePct": 13.79, "alliance": "OTHER" },
         {
           "name": "Ginish John M",
           "party": "BSP",
           "votes": 1473,
-          "votePct": 1.16
-        }
+          "votePct": 1.16, "alliance": "OTHER" }
       ],
       "margin": 42256,
       "marginPct": 33.23,
@@ -85,20 +77,17 @@
           "name": "Mons Joseph",
           "party": "KEC",
           "votes": 59666,
-          "votePct": 45.4
-        },
+          "votePct": 45.4, "alliance": "UDF" },
         {
           "name": "Stephen George",
           "party": "KC(M)",
           "votes": 55410,
-          "votePct": 42.17
-        },
+          "votePct": 42.17, "alliance": "LDF" },
         {
           "name": "Lijin Lal",
           "party": "BJP",
           "votes": 11670,
-          "votePct": 8.88
-        }
+          "votePct": 8.88, "alliance": "NDA" }
       ],
       "margin": 4256,
       "marginPct": 3.21,

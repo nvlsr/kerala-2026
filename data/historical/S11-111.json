@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 63289, "votePct": 49.97 },
-        { "name": "Victor T. Thomas", "party": "KC(M)", "votes": 52522, "votePct": 41.47 },
-        { "name": "Rajan Moolaveetil", "party": "BJP", "votes": 7656, "votePct": 6.05 },
-        { "name": "Kurian Joseph", "party": "BSP", "votes": 1511, "votePct": 1.19 },
-        { "name": "Radhamani S.", "party": "SUCI(C)", "votes": 456, "votePct": 0.36 }
+        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 63289, "votePct": 49.97, "alliance": "OTHER" },
+        { "name": "Victor T. Thomas", "party": "KC(M)", "votes": 52522, "votePct": 41.47, "alliance": "LDF" },
+        { "name": "Rajan Moolaveetil", "party": "BJP", "votes": 7656, "votePct": 6.05, "alliance": "NDA" },
+        { "name": "Kurian Joseph", "party": "BSP", "votes": 1511, "votePct": 1.19, "alliance": "OTHER" },
+        { "name": "Radhamani S.", "party": "SUCI(C)", "votes": 456, "votePct": 0.36, "alliance": "OTHER" }
       ],
       "margin": 10737,
       "marginPct": 8.50,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 59660, "votePct": 41.28 },
-        { "name": "Joseph M. Puthussery", "party": "KC(M)", "votes": 51398, "votePct": 35.56 },
-        { "name": "Akkerman Kalidasan Bhattathiripad", "party": "BDJS", "votes": 31439, "votePct": 21.75 },
-        { "name": "Saji Kadampanad", "party": "BSP", "votes": 756, "votePct": 0.52 },
-        { "name": "NOTA", "party": "NOTA", "votes": 479, "votePct": 0.33 }
+        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 59660, "votePct": 41.28, "alliance": "OTHER" },
+        { "name": "Joseph M. Puthussery", "party": "KC(M)", "votes": 51398, "votePct": 35.56, "alliance": "LDF" },
+        { "name": "Akkerman Kalidasan Bhattathiripad", "party": "BDJS", "votes": 31439, "votePct": 21.75, "alliance": "NDA" },
+        { "name": "Saji Kadampanad", "party": "BSP", "votes": 756, "votePct": 0.52, "alliance": "OTHER" },
+        { "name": "NOTA", "party": "NOTA", "votes": 479, "votePct": 0.33, "alliance": "NOTA" }
       ],
       "margin": 8262,
       "marginPct": 5.72,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 62178, "votePct": 44.56 },
-        { "name": "Kunju Koshy Paul", "party": "KEC", "votes": 50757, "votePct": 36.37 },
-        { "name": "Ashokan Kulanada", "party": "BJP", "votes": 22674, "votePct": 16.25 },
-        { "name": "Thomas Mathew", "party": "Independent", "votes": 1461, "votePct": 1.05 },
-        { "name": "Rajendra Das", "party": "BSP", "votes": 1074, "votePct": 0.77 }
+        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 62178, "votePct": 44.56, "alliance": "OTHER" },
+        { "name": "Kunju Koshy Paul", "party": "KEC", "votes": 50757, "votePct": 36.37, "alliance": "UDF" },
+        { "name": "Ashokan Kulanada", "party": "BJP", "votes": 22674, "votePct": 16.25, "alliance": "NDA" },
+        { "name": "Thomas Mathew", "party": "Independent", "votes": 1461, "votePct": 1.05, "alliance": "OTHER" },
+        { "name": "Rajendra Das", "party": "BSP", "votes": 1074, "votePct": 0.77, "alliance": "OTHER" }
       ],
       "margin": 11421,
       "marginPct": 8.19,

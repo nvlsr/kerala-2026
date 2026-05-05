@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. K. Ebrahimkunju", "party": "IUML", "votes": 62843, "votePct": 47.73 },
-        { "name": "K. Chandran Pillai", "party": "CPI(M)", "votes": 55054, "votePct": 41.81 },
-        { "name": "P. Krishnadas", "party": "BJP", "votes": 8438, "votePct": 6.41 },
-        { "name": "P. A. Muhammed Aslam", "party": "SDPI", "votes": 2104, "votePct": 1.60 },
-        { "name": "T. A. Mujeeb Rahman", "party": "Independent", "votes": 1236, "votePct": 0.94 }
+        { "name": "V. K. Ebrahimkunju", "party": "IUML", "votes": 62843, "votePct": 47.73, "alliance": "UDF" },
+        { "name": "K. Chandran Pillai", "party": "CPI(M)", "votes": 55054, "votePct": 41.81, "alliance": "LDF" },
+        { "name": "P. Krishnadas", "party": "BJP", "votes": 8438, "votePct": 6.41, "alliance": "NDA" },
+        { "name": "P. A. Muhammed Aslam", "party": "SDPI", "votes": 2104, "votePct": 1.60, "alliance": "OTHER" },
+        { "name": "T. A. Mujeeb Rahman", "party": "Independent", "votes": 1236, "votePct": 0.94, "alliance": "OTHER" }
       ],
       "margin": 7789,
       "marginPct": 5.92,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. K. Ebrahimkunju", "party": "IUML", "votes": 68726, "votePct": 44.37 },
-        { "name": "A. M. Yousaf", "party": "CPI(M)", "votes": 56608, "votePct": 37.55 },
-        { "name": "V. Gopakumar", "party": "BDJS", "votes": 24244, "votePct": 15.65 },
-        { "name": "Safeer Muhammed", "party": "SDPI", "votes": 1706, "votePct": 1.10 },
-        { "name": "Prema G. Pisharady", "party": "WPOI", "votes": 1391, "votePct": 0.90 }
+        { "name": "V. K. Ebrahimkunju", "party": "IUML", "votes": 68726, "votePct": 44.37, "alliance": "UDF" },
+        { "name": "A. M. Yousaf", "party": "CPI(M)", "votes": 56608, "votePct": 37.55, "alliance": "LDF" },
+        { "name": "V. Gopakumar", "party": "BDJS", "votes": 24244, "votePct": 15.65, "alliance": "NDA" },
+        { "name": "Safeer Muhammed", "party": "SDPI", "votes": 1706, "votePct": 1.10, "alliance": "OTHER" },
+        { "name": "Prema G. Pisharady", "party": "WPOI", "votes": 1391, "votePct": 0.90, "alliance": "OTHER" }
       ],
       "margin": 12118,
       "marginPct": 6.82,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Rajeev", "party": "CPI(M)", "votes": 77141, "votePct": 49.49 },
-        { "name": "V. E. Abdul Gafoor", "party": "IUML", "votes": 61805, "votePct": 39.65 },
-        { "name": "P. S. Jayaraj", "party": "BDJS", "votes": 11179, "votePct": 7.17 },
-        { "name": "V. M. Faizal", "party": "SDPI", "votes": 2385, "votePct": 1.53 },
-        { "name": "NOTA", "party": "NOTA", "votes": 1518, "votePct": 0.97 }
+        { "name": "P. Rajeev", "party": "CPI(M)", "votes": 77141, "votePct": 49.49, "alliance": "LDF" },
+        { "name": "V. E. Abdul Gafoor", "party": "IUML", "votes": 61805, "votePct": 39.65, "alliance": "UDF" },
+        { "name": "P. S. Jayaraj", "party": "BDJS", "votes": 11179, "votePct": 7.17, "alliance": "NDA" },
+        { "name": "V. M. Faizal", "party": "SDPI", "votes": 2385, "votePct": 1.53, "alliance": "OTHER" },
+        { "name": "NOTA", "party": "NOTA", "votes": 1518, "votePct": 0.97, "alliance": "NOTA" }
       ],
       "margin": 15336,
       "marginPct": 9.84,

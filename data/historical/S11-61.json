@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Radhakrishnan", "party": "CPI(M)", "votes": 73683, "votePct": 55.42 },
-        { "name": "K. B. Sasikumar", "party": "INC", "votes": 49007, "votePct": 36.86 },
-        { "name": "V. A. Krishnakmaran", "party": "BJP", "votes": 7056, "votePct": 5.31 },
-        { "name": "A. Subramanian", "party": "SDPI", "votes": 2224, "votePct": 1.67 },
-        { "name": "Suresh Babu", "party": "BSP", "votes": 972, "votePct": 0.73 }
+        { "name": "K. Radhakrishnan", "party": "CPI(M)", "votes": 73683, "votePct": 55.42, "alliance": "LDF" },
+        { "name": "K. B. Sasikumar", "party": "INC", "votes": 49007, "votePct": 36.86, "alliance": "UDF" },
+        { "name": "V. A. Krishnakmaran", "party": "BJP", "votes": 7056, "votePct": 5.31, "alliance": "NDA" },
+        { "name": "A. Subramanian", "party": "SDPI", "votes": 2224, "votePct": 1.67, "alliance": "OTHER" },
+        { "name": "Suresh Babu", "party": "BSP", "votes": 972, "votePct": 0.73, "alliance": "OTHER" }
       ],
       "margin": 24676,
       "marginPct": 18.56,
@@ -26,10 +26,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "U. R. Pradeep", "party": "CPI(M)", "votes": 67771, "votePct": 44.81 },
-        { "name": "Thulasi", "party": "INC", "votes": 57571, "votePct": 38.07 },
-        { "name": "Shajumon P. P.", "party": "BJP", "votes": 23845, "votePct": 15.77 },
-        { "name": "A. Subramanian", "party": "SDPI", "votes": 1116, "votePct": 0.74 }
+        { "name": "U. R. Pradeep", "party": "CPI(M)", "votes": 67771, "votePct": 44.81, "alliance": "LDF" },
+        { "name": "Thulasi", "party": "INC", "votes": 57571, "votePct": 38.07, "alliance": "UDF" },
+        { "name": "Shajumon P. P.", "party": "BJP", "votes": 23845, "votePct": 15.77, "alliance": "NDA" },
+        { "name": "A. Subramanian", "party": "SDPI", "votes": 1116, "votePct": 0.74, "alliance": "OTHER" }
       ],
       "margin": 10200,
       "marginPct": 6.74,
@@ -42,10 +42,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Radhakrishnan", "party": "CPI(M)", "votes": 83415, "votePct": 54.41 },
-        { "name": "C. C. Sreekumar", "party": "INC", "votes": 44015, "votePct": 28.71 },
-        { "name": "Shajumon Vattekkad", "party": "BJP", "votes": 24045, "votePct": 15.68 },
-        { "name": "Chandran Thiyyath", "party": "SDPI", "votes": 1120, "votePct": 0.73 }
+        { "name": "K. Radhakrishnan", "party": "CPI(M)", "votes": 83415, "votePct": 54.41, "alliance": "LDF" },
+        { "name": "C. C. Sreekumar", "party": "INC", "votes": 44015, "votePct": 28.71, "alliance": "UDF" },
+        { "name": "Shajumon Vattekkad", "party": "BJP", "votes": 24045, "votePct": 15.68, "alliance": "NDA" },
+        { "name": "Chandran Thiyyath", "party": "SDPI", "votes": 1120, "votePct": 0.73, "alliance": "OTHER" }
       ],
       "margin": 39400,
       "marginPct": 25.70,
@@ -58,10 +58,10 @@
       "type": "by-election",
       "reason": "K. Radhakrishnan's resignation after winning Alathur Lok Sabha seat",
       "candidates": [
-        { "name": "U. R. Pradeep", "party": "CPI(M)", "votes": 64827, "votePct": 41.44 },
-        { "name": "Ramya Haridas", "party": "INC", "votes": 52626, "votePct": 33.64 },
-        { "name": "K. Balakrishnan", "party": "BJP", "votes": 33609, "votePct": 21.49 },
-        { "name": "N. K. Sudheer", "party": "Independent", "votes": 3920, "votePct": 2.50 }
+        { "name": "U. R. Pradeep", "party": "CPI(M)", "votes": 64827, "votePct": 41.44, "alliance": "LDF" },
+        { "name": "Ramya Haridas", "party": "INC", "votes": 52626, "votePct": 33.64, "alliance": "UDF" },
+        { "name": "K. Balakrishnan", "party": "BJP", "votes": 33609, "votePct": 21.49, "alliance": "NDA" },
+        { "name": "N. K. Sudheer", "party": "Independent", "votes": 3920, "votePct": 2.50, "alliance": "OTHER" }
       ],
       "margin": 12201,
       "marginPct": 7.79,

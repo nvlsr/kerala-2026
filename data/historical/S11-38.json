@@ -13,32 +13,27 @@
           "name": "Manjalamkuzhi Ali",
           "party": "IUML",
           "votes": 69730,
-          "votePct": 52.14
-        },
+          "votePct": 52.14, "alliance": "UDF" },
         {
           "name": "V. Sasikumar",
           "party": "CPI(M)",
           "votes": 60141,
-          "votePct": 44.97
-        },
+          "votePct": 44.97, "alliance": "LDF" },
         {
           "name": "C. K. Kunhimuhammed",
           "party": "BJP",
           "votes": 1989,
-          "votePct": 1.49
-        },
+          "votePct": 1.49, "alliance": "NDA" },
         {
           "name": "Saidalikkutty",
           "party": "SDPI",
           "votes": 1067,
-          "votePct": 0.8
-        },
+          "votePct": 0.8, "alliance": "OTHER" },
         {
           "name": "Mohammed Ali",
           "party": "Independent",
           "votes": 808,
-          "votePct": 0.6
-        }
+          "votePct": 0.6, "alliance": "OTHER" }
       ],
       "margin": 9589,
       "marginPct": 7.17,
@@ -55,32 +50,27 @@
           "name": "Manjalamkuzhi Ali",
           "party": "IUML",
           "votes": 70990,
-          "votePct": 46.89
-        },
+          "votePct": 46.89, "alliance": "UDF" },
         {
           "name": "V. Sasikumar",
           "party": "CPI(M)",
           "votes": 70411,
-          "votePct": 46.5
-        },
+          "votePct": 46.5, "alliance": "LDF" },
         {
           "name": "M. K. Sunil",
           "party": "BJP",
           "votes": 5917,
-          "votePct": 3.91
-        },
+          "votePct": 3.91, "alliance": "NDA" },
         {
           "name": "Saleem Mampad",
           "party": "WPOI",
           "votes": 1757,
-          "votePct": 1.16
-        },
+          "votePct": 1.16, "alliance": "OTHER" },
         {
           "name": "Suniya Siraj",
           "party": "SDPI",
           "votes": 698,
-          "votePct": 0.46
-        }
+          "votePct": 0.46, "alliance": "OTHER" }
       ],
       "margin": 579,
       "marginPct": 0.39,
@@ -97,50 +87,42 @@
           "name": "Najeeb Kanthapuram",
           "party": "Indian Union Muslim League",
           "votes": 76530,
-          "votePct": 46.21
-        },
+          "votePct": 46.21, "alliance": "UDF" },
         {
           "name": "K. P. M. Musthafa s/o Muhamedali Haji",
           "party": "Independent (LDF)",
           "votes": 76492,
-          "votePct": 46.19
-        },
+          "votePct": 46.19, "alliance": "LDF" },
         {
           "name": "Suchitra",
           "party": "BJP",
           "votes": 8021,
-          "votePct": 4.84
-        },
+          "votePct": 4.84, "alliance": "NDA" },
         {
           "name": "P. T. Abdul Afsal",
           "party": "Independent",
           "votes": 906,
-          "votePct": 0.55
-        },
+          "votePct": 0.55, "alliance": "OTHER" },
         {
           "name": "Najeeb Kutteeri",
           "party": "Independent",
           "votes": 828,
-          "votePct": 0.5
-        },
+          "votePct": 0.5, "alliance": "OTHER" },
         {
           "name": "K. P. Muhammed Musthafa",
           "party": "Independent",
           "votes": 751,
-          "votePct": 0.45
-        },
+          "votePct": 0.45, "alliance": "OTHER" },
         {
           "name": "P. K. Musthafa s/o Saidalavi",
           "party": "Independent",
           "votes": 750,
-          "votePct": 0.45
-        },
+          "votePct": 0.45, "alliance": "OTHER" },
         {
           "name": "Musthafa s/o Muhammed",
           "party": "Independent",
           "votes": 471,
-          "votePct": 0.28
-        }
+          "votePct": 0.28, "alliance": "OTHER" }
       ],
       "margin": 38,
       "marginPct": 0.02,

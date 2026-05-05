@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. K. Nanu", "party": "JD(S)", "votes": 46912, "votePct": 41.05 },
-        { "name": "M. K. Premnath", "party": "SJ(D)", "votes": 46065, "votePct": 40.31 },
-        { "name": "N. Venu", "party": "Independent", "votes": 10098, "votePct": 8.84 },
-        { "name": "M. P. Rajan", "party": "BJP", "votes": 6909, "votePct": 6.05 },
-        { "name": "Saalim Azhiyur", "party": "SDPI", "votes": 3488, "votePct": 3.05 }
+        { "name": "C. K. Nanu", "party": "JD(S)", "votes": 46912, "votePct": 41.05, "alliance": "OTHER" },
+        { "name": "M. K. Premnath", "party": "SJ(D)", "votes": 46065, "votePct": 40.31, "alliance": "LDF" },
+        { "name": "N. Venu", "party": "Independent", "votes": 10098, "votePct": 8.84, "alliance": "OTHER" },
+        { "name": "M. P. Rajan", "party": "BJP", "votes": 6909, "votePct": 6.05, "alliance": "NDA" },
+        { "name": "Saalim Azhiyur", "party": "SDPI", "votes": 3488, "votePct": 3.05, "alliance": "OTHER" }
       ],
       "margin": 847,
       "marginPct": 0.74,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. K. Nanu", "party": "JD(S)", "votes": 49211, "votePct": 37.98 },
-        { "name": "Manayath Chandran", "party": "JD(U)", "votes": 39700, "votePct": 30.64 },
-        { "name": "K. K. Rema", "party": "RMPI", "votes": 20504, "votePct": 15.82 },
-        { "name": "M. Rajeshkumar", "party": "BJP", "votes": 13937, "votePct": 10.76 },
-        { "name": "P. Abdul Hameed", "party": "SDPI", "votes": 2673, "votePct": 2.06 }
+        { "name": "C. K. Nanu", "party": "JD(S)", "votes": 49211, "votePct": 37.98, "alliance": "OTHER" },
+        { "name": "Manayath Chandran", "party": "JD(U)", "votes": 39700, "votePct": 30.64, "alliance": "OTHER" },
+        { "name": "K. K. Rema", "party": "RMPI", "votes": 20504, "votePct": 15.82, "alliance": "UDF" },
+        { "name": "M. Rajeshkumar", "party": "BJP", "votes": 13937, "votePct": 10.76, "alliance": "NDA" },
+        { "name": "P. Abdul Hameed", "party": "SDPI", "votes": 2673, "votePct": 2.06, "alliance": "OTHER" }
       ],
       "margin": 9511,
       "marginPct": 7.34,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. K. Rema", "party": "RMPI", "votes": 65093, "votePct": 47.63 },
-        { "name": "Manayath Chandran", "party": "LJD", "votes": 57602, "votePct": 42.15 },
-        { "name": "M. Rajesh Kumar", "party": "BJP", "votes": 10225, "votePct": 7.48 },
-        { "name": "Musthafa Paleri", "party": "SDPI", "votes": 2836, "votePct": 2.08 },
-        { "name": "Gangadharan Madappally", "party": "Independent", "votes": 186, "votePct": 0.14 }
+        { "name": "K. K. Rema", "party": "RMPI", "votes": 65093, "votePct": 47.63, "alliance": "UDF" },
+        { "name": "Manayath Chandran", "party": "LJD", "votes": 57602, "votePct": 42.15, "alliance": "OTHER" },
+        { "name": "M. Rajesh Kumar", "party": "BJP", "votes": 10225, "votePct": 7.48, "alliance": "NDA" },
+        { "name": "Musthafa Paleri", "party": "SDPI", "votes": 2836, "votePct": 2.08, "alliance": "OTHER" },
+        { "name": "Gangadharan Madappally", "party": "Independent", "votes": 186, "votePct": 0.14, "alliance": "OTHER" }
       ],
       "margin": 7491,
       "marginPct": 5.48,

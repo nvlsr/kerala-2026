@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. Divakaran", "party": "CPI", "votes": 69086, "votePct": 50.13 },
-        { "name": "A. N. Rajan Babu", "party": "JSS", "votes": 54564, "votePct": 39.59 },
-        { "name": "Nazarudeen Elamaram", "party": "SDPI", "votes": 7645, "votePct": 5.55 },
-        { "name": "Malumel Sumesh", "party": "BJP", "votes": 5097, "votePct": 3.70 },
-        { "name": "P. D. Sudheer", "party": "Independent", "votes": 868, "votePct": 0.63 }
+        { "name": "C. Divakaran", "party": "CPI", "votes": 69086, "votePct": 50.13, "alliance": "LDF" },
+        { "name": "A. N. Rajan Babu", "party": "JSS", "votes": 54564, "votePct": 39.59, "alliance": "OTHER" },
+        { "name": "Nazarudeen Elamaram", "party": "SDPI", "votes": 7645, "votePct": 5.55, "alliance": "OTHER" },
+        { "name": "Malumel Sumesh", "party": "BJP", "votes": 5097, "votePct": 3.70, "alliance": "NDA" },
+        { "name": "P. D. Sudheer", "party": "Independent", "votes": 868, "votePct": 0.63, "alliance": "OTHER" }
       ],
       "margin": 14522,
       "marginPct": 10.54,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "R. Ramachandran", "party": "CPI", "votes": 69902, "votePct": 43.06 },
-        { "name": "C. R. Mahesh", "party": "INC", "votes": 68143, "votePct": 41.97 },
-        { "name": "V. Sadasivan", "party": "BDJS", "votes": 19115, "votePct": 11.77 },
-        { "name": "A. K. Salahudeen", "party": "SDPI", "votes": 1737, "votePct": 1.07 },
-        { "name": "Mylakkadu Shah", "party": "PDP", "votes": 1620, "votePct": 1.00 }
+        { "name": "R. Ramachandran", "party": "CPI", "votes": 69902, "votePct": 43.06, "alliance": "LDF" },
+        { "name": "C. R. Mahesh", "party": "INC", "votes": 68143, "votePct": 41.97, "alliance": "UDF" },
+        { "name": "V. Sadasivan", "party": "BDJS", "votes": 19115, "votePct": 11.77, "alliance": "NDA" },
+        { "name": "A. K. Salahudeen", "party": "SDPI", "votes": 1737, "votePct": 1.07, "alliance": "OTHER" },
+        { "name": "Mylakkadu Shah", "party": "PDP", "votes": 1620, "votePct": 1.00, "alliance": "OTHER" }
       ],
       "margin": 1759,
       "marginPct": 1.09,
@@ -43,9 +43,9 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. R. Mahesh", "party": "INC", "votes": 94225, "votePct": 54.38 },
-        { "name": "R. Ramachandran", "party": "CPI", "votes": 65017, "votePct": 37.52 },
-        { "name": "Bitty Sudheer", "party": "BJP", "votes": 12144, "votePct": 7.01 }
+        { "name": "C. R. Mahesh", "party": "INC", "votes": 94225, "votePct": 54.38, "alliance": "UDF" },
+        { "name": "R. Ramachandran", "party": "CPI", "votes": 65017, "votePct": 37.52, "alliance": "LDF" },
+        { "name": "Bitty Sudheer", "party": "BJP", "votes": 12144, "votePct": 7.01, "alliance": "NDA" }
       ],
       "margin": 29208,
       "marginPct": 16.68,

@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 77580, "votePct": 58.50 },
-        { "name": "V. Rameshan", "party": "CPI(M)", "votes": 48661, "votePct": 36.69 },
-        { "name": "Kotheri Ayyapan", "party": "BJP", "votes": 2885, "votePct": 2.18 },
-        { "name": "Krishnan Eranhikkal", "party": "SDPI", "votes": 1682, "votePct": 1.27 },
-        { "name": "P. Anil Kumar", "party": "Independent", "votes": 953, "votePct": 0.72 }
+        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 77580, "votePct": 58.50, "alliance": "UDF" },
+        { "name": "V. Rameshan", "party": "CPI(M)", "votes": 48661, "votePct": 36.69, "alliance": "LDF" },
+        { "name": "Kotheri Ayyapan", "party": "BJP", "votes": 2885, "votePct": 2.18, "alliance": "NDA" },
+        { "name": "Krishnan Eranhikkal", "party": "SDPI", "votes": 1682, "votePct": 1.27, "alliance": "OTHER" },
+        { "name": "P. Anil Kumar", "party": "Independent", "votes": 953, "votePct": 0.72, "alliance": "OTHER" }
       ],
       "margin": 28919,
       "marginPct": 21.81,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 81964, "votePct": 52.59 },
-        { "name": "K. Nishanth", "party": "CPI(M)", "votes": 58100, "votePct": 37.28 },
-        { "name": "Sunitha Mohandas", "party": "BJP", "votes": 9471, "votePct": 6.08 },
-        { "name": "Krishnan Kuniyil", "party": "WPOI", "votes": 3399, "votePct": 2.18 },
-        { "name": "Krishnan Eranhikkal", "party": "SDPI", "votes": 1178, "votePct": 0.76 }
+        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 81964, "votePct": 52.59, "alliance": "UDF" },
+        { "name": "K. Nishanth", "party": "CPI(M)", "votes": 58100, "votePct": 37.28, "alliance": "LDF" },
+        { "name": "Sunitha Mohandas", "party": "BJP", "votes": 9471, "votePct": 6.08, "alliance": "NDA" },
+        { "name": "Krishnan Kuniyil", "party": "WPOI", "votes": 3399, "votePct": 2.18, "alliance": "OTHER" },
+        { "name": "Krishnan Eranhikkal", "party": "SDPI", "votes": 1178, "votePct": 0.76, "alliance": "OTHER" }
       ],
       "margin": 23864,
       "marginPct": 15.31,
@@ -43,10 +43,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 87415, "votePct": 51.44 },
-        { "name": "P. Midhuna", "party": "CPI(M)", "votes": 71852, "votePct": 42.28 },
-        { "name": "P. C. Vijayan", "party": "BJP", "votes": 7057, "votePct": 4.15 },
-        { "name": "Krishnan. C", "party": "WPOI", "votes": 2943, "votePct": 1.73 }
+        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 87415, "votePct": 51.44, "alliance": "UDF" },
+        { "name": "P. Midhuna", "party": "CPI(M)", "votes": 71852, "votePct": 42.28, "alliance": "LDF" },
+        { "name": "P. C. Vijayan", "party": "BJP", "votes": 7057, "votePct": 4.15, "alliance": "NDA" },
+        { "name": "Krishnan. C", "party": "WPOI", "votes": 2943, "votePct": 1.73, "alliance": "OTHER" }
       ],
       "margin": 15563,
       "marginPct": 9.16,

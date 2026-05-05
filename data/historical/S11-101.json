@@ -13,32 +13,27 @@
           "name": "P. C. George",
           "party": "KC(M)",
           "votes": 59809,
-          "votePct": 50.77
-        },
+          "votePct": 50.77, "alliance": "LDF" },
         {
           "name": "Mohan Thomas",
           "party": "Independent (LDF)",
           "votes": 44105,
-          "votePct": 37.44
-        },
+          "votePct": 37.44, "alliance": "LDF" },
         {
           "name": "K. M. Santhosh Kumar",
           "party": "BJP",
           "votes": 5010,
-          "votePct": 4.25
-        },
+          "votePct": 4.25, "alliance": "NDA" },
         {
           "name": "V. M. Sulaiman Moulavi",
           "party": "SDPI",
           "votes": 3579,
-          "votePct": 3.04
-        },
+          "votePct": 3.04, "alliance": "OTHER" },
         {
           "name": "P. P. Joshy",
           "party": "BSP",
           "votes": 2956,
-          "votePct": 2.51
-        }
+          "votePct": 2.51, "alliance": "OTHER" }
       ],
       "margin": 14984,
       "marginPct": 13.33,
@@ -55,26 +50,22 @@
           "name": "P. C. George",
           "party": "Independent",
           "votes": 63621,
-          "votePct": 43.65
-        },
+          "votePct": 43.65, "alliance": "OTHER" },
         {
           "name": "Georgekutty Augustine",
           "party": "KC(M)",
           "votes": 35800,
-          "votePct": 24.56
-        },
+          "votePct": 24.56, "alliance": "LDF" },
         {
           "name": "P. C. Joseph Ponnattu",
           "party": "JKC",
           "votes": 22270,
-          "votePct": 15.28
-        },
+          "votePct": 15.28, "alliance": "OTHER" },
         {
           "name": "M. R. Ullas",
           "party": "BDJS",
           "votes": 19966,
-          "votePct": 13.7
-        }
+          "votePct": 13.7, "alliance": "NDA" }
       ],
       "margin": 27821,
       "marginPct": 19.1,
@@ -91,26 +82,22 @@
           "name": "Sebastian Kulathunkal",
           "party": "KC(M)",
           "votes": 58668,
-          "votePct": 41.94
-        },
+          "votePct": 41.94, "alliance": "LDF" },
         {
           "name": "P. C. George",
           "party": "KJ(S)",
           "votes": 41851,
-          "votePct": 29.92
-        },
+          "votePct": 29.92, "alliance": "OTHER" },
         {
           "name": "Tomy Kallany",
           "party": "INC",
           "votes": 34633,
-          "votePct": 24.76
-        },
+          "votePct": 24.76, "alliance": "UDF" },
         {
           "name": "M. P. Sen",
           "party": "BDJS",
           "votes": 2965,
-          "votePct": 2.12
-        }
+          "votePct": 2.12, "alliance": "NDA" }
       ],
       "margin": 16581,
       "marginPct": 11.85,

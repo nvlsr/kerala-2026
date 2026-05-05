@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "James Mathew", "party": "CPI(M)", "votes": 81031, "votePct": 56.13 },
-        { "name": "Job Michel", "party": "KC(M)", "votes": 53170, "votePct": 36.83 },
-        { "name": "K. Jayaprakash", "party": "BJP", "votes": 6492, "votePct": 4.50 },
-        { "name": "Muhammadali S. P.", "party": "SDPI", "votes": 1930, "votePct": 1.34 },
-        { "name": "Nidheesh Thillankeri", "party": "BSP", "votes": 927, "votePct": 0.64 }
+        { "name": "James Mathew", "party": "CPI(M)", "votes": 81031, "votePct": 56.13, "alliance": "LDF" },
+        { "name": "Job Michel", "party": "KC(M)", "votes": 53170, "votePct": 36.83, "alliance": "LDF" },
+        { "name": "K. Jayaprakash", "party": "BJP", "votes": 6492, "votePct": 4.50, "alliance": "NDA" },
+        { "name": "Muhammadali S. P.", "party": "SDPI", "votes": 1930, "votePct": 1.34, "alliance": "OTHER" },
+        { "name": "Nidheesh Thillankeri", "party": "BSP", "votes": 927, "votePct": 0.64, "alliance": "OTHER" }
       ],
       "margin": 27861,
       "marginPct": 19.30,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "James Mathew", "party": "CPI(M)", "votes": 91106, "votePct": 56.95 },
-        { "name": "Rajesh Nambiar", "party": "KC(M)", "votes": 50489, "votePct": 31.56 },
-        { "name": "P. Balakrishnan", "party": "BJP", "votes": 14742, "votePct": 9.21 },
-        { "name": "Ibrahim Thiruvatoor", "party": "SDPI", "votes": 1323, "votePct": 0.83 },
-        { "name": "NOTA", "party": "NOTA", "votes": 867, "votePct": 0.54 }
+        { "name": "James Mathew", "party": "CPI(M)", "votes": 91106, "votePct": 56.95, "alliance": "LDF" },
+        { "name": "Rajesh Nambiar", "party": "KC(M)", "votes": 50489, "votePct": 31.56, "alliance": "LDF" },
+        { "name": "P. Balakrishnan", "party": "BJP", "votes": 14742, "votePct": 9.21, "alliance": "NDA" },
+        { "name": "Ibrahim Thiruvatoor", "party": "SDPI", "votes": 1323, "votePct": 0.83, "alliance": "OTHER" },
+        { "name": "NOTA", "party": "NOTA", "votes": 867, "votePct": 0.54, "alliance": "NOTA" }
       ],
       "margin": 40617,
       "marginPct": 25.39,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. V. Govindan", "party": "CPI(M)", "votes": 92870, "votePct": 52.14 },
-        { "name": "V. P. Abdul Rasheed", "party": "INC", "votes": 70181, "votePct": 39.40 },
-        { "name": "A. P. Gangadharan", "party": "BJP", "votes": 13058, "votePct": 7.33 },
-        { "name": "NOTA", "party": "NOTA", "votes": 789, "votePct": 0.44 },
-        { "name": "K. O. P. Shijith", "party": "Independent", "votes": 508, "votePct": 0.29 }
+        { "name": "M. V. Govindan", "party": "CPI(M)", "votes": 92870, "votePct": 52.14, "alliance": "LDF" },
+        { "name": "V. P. Abdul Rasheed", "party": "INC", "votes": 70181, "votePct": 39.40, "alliance": "UDF" },
+        { "name": "A. P. Gangadharan", "party": "BJP", "votes": 13058, "votePct": 7.33, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 789, "votePct": 0.44, "alliance": "NOTA" },
+        { "name": "K. O. P. Shijith", "party": "Independent", "votes": 508, "votePct": 0.29, "alliance": "OTHER" }
       ],
       "margin": 22689,
       "marginPct": 10.74,

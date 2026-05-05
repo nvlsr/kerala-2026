@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. V. Abdul Khader", "party": "CPI(M)", "votes": 62246, "votePct": 48.53 },
-        { "name": "Ashraf Kokkur", "party": "IUML", "votes": 52278, "votePct": 40.75 },
-        { "name": "Dayanandan Mampully", "party": "BJP", "votes": 9306, "votePct": 7.25 },
-        { "name": "Ashraf Vadakoot", "party": "SDPI", "votes": 2187, "votePct": 1.70 },
-        { "name": "Shameerbabu", "party": "Independent", "votes": 1017, "votePct": 0.94 }
+        { "name": "K. V. Abdul Khader", "party": "CPI(M)", "votes": 62246, "votePct": 48.53, "alliance": "LDF" },
+        { "name": "Ashraf Kokkur", "party": "IUML", "votes": 52278, "votePct": 40.75, "alliance": "UDF" },
+        { "name": "Dayanandan Mampully", "party": "BJP", "votes": 9306, "votePct": 7.25, "alliance": "NDA" },
+        { "name": "Ashraf Vadakoot", "party": "SDPI", "votes": 2187, "votePct": 1.70, "alliance": "OTHER" },
+        { "name": "Shameerbabu", "party": "Independent", "votes": 1017, "votePct": 0.94, "alliance": "OTHER" }
       ],
       "margin": 9968,
       "marginPct": 7.78,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. V. Abdul Khader", "party": "CPI(M)", "votes": 66088, "votePct": 44.76 },
-        { "name": "P. M. Sadiqali", "party": "IUML", "votes": 50990, "votePct": 34.53 },
-        { "name": "Nivedida Subramanian", "party": "BJP", "votes": 25490, "votePct": 17.26 },
-        { "name": "P. R. Siyad", "party": "SDPI", "votes": 1406, "votePct": 0.95 },
-        { "name": "K. G. Mohanan", "party": "WPOI", "votes": 1382, "votePct": 0.94 }
+        { "name": "K. V. Abdul Khader", "party": "CPI(M)", "votes": 66088, "votePct": 44.76, "alliance": "LDF" },
+        { "name": "P. M. Sadiqali", "party": "IUML", "votes": 50990, "votePct": 34.53, "alliance": "UDF" },
+        { "name": "Nivedida Subramanian", "party": "BJP", "votes": 25490, "votePct": 17.26, "alliance": "NDA" },
+        { "name": "P. R. Siyad", "party": "SDPI", "votes": 1406, "votePct": 0.95, "alliance": "OTHER" },
+        { "name": "K. G. Mohanan", "party": "WPOI", "votes": 1382, "votePct": 0.94, "alliance": "OTHER" }
       ],
       "margin": 15098,
       "marginPct": 10.23,
@@ -43,10 +43,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "N. K. Akbar", "party": "CPI(M)", "votes": 77072, "votePct": 52.52 },
-        { "name": "K. N. A. Khader", "party": "IUML", "votes": 58804, "votePct": 40.07 },
-        { "name": "Dileep Nair", "party": "DSJP", "votes": 6294, "votePct": 4.29 },
-        { "name": "NOTA", "party": "NOTA", "votes": 1007, "votePct": 0.69 }
+        { "name": "N. K. Akbar", "party": "CPI(M)", "votes": 77072, "votePct": 52.52, "alliance": "LDF" },
+        { "name": "K. N. A. Khader", "party": "IUML", "votes": 58804, "votePct": 40.07, "alliance": "UDF" },
+        { "name": "Dileep Nair", "party": "DSJP", "votes": 6294, "votePct": 4.29, "alliance": "OTHER" },
+        { "name": "NOTA", "party": "NOTA", "votes": 1007, "votePct": 0.69, "alliance": "NOTA" }
       ],
       "margin": 18268,
       "marginPct": 12.45,

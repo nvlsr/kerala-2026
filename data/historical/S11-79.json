@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "S. Sharma", "party": "CPI(M)", "votes": 60530, "votePct": 50.37 },
-        { "name": "Ajay Tharayil", "party": "INC", "votes": 55572, "votePct": 46.03 },
-        { "name": "T. G. Surendran", "party": "BJP", "votes": 2930, "votePct": 2.43 },
-        { "name": "T. K. Sivanandan", "party": "BSP", "votes": 546, "votePct": 0.45 },
-        { "name": "Santhosh Sarma", "party": "Independent", "votes": 490, "votePct": 0.41 }
+        { "name": "S. Sharma", "party": "CPI(M)", "votes": 60530, "votePct": 50.37, "alliance": "LDF" },
+        { "name": "Ajay Tharayil", "party": "INC", "votes": 55572, "votePct": 46.03, "alliance": "UDF" },
+        { "name": "T. G. Surendran", "party": "BJP", "votes": 2930, "votePct": 2.43, "alliance": "NDA" },
+        { "name": "T. K. Sivanandan", "party": "BSP", "votes": 546, "votePct": 0.45, "alliance": "OTHER" },
+        { "name": "Santhosh Sarma", "party": "Independent", "votes": 490, "votePct": 0.41, "alliance": "OTHER" }
       ],
       "margin": 5242,
       "marginPct": 4.34,
@@ -26,10 +26,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "S. Sharma", "party": "CPI(M)", "votes": 68526, "votePct": 52.24 },
-        { "name": "K. R. Subhash", "party": "INC", "votes": 49173, "votePct": 37.49 },
-        { "name": "Vamalochanan K. K.", "party": "BDJS", "votes": 10051, "votePct": 7.66 },
-        { "name": "Jyothidas Paravur", "party": "WPOI", "votes": 1406, "votePct": 1.07 }
+        { "name": "S. Sharma", "party": "CPI(M)", "votes": 68526, "votePct": 52.24, "alliance": "LDF" },
+        { "name": "K. R. Subhash", "party": "INC", "votes": 49173, "votePct": 37.49, "alliance": "UDF" },
+        { "name": "Vamalochanan K. K.", "party": "BDJS", "votes": 10051, "votePct": 7.66, "alliance": "NDA" },
+        { "name": "Jyothidas Paravur", "party": "WPOI", "votes": 1406, "votePct": 1.07, "alliance": "OTHER" }
       ],
       "margin": 19353,
       "marginPct": 14.75,
@@ -42,10 +42,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. N. Unnikrishnan", "party": "CPI(M)", "votes": 53858, "votePct": 41.24 },
-        { "name": "Deepak Joy", "party": "INC", "votes": 45657, "votePct": 34.96 },
-        { "name": "Job Chakkalackal", "party": "Twenty20 Party", "votes": 16707, "votePct": 12.79 },
-        { "name": "K. S. Shaiju", "party": "BJP", "votes": 13540, "votePct": 10.37 }
+        { "name": "K. N. Unnikrishnan", "party": "CPI(M)", "votes": 53858, "votePct": 41.24, "alliance": "LDF" },
+        { "name": "Deepak Joy", "party": "INC", "votes": 45657, "votePct": 34.96, "alliance": "UDF" },
+        { "name": "Job Chakkalackal", "party": "Twenty20 Party", "votes": 16707, "votePct": 12.79, "alliance": "NDA" },
+        { "name": "K. S. Shaiju", "party": "BJP", "votes": 13540, "votePct": 10.37, "alliance": "NDA" }
       ],
       "margin": 8201,
       "marginPct": 6.28,

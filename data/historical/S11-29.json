@@ -13,32 +13,27 @@
           "name": "Elamaram Kareem",
           "party": "CPI(M)",
           "votes": 60550,
-          "votePct": 46.8
-        },
+          "votePct": 46.8, "alliance": "LDF" },
         {
           "name": "Adam Mulsi M. P.",
           "party": "INC",
           "votes": 55234,
-          "votePct": 42.69
-        },
+          "votePct": 42.69, "alliance": "UDF" },
         {
           "name": "K. P. Sreesan",
           "party": "BJP",
           "votes": 11040,
-          "votePct": 8.53
-        },
+          "votePct": 8.53, "alliance": "NDA" },
         {
           "name": "Muhammed Musthafa",
           "party": "SDPI",
           "votes": 954,
-          "votePct": 0.74
-        },
+          "votePct": 0.74, "alliance": "OTHER" },
         {
           "name": "K. S. Hariharan",
           "party": "Independent",
           "votes": 564,
-          "votePct": 0.44
-        }
+          "votePct": 0.44, "alliance": "OTHER" }
       ],
       "margin": 5316,
       "marginPct": 4.11,
@@ -55,56 +50,47 @@
           "name": "V. K. C. Mammed Koya",
           "party": "CPI(M)",
           "votes": 69114,
-          "votePct": 44.39
-        },
+          "votePct": 44.39, "alliance": "LDF" },
         {
           "name": "M. P. Adam Mulsi",
           "party": "INC",
           "votes": 54751,
-          "votePct": 35.16
-        },
+          "votePct": 35.16, "alliance": "UDF" },
         {
           "name": "Prakash Babu",
           "party": "BJP",
           "votes": 27958,
-          "votePct": 17.96
-        },
+          "votePct": 17.96, "alliance": "NDA" },
         {
           "name": "P. C. Muhammedkutty Master",
           "party": "WPI",
           "votes": 1387,
-          "votePct": 0.89
-        },
+          "votePct": 0.89, "alliance": "OTHER" },
         {
           "name": "Musthafa Kommeri",
           "party": "SDPI",
           "votes": 1126,
-          "votePct": 0.72
-        },
+          "votePct": 0.72, "alliance": "OTHER" },
         {
           "name": "V. K. Mammed Koya V K House",
           "party": "Independent",
           "votes": 355,
-          "votePct": 0.23
-        },
+          "votePct": 0.23, "alliance": "OTHER" },
         {
           "name": "Adam Malique",
           "party": "Independent",
           "votes": 199,
-          "votePct": 0.13
-        },
+          "votePct": 0.13, "alliance": "OTHER" },
         {
           "name": "K. V. Adam",
           "party": "Independent",
           "votes": 109,
-          "votePct": 0.07
-        },
+          "votePct": 0.07, "alliance": "OTHER" },
         {
           "name": "Ajeesh Kumar Erakkathil",
           "party": "Independent",
           "votes": 105,
-          "votePct": 0.07
-        }
+          "votePct": 0.07, "alliance": "OTHER" }
       ],
       "margin": 14363,
       "marginPct": 9.22,
@@ -121,32 +107,27 @@
           "name": "P. A. Mohammed Riyas",
           "party": "CPI(M)",
           "votes": 82165,
-          "votePct": 49.73
-        },
+          "votePct": 49.73, "alliance": "LDF" },
         {
           "name": "PM Niyas",
           "party": "INC",
           "votes": 53418,
-          "votePct": 32.33
-        },
+          "votePct": 32.33, "alliance": "UDF" },
         {
           "name": "KP Prakash Babu",
           "party": "BJP",
           "votes": 26267,
-          "votePct": 15.9
-        },
+          "votePct": 15.9, "alliance": "NDA" },
         {
           "name": "Jamal Chaliyam",
           "party": "SDPI",
           "votes": 2029,
-          "votePct": 1.23
-        },
+          "votePct": 1.23, "alliance": "OTHER" },
         {
           "name": "NOTA",
           "party": "NOTA",
           "votes": 621,
-          "votePct": 0.38
-        }
+          "votePct": 0.38, "alliance": "NOTA" }
       ],
       "margin": 28747,
       "marginPct": 17.4,

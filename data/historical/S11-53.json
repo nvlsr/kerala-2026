@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. V. Vijayadas", "party": "CPI(M)", "votes": 52920, "votePct": 46.49 },
-        { "name": "P. Swaminathan", "party": "INC", "votes": 49355, "votePct": 43.49 },
-        { "name": "V. Devayani", "party": "BJP", "votes": 8467, "votePct": 7.46 },
-        { "name": "Vijayadasan", "party": "Independent", "votes": 1543, "votePct": 1.36 },
-        { "name": "K. Velayudhan", "party": "BSP", "votes": 1198, "votePct": 1.06 }
+        { "name": "K. V. Vijayadas", "party": "CPI(M)", "votes": 52920, "votePct": 46.49, "alliance": "LDF" },
+        { "name": "P. Swaminathan", "party": "INC", "votes": 49355, "votePct": 43.49, "alliance": "UDF" },
+        { "name": "V. Devayani", "party": "BJP", "votes": 8467, "votePct": 7.46, "alliance": "NDA" },
+        { "name": "Vijayadasan", "party": "Independent", "votes": 1543, "votePct": 1.36, "alliance": "OTHER" },
+        { "name": "K. Velayudhan", "party": "BSP", "votes": 1198, "votePct": 1.06, "alliance": "OTHER" }
       ],
       "margin": 3565,
       "marginPct": 3.14,
@@ -26,10 +26,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. V. Vijayadas", "party": "CPI(M)", "votes": 60790, "votePct": 45.35 },
-        { "name": "Pandalam Sudhakaran", "party": "INC", "votes": 47519, "votePct": 35.45 },
-        { "name": "Renu Suresh", "party": "BJP", "votes": 23800, "votePct": 17.75 },
-        { "name": "Ramesh P. V. Kannampariyam", "party": "BSP", "votes": 789, "votePct": 0.59 }
+        { "name": "K. V. Vijayadas", "party": "CPI(M)", "votes": 60790, "votePct": 45.35, "alliance": "LDF" },
+        { "name": "Pandalam Sudhakaran", "party": "INC", "votes": 47519, "votePct": 35.45, "alliance": "UDF" },
+        { "name": "Renu Suresh", "party": "BJP", "votes": 23800, "votePct": 17.75, "alliance": "NDA" },
+        { "name": "Ramesh P. V. Kannampariyam", "party": "BSP", "votes": 789, "votePct": 0.59, "alliance": "OTHER" }
       ],
       "margin": 13271,
       "marginPct": 9.90,
@@ -42,10 +42,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Santhakumari", "party": "CPI(M)", "votes": 67881, "votePct": 49.01 },
-        { "name": "U. C. Raman", "party": "IUML", "votes": 40662, "votePct": 29.36 },
-        { "name": "M. Suresh Babu", "party": "BJP", "votes": 27661, "votePct": 19.97 },
-        { "name": "P. E. Guruvayoorappan", "party": "BSP", "votes": 1351, "votePct": 0.59 }
+        { "name": "K. Santhakumari", "party": "CPI(M)", "votes": 67881, "votePct": 49.01, "alliance": "LDF" },
+        { "name": "U. C. Raman", "party": "IUML", "votes": 40662, "votePct": 29.36, "alliance": "UDF" },
+        { "name": "M. Suresh Babu", "party": "BJP", "votes": 27661, "votePct": 19.97, "alliance": "NDA" },
+        { "name": "P. E. Guruvayoorappan", "party": "BSP", "votes": 1351, "votePct": 0.59, "alliance": "OTHER" }
       ],
       "margin": 27219,
       "marginPct": 19.65,

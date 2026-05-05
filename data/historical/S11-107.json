@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Ramesh Chennithala", "party": "INC", "votes": 67378, "votePct": 50.03 },
-        { "name": "G. Krishnaprasad", "party": "CPI", "votes": 61858, "votePct": 45.93 },
-        { "name": "Ajith Sankar", "party": "BJP", "votes": 3145, "votePct": 2.34 },
-        { "name": "Rameshan", "party": "Independent", "votes": 499, "votePct": 0.37 },
-        { "name": "Somalal Babu", "party": "BSP", "votes": 425, "votePct": 0.32 }
+        { "name": "Ramesh Chennithala", "party": "INC", "votes": 67378, "votePct": 50.03, "alliance": "UDF" },
+        { "name": "G. Krishnaprasad", "party": "CPI", "votes": 61858, "votePct": 45.93, "alliance": "LDF" },
+        { "name": "Ajith Sankar", "party": "BJP", "votes": 3145, "votePct": 2.34, "alliance": "NDA" },
+        { "name": "Rameshan", "party": "Independent", "votes": 499, "votePct": 0.37, "alliance": "OTHER" },
+        { "name": "Somalal Babu", "party": "BSP", "votes": 425, "votePct": 0.32, "alliance": "OTHER" }
       ],
       "margin": 5520,
       "marginPct": 4.10,
@@ -26,9 +26,9 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Ramesh Chennithala", "party": "INC", "votes": 75980, "votePct": 51.05 },
-        { "name": "P. Prasad", "party": "CPI", "votes": 57359, "votePct": 38.54 },
-        { "name": "D. Aswanidev", "party": "BJP", "votes": 12985, "votePct": 8.72 }
+        { "name": "Ramesh Chennithala", "party": "INC", "votes": 75980, "votePct": 51.05, "alliance": "UDF" },
+        { "name": "P. Prasad", "party": "CPI", "votes": 57359, "votePct": 38.54, "alliance": "LDF" },
+        { "name": "D. Aswanidev", "party": "BJP", "votes": 12985, "votePct": 8.72, "alliance": "NDA" }
       ],
       "margin": 18621,
       "marginPct": 12.51,
@@ -41,9 +41,9 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Ramesh Chennithala", "party": "INC", "votes": 72768, "votePct": 48.31 },
-        { "name": "R. Sajilal", "party": "CPI", "votes": 59102, "votePct": 39.24 },
-        { "name": "K. Soman", "party": "BJP", "votes": 17890, "votePct": 11.88 }
+        { "name": "Ramesh Chennithala", "party": "INC", "votes": 72768, "votePct": 48.31, "alliance": "UDF" },
+        { "name": "R. Sajilal", "party": "CPI", "votes": 59102, "votePct": 39.24, "alliance": "LDF" },
+        { "name": "K. Soman", "party": "BJP", "votes": 17890, "votePct": 11.88, "alliance": "NDA" }
       ],
       "margin": 13666,
       "marginPct": 9.07,

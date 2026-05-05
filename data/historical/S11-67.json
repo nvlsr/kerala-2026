@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Therambil Ramakrishnan", "party": "INC", "votes": 59991, "votePct": 53.19 },
-        { "name": "P. Balachandran", "party": "CPI", "votes": 43822, "votePct": 38.85 },
-        { "name": "Ravikumar Uppath", "party": "BJP", "votes": 6697, "votePct": 5.94 },
-        { "name": "Therambil Radhakrishnan", "party": "Independent", "votes": 1405, "votePct": 1.25 },
-        { "name": "A. Jayaram", "party": "BSP", "votes": 879, "votePct": 0.78 }
+        { "name": "Therambil Ramakrishnan", "party": "INC", "votes": 59991, "votePct": 53.19, "alliance": "UDF" },
+        { "name": "P. Balachandran", "party": "CPI", "votes": 43822, "votePct": 38.85, "alliance": "LDF" },
+        { "name": "Ravikumar Uppath", "party": "BJP", "votes": 6697, "votePct": 5.94, "alliance": "NDA" },
+        { "name": "Therambil Radhakrishnan", "party": "Independent", "votes": 1405, "votePct": 1.25, "alliance": "OTHER" },
+        { "name": "A. Jayaram", "party": "BSP", "votes": 879, "votePct": 0.78, "alliance": "OTHER" }
       ],
       "margin": 16169,
       "marginPct": 14.34,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. S. Sunil Kumar", "party": "CPI", "votes": 53664, "votePct": 42.19 },
-        { "name": "Padmaja Venugopal", "party": "INC", "votes": 46677, "votePct": 36.70 },
-        { "name": "B. Gopalakrishnan", "party": "BJP", "votes": 24748, "votePct": 19.46 },
-        { "name": "Anthony J. Maliakal", "party": "Independent", "votes": 256, "votePct": 0.20 },
-        { "name": "P. S. Unnikrishnan", "party": "SP", "votes": 226, "votePct": 0.18 }
+        { "name": "V. S. Sunil Kumar", "party": "CPI", "votes": 53664, "votePct": 42.19, "alliance": "LDF" },
+        { "name": "Padmaja Venugopal", "party": "INC", "votes": 46677, "votePct": 36.70, "alliance": "UDF" },
+        { "name": "B. Gopalakrishnan", "party": "BJP", "votes": 24748, "votePct": 19.46, "alliance": "NDA" },
+        { "name": "Anthony J. Maliakal", "party": "Independent", "votes": 256, "votePct": 0.20, "alliance": "OTHER" },
+        { "name": "P. S. Unnikrishnan", "party": "SP", "votes": 226, "votePct": 0.18, "alliance": "OTHER" }
       ],
       "margin": 6987,
       "marginPct": 5.49,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Balachandran", "party": "CPI", "votes": 44263, "votePct": 34.25 },
-        { "name": "Padmaja Venugopal", "party": "INC", "votes": 43317, "votePct": 33.52 },
-        { "name": "Suresh Gopi", "party": "BJP", "votes": 40457, "votePct": 31.30 },
-        { "name": "Ajith Menon Ponnemkattil", "party": "Independent", "votes": 252, "votePct": 0.19 },
-        { "name": "Thrissur Mukundan", "party": "IGP", "votes": 225, "votePct": 0.17 }
+        { "name": "P. Balachandran", "party": "CPI", "votes": 44263, "votePct": 34.25, "alliance": "LDF" },
+        { "name": "Padmaja Venugopal", "party": "INC", "votes": 43317, "votePct": 33.52, "alliance": "UDF" },
+        { "name": "Suresh Gopi", "party": "BJP", "votes": 40457, "votePct": 31.30, "alliance": "NDA" },
+        { "name": "Ajith Menon Ponnemkattil", "party": "Independent", "votes": 252, "votePct": 0.19, "alliance": "OTHER" },
+        { "name": "Thrissur Mukundan", "party": "IGP", "votes": 225, "votePct": 0.17, "alliance": "OTHER" }
       ],
       "margin": 946,
       "marginPct": 0.33,

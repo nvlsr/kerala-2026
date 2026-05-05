@@ -13,32 +13,27 @@
           "name": "Hibi Eden",
           "party": "INC",
           "votes": 59919,
-          "votePct": 61.58
-        },
+          "votePct": 61.58, "alliance": "UDF" },
         {
           "name": "Sebastian Paul",
           "party": "CPI(M)",
           "votes": 27482,
-          "votePct": 28.25
-        },
+          "votePct": 28.25, "alliance": "LDF" },
         {
           "name": "C. G. Rajagopal",
           "party": "BJP",
           "votes": 6362,
-          "votePct": 6.54
-        },
+          "votePct": 6.54, "alliance": "NDA" },
         {
           "name": "Sebastian Njalamkunnel",
           "party": "Independent",
           "votes": 2347,
-          "votePct": 2.41
-        },
+          "votePct": 2.41, "alliance": "OTHER" },
         {
           "name": "Iqbal Thamarassery",
           "party": "BSP",
           "votes": 742,
-          "votePct": 0.76
-        }
+          "votePct": 0.76, "alliance": "OTHER" }
       ],
       "margin": 32487,
       "marginPct": 33.33,
@@ -55,32 +50,27 @@
           "name": "Hibi Eden",
           "party": "INC",
           "votes": 57819,
-          "votePct": 52.32
-        },
+          "votePct": 52.32, "alliance": "UDF" },
         {
           "name": "M. Anil Kumar",
           "party": "CPI(M)",
           "votes": 35870,
-          "votePct": 32.46
-        },
+          "votePct": 32.46, "alliance": "LDF" },
         {
           "name": "N. K. Mohandas",
           "party": "BJP",
           "votes": 14878,
-          "votePct": 13.46
-        },
+          "votePct": 13.46, "alliance": "NDA" },
         {
           "name": "Iqbal Thamarassery",
           "party": "BSP",
           "votes": 397,
-          "votePct": 0.36
-        },
+          "votePct": 0.36, "alliance": "OTHER" },
         {
           "name": "Rubesh Jimmy Madathiparambil",
           "party": "SP",
           "votes": 258,
-          "votePct": 0.23
-        }
+          "votePct": 0.23, "alliance": "OTHER" }
       ],
       "margin": 21949,
       "marginPct": 19.86,
@@ -97,26 +87,22 @@
           "name": "T. J. Vinod",
           "party": "INC",
           "votes": 37891,
-          "votePct": 42.13
-        },
+          "votePct": 42.13, "alliance": "UDF" },
         {
           "name": "Manu Roy",
           "party": "Independent (LDF)",
           "votes": 34141,
-          "votePct": 37.96
-        },
+          "votePct": 37.96, "alliance": "LDF" },
         {
           "name": "C. G. Rajagopal",
           "party": "BJP",
           "votes": 13351,
-          "votePct": 14.85
-        },
+          "votePct": 14.85, "alliance": "NDA" },
         {
           "name": "Manu K. M.",
           "party": "Independent",
           "votes": 2572,
-          "votePct": 2.86
-        }
+          "votePct": 2.86, "alliance": "OTHER" }
       ],
       "margin": 3750,
       "marginPct": 4.17,
@@ -133,26 +119,22 @@
           "name": "T. J. Vinod",
           "party": "INC",
           "votes": 45930,
-          "votePct": 41.72
-        },
+          "votePct": 41.72, "alliance": "UDF" },
         {
           "name": "Shaji George",
           "party": "Independent (LDF)",
           "votes": 34960,
-          "votePct": 31.75
-        },
+          "votePct": 31.75, "alliance": "LDF" },
         {
           "name": "Padmaja S. Menon",
           "party": "BJP",
           "votes": 16043,
-          "votePct": 14.57
-        },
+          "votePct": 14.57, "alliance": "NDA" },
         {
           "name": "Leslie Pallath",
           "party": "Twenty20 Party",
           "votes": 10634,
-          "votePct": 9.66
-        }
+          "votePct": 9.66, "alliance": "NDA" }
       ],
       "margin": 10970,
       "marginPct": 9.97,

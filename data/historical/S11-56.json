@@ -13,20 +13,17 @@
           "name": "Shafi Parambil",
           "party": "INC",
           "votes": 47641,
-          "votePct": 42.41
-        },
+          "votePct": 42.41, "alliance": "UDF" },
         {
           "name": "K. K. Divakaran",
           "party": "CPI(M)",
           "votes": 40238,
-          "votePct": 35.82
-        },
+          "votePct": 35.82, "alliance": "LDF" },
         {
           "name": "C. Udaybhaskar",
           "party": "BJP",
           "votes": 22317,
-          "votePct": 19.86
-        }
+          "votePct": 19.86, "alliance": "NDA" }
       ],
       "margin": 7403,
       "marginPct": 6.59,
@@ -43,20 +40,17 @@
           "name": "Shafi Parambil",
           "party": "INC",
           "votes": 57559,
-          "votePct": 41.77
-        },
+          "votePct": 41.77, "alliance": "UDF" },
         {
           "name": "Sobha Surendran",
           "party": "BJP",
           "votes": 40076,
-          "votePct": 29.08
-        },
+          "votePct": 29.08, "alliance": "NDA" },
         {
           "name": "N. N. Krishnadas",
           "party": "CPI(M)",
           "votes": 38675,
-          "votePct": 28.07
-        }
+          "votePct": 28.07, "alliance": "LDF" }
       ],
       "margin": 17483,
       "marginPct": 12.69,
@@ -73,20 +67,17 @@
           "name": "Shafi Parambil",
           "party": "INC",
           "votes": 54079,
-          "votePct": 38.06
-        },
+          "votePct": 38.06, "alliance": "UDF" },
         {
           "name": "E. Sreedharan",
           "party": "BJP",
           "votes": 50220,
-          "votePct": 35.34
-        },
+          "votePct": 35.34, "alliance": "NDA" },
         {
           "name": "C. P. Pramod",
           "party": "CPI(M)",
           "votes": 36433,
-          "votePct": 25.64
-        }
+          "votePct": 25.64, "alliance": "LDF" }
       ],
       "margin": 3859,
       "marginPct": 2.71,
@@ -103,20 +94,17 @@
           "name": "Rahul Mamkootathil",
           "party": "INC",
           "votes": 58389,
-          "votePct": 44.27
-        },
+          "votePct": 44.27, "alliance": "UDF" },
         {
           "name": "C. Krishnakumar",
           "party": "BJP",
           "votes": 39549,
-          "votePct": 28.63
-        },
+          "votePct": 28.63, "alliance": "NDA" },
         {
           "name": "P. Sarin",
           "party": "Independent (LDF)",
           "votes": 37156,
-          "votePct": 25.44
-        }
+          "votePct": 25.44, "alliance": "LDF" }
       ],
       "margin": 18840,
       "marginPct": 13.64,

@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Aisha Potty", "party": "CPI(M)", "votes": 74069, "votePct": 53.89 },
-        { "name": "N. M. Murali", "party": "KC(B)", "votes": 53477, "votePct": 38.91 },
-        { "name": "Vayakkal Madhu", "party": "BJP", "votes": 6370, "votePct": 4.63 },
-        { "name": "Dhaneshlal Panavely", "party": "Independent", "votes": 1063, "votePct": 0.77 },
-        { "name": "P. T. Prasanna Kumar", "party": "BSP", "votes": 911, "votePct": 0.66 }
+        { "name": "P. Aisha Potty", "party": "CPI(M)", "votes": 74069, "votePct": 53.89, "alliance": "LDF" },
+        { "name": "N. M. Murali", "party": "KC(B)", "votes": 53477, "votePct": 38.91, "alliance": "LDF" },
+        { "name": "Vayakkal Madhu", "party": "BJP", "votes": 6370, "votePct": 4.63, "alliance": "NDA" },
+        { "name": "Dhaneshlal Panavely", "party": "Independent", "votes": 1063, "votePct": 0.77, "alliance": "OTHER" },
+        { "name": "P. T. Prasanna Kumar", "party": "BSP", "votes": 911, "votePct": 0.66, "alliance": "OTHER" }
       ],
       "margin": 20592,
       "marginPct": 14.98,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Aisha Potty", "party": "CPI(M)", "votes": 83443, "votePct": 55.44 },
-        { "name": "Savin Sathyan", "party": "INC", "votes": 40811, "votePct": 27.11 },
-        { "name": "Rajeshwary Rajendran", "party": "BJP", "votes": 24062, "votePct": 15.99 },
-        { "name": "NOTA", "party": "NOTA", "votes": 742, "votePct": 0.49 },
-        { "name": "Madhu B.", "party": "Independent", "votes": 491, "votePct": 0.33 }
+        { "name": "P. Aisha Potty", "party": "CPI(M)", "votes": 83443, "votePct": 55.44, "alliance": "LDF" },
+        { "name": "Savin Sathyan", "party": "INC", "votes": 40811, "votePct": 27.11, "alliance": "UDF" },
+        { "name": "Rajeshwary Rajendran", "party": "BJP", "votes": 24062, "votePct": 15.99, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 742, "votePct": 0.49, "alliance": "NOTA" },
+        { "name": "Madhu B.", "party": "Independent", "votes": 491, "votePct": 0.33, "alliance": "OTHER" }
       ],
       "margin": 42632,
       "marginPct": 28.33,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. N. Balagopal", "party": "CPI(M)", "votes": 68770, "votePct": 45.98 },
-        { "name": "R. Resmi", "party": "INC", "votes": 57956, "votePct": 38.75 },
-        { "name": "Vayakkal Soman", "party": "BJP", "votes": 21223, "votePct": 14.19 },
-        { "name": "NOTA", "party": "NOTA", "votes": 574, "votePct": 0.38 },
-        { "name": "Mathews K. Lukose", "party": "Independent", "votes": 136, "votePct": 0.09 }
+        { "name": "K. N. Balagopal", "party": "CPI(M)", "votes": 68770, "votePct": 45.98, "alliance": "LDF" },
+        { "name": "R. Resmi", "party": "INC", "votes": 57956, "votePct": 38.75, "alliance": "UDF" },
+        { "name": "Vayakkal Soman", "party": "BJP", "votes": 21223, "votePct": 14.19, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 574, "votePct": 0.38, "alliance": "NOTA" },
+        { "name": "Mathews K. Lukose", "party": "Independent", "votes": 136, "votePct": 0.09, "alliance": "OTHER" }
       ],
       "margin": 10814,
       "marginPct": 7.23,

@@ -9,11 +9,11 @@
       "type": "by-election",
       "reason": "Resignation of sitting MLA K. C. Venugopal",
       "candidates": [
-        { "name": "A. A. Shukoor", "party": "INC", "votes": 42774, "votePct": 49.96 },
-        { "name": "G. Krishnaprasad", "party": "CPI", "votes": 38029, "votePct": 44.42 },
-        { "name": "K. Babu", "party": "BJP", "votes": 2247, "votePct": 2.62 },
-        { "name": "K. A. Hassan", "party": "PDP", "votes": 1804, "votePct": 2.10 },
-        { "name": "Shukkoor", "party": "Independent", "votes": 405, "votePct": 0.47 }
+        { "name": "A. A. Shukoor", "party": "INC", "votes": 42774, "votePct": 49.96, "alliance": "UDF" },
+        { "name": "G. Krishnaprasad", "party": "CPI", "votes": 38029, "votePct": 44.42, "alliance": "LDF" },
+        { "name": "K. Babu", "party": "BJP", "votes": 2247, "votePct": 2.62, "alliance": "NDA" },
+        { "name": "K. A. Hassan", "party": "PDP", "votes": 1804, "votePct": 2.10, "alliance": "OTHER" },
+        { "name": "Shukkoor", "party": "Independent", "votes": 405, "votePct": 0.47, "alliance": "OTHER" }
       ],
       "margin": 4745,
       "marginPct": 5.54,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. M. Thomas Isaac", "party": "CPI(M)", "votes": 75857, "votePct": 53.71 },
-        { "name": "P. J. Mathew", "party": "INC", "votes": 59515, "votePct": 42.14 },
-        { "name": "Kottaram Unnikrishnan", "party": "BJP", "votes": 3450, "votePct": 2.51 },
-        { "name": "T. M. Samad", "party": "SDPI", "votes": 1158, "votePct": 0.82 },
-        { "name": "Sebastian", "party": "Independent", "votes": 646, "votePct": 0.46 }
+        { "name": "T. M. Thomas Isaac", "party": "CPI(M)", "votes": 75857, "votePct": 53.71, "alliance": "LDF" },
+        { "name": "P. J. Mathew", "party": "INC", "votes": 59515, "votePct": 42.14, "alliance": "UDF" },
+        { "name": "Kottaram Unnikrishnan", "party": "BJP", "votes": 3450, "votePct": 2.51, "alliance": "NDA" },
+        { "name": "T. M. Samad", "party": "SDPI", "votes": 1158, "votePct": 0.82, "alliance": "OTHER" },
+        { "name": "Sebastian", "party": "Independent", "votes": 646, "votePct": 0.46, "alliance": "OTHER" }
       ],
       "margin": 16342,
       "marginPct": 11.57,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. M. Thomas Isaac", "party": "CPI(M)", "votes": 83211, "votePct": 53.29 },
-        { "name": "Laly Vincent", "party": "INC", "votes": 52179, "votePct": 33.42 },
-        { "name": "Ranjith Sreenivas", "party": "BJP", "votes": 18214, "votePct": 11.66 },
-        { "name": "NOTA", "party": "NOTA", "votes": 856, "votePct": 0.55 },
-        { "name": "P. A. Sulaiman", "party": "SDPI", "votes": 703, "votePct": 0.45 }
+        { "name": "T. M. Thomas Isaac", "party": "CPI(M)", "votes": 83211, "votePct": 53.29, "alliance": "LDF" },
+        { "name": "Laly Vincent", "party": "INC", "votes": 52179, "votePct": 33.42, "alliance": "UDF" },
+        { "name": "Ranjith Sreenivas", "party": "BJP", "votes": 18214, "votePct": 11.66, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 856, "votePct": 0.55, "alliance": "NOTA" },
+        { "name": "P. A. Sulaiman", "party": "SDPI", "votes": 703, "votePct": 0.45, "alliance": "OTHER" }
       ],
       "margin": 31032,
       "marginPct": 19.87,
@@ -60,11 +60,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. P. Chitharanjan", "party": "CPI(M)", "votes": 73412, "votePct": 46.33 },
-        { "name": "K. S. Manoj", "party": "INC", "votes": 61768, "votePct": 38.98 },
-        { "name": "Sandeep Vachaspathi", "party": "BJP", "votes": 21650, "votePct": 13.66 },
-        { "name": "NOTA", "party": "NOTA", "votes": 1089, "votePct": 0.69 },
-        { "name": "K. C. Subeendran", "party": "BSP", "votes": 207, "votePct": 0.13 }
+        { "name": "P. P. Chitharanjan", "party": "CPI(M)", "votes": 73412, "votePct": 46.33, "alliance": "LDF" },
+        { "name": "K. S. Manoj", "party": "INC", "votes": 61768, "votePct": 38.98, "alliance": "UDF" },
+        { "name": "Sandeep Vachaspathi", "party": "BJP", "votes": 21650, "votePct": 13.66, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 1089, "votePct": 0.69, "alliance": "NOTA" },
+        { "name": "K. C. Subeendran", "party": "BSP", "votes": 207, "votePct": 0.13, "alliance": "OTHER" }
       ],
       "margin": 11644,
       "marginPct": 7.35,

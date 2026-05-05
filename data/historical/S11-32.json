@@ -9,10 +9,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. Moyinkutty", "party": "IUML", "votes": 56386, "votePct": 48.71 },
-        { "name": "George M. Thomas", "party": "CPI(M)", "votes": 52553, "votePct": 45.40 },
-        { "name": "Jose Kappattmala", "party": "BJP", "votes": 3894, "votePct": 3.36 },
-        { "name": "C. T. Ashraf", "party": "SDPI", "votes": 790, "votePct": 0.68 }
+        { "name": "C. Moyinkutty", "party": "IUML", "votes": 56386, "votePct": 48.71, "alliance": "UDF" },
+        { "name": "George M. Thomas", "party": "CPI(M)", "votes": 52553, "votePct": 45.40, "alliance": "LDF" },
+        { "name": "Jose Kappattmala", "party": "BJP", "votes": 3894, "votePct": 3.36, "alliance": "NDA" },
+        { "name": "C. T. Ashraf", "party": "SDPI", "votes": 790, "votePct": 0.68, "alliance": "OTHER" }
       ],
       "margin": 3883,
       "marginPct": 3.35,
@@ -25,10 +25,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "George M. Thomas", "party": "CPI(M)", "votes": 62324, "votePct": 45.93 },
-        { "name": "V. M. Ummer", "party": "IUML", "votes": 59316, "votePct": 43.72 },
-        { "name": "Giri Pambanal", "party": "BDJS", "votes": 8749, "votePct": 6.45 },
-        { "name": "Raju Punnakkal", "party": "WPOI", "votes": 2226, "votePct": 1.64 }
+        { "name": "George M. Thomas", "party": "CPI(M)", "votes": 62324, "votePct": 45.93, "alliance": "LDF" },
+        { "name": "V. M. Ummer", "party": "IUML", "votes": 59316, "votePct": 43.72, "alliance": "UDF" },
+        { "name": "Giri Pambanal", "party": "BDJS", "votes": 8749, "votePct": 6.45, "alliance": "NDA" },
+        { "name": "Raju Punnakkal", "party": "WPOI", "votes": 2226, "votePct": 1.64, "alliance": "OTHER" }
       ],
       "margin": 3008,
       "marginPct": 2.21,
@@ -41,10 +41,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Linto Joseph", "party": "CPI(M)", "votes": 67867, "votePct": 47.46 },
-        { "name": "C. P Cheriya Muhammed", "party": "IUML", "votes": 63224, "votePct": 44.21 },
-        { "name": "Baby Ambattu", "party": "BJP", "votes": 7794, "votePct": 5.45 },
-        { "name": "Sunny V Joseph", "party": "Independent", "votes": 1847, "votePct": 1.29 }
+        { "name": "Linto Joseph", "party": "CPI(M)", "votes": 67867, "votePct": 47.46, "alliance": "LDF" },
+        { "name": "C. P Cheriya Muhammed", "party": "IUML", "votes": 63224, "votePct": 44.21, "alliance": "UDF" },
+        { "name": "Baby Ambattu", "party": "BJP", "votes": 7794, "votePct": 5.45, "alliance": "NDA" },
+        { "name": "Sunny V Joseph", "party": "Independent", "votes": 1847, "votePct": 1.29, "alliance": "OTHER" }
       ],
       "margin": 4643,
       "marginPct": 3.25,

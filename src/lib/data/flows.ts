@@ -23,7 +23,6 @@
  * version that the `/flows` page reads from.
  */
 
-import { allianceForRawParty } from "@/lib/data/alliances"
 import {
   constituencies,
   totalVotesIn,
@@ -103,7 +102,7 @@ function shares2026(c: Constituency): AllianceShares {
   if (total === 0) return emptyShares()
   const out = emptyShares()
   for (const cand of real) {
-    out[allianceForRawParty(cand.party)] += (cand.votes / total) * 100
+    out[cand.alliance] += (cand.votes / total) * 100
   }
   return out
 }
@@ -111,7 +110,7 @@ function shares2026(c: Constituency): AllianceShares {
 function sharesForElection(election: HistoricalElection): AllianceShares {
   const out = emptyShares()
   for (const cand of election.candidates) {
-    out[allianceForRawParty(cand.party)] += cand.votePct
+    out[cand.alliance] += cand.votePct
   }
   return out
 }

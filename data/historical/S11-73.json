@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. N. Prathapan", "party": "INC", "votes": 64495, "votePct": 50.11 },
-        { "name": "K. G. Shivaanandan", "party": "CPI", "votes": 55063, "votePct": 42.78 },
-        { "name": "I. R. Vijayan", "party": "BJP", "votes": 6732, "votePct": 5.23 },
-        { "name": "Ambily Unnikrishnan", "party": "BSP", "votes": 624, "votePct": 0.48 },
-        { "name": "Haridas K. B.", "party": "Independent", "votes": 461, "votePct": 0.36 }
+        { "name": "T. N. Prathapan", "party": "INC", "votes": 64495, "votePct": 50.11, "alliance": "UDF" },
+        { "name": "K. G. Shivaanandan", "party": "CPI", "votes": 55063, "votePct": 42.78, "alliance": "LDF" },
+        { "name": "I. R. Vijayan", "party": "BJP", "votes": 6732, "votePct": 5.23, "alliance": "NDA" },
+        { "name": "Ambily Unnikrishnan", "party": "BSP", "votes": 624, "votePct": 0.48, "alliance": "OTHER" },
+        { "name": "Haridas K. B.", "party": "Independent", "votes": 461, "votePct": 0.36, "alliance": "OTHER" }
       ],
       "margin": 9432,
       "marginPct": 7.33,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. R. Sunil Kumar", "party": "CPI", "votes": 67909, "votePct": 45.71 },
-        { "name": "K. P. Dhanapalan", "party": "INC", "votes": 45118, "votePct": 30.37 },
-        { "name": "Sangeetha", "party": "BDJS", "votes": 32793, "votePct": 22.07 },
-        { "name": "NOTA", "party": "NOTA", "votes": 886, "votePct": 0.60 },
-        { "name": "Manaf A. K.", "party": "SDPI", "votes": 558, "votePct": 0.38 }
+        { "name": "V. R. Sunil Kumar", "party": "CPI", "votes": 67909, "votePct": 45.71, "alliance": "LDF" },
+        { "name": "K. P. Dhanapalan", "party": "INC", "votes": 45118, "votePct": 30.37, "alliance": "UDF" },
+        { "name": "Sangeetha", "party": "BDJS", "votes": 32793, "votePct": 22.07, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 886, "votePct": 0.60, "alliance": "NOTA" },
+        { "name": "Manaf A. K.", "party": "SDPI", "votes": 558, "votePct": 0.38, "alliance": "OTHER" }
       ],
       "margin": 22791,
       "marginPct": 15.04,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. R. Sunil Kumar", "party": "CPI", "votes": 71457, "votePct": 47.99 },
-        { "name": "M. P. Jackson", "party": "INC", "votes": 47564, "votePct": 30.37 },
-        { "name": "Santhosh Cherakkulam", "party": "BJP", "votes": 28204, "votePct": 18.94 },
-        { "name": "NOTA", "party": "NOTA", "votes": 870, "votePct": 0.58 },
-        { "name": "Ramya Mohanan", "party": "BSP", "votes": 366, "votePct": 0.25 }
+        { "name": "V. R. Sunil Kumar", "party": "CPI", "votes": 71457, "votePct": 47.99, "alliance": "LDF" },
+        { "name": "M. P. Jackson", "party": "INC", "votes": 47564, "votePct": 30.37, "alliance": "UDF" },
+        { "name": "Santhosh Cherakkulam", "party": "BJP", "votes": 28204, "votePct": 18.94, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 870, "votePct": 0.58, "alliance": "NOTA" },
+        { "name": "Ramya Mohanan", "party": "BSP", "votes": 366, "votePct": 0.25, "alliance": "OTHER" }
       ],
       "margin": 23893,
       "marginPct": 16.05,

@@ -13,32 +13,27 @@
           "name": "N. Samsudheen",
           "party": "IUML",
           "votes": 60191,
-          "votePct": 49.66
-        },
+          "votePct": 49.66, "alliance": "UDF" },
         {
           "name": "V. Chamunni",
           "party": "CPI",
           "votes": 51921,
-          "votePct": 42.84
-        },
+          "votePct": 42.84, "alliance": "LDF" },
         {
           "name": "O. P. Vasudevanunni",
           "party": "BJP",
           "votes": 5655,
-          "votePct": 4.67
-        },
+          "votePct": 4.67, "alliance": "NDA" },
         {
           "name": "Muhammed Gafoor Madani",
           "party": "SDPI",
           "votes": 1238,
-          "votePct": 1.02
-        },
+          "votePct": 1.02, "alliance": "OTHER" },
         {
           "name": "Ramakrishnan A.",
           "party": "BSP",
           "votes": 820,
-          "votePct": 0.68
-        }
+          "votePct": 0.68, "alliance": "OTHER" }
       ],
       "margin": 8270,
       "marginPct": 6.82,
@@ -55,32 +50,27 @@
           "name": "N. Samsudheen",
           "party": "IUML",
           "votes": 73163,
-          "votePct": 49.27
-        },
+          "votePct": 49.27, "alliance": "UDF" },
         {
           "name": "K. P. Suresh Raj",
           "party": "CPI",
           "votes": 60838,
-          "votePct": 40.97
-        },
+          "votePct": 40.97, "alliance": "LDF" },
         {
           "name": "Kesavadev Puthumanna",
           "party": "BDJS",
           "votes": 10170,
-          "votePct": 6.85
-        },
+          "votePct": 6.85, "alliance": "NDA" },
         {
           "name": "M. Sulaiman",
           "party": "WPOI",
           "votes": 1112,
-          "votePct": 0.75
-        },
+          "votePct": 0.75, "alliance": "OTHER" },
         {
           "name": "NOTA",
           "party": "NOTA",
           "votes": 927,
-          "votePct": 0.62
-        }
+          "votePct": 0.62, "alliance": "NOTA" }
       ],
       "margin": 12325,
       "marginPct": 8.3,
@@ -97,32 +87,27 @@
           "name": "N. Samsudheen",
           "party": "IUML",
           "votes": 71657,
-          "votePct": 47.11
-        },
+          "votePct": 47.11, "alliance": "UDF" },
         {
           "name": "K. P. Suresh Raj",
           "party": "CPI",
           "votes": 65787,
-          "votePct": 43.25
-        },
+          "votePct": 43.25, "alliance": "LDF" },
         {
           "name": "Agali Naseema P.",
           "party": "AIADMK",
           "votes": 10376,
-          "votePct": 6.82
-        },
+          "votePct": 6.82, "alliance": "OTHER" },
         {
           "name": "James Mash",
           "party": "Independent",
           "votes": 988,
-          "votePct": 0.65
-        },
+          "votePct": 0.65, "alliance": "OTHER" },
         {
           "name": "Sivadasan",
           "party": "BSP",
           "votes": 827,
-          "votePct": 0.54
-        }
+          "votePct": 0.54, "alliance": "OTHER" }
       ],
       "margin": 5870,
       "marginPct": 3.86,

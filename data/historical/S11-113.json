@@ -9,9 +9,9 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 64845, "votePct": 47.69 },
-        { "name": "K. C. Rajagopalan", "party": "CPI(M)", "votes": 58334, "votePct": 42.90 },
-        { "name": "K. Haridas", "party": "BJP", "votes": 10227, "votePct": 7.52 }
+        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 64845, "votePct": 47.69, "alliance": "UDF" },
+        { "name": "K. C. Rajagopalan", "party": "CPI(M)", "votes": 58334, "votePct": 42.90, "alliance": "LDF" },
+        { "name": "K. Haridas", "party": "BJP", "votes": 10227, "votePct": 7.52, "alliance": "NDA" }
       ],
       "margin": 6511,
       "marginPct": 4.79,
@@ -24,9 +24,9 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Veena George", "party": "CPI(M)", "votes": 64523, "votePct": 39.97 },
-        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 56877, "votePct": 35.23 },
-        { "name": "M. T. Ramesh", "party": "BJP", "votes": 37906, "votePct": 23.48 }
+        { "name": "Veena George", "party": "CPI(M)", "votes": 64523, "votePct": 39.97, "alliance": "LDF" },
+        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 56877, "votePct": 35.23, "alliance": "UDF" },
+        { "name": "M. T. Ramesh", "party": "BJP", "votes": 37906, "votePct": 23.48, "alliance": "NDA" }
       ],
       "margin": 7646,
       "marginPct": 4.74,
@@ -39,9 +39,9 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Veena George", "party": "CPI(M)", "votes": 74950, "votePct": 46.3 },
-        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 55947, "votePct": 34.56 },
-        { "name": "Biju Mathew", "party": "BJP", "votes": 29099, "votePct": 17.98 }
+        { "name": "Veena George", "party": "CPI(M)", "votes": 74950, "votePct": 46.3, "alliance": "LDF" },
+        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 55947, "votePct": 34.56, "alliance": "UDF" },
+        { "name": "Biju Mathew", "party": "BJP", "votes": 29099, "votePct": 17.98, "alliance": "NDA" }
       ],
       "margin": 19003,
       "marginPct": 11.74,

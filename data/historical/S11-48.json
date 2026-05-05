@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Sreeramakrishnan", "party": "CPI(M)", "votes": 57615, "votePct": 47.55 },
-        { "name": "P. T. Ajay Mohan", "party": "INC", "votes": 53514, "votePct": 44.17 },
-        { "name": "V. T. Jayaprakash", "party": "BJP", "votes": 5680, "votePct": 4.69 },
-        { "name": "Yahiya Koya Thangal", "party": "SDPI", "votes": 3250, "votePct": 2.68 },
-        { "name": "Ajayan", "party": "Independent", "votes": 1099, "votePct": 0.91 }
+        { "name": "P. Sreeramakrishnan", "party": "CPI(M)", "votes": 57615, "votePct": 47.55, "alliance": "LDF" },
+        { "name": "P. T. Ajay Mohan", "party": "INC", "votes": 53514, "votePct": 44.17, "alliance": "UDF" },
+        { "name": "V. T. Jayaprakash", "party": "BJP", "votes": 5680, "votePct": 4.69, "alliance": "NDA" },
+        { "name": "Yahiya Koya Thangal", "party": "SDPI", "votes": 3250, "votePct": 2.68, "alliance": "OTHER" },
+        { "name": "Ajayan", "party": "Independent", "votes": 1099, "votePct": 0.91, "alliance": "OTHER" }
       ],
       "margin": 4101,
       "marginPct": 3.38,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Sreeramakrishnan", "party": "CPI(M)", "votes": 69332, "votePct": 48.91 },
-        { "name": "P. T. Ajay Mohan", "party": "INC", "votes": 53692, "votePct": 37.87 },
-        { "name": "K. K. Surendran", "party": "BJP", "votes": 11662, "votePct": 8.23 },
-        { "name": "M. M. Shakkir", "party": "WPOI", "votes": 2048, "votePct": 1.44 },
-        { "name": "M. Moidunni Haji", "party": "PDP", "votes": 1857, "votePct": 1.31 }
+        { "name": "P. Sreeramakrishnan", "party": "CPI(M)", "votes": 69332, "votePct": 48.91, "alliance": "LDF" },
+        { "name": "P. T. Ajay Mohan", "party": "INC", "votes": 53692, "votePct": 37.87, "alliance": "UDF" },
+        { "name": "K. K. Surendran", "party": "BJP", "votes": 11662, "votePct": 8.23, "alliance": "NDA" },
+        { "name": "M. M. Shakkir", "party": "WPOI", "votes": 2048, "votePct": 1.44, "alliance": "OTHER" },
+        { "name": "M. Moidunni Haji", "party": "PDP", "votes": 1857, "votePct": 1.31, "alliance": "OTHER" }
       ],
       "margin": 15640,
       "marginPct": 11.04,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Nandakumar", "party": "CPI(M)", "votes": 74668, "votePct": 51.35 },
-        { "name": "A. M. Rohith", "party": "INC", "votes": 57625, "votePct": 39.63 },
-        { "name": "Subramannian Chunkappallii", "party": "BDJS", "votes": 7419, "votePct": 5.10 },
-        { "name": "Anvar Pazhanji", "party": "SDPI", "votes": 3065, "votePct": 2.11 },
-        { "name": "Ganesh Vaderi", "party": "WPOI", "votes": 1863, "votePct": 1.28 }
+        { "name": "P. Nandakumar", "party": "CPI(M)", "votes": 74668, "votePct": 51.35, "alliance": "LDF" },
+        { "name": "A. M. Rohith", "party": "INC", "votes": 57625, "votePct": 39.63, "alliance": "UDF" },
+        { "name": "Subramannian Chunkappallii", "party": "BDJS", "votes": 7419, "votePct": 5.10, "alliance": "NDA" },
+        { "name": "Anvar Pazhanji", "party": "SDPI", "votes": 3065, "votePct": 2.11, "alliance": "OTHER" },
+        { "name": "Ganesh Vaderi", "party": "WPOI", "votes": 1863, "votePct": 1.28, "alliance": "OTHER" }
       ],
       "margin": 17043,
       "marginPct": 11.72,

@@ -1,8 +1,11 @@
 import { constituenciesData, districtsMeta } from "@/lib/data/loaders"
 
+import type { AllianceCode } from "@/lib/data/alliances"
+
 export type Candidate = {
   name: string
   party: string
+  alliance: AllianceCode
   votes: number
   margin: number
   status: "won" | "lost" | "nota"

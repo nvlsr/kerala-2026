@@ -13,32 +13,27 @@
           "name": "Purushan Kadalundi",
           "party": "CPI(M)",
           "votes": 74259,
-          "votePct": 49.18
-        },
+          "votePct": 49.18, "alliance": "LDF" },
         {
           "name": "A. Balaram",
           "party": "INC",
           "votes": 65377,
-          "votePct": 43.29
-        },
+          "votePct": 43.29, "alliance": "UDF" },
         {
           "name": "T. K. Raman",
           "party": "BJP",
           "votes": 9304,
-          "votePct": 6.16
-        },
+          "votePct": 6.16, "alliance": "NDA" },
         {
           "name": "Bhadran M. P.",
           "party": "SDPI",
           "votes": 1404,
-          "votePct": 0.93
-        },
+          "votePct": 0.93, "alliance": "OTHER" },
         {
           "name": "K. K. Satheesh",
           "party": "BSP",
           "votes": 660,
-          "votePct": 0.14
-        }
+          "votePct": 0.14, "alliance": "OTHER" }
       ],
       "margin": 8882,
       "marginPct": 5.89,
@@ -55,32 +50,27 @@
           "name": "Purushan Kadalundy",
           "party": "CPI(M)",
           "votes": 82914,
-          "votePct": 47.5
-        },
+          "votePct": 47.5, "alliance": "LDF" },
         {
           "name": "U. C. Raman Padanilam",
           "party": "IUML",
           "votes": 67450,
-          "votePct": 38.64
-        },
+          "votePct": 38.64, "alliance": "UDF" },
         {
           "name": "P. K. Supran",
           "party": "BJP",
           "votes": 19324,
-          "votePct": 11.07
-        },
+          "votePct": 11.07, "alliance": "NDA" },
         {
           "name": "Balan Nadavannur",
           "party": "SDPI",
           "votes": 1764,
-          "votePct": 1.01
-        },
+          "votePct": 1.01, "alliance": "OTHER" },
         {
           "name": "Saseendran Bappankad",
           "party": "WPOI",
           "votes": 959,
-          "votePct": 0.59
-        }
+          "votePct": 0.59, "alliance": "OTHER" }
       ],
       "margin": 15464,
       "marginPct": 8.86,
@@ -97,32 +87,27 @@
           "name": "K. M. Sachin Dev",
           "party": "CPI(M)",
           "votes": 91839,
-          "votePct": 50.39
-        },
+          "votePct": 50.39, "alliance": "LDF" },
         {
           "name": "Dharmajan Bolgatty",
           "party": "INC",
           "votes": 71467,
-          "votePct": 38.54
-        },
+          "votePct": 38.54, "alliance": "UDF" },
         {
           "name": "Libin Balussery",
           "party": "BJP",
           "votes": 16490,
-          "votePct": 9.04
-        },
+          "votePct": 9.04, "alliance": "NDA" },
         {
           "name": "Chandrika",
           "party": "WPOI",
           "votes": 889,
-          "votePct": 0.48
-        },
+          "votePct": 0.48, "alliance": "OTHER" },
         {
           "name": "Jobish Balussery",
           "party": "BSP",
           "votes": 476,
-          "votePct": 0.26
-        }
+          "votePct": 0.26, "alliance": "OTHER" }
       ],
       "margin": 20372,
       "marginPct": 11.18,

@@ -13,32 +13,27 @@
           "name": "A. T. George",
           "party": "INC",
           "votes": 60578,
-          "votePct": 44.8
-        },
+          "votePct": 44.8, "alliance": "UDF" },
         {
           "name": "Anavoor Nagappan",
           "party": "CPI(M)",
           "votes": 60073,
-          "votePct": 44.43
-        },
+          "votePct": 44.43, "alliance": "LDF" },
         {
           "name": "S. Suresh",
           "party": "BJP",
           "votes": 10310,
-          "votePct": 7.63
-        },
+          "votePct": 7.63, "alliance": "NDA" },
         {
           "name": "J. Sudhakaran",
           "party": "BSP",
           "votes": 2269,
-          "votePct": 1.68
-        },
+          "votePct": 1.68, "alliance": "OTHER" },
         {
           "name": "T. K. Viswambharan",
           "party": "Independent",
           "votes": 1207,
-          "votePct": 0.89
-        }
+          "votePct": 0.89, "alliance": "OTHER" }
       ],
       "margin": 505,
       "marginPct": 0.37,
@@ -55,20 +50,17 @@
           "name": "C. K. Hareendran",
           "party": "CPI(M)",
           "votes": 70516,
-          "votePct": 44.41
-        },
+          "votePct": 44.41, "alliance": "LDF" },
         {
           "name": "A. T. George",
           "party": "INC",
           "votes": 51590,
-          "votePct": 32.66
-        },
+          "votePct": 32.66, "alliance": "UDF" },
         {
           "name": "Karamana Jayan",
           "party": "BJP",
           "votes": 33028,
-          "votePct": 20.91
-        }
+          "votePct": 20.91, "alliance": "NDA" }
       ],
       "margin": 18566,
       "marginPct": 11.75,
@@ -85,26 +77,22 @@
           "name": "C. K. Hareendran",
           "party": "CPI(M)",
           "votes": 78548,
-          "votePct": 48.16
-        },
+          "votePct": 48.16, "alliance": "LDF" },
         {
           "name": "Ansajitha Russal",
           "party": "INC",
           "votes": 52720,
-          "votePct": 32.33
-        },
+          "votePct": 32.33, "alliance": "UDF" },
         {
           "name": "Karamana Jayan",
           "party": "BJP",
           "votes": 29850,
-          "votePct": 18.3
-        },
+          "votePct": 18.3, "alliance": "NDA" },
         {
           "name": "NOTA",
           "party": "NOTA",
           "votes": 630,
-          "votePct": 0.49
-        }
+          "votePct": 0.49, "alliance": "NOTA" }
       ],
       "margin": 25828,
       "marginPct": 15.84,

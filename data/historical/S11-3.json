@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Kunhiraman", "party": "CPI(M)", "votes": 61646, "votePct": 47.93 },
-        { "name": "C. K. Sreedharan", "party": "INC", "votes": 50266, "votePct": 39.08 },
-        { "name": "Sunita Prasanth", "party": "BJP", "votes": 13073, "votePct": 10.16 },
-        { "name": "Faisal Koliyadukkam", "party": "SDPI", "votes": 1265, "votePct": 0.98 },
-        { "name": "P. Damodaran", "party": "BSP", "votes": 1096, "votePct": 0.85 }
+        { "name": "K. Kunhiraman", "party": "CPI(M)", "votes": 61646, "votePct": 47.93, "alliance": "LDF" },
+        { "name": "C. K. Sreedharan", "party": "INC", "votes": 50266, "votePct": 39.08, "alliance": "UDF" },
+        { "name": "Sunita Prasanth", "party": "BJP", "votes": 13073, "votePct": 10.16, "alliance": "NDA" },
+        { "name": "Faisal Koliyadukkam", "party": "SDPI", "votes": 1265, "votePct": 0.98, "alliance": "OTHER" },
+        { "name": "P. Damodaran", "party": "BSP", "votes": 1096, "votePct": 0.85, "alliance": "OTHER" }
       ],
       "margin": 11380,
       "marginPct": 8.85,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Kunhiraman", "party": "CPI(M)", "votes": 70679, "votePct": 43.94 },
-        { "name": "K. Sudhakaran", "party": "INC", "votes": 66487, "votePct": 41.55 },
-        { "name": "K. Shreenath", "party": "BJP", "votes": 21231, "votePct": 13.20 },
-        { "name": "Gopi Kuthirakallu", "party": "PDP", "votes": 353, "votePct": 0.22 },
-        { "name": "Damodaran P.", "party": "Independent", "votes": 349, "votePct": 0.22 }
+        { "name": "K. Kunhiraman", "party": "CPI(M)", "votes": 70679, "votePct": 43.94, "alliance": "LDF" },
+        { "name": "K. Sudhakaran", "party": "INC", "votes": 66487, "votePct": 41.55, "alliance": "UDF" },
+        { "name": "K. Shreenath", "party": "BJP", "votes": 21231, "votePct": 13.20, "alliance": "NDA" },
+        { "name": "Gopi Kuthirakallu", "party": "PDP", "votes": 353, "votePct": 0.22, "alliance": "OTHER" },
+        { "name": "Damodaran P.", "party": "Independent", "votes": 349, "votePct": 0.22, "alliance": "OTHER" }
       ],
       "margin": 3882,
       "marginPct": 2.39,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. H. Kunhambu", "party": "CPI(M)", "votes": 78664, "votePct": 47.58 },
-        { "name": "Periya Balakrishnan", "party": "INC", "votes": 65342, "votePct": 39.52 },
-        { "name": "A. Velayudhan", "party": "BJP", "votes": 20360, "votePct": 12.31 },
-        { "name": "Rameshan K.", "party": "Independent", "votes": 207, "votePct": 0.13 },
-        { "name": "Govindan B. Alinthazhe", "party": "API", "votes": 194, "votePct": 0.12 }
+        { "name": "C. H. Kunhambu", "party": "CPI(M)", "votes": 78664, "votePct": 47.58, "alliance": "LDF" },
+        { "name": "Periya Balakrishnan", "party": "INC", "votes": 65342, "votePct": 39.52, "alliance": "UDF" },
+        { "name": "A. Velayudhan", "party": "BJP", "votes": 20360, "votePct": 12.31, "alliance": "NDA" },
+        { "name": "Rameshan K.", "party": "Independent", "votes": 207, "votePct": 0.13, "alliance": "OTHER" },
+        { "name": "Govindan B. Alinthazhe", "party": "API", "votes": 194, "votePct": 0.12, "alliance": "OTHER" }
       ],
       "margin": 13322,
       "marginPct": 8.06,

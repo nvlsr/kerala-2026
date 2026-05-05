@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. M. Ummer", "party": "IUML", "votes": 60365, "votePct": 53.03 },
-        { "name": "M. Mehaboob", "party": "CPI(M)", "votes": 43813, "votePct": 38.49 },
-        { "name": "Gireesh Thevally", "party": "BJP", "votes": 6519, "votePct": 5.73 },
-        { "name": "M. T. Abdul Haji", "party": "SDPI", "votes": 1688, "votePct": 1.48 },
-        { "name": "Aboobacker", "party": "BSP", "votes": 496, "votePct": 0.44 }
+        { "name": "V. M. Ummer", "party": "IUML", "votes": 60365, "votePct": 53.03, "alliance": "UDF" },
+        { "name": "M. Mehaboob", "party": "CPI(M)", "votes": 43813, "votePct": 38.49, "alliance": "LDF" },
+        { "name": "Gireesh Thevally", "party": "BJP", "votes": 6519, "votePct": 5.73, "alliance": "NDA" },
+        { "name": "M. T. Abdul Haji", "party": "SDPI", "votes": 1688, "votePct": 1.48, "alliance": "OTHER" },
+        { "name": "Aboobacker", "party": "BSP", "votes": 496, "votePct": 0.44, "alliance": "OTHER" }
       ],
       "margin": 16552,
       "marginPct": 14.54,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Karat Razak", "party": "Independent", "votes": 61033, "votePct": 44.42 },
-        { "name": "M. A. Razak", "party": "IUML", "votes": 60460, "votePct": 44.01 },
-        { "name": "Ali Akbar", "party": "BJP", "votes": 11537, "votePct": 8.40 },
-        { "name": "P. K. Zakariya", "party": "WPOI", "votes": 1566, "votePct": 1.14 },
-        { "name": "E. Nazar", "party": "SDPI", "votes": 1466, "votePct": 1.07 }
+        { "name": "Karat Razak", "party": "Independent", "votes": 61033, "votePct": 44.42, "alliance": "OTHER" },
+        { "name": "M. A. Razak", "party": "IUML", "votes": 60460, "votePct": 44.01, "alliance": "UDF" },
+        { "name": "Ali Akbar", "party": "BJP", "votes": 11537, "votePct": 8.40, "alliance": "NDA" },
+        { "name": "P. K. Zakariya", "party": "WPOI", "votes": 1566, "votePct": 1.14, "alliance": "OTHER" },
+        { "name": "E. Nazar", "party": "SDPI", "votes": 1466, "votePct": 1.07, "alliance": "OTHER" }
       ],
       "margin": 573,
       "marginPct": 0.41,
@@ -43,10 +43,10 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. K. Muneer", "party": "IUML", "votes": 72336, "votePct": 47.86 },
-        { "name": "Karat Razak", "party": "Independent", "votes": 65992, "votePct": 43.66 },
-        { "name": "T Balasoman", "party": "BJP", "votes": 9498, "votePct": 6.27 },
-        { "name": "Musthafa Kommeri", "party": "SDPI", "votes": 1769, "votePct": 1.17 }
+        { "name": "M. K. Muneer", "party": "IUML", "votes": 72336, "votePct": 47.86, "alliance": "UDF" },
+        { "name": "Karat Razak", "party": "Independent", "votes": 65992, "votePct": 43.66, "alliance": "OTHER" },
+        { "name": "T Balasoman", "party": "BJP", "votes": 9498, "votePct": 6.27, "alliance": "NDA" },
+        { "name": "Musthafa Kommeri", "party": "SDPI", "votes": 1769, "votePct": 1.17, "alliance": "OTHER" }
       ],
       "margin": 6344,
       "marginPct": 4.19,

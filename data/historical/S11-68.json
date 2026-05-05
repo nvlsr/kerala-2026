@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Geetha Gopi", "party": "CPI", "votes": 64555, "votePct": 50.21 },
-        { "name": "Vikas Chakrapani", "party": "Independent", "votes": 48501, "votePct": 37.72 },
-        { "name": "Sarju Thoykkavu", "party": "BJP", "votes": 11144, "votePct": 8.67 },
-        { "name": "Dinesh Kumar E. V.", "party": "Independent", "votes": 1636, "votePct": 1.27 },
-        { "name": "M. S. Vasanthy", "party": "Independent", "votes": 826, "votePct": 0.64 }
+        { "name": "Geetha Gopi", "party": "CPI", "votes": 64555, "votePct": 50.21, "alliance": "LDF" },
+        { "name": "Vikas Chakrapani", "party": "Independent", "votes": 48501, "votePct": 37.72, "alliance": "OTHER" },
+        { "name": "Sarju Thoykkavu", "party": "BJP", "votes": 11144, "votePct": 8.67, "alliance": "NDA" },
+        { "name": "Dinesh Kumar E. V.", "party": "Independent", "votes": 1636, "votePct": 1.27, "alliance": "OTHER" },
+        { "name": "M. S. Vasanthy", "party": "Independent", "votes": 826, "votePct": 0.64, "alliance": "OTHER" }
       ],
       "margin": 16054,
       "marginPct": 12.51,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Geetha Gopi", "party": "CPI", "votes": 70218, "votePct": 46.65 },
-        { "name": "K. V. Dasan", "party": "INC", "votes": 43441, "votePct": 28.86 },
-        { "name": "T. V. Babu", "party": "BDJS", "votes": 33650, "votePct": 22.36 },
-        { "name": "NOTA", "party": "NOTA", "votes": 903, "votePct": 0.60 },
-        { "name": "Arumughan Snehatheeram", "party": "PDP", "votes": 534, "votePct": 0.35 }
+        { "name": "Geetha Gopi", "party": "CPI", "votes": 70218, "votePct": 46.65, "alliance": "LDF" },
+        { "name": "K. V. Dasan", "party": "INC", "votes": 43441, "votePct": 28.86, "alliance": "UDF" },
+        { "name": "T. V. Babu", "party": "BDJS", "votes": 33650, "votePct": 22.36, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 903, "votePct": 0.60, "alliance": "NOTA" },
+        { "name": "Arumughan Snehatheeram", "party": "PDP", "votes": 534, "votePct": 0.35, "alliance": "OTHER" }
       ],
       "margin": 26777,
       "marginPct": 17.79,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. C. Mukundan", "party": "CPI", "votes": 72930, "votePct": 47.49 },
-        { "name": "Sunil Laloor", "party": "INC", "votes": 44499, "votePct": 28.98 },
-        { "name": "Lojanan Ambatt", "party": "BJP", "votes": 33716, "votePct": 21.96 },
-        { "name": "NOTA", "party": "NOTA", "votes": 903, "votePct": 0.60 },
-        { "name": "C. S. Jitheshkumar", "party": "Independent", "votes": 617, "votePct": 0.40 }
+        { "name": "C. C. Mukundan", "party": "CPI", "votes": 72930, "votePct": 47.49, "alliance": "LDF" },
+        { "name": "Sunil Laloor", "party": "INC", "votes": 44499, "votePct": 28.98, "alliance": "UDF" },
+        { "name": "Lojanan Ambatt", "party": "BJP", "votes": 33716, "votePct": 21.96, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 903, "votePct": 0.60, "alliance": "NOTA" },
+        { "name": "C. S. Jitheshkumar", "party": "Independent", "votes": 617, "votePct": 0.40, "alliance": "OTHER" }
       ],
       "margin": 28431,
       "marginPct": 18.51,

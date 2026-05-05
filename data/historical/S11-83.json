@@ -13,20 +13,17 @@
           "name": "Benny Behanan",
           "party": "INC",
           "votes": 65854,
-          "votePct": 55.88
-        },
+          "votePct": 55.88, "alliance": "UDF" },
         {
           "name": "M. E. Hassainar",
           "party": "CPI(M)",
           "votes": 43448,
-          "votePct": 36.87
-        },
+          "votePct": 36.87, "alliance": "LDF" },
         {
           "name": "N. Saji Kumar",
           "party": "BJP",
           "votes": 5935,
-          "votePct": 5.04
-        }
+          "votePct": 5.04, "alliance": "NDA" }
       ],
       "margin": 22406,
       "marginPct": 17.01,
@@ -43,20 +40,17 @@
           "name": "P. T. Thomas",
           "party": "INC",
           "votes": 61268,
-          "votePct": 45.42
-        },
+          "votePct": 45.42, "alliance": "UDF" },
         {
           "name": "Sebastian Paul",
           "party": "CPI(M)",
           "votes": 49455,
-          "votePct": 36.55
-        },
+          "votePct": 36.55, "alliance": "LDF" },
         {
           "name": "S. Saji",
           "party": "BJP",
           "votes": 21247,
-          "votePct": 15.7
-        }
+          "votePct": 15.7, "alliance": "NDA" }
       ],
       "margin": 11966,
       "marginPct": 8.87,
@@ -73,62 +67,52 @@
           "name": "P. T. Thomas",
           "party": "INC",
           "votes": 59839,
-          "votePct": 43.82
-        },
+          "votePct": 43.82, "alliance": "UDF" },
         {
           "name": "J. Jacob",
           "party": "Kerala Congress (M)",
           "votes": 45510,
-          "votePct": 33.32
-        },
+          "votePct": 33.32, "alliance": "LDF" },
         {
           "name": "S. Saji",
           "party": "BJP",
           "votes": 15483,
-          "votePct": 11.34
-        },
+          "votePct": 11.34, "alliance": "NDA" },
         {
           "name": "Terry Thomas",
           "party": "Twenty 20 Party",
           "votes": 13897,
-          "votePct": 10.18
-        },
+          "votePct": 10.18, "alliance": "NDA" },
         {
           "name": "P. M. Shibu",
           "party": "BSP",
           "votes": 331,
-          "votePct": 0.24
-        },
+          "votePct": 0.24, "alliance": "OTHER" },
         {
           "name": "Riyas Yusuf",
           "party": "Independent",
           "votes": 298,
-          "votePct": 0.22
-        },
+          "votePct": 0.22, "alliance": "OTHER" },
         {
           "name": "Krishnaprasad",
           "party": "DSJP",
           "votes": 181,
-          "votePct": 0.13
-        },
+          "votePct": 0.13, "alliance": "OTHER" },
         {
           "name": "Jinu",
           "party": "Independent",
           "votes": 143,
-          "votePct": 0.1
-        },
+          "votePct": 0.1, "alliance": "OTHER" },
         {
           "name": "Benoj",
           "party": "Independent",
           "votes": 134,
-          "votePct": 0.1
-        },
+          "votePct": 0.1, "alliance": "OTHER" },
         {
           "name": "Subin",
           "party": "Independent",
           "votes": 59,
-          "votePct": 0.04
-        }
+          "votePct": 0.04, "alliance": "OTHER" }
       ],
       "margin": 14329,
       "marginPct": 10.49,
@@ -145,20 +129,17 @@
           "name": "Uma Thomas",
           "party": "INC",
           "votes": 72770,
-          "votePct": 53.76
-        },
+          "votePct": 53.76, "alliance": "UDF" },
         {
           "name": "Jo Joseph",
           "party": "CPI(M)",
           "votes": 47754,
-          "votePct": 35.28
-        },
+          "votePct": 35.28, "alliance": "LDF" },
         {
           "name": "A. N. Radhakrishnan",
           "party": "BJP",
           "votes": 12957,
-          "votePct": 9.57
-        }
+          "votePct": 9.57, "alliance": "NDA" }
       ],
       "margin": 25016,
       "marginPct": 18.48,

@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Jose Thettayil", "party": "JD(S)", "votes": 61500, "votePct": 49.56 },
-        { "name": "Johnny Nellore", "party": "KC(J)", "votes": 54330, "votePct": 43.78 },
-        { "name": "M. A. Brahmaraj", "party": "BJP", "votes": 4170, "votePct": 3.32 },
-        { "name": "Johnson I. T.", "party": "Independent", "votes": 1374, "votePct": 1.11 },
-        { "name": "M. G. Purushottaman", "party": "BSP", "votes": 774, "votePct": 0.62 }
+        { "name": "Jose Thettayil", "party": "JD(S)", "votes": 61500, "votePct": 49.56, "alliance": "OTHER" },
+        { "name": "Johnny Nellore", "party": "KC(J)", "votes": 54330, "votePct": 43.78, "alliance": "UDF" },
+        { "name": "M. A. Brahmaraj", "party": "BJP", "votes": 4170, "votePct": 3.32, "alliance": "NDA" },
+        { "name": "Johnson I. T.", "party": "Independent", "votes": 1374, "votePct": 1.11, "alliance": "OTHER" },
+        { "name": "M. G. Purushottaman", "party": "BSP", "votes": 774, "votePct": 0.62, "alliance": "OTHER" }
       ],
       "margin": 7170,
       "marginPct": 5.78,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Roji M. John", "party": "INC", "votes": 66666, "votePct": 48.96 },
-        { "name": "Benny Moonjely", "party": "JD(S)", "votes": 57480, "votePct": 42.22 },
-        { "name": "P. J. Babu", "party": "KEC", "votes": 9014, "votePct": 6.62 },
-        { "name": "NOTA", "party": "NOTA", "votes": 811, "votePct": 0.60 },
-        { "name": "Jayanthi Avinash", "party": "BSP", "votes": 742, "votePct": 0.54 }
+        { "name": "Roji M. John", "party": "INC", "votes": 66666, "votePct": 48.96, "alliance": "UDF" },
+        { "name": "Benny Moonjely", "party": "JD(S)", "votes": 57480, "votePct": 42.22, "alliance": "OTHER" },
+        { "name": "P. J. Babu", "party": "KEC", "votes": 9014, "votePct": 6.62, "alliance": "UDF" },
+        { "name": "NOTA", "party": "NOTA", "votes": 811, "votePct": 0.60, "alliance": "NOTA" },
+        { "name": "Jayanthi Avinash", "party": "BSP", "votes": 742, "votePct": 0.54, "alliance": "OTHER" }
       ],
       "margin": 9186,
       "marginPct": 6.74,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Roji M. John", "party": "INC", "votes": 71562, "votePct": 51.86 },
-        { "name": "Jose Thettayil", "party": "JD(S)", "votes": 55633, "votePct": 40.31 },
-        { "name": "K. V. Sabu", "party": "BJP", "votes": 8677, "votePct": 6.29 },
-        { "name": "NOTA", "party": "NOTA", "votes": 669, "votePct": 0.48 },
-        { "name": "Martin Paul", "party": "Independent", "votes": 623, "votePct": 0.45 }
+        { "name": "Roji M. John", "party": "INC", "votes": 71562, "votePct": 51.86, "alliance": "UDF" },
+        { "name": "Jose Thettayil", "party": "JD(S)", "votes": 55633, "votePct": 40.31, "alliance": "OTHER" },
+        { "name": "K. V. Sabu", "party": "BJP", "votes": 8677, "votePct": 6.29, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 669, "votePct": 0.48, "alliance": "NOTA" },
+        { "name": "Martin Paul", "party": "Independent", "votes": 623, "votePct": 0.45, "alliance": "OTHER" }
       ],
       "margin": 15929,
       "marginPct": 11.55,

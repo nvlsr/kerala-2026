@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. N. Balakrishnan", "party": "INC", "votes": 67911, "votePct": 48.79 },
-        { "name": "N. R. Balan", "party": "CPI(M)", "votes": 61226, "votePct": 44.47 },
-        { "name": "Shajumon Vattakad", "party": "BJP", "votes": 7451, "votePct": 5.35 },
-        { "name": "Govindan Machad", "party": "BSP", "votes": 1419, "votePct": 1.02 },
-        { "name": "Balakrishnan", "party": "Independent", "votes": 1177, "votePct": 0.85 }
+        { "name": "C. N. Balakrishnan", "party": "INC", "votes": 67911, "votePct": 48.79, "alliance": "UDF" },
+        { "name": "N. R. Balan", "party": "CPI(M)", "votes": 61226, "votePct": 44.47, "alliance": "LDF" },
+        { "name": "Shajumon Vattakad", "party": "BJP", "votes": 7451, "votePct": 5.35, "alliance": "NDA" },
+        { "name": "Govindan Machad", "party": "BSP", "votes": 1419, "votePct": 1.02, "alliance": "OTHER" },
+        { "name": "Balakrishnan", "party": "Independent", "votes": 1177, "votePct": 0.85, "alliance": "OTHER" }
       ],
       "margin": 6685,
       "marginPct": 4.80,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Anil Akkara", "party": "INC", "votes": 65535, "votePct": 41.02 },
-        { "name": "Mary Thomas", "party": "CPI(M)", "votes": 65492, "votePct": 40.99 },
-        { "name": "T. S. Ullas Babu", "party": "BJP", "votes": 26652, "votePct": 16.68 },
-        { "name": "NOTA", "party": "NOTA", "votes": 969, "votePct": 0.60 },
-        { "name": "Gaddafi A. K.", "party": "SDPI", "votes": 477, "votePct": 0.30 }
+        { "name": "Anil Akkara", "party": "INC", "votes": 65535, "votePct": 41.02, "alliance": "UDF" },
+        { "name": "Mary Thomas", "party": "CPI(M)", "votes": 65492, "votePct": 40.99, "alliance": "LDF" },
+        { "name": "T. S. Ullas Babu", "party": "BJP", "votes": 26652, "votePct": 16.68, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 969, "votePct": 0.60, "alliance": "NOTA" },
+        { "name": "Gaddafi A. K.", "party": "SDPI", "votes": 477, "votePct": 0.30, "alliance": "OTHER" }
       ],
       "margin": 43,
       "marginPct": 0.03,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Xavier Chittilappilly", "party": "CPI(M)", "votes": 81026, "votePct": 47.70 },
-        { "name": "Anil Akkara", "party": "INC", "votes": 65858, "votePct": 38.77 },
-        { "name": "T. S. Ullas Babu", "party": "BJP", "votes": 21747, "votePct": 12.80 },
-        { "name": "Haji Aboobaker Kundukadan", "party": "Independent", "votes": 388, "votePct": 0.23 },
-        { "name": "NOTA", "party": "NOTA", "votes": 842, "votePct": 0.50 }
+        { "name": "Xavier Chittilappilly", "party": "CPI(M)", "votes": 81026, "votePct": 47.70, "alliance": "LDF" },
+        { "name": "Anil Akkara", "party": "INC", "votes": 65858, "votePct": 38.77, "alliance": "UDF" },
+        { "name": "T. S. Ullas Babu", "party": "BJP", "votes": 21747, "votePct": 12.80, "alliance": "NDA" },
+        { "name": "Haji Aboobaker Kundukadan", "party": "Independent", "votes": 388, "votePct": 0.23, "alliance": "OTHER" },
+        { "name": "NOTA", "party": "NOTA", "votes": 842, "votePct": 0.50, "alliance": "NOTA" }
       ],
       "margin": 15168,
       "marginPct": 8.93,

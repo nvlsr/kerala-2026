@@ -13,32 +13,27 @@
           "name": "Koliakode N. Krishnan Nair",
           "party": "CPI(M)",
           "votes": 57381,
-          "votePct": 46.51
-        },
+          "votePct": 46.51, "alliance": "LDF" },
         {
           "name": "C. Mohanachandran",
           "party": "INC",
           "votes": 55145,
-          "votePct": 44.7
-        },
+          "votePct": 44.7, "alliance": "UDF" },
         {
           "name": "Karette Sivaprasad",
           "party": "BJP",
           "votes": 5228,
-          "votePct": 4.24
-        },
+          "votePct": 4.24, "alliance": "NDA" },
         {
           "name": "Pirappankode Shahjahan",
           "party": "SDPI",
           "votes": 2225,
-          "votePct": 1.8
-        },
+          "votePct": 1.8, "alliance": "OTHER" },
         {
           "name": "Seleena Prakkanam",
           "party": "Independent",
           "votes": 1613,
-          "votePct": 1.31
-        }
+          "votePct": 1.31, "alliance": "OTHER" }
       ],
       "margin": 2236,
       "marginPct": 1.81,
@@ -55,32 +50,27 @@
           "name": "D. K. Murali",
           "party": "CPI(M)",
           "votes": 65848,
-          "votePct": 46.56
-        },
+          "votePct": 46.56, "alliance": "LDF" },
         {
           "name": "T. Sarathchandra Prasad",
           "party": "INC",
           "votes": 56252,
-          "votePct": 39.77
-        },
+          "votePct": 39.77, "alliance": "UDF" },
         {
           "name": "R. V. Nikhil",
           "party": "BDJS",
           "votes": 13956,
-          "votePct": 9.87
-        },
+          "votePct": 9.87, "alliance": "NDA" },
         {
           "name": "Thachonam Nisamudeen",
           "party": "SDPI",
           "votes": 1774,
-          "votePct": 1.25
-        },
+          "votePct": 1.25, "alliance": "OTHER" },
         {
           "name": "Anil Paalode",
           "party": "BSP",
           "votes": 901,
-          "votePct": 0.64
-        }
+          "votePct": 0.64, "alliance": "OTHER" }
       ],
       "margin": 9596,
       "marginPct": 6.79,
@@ -97,62 +87,52 @@
           "name": "D. K. Murali",
           "party": "CPI(M)",
           "votes": 73137,
-          "votePct": 49.91
-        },
+          "votePct": 49.91, "alliance": "LDF" },
         {
           "name": "Anad Jayan",
           "party": "INC",
           "votes": 62895,
-          "votePct": 42.92
-        },
+          "votePct": 42.92, "alliance": "UDF" },
         {
           "name": "Thazhava Sahadevan",
           "party": "BDJS",
           "votes": 5603,
-          "votePct": 3.82
-        },
+          "votePct": 3.82, "alliance": "NDA" },
         {
           "name": "Ajmal Ismail",
           "party": "SDPI",
           "votes": 2325,
-          "votePct": 1.59
-        },
+          "votePct": 1.59, "alliance": "OTHER" },
         {
           "name": "T. Santhosh",
           "party": "BSP",
           "votes": 552,
-          "votePct": 0.38
-        },
+          "votePct": 0.38, "alliance": "OTHER" },
         {
           "name": "Attukal Aji",
           "party": "Independent",
           "votes": 420,
-          "votePct": 0.29
-        },
+          "votePct": 0.29, "alliance": "OTHER" },
         {
           "name": "R. Murali",
           "party": "Independent",
           "votes": 310,
-          "votePct": 0.21
-        },
+          "votePct": 0.21, "alliance": "OTHER" },
         {
           "name": "Asokan T. Vamanapuram",
           "party": "API",
           "votes": 301,
-          "votePct": 0.21
-        },
+          "votePct": 0.21, "alliance": "OTHER" },
         {
           "name": "C. M. Nawaz",
           "party": "Independent",
           "votes": 134,
-          "votePct": 0.09
-        },
+          "votePct": 0.09, "alliance": "OTHER" },
         {
           "name": "Bharathannoor Maniraj",
           "party": "Independent",
           "votes": 132,
-          "votePct": 0.09
-        }
+          "votePct": 0.09, "alliance": "OTHER" }
       ],
       "margin": 10242,
       "marginPct": 6.99,

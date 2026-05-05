@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "B. D. Devassy", "party": "CPI(M)", "votes": 63610, "votePct": 48.18 },
-        { "name": "Benny K. T.", "party": "INC", "votes": 61061, "votePct": 46.25 },
-        { "name": "Sudheer Baby", "party": "BJP", "votes": 5976, "votePct": 4.53 },
-        { "name": "Pushpagadan P. M.", "party": "Independent", "votes": 681, "votePct": 0.52 },
-        { "name": "Subramanian V. K.", "party": "BSP", "votes": 451, "votePct": 0.34 }
+        { "name": "B. D. Devassy", "party": "CPI(M)", "votes": 63610, "votePct": 48.18, "alliance": "LDF" },
+        { "name": "Benny K. T.", "party": "INC", "votes": 61061, "votePct": 46.25, "alliance": "UDF" },
+        { "name": "Sudheer Baby", "party": "BJP", "votes": 5976, "votePct": 4.53, "alliance": "NDA" },
+        { "name": "Pushpagadan P. M.", "party": "Independent", "votes": 681, "votePct": 0.52, "alliance": "OTHER" },
+        { "name": "Subramanian V. K.", "party": "BSP", "votes": 451, "votePct": 0.34, "alliance": "OTHER" }
       ],
       "margin": 2549,
       "marginPct": 1.93,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "B. D. Devassy", "party": "CPI(M)", "votes": 74251, "votePct": 49.37 },
-        { "name": "T. U. Radhakrishnan", "party": "INC", "votes": 47603, "votePct": 31.65 },
-        { "name": "Unnikrishnan K. A.", "party": "BDJS", "votes": 26229, "votePct": 17.44 },
-        { "name": "NOTA", "party": "NOTA", "votes": 739, "votePct": 0.49 },
-        { "name": "Sabu Chathely", "party": "Independent", "votes": 304, "votePct": 0.20 }
+        { "name": "B. D. Devassy", "party": "CPI(M)", "votes": 74251, "votePct": 49.37, "alliance": "LDF" },
+        { "name": "T. U. Radhakrishnan", "party": "INC", "votes": 47603, "votePct": 31.65, "alliance": "UDF" },
+        { "name": "Unnikrishnan K. A.", "party": "BDJS", "votes": 26229, "votePct": 17.44, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 739, "votePct": 0.49, "alliance": "NOTA" },
+        { "name": "Sabu Chathely", "party": "Independent", "votes": 304, "votePct": 0.20, "alliance": "OTHER" }
       ],
       "margin": 26648,
       "marginPct": 17.72,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. J. Saneesh Kumar Joseph", "party": "INC", "votes": 61888, "votePct": 43.23 },
-        { "name": "Dennies K. Antony", "party": "KC(M)", "votes": 60831, "votePct": 42.49 },
-        { "name": "Unnikrishnan K. A.", "party": "BDJS", "votes": 17301, "votePct": 12.09 },
-        { "name": "NOTA", "party": "NOTA", "votes": 1000, "votePct": 0.70 },
-        { "name": "T. N. Rajan", "party": "Independent", "votes": 713, "votePct": 0.50 }
+        { "name": "T. J. Saneesh Kumar Joseph", "party": "INC", "votes": 61888, "votePct": 43.23, "alliance": "UDF" },
+        { "name": "Dennies K. Antony", "party": "KC(M)", "votes": 60831, "votePct": 42.49, "alliance": "LDF" },
+        { "name": "Unnikrishnan K. A.", "party": "BDJS", "votes": 17301, "votePct": 12.09, "alliance": "NDA" },
+        { "name": "NOTA", "party": "NOTA", "votes": 1000, "votePct": 0.70, "alliance": "NOTA" },
+        { "name": "T. N. Rajan", "party": "Independent", "votes": 713, "votePct": 0.50, "alliance": "OTHER" }
       ],
       "margin": 1057,
       "marginPct": 0.74,

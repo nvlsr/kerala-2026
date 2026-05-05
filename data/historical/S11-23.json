@@ -9,11 +9,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Dasan", "party": "CPI(M)", "votes": 64374, "votePct": 47.20 },
-        { "name": "K.P. Anil Kumar", "party": "INC", "votes": 60235, "votePct": 44.16 },
-        { "name": "T. P. Jayachandran", "party": "BJP", "votes": 8086, "votePct": 5.93 },
-        { "name": "C. Muneer", "party": "Independent", "votes": 985, "votePct": 0.72 },
-        { "name": "Rashid P. T.", "party": "SDPI", "votes": 985, "votePct": 0.72 }
+        { "name": "K. Dasan", "party": "CPI(M)", "votes": 64374, "votePct": 47.20, "alliance": "LDF" },
+        { "name": "K.P. Anil Kumar", "party": "INC", "votes": 60235, "votePct": 44.16, "alliance": "UDF" },
+        { "name": "T. P. Jayachandran", "party": "BJP", "votes": 8086, "votePct": 5.93, "alliance": "NDA" },
+        { "name": "C. Muneer", "party": "Independent", "votes": 985, "votePct": 0.72, "alliance": "OTHER" },
+        { "name": "Rashid P. T.", "party": "SDPI", "votes": 985, "votePct": 0.72, "alliance": "OTHER" }
       ],
       "margin": 4139,
       "marginPct": 3.04,
@@ -26,11 +26,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Dasan", "party": "CPI(M)", "votes": 70593, "votePct": 45.94 },
-        { "name": "N. Subramanian", "party": "INC", "votes": 57224, "votePct": 37.24 },
-        { "name": "K. Rajinesh Babu", "party": "BJP", "votes": 22087, "votePct": 14.37 },
-        { "name": "Ismayil Kammana", "party": "SDPI", "votes": 798, "votePct": 0.52 },
-        { "name": "Rasal M. K.", "party": "PDP", "votes": 703, "votePct": 0.46 }
+        { "name": "K. Dasan", "party": "CPI(M)", "votes": 70593, "votePct": 45.94, "alliance": "LDF" },
+        { "name": "N. Subramanian", "party": "INC", "votes": 57224, "votePct": 37.24, "alliance": "UDF" },
+        { "name": "K. Rajinesh Babu", "party": "BJP", "votes": 22087, "votePct": 14.37, "alliance": "NDA" },
+        { "name": "Ismayil Kammana", "party": "SDPI", "votes": 798, "votePct": 0.52, "alliance": "OTHER" },
+        { "name": "Rasal M. K.", "party": "PDP", "votes": 703, "votePct": 0.46, "alliance": "OTHER" }
       ],
       "margin": 13369,
       "marginPct": 8.70,
@@ -43,11 +43,11 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Kanathil Jameela", "party": "CPI(M)", "votes": 75628, "votePct": 46.66 },
-        { "name": "N. Subramanian", "party": "INC", "votes": 67156, "votePct": 41.43 },
-        { "name": "N.P. Radhakrishnan", "party": "BJP", "votes": 17555, "votePct": 10.83 },
-        { "name": "Jameela. P.P.", "party": "Independent", "votes": 651, "votePct": 0.40 },
-        { "name": "Subrahmanyan Kanaran", "party": "Independent", "votes": 381, "votePct": 0.24 }
+        { "name": "Kanathil Jameela", "party": "CPI(M)", "votes": 75628, "votePct": 46.66, "alliance": "LDF" },
+        { "name": "N. Subramanian", "party": "INC", "votes": 67156, "votePct": 41.43, "alliance": "UDF" },
+        { "name": "N.P. Radhakrishnan", "party": "BJP", "votes": 17555, "votePct": 10.83, "alliance": "NDA" },
+        { "name": "Jameela. P.P.", "party": "Independent", "votes": 651, "votePct": 0.40, "alliance": "OTHER" },
+        { "name": "Subrahmanyan Kanaran", "party": "Independent", "votes": 381, "votePct": 0.24, "alliance": "OTHER" }
       ],
       "margin": 8472,
       "marginPct": 5.23,
