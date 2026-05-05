@@ -223,7 +223,7 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
 
   const partyKeys = [...top3PartiesPerElection]
 
-  const series: TrendSeries[] = partyKeys.map((partyKey) => {
+  const seriesWithTotals = partyKeys.map((partyKey) => {
     const points: TrendPoint[] = elections.map((e) => {
       const cand = e.candidates.find((cd) => cd.party === partyKey)
       return {
@@ -240,8 +240,8 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
         ? "OTHER"
         : ((alliancesMeta.partyToAlliance[partyKey] ?? "OTHER") as AllianceCode)
     const meta = alliancesMeta.alliances[allianceCode]
-    const totalVotesAcrossYears = points.reduce((s, p) => s + (p.votes ?? 0), 0)
-    return {
+    const totalVotes = points.reduce((s, p) => s + (p.votes ?? 0), 0)
+    const trendSeries: TrendSeries = {
       party: partyKey,
       partyShort: partyShort(partyKey),
       color: meta.color,
@@ -250,15 +250,12 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
         (cd) => canonicalPartyName(cd.party) === partyKey && !cd.isNota
       ),
       points,
-      _sortKey: totalVotesAcrossYears,
-    } as TrendSeries & { _sortKey: number }
+    }
+    return { trendSeries, totalVotes }
   })
 
-  series.sort(
-    (a, b) =>
-      (b as TrendSeries & { _sortKey: number })._sortKey -
-      (a as TrendSeries & { _sortKey: number })._sortKey
-  )
+  seriesWithTotals.sort((a, b) => b.totalVotes - a.totalVotes)
+  const series: TrendSeries[] = seriesWithTotals.map((s) => s.trendSeries)
 
   const years = elections.map((e) => e.year)
   const byelectionYears = elections

@@ -41,10 +41,8 @@ Snapshot of refactor opportunities as of 2026-05-05. Each item names the problem
 - **Why it hurts:** ~20 lines of duplication; either copy can drift from the other.
 - **Fix:** Lift `ensureYearEntry` to module scope; both callers use it.
 
-### M2. Inconsistent null contracts across trend/historical helpers
-- **Where:** `getTrendData` returns `null` (`aggregates.ts:164–169`); `getPastCandidates` returns `[]` (`aggregates.ts:293–300`)
-- **Why it hurts:** Consumers branch differently for "no data" by accident; missed checks silently render empty UI.
-- **Fix:** Pick one contract per shape (recommend: arrays return `[]`, single objects return `null`); document at the type.
+### M2. ~~Inconsistent null contracts across trend/historical helpers~~ — withdrawn
+- On review, the contracts already follow "collections return `[]`, singletons return `null`." `getTrendData` returns a singleton aggregate (`null` is right), `getPastCandidates` returns a collection (`[]` is right). Not a real inconsistency.
 
 ### M3. Cast-based `_sortKey` augmentation in trend builder
 - **Where:** `src/lib/data/aggregates.ts:254, 259–260`
@@ -83,9 +81,9 @@ Why first: pure refactor, mechanical, no behavior change, and H5 depends on H1.
 5. **H3** Replace casts in `parseFilters` with validate-then-cast helpers.
 6. **H6** Extract `persistTheme` in `theme-provider.tsx`.
 7. **M3** Drop the `_sortKey` cast in `aggregates.ts`; sort indices first.
-8. **M2** Standardize null contracts in `aggregates.ts` and update consumers.
+8. ~~**M2** Standardize null contracts~~ — withdrawn (already consistent).
 
-Why second: each change is local, with clear correctness criteria; M2 is the only one that touches multiple files but it's a 4–6 site sweep.
+Why second: each change is local, with clear correctness criteria.
 
 ### Phase 3 — Larger surgery + safety net
 

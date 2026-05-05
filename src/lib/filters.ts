@@ -107,7 +107,7 @@ function sortDirFor(
   return ascByDefault ? "asc" : "desc"
 }
 
-const SORT_COLUMNS: SortColumn[] = [
+const SORT_COLUMNS: readonly SortColumn[] = [
   "constituency",
   "candidate",
   "party",
@@ -117,7 +117,19 @@ const SORT_COLUMNS: SortColumn[] = [
   "margin",
   "marginDelta",
 ]
-const RESULT_VALUES: ResultFilter[] = ["winners", "losers", "all"]
+const RESULT_VALUES: readonly ResultFilter[] = ["winners", "losers", "all"]
+
+function isSortColumn(value: string): value is SortColumn {
+  return (SORT_COLUMNS as readonly string[]).includes(value)
+}
+
+function isSortDir(value: string): value is SortDir {
+  return value === "asc" || value === "desc"
+}
+
+function isResultFilter(value: string): value is ResultFilter {
+  return (RESULT_VALUES as readonly string[]).includes(value)
+}
 
 /**
  * Serialize active filters to URL search params. Default values are omitted to
@@ -161,13 +173,13 @@ export function parseFilters(params: URLSearchParams): Filters {
     if (Number.isInteger(n) && n >= 1 && n <= 140) filters.seat = n
   }
 
-  const result = params.get("result") as ResultFilter | null
-  if (result && RESULT_VALUES.includes(result)) filters.result = result
+  const result = params.get("result")
+  if (result && isResultFilter(result)) filters.result = result
 
   const sort = params.get("sort")
   if (sort) {
-    const [col, dir] = sort.split(":") as [SortColumn, SortDir]
-    if (SORT_COLUMNS.includes(col) && (dir === "asc" || dir === "desc")) {
+    const [col, dir] = sort.split(":")
+    if (col && dir && isSortColumn(col) && isSortDir(dir)) {
       filters.sort = { column: col, dir }
     }
   }

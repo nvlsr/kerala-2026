@@ -93,12 +93,19 @@ export function ThemeProvider({
     return defaultTheme
   })
 
-  const setTheme = React.useCallback(
+  const persistTheme = React.useCallback(
     (nextTheme: Theme) => {
       localStorage.setItem(storageKey, nextTheme)
-      setThemeState(nextTheme)
     },
     [storageKey]
+  )
+
+  const setTheme = React.useCallback(
+    (nextTheme: Theme) => {
+      persistTheme(nextTheme)
+      setThemeState(nextTheme)
+    },
+    [persistTheme]
   )
 
   const applyTheme = React.useCallback(
@@ -167,7 +174,7 @@ export function ThemeProvider({
                 ? "light"
                 : "dark"
 
-        localStorage.setItem(storageKey, nextTheme)
+        persistTheme(nextTheme)
         return nextTheme
       })
     }
@@ -177,7 +184,7 @@ export function ThemeProvider({
     return () => {
       window.removeEventListener("keydown", handleKeyDown)
     }
-  }, [storageKey])
+  }, [persistTheme])
 
   React.useEffect(() => {
     const handleStorageChange = (event: StorageEvent) => {
