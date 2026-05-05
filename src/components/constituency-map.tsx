@@ -75,7 +75,10 @@ export function ConstituencyMap({ scope, selectedSeat, onSelect }: Props) {
               const isSelected = selectedSeat === num
               const isHovered = hovered === num
               const inScope = !scope || c.districtId === scope
-              const fill = fills.get(num) ?? { color: "var(--muted)", opacity: 0.2 }
+              const fill = fills.get(num) ?? {
+                color: "var(--muted)",
+                opacity: 0.2,
+              }
               const baseOpacity = inScope ? fill.opacity : fill.opacity * 0.25
               return (
                 <path
@@ -93,7 +96,9 @@ export function ConstituencyMap({ scope, selectedSeat, onSelect }: Props) {
                         ? Math.min(1, baseOpacity + 0.2)
                         : baseOpacity
                   }
-                  stroke={isSelected ? "var(--foreground)" : "var(--background)"}
+                  stroke={
+                    isSelected ? "var(--foreground)" : "var(--background)"
+                  }
                   strokeWidth={isSelected ? 1.5 : 0.5}
                   className="cursor-pointer transition-opacity outline-none focus-visible:stroke-foreground focus-visible:[stroke-width:1.5]"
                   onClick={() => onSelect(isSelected ? null : num)}
@@ -248,10 +253,7 @@ function SeatPanel({
       </div>
       <dl className="grid grid-cols-3 gap-2 text-xs">
         <Stat label="Share" value={formatPercent(share / 100, 1)} />
-        <Stat
-          label="Margin"
-          value={`+${formatPercent(marginPct / 100, 1)}`}
-        />
+        <Stat label="Margin" value={`+${formatPercent(marginPct / 100, 1)}`} />
         {overlay === "swing" && swing ? (
           <Stat
             label={`Swing ${getAlliance(swing.code).code}`}

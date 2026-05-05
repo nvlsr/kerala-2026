@@ -40,10 +40,7 @@ const closestLosses: InsightChip = {
   },
 }
 
-function biggestGainsFor(p: {
-  canonical: string
-  short: string
-}): InsightChip {
+function biggestGainsFor(p: { canonical: string; short: string }): InsightChip {
   return {
     id: `biggest-gains-${p.short}`,
     label: `${p.short} gains`,

@@ -164,10 +164,7 @@ export function parseFilters(params: URLSearchParams): Filters {
   const sort = params.get("sort")
   if (sort) {
     const [col, dir] = sort.split(":") as [SortColumn, SortDir]
-    if (
-      SORT_COLUMNS.includes(col) &&
-      (dir === "asc" || dir === "desc")
-    ) {
+    if (SORT_COLUMNS.includes(col) && (dir === "asc" || dir === "desc")) {
       filters.sort = { column: col, dir }
     }
   }

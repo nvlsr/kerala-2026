@@ -344,9 +344,9 @@ Add `docs/architecture.md` (short — 1–2 pages) covering:
 | 5 | ✅ Move `buildRows` + `CandidateRow` to `lib/data/candidate-rows.ts` | 30 min | Insights chips |
 | 6 | ✅ Consolidate filter state into `Filters` + reducer | 4 hours | **Insights chips** (multi-mutation) |
 | 7 | ✅ Add URL-state sync to the reducer | 1 hour | Sharable views |
-| 8 | Split `data.ts` into `data/` module | 2 hours | DX |
-| 9 | Add `docs/architecture.md` | 1 hour | Onboarding |
-| 10 | Add data-transformation tests | 4 hours | Refactor safety |
+| 8 | ✅ Split `data.ts` into `data/` module | 2 hours | DX |
+| 9 | ✅ Add `docs/architecture.md` | 1 hour | Onboarding |
+| 10 | ✅ Add data-transformation tests (vitest, 27 tests) | 4 hours | Refactor safety |
 | — | (Skip) Unify 3 historical charts | — | (would over-abstract) |
 | — | (Defer) `<ChoroplethMap>` shell | — | Wait for AC map; do it once both maps exist |
 | — | (Defer) Brand-typed `PartyName` | — | Probably never needed |

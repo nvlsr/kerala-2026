@@ -48,7 +48,11 @@ function project<Props>(
 {
   const fc = JSON.parse(
     readFileSync(resolve(ROOT, "data/kerala-districts.geojson"), "utf8")
-  ) as FeatureCollection<{ id: string; name: string; censuscode?: number | null }>
+  ) as FeatureCollection<{
+    id: string
+    name: string
+    censuscode?: number | null
+  }>
 
   const width = 400
   const height = 600

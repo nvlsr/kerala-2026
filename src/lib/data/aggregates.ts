@@ -1,195 +1,20 @@
-import constituenciesJson from "@data/kerala-2026.json"
-import alliancesJson from "@data/alliances.json"
-import districtsJson from "@data/districts.json"
-import demographicsJson from "@data/demographics.json"
-import candidateAliasesJson from "@data/candidate-aliases.json"
-import constituencyNamesJson from "@data/constituency-names.json"
+import {
+  allianceForCandidate,
+  allianceForRawParty,
+  type AllianceCode,
+} from "@/lib/data/alliances"
+import {
+  constituencies,
+  constituenciesIn,
+  totalVotesIn,
+  winnerOf,
+  type Constituency,
+} from "@/lib/data/constituencies"
+import { getHistoricalFor } from "@/lib/data/historical"
+import { alliancesMeta } from "@/lib/data/loaders"
+import { canonicalPartyName, partyShort } from "@/lib/data/parties"
 
-const historicalModules = import.meta.glob<{ default: HistoricalConstituency }>(
-  "../../data/historical/S11-*.json",
-  { eager: true }
-)
-
-export type AllianceCode = "UDF" | "LDF" | "NDA" | "OTHER" | "NOTA"
-
-export type Candidate = {
-  name: string
-  party: string
-  votes: number
-  margin: number
-  status: "won" | "lost" | "nota"
-  isNota: boolean
-}
-
-export type Constituency = {
-  constituency: string
-  constituencyNumber: number
-  constituencyName: string
-  state: string
-  candidates: Candidate[]
-  checksum: { computedMarginsMatchScraped: boolean; mismatches: unknown[] }
-  source: string
-}
-
-export type Alliance = {
-  code: AllianceCode
-  name: string
-  ledBy: string | null
-  color: string
-}
-
-const alliancesMeta = alliancesJson as {
-  alliances: Record<AllianceCode, Alliance>
-  partyToAlliance: Record<string, AllianceCode>
-  partyAbbreviation: Record<string, string>
-  partyAliases: Record<string, string>
-  independentOverrides: Record<string, AllianceCode | string>
-}
-
-const abbreviationToFull: Record<string, string> = {}
-for (const [full, abbr] of Object.entries(alliancesMeta.partyAbbreviation)) {
-  abbreviationToFull[abbr] = full
-}
-
-export function partyShort(party: string): string {
-  return alliancesMeta.partyAbbreviation[party] ?? party
-}
-
-const candidateAliases = (
-  candidateAliasesJson as { aliases: Record<string, string> }
-).aliases
-
-type ConstituencyNameEntry = {
-  primary: string
-  eci: string
-  wikipedia?: string
-  wikipediaUrl?: string
-  aliases?: string[]
-}
-
-const constituencyNames = constituencyNamesJson as Record<
-  string,
-  ConstituencyNameEntry
->
-
-export function displayConstituencyName(c: Constituency | number): string {
-  const num = typeof c === "number" ? c : c.constituencyNumber
-  const entry = constituencyNames[String(num)]
-  if (entry?.primary) return entry.primary
-  if (typeof c !== "number") return c.constituencyName
-  return ""
-}
-
-export function normalizeCandidateName(raw: string): string {
-  if (!raw) return raw
-  const aliased = candidateAliases[raw] ?? raw
-  return aliased
-    .split(/[\s.]+/)
-    .filter(Boolean)
-    .map((token) => {
-      const stripped = token.replace(/,/g, "")
-      if (stripped.length === 0) return ""
-      if (stripped.length === 1) return stripped.toUpperCase() + "."
-      return stripped.charAt(0).toUpperCase() + stripped.slice(1).toLowerCase()
-    })
-    .filter(Boolean)
-    .join(" ")
-}
-
-export function canonicalPartyName(raw: string): string {
-  const trimmed = raw.trim()
-  if (!trimmed) return trimmed
-  if (alliancesMeta.partyAbbreviation[trimmed]) return trimmed
-  if (alliancesMeta.partyAliases[trimmed]) {
-    return alliancesMeta.partyAliases[trimmed]
-  }
-  if (abbreviationToFull[trimmed]) return abbreviationToFull[trimmed]
-  return trimmed
-}
-
-export const constituencies: Constituency[] = (
-  constituenciesJson as Constituency[]
-)
-  .slice()
-  .sort((a, b) => a.constituencyNumber - b.constituencyNumber)
-
-export type District = {
-  id: string
-  name: string
-  order: number
-}
-
-const districtsMeta = districtsJson as {
-  districts: District[]
-  constituencyToDistrict: Record<string, string>
-}
-
-export const districts: District[] = districtsMeta.districts
-  .slice()
-  .sort((a, b) => a.order - b.order)
-
-export function getDistrict(id: string): District | null {
-  return districts.find((d) => d.id === id) ?? null
-}
-
-export function districtForConstituency(c: Constituency): District | null {
-  const id = districtsMeta.constituencyToDistrict[String(c.constituencyNumber)]
-  return id ? getDistrict(id) : null
-}
-
-export function constituenciesIn(districtId: string | null): Constituency[] {
-  if (districtId == null) return constituencies
-  return constituencies.filter(
-    (c) =>
-      districtsMeta.constituencyToDistrict[String(c.constituencyNumber)] ===
-      districtId
-  )
-}
-
-export const alliances: Alliance[] = (
-  ["UDF", "LDF", "NDA", "OTHER", "NOTA"] as AllianceCode[]
-).map((code) => alliancesMeta.alliances[code])
-
-export function getAlliance(code: AllianceCode): Alliance {
-  return alliancesMeta.alliances[code]
-}
-
-const MAIN_FRONTS = new Set<AllianceCode>(["UDF", "LDF", "NDA"])
-export function isMainFront(code: AllianceCode): boolean {
-  return MAIN_FRONTS.has(code)
-}
-
-export function allianceForCandidate(
-  c: Constituency,
-  candidate: Candidate
-): AllianceCode {
-  if (candidate.isNota) return "NOTA"
-  if (candidate.party === "Independent") {
-    const key = `${c.constituencyNumber}:${candidate.name}`
-    const override = alliancesMeta.independentOverrides[key]
-    if (
-      override === "UDF" ||
-      override === "LDF" ||
-      override === "NDA" ||
-      override === "OTHER" ||
-      override === "NOTA"
-    ) {
-      return override
-    }
-    return "OTHER"
-  }
-  return alliancesMeta.partyToAlliance[candidate.party] ?? "OTHER"
-}
-
-export function winnerOf(c: Constituency): Candidate {
-  const w = c.candidates.find((cand) => cand.status === "won")
-  if (!w) throw new Error(`No winner for ${c.constituencyNumber}`)
-  return w
-}
-
-export function totalVotesIn(c: Constituency): number {
-  return c.candidates.reduce((s, x) => s + x.votes, 0)
-}
+// ─── State-level summary ────────────────────────────────────────────────
 
 export type StateSummary = {
   totalSeats: number
@@ -242,6 +67,8 @@ export function getStateSummary(
     ),
   }
 }
+
+// ─── Alliance breakdown (parties within an alliance) ───────────────────
 
 export type PartyBreakdown = {
   party: string
@@ -308,133 +135,7 @@ export function getAllianceBreakdown(
   }
 }
 
-export type ReligionCode = "hindu" | "muslim" | "christian" | "other"
-
-export type Religion = {
-  code: ReligionCode
-  label: string
-  color: string
-}
-
-export const religions: Religion[] = [
-  { code: "hindu", label: "Hindu", color: "#B45309" },
-  { code: "muslim", label: "Muslim", color: "#16A34A" },
-  { code: "christian", label: "Christian", color: "#7C3AED" },
-  { code: "other", label: "Other", color: "#6B7280" },
-]
-
-export function getReligion(code: ReligionCode): Religion {
-  return religions.find((r) => r.code === code)!
-}
-
-type DistrictDemographics = {
-  population: number
-  religions: Record<ReligionCode, number>
-}
-
-const demoMeta = demographicsJson as {
-  year: number
-  source: string
-  note?: string
-  districts: Record<string, DistrictDemographics>
-}
-
-export const demographicsYear = demoMeta.year
-
-export type Demographics = {
-  scope: "state" | "district"
-  population: number
-  religions: Record<ReligionCode, number>
-}
-
-export function getDemographicsFor(districtId: string | null): Demographics {
-  if (districtId) {
-    const d = demoMeta.districts[districtId]
-    if (!d) {
-      return {
-        scope: "district",
-        population: 0,
-        religions: { hindu: 0, muslim: 0, christian: 0, other: 0 },
-      }
-    }
-    return {
-      scope: "district",
-      population: d.population,
-      religions: { ...d.religions },
-    }
-  }
-  let total = 0
-  const counts: Record<ReligionCode, number> = {
-    hindu: 0,
-    muslim: 0,
-    christian: 0,
-    other: 0,
-  }
-  for (const id in demoMeta.districts) {
-    const d = demoMeta.districts[id]!
-    total += d.population
-    for (const code of [
-      "hindu",
-      "muslim",
-      "christian",
-      "other",
-    ] as ReligionCode[]) {
-      counts[code] += (d.religions[code] / 100) * d.population
-    }
-  }
-  return {
-    scope: "state",
-    population: total,
-    religions: {
-      hindu: total > 0 ? (counts.hindu / total) * 100 : 0,
-      muslim: total > 0 ? (counts.muslim / total) * 100 : 0,
-      christian: total > 0 ? (counts.christian / total) * 100 : 0,
-      other: total > 0 ? (counts.other / total) * 100 : 0,
-    },
-  }
-}
-
-export type HistoricalCandidate = {
-  name: string
-  party: string
-  votes: number
-  votePct: number
-}
-
-export type HistoricalElection = {
-  year: number
-  type: "general" | "by-election"
-  reason: string | null
-  candidates: HistoricalCandidate[]
-  margin: number | null
-  marginPct: number | null
-  turnout: number | null
-  turnoutPct: number | null
-  result: string | null
-}
-
-export type HistoricalConstituency = {
-  constituencyNumber: number
-  constituencyName: string
-  wikipediaName: string
-  wikipediaUrl: string
-  elections: HistoricalElection[]
-}
-
-const historicalByNumber = new Map<number, HistoricalConstituency>()
-for (const path in historicalModules) {
-  const mod = historicalModules[path] as
-    | { default: HistoricalConstituency }
-    | HistoricalConstituency
-  const data = "default" in mod ? mod.default : mod
-  historicalByNumber.set(data.constituencyNumber, data)
-}
-
-export function getHistoricalFor(
-  constituencyNumber: number
-): HistoricalConstituency | null {
-  return historicalByNumber.get(constituencyNumber) ?? null
-}
+// ─── Per-constituency historical trend (used by charts) ────────────────
 
 export type TrendPoint = {
   year: number
@@ -566,6 +267,8 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
 
   return { years, byelectionYears, series }
 }
+
+// ─── Past candidates (filterable timeline) ─────────────────────────────
 
 export type PastWinner = {
   year: number
@@ -714,6 +417,41 @@ export function getPastWinners(constituencyNumber: number): PastCandidate[] {
   return getPastCandidates(constituencyNumber, null)
 }
 
+// ─── 2021 baseline lookup (used by candidate rows + AC map) ────────────
+
+export type Party2021Baseline = {
+  sharePct: number
+  marginPct: number
+}
+
+export function get2021Baseline(
+  c: Constituency,
+  partyCanonical: string
+): Party2021Baseline | null {
+  if (partyCanonical === "Independent") return null
+  const hist = getHistoricalFor(c.constituencyNumber)
+  if (!hist) return null
+  const prev = hist.elections.find(
+    (e) => e.type === "general" && e.year === 2021
+  )
+  if (!prev || prev.candidates.length === 0) return null
+
+  const prevCand = prev.candidates.find(
+    (cd) => canonicalPartyName(cd.party) === partyCanonical
+  )
+  if (!prevCand) return null
+
+  const sorted = [...prev.candidates].sort((a, b) => b.votes - a.votes)
+  const prevWinner = sorted[0]!
+  const wasWinner = prevCand === prevWinner
+  const marginPct = wasWinner
+    ? prevWinner.votePct - (sorted[1]?.votePct ?? 0)
+    : prevCand.votePct - prevWinner.votePct
+  return { sharePct: prevCand.votePct, marginPct }
+}
+
+// ─── Aggregate trend data (alliance + party scope-wide) ────────────────
+
 export type AllianceTrendPoint = {
   year: number
   seats: number
@@ -727,12 +465,6 @@ export type AllianceTrendData = {
   years: number[]
   totalSeats: number
   series: Record<AllianceCode, AllianceTrendPoint[]>
-}
-
-export function allianceForRawParty(party: string): AllianceCode {
-  const canonical = canonicalPartyName(party)
-  if (canonical === "Independent") return "OTHER"
-  return (alliancesMeta.partyToAlliance[canonical] ?? "OTHER") as AllianceCode
 }
 
 export function getAllianceTrendData(
@@ -912,43 +644,4 @@ export function getPartyTrendData(
     points,
     totalSeats: list.length,
   }
-}
-
-export type Party2021Baseline = {
-  sharePct: number
-  marginPct: number
-}
-
-export function get2021Baseline(
-  c: Constituency,
-  partyCanonical: string
-): Party2021Baseline | null {
-  if (partyCanonical === "Independent") return null
-  const hist = getHistoricalFor(c.constituencyNumber)
-  if (!hist) return null
-  const prev = hist.elections.find(
-    (e) => e.type === "general" && e.year === 2021
-  )
-  if (!prev || prev.candidates.length === 0) return null
-
-  const prevCand = prev.candidates.find(
-    (cd) => canonicalPartyName(cd.party) === partyCanonical
-  )
-  if (!prevCand) return null
-
-  const sorted = [...prev.candidates].sort((a, b) => b.votes - a.votes)
-  const prevWinner = sorted[0]!
-  const wasWinner = prevCand === prevWinner
-  const marginPct = wasWinner
-    ? prevWinner.votePct - (sorted[1]?.votePct ?? 0)
-    : prevCand.votePct - prevWinner.votePct
-  return { sharePct: prevCand.votePct, marginPct }
-}
-
-export function formatNumber(n: number): string {
-  return n.toLocaleString("en-IN")
-}
-
-export function formatPercent(p: number, digits = 1): string {
-  return `${(p * 100).toFixed(digits)}%`
 }
