@@ -1,0 +1,77 @@
+{
+  "constituency": "13 - THALASSERY (Kerala)",
+  "constituencyNumber": 13,
+  "constituencyName": "THALASSERY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "KARAYI RAJAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 69743,
+      "margin": 20523,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SAJU K P",
+      "party": "Indian National Congress",
+      "votes": 49220,
+      "margin": -20523,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "O NIDHEESH",
+      "party": "Bharatiya Janata Party",
+      "votes": 22754,
+      "margin": -46989,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A C JALALUDDHEEN",
+      "party": "Social Democratic Party Of India",
+      "votes": 1444,
+      "margin": -68299,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAJU V P",
+      "party": "Independent",
+      "votes": 240,
+      "margin": -69503,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJAN O P",
+      "party": "Independent",
+      "votes": 89,
+      "margin": -69654,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJAN V P",
+      "party": "Independent",
+      "votes": 69,
+      "margin": -69674,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 728,
+      "margin": -69015,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1113.htm"
+}

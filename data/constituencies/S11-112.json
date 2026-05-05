@@ -1,0 +1,53 @@
+{
+  "constituency": "112 - RANNI (Kerala)",
+  "constituencyNumber": 112,
+  "constituencyName": "RANNI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. PAZHAKULAM MADHU",
+      "party": "Indian National Congress",
+      "votes": 54652,
+      "margin": 4344,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. PRAMOD NARAYAN",
+      "party": "Kerala Congress (M)",
+      "votes": 50308,
+      "margin": -4344,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "THOMAS K SAMUEL (BLESSON)",
+      "party": "Twenty 20 Party",
+      "votes": 17993,
+      "margin": -36659,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SREEHARI K P",
+      "party": "Independent",
+      "votes": 333,
+      "margin": -54319,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 557,
+      "margin": -54095,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11112.htm"
+}

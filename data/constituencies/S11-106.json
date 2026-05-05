@@ -1,0 +1,85 @@
+{
+  "constituency": "106 - KUTTANAD (Kerala)",
+  "constituencyNumber": 106,
+  "constituencyName": "KUTTANAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "REJI CHERIYAN",
+      "party": "Kerala Congress",
+      "votes": 56594,
+      "margin": 20600,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "THOMAS K. THOMAS",
+      "party": "Nationalist Congress Party - Sharadchandra Pawar",
+      "votes": 35994,
+      "margin": -20600,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANTHOSH SANTHI",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 16932,
+      "margin": -39662,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ROY MUTTAR",
+      "party": "Aam Aadmi Party",
+      "votes": 689,
+      "margin": -55905,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P.K. SASI",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 656,
+      "margin": -55938,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JAISAPPAN MATHAI",
+      "party": "Independent",
+      "votes": 471,
+      "margin": -56123,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOEMON JOSEPH SRAMPICKAL A. P. J. JUMAN V. S.",
+      "party": "Independent",
+      "votes": 280,
+      "margin": -56314,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RENJU T. R.",
+      "party": "Independent",
+      "votes": 231,
+      "margin": -56363,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 713,
+      "margin": -55881,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11106.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 49,
+  "constituencyName": "THRITHALA",
+  "wikipediaName": "Thrithala",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thrithala_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. T. Balaram", "party": "INC", "votes": 57848, "votePct": 47.37 },
+        { "name": "Mammikutty P.", "party": "CPI(M)", "votes": 54651, "votePct": 44.75 },
+        { "name": "V. Ramankutty", "party": "BJP", "votes": 5899, "votePct": 4.83 },
+        { "name": "Baburajan O. T.", "party": "SDPI", "votes": 1320, "votePct": 1.08 },
+        { "name": "P. Mammnkutty", "party": "Independent", "votes": 902, "votePct": 0.74 }
+      ],
+      "margin": 3197,
+      "marginPct": 2.62,
+      "turnout": 122120,
+      "turnoutPct": 78.46,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. T. Balaram", "party": "INC", "votes": 66505, "votePct": 47.16 },
+        { "name": "Subaida Ishac", "party": "CPI(M)", "votes": 55958, "votePct": 39.68 },
+        { "name": "V. T. Rema", "party": "BJP", "votes": 14510, "votePct": 10.29 },
+        { "name": "C. P. Mohammedali", "party": "SDPI", "votes": 1313, "votePct": 0.93 },
+        { "name": "Subaida", "party": "Independent", "votes": 1080, "votePct": 0.77 }
+      ],
+      "margin": 10547,
+      "marginPct": 7.48,
+      "turnout": 141021,
+      "turnoutPct": 78.88,
+      "result": "INC hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. B. Rajesh", "party": "CPI(M)", "votes": 69814, "votePct": 45.84 },
+        { "name": "V. T. Balram", "party": "INC", "votes": 66798, "votePct": 43.86 },
+        { "name": "Sanku T. Das", "party": "BJP", "votes": 12851, "votePct": 8.44 },
+        { "name": "M. K. Abdul Nasar", "party": "SDPI", "votes": 1582, "votePct": 1.04 },
+        { "name": "Rajagopal Thrithala", "party": "BSP", "votes": 333, "votePct": 0.22 }
+      ],
+      "margin": 3016,
+      "marginPct": 1.98,
+      "turnout": 152311,
+      "turnoutPct": 78.47,
+      "result": "CPI(M) gain from INC"
+    }
+  ]
+}

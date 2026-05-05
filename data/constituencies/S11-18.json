@@ -1,0 +1,85 @@
+{
+  "constituency": "18 - SULTHANBATHERY (Kerala)",
+  "constituencyNumber": 18,
+  "constituencyName": "SULTHANBATHERY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "I C BALAKRISHNAN",
+      "party": "Indian National Congress",
+      "votes": 78936,
+      "margin": 16597,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "M S VISWANATHAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 62339,
+      "margin": -16597,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KAVITHA A S",
+      "party": "Bharatiya Janata Party",
+      "votes": 31308,
+      "margin": -47628,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRAKRITHI N V",
+      "party": "Aam Aadmi Party",
+      "votes": 1781,
+      "margin": -77155,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BENADICT",
+      "party": "Bahujan Samaj Party",
+      "votes": 447,
+      "margin": -78489,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "V.A RAMESAN",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 275,
+      "margin": -78661,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BALAKRISHNAN EDAKKAL",
+      "party": "Independent",
+      "votes": 212,
+      "margin": -78724,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJESH R M",
+      "party": "Independent",
+      "votes": 198,
+      "margin": -78738,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1442,
+      "margin": -77494,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1118.htm"
+}

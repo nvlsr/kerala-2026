@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 118,
+  "constituencyName": "KUNNATHUR",
+  "wikipediaName": "Kunnathur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kunnathur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Kovoor Kunjumon", "party": "RSP", "votes": 71923, "votePct": 50.0 },
+        { "name": "P. K. Ravi", "party": "INC", "votes": 59835, "votePct": 41.6 },
+        { "name": "Raji Prasad", "party": "BJP", "votes": 5949, "votePct": 4.1 },
+        { "name": "Thulaseedharan Pallickal", "party": "SDPI", "votes": 2310, "votePct": 1.6 },
+        { "name": "Vallikunnam Prasad", "party": "Independent", "votes": 1354, "votePct": 0.9 }
+      ],
+      "margin": 12088,
+      "marginPct": 8.4,
+      "turnout": 143918,
+      "turnoutPct": 74.0,
+      "result": "RSP hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Kovoor Kunjumon", "party": "RSP(L)", "votes": 75725, "votePct": 47.39 },
+        { "name": "Ullas Kovur", "party": "RSP", "votes": 55196, "votePct": 34.54 },
+        { "name": "Thazhava Sahadevan", "party": "BDJS", "votes": 21742, "votePct": 13.61 },
+        { "name": "Thulaseedharan Pallickal", "party": "SDPI", "votes": 1698, "votePct": 1.06 },
+        { "name": "Kunjumon", "party": "Independent", "votes": 1516, "votePct": 0.95 }
+      ],
+      "margin": 20529,
+      "marginPct": 12.84,
+      "turnout": 159830,
+      "turnoutPct": 76.66,
+      "result": "RSP(L) gain from RSP"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Kovoor Kunjumon", "party": "RSP(L)", "votes": 69436, "votePct": 43.13 },
+        { "name": "Ullas Kovur", "party": "RSP", "votes": 66646, "votePct": 41.4 },
+        { "name": "Raji Prasad", "party": "BJP", "votes": 21760, "votePct": 13.52 },
+        { "name": "R. S. Anju", "party": "BSP", "votes": 946, "votePct": 0.6 },
+        { "name": "Manthara Velayudhan", "party": "Independent", "votes": 623, "votePct": 0.4 }
+      ],
+      "margin": 2790,
+      "marginPct": 1.74,
+      "turnout": 160062,
+      "turnoutPct": 78.1,
+      "result": "RSP(L) hold"
+    }
+  ]
+}

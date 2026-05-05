@@ -1,0 +1,69 @@
+{
+  "constituency": "46 - KOTTAKKAL (Kerala)",
+  "constituencyNumber": 46,
+  "constituencyName": "KOTTAKKAL",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "PROF. ABID HUSSAIN THANGAL",
+      "party": "Indian Union Muslim League",
+      "votes": 118111,
+      "margin": 62638,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "PREETHI KONCHATH",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 55473,
+      "margin": -62638,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUBRAMANNIAN C",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 10558,
+      "margin": -107553,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. ABDUL MAJEED",
+      "party": "Social Democratic Party Of India",
+      "votes": 4557,
+      "margin": -113554,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PREETHI KP",
+      "party": "Independent",
+      "votes": 674,
+      "margin": -117437,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOHAMED RAFI",
+      "party": "Independent",
+      "votes": 545,
+      "margin": -117566,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1293,
+      "margin": -116818,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1146.htm"
+}

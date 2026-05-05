@@ -1,0 +1,56 @@
+{
+  "constituencyNumber": 30,
+  "constituencyName": "KUNNAMANGALAM",
+  "wikipediaName": "Kunnamangalam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kunnamangalam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. T. A. Rahim", "party": "LDF", "votes": 66169, "votePct": 44.06 },
+        { "name": "U. C. Raman", "party": "IUML", "votes": 62900, "votePct": 41.88 },
+        { "name": "C. K. Padmanabhan", "party": "BJP", "votes": 17123, "votePct": 11.40 },
+        { "name": "C. Muhammed", "party": "SDPI", "votes": 1178, "votePct": 0.78 }
+      ],
+      "margin": 3269,
+      "marginPct": 2.18,
+      "turnout": 150187,
+      "turnoutPct": 84.33,
+      "result": "LDF hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. T. A. Rahim", "party": "LDF", "votes": 77410, "votePct": 42.92 },
+        { "name": "T. Siddique", "party": "INC", "votes": 66205, "votePct": 36.71 },
+        { "name": "C. K. Padmanabhan", "party": "BJP", "votes": 32702, "votePct": 18.13 },
+        { "name": "Latheef Anora", "party": "SDPI", "votes": 1252, "votePct": 0.69 }
+      ],
+      "margin": 11205,
+      "marginPct": 6.21,
+      "turnout": 180341,
+      "turnoutPct": 85.85,
+      "result": "LDF hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. T. A. Rahim", "party": "LDF", "votes": 85138, "votePct": 43.93 },
+        { "name": "Dinesh Perumanna", "party": "INC", "votes": 74862, "votePct": 38.62 },
+        { "name": "V. K. Sajeevan", "party": "BJP", "votes": 27672, "votePct": 14.28 },
+        { "name": "Abdul Vahid", "party": "SDPI", "votes": 1299, "votePct": 0.67 }
+      ],
+      "margin": 10276,
+      "marginPct": 5.30,
+      "turnout": 193822,
+      "turnoutPct": 83.80,
+      "result": "LDF hold"
+    }
+  ]
+}

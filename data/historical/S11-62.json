@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 62,
+  "constituencyName": "KUNNAMKULAM",
+  "wikipediaName": "Kunnamkulam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kunnamkulam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Babu M. Palissery", "party": "CPI(M)", "votes": 58244, "votePct": 44.34 },
+        { "name": "C. P. John", "party": "CMP", "votes": 57635, "votePct": 43.98 },
+        { "name": "K. K. Aneesh Kumar", "party": "BJP", "votes": 11725, "votePct": 8.93 },
+        { "name": "K. P. Preman", "party": "Independent", "votes": 2059, "votePct": 1.57 },
+        { "name": "John", "party": "Independent", "votes": 860, "votePct": 0.65 }
+      ],
+      "margin": 481,
+      "marginPct": 0.36,
+      "turnout": 131344,
+      "turnoutPct": 75.42,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. C. Moideen", "party": "CPI(M)", "votes": 63274, "votePct": 41.92 },
+        { "name": "C. P. John", "party": "CMP", "votes": 55492, "votePct": 36.77 },
+        { "name": "K. K. Aneeshkumar", "party": "BJP", "votes": 29325, "votePct": 19.43 },
+        { "name": "Jileef", "party": "SDPI", "votes": 1204, "votePct": 0.74 },
+        { "name": "Sulaiman", "party": "PDP", "votes": 710, "votePct": 0.47 }
+      ],
+      "margin": 7782,
+      "marginPct": 5.15,
+      "turnout": 150925,
+      "turnoutPct": 78.91,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. C. Moideen", "party": "CPI(M)", "votes": 75532, "votePct": 48.78 },
+        { "name": "K. Jayasankar", "party": "INC", "votes": 48901, "votePct": 31.58 },
+        { "name": "K. K. Aneeshkumar", "party": "BJP", "votes": 27833, "votePct": 17.98 },
+        { "name": "NOTA", "party": "NOTA", "votes": 559, "votePct": 0.36 }
+      ],
+      "margin": 26631,
+      "marginPct": 17.27,
+      "turnout": 150898,
+      "turnoutPct": 78.24,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

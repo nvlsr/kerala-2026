@@ -1,0 +1,77 @@
+{
+  "constituency": "132 - KAZHAKOOTTAM (Kerala)",
+  "constituencyNumber": 132,
+  "constituencyName": "KAZHAKOOTTAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "V. MURALEEDHARAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 46564,
+      "margin": 428,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "KADAKAMPALLY SURENDRAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 46136,
+      "margin": -428,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADVOCATE  T. SARATHCHANDRA PRASAD",
+      "party": "Indian National Congress",
+      "votes": 37183,
+      "margin": -9381,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T. S. RAJAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 298,
+      "margin": -46266,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DEEBIKA KARIMANAL",
+      "party": "Democratic Human Rights Movement Party",
+      "votes": 260,
+      "margin": -46304,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K. SURENDRAN",
+      "party": "Independent",
+      "votes": 97,
+      "margin": -46467,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SREEKANTAN NAIR V.",
+      "party": "Independent",
+      "votes": 68,
+      "margin": -46496,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 981,
+      "margin": -45583,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11132.htm"
+}

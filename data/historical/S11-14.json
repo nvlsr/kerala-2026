@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 14,
+  "constituencyName": "KUTHUPARAMBA",
+  "wikipediaName": "Kuthuparamba",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kuthuparamba_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. P. Mohanan", "party": "SJ(D)", "votes": 57164, "votePct": 44.68 },
+        { "name": "S. A. Puthiya Valappil", "party": "INL", "votes": 53861, "votePct": 42.10 },
+        { "name": "O. K. Vasu", "party": "BJP", "votes": 11835, "votePct": 9.25 },
+        { "name": "K. P. Mohanan", "party": "Independent", "votes": 1982, "votePct": 1.55 },
+        { "name": "S. Poovalappil", "party": "Independent", "votes": 1199, "votePct": 0.94 }
+      ],
+      "margin": 3303,
+      "marginPct": 2.58,
+      "turnout": 127929,
+      "turnoutPct": 79.79,
+      "result": "SJ(D) gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. K. Shailaja", "party": "CPI(M)", "votes": 67013, "votePct": 45.64 },
+        { "name": "K. P. Mohanan", "party": "JD(U)", "votes": 54722, "votePct": 37.27 },
+        { "name": "C. Sadanandan Master", "party": "BJP", "votes": 20787, "votePct": 16.68 },
+        { "name": "Muhammad Shabeer K. C.", "party": "SDPI", "votes": 1681, "votePct": 1.14 },
+        { "name": "K. P. Mohanan Vedichalil", "party": "Independent", "votes": 1041, "votePct": 0.71 }
+      ],
+      "margin": 12291,
+      "marginPct": 8.37,
+      "turnout": 146824,
+      "turnoutPct": 79.43,
+      "result": "CPI(M) gain from SJ(D)"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K.P. Mohanan", "party": "RJD", "votes": 70626, "votePct": 45.36 },
+        { "name": "Pottankandi Abdulla", "party": "IUML", "votes": 61085, "votePct": 39.23 },
+        { "name": "C. Sadanandan Master", "party": "BJP", "votes": 21212, "votePct": 13.62 },
+        { "name": "Mohanan Kunhiparambath Meethal", "party": "Independent", "votes": 1360, "votePct": 0.87 },
+        { "name": "Mohanan K.P. Kaithavecha Parambath", "party": "Independent", "votes": 543, "votePct": 0.35 }
+      ],
+      "margin": 9541,
+      "marginPct": 7.50,
+      "turnout": 154826,
+      "turnoutPct": 79.76,
+      "result": "LDF hold"
+    }
+  ]
+}

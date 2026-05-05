@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 119,
+  "constituencyName": "KOTTARAKKARA",
+  "wikipediaName": "Kottarakkara",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kottarakkara_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Aisha Potty", "party": "CPI(M)", "votes": 74069, "votePct": 53.89 },
+        { "name": "N. M. Murali", "party": "KC(B)", "votes": 53477, "votePct": 38.91 },
+        { "name": "Vayakkal Madhu", "party": "BJP", "votes": 6370, "votePct": 4.63 },
+        { "name": "Dhaneshlal Panavely", "party": "Independent", "votes": 1063, "votePct": 0.77 },
+        { "name": "P. T. Prasanna Kumar", "party": "BSP", "votes": 911, "votePct": 0.66 }
+      ],
+      "margin": 20592,
+      "marginPct": 14.98,
+      "turnout": 137437,
+      "turnoutPct": 74.32,
+      "result": "CPI(M) gain from KC(B)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Aisha Potty", "party": "CPI(M)", "votes": 83443, "votePct": 55.44 },
+        { "name": "Savin Sathyan", "party": "INC", "votes": 40811, "votePct": 27.11 },
+        { "name": "Rajeshwary Rajendran", "party": "BJP", "votes": 24062, "votePct": 15.99 },
+        { "name": "NOTA", "party": "NOTA", "votes": 742, "votePct": 0.49 },
+        { "name": "Madhu B.", "party": "Independent", "votes": 491, "votePct": 0.33 }
+      ],
+      "margin": 42632,
+      "marginPct": 28.33,
+      "turnout": 150513,
+      "turnoutPct": 75.04,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. N. Balagopal", "party": "CPI(M)", "votes": 68770, "votePct": 45.98 },
+        { "name": "R. Resmi", "party": "INC", "votes": 57956, "votePct": 38.75 },
+        { "name": "Vayakkal Soman", "party": "BJP", "votes": 21223, "votePct": 14.19 },
+        { "name": "NOTA", "party": "NOTA", "votes": 574, "votePct": 0.38 },
+        { "name": "Mathews K. Lukose", "party": "Independent", "votes": 136, "votePct": 0.09 }
+      ],
+      "margin": 10814,
+      "marginPct": 7.23,
+      "turnout": 149552,
+      "turnoutPct": 74.56,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

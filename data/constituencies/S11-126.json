@@ -1,0 +1,61 @@
+{
+  "constituency": "126 - CHATHANNOOR (Kerala)",
+  "constituencyNumber": 126,
+  "constituencyName": "CHATHANNOOR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "B.B.GOPAKUMAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 51923,
+      "margin": 4398,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV.R.RAJENDRAN",
+      "party": "Communist Party of India",
+      "votes": 47525,
+      "margin": -4398,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SOORAJ RAVI",
+      "party": "Indian National Congress",
+      "votes": 35276,
+      "margin": -16647,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ARUN CHATHANNOOR",
+      "party": "Aam Aadmi Party",
+      "votes": 627,
+      "margin": -51296,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SINDHU PUTHENKULAM",
+      "party": "Democratic Human Rights Movement Party",
+      "votes": 428,
+      "margin": -51495,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 728,
+      "margin": -51195,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11126.htm"
+}

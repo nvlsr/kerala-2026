@@ -1,0 +1,61 @@
+{
+  "constituency": "80 - KOCHI (Kerala)",
+  "constituencyNumber": 80,
+  "constituencyName": "KOCHI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "MOHAMMED SHIYAS",
+      "party": "Indian National Congress",
+      "votes": 64318,
+      "margin": 8188,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K.J. MAXY",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 56130,
+      "margin": -8188,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. XAVIER JULAPPAN",
+      "party": "Twenty 20 Party",
+      "votes": 11854,
+      "margin": -52464,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANEESH MATTANCHERRY",
+      "party": "Social Democratic Party Of India",
+      "votes": 803,
+      "margin": -63515,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AJEESH P.E",
+      "party": "Independent",
+      "votes": 318,
+      "margin": -64000,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 926,
+      "margin": -63392,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1180.htm"
+}

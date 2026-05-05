@@ -1,0 +1,69 @@
+{
+  "constituency": "34 - ERNAD (Kerala)",
+  "constituencyNumber": 34,
+  "constituencyName": "ERNAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P.K.BASHEER",
+      "party": "Indian Union Muslim League",
+      "votes": 98547,
+      "margin": 41289,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV.SHAFEER KIZHISSERI",
+      "party": "Communist Party of India",
+      "votes": 57258,
+      "margin": -41289,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV.N.SREEPRAKASH",
+      "party": "Bharatiya Janata Party",
+      "votes": 8728,
+      "margin": -89819,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "CHEMMALA YOOSUF ALI",
+      "party": "Social Democratic Party Of India",
+      "votes": 2530,
+      "margin": -96017,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KRISHNAN THACHANNAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 467,
+      "margin": -98080,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUJEEB RAHMAN",
+      "party": "Independent",
+      "votes": 166,
+      "margin": -98381,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 985,
+      "margin": -97562,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1134.htm"
+}

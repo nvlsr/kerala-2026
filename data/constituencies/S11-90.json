@@ -1,0 +1,85 @@
+{
+  "constituency": "90 - THODUPUZHA (Kerala)",
+  "constituencyNumber": 90,
+  "constituencyName": "THODUPUZHA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "APU JOHN JOSEPH",
+      "party": "Kerala Congress",
+      "votes": 84796,
+      "margin": 44291,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "CYRIAC CHAZHIKADAN",
+      "party": "Kerala Congress (M)",
+      "votes": 40505,
+      "margin": -44291,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. ROY VARICATTU",
+      "party": "Twenty 20 Party",
+      "votes": 12679,
+      "margin": -72117,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. BASIL JOHN",
+      "party": "Aam Aadmi Party",
+      "votes": 2603,
+      "margin": -82193,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AJAY V MARAR (AJAY UNNI)",
+      "party": "Independent",
+      "votes": 2580,
+      "margin": -82216,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AFSAL M B",
+      "party": "Social Democratic Party Of India",
+      "votes": 1626,
+      "margin": -83170,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOMON JOHN",
+      "party": "Independent",
+      "votes": 267,
+      "margin": -84529,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P T VARGHESE",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 234,
+      "margin": -84562,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 876,
+      "margin": -83920,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1190.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 96,
+  "constituencyName": "ETTUMANOOR",
+  "wikipediaName": "Ettumanoor",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ettumanoor_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Suresh Kurup", "party": "CPI(M)", "votes": 57381, "votePct": 48.52 },
+        { "name": "Thomas Chazhikadan", "party": "KC(M)", "votes": 55580, "votePct": 47.0 },
+        { "name": "V. G. Gopakumar", "party": "BJP", "votes": 3385, "votePct": 2.86 },
+        { "name": "K. T. Thomas", "party": "BSP", "votes": 763, "votePct": 0.65 },
+        { "name": "Justin Mathew", "party": "Independent", "votes": 466, "votePct": 0.39 }
+      ],
+      "margin": 1801,
+      "marginPct": 1.52,
+      "turnout": 118257,
+      "turnoutPct": 78.42,
+      "result": "CPI(M) gain from KC(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Suresh Kurup", "party": "CPI(M)", "votes": 53085, "votePct": 40.67 },
+        { "name": "Thomas Chazhikadan", "party": "KC(M)", "votes": 44906, "votePct": 33.94 },
+        { "name": "A. G. Thankappan", "party": "BDJS", "votes": 27540, "votePct": 20.82 },
+        { "name": "Josemon Mundackal", "party": "Independent", "votes": 3774, "votePct": 2.85 },
+        { "name": "Abdul Nazar", "party": "SDPI", "votes": 706, "votePct": 0.53 }
+      ],
+      "margin": 8899,
+      "marginPct": 6.73,
+      "turnout": 132304,
+      "turnoutPct": 79.96,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. N. Vasavan", "party": "CPI(M)", "votes": 58289, "votePct": 46.2 },
+        { "name": "Prince Lukose", "party": "KEC", "votes": 43986, "votePct": 34.86 },
+        { "name": "T. N. Harikumar", "party": "BJP", "votes": 13746, "votePct": 10.4 },
+        { "name": "Lathika Subhash", "party": "Independent", "votes": 7624, "votePct": 6.04 },
+        { "name": "Jijith K. Joy", "party": "BSP", "votes": 1165, "votePct": 0.92 }
+      ],
+      "margin": 14303,
+      "marginPct": 11.34,
+      "turnout": 126949,
+      "turnoutPct": 75.45,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "constituency": "43 - TIRURANGADI (Kerala)",
+  "constituencyNumber": 43,
+  "constituencyName": "TIRURANGADI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P M A SAMEER",
+      "party": "Indian Union Muslim League",
+      "votes": 111869,
+      "margin": 63387,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "AJITH KOLADI",
+      "party": "Communist Party of India",
+      "votes": 48482,
+      "margin": -63387,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RIJU C RAGHAV",
+      "party": "Bharatiya Janata Party",
+      "votes": 11497,
+      "margin": -100372,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "HAMEED V",
+      "party": "Social Democratic Party Of India",
+      "votes": 2650,
+      "margin": -109219,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOOSA JARATHINGAL",
+      "party": "Aam Aadmi Party",
+      "votes": 843,
+      "margin": -111026,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 873,
+      "margin": -110996,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1143.htm"
+}

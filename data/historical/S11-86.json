@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 86,
+  "constituencyName": "MUVATTUPUZHA",
+  "wikipediaName": "Muvattupuzha",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Muvattupuzha_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Joseph Vazhackan", "party": "INC", "votes": 58012, "votePct": 49.90 },
+        { "name": "Babu Paul", "party": "CPI", "votes": 52849, "votePct": 45.46 },
+        { "name": "Jiji Joseph", "party": "BJP", "votes": 4367, "votePct": 3.76 },
+        { "name": "Biju Sreedharan", "party": "Independent", "votes": 546, "votePct": 0.47 },
+        { "name": "Boby Kaloor", "party": "BSP", "votes": 487, "votePct": 0.42 }
+      ],
+      "margin": 5163,
+      "marginPct": 4.44,
+      "turnout": 116261,
+      "turnoutPct": 75.28,
+      "result": "INC gain from CPI"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Eldo Abraham", "party": "CPI", "votes": 70269, "votePct": 49.27 },
+        { "name": "Joseph Vazhackan", "party": "INC", "votes": 60894, "votePct": 42.70 },
+        { "name": "P. J. Thomas", "party": "BJP", "votes": 9759, "votePct": 6.84 },
+        { "name": "P. K. Aboobacker Thangal", "party": "PDP", "votes": 512, "votePct": 0.36 },
+        { "name": "P. P. Moideenkunju", "party": "SDPI", "votes": 426, "votePct": 0.30 }
+      ],
+      "margin": 9375,
+      "marginPct": 6.57,
+      "turnout": 142616,
+      "turnoutPct": 80.15,
+      "result": "CPI gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Mathew Kuzhalnadan", "party": "INC", "votes": 74425, "votePct": 44.63 },
+        { "name": "Eldo Abraham", "party": "CPI", "votes": 68264, "votePct": 40.36 },
+        { "name": "C. N. Prakash", "party": "Twenty20 Party", "votes": 13535, "votePct": 9.38 },
+        { "name": "Jiji Joseph", "party": "BJP", "votes": 7527, "votePct": 5.21 },
+        { "name": "C. K. Thampi", "party": "SUCI", "votes": 176, "votePct": 0.12 }
+      ],
+      "margin": 6961,
+      "marginPct": 4.27,
+      "turnout": 145005,
+      "turnoutPct": 75.83,
+      "result": "INC gain from CPI"
+    }
+  ]
+}

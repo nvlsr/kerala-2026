@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 139,
+  "constituencyName": "KOVALAM",
+  "wikipediaName": "Kovalam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kovalam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Jameela Prakasham", "party": "JD(S)", "votes": 59510, "votePct": 47.60 },
+        { "name": "George Mercier", "party": "INC", "votes": 52305, "votePct": 41.84 },
+        { "name": "Venganoor Satheesh", "party": "BJP", "votes": 9127, "votePct": 7.30 },
+        { "name": "Thanka Bai T.", "party": "Independent", "votes": 1231, "votePct": 0.98 },
+        { "name": "A. M. Nizam", "party": "SDPI", "votes": 1193, "votePct": 0.95 }
+      ],
+      "margin": 7205,
+      "marginPct": 5.76,
+      "turnout": 125008,
+      "turnoutPct": 68.08,
+      "result": "JD(S) gain from INC"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. Vincent", "party": "INC", "votes": 60268, "votePct": 39.14 },
+        { "name": "Jameela Prakasham", "party": "JD(S)", "votes": 57653, "votePct": 37.45 },
+        { "name": "Kovalam T. N. Suresh", "party": "BDJS", "votes": 30987, "votePct": 20.13 },
+        { "name": "K. R. Anish", "party": "BSP", "votes": 996, "votePct": 0.65 },
+        { "name": "M. C. Jayalal", "party": "Independent", "votes": 933, "votePct": 0.61 }
+      ],
+      "margin": 2615,
+      "marginPct": 1.69,
+      "turnout": 153966,
+      "turnoutPct": 74.23,
+      "result": "INC gain from JD(S)"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. Vincent", "party": "INC", "votes": 74868, "votePct": 47.06 },
+        { "name": "Neelalohitadasan Nadar", "party": "JD(S)", "votes": 63306, "votePct": 39.79 },
+        { "name": "Vishupuram Chandrasekharan", "party": "KKC", "votes": 18664, "votePct": 11.73 },
+        { "name": "K. R. Anish", "party": "BSP", "votes": 641, "votePct": 0.40 },
+        { "name": "V. S. Prince", "party": "Independent", "votes": 417, "votePct": 0.26 }
+      ],
+      "margin": 11562,
+      "marginPct": 7.27,
+      "turnout": 159100,
+      "turnoutPct": 72.76,
+      "result": "INC hold"
+    }
+  ]
+}

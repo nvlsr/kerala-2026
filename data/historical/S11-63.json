@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 63,
+  "constituencyName": "GURUVAYOOR",
+  "wikipediaName": "Guruvayur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Guruvayur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. V. Abdul Khader", "party": "CPI(M)", "votes": 62246, "votePct": 48.53 },
+        { "name": "Ashraf Kokkur", "party": "IUML", "votes": 52278, "votePct": 40.75 },
+        { "name": "Dayanandan Mampully", "party": "BJP", "votes": 9306, "votePct": 7.25 },
+        { "name": "Ashraf Vadakoot", "party": "SDPI", "votes": 2187, "votePct": 1.70 },
+        { "name": "Shameerbabu", "party": "Independent", "votes": 1017, "votePct": 0.94 }
+      ],
+      "margin": 9968,
+      "marginPct": 7.78,
+      "turnout": 128276,
+      "turnoutPct": 72.01,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. V. Abdul Khader", "party": "CPI(M)", "votes": 66088, "votePct": 44.76 },
+        { "name": "P. M. Sadiqali", "party": "IUML", "votes": 50990, "votePct": 34.53 },
+        { "name": "Nivedida Subramanian", "party": "BJP", "votes": 25490, "votePct": 17.26 },
+        { "name": "P. R. Siyad", "party": "SDPI", "votes": 1406, "votePct": 0.95 },
+        { "name": "K. G. Mohanan", "party": "WPOI", "votes": 1382, "votePct": 0.94 }
+      ],
+      "margin": 15098,
+      "marginPct": 10.23,
+      "turnout": 147350,
+      "turnoutPct": 73.17,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. K. Akbar", "party": "CPI(M)", "votes": 77072, "votePct": 52.52 },
+        { "name": "K. N. A. Khader", "party": "IUML", "votes": 58804, "votePct": 40.07 },
+        { "name": "Dileep Nair", "party": "DSJP", "votes": 6294, "votePct": 4.29 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1007, "votePct": 0.69 }
+      ],
+      "margin": 18268,
+      "marginPct": 12.45,
+      "turnout": 146759,
+      "turnoutPct": 69.65,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

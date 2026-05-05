@@ -1,0 +1,69 @@
+{
+  "constituency": "102 - AROOR (Kerala)",
+  "constituencyNumber": 102,
+  "constituencyName": "AROOR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. SHANIMOL OSMAN",
+      "party": "Indian National Congress",
+      "votes": 74469,
+      "margin": 9324,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "DALEEMA",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 65145,
+      "margin": -9324,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. P.S. JYOTHIS",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 20334,
+      "margin": -54135,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "N.K. SASIKUMAR",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 317,
+      "margin": -74152,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VAYALAR RAJEEVAN",
+      "party": "Bahujan Dravida Party",
+      "votes": 297,
+      "margin": -74172,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VIPIN",
+      "party": "Independent",
+      "votes": 238,
+      "margin": -74231,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1174,
+      "margin": -73295,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11102.htm"
+}

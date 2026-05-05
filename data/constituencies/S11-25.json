@@ -1,0 +1,61 @@
+{
+  "constituency": "25 - BALUSSERI (Kerala)",
+  "constituencyNumber": 25,
+  "constituencyName": "BALUSSERI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "V.T. SOORAJ",
+      "party": "Indian National Congress",
+      "votes": 94804,
+      "margin": 16980,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. K.M. SACHINDEV",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 77824,
+      "margin": -16980,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "C.P. SATHEESH",
+      "party": "Bharatiya Janata Party",
+      "votes": 17669,
+      "margin": -77135,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SOORAJ K S/O ASOKAN",
+      "party": "Independent",
+      "votes": 272,
+      "margin": -94532,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABHIJITH",
+      "party": "Independent",
+      "votes": 230,
+      "margin": -94574,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 516,
+      "margin": -94288,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1125.htm"
+}

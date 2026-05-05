@@ -1,0 +1,53 @@
+{
+  "constituency": "35 - NILAMBUR (Kerala)",
+  "constituencyNumber": 35,
+  "constituencyName": "NILAMBUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ARYADAN SHOUKATH",
+      "party": "Indian National Congress",
+      "votes": 113586,
+      "margin": 54851,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "U SHARAFALI",
+      "party": "Independent",
+      "votes": 58735,
+      "margin": -54851,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "GIRISH MEKKATTU",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 12660,
+      "margin": -100926,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JAISAL MALIYEKKAL",
+      "party": "Aam Aadmi Party",
+      "votes": 1942,
+      "margin": -111644,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 2672,
+      "margin": -110914,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1135.htm"
+}

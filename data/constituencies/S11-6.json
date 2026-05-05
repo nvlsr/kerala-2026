@@ -1,0 +1,53 @@
+{
+  "constituency": "6 - PAYYANNUR (Kerala)",
+  "constituencyNumber": 6,
+  "constituencyName": "PAYYANNUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "V. KUNHIKRISHNAN",
+      "party": "Independent",
+      "votes": 76640,
+      "margin": 7487,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "T. I. MADHUSOODANAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 69153,
+      "margin": -7487,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A. P. GANGADHARAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 8432,
+      "margin": -68208,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANDEEP V. K.",
+      "party": "Independent",
+      "votes": 552,
+      "margin": -76088,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1193,
+      "margin": -75447,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S116.htm"
+}

@@ -1,0 +1,85 @@
+{
+  "constituency": "20 - VADAKARA (Kerala)",
+  "constituencyNumber": 20,
+  "constituencyName": "VADAKARA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K K REMA",
+      "party": "Revolutionary Marxist Party of India",
+      "votes": 70117,
+      "margin": 14862,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "M K BHASKARAN",
+      "party": "Rashtriya Janata Dal",
+      "votes": 55255,
+      "margin": -14862,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. K DILEEP",
+      "party": "Bharatiya Janata Party",
+      "votes": 14295,
+      "margin": -55822,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAMSEER CHOMBALA",
+      "party": "Social Democratic Party Of India",
+      "votes": 2477,
+      "margin": -67640,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAMA T P W/O ASHOKAN P K",
+      "party": "Independent",
+      "votes": 200,
+      "margin": -69917,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BHASKARAN K K S/O KELAPPAN",
+      "party": "Independent",
+      "votes": 185,
+      "margin": -69932,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAMA W/O VIJAYAN",
+      "party": "Independent",
+      "votes": 162,
+      "margin": -69955,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAMAKRISHNAN VATTAKANDI",
+      "party": "Independent",
+      "votes": 94,
+      "margin": -70023,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 394,
+      "margin": -69723,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1120.htm"
+}

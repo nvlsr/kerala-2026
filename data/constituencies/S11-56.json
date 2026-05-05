@@ -1,0 +1,77 @@
+{
+  "constituency": "56 - PALAKKAD (Kerala)",
+  "constituencyNumber": 56,
+  "constituencyName": "PALAKKAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "RAMESH PISHARODY",
+      "party": "Indian National Congress",
+      "votes": 62199,
+      "margin": 13147,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SOBHA SURENDRAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 49052,
+      "margin": -13147,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "N.M.R. RAZACK",
+      "party": "Independent",
+      "votes": 33931,
+      "margin": -28268,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "UDAYAN SUKUMARAN",
+      "party": "Aam Aadmi Party",
+      "votes": 437,
+      "margin": -61762,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KRISHNANKUTTY K",
+      "party": "Bahujan Samaj Party",
+      "votes": 348,
+      "margin": -61851,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAMSUDHEEN B.",
+      "party": "Independent",
+      "votes": 193,
+      "margin": -62006,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "REGHU M",
+      "party": "Independent",
+      "votes": 191,
+      "margin": -62008,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 841,
+      "margin": -61358,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1156.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 34,
+  "constituencyName": "ERNAD",
+  "wikipediaName": "Eranad",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eranad_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. K. Basheer", "party": "IUML", "votes": 58698, "votePct": 51.29 },
+        { "name": "P. V. Anvar", "party": "Independent", "votes": 47452, "votePct": 41.47 },
+        { "name": "K. P. Baburaj", "party": "BJP", "votes": 3448, "votePct": 3.01 },
+        { "name": "Ashrafali Kaliyath", "party": "CPI", "votes": 2700, "votePct": 2.36 },
+        { "name": "P. P. Showkathali", "party": "SDPI", "votes": 2137, "votePct": 1.87 }
+      ],
+      "margin": 11246,
+      "marginPct": 9.82,
+      "turnout": 114435,
+      "turnoutPct": 80.68,
+      "result": "IUML win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. K. Basheer", "party": "IUML", "votes": 69048, "votePct": 50.83 },
+        { "name": "K. T. Abdurahiman", "party": "LDF", "votes": 56155, "votePct": 41.34 },
+        { "name": "K. P. Baburaj", "party": "BJP", "votes": 6055, "votePct": 4.46 },
+        { "name": "Ummer Chelakkode", "party": "SP", "votes": 1298, "votePct": 0.96 },
+        { "name": "Velayudhan", "party": "BSP", "votes": 885, "votePct": 0.65 }
+      ],
+      "margin": 12893,
+      "marginPct": 9.49,
+      "turnout": 135850,
+      "turnoutPct": 81.82,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. K. Basheer", "party": "IUML", "votes": 78076, "votePct": 54.49 },
+        { "name": "K. T. Abdurahman", "party": "LDF", "votes": 55530, "votePct": 38.76 },
+        { "name": "C. Dinesh", "party": "BJP", "votes": 6683, "votePct": 4.66 },
+        { "name": "Velayudhan", "party": "BSP", "votes": 1247, "votePct": 0.87 },
+        { "name": "Sebastian", "party": "Independent", "votes": 1100, "votePct": 0.77 }
+      ],
+      "margin": 22546,
+      "marginPct": 15.73,
+      "turnout": 143272,
+      "turnoutPct": 79.69,
+      "result": "IUML hold"
+    }
+  ]
+}

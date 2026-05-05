@@ -1,0 +1,77 @@
+{
+  "constituency": "85 - PIRAVOM (Kerala)",
+  "constituencyNumber": 85,
+  "constituencyName": "PIRAVOM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ANOOP JACOB",
+      "party": "Kerala Congress (Jacob)",
+      "votes": 89551,
+      "margin": 44681,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SABU K JACOB",
+      "party": "Kerala Congress (M)",
+      "votes": 44870,
+      "margin": -44681,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JIBI ABRAHAM",
+      "party": "Twenty 20 Party",
+      "votes": 14861,
+      "margin": -74690,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ELDHO ABRAHAM THALIYACHIRA",
+      "party": "Aam Aadmi Party",
+      "votes": 1004,
+      "margin": -88547,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T C RAMANAN",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 397,
+      "margin": -89154,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SABU K ERAMATH",
+      "party": "Independent",
+      "votes": 333,
+      "margin": -89218,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RENNY MATHEW",
+      "party": "Independent",
+      "votes": 265,
+      "margin": -89286,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1105,
+      "margin": -88446,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1185.htm"
+}

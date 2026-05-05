@@ -1,0 +1,61 @@
+{
+  "constituency": "2 - KASARAGOD (Kerala)",
+  "constituencyNumber": 2,
+  "constituencyName": "KASARAGOD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "KALLATRA MAHIN",
+      "party": "Indian Union Muslim League",
+      "votes": 76396,
+      "margin": 22698,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ASHWINI M L",
+      "party": "Bharatiya Janata Party",
+      "votes": 53698,
+      "margin": -22698,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHANAVAS PADHOOR",
+      "party": "Independent",
+      "votes": 36678,
+      "margin": -39718,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHANAVAS A A",
+      "party": "Independent",
+      "votes": 893,
+      "margin": -75503,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOHAMMED ALI FATHAH B M",
+      "party": "Independent",
+      "votes": 824,
+      "margin": -75572,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 714,
+      "margin": -75682,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S112.htm"
+}

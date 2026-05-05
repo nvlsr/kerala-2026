@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 112,
+  "constituencyName": "RANNI",
+  "wikipediaName": "Ranni",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ranni_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Raju Abraham", "party": "CPI(M)", "votes": 58391, "votePct": 48.51 },
+        { "name": "Peelipose Thomas", "party": "INC", "votes": 51777, "votePct": 43.02 },
+        { "name": "Suresh Kadambari", "party": "BJP", "votes": 7442, "votePct": 6.18 },
+        { "name": "V. D. Saji Mon", "party": "BSP", "votes": 1300, "votePct": 1.08 },
+        { "name": "Ibrahim Kutty", "party": "SDPI", "votes": 905, "votePct": 0.75 }
+      ],
+      "margin": 6614,
+      "marginPct": 5.42,
+      "turnout": 120361,
+      "turnoutPct": 68.52,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Raju Abraham", "party": "CPI(M)", "votes": 58749, "votePct": 43.87 },
+        { "name": "Mariamma Cherian", "party": "INC", "votes": 44153, "votePct": 32.97 },
+        { "name": "Padmakumar K.", "party": "BDJS", "votes": 28201, "votePct": 21.06 },
+        { "name": "Prasad Uthimoodu", "party": "BSP", "votes": 1072, "votePct": 0.8 },
+        { "name": "Fawseena Thakbeer", "party": "SDPI", "votes": 862, "votePct": 0.64 }
+      ],
+      "margin": 14596,
+      "marginPct": 10.9,
+      "turnout": 133927,
+      "turnoutPct": 70.42,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Pramod Narayan", "party": "KC(M)", "votes": 52669, "votePct": 41.22 },
+        { "name": "Rinku Cherian", "party": "INC", "votes": 51384, "votePct": 40.21 },
+        { "name": "Padmakumar K", "party": "BDJS", "votes": 19587, "votePct": 15.33 },
+        { "name": "NOTA", "party": "NOTA", "votes": 431, "votePct": 0.34 }
+      ],
+      "margin": 1285,
+      "marginPct": 1.01,
+      "turnout": 127777,
+      "turnoutPct": 65.97,
+      "result": "KC(M) hold"
+    }
+  ]
+}

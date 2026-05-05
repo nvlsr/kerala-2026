@@ -1,0 +1,53 @@
+{
+  "constituency": "105 - AMBALAPPUZHA (Kerala)",
+  "constituencyNumber": 105,
+  "constituencyName": "AMBALAPPUZHA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "G.SUDHAKARAN",
+      "party": "Independent",
+      "votes": 75184,
+      "margin": 27935,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "H. SALAM",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 47249,
+      "margin": -27935,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ARUN ANIRUDHAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 16348,
+      "margin": -58836,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOHNSON MATHEW",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 1020,
+      "margin": -74164,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 980,
+      "margin": -74204,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11105.htm"
+}

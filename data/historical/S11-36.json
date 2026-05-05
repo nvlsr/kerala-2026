@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 36,
+  "constituencyName": "WANDOOR",
+  "wikipediaName": "Wandoor",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Wandoor_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 77580, "votePct": 58.50 },
+        { "name": "V. Rameshan", "party": "CPI(M)", "votes": 48661, "votePct": 36.69 },
+        { "name": "Kotheri Ayyapan", "party": "BJP", "votes": 2885, "votePct": 2.18 },
+        { "name": "Krishnan Eranhikkal", "party": "SDPI", "votes": 1682, "votePct": 1.27 },
+        { "name": "P. Anil Kumar", "party": "Independent", "votes": 953, "votePct": 0.72 }
+      ],
+      "margin": 28919,
+      "marginPct": 21.81,
+      "turnout": 132610,
+      "turnoutPct": 73.38,
+      "result": "INC hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 81964, "votePct": 52.59 },
+        { "name": "K. Nishanth", "party": "CPI(M)", "votes": 58100, "votePct": 37.28 },
+        { "name": "Sunitha Mohandas", "party": "BJP", "votes": 9471, "votePct": 6.08 },
+        { "name": "Krishnan Kuniyil", "party": "WPOI", "votes": 3399, "votePct": 2.18 },
+        { "name": "Krishnan Eranhikkal", "party": "SDPI", "votes": 1178, "votePct": 0.76 }
+      ],
+      "margin": 23864,
+      "marginPct": 15.31,
+      "turnout": 155840,
+      "turnoutPct": 74.16,
+      "result": "INC hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. P. Anil Kumar", "party": "INC", "votes": 87415, "votePct": 51.44 },
+        { "name": "P. Midhuna", "party": "CPI(M)", "votes": 71852, "votePct": 42.28 },
+        { "name": "P. C. Vijayan", "party": "BJP", "votes": 7057, "votePct": 4.15 },
+        { "name": "Krishnan. C", "party": "WPOI", "votes": 2943, "votePct": 1.73 }
+      ],
+      "margin": 15563,
+      "marginPct": 9.16,
+      "turnout": 169931,
+      "turnoutPct": 75.05,
+      "result": "INC hold"
+    }
+  ]
+}

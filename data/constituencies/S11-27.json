@@ -1,0 +1,101 @@
+{
+  "constituency": "27 - KOZHIKODE NORTH (Kerala)",
+  "constituencyNumber": 27,
+  "constituencyName": "KOZHIKODE NORTH",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.K JAYANTH",
+      "party": "Indian National Congress",
+      "votes": 50636,
+      "margin": 1483,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "THOTTATHIL RAVINDRAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 49153,
+      "margin": -1483,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NAVYA HARIDAS",
+      "party": "Bharatiya Janata Party",
+      "votes": 39899,
+      "margin": -10737,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR.  ALPHONSA MATHEW TEACHER",
+      "party": "Aam Aadmi Party",
+      "votes": 542,
+      "margin": -50094,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JAYANTH S S/O SADANANDAN",
+      "party": "Independent",
+      "votes": 174,
+      "margin": -50462,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JAYANTH KUMAR",
+      "party": "Independent",
+      "votes": 160,
+      "margin": -50476,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A SAJEENA",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 124,
+      "margin": -50512,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAVEENDRANATHAN NAIR",
+      "party": "Independent",
+      "votes": 68,
+      "margin": -50568,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAVEENDRAN S/O ARUMUGHAN",
+      "party": "Independent",
+      "votes": 57,
+      "margin": -50579,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAVEENDRAN S/O THEYYATHIRA",
+      "party": "Independent",
+      "votes": 55,
+      "margin": -50581,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 667,
+      "margin": -49969,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1127.htm"
+}

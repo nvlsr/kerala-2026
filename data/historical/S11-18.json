@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 18,
+  "constituencyName": "SULTHANBATHERY",
+  "wikipediaName": "Sulthan Bathery",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Sulthan_Bathery_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "I. C. Balakrishnan", "party": "INC", "votes": 71540, "votePct": 49.14 },
+        { "name": "E. A. Sankaran", "party": "CPI(M)", "votes": 63926, "votePct": 43.93 },
+        { "name": "Palliyara Raman", "party": "BJP", "votes": 8829, "votePct": 6.07 },
+        { "name": "Mukundan Cheengeri", "party": "BSP", "votes": 679, "votePct": 0.47 }
+      ],
+      "margin": 7583,
+      "marginPct": 10.26,
+      "turnout": 145512,
+      "turnoutPct": 73.25,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "I. C. Balakrishnan", "party": "INC", "votes": 75747, "votePct": 44.04 },
+        { "name": "Rugmini Subrahmanian", "party": "CPI(M)", "votes": 64549, "votePct": 37.53 },
+        { "name": "C. K. Janu", "party": "JRS", "votes": 27920, "votePct": 16.23 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1261, "votePct": 0.73 },
+        { "name": "Mukundan Cheengeri", "party": "BSP", "votes": 791, "votePct": 0.46 }
+      ],
+      "margin": 11198,
+      "marginPct": 6.51,
+      "turnout": 172004,
+      "turnoutPct": 78.81,
+      "result": "INC hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "I. C. Balakrishnan", "party": "INC", "votes": 81077, "votePct": 48.42 },
+        { "name": "M. S. Viswanathan", "party": "CPI(M)", "votes": 69255, "votePct": 41.36 },
+        { "name": "C. K. Janu", "party": "JRS", "votes": 15198, "votePct": 9.08 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1160, "votePct": 0.70 },
+        { "name": "Ondan Paniyan", "party": "Independent", "votes": 742, "votePct": 0.44 }
+      ],
+      "margin": 11822,
+      "marginPct": 7.06,
+      "turnout": 167432,
+      "turnoutPct": 76.05,
+      "result": "INC hold"
+    }
+  ]
+}

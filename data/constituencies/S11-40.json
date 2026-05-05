@@ -1,0 +1,85 @@
+{
+  "constituency": "40 - MALAPPURAM (Kerala)",
+  "constituencyNumber": 40,
+  "constituencyName": "MALAPPURAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P.K KUNHALIKUTTY",
+      "party": "Indian Union Muslim League",
+      "votes": 131632,
+      "margin": 85327,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K.T. MUJEEB RAHMAN",
+      "party": "Nationalist Congress Party - Sharadchandra Pawar",
+      "votes": 46305,
+      "margin": -85327,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ASWATHI GUPTHAKUMAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 9127,
+      "margin": -122505,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV.SADIK NADUTHODI",
+      "party": "Social Democratic Party Of India",
+      "votes": 5124,
+      "margin": -126508,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABOOBACKER BACKER KUNDUPUZHAKKAL",
+      "party": "Aam Aadmi Party",
+      "votes": 2060,
+      "margin": -129572,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL GAFOOR MASTER O.P.K",
+      "party": "Independent",
+      "votes": 712,
+      "margin": -130920,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDULSALAM.K.P",
+      "party": "Independent",
+      "votes": 315,
+      "margin": -131317,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SREEDHARAN",
+      "party": "Independent",
+      "votes": 231,
+      "margin": -131401,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1379,
+      "margin": -130253,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1140.htm"
+}

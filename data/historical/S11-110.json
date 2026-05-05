@@ -1,0 +1,76 @@
+{
+  "constituencyNumber": 110,
+  "constituencyName": "CHENGANNUR",
+  "wikipediaName": "Chengannur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Chengannur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. C. Vishnunath", "party": "INC", "votes": 65156, "votePct": 51.98 },
+        { "name": "C. S. Sujatha", "party": "CPI(M)", "votes": 52656, "votePct": 42.01 },
+        { "name": "B. Radhakrishna Menon", "party": "BJP", "votes": 6062, "votePct": 4.84 },
+        { "name": "Surendran Karippuzha", "party": "Independent", "votes": 848, "votePct": 0.68 },
+        { "name": "V. Venugopal", "party": "SUCI(C)", "votes": 623, "votePct": 0.50 }
+      ],
+      "margin": 12500,
+      "marginPct": 9.97,
+      "turnout": 125345,
+      "turnoutPct": 70.87,
+      "result": "INC hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. K. Ramachandran Nair", "party": "CPI(M)", "votes": 52880, "votePct": 36.34 },
+        { "name": "P. C. Vishnunath", "party": "INC", "votes": 44897, "votePct": 30.85 },
+        { "name": "P. S. Sreedharan Pillai", "party": "BJP", "votes": 42682, "votePct": 29.33 },
+        { "name": "Sobhana George", "party": "Independent", "votes": 3966, "votePct": 2.73 },
+        { "name": "Alex", "party": "BSP", "votes": 483, "votePct": 0.33 }
+      ],
+      "margin": 8013,
+      "marginPct": 5.49,
+      "turnout": 145518,
+      "turnoutPct": 73.73,
+      "result": "CPI(M) gain from INC"
+    },
+    {
+      "year": 2018,
+      "type": "by-election",
+      "reason": "Death of sitting MLA K. K. Ramachandran Nair",
+      "candidates": [
+        { "name": "Saji Cherian", "party": "CPI(M)", "votes": 67303, "votePct": 45.19 },
+        { "name": "D. Vijayakumar", "party": "INC", "votes": 46347, "votePct": 31.12 },
+        { "name": "P. S. Sreedharan Pillai", "party": "BJP", "votes": 35270, "votePct": 23.68 },
+        { "name": "Swami Sukbaksh Saraswathi", "party": "Independent", "votes": 800, "votePct": 0.53 },
+        { "name": "Rajeev Pallathu", "party": "AAP", "votes": 368, "votePct": 0.24 }
+      ],
+      "margin": 20956,
+      "marginPct": 13.85,
+      "turnout": 158756,
+      "turnoutPct": 79.32,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Saji Cherian", "party": "CPI(M)", "votes": 71502, "votePct": 48.58 },
+        { "name": "M. Murali", "party": "INC", "votes": 39409, "votePct": 26.78 },
+        { "name": "M. V. Gopakumar", "party": "BJP", "votes": 34620, "votePct": 23.52 },
+        { "name": "Shaji T. George", "party": "Independent", "votes": 534, "votePct": 0.36 },
+        { "name": "T. K. Gopinathan", "party": "SUCI", "votes": 316, "votePct": 0.21 }
+      ],
+      "margin": 32093,
+      "marginPct": 21.87,
+      "turnout": 147171,
+      "turnoutPct": 70.59,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

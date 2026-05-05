@@ -1,0 +1,76 @@
+{
+  "constituencyNumber": 41,
+  "constituencyName": "VENGARA",
+  "wikipediaName": "Vengara",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Vengara_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. K. Kunhalikutty", "party": "IUML", "votes": 63138, "votePct": 63.44 },
+        { "name": "K. P. Ismayil", "party": "INL", "votes": 24901, "votePct": 25.02 },
+        { "name": "Abduil Majeed Faizi", "party": "SDPI", "votes": 4683, "votePct": 4.71 },
+        { "name": "Subrahmanian", "party": "BJP", "votes": 3417, "votePct": 3.43 },
+        { "name": "K. P. Ismayil (Kalluparamban)", "party": "Independent", "votes": 1615, "votePct": 1.62 }
+      ],
+      "margin": 38237,
+      "marginPct": 38.42,
+      "turnout": 99530,
+      "turnoutPct": 68.97,
+      "result": "IUML win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. K. Kunhalikutty", "party": "IUML", "votes": 72181, "votePct": 60.01 },
+        { "name": "P. P. Basheer", "party": "CPI(M)", "votes": 34124, "votePct": 28.37 },
+        { "name": "P. T. Ali Haji", "party": "BJP", "votes": 7055, "votePct": 5.87 },
+        { "name": "Kallen Aboobacker Master", "party": "SDPI", "votes": 3049, "votePct": 2.54 },
+        { "name": "Surendran Karippuzha", "party": "WPOI", "votes": 1864, "votePct": 1.55 }
+      ],
+      "margin": 38057,
+      "marginPct": 31.64,
+      "turnout": 120276,
+      "turnoutPct": 70.90,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2017,
+      "type": "by-election",
+      "reason": "Election of sitting MLA P. K. Kunhalikutty to Lok Sabha",
+      "candidates": [
+        { "name": "K. N. A. Khader", "party": "IUML", "votes": 65227, "votePct": 53.19 },
+        { "name": "P. P. Basheer", "party": "CPI(M)", "votes": 41917, "votePct": 34.18 },
+        { "name": "K. C. Naseer", "party": "SDPI", "votes": 8648, "votePct": 7.05 },
+        { "name": "K. Janachandran Master", "party": "BJP", "votes": 5728, "votePct": 4.67 },
+        { "name": "NOTA", "party": "NOTA", "votes": 502, "votePct": 0.41 }
+      ],
+      "margin": 23310,
+      "marginPct": 19.01,
+      "turnout": 122623,
+      "turnoutPct": 72.13,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. K. Kunhalikutty", "party": "IUML", "votes": 70381, "votePct": 53.50 },
+        { "name": "P. Jiji", "party": "CPI(M)", "votes": 39785, "votePct": 30.24 },
+        { "name": "Sabah Kundupuzhakkal", "party": "Independent", "votes": 11255, "votePct": 8.56 },
+        { "name": "Preman Master", "party": "BJP", "votes": 5968, "votePct": 4.54 },
+        { "name": "E. K. Kunhahammed Kutty Master", "party": "WPOI", "votes": 2051, "votePct": 1.56 }
+      ],
+      "margin": 30596,
+      "marginPct": 23.26,
+      "turnout": 131551,
+      "turnoutPct": 70.97,
+      "result": "IUML hold"
+    }
+  ]
+}

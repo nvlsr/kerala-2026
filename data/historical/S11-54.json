@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 54,
+  "constituencyName": "MANNARKKAD",
+  "wikipediaName": "Mannarkkad",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mannarkkad_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. Samsudheen", "party": "IUML", "votes": 60191, "votePct": 49.66 },
+        { "name": "V. Chamunni", "party": "CPI", "votes": 51921, "votePct": 42.84 },
+        { "name": "O. P. Vasudevanunni", "party": "BJP", "votes": 5655, "votePct": 4.67 },
+        { "name": "Muhammed Gafoor Madani", "party": "SDPI", "votes": 1238, "votePct": 1.02 },
+        { "name": "Ramakrishnan A.", "party": "BSP", "votes": 820, "votePct": 0.68 }
+      ],
+      "margin": 8270,
+      "marginPct": 6.82,
+      "turnout": 121195,
+      "turnoutPct": 72.89,
+      "result": "IUML gain from CPI"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. Samsudheen", "party": "IUML", "votes": 73163, "votePct": 49.27 },
+        { "name": "K. P. Suresh Raj", "party": "CPI", "votes": 60838, "votePct": 40.97 },
+        { "name": "Kesavadev Puthumanna", "party": "BDJS", "votes": 10170, "votePct": 6.85 },
+        { "name": "M. Sulaiman", "party": "WPOI", "votes": 1112, "votePct": 0.75 },
+        { "name": "NOTA", "party": "NOTA", "votes": 927, "votePct": 0.62 }
+      ],
+      "margin": 12325,
+      "marginPct": 8.30,
+      "turnout": 148498,
+      "turnoutPct": 78.38,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. Samsudheen", "party": "IUML", "votes": 71657, "votePct": 47.11 },
+        { "name": "K. P. Suresh Raj", "party": "CPI", "votes": 65787, "votePct": 43.25 },
+        { "name": "Agali Naseema P.", "party": "AIADMK", "votes": 10376, "votePct": 6.82 },
+        { "name": "James Mash", "party": "Independent", "votes": 988, "votePct": 0.65 },
+        { "name": "Sivadasan", "party": "BSP", "votes": 827, "votePct": 0.54 }
+      ],
+      "margin": 5870,
+      "marginPct": null,
+      "turnout": 152102,
+      "turnoutPct": 76.73,
+      "result": "IUML hold"
+    }
+  ]
+}

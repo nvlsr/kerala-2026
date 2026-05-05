@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 123,
+  "constituencyName": "KUNDARA",
+  "wikipediaName": "Kundara",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kundara_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. A. Baby", "party": "CPI(M)", "votes": 67135, "votePct": 52.48 },
+        { "name": "P. Jermias", "party": "INC", "votes": 52342, "votePct": 40.92 },
+        { "name": "Vellimon Dileep", "party": "BJP", "votes": 5990, "votePct": 4.68 },
+        { "name": "Sandhya Pallimon", "party": "Independent", "votes": 957, "votePct": 0.75 },
+        { "name": "Suseela Mohan", "party": "BSP", "votes": 947, "votePct": 0.74 }
+      ],
+      "margin": 14793,
+      "marginPct": 11.56,
+      "turnout": 127924,
+      "turnoutPct": 71.47,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "J. Mercykutty Amma", "party": "CPI(M)", "votes": 79047, "votePct": 51.81 },
+        { "name": "Rajmohan Unnithan", "party": "INC", "votes": 48587, "votePct": 31.85 },
+        { "name": "M. S. Shyam Kumar", "party": "BJP", "votes": 20257, "votePct": 13.28 },
+        { "name": "Sharafath Mallam", "party": "SDPI", "votes": 1325, "votePct": 0.87 },
+        { "name": "Kabeer Kutty I. Puthezham", "party": "PDP", "votes": 1132, "votePct": 0.74 }
+      ],
+      "margin": 30460,
+      "marginPct": 19.96,
+      "turnout": 152558,
+      "turnoutPct": 76.22,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. C. Vishnunadh", "party": "INC", "votes": 76405, "votePct": 48.85 },
+        { "name": "J. Mercykutty Amma", "party": "CPI(M)", "votes": 71882, "votePct": 45.96 },
+        { "name": "Vanaja Vidhyadharan", "party": "BDJS", "votes": 6100, "votePct": 3.9 },
+        { "name": "Santhosh Adooran", "party": "Independent", "votes": 260, "votePct": 0.17 },
+        { "name": "R. Rahul", "party": "SUCI(C)", "votes": 457, "votePct": 0.29 }
+      ],
+      "margin": 4523,
+      "marginPct": 2.89,
+      "turnout": 156401,
+      "turnoutPct": 75.94,
+      "result": "INC gain from CPI(M)"
+    }
+  ]
+}

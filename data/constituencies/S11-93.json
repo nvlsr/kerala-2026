@@ -1,0 +1,77 @@
+{
+  "constituency": "93 - PALA (Kerala)",
+  "constituencyNumber": 93,
+  "constituencyName": "PALA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "MANI C KAPPEN",
+      "party": "Independent",
+      "votes": 50799,
+      "margin": 2991,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "JOSE K MANI",
+      "party": "Kerala Congress (M)",
+      "votes": 47808,
+      "margin": -2991,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHONE GEORGE",
+      "party": "Bharatiya Janata Party",
+      "votes": 35304,
+      "margin": -15495,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV.RONY NEDUMPALLIL",
+      "party": "Aam Aadmi Party",
+      "votes": 506,
+      "margin": -50293,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "C G BABU",
+      "party": "Independent",
+      "votes": 325,
+      "margin": -50474,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANTHOSH PULICKAL",
+      "party": "Independent",
+      "votes": 272,
+      "margin": -50527,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANTHOSH NADOOPPARAMPIL",
+      "party": "Bahujan Samaj Party",
+      "votes": 254,
+      "margin": -50545,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 583,
+      "margin": -50216,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1193.htm"
+}

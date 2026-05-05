@@ -1,0 +1,77 @@
+{
+  "constituency": "67 - THRISSUR (Kerala)",
+  "constituencyNumber": 67,
+  "constituencyName": "THRISSUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "RAJAN. J. PALLAN",
+      "party": "Indian National Congress",
+      "votes": 60290,
+      "margin": 26803,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ALANKODE LEELAKRISHNAN",
+      "party": "Communist Party of India",
+      "votes": 33487,
+      "margin": -26803,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PADMAJA VENUGOPAL",
+      "party": "Bharatiya Janata Party",
+      "votes": 28662,
+      "margin": -31628,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RANI ANTO",
+      "party": "Aam Aadmi Party",
+      "votes": 299,
+      "margin": -59991,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJAN. M",
+      "party": "Independent",
+      "votes": 153,
+      "margin": -60137,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ROSILIN CHACKO",
+      "party": "Bahujan Samaj Party",
+      "votes": 138,
+      "margin": -60152,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ARSHED AZIZ",
+      "party": "Communist Party of India (Marxist-Leninist) (Liberation)",
+      "votes": 110,
+      "margin": -60180,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1043,
+      "margin": -59247,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1167.htm"
+}

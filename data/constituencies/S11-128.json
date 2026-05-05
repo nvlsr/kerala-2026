@@ -1,0 +1,69 @@
+{
+  "constituency": "128 - ATTINGAL (Kerala)",
+  "constituencyNumber": 128,
+  "constituencyName": "ATTINGAL",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "O.S AMBIKA",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 59163,
+      "margin": 13375,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. P SUDHEER",
+      "party": "Bharatiya Janata Party",
+      "votes": 45788,
+      "margin": -13375,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANTHOSH BHADRAN",
+      "party": "Revolutionary Socialist Party",
+      "votes": 41372,
+      "margin": -17791,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JAYARAJAN M",
+      "party": "Social Democratic Party Of India",
+      "votes": 1019,
+      "margin": -58144,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "S. SUJITHRA",
+      "party": "Bahujan Samaj Party",
+      "votes": 905,
+      "margin": -58258,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUNITHA KILIMANOOR",
+      "party": "Democratic Human Rights Movement Party",
+      "votes": 397,
+      "margin": -58766,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1272,
+      "margin": -57891,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11128.htm"
+}

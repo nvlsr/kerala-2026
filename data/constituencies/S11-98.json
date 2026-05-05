@@ -1,0 +1,69 @@
+{
+  "constituency": "98 - PUTHUPPALLY (Kerala)",
+  "constituencyNumber": 98,
+  "constituencyName": "PUTHUPPALLY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. CHANDY OOMMEN",
+      "party": "Indian National Congress",
+      "votes": 84031,
+      "margin": 52907,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K. M. RADHAKRISHNAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 31124,
+      "margin": -52907,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAVEENDRANATH  VAKATHANAM",
+      "party": "Bharatiya Janata Party",
+      "votes": 11544,
+      "margin": -72487,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PAUL P CHACKO (SHAJI KADAYIL)",
+      "party": "Bahujan Samaj Party",
+      "votes": 663,
+      "margin": -83368,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SABU MYLAKKADAN",
+      "party": "Janam Rashtriya Party",
+      "votes": 122,
+      "margin": -83909,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RIJOMON MATHEW",
+      "party": "Independent",
+      "votes": 83,
+      "margin": -83948,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 613,
+      "margin": -83418,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1198.htm"
+}

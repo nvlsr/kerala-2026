@@ -1,0 +1,109 @@
+{
+  "constituency": "16 - PERAVOOR (Kerala)",
+  "constituencyNumber": 16,
+  "constituencyName": "PERAVOOR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. SUNNY JOSEPH",
+      "party": "Indian National Congress",
+      "votes": 76140,
+      "margin": 14453,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K K SHAILAJA TEACHER",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 61687,
+      "margin": -14453,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PAILY VATHIYATTU",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 8020,
+      "margin": -68120,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. HENSTION GEORGE",
+      "party": "Aam Aadmi Party",
+      "votes": 431,
+      "margin": -75709,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUNNY JOSEPH MUTHUKULATHEL",
+      "party": "Independent",
+      "votes": 191,
+      "margin": -75949,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAILAJA. A. V",
+      "party": "Independent",
+      "votes": 109,
+      "margin": -76031,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ARUVIKKAL KRISHNAN",
+      "party": "Communist Party of India (Marxist-Leninist) (Liberation)",
+      "votes": 86,
+      "margin": -76054,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "C. SHYLAJA",
+      "party": "Independent",
+      "votes": 68,
+      "margin": -76072,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUNNY",
+      "party": "Independent",
+      "votes": 66,
+      "margin": -76074,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NARAYANA KUMAR",
+      "party": "Independent",
+      "votes": 45,
+      "margin": -76095,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VENUGOPALAN. C",
+      "party": "Independent",
+      "votes": 26,
+      "margin": -76114,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 375,
+      "margin": -75765,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1116.htm"
+}

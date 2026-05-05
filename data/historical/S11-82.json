@@ -1,0 +1,74 @@
+{
+  "constituencyNumber": 82,
+  "constituencyName": "ERANAKULAM",
+  "wikipediaName": "Ernakulam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ernakulam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Hibi Eden", "party": "INC", "votes": 59919, "votePct": 61.58 },
+        { "name": "Sebastian Paul", "party": "CPI(M)", "votes": 27482, "votePct": 28.25 },
+        { "name": "C. G. Rajagopal", "party": "BJP", "votes": 6362, "votePct": 6.54 },
+        { "name": "Sebastian Njalamkunnel", "party": "Independent", "votes": 2347, "votePct": 2.41 },
+        { "name": "Iqbal Thamarassery", "party": "BSP", "votes": 742, "votePct": 0.76 }
+      ],
+      "margin": 32487,
+      "marginPct": 33.33,
+      "turnout": 97297,
+      "turnoutPct": 71.16,
+      "result": "INC hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Hibi Eden", "party": "INC", "votes": 57819, "votePct": 52.32 },
+        { "name": "M. Anil Kumar", "party": "CPI(M)", "votes": 35870, "votePct": 32.46 },
+        { "name": "N. K. Mohandas", "party": "BJP", "votes": 14878, "votePct": 13.46 },
+        { "name": "Iqbal Thamarassery", "party": "BSP", "votes": 397, "votePct": 0.36 },
+        { "name": "Rubesh Jimmy Madathiparambil", "party": "SP", "votes": 258, "votePct": 0.23 }
+      ],
+      "margin": 21949,
+      "marginPct": 19.86,
+      "turnout": 110508,
+      "turnoutPct": 71.72,
+      "result": "INC hold"
+    },
+    {
+      "year": 2019,
+      "type": "by-election",
+      "reason": "Election of sitting MLA Hibi Eden as MP from Ernakulam Lok Sabha constituency",
+      "candidates": [
+        { "name": "T. J. Vinod", "party": "INC", "votes": 37891, "votePct": 42.13 },
+        { "name": "Manu Roy", "party": "LDF", "votes": 34141, "votePct": 37.96 },
+        { "name": "C. G. Rajagopal", "party": "BJP", "votes": 13351, "votePct": 14.85 },
+        { "name": "Manu K. M.", "party": "Independent", "votes": 2572, "votePct": 2.86 }
+      ],
+      "margin": 3750,
+      "marginPct": 4.17,
+      "turnout": 89932,
+      "turnoutPct": 57.91,
+      "result": "INC hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. J. Vinod", "party": "INC", "votes": 45930, "votePct": 41.72 },
+        { "name": "Shaji George", "party": "LDF", "votes": 34960, "votePct": 31.75 },
+        { "name": "Padmaja S. Menon", "party": "BJP", "votes": 16043, "votePct": 14.57 },
+        { "name": "Leslie Pallath", "party": "Twenty20 Party", "votes": 10634, "votePct": 9.66 }
+      ],
+      "margin": 10970,
+      "marginPct": 9.97,
+      "turnout": 108434,
+      "turnoutPct": 66.92,
+      "result": "INC hold"
+    }
+  ]
+}

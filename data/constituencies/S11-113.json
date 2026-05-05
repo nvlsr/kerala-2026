@@ -1,0 +1,69 @@
+{
+  "constituency": "113 - ARANMULA (Kerala)",
+  "constituencyNumber": 113,
+  "constituencyName": "ARANMULA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ABIN VARKEY KODIYATTU",
+      "party": "Indian National Congress",
+      "votes": 70083,
+      "margin": 18985,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "VEENA GEORGE",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 51098,
+      "margin": -18985,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KUMMANAM RAJASEKHARAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 34983,
+      "margin": -35100,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRABHAKARAN V. R",
+      "party": "Bahujan Samaj Party",
+      "votes": 347,
+      "margin": -69736,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RADHAMANI",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 229,
+      "margin": -69854,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "OMALLOOR RAMACHANDRAN",
+      "party": "Ambedkarite Party of India",
+      "votes": 95,
+      "margin": -69988,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 615,
+      "margin": -69468,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11113.htm"
+}

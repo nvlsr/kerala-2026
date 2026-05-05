@@ -1,0 +1,56 @@
+{
+  "constituencyNumber": 47,
+  "constituencyName": "THAVANUR",
+  "wikipediaName": "Thavanur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thavanur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. T. Jaleel", "party": "LDF Independent", "votes": 57729, "votePct": 47.20 },
+        { "name": "V. V. Prakash", "party": "INC", "votes": 50875, "votePct": 41.60 },
+        { "name": "Nirmala Kuttikrishnan Punnakkal", "party": "BJP", "votes": 7107, "votePct": 5.81 },
+        { "name": "Nurul Hack", "party": "SDPI", "votes": 3116, "votePct": 2.55 }
+      ],
+      "margin": 6854,
+      "marginPct": 5.60,
+      "turnout": 122297,
+      "turnoutPct": 78.15,
+      "result": "LDF win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. T. Jaleel", "party": "LDF", "votes": 68179, "votePct": 47.97 },
+        { "name": "Ifthiquarudheen Master", "party": "INC", "votes": 51115, "votePct": 35.96 },
+        { "name": "Ravi Thelath", "party": "BJP", "votes": 15801, "votePct": 11.12 },
+        { "name": "P. K. Jaleel Parakkuzhiyil", "party": "SDPI", "votes": 2649, "votePct": 1.86 }
+      ],
+      "margin": 17064,
+      "marginPct": 12.01,
+      "turnout": 142125,
+      "turnoutPct": 76.88,
+      "result": "LDF hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. T. Jaleel", "party": "LDF", "votes": 69358, "votePct": 46.46 },
+        { "name": "Firos Kunnamparambil", "party": "INC", "votes": 67794, "votePct": 44.77 },
+        { "name": "Ramesh Kottayapurath", "party": "BDJS", "votes": 9914, "votePct": 6.55 },
+        { "name": "Hassan Chiyanoor", "party": "SDPI", "votes": 1747, "votePct": 1.15 }
+      ],
+      "margin": 2185,
+      "marginPct": 1.69,
+      "turnout": 151426,
+      "turnoutPct": 75.72,
+      "result": "LDF hold"
+    }
+  ]
+}

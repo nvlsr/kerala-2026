@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 105,
+  "constituencyName": "AMBALAPPUZHA",
+  "wikipediaName": "Ambalappuzha",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ambalappuzha_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "G. Sudhakaran", "party": "CPI(M)", "votes": 63728, "votePct": 54.48 },
+        { "name": "M. Liju", "party": "INC", "votes": 47148, "votePct": 40.31 },
+        { "name": "P. K. Vasudevan", "party": "BJP", "votes": 2668, "votePct": 2.28 },
+        { "name": "S. H. Alhadhi", "party": "SDPI", "votes": 1852, "votePct": 1.58 },
+        { "name": "Omanakuttan", "party": "BSP", "votes": 672, "votePct": 0.57 }
+      ],
+      "margin": 16580,
+      "marginPct": 14.17,
+      "turnout": 116966,
+      "turnoutPct": 79.63,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "G. Sudhakaran", "party": "CPI(M)", "votes": 63069, "votePct": 47.32 },
+        { "name": "Shaik P. Harriz", "party": "JD(U)", "votes": 40448, "votePct": 30.34 },
+        { "name": "L. P. Jayachandran", "party": "BJP", "votes": 22730, "votePct": 17.05 },
+        { "name": "K. S. Shan", "party": "SDPI", "votes": 1622, "votePct": 1.22 },
+        { "name": "R. Arjunan", "party": "SUCI(C)", "votes": 1439, "votePct": 1.08 }
+      ],
+      "margin": 22621,
+      "marginPct": 16.98,
+      "turnout": 133294,
+      "turnoutPct": 78.90,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "H. Salam", "party": "CPI(M)", "votes": 61365, "votePct": 44.79 },
+        { "name": "M. Liju", "party": "INC", "votes": 50240, "votePct": 36.67 },
+        { "name": "Anoop Antony", "party": "BJP", "votes": 22389, "votePct": 16.34 },
+        { "name": "M. M. Thahir", "party": "SDPI", "votes": 1690, "votePct": 1.23 },
+        { "name": "Subadramma Thottappally", "party": "WPOI", "votes": 525, "votePct": 0.38 }
+      ],
+      "margin": 11125,
+      "marginPct": 8.12,
+      "turnout": 137021,
+      "turnoutPct": 76.71,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

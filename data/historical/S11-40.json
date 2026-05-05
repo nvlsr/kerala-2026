@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 40,
+  "constituencyName": "MALAPPURAM",
+  "wikipediaName": "Malappuram",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Malappuram_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Ubaidulla", "party": "IUML", "votes": 77928, "votePct": 63.75 },
+        { "name": "Madathil Sadiqali", "party": "JD(S)", "votes": 33420, "votePct": 27.34 },
+        { "name": "Sadiq Naduthodi", "party": "SDPI", "votes": 3968, "votePct": 3.25 },
+        { "name": "K. Velayudhan", "party": "BJP", "votes": 3841, "votePct": 3.14 },
+        { "name": "Abu Thwair", "party": "Independent", "votes": 2179, "votePct": 1.78 }
+      ],
+      "margin": 44508,
+      "marginPct": 36.41,
+      "turnout": 122245,
+      "turnoutPct": 72.88,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Ubaidulla", "party": "IUML", "votes": 81072, "votePct": 57.16 },
+        { "name": "K. P. Sumathi", "party": "CPI(M)", "votes": 45400, "votePct": 32.01 },
+        { "name": "K. N. Badusha Thangal", "party": "BJP", "votes": 7211, "votePct": 5.08 },
+        { "name": "E. C. Ayisha", "party": "WPOI", "votes": 3330, "votePct": 2.35 },
+        { "name": "Jaleel Neelambra", "party": "SDPI", "votes": 2444, "votePct": 1.72 }
+      ],
+      "margin": 35672,
+      "marginPct": 25.15,
+      "turnout": 141833,
+      "turnoutPct": 73.20,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Ubaidulla", "party": "IUML", "votes": 93166, "votePct": 57.57 },
+        { "name": "Paloli Abdurahman", "party": "CPI(M)", "votes": 57958, "votePct": 35.82 },
+        { "name": "Areekkad Sethumadhavan", "party": "BJP", "votes": 5883, "votePct": 3.64 },
+        { "name": "E. C. Ayisha", "party": "WPOI", "votes": 3194, "votePct": 1.97 },
+        { "name": "NOTA", "party": "NOTA", "votes": 994, "votePct": 0.61 }
+      ],
+      "margin": 35208,
+      "marginPct": 21.75,
+      "turnout": 161825,
+      "turnoutPct": 76.34,
+      "result": "IUML hold"
+    }
+  ]
+}

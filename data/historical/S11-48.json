@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 48,
+  "constituencyName": "PONNANI",
+  "wikipediaName": "Ponnani",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ponnani_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Sreeramakrishnan", "party": "CPI(M)", "votes": 57615, "votePct": 47.55 },
+        { "name": "P. T. Ajay Mohan", "party": "INC", "votes": 53514, "votePct": 44.17 },
+        { "name": "V. T. Jayaprakash", "party": "BJP", "votes": 5680, "votePct": 4.69 },
+        { "name": "Yahiya Koya Thangal", "party": "SDPI", "votes": 3250, "votePct": 2.68 },
+        { "name": "Ajayan", "party": "Independent", "votes": 1099, "votePct": 0.91 }
+      ],
+      "margin": 4101,
+      "marginPct": 3.38,
+      "turnout": 121158,
+      "turnoutPct": 76.35,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Sreeramakrishnan", "party": "CPI(M)", "votes": 69332, "votePct": 48.91 },
+        { "name": "P. T. Ajay Mohan", "party": "INC", "votes": 53692, "votePct": 37.87 },
+        { "name": "K. K. Surendran", "party": "BJP", "votes": 11662, "votePct": 8.23 },
+        { "name": "M. M. Shakkir", "party": "WPOI", "votes": 2048, "votePct": 1.44 },
+        { "name": "M. Moidunni Haji", "party": "PDP", "votes": 1857, "votePct": 1.31 }
+      ],
+      "margin": 15640,
+      "marginPct": 11.04,
+      "turnout": 141763,
+      "turnoutPct": 74.31,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Nandakumar", "party": "CPI(M)", "votes": 74668, "votePct": 51.35 },
+        { "name": "A. M. Rohith", "party": "INC", "votes": 57625, "votePct": 39.63 },
+        { "name": "Subramannian Chunkappallii", "party": "BDJS", "votes": 7419, "votePct": 5.10 },
+        { "name": "Anvar Pazhanji", "party": "SDPI", "votes": 3065, "votePct": 2.11 },
+        { "name": "Ganesh Vaderi", "party": "WPOI", "votes": 1863, "votePct": 1.28 }
+      ],
+      "margin": 17043,
+      "marginPct": 11.72,
+      "turnout": 145422,
+      "turnoutPct": 70.83,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

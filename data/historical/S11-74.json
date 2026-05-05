@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 74,
+  "constituencyName": "PERUMBAVOOR",
+  "wikipediaName": "Perumbavoor",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Perumbavoor_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Saju Paul", "party": "CPI(M)", "votes": 59628, "votePct": 47.42 },
+        { "name": "Jaison Joseph", "party": "INC", "votes": 56246, "votePct": 44.73 },
+        { "name": "O. C. Asokan", "party": "BJP", "votes": 5464, "votePct": 4.35 },
+        { "name": "O. Aliyar", "party": "SDPI", "votes": 2401, "votePct": 1.90 },
+        { "name": "N. K. Muhammed Haji", "party": "PDP", "votes": 1094, "votePct": 0.87 }
+      ],
+      "margin": 3382,
+      "marginPct": 2.69,
+      "turnout": 125739,
+      "turnoutPct": 81.42,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Eldose Kunnapilly", "party": "INC", "votes": 64285, "votePct": 44.11 },
+        { "name": "Saju Paul", "party": "CPI(M)", "votes": 57197, "votePct": 39.25 },
+        { "name": "E. S. Biju", "party": "BJP", "votes": 19731, "votePct": 13.54 },
+        { "name": "V. V. Shoukkath Ali", "party": "SDPI", "votes": 2061, "votePct": 1.41 },
+        { "name": "Thomas K. George", "party": "WPOI", "votes": 971, "votePct": 0.67 }
+      ],
+      "margin": 7088,
+      "marginPct": 4.86,
+      "turnout": 145727,
+      "turnoutPct": 84.25,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Eldose Kunnapilly", "party": "INC", "votes": 53484, "votePct": 37.10 },
+        { "name": "Babu Joseph Perumbavoor", "party": "KC(M)", "votes": 50585, "votePct": 35.09 },
+        { "name": "Chithra Sukumaran", "party": "Twenty20 Party", "votes": 20536, "votePct": 14.24 },
+        { "name": "T. P. Sindhumol", "party": "BJP", "votes": 15135, "votePct": 10.50 },
+        { "name": "Ajmal K. Mujeeb", "party": "SDPI", "votes": 2494, "votePct": 1.73 }
+      ],
+      "margin": 2899,
+      "marginPct": 2.01,
+      "turnout": 144171,
+      "turnoutPct": 78.14,
+      "result": "INC hold"
+    }
+  ]
+}

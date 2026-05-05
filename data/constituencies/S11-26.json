@@ -1,0 +1,85 @@
+{
+  "constituency": "26 - ELATHUR (Kerala)",
+  "constituencyNumber": 26,
+  "constituencyName": "ELATHUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.VIDYA BALAKRISHNAN",
+      "party": "Indian National Congress",
+      "votes": 77662,
+      "margin": 12162,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "A.K.SASEENDRAN S/O KUNJAMBU",
+      "party": "Nationalist Congress Party - Sharadchandra Pawar",
+      "votes": 65500,
+      "margin": -12162,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DEVADAS T",
+      "party": "Bharatiya Janata Party",
+      "votes": 31510,
+      "margin": -46152,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "V.K.SASEENDRAN S/O RAMAKRISHNAN",
+      "party": "Independent",
+      "votes": 726,
+      "margin": -76936,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P.K.SASEENDRAN S/O SABUDASAN",
+      "party": "Nationalist Congress Party",
+      "votes": 692,
+      "margin": -76970,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P.M.SREEKUMAR",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 481,
+      "margin": -77181,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL BASITH ATHOLI",
+      "party": "Aam Aadmi Party",
+      "votes": 348,
+      "margin": -77314,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV.SUMIN.S.NEDUNGADAN",
+      "party": "Independent",
+      "votes": 117,
+      "margin": -77545,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 729,
+      "margin": -76933,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1126.htm"
+}

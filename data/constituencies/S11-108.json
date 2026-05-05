@@ -1,0 +1,45 @@
+{
+  "constituency": "108 - KAYAMKULAM (Kerala)",
+  "constituencyNumber": 108,
+  "constituencyName": "KAYAMKULAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.M.LIJU",
+      "party": "Indian National Congress",
+      "votes": 76651,
+      "margin": 15572,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV.U.PRATHIBHA",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 61079,
+      "margin": -15572,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "THAMPI METTUTHARA",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 16973,
+      "margin": -59678,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 696,
+      "margin": -75955,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11108.htm"
+}

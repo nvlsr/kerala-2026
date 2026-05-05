@@ -1,0 +1,93 @@
+{
+  "constituency": "49 - THRITHALA (Kerala)",
+  "constituencyNumber": 49,
+  "constituencyName": "THRITHALA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "V T BALRAM",
+      "party": "Indian National Congress",
+      "votes": 76427,
+      "margin": 8385,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "M B RAJESH",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 68042,
+      "margin": -8385,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "V UNNIKRISHNAN MASTER",
+      "party": "Bharatiya Janata Party",
+      "votes": 15051,
+      "margin": -61376,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAHEER CHALIPRAM",
+      "party": "Social Democratic Party Of India",
+      "votes": 1746,
+      "margin": -74681,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV KEERTHI JAYANANDHAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 188,
+      "margin": -76239,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T T BALARAMAN",
+      "party": "Independent",
+      "votes": 91,
+      "margin": -76336,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BALARAMAN",
+      "party": "Independent",
+      "votes": 81,
+      "margin": -76346,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABBAS",
+      "party": "Independent",
+      "votes": 77,
+      "margin": -76350,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJESH S/O RAMANKUTTY",
+      "party": "Independent",
+      "votes": 74,
+      "margin": -76353,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 409,
+      "margin": -76018,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1149.htm"
+}

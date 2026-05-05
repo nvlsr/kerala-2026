@@ -1,0 +1,77 @@
+{
+  "constituency": "70 - IRINJALAKUDA (Kerala)",
+  "constituencyNumber": 70,
+  "constituencyName": "IRINJALAKUDA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. THOMAS UNNIYADAN",
+      "party": "Kerala Congress",
+      "votes": 66282,
+      "margin": 10212,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "DR.R.BINDU",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 56070,
+      "margin": -10212,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANTHOSH CHERAKULAM",
+      "party": "Bharatiya Janata Party",
+      "votes": 27167,
+      "margin": -39115,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "THANKAMANY THARAYIL",
+      "party": "Bahujan Samaj Party",
+      "votes": 921,
+      "margin": -65361,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR. SHAJU KAVUNGAL",
+      "party": "Aam Aadmi Party",
+      "votes": 579,
+      "margin": -65703,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR. ANISH",
+      "party": "Independent",
+      "votes": 259,
+      "margin": -66023,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AYYAPPAN MANAKKAL",
+      "party": "Independent",
+      "votes": 100,
+      "margin": -66182,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 863,
+      "margin": -65419,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1170.htm"
+}

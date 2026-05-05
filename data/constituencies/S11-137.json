@@ -1,0 +1,85 @@
+{
+  "constituency": "137 - PARASSALA (Kerala)",
+  "constituencyNumber": 137,
+  "constituencyName": "PARASSALA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "C K HAREENDRAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 69149,
+      "margin": 15013,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "NEYYATTINKARA SANAL",
+      "party": "Indian National Congress",
+      "votes": 54136,
+      "margin": -15013,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. GIREESH NEYYAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 29919,
+      "margin": -39230,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. DHANUVACHAPURAM THANKACHAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 340,
+      "margin": -68809,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAJU PALIYODU",
+      "party": "Independent",
+      "votes": 318,
+      "margin": -68831,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DEEPUMON PARASSALA",
+      "party": "Aam Aadmi Party",
+      "votes": 298,
+      "margin": -68851,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "S ROBINSON E NADAR",
+      "party": "Independent",
+      "votes": 148,
+      "margin": -69001,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SIMIYON L P",
+      "party": "Independent",
+      "votes": 68,
+      "margin": -69081,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 632,
+      "margin": -68517,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11137.htm"
+}

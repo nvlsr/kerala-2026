@@ -1,0 +1,69 @@
+{
+  "constituency": "52 - OTTAPPALAM (Kerala)",
+  "constituencyNumber": 52,
+  "constituencyName": "OTTAPPALAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. K. PREMKUMAR",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 75362,
+      "margin": 26777,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P.K SASI P.K.S S/O PADMINI AMMA",
+      "party": "Independent",
+      "votes": 48585,
+      "margin": -26777,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MAJOR RAVI",
+      "party": "Bharatiya Janata Party",
+      "votes": 42476,
+      "margin": -32886,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SASI P.K S/O KRISHNANKUTTY",
+      "party": "Independent",
+      "votes": 1062,
+      "margin": -74300,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K.P RAJEESH",
+      "party": "Bahujan Samaj Party",
+      "votes": 1025,
+      "margin": -74337,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUHAMMED ASHARAF V.H",
+      "party": "Independent",
+      "votes": 459,
+      "margin": -74903,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1135,
+      "margin": -74227,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1152.htm"
+}

@@ -1,0 +1,77 @@
+{
+  "constituency": "11 - KANNUR (Kerala)",
+  "constituencyNumber": 11,
+  "constituencyName": "KANNUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.T.O. MOHANAN",
+      "party": "Indian National Congress",
+      "votes": 70620,
+      "margin": 18551,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "RAMACHANDRAN KADANNAPPALLI",
+      "party": "Congress (Secular)",
+      "votes": 52069,
+      "margin": -18551,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "C. RAGHUNATH",
+      "party": "Bharatiya Janata Party",
+      "votes": 16144,
+      "margin": -54476,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T.K. MOHANAN",
+      "party": "Independent",
+      "votes": 281,
+      "margin": -70339,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SURESH KUMAR",
+      "party": "Bharatheeya Jawan Kisan Party",
+      "votes": 255,
+      "margin": -70365,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M.K. SHAHAZAD",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 229,
+      "margin": -70391,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAMACHANDRAN KUNIYIL",
+      "party": "Independent",
+      "votes": 216,
+      "margin": -70404,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 705,
+      "margin": -69915,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1111.htm"
+}

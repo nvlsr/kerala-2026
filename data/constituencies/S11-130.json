@@ -1,0 +1,93 @@
+{
+  "constituency": "130 - NEDUMANGAD (Kerala)",
+  "constituencyNumber": 130,
+  "constituencyName": "NEDUMANGAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "G R ANIL",
+      "party": "Communist Party of India",
+      "votes": 69206,
+      "margin": 21583,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "MEENANKAL KUMAR",
+      "party": "Indian National Congress",
+      "votes": 47623,
+      "margin": -21583,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "YUVRAJ GOKUL",
+      "party": "Bharatiya Janata Party",
+      "votes": 38999,
+      "margin": -30207,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BATHERUTHEEN A (ZIAD KANDALA)",
+      "party": "Social Democratic Party Of India",
+      "votes": 1191,
+      "margin": -68015,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUJILAL B G",
+      "party": "Bahujan Samaj Party",
+      "votes": 408,
+      "margin": -68798,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHIBU G",
+      "party": "Democratic Human Rights Movement Party",
+      "votes": 171,
+      "margin": -69035,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VEMBAYAM YESUDAS",
+      "party": "Independent",
+      "votes": 129,
+      "margin": -69077,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANVAR SADATH",
+      "party": "Independent",
+      "votes": 95,
+      "margin": -69111,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KUMAR",
+      "party": "Independent",
+      "votes": 93,
+      "margin": -69113,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 979,
+      "margin": -68227,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11130.htm"
+}

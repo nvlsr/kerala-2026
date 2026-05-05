@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 46,
+  "constituencyName": "KOTTAKKAL",
+  "wikipediaName": "Kottakkal",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kottakkal_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Abdusamad Samadani", "party": "IUML", "votes": 69717, "votePct": 58.91 },
+        { "name": "C. P. K. Gurukkal", "party": "NCP", "votes": 33815, "votePct": 28.57 },
+        { "name": "K. K. Surendran", "party": "BJP", "votes": 7782, "votePct": 6.58 },
+        { "name": "Ali Kadampuzha", "party": "PDP", "votes": 3027, "votePct": 2.56 },
+        { "name": "K. C. Naser", "party": "SDPI", "votes": 2644, "votePct": 2.24 }
+      ],
+      "margin": 35902,
+      "marginPct": 30.34,
+      "turnout": 118343,
+      "turnoutPct": 70.65,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. K. Abid Hussain Thangal", "party": "IUML", "votes": 71768, "votePct": 48.34 },
+        { "name": "N. A. Mohammed Kutty", "party": "NCP", "votes": 56726, "votePct": 38.21 },
+        { "name": "V. Unnikrishnan Master", "party": "BJP", "votes": 13205, "votePct": 8.89 },
+        { "name": "Neyyathoor Kunhimohamed", "party": "PDP", "votes": 2763, "votePct": 1.86 },
+        { "name": "K. P. O. Rahmathullah", "party": "SDPI", "votes": 1719, "votePct": 1.16 }
+      ],
+      "margin": 15042,
+      "marginPct": 10.13,
+      "turnout": 148473,
+      "turnoutPct": 74.66,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. K. Abid Hussain Thangal", "party": "IUML", "votes": 81700, "votePct": 51.3 },
+        { "name": "N. A. Mohammed Kutty", "party": "NCP", "votes": 65112, "votePct": 40.9 },
+        { "name": "P. P. Ganesan", "party": "BJP", "votes": 10796, "votePct": 6.8 },
+        { "name": "NOTA", "party": "NOTA", "votes": 668, "votePct": 0.42 }
+      ],
+      "margin": 16588,
+      "marginPct": 10.4,
+      "turnout": 159265,
+      "turnoutPct": 77.9,
+      "result": "IUML hold"
+    }
+  ]
+}

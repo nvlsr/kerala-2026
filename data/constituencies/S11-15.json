@@ -1,0 +1,69 @@
+{
+  "constituency": "15 - MATTANNUR (Kerala)",
+  "constituencyNumber": 15,
+  "constituencyName": "MATTANNUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "V K  SANOJ",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 81456,
+      "margin": 14168,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "CHANDRAN THILLANKERI",
+      "party": "Indian National Congress",
+      "votes": 67288,
+      "margin": -14168,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BIJU ELAKKUZHI",
+      "party": "Bharatiya Janata Party",
+      "votes": 17815,
+      "margin": -63641,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BASHEER PUNNAD",
+      "party": "Social Democratic Party Of India",
+      "votes": 2171,
+      "margin": -79285,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANOJ                           S/O KUNHIRAMAN K",
+      "party": "Independent",
+      "votes": 210,
+      "margin": -81246,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "CHANDRAN THENGALATH",
+      "party": "Independent",
+      "votes": 147,
+      "margin": -81309,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 771,
+      "margin": -80685,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1115.htm"
+}

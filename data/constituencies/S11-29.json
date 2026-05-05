@@ -1,0 +1,85 @@
+{
+  "constituency": "29 - BEYPORE (Kerala)",
+  "constituencyNumber": 29,
+  "constituencyName": "BEYPORE",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P.A MOHAMED RIYAS",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 81849,
+      "margin": 7487,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P V ANVAR S/O SHOUKATHALI",
+      "party": "Independent",
+      "votes": 74362,
+      "margin": -7487,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV.  PRAKASHBABU",
+      "party": "Bharatiya Janata Party",
+      "votes": 26543,
+      "margin": -55306,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANVER S/O MOIDEENKOYA",
+      "party": "Independent",
+      "votes": 538,
+      "margin": -81311,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANVER S/O ENUNNI",
+      "party": "Independent",
+      "votes": 448,
+      "margin": -81401,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANVER S/O SULAIKHA K P",
+      "party": "Independent",
+      "votes": 318,
+      "margin": -81531,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUHAMMED RIYAS P.C S/O AHAMMEDKUTTY P. C",
+      "party": "Independent",
+      "votes": 308,
+      "margin": -81541,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANWAR ALI HASSAN S/O KUTTYHASSAN",
+      "party": "Independent",
+      "votes": 201,
+      "margin": -81648,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 583,
+      "margin": -81266,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1129.htm"
+}

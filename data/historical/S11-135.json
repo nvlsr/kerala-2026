@@ -1,0 +1,53 @@
+{
+  "constituencyNumber": 135,
+  "constituencyName": "NEMOM",
+  "wikipediaName": "Nemom",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nemom_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. Sivankutty", "party": "CPI(M)", "votes": 50076, "votePct": 42.99 },
+        { "name": "O. Rajagopal", "party": "BJP", "votes": 43661, "votePct": 37.49 },
+        { "name": "Charupara Ravi", "party": "SJ(D)", "votes": 20248, "votePct": 17.38 }
+      ],
+      "margin": 6415,
+      "marginPct": 5.50,
+      "turnout": 116474,
+      "turnoutPct": 67.52,
+      "result": "CPI(M) win"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "O. Rajagopal", "party": "BJP", "votes": 67813, "votePct": 47.46 },
+        { "name": "V. Sivankutty", "party": "CPI(M)", "votes": 59142, "votePct": 41.39 },
+        { "name": "V. Surendran Pillai", "party": "JD(U)", "votes": 13860, "votePct": 9.70 }
+      ],
+      "margin": 8671,
+      "marginPct": 6.07,
+      "turnout": 142882,
+      "turnoutPct": 74.24,
+      "result": "BJP gain from CPI(M)"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. Sivankutty", "party": "CPI(M)", "votes": 55837, "votePct": 38.24 },
+        { "name": "Kummanam Rajasekharan", "party": "BJP", "votes": 51888, "votePct": 35.54 },
+        { "name": "K. Muraleedharan", "party": "INC", "votes": 36524, "votePct": 25.01 }
+      ],
+      "margin": 3949,
+      "marginPct": 2.71,
+      "turnout": 146354,
+      "turnoutPct": 71.49,
+      "result": "CPI(M) gain from BJP"
+    }
+  ]
+}

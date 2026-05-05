@@ -1,0 +1,61 @@
+{
+  "constituency": "129 - CHIRAYINKEEZHU (Kerala)",
+  "constituencyNumber": 129,
+  "constituencyName": "CHIRAYINKEEZHU",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "RAMYA HARIDAS",
+      "party": "Indian National Congress",
+      "votes": 56833,
+      "margin": 1422,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "MANOJ EDAMANA",
+      "party": "Communist Party of India",
+      "votes": 55411,
+      "margin": -1422,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "B. S. ANOOP",
+      "party": "Bharatiya Janata Party",
+      "votes": 32920,
+      "margin": -23913,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "R. SASI",
+      "party": "Bahujan Samaj Party",
+      "votes": 743,
+      "margin": -56090,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANOOP ALAPPURAMKUNNU",
+      "party": "Democratic Human Rights Movement Party",
+      "votes": 617,
+      "margin": -56216,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1042,
+      "margin": -55791,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11129.htm"
+}

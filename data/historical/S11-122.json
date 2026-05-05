@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 122,
+  "constituencyName": "CHADAYAMANGALAM",
+  "wikipediaName": "Chadayamangalam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Chadayamangalam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Mullakkara Ratnakaran", "party": "CPI", "votes": 71231, "votePct": 55.90 },
+        { "name": "Shahida Kamal", "party": "INC", "votes": 47607, "votePct": 37.56 },
+        { "name": "T. C. Saju Kumar", "party": "BJP", "votes": 4160, "votePct": 3.26 },
+        { "name": "Jaleel Kadakkal", "party": "SDPI", "votes": 1800, "votePct": 1.41 },
+        { "name": "Shibu K. Chadayamangalam", "party": "Independent", "votes": 1078, "votePct": 0.85 }
+      ],
+      "margin": 23624,
+      "marginPct": 18.54,
+      "turnout": 127429,
+      "turnoutPct": 71.75,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Mullakkara Ratnakaran", "party": "CPI", "votes": 71262, "votePct": 49.10 },
+        { "name": "M. M. Hassan", "party": "INC", "votes": 49334, "votePct": 33.99 },
+        { "name": "K. Sivadasan", "party": "BJP", "votes": 19259, "votePct": 13.27 },
+        { "name": "Jaleel Kadakkal", "party": "SDPI", "votes": 1445, "votePct": 1.00 },
+        { "name": "Sajeed Khaleedu", "party": "WPOI", "votes": 1222, "votePct": 0.84 }
+      ],
+      "margin": 21928,
+      "marginPct": 15.11,
+      "turnout": 145141,
+      "turnoutPct": 73.78,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "J. Chinchu Rani", "party": "CPI", "votes": 67252, "votePct": 45.69 },
+        { "name": "M. M. Naseer", "party": "INC", "votes": 53574, "votePct": 36.40 },
+        { "name": "Vishnu Pattathanam", "party": "BJP", "votes": 22238, "votePct": 15.11 },
+        { "name": "Sharafath Mallam", "party": "SDPI", "votes": 1879, "votePct": 1.28 },
+        { "name": "Archana Prajith", "party": "WPOI", "votes": 605, "votePct": 0.41 }
+      ],
+      "margin": 13678,
+      "marginPct": 9.29,
+      "turnout": 147177,
+      "turnoutPct": 74.60,
+      "result": "CPI hold"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 15,
+  "constituencyName": "MATTANNUR",
+  "wikipediaName": "Mattanur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mattanur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "E. P. Jayarajan", "party": "CPI(M)", "votes": 75177, "votePct": 56.55 },
+        { "name": "Joseph Chaavara", "party": "SJ(D)", "votes": 44665, "votePct": 33.60 },
+        { "name": "Biju Elakkuzhi", "party": "BJP", "votes": 8707, "votePct": 6.55 },
+        { "name": "K. C. Muhammad Sabeer", "party": "SDPI", "votes": 2757, "votePct": 2.07 },
+        { "name": "Joseph", "party": "Independent", "votes": 858, "votePct": 0.65 }
+      ],
+      "margin": 30512,
+      "marginPct": 22.95,
+      "turnout": 132947,
+      "turnoutPct": 82.72,
+      "result": "CPI(M) win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "E. P. Jayarajan", "party": "CPI(M)", "votes": 84030, "votePct": 56.62 },
+        { "name": "K. P. Prashanth", "party": "JD(U)", "votes": 40649, "votePct": 27.34 },
+        { "name": "Biju Elakkuzhi", "party": "BJP", "votes": 18620, "votePct": 12.52 },
+        { "name": "Rafeekh Keecheri", "party": "SDPI", "votes": 3188, "votePct": 2.14 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1420, "votePct": 0.96 }
+      ],
+      "margin": 43381,
+      "marginPct": 29.18,
+      "turnout": 148677,
+      "turnoutPct": 83.57,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. K. Shailaja", "party": "CPI(M)", "votes": 96129, "votePct": 61.97 },
+        { "name": "Illikkal Augusthy", "party": "RSP", "votes": 35166, "votePct": 22.67 },
+        { "name": "Biju Elakkuzhi", "party": "BJP", "votes": 18223, "votePct": 11.75 },
+        { "name": "Rafeekh Keecheri", "party": "SDPI", "votes": 4201, "votePct": 2.71 },
+        { "name": "NOTA", "party": "NOTA", "votes": 796, "votePct": 0.51 }
+      ],
+      "margin": 60963,
+      "marginPct": 39.24,
+      "turnout": 156127,
+      "turnoutPct": 82.11,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

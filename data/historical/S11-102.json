@@ -1,0 +1,76 @@
+{
+  "constituencyNumber": 102,
+  "constituencyName": "AROOR",
+  "wikipediaName": "Aroor",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Aroor_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. M. Ariff", "party": "CPI(M)", "votes": 76675, "votePct": 52.28 },
+        { "name": "A. A. Shukoor", "party": "INC", "votes": 59823, "votePct": 40.79 },
+        { "name": "T. Sajeev Lal", "party": "BJP", "votes": 7486, "votePct": 5.10 },
+        { "name": "V. Lenin", "party": "BSP", "votes": 787, "votePct": 0.54 },
+        { "name": "Suresh Babu", "party": "Independent", "votes": 776, "votePct": 0.53 }
+      ],
+      "margin": 16852,
+      "marginPct": 11.49,
+      "turnout": 146676,
+      "turnoutPct": 84.23,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. M. Ariff", "party": "CPI(M)", "votes": 84720, "votePct": 52.34 },
+        { "name": "C. R. Jayaprakash", "party": "INC", "votes": 46201, "votePct": 28.54 },
+        { "name": "T. Aniyappan", "party": "BDJS", "votes": 27753, "votePct": 17.14 },
+        { "name": "Mohan Chacko", "party": "WPOI", "votes": 761, "votePct": 0.47 },
+        { "name": "NOTA", "party": "NOTA", "votes": 736, "votePct": 0.45 }
+      ],
+      "margin": 38519,
+      "marginPct": 23.80,
+      "turnout": 161875,
+      "turnoutPct": 85.82,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2019,
+      "type": "by-election",
+      "reason": "Election of sitting MLA A. M. Ariff as MP from Alappuzha Lok Sabha constituency",
+      "candidates": [
+        { "name": "Shanimol Usman", "party": "INC", "votes": 69356, "votePct": 44.88 },
+        { "name": "Manu C. Pulikkal", "party": "CPI(M)", "votes": 67277, "votePct": 43.54 },
+        { "name": "K. P. Prakash Babu", "party": "BJP", "votes": 16289, "votePct": 10.54 },
+        { "name": "NOTA", "party": "NOTA", "votes": 840, "votePct": 0.54 },
+        { "name": "Geetha Asokan", "party": "Independent", "votes": 352, "votePct": 0.23 }
+      ],
+      "margin": 2079,
+      "marginPct": 1.34,
+      "turnout": 154534,
+      "turnoutPct": 80.47,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Daleema", "party": "CPI(M)", "votes": 75617, "votePct": 45.98 },
+        { "name": "Shanimol Usman", "party": "INC", "votes": 68604, "votePct": 41.71 },
+        { "name": "T. Aniyappan", "party": "BDJS", "votes": 17479, "votePct": 10.63 },
+        { "name": "NOTA", "party": "NOTA", "votes": 846, "votePct": 0.51 },
+        { "name": "Rugma Prasad", "party": "BSP", "votes": 682, "votePct": 0.41 }
+      ],
+      "margin": 7013,
+      "marginPct": 4.26,
+      "turnout": 164491,
+      "turnoutPct": 82.24,
+      "result": "CPI(M) gain from INC"
+    }
+  ]
+}

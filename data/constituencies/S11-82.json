@@ -1,0 +1,61 @@
+{
+  "constituency": "82 - ERANAKULAM (Kerala)",
+  "constituencyNumber": 82,
+  "constituencyName": "ERANAKULAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "T.J VINOD",
+      "party": "Indian National Congress",
+      "votes": 61296,
+      "margin": 36163,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SABU GEORGE",
+      "party": "Independent",
+      "votes": 25133,
+      "margin": -36163,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P.R. SIVASANKAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 19154,
+      "margin": -42142,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOSES HENRY MOTHA",
+      "party": "Aam Aadmi Party",
+      "votes": 783,
+      "margin": -60513,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ASHOKAN",
+      "party": "Independent",
+      "votes": 287,
+      "margin": -61009,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1079,
+      "margin": -60217,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1182.htm"
+}

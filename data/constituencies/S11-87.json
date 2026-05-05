@@ -1,0 +1,77 @@
+{
+  "constituency": "87 - KOTHAMANGALAM (Kerala)",
+  "constituencyNumber": 87,
+  "constituencyName": "KOTHAMANGALAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "SHIBU THECKUMPURAM",
+      "party": "Kerala Congress",
+      "votes": 73479,
+      "margin": 16859,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ANTONY JOHN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 56620,
+      "margin": -16859,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AJI NARAYANAN",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 7046,
+      "margin": -66433,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ROY ARACKAL",
+      "party": "Social Democratic Party Of India",
+      "votes": 703,
+      "margin": -72776,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHIBU KALLEKKATTU",
+      "party": "Independent",
+      "votes": 297,
+      "margin": -73182,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHIBU CHALAKATTU",
+      "party": "Independent",
+      "votes": 192,
+      "margin": -73287,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "FINTO XAVIER",
+      "party": "Rashtravadi Janata Party",
+      "votes": 137,
+      "margin": -73342,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 617,
+      "margin": -72862,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1187.htm"
+}

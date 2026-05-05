@@ -1,0 +1,53 @@
+{
+  "constituencyNumber": 113,
+  "constituencyName": "ARANMULA",
+  "wikipediaName": "Aranmula",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Aranmula_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 64845, "votePct": 47.69 },
+        { "name": "K. C. Rajagopalan", "party": "CPI(M)", "votes": 58334, "votePct": 42.90 },
+        { "name": "K. Haridas", "party": "BJP", "votes": 10227, "votePct": 7.52 }
+      ],
+      "margin": 6511,
+      "marginPct": 4.79,
+      "turnout": 135975,
+      "turnoutPct": 65.62,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Veena George", "party": "CPI(M)", "votes": 64523, "votePct": 39.97 },
+        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 56877, "votePct": 35.23 },
+        { "name": "M. T. Ramesh", "party": "BJP", "votes": 37906, "votePct": 23.48 }
+      ],
+      "margin": 7646,
+      "marginPct": 4.74,
+      "turnout": 161432,
+      "turnoutPct": 70.82,
+      "result": "CPI(M) gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Veena George", "party": "CPI(M)", "votes": 74950, "votePct": 46.3 },
+        { "name": "K. Sivadasan Nair", "party": "INC", "votes": 55947, "votePct": 34.56 },
+        { "name": "Biju Mathew", "party": "BJP", "votes": 29099, "votePct": 17.98 }
+      ],
+      "margin": 19003,
+      "marginPct": 11.74,
+      "turnout": 161866,
+      "turnoutPct": 68.19,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "constituency": "8 - TALIPARAMBA (Kerala)",
+  "constituencyNumber": 8,
+  "constituencyName": "TALIPARAMBA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "T K GOVINDAN MASTER S/O KUNHIKKANNAN NAMBIAR",
+      "party": "Independent",
+      "votes": 91339,
+      "margin": 12551,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P K SHYAMALA TEACHER",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 78788,
+      "margin": -12551,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "N HARIDAS",
+      "party": "Bharatiya Janata Party",
+      "votes": 16089,
+      "margin": -75250,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KOYYAM JANARDHANAN",
+      "party": "Independent",
+      "votes": 1202,
+      "margin": -90137,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANAPPALLI GOPALAN",
+      "party": "Aam Aadmi Party",
+      "votes": 1083,
+      "margin": -90256,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T K GOVINDAN S/O KUNHIRAMAN",
+      "party": "Independent",
+      "votes": 735,
+      "margin": -90604,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL SALAM K P",
+      "party": "Independent",
+      "votes": 366,
+      "margin": -90973,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHYAMALA P D/O GOVINDAN P",
+      "party": "Independent",
+      "votes": 294,
+      "margin": -91045,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KHAMARUDDEEN C V",
+      "party": "Independent",
+      "votes": 283,
+      "margin": -91056,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "C BALAKRISHNAN YADAV",
+      "party": "Independent",
+      "votes": 198,
+      "margin": -91141,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1798,
+      "margin": -89541,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S118.htm"
+}

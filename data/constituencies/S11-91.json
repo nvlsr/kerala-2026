@@ -1,0 +1,53 @@
+{
+  "constituency": "91 - IDUKKI (Kerala)",
+  "constituencyNumber": 91,
+  "constituencyName": "IDUKKI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ROY K PAULOSE",
+      "party": "Indian National Congress",
+      "votes": 70562,
+      "margin": 23822,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ROSHY AUGUSTINE",
+      "party": "Kerala Congress (M)",
+      "votes": 46740,
+      "margin": -23822,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. PRATHEESH PRABHA",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 9410,
+      "margin": -61152,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHIJO ANTONY",
+      "party": "Bahujan Samaj Party",
+      "votes": 977,
+      "margin": -69585,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 758,
+      "margin": -69804,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1191.htm"
+}

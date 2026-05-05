@@ -1,0 +1,53 @@
+{
+  "constituency": "57 - TARUR (Kerala)",
+  "constituencyNumber": 57,
+  "constituencyName": "TARUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "SUMOD",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 60557,
+      "margin": 11910,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SUBRAMANIAN K C",
+      "party": "Indian National Congress",
+      "votes": 48647,
+      "margin": -11910,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SURESHBABU M",
+      "party": "Bharatiya Janata Party",
+      "votes": 21162,
+      "margin": -39395,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NARAYANANKUTTY  K T",
+      "party": "Bahujan Samaj Party",
+      "votes": 866,
+      "margin": -59691,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1014,
+      "margin": -59543,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1157.htm"
+}

@@ -1,0 +1,69 @@
+{
+  "constituency": "97 - KOTTAYAM (Kerala)",
+  "constituencyNumber": 97,
+  "constituencyName": "KOTTAYAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "THIRUVANCHOOR RADHAKRISHNAN",
+      "party": "Indian National Congress",
+      "votes": 68893,
+      "margin": 35986,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV.K. ANILKUMAR",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 32907,
+      "margin": -35986,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P ANILKUMAR",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 9726,
+      "margin": -59167,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR .CELINE PHILIP",
+      "party": "Aam Aadmi Party",
+      "votes": 1202,
+      "margin": -67691,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RALESH CHANDRAN",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 171,
+      "margin": -68722,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAIJU KURIAN",
+      "party": "Independent",
+      "votes": 137,
+      "margin": -68756,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 711,
+      "margin": -68182,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1197.htm"
+}

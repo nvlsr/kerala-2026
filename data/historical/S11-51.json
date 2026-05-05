@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 51,
+  "constituencyName": "SHORNUR",
+  "wikipediaName": "Shornur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Shornur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. S. Saleekha", "party": "CPI(M)", "votes": 59616, "votePct": 49.57 },
+        { "name": "Santha Jayaram", "party": "INC", "votes": 46123, "votePct": 38.35 },
+        { "name": "V. B. Muralidharan", "party": "BJP", "votes": 10562, "votePct": 8.78 },
+        { "name": "Khalid A.", "party": "SDPI", "votes": 3065, "votePct": 2.55 },
+        { "name": "M. C. Velayudhan", "party": "BSP", "votes": 894, "votePct": 0.74 }
+      ],
+      "margin": 13493,
+      "marginPct": 11.22,
+      "turnout": 120260,
+      "turnoutPct": 73.38,
+      "result": "CPI(M) win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. K. Sasi", "party": "CPI(M)", "votes": 66165, "votePct": 46.71 },
+        { "name": "C. Sangeetha", "party": "INC", "votes": 41618, "votePct": 29.38 },
+        { "name": "V. P. Chandran", "party": "BDJS", "votes": 28836, "votePct": 20.36 },
+        { "name": "M. Saidalavi", "party": "SDPI", "votes": 1246, "votePct": 0.88 },
+        { "name": "Harish Muhammed", "party": "Independent", "votes": 882, "votePct": 0.62 }
+      ],
+      "margin": 24547,
+      "marginPct": 17.33,
+      "turnout": 141662,
+      "turnoutPct": 76.63,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Mammikutty", "party": "CPI(M)", "votes": 74400, "votePct": 48.98 },
+        { "name": "T. H. Firoz Babu", "party": "INC", "votes": 37726, "votePct": 24.83 },
+        { "name": "Sandeep Varier", "party": "BJP", "votes": 36973, "votePct": 24.34 },
+        { "name": "Muhammad Musthafa", "party": "SDPI", "votes": 1251, "votePct": 0.82 },
+        { "name": "T. C. Ayyappankutty", "party": "BSP", "votes": 883, "votePct": 0.58 }
+      ],
+      "margin": 36674,
+      "marginPct": 24.15,
+      "turnout": 151911,
+      "turnoutPct": 78.31,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

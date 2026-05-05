@@ -1,0 +1,69 @@
+{
+  "constituency": "123 - KUNDARA (Kerala)",
+  "constituencyNumber": 123,
+  "constituencyName": "KUNDARA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P. C. VISHNUNADH",
+      "party": "Indian National Congress",
+      "votes": 87862,
+      "margin": 32564,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "S. L. SAJIKUMAR",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 55298,
+      "margin": -32564,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR. ROBIN RADHAKRISHNAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 18996,
+      "margin": -68866,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RIYAS KANNANALLOOR",
+      "party": "Independent",
+      "votes": 722,
+      "margin": -87140,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "LATHIKA BALAKRISHNAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 572,
+      "margin": -87290,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAHUL R.",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 269,
+      "margin": -87593,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 695,
+      "margin": -87167,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11123.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 121,
+  "constituencyName": "PUNALUR",
+  "wikipediaName": "Punalur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Punalur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Raju", "party": "CPI", "votes": 72648, "votePct": 54.52 },
+        { "name": "Johnson Abraham", "party": "INC", "votes": 54643, "votePct": 41.01 },
+        { "name": "B. Radhamani", "party": "BJP", "votes": 4155, "votePct": 3.12 },
+        { "name": "S. Jayakumar", "party": "Independent", "votes": 699, "votePct": 0.52 },
+        { "name": "Kuzhichayil Sunil", "party": "BSP", "votes": 606, "votePct": 0.45 }
+      ],
+      "margin": 18005,
+      "marginPct": 13.51,
+      "turnout": 133245,
+      "turnoutPct": 70.13,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Raju", "party": "CPI", "votes": 82136, "votePct": 56.85 },
+        { "name": "A. Younus Kunju", "party": "IUML", "votes": 48554, "votePct": 33.61 },
+        { "name": "Sisil Fernandes", "party": "KEC", "votes": 10558, "votePct": 7.31 },
+        { "name": "K. Sasankan", "party": "SUCI(C)", "votes": 1117, "votePct": 0.77 },
+        { "name": "NOTA", "party": "NOTA", "votes": 888, "votePct": 0.61 }
+      ],
+      "margin": 33582,
+      "marginPct": 23.24,
+      "turnout": 144471,
+      "turnoutPct": 70.60,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. S. Supal", "party": "CPI", "votes": 80428, "votePct": 54.99 },
+        { "name": "Abdurahiman Randathani", "party": "IUML", "votes": 43371, "votePct": 29.66 },
+        { "name": "Ayoor Murali", "party": "BJP", "votes": 20069, "votePct": 13.72 },
+        { "name": "NOTA", "party": "NOTA", "votes": 688, "votePct": 0.47 },
+        { "name": "Shibu M. Scaria", "party": "Independent", "votes": 617, "votePct": 0.42 }
+      ],
+      "margin": 37057,
+      "marginPct": 25.33,
+      "turnout": 146251,
+      "turnoutPct": 71.05,
+      "result": "CPI hold"
+    }
+  ]
+}

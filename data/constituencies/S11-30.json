@@ -1,0 +1,93 @@
+{
+  "constituency": "30 - KUNNAMANGALAM (Kerala)",
+  "constituencyNumber": 30,
+  "constituencyName": "KUNNAMANGALAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "M.A. RAZAK MASTER",
+      "party": "Indian Union Muslim League",
+      "votes": 91598,
+      "margin": 13313,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. P T A RAHIM",
+      "party": "Independent",
+      "votes": 78285,
+      "margin": -13313,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV.V. K. SAJEEVAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 34435,
+      "margin": -57163,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAHIM S/O MUHAMMED KOYA",
+      "party": "Independent",
+      "votes": 2110,
+      "margin": -89488,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDU RASAK S/O MUHAMMED",
+      "party": "Independent",
+      "votes": 567,
+      "margin": -91031,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANTHOSH P. T",
+      "party": "All India Hindustan Congress Party",
+      "votes": 276,
+      "margin": -91322,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL RAZAK S/O KOYAKUTTY",
+      "party": "Independent",
+      "votes": 227,
+      "margin": -91371,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MAVOOR MUHAMMED ALI",
+      "party": "Independent",
+      "votes": 205,
+      "margin": -91393,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAHEEM P S/O MOIDHEEN",
+      "party": "Independent",
+      "votes": 202,
+      "margin": -91396,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1044,
+      "margin": -90554,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1130.htm"
+}

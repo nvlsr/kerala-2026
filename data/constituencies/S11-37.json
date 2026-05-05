@@ -1,0 +1,61 @@
+{
+  "constituency": "37 - MANJERI (Kerala)",
+  "constituencyNumber": 37,
+  "constituencyName": "MANJERI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. M. RAHMATHULLA",
+      "party": "Indian Union Muslim League",
+      "votes": 113622,
+      "margin": 57887,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "V.M. MUSTHAFA",
+      "party": "Independent",
+      "votes": 55735,
+      "margin": -57887,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PADMASREE AJITH",
+      "party": "Bharatiya Janata Party",
+      "votes": 13423,
+      "margin": -100199,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. P.P.A. SAGEER",
+      "party": "Aam Aadmi Party",
+      "votes": 2222,
+      "margin": -111400,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BIPIN BENSON JOSEPH",
+      "party": "Independent",
+      "votes": 1698,
+      "margin": -111924,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 3319,
+      "margin": -110303,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1137.htm"
+}

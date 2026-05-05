@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 25,
+  "constituencyName": "BALUSSERI",
+  "wikipediaName": "Balussery",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Balussery_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Purushan Kadalundi", "party": "CPI(M)", "votes": 74259, "votePct": 49.18 },
+        { "name": "A. Balaram", "party": "INC", "votes": 65377, "votePct": 43.29 },
+        { "name": "T. K. Raman", "party": "BJP", "votes": 9304, "votePct": 6.16 },
+        { "name": "Bhadran M. P.", "party": "SDPI", "votes": 1404, "votePct": 0.93 },
+        { "name": "K. K. Satheesh", "party": "BSP", "votes": 660, "votePct": 0.14 }
+      ],
+      "margin": 8882,
+      "marginPct": 5.89,
+      "turnout": 151004,
+      "turnoutPct": 81.58,
+      "result": "CPI(M) gain from NCP"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Purushan Kadalundy", "party": "CPI(M)", "votes": 82914, "votePct": 47.50 },
+        { "name": "U. C. Raman Padanilam", "party": "IUML", "votes": 67450, "votePct": 38.64 },
+        { "name": "P. K. Supran", "party": "BJP", "votes": 19324, "votePct": 11.07 },
+        { "name": "Balan Nadavannur", "party": "SDPI", "votes": 1764, "votePct": 1.01 },
+        { "name": "Saseendran Bappankad", "party": "WPOI", "votes": 959, "votePct": 0.59 }
+      ],
+      "margin": 15464,
+      "marginPct": 8.86,
+      "turnout": 174568,
+      "turnoutPct": 83.26,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. M. Sachin Dev", "party": "CPI(M)", "votes": 91839, "votePct": 50.39 },
+        { "name": "Dharmajan Bolgatty", "party": "INC", "votes": 71467, "votePct": 38.54 },
+        { "name": "Libin Balussery", "party": "BJP", "votes": 16490, "votePct": 9.04 },
+        { "name": "Chandrika", "party": "WPOI", "votes": 889, "votePct": 0.48 },
+        { "name": "Jobish Balussery", "party": "BSP", "votes": 476, "votePct": 0.26 }
+      ],
+      "margin": 20372,
+      "marginPct": null,
+      "turnout": 182253,
+      "turnoutPct": 81.27,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

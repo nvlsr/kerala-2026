@@ -1,0 +1,61 @@
+{
+  "constituency": "84 - KUNNATHUNAD (Kerala)",
+  "constituencyNumber": 84,
+  "constituencyName": "KUNNATHUNAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "V. P. SAJEENDRAN",
+      "party": "Indian National Congress",
+      "votes": 70292,
+      "margin": 21283,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. P. V. SREENIJIN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 49009,
+      "margin": -21283,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BABU DIVAKARAN",
+      "party": "Twenty 20 Party",
+      "votes": 40221,
+      "margin": -30071,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MANIKUTTAN A. T.",
+      "party": "Bahujan Samaj Party",
+      "votes": 380,
+      "margin": -69912,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VAZHAKULAM BHASI",
+      "party": "Independent",
+      "votes": 212,
+      "margin": -70080,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 952,
+      "margin": -69340,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1184.htm"
+}

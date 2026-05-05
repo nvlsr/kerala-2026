@@ -1,0 +1,61 @@
+{
+  "constituency": "65 - WADAKKANCHERY (Kerala)",
+  "constituencyNumber": 65,
+  "constituencyName": "WADAKKANCHERY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "XAVIER CHITTILAPPILLY",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 70725,
+      "margin": 5690,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P.N. VAISAKH",
+      "party": "Indian National Congress",
+      "votes": 65035,
+      "margin": -5690,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. T.S ULLAS BABU",
+      "party": "Bharatiya Janata Party",
+      "votes": 25844,
+      "margin": -44881,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JITHIN SADANANDHAN",
+      "party": "Aam Aadmi Party",
+      "votes": 478,
+      "margin": -70247,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUBRAMANIAN PENAKAM",
+      "party": "Bahujan Samaj Party",
+      "votes": 368,
+      "margin": -70357,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1184,
+      "margin": -69541,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1165.htm"
+}

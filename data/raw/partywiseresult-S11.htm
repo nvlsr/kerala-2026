@@ -1,0 +1,692 @@
+<html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="refresh" content="300">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
+    <iframe src="javascript:void(0)" title="" role="presentation" style="width: 0px; height: 0px; border: 0px; display: none;"></iframe><script src="js/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <style>
+        #elector_geotagging {
+            background-color: #fff;
+        }
+.leaflet-bottom { display: none; }
+        /*.leaflet-control {
+            display: none;
+        }*/
+    </style>
+    <title>Election</title>
+
+                                <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="C8JDA-BHWH8-9MQ5M-HKZCP-GH7SB",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"C8JDA-BHWH8-9MQ5M-HKZCP-GH7SB",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="irwmkdqx3reqy2pyygvq-f-5c700e121-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"41","ak.cp":"1109753","ak.ai":parseInt("537121",10),"ak.ol":"0","ak.cr":5,"ak.ipv":4,"ak.proto":"h2","ak.rid":"3b80b475","ak.r":47852,"ak.a2":e,"ak.m":"b","ak.n":"ff","ak.cport":56003,"ak.gh":"23.62.109.236","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1777910187","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==bDHmdVjbvLQ6swqIXebS1GmAWM51SWI5drDdQE2ldByo3+xH3O/eFAkE7vXpktuPKyx3ESE4f363nP5BnkmmkG5RrBczfjxPe+Xx7mNMs4Z6pr7WA9m7NwjAP9c4SpMMwES1jRN0fO2vkP6MR06JTTGyIRXs9jXl579R1cyCJ/OAhqxV0svzcfVlOCaTYVz80vzxs5feidLF30+w18vYNQw480BL2n3l2RdNezvPHXv7lSpf5A6kpPKdtWZTwr3/8+cBoWy1ZImjGxT5+4CBLNi5Euik0yX+U1y8C6Pt3VSUvh6R1dVSyDEoh7CaTCUc9FheUO4U0F/LweVaI00MDJVoAKmiGXzPl3W0+vEHBeSUXJ0tZZ6D4KOg/7qTw4Zx1GVKGSgK6aKfdFWW6hCxBtGTLtsIIoe6UnTpxTrAtT4=","ak.pv":"114","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><style id="claude-agent-animation-styles">
+      @keyframes claude-pulse {
+        0% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+        50% {
+          box-shadow: 
+            inset 0 0 15px rgba(217, 119, 87, 0.7),
+            inset 0 0 25px rgba(217, 119, 87, 0.5),
+            inset 0 0 35px rgba(217, 119, 87, 0.2);
+        }
+        100% {
+          box-shadow: 
+            inset 0 0 10px rgba(217, 119, 87, 0.5),
+            inset 0 0 20px rgba(217, 119, 87, 0.3),
+            inset 0 0 30px rgba(217, 119, 87, 0.1);
+        }
+      }
+    </style></head>
+
+<body>
+
+
+    <header class="header">
+        <div class="logo-search">
+            <div class="mob-btn"><img src="img/icons/menu.png" alt=""></div>
+            <div class="logo"><a href="index.htm"><img src="img/eci-ecinet-logo.png" alt=""></a></div>
+            <div class="lft-menu">
+                <div class="menu-close">X</div>
+                <div class="menu-logo"><a href="index.htm"><img src="img/eci-ecinet-logo.png" alt=""></a></div>
+                <ul>
+                    <li><a href="index.htm"><span><img src="img/icons/home.png" alt=""></span> Home</a></li>
+                    <li><a href="./hi/index.htm"><span><img src="img/icons/language.png" alt=""></span> Hindi</a></li>
+                    <li><a href="#" onclick="window.location.href=window.location.href"><span><img src="img/icons/refresh.png" alt=""></span> Refresh</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="dis-info">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center justify-content-center">
+                <h6 class="mb-0 mx-2"><img src="img/icons/warning.svg" alt=""><strong>Disclaimer:</strong></h6>
+                <p class="mb-0"> ECI is displaying the information as being filled in the system by the Returning Officers from their respective Counting Centres.The final data for each AC/PC will be shared in Form-20.</p>
+            </div>
+        </div>
+    </div><!-- End of dis-info Div -->
+    <main class="inner-content">
+        <div class="page-title">
+            <h1>General Election to Assembly Constituencies: Trends &amp; Results May-2026</h1>
+            <h2><span> <strong> Kerala</strong>   (Total AC : 140)</span></h2>
+        </div>
+        <div class="container-fluid">
+    <div class="row justify-content-center">
+                  
+                  
+                    <div class="col">
+                        <div class="grid-box gen inc-pty-bg" style="background-color: #19AAED">
+                            <h4>INC</h4>
+                            <h2>63</h2>
+                        </div><!-- End of grid-box div -->
+                    </div>
+               
+         
+              
+                  
+                    <div class="col">
+                        <div class="grid-box gen inc-pty-bg" style="background-color: #FF1D15">
+                            <h4>CPI(M)</h4>
+                            <h2>26</h2>
+                        </div><!-- End of grid-box div -->
+                    </div>
+               
+         
+              
+                  
+                    <div class="col">
+                        <div class="grid-box gen inc-pty-bg" style="background-color: #006600">
+                            <h4>IUML</h4>
+                            <h2>22</h2>
+                        </div><!-- End of grid-box div -->
+                    </div>
+               
+         
+              
+                  
+                    <div class="col">
+                        <div class="grid-box gen inc-pty-bg" style="background-color: #e70d21">
+                            <h4>CPI</h4>
+                            <h2>8</h2>
+                        </div><!-- End of grid-box div -->
+                    </div>
+               
+         
+              
+                  
+                    <div class="col">
+                        <div class="grid-box gen inc-pty-bg" style="background-color: #fa8def">
+                            <h4>KEC</h4>
+                            <h2>7</h2>
+                        </div><!-- End of grid-box div -->
+                    </div>
+               
+         
+              
+                  
+         
+              
+                  
+                    <div class="col">
+                        <div class="grid-box gen inc-pty-bg" style="background-color: #4C2A87">
+                            <h4>RSP</h4>
+                            <h2>3</h2>
+                        </div><!-- End of grid-box div -->
+                    </div>
+               
+         
+              
+              
+              
+              
+              
+       
+              
+            
+            
+            
+            
+            
+            
+                   
+              
+        
+        
+                   
+              
+        
+        
+                   
+              
+        
+        
+                   
+              
+        
+        
+                   
+              
+        
+        
+    
+    
+                  
+         
+      
+                  
+         
+      
+                  
+         
+      
+                  
+         
+      
+                  
+         
+      
+                  
+                    <div class="col">
+                        <div class="grid-box gen inc-pty-bg" style="background-color: #999966;padding: 1.65rem 0.5rem">
+                            <h4 style="text-transform: capitalize !important; font-size: 1.25rem;">Others &amp; Ind</h4>
+                            <h2>11</h2>
+                        </div><!-- End of grid-box div -->
+                    </div>
+               
+         
+      
+                  
+         
+      
+                  
+         
+      
+                  
+         
+      
+                  
+         
+      
+                  
+         
+      
+                  
+         
+    
+
+</div>
+<section class="my-3">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="card custom-card shadow-sm card-hght">
+                    <div class="card-header">Party Wise Results</div>
+                    <div class="card-body parent-wrap">
+                        <div class="scroll-child">
+                        <div class="rslt-table teble-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align: left;">Party</th>
+                                        <th style="text-align:right">Won</th>
+                                        <th style="text-align:right">Leading</th>
+                                        <th style="text-align:right">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                                                                                                <tr class="tr"> 
+                                        <td style="text-align:left">Indian National Congress - INC</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-742S11.htm">63</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">63</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Communist Party of India (Marxist) - CPI(M)</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-547S11.htm">26</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">26</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Indian Union Muslim League - IUML</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-772S11.htm">22</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">22</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Communist Party of India - CPI</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-544S11.htm">8</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">8</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Kerala Congress - KEC</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-911S11.htm">7</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">7</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Revolutionary Socialist Party - RSP</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-1534S11.htm">3</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">3</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Bharatiya Janata Party - BJP</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-369S11.htm">3</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">3</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Rashtriya Janata Dal - RJD</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-1420S11.htm">1</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">1</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Revolutionary Marxist Party of India - RMPOI</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-2162S11.htm">1</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">1</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Kerala Congress (Jacob) - KEC(J)</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-913S11.htm">1</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">1</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Communist Marxist Party Kerala State Committee - CMPKSC</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-540S11.htm">1</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">1</td>
+                                    </tr>
+                                                                                                            <tr class="tr"> 
+                                        <td style="text-align:left">Independent - IND</td>
+                                        <td style="text-align:right">
+                                                                                        <a href="partywisewinresult-743S11.htm">4</a>
+                                                                                    </td>
+                                        <td style="text-align:right">
+                                                                                        0
+                                                                                    </td>
+                                        <td style="text-align:right">4</td>
+                                    </tr>
+                                                                    </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Total</th>
+                                        <th style="text-align:right">140</th>
+                                        <th style="text-align:right">0</th>
+                                        <th style="text-align:right">140</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div><!-- End rslt-table Div -->
+                        </div><!-- End of scroll-child Div -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="card custom-card shadow-sm"> 
+                    <div class="card-header">Constituency Wise Results <select class="custom-select" id="ctl00_ContentPlaceHolder1_Result1_ddlState" onchange="return GetResult(this)" name="state" style="float: right;"> <option value=""> Select Constituency </option><option value="S11115">ADOOR  - 115</option><option value="S11104">ALAPPUZHA - 104</option><option value="S1160">ALATHUR - 60</option><option value="S1176">ALUVA - 76</option><option value="S11105">AMBALAPPUZHA - 105</option><option value="S1175">ANGAMALY - 75</option><option value="S11113">ARANMULA - 113</option><option value="S11102">AROOR - 102</option><option value="S11136">ARUVIKKARA - 136</option><option value="S11128">ATTINGAL  - 128</option><option value="S1110">AZHIKODE - 10</option><option value="S1125">BALUSSERI - 25</option><option value="S1129">BEYPORE - 29</option><option value="S11122">CHADAYAMANGALAM - 122</option><option value="S1172">CHALAKUDY - 72</option><option value="S1199">CHANGANASSERY - 99</option><option value="S11126">CHATHANNOOR - 126</option><option value="S11117">CHAVARA - 117</option><option value="S1161">CHELAKKARA - 61</option><option value="S11110">CHENGANNUR - 110</option><option value="S11103">CHERTHALA - 103</option><option value="S11129">CHIRAYINKEEZHU - 129</option><option value="S1158">CHITTUR - 58</option><option value="S1188">DEVIKULAM  - 88</option><option value="S1112">DHARMADAM - 12</option><option value="S1126">ELATHUR - 26</option><option value="S1182">ERANAKULAM - 82</option><option value="S11125">ERAVIPURAM - 125</option><option value="S1134">ERNAD - 34</option><option value="S1196">ETTUMANOOR - 96</option><option value="S1163">GURUVAYOOR - 63</option><option value="S11107">HARIPAD - 107</option><option value="S1191">IDUKKI - 91</option><option value="S119">IRIKKUR - 9</option><option value="S1170">IRINJALAKUDA - 70</option><option value="S1194">KADUTHURUTHY - 94</option><option value="S1169">KAIPAMANGALAM - 69</option><option value="S1177">KALAMASSERY - 77</option><option value="S117">KALLIASSERI - 7</option><option value="S1119">KALPETTA - 19</option><option value="S114">KANHANGAD - 4</option><option value="S11100">KANJIRAPPALLY - 100</option><option value="S1111">KANNUR - 11</option><option value="S11116">KARUNAGAPPALLY - 116</option><option value="S112">KASARAGOD - 2</option><option value="S11138">KATTAKKADA - 138</option><option value="S11108">KAYAMKULAM - 108</option><option value="S11132">KAZHAKOOTTAM - 132</option><option value="S1180">KOCHI - 80</option><option value="S1173">KODUNGALLUR - 73</option><option value="S1131">KODUVALLY - 31</option><option value="S11124">KOLLAM - 124</option><option value="S1133">KONDOTTY - 33</option><option value="S1153">KONGAD - 53</option><option value="S11114">KONNI - 114</option><option value="S1187">KOTHAMANGALAM - 87</option><option value="S1146">KOTTAKKAL - 46</option><option value="S11119">KOTTARAKKARA - 119</option><option value="S1197">KOTTAYAM - 97</option><option value="S11139">KOVALAM - 139</option><option value="S1127">KOZHIKODE NORTH - 27</option><option value="S1128">KOZHIKODE SOUTH - 28</option><option value="S11123">KUNDARA - 123</option><option value="S1130">KUNNAMANGALAM - 30</option><option value="S1162">KUNNAMKULAM - 62</option><option value="S1184">KUNNATHUNAD  - 84</option><option value="S11118">KUNNATHUR  - 118</option><option value="S1114">KUTHUPARAMBA - 14</option><option value="S11106">KUTTANAD - 106</option><option value="S1121">KUTTIADI - 21</option><option value="S1155">MALAMPUZHA - 55</option><option value="S1140">MALAPPURAM - 40</option><option value="S1164">MANALUR - 64</option><option value="S1117">MANANTHAVADY - 17</option><option value="S1137">MANJERI - 37</option><option value="S111">MANJESHWAR - 1</option><option value="S1139">MANKADA - 39</option><option value="S1154">MANNARKKAD - 54</option><option value="S1115">MATTANNUR - 15</option><option value="S11109">MAVELIKKARA  - 109</option><option value="S1186">MUVATTUPUZHA - 86</option><option value="S1122">NADAPURAM - 22</option><option value="S1168">NATTIKA - 68</option><option value="S11130">NEDUMANGAD - 130</option><option value="S1159">NEMMARA - 59</option><option value="S11135">NEMOM - 135</option><option value="S11140">NEYYATTINKARA - 140</option><option value="S1135">NILAMBUR - 35</option><option value="S1166">OLLUR - 66</option><option value="S1152">OTTAPPALAM - 52</option><option value="S1193">PALA - 93</option><option value="S1156">PALAKKAD - 56</option><option value="S11137">PARASSALA - 137</option><option value="S1178">PARAVUR - 78</option><option value="S11120">PATHANAPURAM - 120</option><option value="S1150">PATTAMBI - 50</option><option value="S116">PAYYANNUR - 6</option><option value="S1192">PEERUMADE - 92</option><option value="S1124">PERAMBRA - 24</option><option value="S1116">PERAVOOR - 16</option><option value="S1138">PERINTHALMANNA - 38</option><option value="S1174">PERUMBAVOOR - 74</option><option value="S1185">PIRAVOM - 85</option><option value="S1148">PONNANI - 48</option><option value="S11101">POONJAR - 101</option><option value="S1171">PUDUKKAD - 71</option><option value="S11121">PUNALUR - 121</option><option value="S1198">PUTHUPPALLY - 98</option><option value="S1123">QUILANDY - 23</option><option value="S11112">RANNI - 112</option><option value="S1151">SHORNUR - 51</option><option value="S1118">SULTHANBATHERY - 18</option><option value="S118">TALIPARAMBA - 8</option><option value="S1144">TANUR - 44</option><option value="S1157">TARUR - 57</option><option value="S1113">THALASSERY - 13</option><option value="S1147">THAVANUR - 47</option><option value="S11111">THIRUVALLA - 111</option><option value="S1132">THIRUVAMBADI - 32</option><option value="S11134">THIRUVANANTHAPURAM - 134</option><option value="S1190">THODUPUZHA - 90</option><option value="S1183">THRIKKAKARA - 83</option><option value="S1181">THRIPUNITHURA - 81</option><option value="S1167">THRISSUR - 67</option><option value="S1149">THRITHALA - 49</option><option value="S1145">TIRUR - 45</option><option value="S1143">TIRURANGADI - 43</option><option value="S115">TRIKARIPUR - 5</option><option value="S113">UDMA - 3</option><option value="S1189">UDUMBANCHOLA - 89</option><option value="S1120">VADAKARA - 20</option><option value="S1195">VAIKOM - 95</option><option value="S1142">VALLIKUNNU - 42</option><option value="S11131">VAMANAPURAM - 131</option><option value="S11127">VARKALA - 127</option><option value="S11133">VATTIYOORKAVU - 133</option><option value="S1141">VENGARA - 41</option><option value="S1179">VYPEN - 79</option><option value="S1165">WADAKKANCHERY - 65</option><option value="S1136">WANDOOR - 36</option></select></div>
+                    <div class="card-body">
+                        <div class="map leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" id="elector_geotagging" style="width: 100%; height: 586px; position: relative;" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated"></div><div class="leaflet-pane leaflet-pane_All_AC-pane" style="z-index: 400; mix-blend-mode: normal;"><svg pointer-events="none" class="leaflet-zoom-animated" width="684" height="703" viewBox="-57 -59 684 703" style="transform: translate3d(-57px, -59px, 0px);"><g><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M279 363L279 363zM279 360L278 361L279 360zM279 360L279 362L279 360zM281 359L281 361L278 360L279 365L278 360L281 357L281 359z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M277 362L278 365L277 362zM271 346L276 357L275 358L277 366L275 366L275 362L270 349L271 346zM278 362L278 362zM277 365L277 365zM277 357L279 359L278 358L280 358L278 360L277 357z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M190 179L190 181L190 179zM191 176L191 176zM191 176L190 177L191 176zM198 164L200 164L200 166L198 166L195 169L192 168L192 173L190 175L191 176L188 175L191 182L184 175L184 168L188 168L193 164L198 164zM191 181L191 181zM193 173L196 176L194 180L198 179L198 181L193 183L192 180L192 182L190 178L188 178L188 176L192 178L193 177L191 175L193 173zM191 181L191 181z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M241 246L241 248L240 247L239 250L235 252L234 249L236 249L237 246L241 246z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#ff944d" fill-opacity="1" fill-rule="evenodd" d="M345 506L346 507L342 507L342 509L344 509L343 511L343 509L339 505L345 505z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#7817a1" fill-opacity="1" fill-rule="evenodd" d="M337 503L342 500L344 502L345 501L345 505L339 505L337 503z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M339 418L342 417L339 416L341 414L346 416L346 420L343 421L343 425L340 426L336 424L336 428L331 427L330 429L327 426L321 426L319 422L315 420L317 418L316 415L320 413L322 413L323 416L332 414L336 417L339 417z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#e70d21" fill-opacity="1" fill-rule="evenodd" d="M270 280L273 281L274 279L276 282L278 282L277 285L279 287L276 293L272 291L271 292L271 290L267 289L267 287L263 284L270 279z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M288 279L290 280L290 284L285 291L287 295L277 295L276 292L278 292L277 290L279 288L277 284L278 280L284 280L287 278L288 279z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M284 273L296 276L298 280L302 282L298 282L296 284L295 291L298 292L299 294L291 295L285 291L289 287L290 281L288 278L285 280L284 279L284 273z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M302 269L304 269L301 270L306 273L302 275L303 278L306 279L306 283L303 282L303 288L307 288L308 291L303 291L299 293L296 292L295 289L296 284L298 282L302 282L298 280L297 277L299 275L299 273L297 273L302 269z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M315 301L317 301L317 303L319 303L322 306L328 305L330 310L330 319L328 325L331 330L329 333L323 333L323 331L319 329L311 329L307 324L308 318L306 318L303 314L304 311L309 308L311 301L313 299L315 300z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M332 288L336 290L335 298L333 300L334 305L322 306L313 299L313 297L318 298L319 295L323 297L325 295L326 296L325 295L328 294L328 292L330 291L328 291L331 288z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M304 291L306 293L304 295L306 299L301 306L303 306L298 311L296 311L297 312L294 313L291 310L295 302L294 300L299 293L304 291z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M309 289L309 291L312 292L314 289L316 291L315 296L317 296L317 298L311 298L309 295L309 297L304 296L308 288L309 289z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M264 285L266 285L268 290L270 290L273 293L269 299L266 297L261 297L258 294L257 287L264 285z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M314 278L321 282L322 281L329 283L332 286L328 291L330 291L324 297L320 295L319 298L317 298L317 296L315 296L316 291L314 289L311 292L309 288L303 288L303 282L306 283L306 279L312 278z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M309 295L310 298L314 298L311 301L311 305L309 305L310 308L305 310L303 314L306 318L308 318L308 322L306 324L299 320L293 314L303 306L301 306L306 299L305 298L308 297L309 295z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M320 251L321 252L317 256L320 259L322 259L322 265L325 268L319 268L314 278L304 279L302 275L306 273L301 270L304 269L297 272L297 274L299 274L299 276L297 277L292 276L292 274L287 274L288 273L280 268L283 267L287 262L292 261L291 252L296 254L298 252L312 253L318 249L319 250z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M306 424L311 425L313 430L315 430L313 432L314 433L312 435L311 434L310 436L305 431L303 433L299 431L298 427L304 427L304 425L306 424z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M284 397L284 401L288 403L288 411L283 408L283 397z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M284 379L284 381L284 379zM287 375L289 379L287 379L287 375zM282 373L284 375L286 387L280 386L282 373zM288 379L288 379zM281 377L281 377zM289 386L289 386zM285 375L288 380L289 387L287 391L284 378L285 375zM289 379L289 379z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#e70d21" fill-opacity="1" fill-rule="evenodd" d="M281 386L286 387L286 389L291 394L287 402L284 401L285 398L282 397L281 386zM290 398L290 398z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#fa8def" fill-opacity="1" fill-rule="evenodd" d="M295 405L297 405L297 407L295 407L294 405zM292 406L290 406L292 406zM294 405L294 407L292 407L292 405L294 405zM297 407L298 410L301 410L299 414L299 416L301 416L301 422L297 426L299 426L298 429L296 427L296 429L295 428L295 424L289 424L291 420L289 420L287 414L289 407L297 407zM293 404L294 405L291 406L290 405L292 404z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M301 432L302 437L307 440L303 444L298 445L297 444L299 444L299 440L297 442L295 438L297 438L297 436L301 432z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#999966" fill-opacity="1" fill-rule="evenodd" d="M286 410L288 411L287 414L289 420L291 420L289 424L291 424L290 428L285 417L285 410z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M295 424L295 428L296 429L296 427L300 432L296 438L293 433L297 443L290 428L291 425L295 424z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M305 432L308 435L311 434L312 437L316 440L311 444L307 444L307 446L303 445L303 443L307 441L306 438L302 438L301 435L301 433L305 431z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#fa8def" fill-opacity="1" fill-rule="evenodd" d="M315 412L317 412L318 414L314 422L310 420L308 422L310 424L309 425L304 424L304 426L302 427L297 426L298 424L301 423L300 420L303 417L308 418L308 414L315 412z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M311 420L314 422L319 421L320 426L324 425L324 427L329 432L327 432L324 435L315 435L313 432L315 431L308 421L311 420z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M361 414L365 416L367 421L365 429L370 432L370 436L367 439L369 440L369 442L363 448L363 450L352 447L345 443L344 444L338 440L339 444L341 445L340 446L336 446L333 444L330 448L325 446L326 445L324 443L327 442L325 440L327 441L319 435L325 435L325 433L329 431L325 429L326 426L328 428L336 428L336 424L342 426L342 423L347 418L351 418L351 414L361 414z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M313 434L323 437L327 441L326 440L325 441L327 442L324 443L326 445L323 447L324 448L316 449L315 446L312 445L311 443L315 442L315 440L316 441L313 437L312 438L313 435z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M306 361L308 361L309 364L311 364L313 360L323 362L324 364L320 366L319 365L320 368L317 371L317 373L313 371L311 373L312 376L309 378L307 372L303 370L304 367L300 365L304 359L306 360z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M285 365L290 375L289 378L289 374L286 371L284 371L286 373L285 374L285 372L285 374L282 369L285 365zM283 370L283 374L283 370zM289 378L289 378zM289 378L289 378z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M277 366L279 370L282 371L282 373L278 371L279 376L281 372L282 375L280 379L281 384L276 367L277 366zM279 366L281 370L278 366zM280 366L280 366z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M279 355L279 357L279 355zM275 345L282 348L280 350L277 349L279 352L278 355L275 352L277 356L274 353L275 354L271 346L274 345zM277 354L277 354z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M285 347L289 347L290 350L294 348L293 350L295 350L296 352L291 353L290 358L288 360L285 357L283 357L285 355L285 353L283 353L285 346z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M305 346L313 349L306 352L305 359L300 358L297 360L294 358L293 357L296 353L294 350L295 348L305 346z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M308 337L310 339L317 339L313 349L308 348L306 346L296 347L291 350L288 347L285 346L284 349L282 347L282 345L284 345L285 342L288 342L288 340L292 337L308 337z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M294 353L296 353L293 356L293 358L297 360L299 358L302 359L303 362L300 365L299 369L295 369L292 372L290 369L288 369L286 365L288 363L291 353L293 353z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M283 347L283 353L285 353L283 357L285 357L288 360L286 364L286 362L284 360L283 361L279 355L278 356L279 353L277 349L280 350L283 347z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M281 359L286 362L282 370L279 361L281 361L281 359z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#a09066" fill-opacity="1" fill-rule="evenodd" d="M286 364L287 367L293 372L294 369L297 370L298 368L299 369L300 366L303 367L303 369L310 378L308 378L306 381L305 380L305 382L303 382L301 378L290 380L289 371L287 370L285 365L286 364zM290 379L290 379z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#fa8def" fill-opacity="1" fill-rule="evenodd" d="M329 338L334 339L338 343L339 342L343 344L349 340L349 343L346 344L351 345L352 349L337 348L334 354L328 357L329 359L324 358L326 361L329 362L320 362L314 360L313 363L309 364L308 361L306 361L305 359L306 352L313 349L313 346L318 339L328 338z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M360 362L368 362L370 367L368 369L367 368L364 376L366 378L365 381L366 380L367 382L365 384L365 389L363 390L363 394L361 396L358 395L356 391L359 385L355 383L354 384L351 381L354 378L354 370L350 368L351 365L356 366L357 363L358 364L360 362z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#fa8def" fill-opacity="1" fill-rule="evenodd" d="M328 362L342 369L342 377L337 376L333 379L333 381L328 381L324 379L324 381L321 382L317 379L311 378L311 372L315 371L317 373L317 371L320 368L318 365L323 366L323 363L327 361z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M350 366L350 368L354 370L354 378L351 381L354 384L355 383L359 385L359 387L356 390L359 393L355 393L353 391L352 394L348 390L341 390L335 387L332 389L323 380L324 379L328 381L333 381L333 379L337 376L342 377L342 371L344 366L350 366z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M340 390L347 390L352 394L353 391L355 393L357 392L357 394L361 396L360 399L366 403L374 401L375 404L377 401L376 404L380 409L382 409L379 415L378 414L376 416L374 425L372 425L370 429L371 431L365 429L367 422L365 416L363 416L364 415L360 413L355 413L350 415L351 418L346 419L342 410L340 411L334 407L334 399L339 399L333 389L335 387L337 389z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M362 331L366 332L365 335L369 340L368 343L371 343L369 353L367 352L363 355L368 361L366 363L360 362L358 364L357 363L356 366L345 366L343 369L324 359L328 359L329 356L332 357L338 348L352 349L353 347L350 345L346 345L350 342L349 338L361 331z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M326 470L328 469L331 472L331 474L327 478L326 477L322 481L320 481L316 475L324 475L323 474L325 474L326 472L324 471L324 469L326 470z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M361 477L363 479L360 479L360 483L351 484L351 486L350 485L348 487L349 488L343 492L340 486L334 486L333 483L333 481L334 482L340 477L346 477L345 474L348 471L352 471L361 477z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M340 496L342 498L346 498L346 500L344 502L342 500L339 501L340 496z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M332 482L334 484L334 486L332 486L334 490L330 492L333 495L333 497L322 484L323 483L323 485L329 485L332 482z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#e70d21" fill-opacity="1" fill-rule="evenodd" d="M334 486L340 486L342 488L341 491L343 491L346 494L344 498L342 498L338 494L338 492L335 495L334 492L332 494L330 492L334 490L332 488L332 486L334 486z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M346 507L347 510L350 511L349 512L351 518L343 512L344 510L342 508L346 507z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M354 507L353 509L356 510L354 512L356 514L357 513L358 516L358 518L354 520L349 513L349 509L352 510L351 509L354 507z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M347 498L356 503L356 505L354 505L351 508L351 510L347 510L345 506L346 498z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M367 492L370 498L366 503L365 501L363 502L365 507L362 509L360 513L358 513L358 515L360 515L360 519L354 511L356 511L353 509L353 505L356 504L355 499L357 497L358 498L365 492L367 492z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M331 473L337 476L337 480L335 482L333 481L329 485L323 485L323 483L320 482L323 479L329 477L328 476L331 473z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#ff944d" fill-opacity="1" fill-rule="evenodd" d="M339 501L337 503L334 500L332 494L334 492L335 495L338 492L340 496L339 501z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M362 483L363 487L367 492L364 492L358 498L357 497L355 499L355 502L348 498L344 498L346 494L344 492L347 491L346 490L348 490L348 488L352 484L361 482z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M197 183L197 183zM197 183L197 183zM198 181L200 181L201 186L196 189L191 184L198 183L199 186L200 185L197 182L197 184L194 183L198 180L199 181z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M206 185L207 187L203 190L203 194L205 194L203 196L198 191L197 192L196 189L199 188L204 183L205 184z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#D6901B" fill-opacity="1" fill-rule="evenodd" d="M216 192L216 194L219 195L222 193L225 194L227 192L231 194L231 192L235 192L236 195L230 199L226 197L226 199L219 205L217 205L218 206L215 209L216 200L213 199L214 196L212 198L212 194L216 192z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M213 198L216 201L215 206L212 205L214 203L212 200L213 203L211 203L211 205L210 202L209 203L207 201L210 200L207 199L209 197L212 198L214 196L213 197z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M218 175L224 177L221 180L220 179L217 184L222 185L222 183L224 183L226 185L225 186L233 192L231 192L231 194L229 192L218 195L215 192L213 194L212 191L214 189L206 185L209 184L209 181L211 179L213 179L213 181L215 179L215 175L218 175z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#999966" fill-opacity="1" fill-rule="evenodd" d="M206 150L209 153L205 153L205 155L202 158L199 155L197 157L198 162L199 161L200 164L194 164L189 168L185 168L185 175L183 177L180 174L181 169L181 171L184 172L181 171L181 169L179 169L181 169L181 163L179 160L187 158L192 153L206 151z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#999966" fill-opacity="1" fill-rule="evenodd" d="M202 164L205 165L202 173L203 176L205 178L207 178L206 177L208 175L212 177L208 184L206 185L204 183L201 186L200 181L199 182L198 179L195 180L194 179L196 177L194 173L192 173L192 175L191 172L192 168L195 169L201 164z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M211 188L214 189L212 191L213 196L207 196L207 200L206 197L205 198L203 196L205 194L203 194L203 190L209 186L211 188z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M207 152L210 153L210 155L213 158L212 159L216 164L220 164L224 169L227 168L229 171L225 175L225 177L215 175L216 176L213 181L214 180L212 180L212 178L209 175L206 177L207 178L203 176L202 173L204 169L203 168L205 166L203 164L199 164L200 161L198 161L197 156L198 155L201 158L207 152z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M234 171L236 171L236 175L239 177L239 179L243 183L248 185L247 186L249 188L246 190L248 192L247 193L233 193L232 190L227 189L227 187L225 187L225 183L221 185L217 183L221 179L223 179L223 177L225 177L228 172L233 170z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#e70d21" fill-opacity="1" fill-rule="evenodd" d="M289 309L293 311L293 314L298 319L290 320L288 322L282 320L276 323L275 318L276 315L278 315L277 312L279 309L283 309L285 307L288 308z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M277 300L279 304L283 306L282 308L281 307L281 309L280 308L276 312L275 311L271 313L267 317L265 314L266 313L264 312L266 307L269 307L272 302L276 302L277 300z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M273 292L275 292L276 295L287 295L287 293L289 293L291 295L296 294L298 296L296 299L294 299L295 303L291 309L288 307L281 309L281 307L282 308L282 306L284 306L281 305L282 304L281 305L279 303L280 302L276 300L276 298L274 298L274 300L269 299L273 293L271 292L272 291z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M301 320L305 324L307 324L301 328L291 331L287 331L285 329L282 330L282 328L280 330L274 326L274 322L277 323L277 321L281 320L287 322L290 320L300 320z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#fa8def" fill-opacity="1" fill-rule="evenodd" d="M275 327L278 328L280 332L283 333L281 337L280 336L276 338L275 335L273 335L273 337L269 336L268 328L271 326L275 327z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M310 329L319 329L322 330L323 333L328 332L330 334L329 335L331 337L333 336L333 338L336 341L331 338L311 339L307 336L305 338L291 337L286 342L286 340L283 342L281 340L283 333L280 332L280 330L282 328L282 330L285 329L287 331L291 331L301 328L307 324L310 328z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M273 335L275 335L276 338L280 336L282 338L280 340L283 341L282 342L285 340L286 341L285 344L279 348L278 345L271 346L272 341L270 337L272 337L272 335z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#e70d21" fill-opacity="1" fill-rule="evenodd" d="M267 328L270 339L272 341L270 342L270 346L265 333L267 328z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#e70d21" fill-opacity="1" fill-rule="evenodd" d="M271 320L276 319L274 323L275 326L267 328L266 327L266 331L261 322L265 320L271 320z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M266 304L267 307L264 312L266 317L269 316L270 319L268 321L262 321L260 319L262 317L258 309L259 310L260 307L263 306L262 305L263 306L266 304z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M264 297L269 299L271 298L273 300L275 298L276 301L271 303L269 307L267 307L266 304L260 308L255 300L260 297L263 297z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M259 313L259 313zM258 314L260 314L262 318L260 318L258 314zM260 314L259 314zM255 300L260 308L258 310L258 316L251 301L255 300z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M277 310L278 315L276 315L275 320L271 320L268 315L277 310z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#e70d21" fill-opacity="1" fill-rule="evenodd" d="M200 131L202 135L197 136L197 140L200 143L199 144L196 145L194 143L186 153L177 152L173 156L171 148L169 146L170 147L169 144L171 142L173 142L171 146L175 146L176 143L179 142L179 140L181 138L182 139L185 134L189 136L189 134L190 135L192 132L194 132L195 135L200 131z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M178 120L182 120L182 124L183 123L184 127L179 127L179 129L176 130L174 128L170 130L170 132L164 131L164 135L160 129L161 125L162 126L168 120L174 120L178 122L177 119z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M190 122L194 124L191 124L189 126L189 129L192 130L190 135L189 134L189 136L187 136L185 134L184 137L182 139L181 138L179 142L176 143L175 146L171 146L173 142L171 142L169 146L164 137L164 131L169 132L174 128L176 130L179 129L179 127L182 128L188 121L190 121z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M163 104L165 107L162 110L163 109L165 111L164 112L168 111L169 116L172 115L171 113L177 115L178 122L174 120L168 120L162 126L158 124L152 108L160 105L161 106L163 104z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M181 167L181 167zM175 159L178 168L175 159zM176 159L176 159zM176 160L176 160zM178 168L180 172L178 168zM176 160L177 163L176 160zM202 144L202 151L191 153L189 157L183 160L179 160L181 162L180 169L178 167L179 166L176 159L174 159L173 156L177 152L186 153L194 143L196 145L200 143L202 144zM179 167L179 169L179 167zM178 165L178 167L178 165z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M265 181L265 193L261 197L265 199L265 201L262 202L260 208L256 206L257 204L250 207L241 206L235 201L234 197L237 192L248 193L248 191L246 190L248 190L249 188L247 186L249 184L254 185L263 181z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M264 205L263 206L265 206L267 208L266 210L269 211L270 213L270 219L273 220L275 218L277 222L271 225L271 227L267 230L262 226L261 223L259 225L256 224L250 219L250 217L245 214L245 208L253 206L255 204L257 204L255 206L259 208L262 205L262 203L264 205z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M272 190L274 195L276 197L280 196L283 202L285 203L292 201L293 204L291 206L294 211L293 213L289 213L287 217L284 216L282 218L278 216L273 220L270 219L270 213L266 210L267 207L265 207L262 203L265 200L261 198L263 195L262 194L267 191L271 191z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#4C2A87" fill-opacity="1" fill-rule="evenodd" d="M304 453L309 455L307 457L306 462L303 461L304 460L302 454L303 455L304 453z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#ff944d" fill-opacity="1" fill-rule="evenodd" d="M321 464L325 466L323 470L324 469L326 474L316 476L314 474L315 468L320 467L321 464z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#4C2A87" fill-opacity="1" fill-rule="evenodd" d="M312 464L312 468L315 469L313 472L308 467L312 464z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M312 464L306 467L308 467L306 467L304 463L307 460L307 458L311 458L312 464z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M322 448L325 451L327 451L327 456L325 456L325 458L327 460L331 460L330 465L327 462L324 465L320 465L318 463L318 458L316 457L319 456L317 452L319 448L322 448z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M343 443L347 445L346 450L339 451L341 453L333 453L337 455L335 455L335 457L331 460L327 460L325 458L325 456L327 456L327 452L324 450L323 447L327 446L329 448L333 444L335 444L336 446L340 446L341 445L338 443L338 441L342 443z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M300 444L304 446L308 444L308 448L306 452L303 453L303 455L298 446L300 444z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#4C2A87" fill-opacity="1" fill-rule="evenodd" d="M312 444L311 445L313 445L315 449L318 448L319 450L317 454L320 456L312 456L309 459L307 458L309 455L305 453L308 448L308 444L311 443z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M316 456L318 463L321 466L313 468L310 458L312 456L315 456z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M328 462L331 465L330 467L338 463L340 465L340 463L344 464L347 470L345 474L347 477L342 476L338 478L336 474L332 474L330 471L325 469L323 470L325 464L328 462z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#e70d21" fill-opacity="1" fill-rule="evenodd" d="M348 445L363 450L358 454L358 456L368 469L367 474L365 475L364 478L362 478L352 471L347 471L345 466L341 463L339 465L337 463L337 465L336 464L331 467L330 460L332 458L334 459L336 455L333 454L341 454L339 451L346 450L348 445z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#999966" fill-opacity="1" fill-rule="evenodd" d="M313 379L315 378L321 382L322 381L328 384L331 389L334 390L334 392L330 390L328 392L324 390L324 392L320 392L323 397L321 403L318 401L319 399L312 394L312 388L309 385L312 384L310 382L311 378z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M297 406L298 407L297 406zM303 397L306 400L306 404L304 406L306 407L305 410L301 408L297 410L297 408L300 407L297 406L296 403L300 401L301 398L303 397z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M300 391L302 394L307 393L308 396L305 399L303 397L301 401L296 402L295 405L293 403L293 397L300 391z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#fa8def" fill-opacity="1" fill-rule="evenodd" d="M301 408L306 411L310 409L310 413L307 416L307 418L300 418L300 408z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M296 378L298 382L295 387L299 391L296 395L291 396L293 392L290 391L290 385L288 383L290 379L295 379z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#fa8def" fill-opacity="1" fill-rule="evenodd" d="M311 379L310 382L312 384L309 385L312 388L312 394L310 396L307 393L302 394L301 391L299 392L298 389L296 389L295 386L298 381L297 378L301 378L303 382L305 382L305 380L306 381L308 378L311 378zM290 390L289 389L290 390z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M309 395L313 395L315 398L318 397L318 401L315 400L315 407L311 407L306 412L304 406L306 404L305 399L308 395z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M325 400L329 404L328 405L331 410L329 412L329 410L325 410L326 413L329 414L326 414L324 416L321 413L318 414L316 412L312 412L311 414L310 407L313 408L316 404L314 400L322 403L322 399L324 399z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M332 392L334 392L334 390L338 396L337 397L339 399L335 399L334 407L343 412L339 416L341 416L341 418L326 413L326 409L329 410L329 412L331 410L329 408L329 404L323 398L321 392L325 390L327 392L331 390L332 392z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M251 288L253 296L255 296L256 293L260 295L258 299L250 299L247 290L251 288z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M241 263L244 266L243 267L249 267L255 273L252 275L248 271L246 273L245 270L241 268L241 263z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M245 255L247 257L249 256L251 261L248 264L247 263L246 266L243 267L244 266L239 259L245 255z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M255 275L258 278L258 282L255 281L253 283L254 284L250 282L246 284L245 283L244 280L248 276L250 280L251 275L255 275z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M244 269L246 273L248 271L251 274L251 280L249 280L248 277L246 277L245 280L244 279L242 271L242 269L244 269z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M268 265L275 271L272 276L268 276L269 279L267 282L265 278L262 275L260 275L264 271L263 266L265 266L265 264L268 265z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M271 246L274 247L275 250L280 251L284 249L289 249L294 251L294 253L291 253L292 261L283 264L280 262L279 263L280 259L278 257L276 259L272 259L273 255L268 255L270 250L268 250L267 248L270 246z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M258 254L260 256L264 256L260 260L262 262L263 261L265 263L273 263L270 267L264 264L263 269L265 271L260 272L257 267L258 264L253 257L258 254z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M253 248L256 249L256 253L252 255L252 257L255 258L255 262L241 253L245 249L253 247z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M268 237L273 239L271 241L273 243L273 247L267 247L270 251L268 255L265 253L262 256L258 254L257 256L256 255L256 257L252 257L252 255L256 253L256 249L254 249L254 247L257 247L264 242L265 237L267 236z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M254 262L258 264L258 271L254 271L246 265L250 263L251 260L254 261z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M249 282L252 285L256 284L258 293L256 293L255 296L253 296L251 288L249 290L246 289L245 284L249 282z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M278 266L280 267L280 269L284 269L284 271L288 272L287 274L284 273L284 280L279 279L277 282L275 282L274 280L271 281L268 278L268 276L272 276L274 274L274 270L276 270L278 266z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M265 254L268 254L268 256L270 254L272 255L272 259L276 259L278 257L280 259L279 262L282 264L285 263L285 266L279 266L276 269L277 270L273 270L271 266L273 264L271 262L264 263L260 261L264 257L262 255L265 253z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M277 227L281 227L283 229L285 228L290 231L292 230L292 232L297 236L301 237L301 239L304 238L304 244L295 249L295 251L287 249L283 249L281 251L275 250L271 242L272 239L267 236L265 240L263 240L263 236L271 227L271 225L275 223L277 225z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M259 271L263 272L260 275L262 275L265 278L266 283L265 282L263 285L257 287L256 284L253 283L255 281L258 282L258 278L253 271L256 272L258 268L259 271z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M235 198L236 202L241 206L245 206L247 208L243 208L242 211L236 214L232 210L230 210L229 207L227 207L226 210L222 208L220 208L220 210L218 208L217 205L219 205L226 199L226 197L230 199L232 197L235 198z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#8b86d6" fill-opacity="1" fill-rule="evenodd" d="M213 206L215 207L215 209L217 207L221 211L219 213L219 217L221 217L218 219L213 208L213 205z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M250 219L252 221L249 225L245 225L246 232L244 234L241 233L240 230L236 233L235 232L232 237L231 236L232 233L230 231L230 225L232 223L235 224L236 220L242 220L245 214L251 219z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M218 218L218 220L220 219L220 221L223 222L227 226L227 228L231 227L230 230L232 232L232 236L230 238L228 232L223 227L222 228L220 226L217 218z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M246 208L246 214L244 214L244 218L242 220L236 220L235 223L230 224L228 228L223 223L227 216L231 216L233 211L235 214L239 211L242 211L243 208L246 208z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M241 246L237 246L236 249L232 243L242 243L243 244L241 246z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M251 239L250 242L252 246L250 248L245 249L242 252L237 250L239 250L240 247L241 248L243 244L242 243L245 240L251 239z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M250 225L251 228L249 230L254 231L253 236L250 239L242 241L239 238L242 233L244 234L246 232L245 225L249 225L253 221L251 224z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#19AAED" fill-opacity="1" fill-rule="evenodd" d="M240 232L241 237L238 238L240 238L239 239L243 241L241 243L232 242L231 237L235 235L234 232L235 233L239 230L240 231z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M257 224L258 225L261 223L267 230L267 232L263 235L263 239L265 241L258 247L256 246L254 248L250 242L254 230L253 229L252 232L249 229L251 228L250 225L253 221L256 224z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#006600" fill-opacity="1" fill-rule="evenodd" d="M229 208L233 211L231 216L227 215L224 222L220 221L220 209L221 208L225 210L228 207L230 207L229 208z"></path><path class="leaflet-interactive" stroke="#fff" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" fill="#FF1D15" fill-opacity="1" fill-rule="evenodd" d="M239 251L241 251L241 253L244 254L243 256L241 256L240 259L237 256L239 256L239 254L237 256L235 252L239 250zM238 256L238 256zM240 258L239 259L240 258z"></path></g></svg></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in" aria-disabled="false"><span aria-hidden="true">+</span></a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out" aria-disabled="false"><span aria-hidden="true">−</span></a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JavaScript library for interactive maps"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" class="leaflet-attribution-flag"><path fill="#4C7BE1" d="M0 0h12v4H0z"></path><path fill="#FFD500" d="M0 4h12v3H0z"></path><path fill="#E0BC00" d="M0 7h12v1H0z"></path></svg> Leaflet</a></div></div></div></div>
+                        <p style="float: right;font-size: 11px;margin-bottom: -10px;font-weight: 500;">Not to Scale</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="card custom-card shadow-sm">
+                    <div class="card-header"><a href="chartwiseresult-S11.htm" title="View Full Party Wise Results" style="color: blue;" target="_blank">
+        Party Wise Results – View Full Details
+    </a></div>
+                    <div class="card-body">
+                        <div class="chart-wrap">
+                            <canvas id="donutChart" style="max-width: 545px; width: 545px; max-height: 545px; height: 545px; display: block; box-sizing: border-box;" width="1090" height="1090"></canvas>
+                        </div><!-- End of chart wrap Div-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="card custom-card shadow-sm">
+                    <div class="card-header"><a href="voteshareresult-S11.htm" title="View Full Vote Share Results" style="color: blue;" target="_blank">
+        Party Wise Vote Share – View Full Details
+    </a></div>
+                    <div class="card-body">
+                        <div class="chart-wrap">
+                            <canvas id="piChart" style="max-width: 545px; width: 545px; max-height: 545px; height: 545px; display: block; box-sizing: border-box;" width="1090" height="1090"></canvas>
+                        </div><!-- End of chart wrap Div-->
+                    </div>
+                </div>
+            </div>
+ 
+        </div><!-- End of row Div -->
+
+        <h3 class="foot-title"><a href="statewiseS111.htm" class="btn btn-primary">All Constituencies at a glance <i>&gt;</i></a></h3>
+    </div>
+</section>
+    </div></main>
+   <footer class="footer">
+        <div class="foot-info">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="foot-content">
+                            Last Updated at <span>09:24 PM On 04/05/2026</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/jquery-3.6.4.min.js" type="text/javascript"></script>
+    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <!-- Option 3: Custom jQuery Lab -->
+    <script src="js/custom-jQuery.js" type="text/javascript"></script>
+
+    <!-- Chart jQuery Lab -->
+    <script src="js/chart.js" type="text/javascript"></script>
+    
+<script type="text/javascript">
+            function GetResult(ddstate) {
+                var statecode = ddstate.value;
+                if (statecode != 'Select State')
+                    location.href = 'candidateswise-' + statecode + '.htm';
+                else
+                    location.href = 'candidateswise' + ddstate.options[1].value + '.htm';
+            } 
+            function SetSelectedSate() {
+                var ddlState = document.getElementById('ctl00_ContentPlaceHolder1_Result1_ddlState');
+                var stateCode = '';
+                var queryString = location.search.substring(1);
+                if (queryString != null && queryString != '') {
+                    stateCode = queryString.split('=')[1];
+                }
+                if (ddlState != null)
+                    for (var index = 0; index < ddlState.options.length; index++) {
+                        if (ddlState.options[index].value == stateCode) {
+                            ddlState.options[index].selected = true;
+                        }
+                    }
+            }
+            onload = SetSelectedSate;
+
+        </script>
+
+
+<script src="ac/S11.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var lead_can_party;
+    var colorArr;
+    var mapstcode;
+    var count;
+    const SVGAPIURL = 'election-json-S11-live.json';
+    var colorsss = {};
+    var tableData = '';
+    var geoJson = '';
+    var lead_cand_party = '';
+    var lead_cand_name = '';
+
+    $(document).ready(function() {
+
+        fetch(SVGAPIURL)
+            .then(res => res.json())
+            .then(sdata => {
+                try {
+                    const data = sdata;
+                    colorsss = data.S11.chartData;
+                    tableData = data.S11.tableData;
+                    //console.log(colorsss);
+                } catch (e) {}
+
+            });
+
+        var map = L.map('elector_geotagging', {
+            center: [10.7600, 76.3301],
+            zoom: 7,
+            scrollWheelZoom: false,
+            doubleClickZoom: false, 
+            cursor: true
+        });
+         
+
+        var bounds_group = new L.featureGroup([]);
+        map.createPane('pane_All_AC');
+        map.getPane('pane_All_AC').style.zIndex = 400;
+        map.getPane('pane_All_AC').style['mix-blend-mode'] = 'normal';
+
+        setTimeout(function() {
+            var layer_All_AC = new L.geoJson(json_All_AC, {
+                attribution: '',
+                interactive: true,
+                dataVar: 'json_All_AC',
+                layerName: 'layer_All_AC',
+                pane: 'pane_All_AC',
+                onEachFeature: pop_All_AC,
+                style: style_All_AC,
+            });
+            bounds_group.addLayer(layer_All_AC);
+            map.addLayer(layer_All_AC);
+
+
+
+
+            function style_All_AC(feature, layer) {
+                var color = '#DDDDDD';
+                var ac_no = feature.properties.AC_NO;
+                var state_code = feature.properties.ST_CODE;
+                var new_combination = state_code + '_' + ac_no;
+                //S29_11
+
+                $.each(colorsss, function(index, value) {
+                    var new_sate = value[1];
+                    var new_ac = value[2];
+                    var combination = new_sate + '_' + new_ac;
+                    //console.log(combination);
+                    if (new_combination == combination) {
+
+                        color = value[4];
+                        lead_cand_party = value[0];
+                        lead_cand_name = value[3];
+                        //console.log(color);
+                    }
+                    if(new_combination == 'U08_0'){
+                        color = '#ffeb99';
+                    }
+
+
+                });
+
+
+                return {
+                    pane: 'pane_All_AC',
+                    opacity: 1,
+                    color: '#fff',
+                    dashArray: '',
+                    lineCap: 'butt',
+                    lineJoin: 'miter',
+                    weight: 1.0,
+                    fill: true,
+                    fillOpacity: 1,
+                    fillColor: color,
+                    interactive: true,
+                }
+            }
+        }, 1000);
+
+        function pop_All_AC(feature, layer) {
+
+
+            var ac_no = feature.properties.AC_NO;
+            var state_code = feature.properties.ST_CODE;
+            var new_combination = 'S' + state_code + '_' + ac_no;
+
+ if (feature.properties.AC_NAME != 'NA') {
+            var popup = '';
+
+            popup = '<div class="el-cons-tooltip" id="tooltip2" style="z-index: 999999999; display: block; top: 380px; left: 200px;" svgid="2"><div class="el-tip-cons" id="tl_cons_name2">AC Name : '+feature.properties.AC_NAME+' - '+feature.properties.AC_NO+'</div><div id="tooltipdata2"><div class="el-tip"><div class="el-con-detail"><div class="el-con-name"> Party Name: '+lead_cand_party+'</div></div><div class="el-candidate-status won">Candidate Name: '+lead_cand_name+'</div></div></div></div>'
+
+            layer.bindPopup(popup, {
+                maxHeight: 400,
+            });
+            layer.openTooltip(popup, {
+                maxHeight: 400,
+            });
+            layer.on('mouseover', function() {
+                layer.openPopup();
+            });
+            layer.on('mouseout', function() {
+                layer.closePopup();
+            });
+ }
+       if(state_code == 'U08'){
+             
+             if(state_code == 'U08' && feature.properties.AC_NAME != 'NA'){
+                    ac_no=feature.properties.AC_NO;
+
+                     layer.addEventListener('click', function(event) {
+                layer.preventDefault(window.location = 'candidateswise-' + state_code + ac_no + '.htm');
+
+            });
+             }
+             else{
+                    ac_no=1;
+             }
+
+               // ac_no = (state_code == 'U08' && feature.properties.AC_NAME != 'NA') ? 1 : ac_no;
+            }
+             
+            else{
+                ac_no = ac_no;
+
+                 layer.addEventListener('click', function(event) {
+                layer.preventDefault(window.location = 'candidateswise-' + state_code + ac_no + '.htm');
+
+            });
+            }
+
+           
+        }
+    });
+</script>
+<script type="text/javascript">
+    // Doughnut Charts Starts Here
+    var xValues = ['BJP','CMPKSC','CPI','CPI(M)','INC','IND','IUML','KEC','KEC(J)','RJD','RMPOI','RSP',];
+    var yValues = [3,1,8,26,63,4,22,7,1,1,1,3,];
+    var barColors = ['#ff944d','#7817a1','#e70d21','#FF1D15','#19AAED','#999966','#006600','#fa8def','#a09066','#D6901B','#8b86d6','#4C2A87',];
+
+    new Chart("donutChart", {
+        type: "doughnut",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                },
+                title: {
+                    display: true,
+                    text: ''
+                }
+            }
+        },
+    });
+
+    
+    // Pi Charts Starts Here
+    var xValues = ['AAAP{0.17%}','BJP{11.42%}','BSP{0.15%}','CPI{6.64%}','CPI(M){21.77%}','CPI(ML)(L){0.00%}','INC{28.79%}','IUML{11.01%}','KEC{2.43%}','KEC(M){2.60%}','NCP{0.00%}','NCPSP{0.68%}','NOTA{0.57%}','RJD{0.82%}','RSP{1.21%}','Other{11.71%}',];
+    var yValues = [37754,2466178,33125,1434524,4700662,458,6217918,2378053,525323,561157,692,147799,123067,178051,261551,2528743,];
+    var barColors = ['#0072B0','#ff944d','#000078','#e70d21','#FF1D15','#BC08A4','#19AAED','#006600','#fa8def','#A209D6','#4bc0c0','#00FFFF','#ff6384','#D6901B','#4C2A87','#b3b3b3',];
+    new Chart("piChart", {
+        type: "pie",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'left',
+                },
+                title: {
+                    display: true,
+                    text: ''
+                }
+            }
+        },
+    });
+</script>
+
+
+<div id="claude-agent-glow-border" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483646; opacity: 1; transition: opacity 0.3s ease-in-out; animation: 2s ease-in-out 0s infinite normal none running claude-pulse; box-shadow: rgba(217, 119, 87, 0.5) 0px 0px 10px inset, rgba(217, 119, 87, 0.3) 0px 0px 20px inset, rgba(217, 119, 87, 0.1) 0px 0px 30px inset;"></div></body></html>

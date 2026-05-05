@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 6,
+  "constituencyName": "PAYYANNUR",
+  "wikipediaName": "Payyanur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Payyanur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. Krishnan", "party": "CPI(M)", "votes": 78116, "votePct": 59.78 },
+        { "name": "K. Brijesh Kumar", "party": "INC", "votes": 45992, "votePct": 35.20 },
+        { "name": "C. K. Ramesan", "party": "BJP", "votes": 5019, "votePct": 3.84 },
+        { "name": "Geetha", "party": "BSP", "votes": 625, "votePct": 0.48 },
+        { "name": "T. Padmanabhan", "party": "Independent", "votes": 636, "votePct": 0.41 }
+      ],
+      "margin": 32124,
+      "marginPct": 23.98,
+      "turnout": 124854,
+      "turnoutPct": 79.33,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. Krishnan", "party": "CPI(M)", "votes": 83226, "votePct": 58.02 },
+        { "name": "Sajid Mavval", "party": "INC", "votes": 42963, "votePct": 29.95 },
+        { "name": "Aniamma", "party": "BJP", "votes": 15341, "votePct": 10.69 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1042, "votePct": 0.73 },
+        { "name": "Vinod Kumar Ramanthali", "party": "Independent", "votes": 870, "votePct": 0.61 }
+      ],
+      "margin": 40263,
+      "marginPct": 28.07,
+      "turnout": 143442,
+      "turnoutPct": 81.76,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. I. Madhusoodanan", "party": "CPI(M)", "votes": 93695, "votePct": 62.49 },
+        { "name": "M Pradeep Kumar", "party": "INC", "votes": 43915, "votePct": 29.29 },
+        { "name": "Adv K K Sreedharan", "party": "BJP", "votes": 11308, "votePct": 7.54 },
+        { "name": "NOTA", "party": "NOTA", "votes": 686, "votePct": 0.46 },
+        { "name": "Abhilash KV", "party": "Independent", "votes": 341, "votePct": 0.23 }
+      ],
+      "margin": 49780,
+      "marginPct": 33.20,
+      "turnout": 149945,
+      "turnoutPct": 83.09,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

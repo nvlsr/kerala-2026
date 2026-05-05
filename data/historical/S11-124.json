@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 124,
+  "constituencyName": "KOLLAM",
+  "wikipediaName": "Kollam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kollam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. K. Gurudasan", "party": "CPI(M)", "votes": 57986, "votePct": 50.86 },
+        { "name": "K. C. Rajan", "party": "INC", "votes": 49446, "votePct": 43.37 },
+        { "name": "G. Hari", "party": "BJP", "votes": 4207, "votePct": 3.69 },
+        { "name": "A. A. Shafi", "party": "SDPI", "votes": 1168, "votePct": 1.02 },
+        { "name": "Mangad Thulaseedharan", "party": "BSP", "votes": 507, "votePct": 0.44 }
+      ],
+      "margin": 8540,
+      "marginPct": 7.49,
+      "turnout": 114018,
+      "turnoutPct": 71.05,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. Mukesh", "party": "CPI(M)", "votes": 63103, "votePct": 52.81 },
+        { "name": "Sooraj Ravi", "party": "INC", "votes": 45492, "votePct": 35.19 },
+        { "name": "K. Sasikumar", "party": "NDA", "votes": 17409, "votePct": 13.47 },
+        { "name": "Johnson Kandachira", "party": "SDPI", "votes": 1576, "votePct": 1.22 },
+        { "name": "K. Balakrishnan", "party": "BSP", "votes": 431, "votePct": 0.33 }
+      ],
+      "margin": 17611,
+      "marginPct": 13.62,
+      "turnout": 129283,
+      "turnoutPct": 74.92,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. Mukesh", "party": "CPI(M)", "votes": 58524, "votePct": 44.86 },
+        { "name": "Bindu Krishna", "party": "INC", "votes": 56452, "votePct": 43.27 },
+        { "name": "M. Sunil", "party": "BJP", "votes": 14252, "votePct": 10.93 },
+        { "name": "Ramanan", "party": "BSP", "votes": 290, "votePct": 0.22 }
+      ],
+      "margin": 2072,
+      "marginPct": 1.59,
+      "turnout": 130451,
+      "turnoutPct": 74.1,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

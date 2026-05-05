@@ -1,0 +1,77 @@
+{
+  "constituency": "136 - ARUVIKKARA (Kerala)",
+  "constituencyNumber": 136,
+  "constituencyName": "ARUVIKKARA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. G. STEEPHEN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 61907,
+      "margin": 2843,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "V. S. SIVAKUMAR",
+      "party": "Indian National Congress",
+      "votes": 59064,
+      "margin": -2843,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VIVEK GOPAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 23760,
+      "margin": -38147,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANTHOSH KUMAR. S",
+      "party": "Bahujan Samaj Party",
+      "votes": 687,
+      "margin": -61220,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "V. S. SIVAKUMAR S/O SIVADASAN",
+      "party": "Independent",
+      "votes": 303,
+      "margin": -61604,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "R. STEEPHEN S/O RAFI",
+      "party": "Independent",
+      "votes": 264,
+      "margin": -61643,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. S. SIVAKUMAR S/O SADASIVAN",
+      "party": "Independent",
+      "votes": 118,
+      "margin": -61789,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 775,
+      "margin": -61132,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11136.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 7,
+  "constituencyName": "KALLIASSERI",
+  "wikipediaName": "Kalliasseri",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kalliasseri_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. V. Rajesh", "party": "CPI(M)", "votes": 73190, "votePct": 58.62 },
+        { "name": "P. Indira", "party": "INC", "votes": 43244, "votePct": 34.64 },
+        { "name": "Sreenath Ravi Varma", "party": "BJP", "votes": 5499, "votePct": 4.40 },
+        { "name": "A. P. Mahmood", "party": "SDPI", "votes": 2281, "votePct": 1.83 },
+        { "name": "K. Gopalakrishnan", "party": "BSP", "votes": 640, "votePct": 0.51 }
+      ],
+      "margin": 29966,
+      "marginPct": 23.98,
+      "turnout": 124854,
+      "turnoutPct": 79.33,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. V. Rajesh", "party": "CPI(M)", "votes": 83006, "votePct": 59.83 },
+        { "name": "Amritha Ramakrishnan", "party": "INC", "votes": 40115, "votePct": 28.91 },
+        { "name": "K. P. Arun", "party": "BJP", "votes": 11036, "votePct": 7.95 },
+        { "name": "Sunil Koyilerian", "party": "Independent", "votes": 1455, "votePct": 1.05 },
+        { "name": "K. Subair", "party": "SDPI", "votes": 1435, "votePct": 1.03 }
+      ],
+      "margin": 42891,
+      "marginPct": 30.92,
+      "turnout": 138747,
+      "turnoutPct": 78.33,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. Vijin", "party": "CPI(M)", "votes": 88252, "votePct": 60.62 },
+        { "name": "Adv Brijesh Kumar", "party": "INC", "votes": 43859, "votePct": 30.13 },
+        { "name": "Arun Kaithapram", "party": "BJP", "votes": 11365, "votePct": 7.81 },
+        { "name": "Faizal Madayi", "party": "WPOI", "votes": 1169, "votePct": 0.78 },
+        { "name": "Brijeshkumar M", "party": "Independent", "votes": 274, "votePct": 0.19 }
+      ],
+      "margin": 44393,
+      "marginPct": 30.51,
+      "turnout": 145585,
+      "turnoutPct": 79.26,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

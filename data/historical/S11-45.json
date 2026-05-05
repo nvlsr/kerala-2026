@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 45,
+  "constituencyName": "TIRUR",
+  "wikipediaName": "Tirur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Tirur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. Mammutty", "party": "IUML", "votes": 69305, "votePct": 54.85 },
+        { "name": "P. P. Abdullakutty", "party": "CPI(M)", "votes": 45739, "votePct": 36.20 },
+        { "name": "P. T. Ali Haji", "party": "BJP", "votes": 5543, "votePct": 4.39 },
+        { "name": "A. K. Majeed Master", "party": "SDPI", "votes": 2696, "votePct": 2.13 },
+        { "name": "Alikutty Bappu Puthanathani", "party": "PDP", "votes": 1802, "votePct": 1.43 }
+      ],
+      "margin": 23566,
+      "marginPct": 18.65,
+      "turnout": 126353,
+      "turnoutPct": 75.98,
+      "result": "IUML gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. Mammutty", "party": "IUML", "votes": 73432, "votePct": 46.85 },
+        { "name": "Gafoor P. Lillis", "party": "LDF", "votes": 66371, "votePct": 42.34 },
+        { "name": "M. K. Devidasan", "party": "BJP", "votes": 9083, "votePct": 5.79 },
+        { "name": "Ganesh Vaderi", "party": "WPOI", "votes": 2001, "votePct": 1.28 },
+        { "name": "Ibrahim Tirur", "party": "SDPI", "votes": 1828, "votePct": 1.17 }
+      ],
+      "margin": 7061,
+      "marginPct": 4.51,
+      "turnout": 156754,
+      "turnoutPct": 76.36,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Kurukkoli Moideen", "party": "IUML", "votes": 82314, "votePct": 48.21 },
+        { "name": "Gafoor P. Lillis", "party": "LDF", "votes": 75100, "votePct": 43.98 },
+        { "name": "Abdul Salam", "party": "BJP", "votes": 9097, "votePct": 5.33 },
+        { "name": "Ashraf", "party": "SDPI", "votes": 2712, "votePct": 1.90 },
+        { "name": "NOTA", "party": "NOTA", "votes": 417, "votePct": 0.24 }
+      ],
+      "margin": 7214,
+      "marginPct": 4.93,
+      "turnout": 170742,
+      "turnoutPct": 78.36,
+      "result": "IUML hold"
+    }
+  ]
+}

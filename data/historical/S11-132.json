@@ -1,0 +1,53 @@
+{
+  "constituencyNumber": 132,
+  "constituencyName": "KAZHAKOOTTAM",
+  "wikipediaName": "Kazhakootam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kazhakootam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. A. Vaheed", "party": "INC", "votes": 50787, "votePct": 46.38 },
+        { "name": "C. Ajayakumar", "party": "CPI(M)", "votes": 48591, "votePct": 44.38 },
+        { "name": "J. R. Padmakumar", "party": "BJP", "votes": 7508, "votePct": 6.86 }
+      ],
+      "margin": 2196,
+      "marginPct": 2.0,
+      "turnout": 109498,
+      "turnoutPct": 67.09,
+      "result": "INC hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Kadakampally Surendran", "party": "CPI(M)", "votes": 50079, "votePct": 37.38 },
+        { "name": "V. Muraleedharan", "party": "BJP", "votes": 42732, "votePct": 31.9 },
+        { "name": "M. A. Vaheed", "party": "INC", "votes": 38602, "votePct": 28.82 }
+      ],
+      "margin": 7347,
+      "marginPct": 5.48,
+      "turnout": 133959,
+      "turnoutPct": 73.7,
+      "result": "CPI(M) gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Kadakampally Surendran", "party": "CPI(M)", "votes": 63690, "votePct": 46.04 },
+        { "name": "Shobha Surendran", "party": "BJP", "votes": 40193, "votePct": 29.06 },
+        { "name": "S. S. Lal", "party": "INC", "votes": 33995, "votePct": 23.85 }
+      ],
+      "margin": 23497,
+      "marginPct": 17.0,
+      "turnout": 140707,
+      "turnoutPct": null,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

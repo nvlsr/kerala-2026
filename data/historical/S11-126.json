@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 126,
+  "constituencyName": "CHATHANNOOR",
+  "wikipediaName": "Chathannoor",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Chathannoor_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "G. S. Jayalal", "party": "CPI", "votes": 60187, "votePct": 52.66 },
+        { "name": "Bindu Krishna", "party": "INC", "votes": 47598, "votePct": 41.64 },
+        { "name": "Kizhakkanela Sudhakaran", "party": "BJP", "votes": 3839, "votePct": 3.36 },
+        { "name": "A. Sasi", "party": "Independent", "votes": 1134, "votePct": 0.99 },
+        { "name": "Jayalal", "party": "Independent", "votes": 763, "votePct": 0.67 }
+      ],
+      "margin": 12589,
+      "marginPct": 11.02,
+      "turnout": 114298,
+      "turnoutPct": 71.13,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "G. S. Jayalal", "party": "CPI", "votes": 67606, "votePct": 50.76 },
+        { "name": "B. B. Gopakumar", "party": "BJP", "votes": 33199, "votePct": 24.92 },
+        { "name": "Soorand Rajasekharan", "party": "INC", "votes": 30139, "votePct": 22.63 },
+        { "name": "Raju", "party": "Independent", "votes": 658, "votePct": 0.49 },
+        { "name": "NOTA", "party": "NOTA", "votes": 604, "votePct": 0.45 }
+      ],
+      "margin": 34407,
+      "marginPct": 25.84,
+      "turnout": 133199,
+      "turnoutPct": 74.03,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "G. S. Jayalal", "party": "CPI", "votes": 59296, "votePct": 43.12 },
+        { "name": "B. B. Gopakumar", "party": "BJP", "votes": 42090, "votePct": 30.61 },
+        { "name": "N. Peethambara Kurup", "party": "INC", "votes": 34280, "votePct": 24.93 },
+        { "name": "NOTA", "party": "NOTA", "votes": 642, "votePct": 0.47 },
+        { "name": "Sunu Bhaskaran", "party": "BSP", "votes": 364, "votePct": 0.26 }
+      ],
+      "margin": 17206,
+      "marginPct": 12.51,
+      "turnout": 137503,
+      "turnoutPct": 74.46,
+      "result": "CPI hold"
+    }
+  ]
+}

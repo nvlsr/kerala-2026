@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 33,
+  "constituencyName": "KONDOTTY",
+  "wikipediaName": "Kondotty",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kondotty_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Muhammedunni Haji", "party": "IUML", "votes": 67998, "votePct": 56.82 },
+        { "name": "P. C. Naushad", "party": "CPI(M)", "votes": 39849, "votePct": 33.30 },
+        { "name": "Kumari Sukumaran", "party": "BJP", "votes": 6840, "votePct": 5.72 },
+        { "name": "Abdu Rahman P. T.", "party": "SDPI", "votes": 2026, "votePct": 1.69 },
+        { "name": "T. K. Mammunni Haji", "party": "Independent", "votes": 1817, "votePct": 1.52 }
+      ],
+      "margin": 28149,
+      "marginPct": 23.52,
+      "turnout": 119675,
+      "turnoutPct": 75.72,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. V. Ibrahim", "party": "IUML", "votes": 69668, "votePct": 46.58 },
+        { "name": "K. P. Beeran Kutty", "party": "LDF", "votes": 59014, "votePct": 39.46 },
+        { "name": "K. Ramachandran", "party": "BJP", "votes": 12513, "votePct": 8.37 },
+        { "name": "Nazarudheen Elamaram", "party": "SDPI", "votes": 3667, "votePct": 2.45 },
+        { "name": "Saleem Vazhakkad", "party": "WPOI", "votes": 2344, "votePct": 1.57 }
+      ],
+      "margin": 10654,
+      "marginPct": 7.12,
+      "turnout": 149554,
+      "turnoutPct": 79.40,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. V. Ibrahim", "party": "IUML", "votes": 82759, "votePct": 50.42 },
+        { "name": "Kattiparuthy Sulaiman Haji", "party": "LDF", "votes": 65093, "votePct": 39.66 },
+        { "name": "Sheeba Unnikrishnan", "party": "BJP", "votes": 11114, "votePct": 6.77 },
+        { "name": "Razak Paleri", "party": "WPOI", "votes": 2579, "votePct": 1.57 },
+        { "name": "T. Sivadasan", "party": "BSP", "votes": 908, "votePct": 0.55 }
+      ],
+      "margin": 17666,
+      "marginPct": 10.76,
+      "turnout": 164145,
+      "turnoutPct": 79.97,
+      "result": "IUML hold"
+    }
+  ]
+}

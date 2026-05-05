@@ -1,0 +1,69 @@
+{
+  "constituency": "58 - CHITTUR (Kerala)",
+  "constituencyNumber": 58,
+  "constituencyName": "CHITTUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. SUMESH ACHUTHAN",
+      "party": "Indian National Congress",
+      "votes": 65325,
+      "margin": 6510,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. V. MURUGADAS",
+      "party": "Indian Socialist Janata Dal",
+      "votes": 58815,
+      "margin": -6510,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRANESH RAJENDRAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 14697,
+      "margin": -50628,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MURUGADAS. P.  S/O PAZHANIAPPA MUDALIYAAR",
+      "party": "Independent",
+      "votes": 6984,
+      "margin": -58341,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "N S K PURAM SASIKUMAR",
+      "party": "Independent",
+      "votes": 408,
+      "margin": -64917,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUMESH C",
+      "party": "Independent",
+      "votes": 261,
+      "margin": -65064,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1298,
+      "margin": -64027,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1158.htm"
+}

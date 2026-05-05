@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 3,
+  "constituencyName": "UDMA",
+  "wikipediaName": "Udma",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Udma_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Kunhiraman", "party": "CPI(M)", "votes": 61646, "votePct": 47.93 },
+        { "name": "C. K. Sreedharan", "party": "INC", "votes": 50266, "votePct": 39.08 },
+        { "name": "Sunita Prasanth", "party": "BJP", "votes": 13073, "votePct": 10.16 },
+        { "name": "Faisal Koliyadukkam", "party": "SDPI", "votes": 1265, "votePct": 0.98 },
+        { "name": "P. Damodaran", "party": "BSP", "votes": 1096, "votePct": 0.85 }
+      ],
+      "margin": 11380,
+      "marginPct": 8.85,
+      "turnout": 128626,
+      "turnoutPct": 74.15,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Kunhiraman", "party": "CPI(M)", "votes": 70679, "votePct": 43.94 },
+        { "name": "K. Sudhakaran", "party": "INC", "votes": 66487, "votePct": 41.55 },
+        { "name": "K. Shreenath", "party": "BJP", "votes": 21231, "votePct": 13.20 },
+        { "name": "Gopi Kuthirakallu", "party": "PDP", "votes": 353, "votePct": 0.22 },
+        { "name": "Damodaran P.", "party": "Independent", "votes": 349, "votePct": 0.22 }
+      ],
+      "margin": 3882,
+      "marginPct": 2.39,
+      "turnout": 160870,
+      "turnoutPct": 80.45,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. H. Kunhambu", "party": "CPI(M)", "votes": 78664, "votePct": 47.58 },
+        { "name": "Periya Balakrishnan", "party": "INC", "votes": 65342, "votePct": 39.52 },
+        { "name": "A. Velayudhan", "party": "BJP", "votes": 20360, "votePct": 12.31 },
+        { "name": "Rameshan K.", "party": "Independent", "votes": 207, "votePct": 0.13 },
+        { "name": "Govindan B. Alinthazhe", "party": "API", "votes": 194, "votePct": 0.12 }
+      ],
+      "margin": 13322,
+      "marginPct": 8.06,
+      "turnout": 165341,
+      "turnoutPct": 77.31,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

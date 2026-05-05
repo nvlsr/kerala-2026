@@ -1,0 +1,69 @@
+{
+  "constituency": "55 - MALAMPUZHA (Kerala)",
+  "constituencyNumber": 55,
+  "constituencyName": "MALAMPUZHA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "A PRABHAKARAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 68629,
+      "margin": 19721,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "C KRISHNAKUMAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 48908,
+      "margin": -19721,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A SURESH",
+      "party": "Indian National Congress",
+      "votes": 42262,
+      "margin": -26367,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAMNATH C",
+      "party": "Bahujan Samaj Party",
+      "votes": 448,
+      "margin": -68181,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K PRASAD",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 355,
+      "margin": -68274,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAJI PJ",
+      "party": "Aam Aadmi Party",
+      "votes": 197,
+      "margin": -68432,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1506,
+      "margin": -67123,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1155.htm"
+}

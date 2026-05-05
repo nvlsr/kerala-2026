@@ -1,0 +1,45 @@
+{
+  "constituency": "117 - CHAVARA (Kerala)",
+  "constituencyNumber": 117,
+  "constituencyName": "CHAVARA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "SHIBU BABY JOHN",
+      "party": "Revolutionary Socialist Party",
+      "votes": 74308,
+      "margin": 18573,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "DR.SUJITH VIJAYANPILLAI",
+      "party": "Independent",
+      "votes": 55735,
+      "margin": -18573,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K.R.RAJESH",
+      "party": "Bharatiya Janata Party",
+      "votes": 11012,
+      "margin": -63296,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1289,
+      "margin": -73019,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11117.htm"
+}

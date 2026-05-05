@@ -1,0 +1,77 @@
+{
+  "constituency": "72 - CHALAKUDY (Kerala)",
+  "constituencyNumber": 72,
+  "constituencyName": "CHALAKUDY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "SANEESHKUMAR JOSEPH",
+      "party": "Indian National Congress",
+      "votes": 71202,
+      "margin": 23156,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. BIJU S CHIRAYATH",
+      "party": "Kerala Congress (M)",
+      "votes": 48046,
+      "margin": -23156,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. CHARLYPAUL",
+      "party": "Twenty 20 Party",
+      "votes": 16030,
+      "margin": -55172,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M S ASOKAN MANGALAPPILLY",
+      "party": "Bahujan Samaj Party",
+      "votes": 663,
+      "margin": -70539,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "WILSON KALLEN",
+      "party": "Aam Aadmi Party",
+      "votes": 519,
+      "margin": -70683,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ARUN EDATHADAN",
+      "party": "Independent",
+      "votes": 311,
+      "margin": -70891,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A D BIJU",
+      "party": "Independent",
+      "votes": 228,
+      "margin": -70974,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 932,
+      "margin": -70270,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1172.htm"
+}

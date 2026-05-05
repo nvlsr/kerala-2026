@@ -1,0 +1,77 @@
+{
+  "constituency": "101 - POONJAR (Kerala)",
+  "constituencyNumber": 101,
+  "constituencyName": "POONJAR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.SEBASTIAN M.J",
+      "party": "Indian National Congress",
+      "votes": 56900,
+      "margin": 6693,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SEBASTIAN KULATHUNKAL",
+      "party": "Kerala Congress (M)",
+      "votes": 50207,
+      "margin": -6693,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P.C. GEORGE",
+      "party": "Bharatiya Janata Party",
+      "votes": 36172,
+      "margin": -20728,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHINY A C",
+      "party": "Bahujan Samaj Party",
+      "votes": 603,
+      "margin": -56297,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABHIRAM BABU",
+      "party": "Independent",
+      "votes": 205,
+      "margin": -56695,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MAYAMOL K P",
+      "party": "Independent",
+      "votes": 136,
+      "margin": -56764,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANTHOSH JOSEPH",
+      "party": "Independent",
+      "votes": 73,
+      "margin": -56827,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 498,
+      "margin": -56402,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11101.htm"
+}

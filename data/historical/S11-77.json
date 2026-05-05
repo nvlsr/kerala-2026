@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 77,
+  "constituencyName": "KALAMASSERY",
+  "wikipediaName": "Kalamassery",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kalamassery_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. K. Ebrahimkunju", "party": "IUML", "votes": 62843, "votePct": 47.73 },
+        { "name": "K. Chandran Pillai", "party": "CPI(M)", "votes": 55054, "votePct": 41.81 },
+        { "name": "P. Krishnadas", "party": "BJP", "votes": 8438, "votePct": 6.41 },
+        { "name": "P. A. Muhammed Aslam", "party": "SDPI", "votes": 2104, "votePct": 1.60 },
+        { "name": "T. A. Mujeeb Rahman", "party": "Independent", "votes": 1236, "votePct": 0.94 }
+      ],
+      "margin": 7789,
+      "marginPct": 5.92,
+      "turnout": 131676,
+      "turnoutPct": 79.75,
+      "result": "IUML win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. K. Ebrahimkunju", "party": "IUML", "votes": 68726, "votePct": 44.37 },
+        { "name": "A. M. Yousaf", "party": "CPI(M)", "votes": 56608, "votePct": 37.55 },
+        { "name": "V. Gopakumar", "party": "BDJS", "votes": 24244, "votePct": 15.65 },
+        { "name": "Safeer Muhammed", "party": "SDPI", "votes": 1706, "votePct": 1.10 },
+        { "name": "Prema G. Pisharady", "party": "WPOI", "votes": 1391, "votePct": 0.90 }
+      ],
+      "margin": 12118,
+      "marginPct": 6.82,
+      "turnout": 154882,
+      "turnoutPct": 81.29,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Rajeev", "party": "CPI(M)", "votes": 77141, "votePct": 49.49 },
+        { "name": "V. E. Abdul Gafoor", "party": "IUML", "votes": 61805, "votePct": 39.65 },
+        { "name": "P. S. Jayaraj", "party": "BDJS", "votes": 11179, "votePct": 7.17 },
+        { "name": "V. M. Faizal", "party": "SDPI", "votes": 2385, "votePct": 1.53 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1518, "votePct": 0.97 }
+      ],
+      "margin": 15336,
+      "marginPct": 9.84,
+      "turnout": 155863,
+      "turnoutPct": 77.27,
+      "result": "CPI(M) gain from IUML"
+    }
+  ]
+}

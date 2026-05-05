@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 70,
+  "constituencyName": "IRINJALAKUDA",
+  "wikipediaName": "Irinjalakuda",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Irinjalakuda_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Thomas Unniyadan", "party": "KC(M)", "votes": 68445, "votePct": 51.70 },
+        { "name": "K. R. Vijaya", "party": "CPI(M)", "votes": 56041, "votePct": 42.33 },
+        { "name": "K. C. Venu", "party": "BJP", "votes": 6669, "votePct": 5.04 },
+        { "name": "T. V. Sivadasan", "party": "Independent", "votes": 772, "votePct": 0.58 },
+        { "name": "Subramanian", "party": "BSP", "votes": 449, "votePct": 0.34 }
+      ],
+      "margin": 12404,
+      "marginPct": 9.37,
+      "turnout": 132379,
+      "turnoutPct": 75.99,
+      "result": "KC(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. U. Arunan", "party": "CPI(M)", "votes": 59380, "votePct": 40.00 },
+        { "name": "Thomas Unniyadan", "party": "KC(M)", "votes": 57019, "votePct": 38.18 },
+        { "name": "Santhosh Cherkalam", "party": "BJP", "votes": 30420, "votePct": 20.37 },
+        { "name": "V. C. Unnikrishnan", "party": "BSP", "votes": 639, "votePct": 0.43 },
+        { "name": "Davis Chatheli", "party": "Independent", "votes": 345, "votePct": 0.23 }
+      ],
+      "margin": 2711,
+      "marginPct": 1.82,
+      "turnout": 149324,
+      "turnoutPct": 77.80,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "R. Bindu", "party": "CPI(M)", "votes": 62493, "votePct": 40.27 },
+        { "name": "Thomas Unniyadan", "party": "KEC", "votes": 56544, "votePct": 36.44 },
+        { "name": "Jacob Thomas", "party": "BJP", "votes": 33685, "votePct": 22.12 },
+        { "name": "NOTA", "party": "NOTA", "votes": 583, "votePct": 0.38 }
+      ],
+      "margin": 5949,
+      "marginPct": 3.83,
+      "turnout": 155179,
+      "turnoutPct": null,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

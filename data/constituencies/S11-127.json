@@ -1,0 +1,93 @@
+{
+  "constituency": "127 - VARKALA (Kerala)",
+  "constituencyNumber": 127,
+  "constituencyName": "VARKALA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.V JOY",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 55365,
+      "margin": 2050,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "VARKALA KAHAR",
+      "party": "Indian National Congress",
+      "votes": 53315,
+      "margin": -2050,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV.SMITHA SUNDARESAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 27400,
+      "margin": -27965,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJU S KOTTARAKONAM",
+      "party": "Bahujan Samaj Party",
+      "votes": 949,
+      "margin": -54416,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VINOD ELAKAMON",
+      "party": "Democratic Human Rights Movement Party",
+      "votes": 290,
+      "margin": -55075,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "HARIKRISHNAN S G",
+      "party": "Independent",
+      "votes": 97,
+      "margin": -55268,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VIVEKANANDAN K",
+      "party": "Independent",
+      "votes": 59,
+      "margin": -55306,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAJU",
+      "party": "Independent",
+      "votes": 57,
+      "margin": -55308,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KANNAN M K",
+      "party": "Independent",
+      "votes": 47,
+      "margin": -55318,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 652,
+      "margin": -54713,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11127.htm"
+}

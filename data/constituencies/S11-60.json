@@ -1,0 +1,61 @@
+{
+  "constituency": "60 - ALATHUR (Kerala)",
+  "constituencyNumber": 60,
+  "constituencyName": "ALATHUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "T M SASI",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 61564,
+      "margin": 8553,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K M FEBIN",
+      "party": "Indian National Congress",
+      "votes": 53011,
+      "margin": -8553,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K V  PRASANNAKUMAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 17347,
+      "margin": -44217,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M T CHANDRAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 651,
+      "margin": -60913,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "B FEBIN S/O BALAN K.C.",
+      "party": "Independent",
+      "votes": 585,
+      "margin": -60979,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1071,
+      "margin": -60493,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1160.htm"
+}

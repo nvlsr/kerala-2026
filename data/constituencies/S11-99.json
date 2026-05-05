@@ -1,0 +1,101 @@
+{
+  "constituency": "99 - CHANGANASSERY (Kerala)",
+  "constituencyNumber": 99,
+  "constituencyName": "CHANGANASSERY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "VINU JOB KUZHIMANNIL",
+      "party": "Kerala Congress",
+      "votes": 55991,
+      "margin": 8368,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. JOB MAICHIL",
+      "party": "Kerala Congress (M)",
+      "votes": 47623,
+      "margin": -8368,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "B RADHAKRISHNA MENON",
+      "party": "Bharatiya Janata Party",
+      "votes": 14803,
+      "margin": -41188,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "USHA JOHNSON",
+      "party": "Bahujan Samaj Party",
+      "votes": 883,
+      "margin": -55108,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ALTHAF HASSAN",
+      "party": "Social Democratic Party Of India",
+      "votes": 564,
+      "margin": -55427,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ARAVIND V",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 331,
+      "margin": -55660,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PROF.DR.SAJU KANNANTHARA",
+      "party": "Aam Aadmi Party",
+      "votes": 256,
+      "margin": -55735,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR.KALKI P",
+      "party": "Independent",
+      "votes": 67,
+      "margin": -55924,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOEMON JOSEPH SRAMPICKAL A P J JUMAN V S",
+      "party": "Independent",
+      "votes": 57,
+      "margin": -55934,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOSE JOSEPH",
+      "party": "Janam Rashtriya Party",
+      "votes": 43,
+      "margin": -55948,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 532,
+      "margin": -55459,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1199.htm"
+}

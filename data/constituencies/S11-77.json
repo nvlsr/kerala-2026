@@ -1,0 +1,85 @@
+{
+  "constituency": "77 - KALAMASSERY (Kerala)",
+  "constituencyNumber": 77,
+  "constituencyName": "KALAMASSERY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. V E ABDUL GAFOOR",
+      "party": "Indian Union Muslim League",
+      "votes": 80606,
+      "margin": 16312,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P RAJEEVE",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 64294,
+      "margin": -16312,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BINU",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 14130,
+      "margin": -66476,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AJMAL K MUJEEB",
+      "party": "Social Democratic Party Of India",
+      "votes": 1578,
+      "margin": -79028,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAMSU T K",
+      "party": "Aam Aadmi Party",
+      "votes": 553,
+      "margin": -80053,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SIYAD V A",
+      "party": "Bahujan Samaj Party",
+      "votes": 331,
+      "margin": -80275,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A RAJEENA",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 301,
+      "margin": -80305,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJEEV S/O VAREED",
+      "party": "Independent",
+      "votes": 233,
+      "margin": -80373,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1319,
+      "margin": -79287,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1177.htm"
+}

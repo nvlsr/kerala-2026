@@ -1,0 +1,57 @@
+{
+  "constituencyNumber": 53,
+  "constituencyName": "KONGAD",
+  "wikipediaName": "Kongad",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kongad_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. V. Vijayadas", "party": "CPI(M)", "votes": 52920, "votePct": 46.49 },
+        { "name": "P. Swaminathan", "party": "INC", "votes": 49355, "votePct": 43.49 },
+        { "name": "V. Devayani", "party": "BJP", "votes": 8467, "votePct": 7.46 },
+        { "name": "Vijayadasan", "party": "Independent", "votes": 1543, "votePct": 1.36 },
+        { "name": "K. Velayudhan", "party": "BSP", "votes": 1198, "votePct": 1.06 }
+      ],
+      "margin": 3565,
+      "marginPct": 3.14,
+      "turnout": 113483,
+      "turnoutPct": 72.84,
+      "result": "CPI(M) win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. V. Vijayadas", "party": "CPI(M)", "votes": 60790, "votePct": 45.35 },
+        { "name": "Pandalam Sudhakaran", "party": "INC", "votes": 47519, "votePct": 35.45 },
+        { "name": "Renu Suresh", "party": "BJP", "votes": 23800, "votePct": 17.75 },
+        { "name": "Ramesh P. V. Kannampariyam", "party": "BSP", "votes": 789, "votePct": 0.59 }
+      ],
+      "margin": 13271,
+      "marginPct": 9.90,
+      "turnout": 134061,
+      "turnoutPct": 77.14,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Santhakumari", "party": "CPI(M)", "votes": 67881, "votePct": 49.01 },
+        { "name": "U. C. Raman", "party": "IUML", "votes": 40662, "votePct": 29.36 },
+        { "name": "M. Suresh Babu", "party": "BJP", "votes": 27661, "votePct": 19.97 },
+        { "name": "P. E. Guruvayoorappan", "party": "BSP", "votes": 1351, "votePct": 0.59 }
+      ],
+      "margin": 27219,
+      "marginPct": 19.65,
+      "turnout": 138508,
+      "turnoutPct": 76.45,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

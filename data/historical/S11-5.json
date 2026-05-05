@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 5,
+  "constituencyName": "TRIKARIPUR",
+  "wikipediaName": "Thrikaripur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thrikaripur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Kunhiraman", "party": "CPI(M)", "votes": 67871, "votePct": 49.91 },
+        { "name": "K. V. Gangadharan", "party": "INC", "votes": 59106, "votePct": 43.46 },
+        { "name": "T. Radhakrishnan", "party": "BJP", "votes": 5450, "votePct": 4.01 },
+        { "name": "Razak Haji Parambath", "party": "SDPI", "votes": 5450, "votePct": 4.01 },
+        { "name": "Arun Kumar", "party": "BSP", "votes": 1031, "votePct": 0.76 }
+      ],
+      "margin": 8765,
+      "marginPct": 6.45,
+      "turnout": 135988,
+      "turnoutPct": 80.28,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. Rajagopalan", "party": "CPI(M)", "votes": 79286, "votePct": 50.93 },
+        { "name": "K. P. Kunhikannan", "party": "INC", "votes": 62327, "votePct": 40.04 },
+        { "name": "M. Bhaskaran", "party": "BJP", "votes": 10767, "votePct": 6.92 },
+        { "name": "C. H. Muthalib", "party": "WPOI", "votes": 1029, "votePct": 0.66 },
+        { "name": "M. V. Shaukathali", "party": "SDPI", "votes": 840, "votePct": 0.54 }
+      ],
+      "margin": 16959,
+      "marginPct": 10.89,
+      "turnout": 155671,
+      "turnoutPct": 81.88,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. Rajagopalan", "party": "CPI(M)", "votes": 86151, "votePct": 53.71 },
+        { "name": "M. P. Joseph", "party": "KEC", "votes": 60014, "votePct": 37.41 },
+        { "name": "Shibin T. V.", "party": "BJP", "votes": 10961, "votePct": 6.83 },
+        { "name": "Liyakathali P.", "party": "SDPI", "votes": 1211, "votePct": 0.75 },
+        { "name": "T. Mahesh Master", "party": "WPOI", "votes": 817, "votePct": 0.51 }
+      ],
+      "margin": 26137,
+      "marginPct": 16.30,
+      "turnout": 160408,
+      "turnoutPct": 78.95,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

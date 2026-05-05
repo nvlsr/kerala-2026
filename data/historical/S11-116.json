@@ -1,0 +1,57 @@
+{
+  "constituencyNumber": 116,
+  "constituencyName": "KARUNAGAPPALLY",
+  "wikipediaName": "Karunagappally",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Karunagappally_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. Divakaran", "party": "CPI", "votes": 69086, "votePct": 50.13 },
+        { "name": "A. N. Rajan Babu", "party": "JSS", "votes": 54564, "votePct": 39.59 },
+        { "name": "Nazarudeen Elamaram", "party": "SDPI", "votes": 7645, "votePct": 5.55 },
+        { "name": "Malumel Sumesh", "party": "BJP", "votes": 5097, "votePct": 3.70 },
+        { "name": "P. D. Sudheer", "party": "Independent", "votes": 868, "votePct": 0.63 }
+      ],
+      "margin": 14522,
+      "marginPct": 10.54,
+      "turnout": 137807,
+      "turnoutPct": 75.51,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "R. Ramachandran", "party": "CPI", "votes": 69902, "votePct": 43.06 },
+        { "name": "C. R. Mahesh", "party": "INC", "votes": 68143, "votePct": 41.97 },
+        { "name": "V. Sadasivan", "party": "BDJS", "votes": 19115, "votePct": 11.77 },
+        { "name": "A. K. Salahudeen", "party": "SDPI", "votes": 1737, "votePct": 1.07 },
+        { "name": "Mylakkadu Shah", "party": "PDP", "votes": 1620, "votePct": 1.00 }
+      ],
+      "margin": 1759,
+      "marginPct": 1.09,
+      "turnout": 162351,
+      "turnoutPct": 79.37,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. R. Mahesh", "party": "INC", "votes": 94225, "votePct": 54.38 },
+        { "name": "R. Ramachandran", "party": "CPI", "votes": 65017, "votePct": 37.52 },
+        { "name": "Bitty Sudheer", "party": "BJP", "votes": 12144, "votePct": 7.01 }
+      ],
+      "margin": 29208,
+      "marginPct": 16.68,
+      "turnout": 173284,
+      "turnoutPct": 80.97,
+      "result": "INC gain from CPI"
+    }
+  ]
+}

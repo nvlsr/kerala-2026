@@ -1,0 +1,69 @@
+{
+  "constituency": "73 - KODUNGALLUR (Kerala)",
+  "constituencyNumber": 73,
+  "constituencyName": "KODUNGALLUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. O J JANEESH",
+      "party": "Indian National Congress",
+      "votes": 65162,
+      "margin": 8308,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. V R SUNIL KUMAR",
+      "party": "Communist Party of India",
+      "votes": 56854,
+      "margin": -8308,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR. VARGHESE GEORGE",
+      "party": "Twenty 20 Party",
+      "votes": 23933,
+      "margin": -41229,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAVI A K",
+      "party": "Bahujan Samaj Party",
+      "votes": 488,
+      "margin": -64674,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR. K M FRANCIS ROY",
+      "party": "Aam Aadmi Party",
+      "votes": 447,
+      "margin": -64715,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NANDAGOPAN VELLATHADI",
+      "party": "Independent",
+      "votes": 284,
+      "margin": -64878,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 744,
+      "margin": -64418,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1173.htm"
+}

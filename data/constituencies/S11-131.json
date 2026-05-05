@@ -1,0 +1,69 @@
+{
+  "constituency": "131 - VAMANAPURAM (Kerala)",
+  "constituencyNumber": 131,
+  "constituencyName": "VAMANAPURAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "MUHAMMED SUDHEERSHA S",
+      "party": "Indian National Congress",
+      "votes": 73590,
+      "margin": 12185,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "MURALEEDHARAN NAIR D K",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 61405,
+      "margin": -12185,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VENU",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 12093,
+      "margin": -61497,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VIPINLAL V A",
+      "party": "Bahujan Samaj Party",
+      "votes": 734,
+      "margin": -72856,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RATHEESH R",
+      "party": "Democratic Human Rights Movement Party",
+      "votes": 275,
+      "margin": -73315,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MURALEEDHARAN NAIR G",
+      "party": "Independent",
+      "votes": 173,
+      "margin": -73417,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 812,
+      "margin": -72778,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11131.htm"
+}

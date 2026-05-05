@@ -1,0 +1,76 @@
+{
+  "constituencyNumber": 1,
+  "constituencyName": "MANJESHWAR",
+  "wikipediaName": "Manjeshwaram",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Manjeshwaram_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. B. Abdul Razak", "party": "IUML", "votes": 49817, "votePct": 37.46 },
+        { "name": "K. Surendran", "party": "BJP", "votes": 43989, "votePct": 33.08 },
+        { "name": "C. H. Kunhambu", "party": "CPI(M)", "votes": 35067, "votePct": 26.37 },
+        { "name": "Hafsa Muneer", "party": "Independent", "votes": 1076, "votePct": 0.81 },
+        { "name": "Abdul Majeed", "party": "BSP", "votes": 869, "votePct": 0.65 }
+      ],
+      "margin": 5828,
+      "marginPct": 4.38,
+      "turnout": 132973,
+      "turnoutPct": 75.20,
+      "result": "IUML gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. B. Abdul Razak", "party": "IUML", "votes": 56870, "votePct": 35.79 },
+        { "name": "K. Surendran", "party": "BJP", "votes": 56781, "votePct": 35.74 },
+        { "name": "C. H. Kunhambu", "party": "CPI(M)", "votes": 42565, "votePct": 26.79 },
+        { "name": "Basheer Ahammad S. M.", "party": "PDP", "votes": 759, "votePct": 0.48 },
+        { "name": "Sundara K.", "party": "Independent", "votes": 467, "votePct": 0.29 }
+      ],
+      "margin": 89,
+      "marginPct": 0.05,
+      "turnout": 158884,
+      "turnoutPct": 76.33,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2019,
+      "type": "by-election",
+      "reason": "death of sitting MLA",
+      "candidates": [
+        { "name": "M. C. Kamaruddin", "party": "IUML", "votes": 65407, "votePct": 40.19 },
+        { "name": "Raveesh Thanthri Kuntar", "party": "BJP", "votes": 57484, "votePct": 35.32 },
+        { "name": "M. Shankara Rai", "party": "CPI(M)", "votes": 38233, "votePct": 23.49 },
+        { "name": "Govindan B. Alinthazhe", "party": "Independent", "votes": 337, "votePct": 0.21 },
+        { "name": "John D. Souza", "party": "Independent", "votes": 277, "votePct": 0.17 }
+      ],
+      "margin": 7923,
+      "marginPct": 4.87,
+      "turnout": 162755,
+      "turnoutPct": 75.78,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. K. M. Ashraf", "party": "IUML", "votes": 65858, "votePct": 38.14 },
+        { "name": "K. Surendran", "party": "BJP", "votes": 65013, "votePct": 37.70 },
+        { "name": "V. V. Rameshan", "party": "CPI(M)", "votes": 40639, "votePct": 23.57 },
+        { "name": "Praveen Kumar S", "party": "Anna DHRM", "votes": 251, "votePct": 0.15 },
+        { "name": "John D'Souza I", "party": "Independent", "votes": 181, "votePct": 0.10 }
+      ],
+      "margin": 845,
+      "marginPct": 0.44,
+      "turnout": 170431,
+      "turnoutPct": 76.88,
+      "result": "IUML hold"
+    }
+  ]
+}

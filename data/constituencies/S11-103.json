@@ -1,0 +1,77 @@
+{
+  "constituency": "103 - CHERTHALA (Kerala)",
+  "constituencyNumber": 103,
+  "constituencyName": "CHERTHALA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P. PRASAD",
+      "party": "Communist Party of India",
+      "votes": 83216,
+      "margin": 14489,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K.R. RAJENDRA PRASAD",
+      "party": "Indian National Congress",
+      "votes": 68727,
+      "margin": -14489,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. T.P. ANANTHARAJ",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 17997,
+      "margin": -65219,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NANDAKUMAR",
+      "party": "Independent",
+      "votes": 455,
+      "margin": -82761,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A.P. PRASAD S/O PURUSHOTHAMAN",
+      "party": "Independent",
+      "votes": 366,
+      "margin": -82850,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJENDRA PRASAD S/O PRABHAKARAN",
+      "party": "Independent",
+      "votes": 249,
+      "margin": -82967,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SONNYMON K .MATHEW",
+      "party": "Independent",
+      "votes": 190,
+      "margin": -83026,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1021,
+      "margin": -82195,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11103.htm"
+}

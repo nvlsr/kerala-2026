@@ -1,0 +1,61 @@
+{
+  "constituency": "118 - KUNNATHUR (Kerala)",
+  "constituencyNumber": 118,
+  "constituencyName": "KUNNATHUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ULLAS  KOVUR",
+      "party": "Revolutionary Socialist Party",
+      "votes": 81488,
+      "margin": 25314,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "KOVOOR  KUNJUMON",
+      "party": "Kerala Revolutionary Socialist Party (Leninist- Marxist)",
+      "votes": 56174,
+      "margin": -25314,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJI  PRASAD",
+      "party": "Bharatiya Janata Party",
+      "votes": 24841,
+      "margin": -56647,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MANTHARA  VELAYUDHAN",
+      "party": "Independent",
+      "votes": 404,
+      "margin": -81084,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T. SASIDHARAN",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 366,
+      "margin": -81122,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 828,
+      "margin": -80660,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11118.htm"
+}

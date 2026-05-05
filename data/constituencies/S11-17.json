@@ -1,0 +1,45 @@
+{
+  "constituency": "17 - MANANTHAVADY (Kerala)",
+  "constituencyNumber": 17,
+  "constituencyName": "MANANTHAVADY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "USHA VIJAYAN",
+      "party": "Indian National Congress",
+      "votes": 77425,
+      "margin": 10543,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "O R KELU",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 66882,
+      "margin": -10543,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P SHYAMRAJ",
+      "party": "Bharatiya Janata Party",
+      "votes": 19681,
+      "margin": -57744,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1018,
+      "margin": -76407,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1117.htm"
+}

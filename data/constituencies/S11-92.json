@@ -1,0 +1,61 @@
+{
+  "constituency": "92 - PEERUMADE (Kerala)",
+  "constituencyNumber": 92,
+  "constituencyName": "PEERUMADE",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.CYRIAC THOMAS",
+      "party": "Indian National Congress",
+      "votes": 69672,
+      "margin": 27634,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K SALIMKUMAR",
+      "party": "Communist Party of India",
+      "votes": 42038,
+      "margin": -27634,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RATHEESH VARAKUMALA",
+      "party": "Bharatiya Janata Party",
+      "votes": 9218,
+      "margin": -60454,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOSEPH JACOB",
+      "party": "Aam Aadmi Party",
+      "votes": 508,
+      "margin": -69164,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K MURALI",
+      "party": "Bahujan Samaj Party",
+      "votes": 425,
+      "margin": -69247,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 791,
+      "margin": -68881,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1192.htm"
+}

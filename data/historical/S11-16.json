@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 16,
+  "constituencyName": "PERAVOOR",
+  "wikipediaName": "Peravoor",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peravoor_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Sunny Joseph", "party": "INC", "votes": 56151, "votePct": 48.07 },
+        { "name": "K. K. Shailaja", "party": "CPI(M)", "votes": 52711, "votePct": 45.12 },
+        { "name": "P. K. Velayudhan", "party": "BJP", "votes": 4055, "votePct": 3.47 },
+        { "name": "P. K. Ayyappan", "party": "SDPI", "votes": 1537, "votePct": 1.32 },
+        { "name": "Sunny Joseph", "party": "Independent", "votes": 903, "votePct": 0.77 }
+      ],
+      "margin": 3440,
+      "marginPct": 2.95,
+      "turnout": 116813,
+      "turnoutPct": 80.02,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Sunny Joseph", "party": "INC", "votes": 65659, "votePct": 48.10 },
+        { "name": "Binoy Kurian", "party": "CPI(M)", "votes": 57670, "votePct": 42.25 },
+        { "name": "Paily Vathiattu", "party": "BJP", "votes": 9129, "votePct": 6.69 },
+        { "name": "P. K. Farookh", "party": "SDPI", "votes": 1935, "votePct": 1.42 },
+        { "name": "Pallipram Prasannan", "party": "WPOI", "votes": 513, "votePct": 0.38 }
+      ],
+      "margin": 7989,
+      "marginPct": 5.85,
+      "turnout": 136505,
+      "turnoutPct": 81.03,
+      "result": "INC hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Sunny Joseph", "party": "INC", "votes": 66706, "votePct": 46.93 },
+        { "name": "Sakeer Hussain", "party": "CPI(M)", "votes": 63534, "votePct": 44.7 },
+        { "name": "Smitha Jayamohan", "party": "BJP", "votes": 9155, "votePct": 6.44 },
+        { "name": "A.C. Jalaluddeen", "party": "SDPI", "votes": 1541, "votePct": 1.08 },
+        { "name": "NOTA", "party": "NOTA", "votes": 404, "votePct": 0.28 }
+      ],
+      "margin": 3172,
+      "marginPct": 2.23,
+      "turnout": 142138,
+      "turnoutPct": 78.07,
+      "result": "INC hold"
+    }
+  ]
+}

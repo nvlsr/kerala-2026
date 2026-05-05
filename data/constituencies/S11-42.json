@@ -1,0 +1,69 @@
+{
+  "constituency": "42 - VALLIKUNNU (Kerala)",
+  "constituencyNumber": 42,
+  "constituencyName": "VALLIKUNNU",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "T V IBRAHIM",
+      "party": "Indian Union Muslim League",
+      "votes": 100718,
+      "margin": 51289,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. MUSTHAFA",
+      "party": "Independent",
+      "votes": 49429,
+      "margin": -51289,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PREMKUMAR (PREMAN MASTER)",
+      "party": "Bharatiya Janata Party",
+      "votes": 23283,
+      "margin": -77435,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUHAMED MUSTHAFA PAMANGADAN",
+      "party": "Independent",
+      "votes": 3698,
+      "margin": -97020,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL AZEEZ KADALUNDI",
+      "party": "Aam Aadmi Party",
+      "votes": 1575,
+      "margin": -99143,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUHAMMED ASLAM V P",
+      "party": "Independent",
+      "votes": 1058,
+      "margin": -99660,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1261,
+      "margin": -99457,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1142.htm"
+}

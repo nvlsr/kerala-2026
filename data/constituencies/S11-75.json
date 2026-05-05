@@ -1,0 +1,77 @@
+{
+  "constituency": "75 - ANGAMALY (Kerala)",
+  "constituencyNumber": 75,
+  "constituencyName": "ANGAMALY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ROJI M JOHN",
+      "party": "Indian National Congress",
+      "votes": 78331,
+      "margin": 37008,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SAJU PAUL",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 41323,
+      "margin": -37008,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PROMY KURIAKOSE",
+      "party": "Twenty 20 Party",
+      "votes": 9893,
+      "margin": -68438,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P V RAJEESH",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 220,
+      "margin": -78111,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOBY PAUL UPPAN",
+      "party": "Independent",
+      "votes": 163,
+      "margin": -78168,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUPHIL SEBASTIAN",
+      "party": "Independent",
+      "votes": 156,
+      "margin": -78175,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUBRAN",
+      "party": "Independent",
+      "votes": 96,
+      "margin": -78235,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 666,
+      "margin": -77665,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1175.htm"
+}

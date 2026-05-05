@@ -1,0 +1,101 @@
+{
+  "constituency": "135 - NEMOM (Kerala)",
+  "constituencyNumber": 135,
+  "constituencyName": "NEMOM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "RAJEEV CHANDRASEKHAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 57192,
+      "margin": 4978,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "V SIVANKUTTY",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 52214,
+      "margin": -4978,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV K S SABARINADHAN",
+      "party": "Indian National Congress",
+      "votes": 29730,
+      "margin": -27462,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KARAMANA PRASAD",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 163,
+      "margin": -57029,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VINU K",
+      "party": "Aam Aadmi Party",
+      "votes": 146,
+      "margin": -57046,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJEEV KUMAR G S",
+      "party": "Independent",
+      "votes": 84,
+      "margin": -57108,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KAMALESWARAM HARI",
+      "party": "Independent",
+      "votes": 64,
+      "margin": -57128,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SASIKALA",
+      "party": "Independent",
+      "votes": 57,
+      "margin": -57135,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUBI S M",
+      "party": "The Future India Party",
+      "votes": 53,
+      "margin": -57139,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MADANAN S",
+      "party": "Independent",
+      "votes": 48,
+      "margin": -57144,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 604,
+      "margin": -56588,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11135.htm"
+}

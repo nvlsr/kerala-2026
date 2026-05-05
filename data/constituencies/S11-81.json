@@ -1,0 +1,93 @@
+{
+  "constituency": "81 - THRIPUNITHURA (Kerala)",
+  "constituencyNumber": 81,
+  "constituencyName": "THRIPUNITHURA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "DEEPAK JOY",
+      "party": "Indian National Congress",
+      "votes": 70256,
+      "margin": 18468,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K N UNNIKRISHNAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 51788,
+      "margin": -18468,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANJALI .P. V",
+      "party": "Twenty 20 Party",
+      "votes": 29471,
+      "margin": -40785,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "UNNIKRISHNAN K N",
+      "party": "Independent",
+      "votes": 544,
+      "margin": -69712,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KARTHIKEYAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 424,
+      "margin": -69832,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANDEEP RAJENDRAPRASAD",
+      "party": "Independent",
+      "votes": 376,
+      "margin": -69880,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "THOMAS PAUL KOMAROTH",
+      "party": "Aam Aadmi Party",
+      "votes": 272,
+      "margin": -69984,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SATHEESAN",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 148,
+      "margin": -70108,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJKUMAR",
+      "party": "Independent",
+      "votes": 77,
+      "margin": -70179,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1171,
+      "margin": -69085,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1181.htm"
+}

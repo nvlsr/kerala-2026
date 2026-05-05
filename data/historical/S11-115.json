@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 115,
+  "constituencyName": "ADOOR",
+  "wikipediaName": "Adoor",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Adoor_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Chittayam Gopakumar", "party": "CPI", "votes": 63501, "votePct": 47.02 },
+        { "name": "Pandalam Sudhakaran", "party": "INC", "votes": 62894, "votePct": 46.57 },
+        { "name": "K. K. Sasi", "party": "BJP", "votes": 6210, "votePct": 4.60 },
+        { "name": "Olikkulangara Surendran", "party": "Independent", "votes": 994, "votePct": 0.74 },
+        { "name": "Kodumon Ramachandran", "party": "BSP", "votes": 519, "votePct": 0.38 }
+      ],
+      "margin": 607,
+      "marginPct": 0.45,
+      "turnout": 135057,
+      "turnoutPct": 69.61,
+      "result": "CPI gain from INC"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Chittayam Gopakumar", "party": "CPI", "votes": 76034, "votePct": 49.05 },
+        { "name": "K. K. Shaju", "party": "INC", "votes": 50574, "votePct": 32.62 },
+        { "name": "P. Sudheer", "party": "BJP", "votes": 25940, "votePct": 16.73 },
+        { "name": "Jyothish Perumpulickal", "party": "SDPI", "votes": 673, "votePct": 0.43 },
+        { "name": "NOTA", "party": "NOTA", "votes": 672, "votePct": 0.43 }
+      ],
+      "margin": 25460,
+      "marginPct": 16.43,
+      "turnout": 155018,
+      "turnoutPct": 74.37,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Chittayam Gopakumar", "party": "CPI", "votes": 66569, "votePct": 42.83 },
+        { "name": "M. G. Kannan", "party": "INC", "votes": 63650, "votePct": 40.96 },
+        { "name": "Pandalam Prathapan", "party": "BJP", "votes": 23980, "votePct": 15.43 },
+        { "name": "NOTA", "party": "NOTA", "votes": 594, "votePct": 0.38 },
+        { "name": "R. Kannan S/o Rajan", "party": "Independent", "votes": 218, "votePct": 0.14 }
+      ],
+      "margin": 2919,
+      "marginPct": 1.87,
+      "turnout": 155411,
+      "turnoutPct": 74.68,
+      "result": "CPI hold"
+    }
+  ]
+}

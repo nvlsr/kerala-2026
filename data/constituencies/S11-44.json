@@ -1,0 +1,69 @@
+{
+  "constituency": "44 - TANUR (Kerala)",
+  "constituencyNumber": 44,
+  "constituencyName": "TANUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P K NAVAS",
+      "party": "Indian Union Muslim League",
+      "votes": 91992,
+      "margin": 27131,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "MOHAMED SAMEER T THIRUTHIYIL HOUSE",
+      "party": "Independent",
+      "votes": 64861,
+      "margin": -27131,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DEEPA PUZHAKKAL",
+      "party": "Bharatiya Janata Party",
+      "votes": 13642,
+      "margin": -78350,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P P NAVAS S/o KUNHIMUHAMED",
+      "party": "Independent",
+      "votes": 502,
+      "margin": -91490,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAMEER T",
+      "party": "Independent",
+      "votes": 373,
+      "margin": -91619,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUHAMMED SAMEER NARUNGEL PARAMBIL HOUSE",
+      "party": "Independent",
+      "votes": 365,
+      "margin": -91627,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 589,
+      "margin": -91403,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1144.htm"
+}

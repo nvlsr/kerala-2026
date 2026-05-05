@@ -1,0 +1,57 @@
+{
+  "constituencyNumber": 125,
+  "constituencyName": "ERAVIPURAM",
+  "wikipediaName": "Eravipuram",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eravipuram_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. A. Azeez", "party": "RSP", "votes": 51271, "votePct": 49.0 },
+        { "name": "P. K. K. Bava", "party": "IUML", "votes": 43259, "votePct": 41.34 },
+        { "name": "Pattathanam Babu", "party": "BJP", "votes": 5048, "votePct": 4.82 },
+        { "name": "Mylakkad Shah", "party": "Independent", "votes": 3234, "votePct": 3.09 },
+        { "name": "Sushama Vijayan", "party": "BSP", "votes": 580, "votePct": 0.55 }
+      ],
+      "margin": 8012,
+      "marginPct": 7.66,
+      "turnout": 104645,
+      "turnoutPct": 68.14,
+      "result": "RSP hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. Noushad", "party": "CPI(M)", "votes": 65392, "votePct": 52.33 },
+        { "name": "A. A. Azeez", "party": "RSP", "votes": 36589, "votePct": 29.28 },
+        { "name": "Akkavila Satheek", "party": "BDJS", "votes": 19714, "votePct": 15.77 },
+        { "name": "Ayathil Razak", "party": "SDPI", "votes": 988, "votePct": 0.79 },
+        { "name": "NOTA", "party": "NOTA", "votes": 950, "votePct": 0.76 }
+      ],
+      "margin": 28803,
+      "marginPct": 23.05,
+      "turnout": 124971,
+      "turnoutPct": 73.4,
+      "result": "CPI(M) gain from RSP"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Vishnu Mohan", "party": "RSP", "votes": 64383, "votePct": null },
+        { "name": "M. Noushad", "party": "CPI(M)", "votes": 55580, "votePct": null },
+        { "name": "Saji D. Anand", "party": "BDJS", "votes": 10469, "votePct": null }
+      ],
+      "margin": 8803,
+      "marginPct": null,
+      "turnout": null,
+      "turnoutPct": null,
+      "result": "RSP gain from CPI(M)"
+    }
+  ]
+}

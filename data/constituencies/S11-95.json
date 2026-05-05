@@ -1,0 +1,77 @@
+{
+  "constituency": "95 - VAIKOM (Kerala)",
+  "constituencyNumber": 95,
+  "constituencyName": "VAIKOM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K BINIMON",
+      "party": "Indian National Congress",
+      "votes": 52944,
+      "margin": 1360,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P PRADEEP",
+      "party": "Communist Party of India",
+      "votes": 51584,
+      "margin": -1360,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K AJITH",
+      "party": "Bharatiya Janata Party",
+      "votes": 20297,
+      "margin": -32647,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUMAM P S",
+      "party": "Bahujan Samaj Party",
+      "votes": 280,
+      "margin": -52664,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. P I JAYAKUMAR",
+      "party": "Independent",
+      "votes": 158,
+      "margin": -52786,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRADEEP S/O KUTTAPPAN",
+      "party": "Independent",
+      "votes": 123,
+      "margin": -52821,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T M BOSE",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 115,
+      "margin": -52829,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 737,
+      "margin": -52207,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1195.htm"
+}

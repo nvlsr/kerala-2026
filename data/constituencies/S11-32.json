@@ -1,0 +1,77 @@
+{
+  "constituency": "32 - THIRUVAMBADI (Kerala)",
+  "constituencyNumber": 32,
+  "constituencyName": "THIRUVAMBADI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "C K KASIM",
+      "party": "Indian Union Muslim League",
+      "votes": 77140,
+      "margin": 6741,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "LINTO JOSEPH",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 70399,
+      "margin": -6741,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUNNY THOMAS",
+      "party": "Twenty 20 Party",
+      "votes": 7380,
+      "margin": -69760,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUNNY V JOSEPH",
+      "party": "Aam Aadmi Party",
+      "votes": 812,
+      "margin": -76328,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUHAMMED KASIM",
+      "party": "Independent",
+      "votes": 186,
+      "margin": -76954,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR. WILSON ROCKEY",
+      "party": "Independent",
+      "votes": 164,
+      "margin": -76976,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P K KASIM  S/O ABDULLAKKUTTY HAJI",
+      "party": "Independent",
+      "votes": 141,
+      "margin": -76999,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 458,
+      "margin": -76682,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1132.htm"
+}

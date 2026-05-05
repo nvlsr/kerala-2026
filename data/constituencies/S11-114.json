@@ -1,0 +1,53 @@
+{
+  "constituency": "114 - KONNI (Kerala)",
+  "constituencyNumber": 114,
+  "constituencyName": "KONNI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV K U JENISH KUMAR",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 60380,
+      "margin": 1838,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "PROF SATHEESH KOCHUPARAMBIL",
+      "party": "Indian National Congress",
+      "votes": 58542,
+      "margin": -1838,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUNDARESAN T P",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 15278,
+      "margin": -45102,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV VARUGHESE OOMMEN",
+      "party": "Independent",
+      "votes": 400,
+      "margin": -59980,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 805,
+      "margin": -59575,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11114.htm"
+}

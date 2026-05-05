@@ -1,0 +1,85 @@
+{
+  "constituency": "38 - PERINTHALMANNA (Kerala)",
+  "constituencyNumber": 38,
+  "constituencyName": "PERINTHALMANNA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "NAJEEB KANTHAPURAM",
+      "party": "Indian Union Muslim League",
+      "votes": 104888,
+      "margin": 32431,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "V.P MOHAMMED HANEEFA",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 72457,
+      "margin": -32431,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. K.P BABURAJ",
+      "party": "Bharatiya Janata Party",
+      "votes": 7240,
+      "margin": -97648,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL NAJEEB S/O MOHAMED",
+      "party": "Independent",
+      "votes": 239,
+      "margin": -104649,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOHAMMED HANEEFA P S/O ALAVI",
+      "party": "Independent",
+      "votes": 228,
+      "margin": -104660,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "HANEEFA",
+      "party": "Independent",
+      "votes": 205,
+      "margin": -104683,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NAJEEB",
+      "party": "Independent",
+      "votes": 113,
+      "margin": -104775,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL NAJEEB S/O VEERAPPU",
+      "party": "Independent",
+      "votes": 54,
+      "margin": -104834,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 664,
+      "margin": -104224,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1138.htm"
+}

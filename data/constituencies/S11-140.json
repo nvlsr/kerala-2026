@@ -1,0 +1,61 @@
+{
+  "constituency": "140 - NEYYATTINKARA (Kerala)",
+  "constituencyNumber": 140,
+  "constituencyName": "NEYYATTINKARA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "N. SHAKTHAN",
+      "party": "Indian National Congress",
+      "votes": 58760,
+      "margin": 6966,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K. ANSALAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 51794,
+      "margin": -6966,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "CHENKAL RAJASEKHARAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 21858,
+      "margin": -36902,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SURENDRANATHAN. K",
+      "party": "Bahujan Samaj Party",
+      "votes": 327,
+      "margin": -58433,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BIBIN S.B",
+      "party": "Independent",
+      "votes": 157,
+      "margin": -58603,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 720,
+      "margin": -58040,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11140.htm"
+}

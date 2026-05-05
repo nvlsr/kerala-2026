@@ -1,0 +1,61 @@
+{
+  "constituency": "138 - KATTAKKADA (Kerala)",
+  "constituencyNumber": 138,
+  "constituencyName": "KATTAKKADA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "M. R. BAIJU",
+      "party": "Indian National Congress",
+      "votes": 56846,
+      "margin": 7136,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. I. B. SATHEESH",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 49710,
+      "margin": -7136,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P. K. KRISHNADAS",
+      "party": "Bharatiya Janata Party",
+      "votes": 38231,
+      "margin": -18615,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOBIL M. D",
+      "party": "Bahujan Samaj Party",
+      "votes": 433,
+      "margin": -56413,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. JAYAKUMAR THEERTHAM",
+      "party": "Communist Party of India (Marxist-Leninist) (Liberation)",
+      "votes": 262,
+      "margin": -56584,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 762,
+      "margin": -56084,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11138.htm"
+}

@@ -1,0 +1,101 @@
+{
+  "constituency": "24 - PERAMBRA (Kerala)",
+  "constituencyNumber": 24,
+  "constituencyName": "PERAMBRA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. FATHIMA THAHILIYA",
+      "party": "Indian Union Muslim League",
+      "votes": 81429,
+      "margin": 5087,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "T. P. RAMAKRISHNAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 76342,
+      "margin": -5087,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M. MOHANAN MASTER",
+      "party": "Bharatiya Janata Party",
+      "votes": 13042,
+      "margin": -68387,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AKHIL KUMAR .A.M",
+      "party": "Communist Party of India (Marxist-Leninist) Red Star",
+      "votes": 151,
+      "margin": -81278,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "FATHIMATHU RUKSANA. P",
+      "party": "Independent",
+      "votes": 151,
+      "margin": -81278,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "FATHIMA NASRI. V",
+      "party": "Independent",
+      "votes": 140,
+      "margin": -81289,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RENJITH MALAYIL",
+      "party": "Aam Aadmi Party",
+      "votes": 124,
+      "margin": -81305,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T.M. RAMAKRISHNAN S/O NARAYANAN NAIR",
+      "party": "Independent",
+      "votes": 72,
+      "margin": -81357,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P.K. BIJU MASTER",
+      "party": "Independent",
+      "votes": 66,
+      "margin": -81363,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K. RAMAKRISHNAN S/O GOVINDAN NAIR",
+      "party": "Independent",
+      "votes": 62,
+      "margin": -81367,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 507,
+      "margin": -80922,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1124.htm"
+}

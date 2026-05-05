@@ -1,0 +1,61 @@
+{
+  "constituency": "83 - THRIKKAKARA (Kerala)",
+  "constituencyNumber": 83,
+  "constituencyName": "THRIKKAKARA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "UMA THOMAS",
+      "party": "Indian National Congress",
+      "votes": 83375,
+      "margin": 50211,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. PUSHPA DAS",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 33164,
+      "margin": -50211,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AKHIL RAJ (AKHIL MARAR)",
+      "party": "Twenty 20 Party",
+      "votes": 21424,
+      "margin": -61951,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOSE GEORGE",
+      "party": "Aam Aadmi Party",
+      "votes": 605,
+      "margin": -82770,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOSEPH ALOSIUS",
+      "party": "Social Democratic Party Of India",
+      "votes": 551,
+      "margin": -82824,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1353,
+      "margin": -82022,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1183.htm"
+}

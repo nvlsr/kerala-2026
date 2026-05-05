@@ -1,0 +1,76 @@
+{
+  "constituencyNumber": 93,
+  "constituencyName": "PALA",
+  "wikipediaName": "Pala",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pala_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. M. Mani", "party": "KC(M)", "votes": 61239, "votePct": 49.14 },
+        { "name": "Mani C. Kappan", "party": "NCP", "votes": 55980, "votePct": 44.92 },
+        { "name": "B. Vijayakumar", "party": "BJP", "votes": 6359, "votePct": 5.1 },
+        { "name": "C. V. John", "party": "Independent", "votes": 576, "votePct": 0.46 },
+        { "name": "James Joseph", "party": "Independent", "votes": 465, "votePct": 0.16 }
+      ],
+      "margin": 5259,
+      "marginPct": 4.22,
+      "turnout": 124619,
+      "turnoutPct": 73.66,
+      "result": "KC(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. M. Mani", "party": "KC(M)", "votes": 58884, "votePct": 42.13 },
+        { "name": "Mani C. Kappan", "party": "NCP", "votes": 54181, "votePct": 38.78 },
+        { "name": "N. Hari", "party": "BJP", "votes": 24821, "votePct": 17.76 },
+        { "name": "Jose Thomas Padiyammakkal", "party": "Independent", "votes": 489, "votePct": 0.35 },
+        { "name": "Anthony", "party": "Independent", "votes": 217, "votePct": 0.16 }
+      ],
+      "margin": 4703,
+      "marginPct": 3.37,
+      "turnout": 139775,
+      "turnoutPct": 77.61,
+      "result": "KC(M) hold"
+    },
+    {
+      "year": 2019,
+      "type": "by-election",
+      "reason": "Death of sitting MLA K. M. Mani in April 2019",
+      "candidates": [
+        { "name": "Mani C. Kappan", "party": "NCP", "votes": 54137, "votePct": 42.55 },
+        { "name": "Jose Tom Pulikkunnel", "party": "KC(M)", "votes": 51194, "votePct": 40.24 },
+        { "name": "N. Hari", "party": "BJP", "votes": 18044, "votePct": 14.18 },
+        { "name": "C. J. Philip", "party": "Independent", "votes": 1085, "votePct": 0.85 },
+        { "name": "Maju Puthenkandam", "party": "Independent", "votes": 1012, "votePct": 0.8 }
+      ],
+      "margin": 2943,
+      "marginPct": 2.31,
+      "turnout": 127220,
+      "turnoutPct": 70.97,
+      "result": "NCP gain from KC(M)"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Mani C. Kappan", "party": "DCK", "votes": 69804, "votePct": 50.43 },
+        { "name": "Jose K. Mani", "party": "KC(M)", "votes": 54426, "votePct": 39.32 },
+        { "name": "Prameeladevi J.", "party": "BJP", "votes": 10869, "votePct": 7.85 },
+        { "name": "Mani C. Kuriakose", "party": "Independent", "votes": 1098, "votePct": 0.79 },
+        { "name": "Santosh Pulickal", "party": "Independent", "votes": 444, "votePct": 0.32 }
+      ],
+      "margin": 15378,
+      "marginPct": 11.11,
+      "turnout": 138431,
+      "turnoutPct": 76.46,
+      "result": "DCK gain from NCP"
+    }
+  ]
+}

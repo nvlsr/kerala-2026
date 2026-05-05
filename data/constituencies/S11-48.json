@@ -1,0 +1,85 @@
+{
+  "constituency": "48 - PONNANI (Kerala)",
+  "constituencyNumber": 48,
+  "constituencyName": "PONNANI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K.P NOUSHAD ALI",
+      "party": "Indian National Congress",
+      "votes": 80674,
+      "margin": 13267,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV.M.K SAKKEER",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 67407,
+      "margin": -13267,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MANEESH JANAKEEYAM",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 10210,
+      "margin": -70464,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANWAR PAZHANJI",
+      "party": "Social Democratic Party Of India",
+      "votes": 1971,
+      "margin": -78703,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOUSHADALI",
+      "party": "Independent",
+      "votes": 324,
+      "margin": -80350,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAKKEER S/O MUHAMMED",
+      "party": "Independent",
+      "votes": 279,
+      "margin": -80395,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAGEER M.K",
+      "party": "Independent",
+      "votes": 197,
+      "margin": -80477,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAKKEER S/O ILLYAS",
+      "party": "Independent",
+      "votes": 149,
+      "margin": -80525,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 762,
+      "margin": -79912,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1148.htm"
+}

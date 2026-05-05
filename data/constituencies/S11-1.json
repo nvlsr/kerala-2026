@@ -1,0 +1,109 @@
+{
+  "constituency": "1 - MANJESHWAR (Kerala)",
+  "constituencyNumber": 1,
+  "constituencyName": "MANJESHWAR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "A K M ASHRAF",
+      "party": "Indian Union Muslim League",
+      "votes": 96948,
+      "margin": 29252,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K SURENDRAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 67696,
+      "margin": -29252,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K R JAYANANDA",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 21212,
+      "margin": -75736,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "GEAN LAVINA MONTEIRO",
+      "party": "Independent",
+      "votes": 523,
+      "margin": -96425,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KANNUR ABDULLA MASTER",
+      "party": "Independent",
+      "votes": 285,
+      "margin": -96663,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANJEEVA",
+      "party": "Bahujan Samaj Party",
+      "votes": 212,
+      "margin": -96736,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "D SURENDRAN NAIR",
+      "party": "Independent",
+      "votes": 203,
+      "margin": -96745,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL LATHEEF I",
+      "party": "Independent",
+      "votes": 79,
+      "margin": -96869,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOHAMMAD ASHRAF, PAPPIYAR HOUSE",
+      "party": "Independent",
+      "votes": 78,
+      "margin": -96870,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOHAMMED ASHRAF K A, C. M. HOUSE",
+      "party": "Independent",
+      "votes": 64,
+      "margin": -96884,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOHN D' SOUZA I",
+      "party": "Independent",
+      "votes": 46,
+      "margin": -96902,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 455,
+      "margin": -96493,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S111.htm"
+}

@@ -1,0 +1,68 @@
+{
+  "constituencyNumber": 133,
+  "constituencyName": "VATTIYOORKAVU",
+  "wikipediaName": "Vattiyoorkavu",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Vattiyoorkavu_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Muraleedharan", "party": "INC", "votes": 56531, "votePct": 50.19 },
+        { "name": "Cheriyan Phillip", "party": "LDF", "votes": 40364, "votePct": 35.84 },
+        { "name": "V. V. Rajesh", "party": "BJP", "votes": 13494, "votePct": 11.98 }
+      ],
+      "margin": 16167,
+      "marginPct": 14.35,
+      "turnout": 112637,
+      "turnoutPct": 64.22,
+      "result": "INC win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Muraleedharan", "party": "INC", "votes": 51322, "votePct": 37.81 },
+        { "name": "Kummanam Rajasekharan", "party": "BJP", "votes": 43700, "votePct": 32.19 },
+        { "name": "T. N. Seema", "party": "CPI(M)", "votes": 40441, "votePct": 29.79 }
+      ],
+      "margin": 7622,
+      "marginPct": 5.56,
+      "turnout": 137108,
+      "turnoutPct": 70.23,
+      "result": "INC hold"
+    },
+    {
+      "year": 2019,
+      "type": "by-election",
+      "reason": "Election of sitting MLA K. Muraleedharan as MP from Vatakara Lok Sabha constituency",
+      "candidates": [
+        { "name": "V. K. Prasanth", "party": "CPI(M)", "votes": 54830, "votePct": 44.25 },
+        { "name": "K. Mohankumar", "party": "INC", "votes": 40365, "votePct": 32.58 },
+        { "name": "S. Suresh", "party": "BJP", "votes": 27453, "votePct": 22.16 }
+      ],
+      "margin": 14465,
+      "marginPct": 11.67,
+      "turnout": 123910,
+      "turnoutPct": 62.66,
+      "result": "CPI(M) gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. K. Prasanth", "party": "CPI(M)", "votes": 61111, "votePct": 44.40 },
+        { "name": "V. V. Rajesh", "party": "BJP", "votes": 39596, "votePct": 28.77 },
+        { "name": "Veena S. Nair", "party": "INC", "votes": 35655, "votePct": 25.76 }
+      ],
+      "margin": 21515,
+      "marginPct": 15.63,
+      "turnout": 137636,
+      "turnoutPct": null,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

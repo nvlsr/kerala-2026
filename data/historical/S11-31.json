@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 31,
+  "constituencyName": "KODUVALLY",
+  "wikipediaName": "Koduvally",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Koduvally_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. M. Ummer", "party": "IUML", "votes": 60365, "votePct": 53.03 },
+        { "name": "M. Mehaboob", "party": "CPI(M)", "votes": 43813, "votePct": 38.49 },
+        { "name": "Gireesh Thevally", "party": "BJP", "votes": 6519, "votePct": 5.73 },
+        { "name": "M. T. Abdul Haji", "party": "SDPI", "votes": 1688, "votePct": 1.48 },
+        { "name": "Aboobacker", "party": "BSP", "votes": 496, "votePct": 0.44 }
+      ],
+      "margin": 16552,
+      "marginPct": 14.54,
+      "turnout": 113824,
+      "turnoutPct": 79.94,
+      "result": "IUML gain from Independent"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Karat Razak", "party": "Independent", "votes": 61033, "votePct": 44.42 },
+        { "name": "M. A. Razak", "party": "IUML", "votes": 60460, "votePct": 44.01 },
+        { "name": "Ali Akbar", "party": "BJP", "votes": 11537, "votePct": 8.40 },
+        { "name": "P. K. Zakariya", "party": "WPOI", "votes": 1566, "votePct": 1.14 },
+        { "name": "E. Nazar", "party": "SDPI", "votes": 1466, "votePct": 1.07 }
+      ],
+      "margin": 573,
+      "marginPct": 0.41,
+      "turnout": 137389,
+      "turnoutPct": 81.88,
+      "result": "Independent gain from IUML"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. K. Muneer", "party": "IUML", "votes": 72336, "votePct": 47.86 },
+        { "name": "Karat Razak", "party": "Independent", "votes": 65992, "votePct": 43.66 },
+        { "name": "T Balasoman", "party": "BJP", "votes": 9498, "votePct": 6.27 },
+        { "name": "Musthafa Kommeri", "party": "SDPI", "votes": 1769, "votePct": 1.17 }
+      ],
+      "margin": 6344,
+      "marginPct": 4.19,
+      "turnout": 151154,
+      "turnoutPct": 82.42,
+      "result": "IUML gain from Independent"
+    }
+  ]
+}

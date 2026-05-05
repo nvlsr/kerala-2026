@@ -1,0 +1,61 @@
+{
+  "constituency": "124 - KOLLAM (Kerala)",
+  "constituencyNumber": 124,
+  "constituencyName": "KOLLAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. BINDHU KRISHNA",
+      "party": "Indian National Congress",
+      "votes": 63416,
+      "margin": 16830,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "S. JAYAMOHAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 46586,
+      "margin": -16830,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR. PRATHAP KUMAR N",
+      "party": "Bharatiya Janata Party",
+      "votes": 18537,
+      "margin": -44879,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SINU.L.R",
+      "party": "Aam Aadmi Party",
+      "votes": 290,
+      "margin": -63126,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MYLODE SUDHAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 146,
+      "margin": -63270,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 715,
+      "margin": -62701,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11124.htm"
+}

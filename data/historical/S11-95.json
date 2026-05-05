@@ -1,0 +1,57 @@
+{
+  "constituencyNumber": 95,
+  "constituencyName": "VAIKOM",
+  "wikipediaName": "Vaikom",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Vaikom_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Ajith", "party": "CPI", "votes": 62603, "votePct": 51.62 },
+        { "name": "A. Saneeshkumar", "party": "INC", "votes": 52035, "votePct": 42.91 },
+        { "name": "Ramesh Kavimattam", "party": "BJP", "votes": 4512, "votePct": 3.72 },
+        { "name": "K. Sanesh", "party": "Independent", "votes": 691, "votePct": 0.57 },
+        { "name": "P. K. Prakashan", "party": "BSP", "votes": 645, "votePct": 0.53 }
+      ],
+      "margin": 10568,
+      "marginPct": 8.71,
+      "turnout": 121265,
+      "turnoutPct": 79.15,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. K. Asha", "party": "CPI", "votes": 61997, "votePct": 46.95 },
+        { "name": "N. K. Neelakandan", "party": "BDJS", "votes": 32087, "votePct": 28.77 },
+        { "name": "A. Saneeshkumar", "party": "INC", "votes": 30413, "votePct": 27.83 },
+        { "name": "NOTA", "party": "NOTA", "votes": 800, "votePct": 0.61 },
+        { "name": "K. C. Chandrasekharan", "party": "BSP", "votes": 540, "votePct": 0.41 }
+      ],
+      "margin": 24584,
+      "marginPct": 18.62,
+      "turnout": 132048,
+      "turnoutPct": 81.19,
+      "result": "CPI hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. K. Asha", "party": "CPI", "votes": 71388, "votePct": 55.96 },
+        { "name": "P. R. Sona", "party": "INC", "votes": 42266, "votePct": 33.13 },
+        { "name": "Ajitha Sabu", "party": "BDJS", "votes": 11953, "votePct": 9.37 }
+      ],
+      "margin": 29122,
+      "marginPct": 22.83,
+      "turnout": 134132,
+      "turnoutPct": 82.01,
+      "result": "CPI hold"
+    }
+  ]
+}

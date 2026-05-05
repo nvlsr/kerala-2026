@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 13,
+  "constituencyName": "THALASSERY",
+  "wikipediaName": "Thalassery",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thalassery_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Kodiyeri Balakrishnan", "party": "CPI(M)", "votes": 66870, "votePct": 56.78 },
+        { "name": "Rijil Makkutty", "party": "INC", "votes": 40361, "votePct": 34.27 },
+        { "name": "V. Ratnakaran", "party": "BJP", "votes": 6973, "votePct": 5.92 },
+        { "name": "A. C. Jalaluddin", "party": "SDPI", "votes": 2068, "votePct": 1.76 },
+        { "name": "K. Raghunath", "party": "BSP", "votes": 674, "votePct": 0.57 }
+      ],
+      "margin": 26509,
+      "marginPct": 22.51,
+      "turnout": 117763,
+      "turnoutPct": 78.67,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. N. Shamseer", "party": "CPI(M)", "votes": 70741, "votePct": 53.32 },
+        { "name": "A. P. Abdullakutty", "party": "INC", "votes": 36624, "votePct": 27.61 },
+        { "name": "V. K. Sajeevan", "party": "BJP", "votes": 22125, "votePct": 16.68 },
+        { "name": "Jabeena Irshad", "party": "WPOI", "votes": 1337, "votePct": 1.01 },
+        { "name": "A. C. Jalaludeen", "party": "SDPI", "votes": 959, "votePct": 0.72 }
+      ],
+      "margin": 34117,
+      "marginPct": 25.71,
+      "turnout": 132666,
+      "turnoutPct": 79.43,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. N. Shamseer", "party": "CPI(M)", "votes": 81810, "votePct": 61.52 },
+        { "name": "M. P. Aravindakshan", "party": "INC", "votes": 45009, "votePct": 33.84 },
+        { "name": "NOTA", "party": "NOTA", "votes": 2313, "votePct": 1.73 },
+        { "name": "Shamseer Ibrahim", "party": "WPOI", "votes": 1963, "votePct": 1.48 },
+        { "name": "C. O. T. Naseer", "party": "Independent", "votes": 1163, "votePct": 0.87 }
+      ],
+      "margin": 36801,
+      "marginPct": 27.68,
+      "turnout": 132989,
+      "turnoutPct": 75.93,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

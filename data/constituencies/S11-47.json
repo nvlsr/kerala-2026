@@ -1,0 +1,61 @@
+{
+  "constituency": "47 - THAVANUR (Kerala)",
+  "constituencyNumber": 47,
+  "constituencyName": "THAVANUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. V S JOY",
+      "party": "Indian National Congress",
+      "votes": 79661,
+      "margin": 14647,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "DR. K T JALEEL",
+      "party": "Independent",
+      "votes": 65014,
+      "margin": -14647,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAVI THELATH",
+      "party": "Bharatiya Janata Party",
+      "votes": 16039,
+      "margin": -63622,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL JALEEL S/O KADHEEJA",
+      "party": "Social Democratic Party Of India",
+      "votes": 2021,
+      "margin": -77640,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL JALEEL K T S/O MOIDEEN K T",
+      "party": "Independent",
+      "votes": 349,
+      "margin": -79312,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 802,
+      "margin": -78859,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1147.htm"
+}

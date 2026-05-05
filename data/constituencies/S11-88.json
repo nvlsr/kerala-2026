@@ -1,0 +1,69 @@
+{
+  "constituency": "88 - DEVIKULAM (Kerala)",
+  "constituencyNumber": 88,
+  "constituencyName": "DEVIKULAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "F. RAJA",
+      "party": "Indian National Congress",
+      "votes": 50590,
+      "margin": 5233,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. A. RAJA",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 45357,
+      "margin": -5233,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "S.RAJENDRAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 15032,
+      "margin": -35558,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJENDRAN .V. B",
+      "party": "Bahujan Samaj Party",
+      "votes": 206,
+      "margin": -50384,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SELVI",
+      "party": "Independent",
+      "votes": 194,
+      "margin": -50396,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "CHELLADURAI .M",
+      "party": "Independent",
+      "votes": 89,
+      "margin": -50501,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 667,
+      "margin": -49923,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1188.htm"
+}

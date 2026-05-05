@@ -1,0 +1,53 @@
+{
+  "constituency": "62 - KUNNAMKULAM (Kerala)",
+  "constituencyNumber": 62,
+  "constituencyName": "KUNNAMKULAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "A C MOIDEEN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 69522,
+      "margin": 4563,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P T AJAY MOHAN",
+      "party": "Indian National Congress",
+      "votes": 64959,
+      "margin": -4563,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K R RAJIN",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 17104,
+      "margin": -52418,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJEEV K S",
+      "party": "Aam Aadmi Party",
+      "votes": 1035,
+      "margin": -68487,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1115,
+      "margin": -68407,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1162.htm"
+}

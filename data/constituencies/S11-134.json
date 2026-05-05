@@ -1,0 +1,109 @@
+{
+  "constituency": "134 - THIRUVANANTHAPURAM (Kerala)",
+  "constituencyNumber": 134,
+  "constituencyName": "THIRUVANANTHAPURAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "C P JOHN",
+      "party": "Communist Marxist Party Kerala State Committee",
+      "votes": 45586,
+      "margin": 9863,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SUDHIR KARAMANA",
+      "party": "Independent",
+      "votes": 35723,
+      "margin": -9863,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KARAMANA JAYAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 35125,
+      "margin": -10461,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SURESH KUMAR",
+      "party": "Independent",
+      "votes": 769,
+      "margin": -44817,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAMIN SATHYADAS",
+      "party": "Aam Aadmi Party",
+      "votes": 556,
+      "margin": -45030,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRADEEP KUMAR P",
+      "party": "Independent",
+      "votes": 506,
+      "margin": -45080,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SEN",
+      "party": "Bahujan Samaj Party",
+      "votes": 463,
+      "margin": -45123,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MANOMOHAN",
+      "party": "Independent",
+      "votes": 237,
+      "margin": -45349,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A SABOORA",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 227,
+      "margin": -45359,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KARTHIKA DEVI M",
+      "party": "Janam Rashtriya Party",
+      "votes": 210,
+      "margin": -45376,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BINDHU MENON L R",
+      "party": "Independent",
+      "votes": 177,
+      "margin": -45409,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 909,
+      "margin": -44677,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11134.htm"
+}

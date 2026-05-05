@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 21,
+  "constituencyName": "KUTTIADI",
+  "wikipediaName": "Kuttiady",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kuttiady_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. K. Lathika", "party": "CPI(M)", "votes": 70258, "votePct": 49.32 },
+        { "name": "Sooppy Narikkatteri", "party": "IUML", "votes": 63286, "votePct": 44.43 },
+        { "name": "V. K. Sajeevan", "party": "BJP", "votes": 6272, "votePct": 4.40 },
+        { "name": "Abdul Raheem", "party": "SDPI", "votes": 1045, "votePct": 0.73 },
+        { "name": "M. Sathi", "party": "BSP", "votes": 407, "votePct": 0.29 }
+      ],
+      "margin": 6972,
+      "marginPct": 4.89,
+      "turnout": 142453,
+      "turnoutPct": 87.72,
+      "result": "CPI(M) win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Parakkal Abdulla", "party": "IUML", "votes": 71809, "votePct": 45.50 },
+        { "name": "K. K. Lathika", "party": "CPI(M)", "votes": 70652, "votePct": 44.77 },
+        { "name": "Ramadas Manaleri", "party": "BJP", "votes": 12327, "votePct": 7.81 },
+        { "name": "P. C. Balakrishnan", "party": "WPOI", "votes": 1125, "votePct": 0.71 },
+        { "name": "Sabu Kakkattil", "party": "SP", "votes": 860, "votePct": 0.54 }
+      ],
+      "margin": 1157,
+      "marginPct": 0.73,
+      "turnout": 157810,
+      "turnoutPct": 85.48,
+      "result": "IUML gain from CPI(M)"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. P. Kunhammadkutty", "party": "CPI(M)", "votes": 80143, "votePct": 47.2 },
+        { "name": "Parakkal Abdulla", "party": "IUML", "votes": 79810, "votePct": 47.01 },
+        { "name": "P. P. Murali", "party": "BJP", "votes": 9139, "votePct": 5.38 },
+        { "name": "Suresh Babu M.K", "party": "Independent", "votes": 128, "votePct": 0.08 },
+        { "name": "V. P. Pratheesh", "party": "Independent", "votes": 108, "votePct": 0.06 }
+      ],
+      "margin": 333,
+      "marginPct": 0.19,
+      "turnout": 164404,
+      "turnoutPct": 81.30,
+      "result": "CPI(M) gain from IUML"
+    }
+  ]
+}

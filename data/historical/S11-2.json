@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 2,
+  "constituencyName": "KASARAGOD",
+  "wikipediaName": "Kasaragod",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kasaragod_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. A. Nellikkunnu", "party": "IUML", "votes": 53068, "votePct": 45.35 },
+        { "name": "Jayalakshmi N. Bhatt", "party": "BJP", "votes": 43330, "votePct": 37.02 },
+        { "name": "Azeez Kadappuram", "party": "INL", "votes": 16467, "votePct": 14.07 },
+        { "name": "A. H. Muneer", "party": "SDPI", "votes": 1260, "votePct": 1.08 },
+        { "name": "Govinda Raja Kuntikkanamata", "party": "Independent", "votes": 938, "votePct": 0.80 }
+      ],
+      "margin": 9738,
+      "marginPct": 8.32,
+      "turnout": 117031,
+      "turnoutPct": 73.47,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. A. Nellikkunnu", "party": "IUML", "votes": 64727, "votePct": 44.72 },
+        { "name": "Ravisha Thantri Kuntar", "party": "BJP", "votes": 56120, "votePct": 38.77 },
+        { "name": "A. A. Ameen", "party": "INL", "votes": 21615, "votePct": 14.93 },
+        { "name": "NOTA", "party": "NOTA", "votes": 661, "votePct": 0.46 },
+        { "name": "Vijaykumar B.", "party": "BSP", "votes": 585, "votePct": 0.40 }
+      ],
+      "margin": 8607,
+      "marginPct": 5.95,
+      "turnout": 144749,
+      "turnoutPct": 76.62,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. A. Nellikkunnu", "party": "IUML", "votes": 63296, "votePct": 43.80 },
+        { "name": "K. Shreekanth", "party": "BJP", "votes": 50395, "votePct": 34.88 },
+        { "name": "M. A. Latheef", "party": "INL", "votes": 28323, "votePct": 19.60 },
+        { "name": "Vijaya K. P.", "party": "BSP", "votes": 679, "votePct": 0.47 },
+        { "name": "NOTA", "party": "NOTA", "votes": 639, "votePct": 0.44 }
+      ],
+      "margin": 12901,
+      "marginPct": 8.92,
+      "turnout": 143032,
+      "turnoutPct": 70.87,
+      "result": "IUML hold"
+    }
+  ]
+}

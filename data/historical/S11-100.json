@@ -1,0 +1,57 @@
+{
+  "constituencyNumber": 100,
+  "constituencyName": "KANJIRAPPALLY",
+  "wikipediaName": "Kanjirappally",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kanjirappally_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. Jayaraj", "party": "KC(M)", "votes": 57021, "votePct": 50.40 },
+        { "name": "Suresh T. Nair", "party": "CPI", "votes": 44815, "votePct": 39.61 },
+        { "name": "Rajamohan", "party": "BJP", "votes": 8037, "votePct": 7.10 },
+        { "name": "P. K. Geetha Krishnan", "party": "BSP", "votes": 3268, "votePct": 2.89 }
+      ],
+      "margin": 12206,
+      "marginPct": 10.79,
+      "turnout": 113141,
+      "turnoutPct": 69.99,
+      "result": "KC(M) gain from Independent"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. Jayaraj", "party": "KC(M)", "votes": 53126, "votePct": 38.86 },
+        { "name": "V. B. Binu", "party": "CPI", "votes": 49236, "votePct": 36.02 },
+        { "name": "V. N. Manoj", "party": "BJP", "votes": 31411, "votePct": 22.98 },
+        { "name": "Arun M. John", "party": "BSP", "votes": 1113, "votePct": 0.81 },
+        { "name": "Muhammed Siyad", "party": "SDPI", "votes": 839, "votePct": 0.61 }
+      ],
+      "margin": 3890,
+      "marginPct": 2.84,
+      "turnout": 136708,
+      "turnoutPct": 76.39,
+      "result": "KC(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "N. Jayaraj", "party": "KC(M)", "votes": 60299, "votePct": 43.79 },
+        { "name": "Joseph Vazhackan", "party": "INC", "votes": 46596, "votePct": 33.84 },
+        { "name": "Alphons Kannanthanam", "party": "BJP", "votes": 29157, "votePct": 21.17 },
+        { "name": "Ashik M. M.", "party": "BSP", "votes": 727, "votePct": 0.53 }
+      ],
+      "margin": 13703,
+      "marginPct": 9.95,
+      "turnout": 137703,
+      "turnoutPct": 73.76,
+      "result": "KC(M) hold"
+    }
+  ]
+}

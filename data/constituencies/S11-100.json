@@ -1,0 +1,53 @@
+{
+  "constituency": "100 - KANJIRAPPALLY (Kerala)",
+  "constituencyNumber": 100,
+  "constituencyName": "KANJIRAPPALLY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "RONY K BABY",
+      "party": "Indian National Congress",
+      "votes": 56646,
+      "margin": 5772,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "DR. N. JAYARAJ",
+      "party": "Kerala Congress (M)",
+      "votes": 50874,
+      "margin": -5772,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. GEORGE KURIAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 26984,
+      "margin": -29662,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "THAMPI KAVUMPADAM",
+      "party": "Bahujan Samaj Party",
+      "votes": 696,
+      "margin": -55950,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 788,
+      "margin": -55858,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11100.htm"
+}

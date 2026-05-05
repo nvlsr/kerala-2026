@@ -1,0 +1,69 @@
+{
+  "constituency": "5 - TRIKARIPUR (Kerala)",
+  "constituencyNumber": 5,
+  "constituencyName": "TRIKARIPUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "SANDEEP VARIER",
+      "party": "Indian National Congress",
+      "votes": 83109,
+      "margin": 4431,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "DR. V P P MUSTAFA",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 78678,
+      "margin": -4431,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAVI KULANGARA",
+      "party": "Twenty 20 Party",
+      "votes": 7837,
+      "margin": -75272,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANDEEP ELATT",
+      "party": "Independent",
+      "votes": 258,
+      "margin": -82851,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUSTHAFA P P S/O NAFEESA P P",
+      "party": "Independent",
+      "votes": 169,
+      "margin": -82940,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUSTHAFA V P S/O MUHAMMED",
+      "party": "Independent",
+      "votes": 143,
+      "margin": -82966,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 710,
+      "margin": -82399,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S115.htm"
+}

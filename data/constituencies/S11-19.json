@@ -1,0 +1,101 @@
+{
+  "constituency": "19 - KALPETTA (Kerala)",
+  "constituencyNumber": 19,
+  "constituencyName": "KALPETTA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. T SIDDIQUE",
+      "party": "Indian National Congress",
+      "votes": 97379,
+      "margin": 45031,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P K ANIL KUMAR",
+      "party": "Rashtriya Janata Dal",
+      "votes": 52348,
+      "margin": -45031,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRASANTH MALAVAYAL",
+      "party": "Bharatiya Janata Party",
+      "votes": 19175,
+      "margin": -78204,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAFEEK C A",
+      "party": "Aam Aadmi Party",
+      "votes": 867,
+      "margin": -96512,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "N HAMZA",
+      "party": "Social Democratic Party Of India",
+      "votes": 801,
+      "margin": -96578,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RADHAKRISHNAN M",
+      "party": "Independent",
+      "votes": 446,
+      "margin": -96933,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SIDHEEQUE S/O KUNJAMMAD",
+      "party": "Independent",
+      "votes": 360,
+      "margin": -97019,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANILKUMAR S/O UNNI NAIR",
+      "party": "Independent",
+      "votes": 347,
+      "margin": -97032,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K V PRAKASH",
+      "party": "Communist Party of India (Marxist-Leninist) Red Star",
+      "votes": 325,
+      "margin": -97054,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T K UMMER",
+      "party": "Independent",
+      "votes": 256,
+      "margin": -97123,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1137,
+      "margin": -96242,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1119.htm"
+}

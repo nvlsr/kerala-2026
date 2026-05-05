@@ -1,0 +1,93 @@
+{
+  "constituency": "139 - KOVALAM (Kerala)",
+  "constituencyNumber": 139,
+  "constituencyName": "KOVALAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. M.VINCENT",
+      "party": "Indian National Congress",
+      "votes": 79661,
+      "margin": 32709,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "BHAGATH RUFUS",
+      "party": "Independent",
+      "votes": 46952,
+      "margin": -32709,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KOVALAM.T.N.SURESH",
+      "party": "Bharatiya Janata Party",
+      "votes": 25380,
+      "margin": -54281,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MANOJ.S.P",
+      "party": "Aam Aadmi Party",
+      "votes": 677,
+      "margin": -78984,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KATTACHALKUZHI.M.SUGATHAN",
+      "party": "Socialist Republican Party",
+      "votes": 469,
+      "margin": -79192,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "N.JAYARAJAN",
+      "party": "Independent",
+      "votes": 459,
+      "margin": -79202,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV.SABU.S.PHILIP",
+      "party": "Independent",
+      "votes": 372,
+      "margin": -79289,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VENGANOOR ASOKAN",
+      "party": "Independent",
+      "votes": 169,
+      "margin": -79492,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KIRAN S PILLAI",
+      "party": "Independent",
+      "votes": 122,
+      "margin": -79539,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 976,
+      "margin": -78685,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11139.htm"
+}

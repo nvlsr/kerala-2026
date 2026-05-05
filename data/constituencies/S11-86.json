@@ -1,0 +1,53 @@
+{
+  "constituency": "86 - MUVATTUPUZHA (Kerala)",
+  "constituencyNumber": 86,
+  "constituencyName": "MUVATTUPUZHA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "DR. MATHEW KUZHALNADAN",
+      "party": "Indian National Congress",
+      "votes": 89914,
+      "margin": 42829,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "N ARUN",
+      "party": "Communist Party of India",
+      "votes": 47085,
+      "margin": -42829,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUNNY KADOOTHAZHE",
+      "party": "Twenty 20 Party",
+      "votes": 9840,
+      "margin": -80074,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BABU MATHEW",
+      "party": "Social Democratic Party Of India",
+      "votes": 609,
+      "margin": -89305,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 683,
+      "margin": -89231,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1186.htm"
+}

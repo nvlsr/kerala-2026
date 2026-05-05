@@ -1,0 +1,77 @@
+{
+  "constituency": "111 - THIRUVALLA (Kerala)",
+  "constituencyNumber": 111,
+  "constituencyName": "THIRUVALLA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.VARGHESE MAMMEN",
+      "party": "Kerala Congress",
+      "votes": 53224,
+      "margin": 10146,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ANOOP ANTONY",
+      "party": "Bharatiya Janata Party",
+      "votes": 43078,
+      "margin": -10146,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. MATHEW T THOMAS",
+      "party": "Independent",
+      "votes": 42023,
+      "margin": -11201,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAMESH CHATHENKARY",
+      "party": "Bahujan Samaj Party",
+      "votes": 999,
+      "margin": -52225,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "THOMAS MAMMEN",
+      "party": "Independent",
+      "votes": 553,
+      "margin": -52671,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "AJU ALEX",
+      "party": "Independent",
+      "votes": 220,
+      "margin": -53004,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ZEEN THOMAS",
+      "party": "Independent",
+      "votes": 144,
+      "margin": -53080,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 504,
+      "margin": -52720,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11111.htm"
+}

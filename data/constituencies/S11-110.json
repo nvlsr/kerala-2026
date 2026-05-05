@@ -1,0 +1,53 @@
+{
+  "constituency": "110 - CHENGANNUR (Kerala)",
+  "constituencyNumber": 110,
+  "constituencyName": "CHENGANNUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "SAJI CHERIAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 57859,
+      "margin": 10292,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. ABI KURIAKOSE",
+      "party": "Indian National Congress",
+      "votes": 47567,
+      "margin": -10292,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M. V .GOPAKUMAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 30942,
+      "margin": -26917,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "B. PRANEESH",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 429,
+      "margin": -57430,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 638,
+      "margin": -57221,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11110.htm"
+}

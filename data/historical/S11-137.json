@@ -1,0 +1,56 @@
+{
+  "constituencyNumber": 137,
+  "constituencyName": "PARASSALA",
+  "wikipediaName": "Parassala",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Parassala_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. T. George", "party": "INC", "votes": 60578, "votePct": 44.80 },
+        { "name": "Anavoor Nagappan", "party": "CPI(M)", "votes": 60073, "votePct": 44.43 },
+        { "name": "S. Suresh", "party": "BJP", "votes": 10310, "votePct": 7.63 },
+        { "name": "J. Sudhakaran", "party": "BSP", "votes": 2269, "votePct": 1.68 },
+        { "name": "T. K. Viswambharan", "party": "Independent", "votes": 1207, "votePct": 0.89 }
+      ],
+      "margin": 505,
+      "marginPct": 0.37,
+      "turnout": 135211,
+      "turnoutPct": 71.75,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. K. Hareendran", "party": "CPI(M)", "votes": 70516, "votePct": 44.41 },
+        { "name": "A. T. George", "party": "INC", "votes": 51590, "votePct": 32.66 },
+        { "name": "Karamana Jayan", "party": "BJP", "votes": 33028, "votePct": 20.91 }
+      ],
+      "margin": 18566,
+      "marginPct": 11.75,
+      "turnout": 157980,
+      "turnoutPct": 75.17,
+      "result": "CPI(M) gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. K. Hareendran", "party": "CPI(M)", "votes": 78548, "votePct": 48.16 },
+        { "name": "Ansajitha Russal", "party": "INC", "votes": 52720, "votePct": 32.33 },
+        { "name": "Karamana Jayan", "party": "BJP", "votes": 29850, "votePct": 18.30 },
+        { "name": "NOTA", "party": "NOTA", "votes": 630, "votePct": 0.49 }
+      ],
+      "margin": 25828,
+      "marginPct": null,
+      "turnout": 163090,
+      "turnoutPct": null,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "constituency": "119 - KOTTARAKKARA (Kerala)",
+  "constituencyNumber": 119,
+  "constituencyName": "KOTTARAKKARA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K.N. BALAGOPAL",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 63926,
+      "margin": 1012,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV.P. AISHA POTTY",
+      "party": "Indian National Congress",
+      "votes": 62914,
+      "margin": -1012,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "R. RESMI",
+      "party": "Bharatiya Janata Party",
+      "votes": 20664,
+      "margin": -43262,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MAMACHAN DANIEL",
+      "party": "Aam Aadmi Party",
+      "votes": 386,
+      "margin": -63540,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "WILFRED ZACHARIAS",
+      "party": "Bahujan Samaj Party",
+      "votes": 236,
+      "margin": -63690,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SURESH. G",
+      "party": "Equality Party of India",
+      "votes": 117,
+      "margin": -63809,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 611,
+      "margin": -63315,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11119.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 97,
+  "constituencyName": "KOTTAYAM",
+  "wikipediaName": "Kottayam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kottayam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Thiruvanchoor Radhakrishnan", "party": "INC", "votes": 53825, "votePct": 46.84 },
+        { "name": "V. N. Vasavan", "party": "CPI(M)", "votes": 53114, "votePct": 46.23 },
+        { "name": "Narayanan Namboothiri", "party": "BJP", "votes": 5449, "votePct": 4.74 },
+        { "name": "V. S. Shajan", "party": "BSP", "votes": 1737, "votePct": 1.51 },
+        { "name": "Rajeev Abraham", "party": "Independent", "votes": 387, "votePct": 0.34 }
+      ],
+      "margin": 711,
+      "marginPct": 0.61,
+      "turnout": 114901,
+      "turnoutPct": 77.52,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Thiruvanchoor Radhakrishnan", "party": "INC", "votes": 73894, "votePct": 57.46 },
+        { "name": "Reji Sakaria", "party": "CPI(M)", "votes": 40262, "votePct": 31.31 },
+        { "name": "M. S. Karunakaran", "party": "BJP", "votes": 12582, "votePct": 9.78 },
+        { "name": "P. K. Geetha Krishnan", "party": "BSP", "votes": 651, "votePct": 0.51 },
+        { "name": "NOTA", "party": "NOTA", "votes": 483, "votePct": 0.38 }
+      ],
+      "margin": 33632,
+      "marginPct": 26.15,
+      "turnout": 128603,
+      "turnoutPct": 78.37,
+      "result": "INC hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Thiruvanchoor Radhakrishnan", "party": "INC", "votes": 65401, "votePct": 53.72 },
+        { "name": "K. Anilkumar", "party": "CPI(M)", "votes": 46658, "votePct": 38.33 },
+        { "name": "Minerva Mohan", "party": "BJP", "votes": 8611, "votePct": 7.07 },
+        { "name": "NOTA", "party": "NOTA", "votes": 473, "votePct": 0.39 },
+        { "name": "Sreekumar Chakkala", "party": "BSP", "votes": 374, "votePct": 0.31 }
+      ],
+      "margin": 18743,
+      "marginPct": 15.27,
+      "turnout": null,
+      "turnoutPct": null,
+      "result": "INC hold"
+    }
+  ]
+}

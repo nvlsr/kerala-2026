@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 130,
+  "constituencyName": "NEDUMANGAD",
+  "wikipediaName": "Nedumangad",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nedumangad_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Palode Ravi", "party": "INC", "votes": 59789, "votePct": 47.87 },
+        { "name": "P. Ramachandran Nair", "party": "CPI", "votes": 54759, "votePct": 43.84 },
+        { "name": "Anjana K. S.", "party": "BJP", "votes": 5971, "votePct": 4.78 },
+        { "name": "Andoorkonam Sulfi", "party": "Independent", "votes": 1255, "votePct": 1.00 },
+        { "name": "Noorjahan A.", "party": "SDPI", "votes": 1200, "votePct": 0.96 }
+      ],
+      "margin": 5030,
+      "marginPct": 4.03,
+      "turnout": 124907,
+      "turnoutPct": 71.05,
+      "result": "INC gain from CPI"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. Divakaran", "party": "CPI", "votes": 57745, "votePct": 38.16 },
+        { "name": "Palode Ravi", "party": "INC", "votes": 54124, "votePct": 35.76 },
+        { "name": "V. V. Rajesh", "party": "BJP", "votes": 35139, "votePct": 23.22 },
+        { "name": "Abdul Salam A.", "party": "SDPI", "votes": 1039, "votePct": 0.69 },
+        { "name": "Bipin M. I.", "party": "BSP", "votes": 910, "votePct": 0.60 }
+      ],
+      "margin": 3621,
+      "marginPct": 2.40,
+      "turnout": 151339,
+      "turnoutPct": 74.11,
+      "result": "CPI gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "G. R. Anil", "party": "CPI", "votes": 72742, "votePct": 47.54 },
+        { "name": "P. S. Prasanth", "party": "INC", "votes": 49433, "votePct": 32.31 },
+        { "name": "J. R. Padmakumar", "party": "BJP", "votes": 26861, "votePct": 17.56 },
+        { "name": "Irshad Kanyakulangara", "party": "SDPI", "votes": 1884, "votePct": 1.23 },
+        { "name": "Bipin Pallipuram", "party": "BSP", "votes": 563, "votePct": 0.37 }
+      ],
+      "margin": 23309,
+      "marginPct": 15.23,
+      "turnout": 153002,
+      "turnoutPct": 73.52,
+      "result": "CPI hold"
+    }
+  ]
+}

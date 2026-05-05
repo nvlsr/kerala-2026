@@ -1,0 +1,77 @@
+{
+  "constituency": "120 - PATHANAPURAM (Kerala)",
+  "constituencyNumber": 120,
+  "constituencyName": "PATHANAPURAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "JYOTHI KUMAR CHAMAKKALA",
+      "party": "Indian National Congress",
+      "votes": 68275,
+      "margin": 8310,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K B GANESH KUMAR",
+      "party": "Kerala Congress (B)",
+      "votes": 59965,
+      "margin": -8310,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANIL PILLAI",
+      "party": "Twenty 20 Party",
+      "votes": 7031,
+      "margin": -61244,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VIPIN KANIKONATHU",
+      "party": "Bahujan Samaj Party",
+      "votes": 629,
+      "margin": -67646,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "N P GENASH KUMAR S/O PARAMU",
+      "party": "Independent",
+      "votes": 547,
+      "margin": -67728,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANEESH KILIMANOOR",
+      "party": "Democratic Human Rights Movement Party",
+      "votes": 297,
+      "margin": -67978,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JYOTHISH KUMAR M",
+      "party": "Independent",
+      "votes": 266,
+      "margin": -68009,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 613,
+      "margin": -67662,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11120.htm"
+}

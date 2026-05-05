@@ -1,0 +1,93 @@
+{
+  "constituency": "45 - TIRUR (Kerala)",
+  "constituencyNumber": 45,
+  "constituencyName": "TIRUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "KURUKKOLI MOIDEEN",
+      "party": "Indian Union Muslim League",
+      "votes": 106108,
+      "margin": 24137,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "V.ABDURAHIMAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 81971,
+      "margin": -24137,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K.NARAYANAN MASTER",
+      "party": "Bharatiya Janata Party",
+      "votes": 8634,
+      "margin": -97474,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KABEER ALIAS SHAMEER KUTTUR",
+      "party": "Aam Aadmi Party",
+      "votes": 340,
+      "margin": -105768,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOIDEEN KOOMULLI PARAMBIL",
+      "party": "Independent",
+      "votes": 312,
+      "margin": -105796,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR.S.ALEENA",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 224,
+      "margin": -105884,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDURAHIMAN S/O KUNJEEN",
+      "party": "Independent",
+      "votes": 130,
+      "margin": -105978,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SIYAD KOODIYATH",
+      "party": "Socialist Party (India)",
+      "votes": 125,
+      "margin": -105983,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDURAHIMAN S/O KUNJAVA",
+      "party": "Independent",
+      "votes": 57,
+      "margin": -106051,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 608,
+      "margin": -105500,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1145.htm"
+}

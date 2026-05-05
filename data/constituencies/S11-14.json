@@ -1,0 +1,93 @@
+{
+  "constituency": "14 - KUTHUPARAMBA (Kerala)",
+  "constituencyNumber": 14,
+  "constituencyName": "KUTHUPARAMBA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P K PRAVEEN",
+      "party": "Rashtriya Janata Dal",
+      "votes": 70448,
+      "margin": 1286,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "JAYANTHI RAJAN",
+      "party": "Indian Union Muslim League",
+      "votes": 69162,
+      "margin": -1286,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SHIJILAL",
+      "party": "Bharatiya Janata Party",
+      "votes": 22195,
+      "margin": -48253,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JAYANTHI",
+      "party": "Independent",
+      "votes": 671,
+      "margin": -69777,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRAVEEN KUMAR",
+      "party": "Independent",
+      "votes": 560,
+      "margin": -69888,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAFEED A P",
+      "party": "Aam Aadmi Party",
+      "votes": 254,
+      "margin": -70194,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOHANAN K P",
+      "party": "Independent",
+      "votes": 169,
+      "margin": -70279,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHYLAJA",
+      "party": "Independent",
+      "votes": 133,
+      "margin": -70315,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAHUL HAMEED",
+      "party": "Independent",
+      "votes": 115,
+      "margin": -70333,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 495,
+      "margin": -69953,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1114.htm"
+}

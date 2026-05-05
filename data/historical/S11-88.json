@@ -1,0 +1,57 @@
+{
+  "constituencyNumber": 88,
+  "constituencyName": "DEVIKULAM",
+  "wikipediaName": "Devikulam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Devikulam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "S. Rajendran", "party": "CPI(M)", "votes": 51849, "votePct": 48.43 },
+        { "name": "A. K. Mony", "party": "INC", "votes": 47771, "votePct": 44.62 },
+        { "name": "S. Rajagopal", "party": "BJP", "votes": 3582, "votePct": 3.35 },
+        { "name": "Selvaraj Madaswami", "party": "Independent", "votes": 1060, "votePct": 0.99 },
+        { "name": "T. C. Thankappan", "party": "BSP", "votes": 913, "votePct": 0.85 }
+      ],
+      "margin": 4078,
+      "marginPct": 3.81,
+      "turnout": 107059,
+      "turnoutPct": 72.41,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "S. Rajendran", "party": "CPI(M)", "votes": 49510, "votePct": 42.18 },
+        { "name": "A. K. Mony", "party": "INC", "votes": 43728, "votePct": 37.25 },
+        { "name": "R. M. Dhanalakshmy", "party": "AIADMK", "votes": 11613, "votePct": 9.89 },
+        { "name": "N. Chandran", "party": "BJP", "votes": 9592, "votePct": 8.17 },
+        { "name": "J. Rajeshwary", "party": "Independent", "votes": 650, "votePct": 0.55 }
+      ],
+      "margin": 6232,
+      "marginPct": 4.93,
+      "turnout": 117382,
+      "turnoutPct": 71.23,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. Raja", "party": "CPI(M)", "votes": 59049, "votePct": 51.0 },
+        { "name": "D. Kumar", "party": "INC", "votes": 51201, "votePct": 44.22 },
+        { "name": "Ganesan S.", "party": "NDA", "votes": 4717, "votePct": 4.07 }
+      ],
+      "margin": 7848,
+      "marginPct": 6.78,
+      "turnout": 115774,
+      "turnoutPct": 68.34,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

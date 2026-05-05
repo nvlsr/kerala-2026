@@ -1,0 +1,53 @@
+{
+  "constituency": "109 - MAVELIKKARA (Kerala)",
+  "constituencyNumber": 109,
+  "constituencyName": "MAVELIKKARA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "M.S. ARUN KUMAR",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 67180,
+      "margin": 15736,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. MUTHARA RAJ",
+      "party": "Indian National Congress",
+      "votes": 51444,
+      "margin": -15736,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K. AJIMON",
+      "party": "Bharatiya Janata Party",
+      "votes": 23200,
+      "margin": -43980,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SURESH NOORANAD",
+      "party": "Ambedkarite Party of India",
+      "votes": 278,
+      "margin": -66902,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 565,
+      "margin": -66615,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11109.htm"
+}

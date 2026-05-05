@@ -1,0 +1,77 @@
+{
+  "constituency": "23 - QUILANDY (Kerala)",
+  "constituencyNumber": 23,
+  "constituencyName": "QUILANDY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. K. PRAVEEN KUMAR",
+      "party": "Indian National Congress",
+      "votes": 79913,
+      "margin": 12070,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K. DASAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 67843,
+      "margin": -12070,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRAFUL KRISHNAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 23545,
+      "margin": -56368,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. PRAVEEN",
+      "party": "Independent",
+      "votes": 198,
+      "margin": -79715,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUSTHAFA P K (PADINJARE KUNIYOTH)",
+      "party": "Aam Aadmi Party",
+      "votes": 193,
+      "margin": -79720,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRAVEEN KUMAR S/O SANKARAN NAIR",
+      "party": "Independent",
+      "votes": 192,
+      "margin": -79721,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DASAN S/O KUNHIKELU",
+      "party": "Independent",
+      "votes": 99,
+      "margin": -79814,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 442,
+      "margin": -79471,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1123.htm"
+}

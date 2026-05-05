@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 111,
+  "constituencyName": "THIRUVALLA",
+  "wikipediaName": "Thiruvalla",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thiruvalla_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 63289, "votePct": 49.97 },
+        { "name": "Victor T. Thomas", "party": "KC(M)", "votes": 52522, "votePct": 41.47 },
+        { "name": "Rajan Moolaveetil", "party": "BJP", "votes": 7656, "votePct": 6.05 },
+        { "name": "Kurian Joseph", "party": "BSP", "votes": 1511, "votePct": 1.19 },
+        { "name": "Radhamani S.", "party": "SUCI(C)", "votes": 456, "votePct": 0.36 }
+      ],
+      "margin": 10737,
+      "marginPct": 8.50,
+      "turnout": 126642,
+      "turnoutPct": 65.32,
+      "result": "JD(S) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 59660, "votePct": 41.28 },
+        { "name": "Joseph M. Puthussery", "party": "KC(M)", "votes": 51398, "votePct": 35.56 },
+        { "name": "Akkerman Kalidasan Bhattathiripad", "party": "BDJS", "votes": 31439, "votePct": 21.75 },
+        { "name": "Saji Kadampanad", "party": "BSP", "votes": 756, "votePct": 0.52 },
+        { "name": "NOTA", "party": "NOTA", "votes": 479, "votePct": 0.33 }
+      ],
+      "margin": 8262,
+      "marginPct": 5.72,
+      "turnout": 144542,
+      "turnoutPct": 69.23,
+      "result": "JD(S) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Mathew T. Thomas", "party": "JD(S)", "votes": 62178, "votePct": 44.56 },
+        { "name": "Kunju Koshy Paul", "party": "KEC", "votes": 50757, "votePct": 36.37 },
+        { "name": "Ashokan Kulanada", "party": "BJP", "votes": 22674, "votePct": 16.25 },
+        { "name": "Thomas Mathew", "party": "Independent", "votes": 1461, "votePct": 1.05 },
+        { "name": "Rajendra Das", "party": "BSP", "votes": 1074, "votePct": 0.77 }
+      ],
+      "margin": 11421,
+      "marginPct": 8.19,
+      "turnout": 139544,
+      "turnoutPct": null,
+      "result": "JD(S) hold"
+    }
+  ]
+}

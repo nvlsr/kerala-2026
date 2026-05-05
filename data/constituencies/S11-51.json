@@ -1,0 +1,53 @@
+{
+  "constituency": "51 - SHORNUR (Kerala)",
+  "constituencyNumber": 51,
+  "constituencyName": "SHORNUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P.MAMMIKUTTY",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 70583,
+      "margin": 16517,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P.HARIGOVINDAN",
+      "party": "Indian National Congress",
+      "votes": 54066,
+      "margin": -16517,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SANKU.T.DAS",
+      "party": "Bharatiya Janata Party",
+      "votes": 33264,
+      "margin": -37319,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABOOBACKER",
+      "party": "Social Democratic Party Of India",
+      "votes": 1263,
+      "margin": -69320,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 947,
+      "margin": -69636,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1151.htm"
+}

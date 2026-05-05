@@ -1,0 +1,76 @@
+{
+  "constituencyNumber": 35,
+  "constituencyName": "NILAMBUR",
+  "wikipediaName": "Nilambur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nilambur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Aryadan Muhammed", "party": "INC", "votes": 66331, "votePct": 48.64 },
+        { "name": "M. Thomas Mathew", "party": "Independent", "votes": 60733, "votePct": 44.54 },
+        { "name": "K. C. Velayudhan", "party": "BJP", "votes": 4425, "votePct": 3.25 },
+        { "name": "C. G. Unni", "party": "SDPI", "votes": 2566, "votePct": 1.88 },
+        { "name": "Thariyan Kiliyan", "party": "BSP", "votes": 1291, "votePct": 0.95 }
+      ],
+      "margin": 5598,
+      "marginPct": 4.10,
+      "turnout": 136358,
+      "turnoutPct": 77.94,
+      "result": "INC hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. V. Anvar", "party": "CPI(M)", "votes": 77858, "votePct": 47.91 },
+        { "name": "Aryadan Shoukath", "party": "INC", "votes": 66354, "votePct": 40.83 },
+        { "name": "Girish Mekkatt", "party": "BDJS", "votes": 12284, "votePct": 7.56 },
+        { "name": "K. Babu Mani", "party": "SDPI", "votes": 4751, "votePct": 2.92 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1256, "votePct": 0.77 }
+      ],
+      "margin": 11504,
+      "marginPct": 7.08,
+      "turnout": 162503,
+      "turnoutPct": 78.83,
+      "result": "Independent gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. V. Anvar", "party": "CPI(M)", "votes": 81227, "votePct": 46.9 },
+        { "name": "V. V. Prakash", "party": "INC", "votes": 78527, "votePct": 40.03 },
+        { "name": "T. K. Ashokkumar", "party": "BJP", "votes": 8500, "votePct": 4.96 },
+        { "name": "K. Babu Mani", "party": "SDPI", "votes": 3281, "votePct": 1.89 },
+        { "name": "Sajadurahman C.P.", "party": "Independent", "votes": 559, "votePct": 0.32 }
+      ],
+      "margin": 2700,
+      "marginPct": 1.54,
+      "turnout": 173205,
+      "turnoutPct": 76.6,
+      "result": "Independent hold"
+    },
+    {
+      "year": 2025,
+      "type": "by-election",
+      "reason": "Vacancy created by resignation of incumbent",
+      "candidates": [
+        { "name": "Aryadan Shoukath", "party": "INC", "votes": 77737, "votePct": 44.17 },
+        { "name": "M. Swaraj", "party": "CPI(M)", "votes": 66660, "votePct": 37.88 },
+        { "name": "P. V. Anvar", "party": "AITC", "votes": 19760, "votePct": 11.23 },
+        { "name": "Mohan George", "party": "BJP", "votes": 8648, "votePct": 4.91 },
+        { "name": "Sadik Naduthodi", "party": "SDPI", "votes": 2075, "votePct": 1.18 }
+      ],
+      "margin": 11077,
+      "marginPct": 6.29,
+      "turnout": 175989,
+      "turnoutPct": 75.27,
+      "result": "INC gain from Independent"
+    }
+  ]
+}

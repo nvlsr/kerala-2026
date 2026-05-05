@@ -1,0 +1,53 @@
+{
+  "constituency": "89 - UDUMBANCHOLA (Kerala)",
+  "constituencyNumber": 89,
+  "constituencyName": "UDUMBANCHOLA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. SENAPATHY VENU",
+      "party": "Indian National Congress",
+      "votes": 64916,
+      "margin": 20021,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K.K. JAYACHANDRAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 44895,
+      "margin": -20021,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SANGEETHA VISWANADHAN",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 10157,
+      "margin": -54759,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P.K. SAJEEVAN",
+      "party": "Bahujan Samaj Party",
+      "votes": 702,
+      "margin": -64214,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 686,
+      "margin": -64230,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1189.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 58,
+  "constituencyName": "CHITTUR",
+  "wikipediaName": "Chittur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Chittur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Achuthan", "party": "INC", "votes": 69916, "votePct": 51.33 },
+        { "name": "S. Subhash Chadrabose", "party": "CPI(M)", "votes": 57586, "votePct": 42.28 },
+        { "name": "A. K. Omanakuttan", "party": "BJP", "votes": 4518, "votePct": 3.32 },
+        { "name": "K. Kaladharan", "party": "Independent", "votes": 1319, "votePct": 0.97 },
+        { "name": "A. Muhammed Haneefa", "party": "SDPI", "votes": 1192, "votePct": 0.88 }
+      ],
+      "margin": 12330,
+      "marginPct": 9.05,
+      "turnout": 136199,
+      "turnoutPct": 81.17,
+      "result": "INC hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Krishnakutty", "party": "JD(S)", "votes": 69270, "votePct": 44.90 },
+        { "name": "K. Achuthan", "party": "INC", "votes": 61985, "votePct": 40.18 },
+        { "name": "Sasikumar M.", "party": "BJP", "votes": 12537, "votePct": 8.13 },
+        { "name": "Mayilswamy", "party": "AIADMK", "votes": 6212, "votePct": 4.03 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1260, "votePct": 0.82 }
+      ],
+      "margin": 7285,
+      "marginPct": 4.72,
+      "turnout": 154280,
+      "turnoutPct": 82.95,
+      "result": "JD(S) gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Krishnankutty", "party": "JD(S)", "votes": 84672, "votePct": 55.38 },
+        { "name": "Sumesh Achuthan", "party": "INC", "votes": 50794, "votePct": 33.22 },
+        { "name": "V. Natesan", "party": "BJP", "votes": 14458, "votePct": 9.46 },
+        { "name": "NOTA", "party": "NOTA", "votes": 1285, "votePct": 0.84 },
+        { "name": "A. Chandran", "party": "BSP", "votes": 918, "votePct": 0.60 }
+      ],
+      "margin": 33878,
+      "marginPct": 22.15,
+      "turnout": 152905,
+      "turnoutPct": null,
+      "result": "JD(S) hold"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "constituency": "107 - HARIPAD (Kerala)",
+  "constituencyNumber": 107,
+  "constituencyName": "HARIPAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "RAMESH CHENNITHALA",
+      "party": "Indian National Congress",
+      "votes": 68184,
+      "margin": 23377,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "T.T.JISMON",
+      "party": "Communist Party of India",
+      "votes": 44807,
+      "margin": -23377,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANDHEEP VAACHASPATHI",
+      "party": "Bharatiya Janata Party",
+      "votes": 31022,
+      "margin": -37162,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VIDHYA V.P",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 231,
+      "margin": -67953,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SOUMYA V.SASIDHARAN",
+      "party": "Independent",
+      "votes": 69,
+      "margin": -68115,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAMESH C",
+      "party": "Independent",
+      "votes": 59,
+      "margin": -68125,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 465,
+      "margin": -67719,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11107.htm"
+}

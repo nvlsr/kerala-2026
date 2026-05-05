@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 108,
+  "constituencyName": "KAYAMKULAM",
+  "wikipediaName": "Kayamkulam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kayamkulam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. K. Sadasivan", "party": "CPI(M)", "votes": 67409, "votePct": 48.28 },
+        { "name": "M. Murali", "party": "INC", "votes": 66094, "votePct": 47.34 },
+        { "name": "T. O. Noushad", "party": "BJP", "votes": 3083, "votePct": 2.21 },
+        { "name": "K. Sadasivan", "party": "Independent", "votes": 744, "votePct": 0.53 },
+        { "name": "Murali", "party": "Independent", "votes": 704, "votePct": 0.50 }
+      ],
+      "margin": 1315,
+      "marginPct": 0.94,
+      "turnout": 139626,
+      "turnoutPct": 76.70,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "U. Prathibha", "party": "CPI(M)", "votes": 72956, "votePct": 46.53 },
+        { "name": "M. Liju", "party": "INC", "votes": 61099, "votePct": 38.96 },
+        { "name": "Shaji M. Panicker", "party": "BDJS", "votes": 20000, "votePct": 12.75 },
+        { "name": "Muttam Nazar", "party": "PDP", "votes": 1125, "votePct": 0.72 },
+        { "name": "Maniyappan Achari", "party": "Independent", "votes": 739, "votePct": 0.47 }
+      ],
+      "margin": 11857,
+      "marginPct": 7.57,
+      "turnout": 156806,
+      "turnoutPct": 77.13,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "U. Prathibha", "party": "CPI(M)", "votes": 77348, "votePct": 47.97 },
+        { "name": "Aritha Babu", "party": "INC", "votes": 71050, "votePct": 44.06 },
+        { "name": "P. Pradeeplal", "party": "BDJS", "votes": 11413, "votePct": 7.08 },
+        { "name": "Maniyappan Achari", "party": "Independent", "votes": 367, "votePct": 0.47 },
+        { "name": "Rajeev R", "party": "Independent", "votes": 231, "votePct": 0.14 }
+      ],
+      "margin": 6298,
+      "marginPct": 3.88,
+      "turnout": 162193,
+      "turnoutPct": 75.47,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

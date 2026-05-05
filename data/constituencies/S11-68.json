@@ -1,0 +1,45 @@
+{
+  "constituency": "68 - NATTIKA (Kerala)",
+  "constituencyNumber": 68,
+  "constituencyName": "NATTIKA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "GEETHAGOPI",
+      "party": "Communist Party of India",
+      "votes": 58979,
+      "margin": 7093,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SUNIL LALOOR",
+      "party": "Indian National Congress",
+      "votes": 51886,
+      "margin": -7093,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "C.C. MUKUNDAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 45216,
+      "margin": -13763,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1454,
+      "margin": -57525,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1168.htm"
+}

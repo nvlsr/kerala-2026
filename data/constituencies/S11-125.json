@@ -1,0 +1,61 @@
+{
+  "constituency": "125 - ERAVIPURAM (Kerala)",
+  "constituencyNumber": 125,
+  "constituencyName": "ERAVIPURAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.VISHNU MOHAN",
+      "party": "Revolutionary Socialist Party",
+      "votes": 64383,
+      "margin": 8803,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "M.NOUSHAD",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 55580,
+      "margin": -8803,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAJEE D ANAND",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 10469,
+      "margin": -53914,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "FIROZ  S  R",
+      "party": "Independent",
+      "votes": 597,
+      "margin": -63786,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOUSHAD A   S/O.ALIYARU KUNJU",
+      "party": "Independent",
+      "votes": 443,
+      "margin": -63940,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 912,
+      "margin": -63471,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11125.htm"
+}

@@ -1,0 +1,61 @@
+{
+  "constituency": "12 - DHARMADAM (Kerala)",
+  "constituencyNumber": 12,
+  "constituencyName": "DHARMADAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "PINARAYI VIJAYAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 85614,
+      "margin": 19247,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. V.P ABDUL RASHEED",
+      "party": "Indian National Congress",
+      "votes": 66367,
+      "margin": -19247,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K. RANJITH",
+      "party": "Bharatiya Janata Party",
+      "votes": 18555,
+      "margin": -67059,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VADI HAREENDRAN",
+      "party": "Independent",
+      "votes": 193,
+      "margin": -85421,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VIJAYAN A.M S/O KUNHIRAMAN",
+      "party": "Independent",
+      "votes": 117,
+      "margin": -85497,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 813,
+      "margin": -84801,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1112.htm"
+}

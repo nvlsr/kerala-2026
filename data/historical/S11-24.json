@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 24,
+  "constituencyName": "PERAMBRA",
+  "wikipediaName": "Perambra",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Perambra_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Kunhammad", "party": "CPI(M)", "votes": 70248, "votePct": 51.91 },
+        { "name": "Mohammad Ikbal", "party": "KC(M)", "votes": 54979, "votePct": 40.62 },
+        { "name": "P. Chandrika", "party": "BJP", "votes": 7214, "votePct": 5.33 },
+        { "name": "T. K. Kunammad Faisy", "party": "SDPI", "votes": 1494, "votePct": 1.10 },
+        { "name": "Akhilkumar", "party": "Independent", "votes": 801, "votePct": 0.59 }
+      ],
+      "margin": 15269,
+      "marginPct": 11.29,
+      "turnout": 135334,
+      "turnoutPct": 84.74,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. P. Ramakrishnan", "party": "CPI(M)", "votes": 72359, "votePct": 47.14 },
+        { "name": "Muhammad Ikbal", "party": "KC(M)", "votes": 68258, "votePct": 44.46 },
+        { "name": "Sukumaran Nair", "party": "BDJS", "votes": 8561, "votePct": 5.58 },
+        { "name": "Razak Paleri", "party": "WPOI", "votes": 1673, "votePct": 1.09 },
+        { "name": "K. P. Gopi", "party": "SDPI", "votes": 1036, "votePct": 0.67 }
+      ],
+      "margin": 4101,
+      "marginPct": 2.68,
+      "turnout": 153512,
+      "turnoutPct": 85.45,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. P. Ramakrishnan", "party": "CPI(M)", "votes": 86023, "votePct": 52.7 },
+        { "name": "C H Ebrahimkutty", "party": "Independent", "votes": 63431, "votePct": 38.8 },
+        { "name": "K V Sudheer", "party": "BJP", "votes": 11165, "votePct": 6.8 },
+        { "name": "Ismail Kammana", "party": "SDPI", "votes": 1465, "votePct": 0.9 },
+        { "name": "NOTA", "party": "NOTA", "votes": 458, "votePct": 0.28 }
+      ],
+      "margin": 22592,
+      "marginPct": 13.9,
+      "turnout": 163279,
+      "turnoutPct": 86.63,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

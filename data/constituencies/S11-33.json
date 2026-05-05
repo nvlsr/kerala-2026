@@ -1,0 +1,61 @@
+{
+  "constituency": "33 - KONDOTTY (Kerala)",
+  "constituencyNumber": 33,
+  "constituencyName": "KONDOTTY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "T.P. ASHRAFALI",
+      "party": "Indian Union Muslim League",
+      "votes": 114997,
+      "margin": 56017,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "DR. P. JIJI",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 58980,
+      "margin": -56017,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P. SUBRAHMANNIAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 13994,
+      "margin": -101003,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL KHADAR BICHAVA",
+      "party": "Social Democratic Party Of India",
+      "votes": 2231,
+      "margin": -112766,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KEERAN N.K",
+      "party": "Bahujan Samaj Party",
+      "votes": 441,
+      "margin": -114556,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 982,
+      "margin": -114015,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1133.htm"
+}

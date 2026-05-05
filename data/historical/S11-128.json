@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 128,
+  "constituencyName": "ATTINGAL",
+  "wikipediaName": "Attingal",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Attingal_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "B. Satyan", "party": "CPI(M)", "votes": 63558, "votePct": 55.44 },
+        { "name": "Thankamony Divakaran", "party": "INC", "votes": 33493, "votePct": 29.22 },
+        { "name": "Attingal Suresh", "party": "Independent", "votes": 7857, "votePct": 6.85 },
+        { "name": "P. P. Vava", "party": "BJP", "votes": 4844, "votePct": 4.23 },
+        { "name": "V. V. Selvaraj", "party": "Independent", "votes": 1713, "votePct": 1.49 }
+      ],
+      "margin": 30065,
+      "marginPct": 26.22,
+      "turnout": 114638,
+      "turnoutPct": 66.77,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "B. Satyan", "party": "CPI(M)", "votes": 72808, "votePct": 52.71 },
+        { "name": "K. Chandrababu", "party": "RSP", "votes": 32425, "votePct": 23.47 },
+        { "name": "Raji Prasad", "party": "BJP", "votes": 27602, "votePct": 19.98 },
+        { "name": "M. K. Manoj Kumar", "party": "SDPI", "votes": 1437, "votePct": 1.04 },
+        { "name": "K. Sivanandan", "party": "BSP", "votes": 789, "votePct": 0.57 }
+      ],
+      "margin": 40383,
+      "marginPct": 29.24,
+      "turnout": 138137,
+      "turnoutPct": 69.53,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "O. S. Ambika", "party": "CPI(M)", "votes": 69898, "votePct": 47.35 },
+        { "name": "P. Sudheer", "party": "BJP", "votes": 38262, "votePct": 25.92 },
+        { "name": "A. Sreedharan", "party": "RSP", "votes": 36938, "votePct": 25.02 },
+        { "name": "Vipinlal Vidhyadharan", "party": "BSP", "votes": 927, "votePct": 0.63 },
+        { "name": "Ambili", "party": "Independent", "votes": 191, "votePct": 0.13 }
+      ],
+      "margin": 31636,
+      "marginPct": 21.43,
+      "turnout": 147626,
+      "turnoutPct": 73.04,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

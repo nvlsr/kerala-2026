@@ -1,0 +1,125 @@
+{
+  "constituency": "31 - KODUVALLY (Kerala)",
+  "constituencyNumber": 31,
+  "constituencyName": "KODUVALLY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "P K FIROS",
+      "party": "Indian Union Muslim League",
+      "votes": 95164,
+      "margin": 36682,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SALEEM MADAVOOR",
+      "party": "Independent",
+      "votes": 58482,
+      "margin": -36682,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "GIRI PAMBANAL",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 9832,
+      "margin": -85332,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUNIL MANNATH",
+      "party": "Republican Party of India (Athawale)",
+      "votes": 397,
+      "margin": -94767,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "FIROSE K C S/O MOITHEENKUTTY",
+      "party": "Independent",
+      "votes": 298,
+      "margin": -94866,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BAVANKUTTY",
+      "party": "Aam Aadmi Party",
+      "votes": 286,
+      "margin": -94878,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL SHUKOOR",
+      "party": "Independent",
+      "votes": 212,
+      "margin": -94952,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "FIROSE S/O ABOOBACKER MUSALIAR",
+      "party": "Independent",
+      "votes": 185,
+      "margin": -94979,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "LAKSHMANAN K P THAMARASSERY",
+      "party": "Independent",
+      "votes": 184,
+      "margin": -94980,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SALEEM MUTTANCHERY",
+      "party": "Independent",
+      "votes": 142,
+      "margin": -95022,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SALEEM C K",
+      "party": "Independent",
+      "votes": 121,
+      "margin": -95043,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SAJIR K",
+      "party": "Independent",
+      "votes": 107,
+      "margin": -95057,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAHEEDA C P",
+      "party": "Independent",
+      "votes": 88,
+      "margin": -95076,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 490,
+      "margin": -94674,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1131.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 99,
+  "constituencyName": "CHANGANASSERY",
+  "wikipediaName": "Changanassery",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Changanassery_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. F. Thomas", "party": "KC(M)", "votes": 51019, "votePct": 47.13 },
+        { "name": "B. Ekbal", "party": "CPI(M)", "votes": 48465, "votePct": 44.77 },
+        { "name": "M. B. Rajagopal", "party": "BJP", "votes": 6281, "votePct": 5.80 },
+        { "name": "Mathews John", "party": "BSP", "votes": 1058, "votePct": 0.98 },
+        { "name": "Mansoor", "party": "SDPI", "votes": 907, "votePct": 0.84 }
+      ],
+      "margin": 2554,
+      "marginPct": 2.36,
+      "turnout": 108257,
+      "turnoutPct": 72.56,
+      "result": "KC(M) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "C. F. Thomas", "party": "KC(M)", "votes": 50371, "votePct": 40.04 },
+        { "name": "K. C. Joseph", "party": "JKC", "votes": 48522, "votePct": 38.57 },
+        { "name": "Ettumanoor Radhakrishnan", "party": "BJP", "votes": 21455, "votePct": 17.06 },
+        { "name": "Althaph Hassan", "party": "SDPI", "votes": 1797, "votePct": 1.43 },
+        { "name": "Sojan Paviyanose", "party": "Independent", "votes": 1050, "votePct": 0.83 }
+      ],
+      "margin": 1849,
+      "marginPct": 1.47,
+      "turnout": 125793,
+      "turnoutPct": 75.24,
+      "result": "KC(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Job Maichil", "party": "KC(M)", "votes": 55425, "votePct": 44.85 },
+        { "name": "V. J. Laly", "party": "KEC", "votes": 49366, "votePct": 39.94 },
+        { "name": "G. Raman Nair", "party": "BJP", "votes": 14491, "votePct": 11.73 },
+        { "name": "Tijo Karikkanadam", "party": "Independent", "votes": 1094, "votePct": 0.89 },
+        { "name": "Amruth Dev T", "party": "BSP", "votes": 1079, "votePct": 0.87 }
+      ],
+      "margin": 6059,
+      "marginPct": 4.91,
+      "turnout": 123585,
+      "turnoutPct": 70.23,
+      "result": "KC(M) hold"
+    }
+  ]
+}

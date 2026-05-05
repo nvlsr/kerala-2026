@@ -1,0 +1,77 @@
+{
+  "constituency": "22 - NADAPURAM (Kerala)",
+  "constituencyNumber": 22,
+  "constituencyName": "NADAPURAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K.M. ABHIJITH",
+      "party": "Indian National Congress",
+      "votes": 99763,
+      "margin": 23600,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV.P. VASANTHAM",
+      "party": "Communist Party of India",
+      "votes": 76163,
+      "margin": -23600,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "C.P. VIPIN CHANDRAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 11506,
+      "margin": -88257,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VASANTHA",
+      "party": "Independent",
+      "votes": 314,
+      "margin": -99449,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PADMAKUMAR",
+      "party": "Independent",
+      "votes": 269,
+      "margin": -99494,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABHIJITH S/O BALAN",
+      "party": "Independent",
+      "votes": 218,
+      "margin": -99545,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K.M. ABHIJITH S/O ASHOKAN",
+      "party": "Independent",
+      "votes": 207,
+      "margin": -99556,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 272,
+      "margin": -99491,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1122.htm"
+}

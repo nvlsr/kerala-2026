@@ -1,0 +1,53 @@
+{
+  "constituency": "53 - KONGAD (Kerala)",
+  "constituencyNumber": 53,
+  "constituencyName": "KONGAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "THULASI TEACHER",
+      "party": "Indian National Congress",
+      "votes": 62734,
+      "margin": 3706,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. K.SANTHAKUMARI",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 59028,
+      "margin": -3706,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR. RENU SURESH",
+      "party": "Bharatiya Janata Party",
+      "votes": 24925,
+      "margin": -37809,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "GURUVAYOORAPPAN P E",
+      "party": "Bahujan Samaj Party",
+      "votes": 859,
+      "margin": -61875,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1109,
+      "margin": -61625,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1153.htm"
+}

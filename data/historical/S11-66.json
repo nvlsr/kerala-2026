@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 66,
+  "constituencyName": "OLLUR",
+  "wikipediaName": "Ollur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ollur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. P. Vincent", "party": "INC", "votes": 64823, "votePct": 49.21 },
+        { "name": "Rajaji Mathew Thomas", "party": "CPI", "votes": 58576, "votePct": 44.47 },
+        { "name": "Sundararajan", "party": "BJP", "votes": 6761, "votePct": 5.13 },
+        { "name": "Suresh M. R.", "party": "Independent", "votes": 717, "votePct": 0.54 },
+        { "name": "Sunny K. John", "party": "BSP", "votes": 434, "votePct": 0.33 }
+      ],
+      "margin": 6247,
+      "marginPct": 4.74,
+      "turnout": 131718,
+      "turnoutPct": 74.47,
+      "result": "INC gain from CPI"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Rajan", "party": "CPI", "votes": 71666, "votePct": 47.55 },
+        { "name": "M. P. Vincent", "party": "INC", "votes": 58418, "votePct": 38.76 },
+        { "name": "P. K. Santosh", "party": "BDJS", "votes": 17694, "votePct": 11.74 },
+        { "name": "Majeed Mullakara", "party": "PDP", "votes": 696, "votePct": 0.46 },
+        { "name": "Sajimon Manjamattam", "party": "CPI(ML) Red Star", "votes": 334, "votePct": 0.22 }
+      ],
+      "margin": 13248,
+      "marginPct": 8.79,
+      "turnout": 150719,
+      "turnoutPct": 77.93,
+      "result": "CPI gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Rajan", "party": "CPI", "votes": 76657, "votePct": 49.09 },
+        { "name": "Jose Valloor", "party": "INC", "votes": 55151, "votePct": 35.31 },
+        { "name": "B. Gopalakrishnan", "party": "BJP", "votes": 22295, "votePct": 14.28 },
+        { "name": "Benny Kodiyatil", "party": "Independent", "votes": 331, "votePct": 0.21 },
+        { "name": "P. K. Subramanian", "party": "BSP", "votes": 282, "votePct": 0.18 }
+      ],
+      "margin": 21506,
+      "marginPct": 13.78,
+      "turnout": 156171,
+      "turnoutPct": 75.13,
+      "result": "CPI hold"
+    }
+  ]
+}

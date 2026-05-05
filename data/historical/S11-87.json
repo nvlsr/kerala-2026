@@ -1,0 +1,56 @@
+{
+  "constituencyNumber": 87,
+  "constituencyName": "KOTHAMANGALAM",
+  "wikipediaName": "Kothamangalam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kothamangalam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. U. Kuruvilla", "party": "KC(M)", "votes": 52924, "votePct": 49.26 },
+        { "name": "Skariah Thomas", "party": "Independent", "votes": 40702, "votePct": 37.88 },
+        { "name": "K. Radhakrishnan", "party": "BJP", "votes": 5769, "votePct": 5.37 },
+        { "name": "Shine Muhammed", "party": "SDPI", "votes": 4691, "votePct": 4.37 }
+      ],
+      "margin": 12222,
+      "marginPct": 11.38,
+      "turnout": 107437,
+      "turnoutPct": 74.48,
+      "result": "KC(M) gain from KEC"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Antony John", "party": "CPI(M)", "votes": 65467, "votePct": 50.98 },
+        { "name": "T. U. Kuruvilla", "party": "KC(M)", "votes": 46185, "votePct": 35.96 },
+        { "name": "P. C. Cyriac", "party": "Independent", "votes": 12926, "votePct": 10.06 },
+        { "name": "Anas N. A.", "party": "SDPI", "votes": 1490, "votePct": 1.16 }
+      ],
+      "margin": 19282,
+      "marginPct": 15.02,
+      "turnout": 128427,
+      "turnoutPct": 80.50,
+      "result": "CPI(M) gain from KC(M)"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Antony John", "party": "CPI(M)", "votes": 64234, "votePct": 47.1 },
+        { "name": "Shibu Thekkumpuram", "party": "KEC", "votes": 57629, "votePct": 42.3 },
+        { "name": "Joe Joseph", "party": "Twenty20 Party", "votes": 7978, "votePct": 5.8 },
+        { "name": "Shine K. Krishnan", "party": "BDJS", "votes": 4638, "votePct": 3.4 }
+      ],
+      "margin": 6605,
+      "marginPct": 4.8,
+      "turnout": 136283,
+      "turnoutPct": 84.41,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

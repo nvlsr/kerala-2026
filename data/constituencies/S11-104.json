@@ -1,0 +1,69 @@
+{
+  "constituency": "104 - ALAPPUZHA (Kerala)",
+  "constituencyNumber": 104,
+  "constituencyName": "ALAPPUZHA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "A.D THOMAS",
+      "party": "Indian National Congress",
+      "votes": 81065,
+      "margin": 21015,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "P.P.CHITHARANJAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 60050,
+      "margin": -21015,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M.J JOB",
+      "party": "Bharatiya Janata Party",
+      "votes": 15373,
+      "margin": -65692,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JOSEPH CHACKO",
+      "party": "Independent",
+      "votes": 163,
+      "margin": -80902,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ALLEPPEY SUGUNAN",
+      "party": "Independent",
+      "votes": 117,
+      "margin": -80948,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JYOTHI ABRAHAM",
+      "party": "Independent",
+      "votes": 98,
+      "margin": -80967,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 795,
+      "margin": -80270,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11104.htm"
+}

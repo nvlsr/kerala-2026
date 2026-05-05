@@ -1,0 +1,53 @@
+{
+  "constituency": "76 - ALUVA (Kerala)",
+  "constituencyNumber": 76,
+  "constituencyName": "ALUVA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ANWAR SADATH",
+      "party": "Indian National Congress",
+      "votes": 83899,
+      "margin": 29143,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADVOCATE A.M.ARIFF",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 54756,
+      "margin": -29143,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M.A.BRAHMARAJ",
+      "party": "Bharatiya Janata Party",
+      "votes": 18732,
+      "margin": -65167,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "HAKHIKHATH HAMEED",
+      "party": "Aam Aadmi Party",
+      "votes": 403,
+      "margin": -83496,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1172,
+      "margin": -82727,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1176.htm"
+}

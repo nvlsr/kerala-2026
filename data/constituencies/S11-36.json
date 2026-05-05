@@ -1,0 +1,53 @@
+{
+  "constituency": "36 - WANDOOR (Kerala)",
+  "constituencyNumber": 36,
+  "constituencyName": "WANDOOR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "A.P ANILKUMAR",
+      "party": "Indian National Congress",
+      "votes": 121074,
+      "margin": 47939,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "DR.K.K DAMODARAN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 73135,
+      "margin": -47939,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KUMARADAS",
+      "party": "Independent",
+      "votes": 6018,
+      "margin": -115056,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ANILKUMAR S/O KUTTAN",
+      "party": "Independent",
+      "votes": 1267,
+      "margin": -119807,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1674,
+      "margin": -119400,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1136.htm"
+}

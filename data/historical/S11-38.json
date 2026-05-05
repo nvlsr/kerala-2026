@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 38,
+  "constituencyName": "PERINTHALMANNA",
+  "wikipediaName": "Perinthalmanna",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Perinthalmanna_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Manjalamkuzhi Ali", "party": "IUML", "votes": 69730, "votePct": 52.14 },
+        { "name": "V. Sasikumar", "party": "CPI(M)", "votes": 60141, "votePct": 44.97 },
+        { "name": "C. K. Kunhimuhammed", "party": "BJP", "votes": 1989, "votePct": 1.49 },
+        { "name": "Saidalikkutty", "party": "SDPI", "votes": 1067, "votePct": 0.80 },
+        { "name": "Mohammed Ali", "party": "Independent", "votes": 808, "votePct": 0.60 }
+      ],
+      "margin": 9589,
+      "marginPct": 7.17,
+      "turnout": 133735,
+      "turnoutPct": 81.03,
+      "result": "IUML gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Manjalamkuzhi Ali", "party": "IUML", "votes": 70990, "votePct": 46.89 },
+        { "name": "V. Sasikumar", "party": "CPI(M)", "votes": 70411, "votePct": 46.50 },
+        { "name": "M. K. Sunil", "party": "BJP", "votes": 5917, "votePct": 3.91 },
+        { "name": "Saleem Mampad", "party": "WPOI", "votes": 1757, "votePct": 1.16 },
+        { "name": "Suniya Siraj", "party": "SDPI", "votes": 698, "votePct": 0.46 }
+      ],
+      "margin": 579,
+      "marginPct": 0.39,
+      "turnout": 151411,
+      "turnoutPct": 77.66,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Najeeb Kanthapuram", "party": "IUML", "votes": 76530, "votePct": 46.21 },
+        { "name": "K. P. M. Musthafa", "party": "LDF", "votes": 76492, "votePct": 46.19 },
+        { "name": "Suchitra Mattada", "party": "BJP", "votes": 8021, "votePct": 4.84 },
+        { "name": "Abdul Afsal P. T", "party": "Independent", "votes": 906, "votePct": 0.55 },
+        { "name": "NOTA", "party": "NOTA", "votes": 867, "votePct": 0.52 }
+      ],
+      "margin": 38,
+      "marginPct": 0.02,
+      "turnout": 165616,
+      "turnoutPct": 75.98,
+      "result": "IUML hold"
+    }
+  ]
+}

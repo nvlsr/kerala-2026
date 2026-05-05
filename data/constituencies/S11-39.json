@@ -1,0 +1,53 @@
+{
+  "constituency": "39 - MANKADA (Kerala)",
+  "constituencyNumber": 39,
+  "constituencyName": "MANKADA",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "MANJALAMKUZHI ALI",
+      "party": "Indian Union Muslim League",
+      "votes": 110692,
+      "margin": 45609,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "KUNNATH MOHAMED S/O ALI HAJI",
+      "party": "Independent",
+      "votes": 65083,
+      "margin": -45609,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "LEJOY MASH",
+      "party": "Bharatiya Janata Party",
+      "votes": 9933,
+      "margin": -100759,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MOHAMMED KUNNATH S/O MOIDEEN",
+      "party": "Independent",
+      "votes": 663,
+      "margin": -110029,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1315,
+      "margin": -109377,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1139.htm"
+}

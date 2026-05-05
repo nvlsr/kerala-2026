@@ -1,0 +1,69 @@
+{
+  "constituency": "69 - KAIPAMANGALAM (Kerala)",
+  "constituencyNumber": 69,
+  "constituencyName": "KAIPAMANGALAM",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K.K. VALSARAJ",
+      "party": "Communist Party of India",
+      "votes": 65448,
+      "margin": 9944,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "T.M. NAZAR",
+      "party": "Indian National Congress",
+      "votes": 55504,
+      "margin": -9944,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ATHULLIAGHOSH VETTIYATTIL",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 19688,
+      "margin": -45760,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JAYAN ERATT",
+      "party": "Aam Aadmi Party",
+      "votes": 653,
+      "margin": -64795,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "A.M. MUHAMMED RIYAS",
+      "party": "Social Democratic Party Of India",
+      "votes": 536,
+      "margin": -64912,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MANOJ M.M.",
+      "party": "Communist Party of India (Marxist-Leninist) Red Star",
+      "votes": 335,
+      "margin": -65113,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 690,
+      "margin": -64758,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1169.htm"
+}

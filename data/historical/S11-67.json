@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 67,
+  "constituencyName": "THRISSUR",
+  "wikipediaName": "Thrissur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thrissur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Therambil Ramakrishnan", "party": "INC", "votes": 59991, "votePct": 53.19 },
+        { "name": "P. Balachandran", "party": "CPI", "votes": 43822, "votePct": 38.85 },
+        { "name": "Ravikumar Uppath", "party": "BJP", "votes": 6697, "votePct": 5.94 },
+        { "name": "Therambil Radhakrishnan", "party": "Independent", "votes": 1405, "votePct": 1.25 },
+        { "name": "A. Jayaram", "party": "BSP", "votes": 879, "votePct": 0.78 }
+      ],
+      "margin": 16169,
+      "marginPct": 14.34,
+      "turnout": 127191,
+      "turnoutPct": 73.79,
+      "result": "INC hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. S. Sunil Kumar", "party": "CPI", "votes": 53664, "votePct": 42.19 },
+        { "name": "Padmaja Venugopal", "party": "INC", "votes": 46677, "votePct": 36.70 },
+        { "name": "B. Gopalakrishnan", "party": "BJP", "votes": 24748, "votePct": 19.46 },
+        { "name": "Anthony J. Maliakal", "party": "Independent", "votes": 256, "votePct": 0.20 },
+        { "name": "P. S. Unnikrishnan", "party": "SP", "votes": 226, "votePct": 0.18 }
+      ],
+      "margin": 6987,
+      "marginPct": 5.49,
+      "turnout": 127191,
+      "turnoutPct": 73.79,
+      "result": "CPI gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. Balachandran", "party": "CPI", "votes": 44263, "votePct": 34.25 },
+        { "name": "Padmaja Venugopal", "party": "INC", "votes": 43317, "votePct": 33.52 },
+        { "name": "Suresh Gopi", "party": "BJP", "votes": 40457, "votePct": 31.30 },
+        { "name": "Ajith Menon Ponnemkattil", "party": "Independent", "votes": 252, "votePct": 0.19 },
+        { "name": "Thrissur Mukundan", "party": "IGP", "votes": 225, "votePct": 0.17 }
+      ],
+      "margin": 946,
+      "marginPct": 0.33,
+      "turnout": 129237,
+      "turnoutPct": 70.73,
+      "result": "CPI hold"
+    }
+  ]
+}

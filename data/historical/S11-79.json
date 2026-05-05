@@ -1,0 +1,57 @@
+{
+  "constituencyNumber": 79,
+  "constituencyName": "VYPEN",
+  "wikipediaName": "Vypin",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Vypin_(State_Assembly_constituency)",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "S. Sharma", "party": "CPI(M)", "votes": 60530, "votePct": 50.37 },
+        { "name": "Ajay Tharayil", "party": "INC", "votes": 55572, "votePct": 46.03 },
+        { "name": "T. G. Surendran", "party": "BJP", "votes": 2930, "votePct": 2.43 },
+        { "name": "T. K. Sivanandan", "party": "BSP", "votes": 546, "votePct": 0.45 },
+        { "name": "Santhosh Sarma", "party": "Independent", "votes": 490, "votePct": 0.41 }
+      ],
+      "margin": 5242,
+      "marginPct": 4.34,
+      "turnout": 120726,
+      "turnoutPct": 79.40,
+      "result": "CPI(M) win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "S. Sharma", "party": "CPI(M)", "votes": 68526, "votePct": 52.24 },
+        { "name": "K. R. Subhash", "party": "INC", "votes": 49173, "votePct": 37.49 },
+        { "name": "Vamalochanan K. K.", "party": "BDJS", "votes": 10051, "votePct": 7.66 },
+        { "name": "Jyothidas Paravur", "party": "WPOI", "votes": 1406, "votePct": 1.07 }
+      ],
+      "margin": 19353,
+      "marginPct": 14.75,
+      "turnout": 131169,
+      "turnoutPct": 79.87,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. N. Unnikrishnan", "party": "CPI(M)", "votes": 53858, "votePct": 41.24 },
+        { "name": "Deepak Joy", "party": "INC", "votes": 45657, "votePct": 34.96 },
+        { "name": "Job Chakkalackal", "party": "Twenty20 Party", "votes": 16707, "votePct": 12.79 },
+        { "name": "K. S. Shaiju", "party": "BJP", "votes": 13540, "votePct": 10.37 }
+      ],
+      "margin": 8201,
+      "marginPct": 6.28,
+      "turnout": 130596,
+      "turnoutPct": 75.89,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

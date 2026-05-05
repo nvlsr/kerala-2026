@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 59,
+  "constituencyName": "NEMMARA",
+  "wikipediaName": "Nenmara",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nenmara_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "V. Chethamarakshan", "party": "CPI(M)", "votes": 64169, "votePct": 47.86 },
+        { "name": "M. V. Raghavan", "party": "CMP", "votes": 55475, "votePct": 41.38 },
+        { "name": "N. Sivarajan", "party": "BJP", "votes": 9123, "votePct": 6.80 },
+        { "name": "Sakeer Hussain", "party": "SDPI", "votes": 1809, "votePct": 1.41 },
+        { "name": "Chandran", "party": "BSP", "votes": 1484, "votePct": 1.11 }
+      ],
+      "margin": 8694,
+      "marginPct": 6.48,
+      "turnout": 134074,
+      "turnoutPct": 77.92,
+      "result": "CPI(M) win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Babu", "party": "CPI(M)", "votes": 66316, "votePct": 42.90 },
+        { "name": "A. V. Gopinathan", "party": "INC", "votes": 58908, "votePct": 38.11 },
+        { "name": "N. Sivarajan", "party": "BJP", "votes": 23096, "votePct": 14.94 },
+        { "name": "Menaka K.", "party": "AIADMK", "votes": 2186, "votePct": 1.41 },
+        { "name": "Ajith Kumar", "party": "WPOI", "votes": 772, "votePct": 0.50 }
+      ],
+      "margin": 7408,
+      "marginPct": 4.79,
+      "turnout": 154578,
+      "turnoutPct": 81.03,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. Babu", "party": "CPI(M)", "votes": 80145, "votePct": 52.89 },
+        { "name": "C. N. Vijayakrishnan", "party": "CMP", "votes": 51441, "votePct": 33.95 },
+        { "name": "A. N. Anurag", "party": "BDJS", "votes": 16666, "votePct": 11.00 },
+        { "name": "Prakash. C", "party": "BSP", "votes": 1350, "votePct": 0.89 },
+        { "name": "Babu S/o Kunchu", "party": "Independent", "votes": 863, "votePct": 0.57 }
+      ],
+      "margin": 28704,
+      "marginPct": 18.94,
+      "turnout": 151535,
+      "turnoutPct": null,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "constituency": "64 - MANALUR (Kerala)",
+  "constituencyNumber": 64,
+  "constituencyName": "MANALUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "PROF C RAVINDRANATH",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 65337,
+      "margin": 126,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "T N PRATHAPAN",
+      "party": "Indian National Congress",
+      "votes": 65211,
+      "margin": -126,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV K K ANEESHKUMAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 38125,
+      "margin": -27212,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JILEEF (DILEEF ABDUL KHADAR)",
+      "party": "Social Democratic Party Of India",
+      "votes": 1031,
+      "margin": -64306,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DR UNNIKRISHNAN CHIRAYATH",
+      "party": "Aam Aadmi Party",
+      "votes": 330,
+      "margin": -65007,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAVINDRANATH K",
+      "party": "Independent",
+      "votes": 234,
+      "margin": -65103,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRATHAPAN(S/O AYYAPPAN)",
+      "party": "Independent",
+      "votes": 184,
+      "margin": -65153,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SIVAPRASAD GANDHI K M",
+      "party": "Indian Gandhiyan Party",
+      "votes": 118,
+      "margin": -65219,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P V CHANDRAN",
+      "party": "Independent",
+      "votes": 71,
+      "margin": -65266,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUJITH",
+      "party": "Independent",
+      "votes": 70,
+      "margin": -65267,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 676,
+      "margin": -64661,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1164.htm"
+}

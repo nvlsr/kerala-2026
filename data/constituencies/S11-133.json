@@ -1,0 +1,85 @@
+{
+  "constituency": "133 - VATTIYOORKAVU (Kerala)",
+  "constituencyNumber": 133,
+  "constituencyName": "VATTIYOORKAVU",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K. MURALEEDHARAN",
+      "party": "Indian National Congress",
+      "votes": 48338,
+      "margin": 5425,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. V.K PRASANTH",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 42913,
+      "margin": -5425,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "R. SREELEKHA",
+      "party": "Bharatiya Janata Party",
+      "votes": 37213,
+      "margin": -11125,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "N. MURALI",
+      "party": "Bahujan Samaj Party",
+      "votes": 299,
+      "margin": -48039,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRASANTH. K S/O. KARUNAKARAN.C",
+      "party": "Independent",
+      "votes": 143,
+      "margin": -48195,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "EMIL B.S",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 131,
+      "margin": -48207,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SREEKANTAN NAIR V",
+      "party": "Independent",
+      "votes": 66,
+      "margin": -48272,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MURALIDHARAN. P S/O. K. PONNAN",
+      "party": "Independent",
+      "votes": 62,
+      "margin": -48276,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 600,
+      "margin": -47738,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11133.htm"
+}

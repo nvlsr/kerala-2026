@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 27,
+  "constituencyName": "KOZHIKODE NORTH",
+  "wikipediaName": "Kozhikode North",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kozhikode_North_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. Pradeepkumar", "party": "CPI(M)", "votes": 57123, "votePct": 49.12 },
+        { "name": "P. V. Gangadharan", "party": "INC", "votes": 48125, "votePct": 41.38 },
+        { "name": "P. Reghunathan", "party": "BJP", "votes": 9894, "votePct": 8.51 },
+        { "name": "Pradeep Kumar", "party": "Independent", "votes": 420, "votePct": 0.36 },
+        { "name": "Gangadharan", "party": "Independent", "votes": 367, "votePct": 0.32 }
+      ],
+      "margin": 8998,
+      "marginPct": 7.74,
+      "turnout": 116300,
+      "turnoutPct": 77.31,
+      "result": "CPI(M) win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "A. Pradeepkumar", "party": "CPI(M)", "votes": 64192, "votePct": 48.40 },
+        { "name": "P. M. Suresh Babu", "party": "INC", "votes": 36319, "votePct": 27.39 },
+        { "name": "K. P. Sreesan", "party": "BJP", "votes": 29860, "votePct": 22.52 },
+        { "name": "K. P. Velayudhan", "party": "BSP", "votes": 457, "votePct": 0.34 },
+        { "name": "Abdul Vahid", "party": "SDPI", "votes": 351, "votePct": 0.26 }
+      ],
+      "margin": 27873,
+      "marginPct": 21.01,
+      "turnout": 132617,
+      "turnoutPct": 78.12,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Thottathil Ravindran", "party": "CPI(M)", "votes": 59124, "votePct": 42.98 },
+        { "name": "K. M. Abhijith", "party": "INC", "votes": 46196, "votePct": 33.58 },
+        { "name": "M. T Ramesh", "party": "BJP", "votes": 30952, "votePct": 22.50 },
+        { "name": "N. Abhijith", "party": "Independent", "votes": 328, "votePct": 0.34 },
+        { "name": "K. Rahim", "party": "SUCI(C)", "votes": 152, "votePct": 0.11 }
+      ],
+      "margin": 12928,
+      "marginPct": 9.39,
+      "turnout": 137562,
+      "turnoutPct": 76.03,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

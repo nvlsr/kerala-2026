@@ -1,0 +1,61 @@
+{
+  "constituency": "21 - KUTTIADI (Kerala)",
+  "constituencyNumber": 21,
+  "constituencyName": "KUTTIADI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "PARAKKAL ABDULLA",
+      "party": "Indian Union Muslim League",
+      "votes": 88197,
+      "margin": 10922,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "K. P. KUNHAMMEDKUTTY MASTER",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 77275,
+      "margin": -10922,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAMADAS MANALERI",
+      "party": "Bharatiya Janata Party",
+      "votes": 12035,
+      "margin": -76162,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KUNHAMMADKUTTY",
+      "party": "Independent",
+      "votes": 114,
+      "margin": -88083,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDULLA",
+      "party": "Independent",
+      "votes": 95,
+      "margin": -88102,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 390,
+      "margin": -87807,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1121.htm"
+}

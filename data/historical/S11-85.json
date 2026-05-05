@@ -1,0 +1,72 @@
+{
+  "constituencyNumber": 85,
+  "constituencyName": "PIRAVOM",
+  "wikipediaName": "Piravom",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Piravom_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. M. Jacob", "party": "KC(J)", "votes": 66503, "votePct": 47.53 },
+        { "name": "M. J. Jacob", "party": "CPI(M)", "votes": 66346, "votePct": 47.41 },
+        { "name": "M. N. Madhu", "party": "BJP", "votes": 4234, "votePct": 3.03 },
+        { "name": "Sau Kunjappan", "party": "Independent", "votes": 958, "votePct": 0.65 },
+        { "name": "M. K. Usha", "party": "SUCI(C)", "votes": 908, "votePct": 0.65 }
+      ],
+      "margin": 157,
+      "marginPct": 0.12,
+      "turnout": 139928,
+      "turnoutPct": 79.37,
+      "result": "KC(J) hold"
+    },
+    {
+      "year": 2012,
+      "type": "by-election",
+      "reason": "Death of sitting MLA T. M. Jacob on 30 October 2011",
+      "candidates": [
+        { "name": "Anoop Jacob", "party": "KC(J)", "votes": 82756, "votePct": 52.81 },
+        { "name": "M. J. Jacob", "party": "CPI(M)", "votes": 70686, "votePct": 45.11 },
+        { "name": "K. R. Rajagopal", "party": "BJP", "votes": 3241, "votePct": 2.07 }
+      ],
+      "margin": 12071,
+      "marginPct": 7.70,
+      "turnout": 156683,
+      "turnoutPct": 86.30,
+      "result": "KC(J) hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Anoop Jacob", "party": "KC(J)", "votes": 73770, "votePct": 45.77 },
+        { "name": "M. J. Jacob", "party": "CPI(M)", "votes": 67575, "votePct": 41.93 },
+        { "name": "C. P. Sathyan", "party": "BDJS", "votes": 17503, "votePct": 10.86 },
+        { "name": "Gireesh", "party": "PpGP", "votes": 485, "votePct": 0.30 },
+        { "name": "K. O. Sudheer", "party": "SUCI(C)", "votes": 342, "votePct": 0.21 }
+      ],
+      "margin": 6195,
+      "marginPct": 3.84,
+      "turnout": 161770,
+      "turnoutPct": 80.58,
+      "result": "KC(J) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Anoop Jacob", "party": "KC(J)", "votes": 85056, "votePct": 53.8 },
+        { "name": "Sindhumol Jacob", "party": "KC(M)", "votes": 59692, "votePct": 37.76 },
+        { "name": "N. Ashish", "party": "BJP", "votes": 11021, "votePct": 6.97 }
+      ],
+      "margin": 25364,
+      "marginPct": 16.04,
+      "turnout": 158097,
+      "turnoutPct": 74.62,
+      "result": "KC(J) hold"
+    }
+  ]
+}

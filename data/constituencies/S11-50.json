@@ -1,0 +1,77 @@
+{
+  "constituency": "50 - PATTAMBI (Kerala)",
+  "constituencyNumber": 50,
+  "constituencyName": "PATTAMBI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "MUHAMMED MUHASSIN",
+      "party": "Communist Party of India",
+      "votes": 80062,
+      "margin": 9442,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "T. P. SHAJI",
+      "party": "Indian National Congress",
+      "votes": 70620,
+      "margin": -9442,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. P. MANOJ",
+      "party": "Bharatiya Janata Party",
+      "votes": 15282,
+      "margin": -64780,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "S. P. AMEER ALI",
+      "party": "Social Democratic Party Of India",
+      "votes": 2582,
+      "margin": -77480,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "MUHAMMED MUHSIN. M. K MANJERIKUNNATH",
+      "party": "Independent",
+      "votes": 152,
+      "margin": -79910,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "HARIS BABU PAILIPPURAM",
+      "party": "Independent",
+      "votes": 104,
+      "margin": -79958,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAJIMON",
+      "party": "Independent",
+      "votes": 86,
+      "margin": -79976,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 548,
+      "margin": -79514,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1150.htm"
+}

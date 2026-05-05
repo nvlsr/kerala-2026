@@ -1,0 +1,53 @@
+{
+  "constituencyNumber": 106,
+  "constituencyName": "KUTTANAD",
+  "wikipediaName": "Kuttanad",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kuttanad_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Thomas Chandy", "party": "NCP", "votes": 60010, "votePct": 50.81 },
+        { "name": "K. C. Joseph", "party": "KC(M)", "votes": 52039, "votePct": 44.06 },
+        { "name": "K. Soman", "party": "BJP", "votes": 4395, "votePct": 3.72 }
+      ],
+      "margin": 7971,
+      "marginPct": 6.75,
+      "turnout": 118110,
+      "turnoutPct": 78.63,
+      "result": "NCP gain from DIC"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Thomas Chandy", "party": "NCP", "votes": 50114, "votePct": 38.52 },
+        { "name": "Jacob Abraham", "party": "KC(M)", "votes": 45223, "votePct": 34.76 },
+        { "name": "Subash Vasu", "party": "BDJS", "votes": 33044, "votePct": 25.40 }
+      ],
+      "margin": 4891,
+      "marginPct": 3.76,
+      "turnout": 130082,
+      "turnoutPct": 78.76,
+      "result": "NCP hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Thomas K. Thomas", "party": "NCP", "votes": 57379, "votePct": 45.67 },
+        { "name": "Jacob Abraham", "party": "KEC", "votes": 51863, "votePct": 41.28 },
+        { "name": "Thampi Mettuthara", "party": "BDJS", "votes": 14946, "votePct": 11.90 }
+      ],
+      "margin": 5516,
+      "marginPct": 4.39,
+      "turnout": 125636,
+      "turnoutPct": 74.80,
+      "result": "NCP hold"
+    }
+  ]
+}

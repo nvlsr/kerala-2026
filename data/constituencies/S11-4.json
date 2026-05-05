@@ -1,0 +1,53 @@
+{
+  "constituency": "4 - KANHANGAD (Kerala)",
+  "constituencyNumber": 4,
+  "constituencyName": "KANHANGAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. GOVINDAN PALLIKAPPIL",
+      "party": "Communist Party of India",
+      "votes": 79920,
+      "margin": 15316,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "SHAIJI OTTAPALLI",
+      "party": "Kerala Congress",
+      "votes": 64604,
+      "margin": -15316,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M BALRAJ",
+      "party": "Bharatiya Janata Party",
+      "votes": 27063,
+      "margin": -52857,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VIJAYAKUMAR B",
+      "party": "Bahujan Samaj Party",
+      "votes": 3132,
+      "margin": -76788,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 1058,
+      "margin": -78862,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S114.htm"
+}

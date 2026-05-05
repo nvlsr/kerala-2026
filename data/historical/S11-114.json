@@ -1,0 +1,72 @@
+{
+  "constituencyNumber": 114,
+  "constituencyName": "KONNI",
+  "wikipediaName": "Konni",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Konni_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Adoor Prakash", "party": "INC", "votes": 65724, "votePct": 50.15 },
+        { "name": "M. S. Rajendran", "party": "CPI(M)", "votes": 57950, "votePct": 44.22 },
+        { "name": "V. S. Harish Chandran", "party": "BJP", "votes": 5994, "votePct": 4.57 },
+        { "name": "Sinto Stephen", "party": "Independent", "votes": 655, "votePct": 0.50 },
+        { "name": "Thattayil Saraswathi", "party": "Independent", "votes": 276, "votePct": 0.21 }
+      ],
+      "margin": 7774,
+      "marginPct": 5.93,
+      "turnout": 131053,
+      "turnoutPct": 71.86,
+      "result": "INC hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Adoor Prakash", "party": "INC", "votes": 72800, "votePct": 50.81 },
+        { "name": "R. Sanal Kumar", "party": "CPI(M)", "votes": 52052, "votePct": 36.33 },
+        { "name": "Asoka Kumar D.", "party": "BJP", "votes": 16713, "votePct": 11.66 },
+        { "name": "Reyash", "party": "SDPI", "votes": 401, "votePct": 0.28 },
+        { "name": "Joshy Joseph", "party": "WPOI", "votes": 365, "votePct": 0.25 }
+      ],
+      "margin": 20748,
+      "marginPct": 14.48,
+      "turnout": 143283,
+      "turnoutPct": 72.99,
+      "result": "INC hold"
+    },
+    {
+      "year": 2019,
+      "type": "by-election",
+      "reason": "Election of sitting MLA as MP from Attingal Lok Sabha constituency",
+      "candidates": [
+        { "name": "K. U. Jenish Kumar", "party": "CPI(M)", "votes": 54099, "votePct": 38.96 },
+        { "name": "P. Mohanraj", "party": "INC", "votes": 44146, "votePct": 31.79 },
+        { "name": "K. Surendran", "party": "BJP", "votes": 39786, "votePct": 28.65 }
+      ],
+      "margin": 9953,
+      "marginPct": 7.17,
+      "turnout": 138859,
+      "turnoutPct": 70.07,
+      "result": "CPI(M) gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. U. Jenish Kumar", "party": "CPI(M)", "votes": 62318, "votePct": 41.62 },
+        { "name": "Robin Peter", "party": "INC", "votes": 53810, "votePct": 35.94 },
+        { "name": "K. Surendran", "party": "BJP", "votes": 32811, "votePct": 21.91 }
+      ],
+      "margin": 8508,
+      "marginPct": 5.68,
+      "turnout": null,
+      "turnoutPct": null,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

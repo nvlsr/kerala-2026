@@ -1,0 +1,58 @@
+{
+  "constituencyNumber": 39,
+  "constituencyName": "MANKADA",
+  "wikipediaName": "Mankada",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mankada_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. A. Ahmed Kabir", "party": "IUML", "votes": 67756, "votePct": 55.88 },
+        { "name": "Kadeeja Sathar", "party": "CPI(M)", "votes": 44163, "votePct": 36.42 },
+        { "name": "Manikandan K.", "party": "BJP", "votes": 4387, "votePct": 3.62 },
+        { "name": "C. H. Ashraf", "party": "SDPI", "votes": 3015, "votePct": 2.49 },
+        { "name": "Anwar Babu", "party": "Independent", "votes": 1926, "votePct": 1.59 }
+      ],
+      "margin": 23593,
+      "marginPct": 19.46,
+      "turnout": 121247,
+      "turnoutPct": 73.9,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "T. A. Ahmed Kabir", "party": "IUML", "votes": 69165, "votePct": 46.08 },
+        { "name": "T. K. Rasheed Ali", "party": "CPI(M)", "votes": 67657, "votePct": 45.07 },
+        { "name": "B. Ratheesh", "party": "BJP", "votes": 6641, "votePct": 4.42 },
+        { "name": "Hameed Vaniyambalam", "party": "WPOI", "votes": 3999, "votePct": 2.66 },
+        { "name": "A. A. Raheem", "party": "SDPI", "votes": 1456, "votePct": 0.97 }
+      ],
+      "margin": 1508,
+      "marginPct": 1.01,
+      "turnout": 150099,
+      "turnoutPct": 77.17,
+      "result": "IUML hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Manjalamkuzhi Ali", "party": "IUML", "votes": 83231, "votePct": 49.46 },
+        { "name": "T. K. Rasheedali", "party": "CPI(M)", "votes": 76985, "votePct": 45.75 },
+        { "name": "Sajesh Elayil", "party": "BJP", "votes": 6641, "votePct": 3.95 },
+        { "name": "NOTA", "party": "NOTA", "votes": 599, "votePct": 0.36 }
+      ],
+      "margin": 6246,
+      "marginPct": 3.71,
+      "turnout": 168268,
+      "turnoutPct": 76.91,
+      "result": "IUML hold"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 64,
+  "constituencyName": "MANALUR",
+  "wikipediaName": "Manalur",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Manalur_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "P. A. Madhavan", "party": "INC", "votes": 63077, "votePct": 45.22 },
+        { "name": "Baby John", "party": "CPI(M)", "votes": 62596, "votePct": 44.87 },
+        { "name": "A. N. Radhakrishnan", "party": "BJP", "votes": 10543, "votePct": 7.56 },
+        { "name": "P. K. Usman", "party": "SDPI", "votes": 2293, "votePct": 1.64 },
+        { "name": "Suresh Tachapally", "party": "BSP", "votes": 594, "votePct": 0.43 }
+      ],
+      "margin": 481,
+      "marginPct": 0.35,
+      "turnout": 139077,
+      "turnoutPct": 79.88,
+      "result": "INC gain from CPI(M)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Murali Perunelly", "party": "CPI(M)", "votes": 70422, "votePct": 43.30 },
+        { "name": "O. Abdurahiman Kutty", "party": "INC", "votes": 51097, "votePct": 31.42 },
+        { "name": "A. N. Radhakrishnan", "party": "BJP", "votes": 37680, "votePct": 23.17 },
+        { "name": "Hussain K. K", "party": "SDPI", "votes": 1180, "votePct": 0.73 },
+        { "name": "NOTA", "party": "NOTA", "votes": 730, "votePct": 0.45 }
+      ],
+      "margin": 19325,
+      "marginPct": 11.88,
+      "turnout": 162620,
+      "turnoutPct": 76.73,
+      "result": "CPI(M) gain from INC"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Murali Perunelly", "party": "CPI(M)", "votes": 78337, "votePct": 46.77 },
+        { "name": "Vijay Hari", "party": "INC", "votes": 48461, "votePct": 28.93 },
+        { "name": "A. N. Radhakrishnan", "party": "BJP", "votes": 36566, "votePct": 21.83 },
+        { "name": "Faisal Ibrahim", "party": "SDPI", "votes": 2294, "votePct": 1.37 },
+        { "name": "NOTA", "party": "NOTA", "votes": 712, "votePct": 0.43 }
+      ],
+      "margin": 29876,
+      "marginPct": 17.84,
+      "turnout": 167502,
+      "turnoutPct": 79.17,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

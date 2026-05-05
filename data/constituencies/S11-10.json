@@ -1,0 +1,85 @@
+{
+  "constituency": "10 - AZHIKODE (Kerala)",
+  "constituencyNumber": 10,
+  "constituencyName": "AZHIKODE",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K. V. SUMESH",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 64951,
+      "margin": 349,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV.  KAREEM CHELERI",
+      "party": "Indian Union Muslim League",
+      "votes": 64602,
+      "margin": -349,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K. K. VINODKUMAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 17476,
+      "margin": -47475,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABDUL KAREEM. V. V",
+      "party": "Independent",
+      "votes": 235,
+      "margin": -64716,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RESHMI RAVI",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
+      "votes": 227,
+      "margin": -64724,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUMESH. T. P S/O GOVINDAN",
+      "party": "Independent",
+      "votes": 124,
+      "margin": -64827,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "KAREEM CHANDROTH",
+      "party": "Independent",
+      "votes": 115,
+      "margin": -64836,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SUMESH KUMAR. K",
+      "party": "Independent",
+      "votes": 106,
+      "margin": -64845,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 576,
+      "margin": -64375,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1110.htm"
+}

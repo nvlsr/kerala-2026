@@ -1,0 +1,77 @@
+{
+  "constituency": "78 - PARAVUR (Kerala)",
+  "constituencyNumber": 78,
+  "constituencyName": "PARAVUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.V.D.SATHEESAN",
+      "party": "Indian National Congress",
+      "votes": 78658,
+      "margin": 20600,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "E.T.TAISON MASTER",
+      "party": "Communist Party of India",
+      "votes": 58058,
+      "margin": -20600,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "VALSALA PRASANNAKUMAR",
+      "party": "Bharatiya Janata Party",
+      "votes": 20377,
+      "margin": -58281,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "V.M.FAISAL",
+      "party": "Social Democratic Party Of India",
+      "votes": 828,
+      "margin": -77830,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "P.K.RAJESH",
+      "party": "Bahujan Samaj Party",
+      "votes": 328,
+      "margin": -78330,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K.B.SATHEESAN",
+      "party": "Independent",
+      "votes": 200,
+      "margin": -78458,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "G.GOKULDEV",
+      "party": "Independent",
+      "votes": 171,
+      "margin": -78487,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 935,
+      "margin": -77723,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1178.htm"
+}

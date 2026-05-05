@@ -1,0 +1,77 @@
+{
+  "constituency": "94 - KADUTHURUTHY (Kerala)",
+  "constituencyNumber": 94,
+  "constituencyName": "KADUTHURUTHY",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV.MONS JOSEPH",
+      "party": "Kerala Congress",
+      "votes": 70353,
+      "margin": 31300,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "NIRMALA JIMMY",
+      "party": "Kerala Congress (M)",
+      "votes": 39053,
+      "margin": -31300,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SURESH ETTIKUNNEL",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 12228,
+      "margin": -58125,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "JIJITH K JOY",
+      "party": "Bahujan Samaj Party",
+      "votes": 1324,
+      "margin": -69029,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "DOMINIC SIMON",
+      "party": "Aam Aadmi Party",
+      "votes": 628,
+      "margin": -69725,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "INDU",
+      "party": "Independent",
+      "votes": 134,
+      "margin": -70219,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "M.M.SCARIA",
+      "party": "Independent",
+      "votes": 134,
+      "margin": -70219,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 898,
+      "margin": -69455,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1194.htm"
+}

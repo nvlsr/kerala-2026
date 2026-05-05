@@ -1,0 +1,61 @@
+{
+  "constituency": "7 - KALLIASSERI (Kerala)",
+  "constituencyNumber": 7,
+  "constituencyName": "KALLIASSERI",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "M.VIJIN",
+      "party": "Communist Party of India (Marxist)",
+      "votes": 81428,
+      "margin": 18433,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. RAJEEVAN KAPPACHERI",
+      "party": "Indian National Congress",
+      "votes": 62995,
+      "margin": -18433,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SANIL.A.V",
+      "party": "Bharatiya Janata Party",
+      "votes": 13110,
+      "margin": -68318,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "K.K. ABDUL JABBAR",
+      "party": "Social Democratic Party Of India",
+      "votes": 1281,
+      "margin": -80147,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "RAJEEVAN KANNOTH S/O KAMMARAN",
+      "party": "Independent",
+      "votes": 160,
+      "margin": -81268,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 893,
+      "margin": -80535,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S117.htm"
+}

@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 12,
+  "constituencyName": "DHARMADAM",
+  "wikipediaName": "Dharmadam",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Dharmadam_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "K. K. Narayanan", "party": "CPI(M)", "votes": 72354, "votePct": 53.13 },
+        { "name": "Mambaram Divakaran", "party": "INC", "votes": 57192, "votePct": 42.00 },
+        { "name": "C. P. Sangeetha", "party": "BJP", "votes": 4963, "votePct": 3.64 },
+        { "name": "Poyilore Kunnumbrom Divakaran", "party": "Independent", "votes": 871, "votePct": 0.64 },
+        { "name": "Madhu S. Vayanan", "party": "BSP", "votes": 797, "votePct": 0.59 }
+      ],
+      "margin": 15162,
+      "marginPct": 11.13,
+      "turnout": 136351,
+      "turnoutPct": 83.31,
+      "result": "CPI(M) win (new seat)"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Pinarayi Vijayan", "party": "CPI(M)", "votes": 87329, "votePct": 56.84 },
+        { "name": "Mambaram Divakaran", "party": "INC", "votes": 50424, "votePct": 32.82 },
+        { "name": "Mohanan Mananthery", "party": "BJP", "votes": 12763, "votePct": 8.31 },
+        { "name": "Tharammal Niyas", "party": "SDPI", "votes": 1994, "votePct": 1.30 },
+        { "name": "Divakaran M. Thiruvathira", "party": "Independent", "votes": 354, "votePct": 0.23 }
+      ],
+      "margin": 36905,
+      "marginPct": 24.02,
+      "turnout": 153627,
+      "turnoutPct": 83.30,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "Pinarayi Vijayan", "party": "CPI(M)", "votes": 95522, "votePct": 59.61 },
+        { "name": "C. Raghunathan", "party": "INC", "votes": 45399, "votePct": 28.33 },
+        { "name": "C. K. Padmanabhan", "party": "BJP", "votes": 14623, "votePct": 9.13 },
+        { "name": "Basheer Kannadiparamba", "party": "SDPI", "votes": 2280, "votePct": 1.42 },
+        { "name": "Valayar Bhagyavathi", "party": "Independent", "votes": 1753, "votePct": 1.09 }
+      ],
+      "margin": 50123,
+      "marginPct": 31.16,
+      "turnout": 161232,
+      "turnoutPct": 83.33,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

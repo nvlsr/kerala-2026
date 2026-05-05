@@ -1,0 +1,59 @@
+{
+  "constituencyNumber": 109,
+  "constituencyName": "MAVELIKKARA",
+  "wikipediaName": "Mavelikara",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mavelikara_Assembly_constituency",
+  "elections": [
+    {
+      "year": 2011,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "R. Rajesh", "party": "CPI(M)", "votes": 65903, "votePct": 49.30 },
+        { "name": "K. K. Shaju", "party": "JSS", "votes": 60754, "votePct": 45.45 },
+        { "name": "S. Girija", "party": "BJP", "votes": 4984, "votePct": 3.73 },
+        { "name": "R. Rajeesh", "party": "Independent", "votes": 1185, "votePct": 0.89 },
+        { "name": "Subhash Mankamkuzhy", "party": "BSP", "votes": 860, "votePct": 0.64 }
+      ],
+      "margin": 5149,
+      "marginPct": 3.85,
+      "turnout": 149688,
+      "turnoutPct": 75.19,
+      "result": "CPI(M) gain from INC"
+    },
+    {
+      "year": 2016,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "R. Rajesh", "party": "CPI(M)", "votes": 74555, "votePct": 49.81 },
+        { "name": "Baiju Kalasala", "party": "INC", "votes": 43013, "votePct": 28.74 },
+        { "name": "P. M. Velayudhan", "party": "BJP", "votes": 30929, "votePct": 20.66 },
+        { "name": "Asha T.", "party": "SUCI(C)", "votes": 242, "votePct": 0.16 },
+        { "name": "Kattanam Suresh", "party": "BSP", "votes": 213, "votePct": 0.14 }
+      ],
+      "margin": 31542,
+      "marginPct": 21.07,
+      "turnout": 149688,
+      "turnoutPct": 75.45,
+      "result": "CPI(M) hold"
+    },
+    {
+      "year": 2021,
+      "type": "general",
+      "reason": null,
+      "candidates": [
+        { "name": "M. S. Arun Kumar", "party": "CPI(M)", "votes": 71743, "votePct": 47.61 },
+        { "name": "K. K. Shaju", "party": "INC", "votes": 47026, "votePct": 31.21 },
+        { "name": "K. Sanju", "party": "BJP", "votes": 30955, "votePct": 20.54 },
+        { "name": "Suresh Nooranad", "party": "API", "votes": 165, "votePct": 0.11 },
+        { "name": "K. Sasikumar", "party": "SUCI(C)", "votes": 151, "votePct": 0.10 }
+      ],
+      "margin": 24717,
+      "marginPct": 16.40,
+      "turnout": 150690,
+      "turnoutPct": 73.16,
+      "result": "CPI(M) hold"
+    }
+  ]
+}

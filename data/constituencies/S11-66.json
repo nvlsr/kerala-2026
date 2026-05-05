@@ -1,0 +1,61 @@
+{
+  "constituency": "66 - OLLUR (Kerala)",
+  "constituencyNumber": 66,
+  "constituencyName": "OLLUR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "K RAJAN",
+      "party": "Communist Party of India",
+      "votes": 69703,
+      "margin": 8884,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "ADV. SHAJI J KODANKANDATH",
+      "party": "Indian National Congress",
+      "votes": 60819,
+      "margin": -8884,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "BIJOY THOMAS",
+      "party": "Bharatiya Janata Party",
+      "votes": 19737,
+      "margin": -49966,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "PRINSON AVINISSERY",
+      "party": "Aam Aadmi Party",
+      "votes": 594,
+      "margin": -69109,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "EDWIN BABU ALAPAT",
+      "party": "Independent",
+      "votes": 275,
+      "margin": -69428,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 862,
+      "margin": -68841,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1166.htm"
+}

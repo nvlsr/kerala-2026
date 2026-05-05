@@ -1,0 +1,77 @@
+{
+  "constituency": "54 - MANNARKKAD (Kerala)",
+  "constituencyNumber": 54,
+  "constituencyName": "MANNARKKAD",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. N. SAMSUDHEEN",
+      "party": "Indian Union Muslim League",
+      "votes": 90606,
+      "margin": 25903,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "MANZIL ABOOBACKER",
+      "party": "Communist Party of India",
+      "votes": 64703,
+      "margin": -25903,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ISSAC VARGHESE",
+      "party": "Bharath Dharma Jana Sena",
+      "votes": 10671,
+      "margin": -79935,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ASHITHA NAJEEB",
+      "party": "Social Democratic Party Of India",
+      "votes": 939,
+      "margin": -89667,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAMSUDHEEN S/O MUHAMMED",
+      "party": "Independent",
+      "votes": 358,
+      "margin": -90248,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ABOOBACKER S/O AYISHA",
+      "party": "Independent",
+      "votes": 289,
+      "margin": -90317,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SHAMSUDHEEN S/O UMMER",
+      "party": "Independent",
+      "votes": 257,
+      "margin": -90349,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 958,
+      "margin": -89648,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1154.htm"
+}

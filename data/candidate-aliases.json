@@ -1,0 +1,6 @@
+{
+  "_comment": "Maps candidate name variants to a single canonical display form. Use only for cases the heuristic in `normalizeCandidateName` cannot resolve (e.g. genuine spelling variants like Kappan vs Kappen). Capitalization, period placement, and double-letter differences for initials are handled by the heuristic and don't need to be listed.",
+  "aliases": {
+    "Mani C. Kappan": "Mani C. Kappen"
+  }
+}

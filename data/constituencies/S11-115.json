@@ -1,0 +1,53 @@
+{
+  "constituency": "115 - ADOOR (Kerala)",
+  "constituencyNumber": 115,
+  "constituencyName": "ADOOR",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADVOCATE C V  SANTHAKUMAR",
+      "party": "Indian National Congress",
+      "votes": 66153,
+      "margin": 10332,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "PRIJI KANNAN",
+      "party": "Communist Party of India",
+      "votes": 55821,
+      "margin": -10332,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "ADV. PANDALAM PRATHAPAN",
+      "party": "Bharatiya Janata Party",
+      "votes": 26337,
+      "margin": -39816,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "SIVAKUMAR C S",
+      "party": "Bahujan Samaj Party",
+      "votes": 576,
+      "margin": -65577,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 783,
+      "margin": -65370,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11115.htm"
+}

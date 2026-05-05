@@ -1,0 +1,45 @@
+{
+  "constituency": "28 - KOZHIKODE SOUTH (Kerala)",
+  "constituencyNumber": 28,
+  "constituencyName": "KOZHIKODE SOUTH",
+  "state": "Kerala",
+  "candidates": [
+    {
+      "name": "ADV. FYZAL BABU",
+      "party": "Indian Union Muslim League",
+      "votes": 52680,
+      "margin": 10795,
+      "status": "won",
+      "isNota": false
+    },
+    {
+      "name": "AHAMMAD DEVARKOVIL",
+      "party": "Indian National League",
+      "votes": 41885,
+      "margin": -10795,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "T. RANEESH",
+      "party": "Bharatiya Janata Party",
+      "votes": 32463,
+      "margin": -20217,
+      "status": "lost",
+      "isNota": false
+    },
+    {
+      "name": "NOTA",
+      "party": "None of the Above",
+      "votes": 838,
+      "margin": -51842,
+      "status": "nota",
+      "isNota": true
+    }
+  ],
+  "checksum": {
+    "computedMarginsMatchScraped": true,
+    "mismatches": []
+  },
+  "source": "https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S1128.htm"
+}
