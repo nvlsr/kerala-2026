@@ -25,4 +25,13 @@ export const curatedInsights: CuratedInsight[] = [
       sort: { column: "shareDelta", dir: "desc" },
     },
   },
+  {
+    id: "bjp-declines",
+    question: "Where did BJP lose the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Bharatiya Janata Party",
+      result: "all",
+      sort: { column: "shareDelta", dir: "asc" },
+    },
+  },
 ]
