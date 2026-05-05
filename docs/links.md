@@ -63,6 +63,30 @@ Per-district Wikipedia pages, Demographics → Religion subsection. Each page re
 
 Output file: `data/demographics.json` (population + Hindu/Muslim/Christian/Other percentages per district).
 
+## 3. Datameet — district boundaries
+
+Source: <https://projects.datameet.org/maps/> · repo: <https://github.com/datameet/maps>
+
+Used for the interactive Kerala map at the top of the page. Specifically the `Districts/Census_2011/2011_Dist.shp` file (Census 2011 boundaries) is filtered to the 14 Kerala features and projected at build time.
+
+Pipeline:
+- `scripts/extract-kerala-map.py` — reads the shapefile, simplifies geometry, writes `data/kerala-districts.geojson`
+- `scripts/build-kerala-map-paths.ts` — projects with `d3-geo` and writes `data/kerala-districts-paths.json` (the runtime artifact, no `d3-geo` dependency at runtime)
+
+The source `data/maps-master/` directory is `.gitignore`d (486 MB) — re-clone the upstream repo if you need to re-run the extraction. Licensed CC-BY 2.5 IN.
+
+The Assembly Constituencies layer (`assembly-constituencies/India_AC.shp`) is also available from the same repo and could power a per-constituency map; not yet used. Note the known datameet caveat *"there is some shift in the data"* (boundary precision varies) and our specific finding that AC #87 Kothamangalam appears twice in the file (Ernakulam vs Idukki — a PC-vs-district mislabel; Kothamangalam is administratively in Ernakulam).
+
+## 4. Kerala Legislative Assembly database — past election results
+
+Source: <http://keralaassembly.org/>
+
+Used to backfill historical (2011 / 2016 / 2021) candidate lists where Wikipedia's article was incomplete or carried wrong values. Provides per-constituency tables matching ECI's official reporting format (electorate, votes polled, polling %, rejected votes, NOTA, full candidate list with party and percentages, margin of victory).
+
+Particularly useful for the data audit pass where we discovered Wikipedia was missing minor candidates, had wrong vote counts, or in one case (Eravipuram 2021) had Lok Sabha data substituted for Assembly data. The keralaassembly.org tables resolved each of these.
+
+Records sourced from this site are reflected in the patched `data/historical/S11-*.json` files. See `docs/data-issues.md` for the audit history.
+
 ## Notes
 
 - 2011 is the latest available census; Census 2021 was postponed and has not been released.

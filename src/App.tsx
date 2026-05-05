@@ -31,7 +31,16 @@ export function App() {
   return (
     <TooltipProvider delay={200}>
       <div className="min-h-svh bg-background text-foreground">
-        <ScopeTitle scope={scope} />
+        <ScopeTitle
+          scope={scope}
+          selectedAlliance={selectedAlliance}
+          selectedParty={selectedParty}
+          selectedSeat={selectedSeat}
+          onClearScope={() => setScope(null)}
+          onClearAlliance={() => handleSelectAlliance(null)}
+          onClearParty={() => setSelectedParty(null)}
+          onClearSeat={() => setSelectedSeat(null)}
+        />
         <KeralaMap scope={scope} onSelect={setScope} />
         <AllianceSection
           scope={scope}
@@ -57,7 +66,6 @@ export function App() {
           <ConstituencySection
             key={selectedConstituency.constituencyNumber}
             constituency={selectedConstituency}
-            onClose={() => setSelectedSeat(null)}
           />
         )}
         <footer className="mx-auto max-w-6xl px-6 pt-2 pb-10 text-xs text-muted-foreground">

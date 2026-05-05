@@ -1,8 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react"
-import { IconCheck, IconX } from "@tabler/icons-react"
+import { IconCheck } from "@tabler/icons-react"
 
 import { AlliancePill } from "@/components/alliance-pill"
-import { Button } from "@/components/ui/button"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { HistoricalChart } from "@/components/historical-chart"
 import { PastWinners } from "@/components/past-winners"
@@ -30,10 +29,9 @@ const ROSTER_THRESHOLD = 0.01
 
 type Props = {
   constituency: Constituency
-  onClose: () => void
 }
 
-export function ConstituencySection({ constituency, onClose }: Props) {
+export function ConstituencySection({ constituency }: Props) {
   const [selectedKey, setSelectedKey] = useState<string>(WINNERS_KEY)
   const sectionRef = useRef<HTMLElement>(null)
 
@@ -67,24 +65,18 @@ export function ConstituencySection({ constituency, onClose }: Props) {
   return (
     <section ref={sectionRef} className="scroll-mt-4 border-t">
       <div className="mx-auto max-w-6xl px-6 py-6">
-        <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-          <h2 className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-            Constituency ·{" "}
-            <span className="font-normal text-muted-foreground/70 normal-case">
-              {displayConstituencyName(constituency)}
-              {district && (
-                <span className="text-muted-foreground/60">
-                  {" · "}
-                  {district.name} district
-                </span>
-              )}
-            </span>
-          </h2>
-          <Button variant="outline" size="xs" onClick={onClose}>
-            <IconX />
-            Close
-          </Button>
-        </div>
+        <h2 className="mb-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+          Constituency ·{" "}
+          <span className="font-normal text-muted-foreground/70 normal-case">
+            {displayConstituencyName(constituency)}
+            {district && (
+              <span className="text-muted-foreground/60">
+                {" · "}
+                {district.name} district
+              </span>
+            )}
+          </span>
+        </h2>
 
         <div className="mb-4 overflow-hidden rounded-lg border bg-muted/40">
           <div

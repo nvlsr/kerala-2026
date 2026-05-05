@@ -59,6 +59,9 @@ export function AllianceSection({
       <div className="mx-auto max-w-6xl px-6 py-6">
         <h2 className="mb-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
           Alliances
+          <span className="ml-1.5 font-normal text-muted-foreground/70 normal-case">
+            · click a row to drill in
+          </span>
         </h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
           <div className="overflow-hidden rounded-lg border lg:col-span-3">

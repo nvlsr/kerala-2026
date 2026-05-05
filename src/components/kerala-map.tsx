@@ -106,13 +106,7 @@ export function KeralaMap({ scope, onSelect }: Props) {
           </div>
 
           <div className="lg:col-span-2">
-            {hovered || scope ? (
-              <DistrictPanel id={(hovered ?? scope)!} />
-            ) : (
-              <div className="rounded-lg border border-dashed py-10 text-center text-xs text-muted-foreground">
-                Hover or click a district
-              </div>
-            )}
+            <DistrictPanel id={hovered ?? scope ?? null} />
           </div>
         </div>
       </div>
@@ -120,19 +114,19 @@ export function KeralaMap({ scope, onSelect }: Props) {
   )
 }
 
-function DistrictPanel({ id }: { id: string }) {
+function DistrictPanel({ id }: { id: string | null }) {
   const summary = getStateSummary(id)
   const demo = getDemographicsFor(id)
-  const district = paths.districts.find((d) => d.id === id)
+  const name = id
+    ? (paths.districts.find((d) => d.id === id)?.name ?? id)
+    : "All Kerala"
   const seatRow = (code: AllianceCode) =>
     summary.rows.find((r) => r.code === code)!
 
   return (
     <div className="rounded-lg border bg-muted/40 p-4">
       <div className="mb-3 flex items-baseline justify-between gap-2">
-        <span className="font-heading text-sm font-semibold">
-          {district?.name}
-        </span>
+        <span className="font-heading text-sm font-semibold">{name}</span>
         <span className="text-[11px] text-muted-foreground tabular-nums">
           {summary.totalSeats} seats
         </span>
