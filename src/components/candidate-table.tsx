@@ -113,13 +113,15 @@ type Props = {
   scope: string | null
   alliance: AllianceCode | null
   party: string | null
-  onSelectConstituency: (n: number) => void
+  selectedConstituency: number | null
+  onSelectConstituency: (n: number | null) => void
 }
 
 export function CandidateTable({
   scope,
   alliance,
   party,
+  selectedConstituency,
   onSelectConstituency,
 }: Props) {
   const [query, setQuery] = useState("")
@@ -363,6 +365,10 @@ export function CandidateTable({
                     <CandidateTr
                       key={r.key}
                       row={r}
+                      isSelected={
+                        r.constituency.constituencyNumber ===
+                        selectedConstituency
+                      }
                       onSelectConstituency={onSelectConstituency}
                     />
                   ))}
@@ -452,17 +458,26 @@ function Th({
 
 function CandidateTr({
   row,
+  isSelected,
   onSelectConstituency,
 }: {
   row: CandidateRow
-  onSelectConstituency: (n: number) => void
+  isSelected: boolean
+  onSelectConstituency: (n: number | null) => void
 }) {
   const meta = getAlliance(row.allianceCode)
   const main = isMainFront(row.allianceCode)
   return (
     <tr
-      className="cursor-pointer border-b last:border-b-0 hover:bg-foreground/5"
-      onClick={() => onSelectConstituency(row.constituency.constituencyNumber)}
+      className={cn(
+        "cursor-pointer border-b last:border-b-0 hover:bg-foreground/5",
+        isSelected && "bg-foreground/5"
+      )}
+      onClick={() =>
+        onSelectConstituency(
+          isSelected ? null : row.constituency.constituencyNumber
+        )
+      }
     >
       <td className="relative px-3 py-2">
         <span

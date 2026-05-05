@@ -15,22 +15,14 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/components/ui/chart"
-import { cn } from "@/lib/utils"
-import {
-  formatNumber,
-  formatPercent,
-  getTrendData,
-  type TrendSeries,
-} from "@/lib/data"
-
-export type DrawerMode = "share" | "votes"
+import { formatPercent, getTrendData } from "@/lib/data"
 
 type Props = {
   constituencyNumber: number
-  mode: DrawerMode
+  highlightParty?: string | null
 }
 
-export function HistoricalChart({ constituencyNumber, mode }: Props) {
+export function HistoricalChart({ constituencyNumber, highlightParty }: Props) {
   const trend = useMemo(
     () => getTrendData(constituencyNumber),
     [constituencyNumber]
@@ -46,8 +38,7 @@ export function HistoricalChart({ constituencyNumber, mode }: Props) {
     const point: Record<string, number | null | string> = { year }
     for (const s of trend.series) {
       const p = s.points.find((pt) => pt.year === year)
-      const value = mode === "share" ? (p?.share ?? null) : (p?.votes ?? null)
-      point[s.party] = value
+      point[s.party] = p?.share ?? null
       if (p?.candidate) point[`${s.party}__name`] = p.candidate
       if (p?.type) point[`${s.party}__type`] = p.type
       if (p?.reason) point[`${s.party}__reason`] = p.reason
@@ -59,96 +50,89 @@ export function HistoricalChart({ constituencyNumber, mode }: Props) {
   })
 
   const yMax =
-    mode === "share"
-      ? Math.ceil(
-          Math.max(
-            ...trend.series.flatMap((s) => s.points.map((p) => p.share ?? 0))
-          ) / 10
-        ) * 10
-      : "auto"
+    Math.ceil(
+      Math.max(
+        ...trend.series.flatMap((s) => s.points.map((p) => p.share ?? 0))
+      ) / 10
+    ) * 10
+
+  const noHighlight = !highlightParty
 
   return (
-    <div className="rounded-lg border bg-muted/40 p-4">
-      <div className="mb-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-        History · 2011 → 2026
-      </div>
-
-      <ChartContainer config={chartConfig} className="h-44 w-full">
-        <LineChart
-          data={data}
-          margin={{ top: 8, right: 16, bottom: 4, left: -8 }}
-        >
-          <CartesianGrid vertical={false} strokeDasharray="3 3" />
-          <XAxis
-            dataKey="year"
-            type="number"
-            domain={[Math.min(...trend.years), Math.max(...trend.years)]}
-            ticks={trend.years}
-            tickFormatter={(v) => String(v)}
-            tickLine={false}
-            axisLine={false}
-            fontSize={11}
-          />
-          <YAxis
-            tickLine={false}
-            axisLine={false}
-            fontSize={11}
-            tickFormatter={(v) =>
-              mode === "share" ? `${v}%` : formatNumber(v)
-            }
-            domain={[0, yMax as number]}
-          />
-          <ChartTooltip
-            cursor={false}
-            content={
-              <ChartTooltipContent
-                indicator="dot"
-                labelFormatter={(label, payload) => {
-                  const value = Number(label)
-                  const isBy = trend.byelectionYears.includes(value)
-                  const reason =
-                    payload?.[0]?.payload?.[`${payload[0].dataKey}__reason`]
-                  if (isBy) {
-                    return `${value} · by-election${reason ? ` (${reason})` : ""}`
-                  }
-                  return String(value)
-                }}
-                formatter={(value, _name, item) => {
-                  const partyKey = item.dataKey as string
-                  const meta = chartConfig[partyKey]
-                  if (value == null) return null
-                  const display =
-                    mode === "share"
-                      ? formatPercent((value as number) / 100, 1)
-                      : formatNumber(value as number)
-                  return (
-                    <div className="flex w-full items-center justify-between gap-4">
-                      <div className="flex items-center gap-1.5">
-                        <span
-                          className="inline-block h-2 w-2 rounded-full"
-                          style={{ backgroundColor: meta?.color }}
-                          aria-hidden
-                        />
-                        <span className="text-foreground/80">
-                          {meta?.label as string}
-                        </span>
-                      </div>
-                      <span className="font-medium tabular-nums">
-                        {display}
+    <ChartContainer config={chartConfig} className="h-44 w-full">
+      <LineChart
+        data={data}
+        margin={{ top: 8, right: 16, bottom: 4, left: -8 }}
+      >
+        <CartesianGrid vertical={false} strokeDasharray="3 3" />
+        <XAxis
+          dataKey="year"
+          type="number"
+          domain={[Math.min(...trend.years), Math.max(...trend.years)]}
+          ticks={trend.years}
+          tickFormatter={(v) => String(v)}
+          tickLine={false}
+          axisLine={false}
+          fontSize={11}
+        />
+        <YAxis
+          tickLine={false}
+          axisLine={false}
+          fontSize={11}
+          tickFormatter={(v) => `${v}%`}
+          domain={[0, yMax]}
+        />
+        <ChartTooltip
+          cursor={false}
+          content={
+            <ChartTooltipContent
+              indicator="dot"
+              labelFormatter={(label, payload) => {
+                const value = Number(label)
+                const isBy = trend.byelectionYears.includes(value)
+                const reason =
+                  payload?.[0]?.payload?.[`${payload[0].dataKey}__reason`]
+                if (isBy) {
+                  return `${value} · by-election${reason ? ` (${reason})` : ""}`
+                }
+                return String(value)
+              }}
+              formatter={(value, _name, item) => {
+                const partyKey = item.dataKey as string
+                const meta = chartConfig[partyKey]
+                if (value == null) return null
+                return (
+                  <div className="flex w-full items-center justify-between gap-4">
+                    <div className="flex items-center gap-1.5">
+                      <span
+                        className="inline-block h-2 w-2 rounded-full"
+                        style={{ backgroundColor: meta?.color }}
+                        aria-hidden
+                      />
+                      <span className="text-foreground/80">
+                        {meta?.label as string}
                       </span>
                     </div>
-                  )
-                }}
-              />
-            }
-          />
-          {trend.series.map((s) => (
+                    <span className="font-medium tabular-nums">
+                      {formatPercent((value as number) / 100, 1)}
+                    </span>
+                  </div>
+                )
+              }}
+            />
+          }
+        />
+        {trend.series.map((s) => {
+          const isHighlighted = highlightParty === s.party
+          const dimmed = !noHighlight && !isHighlighted
+          return (
             <Line
               key={s.party}
               dataKey={s.party}
               type="monotone"
               stroke={s.color}
-              strokeWidth={2}
+              strokeWidth={isHighlighted ? 3 : 2}
+              strokeOpacity={dimmed ? 0.3 : 1}
               connectNulls={false}
               dot={(props: DotItemDotProps) => {
                 const isBy = props.payload?.__type === "by-election"
@@ -172,6 +156,7 @@ export function HistoricalChart({ constituencyNumber, mode }: Props) {
                     fill={isBy ? "var(--background)" : s.color}
                     stroke={s.color}
                     strokeWidth={2}
+                    opacity={dimmed ? 0.4 : 1}
                   />
                 )
               }}
@@ -183,50 +168,9 @@ export function HistoricalChart({ constituencyNumber, mode }: Props) {
               }}
               isAnimationActive={false}
             />
-          ))}
-        </LineChart>
-      </ChartContainer>
-
-      <Legend
-        series={trend.series}
-        hasByElection={trend.byelectionYears.length > 0}
-      />
-    </div>
-  )
-}
-
-function Legend({
-  series,
-  hasByElection,
-}: {
-  series: TrendSeries[]
-  hasByElection: boolean
-}) {
-  return (
-    <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
-      {series.map((s) => (
-        <span key={s.party} className="inline-flex items-center gap-1.5">
-          <span
-            className="inline-block h-2 w-2 rounded-full"
-            style={{ backgroundColor: s.color }}
-            aria-hidden
-          />
-          <span
-            className={cn(
-              "font-medium text-foreground/80",
-              !s.isCurrent2026 && "text-muted-foreground/70"
-            )}
-          >
-            {s.partyShort}
-          </span>
-        </span>
-      ))}
-      {hasByElection && (
-        <span className="ml-auto inline-flex items-center gap-1 text-[10px] text-muted-foreground/70">
-          <span className="inline-block h-2 w-2 rounded-full border border-muted-foreground/40 bg-background" />
-          by-election
-        </span>
-      )}
-    </div>
+          )
+        })}
+      </LineChart>
+    </ChartContainer>
   )
 }

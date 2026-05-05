@@ -6,7 +6,7 @@ import { DistrictStrip } from "@/components/district-strip"
 import { AllianceSection } from "@/components/alliance-section"
 import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
-import { ConstituencyDetail } from "@/components/constituency-detail"
+import { ConstituencySection } from "@/components/constituency-section"
 import { constituencies, type AllianceCode } from "@/lib/data"
 
 export function App() {
@@ -50,16 +50,16 @@ export function App() {
           scope={scope}
           alliance={selectedAlliance}
           party={selectedParty}
+          selectedConstituency={selectedSeat}
           onSelectConstituency={setSelectedSeat}
         />
-        <ConstituencyDetail
-          constituency={selectedConstituency}
-          onClose={() => setSelectedSeat(null)}
-          onSelectDistrict={(districtId) => {
-            setScope(districtId)
-            setSelectedSeat(null)
-          }}
-        />
+        {selectedConstituency && (
+          <ConstituencySection
+            key={selectedConstituency.constituencyNumber}
+            constituency={selectedConstituency}
+            onClose={() => setSelectedSeat(null)}
+          />
+        )}
         <footer className="mx-auto max-w-6xl px-6 pt-2 pb-10 text-xs text-muted-foreground">
           Source: Election Commission of India · results.eci.gov.in
         </footer>
