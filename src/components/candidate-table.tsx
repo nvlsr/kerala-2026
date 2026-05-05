@@ -14,6 +14,7 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { AlliancePill } from "@/components/alliance-pill"
 import { DeltaPercent } from "@/components/delta-percent"
 import { InfoIcon } from "@/components/info-icon"
+import { InsightsChips } from "@/components/insights-chips"
 import { Section } from "@/components/section"
 import { cn } from "@/lib/utils"
 import {
@@ -178,6 +179,7 @@ export function CandidateTable({ filters, dispatch }: Props) {
         </>
       }
     >
+      <InsightsChips dispatch={dispatch} />
       {sorted.length === 0 ? (
         <div className="rounded-lg border border-dashed py-16 text-center text-sm text-muted-foreground">
           No candidates match your filters.

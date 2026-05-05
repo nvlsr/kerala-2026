@@ -100,3 +100,77 @@ function sortDirFor(
     nextColumn === "marginDelta"
   return ascByDefault ? "asc" : "desc"
 }
+
+const SORT_COLUMNS: SortColumn[] = [
+  "constituency",
+  "candidate",
+  "party",
+  "share",
+  "shareDelta",
+  "votes",
+  "margin",
+  "marginDelta",
+]
+const ALLIANCE_CODES = ["UDF", "LDF", "NDA", "OTHER", "NOTA"] as const
+const RESULT_VALUES: ResultFilter[] = ["winners", "losers", "all"]
+
+/**
+ * Serialize active filters to URL search params. Default values are omitted to
+ * keep the unfiltered URL clean.
+ */
+export function serializeFilters(filters: Filters): URLSearchParams {
+  const p = new URLSearchParams()
+  if (filters.district) p.set("district", filters.district)
+  if (filters.alliance) p.set("alliance", filters.alliance)
+  if (filters.party) p.set("party", filters.party)
+  if (filters.seat != null) p.set("seat", String(filters.seat))
+  if (filters.result !== initialFilters.result) p.set("result", filters.result)
+  if (
+    filters.sort.column !== initialFilters.sort.column ||
+    filters.sort.dir !== initialFilters.sort.dir
+  ) {
+    p.set("sort", `${filters.sort.column}:${filters.sort.dir}`)
+  }
+  return p
+}
+
+/**
+ * Parse URL search params into Filters, falling back to defaults for missing or
+ * invalid values.
+ */
+export function parseFilters(params: URLSearchParams): Filters {
+  const filters: Filters = { ...initialFilters }
+
+  const district = params.get("district")
+  if (district) filters.district = district
+
+  const alliance = params.get("alliance") as AllianceCode | null
+  if (alliance && (ALLIANCE_CODES as readonly string[]).includes(alliance)) {
+    filters.alliance = alliance
+  }
+
+  const party = params.get("party")
+  if (party) filters.party = party
+
+  const seat = params.get("seat")
+  if (seat) {
+    const n = Number(seat)
+    if (Number.isInteger(n) && n >= 1 && n <= 140) filters.seat = n
+  }
+
+  const result = params.get("result") as ResultFilter | null
+  if (result && RESULT_VALUES.includes(result)) filters.result = result
+
+  const sort = params.get("sort")
+  if (sort) {
+    const [col, dir] = sort.split(":") as [SortColumn, SortDir]
+    if (
+      SORT_COLUMNS.includes(col) &&
+      (dir === "asc" || dir === "desc")
+    ) {
+      filters.sort = { column: col, dir }
+    }
+  }
+
+  return filters
+}

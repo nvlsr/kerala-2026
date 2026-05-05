@@ -1,4 +1,4 @@
-import { useReducer } from "react"
+import { useEffect, useReducer } from "react"
 
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { ScopeTitle } from "@/components/scope-title"
@@ -8,10 +8,33 @@ import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
 import { ConstituencySection } from "@/components/constituency-section"
 import { constituencies } from "@/lib/data"
-import { filtersReducer, initialFilters } from "@/lib/filters"
+import {
+  filtersReducer,
+  initialFilters,
+  parseFilters,
+  serializeFilters,
+} from "@/lib/filters"
+
+function loadInitialFilters() {
+  if (typeof window === "undefined") return initialFilters
+  return parseFilters(new URLSearchParams(window.location.search))
+}
 
 export function App() {
-  const [filters, dispatch] = useReducer(filtersReducer, initialFilters)
+  const [filters, dispatch] = useReducer(
+    filtersReducer,
+    undefined,
+    loadInitialFilters
+  )
+
+  useEffect(() => {
+    const params = serializeFilters(filters)
+    const query = params.toString()
+    const url = query
+      ? `${window.location.pathname}?${query}`
+      : window.location.pathname
+    window.history.replaceState(null, "", url)
+  }, [filters])
 
   const selectedConstituency =
     filters.seat != null
