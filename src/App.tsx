@@ -6,6 +6,7 @@ import { KeralaMap } from "@/components/kerala-map"
 import { AllianceSection } from "@/components/alliance-section"
 import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
+import { ConstituencyMap } from "@/components/constituency-map"
 import { ConstituencySection } from "@/components/constituency-section"
 import { constituencies } from "@/lib/data"
 import {
@@ -75,6 +76,11 @@ export function App() {
           />
         )}
         <CandidateTable filters={filters} dispatch={dispatch} />
+        <ConstituencyMap
+          scope={filters.district}
+          selectedSeat={filters.seat}
+          onSelect={(seat) => dispatch({ type: "set-seat", seat })}
+        />
         {selectedConstituency && (
           <ConstituencySection
             key={selectedConstituency.constituencyNumber}

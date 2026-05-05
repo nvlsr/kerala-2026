@@ -729,7 +729,7 @@ export type AllianceTrendData = {
   series: Record<AllianceCode, AllianceTrendPoint[]>
 }
 
-function allianceForRawParty(party: string): AllianceCode {
+export function allianceForRawParty(party: string): AllianceCode {
   const canonical = canonicalPartyName(party)
   if (canonical === "Independent") return "OTHER"
   return (alliancesMeta.partyToAlliance[canonical] ?? "OTHER") as AllianceCode

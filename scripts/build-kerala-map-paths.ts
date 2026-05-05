@@ -1,10 +1,15 @@
 /**
- * Pre-project Kerala district GeoJSON into SVG path strings + centroids.
+ * Pre-project Kerala GeoJSON files into SVG path strings.
  *
- * Reads:  data/kerala-districts.geojson
- * Writes: data/kerala-districts-paths.json
+ * Reads:
+ *   data/kerala-districts.geojson
+ *   data/kerala-constituencies.geojson
  *
- * Run:    bun run scripts/build-kerala-map-paths.ts
+ * Writes:
+ *   data/kerala-districts-paths.json
+ *   data/kerala-constituencies-paths.json
+ *
+ * Run: bun run scripts/build-kerala-map-paths.ts
  */
 import { readFileSync, writeFileSync } from "node:fs"
 import { dirname, resolve } from "node:path"
@@ -13,40 +18,77 @@ import { fileURLToPath } from "node:url"
 import { geoMercator, geoPath, type GeoPermissibleObjects } from "d3-geo"
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..")
-const SRC = resolve(ROOT, "data/kerala-districts.geojson")
-const OUT = resolve(ROOT, "data/kerala-districts-paths.json")
 
-const WIDTH = 400
-const HEIGHT = 600
-
-type DistrictFeature = {
-  type: "Feature"
-  properties: { id: string; name: string; censuscode?: number | null }
-  geometry: GeoJSON.Polygon | GeoJSON.MultiPolygon
-}
-
-type FeatureCollection = {
+type FeatureCollection<Props> = {
   type: "FeatureCollection"
-  features: DistrictFeature[]
+  features: Array<{
+    type: "Feature"
+    properties: Props
+    geometry: GeoJSON.Polygon | GeoJSON.MultiPolygon
+  }>
 }
 
-const fc = JSON.parse(readFileSync(SRC, "utf8")) as FeatureCollection
+function project<Props>(
+  fc: FeatureCollection<Props>,
+  width: number,
+  height: number
+) {
+  const projection = geoMercator().fitSize(
+    [width, height],
+    fc as GeoPermissibleObjects
+  )
+  const path = geoPath(projection)
+  return fc.features.map((f) => ({
+    properties: f.properties,
+    pathD: path(f as GeoPermissibleObjects),
+  }))
+}
 
-const projection = geoMercator().fitSize(
-  [WIDTH, HEIGHT],
-  fc as GeoPermissibleObjects
-)
-const path = geoPath(projection)
+// Districts — 14 polygons, used for the top-of-page choropleth
+{
+  const fc = JSON.parse(
+    readFileSync(resolve(ROOT, "data/kerala-districts.geojson"), "utf8")
+  ) as FeatureCollection<{ id: string; name: string; censuscode?: number | null }>
 
-const districts = fc.features.map((f) => ({
-  id: f.properties.id,
-  name: f.properties.name,
-  pathD: path(f as GeoPermissibleObjects),
-}))
+  const width = 400
+  const height = 600
+  const districts = project(fc, width, height).map((f) => ({
+    id: f.properties.id,
+    name: f.properties.name,
+    pathD: f.pathD,
+  }))
 
-const out = { width: WIDTH, height: HEIGHT, districts }
-writeFileSync(OUT, JSON.stringify(out))
+  const out = { width, height, districts }
+  const path = resolve(ROOT, "data/kerala-districts-paths.json")
+  writeFileSync(path, JSON.stringify(out))
+  console.log(
+    `✓ ${path.replace(ROOT + "/", "")}: ${districts.length} districts, ${(JSON.stringify(out).length / 1024).toFixed(1)} KB`
+  )
+}
 
-console.log(`✓ Wrote ${OUT.replace(ROOT + "/", "")}`)
-console.log(`  Districts: ${districts.length}`)
-console.log(`  Size: ${(JSON.stringify(out).length / 1024).toFixed(1)} KB`)
+// Constituencies — 140 polygons, used for the per-AC analytical map
+{
+  const fc = JSON.parse(
+    readFileSync(resolve(ROOT, "data/kerala-constituencies.geojson"), "utf8")
+  ) as FeatureCollection<{
+    constituencyNumber: number
+    name: string
+    districtId: string
+  }>
+
+  const width = 600
+  const height = 900
+  const constituencies = project(fc, width, height).map((f) => ({
+    constituencyNumber: f.properties.constituencyNumber,
+    name: f.properties.name,
+    districtId: f.properties.districtId,
+    pathD: f.pathD,
+  }))
+
+  const out = { width, height, constituencies }
+  const path = resolve(ROOT, "data/kerala-constituencies-paths.json")
+  writeFileSync(path, JSON.stringify(out))
+  console.log(
+    `✓ ${path.replace(ROOT + "/", "")}: ${constituencies.length} constituencies, ${(JSON.stringify(out).length / 1024).toFixed(1)} KB`
+  )
+}
