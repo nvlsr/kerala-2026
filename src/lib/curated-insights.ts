@@ -1,6 +1,6 @@
 import type { Filters } from "@/lib/filters"
 
-export type InsightParty = "BJP" | "INC" | "IUML" | "CPI(M)"
+export type InsightParty = "BJP" | "BDJS" | "INC" | "IUML" | "CPI(M)"
 
 export type InsightTheme =
   | "vote-share"
@@ -52,6 +52,26 @@ export const curatedInsights: CuratedInsight[] = [
       sort: { column: "shareDelta", dir: "asc" },
     },
     tags: { party: "BJP", theme: "vote-share" },
+  },
+  {
+    id: "bdjs-gains",
+    question: "Where did BDJS gain the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Bharath Dharma Jana Sena",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+    tags: { party: "BDJS", theme: "vote-share" },
+  },
+  {
+    id: "bdjs-declines",
+    question: "Did BDJS lose vote share in any seats?",
+    filters: {
+      party: "Bharath Dharma Jana Sena",
+      result: "all",
+      sort: { column: "shareDelta", dir: "asc" },
+    },
+    tags: { party: "BDJS", theme: "vote-share" },
   },
   {
     id: "inc-gains",
@@ -115,8 +135,8 @@ export const curatedInsights: CuratedInsight[] = [
   },
 ]
 
-/** Stable display order for party filter pills. */
-const PARTY_ORDER: InsightParty[] = ["BJP", "INC", "IUML", "CPI(M)"]
+/** Stable display order for party filter pills (grouped by alliance: NDA, UDF, LDF). */
+const PARTY_ORDER: InsightParty[] = ["BJP", "BDJS", "INC", "IUML", "CPI(M)"]
 
 /** Stable display order for theme filter pills. */
 const THEME_ORDER: InsightTheme[] = [
