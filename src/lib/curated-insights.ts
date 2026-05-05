@@ -153,7 +153,7 @@ export const curatedInsights: CuratedInsight[] = [
   },
   {
     id: "udf-gap-closers",
-    question: "Where did UDF lose by less than 2021?",
+    question: "Where is UDF gaining ground in losing seats?",
     filters: {
       alliance: "UDF",
       result: "losers",
@@ -163,7 +163,7 @@ export const curatedInsights: CuratedInsight[] = [
   },
   {
     id: "udf-at-risk-wins",
-    question: "Where did UDF win by less than 2021?",
+    question: "Where is UDF losing ground in winning seats?",
     filters: {
       alliance: "UDF",
       result: "winners",
@@ -173,7 +173,7 @@ export const curatedInsights: CuratedInsight[] = [
   },
   {
     id: "ldf-gap-closers",
-    question: "Where did LDF lose by less than 2021?",
+    question: "Where is LDF gaining ground in losing seats?",
     filters: {
       alliance: "LDF",
       result: "losers",
@@ -183,7 +183,7 @@ export const curatedInsights: CuratedInsight[] = [
   },
   {
     id: "ldf-at-risk-wins",
-    question: "Where did LDF win by less than 2021?",
+    question: "Where is LDF losing ground in winning seats?",
     filters: {
       alliance: "LDF",
       result: "winners",
@@ -193,7 +193,7 @@ export const curatedInsights: CuratedInsight[] = [
   },
   {
     id: "nda-gap-closers",
-    question: "Where did NDA lose by less than 2021?",
+    question: "Where is NDA gaining ground in losing seats?",
     filters: {
       alliance: "NDA",
       result: "losers",
@@ -203,7 +203,7 @@ export const curatedInsights: CuratedInsight[] = [
   },
   {
     id: "nda-at-risk-wins",
-    question: "Where did NDA win by less than 2021?",
+    question: "Where is NDA losing ground in winning seats?",
     filters: {
       alliance: "NDA",
       result: "winners",
