@@ -56,6 +56,11 @@ export function InsightCard({ insight }: Props) {
     ).slice(0, TOP_N)
   }, [filters])
 
+  const focusSeats = useMemo(
+    () => new Set(topRows.map((r) => r.constituency.constituencyNumber)),
+    [topRows]
+  )
+
   const dashboardUrl = `/?${serializeFilters(filters).toString()}`
 
   return (
@@ -72,6 +77,7 @@ export function InsightCard({ insight }: Props) {
             <MiniACMap
               filters={filters}
               inFilterSet={inFilterSet}
+              focusSeats={focusSeats}
               ariaLabel={`Constituency map for: ${insight.question}`}
             />
           </div>

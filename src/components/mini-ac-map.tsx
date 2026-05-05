@@ -7,6 +7,12 @@ import type { Filters } from "@/lib/filters"
 type Props = {
   filters: Filters
   inFilterSet: Set<number>
+  /**
+   * If provided, only these constituencies render with their encoded colour;
+   * everything else is muted to a low-opacity neutral so Kerala's outline
+   * stays legible without competing with the focused seats.
+   */
+  focusSeats?: Set<number>
   ariaLabel?: string
 }
 
@@ -15,7 +21,12 @@ type Props = {
  * Reuses the same encoding pipeline as the live ConstituencyMap, but
  * skips hover state, click handlers, and the SeatPanel popup.
  */
-export function MiniACMap({ filters, inFilterSet, ariaLabel }: Props) {
+export function MiniACMap({
+  filters,
+  inFilterSet,
+  focusSeats,
+  ariaLabel,
+}: Props) {
   const data = useMemo(
     () => buildMapData(filters, inFilterSet),
     [filters, inFilterSet]
@@ -35,14 +46,16 @@ export function MiniACMap({ filters, inFilterSet, ariaLabel }: Props) {
           color: "var(--muted)",
           opacity: 0.2,
         }
+        const focused = !focusSeats || focusSeats.has(num)
         return (
           <path
             key={num}
             d={c.pathD}
-            fill={fill.color}
-            fillOpacity={fill.opacity}
-            stroke="var(--background)"
-            strokeWidth={0.4}
+            fill={focused ? fill.color : "var(--muted-foreground)"}
+            fillOpacity={focused ? fill.opacity : 0.08}
+            stroke={focused ? "var(--foreground)" : "var(--background)"}
+            strokeWidth={focused ? 0.8 : 0.4}
+            strokeOpacity={focused ? 0.6 : 1}
           />
         )
       })}
