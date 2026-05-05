@@ -9,16 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. K. Saseendran", "party": "LDF", "votes": 67143, "votePct": 50.14 },
-        { "name": "Shaikh P. Harriz", "party": "SJ(D)", "votes": 52489, "votePct": 39.20 },
-        { "name": "V. V. Rajan", "party": "BJP", "votes": 11901, "votePct": 8.89 },
-        { "name": "A. Sasindran", "party": "Independent", "votes": 1402, "votePct": 1.05 },
-        { "name": "Ramesh Nanmanda", "party": "BSP", "votes": 971, "votePct": 0.73 }
+        {
+          "name": "A. K. Saseendran",
+          "party": "Nationalist Congress Party - Sharadchandra Pawar",
+          "votes": 67143,
+          "votePct": 50.14
+        },
+        {
+          "name": "Shaik P. Harris",
+          "party": "Indian Socialist Janata Dal",
+          "votes": 52489,
+          "votePct": 39.2
+        },
+        {
+          "name": "V. V. Rajan",
+          "party": "BJP",
+          "votes": 11901,
+          "votePct": 8.89
+        },
+        {
+          "name": "Sasindran",
+          "party": "Independent",
+          "votes": 1402,
+          "votePct": 1.05
+        },
+        {
+          "name": "Ramesh Nanmanda",
+          "party": "BSP",
+          "votes": 971,
+          "votePct": 0.73
+        }
       ],
       "margin": 14654,
       "marginPct": 10.94,
-      "turnout": 157006,
-      "turnoutPct": 82.24,
+      "turnout": 133967,
+      "turnoutPct": 82.27,
       "result": "LDF win (new seat)"
     },
     {
@@ -26,16 +51,47 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. K. Saseendran", "party": "LDF", "votes": 76387, "votePct": 48.65 },
-        { "name": "Kishen Chand", "party": "JD(U)", "votes": 47450, "votePct": 30.15 },
-        { "name": "Rajan Nair", "party": "BJP", "votes": 29070, "votePct": 18.52 },
-        { "name": "Krishnan", "party": "Independent", "votes": 1724, "votePct": 1.10 },
-        { "name": "Raghu", "party": "BSP", "votes": 1142, "votePct": 0.73 }
+        {
+          "name": "A. K. Saseendran",
+          "party": "Nationalist Congress Party - Sharadchandra Pawar",
+          "votes": 76387,
+          "votePct": 48.66
+        },
+        {
+          "name": "Pottangadi Kishan Chand",
+          "party": "Janata Dal (United)",
+          "votes": 47330,
+          "votePct": 30.15
+        },
+        {
+          "name": "V. V. Rajan",
+          "party": "BJP",
+          "votes": 29070,
+          "votePct": 18.52
+        },
+        {
+          "name": "Kotteappatt Krishnan",
+          "party": "Independent",
+          "votes": 1724,
+          "votePct": 1.1
+        },
+        {
+          "name": "Raghu Kallikkad",
+          "party": "BSP",
+          "votes": 1142,
+          "votePct": 0.73
+        },
+        {
+          "name": "P. M. Useffali",
+          "party": "Independent",
+          "votes": 367,
+          "votePct": 0.23
+        }
       ],
       "margin": 29057,
-      "marginPct": 18.50,
-      "turnout": 157006,
-      "turnoutPct": 83.28,
+      "marginPct": 18.51,
+      "turnout": 157000,
+      "turnoutPct": 83.4,
       "result": "LDF hold"
     },
     {
@@ -43,11 +99,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. K. Saseendran", "party": "LDF", "votes": 83639, "votePct": 50.89 },
-        { "name": "Sulfikar Mayoori", "party": "DCK", "votes": 45137, "votePct": 27.46 },
-        { "name": "T. P. Jayachandran Master", "party": "BJP", "votes": 32010, "votePct": 19.48 },
-        { "name": "Tahir Mokandi", "party": "WPOI", "votes": 2000, "votePct": 0.73 },
-        { "name": "P. K. Radhakrishnan", "party": "Independent", "votes": 580, "votePct": 0.35 }
+        {
+          "name": "A. K. Saseendran",
+          "party": "Nationalist Congress Party - Sharadchandra Pawar",
+          "votes": 83639,
+          "votePct": 50.89
+        },
+        {
+          "name": "Sulfikar Mayoori (NCK)",
+          "party": "UDF",
+          "votes": 45137,
+          "votePct": 27.46
+        },
+        {
+          "name": "T. P. Jayachandran Master",
+          "party": "BJP",
+          "votes": 32010,
+          "votePct": 19.48
+        },
+        {
+          "name": "Tahir Mokandi",
+          "party": "WPI",
+          "votes": 2000,
+          "votePct": 1.22
+        },
+        {
+          "name": "P. K. Radhakrishnan",
+          "party": "Independent",
+          "votes": 580,
+          "votePct": 0.35
+        }
       ],
       "margin": 38502,
       "marginPct": 23.43,

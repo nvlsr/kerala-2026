@@ -9,12 +9,27 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "R. Selvaraj", "party": "CPI(M)", "votes": 54711, "votePct": 48.98 },
-        { "name": "Thampanoor Ravi", "party": "INC", "votes": 48009, "votePct": 42.98 },
-        { "name": "Athiyannoor Sreekumar", "party": "BJP", "votes": 6730, "votePct": 6.03 }
+        {
+          "name": "R. Selvaraj",
+          "party": "CPI(M)",
+          "votes": 54711,
+          "votePct": 48.98
+        },
+        {
+          "name": "Thampanoor Ravi",
+          "party": "INC",
+          "votes": 48009,
+          "votePct": 42.98
+        },
+        {
+          "name": "Athiyannoor Sreekumar",
+          "party": "BJP",
+          "votes": 6730,
+          "votePct": 6.03
+        }
       ],
       "margin": 6702,
-      "marginPct": 6.00,
+      "marginPct": 6.0,
       "turnout": 111698,
       "turnoutPct": 70.76,
       "result": "CPI(M) hold"
@@ -24,9 +39,24 @@
       "type": "by-election",
       "reason": "Resignation of sitting CPI(M) MLA R. Selvaraj",
       "candidates": [
-        { "name": "R. Selvaraj", "party": "INC", "votes": 52528, "votePct": 39.96 },
-        { "name": "F. Lawrence", "party": "CPI(M)", "votes": 46194, "votePct": 35.14 },
-        { "name": "O. Rajagopal", "party": "BJP", "votes": 30507, "votePct": 23.21 }
+        {
+          "name": "R. Selvaraj",
+          "party": "INC",
+          "votes": 52528,
+          "votePct": 39.96
+        },
+        {
+          "name": "F. Lawrence",
+          "party": "CPI(M)",
+          "votes": 46194,
+          "votePct": 35.14
+        },
+        {
+          "name": "O. Rajagopal",
+          "party": "BJP",
+          "votes": 30507,
+          "votePct": 23.21
+        }
       ],
       "margin": 6334,
       "marginPct": 4.82,
@@ -39,16 +69,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Ansalan", "party": "CPI(M)", "votes": 62113, "votePct": 47.20 },
-        { "name": "R. Selvaraj", "party": "INC", "votes": 59016, "votePct": 40.12 },
-        { "name": "Punchakiri Surendran", "party": "BJP", "votes": 15531, "votePct": 11.53 },
-        { "name": "Prabhakaran", "party": "BSP", "votes": 566, "votePct": 0.42 },
-        { "name": "Anilkumar", "party": "Independent", "votes": 280, "votePct": 0.21 }
+        {
+          "name": "K. Ansalan",
+          "party": "CPI(M)",
+          "votes": 63559,
+          "votePct": 47.2
+        },
+        {
+          "name": "R. Selvaraj",
+          "party": "INC",
+          "votes": 54016,
+          "votePct": 40.12
+        },
+        {
+          "name": "Punchakkari Surendran",
+          "party": "BJP",
+          "votes": 15531,
+          "votePct": 11.53
+        },
+        {
+          "name": "Prabhakaran",
+          "party": "BSP",
+          "votes": 566,
+          "votePct": 0.42
+        },
+        {
+          "name": "Anilkumar",
+          "party": "Independent",
+          "votes": 280,
+          "votePct": 0.21
+        }
       ],
       "margin": 9543,
-      "marginPct": 7.08,
-      "turnout": 134645,
-      "turnoutPct": 75.25,
+      "marginPct": 7.09,
+      "turnout": 134675,
+      "turnoutPct": 75.26,
       "result": "CPI(M) gain from INC"
     },
     {
@@ -56,14 +111,35 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Ansalan", "party": "CPI(M)", "votes": 65497, "votePct": 47.02 },
-        { "name": "R. Selvaraj", "party": "INC", "votes": 51235, "votePct": 36.78 },
-        { "name": "Rajasekharan S Nair", "party": "BJP", "votes": 21009, "votePct": 15.08 }
+        {
+          "name": "K. Ansalan",
+          "party": "CPI(M)",
+          "votes": 65497,
+          "votePct": 47.02
+        },
+        {
+          "name": "R. Selvaraj",
+          "party": "INC",
+          "votes": 51235,
+          "votePct": 36.78
+        },
+        {
+          "name": "Chenkal S. Rajasekharan Nair",
+          "party": "BJP",
+          "votes": 21009,
+          "votePct": 15.08
+        },
+        {
+          "name": "T. R. Premkumar",
+          "party": "BSP",
+          "votes": 643,
+          "votePct": 0.46
+        }
       ],
-      "margin": 14642,
+      "margin": 14262,
       "marginPct": 10.24,
-      "turnout": null,
-      "turnoutPct": null,
+      "turnout": 139291,
+      "turnoutPct": 74.6,
       "result": "CPI(M) hold"
     }
   ]

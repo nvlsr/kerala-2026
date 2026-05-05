@@ -9,11 +9,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Koliakode N. Krishnan Nair", "party": "CPI(M)", "votes": 57381, "votePct": 46.51 },
-        { "name": "C. Mohanachandran", "party": "INC", "votes": 55145, "votePct": 44.70 },
-        { "name": "Karette Sivaprasad", "party": "BJP", "votes": 5228, "votePct": 4.24 },
-        { "name": "Pirappankode Shahjahan", "party": "SDPI", "votes": 2225, "votePct": 1.80 },
-        { "name": "Seleena Prakkanam", "party": "Independent", "votes": 1613, "votePct": 1.31 }
+        {
+          "name": "Koliakode N. Krishnan Nair",
+          "party": "CPI(M)",
+          "votes": 57381,
+          "votePct": 46.51
+        },
+        {
+          "name": "C. Mohanachandran",
+          "party": "INC",
+          "votes": 55145,
+          "votePct": 44.7
+        },
+        {
+          "name": "Karette Sivaprasad",
+          "party": "BJP",
+          "votes": 5228,
+          "votePct": 4.24
+        },
+        {
+          "name": "Pirappankode Shahjahan",
+          "party": "SDPI",
+          "votes": 2225,
+          "votePct": 1.8
+        },
+        {
+          "name": "Seleena Prakkanam",
+          "party": "Independent",
+          "votes": 1613,
+          "votePct": 1.31
+        }
       ],
       "margin": 2236,
       "marginPct": 1.81,
@@ -26,16 +51,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "D. K. Murali", "party": "CPI(M)", "votes": 65848, "votePct": 46.56 },
-        { "name": "T. Sarathchandra Prasad", "party": "INC", "votes": 56252, "votePct": 39.77 },
-        { "name": "R. V. Nikhil", "party": "BDJS", "votes": 13956, "votePct": 9.87 },
-        { "name": "Thachonam Nisamudeen", "party": "SDPI", "votes": 1774, "votePct": 1.25 },
-        { "name": "Anil Paalode", "party": "BSP", "votes": 901, "votePct": 0.64 }
+        {
+          "name": "D. K. Murali",
+          "party": "CPI(M)",
+          "votes": 65848,
+          "votePct": 46.56
+        },
+        {
+          "name": "T. Sarathchandra Prasad",
+          "party": "INC",
+          "votes": 56252,
+          "votePct": 39.77
+        },
+        {
+          "name": "R. V. Nikhil",
+          "party": "BDJS",
+          "votes": 13956,
+          "votePct": 9.87
+        },
+        {
+          "name": "Thachonam Nisamudeen",
+          "party": "SDPI",
+          "votes": 1774,
+          "votePct": 1.25
+        },
+        {
+          "name": "Anil Paalode",
+          "party": "BSP",
+          "votes": 901,
+          "votePct": 0.64
+        }
       ],
       "margin": 9596,
       "marginPct": 6.79,
       "turnout": 141435,
-      "turnoutPct": 71.70,
+      "turnoutPct": 71.7,
       "result": "CPI(M) hold"
     },
     {
@@ -43,16 +93,71 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Adv. D. K. Murali", "party": "CPI(M)", "votes": 73137, "votePct": 50.2 },
-        { "name": "Anad Jayan", "party": "INC", "votes": 62895, "votePct": 43.1 },
-        { "name": "Thazhava Sahadevan", "party": "BDJS", "votes": 5603, "votePct": 3.8 },
-        { "name": "Ajmal Ismail", "party": "SDPI", "votes": 2325, "votePct": 1.6 },
-        { "name": "Santhosh T.", "party": "BSP", "votes": 552, "votePct": 0.4 }
+        {
+          "name": "D. K. Murali",
+          "party": "CPI(M)",
+          "votes": 73137,
+          "votePct": 49.91
+        },
+        {
+          "name": "Anad Jayan",
+          "party": "INC",
+          "votes": 62895,
+          "votePct": 42.92
+        },
+        {
+          "name": "Thazhava Sahadevan",
+          "party": "BDJS",
+          "votes": 5603,
+          "votePct": 3.82
+        },
+        {
+          "name": "Ajmal Ismail",
+          "party": "SDPI",
+          "votes": 2325,
+          "votePct": 1.59
+        },
+        {
+          "name": "T. Santhosh",
+          "party": "BSP",
+          "votes": 552,
+          "votePct": 0.38
+        },
+        {
+          "name": "Attukal Aji",
+          "party": "Independent",
+          "votes": 420,
+          "votePct": 0.29
+        },
+        {
+          "name": "R. Murali",
+          "party": "Independent",
+          "votes": 310,
+          "votePct": 0.21
+        },
+        {
+          "name": "Asokan T. Vamanapuram",
+          "party": "API",
+          "votes": 301,
+          "votePct": 0.21
+        },
+        {
+          "name": "C. M. Nawaz",
+          "party": "Independent",
+          "votes": 134,
+          "votePct": 0.09
+        },
+        {
+          "name": "Bharathannoor Maniraj",
+          "party": "Independent",
+          "votes": 132,
+          "votePct": 0.09
+        }
       ],
       "margin": 10242,
-      "marginPct": 7.1,
-      "turnout": null,
-      "turnoutPct": 73.14,
+      "marginPct": 6.99,
+      "turnout": 146525,
+      "turnoutPct": 73.27,
       "result": "CPI(M) hold"
     }
   ]

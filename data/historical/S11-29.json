@@ -9,11 +9,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Elamaram Kareem", "party": "CPI(M)", "votes": 60550, "votePct": 46.80 },
-        { "name": "Adam Mulsi M. P.", "party": "INC", "votes": 55234, "votePct": 42.69 },
-        { "name": "K. P. Sreesan", "party": "BJP", "votes": 11040, "votePct": 8.53 },
-        { "name": "Muhammed Musthafa", "party": "SDPI", "votes": 954, "votePct": 0.74 },
-        { "name": "K. S. Hariharan", "party": "Independent", "votes": 564, "votePct": 0.44 }
+        {
+          "name": "Elamaram Kareem",
+          "party": "CPI(M)",
+          "votes": 60550,
+          "votePct": 46.8
+        },
+        {
+          "name": "Adam Mulsi M. P.",
+          "party": "INC",
+          "votes": 55234,
+          "votePct": 42.69
+        },
+        {
+          "name": "K. P. Sreesan",
+          "party": "BJP",
+          "votes": 11040,
+          "votePct": 8.53
+        },
+        {
+          "name": "Muhammed Musthafa",
+          "party": "SDPI",
+          "votes": 954,
+          "votePct": 0.74
+        },
+        {
+          "name": "K. S. Hariharan",
+          "party": "Independent",
+          "votes": 564,
+          "votePct": 0.44
+        }
       ],
       "margin": 5316,
       "marginPct": 4.11,
@@ -26,16 +51,65 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. K. C. Mammed Koya", "party": "CPI(M)", "votes": 69114, "votePct": 44.39 },
-        { "name": "Adam Mulsi M. P.", "party": "INC", "votes": 51751, "votePct": 35.16 },
-        { "name": "KP Prakash Babu", "party": "BJP", "votes": 27958, "votePct": 17.96 },
-        { "name": "P. C. Muhammedkutty", "party": "WPOI", "votes": 1387, "votePct": 0.89 },
-        { "name": "Muhammed Musthafa P. P.", "party": "SDPI", "votes": 1126, "votePct": 0.72 }
+        {
+          "name": "V. K. C. Mammed Koya",
+          "party": "CPI(M)",
+          "votes": 69114,
+          "votePct": 44.39
+        },
+        {
+          "name": "M. P. Adam Mulsi",
+          "party": "INC",
+          "votes": 54751,
+          "votePct": 35.16
+        },
+        {
+          "name": "Prakash Babu",
+          "party": "BJP",
+          "votes": 27958,
+          "votePct": 17.96
+        },
+        {
+          "name": "P. C. Muhammedkutty Master",
+          "party": "WPI",
+          "votes": 1387,
+          "votePct": 0.89
+        },
+        {
+          "name": "Musthafa Kommeri",
+          "party": "SDPI",
+          "votes": 1126,
+          "votePct": 0.72
+        },
+        {
+          "name": "V. K. Mammed Koya V K House",
+          "party": "Independent",
+          "votes": 355,
+          "votePct": 0.23
+        },
+        {
+          "name": "Adam Malique",
+          "party": "Independent",
+          "votes": 199,
+          "votePct": 0.13
+        },
+        {
+          "name": "K. V. Adam",
+          "party": "Independent",
+          "votes": 109,
+          "votePct": 0.07
+        },
+        {
+          "name": "Ajeesh Kumar Erakkathil",
+          "party": "Independent",
+          "votes": 105,
+          "votePct": 0.07
+        }
       ],
       "margin": 14363,
-      "marginPct": 9.23,
-      "turnout": 155709,
-      "turnoutPct": 81.46,
+      "marginPct": 9.22,
+      "turnout": 155710,
+      "turnoutPct": 81.53,
       "result": "CPI(M) hold"
     },
     {
@@ -43,16 +117,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. A. Mohammed Riyas", "party": "CPI(M)", "votes": 82165, "votePct": 49.73 },
-        { "name": "PM Niyas", "party": "INC", "votes": 53418, "votePct": 32.33 },
-        { "name": "KP Prakash Babu", "party": "BJP", "votes": 26267, "votePct": 15.90 },
-        { "name": "Jamal Chaliyam", "party": "SDPI", "votes": 2029, "votePct": 1.23 },
-        { "name": "NOTA", "party": "NOTA", "votes": 621, "votePct": 0.38 }
+        {
+          "name": "P. A. Mohammed Riyas",
+          "party": "CPI(M)",
+          "votes": 82165,
+          "votePct": 49.73
+        },
+        {
+          "name": "PM Niyas",
+          "party": "INC",
+          "votes": 53418,
+          "votePct": 32.33
+        },
+        {
+          "name": "KP Prakash Babu",
+          "party": "BJP",
+          "votes": 26267,
+          "votePct": 15.9
+        },
+        {
+          "name": "Jamal Chaliyam",
+          "party": "SDPI",
+          "votes": 2029,
+          "votePct": 1.23
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 621,
+          "votePct": 0.38
+        }
       ],
       "margin": 28747,
-      "marginPct": 17.40,
+      "marginPct": 17.4,
       "turnout": 165210,
-      "turnoutPct": 79.40,
+      "turnoutPct": 79.4,
       "result": "CPI(M) hold"
     }
   ]

@@ -9,11 +9,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. A. Azeez", "party": "RSP", "votes": 51271, "votePct": 49.0 },
-        { "name": "P. K. K. Bava", "party": "IUML", "votes": 43259, "votePct": 41.34 },
-        { "name": "Pattathanam Babu", "party": "BJP", "votes": 5048, "votePct": 4.82 },
-        { "name": "Mylakkad Shah", "party": "Independent", "votes": 3234, "votePct": 3.09 },
-        { "name": "Sushama Vijayan", "party": "BSP", "votes": 580, "votePct": 0.55 }
+        {
+          "name": "A. A. Azeez",
+          "party": "RSP",
+          "votes": 51271,
+          "votePct": 49.0
+        },
+        {
+          "name": "P. K. K. Bava",
+          "party": "IUML",
+          "votes": 43259,
+          "votePct": 41.34
+        },
+        {
+          "name": "Pattathanam Babu",
+          "party": "BJP",
+          "votes": 5048,
+          "votePct": 4.82
+        },
+        {
+          "name": "Mylakkad Shah",
+          "party": "Independent",
+          "votes": 3234,
+          "votePct": 3.09
+        },
+        {
+          "name": "Sushama Vijayan",
+          "party": "BSP",
+          "votes": 580,
+          "votePct": 0.55
+        }
       ],
       "margin": 8012,
       "marginPct": 7.66,
@@ -26,11 +51,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. Noushad", "party": "CPI(M)", "votes": 65392, "votePct": 52.33 },
-        { "name": "A. A. Azeez", "party": "RSP", "votes": 36589, "votePct": 29.28 },
-        { "name": "Akkavila Satheek", "party": "BDJS", "votes": 19714, "votePct": 15.77 },
-        { "name": "Ayathil Razak", "party": "SDPI", "votes": 988, "votePct": 0.79 },
-        { "name": "NOTA", "party": "NOTA", "votes": 950, "votePct": 0.76 }
+        {
+          "name": "M. Noushad",
+          "party": "CPI(M)",
+          "votes": 65392,
+          "votePct": 52.33
+        },
+        {
+          "name": "A. A. Azeez",
+          "party": "RSP",
+          "votes": 36589,
+          "votePct": 29.28
+        },
+        {
+          "name": "Akkavila Satheek",
+          "party": "BDJS",
+          "votes": 19714,
+          "votePct": 15.77
+        },
+        {
+          "name": "Ayathil Razak",
+          "party": "SDPI",
+          "votes": 988,
+          "votePct": 0.79
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 950,
+          "votePct": 0.76
+        }
       ],
       "margin": 28803,
       "marginPct": 23.05,
@@ -43,15 +93,60 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Vishnu Mohan", "party": "RSP", "votes": 64383, "votePct": null },
-        { "name": "M. Noushad", "party": "CPI(M)", "votes": 55580, "votePct": null },
-        { "name": "Saji D. Anand", "party": "BDJS", "votes": 10469, "votePct": null }
+        {
+          "name": "M. Noushad",
+          "party": "CPI(M)",
+          "votes": 71573,
+          "votePct": 56.25
+        },
+        {
+          "name": "Babu Divakaran",
+          "party": "RSP",
+          "votes": 43452,
+          "votePct": 34.15
+        },
+        {
+          "name": "Ranjith Raveendran",
+          "party": "BDJS",
+          "votes": 8468,
+          "votePct": 6.66
+        },
+        {
+          "name": "Ayathil Riyas",
+          "party": "SDPI",
+          "votes": 1444,
+          "votePct": 1.13
+        },
+        {
+          "name": "Mohanan Mayyanad",
+          "party": "BSP",
+          "votes": 543,
+          "votePct": 0.43
+        },
+        {
+          "name": "M. Unnikrishnan",
+          "party": "ADHMPI",
+          "votes": 430,
+          "votePct": 0.34
+        },
+        {
+          "name": "S. Sudhilal",
+          "party": "SUCI(C)",
+          "votes": 213,
+          "votePct": 0.17
+        },
+        {
+          "name": "N. Shihabudeen",
+          "party": "Independent",
+          "votes": 187,
+          "votePct": 0.15
+        }
       ],
-      "margin": 8803,
-      "marginPct": null,
-      "turnout": null,
-      "turnoutPct": null,
-      "result": "RSP gain from CPI(M)"
+      "margin": 28121,
+      "marginPct": 22.1,
+      "turnout": 127241,
+      "turnoutPct": 72.37,
+      "result": "CPI(M) hold"
     }
   ]
 }

@@ -9,10 +9,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "G. Karthikeyan", "party": "INC", "votes": 56797, "votePct": 48.79 },
-        { "name": "Ambalathara Sreedharan Nair", "party": "RSP", "votes": 46123, "votePct": 39.62 },
-        { "name": "Sivankutty C.", "party": "BJP", "votes": 7694, "votePct": 6.61 },
-        { "name": "A. Balan", "party": "BSP", "votes": 1746, "votePct": 1.50 }
+        {
+          "name": "G. Karthikeyan",
+          "party": "INC",
+          "votes": 56797,
+          "votePct": 48.79
+        },
+        {
+          "name": "Ambalathara Sreedharan Nair",
+          "party": "RSP",
+          "votes": 46123,
+          "votePct": 39.62
+        },
+        {
+          "name": "Sivankutty C.",
+          "party": "BJP",
+          "votes": 7694,
+          "votePct": 6.61
+        },
+        {
+          "name": "A. Balan",
+          "party": "BSP",
+          "votes": 1746,
+          "votePct": 1.5
+        }
       ],
       "margin": 10674,
       "marginPct": 9.17,
@@ -25,14 +45,107 @@
       "type": "by-election",
       "reason": "Death of sitting MLA G. Karthikeyan",
       "candidates": [
-        { "name": "K. S. Sabarinathan", "party": "INC", "votes": 59448, "votePct": 40.02 },
-        { "name": "M. Vijayakumar", "party": "CPI", "votes": 46320, "votePct": 32.84 },
-        { "name": "O. Rajagopal", "party": "BJP", "votes": 34145, "votePct": 24.20 }
+        {
+          "name": "K. S. Sabarinadhan",
+          "party": "INC",
+          "votes": 56448,
+          "votePct": 39.61
+        },
+        {
+          "name": "M. Vijayakumar",
+          "party": "CPI(M)",
+          "votes": 46320,
+          "votePct": 32.51
+        },
+        {
+          "name": "O. Rajagopal",
+          "party": "BJP",
+          "votes": 34145,
+          "votePct": 23.96
+        },
+        {
+          "name": "Das Kumaravelu",
+          "party": "Independent",
+          "votes": 1197,
+          "votePct": 0.84
+        },
+        {
+          "name": "Poonthura Siraj",
+          "party": "PDP",
+          "votes": 703,
+          "votePct": 0.49
+        },
+        {
+          "name": "P. K. Sukumaran",
+          "party": "Independent",
+          "votes": 481,
+          "votePct": 0.34
+        },
+        {
+          "name": "Sunil M. Karani",
+          "party": "Independent",
+          "votes": 422,
+          "votePct": 0.3
+        },
+        {
+          "name": "Thomas Kaitharaparambil",
+          "party": "AKTP",
+          "votes": 383,
+          "votePct": 0.27
+        },
+        {
+          "name": "Suresh Kumar",
+          "party": "Independent",
+          "votes": 354,
+          "votePct": 0.25
+        },
+        {
+          "name": "T. R. Sreejith",
+          "party": "ABHM",
+          "votes": 171,
+          "votePct": 0.12
+        },
+        {
+          "name": "M. S. Sabarinath",
+          "party": "Independent",
+          "votes": 143,
+          "votePct": 0.1
+        },
+        {
+          "name": "N. Sasidharan Pillai",
+          "party": "ESKP",
+          "votes": 93,
+          "votePct": 0.07
+        },
+        {
+          "name": "B. Vijayakumar",
+          "party": "Independent",
+          "votes": 69,
+          "votePct": 0.05
+        },
+        {
+          "name": "K. M. Sivaprasad",
+          "party": "IGP",
+          "votes": 62,
+          "votePct": 0.04
+        },
+        {
+          "name": "Vijayakumaran Nair",
+          "party": "Independent",
+          "votes": 40,
+          "votePct": 0.03
+        },
+        {
+          "name": "K. G. Mohanan",
+          "party": "Independent",
+          "votes": 35,
+          "votePct": 0.02
+        }
       ],
       "margin": 10128,
-      "marginPct": 7.18,
-      "turnout": 141066,
-      "turnoutPct": 76.16,
+      "marginPct": 7.11,
+      "turnout": 142496,
+      "turnoutPct": 76.94,
       "result": "INC hold"
     },
     {
@@ -40,10 +153,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. S. Sabarinathan", "party": "INC", "votes": 70910, "votePct": 49.32 },
-        { "name": "A. A. Rasheed", "party": "CPI(M)", "votes": 49596, "votePct": 34.50 },
-        { "name": "Rajasenan", "party": "BJP", "votes": 20294, "votePct": 14.12 },
-        { "name": "M. A. Jaleel", "party": "SDPI", "votes": 707, "votePct": 0.49 }
+        {
+          "name": "K. S. Sabarinathan",
+          "party": "INC",
+          "votes": 70910,
+          "votePct": 49.32
+        },
+        {
+          "name": "A. A. Rasheed",
+          "party": "CPI(M)",
+          "votes": 49596,
+          "votePct": 34.5
+        },
+        {
+          "name": "Rajasenan",
+          "party": "BJP",
+          "votes": 20294,
+          "votePct": 14.12
+        },
+        {
+          "name": "M. A. Jaleel",
+          "party": "SDPI",
+          "votes": 707,
+          "votePct": 0.49
+        }
       ],
       "margin": 21314,
       "marginPct": 14.82,
@@ -56,9 +189,24 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "G. Steephen", "party": "CPI(M)", "votes": 66776, "votePct": 45.83 },
-        { "name": "K. S. Sabarinathan", "party": "INC", "votes": 61730, "votePct": 42.37 },
-        { "name": "C. Sivankutty", "party": "BJP", "votes": 15379, "votePct": 10.55 }
+        {
+          "name": "G. Steephen",
+          "party": "CPI(M)",
+          "votes": 66776,
+          "votePct": 45.83
+        },
+        {
+          "name": "K. S. Sabarinathan",
+          "party": "INC",
+          "votes": 61730,
+          "votePct": 42.37
+        },
+        {
+          "name": "C. Sivankutty",
+          "party": "BJP",
+          "votes": 15379,
+          "votePct": 10.55
+        }
       ],
       "margin": 5046,
       "marginPct": 3.47,

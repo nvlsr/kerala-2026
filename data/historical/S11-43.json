@@ -9,11 +9,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Abdu Rabb", "party": "IUML", "votes": 58666, "votePct": 58.48 },
-        { "name": "K. K. Abdu Samad", "party": "CPI", "votes": 28458, "votePct": 28.37 },
-        { "name": "Sasidharan Punnassery", "party": "BJP", "votes": 5480, "votePct": 5.46 },
-        { "name": "Ibrahim Thirungadi", "party": "PDP", "votes": 4281, "votePct": 4.27 },
-        { "name": "A. A. Rahim", "party": "SDPI", "votes": 2945, "votePct": 2.94 }
+        {
+          "name": "P. K. Abdu Rabb",
+          "party": "IUML",
+          "votes": 58666,
+          "votePct": 58.48
+        },
+        {
+          "name": "K. K. Abdu Samad",
+          "party": "CPI",
+          "votes": 28458,
+          "votePct": 28.37
+        },
+        {
+          "name": "Sasidharan Punnassery",
+          "party": "BJP",
+          "votes": 5480,
+          "votePct": 5.46
+        },
+        {
+          "name": "Ibrahim Thirungadi",
+          "party": "PDP",
+          "votes": 4281,
+          "votePct": 4.27
+        },
+        {
+          "name": "A. A. Rahim",
+          "party": "SDPI",
+          "votes": 2945,
+          "votePct": 2.94
+        }
       ],
       "margin": 30208,
       "marginPct": 30.11,
@@ -26,11 +51,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Abdu Rabb", "party": "IUML", "votes": 63027, "votePct": 46.53 },
-        { "name": "Niyas Pulikkalakath", "party": "LDF", "votes": 56884, "votePct": 42.06 },
-        { "name": "P. V. Geetha Madhavan", "party": "BJP", "votes": 8046, "votePct": 5.95 },
-        { "name": "K. C. Naseer", "party": "SDPI", "votes": 2478, "votePct": 1.83 },
-        { "name": "Maliyatt Abdurazak Haji", "party": "PDP", "votes": 1902, "votePct": 1.41 }
+        {
+          "name": "P. K. Abdu Rabb",
+          "party": "IUML",
+          "votes": 63027,
+          "votePct": 46.53
+        },
+        {
+          "name": "Niyas Pulikkalakath",
+          "party": "LDF",
+          "votes": 56884,
+          "votePct": 42.06
+        },
+        {
+          "name": "P. V. Geetha Madhavan",
+          "party": "BJP",
+          "votes": 8046,
+          "votePct": 5.95
+        },
+        {
+          "name": "K. C. Naseer",
+          "party": "SDPI",
+          "votes": 2478,
+          "votePct": 1.83
+        },
+        {
+          "name": "Maliyatt Abdurazak Haji",
+          "party": "PDP",
+          "votes": 1902,
+          "votePct": 1.41
+        }
       ],
       "margin": 6043,
       "marginPct": 4.47,
@@ -43,14 +93,39 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. P. A. Majeed", "party": "IUML", "votes": 73499, "votePct": 49.74 },
-        { "name": "Niyas Pulickalakath", "party": "CPI", "votes": 63921, "votePct": 43.26 },
-        { "name": "Kalliyath Sathar Haji", "party": "BJP", "votes": 8314, "votePct": 5.63 },
-        { "name": "NOTA", "party": "NOTA", "votes": 721, "votePct": 0.48 },
-        { "name": "Niyas", "party": "Independent", "votes": 487, "votePct": 0.33 }
+        {
+          "name": "K. P. A. Majeed",
+          "party": "IUML",
+          "votes": 73499,
+          "votePct": 49.74
+        },
+        {
+          "name": "Niyas Pulickalakath",
+          "party": "CPI",
+          "votes": 63921,
+          "votePct": 43.26
+        },
+        {
+          "name": "Kalliyath Sathar Haji",
+          "party": "BJP",
+          "votes": 8314,
+          "votePct": 5.63
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 721,
+          "votePct": 0.48
+        },
+        {
+          "name": "Niyas",
+          "party": "Independent",
+          "votes": 487,
+          "votePct": 0.33
+        }
       ],
       "margin": 9578,
-      "marginPct": null,
+      "marginPct": 6.48,
       "turnout": 147771,
       "turnoutPct": 74.98,
       "result": "IUML hold"

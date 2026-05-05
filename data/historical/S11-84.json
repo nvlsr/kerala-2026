@@ -9,11 +9,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. P. Sajendran", "party": "INC", "votes": 63624, "votePct": 49.72 },
-        { "name": "M. A. Surendran", "party": "CPI(M)", "votes": 54892, "votePct": 42.89 },
-        { "name": "M. Ravi", "party": "BJP", "votes": 5862, "votePct": 4.58 },
-        { "name": "M. K. Manoj Kumar", "party": "SDPI", "votes": 2969, "votePct": 2.32 },
-        { "name": "Rajeev P. T.", "party": "BSP", "votes": 625, "votePct": 0.49 }
+        {
+          "name": "V. P. Sajendran",
+          "party": "INC",
+          "votes": 63624,
+          "votePct": 49.72
+        },
+        {
+          "name": "M. A. Surendran",
+          "party": "CPI(M)",
+          "votes": 54892,
+          "votePct": 42.89
+        },
+        {
+          "name": "M. Ravi",
+          "party": "BJP",
+          "votes": 5862,
+          "votePct": 4.58
+        },
+        {
+          "name": "M. K. Manoj Kumar",
+          "party": "SDPI",
+          "votes": 2969,
+          "votePct": 2.32
+        },
+        {
+          "name": "Rajeev P. T.",
+          "party": "BSP",
+          "votes": 625,
+          "votePct": 0.49
+        }
       ],
       "margin": 8732,
       "marginPct": 6.83,
@@ -26,11 +51,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. P. Sajendran", "party": "INC", "votes": 65445, "votePct": 44.13 },
-        { "name": "Shiji Sivaji", "party": "CPI(M)", "votes": 62766, "votePct": 42.32 },
-        { "name": "Thuravoor Suresh", "party": "BJP", "votes": 16459, "votePct": 11.1 },
-        { "name": "N. O. Kuttapan", "party": "SP", "votes": 1263, "votePct": 0.85 },
-        { "name": "NOTA", "party": "NOTA", "votes": 1179, "votePct": 0.79 }
+        {
+          "name": "V. P. Sajendran",
+          "party": "INC",
+          "votes": 65445,
+          "votePct": 44.13
+        },
+        {
+          "name": "Shiji Sivaji",
+          "party": "CPI(M)",
+          "votes": 62766,
+          "votePct": 42.32
+        },
+        {
+          "name": "Thuravoor Suresh",
+          "party": "BJP",
+          "votes": 16459,
+          "votePct": 11.1
+        },
+        {
+          "name": "N. O. Kuttapan",
+          "party": "SP",
+          "votes": 1263,
+          "votePct": 0.85
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 1179,
+          "votePct": 0.79
+        }
       ],
       "margin": 2679,
       "marginPct": 1.81,
@@ -43,16 +93,59 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. V. Srinijin", "party": "CPI(M)", "votes": 51180, "votePct": 33.77 },
-        { "name": "V. P. Sajeendran", "party": "INC", "votes": 48463, "votePct": 31.98 },
-        { "name": "Sujith P. Surendran", "party": "Twenty20 Party", "votes": 41890, "votePct": 27.64 },
-        { "name": "Renu Suresh", "party": "BJP", "votes": 7056, "votePct": 4.66 },
-        { "name": "Krishnan Eranhikal", "party": "SDPI", "votes": 1289, "votePct": 0.85 }
+        {
+          "name": "P. V. Sreenijin",
+          "party": "CPI(M)",
+          "votes": 52351,
+          "votePct": 33.79
+        },
+        {
+          "name": "V. P. Sajeendran",
+          "party": "INC",
+          "votes": 49636,
+          "votePct": 32.04
+        },
+        {
+          "name": "Sujith P. Surendran",
+          "party": "Twenty 20 Party",
+          "votes": 42701,
+          "votePct": 27.56
+        },
+        {
+          "name": "Renu Suresh",
+          "party": "BJP",
+          "votes": 7218,
+          "votePct": 4.66
+        },
+        {
+          "name": "Krishnan Eranhikal",
+          "party": "SDPI",
+          "votes": 1294,
+          "votePct": 0.84
+        },
+        {
+          "name": "Sujith K. Surendran",
+          "party": "Independent",
+          "votes": 786,
+          "votePct": 0.51
+        },
+        {
+          "name": "A. T. Manikuttan",
+          "party": "BSP",
+          "votes": 205,
+          "votePct": 0.13
+        },
+        {
+          "name": "V. K. Velayudhan",
+          "party": "Independent",
+          "votes": 168,
+          "votePct": 0.11
+        }
       ],
-      "margin": 2717,
-      "marginPct": 1.81,
-      "turnout": null,
-      "turnoutPct": null,
+      "margin": 2715,
+      "marginPct": 1.75,
+      "turnout": 154924,
+      "turnoutPct": 82.54,
       "result": "CPI(M) gain from INC"
     }
   ]

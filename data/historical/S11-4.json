@@ -9,16 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "E. Chandrasekharan", "party": "CPI", "votes": 66640, "votePct": 47.65 },
-        { "name": "M. C. Jose", "party": "INC", "votes": 54462, "votePct": 38.95 },
-        { "name": "Madikai Kammaran", "party": "BJP", "votes": 15543, "votePct": 11.11 },
-        { "name": "P. M. Joseph", "party": "Independent", "votes": 1919, "votePct": 1.37 },
-        { "name": "Gopalan K.", "party": "BSP", "votes": 1277, "votePct": 0.91 }
+        {
+          "name": "E. Chandrasekharan",
+          "party": "CPI",
+          "votes": 66640,
+          "votePct": 47.65
+        },
+        {
+          "name": "M. C. Jose",
+          "party": "INC",
+          "votes": 54462,
+          "votePct": 38.95
+        },
+        {
+          "name": "Madikai Kammaran",
+          "party": "BJP",
+          "votes": 15543,
+          "votePct": 11.11
+        },
+        {
+          "name": "P. M. Joseph",
+          "party": "Independent",
+          "votes": 1919,
+          "votePct": 1.37
+        },
+        {
+          "name": "Gopalan K.",
+          "party": "BSP",
+          "votes": 1277,
+          "votePct": 0.91
+        }
       ],
       "margin": 12178,
-      "marginPct": 8.70,
+      "marginPct": 8.7,
       "turnout": 139841,
-      "turnoutPct": 78.50,
+      "turnoutPct": 78.5,
       "result": "CPI win (new seat)"
     },
     {
@@ -26,11 +51,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "E. Chandrasekharan", "party": "CPI", "votes": 80558, "votePct": 49.98 },
-        { "name": "Dhanya Suresh", "party": "INC", "votes": 54547, "votePct": 33.84 },
-        { "name": "M. P. Raghavan", "party": "BDJS", "votes": 21104, "votePct": 13.09 },
-        { "name": "Chandran Parappa", "party": "BSP", "votes": 965, "votePct": 0.60 },
-        { "name": "Assainar Muttumthala", "party": "PDP", "votes": 959, "votePct": 0.59 }
+        {
+          "name": "E. Chandrasekharan",
+          "party": "CPI",
+          "votes": 80558,
+          "votePct": 49.98
+        },
+        {
+          "name": "Dhanya Suresh",
+          "party": "INC",
+          "votes": 54547,
+          "votePct": 33.84
+        },
+        {
+          "name": "M. P. Raghavan",
+          "party": "BDJS",
+          "votes": 21104,
+          "votePct": 13.09
+        },
+        {
+          "name": "Chandran Parappa",
+          "party": "BSP",
+          "votes": 965,
+          "votePct": 0.6
+        },
+        {
+          "name": "Assainar Muttumthala",
+          "party": "PDP",
+          "votes": 959,
+          "votePct": 0.59
+        }
       ],
       "margin": 26011,
       "marginPct": 16.14,
@@ -43,13 +93,33 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "E. Chandrasekharan", "party": "CPI", "votes": 84615, "votePct": 50.72 },
-        { "name": "P. V. Suresh", "party": "INC", "votes": 57476, "votePct": 34.45 },
-        { "name": "Balraj", "party": "BJP", "votes": 21570, "votePct": 12.93 },
-        { "name": "Abdul Samad T.", "party": "SDPI", "votes": 775, "votePct": 0.46 }
+        {
+          "name": "E. Chandrasekharan",
+          "party": "CPI",
+          "votes": 84615,
+          "votePct": 50.72
+        },
+        {
+          "name": "P. V. Suresh",
+          "party": "INC",
+          "votes": 57476,
+          "votePct": 34.45
+        },
+        {
+          "name": "Balraj",
+          "party": "BJP",
+          "votes": 21570,
+          "votePct": 12.93
+        },
+        {
+          "name": "Abdul Samad T.",
+          "party": "SDPI",
+          "votes": 775,
+          "votePct": 0.46
+        }
       ],
       "margin": 27139,
-      "marginPct": null,
+      "marginPct": 16.27,
       "turnout": 166835,
       "turnoutPct": 76.24,
       "result": "CPI hold"

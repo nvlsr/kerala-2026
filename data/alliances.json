@@ -32,6 +32,10 @@
     }
   },
   "partyToAlliance": {
+    "UDF": "UDF",
+    "LDF": "LDF",
+    "NDA": "NDA",
+
     "Indian National Congress": "UDF",
     "Indian Union Muslim League": "UDF",
     "Kerala Congress": "UDF",

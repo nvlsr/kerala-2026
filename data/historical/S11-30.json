@@ -9,15 +9,77 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. T. A. Rahim", "party": "LDF", "votes": 66169, "votePct": 44.06 },
-        { "name": "U. C. Raman", "party": "IUML", "votes": 62900, "votePct": 41.88 },
-        { "name": "C. K. Padmanabhan", "party": "BJP", "votes": 17123, "votePct": 11.40 },
-        { "name": "C. Muhammed", "party": "SDPI", "votes": 1178, "votePct": 0.78 }
+        {
+          "name": "P. T. A. Rahim",
+          "party": "LDF",
+          "votes": 66169,
+          "votePct": 44.06
+        },
+        {
+          "name": "U. C. Raman",
+          "party": "Indian Union Muslim League",
+          "votes": 62900,
+          "votePct": 41.88
+        },
+        {
+          "name": "C. K. Padmanabhan",
+          "party": "BJP",
+          "votes": 17123,
+          "votePct": 11.4
+        },
+        {
+          "name": "C. Mohammed",
+          "party": "SDPI",
+          "votes": 1178,
+          "votePct": 0.78
+        },
+        {
+          "name": "C. K. Raman",
+          "party": "Independent",
+          "votes": 701,
+          "votePct": 0.47
+        },
+        {
+          "name": "K. K. Kunhikanaran",
+          "party": "Independent",
+          "votes": 427,
+          "votePct": 0.28
+        },
+        {
+          "name": "E. P. Abdul Raheem",
+          "party": "Independent",
+          "votes": 421,
+          "votePct": 0.28
+        },
+        {
+          "name": "P. C. Raman",
+          "party": "Independent",
+          "votes": 404,
+          "votePct": 0.27
+        },
+        {
+          "name": "M. T. Abdu Raheem",
+          "party": "Independent",
+          "votes": 325,
+          "votePct": 0.22
+        },
+        {
+          "name": "M. P. Baburajan",
+          "party": "SS",
+          "votes": 303,
+          "votePct": 0.2
+        },
+        {
+          "name": "O. P. Sundaran",
+          "party": "BSP",
+          "votes": 236,
+          "votePct": 0.16
+        }
       ],
       "margin": 3269,
       "marginPct": 2.18,
-      "turnout": 150187,
-      "turnoutPct": 84.33,
+      "turnout": 150214,
+      "turnoutPct": 84.35,
       "result": "LDF hold"
     },
     {
@@ -25,15 +87,65 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. T. A. Rahim", "party": "LDF", "votes": 77410, "votePct": 42.92 },
-        { "name": "T. Siddique", "party": "INC", "votes": 66205, "votePct": 36.71 },
-        { "name": "C. K. Padmanabhan", "party": "BJP", "votes": 32702, "votePct": 18.13 },
-        { "name": "Latheef Anora", "party": "SDPI", "votes": 1252, "votePct": 0.69 }
+        {
+          "name": "P. T. A. Rahim",
+          "party": "LDF",
+          "votes": 77410,
+          "votePct": 42.92
+        },
+        {
+          "name": "T. Siddiqu",
+          "party": "INC",
+          "votes": 66205,
+          "votePct": 36.71
+        },
+        {
+          "name": "C. K. Padmanabhan",
+          "party": "BJP",
+          "votes": 32702,
+          "votePct": 18.13
+        },
+        {
+          "name": "Latheef Anora",
+          "party": "SDPI",
+          "votes": 1252,
+          "votePct": 0.69
+        },
+        {
+          "name": "K. P. Raheem Mele Chettukuzhiyil",
+          "party": "Independent",
+          "votes": 726,
+          "votePct": 0.4
+        },
+        {
+          "name": "P. P. Rajan",
+          "party": "BSP",
+          "votes": 304,
+          "votePct": 0.17
+        },
+        {
+          "name": "P. Sidheeq Panniyookkil",
+          "party": "Independent",
+          "votes": 212,
+          "votePct": 0.12
+        },
+        {
+          "name": "T. P. Siddeeque Thalappoyil",
+          "party": "Independent",
+          "votes": 206,
+          "votePct": 0.11
+        },
+        {
+          "name": "Aboobacker Sidhiqu",
+          "party": "Independent",
+          "votes": 176,
+          "votePct": 0.1
+        }
       ],
       "margin": 11205,
       "marginPct": 6.21,
-      "turnout": 180341,
-      "turnoutPct": 85.85,
+      "turnout": 180351,
+      "turnoutPct": 85.9,
       "result": "LDF hold"
     },
     {
@@ -41,15 +153,71 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. T. A. Rahim", "party": "LDF", "votes": 85138, "votePct": 43.93 },
-        { "name": "Dinesh Perumanna", "party": "INC", "votes": 74862, "votePct": 38.62 },
-        { "name": "V. K. Sajeevan", "party": "BJP", "votes": 27672, "votePct": 14.28 },
-        { "name": "Abdul Vahid", "party": "SDPI", "votes": 1299, "votePct": 0.67 }
+        {
+          "name": "P. T. A. Rahim",
+          "party": "LDF",
+          "votes": 85138,
+          "votePct": 43.93
+        },
+        {
+          "name": "Dinesh Perumanna",
+          "party": "UDF",
+          "votes": 74862,
+          "votePct": 38.62
+        },
+        {
+          "name": "V. K. Sajeevan",
+          "party": "BJP",
+          "votes": 27672,
+          "votePct": 14.28
+        },
+        {
+          "name": "Abdul Wahid",
+          "party": "SDPI",
+          "votes": 1299,
+          "votePct": 0.67
+        },
+        {
+          "name": "E. P. Anwar Sadath",
+          "party": "WPI",
+          "votes": 1057,
+          "votePct": 0.55
+        },
+        {
+          "name": "Dineshan Pakkath",
+          "party": "Independent",
+          "votes": 1021,
+          "votePct": 0.53
+        },
+        {
+          "name": "Abdul Rahim P. s/o Hassan Koya",
+          "party": "Independent",
+          "votes": 738,
+          "votePct": 0.38
+        },
+        {
+          "name": "K. G. Babu",
+          "party": "Independent",
+          "votes": 724,
+          "votePct": 0.37
+        },
+        {
+          "name": "Dinesan Mundakkal",
+          "party": "Independent",
+          "votes": 225,
+          "votePct": 0.12
+        },
+        {
+          "name": "Abdul Rahim P. s/o Abdul Kareem",
+          "party": "Independent",
+          "votes": 222,
+          "votePct": 0.11
+        }
       ],
       "margin": 10276,
-      "marginPct": 5.30,
+      "marginPct": 5.3,
       "turnout": 193822,
-      "turnoutPct": 83.80,
+      "turnoutPct": 83.8,
       "result": "LDF hold"
     }
   ]

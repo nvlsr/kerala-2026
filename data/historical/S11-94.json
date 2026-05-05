@@ -9,10 +9,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Mons Joseph", "party": "KC(M)", "votes": 68787, "votePct": 56.37 },
-        { "name": "Stephen George", "party": "KC(AMG)", "votes": 45730, "votePct": 37.48 },
-        { "name": "P. G. Bijukumar", "party": "BJP", "votes": 5340, "votePct": 4.38 },
-        { "name": "M. D. Thomas", "party": "BSP", "votes": 2169, "votePct": 1.78 }
+        {
+          "name": "Mons Joseph",
+          "party": "KC(M)",
+          "votes": 68787,
+          "votePct": 56.37
+        },
+        {
+          "name": "Stephen George",
+          "party": "KC(AMG)",
+          "votes": 45730,
+          "votePct": 37.48
+        },
+        {
+          "name": "P. G. Bijukumar",
+          "party": "BJP",
+          "votes": 5340,
+          "votePct": 4.38
+        },
+        {
+          "name": "M. D. Thomas",
+          "party": "BSP",
+          "votes": 2169,
+          "votePct": 1.78
+        }
       ],
       "margin": 23057,
       "marginPct": 18.89,
@@ -25,10 +45,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Mons Joseph", "party": "KC(M)", "votes": 73793, "votePct": 58.03 },
-        { "name": "Scaria Thomas", "party": "Kerala Congress (Skaria Thomas)", "votes": 31537, "votePct": 24.80 },
-        { "name": "Stephen Chazhikkadan", "party": "Kerala Congress (Thomas)", "votes": 17536, "votePct": 13.79 },
-        { "name": "Ginish John M", "party": "BSP", "votes": 1473, "votePct": 1.16 }
+        {
+          "name": "Mons Joseph",
+          "party": "KC(M)",
+          "votes": 73793,
+          "votePct": 58.03
+        },
+        {
+          "name": "Scaria Thomas",
+          "party": "Kerala Congress (Skaria Thomas)",
+          "votes": 31537,
+          "votePct": 24.8
+        },
+        {
+          "name": "Stephen Chazhikkadan",
+          "party": "Kerala Congress (Thomas)",
+          "votes": 17536,
+          "votePct": 13.79
+        },
+        {
+          "name": "Ginish John M",
+          "party": "BSP",
+          "votes": 1473,
+          "votePct": 1.16
+        }
       ],
       "margin": 42256,
       "marginPct": 33.23,
@@ -41,12 +81,27 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Mons Joseph", "party": "KEC", "votes": 59666, "votePct": 45.4 },
-        { "name": "Stephen George", "party": "KC(M)", "votes": 55410, "votePct": 42.17 },
-        { "name": "Lijin Lal", "party": "BJP", "votes": 11670, "votePct": 8.88 }
+        {
+          "name": "Mons Joseph",
+          "party": "KEC",
+          "votes": 59666,
+          "votePct": 45.4
+        },
+        {
+          "name": "Stephen George",
+          "party": "KC(M)",
+          "votes": 55410,
+          "votePct": 42.17
+        },
+        {
+          "name": "Lijin Lal",
+          "party": "BJP",
+          "votes": 11670,
+          "votePct": 8.88
+        }
       ],
       "margin": 4256,
-      "marginPct": null,
+      "marginPct": 3.21,
       "turnout": 132444,
       "turnoutPct": 70.48,
       "result": "KEC hold"

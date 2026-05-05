@@ -9,9 +9,24 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Benny Behanan", "party": "INC", "votes": 65854, "votePct": 55.88 },
-        { "name": "M. E. Hassainar", "party": "CPI(M)", "votes": 43448, "votePct": 36.87 },
-        { "name": "N. Saji Kumar", "party": "BJP", "votes": 5935, "votePct": 5.04 }
+        {
+          "name": "Benny Behanan",
+          "party": "INC",
+          "votes": 65854,
+          "votePct": 55.88
+        },
+        {
+          "name": "M. E. Hassainar",
+          "party": "CPI(M)",
+          "votes": 43448,
+          "votePct": 36.87
+        },
+        {
+          "name": "N. Saji Kumar",
+          "party": "BJP",
+          "votes": 5935,
+          "votePct": 5.04
+        }
       ],
       "margin": 22406,
       "marginPct": 17.01,
@@ -24,9 +39,24 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. T. Thomas", "party": "INC", "votes": 61268, "votePct": 45.42 },
-        { "name": "Sebastian Paul", "party": "CPI(M)", "votes": 49455, "votePct": 36.55 },
-        { "name": "S. Saji", "party": "BJP", "votes": 21247, "votePct": 15.70 }
+        {
+          "name": "P. T. Thomas",
+          "party": "INC",
+          "votes": 61268,
+          "votePct": 45.42
+        },
+        {
+          "name": "Sebastian Paul",
+          "party": "CPI(M)",
+          "votes": 49455,
+          "votePct": 36.55
+        },
+        {
+          "name": "S. Saji",
+          "party": "BJP",
+          "votes": 21247,
+          "votePct": 15.7
+        }
       ],
       "margin": 11966,
       "marginPct": 8.87,
@@ -39,14 +69,71 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. T. Thomas", "party": "INC", "votes": 59839, "votePct": 43.99 },
-        { "name": "J. Jacob", "party": "LDF", "votes": 45510, "votePct": 33.49 },
-        { "name": "S. Saji", "party": "BJP", "votes": 15483, "votePct": 11.40 }
+        {
+          "name": "P. T. Thomas",
+          "party": "INC",
+          "votes": 59839,
+          "votePct": 43.82
+        },
+        {
+          "name": "J. Jacob",
+          "party": "LDF",
+          "votes": 45510,
+          "votePct": 33.32
+        },
+        {
+          "name": "S. Saji",
+          "party": "BJP",
+          "votes": 15483,
+          "votePct": 11.34
+        },
+        {
+          "name": "Terry Thomas",
+          "party": "Twenty 20 Party",
+          "votes": 13897,
+          "votePct": 10.18
+        },
+        {
+          "name": "P. M. Shibu",
+          "party": "BSP",
+          "votes": 331,
+          "votePct": 0.24
+        },
+        {
+          "name": "Riyas Yusuf",
+          "party": "Independent",
+          "votes": 298,
+          "votePct": 0.22
+        },
+        {
+          "name": "Krishnaprasad",
+          "party": "DSJP",
+          "votes": 181,
+          "votePct": 0.13
+        },
+        {
+          "name": "Jinu",
+          "party": "Independent",
+          "votes": 143,
+          "votePct": 0.1
+        },
+        {
+          "name": "Benoj",
+          "party": "Independent",
+          "votes": 134,
+          "votePct": 0.1
+        },
+        {
+          "name": "Subin",
+          "party": "Independent",
+          "votes": 59,
+          "votePct": 0.04
+        }
       ],
       "margin": 14329,
-      "marginPct": 10.55,
-      "turnout": 135875,
-      "turnoutPct": 75.16,
+      "marginPct": 10.49,
+      "turnout": 136570,
+      "turnoutPct": 70.39,
       "result": "INC hold"
     },
     {
@@ -54,9 +141,24 @@
       "type": "by-election",
       "reason": "Vacancy in legislative seat",
       "candidates": [
-        { "name": "Uma Thomas", "party": "INC", "votes": 72770, "votePct": 53.76 },
-        { "name": "Jo Joseph", "party": "CPI(M)", "votes": 47754, "votePct": 35.28 },
-        { "name": "A. N. Radhakrishnan", "party": "BJP", "votes": 12957, "votePct": 9.57 }
+        {
+          "name": "Uma Thomas",
+          "party": "INC",
+          "votes": 72770,
+          "votePct": 53.76
+        },
+        {
+          "name": "Jo Joseph",
+          "party": "CPI(M)",
+          "votes": 47754,
+          "votePct": 35.28
+        },
+        {
+          "name": "A. N. Radhakrishnan",
+          "party": "BJP",
+          "votes": 12957,
+          "votePct": 9.57
+        }
       ],
       "margin": 25016,
       "marginPct": 18.48,

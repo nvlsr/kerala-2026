@@ -9,10 +9,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Anwar Sadath", "party": "INC", "votes": 64244, "votePct": 50.24 },
-        { "name": "A. M. Youssaf", "party": "CPI(M)", "votes": 51030, "votePct": 39.91 },
-        { "name": "M. N. Gopi", "party": "BJP", "votes": 8264, "votePct": 6.46 },
-        { "name": "Roy Arackal", "party": "SDPI", "votes": 1684, "votePct": 1.32 }
+        {
+          "name": "Anwar Sadath",
+          "party": "INC",
+          "votes": 64244,
+          "votePct": 50.24
+        },
+        {
+          "name": "A. M. Youssaf",
+          "party": "CPI(M)",
+          "votes": 51030,
+          "votePct": 39.91
+        },
+        {
+          "name": "M. N. Gopi",
+          "party": "BJP",
+          "votes": 8264,
+          "votePct": 6.46
+        },
+        {
+          "name": "Roy Arackal",
+          "party": "SDPI",
+          "votes": 1684,
+          "votePct": 1.32
+        }
       ],
       "margin": 13214,
       "marginPct": 10.33,
@@ -25,9 +45,24 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Anwar Sadath", "party": "INC", "votes": 69568, "votePct": 47.30 },
-        { "name": "V. Saleem", "party": "CPI(M)", "votes": 50733, "votePct": 34.56 },
-        { "name": "Latha Gangadharan", "party": "BJP", "votes": 19349, "votePct": 13.18 }
+        {
+          "name": "Anwar Sadath",
+          "party": "INC",
+          "votes": 69568,
+          "votePct": 47.3
+        },
+        {
+          "name": "V. Saleem",
+          "party": "CPI(M)",
+          "votes": 50733,
+          "votePct": 34.56
+        },
+        {
+          "name": "Latha Gangadharan",
+          "party": "BJP",
+          "votes": 19349,
+          "votePct": 13.18
+        }
       ],
       "margin": 18835,
       "marginPct": 12.83,
@@ -40,12 +75,57 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Anwar Sadath", "party": "INC", "votes": 73703, "votePct": null },
-        { "name": "Shelna Nishad", "party": "LDF", "votes": 54817, "votePct": null },
-        { "name": "M. N. Gopi", "party": "BJP", "votes": 15893, "votePct": null }
+        {
+          "name": "Anwar Sadath",
+          "party": "INC",
+          "votes": 73703,
+          "votePct": 49.3
+        },
+        {
+          "name": "Adv. Shelna Nishad",
+          "party": "LDF",
+          "votes": 54817,
+          "votePct": 36.67
+        },
+        {
+          "name": "M. N. Gopi",
+          "party": "BJP",
+          "votes": 15893,
+          "votePct": 10.63
+        },
+        {
+          "name": "V. A. Rasheed",
+          "party": "SDPI",
+          "votes": 2224,
+          "votePct": 1.49
+        },
+        {
+          "name": "K. M. Shefrin",
+          "party": "WPOI",
+          "votes": 1713,
+          "votePct": 1.15
+        },
+        {
+          "name": "K. V. Sarala",
+          "party": "Independent",
+          "votes": 569,
+          "votePct": 0.38
+        },
+        {
+          "name": "Viswakala Thankappan",
+          "party": "Marxist Communist Party of India",
+          "votes": 342,
+          "votePct": 0.23
+        },
+        {
+          "name": "A. G. Ajayan",
+          "party": "SUCI(C)",
+          "votes": 228,
+          "votePct": 0.15
+        }
       ],
       "margin": 18886,
-      "marginPct": null,
+      "marginPct": 12.63,
       "turnout": 149489,
       "turnoutPct": null,
       "result": "INC hold"
