@@ -13,9 +13,19 @@ export type SeatEncoding = {
 
 export type EncodingMode = "alliance" | "magnitude" | "diverging"
 
-const NEUTRAL_HUE = "#64748b" // slate-500: scalar magnitude in result=all
-const POSITIVE_HUE = "#10b981" // emerald-500: gains
-const NEGATIVE_HUE = "#f43f5e" // rose-500: losses
+export type MapData = {
+  mode: EncodingMode
+  sortCol: SortColumn
+  isMagSort: boolean
+  minAbs: number
+  maxAbs: number
+  encodings: Map<number, SeatEncoding>
+  subjects: Map<number, CandidateRow | null>
+}
+
+export const NEUTRAL_HUE = "#64748b" // slate-500: scalar magnitude in result=all
+export const POSITIVE_HUE = "#10b981" // emerald-500: gains
+export const NEGATIVE_HUE = "#f43f5e" // rose-500: losses
 const NO_DATA_FILL = "var(--muted)"
 
 const DIM_FACTOR = 0.2
@@ -43,7 +53,10 @@ export function encodingModeFor(filters: Filters): EncodingMode {
   return "alliance"
 }
 
-function valueForSort(row: CandidateRow, col: SortColumn): number | null {
+export function valueForSort(
+  row: CandidateRow,
+  col: SortColumn
+): number | null {
   switch (col) {
     case "votes":
       return row.votes
@@ -74,10 +87,10 @@ function pickSubjectRow(
   return pool.reduce((best, r) => (r.votes > best.votes ? r : best))
 }
 
-export function computeSeatEncodings(
+export function buildMapData(
   filters: Filters,
   inFilterSet: Set<number>
-): Map<number, SeatEncoding> {
+): MapData {
   const all = buildCandidateRows(null)
   const byNum = new Map<number, CandidateRow[]>()
   for (const r of all) {
@@ -87,9 +100,9 @@ export function computeSeatEncodings(
     else byNum.set(n, [r])
   }
 
-  const subjectByNum = new Map<number, CandidateRow | null>()
+  const subjects = new Map<number, CandidateRow | null>()
   for (const [num, rows] of byNum) {
-    subjectByNum.set(num, pickSubjectRow(rows, filters))
+    subjects.set(num, pickSubjectRow(rows, filters))
   }
 
   const mode = encodingModeFor(filters)
@@ -100,7 +113,7 @@ export function computeSeatEncodings(
   let maxAbs = 0
   if (isMagSort) {
     const visibleAbs: number[] = []
-    for (const [num, subj] of subjectByNum) {
+    for (const [num, subj] of subjects) {
       if (!inFilterSet.has(num) || !subj) continue
       const v = valueForSort(subj, sortCol)
       if (v != null) visibleAbs.push(Math.abs(v))
@@ -111,21 +124,31 @@ export function computeSeatEncodings(
     }
   }
 
-  const out = new Map<number, SeatEncoding>()
-  for (const [num, subj] of subjectByNum) {
-    out.set(num, encodeSeat(subj, mode, sortCol, isMagSort, minAbs, maxAbs))
+  const encodings = new Map<number, SeatEncoding>()
+  for (const [num, subj] of subjects) {
+    encodings.set(
+      num,
+      encodeSeat(subj, mode, sortCol, isMagSort, minAbs, maxAbs)
+    )
   }
 
-  for (const [num, enc] of out) {
+  for (const [num, enc] of encodings) {
     if (!inFilterSet.has(num)) {
-      out.set(num, {
+      encodings.set(num, {
         color: enc.color,
         opacity: Math.max(DIM_FLOOR, enc.opacity * DIM_FACTOR),
       })
     }
   }
 
-  return out
+  return { mode, sortCol, isMagSort, minAbs, maxAbs, encodings, subjects }
+}
+
+export function computeSeatEncodings(
+  filters: Filters,
+  inFilterSet: Set<number>
+): Map<number, SeatEncoding> {
+  return buildMapData(filters, inFilterSet).encodings
 }
 
 function encodeSeat(

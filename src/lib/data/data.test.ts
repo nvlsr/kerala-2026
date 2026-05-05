@@ -20,6 +20,7 @@ import {
   type Filters,
 } from "@/lib/filters"
 import {
+  buildMapData,
   computeSeatEncodings,
   encodingModeFor,
 } from "@/lib/seat-encoding"
@@ -424,6 +425,39 @@ describe("encodingModeFor / computeSeatEncodings", () => {
       .map(([, e]) => e.opacity)
       .filter((o) => o > 0.2) // skip dimmed/no-data
     expect(new Set(inSetOpacities).size).toBeGreaterThan(1)
+  })
+
+  test("buildMapData subjects: winners mode picks the winner", () => {
+    const { subjects } = buildMapData(initialFilters, ALL_SEATS)
+    const aluva = subjects.get(76)!
+    expect(aluva).not.toBeNull()
+    expect(aluva!.isWinner).toBe(true)
+  })
+
+  test("buildMapData subjects: losers mode picks the top runner-up", () => {
+    const f: Filters = { ...initialFilters, result: "losers" }
+    const { subjects } = buildMapData(f, ALL_SEATS)
+    const aluva = subjects.get(76)!
+    expect(aluva).not.toBeNull()
+    expect(aluva!.isWinner).toBe(false)
+    expect(aluva!.rank).toBe(2)
+  })
+
+  test("buildMapData subjects: party filter picks that party's row (or null if absent)", () => {
+    const f: Filters = {
+      ...initialFilters,
+      result: "all",
+      party: "Bharatiya Janata Party",
+    }
+    const { subjects } = buildMapData(f, ALL_SEATS)
+    let bjpFound = 0
+    let nullCount = 0
+    for (const [, s] of subjects) {
+      if (s == null) nullCount++
+      else if (s.party === "Bharatiya Janata Party") bjpFound++
+    }
+    expect(bjpFound).toBeGreaterThan(0)
+    expect(bjpFound + nullCount).toBe(140)
   })
 
   test("losers + sort=margin: top runner-up with biggest |margin| is darkest", () => {
