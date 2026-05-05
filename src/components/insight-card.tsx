@@ -1,5 +1,6 @@
 import { useMemo, type ReactNode } from "react"
 import { Link } from "react-router-dom"
+import { IconArrowUpRight } from "@tabler/icons-react"
 
 import { DeltaPercent } from "@/components/delta-percent"
 import { MiniACMap } from "@/components/mini-ac-map"
@@ -64,22 +65,26 @@ export function InsightCard({ insight }: Props) {
   const dashboardUrl = `/?${serializeFilters(filters).toString()}`
 
   return (
-    <article className="rounded-lg border bg-card/50 p-6">
+    <article className="rounded-lg border bg-card/50 p-6 transition hover:border-foreground/40">
       <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
         <div className="flex flex-col lg:col-span-2">
           <h2 className="text-base leading-snug font-semibold sm:text-lg">
-            {insight.question}
+            <Link
+              to={dashboardUrl}
+              className="group inline-flex items-baseline gap-2 hover:text-foreground/80"
+              aria-label={`${insight.question} — open in dashboard`}
+            >
+              <span className="underline-offset-4 group-hover:underline">
+                {insight.question}
+              </span>
+              <IconArrowUpRight
+                aria-hidden
+                className="h-4 w-4 shrink-0 self-center text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground"
+              />
+            </Link>
           </h2>
           <div className="mt-5">
             <TopRowsTable rows={topRows} sortColumn={filters.sort.column} />
-          </div>
-          <div className="mt-5 flex justify-start pt-1 lg:mt-auto">
-            <Link
-              to={dashboardUrl}
-              className="inline-flex items-center gap-1 rounded-full border bg-muted/40 px-3 py-1 text-xs font-medium hover:bg-foreground/10"
-            >
-              Open in dashboard →
-            </Link>
           </div>
         </div>
         <div className="flex items-center justify-center">
