@@ -65,14 +65,24 @@ export function InsightCard({ insight }: Props) {
 
   return (
     <article className="rounded-lg border bg-card/50 p-6">
-      <h2 className="text-base leading-snug font-semibold sm:text-lg">
-        {insight.question}
-      </h2>
-      <div className="mt-5 grid grid-cols-1 items-start gap-6 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <TopRowsTable rows={topRows} sortColumn={filters.sort.column} />
+      <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
+        <div className="flex flex-col lg:col-span-2">
+          <h2 className="text-base leading-snug font-semibold sm:text-lg">
+            {insight.question}
+          </h2>
+          <div className="mt-5">
+            <TopRowsTable rows={topRows} sortColumn={filters.sort.column} />
+          </div>
+          <div className="mt-5 flex justify-end pt-1 lg:mt-auto">
+            <Link
+              to={dashboardUrl}
+              className="inline-flex items-center gap-1 rounded-full border bg-muted/40 px-3 py-1 text-xs font-medium hover:bg-foreground/10"
+            >
+              Open in dashboard →
+            </Link>
+          </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex items-center justify-center">
           <div className="w-full max-w-[260px]">
             <MiniACMap
               filters={filters}
@@ -82,14 +92,6 @@ export function InsightCard({ insight }: Props) {
             />
           </div>
         </div>
-      </div>
-      <div className="mt-5 flex justify-end">
-        <Link
-          to={dashboardUrl}
-          className="inline-flex items-center gap-1 rounded-full border bg-muted/40 px-3 py-1 text-xs font-medium hover:bg-foreground/10"
-        >
-          Open in dashboard →
-        </Link>
       </div>
     </article>
   )
