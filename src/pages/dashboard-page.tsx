@@ -7,6 +7,7 @@ import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
 import { ConstituencyMap } from "@/components/constituency-map"
 import { ConstituencySection } from "@/components/constituency-section"
+import { InsightsTeaser } from "@/components/insights-teaser"
 import { SiteFooter } from "@/components/site-footer"
 import { constituencies } from "@/lib/data"
 import {
@@ -96,6 +97,7 @@ export function DashboardPage() {
           constituency={selectedConstituency}
         />
       )}
+      {hasActiveFilters(filters) && <InsightsTeaser />}
       <SiteFooter />
     </div>
   )
