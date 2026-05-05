@@ -90,7 +90,14 @@ function Breadcrumb({
       className="sticky top-0 z-40 border-y bg-background/85 supports-backdrop-filter:backdrop-blur"
     >
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-1.5 px-6 py-2 text-xs">
-        <span className="font-medium text-foreground/80">Kerala</span>
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Scroll to top"
+          className="rounded font-medium text-foreground/80 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+        >
+          Kerala
+        </button>
         {crumbs.map((c) => (
           <span key={c.label} className="flex items-center gap-1.5">
             <IconChevronRight
