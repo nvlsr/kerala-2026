@@ -73,7 +73,7 @@ export function InsightCard({ insight }: Props) {
           <div className="mt-5">
             <TopRowsTable rows={topRows} sortColumn={filters.sort.column} />
           </div>
-          <div className="mt-5 flex justify-end pt-1 lg:mt-auto">
+          <div className="mt-5 flex justify-start pt-1 lg:mt-auto">
             <Link
               to={dashboardUrl}
               className="inline-flex items-center gap-1 rounded-full border bg-muted/40 px-3 py-1 text-xs font-medium hover:bg-foreground/10"
