@@ -37,6 +37,15 @@ import type {
 
 const PAGE_SIZE = 10
 
+function matchesQuery(r: CandidateRow, q: string): boolean {
+  return (
+    r.constituencyName.toLowerCase().includes(q) ||
+    r.candidate.name.toLowerCase().includes(q) ||
+    r.party.toLowerCase().includes(q) ||
+    r.partyShort.toLowerCase().includes(q)
+  )
+}
+
 type Props = {
   filters: Filters
   dispatch: Dispatch<FilterAction>
@@ -59,14 +68,36 @@ export function CandidateTable({ filters, dispatch }: Props) {
       if (alliance && r.allianceCode !== alliance) return false
       if (party && r.party !== party) return false
       if (!q) return true
-      return (
-        r.constituencyName.toLowerCase().includes(q) ||
-        r.candidate.name.toLowerCase().includes(q) ||
-        r.party.toLowerCase().includes(q) ||
-        r.partyShort.toLowerCase().includes(q)
-      )
+      return matchesQuery(r, q)
     })
   }, [allRows, query, result, alliance, party])
+
+  const searchCounts = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    if (!q) return null
+    let winners = 0
+    let losers = 0
+    for (const r of allRows) {
+      if (alliance && r.allianceCode !== alliance) continue
+      if (party && r.party !== party) continue
+      if (!matchesQuery(r, q)) continue
+      if (r.isWinner) winners++
+      else losers++
+    }
+    return { winners, losers, total: winners + losers }
+  }, [allRows, query, alliance, party])
+
+  const currentMatchCount = !searchCounts
+    ? null
+    : result === "winners"
+      ? searchCounts.winners
+      : result === "losers"
+        ? searchCounts.losers
+        : searchCounts.total
+  const hiddenMatchCount =
+    searchCounts && currentMatchCount != null && result !== "all"
+      ? searchCounts.total - currentMatchCount
+      : 0
 
   const sorted = useMemo(
     () => sortCandidateRows(filtered, sortColumn, sortDir),
@@ -135,11 +166,52 @@ export function CandidateTable({ filters, dispatch }: Props) {
     >
       <InsightsChips dispatch={dispatch} />
       {sorted.length === 0 ? (
-        <div className="rounded-lg border border-dashed py-16 text-center text-sm text-muted-foreground">
-          No candidates match your filters.
-        </div>
+        searchCounts && searchCounts.total > 0 && result !== "all" ? (
+          <div className="rounded-lg border border-dashed px-4 py-12 text-center text-sm text-muted-foreground">
+            <div className="mb-3">
+              No {result} match{" "}
+              <span className="font-medium text-foreground">
+                "{query.trim()}"
+              </span>
+              .
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                dispatch({ type: "set-result", result: "all" })
+                setPage(1)
+              }}
+              className="rounded-full border bg-background px-3 py-1 font-medium text-foreground hover:bg-foreground/5"
+            >
+              Show {searchCounts.total} match
+              {searchCounts.total === 1 ? "" : "es"} across all candidates
+            </button>
+          </div>
+        ) : (
+          <div className="rounded-lg border border-dashed py-16 text-center text-sm text-muted-foreground">
+            No candidates match your filters.
+          </div>
+        )
       ) : (
         <>
+          {hiddenMatchCount > 0 && (
+            <div className="mb-2 flex flex-wrap items-center gap-2 rounded-md border bg-muted/40 px-3 py-1.5 text-xs text-muted-foreground">
+              <span>
+                {hiddenMatchCount} more {result === "winners" ? "loser" : "winner"}
+                {hiddenMatchCount === 1 ? "" : "s"} match this search.
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  dispatch({ type: "set-result", result: "all" })
+                  setPage(1)
+                }}
+                className="rounded-full border bg-background px-2 py-0.5 font-medium text-foreground hover:bg-foreground/5"
+              >
+                Show all {searchCounts!.total}
+              </button>
+            </div>
+          )}
           <div className="overflow-hidden rounded-lg border">
             <table className="w-full text-sm">
               <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
