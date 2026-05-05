@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+import { useMemo, type ReactNode } from "react"
 import { Link } from "react-router-dom"
 
 import { DeltaPercent } from "@/components/delta-percent"
@@ -97,6 +97,100 @@ export function InsightCard({ insight }: Props) {
   )
 }
 
+type ValueColumn = {
+  key: string
+  label: string
+  /** True if this is the column that drives the sort — shows the highlight. */
+  isSort: boolean
+  render: (r: CandidateRow) => ReactNode
+}
+
+function formatSignedPercent(pct: number): string {
+  return `${pct >= 0 ? "+" : ""}${formatPercent(pct / 100, 1)}`
+}
+
+/**
+ * Pick the value columns that match the question this card answers. A
+ * share-driven sort (gains/declines) gets the share-history columns; a
+ * margin-driven sort (closest contests, gap-closers) gets the margin-history
+ * columns. Other sorts fall back to a generic share + margin pair.
+ */
+function pickValueColumns(sortColumn: SortColumn): ValueColumn[] {
+  const isShareSort = sortColumn === "share" || sortColumn === "shareDelta"
+  const isMarginSort = sortColumn === "margin" || sortColumn === "marginDelta"
+
+  if (isShareSort) {
+    return [
+      {
+        key: "share-2021",
+        label: "'21 share",
+        isSort: false,
+        render: (r) =>
+          r.shareDelta2021 == null ? (
+            <span className="text-muted-foreground/60">—</span>
+          ) : (
+            formatPercent((r.share - r.shareDelta2021) / 100, 1)
+          ),
+      },
+      {
+        key: "share-2026",
+        label: "'26 share",
+        isSort: sortColumn === "share",
+        render: (r) => formatPercent(r.share / 100, 1),
+      },
+      {
+        key: "share-delta",
+        label: "Δ share",
+        isSort: sortColumn === "shareDelta",
+        render: (r) => <DeltaPercent value={r.shareDelta2021} />,
+      },
+    ]
+  }
+
+  if (isMarginSort) {
+    return [
+      {
+        key: "margin-2021",
+        label: "'21 margin",
+        isSort: false,
+        render: (r) =>
+          r.marginDelta2021 == null ? (
+            <span className="text-muted-foreground/60">—</span>
+          ) : (
+            formatSignedPercent(r.marginPct - r.marginDelta2021)
+          ),
+      },
+      {
+        key: "margin-2026",
+        label: "'26 margin",
+        isSort: sortColumn === "margin",
+        render: (r) => formatSignedPercent(r.marginPct),
+      },
+      {
+        key: "margin-delta",
+        label: "Δ margin",
+        isSort: sortColumn === "marginDelta",
+        render: (r) => <DeltaPercent value={r.marginDelta2021} />,
+      },
+    ]
+  }
+
+  return [
+    {
+      key: "share-2026",
+      label: "Share",
+      isSort: false,
+      render: (r) => formatPercent(r.share / 100, 1),
+    },
+    {
+      key: "margin-2026",
+      label: "Margin",
+      isSort: false,
+      render: (r) => formatSignedPercent(r.marginPct),
+    },
+  ]
+}
+
 function TopRowsTable({
   rows,
   sortColumn,
@@ -105,45 +199,25 @@ function TopRowsTable({
   sortColumn: SortColumn
 }) {
   if (rows.length === 0) {
-    return (
-      <p className="text-sm text-muted-foreground">No matching seats.</p>
-    )
+    return <p className="text-sm text-muted-foreground">No matching seats.</p>
   }
   const cellPad = "px-2 py-1.5"
   const sortHi = "border-l-2 border-foreground/60"
+  const valueColumns = pickValueColumns(sortColumn)
   return (
     <div className="overflow-x-auto">
       <table className="w-full text-sm tabular-nums">
         <thead>
           <tr className="text-left text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
             <th className={cellPad}>Seat</th>
-            <th
-              className={cn(
-                cellPad,
-                "text-right",
-                sortColumn === "share" && sortHi
-              )}
-            >
-              Share
-            </th>
-            <th
-              className={cn(
-                cellPad,
-                "text-right",
-                sortColumn === "shareDelta" && sortHi
-              )}
-            >
-              Δ '21
-            </th>
-            <th
-              className={cn(
-                cellPad,
-                "text-right",
-                sortColumn === "margin" && sortHi
-              )}
-            >
-              Margin
-            </th>
+            {valueColumns.map((col) => (
+              <th
+                key={col.key}
+                className={cn(cellPad, "text-right", col.isSort && sortHi)}
+              >
+                {col.label}
+              </th>
+            ))}
           </tr>
         </thead>
         <tbody>
@@ -155,35 +229,14 @@ function TopRowsTable({
                   {r.partyShort} · {r.candidateDisplay}
                 </div>
               </td>
-              <td
-                className={cn(
-                  cellPad,
-                  "text-right",
-                  sortColumn === "share" && sortHi
-                )}
-              >
-                {formatPercent(r.share / 100, 1)}
-              </td>
-              <td
-                className={cn(
-                  cellPad,
-                  "text-right",
-                  sortColumn === "shareDelta" && sortHi
-                )}
-              >
-                <DeltaPercent value={r.shareDelta2021} />
-              </td>
-              <td
-                className={cn(
-                  cellPad,
-                  "text-right",
-                  sortColumn === "margin" && sortHi,
-                  r.isWinner ? "" : "text-muted-foreground"
-                )}
-              >
-                {r.marginPct >= 0 ? "+" : ""}
-                {formatPercent(r.marginPct / 100, 1)}
-              </td>
+              {valueColumns.map((col) => (
+                <td
+                  key={col.key}
+                  className={cn(cellPad, "text-right", col.isSort && sortHi)}
+                >
+                  {col.render(r)}
+                </td>
+              ))}
             </tr>
           ))}
         </tbody>
