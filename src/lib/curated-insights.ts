@@ -63,7 +63,7 @@ export const curatedInsights: CuratedInsight[] = [
   },
   {
     id: "iuml-declines",
-    question: "Where did IUML lose the most vote share, 2021 → 2026?",
+    question: "Did IUML lose vote share in any seats?",
     filters: {
       party: "Indian Union Muslim League",
       result: "all",
@@ -72,7 +72,7 @@ export const curatedInsights: CuratedInsight[] = [
   },
   {
     id: "cpim-gains",
-    question: "Where did CPI(M) gain the most vote share, 2021 → 2026?",
+    question: "Did CPI(M) gain vote share in any seats?",
     filters: {
       party: "Communist Party of India (Marxist)",
       result: "all",

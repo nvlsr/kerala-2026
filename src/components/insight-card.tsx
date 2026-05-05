@@ -36,6 +36,29 @@ function applyFilters(rows: CandidateRow[], filters: Filters): CandidateRow[] {
   })
 }
 
+/**
+ * For delta-sorted cards, only rows whose delta sign matches the sort direction
+ * count as answers to the question. A "biggest gainers" view (delta desc) that
+ * fills with rows of slightly negative delta tells a different story than the
+ * card promises. Returns null when no sign filter applies.
+ */
+function pickSignFilter(
+  filters: Filters
+): ((r: CandidateRow) => boolean) | null {
+  const { column, dir } = filters.sort
+  if (column === "shareDelta") {
+    return (r) =>
+      r.shareDelta2021 != null &&
+      (dir === "desc" ? r.shareDelta2021 > 0 : r.shareDelta2021 < 0)
+  }
+  if (column === "marginDelta") {
+    return (r) =>
+      r.marginDelta2021 != null &&
+      (dir === "desc" ? r.marginDelta2021 > 0 : r.marginDelta2021 < 0)
+  }
+  return null
+}
+
 type Props = {
   insight: CuratedInsight
 }
@@ -49,9 +72,11 @@ export function InsightCard({ insight }: Props) {
 
   const topRows = useMemo(() => {
     const all = buildCandidateRows(null)
-    const filtered = applyFilters(all, filters)
+    let rows = applyFilters(all, filters)
+    const signFilter = pickSignFilter(filters)
+    if (signFilter) rows = rows.filter(signFilter)
     return sortCandidateRows(
-      filtered,
+      rows,
       filters.sort.column,
       filters.sort.dir
     ).slice(0, TOP_N)
