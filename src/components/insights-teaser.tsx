@@ -21,15 +21,20 @@ export function InsightsTeaser() {
             Since you're already digging in, you might enjoy the curated
             questions we've put together — each with a top-5 table, a focused
             constituency map, and a one-click path back to the full dashboard.
-            Free, open source, no signup.
+            Free, open source, no signup.{" "}
+            <Link
+              to="/insights"
+              className="group font-medium text-foreground underline-offset-2 hover:underline"
+            >
+              <span className="inline-flex items-center gap-0.5">
+                See the curated set
+                <IconArrowUpRight
+                  aria-hidden
+                  className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                />
+              </span>
+            </Link>
           </p>
-          <Link
-            to="/insights"
-            className="mt-4 inline-flex items-center gap-1.5 rounded-full border bg-muted/40 px-3 py-1.5 text-xs font-medium hover:bg-foreground/10"
-          >
-            See the curated set
-            <IconArrowUpRight className="h-3.5 w-3.5" aria-hidden />
-          </Link>
         </article>
       </div>
     </section>
