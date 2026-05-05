@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Source shapefile vendor dir for map extraction (re-clone from
+# https://github.com/datameet/maps when re-running scripts/extract-kerala-map.py)
+data/maps-master/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

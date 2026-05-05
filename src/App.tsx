@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { ScopeTitle } from "@/components/scope-title"
-import { DistrictStrip } from "@/components/district-strip"
+import { KeralaMap } from "@/components/kerala-map"
 import { AllianceSection } from "@/components/alliance-section"
 import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
@@ -32,7 +32,7 @@ export function App() {
     <TooltipProvider delay={200}>
       <div className="min-h-svh bg-background text-foreground">
         <ScopeTitle scope={scope} />
-        <DistrictStrip scope={scope} onSelect={setScope} />
+        <KeralaMap scope={scope} onSelect={setScope} />
         <AllianceSection
           scope={scope}
           selectedAlliance={selectedAlliance}

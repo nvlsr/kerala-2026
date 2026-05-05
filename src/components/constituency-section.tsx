@@ -281,11 +281,7 @@ function RosterRow({
       </span>
       <span className="w-16 shrink-0 text-right text-muted-foreground tabular-nums">
         {margin >= 0 ? "+" : ""}
-        {formatNumber(margin)}
-        <span className="ml-0.5 text-[10px]">
-          ({marginPct >= 0 ? "+" : ""}
-          {formatPercent(marginPct / 100, 0)})
-        </span>
+        {formatPercent(marginPct / 100, 1)}
       </span>
     </li>
   )
