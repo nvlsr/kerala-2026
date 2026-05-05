@@ -138,20 +138,73 @@ The only sustained UDF→LDF drifts in the dataset.
 
 All three intuitions hold under defensible thresholds.
 
-## Implementation status
+## Implementation plan
 
-- ✅ **Script**: `scripts/detect-flows.ts`. Run via `bun run scripts/detect-flows.ts`. Outputs grouped by pattern, sorted by magnitude.
-- ☐ **UI surface**: not yet decided. The flows analysis doesn't fit `/insights`'s top-5-table-per-card format because it's a *seat-level cross-alliance shift* rather than a candidate ranking. Likely needs a new page `/flows` (or similar) with election-style flow visualisations (Sankey diagrams for state-level aggregate flow, per-seat trajectory plots, choropleth coloured by flow pattern). See discussion below.
+### Where this lives
 
-## Discussion: where this should live
+A new dedicated page `/flows`. The `/insights` cards rank candidate-rows in a fixed shape; flow analysis ranks **seat-level cross-alliance shifts** — different unit, different question, needs different visualisations (Sankey, alluvial, choropleth, trajectory). Forcing it into the cards grid would lose what makes the analysis legible.
 
-`/insights` cards rank candidate-rows in a fixed shape. Flow analysis is structurally different:
+Discoverability: link from `/insights` (the engaged-reader pipeline) so flows surfaces only to people who'd appreciate it.
 
-- **Unit**: seat (with three alliance values), not candidate-row.
-- **Comparison**: across alliances within a seat, OR same alliance across cycles.
-- **Best visualisations** (per standard election analytics): Sankey, alluvial, multi-cycle trajectory, flow-coloured choropleth — none of which are top-5 tables.
+### Approach: UI first, real data from day one
 
-Recommendation: a new dedicated page (`/flows` or similar) with multiple complementary visualisations. Discoverable from `/insights` via a "See also" link. This avoids contorting the curated-card format and gives the analysis the visual real estate it deserves.
+Iterate the *visual narrative* before perfecting plumbing. But the script's logic is already validated, so it's cheaper to port than to mock — Stage 1 ports the classification helpers to the data layer and uses real numbers from the start. No mock-data interim.
+
+### Stages
+
+**Stage 1 — Foundation page** *(~3 hours)*
+
+The bare-bones surface that delivers the analysis without fancy visuals:
+
+- Port `scripts/detect-flows.ts` logic to `src/lib/data/flows.ts`. Exports:
+  - `classifySingleCycleFlow(constituency, year2021Shares, year2026Shares): FlowResult | null`
+  - `classifyMultiCycleDrift(constituency, ...4cycles): Drift | null`
+  - `getAllFlows(): { single: SeatFlow[]; drifts: Drift[] }` (memoised; reads from existing data-layer historical + 2026 inputs)
+- New route `/flows` and `src/pages/flows-page.tsx`.
+- Page structure:
+  1. Header with title, brief intro, prominent inference-caveat banner.
+  2. **Single-cycle 2021→2026 patterns** — one `<FlowPatternSection>` per detected pattern (LDF→UDF, LDF→NDA, etc.), each with: pattern label + count, focused `MiniACMap` of the seats, compact table (seat | ΔUDF | ΔLDF | ΔNDA).
+  3. **Multi-cycle drifts** — same shape, with cycle-by-cycle deltas inline.
+  4. Methodology footer (collapsible) linking back to this doc.
+- Add `/flows` link to `/insights` page header ("See also: Vote flows →").
+- Catch-all redirect already in place from earlier router work.
+
+**Stage 2 — State-level Sankey** *(~2-3 hours)*
+
+A hero visualisation at the top of `/flows` showing 2021 → 2026 aggregate alliance share movement across all 140 seats. Three nodes left (UDF / LDF / NDA share in 2021), three right (same for 2026), weighted ribbons between. Reads in five seconds.
+
+Build custom SVG (geometry is simple — six nodes, nine candidate ribbons). Avoids dependency. Falls back to `d3-sankey` if the layout calculation gets fiddly.
+
+**Stage 3 — Multi-cycle trajectory charts** *(~2-3 hours)*
+
+Per-seat mini line charts (cycles on x, vote share on y, three lines) for the most striking sustained-drift seats — Attingal, Chathannoor, etc. Could embed inline in the multi-cycle section as a row of small-multiples, or use an alluvial layout for one or two showcase seats.
+
+Reuses Recharts (already a dep) for the line charts.
+
+**Stage 4 — Optional: flow-mode on the dashboard AC map** *(~2 hours)*
+
+A new encoding mode in `seat-encoding.ts` that colours dashboard ACs by detected flow pattern (saffron-on-red gradient for LDF→NDA, blue-on-red for LDF→UDF, etc.). Surfaces flows where users are already looking. Optional polish — defer until Stages 1-3 are settled.
+
+### File map (Stage 1)
+
+- `src/lib/data/flows.ts` — classification logic ported from script.
+- `src/pages/flows-page.tsx` — top-level page.
+- `src/components/flow-pattern-section.tsx` — section per pattern (heading + map + compact table).
+- `src/App.tsx` — add `/flows` route.
+- `src/pages/insights-page.tsx` — add "See also" link in header.
+- (later) `data/flows-precomputed.json` — only if we hit perf or we want the analysis frozen at a point in time. Probably not needed at 140-seat scale.
+
+### Decisions still open
+
+1. **Page name**. `/flows` is shortest and unambiguous. Alternative: `/shifts` (less specific). Going with `/flows`.
+2. **Sankey library vs custom**. Custom SVG first. Switch to `d3-sankey` only if layout gets messy.
+3. **Single-cycle vs multi-cycle priority on the page**. Single-cycle leads (more familiar; concrete 2021→2026 question), drifts below as the "and over time" deepening.
+4. **Caveat placement**. Lean toward an inline banner at the top of the page (non-dismissible, prominent) plus the collapsed methodology footer. The "we infer, not observe" caveat is THE most important framing on this page; it shouldn't be hidden.
+
+### Cross-doc references
+
+- The findings themselves: see "Findings" sections above.
+- The implementation status update queue: `docs/questions-and-answers.md`'s queue should reference `/flows` once Stage 1 ships, so future card-additions on `/insights` don't accidentally try to absorb the flow analysis.
 
 ## Re-running
 
