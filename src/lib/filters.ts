@@ -49,6 +49,7 @@ export type FilterAction =
   | { type: "clear-alliance" }
   | { type: "clear-party" }
   | { type: "clear-seat" }
+  | { type: "reset" }
   /** Apply a curated combo (Insights chips) — overwrites multiple slots at once. */
   | { type: "apply-preset"; preset: Partial<Filters> }
 
@@ -83,9 +84,15 @@ export function filtersReducer(state: Filters, action: FilterAction): Filters {
       return { ...state, party: null }
     case "clear-seat":
       return { ...state, seat: null }
+    case "reset":
+      return initialFilters
     case "apply-preset":
       return { ...state, ...action.preset }
   }
+}
+
+export function hasActiveFilters(filters: Filters): boolean {
+  return serializeFilters(filters).toString() !== ""
 }
 
 /**

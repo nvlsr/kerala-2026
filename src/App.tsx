@@ -12,6 +12,7 @@ import { constituencies } from "@/lib/data"
 import {
   filtersReducer,
   getFilteredConstituencyNumbers,
+  hasActiveFilters,
   initialFilters,
   parseFilters,
   serializeFilters,
@@ -57,10 +58,12 @@ export function App() {
           selectedAlliance={filters.alliance}
           selectedParty={filters.party}
           selectedSeat={filters.seat}
+          canReset={hasActiveFilters(filters)}
           onClearScope={() => dispatch({ type: "clear-district" })}
           onClearAlliance={() => dispatch({ type: "clear-alliance" })}
           onClearParty={() => dispatch({ type: "clear-party" })}
           onClearSeat={() => dispatch({ type: "clear-seat" })}
+          onReset={() => dispatch({ type: "reset" })}
         />
         <KeralaMap
           scope={filters.district}

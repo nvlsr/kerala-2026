@@ -13,6 +13,11 @@ import {
 } from "./aggregates"
 import { buildCandidateRows } from "./candidate-rows"
 import { sortCandidateRows } from "@/lib/candidate-sort"
+import {
+  filtersReducer,
+  hasActiveFilters,
+  initialFilters,
+} from "@/lib/filters"
 
 const ALUVA = constituencies.find((c) => c.constituencyNumber === 76)!
 
@@ -323,5 +328,36 @@ describe("sortCandidateRows", () => {
     const before = subset.map((r) => r.candidate.name)
     sortCandidateRows(subset, "votes", "asc")
     expect(subset.map((r) => r.candidate.name)).toEqual(before)
+  })
+})
+
+describe("filtersReducer reset + hasActiveFilters", () => {
+  test("hasActiveFilters is false for initialFilters", () => {
+    expect(hasActiveFilters(initialFilters)).toBe(false)
+  })
+
+  test("hasActiveFilters is true once any URL-synced field diverges", () => {
+    const withDistrict = filtersReducer(initialFilters, {
+      type: "set-district",
+      district: "wayanad",
+    })
+    expect(hasActiveFilters(withDistrict)).toBe(true)
+
+    const withResult = filtersReducer(initialFilters, {
+      type: "set-result",
+      result: "all",
+    })
+    expect(hasActiveFilters(withResult)).toBe(true)
+  })
+
+  test("reset returns initialFilters from any state", () => {
+    let state = filtersReducer(initialFilters, {
+      type: "apply-preset",
+      preset: { district: "wayanad", alliance: "LDF", result: "all" },
+    })
+    expect(hasActiveFilters(state)).toBe(true)
+    state = filtersReducer(state, { type: "reset" })
+    expect(state).toEqual(initialFilters)
+    expect(hasActiveFilters(state)).toBe(false)
   })
 })

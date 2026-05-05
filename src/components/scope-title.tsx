@@ -14,10 +14,12 @@ type Props = {
   selectedAlliance: AllianceCode | null
   selectedParty: string | null
   selectedSeat: number | null
+  canReset: boolean
   onClearScope: () => void
   onClearAlliance: () => void
   onClearParty: () => void
   onClearSeat: () => void
+  onReset: () => void
 }
 
 type Crumb = { label: string; onClear: () => void }
@@ -27,10 +29,12 @@ export function ScopeTitle({
   selectedAlliance,
   selectedParty,
   selectedSeat,
+  canReset,
   onClearScope,
   onClearAlliance,
   onClearParty,
   onClearSeat,
+  onReset,
 }: Props) {
   const district = scope ? getDistrict(scope) : null
   const constituency =
@@ -66,12 +70,20 @@ export function ScopeTitle({
           <ThemeToggle />
         </div>
       </header>
-      <Breadcrumb crumbs={crumbs} />
+      <Breadcrumb crumbs={crumbs} canReset={canReset} onReset={onReset} />
     </>
   )
 }
 
-function Breadcrumb({ crumbs }: { crumbs: Crumb[] }) {
+function Breadcrumb({
+  crumbs,
+  canReset,
+  onReset,
+}: {
+  crumbs: Crumb[]
+  canReset: boolean
+  onReset: () => void
+}) {
   return (
     <nav
       aria-label="Active filters"
@@ -98,6 +110,15 @@ function Breadcrumb({ crumbs }: { crumbs: Crumb[] }) {
             </span>
           </span>
         ))}
+        {canReset && (
+          <button
+            type="button"
+            onClick={onReset}
+            className="ml-auto rounded-full px-2 py-0.5 font-medium text-muted-foreground hover:bg-foreground/10 hover:text-foreground"
+          >
+            Clear all
+          </button>
+        )}
       </div>
     </nav>
   )
