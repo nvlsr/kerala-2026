@@ -9,11 +9,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. Mammutty", "party": "IUML", "votes": 69305, "votePct": 54.85 },
-        { "name": "P. P. Abdullakutty", "party": "CPI(M)", "votes": 45739, "votePct": 36.20 },
-        { "name": "P. T. Ali Haji", "party": "BJP", "votes": 5543, "votePct": 4.39 },
-        { "name": "A. K. Majeed Master", "party": "SDPI", "votes": 2696, "votePct": 2.13 },
-        { "name": "Alikutty Bappu Puthanathani", "party": "PDP", "votes": 1802, "votePct": 1.43 }
+        {
+          "name": "C. Mammutty",
+          "party": "IUML",
+          "votes": 69305,
+          "votePct": 54.85
+        },
+        {
+          "name": "P. P. Abdullakutty",
+          "party": "CPI(M)",
+          "votes": 45739,
+          "votePct": 36.2
+        },
+        {
+          "name": "P. T. Ali Haji",
+          "party": "BJP",
+          "votes": 5543,
+          "votePct": 4.39
+        },
+        {
+          "name": "A. K. Majeed Master",
+          "party": "SDPI",
+          "votes": 2696,
+          "votePct": 2.13
+        },
+        {
+          "name": "Alikutty Bappu Puthanathani",
+          "party": "PDP",
+          "votes": 1802,
+          "votePct": 1.43
+        }
       ],
       "margin": 23566,
       "marginPct": 18.65,
@@ -26,11 +51,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. Mammutty", "party": "IUML", "votes": 73432, "votePct": 46.85 },
-        { "name": "Gafoor P. Lillis", "party": "LDF", "votes": 66371, "votePct": 42.34 },
-        { "name": "M. K. Devidasan", "party": "BJP", "votes": 9083, "votePct": 5.79 },
-        { "name": "Ganesh Vaderi", "party": "WPOI", "votes": 2001, "votePct": 1.28 },
-        { "name": "Ibrahim Tirur", "party": "SDPI", "votes": 1828, "votePct": 1.17 }
+        {
+          "name": "C. Mammutty",
+          "party": "IUML",
+          "votes": 73432,
+          "votePct": 46.85
+        },
+        {
+          "name": "Gafoor P. Lillis",
+          "party": "Independent (LDF)",
+          "votes": 66371,
+          "votePct": 42.34
+        },
+        {
+          "name": "M. K. Devidasan",
+          "party": "BJP",
+          "votes": 9083,
+          "votePct": 5.79
+        },
+        {
+          "name": "Ganesh Vaderi",
+          "party": "WPOI",
+          "votes": 2001,
+          "votePct": 1.28
+        },
+        {
+          "name": "Ibrahim Tirur",
+          "party": "SDPI",
+          "votes": 1828,
+          "votePct": 1.17
+        }
       ],
       "margin": 7061,
       "marginPct": 4.51,
@@ -43,11 +93,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Kurukkoli Moideen", "party": "IUML", "votes": 82314, "votePct": 48.21 },
-        { "name": "Gafoor P. Lillis", "party": "LDF", "votes": 75100, "votePct": 43.98 },
-        { "name": "Abdul Salam", "party": "BJP", "votes": 9097, "votePct": 5.33 },
-        { "name": "Ashraf", "party": "SDPI", "votes": 2712, "votePct": 1.90 },
-        { "name": "NOTA", "party": "NOTA", "votes": 417, "votePct": 0.24 }
+        {
+          "name": "Kurukkoli Moideen",
+          "party": "IUML",
+          "votes": 82314,
+          "votePct": 48.21
+        },
+        {
+          "name": "Gafoor P. Lillis",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 75100,
+          "votePct": 43.98
+        },
+        {
+          "name": "Abdul Salam",
+          "party": "BJP",
+          "votes": 9097,
+          "votePct": 5.33
+        },
+        {
+          "name": "Ashraf",
+          "party": "SDPI",
+          "votes": 2712,
+          "votePct": 1.9
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 417,
+          "votePct": 0.24
+        }
       ],
       "margin": 7214,
       "marginPct": 4.93,

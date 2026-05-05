@@ -9,11 +9,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Basheer", "party": "IUML", "votes": 58698, "votePct": 51.29 },
-        { "name": "P. V. Anvar", "party": "Independent", "votes": 47452, "votePct": 41.47 },
-        { "name": "K. P. Baburaj", "party": "BJP", "votes": 3448, "votePct": 3.01 },
-        { "name": "Ashrafali Kaliyath", "party": "CPI", "votes": 2700, "votePct": 2.36 },
-        { "name": "P. P. Showkathali", "party": "SDPI", "votes": 2137, "votePct": 1.87 }
+        {
+          "name": "P. K. Basheer",
+          "party": "IUML",
+          "votes": 58698,
+          "votePct": 51.29
+        },
+        {
+          "name": "P. V. Anvar",
+          "party": "Independent",
+          "votes": 47452,
+          "votePct": 41.47
+        },
+        {
+          "name": "K. P. Baburaj",
+          "party": "BJP",
+          "votes": 3448,
+          "votePct": 3.01
+        },
+        {
+          "name": "Ashrafali Kaliyath",
+          "party": "CPI",
+          "votes": 2700,
+          "votePct": 2.36
+        },
+        {
+          "name": "P. P. Showkathali",
+          "party": "SDPI",
+          "votes": 2137,
+          "votePct": 1.87
+        }
       ],
       "margin": 11246,
       "marginPct": 9.82,
@@ -26,16 +51,71 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Basheer", "party": "IUML", "votes": 69048, "votePct": 50.83 },
-        { "name": "K. T. Abdurahiman", "party": "LDF", "votes": 56155, "votePct": 41.34 },
-        { "name": "K. P. Baburaj", "party": "BJP", "votes": 6055, "votePct": 4.46 },
-        { "name": "Ummer Chelakkode", "party": "SP", "votes": 1298, "votePct": 0.96 },
-        { "name": "Velayudhan", "party": "BSP", "votes": 885, "votePct": 0.65 }
+        {
+          "name": "P. K. Basheer",
+          "party": "Indian Union Muslim League",
+          "votes": 69048,
+          "votePct": 50.83
+        },
+        {
+          "name": "Abdurahiman",
+          "party": "Communist Party of India",
+          "votes": 56155,
+          "votePct": 41.34
+        },
+        {
+          "name": "K. P. Baburaj Master Thundathil",
+          "party": "BJP",
+          "votes": 6055,
+          "votePct": 4.46
+        },
+        {
+          "name": "Ummer Chelakkode",
+          "party": "SP",
+          "votes": 1298,
+          "votePct": 0.96
+        },
+        {
+          "name": "Velayudhan",
+          "party": "BSP",
+          "votes": 885,
+          "votePct": 0.65
+        },
+        {
+          "name": "K. T. Abdul Rahiman",
+          "party": "Independent",
+          "votes": 825,
+          "votePct": 0.61
+        },
+        {
+          "name": "Farooq Chengara",
+          "party": "PDP",
+          "votes": 536,
+          "votePct": 0.39
+        },
+        {
+          "name": "V. K. Basheer",
+          "party": "Independent",
+          "votes": 245,
+          "votePct": 0.18
+        },
+        {
+          "name": "K. V. Shahanas",
+          "party": "Independent",
+          "votes": 193,
+          "votePct": 0.14
+        },
+        {
+          "name": "P. K. Basheer",
+          "party": "Independent",
+          "votes": 149,
+          "votePct": 0.11
+        }
       ],
       "margin": 12893,
       "marginPct": 9.49,
-      "turnout": 135850,
-      "turnoutPct": 81.82,
+      "turnout": 135856,
+      "turnoutPct": 81.85,
       "result": "IUML hold"
     },
     {
@@ -43,14 +123,39 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Basheer", "party": "IUML", "votes": 78076, "votePct": 54.49 },
-        { "name": "K. T. Abdurahman", "party": "LDF", "votes": 55530, "votePct": 38.76 },
-        { "name": "C. Dinesh", "party": "BJP", "votes": 6683, "votePct": 4.66 },
-        { "name": "Velayudhan", "party": "BSP", "votes": 1247, "votePct": 0.87 },
-        { "name": "Sebastian", "party": "Independent", "votes": 1100, "votePct": 0.77 }
+        {
+          "name": "P. K. Basheer",
+          "party": "Indian Union Muslim League",
+          "votes": 78076,
+          "votePct": 54.49
+        },
+        {
+          "name": "K. T. Abdul Rahiman",
+          "party": "Communist Party of India",
+          "votes": 55530,
+          "votePct": 38.76
+        },
+        {
+          "name": "C. Dinesh",
+          "party": "BJP",
+          "votes": 6683,
+          "votePct": 4.66
+        },
+        {
+          "name": "Velayudhan",
+          "party": "BSP",
+          "votes": 1247,
+          "votePct": 0.87
+        },
+        {
+          "name": "Sebastian",
+          "party": "Independent",
+          "votes": 1100,
+          "votePct": 0.77
+        }
       ],
       "margin": 22546,
-      "marginPct": 15.73,
+      "marginPct": 15.74,
       "turnout": 143272,
       "turnoutPct": 79.69,
       "result": "IUML hold"

@@ -9,9 +9,24 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Shafi Parambil", "party": "INC", "votes": 47641, "votePct": 42.41 },
-        { "name": "K. K. Divakaran", "party": "CPI(M)", "votes": 40238, "votePct": 35.82 },
-        { "name": "C. Udaybhaskar", "party": "BJP", "votes": 22317, "votePct": 19.86 }
+        {
+          "name": "Shafi Parambil",
+          "party": "INC",
+          "votes": 47641,
+          "votePct": 42.41
+        },
+        {
+          "name": "K. K. Divakaran",
+          "party": "CPI(M)",
+          "votes": 40238,
+          "votePct": 35.82
+        },
+        {
+          "name": "C. Udaybhaskar",
+          "party": "BJP",
+          "votes": 22317,
+          "votePct": 19.86
+        }
       ],
       "margin": 7403,
       "marginPct": 6.59,
@@ -24,9 +39,24 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Shafi Parambil", "party": "INC", "votes": 57559, "votePct": 41.77 },
-        { "name": "Sobha Surendran", "party": "BJP", "votes": 40076, "votePct": 29.08 },
-        { "name": "N. N. Krishnadas", "party": "CPI(M)", "votes": 38675, "votePct": 28.07 }
+        {
+          "name": "Shafi Parambil",
+          "party": "INC",
+          "votes": 57559,
+          "votePct": 41.77
+        },
+        {
+          "name": "Sobha Surendran",
+          "party": "BJP",
+          "votes": 40076,
+          "votePct": 29.08
+        },
+        {
+          "name": "N. N. Krishnadas",
+          "party": "CPI(M)",
+          "votes": 38675,
+          "votePct": 28.07
+        }
       ],
       "margin": 17483,
       "marginPct": 12.69,
@@ -39,9 +69,24 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Shafi Parambil", "party": "INC", "votes": 54079, "votePct": 38.06 },
-        { "name": "E. Sreedharan", "party": "BJP", "votes": 50220, "votePct": 35.34 },
-        { "name": "C. P. Pramod", "party": "CPI(M)", "votes": 36433, "votePct": 25.64 }
+        {
+          "name": "Shafi Parambil",
+          "party": "INC",
+          "votes": 54079,
+          "votePct": 38.06
+        },
+        {
+          "name": "E. Sreedharan",
+          "party": "BJP",
+          "votes": 50220,
+          "votePct": 35.34
+        },
+        {
+          "name": "C. P. Pramod",
+          "party": "CPI(M)",
+          "votes": 36433,
+          "votePct": 25.64
+        }
       ],
       "margin": 3859,
       "marginPct": 2.71,
@@ -54,9 +99,24 @@
       "type": "by-election",
       "reason": "Vacancy in constituency",
       "candidates": [
-        { "name": "Rahul Mamkootathil", "party": "INC", "votes": 58389, "votePct": 44.27 },
-        { "name": "C. Krishnakumar", "party": "BJP", "votes": 39549, "votePct": 28.63 },
-        { "name": "P. Sarin", "party": "LDF", "votes": 37156, "votePct": 25.44 }
+        {
+          "name": "Rahul Mamkootathil",
+          "party": "INC",
+          "votes": 58389,
+          "votePct": 44.27
+        },
+        {
+          "name": "C. Krishnakumar",
+          "party": "BJP",
+          "votes": 39549,
+          "votePct": 28.63
+        },
+        {
+          "name": "P. Sarin",
+          "party": "Independent (LDF)",
+          "votes": 37156,
+          "votePct": 25.44
+        }
       ],
       "margin": 18840,
       "marginPct": 13.64,

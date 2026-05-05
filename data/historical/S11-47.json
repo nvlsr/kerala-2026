@@ -9,13 +9,33 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. T. Jaleel", "party": "LDF Independent", "votes": 57729, "votePct": 47.20 },
-        { "name": "V. V. Prakash", "party": "INC", "votes": 50875, "votePct": 41.60 },
-        { "name": "Nirmala Kuttikrishnan Punnakkal", "party": "BJP", "votes": 7107, "votePct": 5.81 },
-        { "name": "Nurul Hack", "party": "SDPI", "votes": 3116, "votePct": 2.55 }
+        {
+          "name": "K. T. Jaleel",
+          "party": "LDF Independent",
+          "votes": 57729,
+          "votePct": 47.2
+        },
+        {
+          "name": "V. V. Prakash",
+          "party": "INC",
+          "votes": 50875,
+          "votePct": 41.6
+        },
+        {
+          "name": "Nirmala Kuttikrishnan Punnakkal",
+          "party": "BJP",
+          "votes": 7107,
+          "votePct": 5.81
+        },
+        {
+          "name": "Nurul Hack",
+          "party": "SDPI",
+          "votes": 3116,
+          "votePct": 2.55
+        }
       ],
       "margin": 6854,
-      "marginPct": 5.60,
+      "marginPct": 5.6,
       "turnout": 122297,
       "turnoutPct": 78.15,
       "result": "LDF win (new seat)"
@@ -25,10 +45,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. T. Jaleel", "party": "LDF", "votes": 68179, "votePct": 47.97 },
-        { "name": "Ifthiquarudheen Master", "party": "INC", "votes": 51115, "votePct": 35.96 },
-        { "name": "Ravi Thelath", "party": "BJP", "votes": 15801, "votePct": 11.12 },
-        { "name": "P. K. Jaleel Parakkuzhiyil", "party": "SDPI", "votes": 2649, "votePct": 1.86 }
+        {
+          "name": "K. T. Jaleel",
+          "party": "Independent (LDF)",
+          "votes": 68179,
+          "votePct": 47.97
+        },
+        {
+          "name": "Ifthiquarudheen Master",
+          "party": "INC",
+          "votes": 51115,
+          "votePct": 35.96
+        },
+        {
+          "name": "Ravi Thelath",
+          "party": "BJP",
+          "votes": 15801,
+          "votePct": 11.12
+        },
+        {
+          "name": "P. K. Jaleel Parakkuzhiyil",
+          "party": "SDPI",
+          "votes": 2649,
+          "votePct": 1.86
+        }
       ],
       "margin": 17064,
       "marginPct": 12.01,
@@ -41,10 +81,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. T. Jaleel", "party": "LDF", "votes": 69358, "votePct": 46.46 },
-        { "name": "Firos Kunnamparambil", "party": "INC", "votes": 67794, "votePct": 44.77 },
-        { "name": "Ramesh Kottayapurath", "party": "BDJS", "votes": 9914, "votePct": 6.55 },
-        { "name": "Hassan Chiyanoor", "party": "SDPI", "votes": 1747, "votePct": 1.15 }
+        {
+          "name": "K. T. Jaleel",
+          "party": "Independent (LDF)",
+          "votes": 69358,
+          "votePct": 46.46
+        },
+        {
+          "name": "Firos Kunnamparambil",
+          "party": "INC",
+          "votes": 67794,
+          "votePct": 44.77
+        },
+        {
+          "name": "Ramesh Kottayapurath",
+          "party": "BDJS",
+          "votes": 9914,
+          "votePct": 6.55
+        },
+        {
+          "name": "Hassan Chiyanoor",
+          "party": "SDPI",
+          "votes": 1747,
+          "votePct": 1.15
+        }
       ],
       "margin": 2185,
       "marginPct": 1.69,

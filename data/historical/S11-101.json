@@ -9,11 +9,36 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. C. George", "party": "KC(M)", "votes": 59809, "votePct": 50.77 },
-        { "name": "Mohan Thomas", "party": "LDF", "votes": 44105, "votePct": 37.44 },
-        { "name": "K. M. Santhosh Kumar", "party": "BJP", "votes": 5010, "votePct": 4.25 },
-        { "name": "V. M. Sulaiman Moulavi", "party": "SDPI", "votes": 3579, "votePct": 3.04 },
-        { "name": "P. P. Joshy", "party": "BSP", "votes": 2956, "votePct": 2.51 }
+        {
+          "name": "P. C. George",
+          "party": "KC(M)",
+          "votes": 59809,
+          "votePct": 50.77
+        },
+        {
+          "name": "Mohan Thomas",
+          "party": "Independent (LDF)",
+          "votes": 44105,
+          "votePct": 37.44
+        },
+        {
+          "name": "K. M. Santhosh Kumar",
+          "party": "BJP",
+          "votes": 5010,
+          "votePct": 4.25
+        },
+        {
+          "name": "V. M. Sulaiman Moulavi",
+          "party": "SDPI",
+          "votes": 3579,
+          "votePct": 3.04
+        },
+        {
+          "name": "P. P. Joshy",
+          "party": "BSP",
+          "votes": 2956,
+          "votePct": 2.51
+        }
       ],
       "margin": 14984,
       "marginPct": 13.33,
@@ -26,13 +51,33 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. C. George", "party": "Independent", "votes": 63621, "votePct": 43.65 },
-        { "name": "Georgekutty Augustine", "party": "KC(M)", "votes": 35800, "votePct": 24.56 },
-        { "name": "P. C. Joseph Ponnattu", "party": "JKC", "votes": 22270, "votePct": 15.28 },
-        { "name": "M. R. Ullas", "party": "BDJS", "votes": 19966, "votePct": 13.70 }
+        {
+          "name": "P. C. George",
+          "party": "Independent",
+          "votes": 63621,
+          "votePct": 43.65
+        },
+        {
+          "name": "Georgekutty Augustine",
+          "party": "KC(M)",
+          "votes": 35800,
+          "votePct": 24.56
+        },
+        {
+          "name": "P. C. Joseph Ponnattu",
+          "party": "JKC",
+          "votes": 22270,
+          "votePct": 15.28
+        },
+        {
+          "name": "M. R. Ullas",
+          "party": "BDJS",
+          "votes": 19966,
+          "votePct": 13.7
+        }
       ],
       "margin": 27821,
-      "marginPct": 19.10,
+      "marginPct": 19.1,
       "turnout": 145753,
       "turnoutPct": 79.39,
       "result": "Independent gain from KC(M)"
@@ -42,10 +87,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Sebastian Kulathunkal", "party": "KC(M)", "votes": 58668, "votePct": 41.94 },
-        { "name": "P. C. George", "party": "KJ(S)", "votes": 41851, "votePct": 29.92 },
-        { "name": "Tomy Kallany", "party": "INC", "votes": 34633, "votePct": 24.76 },
-        { "name": "M. P. Sen", "party": "BDJS", "votes": 2965, "votePct": 2.12 }
+        {
+          "name": "Sebastian Kulathunkal",
+          "party": "KC(M)",
+          "votes": 58668,
+          "votePct": 41.94
+        },
+        {
+          "name": "P. C. George",
+          "party": "KJ(S)",
+          "votes": 41851,
+          "votePct": 29.92
+        },
+        {
+          "name": "Tomy Kallany",
+          "party": "INC",
+          "votes": 34633,
+          "votePct": 24.76
+        },
+        {
+          "name": "M. P. Sen",
+          "party": "BDJS",
+          "votes": 2965,
+          "votePct": 2.12
+        }
       ],
       "margin": 16581,
       "marginPct": 11.85,

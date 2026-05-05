@@ -35,7 +35,6 @@
     "UDF": "UDF",
     "LDF": "LDF",
     "NDA": "NDA",
-
     "Indian National Congress": "UDF",
     "Indian Union Muslim League": "UDF",
     "Kerala Congress": "UDF",
@@ -43,8 +42,11 @@
     "Kerala Congress (Jacob)": "UDF",
     "Revolutionary Marxist Party of India": "UDF",
     "Communist Marxist Party Kerala State Committee": "UDF",
-
+    "Nationalist Congress Kerala": "UDF",
+    "Independent (UDF)": "UDF",
     "Communist Party of India (Marxist)": "LDF",
+    "National Secular Conference": "LDF",
+    "Independent (LDF)": "LDF",
     "Communist Party of India": "LDF",
     "Kerala Congress (M)": "LDF",
     "Nationalist Congress Party - Sharadchandra Pawar": "LDF",
@@ -54,11 +56,9 @@
     "Indian National League": "LDF",
     "Congress (Secular)": "LDF",
     "Kerala Revolutionary Socialist Party (Leninist- Marxist)": "LDF",
-
     "Bharatiya Janata Party": "NDA",
     "Bharath Dharma Jana Sena": "NDA",
     "Twenty 20 Party": "NDA",
-
     "Aam Aadmi Party": "OTHER",
     "Bahujan Samaj Party": "OTHER",
     "Social Democratic Party Of India": "OTHER",
@@ -79,9 +79,9 @@
     "Socialist Party (India)": "OTHER",
     "Indian Gandhiyan Party": "OTHER",
     "The Future India Party": "OTHER",
-
     "Independent": "OTHER",
-    "None of the Above": "NOTA"
+    "None of the Above": "NOTA",
+    "Independent (NDA)": "NDA"
   },
   "partyAbbreviation": {
     "Indian National Congress": "INC",
@@ -125,7 +125,8 @@
     "Rashtravadi Janata Party": "RJP",
     "Socialist Party (India)": "SP(I)",
     "Indian Gandhiyan Party": "IGP",
-    "The Future India Party": "TFIP"
+    "The Future India Party": "TFIP",
+    "Nationalist Congress Kerala": "NCK"
   },
   "partyAliases": {
     "_comment": "Maps any raw party form (alternate transliteration, abbreviation, historical naming variant) to the canonical full name used in `partyAbbreviation` / `partyToAlliance`. Reverse mapping (abbreviation → full name) is auto-generated from `partyAbbreviation`, so only entries that don't fit that pattern need to be listed here.",
