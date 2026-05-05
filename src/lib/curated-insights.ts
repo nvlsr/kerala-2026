@@ -133,6 +133,24 @@ export const curatedInsights: CuratedInsight[] = [
     },
     tags: { party: "CPI(M)", theme: "vote-share" },
   },
+  {
+    id: "closest-2026-contests",
+    question: "What were the closest 2026 contests?",
+    filters: {
+      result: "winners",
+      sort: { column: "margin", dir: "asc" },
+    },
+    tags: { theme: "margins" },
+  },
+  {
+    id: "biggest-2026-blowouts",
+    question: "Where were the biggest 2026 blowouts?",
+    filters: {
+      result: "winners",
+      sort: { column: "margin", dir: "desc" },
+    },
+    tags: { theme: "margins" },
+  },
 ]
 
 /** Stable display order for party filter pills (grouped by alliance: NDA, UDF, LDF). */

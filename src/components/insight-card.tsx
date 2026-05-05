@@ -111,6 +111,7 @@ export function InsightCard({ insight }: Props) {
           <div className="mt-5">
             <TopRowsTable rows={topRows} sortColumn={filters.sort.column} />
           </div>
+          <NotesSection notes={pickNotes(filters.sort.column)} />
         </div>
         <div className="flex items-center justify-center">
           <div className="w-full max-w-[260px]">
@@ -124,6 +125,53 @@ export function InsightCard({ insight }: Props) {
         </div>
       </div>
     </article>
+  )
+}
+
+/**
+ * Short methodological notes that explain how the metric in the table was
+ * computed and how to read it. Shown beneath the table on every card so each
+ * snippet is self-contained — readers don't have to remember definitions
+ * from a different card or a separate page.
+ */
+function pickNotes(sortColumn: SortColumn): string[] {
+  const notes: string[] = []
+  if (sortColumn === "share" || sortColumn === "shareDelta") {
+    notes.push(
+      "Δ values only count seats where the party fielded a candidate in both 2021 and 2026 — a delta needs a baseline."
+    )
+  }
+  if (sortColumn === "margin" || sortColumn === "marginDelta") {
+    notes.push(
+      "Margin is the gap between the winning candidate and the runner-up in a seat, in percentage points of total turnout. It's a property of the seat, not of any one candidate."
+    )
+    if (sortColumn === "marginDelta") {
+      notes.push(
+        "For 2026 winners, positive Δ margin means a wider win than 2021. For runners-up, positive Δ margin means a smaller gap (closer to winning)."
+      )
+    }
+  }
+  return notes
+}
+
+function NotesSection({ notes }: { notes: string[] }) {
+  if (notes.length === 0) return null
+  return (
+    <div className="mt-5 space-y-1.5">
+      <p className="text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
+        Notes
+      </p>
+      <div className="space-y-1.5">
+        {notes.map((note, i) => (
+          <p
+            key={i}
+            className="max-w-prose text-xs leading-relaxed text-muted-foreground"
+          >
+            {note}
+          </p>
+        ))}
+      </div>
+    </div>
   )
 }
 
