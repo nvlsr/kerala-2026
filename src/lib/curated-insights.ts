@@ -34,4 +34,58 @@ export const curatedInsights: CuratedInsight[] = [
       sort: { column: "shareDelta", dir: "asc" },
     },
   },
+  {
+    id: "inc-gains",
+    question: "Where did INC gain the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Indian National Congress",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+  },
+  {
+    id: "inc-declines",
+    question: "Where did INC lose the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Indian National Congress",
+      result: "all",
+      sort: { column: "shareDelta", dir: "asc" },
+    },
+  },
+  {
+    id: "iuml-gains",
+    question: "Where did IUML gain the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Indian Union Muslim League",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+  },
+  {
+    id: "iuml-declines",
+    question: "Where did IUML lose the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Indian Union Muslim League",
+      result: "all",
+      sort: { column: "shareDelta", dir: "asc" },
+    },
+  },
+  {
+    id: "cpim-gains",
+    question: "Where did CPI(M) gain the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Communist Party of India (Marxist)",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+  },
+  {
+    id: "cpim-declines",
+    question: "Where did CPI(M) lose the most vote share, 2021 → 2026?",
+    filters: {
+      party: "Communist Party of India (Marxist)",
+      result: "all",
+      sort: { column: "shareDelta", dir: "asc" },
+    },
+  },
 ]
