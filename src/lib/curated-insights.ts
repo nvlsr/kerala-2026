@@ -151,6 +151,66 @@ export const curatedInsights: CuratedInsight[] = [
     },
     tags: { theme: "margins" },
   },
+  {
+    id: "udf-gap-closers",
+    question: "Where did UDF lose by less than 2021?",
+    filters: {
+      alliance: "UDF",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { theme: "margin-movement" },
+  },
+  {
+    id: "udf-at-risk-wins",
+    question: "Where did UDF win by less than 2021?",
+    filters: {
+      alliance: "UDF",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { theme: "margin-movement" },
+  },
+  {
+    id: "ldf-gap-closers",
+    question: "Where did LDF lose by less than 2021?",
+    filters: {
+      alliance: "LDF",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { theme: "margin-movement" },
+  },
+  {
+    id: "ldf-at-risk-wins",
+    question: "Where did LDF win by less than 2021?",
+    filters: {
+      alliance: "LDF",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { theme: "margin-movement" },
+  },
+  {
+    id: "nda-gap-closers",
+    question: "Where did NDA lose by less than 2021?",
+    filters: {
+      alliance: "NDA",
+      result: "losers",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { theme: "margin-movement" },
+  },
+  {
+    id: "nda-at-risk-wins",
+    question: "Where did NDA win by less than 2021?",
+    filters: {
+      alliance: "NDA",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "asc" },
+    },
+    tags: { theme: "margin-movement" },
+  },
 ]
 
 /** Stable display order for party filter pills (grouped by alliance: NDA, UDF, LDF). */
