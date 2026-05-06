@@ -68,22 +68,23 @@ The full per-seat lists are visible on `/flows`. Headline counts:
 
 | Single-cycle pattern (2021 → 2026) | Seats |
 |---|---|
-| LDF → UDF | 47 |
+| LDF → UDF | 48 |
 | LDF + NDA → UDF | 21 (combined "two-way + both-to-one" subgroups) |
 | LDF → NDA | 9 |
-| LDF + UDF → NDA | 4 (combined two-way + both-to-one) |
-| UDF → NDA | 1 |
+| LDF + UDF → NDA | 6 (combined two-way + both-to-one) |
 | NDA → UDF | 1 |
-| **Total classified** | **83 of 140** |
+| **Total classified** | **85 of 140** |
 
 | Multi-cycle drift (2011 → 2026, sustained) | Seats |
 |---|---|
 | LDF → NDA | 24 *— the sustained third-pole rise* |
 | LDF → UDF | 11 |
-| UDF → NDA | 7 |
-| **Total classified** | **42 of 140** |
+| UDF → NDA | 6 |
+| **Total classified** | **41 of 140** |
 
 The most consequential single finding is **24 seats with sustained LDF → NDA drift over 15 years** — including Attingal (NDA 4 → 20 → 26 → 31 across four cycles), Chathannoor, Malampuzha. Geographically concentrated in southern districts (Kollam, Trivandrum) plus Hindu-belt central pockets (Palakkad, Thrissur, Ernakulam). The southern UDF→NDA seats (Trivandrum + Kottayam Hindu pockets) make a separate but adjacent story.
+
+> **Note on share denominators.** Both the runtime classifier and this CLI script compute 2026 vote shares using a denominator that includes NOTA — matching how historical `votePct` is published by the ECI. An earlier version of the script used a non-NOTA denominator and produced slightly different counts (83 single-cycle, 42 multi-cycle); a tiny ~0.5pp baseline shift was enough to flip a handful of border-line seats across the detection thresholds. The numbers above reflect the aligned implementation.
 
 ## Validation against three test intuitions
 

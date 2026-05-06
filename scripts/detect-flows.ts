@@ -112,11 +112,17 @@ const emptyShares = (): AllianceShares => ({
 })
 
 function shares2026(seat: Seat2026): AllianceShares {
-  const real = seat.candidates.filter((c) => !c.isNota)
-  const total = real.reduce((s, c) => s + c.votes, 0)
+  // Denominator includes NOTA — matches the runtime classifier in
+  // src/lib/data/flows.ts (which uses totalVotesIn) and the historical
+  // votePct field as published by the ECI. Using a non-NOTA total here
+  // would put alliance shares on a different baseline than the rest
+  // of the cycle, which silently flips a few border-line seats across
+  // detection thresholds.
+  const total = seat.candidates.reduce((s, c) => s + c.votes, 0)
   if (total === 0) return emptyShares()
   const out = emptyShares()
-  for (const c of real) {
+  for (const c of seat.candidates) {
+    if (c.isNota) continue
     out[c.alliance] += (c.votes / total) * 100
   }
   return out
