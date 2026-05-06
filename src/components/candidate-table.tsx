@@ -108,7 +108,18 @@ export function CandidateTable({ filters, dispatch }: Props) {
       ) : (
         <>
           <div className="overflow-hidden rounded-lg border">
-            <table className="w-full text-sm">
+            <table className="w-full table-fixed text-sm">
+              <colgroup>
+                <col style={{ width: "15%" }} />
+                <col style={{ width: "22%" }} />
+                <col style={{ width: "5%" }} />
+                <col style={{ width: "8%" }} />
+                <col style={{ width: "8%" }} />
+                <col style={{ width: "10%" }} />
+                <col style={{ width: "10%" }} />
+                <col style={{ width: "12%" }} />
+                <col style={{ width: "10%" }} />
+              </colgroup>
               <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
                 <tr className="border-b">
                   <Th
@@ -313,8 +324,10 @@ function WinnerTh({
         title={title}
         aria-label={title}
         className={cn(
-          "inline-flex items-center justify-center rounded p-0.5 hover:bg-foreground/10",
-          active ? "text-foreground" : "text-muted-foreground/60"
+          "inline-flex items-center justify-center rounded-full border bg-background p-1 transition-colors hover:bg-foreground/5",
+          active
+            ? "border-foreground/30 text-foreground"
+            : "border-border text-muted-foreground/70"
         )}
       >
         <Icon className="h-3.5 w-3.5" aria-hidden />
@@ -369,7 +382,7 @@ function CandidateTr({
         )}
       </td>
       <td className="px-3 py-2">
-        <span className="truncate" title={row.candidate.party}>
+        <span className="block truncate" title={row.candidate.party}>
           {row.partyShort}
         </span>
       </td>
