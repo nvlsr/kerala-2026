@@ -5,13 +5,22 @@ import { FilterBreadcrumb } from "@/components/scope-title"
 import { AllianceSection } from "@/components/alliance-section"
 import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
-import { ConstituencyMap } from "@/components/constituency-map"
+import {
+  ConstituencyMap,
+  Hint,
+  describeMapSubtitle,
+} from "@/components/constituency-map"
 import { ConstituencySection } from "@/components/constituency-section"
 import { InsightsTeaser } from "@/components/insights-teaser"
 import { SearchBar } from "@/components/search-bar"
+import { Section } from "@/components/section"
 import { SiteFooter } from "@/components/site-footer"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { constituencies } from "@/lib/data"
+import {
+  constituencies,
+  displayConstituencyName,
+  districtForConstituency,
+} from "@/lib/data"
 import {
   filtersReducer,
   getFilteredConstituencyNumbers,
@@ -20,6 +29,7 @@ import {
   parseFilters,
   serializeFilters,
 } from "@/lib/filters"
+import { encodingModeFor } from "@/lib/seat-encoding"
 
 const SEAT_DETAIL_ANCHOR_ID = "constituency-detail"
 
@@ -140,22 +150,84 @@ export function ExplorePage() {
         />
       )}
       <CandidateTable filters={filters} dispatch={dispatch} />
-      <ConstituencyMap
+      <ConstituencyDetailRow
         filters={filters}
         inFilterSet={inFilterSet}
-        selectedSeat={filters.seat}
-        onSelect={(seat) => dispatch({ type: "set-seat", seat })}
+        selectedConstituency={selectedConstituency}
+        onSelectSeat={(seat) => dispatch({ type: "set-seat", seat })}
       />
-      {selectedConstituency && (
-        <div id={SEAT_DETAIL_ANCHOR_ID}>
-          <ConstituencySection
-            key={selectedConstituency.constituencyNumber}
-            constituency={selectedConstituency}
-          />
-        </div>
-      )}
       <InsightsTeaser />
       <SiteFooter />
     </div>
+  )
+}
+
+/**
+ * Two-column layout: left shows either the seat-detail (when a seat
+ * is selected) or a Hint card (otherwise); right always shows the
+ * constituency map. The map stays in a fixed position regardless of
+ * selection, so clicking/unclicking a seat doesn't reflow the page.
+ */
+function ConstituencyDetailRow({
+  filters,
+  inFilterSet,
+  selectedConstituency,
+  onSelectSeat,
+}: {
+  filters: ReturnType<typeof loadInitialFilters>
+  inFilterSet: Set<number>
+  selectedConstituency: (typeof constituencies)[number] | null
+  onSelectSeat: (n: number | null) => void
+}) {
+  const mapMode = encodingModeFor(filters)
+  const mapSubtitle = describeMapSubtitle(filters, inFilterSet.size, mapMode)
+  const district = selectedConstituency
+    ? districtForConstituency(selectedConstituency)
+    : null
+
+  const subtitle = selectedConstituency ? (
+    <>
+      {displayConstituencyName(selectedConstituency)}
+      {district && (
+        <span className="text-muted-foreground/60">
+          {" · "}
+          {district.name} district
+        </span>
+      )}
+    </>
+  ) : (
+    mapSubtitle
+  )
+
+  return (
+    <Section
+      title="Constituency map"
+      subtitle={subtitle}
+      className="scroll-mt-4"
+    >
+      <div
+        id={SEAT_DETAIL_ANCHOR_ID}
+        className="grid grid-cols-1 items-start gap-4 lg:grid-cols-5"
+      >
+        <div className="lg:col-span-3">
+          {selectedConstituency ? (
+            <ConstituencySection
+              key={selectedConstituency.constituencyNumber}
+              constituency={selectedConstituency}
+            />
+          ) : (
+            <Hint mode={mapMode} />
+          )}
+        </div>
+        <div className="lg:col-span-2">
+          <ConstituencyMap
+            filters={filters}
+            inFilterSet={inFilterSet}
+            selectedSeat={filters.seat}
+            onSelect={onSelectSeat}
+          />
+        </div>
+      </div>
+    </Section>
   )
 }

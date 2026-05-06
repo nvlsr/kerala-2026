@@ -1,15 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react"
 import { IconCheck } from "@tabler/icons-react"
 
-import { Section } from "@/components/section"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { HistoricalChart } from "@/components/historical-chart"
 import { PastWinners } from "@/components/past-winners"
 import { cn } from "@/lib/utils"
 import {
   allianceForCandidate,
-  displayConstituencyName,
-  districtForConstituency,
   formatNumber,
   formatPercent,
   getAlliance,
@@ -34,18 +31,16 @@ type Props = {
 
 export function ConstituencySection({ constituency }: Props) {
   const [selectedKey, setSelectedKey] = useState<string>(RESULT_KEY)
-  const sectionRef = useRef<HTMLElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const el = sectionRef.current
+    const el = containerRef.current
     if (el) {
       requestAnimationFrame(() =>
         el.scrollIntoView({ behavior: "smooth", block: "start" })
       )
     }
   }, [])
-
-  const district = districtForConstituency(constituency)
 
   const trend = useMemo(
     () => getTrendData(constituency.constituencyNumber),
@@ -63,22 +58,7 @@ export function ConstituencySection({ constituency }: Props) {
       null)
 
   return (
-    <Section
-      refEl={sectionRef}
-      className="scroll-mt-4"
-      title="Constituency"
-      subtitle={
-        <>
-          {displayConstituencyName(constituency)}
-          {district && (
-            <span className="text-muted-foreground/60">
-              {" · "}
-              {district.name} district
-            </span>
-          )}
-        </>
-      }
-    >
+    <div ref={containerRef} className="flex flex-col gap-4 scroll-mt-4">
       <ToggleGroup
         value={[selectedKey]}
         onValueChange={(v) => {
@@ -88,7 +68,6 @@ export function ConstituencySection({ constituency }: Props) {
         variant="outline"
         size="sm"
         spacing={2}
-        className="mb-3"
       >
         <ToggleGroupItem value={RESULT_KEY} className="rounded-full">
           2026 result
@@ -124,25 +103,23 @@ export function ConstituencySection({ constituency }: Props) {
         })}
       </ToggleGroup>
 
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
-        <div className="overflow-hidden rounded-lg border lg:col-span-3">
-          {isResult ? (
-            <RosterTable constituency={constituency} />
-          ) : (
-            <PastWinners
-              constituencyNumber={constituency.constituencyNumber}
-              selectedParty={selectedParty}
-            />
-          )}
-        </div>
-        <div className="rounded-lg border bg-muted/40 p-4 lg:col-span-2">
-          <HistoricalChart
+      <div className="overflow-hidden rounded-lg border">
+        {isResult ? (
+          <RosterTable constituency={constituency} />
+        ) : (
+          <PastWinners
             constituencyNumber={constituency.constituencyNumber}
-            highlightAlliance={highlightAlliance}
+            selectedParty={selectedParty}
           />
-        </div>
+        )}
       </div>
-    </Section>
+      <div className="rounded-lg border bg-muted/40 p-4">
+        <HistoricalChart
+          constituencyNumber={constituency.constituencyNumber}
+          highlightAlliance={highlightAlliance}
+        />
+      </div>
+    </div>
   )
 }
 
