@@ -65,16 +65,16 @@ export function DashboardPage() {
         onClearSeat={() => dispatch({ type: "clear-seat" })}
         onReset={() => dispatch({ type: "reset" })}
       />
-      <KeralaMap
-        scope={filters.district}
-        onSelect={(district) => dispatch({ type: "set-district", district })}
-      />
       <AllianceSection
         scope={filters.district}
         selectedAlliance={filters.alliance}
         onSelectAlliance={(alliance) =>
           dispatch({ type: "set-alliance", alliance })
         }
+      />
+      <KeralaMap
+        scope={filters.district}
+        onSelect={(district) => dispatch({ type: "set-district", district })}
       />
       {filters.alliance && (
         <PartySection
