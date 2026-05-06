@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react"
 import { Navigate, Route, Routes } from "react-router-dom"
 
+import { AnalyticsProvider } from "@/components/analytics-provider"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { DashboardPage } from "@/pages/dashboard-page"
 
@@ -28,6 +29,7 @@ function PageFallback() {
 export function App() {
   return (
     <TooltipProvider delay={200}>
+      <AnalyticsProvider />
       <Suspense fallback={<PageFallback />}>
         <Routes>
           <Route path="/" element={<DashboardPage />} />
