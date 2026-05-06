@@ -1,0 +1,11 @@
+# Pre-push gate. Runs typecheck + tests before letting the push leave
+# your machine. ~3 seconds on a clean run; skip with `git push --no-verify`
+# when you need to push WIP and know what you're doing.
+
+echo "→ typecheck"
+bun run typecheck || exit 1
+
+echo "→ test"
+bun run test || exit 1
+
+echo "✓ pre-push checks passed"
