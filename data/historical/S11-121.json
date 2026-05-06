@@ -28,7 +28,7 @@
       "candidates": [
         { "name": "K. Raju", "party": "CPI", "votes": 82136, "votePct": 56.85, "alliance": "LDF" },
         { "name": "A. Younus Kunju", "party": "IUML", "votes": 48554, "votePct": 33.61, "alliance": "UDF" },
-        { "name": "Sisil Fernandes", "party": "KEC", "votes": 10558, "votePct": 7.31, "alliance": "UDF" },
+        { "name": "Sisil Fernandes", "party": "KEC", "votes": 10558, "votePct": 7.31, "alliance": "NDA" },
         { "name": "K. Sasankan", "party": "SUCI(C)", "votes": 1117, "votePct": 0.77, "alliance": "OTHER" },
         { "name": "NOTA", "party": "NOTA", "votes": 888, "votePct": 0.61, "alliance": "NOTA" }
       ],

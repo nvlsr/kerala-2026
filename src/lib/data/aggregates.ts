@@ -187,6 +187,7 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
       votes: number
       votePct: number
       name: string
+      alliance: AllianceCode
     }>
   }> = []
 
@@ -201,6 +202,7 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
           votes: cd.votes,
           votePct: cd.votePct,
           name: cd.name,
+          alliance: cd.alliance,
         })),
       })
     }
@@ -217,6 +219,7 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
         votes: cd.votes,
         votePct: total2026 > 0 ? (cd.votes / total2026) * 100 : 0,
         name: cd.name,
+        alliance: cd.alliance,
       })),
   })
 
@@ -244,10 +247,21 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
         candidate: cand ? cand.name : null,
       }
     })
-    const allianceCode =
-      partyKey === "Independent"
-        ? "OTHER"
-        : ((alliancesMeta.partyToAlliance[partyKey] ?? "OTHER") as AllianceCode)
+    // Use the most recent candidate's actual `alliance` field rather than the
+    // global 2026 partyToAlliance map. This matters for parties that switched
+    // fronts during the dataset (KC(M), KC(B), RSP, …) — without this, a
+    // 2011 KC(M) candidate would be coloured LDF (their 2026 alliance) when
+    // they were actually UDF at the time. We pick the most recent because
+    // visually it best reflects the line's "current" semantic; tooltip
+    // metadata (party + candidate name) preserves the per-point detail.
+    let allianceCode: AllianceCode = "OTHER"
+    for (let i = elections.length - 1; i >= 0; i--) {
+      const cand = elections[i].candidates.find((c) => c.party === partyKey)
+      if (cand) {
+        allianceCode = cand.alliance
+        break
+      }
+    }
     const meta = alliancesMeta.alliances[allianceCode]
     const totalVotes = points.reduce((s, p) => s + (p.votes ?? 0), 0)
     const trendSeries: TrendSeries = {

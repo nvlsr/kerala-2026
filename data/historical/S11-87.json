@@ -27,7 +27,7 @@
       "candidates": [
         { "name": "Antony John", "party": "CPI(M)", "votes": 65467, "votePct": 50.98, "alliance": "LDF" },
         { "name": "T. U. Kuruvilla", "party": "KC(M)", "votes": 46185, "votePct": 35.96, "alliance": "UDF" },
-        { "name": "P. C. Cyriac", "party": "Independent", "votes": 12926, "votePct": 10.06, "alliance": "OTHER" },
+        { "name": "P. C. Cyriac", "party": "Independent", "votes": 12926, "votePct": 10.06, "alliance": "NDA" },
         { "name": "Anas N. A.", "party": "SDPI", "votes": 1490, "votePct": 1.16, "alliance": "OTHER" }
       ],
       "margin": 19282,

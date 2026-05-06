@@ -28,7 +28,7 @@
       "candidates": [
         { "name": "Roji M. John", "party": "INC", "votes": 66666, "votePct": 48.96, "alliance": "UDF" },
         { "name": "Benny Moonjely", "party": "JD(S)", "votes": 57480, "votePct": 42.22, "alliance": "LDF" },
-        { "name": "P. J. Babu", "party": "KEC", "votes": 9014, "votePct": 6.62, "alliance": "UDF" },
+        { "name": "P. J. Babu", "party": "KEC", "votes": 9014, "votePct": 6.62, "alliance": "NDA" },
         { "name": "NOTA", "party": "NOTA", "votes": 811, "votePct": 0.60, "alliance": "NOTA" },
         { "name": "Jayanthi Avinash", "party": "BSP", "votes": 742, "votePct": 0.54, "alliance": "OTHER" }
       ],
