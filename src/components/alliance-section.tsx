@@ -6,7 +6,6 @@ import { InfoIcon } from "@/components/info-icon"
 import { Section } from "@/components/section"
 import { cn } from "@/lib/utils"
 import {
-  COMPARABLE_ALLIANCE_CODES,
   formatPercent,
   getAlliance,
   getAllianceBreakdown,
@@ -14,6 +13,8 @@ import {
   getStateSummary,
   type AllianceCode,
 } from "@/lib/data"
+
+const SUMMARY_ALLIANCES: AllianceCode[] = ["UDF", "LDF", "NDA"]
 
 type Props = {
   scope: string | null
@@ -31,7 +32,7 @@ export function AllianceSection({
 
   const rows = useMemo(
     () =>
-      COMPARABLE_ALLIANCE_CODES.map((code) => {
+      SUMMARY_ALLIANCES.map((code) => {
         const breakdown = getAllianceBreakdown(code, scope)
         const series = trend.series[code]
         const point2026 = series[series.length - 1]
@@ -42,12 +43,7 @@ export function AllianceSection({
           code,
           meta: getAlliance(code),
           seatsWon: breakdown.totalSeats,
-          contested: breakdown.totalContested,
           voteShare: breakdown.totalVoteShare,
-          winRate:
-            breakdown.totalContested > 0
-              ? breakdown.totalSeats / breakdown.totalContested
-              : null,
           delta,
         }
       }),
@@ -61,11 +57,10 @@ export function AllianceSection({
           <table className="w-full text-sm">
             <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
               <tr className="border-b">
-                <th className="px-3 py-2 text-left">Alliance</th>
-                <th className="px-3 py-2 text-right">Seats</th>
-                <th className="px-3 py-2 text-right">Vote share</th>
-                <th className="px-3 py-2 text-right">Win rate</th>
-                <th className="px-3 py-2 text-right">
+                <th className="px-3 py-3 text-left">Alliance</th>
+                <th className="px-3 py-3 text-right">Seats</th>
+                <th className="px-3 py-3 text-right">Vote share</th>
+                <th className="px-3 py-3 text-right">
                   <span className="inline-flex items-center gap-1">
                     Δ share '21
                     <InfoIcon text="Change in this alliance's statewide vote share between 2021 and 2026 (percentage points)" />
@@ -85,7 +80,7 @@ export function AllianceSection({
                       isSelected && "bg-foreground/5"
                     )}
                   >
-                    <td className="relative px-3 py-2">
+                    <td className="relative px-3 py-4">
                       <span
                         className="absolute inset-y-0 left-0 w-0.5"
                         style={{ backgroundColor: r.meta.color }}
@@ -100,20 +95,17 @@ export function AllianceSection({
                         <span className="font-medium">{r.meta.code}</span>
                       </span>
                     </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
+                    <td className="px-3 py-4 text-right tabular-nums">
                       {r.seatsWon}
                       <span className="text-muted-foreground">
                         {" "}
                         / {summary.totalSeats}
                       </span>
                     </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
+                    <td className="px-3 py-4 text-right tabular-nums">
                       {formatPercent(r.voteShare, 1)}
                     </td>
-                    <td className="px-3 py-2 text-right text-muted-foreground tabular-nums">
-                      {r.winRate != null ? formatPercent(r.winRate, 0) : "—"}
-                    </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
+                    <td className="px-3 py-4 text-right tabular-nums">
                       <DeltaPercent value={r.delta} />
                     </td>
                   </tr>
@@ -130,10 +122,6 @@ export function AllianceSection({
           />
         </div>
       </div>
-      <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground/70">
-        Historical alliance and party totals are anchored on 2026 composition.
-        Parties are classified by their current 2026 alliance for all cycles.
-      </p>
     </Section>
   )
 }
