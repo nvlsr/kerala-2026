@@ -43,7 +43,7 @@
       "type": "by-election",
       "reason": "Death of sitting MLA K. M. Mani in April 2019",
       "candidates": [
-        { "name": "Mani C. Kappan", "party": "NCP", "votes": 54137, "votePct": 42.55, "alliance": "OTHER" },
+        { "name": "Mani C. Kappan", "party": "NCP", "votes": 54137, "votePct": 42.55, "alliance": "LDF" },
         { "name": "Jose Tom Pulikkunnel", "party": "KC(M)", "votes": 51194, "votePct": 40.24, "alliance": "UDF" },
         { "name": "N. Hari", "party": "BJP", "votes": 18044, "votePct": 14.18, "alliance": "NDA" },
         { "name": "C. J. Philip", "party": "Independent", "votes": 1085, "votePct": 0.85, "alliance": "OTHER" },

@@ -123,6 +123,32 @@ function auditHistorical(year: number): AuditSeat[] {
   return out
 }
 
+type ByElectionAuditSeat = AuditSeat & { year: number; reason: string | null }
+
+function auditByElections(): ByElectionAuditSeat[] {
+  const out: ByElectionAuditSeat[] = []
+  for (const seat of histSeats) {
+    for (const e of seat.elections) {
+      if (e.type !== "by-election") continue
+      out.push({
+        constituencyNumber: seat.constituencyNumber,
+        constituencyName: seat.constituencyName,
+        year: e.year,
+        reason: (e as { reason?: string | null }).reason ?? null,
+        candidates: e.candidates
+          .filter((c) => c.party !== "NOTA")
+          .map((c) => ({
+            name: c.name,
+            party: c.party,
+            alliance: c.alliance,
+            voteShare: c.votePct,
+          })),
+      })
+    }
+  }
+  return out
+}
+
 const cycles: Array<{ year: number; seats: AuditSeat[] }> = [
   { year: 2026, seats: audit2026() },
   { year: 2021, seats: auditHistorical(2021) },
@@ -226,6 +252,58 @@ for (const c of cycles) {
       out(
         `_No OTHER candidates in this seat. The missing alliance simply didn't field anyone here._`
       )
+      out()
+      continue
+    }
+    out(`| Candidate | Party | Vote % |`)
+    out(`|---|---|---:|`)
+    for (const o of r.others) {
+      out(`| ${o.name} | ${o.party} | ${o.voteShare.toFixed(1)}% |`)
+    }
+    out()
+  }
+}
+
+// ─── By-elections ──────────────────────────────────────────────────────
+
+const byElections = auditByElections()
+const byElectionsMissing = byElections
+  .map((seat) => {
+    const present = new Set<AllianceCode>(
+      seat.candidates.map((c) => c.alliance)
+    )
+    const missing = MAIN.filter((a) => !present.has(a))
+    if (missing.length === 0) return null
+    const others = seat.candidates
+      .filter((c) => c.alliance === "OTHER")
+      .sort((a, b) => b.voteShare - a.voteShare)
+    return { seat, missing, others }
+  })
+  .filter((x): x is NonNullable<typeof x> => x !== null)
+
+out(`## By-elections`)
+out()
+out(
+  `By-elections are sparse — most seats don't have any in the dataset window. Listed here are by-election entries where one of UDF/LDF/NDA is missing, same fix pattern as the per-cycle sections above.`
+)
+out()
+out(`Total by-elections in dataset: ${byElections.length}.`)
+out(
+  `By-elections missing a main-alliance candidate: ${byElectionsMissing.length}.`
+)
+out()
+if (byElectionsMissing.length === 0) {
+  out(`Every by-election has all three main alliances represented. ✅`)
+  out()
+} else {
+  for (const r of byElectionsMissing) {
+    out(
+      `### Seat ${r.seat.constituencyNumber} — ${r.seat.constituencyName} — ${r.seat.year} by-election — missing ${r.missing.join(", ")}`
+    )
+    if (r.seat.reason) out(`_Reason: ${r.seat.reason}_`)
+    out()
+    if (r.others.length === 0) {
+      out(`_No OTHER candidates in this by-election._`)
       out()
       continue
     }

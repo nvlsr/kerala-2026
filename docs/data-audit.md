@@ -62,6 +62,15 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 
 _No OTHER candidates in this seat. The missing alliance simply didn't field anyone here._
 
+## By-elections
+
+By-elections are sparse — most seats don't have any in the dataset window. Listed here are by-election entries where one of UDF/LDF/NDA is missing, same fix pattern as the per-cycle sections above.
+
+Total by-elections in dataset: 17.
+By-elections missing a main-alliance candidate: 0.
+
+Every by-election has all three main alliances represented. ✅
+
 ## Known party-switch issues
 
 The migration used the 2026 alliance mapping for all historical cycles. Parties that switched alliances between cycles are mis-classified for cycles before their switch.
