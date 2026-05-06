@@ -50,7 +50,7 @@ export function ConstituencyMap({
   return (
     <Section title="Constituency map" subtitle={subtitle}>
       <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-5">
-        <div className="relative flex justify-center rounded-lg border bg-muted/40 p-3 lg:col-span-3">
+        <div className="relative flex justify-center rounded-lg border bg-foreground/5 p-3 lg:col-span-3">
           <svg
             viewBox={`0 0 ${paths.width} ${paths.height}`}
             role="img"
@@ -83,7 +83,7 @@ export function ConstituencyMap({
                         : baseOpacity
                   }
                   stroke={
-                    isSelected ? "var(--foreground)" : "var(--background)"
+                    isSelected ? "var(--foreground)" : "var(--border)"
                   }
                   strokeWidth={isSelected ? 1.5 : 0.5}
                   className="cursor-pointer transition-opacity outline-none focus-visible:stroke-foreground focus-visible:[stroke-width:1.5]"
