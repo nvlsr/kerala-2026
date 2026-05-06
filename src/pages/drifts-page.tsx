@@ -19,6 +19,21 @@ import {
   type MultiCycleDrift,
 } from "@/lib/data/flows"
 
+// Hand-written editorial framings for the recent-leg (2021 → 2026)
+// section. The bars show the per-seat magnitudes; these sentences
+// frame what shape to look for and why it matters.
+const RECENT_LEG_FRAMINGS: Record<string, string> = {
+  LDF_to_NDA:
+    "NDA's 2021 → 2026 movement across the 24 seats. The shape is mixed: a handful at the top with strong positive bars (drift is genuinely accelerating — Thiruvalla, Haripad, Chathannoor, Attingal lead), a larger middle band of small-positive bars (the drift is alive but slowing), and two or three seats at the bottom where the most recent cycle reversed against the cumulative arc (Malampuzha, Kunnathunad). The cumulative number averages over all of this — the bars are how you separate genuine ongoing motion from arithmetic carry-over.",
+  LDF_to_UDF:
+    "UDF's 2021 → 2026 movement in the 11 mostly Syro-Malabar seats. This pattern is the cumulative consequence of KC(M)'s 2020 front-switch settling out — the 2016 → 2021 leg captured most of the rebalancing, so the 2021 → 2026 bars show whether UDF's gain has held, extended, or partially reversed. Read flat-positive bars as 'consolidation', strongly positive as 'still extending', mixed as 'absorbed and now stable'.",
+  UDF_to_NDA:
+    "NDA's 2021 → 2026 movement in the 6 Trivandrum-and-Kottayam-highland seats. The smallest of the three patterns — every seat is informative individually. Strong positive bars here would mean the Trivandrum-Nair drift has further to run; flat or mixed bars would mean the cumulative shift has mostly settled.",
+}
+
+const RECENT_LEG_CROSS_PATTERN_OBSERVATION =
+  "The recent leg is the most-predictive slice for what 2031 looks like. The 'sustained drift' classification flagged these seats by their cumulative 15-year behaviour; whether the underlying motion is still alive is what these bars actually show. Each pattern poses a different forward question: for LDF → NDA, whether the visible deceleration is approaching a structural ceiling. For LDF → UDF, whether the post-2020 KC(M) effect is fully through the system. For UDF → NDA, whether the small Trivandrum cluster broadens or holds. Treating any single pattern as monolithic overstates the data — real political drift is messy, and the bars show it."
+
 // Hand-written editorial framings for the multi-cycle drift × belt
 // overlay. Numeric specifics are data-derived inside BeltOverlaySection;
 // these sentences carry interpretation the data alone can't.
@@ -182,22 +197,38 @@ export function DriftsPage() {
             has plateaued or reversed.
           </p>
           <ul className="flex flex-col gap-6">
-            {driftGroups.map((g) => (
-              <li key={g.key}>
-                <article className="rounded-lg border bg-card/30 p-4 sm:p-6">
-                  <header className="mb-3 flex items-baseline justify-between gap-3">
-                    <h3 className="font-heading text-base font-semibold tracking-tight sm:text-lg">
-                      {g.label}
-                    </h3>
-                    <span className="text-xs tracking-wide text-muted-foreground uppercase">
-                      sorted by 2021 → 2026 delta
-                    </span>
-                  </header>
-                  <RecentLegChart drifts={g.items} />
-                </article>
-              </li>
-            ))}
+            {driftGroups.map((g) => {
+              const framing = RECENT_LEG_FRAMINGS[g.key]
+              return (
+                <li key={g.key}>
+                  <article className="rounded-lg border bg-card/30 p-4 sm:p-6">
+                    <header className="flex items-baseline justify-between gap-3">
+                      <h3 className="font-heading text-base font-semibold tracking-tight sm:text-lg">
+                        {g.label}
+                      </h3>
+                      <span className="text-xs tracking-wide text-muted-foreground uppercase">
+                        sorted by 2021 → 2026 delta
+                      </span>
+                    </header>
+                    {framing && (
+                      <p className="mt-3 mb-4 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+                        {framing}
+                      </p>
+                    )}
+                    <RecentLegChart drifts={g.items} />
+                  </article>
+                </li>
+              )
+            })}
           </ul>
+          <aside className="mt-6 rounded-md border-l-2 border-foreground/30 bg-muted/30 px-4 py-3 text-sm">
+            <p className="mb-1 text-[10px] font-medium tracking-wider text-foreground/70 uppercase">
+              Across patterns
+            </p>
+            <p className="leading-relaxed text-muted-foreground">
+              {RECENT_LEG_CROSS_PATTERN_OBSERVATION}
+            </p>
+          </aside>
         </section>
 
         <section className="mt-12">
