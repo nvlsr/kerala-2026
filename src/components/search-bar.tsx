@@ -12,15 +12,24 @@ import {
 } from "@/lib/search"
 import { cn } from "@/lib/utils"
 
+type Props = {
+  /** When true, renders as a Google-style hero search bar — larger
+   *  input, bigger font, narrower centered max-width, more vertical
+   *  breathing room. Used on `/` where search is the page's primary
+   *  affordance. Default false (compact) for /explore where search is
+   *  one of several navigation tools. */
+  prominent?: boolean
+}
+
 /**
- * Top-of-dashboard search affordance. Resolves candidate / seat /
- * party / district / alliance queries to existing filter-based URLs.
+ * Search affordance. Resolves candidate / seat / party / district /
+ * alliance queries to existing filter-based URLs.
  *
  * Single in-memory index over ~1200 entities; substring match
  * case-insensitive, multi-word AND. Results group by type with a cap
  * per group; click any result to navigate.
  */
-export function SearchBar() {
+export function SearchBar({ prominent = false }: Props = {}) {
   const navigate = useNavigate()
   const [query, setQuery] = useState("")
   const [open, setOpen] = useState(false)
@@ -102,13 +111,33 @@ export function SearchBar() {
   const noMatches = showDropdown && flat.length === 0
 
   return (
-    <section className="border-b border-border/50">
-      <div className="mx-auto max-w-6xl px-6 py-4">
+    <section
+      className={cn(
+        "border-b border-border/50",
+        prominent ? "py-12 sm:py-16" : "py-4"
+      )}
+    >
+      <div
+        className={cn(
+          "mx-auto px-6",
+          prominent ? "max-w-3xl" : "max-w-6xl"
+        )}
+      >
         <div ref={containerRef} className="relative">
-          <div className="flex items-center gap-2 rounded-lg border bg-card/50 px-3 py-2 focus-within:border-foreground/40 focus-within:ring-1 focus-within:ring-foreground/15">
+          <div
+            className={cn(
+              "flex items-center rounded-lg border bg-card/50 focus-within:border-foreground/40",
+              prominent
+                ? "gap-3 px-5 py-4 focus-within:ring-2 focus-within:ring-foreground/15"
+                : "gap-2 px-3 py-2 focus-within:ring-1 focus-within:ring-foreground/15"
+            )}
+          >
             <IconSearch
               aria-hidden
-              className="h-4 w-4 shrink-0 text-muted-foreground"
+              className={cn(
+                "shrink-0 text-muted-foreground",
+                prominent ? "h-5 w-5" : "h-4 w-4"
+              )}
             />
             <input
               ref={inputRef}
@@ -120,8 +149,15 @@ export function SearchBar() {
               }}
               onFocus={() => setOpen(true)}
               onKeyDown={handleKeyDown}
-              placeholder="Search seats, candidates, parties, districts, or alliances…"
-              className="w-full bg-transparent text-sm placeholder:text-muted-foreground/60 focus:outline-none"
+              placeholder={
+                prominent
+                  ? "Search any seat, candidate, party, or district…"
+                  : "Search seats, candidates, parties, districts, or alliances…"
+              }
+              className={cn(
+                "w-full bg-transparent placeholder:text-muted-foreground/60 focus:outline-none",
+                prominent ? "text-base" : "text-sm"
+              )}
               aria-label="Search"
               autoComplete="off"
             />
@@ -135,7 +171,10 @@ export function SearchBar() {
                 aria-label="Clear search"
                 className="shrink-0 rounded p-0.5 text-muted-foreground/60 hover:bg-foreground/5 hover:text-foreground"
               >
-                <IconX className="h-3.5 w-3.5" aria-hidden />
+                <IconX
+                  className={prominent ? "h-4 w-4" : "h-3.5 w-3.5"}
+                  aria-hidden
+                />
               </button>
             )}
           </div>

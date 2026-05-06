@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom"
-import { IconArrowRight } from "@tabler/icons-react"
 
 import { AllianceSection } from "@/components/alliance-section"
 import { HomeHeader } from "@/components/scope-title"
@@ -7,8 +6,10 @@ import { SearchBar } from "@/components/search-bar"
 import { SiteFooter } from "@/components/site-footer"
 
 /**
- * Lean home page: headline summary + search + explore CTA + footer.
- * Detail browsing lives on `/explore`.
+ * Lean home page. Search-led: the search bar is the page's hero
+ * affordance, with the alliance summary as supporting headline
+ * context and a small inline "browse" link for users who'd rather
+ * scroll than search.
  */
 export function DashboardPage() {
   const navigate = useNavigate()
@@ -16,6 +17,8 @@ export function DashboardPage() {
   return (
     <div className="min-h-svh bg-background text-foreground">
       <HomeHeader />
+      <SearchBar prominent />
+      <BrowseLink />
       <AllianceSection
         scope={null}
         selectedAlliance={null}
@@ -23,37 +26,23 @@ export function DashboardPage() {
           if (alliance) navigate(`/explore?alliance=${alliance}`)
         }}
       />
-      <SearchBar />
-      <ExploreCTA />
       <SiteFooter />
     </div>
   )
 }
 
-function ExploreCTA() {
+function BrowseLink() {
   return (
-    <section className="border-t">
-      <div className="mx-auto max-w-6xl px-6 py-10">
+    <div className="mx-auto max-w-3xl px-6 -mt-8 mb-12 text-center">
+      <p className="text-xs text-muted-foreground">
+        or{" "}
         <Link
           to="/explore"
-          className="group flex items-center justify-between gap-4 rounded-lg border bg-card/40 p-5 transition-colors hover:bg-foreground/[0.03] sm:p-6"
+          className="underline-offset-2 hover:text-foreground hover:underline"
         >
-          <div className="min-w-0">
-            <h2 className="font-heading text-lg font-semibold tracking-tight sm:text-xl">
-              Browse all 140 seats
-            </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              The full constituency-level explorer — filter by district,
-              alliance, or party; sort the candidate table; click any
-              seat for its detail panel and historical chart.
-            </p>
-          </div>
-          <IconArrowRight
-            className="h-5 w-5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-foreground"
-            aria-hidden
-          />
+          browse all 140 seats →
         </Link>
-      </div>
-    </section>
+      </p>
+    </div>
   )
 }
