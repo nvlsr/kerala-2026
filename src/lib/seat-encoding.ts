@@ -26,11 +26,19 @@ export type MapData = {
 export const NEUTRAL_HUE = "#64748b" // slate-500: scalar magnitude in result=all
 export const POSITIVE_HUE = "#10b981" // emerald-500: gains
 export const NEGATIVE_HUE = "#f43f5e" // rose-500: losses
-const NO_DATA_FILL = "var(--muted)"
+// var(--foreground) (not --muted) so that the no-data fill is visible
+// in both light and dark mode. --muted is too close to --background in
+// light mode (oklch 0.97 vs 1.0), so muted-filled cells were
+// effectively invisible there — including the selected-seat case at
+// 0.95 opacity. Foreground inverts symmetrically across themes, so
+// we use much lower base opacities here than the prior muted-based
+// values; selected (0.95 opacity in the JSX) pops cleanly in either
+// mode, while ambient dim cells stay subtle.
+const NO_DATA_FILL = "var(--foreground)"
 
 const DIM_FACTOR = 0.2
-const DIM_FLOOR = 0.15
-const NO_DATA_OPACITY = 0.18
+const DIM_FLOOR = 0.05
+const NO_DATA_OPACITY = 0.06
 
 const DELTA_COLUMNS: ReadonlySet<SortColumn> = new Set([
   "shareDelta",
