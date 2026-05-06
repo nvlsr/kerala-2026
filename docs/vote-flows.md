@@ -10,8 +10,9 @@ Alliance-level vote flow patterns across Kerala's 140 ACs. The page lives at [`/
 | `src/lib/data/flows.ts` | ✅ Shipped. Runtime classification used by the page. |
 | `/flows` page (Stage 1) | ✅ Shipped. Pattern lists, focused AC maps per pattern, multi-cycle trajectories as text. |
 | Discovery link from `/insights` | ✅ Shipped. |
-| State-level Sankey hero (Stage 2) | ☐ Open. |
-| Per-seat trajectory mini-charts (Stage 3) | ☐ Open. |
+| State-level Sankey hero (Stage 2) | ✅ Shipped. Custom-SVG Sankey of 2021→2026 seat-winner flows. |
+| Per-pattern permalinks | ✅ Shipped. Each pattern section is `/flows#single-<key>` or `/flows#drift-<key>`. |
+| Per-seat trajectory mini-charts (Stage 3) | ☐ Deferred. The text trajectory ("NDA 3 → 25 → 31 → 38") reads better than expected; revisit only if it stops working. |
 | Flow-mode on dashboard AC map (Stage 4) | ☐ Open / optional. |
 
 ## What "flow" means here
@@ -88,27 +89,13 @@ The most consequential single finding is **20 seats with sustained LDF → NDA d
 
 ## Remaining stages
 
-### Stage 2 — State-level Sankey
-
-A hero visualisation at the top of `/flows` showing 2021 → 2026 aggregate alliance share movement across all 140 seats. Three nodes left (UDF / LDF / NDA share in 2021), three right (same for 2026), weighted ribbons between.
-
-Build custom SVG first (six nodes, nine candidate ribbons — geometry is simple). Fall back to `d3-sankey` (~10KB) if layout calculation gets fiddly.
-
-Open: how to compute aggregate flow weight. Two options:
-- **By vote share**: aggregate alliance share statewide in each cycle; ribbon width = share retained vs migrated. Cleanest semantically but requires assigning the migration directions consistently.
-- **By seat count**: ribbons widths = number of seats showing that flow pattern. Simpler, more honest about what we're actually computing.
-
-Lean seat-count for the first version. Adds visual context to the per-pattern sections below.
-
-### Stage 3 — Per-seat trajectory mini-charts
-
-Replace the text trajectory ("NDA 3 → 25 → 31 → 38") in the multi-cycle drift section with small line charts. Cycles on x, vote share on y, three lines (UDF/LDF/NDA). Use Recharts (already a dep). Most striking for the LDF → NDA section (Attingal, Chathannoor, etc.).
-
-Trade-off: the text format already conveys the trend cleanly and uses no extra space. Charts would be visually richer but might dilute the at-a-glance scannability. Worth doing only if we observe the page in use and find the text format insufficient.
-
 ### Stage 4 — Flow-mode on the dashboard AC map *(optional)*
 
-A new encoding mode in `seat-encoding.ts` that colours dashboard ACs by detected flow pattern (saffron-on-red gradient for LDF→NDA, blue-on-red for LDF→UDF, etc.). Surfaces flow context where dashboard users are already looking. Polish — defer until Stage 2-3 are settled.
+A new encoding mode in `seat-encoding.ts` that colours dashboard ACs by detected flow pattern (saffron-on-red gradient for LDF→NDA, blue-on-red for LDF→UDF, etc.). Surfaces flow context where dashboard users are already looking. Pure polish — only worth doing if the dashboard's existing encoding modes feel limiting.
+
+### Stage 3 (deferred) — Per-seat trajectory mini-charts
+
+The original plan was to replace text trajectories ("NDA 3 → 25 → 31 → 38") with mini line charts. After living with the page, the text format works *better* than charts would — it's compact, scannable, and conveys the trend in less vertical space. Skip unless we hit a specific case where the text feels insufficient.
 
 ## Re-running the script
 

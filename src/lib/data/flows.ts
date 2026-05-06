@@ -248,6 +248,98 @@ export function getMultiCycleDrifts(): MultiCycleDrift[] {
   return out
 }
 
+// ─── State-level seat-winner flow (2021 → 2026) ───────────────────────
+//
+// For the Sankey hero on /flows. Counts seats by (winner alliance in 2021,
+// winner alliance in 2026). This is a SEAT-LEVEL flow (which alliance
+// holds the seat), not a vote-share flow — distinct from the per-pattern
+// detections above. Both stories matter, this one reads in five seconds.
+
+const MAIN_ALLIANCES: AllianceCode[] = ["UDF", "LDF", "NDA"]
+
+export type StateLevelFlow = {
+  /** Winner-alliance counts by year. */
+  fromTotals: Record<AllianceCode, number>
+  toTotals: Record<AllianceCode, number>
+  /** Seat counts by (2021 winner alliance, 2026 winner alliance) pair. */
+  byPair: Array<{ from: AllianceCode; to: AllianceCode; count: number }>
+  /** Seats where the 2021 winner couldn't be determined (no historical data). */
+  missingFromCount: number
+  totalSeats: number
+}
+
+let cachedStateLevelFlow: StateLevelFlow | null = null
+
+export function getStateLevelFlow(): StateLevelFlow {
+  if (cachedStateLevelFlow) return cachedStateLevelFlow
+
+  const fromTotals: Record<AllianceCode, number> = {
+    UDF: 0,
+    LDF: 0,
+    NDA: 0,
+    OTHER: 0,
+    NOTA: 0,
+  }
+  const toTotals: Record<AllianceCode, number> = {
+    UDF: 0,
+    LDF: 0,
+    NDA: 0,
+    OTHER: 0,
+    NOTA: 0,
+  }
+  const pairCounts = new Map<string, number>()
+  let missingFromCount = 0
+
+  for (const c of constituencies) {
+    // 2026 winner — pick highest-vote non-NOTA candidate
+    const winner2026 = c.candidates
+      .filter((x) => !x.isNota)
+      .sort((a, b) => b.votes - a.votes)[0]
+    if (!winner2026) continue
+    const to = winner2026.alliance
+
+    // 2021 winner from historical
+    const hist = getHistoricalFor(c.constituencyNumber)
+    const e2021 = hist?.elections.find(
+      (e) => e.year === 2021 && e.type === "general"
+    )
+    if (!e2021) {
+      missingFromCount++
+      continue
+    }
+    const winner2021 = [...e2021.candidates].sort(
+      (a, b) => b.votes - a.votes
+    )[0]
+    if (!winner2021) {
+      missingFromCount++
+      continue
+    }
+    const from = winner2021.alliance
+
+    fromTotals[from]++
+    toTotals[to]++
+    const key = `${from}>${to}`
+    pairCounts.set(key, (pairCounts.get(key) ?? 0) + 1)
+  }
+
+  const byPair: StateLevelFlow["byPair"] = []
+  for (const from of MAIN_ALLIANCES) {
+    for (const to of MAIN_ALLIANCES) {
+      const count = pairCounts.get(`${from}>${to}`) ?? 0
+      if (count > 0) byPair.push({ from, to, count })
+    }
+  }
+
+  cachedStateLevelFlow = {
+    fromTotals,
+    toTotals,
+    byPair,
+    missingFromCount,
+    totalSeats: constituencies.length,
+  }
+  return cachedStateLevelFlow
+}
+
 // ─── Pattern grouping helpers ───────────────────────────────────────────
 
 export function singleCyclePatternKey(flow: SingleCycleFlow): string {

@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+import { useEffect, useMemo } from "react"
 import { Link } from "react-router-dom"
 import { IconAlertTriangle } from "@tabler/icons-react"
 
@@ -7,6 +7,7 @@ import {
   SingleCyclePatternSection,
 } from "@/components/flow-pattern-section"
 import { SiteFooter } from "@/components/site-footer"
+import { StateFlowSankey } from "@/components/state-flow-sankey"
 import { ThemeToggle } from "@/components/theme-toggle"
 import {
   getMultiCycleDrifts,
@@ -57,6 +58,20 @@ export function FlowsPage() {
     [drifts]
   )
 
+  // Browsers compute :target before React mounts the cards on initial load,
+  // so the native scroll lands nowhere. Re-set the hash after the first paint
+  // to trigger :target and produce the correct scroll. Same trick the
+  // /insights page uses.
+  useEffect(() => {
+    if (!window.location.hash) return
+    const hash = window.location.hash
+    const handle = requestAnimationFrame(() => {
+      window.location.hash = ""
+      window.location.hash = hash.slice(1)
+    })
+    return () => cancelAnimationFrame(handle)
+  }, [])
+
   return (
     <div className="min-h-svh bg-background text-foreground">
       <header>
@@ -102,6 +117,10 @@ export function FlowsPage() {
       </div>
 
       <main className="mx-auto max-w-6xl px-6 py-8">
+        <section className="mb-12">
+          <StateFlowSankey />
+        </section>
+
         <section>
           <div className="mb-4 flex items-baseline justify-between gap-3">
             <h2 className="font-heading text-xl font-semibold tracking-tight sm:text-2xl">
@@ -121,6 +140,7 @@ export function FlowsPage() {
               <li key={g.key}>
                 <SingleCyclePatternSection
                   patternLabel={g.label}
+                  patternId={`single-${g.key}`}
                   flows={g.items}
                 />
               </li>
@@ -148,6 +168,7 @@ export function FlowsPage() {
               <li key={g.key}>
                 <MultiCycleDriftSection
                   patternLabel={g.label}
+                  patternId={`drift-${g.key}`}
                   drifts={g.items}
                 />
               </li>

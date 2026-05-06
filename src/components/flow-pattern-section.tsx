@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import { IconLink } from "@tabler/icons-react"
+import { useState } from "react"
 
 import { MiniACMap } from "@/components/mini-ac-map"
 import {
@@ -49,15 +51,49 @@ function buildSeatUrl(seat: Constituency): string {
   return `/?${serializeFilters(f).toString()}`
 }
 
+// ─── Permalink button (shared) ──────────────────────────────────────────
+
+function PermalinkButton({ id }: { id: string }) {
+  const [copied, setCopied] = useState(false)
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    window.history.replaceState(null, "", `#${id}`)
+    void (async () => {
+      try {
+        await navigator.clipboard.writeText(
+          `${window.location.origin}/flows#${id}`
+        )
+        setCopied(true)
+        setTimeout(() => setCopied(false), 1800)
+      } catch {
+        /* noop on insecure origin / older browsers */
+      }
+    })()
+  }
+  return (
+    <a
+      href={`#${id}`}
+      onClick={handleClick}
+      aria-label={copied ? "Permalink copied" : "Copy permalink to this section"}
+      title={copied ? "Copied" : "Copy permalink"}
+      className="shrink-0 rounded-md p-1.5 text-muted-foreground/50 transition-colors hover:bg-foreground/5 hover:text-foreground"
+    >
+      <IconLink className="h-4 w-4" aria-hidden />
+    </a>
+  )
+}
+
 // ─── Single-cycle pattern section ───────────────────────────────────────
 
 type SinglePatternProps = {
   patternLabel: string
+  patternId: string
   flows: SeatFlow[]
 }
 
 export function SingleCyclePatternSection({
   patternLabel,
+  patternId,
   flows,
 }: SinglePatternProps) {
   const focusSeats = new Set(
@@ -69,10 +105,14 @@ export function SingleCyclePatternSection({
   }
 
   return (
-    <article className="rounded-lg border bg-card/50 p-6">
-      <header className="flex items-baseline justify-between gap-3">
-        <h3 className="font-heading text-base font-semibold tracking-tight sm:text-lg">
+    <article
+      id={patternId}
+      className="scroll-mt-8 rounded-lg border bg-card/50 p-6 target:border-foreground/60 target:ring-2 target:ring-foreground/30"
+    >
+      <header className="flex items-center justify-between gap-3">
+        <h3 className="font-heading flex items-center gap-2 text-base font-semibold tracking-tight sm:text-lg">
           {patternLabel}
+          <PermalinkButton id={patternId} />
         </h3>
         <span className="text-xs tracking-wide text-muted-foreground uppercase">
           {flows.length} {flows.length === 1 ? "seat" : "seats"}
@@ -155,11 +195,13 @@ function SingleFlowsTable({ flows }: { flows: SeatFlow[] }) {
 
 type DriftPatternProps = {
   patternLabel: string
+  patternId: string
   drifts: MultiCycleDrift[]
 }
 
 export function MultiCycleDriftSection({
   patternLabel,
+  patternId,
   drifts,
 }: DriftPatternProps) {
   const focusSeats = new Set(
@@ -171,10 +213,14 @@ export function MultiCycleDriftSection({
   }
 
   return (
-    <article className="rounded-lg border bg-card/50 p-6">
-      <header className="flex items-baseline justify-between gap-3">
-        <h3 className="font-heading text-base font-semibold tracking-tight sm:text-lg">
+    <article
+      id={patternId}
+      className="scroll-mt-8 rounded-lg border bg-card/50 p-6 target:border-foreground/60 target:ring-2 target:ring-foreground/30"
+    >
+      <header className="flex items-center justify-between gap-3">
+        <h3 className="font-heading flex items-center gap-2 text-base font-semibold tracking-tight sm:text-lg">
           {patternLabel}
+          <PermalinkButton id={patternId} />
         </h3>
         <span className="text-xs tracking-wide text-muted-foreground uppercase">
           {drifts.length} {drifts.length === 1 ? "seat" : "seats"} · sustained
