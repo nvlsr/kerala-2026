@@ -8,6 +8,7 @@ import { CandidateTable } from "@/components/candidate-table"
 import { ConstituencyMap } from "@/components/constituency-map"
 import { ConstituencySection } from "@/components/constituency-section"
 import { InsightsTeaser } from "@/components/insights-teaser"
+import { SearchBar } from "@/components/search-bar"
 import { SiteFooter } from "@/components/site-footer"
 import { constituencies } from "@/lib/data"
 import {
@@ -72,6 +73,7 @@ export function DashboardPage() {
           dispatch({ type: "set-alliance", alliance })
         }
       />
+      <SearchBar />
       <KeralaMap
         scope={filters.district}
         onSelect={(district) => dispatch({ type: "set-district", district })}
