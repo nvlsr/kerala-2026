@@ -11,7 +11,9 @@
  *   - districts.ts     — district list + lookup
  *   - demographics.ts  — religion + per-district census
  *   - historical.ts    — past-cycle data loader
- *   - aggregates.ts    — state/alliance/party summaries + trend builders
+ *   - aggregates/     — state/alliance/party summaries + trend builders
+ *                       (one public function per file under this directory;
+ *                       see `aggregates/index.ts` for the layout)
  *   - candidate-rows.ts — flat row builder used by the candidate table
  */
 export * from "./alliances"
