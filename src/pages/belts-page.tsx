@@ -10,13 +10,18 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { belts, buildBeltCrossTab } from "@/lib/data/belts"
+import {
+  belts,
+  buildBeltCrossTab,
+  type BeltCrossTabRow,
+} from "@/lib/data/belts"
 import {
   getMultiCycleDrifts,
   multiCyclePatternKey,
   multiCyclePatternLabel,
   type MultiCycleDrift,
 } from "@/lib/data/flows"
+import type { BeltDef } from "@/lib/data/loaders"
 import { cn } from "@/lib/utils"
 
 function groupBy<T, K extends string>(
@@ -32,6 +37,21 @@ function groupBy<T, K extends string>(
   }
   return [...map.values()].sort((a, b) => b.items.length - a.items.length)
 }
+
+// Hand-written editorial framing per pattern. The numeric specifics are
+// data-derived (see PerPatternBlock); these sentences carry the
+// interpretation the data alone can't.
+const PATTERN_FRAMINGS: Record<string, string> = {
+  LDF_to_NDA:
+    "Spread across central and southern Kerala — central-syromalabar (5), southern-ezhava (5), and southern-nair-latin (4) lead, with smaller clusters across the central-reformed-christian, central-hindu, northern-mixed, and southern-coastal-mixed belts. The conspicuous absence is northern-muslim: IUML's structural hold in Malappuram blocks NDA's third-pole rise from reaching the Muslim belt at all. The drift lives in Hindu and Christian sub-community zones; it stops at the Muslim border.",
+  LDF_to_UDF:
+    "Heavily Christian-belt. The central-syromalabar zone holds 4 of 11 (Angamaly, Piravom, Muvattupuzha, Peerumade) — Syro-Malabar Catholic seats where KC(M) was historically UDF before its 2020 switch to LDF. The cumulative 15-year arc still reads as LDF→UDF in those seats because UDF's earlier base survives the cycle math. This pattern is largely a denominational story.",
+  UDF_to_NDA:
+    "Tightly clustered. Half (3 of 6) sit in southern-nair-latin — the Trivandrum Nair belt is the one place NDA has stripped UDF votes at scale. Two more in central-reformed-christian (Pala, Poonjar in Kottayam highlands), one in central-hindu (Ottappalam). The Ezhava and Syro-Malabar belts that drive LDF→NDA are absent here entirely; this is a different drift in a different geography.",
+}
+
+const CROSS_PATTERN_OBSERVATION =
+  "Notice that central-syromalabar appears in both LDF→NDA (5 seats) and LDF→UDF (4 seats). The Syro-Malabar Catholic belt is the most politically churned in the dataset — drifting in opposite directions in different seats simultaneously. Most other belts feed at most one drift pattern."
 
 export function BeltsPage() {
   const [selectedBeltId, setSelectedBeltId] = useState<string | null>(null)
@@ -82,7 +102,7 @@ export function BeltsPage() {
               · Belts
             </p>
             <h1 className="font-heading flex items-center gap-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Community belts
+              Drift, by community belt
               <Popover>
                 <PopoverTrigger
                   aria-label="About this page"
@@ -98,11 +118,16 @@ export function BeltsPage() {
                   <div className="space-y-3 text-sm leading-relaxed">
                     <p>
                       A qualitative geography of Kerala's community
-                      "belts" — the rough zones where particular
-                      religious or caste-community groups dominate.
-                      Districts are assigned a primary belt; per-AC
-                      overrides will be added for finer signal where
-                      needed.
+                      "belts" overlaid against the multi-cycle drift
+                      findings from{" "}
+                      <Link
+                        to="/drifts"
+                        className="font-medium text-foreground underline-offset-2 hover:underline"
+                      >
+                        /drifts
+                      </Link>
+                      . The question: do the drift patterns
+                      concentrate in particular community zones?
                     </p>
                     <p className="border-t pt-3 text-muted-foreground">
                       <span className="font-medium text-foreground">
@@ -112,17 +137,24 @@ export function BeltsPage() {
                       (Zachariah 2003, GeoCurrents synthesis 2014,
                       KCBC diocese geography), not from sub-district
                       census data. Author judgement shaped each label.
-                      Cross-tab counts below are pattern-suggestive,
-                      not statistical evidence.
+                      The conclusions are pattern-suggestive, not
+                      statistical evidence.
                     </p>
                   </div>
                 </PopoverContent>
               </Popover>
             </h1>
             <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-              Exploratory page. No nav entry yet — meant to be
-              eyeballed and compared with published community-belt maps
-              before being wired into the rest of the site.
+              The short answer: <span className="text-foreground">yes</span>,
+              the multi-cycle drifts cluster in particular belts — and the
+              clusters tell three different stories.{" "}
+              <span className="font-medium text-foreground">LDF→NDA</span>{" "}
+              is broad but stops at the Muslim belt;{" "}
+              <span className="font-medium text-foreground">LDF→UDF</span>{" "}
+              is overwhelmingly Syro-Malabar Christian;{" "}
+              <span className="font-medium text-foreground">UDF→NDA</span>{" "}
+              is a tight Trivandrum-Nair plus Kottayam-highland cluster.
+              Read on for each pattern's geography.
             </p>
           </div>
           <ThemeToggle />
@@ -136,10 +168,9 @@ export function BeltsPage() {
             The nine belts
           </h2>
           <p className="mt-1 mb-4 max-w-2xl text-sm text-muted-foreground">
-            Every AC is shaded by its district's primary belt. Pass 2 of
-            this work will refine the labels for the 41 multi-cycle
-            drift seats individually, but for now this is the coarse
-            district-default view.
+            Every AC is shaded by its district's primary belt. Click any
+            belt card on the right to highlight just that zone on the
+            map; click again to clear.
           </p>
           <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-3">
             <div className="lg:col-span-2">
@@ -168,119 +199,42 @@ export function BeltsPage() {
           </div>
         </section>
 
-        {/* ─── Per-pattern overlay maps ─── */}
+        {/* ─── Per-pattern blocks ─── */}
         <section>
           <h2 className="font-heading text-xl font-semibold tracking-tight sm:text-2xl">
-            Drift patterns on the belt baseline
+            How each drift pattern maps onto the belts
           </h2>
-          <p className="mt-1 mb-4 max-w-2xl text-sm text-muted-foreground">
-            The same belt map for each multi-cycle drift pattern —
-            drift seats outlined, all other seats dimmed. The shapes
-            of the highlighted clusters are the question to look at:
-            do they sit in particular belts, or are they scattered?
+          <p className="mt-1 mb-6 max-w-2xl text-sm text-muted-foreground">
+            For each of the three multi-cycle drift patterns, the same
+            belt baseline with that pattern's drift seats outlined.
+            Right of each map: which belts the drift concentrates in,
+            and which belts it skips.
           </p>
-          <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <ul className="flex flex-col gap-8">
             {driftGroups.map((g) => {
               const focus = driftSeatsByPattern.get(g.key)!
+              const row = crossTab.rows.find((r) => r.patternKey === g.key)
+              if (!row) return null
               return (
-                <li
-                  key={g.key}
-                  className="rounded-lg border bg-card/40 p-4"
-                >
-                  <header className="mb-2 flex items-baseline justify-between gap-2">
-                    <h3 className="font-heading text-sm font-semibold tracking-tight">
-                      {g.label}
-                    </h3>
-                    <span className="text-xs tracking-wide text-muted-foreground uppercase">
-                      {g.items.length} seats
-                    </span>
-                  </header>
-                  <BeltsMap
+                <li key={g.key}>
+                  <PerPatternBlock
+                    patternKey={g.key}
+                    patternLabel={g.label}
+                    row={row}
                     focusSeats={focus}
-                    strokeSeats={focus}
-                    ariaLabel={`Belt map with ${g.label} drift seats highlighted`}
                   />
                 </li>
               )
             })}
           </ul>
-        </section>
-
-        {/* ─── Cross-tab ─── */}
-        <section>
-          <h2 className="font-heading text-xl font-semibold tracking-tight sm:text-2xl">
-            Drift × belt cross-tab
-          </h2>
-          <p className="mt-1 mb-4 max-w-2xl text-sm text-muted-foreground">
-            How many seats of each drift pattern fall into each belt.
-            Read the rows: where is each shift concentrated? Read the
-            columns: which belts are seeing which kind of movement?
-            n=41 split across nine belts is too few cells for
-            statistical confidence — read this as pattern-suggestive
-            only.
-          </p>
-          <div className="overflow-x-auto rounded-lg border">
-            <table className="w-full text-sm">
-              <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
-                <tr className="border-b">
-                  <th className="px-3 py-2 text-left">Pattern</th>
-                  <th className="px-3 py-2 text-right">Total</th>
-                  {crossTab.belts.map((b) => (
-                    <th
-                      key={b.id}
-                      className="px-2 py-2 text-right"
-                      title={b.label}
-                    >
-                      <span
-                        className="mr-1 inline-block h-2 w-2 rounded-full align-middle"
-                        style={{ backgroundColor: b.color }}
-                        aria-hidden
-                      />
-                      {b.label.replace(/^[A-Z][a-z]+ /, "")}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {crossTab.rows.map((r) => (
-                  <tr key={r.patternKey} className="border-t">
-                    <td className="px-3 py-2 font-medium">
-                      {r.patternLabel}
-                    </td>
-                    <td className="px-3 py-2 text-right tabular-nums text-muted-foreground">
-                      {r.total}
-                    </td>
-                    {crossTab.belts.map((b) => {
-                      const cell = r.byBelt[b.id]!
-                      const empty = cell.count === 0
-                      return (
-                        <td
-                          key={b.id}
-                          className={cn(
-                            "px-2 py-2 text-right tabular-nums",
-                            empty
-                              ? "text-muted-foreground/30"
-                              : "font-medium text-foreground"
-                          )}
-                          title={
-                            cell.count > 0
-                              ? cell.seats.join(", ")
-                              : undefined
-                          }
-                        >
-                          {cell.count || "—"}
-                        </td>
-                      )
-                    })}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-2 text-xs text-muted-foreground">
-            Hover any non-zero cell to see the seat names in that
-            cross-section.
-          </p>
+          <aside className="mt-6 rounded-md border-l-2 border-foreground/30 bg-muted/30 px-4 py-3 text-sm">
+            <p className="text-[10px] mb-1 font-medium tracking-wider text-foreground/70 uppercase">
+              Across patterns
+            </p>
+            <p className="leading-relaxed text-muted-foreground">
+              {CROSS_PATTERN_OBSERVATION}
+            </p>
+          </aside>
         </section>
 
         {/* ─── Methodology ─── */}
@@ -340,8 +294,8 @@ export function BeltsPage() {
                 </li>
                 <li>
                   This is qualitative correlation, not statistical
-                  evidence. The cross-tab is small — n=41 split across
-                  nine belts.
+                  evidence. n=41 split across nine belts is too few
+                  cells for confidence beyond pattern-suggestion.
                 </li>
                 <li>
                   The 2011 Census is the most recent — differential
@@ -358,17 +312,28 @@ export function BeltsPage() {
               </ul>
               <p>
                 <span className="font-medium text-foreground">
-                  Why this page exists.
+                  Related pages.
                 </span>{" "}
-                We wanted to overlay the multi-cycle drift findings on
-                Kerala's community geography to see whether shifts
-                cluster in particular belts. The drift data is
-                statistically computed (see{" "}
-                <Link to="/drifts" className="underline-offset-2 hover:underline">
+                The drift data itself is computed on{" "}
+                <Link
+                  to="/drifts"
+                  className="underline-offset-2 hover:underline"
+                >
                   /drifts
                 </Link>
-                ); the belt overlay is qualitative interpretation.
-                Together they suggest hypotheses, not conclusions.
+                ; the 2021 → 2026 leg specifically (which seats are
+                still climbing vs which have plateaued) is in the
+                "Recent leg" section there. The future religion-gradient
+                page (planned, not built) is sketched in{" "}
+                <a
+                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/religion-map.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-2 hover:underline"
+                >
+                  docs/religion-map.md
+                </a>
+                .
               </p>
             </div>
           </details>
@@ -379,6 +344,99 @@ export function BeltsPage() {
     </div>
   )
 }
+
+// ─── Per-pattern block ────────────────────────────────────────────────
+
+type PerPatternBlockProps = {
+  patternKey: string
+  patternLabel: string
+  row: BeltCrossTabRow
+  focusSeats: Set<number>
+}
+
+function PerPatternBlock({
+  patternKey,
+  patternLabel,
+  row,
+  focusSeats,
+}: PerPatternBlockProps) {
+  const beltById = new Map(belts.map((b) => [b.id, b]))
+  const present = Object.entries(row.byBelt)
+    .filter(([, v]) => v.count > 0)
+    .map(([id, v]) => ({ belt: beltById.get(id)!, ...v }))
+    .sort((a, b) => b.count - a.count)
+  const absent = Object.entries(row.byBelt)
+    .filter(([, v]) => v.count === 0)
+    .map(([id]) => beltById.get(id)!)
+    .filter(Boolean)
+
+  // Only mention absences when there's a meaningful structural story —
+  // arbitrarily: when 2 or fewer belts are absent. Beyond that the list
+  // becomes noise (most of the absences are mathematical, not interesting).
+  const showAbsences = absent.length > 0 && absent.length <= 3
+  const framing = PATTERN_FRAMINGS[patternKey]
+
+  return (
+    <article className="rounded-lg border bg-card/40 p-5 sm:p-6">
+      <header className="flex items-baseline justify-between gap-3">
+        <h3 className="font-heading text-base font-semibold tracking-tight sm:text-lg">
+          {patternLabel}
+        </h3>
+        <span className="text-xs tracking-wide text-muted-foreground uppercase">
+          {row.total} seats
+        </span>
+      </header>
+      {framing && (
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+          {framing}
+        </p>
+      )}
+      <div className="mt-5 grid grid-cols-1 items-start gap-6 lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          <BeltsMap
+            focusSeats={focusSeats}
+            strokeSeats={focusSeats}
+            ariaLabel={`Belt map with ${patternLabel} drift seats highlighted`}
+          />
+        </div>
+        <div>
+          <p className="mb-2 text-xs font-medium tracking-wider text-foreground/70 uppercase">
+            Belts holding this drift
+          </p>
+          <ul className="space-y-1.5">
+            {present.map((p) => (
+              <li
+                key={p.belt.id}
+                className="flex items-center gap-2 text-sm"
+                title={p.seats.join(", ")}
+              >
+                <span
+                  className="inline-block h-3 w-3 shrink-0 rounded-full"
+                  style={{ backgroundColor: p.belt.color }}
+                  aria-hidden
+                />
+                <span className="flex-1 truncate">{p.belt.label}</span>
+                <span className="font-medium tabular-nums text-foreground">
+                  {p.count}
+                </span>
+              </li>
+            ))}
+          </ul>
+          {showAbsences && (
+            <p className="mt-3 text-xs leading-snug text-muted-foreground">
+              <span className="font-medium text-foreground/70">
+                Absent from:
+              </span>{" "}
+              {absent.map((b) => b.label).join(", ")}.
+            </p>
+          )}
+        </div>
+      </div>
+    </article>
+  )
+}
+
+// ─── Belt legend ─────────────────────────────────────────────────────
 
 type BeltLegendProps = {
   selectedBeltId: string | null
@@ -441,3 +499,7 @@ function BeltLegend({ selectedBeltId, onSelect, onReset }: BeltLegendProps) {
     </div>
   )
 }
+
+// `BeltDef` import retained because PerPatternBlock receives belt
+// metadata indirectly through cross-tab; keep type imports tidy.
+export type { BeltDef }
