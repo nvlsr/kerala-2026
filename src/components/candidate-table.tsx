@@ -5,11 +5,9 @@ import {
   IconCheck,
   IconChevronLeft,
   IconChevronRight,
-  IconSearch,
 } from "@tabler/icons-react"
 
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { DeltaPercent } from "@/components/delta-percent"
 import { InfoIcon } from "@/components/info-icon"
@@ -37,15 +35,6 @@ import type {
 
 const PAGE_SIZE = 10
 
-function matchesQuery(r: CandidateRow, q: string): boolean {
-  return (
-    r.constituencyName.toLowerCase().includes(q) ||
-    r.candidate.name.toLowerCase().includes(q) ||
-    r.party.toLowerCase().includes(q) ||
-    r.partyShort.toLowerCase().includes(q)
-  )
-}
-
 type Props = {
   filters: Filters
   dispatch: Dispatch<FilterAction>
@@ -54,50 +43,22 @@ type Props = {
 export function CandidateTable({ filters, dispatch }: Props) {
   const { district: scope, alliance, party, seat, result, sort } = filters
   const { column: sortColumn, dir: sortDir } = sort
-  const [query, setQuery] = useState("")
   const [page, setPage] = useState(1)
 
   const district = scope ? getDistrict(scope) : null
   const allRows = useMemo(() => buildCandidateRows(scope), [scope])
 
-  const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase()
-    return allRows.filter((r) => {
-      if (result === "winners" && !r.isWinner) return false
-      if (result === "losers" && r.isWinner) return false
-      if (alliance && r.allianceCode !== alliance) return false
-      if (party && r.party !== party) return false
-      if (!q) return true
-      return matchesQuery(r, q)
-    })
-  }, [allRows, query, result, alliance, party])
-
-  const searchCounts = useMemo(() => {
-    const q = query.trim().toLowerCase()
-    if (!q) return null
-    let winners = 0
-    let losers = 0
-    for (const r of allRows) {
-      if (alliance && r.allianceCode !== alliance) continue
-      if (party && r.party !== party) continue
-      if (!matchesQuery(r, q)) continue
-      if (r.isWinner) winners++
-      else losers++
-    }
-    return { winners, losers, total: winners + losers }
-  }, [allRows, query, alliance, party])
-
-  const currentMatchCount = !searchCounts
-    ? null
-    : result === "winners"
-      ? searchCounts.winners
-      : result === "losers"
-        ? searchCounts.losers
-        : searchCounts.total
-  const hiddenMatchCount =
-    searchCounts && currentMatchCount != null && result !== "all"
-      ? searchCounts.total - currentMatchCount
-      : 0
+  const filtered = useMemo(
+    () =>
+      allRows.filter((r) => {
+        if (result === "winners" && !r.isWinner) return false
+        if (result === "losers" && r.isWinner) return false
+        if (alliance && r.allianceCode !== alliance) return false
+        if (party && r.party !== party) return false
+        return true
+      }),
+    [allRows, result, alliance, party]
+  )
 
   const sorted = useMemo(
     () => sortCandidateRows(filtered, sortColumn, sortDir),
@@ -129,89 +90,30 @@ export function CandidateTable({ filters, dispatch }: Props) {
       title="Candidates"
       subtitle={`${scopeLabel ? scopeLabel + " " : ""}· ${sorted.length}`}
       actions={
-        <>
-          <div className="relative">
-            <IconSearch
-              className="pointer-events-none absolute top-1/2 left-2.5 h-4 w-4 -translate-y-1/2 text-muted-foreground"
-              aria-hidden
-            />
-            <Input
-              type="search"
-              value={query}
-              onChange={(e) => {
-                setQuery(e.target.value)
-                setPage(1)
-              }}
-              placeholder="Search seat, candidate, party"
-              className="w-60 pl-8"
-            />
-          </div>
-          <ToggleGroup
-            value={[result]}
-            onValueChange={(v) => {
-              const next = (v[0] as ResultFilter | undefined) ?? "winners"
-              dispatch({ type: "set-result", result: next })
-              setPage(1)
-            }}
-            variant="outline"
-            size="sm"
-            spacing={0}
-          >
-            <ToggleGroupItem value="winners">Winners</ToggleGroupItem>
-            <ToggleGroupItem value="losers">Losers</ToggleGroupItem>
-            <ToggleGroupItem value="all">All</ToggleGroupItem>
-          </ToggleGroup>
-        </>
+        <ToggleGroup
+          value={[result]}
+          onValueChange={(v) => {
+            const next = (v[0] as ResultFilter | undefined) ?? "winners"
+            dispatch({ type: "set-result", result: next })
+            setPage(1)
+          }}
+          variant="outline"
+          size="sm"
+          spacing={0}
+        >
+          <ToggleGroupItem value="winners">Winners</ToggleGroupItem>
+          <ToggleGroupItem value="losers">Losers</ToggleGroupItem>
+          <ToggleGroupItem value="all">All</ToggleGroupItem>
+        </ToggleGroup>
       }
     >
       <InsightsChips dispatch={dispatch} />
       {sorted.length === 0 ? (
-        searchCounts && searchCounts.total > 0 && result !== "all" ? (
-          <div className="rounded-lg border border-dashed px-4 py-12 text-center text-sm text-muted-foreground">
-            <div className="mb-3">
-              No {result} match{" "}
-              <span className="font-medium text-foreground">
-                "{query.trim()}"
-              </span>
-              .
-            </div>
-            <button
-              type="button"
-              onClick={() => {
-                dispatch({ type: "set-result", result: "all" })
-                setPage(1)
-              }}
-              className="rounded-full border bg-background px-3 py-1 font-medium text-foreground hover:bg-foreground/5"
-            >
-              Show {searchCounts.total} match
-              {searchCounts.total === 1 ? "" : "es"} across all candidates
-            </button>
-          </div>
-        ) : (
-          <div className="rounded-lg border border-dashed py-16 text-center text-sm text-muted-foreground">
-            No candidates match your filters.
-          </div>
-        )
+        <div className="rounded-lg border border-dashed py-16 text-center text-sm text-muted-foreground">
+          No candidates match your filters.
+        </div>
       ) : (
         <>
-          {hiddenMatchCount > 0 && (
-            <div className="mb-2 flex flex-wrap items-center gap-2 rounded-md border bg-muted/40 px-3 py-1.5 text-xs text-muted-foreground">
-              <span>
-                {hiddenMatchCount} more {result === "winners" ? "loser" : "winner"}
-                {hiddenMatchCount === 1 ? "" : "s"} match this search.
-              </span>
-              <button
-                type="button"
-                onClick={() => {
-                  dispatch({ type: "set-result", result: "all" })
-                  setPage(1)
-                }}
-                className="rounded-full border bg-background px-2 py-0.5 font-medium text-foreground hover:bg-foreground/5"
-              >
-                Show all {searchCounts?.total}
-              </button>
-            </div>
-          )}
           <div className="overflow-hidden rounded-lg border">
             <table className="w-full text-sm">
               <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
