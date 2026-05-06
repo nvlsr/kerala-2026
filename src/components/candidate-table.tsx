@@ -114,19 +114,20 @@ export function CandidateTable({ filters, dispatch }: Props) {
                 <col style={{ width: "22%" }} />
                 <col style={{ width: "5%" }} />
                 <col style={{ width: "8%" }} />
-                <col style={{ width: "8%" }} />
                 <col style={{ width: "10%" }} />
+                <col style={{ width: "8%" }} />
                 <col style={{ width: "10%" }} />
                 <col style={{ width: "12%" }} />
                 <col style={{ width: "10%" }} />
               </colgroup>
               <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
-                <tr className="border-b">
+                <tr>
                   <Th
                     column="constituency"
                     sortColumn={sortColumn}
                     sortDir={sortDir}
                     onSort={setSort}
+                    rowSpan={2}
                     className="px-3 py-2 text-left"
                   >
                     Constituency
@@ -136,6 +137,7 @@ export function CandidateTable({ filters, dispatch }: Props) {
                     sortColumn={sortColumn}
                     sortDir={sortDir}
                     onSort={setSort}
+                    rowSpan={2}
                     className="px-3 py-2 text-left"
                   >
                     Candidate
@@ -143,16 +145,32 @@ export function CandidateTable({ filters, dispatch }: Props) {
                   <WinnerTh
                     result={result}
                     onToggle={toggleWinnerFilter}
+                    rowSpan={2}
                   />
                   <Th
                     column="party"
                     sortColumn={sortColumn}
                     sortDir={sortDir}
                     onSort={setSort}
+                    rowSpan={2}
                     className="px-3 py-2 text-left"
                   >
                     Party
                   </Th>
+                  <Th
+                    column="votes"
+                    sortColumn={sortColumn}
+                    sortDir={sortDir}
+                    onSort={setSort}
+                    rowSpan={2}
+                    className="px-3 py-2 text-right"
+                  >
+                    Votes
+                  </Th>
+                  <GroupTh colSpan={2}>Share</GroupTh>
+                  <GroupTh colSpan={2}>Margin</GroupTh>
+                </tr>
+                <tr>
                   <Th
                     column="share"
                     sortColumn={sortColumn}
@@ -170,16 +188,7 @@ export function CandidateTable({ filters, dispatch }: Props) {
                     className="px-3 py-2 text-right"
                     tooltip="Change in this party's vote share in this constituency between 2021 and 2026 (percentage points)"
                   >
-                    Δ share '21
-                  </Th>
-                  <Th
-                    column="votes"
-                    sortColumn={sortColumn}
-                    sortDir={sortDir}
-                    onSort={setSort}
-                    className="px-3 py-2 text-right"
-                  >
-                    Votes
+                    Δ '21
                   </Th>
                   <Th
                     column="margin"
@@ -199,7 +208,7 @@ export function CandidateTable({ filters, dispatch }: Props) {
                     className="px-3 py-2 text-right"
                     tooltip="Change in this party's win/loss margin in this constituency between 2021 and 2026 (percentage points)"
                   >
-                    Δ margin '21
+                    Δ '21
                   </Th>
                 </tr>
               </thead>
@@ -258,6 +267,7 @@ function Th({
   onSort,
   className,
   tooltip,
+  rowSpan,
   children,
 }: {
   column: SortColumn
@@ -266,11 +276,12 @@ function Th({
   onSort: (c: SortColumn) => void
   className?: string
   tooltip?: string
+  rowSpan?: number
   children: React.ReactNode
 }) {
   const active = sortColumn === column
   return (
-    <th className={className}>
+    <th rowSpan={rowSpan} className={cn("border-b", className)}>
       <span className="inline-flex items-center gap-1">
         <button
           type="button"
@@ -295,6 +306,25 @@ function Th({
 }
 
 /**
+ * Non-interactive group header that spans multiple sub-columns. Used
+ * in the two-row `<thead>` to label related metric pairs (Share /
+ * Δ Share '21, Margin / Δ Margin '21) under one umbrella header.
+ */
+function GroupTh({
+  colSpan,
+  children,
+}: {
+  colSpan: number
+  children: React.ReactNode
+}) {
+  return (
+    <th colSpan={colSpan} className="border-b px-3 py-2 text-center">
+      {children}
+    </th>
+  )
+}
+
+/**
  * Header cell for the Winner column. Click toggles the result filter
  * winners ⇄ all (with chip-driven losers state collapsing back to
  * all). Visual states:
@@ -305,9 +335,11 @@ function Th({
 function WinnerTh({
   result,
   onToggle,
+  rowSpan,
 }: {
   result: ResultFilter
   onToggle: () => void
+  rowSpan?: number
 }) {
   const Icon = result === "losers" ? IconX : IconCheck
   const active = result === "winners"
@@ -318,7 +350,7 @@ function WinnerTh({
         ? "Showing losers (chip-set) · click to show all"
         : "Click to filter to winners only"
   return (
-    <th className="px-3 py-2 text-center">
+    <th rowSpan={rowSpan} className="border-b px-3 py-2 text-center">
       <button
         type="button"
         onClick={onToggle}
@@ -388,13 +420,13 @@ function CandidateTr({
         </span>
       </td>
       <td className="px-3 py-2 text-right tabular-nums">
+        {formatNumber(row.votes)}
+      </td>
+      <td className="px-3 py-2 text-right tabular-nums">
         {formatPercent(row.share / 100, 1)}
       </td>
       <td className="px-3 py-2 text-right tabular-nums">
         <DeltaPercent value={row.shareDelta2021} />
-      </td>
-      <td className="px-3 py-2 text-right tabular-nums">
-        {formatNumber(row.votes)}
       </td>
       <td
         className={cn(
