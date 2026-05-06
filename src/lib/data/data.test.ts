@@ -10,6 +10,7 @@ import {
   getPastCandidates,
   getPastWinners,
   getStateSummary,
+  getTrendData,
 } from "./aggregates"
 import { buildCandidateRows } from "./candidate-rows"
 import { sortCandidateRows } from "@/lib/candidate-sort"
@@ -283,6 +284,68 @@ describe("getPastCandidates (Aluva 76, party-scoped)", () => {
       expect(r.share).toBe(0)
       expect(r.isWinnerOfElection).toBe(false)
     }
+  })
+})
+
+describe("getPastCandidates regression: party-keyed filtering", () => {
+  // Background: a brief refactor switched the filter from party-name
+  // to alliance-code, which collapsed multiple parties sharing an
+  // alliance into a single row. KUNNATHUNAD (#84) 2021 had BOTH
+  // Twenty 20 Party (42,701 votes, NDA) and BJP (7,218 votes, NDA).
+  // Asking for "Twenty 20 Party" must return Twenty 20's specific
+  // row, not whichever NDA candidate happens to come up first.
+
+  test("Twenty 20 Party's 2021 row is returned, not collapsed with BJP (same alliance)", () => {
+    const rows = getPastCandidates(84, "Twenty 20 Party")
+    const row2021 = rows.find((r) => r.year === 2021)
+    expect(row2021).toBeDefined()
+    expect(row2021!.party).toBe("Twenty 20 Party")
+    expect(row2021!.didNotContest).toBe(false)
+    expect(row2021!.votes).toBe(42_701)
+    expect(row2021!.allianceCode).toBe("NDA")
+  })
+
+  test("BJP's 2021 row in the same seat is its own row, not Twenty 20's", () => {
+    const rows = getPastCandidates(84, "Bharatiya Janata Party")
+    const row2021 = rows.find((r) => r.year === 2021)
+    expect(row2021).toBeDefined()
+    expect(row2021!.party).toBe("Bharatiya Janata Party")
+    expect(row2021!.votes).toBe(7_218)
+  })
+})
+
+describe("getTrendData regression: per-cycle alliance attribution", () => {
+  // Background: the per-seat historical chart briefly used the 2026
+  // party→alliance mapping for line colours, so KC(M) appeared as
+  // LDF (red) for ALL cycles even though they were UDF in
+  // 2011/2016 and only switched to LDF in 2020. Pala (#93) is the
+  // canonical case — KC(M) ran there in every cycle, with the
+  // alliance flipping mid-window.
+
+  test("Pala (#93): KC(M) historical points sit under per-cycle alliance, not 2026-anchored", () => {
+    const trend = getTrendData(93)
+    expect(trend).not.toBeNull()
+    const udfSeries = trend!.series.find((s) => s.allianceCode === "UDF")
+    const ldfSeries = trend!.series.find((s) => s.allianceCode === "LDF")
+    expect(udfSeries).toBeDefined()
+    expect(ldfSeries).toBeDefined()
+
+    // 2011: KC(M) ran as UDF (K. M. Mani won)
+    const udf2011 = udfSeries!.points.find((p) => p.year === 2011)
+    expect(udf2011?.party).toBe("Kerala Congress (M)")
+
+    // 2016: KC(M) still UDF
+    const udf2016 = udfSeries!.points.find((p) => p.year === 2016)
+    expect(udf2016?.party).toBe("Kerala Congress (M)")
+
+    // 2021: KC(M) had switched to LDF (Jose K. Mani contested as LDF)
+    const ldf2021 = ldfSeries!.points.find((p) => p.year === 2021)
+    expect(ldf2021?.party).toBe("Kerala Congress (M)")
+
+    // And the corresponding UDF point in 2021 is NOT KC(M) — it's a
+    // different UDF-aligned candidate (DCK / Mani C. Kappan).
+    const udf2021 = udfSeries!.points.find((p) => p.year === 2021)
+    expect(udf2021?.party).not.toBe("Kerala Congress (M)")
   })
 })
 

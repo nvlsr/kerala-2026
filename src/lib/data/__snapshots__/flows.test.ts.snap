@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`flow detection — pattern counts > multi-cycle drift (2011 → 2026) breakdown 1`] = `
+{
+  "byPattern": {
+    "LDF_to_NDA": 24,
+    "LDF_to_UDF": 11,
+    "UDF_to_NDA": 6,
+  },
+  "total": 41,
+}
+`;
+
+exports[`flow detection — pattern counts > single-cycle (2021 → 2026) breakdown 1`] = `
+{
+  "byPattern": {
+    "LDF+NDA_to_UDF": 21,
+    "LDF+UDF_to_NDA": 6,
+    "LDF_to_NDA": 9,
+    "LDF_to_UDF": 48,
+    "NDA_to_UDF": 1,
+  },
+  "total": 85,
+}
+`;
