@@ -112,6 +112,9 @@ export function ExplorePage() {
         selectedSeat={filters.seat}
         canReset={hasActiveFilters(filters)}
         onSetScope={(district) => dispatch({ type: "set-district", district })}
+        onSetAlliance={(alliance) =>
+          dispatch({ type: "set-alliance", alliance })
+        }
         onClearScope={() => dispatch({ type: "clear-district" })}
         onClearAlliance={() => dispatch({ type: "clear-alliance" })}
         onClearParty={() => dispatch({ type: "clear-party" })}

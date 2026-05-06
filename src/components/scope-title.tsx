@@ -11,6 +11,7 @@ import {
   displayConstituencyName,
   districts,
   getDistrict,
+  MAIN_FRONT_CODES,
   partyShort,
   type AllianceCode,
 } from "@/lib/data"
@@ -46,6 +47,7 @@ type FilterBreadcrumbProps = {
   selectedSeat: number | null
   canReset: boolean
   onSetScope: (district: string) => void
+  onSetAlliance: (alliance: AllianceCode) => void
   onClearScope: () => void
   onClearAlliance: () => void
   onClearParty: () => void
@@ -53,12 +55,23 @@ type FilterBreadcrumbProps = {
   onReset: () => void
 }
 
-type Crumb = { label: string; onClear: () => void }
+const DISTRICT_OPTIONS: FilterOption[] = districts.map((d) => ({
+  value: d.id,
+  label: d.name,
+}))
+
+const ALLIANCE_OPTIONS: FilterOption[] = MAIN_FRONT_CODES.map((code) => ({
+  value: code,
+  label: code,
+}))
 
 /**
  * Sticky filter breadcrumb. Used on `/explore` to surface the active
- * filter chain ("Kerala > Kollam > NDA > BJP > Aluva") with per-segment
- * X buttons + a "Clear all" reset.
+ * filter chain ("Kerala > Kollam > NDA > BJP > Aluva") and to *set*
+ * the district + alliance dims (each is either a clearable value pill
+ * if filtered, or a dropdown picker if not). Party + seat are
+ * read-only crumbs — party is set via PartySection rows, seat via the
+ * candidate table or constituency map.
  */
 export function FilterBreadcrumb({
   scope,
@@ -67,6 +80,7 @@ export function FilterBreadcrumb({
   selectedSeat,
   canReset,
   onSetScope,
+  onSetAlliance,
   onClearScope,
   onClearAlliance,
   onClearParty,
@@ -79,18 +93,6 @@ export function FilterBreadcrumb({
       ? (constituencies.find((c) => c.constituencyNumber === selectedSeat) ??
         null)
       : null
-
-  const crumbs: Crumb[] = []
-  if (district) crumbs.push({ label: district.name, onClear: onClearScope })
-  if (selectedAlliance)
-    crumbs.push({ label: selectedAlliance, onClear: onClearAlliance })
-  if (selectedParty)
-    crumbs.push({ label: partyShort(selectedParty), onClear: onClearParty })
-  if (constituency)
-    crumbs.push({
-      label: displayConstituencyName(constituency),
-      onClear: onClearSeat,
-    })
 
   return (
     <nav
@@ -106,28 +108,33 @@ export function FilterBreadcrumb({
         >
           Kerala
         </button>
-        {!district && (
-          <DistrictPicker onSelect={onSetScope} />
+        {district ? (
+          <Crumb label={district.name} onClear={onClearScope} />
+        ) : (
+          <FilterPicker
+            label="District"
+            options={DISTRICT_OPTIONS}
+            onSelect={onSetScope}
+          />
         )}
-        {crumbs.map((c) => (
-          <span key={c.label} className="flex items-center gap-1.5">
-            <IconChevronRight
-              className="h-3 w-3 text-muted-foreground/50"
-              aria-hidden
-            />
-            <span className="inline-flex items-center gap-1 rounded-full border bg-muted/40 px-2 py-0.5 font-medium">
-              {c.label}
-              <button
-                type="button"
-                onClick={c.onClear}
-                aria-label={`Clear ${c.label}`}
-                className="rounded-full p-0.5 hover:bg-foreground/10"
-              >
-                <IconX className="h-3 w-3" aria-hidden />
-              </button>
-            </span>
-          </span>
-        ))}
+        {selectedAlliance ? (
+          <Crumb label={selectedAlliance} onClear={onClearAlliance} />
+        ) : (
+          <FilterPicker
+            label="Alliance"
+            options={ALLIANCE_OPTIONS}
+            onSelect={(value) => onSetAlliance(value as AllianceCode)}
+          />
+        )}
+        {selectedParty && (
+          <Crumb label={partyShort(selectedParty)} onClear={onClearParty} />
+        )}
+        {constituency && (
+          <Crumb
+            label={displayConstituencyName(constituency)}
+            onClear={onClearSeat}
+          />
+        )}
         {canReset && (
           <button
             type="button"
@@ -142,14 +149,53 @@ export function FilterBreadcrumb({
   )
 }
 
+/** Active-filter pill: value + X-to-clear, with the leading separator. */
+function Crumb({
+  label,
+  onClear,
+}: {
+  label: string
+  onClear: () => void
+}) {
+  return (
+    <span className="flex items-center gap-1.5">
+      <IconChevronRight
+        className="h-3 w-3 text-muted-foreground/50"
+        aria-hidden
+      />
+      <span className="inline-flex items-center gap-1 rounded-full border bg-muted/40 px-2 py-0.5 font-medium">
+        {label}
+        <button
+          type="button"
+          onClick={onClear}
+          aria-label={`Clear ${label}`}
+          className="rounded-full p-0.5 hover:bg-foreground/10"
+        >
+          <IconX className="h-3 w-3" aria-hidden />
+        </button>
+      </span>
+    </span>
+  )
+}
+
+type FilterOption = { value: string; label: string }
+
 /**
- * Trailing pill in the filter breadcrumb that opens a dropdown of all
- * 14 districts. Replaces the choropleth `KeralaMap`'s click-to-filter
- * affordance — surfaced here so the canonical filter UI stays in one
- * place. Hidden when a district is already selected (the existing
- * crumb takes its place; clear it to re-pick).
+ * Empty-slot trigger pill in the breadcrumb. Renders a dashed-border
+ * "{label} ⌄" trigger; clicking it opens a dropdown of `options`.
+ * Used for district + alliance — both are low-cardinality, fixed
+ * lists. Once a value is set, the parent swaps in a `Crumb` instead;
+ * clearing brings the picker back.
  */
-function DistrictPicker({ onSelect }: { onSelect: (district: string) => void }) {
+function FilterPicker({
+  label,
+  options,
+  onSelect,
+}: {
+  label: string
+  options: FilterOption[]
+  onSelect: (value: string) => void
+}) {
   return (
     <span className="flex items-center gap-1.5">
       <IconChevronRight
@@ -159,21 +205,21 @@ function DistrictPicker({ onSelect }: { onSelect: (district: string) => void }) 
       <Popover>
         <PopoverTrigger
           className="inline-flex items-center gap-1 rounded-full border border-dashed bg-transparent px-2 py-0.5 font-medium text-muted-foreground hover:border-solid hover:bg-muted/40 hover:text-foreground"
-          aria-label="Filter by district"
+          aria-label={`Filter by ${label.toLowerCase()}`}
         >
-          District
+          {label}
           <IconChevronDown className="h-3 w-3" aria-hidden />
         </PopoverTrigger>
         <PopoverContent align="start" className="w-44 p-1">
-          <ul role="listbox" aria-label="Districts">
-            {districts.map((d) => (
-              <li key={d.id} role="option" aria-selected={false}>
+          <ul role="listbox" aria-label={`${label} options`}>
+            {options.map((o) => (
+              <li key={o.value} role="option" aria-selected={false}>
                 <button
                   type="button"
-                  onClick={() => onSelect(d.id)}
+                  onClick={() => onSelect(o.value)}
                   className="block w-full rounded px-2 py-1 text-left text-xs hover:bg-foreground/5"
                 >
-                  {d.name}
+                  {o.label}
                 </button>
               </li>
             ))}
