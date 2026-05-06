@@ -1,6 +1,6 @@
-import { useMemo } from "react"
+import { useMemo, useState } from "react"
 import { Link } from "react-router-dom"
-import { IconInfoCircle } from "@tabler/icons-react"
+import { IconInfoCircle, IconX } from "@tabler/icons-react"
 
 import { BeltsMap } from "@/components/belts-map"
 import { SiteFooter } from "@/components/site-footer"
@@ -34,6 +34,7 @@ function groupBy<T, K extends string>(
 }
 
 export function BeltsPage() {
+  const [selectedBeltId, setSelectedBeltId] = useState<string | null>(null)
   const drifts = useMemo(() => getMultiCycleDrifts(), [])
 
   const driftGroups = useMemo(
@@ -142,9 +143,28 @@ export function BeltsPage() {
           </p>
           <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-3">
             <div className="lg:col-span-2">
-              <BeltsMap ariaLabel="Kerala constituency map shaded by community belt" />
+              <BeltsMap
+                selectedBeltId={selectedBeltId}
+                ariaLabel={
+                  selectedBeltId
+                    ? `Kerala constituency map highlighting ${selectedBeltId} belt`
+                    : "Kerala constituency map shaded by community belt"
+                }
+              />
+              {selectedBeltId && (
+                <p className="mt-2 text-xs text-muted-foreground">
+                  Showing only the selected belt. Click another card to
+                  switch, or use the reset button to see all belts.
+                </p>
+              )}
             </div>
-            <BeltLegend />
+            <BeltLegend
+              selectedBeltId={selectedBeltId}
+              onSelect={(id) =>
+                setSelectedBeltId((current) => (current === id ? null : id))
+              }
+              onReset={() => setSelectedBeltId(null)}
+            />
           </div>
         </section>
 
@@ -360,27 +380,64 @@ export function BeltsPage() {
   )
 }
 
-function BeltLegend() {
+type BeltLegendProps = {
+  selectedBeltId: string | null
+  onSelect: (id: string) => void
+  onReset: () => void
+}
+
+function BeltLegend({ selectedBeltId, onSelect, onReset }: BeltLegendProps) {
   return (
-    <ul className="space-y-2 text-sm">
-      {belts.map((b) => (
-        <li
-          key={b.id}
-          className="flex items-start gap-2 rounded-md border bg-card/30 p-2"
-        >
-          <span
-            className="mt-0.5 inline-block h-3 w-3 shrink-0 rounded-full"
-            style={{ backgroundColor: b.color }}
-            aria-hidden
-          />
-          <div className="min-w-0">
-            <p className="font-medium leading-tight">{b.label}</p>
-            <p className="mt-0.5 text-xs leading-snug text-muted-foreground">
-              {b.description}
-            </p>
-          </div>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
+          Click a belt to highlight
+        </p>
+        {selectedBeltId && (
+          <button
+            type="button"
+            onClick={onReset}
+            className="inline-flex items-center gap-1 rounded-full border bg-background px-2 py-0.5 text-xs font-medium hover:bg-foreground/5"
+          >
+            <IconX className="h-3 w-3" aria-hidden />
+            Reset
+          </button>
+        )}
+      </div>
+      <ul className="space-y-2 text-sm">
+        {belts.map((b) => {
+          const isSelected = selectedBeltId === b.id
+          const dimmed = selectedBeltId !== null && !isSelected
+          return (
+            <li key={b.id}>
+              <button
+                type="button"
+                onClick={() => onSelect(b.id)}
+                aria-pressed={isSelected}
+                className={cn(
+                  "flex w-full items-start gap-2 rounded-md border p-2 text-left transition-colors",
+                  isSelected
+                    ? "border-foreground/60 bg-foreground/5 ring-1 ring-foreground/20"
+                    : "bg-card/30 hover:bg-foreground/[0.03]",
+                  dimmed && "opacity-50"
+                )}
+              >
+                <span
+                  className="mt-0.5 inline-block h-3 w-3 shrink-0 rounded-full"
+                  style={{ backgroundColor: b.color }}
+                  aria-hidden
+                />
+                <div className="min-w-0">
+                  <p className="font-medium leading-tight">{b.label}</p>
+                  <p className="mt-0.5 text-xs leading-snug text-muted-foreground">
+                    {b.description}
+                  </p>
+                </div>
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   )
 }

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { IconInfoCircle } from "@tabler/icons-react"
 
 import { MultiCycleDriftSection } from "@/components/flow-pattern-section"
+import { RecentLegChart } from "@/components/recent-leg-chart"
 import { SiteFooter } from "@/components/site-footer"
 import { ThemeToggle } from "@/components/theme-toggle"
 import {
@@ -144,6 +145,40 @@ export function DriftsPage() {
                   patternId={`drift-${g.key}`}
                   drifts={g.items}
                 />
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-12">
+          <div className="mb-4 flex items-baseline justify-between gap-3">
+            <h2 className="font-heading text-xl font-semibold tracking-tight sm:text-2xl">
+              Recent leg (2021 → 2026): is the drift still going?
+            </h2>
+          </div>
+          <p className="mb-5 max-w-2xl text-sm text-muted-foreground">
+            The cumulative 15-year arc passes the "sustained drift"
+            filter, but the most recent cycle is the most predictive
+            slice for what 2031 looks like. Each bar shows how a
+            seat's gainer-alliance share moved between 2021 and 2026.
+            Bars to the right (positive, in the gainer's colour) mean
+            the drift is still alive; bars to the left mean the seat
+            has plateaued or reversed.
+          </p>
+          <ul className="flex flex-col gap-6">
+            {driftGroups.map((g) => (
+              <li key={g.key}>
+                <article className="rounded-lg border bg-card/30 p-4 sm:p-6">
+                  <header className="mb-3 flex items-baseline justify-between gap-3">
+                    <h3 className="font-heading text-base font-semibold tracking-tight sm:text-lg">
+                      {g.label}
+                    </h3>
+                    <span className="text-xs tracking-wide text-muted-foreground uppercase">
+                      sorted by 2021 → 2026 delta
+                    </span>
+                  </header>
+                  <RecentLegChart drifts={g.items} />
+                </article>
               </li>
             ))}
           </ul>
