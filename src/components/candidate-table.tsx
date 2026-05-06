@@ -11,7 +11,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { DeltaPercent } from "@/components/delta-percent"
 import { InfoIcon } from "@/components/info-icon"
-import { InsightsChips } from "@/components/insights-chips"
+import { QuickViewsChips } from "@/components/quick-views-chips"
 import { Section } from "@/components/section"
 import { cn } from "@/lib/utils"
 import {
@@ -100,7 +100,7 @@ export function CandidateTable({ filters, dispatch }: Props) {
       title="Candidates"
       subtitle={`${scopeLabel ? scopeLabel + " " : ""}· ${sorted.length}`}
     >
-      <InsightsChips dispatch={dispatch} />
+      <QuickViewsChips dispatch={dispatch} />
       {sorted.length === 0 ? (
         <div className="rounded-lg border border-dashed py-16 text-center text-sm text-muted-foreground">
           No candidates match your filters.

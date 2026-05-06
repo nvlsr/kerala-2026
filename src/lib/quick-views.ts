@@ -1,6 +1,6 @@
 import type { Filters } from "@/lib/filters"
 
-export type InsightChip = {
+export type QuickView = {
   id: string
   label: string
   description: string
@@ -14,7 +14,7 @@ const FEATURED_PARTIES: Array<{ canonical: string; short: string }> = [
   { canonical: "Bharatiya Janata Party", short: "BJP" },
 ]
 
-const closestWins: InsightChip = {
+const closestWins: QuickView = {
   id: "closest-wins",
   label: "Closest wins",
   description: "Seats won by the smallest margin (winner over runner-up).",
@@ -27,7 +27,7 @@ const closestWins: InsightChip = {
   },
 }
 
-const closestLosses: InsightChip = {
+const closestLosses: QuickView = {
   id: "closest-losses",
   label: "Closest losses",
   description: "Losing candidates with the smallest deficit behind the winner.",
@@ -40,7 +40,7 @@ const closestLosses: InsightChip = {
   },
 }
 
-function biggestGainsFor(p: { canonical: string; short: string }): InsightChip {
+function biggestGainsFor(p: { canonical: string; short: string }): QuickView {
   return {
     id: `biggest-gains-${p.short}`,
     label: `${p.short} gains`,
@@ -58,7 +58,7 @@ function biggestGainsFor(p: { canonical: string; short: string }): InsightChip {
 function biggestDeclinesFor(p: {
   canonical: string
   short: string
-}): InsightChip {
+}): QuickView {
   return {
     id: `biggest-declines-${p.short}`,
     label: `${p.short} declines`,
@@ -73,7 +73,7 @@ function biggestDeclinesFor(p: {
   }
 }
 
-export const insightChips: InsightChip[] = [
+export const quickViews: QuickView[] = [
   closestWins,
   closestLosses,
   ...FEATURED_PARTIES.map(biggestGainsFor),

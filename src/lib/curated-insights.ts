@@ -55,7 +55,7 @@ export function allianceForInsightParty(party: InsightParty): InsightAlliance {
  * dashboard pre-loaded with the same filters.
  *
  * Adding a new insight: append a record. The `filters` field is the same
- * partial-Filters shape used by InsightChip presets in src/lib/insights.ts.
+ * partial-Filters shape used by QuickView presets in src/lib/quick-views.ts.
  * Tag the card so the /insights filter bar can group it with related cards.
  */
 export const curatedInsights: CuratedInsight[] = [
