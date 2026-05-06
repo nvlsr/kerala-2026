@@ -5,55 +5,55 @@
       "id": "northern-muslim",
       "label": "Northern Muslim",
       "description": "IUML-stronghold belt. Heavily Muslim-majority districts and sub-regions of north-central Kerala.",
-      "color": "#10B981"
+      "color": "#15803D"
     },
     {
       "id": "northern-mixed",
       "label": "Northern Mixed (Hindu / Muslim)",
       "description": "Mixed Hindu-Muslim character of far-north Kerala. Tiyya (Ezhava-equivalent) Hindu communities and significant Muslim populations; CPI(M) historically strong with growing BJP presence in Hindu pockets.",
-      "color": "#6366F1"
+      "color": "#0F766E"
     },
     {
       "id": "northeastern-tribal",
       "label": "Northeastern (Wayanad)",
       "description": "Hill district with significant Adivasi (tribal) populations alongside Christian migrant farmer communities and Muslims. Politically distinctive due to forest-rights and migrant-settler issues.",
-      "color": "#16A34A"
+      "color": "#3F6212"
     },
     {
       "id": "central-hindu",
       "label": "Central Hindu",
       "description": "Hindu-majority interior of central Kerala, especially Palakkad. Tamil-speaking minority and traditional Hindu caste-community presence (Nair, Ezhava, Brahmin pockets).",
-      "color": "#F59E0B"
+      "color": "#B45309"
     },
     {
       "id": "central-syromalabar",
       "label": "Central Syro-Malabar Christian",
       "description": "Heartland of Syro-Malabar Catholic community. Includes the central Christian highland-and-plateau zone; KC(M)/KC parties' historical base. Significant Hindu pockets in northern Thrissur.",
-      "color": "#0EA5E9"
+      "color": "#7C3AED"
     },
     {
       "id": "central-reformed-christian",
       "label": "Central Reformed Christian (Marthoma / Orthodox)",
       "description": "Heartland of the reformed Syrian Christian tradition — Marthoma, Malankara Orthodox, Jacobite. Long association with Congress/UDF, alongside significant Nair and Ezhava Hindu populations.",
-      "color": "#06B6D4"
+      "color": "#C026D3"
     },
     {
       "id": "southern-coastal-mixed",
       "label": "Southern Coastal Mixed (Latin / Ezhava)",
       "description": "Coastal mid-Kerala. Latin Catholic fishing communities along the coast, Ezhava and Pulayar Hindu communities inland. Politically diverse with RSP historically strong.",
-      "color": "#14B8A6"
+      "color": "#DB2777"
     },
     {
       "id": "southern-ezhava",
       "label": "Southern Ezhava",
       "description": "Kollam and adjacent areas. SNDP heartland — Ezhava-Hindu majority with significant Muslim and Christian minorities. CPI(M) and Congress have both drawn from this community.",
-      "color": "#E11D48"
+      "color": "#F59E0B"
     },
     {
       "id": "southern-nair-latin",
       "label": "Southern Nair / Latin (Trivandrum)",
       "description": "Capital region. Inland Nair-Hindu majority (NSS organisational heartland) plus coastal Latin Catholic fishing belt. Politically the most NDA-competitive zone of Kerala.",
-      "color": "#8B5CF6"
+      "color": "#EA580C"
     }
   ],
   "districtToBelt": {
