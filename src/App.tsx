@@ -23,6 +23,13 @@ const DriftsPage = lazy(() =>
 const BeltsPage = lazy(() =>
   import("@/pages/belts-page").then((m) => ({ default: m.BeltsPage }))
 )
+// Religion-gradient reference page. District-level shading per religion.
+// Linked from /flows methodology + /belts; no top-level nav entry.
+const ReligionMapPage = lazy(() =>
+  import("@/pages/religion-map-page").then((m) => ({
+    default: m.ReligionMapPage,
+  }))
+)
 
 /** Minimal skeleton — keeps the page footprint stable while the chunk
  *  loads. No spinner: the chunks are small and on a warm cache the
@@ -42,6 +49,7 @@ export function App() {
           <Route path="/flows" element={<FlowsPage />} />
           <Route path="/drifts" element={<DriftsPage />} />
           <Route path="/belts" element={<BeltsPage />} />
+          <Route path="/religion-map" element={<ReligionMapPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>

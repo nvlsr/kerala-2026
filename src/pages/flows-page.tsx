@@ -2,9 +2,9 @@ import { useEffect, useMemo } from "react"
 import { Link } from "react-router-dom"
 import { IconInfoCircle } from "@tabler/icons-react"
 
-import { BeltOverlaySection } from "@/components/belt-overlay-section"
 import { DriftsTeaser } from "@/components/drifts-teaser"
 import { SingleCyclePatternSection } from "@/components/flow-pattern-section"
+import { ReligionOverlaySection } from "@/components/religion-overlay-section"
 import { SiteFooter } from "@/components/site-footer"
 import { StateFlowSankey } from "@/components/state-flow-sankey"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -20,27 +20,36 @@ import {
   type SeatFlow,
 } from "@/lib/data/flows"
 
-// Hand-written editorial framings for the single-cycle flow × belt
-// overlay. Only two patterns earn a framing — the others are either
-// too small, too diffuse, or have district-level belt labels that
-// mislead at AC level (see SECTION_INTRO below for why).
-const SINGLE_CYCLE_BELT_FRAMINGS: Record<string, string> = {
+// Hand-written editorial framings for the single-cycle flow × religion
+// overlay. Only two patterns earn a framing — the others are either too
+// small, too scattered, or land in seats whose district-religion mix
+// doesn't share a coherent religion-level story (see SECTION_INTRO).
+const SINGLE_CYCLE_RELIGION_FRAMINGS: Record<string, string> = {
   LDF_to_UDF:
-    "Half the pattern — 24 of 48 seats — sits in the two northern belts (Malappuram, Kasaragod, Kannur, Kozhikode). The Muslim community, which had voted LDF more heavily than usual in 2021, returned to UDF/IUML in 2026 — a textbook anti-incumbency consolidation. The non-northern half spreads across central and southern belts and reads as the broader anti-LDF wave. Mainstream post-result analysis frames the 2026 swing as a minority-vote consolidation against the CPI(M)-led LDF; this northern concentration is the dominant geographic signature of that consolidation.",
+    "Muslim voters who'd voted LDF more heavily in 2021 returned to UDF/IUML in 2026 — a textbook anti-incumbency consolidation. The deepest greens on the Muslim gradient (Malappuram + the northern districts) carry roughly half of this 48-seat pattern; the non-northern half reads as the broader anti-LDF wave that lifted UDF everywhere. Mainstream post-result analysis (The Federal, The Week, Onmanorama) frames the 2026 swing as a minority-vote consolidation against the CPI(M)-led LDF — the geography lines up with that framing precisely.",
   "LDF+NDA_to_UDF":
-    "The most concentrated single-cycle belt pattern in the entire dataset: 12 of 21 seats sit in central-syromalabar (Thrissur + Ernakulam Catholic country) — Thrissur, Eranakulam, Thrikkakara, Muvattupuzha, Kothamangalam, Perumbavoor, Vypen, Irinjalakuda, Pudukkad, Kunnamkulam, Kunnathunad, Kodungallur. UDF gained at the expense of both LDF and NDA in these seats — the Christian community consolidated decisively with UDF, pulling votes from both fronts simultaneously. Several converging drivers in mainstream reporting: diocesan bishops in Kanjirappally, Thrissur, and Pala publicly campaigned for UDF; Catholic newspaper Deepika ran a pro-Congress line; the FCRA amendment was named as the trigger nudging Christian voters who had drifted toward BJP back into UDF; and Kerala Congress (M)'s LDF affiliation since 2020 backfired — all 12 KC(M) candidates lost in 2026, including chairman Jose K. Mani at Pala. KCBC institutionally kept its standard neutral line; the visible pro-UDF push came from individual dioceses, not the Bishops' Conference as a body.",
+    "The most concentrated single-cycle pattern in the entire dataset. UDF gained at the expense of both LDF and NDA in 21 seats, most of which sit in districts with the heaviest Christian shares — Thrissur, Ernakulam, Idukki, Kottayam, Pathanamthitta. The Christian community consolidated decisively with UDF in 2026, pulling votes from both fronts simultaneously. Several converging drivers in mainstream reporting: diocesan bishops in Kanjirappally, Thrissur, and Pala publicly campaigned for UDF; Catholic newspaper Deepika ran a pro-Congress line; the FCRA amendment was named as the trigger nudging Christian voters who had drifted toward BJP back into UDF; and Kerala Congress (M)'s LDF affiliation since 2020 backfired — all 12 KC(M) candidates lost in 2026, including chairman Jose K. Mani at Pala. KCBC institutionally kept its standard neutral line; the visible pro-UDF push came from individual dioceses, not the Bishops' Conference as a body.",
 }
 
 const SINGLE_CYCLE_CROSS_PATTERN_OBSERVATION =
-  "Two community-keyed consolidations against LDF drove most of 2026's single-cycle movement: Muslim voters returned to UDF (24 of the 48-seat LDF→UDF pattern), and Christian voters consolidated with UDF (12 of the 21-seat LDF+NDA→UDF pattern). Together those two community blocs account for 36 of 85 classified flow seats — over 40% of all 2026 flow movement is explained by community-keyed consolidation against the incumbent. The remainder is the broader anti-incumbency wave plus seat-specific candidate effects. Worth noting separately: NDA's three actual wins in 2026 — Nemom, Kazhakoottam (both Trivandrum), and Chathannoor (Kollam) — sit in southern Hindu-Nair / Hindu-Ezhava terrain. Only Chathannoor passes the LDF→NDA single-cycle threshold cleanly; Nemom and Kazhakoottam don't classify as flows because UDF and NDA both gained while LDF dropped (a three-way share movement the binary classification doesn't catch). For the structural Hindu-belt rise of NDA in southern Kerala, the multi-cycle /drifts page is the right lens."
+  "Two religion-keyed consolidations against LDF drove most of 2026's single-cycle movement: Muslim voters returned to UDF (driving most of the 48-seat LDF→UDF pattern in the northern districts where Muslim share is highest), and Christian voters consolidated with UDF (driving most of the 21-seat LDF+NDA→UDF pattern in the central districts where Christian share is highest). Together those two religion-keyed blocs account for over 40% of all 2026 flow movement. The remainder is the broader anti-incumbency wave plus seat-specific candidate effects. NDA's three actual 2026 wins (Nemom, Kazhakoottam, Chathannoor — all in southern Hindu-majority districts) sit on the Hindu-saffron background of all three maps, but only Chathannoor passes the LDF→NDA single-cycle classifier cleanly; Nemom and Kazhakoottam are three-way share movements the binary classifier doesn't catch. For the structural Hindu-sub-community rise of NDA, the multi-cycle /drifts page is the right lens — those wins are the latest dot on a 15-year arc."
 
-const SINGLE_CYCLE_BELT_SECTION_INTRO =
-  "Of the five single-cycle flow patterns, two have clear community-keyed belt geography. The other three are skipped: NDA→UDF (n=1, only Kochi) is too small; LDF+UDF→NDA (n=6) is scattered across five belts with no concentration; LDF→NDA (n=9) has district-level belt labels that mislead at AC granularity — four seats fall under 'central-syromalabar' by district but at AC level are Hindu-temple (Guruvayoor), SC-reserved (Chelakkara, Devikulam), or mixed-coastal (Kaipamangalam) seats, not actually Catholic. Forcing belt analysis on those would produce a misleading 'Christian shift to NDA' framing that the AC-level demographics don't support. The two patterns covered below are where the data and the belt taxonomy genuinely line up."
+const SINGLE_CYCLE_RELIGION_SECTION_INTRO =
+  "Of the five single-cycle flow patterns, two have geography that lines up with one of Kerala's religion-share gradients. The other three are skipped from this section: NDA→UDF (n=1, only Kochi) is too small; LDF+UDF→NDA (n=6) is scattered across districts with no religion concentration; LDF→NDA (n=9) classifies seats where NDA's vote share grew but the underlying seats span Hindu-temple, SC-reserved, and mixed-coastal districts that don't share a religion-keyed story. Forcing a religion lens on those three would be misleading. The two patterns covered below are where the geography and a single religion's gradient genuinely align."
 
-// Patterns whose belt geography earns a per-pattern framing block.
+// Patterns whose geography earns a per-pattern religion-overlay block.
 // Other classified patterns (NDA→UDF, LDF+UDF→NDA, LDF→NDA) are
 // deliberately excluded — see SECTION_INTRO above.
-const BELT_SECTION_PATTERN_KEYS = new Set(["LDF_to_UDF", "LDF+NDA_to_UDF"])
+const RELIGION_SECTION_PATTERN_KEYS = new Set([
+  "LDF_to_UDF",
+  "LDF+NDA_to_UDF",
+])
+
+// Map of which religion's gradient explains each pattern.
+const PATTERN_RELIGION: Record<string, "hindu" | "muslim" | "christian"> = {
+  LDF_to_UDF: "muslim",
+  "LDF+NDA_to_UDF": "christian",
+}
 
 function groupBy<T, K extends string>(
   items: T[],
@@ -171,20 +180,21 @@ export function FlowsPage() {
 
         <section className="mt-12">
           <p className="mb-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-            {SINGLE_CYCLE_BELT_SECTION_INTRO}
+            {SINGLE_CYCLE_RELIGION_SECTION_INTRO}
           </p>
-          <BeltOverlaySection
+          <ReligionOverlaySection
             patternGroups={singleGroups
-              .filter((g) => BELT_SECTION_PATTERN_KEYS.has(g.key))
+              .filter((g) => RELIGION_SECTION_PATTERN_KEYS.has(g.key))
               .map((g) => ({
                 key: g.key,
                 label: g.label,
                 seats: g.items.map((f) => f.constituency),
+                religion: PATTERN_RELIGION[g.key]!,
               }))}
-            framings={SINGLE_CYCLE_BELT_FRAMINGS}
+            framings={SINGLE_CYCLE_RELIGION_FRAMINGS}
             crossPatternObservation={SINGLE_CYCLE_CROSS_PATTERN_OBSERVATION}
-            sectionTitle="By community belt — what each flow tells us about who moved"
-            sectionDescription="The single-cycle flows where the geography lines up with Kerala's community-belt taxonomy. Two community blocs — Muslim and Christian — drove most of 2026's anti-LDF movement; the maps and per-pattern framings below trace where each consolidation happened."
+            sectionTitle="By religion — what each flow tells us about who moved"
+            sectionDescription="The single-cycle flows where the geography lines up with one of Kerala's religion-share gradients. Two religion blocs — Muslim and Christian — drove most of 2026's anti-LDF movement; the maps below show each pattern's seats outlined on top of the relevant religion's district-by-district gradient."
           />
         </section>
 
@@ -221,31 +231,33 @@ export function FlowsPage() {
               </p>
               <p>
                 <span className="font-medium text-foreground">
-                  Community-belt overlay.
+                  Religion-gradient overlay.
                 </span>{" "}
-                The "By community belt" section above applies a 9-belt
-                qualitative taxonomy (academic literature: Zachariah 2003,
-                GeoCurrents 2014, KCBC diocese geography) at district
-                level. Hand-written framings carry interpretation;
-                numeric breakdowns per pattern are data-derived. Three
-                of the five flow patterns are excluded from belt
-                framing — see the section intro for why. The full belt
-                taxonomy reference lives at{" "}
+                The "By religion" section above applies district-level
+                religion shares (2011 census) as a colour gradient
+                under each flow pattern's outlined seats. Religion is
+                the right lens for single-cycle flows because the
+                conclusions (Muslim consolidation, Christian
+                consolidation) operate at religion-level, not at
+                sub-community level — Kerala's tactical anti-incumbency
+                consolidations move whole religious blocs, not specific
+                Hindu sub-communities. For the multi-cycle structural
+                drifts where sub-community matters (Ezhava vs Nair,
+                Syro-Malabar vs Marthoma), see the community-belt
+                analysis on{" "}
                 <Link
-                  to="/belts"
+                  to="/drifts"
                   className="underline-offset-2 hover:underline"
                 >
-                  /belts
+                  /drifts
                 </Link>
-                ; raw assignments at{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/data/community-belts.json"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                . The bare religion-map reference is at{" "}
+                <Link
+                  to="/religion-map"
                   className="underline-offset-2 hover:underline"
                 >
-                  data/community-belts.json
-                </a>
+                  /religion-map
+                </Link>
                 .
               </p>
               <p>
