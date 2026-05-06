@@ -5,10 +5,13 @@ import { AnalyticsProvider } from "@/components/analytics-provider"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { DashboardPage } from "@/pages/dashboard-page"
 
-// Secondary pages are lazy-loaded so the dashboard (the most-visited
+// Secondary pages are lazy-loaded so the lean home (the most-visited
 // surface) doesn't ship their code on first paint. Each page becomes
 // its own chunk; vendor deps it depends on (recharts, base-ui, etc.)
 // stay in shared chunks via vite.config.ts manualChunks.
+const ExplorePage = lazy(() =>
+  import("@/pages/explore-page").then((m) => ({ default: m.ExplorePage }))
+)
 const InsightsPage = lazy(() =>
   import("@/pages/insights-page").then((m) => ({ default: m.InsightsPage }))
 )
@@ -45,6 +48,7 @@ export function App() {
       <Suspense fallback={<PageFallback />}>
         <Routes>
           <Route path="/" element={<DashboardPage />} />
+          <Route path="/explore" element={<ExplorePage />} />
           <Route path="/insights" element={<InsightsPage />} />
           <Route path="/flows" element={<FlowsPage />} />
           <Route path="/drifts" element={<DriftsPage />} />

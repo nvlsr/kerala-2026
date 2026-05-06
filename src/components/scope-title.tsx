@@ -9,7 +9,31 @@ import {
   type AllianceCode,
 } from "@/lib/data"
 
-type Props = {
+/**
+ * The site's home-page title block — "Kerala · May 2026 / Legislative
+ * Assembly Election Results" + the theme toggle. Used on `/` only.
+ * Other pages (/explore, /flows, /drifts, /belts, /religion-map,
+ * /insights, /religion-map) render their own custom headers.
+ */
+export function HomeHeader() {
+  return (
+    <header>
+      <div className="mx-auto flex max-w-6xl items-start justify-between gap-4 px-6 py-6">
+        <div className="min-w-0">
+          <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
+            Kerala · May 2026
+          </p>
+          <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+            Legislative Assembly Election Results
+          </h1>
+        </div>
+        <ThemeToggle />
+      </div>
+    </header>
+  )
+}
+
+type FilterBreadcrumbProps = {
   scope: string | null
   selectedAlliance: AllianceCode | null
   selectedParty: string | null
@@ -24,7 +48,12 @@ type Props = {
 
 type Crumb = { label: string; onClear: () => void }
 
-export function ScopeTitle({
+/**
+ * Sticky filter breadcrumb. Used on `/explore` to surface the active
+ * filter chain ("Kerala > Kollam > NDA > BJP > Aluva") with per-segment
+ * X buttons + a "Clear all" reset.
+ */
+export function FilterBreadcrumb({
   scope,
   selectedAlliance,
   selectedParty,
@@ -35,7 +64,7 @@ export function ScopeTitle({
   onClearParty,
   onClearSeat,
   onReset,
-}: Props) {
+}: FilterBreadcrumbProps) {
   const district = scope ? getDistrict(scope) : null
   const constituency =
     selectedSeat != null
@@ -55,35 +84,6 @@ export function ScopeTitle({
       onClear: onClearSeat,
     })
 
-  return (
-    <>
-      <header>
-        <div className="mx-auto flex max-w-6xl items-start justify-between gap-4 px-6 py-6">
-          <div className="min-w-0">
-            <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
-              Kerala · May 2026
-            </p>
-            <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Legislative Assembly Election Results
-            </h1>
-          </div>
-          <ThemeToggle />
-        </div>
-      </header>
-      <Breadcrumb crumbs={crumbs} canReset={canReset} onReset={onReset} />
-    </>
-  )
-}
-
-function Breadcrumb({
-  crumbs,
-  canReset,
-  onReset,
-}: {
-  crumbs: Crumb[]
-  canReset: boolean
-  onReset: () => void
-}) {
   return (
     <nav
       aria-label="Active filters"

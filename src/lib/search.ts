@@ -58,7 +58,7 @@ function buildIndex(): IndexEntry[] {
       type: "constituency",
       primaryText: c.constituencyName,
       secondaryText: "Seat",
-      url: `/?seat=${c.constituencyNumber}`,
+      url: `/explore?seat=${c.constituencyNumber}`,
       searchKey: c.constituencyName.toLowerCase(),
       id: `constituency-${c.constituencyNumber}`,
     })
@@ -72,7 +72,7 @@ function buildIndex(): IndexEntry[] {
         type: "candidate",
         primaryText: cand.name,
         secondaryText: `${cand.party} · ${c.constituencyName}`,
-        url: `/?seat=${c.constituencyNumber}`,
+        url: `/explore?seat=${c.constituencyNumber}`,
         searchKey:
           `${cand.name} ${cand.party} ${c.constituencyName}`.toLowerCase(),
         id: `candidate-${c.constituencyNumber}-${cand.name}`,
@@ -90,7 +90,7 @@ function buildIndex(): IndexEntry[] {
       entries.push({
         type: "party",
         primaryText: cand.party,
-        url: `/?party=${encodeURIComponent(cand.party)}`,
+        url: `/explore?party=${encodeURIComponent(cand.party)}`,
         searchKey: cand.party.toLowerCase(),
         id: `party-${cand.party}`,
       })
@@ -103,7 +103,7 @@ function buildIndex(): IndexEntry[] {
       type: "district",
       primaryText: d.name,
       secondaryText: "District",
-      url: `/?district=${d.id}`,
+      url: `/explore?district=${d.id}`,
       searchKey: d.name.toLowerCase(),
       id: `district-${d.id}`,
     })
@@ -118,7 +118,7 @@ function buildIndex(): IndexEntry[] {
       type: "alliance",
       primaryText: alliance.code,
       secondaryText: alliance.name,
-      url: `/?alliance=${code}`,
+      url: `/explore?alliance=${code}`,
       searchKey: `${alliance.code} ${alliance.name}`.toLowerCase(),
       id: `alliance-${code}`,
     })

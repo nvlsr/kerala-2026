@@ -49,7 +49,7 @@ function buildSeatUrl(seat: Constituency): string {
     seat: seat.constituencyNumber,
     result: "all",
   }
-  return `/?${serializeFilters(f).toString()}`
+  return `/explore?${serializeFilters(f).toString()}`
 }
 
 // ─── Permalink button (shared) ──────────────────────────────────────────

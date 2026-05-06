@@ -28,7 +28,7 @@ function buildSeatUrl(seatNumber: number): string {
     seat: seatNumber,
     result: "all",
   }
-  return `/?${serializeFilters(f).toString()}`
+  return `/explore?${serializeFilters(f).toString()}`
 }
 
 /**

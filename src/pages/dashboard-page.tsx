@@ -1,106 +1,59 @@
-import { useEffect, useMemo, useReducer } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import { IconArrowRight } from "@tabler/icons-react"
 
-import { ScopeTitle } from "@/components/scope-title"
-import { KeralaMap } from "@/components/kerala-map"
 import { AllianceSection } from "@/components/alliance-section"
-import { PartySection } from "@/components/party-section"
-import { CandidateTable } from "@/components/candidate-table"
-import { ConstituencyMap } from "@/components/constituency-map"
-import { ConstituencySection } from "@/components/constituency-section"
-import { InsightsTeaser } from "@/components/insights-teaser"
+import { HomeHeader } from "@/components/scope-title"
 import { SearchBar } from "@/components/search-bar"
 import { SiteFooter } from "@/components/site-footer"
-import { constituencies } from "@/lib/data"
-import {
-  filtersReducer,
-  getFilteredConstituencyNumbers,
-  hasActiveFilters,
-  initialFilters,
-  parseFilters,
-  serializeFilters,
-} from "@/lib/filters"
 
-function loadInitialFilters() {
-  if (typeof window === "undefined") return initialFilters
-  return parseFilters(new URLSearchParams(window.location.search))
-}
-
+/**
+ * Lean home page: headline summary + search + explore CTA + footer.
+ * Detail browsing lives on `/explore`.
+ */
 export function DashboardPage() {
-  const [filters, dispatch] = useReducer(
-    filtersReducer,
-    undefined,
-    loadInitialFilters
-  )
-
-  useEffect(() => {
-    const params = serializeFilters(filters)
-    const query = params.toString()
-    const url = query
-      ? `${window.location.pathname}?${query}`
-      : window.location.pathname
-    window.history.replaceState(null, "", url)
-  }, [filters])
-
-  const inFilterSet = useMemo(
-    () => getFilteredConstituencyNumbers(filters),
-    [filters]
-  )
-
-  const selectedConstituency =
-    filters.seat != null
-      ? (constituencies.find((c) => c.constituencyNumber === filters.seat) ??
-        null)
-      : null
+  const navigate = useNavigate()
 
   return (
     <div className="min-h-svh bg-background text-foreground">
-      <ScopeTitle
-        scope={filters.district}
-        selectedAlliance={filters.alliance}
-        selectedParty={filters.party}
-        selectedSeat={filters.seat}
-        canReset={hasActiveFilters(filters)}
-        onClearScope={() => dispatch({ type: "clear-district" })}
-        onClearAlliance={() => dispatch({ type: "clear-alliance" })}
-        onClearParty={() => dispatch({ type: "clear-party" })}
-        onClearSeat={() => dispatch({ type: "clear-seat" })}
-        onReset={() => dispatch({ type: "reset" })}
-      />
+      <HomeHeader />
       <AllianceSection
-        scope={filters.district}
-        selectedAlliance={filters.alliance}
-        onSelectAlliance={(alliance) =>
-          dispatch({ type: "set-alliance", alliance })
-        }
+        scope={null}
+        selectedAlliance={null}
+        onSelectAlliance={(alliance) => {
+          if (alliance) navigate(`/explore?alliance=${alliance}`)
+        }}
       />
       <SearchBar />
-      <KeralaMap
-        scope={filters.district}
-        onSelect={(district) => dispatch({ type: "set-district", district })}
-      />
-      {filters.alliance && (
-        <PartySection
-          scope={filters.district}
-          alliance={filters.alliance}
-          selectedParty={filters.party}
-          onSelectParty={(party) => dispatch({ type: "set-party", party })}
-        />
-      )}
-      <CandidateTable filters={filters} dispatch={dispatch} />
-      <ConstituencyMap
-        filters={filters}
-        inFilterSet={inFilterSet}
-        selectedSeat={filters.seat}
-        onSelect={(seat) => dispatch({ type: "set-seat", seat })}
-      />
-      {selectedConstituency && (
-        <ConstituencySection
-          key={selectedConstituency.constituencyNumber}
-          constituency={selectedConstituency}
-        />
-      )}
-      {hasActiveFilters(filters) && <InsightsTeaser />}
+      <ExploreCTA />
       <SiteFooter />
     </div>
+  )
+}
+
+function ExploreCTA() {
+  return (
+    <section className="border-t">
+      <div className="mx-auto max-w-6xl px-6 py-10">
+        <Link
+          to="/explore"
+          className="group flex items-center justify-between gap-4 rounded-lg border bg-card/40 p-5 transition-colors hover:bg-foreground/[0.03] sm:p-6"
+        >
+          <div className="min-w-0">
+            <h2 className="font-heading text-lg font-semibold tracking-tight sm:text-xl">
+              Browse all 140 seats
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              The full constituency-level explorer — filter by district,
+              alliance, or party; sort the candidate table; click any
+              seat for its detail panel and historical chart.
+            </p>
+          </div>
+          <IconArrowRight
+            className="h-5 w-5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:text-foreground"
+            aria-hidden
+          />
+        </Link>
+      </div>
+    </section>
   )
 }
