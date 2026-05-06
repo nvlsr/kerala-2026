@@ -113,7 +113,7 @@ export function ConstituencySection({ constituency }: Props) {
           />
         )}
       </div>
-      <div className="rounded-lg border bg-muted/40 p-4">
+      <div className="mx-auto w-full max-w-md rounded-lg border bg-muted/40 p-4">
         <HistoricalChart
           constituencyNumber={constituency.constituencyNumber}
           highlightAlliance={highlightAlliance}

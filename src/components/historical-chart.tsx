@@ -66,7 +66,7 @@ export function HistoricalChart({
   const noHighlight = !highlightAlliance
 
   return (
-    <ChartContainer config={chartConfig} className="h-44 w-full">
+    <ChartContainer config={chartConfig} className="h-80 w-full">
       <LineChart
         data={data}
         margin={{ top: 8, right: 16, bottom: 4, left: -8 }}
