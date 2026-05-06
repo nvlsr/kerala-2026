@@ -2,10 +2,8 @@ import { useEffect, useMemo } from "react"
 import { Link } from "react-router-dom"
 import { IconInfoCircle } from "@tabler/icons-react"
 
-import { DriftsTeaser } from "@/components/drifts-teaser"
-import { SingleCyclePatternSection } from "@/components/flow-pattern-section"
+import { MultiCycleDriftSection } from "@/components/flow-pattern-section"
 import { SiteFooter } from "@/components/site-footer"
-import { StateFlowSankey } from "@/components/state-flow-sankey"
 import { ThemeToggle } from "@/components/theme-toggle"
 import {
   Popover,
@@ -13,10 +11,10 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import {
-  getSingleCycleFlows,
-  singleCyclePatternKey,
-  singleCyclePatternLabel,
-  type SeatFlow,
+  getMultiCycleDrifts,
+  multiCyclePatternKey,
+  multiCyclePatternLabel,
+  type MultiCycleDrift,
 } from "@/lib/data/flows"
 
 function groupBy<T, K extends string>(
@@ -33,23 +31,21 @@ function groupBy<T, K extends string>(
   return [...map.values()].sort((a, b) => b.items.length - a.items.length)
 }
 
-export function FlowsPage() {
-  const single = useMemo(() => getSingleCycleFlows(), [])
+export function DriftsPage() {
+  const drifts = useMemo(() => getMultiCycleDrifts(), [])
 
-  const singleGroups = useMemo(
+  const driftGroups = useMemo(
     () =>
-      groupBy<SeatFlow, string>(
-        single,
-        (f) => singleCyclePatternKey(f.flow),
-        (f) => singleCyclePatternLabel(f.flow)
+      groupBy<MultiCycleDrift, string>(
+        drifts,
+        (d) => multiCyclePatternKey(d),
+        (d) => multiCyclePatternLabel(d)
       ),
-    [single]
+    [drifts]
   )
 
-  // Browsers compute :target before React mounts the cards on initial load,
-  // so the native scroll lands nowhere. Re-set the hash after the first paint
-  // to trigger :target and produce the correct scroll. Same trick the
-  // /insights page uses.
+  // Same hash-bounce trick the other pages use — re-set the hash after
+  // first paint so :target picks up the right card on initial load.
   useEffect(() => {
     if (!window.location.hash) return
     const hash = window.location.hash
@@ -69,10 +65,14 @@ export function FlowsPage() {
               <Link to="/" className="hover:text-foreground">
                 Kerala 2026
               </Link>{" "}
-              · Vote flows
+              ·{" "}
+              <Link to="/flows" className="hover:text-foreground">
+                Vote flows
+              </Link>{" "}
+              · Drifts
             </p>
             <h1 className="font-heading flex items-center gap-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Where votes shifted
+              Sustained drifts
               <Popover>
                 <PopoverTrigger
                   aria-label="About this page"
@@ -87,23 +87,29 @@ export function FlowsPage() {
                 >
                   <div className="space-y-3 text-sm leading-relaxed">
                     <p>
-                      Seats grouped by alliance-level vote share movement.
-                      The dashboard's tables show how a single party did;
-                      this page shows how the three fronts moved against
-                      each other — the cross-current the cards format can't
-                      capture.
+                      The 15-year view. Seats where the same alliance has
+                      been gaining (or losing) for multiple cycles running
+                      — patterns that survived candidate changes, campaign
+                      cycles, and at least one government in between. A
+                      different question from the single-cycle{" "}
+                      <Link
+                        to="/flows"
+                        className="font-medium text-foreground underline-offset-2 hover:underline"
+                      >
+                        Vote flows
+                      </Link>
+                      .
                     </p>
                     <p className="border-t pt-3 text-muted-foreground">
                       <span className="font-medium text-foreground">
                         Inferred, not observed.
                       </span>{" "}
-                      We classify a seat by the net change in alliance vote
-                      share between elections. A flow labelled "LDF → NDA"
+                      We classify a seat by net change in alliance vote
+                      share across cycles. A drift labelled "LDF → NDA"
                       could mean LDF voters chose NDA, <em>or</em> old LDF
-                      voters stayed home while new NDA voters showed up —
-                      both produce the same deltas. Read it as "alliance X
-                      gained at alliance Y's expense", not "voters moved
-                      from Y to X".
+                      voters stayed home while new NDA voters showed up.
+                      Read it as "alliance X gained at alliance Y's
+                      expense", not "voters moved from Y to X".
                     </p>
                   </div>
                 </PopoverContent>
@@ -115,31 +121,28 @@ export function FlowsPage() {
       </header>
 
       <main className="mx-auto max-w-6xl px-6 py-8">
-        <section className="mb-12">
-          <StateFlowSankey />
-        </section>
-
         <section>
           <div className="mb-4 flex items-baseline justify-between gap-3">
             <h2 className="font-heading text-xl font-semibold tracking-tight sm:text-2xl">
-              Single-cycle shifts (2021 → 2026)
+              Sustained 15-year drifts (2011 → 2026)
             </h2>
             <span className="text-xs tracking-wide text-muted-foreground uppercase">
-              {single.length} of 140 seats
+              {drifts.length} of 140 seats
             </span>
           </div>
           <p className="mb-5 max-w-2xl text-sm text-muted-foreground">
-            Seats where one alliance gained at least 5pp at another's expense
-            in this election alone. The third alliance is roughly stable, or
-            (for the "both → one" patterns) lost alongside the first.
+            Seats where the cumulative alliance shift across four cycles is
+            at least 10pp, AND the gainer's gains were sustained across at
+            least two of the three transitions — filtering out single-cycle
+            anomalies. The long-term drifts, not one-off swings.
           </p>
           <ul className="flex flex-col gap-6">
-            {singleGroups.map((g) => (
+            {driftGroups.map((g) => (
               <li key={g.key}>
-                <SingleCyclePatternSection
+                <MultiCycleDriftSection
                   patternLabel={g.label}
-                  patternId={`single-${g.key}`}
-                  flows={g.items}
+                  patternId={`drift-${g.key}`}
+                  drifts={g.items}
                 />
               </li>
             ))}
@@ -154,28 +157,40 @@ export function FlowsPage() {
             <div className="mt-3 space-y-3 text-muted-foreground">
               <p>
                 <span className="font-medium text-foreground">
-                  Single-cycle thresholds.
+                  Multi-cycle thresholds.
                 </span>{" "}
-                Two-way: biggest gainer ≥ +5pp, biggest loser ≤ −5pp, third
-                alliance moved less than ±2pp. Both-to-one: gainer ≥ +5pp, both
-                others lost ≥ 2pp each, combined drop within 3pp of the gain.
+                Cumulative gainer ≥ +10pp, loser ≤ −10pp across 2011→2026,
+                and at least 2 of the 3 cycle transitions for the gainer
+                agree with the cumulative direction.
               </p>
               <p>
                 <span className="font-medium text-foreground">
                   Per-cycle alliance attribution.
                 </span>{" "}
-                Each candidate carries their own per-cycle alliance — KC(M)
-                is UDF in 2011/2016 and LDF from 2020 onwards, RSP is LDF in
-                2011 and UDF from 2014, etc. Parties that switched fronts
-                are correctly placed in each cycle's alliance, not anchored
-                to today's.
+                Each candidate (2026 + every historical record) carries
+                their own per-cycle alliance — KC(M) is UDF in 2011/2016
+                and LDF from 2020 onwards, RSP is LDF in 2011 and UDF from
+                2014, etc. Parties that switched fronts are correctly
+                placed in each cycle's alliance, not anchored to today's.
               </p>
               <p>
-                <span className="font-medium text-foreground">OTHER</span> can
-                spike when an Independent or non-front candidate does well in
-                a seat (e.g. Ottappalam). Treat seats with large OTHER swings
+                <span className="font-medium text-foreground">OTHER</span>{" "}
+                can spike when an Independent or non-front candidate does
+                well in a seat. Treat seats with large OTHER swings
                 cautiously — the alliance-flow story may not be the main
                 event.
+              </p>
+              <p>
+                <span className="font-medium text-foreground">
+                  Religion mix figures.
+                </span>{" "}
+                The "Observations" notes on each card use the 2011 census —
+                the most recent available. Differential fertility since
+                2011 means the Hindu and Christian numbers shown are
+                likely a slight high-end estimate, and the Muslim number a
+                slight low-end. Composition is averaged equally across the
+                seats in each card (each seat contributes its district's
+                mix once), not population-weighted.
               </p>
               <p>
                 The full methodology document (with caveats and validation
@@ -195,7 +210,6 @@ export function FlowsPage() {
         </section>
       </main>
 
-      <DriftsTeaser />
       <SiteFooter />
     </div>
   )

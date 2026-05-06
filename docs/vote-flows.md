@@ -1,19 +1,26 @@
 # Vote flow analysis (2011 → 2026)
 
-Alliance-level vote flow patterns across Kerala's 140 ACs. The page lives at [`/flows`](https://kerala-2026.jillen.com/flows). The detection script (`scripts/detect-flows.ts`) is the working tool for ad-hoc analysis and threshold tuning; runtime versions of the same logic live in `src/lib/data/flows.ts`.
+Alliance-level vote flow patterns across Kerala's 140 ACs. Split across two pages:
+
+- [`/flows`](https://kerala-2026.jillen.com/flows) — single-cycle shifts (2021 → 2026), with the state-level Sankey hero.
+- [`/drifts`](https://kerala-2026.jillen.com/drifts) — sustained 15-year drifts (2011 → 2026). Different time horizon, different question.
+
+The detection script (`scripts/detect-flows.ts`) is the working tool for ad-hoc analysis and threshold tuning; runtime versions of the same logic live in `src/lib/data/flows.ts`.
 
 ## Status
 
 | Surface | State |
 |---|---|
 | `scripts/detect-flows.ts` | ✅ Shipped. CLI tool for ad-hoc analysis. |
-| `src/lib/data/flows.ts` | ✅ Shipped. Runtime classification used by the page. |
-| `/flows` page (Stage 1) | ✅ Shipped. Pattern lists, focused AC maps per pattern, multi-cycle trajectories as text. |
-| Discovery link from `/insights` | ✅ Shipped. |
-| State-level Sankey hero (Stage 2) | ✅ Shipped. Custom-SVG Sankey of 2021→2026 seat-winner flows. |
-| Per-pattern permalinks | ✅ Shipped. Each pattern section is `/flows#single-<key>` or `/flows#drift-<key>`. |
-| Per-seat trajectory mini-charts (Stage 3) | ☐ Deferred. The text trajectory ("NDA 3 → 25 → 31 → 38") reads better than expected; revisit only if it stops working. |
-| Flow-mode on dashboard AC map (Stage 4) | ☐ Open / optional. |
+| `src/lib/data/flows.ts` | ✅ Shipped. Runtime classification used by both pages. |
+| `/flows` page | ✅ Shipped. Single-cycle (2021→2026) shifts only — Sankey hero, pattern cards, focused AC maps. |
+| `/drifts` page | ✅ Shipped. Sustained 15-year drift cards (2011→2026), Layer-A observations per card, separated from `/flows` in mid-2026 because the two stories read at different time horizons. |
+| Discovery teasers | ✅ Shipped. Homepage→`/insights` (emerald, gift), `/insights`→`/flows` (indigo, key), `/flows`→`/drifts` (amber, history) — each tier rewards more analytic depth. |
+| State-level Sankey hero | ✅ Shipped on `/flows`. Custom-SVG, 2021→2026 seat-winner flows. |
+| Per-pattern permalinks | ✅ Shipped. `/flows#single-<key>` and `/drifts#drift-<key>`. |
+| 4-column Sankey hero on `/drifts` (2011→2016→2021→2026) | ☐ Open / optional polish. Doesn't earn its space until designed properly. |
+| Per-seat trajectory mini-charts | ☐ Deferred. The text trajectory ("NDA 3 → 20 → 26 → 31") reads better than charts would; revisit only if it stops working. |
+| Flow-mode on dashboard AC map | ☐ Open / optional. |
 
 ## What "flow" means here
 
