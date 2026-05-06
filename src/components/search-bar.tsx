@@ -126,10 +126,10 @@ export function SearchBar({ prominent = false }: Props = {}) {
         <div ref={containerRef} className="relative">
           <div
             className={cn(
-              "flex items-center rounded-lg border bg-card/50 focus-within:border-foreground/40",
+              "flex items-center rounded-lg border focus-within:border-foreground/40",
               prominent
-                ? "gap-3 px-5 py-4 focus-within:ring-2 focus-within:ring-foreground/15"
-                : "gap-2 px-3 py-2 focus-within:ring-1 focus-within:ring-foreground/15"
+                ? "gap-3 bg-muted/60 px-5 py-4 focus-within:ring-2 focus-within:ring-foreground/15"
+                : "gap-2 bg-card/50 px-3 py-2 focus-within:ring-1 focus-within:ring-foreground/15"
             )}
           >
             <IconSearch
