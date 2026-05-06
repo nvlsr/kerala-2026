@@ -17,26 +17,10 @@ import { getReligion, type ReligionCode } from "@/lib/data/demographics"
 const RELIGIONS_TO_SHOW: Array<{
   code: ReligionCode
   label: string
-  voteBank: string
 }> = [
-  {
-    code: "hindu",
-    label: "Hindu",
-    voteBank:
-      "Hindu majority across most districts (>55% statewide). Necessary but not sufficient for NDA wins — Hindu sub-community variation (Ezhava, Nair, SC, ST) drives the politics within these districts. See /belts for that disaggregation.",
-  },
-  {
-    code: "muslim",
-    label: "Muslim",
-    voteBank:
-      "Concentrated in Malappuram (~70%), Kasaragod and Kozhikode (~30% each). The structural geography of IUML's strength — Malappuram alone carried much of the 2026 LDF→UDF Muslim consolidation visible on /flows.",
-  },
-  {
-    code: "christian",
-    label: "Christian",
-    voteBank:
-      "Heaviest in Kottayam, Pathanamthitta, Idukki, Ernakulam (35-45%). The historical base of Kerala Congress parties and of the central-Kerala Catholic political tradition. The 2026 LDF+NDA→UDF Christian consolidation visible on /flows lives here.",
-  },
+  { code: "hindu", label: "Hindu" },
+  { code: "muslim", label: "Muslim" },
+  { code: "christian", label: "Christian" },
 ]
 
 export function ReligionMapPage() {
@@ -147,36 +131,6 @@ export function ReligionMapPage() {
                   religion={r.code}
                   hoveredDistrictId={hoveredDistrictId}
                 />
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="font-heading text-xl font-semibold tracking-tight sm:text-2xl">
-            What this tells you about Kerala's vote banks
-          </h2>
-          <p className="mt-1 mb-4 max-w-2xl text-sm text-muted-foreground">
-            The structural floor and ceiling of each alliance's
-            community base, made visible. None of these maps predicts
-            how a specific seat votes — they show the demographic
-            terrain on which Kerala's politics happens.
-          </p>
-          <ul className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-            {RELIGIONS_TO_SHOW.map((r) => (
-              <li
-                key={r.code}
-                className="rounded-lg border bg-card/30 p-4 text-sm leading-relaxed"
-              >
-                <h3 className="mb-1 flex items-center gap-2 font-heading text-sm font-semibold tracking-tight">
-                  <span
-                    className="inline-block h-3 w-3 shrink-0 rounded-full"
-                    style={{ backgroundColor: getReligion(r.code).color }}
-                    aria-hidden
-                  />
-                  {r.label}
-                </h3>
-                <p className="text-muted-foreground">{r.voteBank}</p>
               </li>
             ))}
           </ul>

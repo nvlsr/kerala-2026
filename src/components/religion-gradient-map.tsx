@@ -1,6 +1,6 @@
-import paths from "@data/kerala-districts-paths.json"
-import acPaths from "@data/kerala-constituencies-paths.json"
+import paths from "@data/kerala-constituencies-paths.json"
 
+import { districtsMeta } from "@/lib/data/loaders"
 import { demoMeta } from "@/lib/data/loaders"
 import type { ReligionCode } from "@/lib/data/demographics"
 
@@ -14,8 +14,7 @@ type Props = {
    *  Other districts scale linearly to maxOpacity * (district_pct / max_pct). */
   maxOpacity?: number
   /** ACs to outline as an overlay layer on top of district shading. Used by
-   *  /flows to show which flow-pattern seats sit on the religion gradient.
-   *  Each set gets a different stroke colour. */
+   *  /flows to show which flow-pattern seats sit on the religion gradient. */
   outlinedSeats?: Set<number>
   outlineColor?: string
   /** Hovered district id, propagated from the parent so all three maps on
@@ -23,21 +22,20 @@ type Props = {
   hoveredDistrictId?: string | null
   onDistrictHover?: (id: string | null) => void
   ariaLabel: string
-  /** Compact mode: smaller stroke, no hover affordance. Used inside /flows
-   *  pattern blocks where the map is just informational. */
-  compact?: boolean
 }
 
 /**
- * Renders Kerala as a district choropleth shaded by one religion's
- * percentage share (per 2011 census). Optionally overlays AC outlines
- * for a list of seats — letting consumers (e.g. /flows) show "this
- * pattern's seats sit on top of these religion-share gradients".
+ * Renders Kerala as an AC-level shape grid where each AC is shaded by
+ * its DISTRICT's percentage of the chosen religion. Adjacent ACs in
+ * the same district receive identical colours, so the visual reads as
+ * a district choropleth — but every shape is in the AC coordinate
+ * system, which means the optional `outlinedSeats` overlay aligns
+ * perfectly with the underlying gradient (no coord mismatch between
+ * district paths and AC outlines).
  *
- * District-level: religion data only exists at sub-district / district
- * level in the public census. AC granularity isn't available; consumers
- * should treat all ACs in the same district as having the same religion
- * mix when reading the gradient.
+ * Religion data is at district granularity in the public census; AC
+ * granularity isn't available. All ACs in the same district share
+ * the same gradient cell.
  */
 export function ReligionGradientMap({
   religion,
@@ -49,16 +47,14 @@ export function ReligionGradientMap({
   hoveredDistrictId,
   onDistrictHover,
   ariaLabel,
-  compact = false,
 }: Props) {
-  // Find the maximum percentage for this religion across districts so the
-  // gradient anchors to the actual range, not 0-100% (which would make
-  // most districts appear faint for a religion that never crosses 50%).
+  // Anchor the gradient to the actual range of the chosen religion so
+  // mid-share districts read as mid-saturated rather than faint.
   const maxPct = Math.max(
     ...Object.values(demoMeta.districts).map((d) => d.religions[religion])
   )
 
-  const interactive = !compact && onDistrictHover != null
+  const interactive = onDistrictHover != null
 
   return (
     <svg
@@ -67,50 +63,42 @@ export function ReligionGradientMap({
       aria-label={ariaLabel}
       className="h-auto w-full"
     >
-      {/* District shading layer */}
-      {paths.districts.map((d) => {
-        const districtMeta = demoMeta.districts[d.id]
+      {paths.constituencies.map((p) => {
+        const districtId =
+          districtsMeta.constituencyToDistrict[String(p.constituencyNumber)]
+        const districtMeta = districtId
+          ? demoMeta.districts[districtId]
+          : null
         const pct = districtMeta?.religions[religion] ?? 0
-        // Linear scale from minOpacity (lowest %) to maxOpacity (highest %)
         const norm = maxPct > 0 ? pct / maxPct : 0
         const opacity = minOpacity + norm * (maxOpacity - minOpacity)
-        const isHovered = hoveredDistrictId === d.id
+        const isInHoveredDistrict =
+          hoveredDistrictId != null && hoveredDistrictId === districtId
+        const isOutlined = outlinedSeats?.has(p.constituencyNumber) ?? false
         return (
           <path
-            key={`d-${d.id}`}
-            d={d.pathD}
+            key={p.constituencyNumber}
+            d={p.pathD}
             fill={baseColor}
-            fillOpacity={isHovered ? Math.min(1, opacity + 0.1) : opacity}
-            stroke="var(--background)"
-            strokeWidth={compact ? 0.6 : 1}
-            strokeOpacity={0.7}
+            fillOpacity={
+              isInHoveredDistrict ? Math.min(1, opacity + 0.1) : opacity
+            }
+            stroke={isOutlined ? outlineColor : "var(--background)"}
+            strokeWidth={isOutlined ? 1.4 : 0.3}
+            strokeOpacity={isOutlined ? 0.9 : 0.5}
             className={interactive ? "cursor-default" : undefined}
             onMouseEnter={
-              interactive ? () => onDistrictHover?.(d.id) : undefined
+              interactive && districtId
+                ? () => onDistrictHover?.(districtId)
+                : undefined
             }
             onMouseLeave={
               interactive ? () => onDistrictHover?.(null) : undefined
             }
+            style={isOutlined ? { pointerEvents: "none" } : undefined}
           />
         )
       })}
-      {/* Optional AC outline overlay layer */}
-      {outlinedSeats &&
-        acPaths.constituencies
-          .filter((p) => outlinedSeats.has(p.constituencyNumber))
-          .map((p) => (
-            // Only outline; no fill — the religion gradient underneath
-            // shows through.
-            <path
-              key={`ac-${p.constituencyNumber}`}
-              d={p.pathD}
-              fill="none"
-              stroke={outlineColor}
-              strokeWidth={1.4}
-              strokeOpacity={0.9}
-              style={{ pointerEvents: "none" }}
-            />
-          ))}
     </svg>
   )
 }
