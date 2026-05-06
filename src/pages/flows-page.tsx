@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from "react"
 import { Link } from "react-router-dom"
-import { IconAlertTriangle } from "@tabler/icons-react"
+import { IconInfoCircle } from "@tabler/icons-react"
 
 import {
   MultiCycleDriftSection,
@@ -9,6 +9,11 @@ import {
 import { SiteFooter } from "@/components/site-footer"
 import { StateFlowSankey } from "@/components/state-flow-sankey"
 import { ThemeToggle } from "@/components/theme-toggle"
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
 import {
   getMultiCycleDrifts,
   getSingleCycleFlows,
@@ -83,38 +88,48 @@ export function FlowsPage() {
               </Link>{" "}
               · Vote flows
             </p>
-            <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h1 className="font-heading flex items-center gap-2 text-3xl font-semibold tracking-tight sm:text-4xl">
               Where votes shifted
+              <Popover>
+                <PopoverTrigger
+                  aria-label="About this page"
+                  className="inline-flex shrink-0 items-center justify-center rounded-md p-1 text-muted-foreground/60 transition-colors hover:bg-foreground/5 hover:text-foreground"
+                >
+                  <IconInfoCircle className="h-5 w-5" aria-hidden />
+                </PopoverTrigger>
+                <PopoverContent
+                  className="w-80 sm:w-96"
+                  align="start"
+                  sideOffset={8}
+                >
+                  <div className="space-y-3 text-sm leading-relaxed">
+                    <p>
+                      Seats grouped by alliance-level vote share movement.
+                      The dashboard's tables show how a single party did;
+                      this page shows how the three fronts moved against
+                      each other — the cross-current the cards format can't
+                      capture.
+                    </p>
+                    <p className="border-t pt-3 text-muted-foreground">
+                      <span className="font-medium text-foreground">
+                        Inferred, not observed.
+                      </span>{" "}
+                      We classify a seat by the net change in alliance vote
+                      share between elections. A flow labelled "LDF → NDA"
+                      could mean LDF voters chose NDA, <em>or</em> old LDF
+                      voters stayed home while new NDA voters showed up —
+                      both produce the same deltas. Read it as "alliance X
+                      gained at alliance Y's expense", not "voters moved
+                      from Y to X".
+                    </p>
+                  </div>
+                </PopoverContent>
+              </Popover>
             </h1>
-            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-              Seats grouped by alliance-level vote share movement. The
-              dashboard's tables show how a single party did; this page shows
-              how the three fronts moved against each other — the cross-current
-              the cards format can't capture.
-            </p>
           </div>
           <ThemeToggle />
         </div>
       </header>
-
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="flex items-start gap-3 rounded-lg border border-amber-500/30 bg-amber-500/5 p-4 text-sm">
-          <IconAlertTriangle
-            aria-hidden
-            className="mt-0.5 h-5 w-5 shrink-0 text-amber-600 dark:text-amber-500"
-          />
-          <p className="text-foreground/85">
-            <span className="font-medium">These flows are inferred, not
-              observed.</span>{" "}
-            We classify a seat by the net change in alliance vote share between
-            elections. The data can't tell us whether a flow labelled "LDF →
-            NDA" actually means LDF voters chose NDA, or whether old LDF voters
-            stayed home while new NDA voters showed up. Both produce the same
-            net deltas. Read the pattern as "alliance X gained at alliance Y's
-            expense", not as "voters moved from Y to X".
-          </p>
-        </div>
-      </div>
 
       <main className="mx-auto max-w-6xl px-6 py-8">
         <section className="mb-12">
