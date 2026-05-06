@@ -20,7 +20,7 @@ Each candidate's alliance lives directly on their record in `data/kerala-2026.js
 |---:|---:|
 | 2026 | 0 of 140 |
 | 2021 | 1 of 140 |
-| 2016 | 3 of 140 |
+| 2016 | 0 of 140 |
 | 2011 | 2 of 140 |
 
 ## 2026
@@ -42,28 +42,7 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 
 ## 2016
 
-3 seats missing one or more main-alliance candidates.
-
-For each seat below: which alliance is missing, then the OTHER-classified candidates in that seat sorted by vote share. Reclassify the most likely one.
-
-### Seat 75 — ANGAMALY — missing NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Jayanthi Avinash | BSP | 0.5% |
-
-### Seat 87 — KOTHAMANGALAM — missing NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| P. C. Cyriac | Independent | 10.1% |
-| Anas N. A. | SDPI | 1.2% |
-
-### Seat 121 — PUNALUR — missing NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. Sasankan | SUCI(C) | 0.8% |
+Every seat has a candidate from each main alliance. ✅
 
 ## 2011
 
