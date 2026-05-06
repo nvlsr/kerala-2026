@@ -19,9 +19,9 @@ Each candidate's alliance lives directly on their record in `data/kerala-2026.js
 | Cycle | Seats with a missing alliance |
 |---:|---:|
 | 2026 | 0 of 140 |
-| 2021 | 17 of 140 |
-| 2016 | 26 of 140 |
-| 2011 | 33 of 140 |
+| 2021 | 1 of 140 |
+| 2016 | 3 of 140 |
+| 2011 | 2 of 140 |
 
 ## 2026
 
@@ -29,7 +29,7 @@ Every seat has a candidate from each main alliance. ✅
 
 ## 2021
 
-17 seats missing one or more main-alliance candidates.
+1 seat missing one or more main-alliance candidates.
 
 For each seat below: which alliance is missing, then the OTHER-classified candidates in that seat sorted by vote share. Reclassify the most likely one.
 
@@ -40,209 +40,16 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | Shamseer Ibrahim | WPOI | 1.5% |
 | C. O. T. Naseer | Independent | 0.9% |
 
-### Seat 18 — SULTHANBATHERY — missing NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| C. K. Janu | JRS | 9.1% |
-| Ondan Paniyan | Independent | 0.4% |
-
-### Seat 19 — KALPETTA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| M. V. Shreyams Kumar | LJD | 42.6% |
-
-### Seat 20 — VADAKARA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Manayath Chandran | LJD | 42.1% |
-| Musthafa Paleri | SDPI | 2.1% |
-| Gangadharan Madappally | Independent | 0.1% |
-
-### Seat 31 — KODUVALLY — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Karat Razak | Independent | 43.7% |
-| Musthafa Kommeri | SDPI | 1.2% |
-
-### Seat 44 — TANUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| V. Abdurahiman | NSC | 46.3% |
-| Mueenudheen | BSP | 0.1% |
-
-### Seat 46 — KOTTAKKAL — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| N. A. Mohammed Kutty | NCP | 40.9% |
-
-### Seat 54 — MANNARKKAD — missing NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Agali Naseema P. | AIADMK | 6.8% |
-| James Mash | Independent | 0.7% |
-| Sivadasan | BSP | 0.5% |
-
-### Seat 58 — CHITTUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. Krishnankutty | JD(S) | 55.4% |
-| A. Chandran | BSP | 0.6% |
-
-### Seat 63 — GURUVAYOOR — missing NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Dileep Nair | DSJP | 4.3% |
-
-### Seat 75 — ANGAMALY — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Jose Thettayil | JD(S) | 40.3% |
-| Martin Paul | Independent | 0.5% |
-
-### Seat 93 — PALA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Mani C. Kappan | DCK | 50.4% |
-| Mani C. Kuriakose | Independent | 0.8% |
-| Santosh Pulickal | Independent | 0.3% |
-
-### Seat 106 — KUTTANAD — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Thomas K. Thomas | NCP | 45.7% |
-
-### Seat 111 — THIRUVALLA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Mathew T. Thomas | JD(S) | 44.6% |
-| Thomas Mathew | Independent | 1.1% |
-| Rajendra Das | BSP | 0.8% |
-
-### Seat 118 — KUNNATHUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Kovoor Kunjumon | RSP(L) | 43.1% |
-| R. S. Anju | BSP | 0.6% |
-| Manthara Velayudhan | Independent | 0.4% |
-
-### Seat 134 — THIRUVANANTHAPURAM — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Antony Raju | JKC | 38.0% |
-| Abhilash Vadakkan | Independent | 0.3% |
-
-### Seat 139 — KOVALAM — missing LDF, NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Neelalohitadasan Nadar | JD(S) | 39.8% |
-| Vishupuram Chandrasekharan | KKC | 11.7% |
-| K. R. Anish | BSP | 0.4% |
-| V. S. Prince | Independent | 0.3% |
-
 ## 2016
 
-26 seats missing one or more main-alliance candidates.
+3 seats missing one or more main-alliance candidates.
 
 For each seat below: which alliance is missing, then the OTHER-classified candidates in that seat sorted by vote share. Reclassify the most likely one.
 
-### Seat 14 — KUTHUPARAMBA — missing UDF
+### Seat 75 — ANGAMALY — missing NDA
 
 | Candidate | Party | Vote % |
 |---|---|---:|
-| K. P. Mohanan | JD(U) | 37.3% |
-| Muhammad Shabeer K. C. | SDPI | 1.1% |
-| K. P. Mohanan Vedichalil | Independent | 0.7% |
-
-### Seat 15 — MATTANNUR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. P. Prashanth | JD(U) | 27.3% |
-| Rafeekh Keecheri | SDPI | 2.1% |
-
-### Seat 18 — SULTHANBATHERY — missing NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| C. K. Janu | JRS | 16.2% |
-| Mukundan Cheengeri | BSP | 0.5% |
-
-### Seat 19 — KALPETTA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| M. V. Shreyams Kumar | JD(U) | 39.7% |
-| Joseph Ambalavayal | WPOI | 0.6% |
-
-### Seat 20 — VADAKARA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| C. K. Nanu | JD(S) | 38.0% |
-| Manayath Chandran | JD(U) | 30.6% |
-| P. Abdul Hameed | SDPI | 2.1% |
-
-### Seat 26 — ELATHUR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Pottangadi Kishan Chand | Janata Dal (United) | 30.1% |
-| Kotteappatt Krishnan | Independent | 1.1% |
-| Raghu Kallikkad | BSP | 0.7% |
-| P. M. Useffali | Independent | 0.2% |
-
-### Seat 31 — KODUVALLY — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Karat Razak | Independent | 44.4% |
-| P. K. Zakariya | WPOI | 1.1% |
-| E. Nazar | SDPI | 1.1% |
-
-### Seat 44 — TANUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| V. Abdurahiman | NSC | 45.8% |
-| Asharaf Vailathur | WPOI | 0.9% |
-| K. K. Majeed Khasimi | SDPI | 0.8% |
-
-### Seat 46 — KOTTAKKAL — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| N. A. Mohammed Kutty | NCP | 38.2% |
-| Neyyathoor Kunhimohamed | PDP | 1.9% |
-| K. P. O. Rahmathullah | SDPI | 1.2% |
-
-### Seat 58 — CHITTUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. Krishnakutty | JD(S) | 44.9% |
-| Mayilswamy | AIADMK | 4.0% |
-
-### Seat 75 — ANGAMALY — missing LDF, NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Benny Moonjely | JD(S) | 42.2% |
 | Jayanthi Avinash | BSP | 0.5% |
 
 ### Seat 87 — KOTHAMANGALAM — missing NDA
@@ -252,318 +59,17 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | P. C. Cyriac | Independent | 10.1% |
 | Anas N. A. | SDPI | 1.2% |
 
-### Seat 91 — IDUKKI — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. Francis George | JKC | 36.3% |
-| Sabu Kochuparambil | BSP | 0.4% |
-| P. T. Poomkudy | Independent | 0.3% |
-
-### Seat 93 — PALA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Mani C. Kappan | NCP | 38.8% |
-| Jose Thomas Padiyammakkal | Independent | 0.3% |
-| Anthony | Independent | 0.2% |
-
-### Seat 94 — KADUTHURUTHY — missing LDF, NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Scaria Thomas | Kerala Congress (Skaria Thomas) | 24.8% |
-| Stephen Chazhikkadan | Kerala Congress (Thomas) | 13.8% |
-| Ginish John M | BSP | 1.2% |
-
-### Seat 99 — CHANGANASSERY — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. C. Joseph | JKC | 38.6% |
-| Althaph Hassan | SDPI | 1.4% |
-| Sojan Paviyanose | Independent | 0.8% |
-
-### Seat 101 — POONJAR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| P. C. George | Independent | 43.6% |
-| P. C. Joseph Ponnattu | JKC | 15.3% |
-
-### Seat 105 — AMBALAPPUZHA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Shaik P. Harriz | JD(U) | 30.3% |
-| K. S. Shan | SDPI | 1.2% |
-| R. Arjunan | SUCI(C) | 1.1% |
-
-### Seat 106 — KUTTANAD — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Thomas Chandy | NCP | 38.5% |
-
-### Seat 111 — THIRUVALLA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Mathew T. Thomas | JD(S) | 41.3% |
-| Saji Kadampanad | BSP | 0.5% |
-
-### Seat 117 — CHAVARA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| N. Vijayan Pillai | Communist Marxist Party (Aravindakshan) | 46.8% |
-| Shahul Thengumthara | PDP | 1.0% |
-| Ansar Thevalakkara | SDPI | 0.8% |
-
-### Seat 118 — KUNNATHUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Kovoor Kunjumon | RSP(L) | 47.4% |
-| Thulaseedharan Pallickal | SDPI | 1.1% |
-| Kunjumon | Independent | 0.9% |
-
 ### Seat 121 — PUNALUR — missing NDA
 
 | Candidate | Party | Vote % |
 |---|---|---:|
 | K. Sasankan | SUCI(C) | 0.8% |
 
-### Seat 134 — THIRUVANANTHAPURAM — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Antony Raju | JKC | 28.2% |
-| Biju Ramesh | AIADMK | 4.6% |
-
-### Seat 135 — NEMOM — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| V. Surendran Pillai | JD(U) | 9.7% |
-
-### Seat 139 — KOVALAM — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Jameela Prakasham | JD(S) | 37.5% |
-| K. R. Anish | BSP | 0.7% |
-| M. C. Jayalal | Independent | 0.6% |
-
 ## 2011
 
-33 seats missing one or more main-alliance candidates.
+2 seats missing one or more main-alliance candidates.
 
 For each seat below: which alliance is missing, then the OTHER-classified candidates in that seat sorted by vote share. Reclassify the most likely one.
-
-### Seat 11 — KANNUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Kadannapalli Ramachandran | Independent | 43.2% |
-| P. C. Noushad | SDPI | 2.2% |
-| M. P. Abdullakutty | Independent | 1.0% |
-
-### Seat 14 — KUTHUPARAMBA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. P. Mohanan | Independent | 1.6% |
-| S. Poovalappil | Independent | 0.9% |
-
-### Seat 15 — MATTANNUR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. C. Muhammad Sabeer | SDPI | 2.1% |
-| Joseph | Independent | 0.7% |
-
-### Seat 19 — KALPETTA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Jameela | SDPI | 1.3% |
-| K. Nasrudeen | Independent | 0.9% |
-
-### Seat 20 — VADAKARA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| C. K. Nanu | JD(S) | 41.0% |
-| N. Venu | Independent | 8.8% |
-| Saalim Azhiyur | SDPI | 3.0% |
-
-### Seat 26 — ELATHUR — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Sasindran | Independent | 1.1% |
-| Ramesh Nanmanda | BSP | 0.7% |
-
-### Seat 35 — NILAMBUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| M. Thomas Mathew | Independent | 44.5% |
-| C. G. Unni | SDPI | 1.9% |
-| Thariyan Kiliyan | BSP | 0.9% |
-
-### Seat 40 — MALAPPURAM — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Madathil Sadiqali | JD(S) | 27.3% |
-| Sadiq Naduthodi | SDPI | 3.3% |
-| Abu Thwair | Independent | 1.8% |
-
-### Seat 42 — VALLIKUNNU — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. V. Sankaranarayanan | Independent | 34.5% |
-| Salam Mooonniyur | PDP | 2.4% |
-| Abdul Latheef | SDPI | 2.3% |
-
-### Seat 46 — KOTTAKKAL — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| C. P. K. Gurukkal | NCP | 28.6% |
-| Ali Kadampuzha | PDP | 2.6% |
-| K. C. Naser | SDPI | 2.2% |
-
-### Seat 47 — THAVANUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. T. Jaleel | LDF Independent | 47.2% |
-| Nurul Hack | SDPI | 2.5% |
-
-### Seat 55 — MALAMPUZHA — missing NDA
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| P. K. Majeed Pedikkat | JD(U) | 2.0% |
-| Ravi Pallatheri | BSP | 1.1% |
-
-### Seat 68 — NATTIKA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Vikas Chakrapani | Independent | 37.7% |
-| Dinesh Kumar E. V. | Independent | 1.3% |
-| M. S. Vasanthy | Independent | 0.6% |
-
-### Seat 69 — KAIPAMANGALAM — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Umesh Challiyil | JSS | 38.6% |
-| M. M. Manoj | Independent | 0.8% |
-| P. A. Kuttapan | BSP | 0.7% |
-
-### Seat 75 — ANGAMALY — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Jose Thettayil | JD(S) | 49.6% |
-| Johnson I. T. | Independent | 1.1% |
-| M. G. Purushottaman | BSP | 0.6% |
-
-### Seat 87 — KOTHAMANGALAM — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Skariah Thomas | Independent | 37.9% |
-| Shine Muhammed | SDPI | 4.4% |
-
-### Seat 90 — THODUPUZHA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Joseph Augustine | Independent | 34.0% |
-| M. A. Najeeb | SDPI | 4.2% |
-| Binu Sebastian | BSP | 0.5% |
-
-### Seat 93 — PALA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Mani C. Kappan | NCP | 44.9% |
-| C. V. John | Independent | 0.5% |
-| James Joseph | Independent | 0.2% |
-
-### Seat 94 — KADUTHURUTHY — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Stephen George | KC(AMG) | 37.5% |
-| M. D. Thomas | BSP | 1.8% |
-
-### Seat 103 — CHERTHALA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. R. Gowri Amma | JSS | 41.8% |
-| K. R. Rajeevan | BSP | 0.7% |
-| Shajimon | Independent | 0.7% |
-
-### Seat 106 — KUTTANAD — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Thomas Chandy | NCP | 50.8% |
-
-### Seat 109 — MAVELIKKARA — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| K. K. Shaju | JSS | 45.5% |
-| R. Rajeesh | Independent | 0.9% |
-| Subhash Mankamkuzhy | BSP | 0.6% |
-
-### Seat 111 — THIRUVALLA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Mathew T. Thomas | JD(S) | 50.0% |
-| Kurian Joseph | BSP | 1.2% |
-| Radhamani S. | SUCI(C) | 0.4% |
-
-### Seat 116 — KARUNAGAPPALLY — missing UDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| A. N. Rajan Babu | JSS | 39.6% |
-| Nazarudeen Elamaram | SDPI | 5.5% |
-| P. D. Sudheer | Independent | 0.6% |
-
-### Seat 117 — CHAVARA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Shibu Baby John | KRSP(B) | 51.2% |
-| Maniyan G. | Independent | 0.5% |
-| V. Varadharajan | BSP | 0.4% |
-
-### Seat 118 — KUNNATHUR — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Thulaseedharan Pallickal | SDPI | 1.6% |
-| Vallikunnam Prasad | Independent | 0.9% |
-
-### Seat 125 — ERAVIPURAM — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Mylakkad Shah | Independent | 3.1% |
-| Sushama Vijayan | BSP | 0.6% |
 
 ### Seat 129 — CHIRAYINKEEZHU — missing NDA
 
@@ -573,38 +79,9 @@ For each seat below: which alliance is missing, then the OTHER-classified candid
 | Anil Mangalapuram | BSP | 1.3% |
 | Sajimon Chelayam | Independent | 1.1% |
 
-### Seat 134 — THIRUVANANTHAPURAM — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Abdu Razak A. | SDPI | 0.8% |
-| P. Surendran Pillai | Independent | 0.5% |
-
 ### Seat 135 — NEMOM — missing UDF
 
 _No OTHER candidates in this seat. The missing alliance simply didn't field anyone here._
-
-### Seat 136 — ARUVIKKARA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| A. Balan | BSP | 1.5% |
-
-### Seat 138 — KATTAKKADA — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| M. V. Jayadali | Independent | 33.6% |
-| Vengode Sunil Kumar | BSP | 1.1% |
-| Kattakada Rajan | SDPI | 0.5% |
-
-### Seat 139 — KOVALAM — missing LDF
-
-| Candidate | Party | Vote % |
-|---|---|---:|
-| Jameela Prakasham | JD(S) | 47.6% |
-| Thanka Bai T. | Independent | 1.0% |
-| A. M. Nizam | SDPI | 0.9% |
 
 ## Known party-switch issues
 

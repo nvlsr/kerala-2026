@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "A. P. Abdullakutty", "party": "INC", "votes": 55427, "votePct": 48.89, "alliance": "UDF" },
-        { "name": "Kadannapalli Ramachandran", "party": "Independent", "votes": 48894, "votePct": 43.21, "alliance": "OTHER" },
+        { "name": "Kadannapalli Ramachandran", "party": "Independent", "votes": 48894, "votePct": 43.21, "alliance": "LDF" },
         { "name": "U. T. Jayandan", "party": "BJP", "votes": 4568, "votePct": 4.03, "alliance": "NDA" },
         { "name": "P. C. Noushad", "party": "SDPI", "votes": 2538, "votePct": 2.24, "alliance": "OTHER" },
         { "name": "M. P. Abdullakutty", "party": "Independent", "votes": 1100, "votePct": 0.97, "alliance": "OTHER" }

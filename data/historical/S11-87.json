@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "T. U. Kuruvilla", "party": "KC(M)", "votes": 52924, "votePct": 49.26, "alliance": "UDF" },
-        { "name": "Skariah Thomas", "party": "Independent", "votes": 40702, "votePct": 37.88, "alliance": "OTHER" },
+        { "name": "Skariah Thomas", "party": "Independent", "votes": 40702, "votePct": 37.88, "alliance": "LDF" },
         { "name": "K. Radhakrishnan", "party": "BJP", "votes": 5769, "votePct": 5.37, "alliance": "NDA" },
         { "name": "Shine Muhammed", "party": "SDPI", "votes": 4691, "votePct": 4.37, "alliance": "OTHER" }
       ],

@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "E. P. Jayarajan", "party": "CPI(M)", "votes": 75177, "votePct": 56.55, "alliance": "LDF" },
-        { "name": "Joseph Chaavara", "party": "SJ(D)", "votes": 44665, "votePct": 33.60, "alliance": "LDF" },
+        { "name": "Joseph Chaavara", "party": "SJ(D)", "votes": 44665, "votePct": 33.60, "alliance": "UDF" },
         { "name": "Biju Elakkuzhi", "party": "BJP", "votes": 8707, "votePct": 6.55, "alliance": "NDA" },
         { "name": "K. C. Muhammad Sabeer", "party": "SDPI", "votes": 2757, "votePct": 2.07, "alliance": "OTHER" },
         { "name": "Joseph", "party": "Independent", "votes": 858, "votePct": 0.65, "alliance": "OTHER" }
@@ -27,7 +27,7 @@
       "reason": null,
       "candidates": [
         { "name": "E. P. Jayarajan", "party": "CPI(M)", "votes": 84030, "votePct": 56.62, "alliance": "LDF" },
-        { "name": "K. P. Prashanth", "party": "JD(U)", "votes": 40649, "votePct": 27.34, "alliance": "OTHER" },
+        { "name": "K. P. Prashanth", "party": "JD(U)", "votes": 40649, "votePct": 27.34, "alliance": "UDF" },
         { "name": "Biju Elakkuzhi", "party": "BJP", "votes": 18620, "votePct": 12.52, "alliance": "NDA" },
         { "name": "Rafeekh Keecheri", "party": "SDPI", "votes": 3188, "votePct": 2.14, "alliance": "OTHER" },
         { "name": "NOTA", "party": "NOTA", "votes": 1420, "votePct": 0.96, "alliance": "NOTA" }

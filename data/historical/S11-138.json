@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "N. Shakthan", "party": "INC", "votes": 52368, "votePct": 44.63, "alliance": "UDF" },
-        { "name": "M. V. Jayadali", "party": "Independent", "votes": 39452, "votePct": 33.62, "alliance": "OTHER" },
+        { "name": "M. V. Jayadali", "party": "Independent", "votes": 39452, "votePct": 33.62, "alliance": "LDF" },
         { "name": "P. K. Krishnadas", "party": "BJP", "votes": 22550, "votePct": 19.22, "alliance": "NDA" },
         { "name": "Vengode Sunil Kumar", "party": "BSP", "votes": 1303, "votePct": 1.11, "alliance": "OTHER" },
         { "name": "Kattakada Rajan", "party": "SDPI", "votes": 613, "votePct": 0.52, "alliance": "OTHER" }

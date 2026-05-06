@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "R. Rajesh", "party": "CPI(M)", "votes": 65903, "votePct": 49.30, "alliance": "LDF" },
-        { "name": "K. K. Shaju", "party": "JSS", "votes": 60754, "votePct": 45.45, "alliance": "OTHER" },
+        { "name": "K. K. Shaju", "party": "JSS", "votes": 60754, "votePct": 45.45, "alliance": "UDF" },
         { "name": "S. Girija", "party": "BJP", "votes": 4984, "votePct": 3.73, "alliance": "NDA" },
         { "name": "R. Rajeesh", "party": "Independent", "votes": 1185, "votePct": 0.89, "alliance": "OTHER" },
         { "name": "Subhash Mankamkuzhy", "party": "BSP", "votes": 860, "votePct": 0.64, "alliance": "OTHER" }

@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "V. S. Sunil Kumar", "party": "CPI", "votes": 58789, "votePct": 50.20, "alliance": "LDF" },
-        { "name": "Umesh Challiyil", "party": "JSS", "votes": 45219, "votePct": 38.61, "alliance": "OTHER" },
+        { "name": "Umesh Challiyil", "party": "JSS", "votes": 45219, "votePct": 38.61, "alliance": "UDF" },
         { "name": "A. N. Radhakrishnan", "party": "BJP", "votes": 10716, "votePct": 9.15, "alliance": "NDA" },
         { "name": "M. M. Manoj", "party": "Independent", "votes": 937, "votePct": 0.80, "alliance": "OTHER" },
         { "name": "P. A. Kuttapan", "party": "BSP", "votes": 811, "votePct": 0.69, "alliance": "OTHER" }

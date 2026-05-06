@@ -10,7 +10,7 @@
       "reason": null,
       "candidates": [
         { "name": "Geetha Gopi", "party": "CPI", "votes": 64555, "votePct": 50.21, "alliance": "LDF" },
-        { "name": "Vikas Chakrapani", "party": "Independent", "votes": 48501, "votePct": 37.72, "alliance": "OTHER" },
+        { "name": "Vikas Chakrapani", "party": "Independent", "votes": 48501, "votePct": 37.72, "alliance": "UDF" },
         { "name": "Sarju Thoykkavu", "party": "BJP", "votes": 11144, "votePct": 8.67, "alliance": "NDA" },
         { "name": "Dinesh Kumar E. V.", "party": "Independent", "votes": 1636, "votePct": 1.27, "alliance": "OTHER" },
         { "name": "M. S. Vasanthy", "party": "Independent", "votes": 826, "votePct": 0.64, "alliance": "OTHER" }

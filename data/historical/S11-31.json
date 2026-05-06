@@ -26,7 +26,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Karat Razak", "party": "Independent", "votes": 61033, "votePct": 44.42, "alliance": "OTHER" },
+        { "name": "Karat Razak", "party": "Independent", "votes": 61033, "votePct": 44.42, "alliance": "LDF" },
         { "name": "M. A. Razak", "party": "IUML", "votes": 60460, "votePct": 44.01, "alliance": "UDF" },
         { "name": "Ali Akbar", "party": "BJP", "votes": 11537, "votePct": 8.40, "alliance": "NDA" },
         { "name": "P. K. Zakariya", "party": "WPOI", "votes": 1566, "votePct": 1.14, "alliance": "OTHER" },
@@ -44,7 +44,7 @@
       "reason": null,
       "candidates": [
         { "name": "M. K. Muneer", "party": "IUML", "votes": 72336, "votePct": 47.86, "alliance": "UDF" },
-        { "name": "Karat Razak", "party": "Independent", "votes": 65992, "votePct": 43.66, "alliance": "OTHER" },
+        { "name": "Karat Razak", "party": "Independent", "votes": 65992, "votePct": 43.66, "alliance": "LDF" },
         { "name": "T Balasoman", "party": "BJP", "votes": 9498, "votePct": 6.27, "alliance": "NDA" },
         { "name": "Musthafa Kommeri", "party": "SDPI", "votes": 1769, "votePct": 1.17, "alliance": "OTHER" }
       ],

@@ -9,7 +9,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Kovoor Kunjumon", "party": "RSP", "votes": 71923, "votePct": 50.0, "alliance": "UDF" },
+        { "name": "Kovoor Kunjumon", "party": "RSP", "votes": 71923, "votePct": 50.0, "alliance": "LDF" },
         { "name": "P. K. Ravi", "party": "INC", "votes": 59835, "votePct": 41.6, "alliance": "UDF" },
         { "name": "Raji Prasad", "party": "BJP", "votes": 5949, "votePct": 4.1, "alliance": "NDA" },
         { "name": "Thulaseedharan Pallickal", "party": "SDPI", "votes": 2310, "votePct": 1.6, "alliance": "OTHER" },
@@ -26,7 +26,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Kovoor Kunjumon", "party": "RSP(L)", "votes": 75725, "votePct": 47.39, "alliance": "OTHER" },
+        { "name": "Kovoor Kunjumon", "party": "RSP(L)", "votes": 75725, "votePct": 47.39, "alliance": "LDF" },
         { "name": "Ullas Kovur", "party": "RSP", "votes": 55196, "votePct": 34.54, "alliance": "UDF" },
         { "name": "Thazhava Sahadevan", "party": "BDJS", "votes": 21742, "votePct": 13.61, "alliance": "NDA" },
         { "name": "Thulaseedharan Pallickal", "party": "SDPI", "votes": 1698, "votePct": 1.06, "alliance": "OTHER" },
@@ -43,7 +43,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Kovoor Kunjumon", "party": "RSP(L)", "votes": 69436, "votePct": 43.13, "alliance": "OTHER" },
+        { "name": "Kovoor Kunjumon", "party": "RSP(L)", "votes": 69436, "votePct": 43.13, "alliance": "LDF" },
         { "name": "Ullas Kovur", "party": "RSP", "votes": 66646, "votePct": 41.4, "alliance": "UDF" },
         { "name": "Raji Prasad", "party": "BJP", "votes": 21760, "votePct": 13.52, "alliance": "NDA" },
         { "name": "R. S. Anju", "party": "BSP", "votes": 946, "votePct": 0.6, "alliance": "OTHER" },

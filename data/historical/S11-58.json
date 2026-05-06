@@ -26,7 +26,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Krishnakutty", "party": "JD(S)", "votes": 69270, "votePct": 44.90, "alliance": "OTHER" },
+        { "name": "K. Krishnakutty", "party": "JD(S)", "votes": 69270, "votePct": 44.90, "alliance": "LDF" },
         { "name": "K. Achuthan", "party": "INC", "votes": 61985, "votePct": 40.18, "alliance": "UDF" },
         { "name": "Sasikumar M.", "party": "BJP", "votes": 12537, "votePct": 8.13, "alliance": "NDA" },
         { "name": "Mayilswamy", "party": "AIADMK", "votes": 6212, "votePct": 4.03, "alliance": "OTHER" },
@@ -43,7 +43,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Krishnankutty", "party": "JD(S)", "votes": 84672, "votePct": 55.38, "alliance": "OTHER" },
+        { "name": "K. Krishnankutty", "party": "JD(S)", "votes": 84672, "votePct": 55.38, "alliance": "LDF" },
         { "name": "Sumesh Achuthan", "party": "INC", "votes": 50794, "votePct": 33.22, "alliance": "UDF" },
         { "name": "V. Natesan", "party": "BJP", "votes": 14458, "votePct": 9.46, "alliance": "NDA" },
         { "name": "NOTA", "party": "NOTA", "votes": 1285, "votePct": 0.84, "alliance": "NOTA" },

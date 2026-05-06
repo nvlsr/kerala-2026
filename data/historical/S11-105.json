@@ -27,7 +27,7 @@
       "reason": null,
       "candidates": [
         { "name": "G. Sudhakaran", "party": "CPI(M)", "votes": 63069, "votePct": 47.32, "alliance": "LDF" },
-        { "name": "Shaik P. Harriz", "party": "JD(U)", "votes": 40448, "votePct": 30.34, "alliance": "OTHER" },
+        { "name": "Shaik P. Harriz", "party": "JD(U)", "votes": 40448, "votePct": 30.34, "alliance": "UDF" },
         { "name": "L. P. Jayachandran", "party": "BJP", "votes": 22730, "votePct": 17.05, "alliance": "NDA" },
         { "name": "K. S. Shan", "party": "SDPI", "votes": 1622, "votePct": 1.22, "alliance": "OTHER" },
         { "name": "R. Arjunan", "party": "SUCI(C)", "votes": 1439, "votePct": 1.08, "alliance": "OTHER" }

@@ -26,7 +26,7 @@
       "candidates": [
         { "name": "O. Rajagopal", "party": "BJP", "votes": 67813, "votePct": 47.46, "alliance": "NDA" },
         { "name": "V. Sivankutty", "party": "CPI(M)", "votes": 59142, "votePct": 41.39, "alliance": "LDF" },
-        { "name": "V. Surendran Pillai", "party": "JD(U)", "votes": 13860, "votePct": 9.70, "alliance": "OTHER" }
+        { "name": "V. Surendran Pillai", "party": "JD(U)", "votes": 13860, "votePct": 9.70, "alliance": "UDF" }
       ],
       "margin": 8671,
       "marginPct": 6.07,

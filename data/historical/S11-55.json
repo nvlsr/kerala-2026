@@ -11,7 +11,7 @@
       "candidates": [
         { "name": "V. S. Achuthanandan", "party": "CPI(M)", "votes": 77752, "votePct": 57.04, "alliance": "LDF" },
         { "name": "Lathika Subhash", "party": "INC", "votes": 54312, "votePct": 39.84, "alliance": "UDF" },
-        { "name": "P. K. Majeed Pedikkat", "party": "JD(U)", "votes": 2772, "votePct": 2.03, "alliance": "OTHER" },
+        { "name": "P. K. Majeed Pedikkat", "party": "JD(U)", "votes": 2772, "votePct": 2.03, "alliance": "NDA" },
         { "name": "Ravi Pallatheri", "party": "BSP", "votes": 1480, "votePct": 1.09, "alliance": "OTHER" }
       ],
       "margin": 23440,

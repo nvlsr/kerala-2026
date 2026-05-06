@@ -9,7 +9,7 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. V. Shreyams Kumar", "party": "SJ(D)", "votes": 67018, "votePct": 52.94, "alliance": "LDF" },
+        { "name": "M. V. Shreyams Kumar", "party": "SJ(D)", "votes": 67018, "votePct": 52.94, "alliance": "UDF" },
         { "name": "P. A. Muhammed", "party": "CPI(M)", "votes": 48849, "votePct": 38.59, "alliance": "LDF" },
         { "name": "Anand Kumar P. G.", "party": "BJP", "votes": 6580, "votePct": 5.20, "alliance": "NDA" },
         { "name": "Jameela", "party": "SDPI", "votes": 1597, "votePct": 1.26, "alliance": "OTHER" },
@@ -27,7 +27,7 @@
       "reason": null,
       "candidates": [
         { "name": "C. K. Saseendran", "party": "CPI(M)", "votes": 72959, "votePct": 48.35, "alliance": "LDF" },
-        { "name": "M. V. Shreyams Kumar", "party": "JD(U)", "votes": 59876, "votePct": 39.68, "alliance": "OTHER" },
+        { "name": "M. V. Shreyams Kumar", "party": "JD(U)", "votes": 59876, "votePct": 39.68, "alliance": "UDF" },
         { "name": "K. Sadanandan", "party": "BJP", "votes": 12938, "votePct": 8.57, "alliance": "NDA" },
         { "name": "NOTA", "party": "NOTA", "votes": 1172, "votePct": 0.78, "alliance": "NOTA" },
         { "name": "Joseph Ambalavayal", "party": "WPOI", "votes": 900, "votePct": 0.60, "alliance": "OTHER" }
@@ -44,7 +44,7 @@
       "reason": null,
       "candidates": [
         { "name": "T. Siddique", "party": "INC", "votes": 70252, "votePct": 46.16, "alliance": "UDF" },
-        { "name": "M. V. Shreyams Kumar", "party": "LJD", "votes": 64782, "votePct": 42.56, "alliance": "OTHER" },
+        { "name": "M. V. Shreyams Kumar", "party": "LJD", "votes": 64782, "votePct": 42.56, "alliance": "LDF" },
         { "name": "Subeesh T. M.", "party": "BJP", "votes": 14113, "votePct": 9.27, "alliance": "NDA" },
         { "name": "NOTA", "party": "NOTA", "votes": 828, "votePct": 0.54, "alliance": "NOTA" }
       ],

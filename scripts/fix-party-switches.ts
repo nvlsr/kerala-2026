@@ -1,14 +1,17 @@
 /**
- * One-shot fix for two known party-switch issues in the historical data.
+ * One-shot fix for known party-switch issues in the historical data.
  *
  * The migration that backfilled `alliance` used the 2026 alliance mapping
- * for all historical cycles. Two parties switched fronts during the
+ * for all historical cycles. Some parties switched fronts during the
  * 2011–2026 window:
  *
- *   - Kerala Congress (M) — Jose K. Mani faction left UDF in 2020 and
- *     joined LDF. Pre-2020 KC(M) candidates should be UDF.
- *   - Kerala Congress (B) — Balakrishna Pillai faction left UDF in 2016
- *     and joined LDF. Pre-2016 KC(B) candidates should be UDF.
+ *   - Kerala Congress (M) — left UDF in 2020 and joined LDF.
+ *     Pre-2020 KC(M) records currently say LDF; should be UDF.
+ *   - Kerala Congress (B) — left UDF in 2016 and joined LDF.
+ *     Pre-2016 KC(B) records currently say LDF; should be UDF.
+ *   - Revolutionary Socialist Party (RSP, Baby John faction) — left LDF
+ *     in 2014 and joined UDF. Pre-2014 RSP records currently say UDF;
+ *     should be LDF. (Reverse direction from KC(M)/KC(B).)
  *
  * Idempotent. Re-running after the fix is a no-op.
  *
@@ -42,18 +45,44 @@ type HistoricalSeat = {
   elections: HistoricalElection[]
 } & Record<string, unknown>
 
-const KCM_FORMS = new Set(["KC(M)", "KCM", "KC (M)"])
-const KCB_FORMS = new Set(["KC(B)", "KCB", "KC (B)"])
+type SwitchRule = {
+  forms: Set<string>
+  switchYear: number
+  preSwitch: AllianceCode
+  /** Used by the migration's 2026 mapping, so currently in the data. */
+  current: AllianceCode
+  label: string
+}
 
-function shouldFix(
-  party: string,
-  year: number,
-  alliance: AllianceCode | undefined
-): boolean {
-  if (alliance !== "LDF") return false
-  if (KCM_FORMS.has(party) && year < 2020) return true
-  if (KCB_FORMS.has(party) && year < 2016) return true
-  return false
+const RULES: SwitchRule[] = [
+  {
+    forms: new Set(["KC(M)", "KCM", "KC (M)"]),
+    switchYear: 2020,
+    preSwitch: "UDF",
+    current: "LDF",
+    label: "KC(M)",
+  },
+  {
+    forms: new Set(["KC(B)", "KCB", "KC (B)"]),
+    switchYear: 2016,
+    preSwitch: "UDF",
+    current: "LDF",
+    label: "KC(B)",
+  },
+  {
+    forms: new Set(["RSP"]),
+    switchYear: 2014,
+    preSwitch: "LDF",
+    current: "UDF",
+    label: "RSP",
+  },
+]
+
+function findRule(party: string, year: number): SwitchRule | null {
+  for (const r of RULES) {
+    if (r.forms.has(party) && year < r.switchYear) return r
+  }
+  return null
 }
 
 const histDir = join(root, "data/historical")
@@ -63,8 +92,7 @@ const histFiles = readdirSync(histDir).filter(
 
 const CANDIDATE_OBJECT_RE = /\{[^{}]*"name"\s*:[^{}]*\}/g
 
-let kcmUpdated = 0
-let kcbUpdated = 0
+const counts = new Map<string, number>()
 let filesTouched = 0
 
 for (const file of histFiles) {
@@ -86,16 +114,17 @@ for (const file of histFiles) {
     const pair = candidatesInOrder[i++]
     if (!pair) return match
     const { cand, year } = pair
-    if (!shouldFix(cand.party, year, cand.alliance)) return match
+    const rule = findRule(cand.party, year)
+    if (!rule) return match
+    if (cand.alliance !== rule.current) return match
 
     const replaced = match.replace(
-      /"alliance"\s*:\s*"LDF"/,
-      '"alliance": "UDF"'
+      new RegExp(`"alliance"\\s*:\\s*"${rule.current}"`),
+      `"alliance": "${rule.preSwitch}"`
     )
     if (replaced === match) return match
 
-    if (KCM_FORMS.has(cand.party)) kcmUpdated++
-    else if (KCB_FORMS.has(cand.party)) kcbUpdated++
+    counts.set(rule.label, (counts.get(rule.label) ?? 0) + 1)
     touched = true
     return replaced
   })
@@ -106,6 +135,7 @@ for (const file of histFiles) {
   }
 }
 
-console.log(`KC(M) records updated: ${kcmUpdated}`)
-console.log(`KC(B) records updated: ${kcbUpdated}`)
+for (const r of RULES) {
+  console.log(`${r.label} records updated: ${counts.get(r.label) ?? 0}`)
+}
 console.log(`Files touched: ${filesTouched} of ${histFiles.length}`)
