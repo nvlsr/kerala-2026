@@ -1,9 +1,15 @@
-import { IconChevronRight, IconX } from "@tabler/icons-react"
+import { IconChevronDown, IconChevronRight, IconX } from "@tabler/icons-react"
 
 import { ThemeToggle } from "@/components/theme-toggle"
 import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
+import {
   constituencies,
   displayConstituencyName,
+  districts,
   getDistrict,
   partyShort,
   type AllianceCode,
@@ -39,6 +45,7 @@ type FilterBreadcrumbProps = {
   selectedParty: string | null
   selectedSeat: number | null
   canReset: boolean
+  onSetScope: (district: string) => void
   onClearScope: () => void
   onClearAlliance: () => void
   onClearParty: () => void
@@ -59,6 +66,7 @@ export function FilterBreadcrumb({
   selectedParty,
   selectedSeat,
   canReset,
+  onSetScope,
   onClearScope,
   onClearAlliance,
   onClearParty,
@@ -98,6 +106,9 @@ export function FilterBreadcrumb({
         >
           Kerala
         </button>
+        {!district && (
+          <DistrictPicker onSelect={onSetScope} />
+        )}
         {crumbs.map((c) => (
           <span key={c.label} className="flex items-center gap-1.5">
             <IconChevronRight
@@ -128,5 +139,47 @@ export function FilterBreadcrumb({
         )}
       </div>
     </nav>
+  )
+}
+
+/**
+ * Trailing pill in the filter breadcrumb that opens a dropdown of all
+ * 14 districts. Replaces the choropleth `KeralaMap`'s click-to-filter
+ * affordance — surfaced here so the canonical filter UI stays in one
+ * place. Hidden when a district is already selected (the existing
+ * crumb takes its place; clear it to re-pick).
+ */
+function DistrictPicker({ onSelect }: { onSelect: (district: string) => void }) {
+  return (
+    <span className="flex items-center gap-1.5">
+      <IconChevronRight
+        className="h-3 w-3 text-muted-foreground/50"
+        aria-hidden
+      />
+      <Popover>
+        <PopoverTrigger
+          className="inline-flex items-center gap-1 rounded-full border border-dashed bg-transparent px-2 py-0.5 font-medium text-muted-foreground hover:border-solid hover:bg-muted/40 hover:text-foreground"
+          aria-label="Filter by district"
+        >
+          District
+          <IconChevronDown className="h-3 w-3" aria-hidden />
+        </PopoverTrigger>
+        <PopoverContent align="start" className="w-44 p-1">
+          <ul role="listbox" aria-label="Districts">
+            {districts.map((d) => (
+              <li key={d.id} role="option" aria-selected={false}>
+                <button
+                  type="button"
+                  onClick={() => onSelect(d.id)}
+                  className="block w-full rounded px-2 py-1 text-left text-xs hover:bg-foreground/5"
+                >
+                  {d.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </PopoverContent>
+      </Popover>
+    </span>
   )
 }

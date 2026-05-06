@@ -2,7 +2,6 @@ import { useEffect, useMemo, useReducer } from "react"
 import { Link } from "react-router-dom"
 
 import { FilterBreadcrumb } from "@/components/scope-title"
-import { KeralaMap } from "@/components/kerala-map"
 import { AllianceSection } from "@/components/alliance-section"
 import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
@@ -92,13 +91,6 @@ export function ExplorePage() {
             <h1 className="font-heading mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
               Browse all 140 seats
             </h1>
-            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-              Filter, sort, and dig into the constituency-level results.
-              Click a district to filter by region, an alliance row to
-              drill into its parties, or any seat on the constituency
-              map below to open its detail panel. Filter state lives in
-              the URL — every view is shareable.
-            </p>
           </div>
           <ThemeToggle />
         </div>
@@ -109,6 +101,7 @@ export function ExplorePage() {
         selectedParty={filters.party}
         selectedSeat={filters.seat}
         canReset={hasActiveFilters(filters)}
+        onSetScope={(district) => dispatch({ type: "set-district", district })}
         onClearScope={() => dispatch({ type: "clear-district" })}
         onClearAlliance={() => dispatch({ type: "clear-alliance" })}
         onClearParty={() => dispatch({ type: "clear-party" })}
@@ -116,17 +109,15 @@ export function ExplorePage() {
         onReset={() => dispatch({ type: "reset" })}
       />
       <SearchBar />
-      <AllianceSection
-        scope={filters.district}
-        selectedAlliance={filters.alliance}
-        onSelectAlliance={(alliance) =>
-          dispatch({ type: "set-alliance", alliance })
-        }
-      />
-      <KeralaMap
-        scope={filters.district}
-        onSelect={(district) => dispatch({ type: "set-district", district })}
-      />
+      {(filters.district || filters.alliance) && (
+        <AllianceSection
+          scope={filters.district}
+          selectedAlliance={filters.alliance}
+          onSelectAlliance={(alliance) =>
+            dispatch({ type: "set-alliance", alliance })
+          }
+        />
+      )}
       {filters.alliance && (
         <PartySection
           scope={filters.district}
