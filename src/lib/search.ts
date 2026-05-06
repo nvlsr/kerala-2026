@@ -65,6 +65,10 @@ function buildIndex(): IndexEntry[] {
   }
 
   // ─── Candidates ─────────────────────────────────────────────────────
+  // result=all so the searched candidate is visible in the table
+  // regardless of winner status (without it, the default winners-only
+  // filter would hide losing candidates from the table — they'd only
+  // appear in the seat detail panel).
   for (const c of constituencies) {
     for (const cand of c.candidates) {
       if (cand.isNota) continue
@@ -72,7 +76,7 @@ function buildIndex(): IndexEntry[] {
         type: "candidate",
         primaryText: cand.name,
         secondaryText: `${cand.party} · ${c.constituencyName}`,
-        url: `/explore?seat=${c.constituencyNumber}`,
+        url: `/explore?seat=${c.constituencyNumber}&result=all`,
         searchKey:
           `${cand.name} ${cand.party} ${c.constituencyName}`.toLowerCase(),
         id: `candidate-${c.constituencyNumber}-${cand.name}`,

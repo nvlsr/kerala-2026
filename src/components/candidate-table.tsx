@@ -5,10 +5,10 @@ import {
   IconCheck,
   IconChevronLeft,
   IconChevronRight,
+  IconX,
 } from "@tabler/icons-react"
 
 import { Button } from "@/components/ui/button"
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { DeltaPercent } from "@/components/delta-percent"
 import { InfoIcon } from "@/components/info-icon"
 import { InsightsChips } from "@/components/insights-chips"
@@ -77,6 +77,16 @@ export function CandidateTable({ filters, dispatch }: Props) {
     setPage(1)
   }
 
+  // Winner-column header click toggles the result filter:
+  // winners ⇄ all, with losers (chip-driven) collapsing back to all.
+  // Semantically: any filtered state (winners or losers) clicks to
+  // "all"; only "all" clicks to "winners".
+  const toggleWinnerFilter = () => {
+    const next: ResultFilter = result === "all" ? "winners" : "all"
+    dispatch({ type: "set-result", result: next })
+    setPage(1)
+  }
+
   const scopeLabel = [
     district ? district.name : null,
     alliance ? getAlliance(alliance).code : null,
@@ -89,23 +99,6 @@ export function CandidateTable({ filters, dispatch }: Props) {
     <Section
       title="Candidates"
       subtitle={`${scopeLabel ? scopeLabel + " " : ""}· ${sorted.length}`}
-      actions={
-        <ToggleGroup
-          value={[result]}
-          onValueChange={(v) => {
-            const next = (v[0] as ResultFilter | undefined) ?? "winners"
-            dispatch({ type: "set-result", result: next })
-            setPage(1)
-          }}
-          variant="outline"
-          size="sm"
-          spacing={0}
-        >
-          <ToggleGroupItem value="winners">Winners</ToggleGroupItem>
-          <ToggleGroupItem value="losers">Losers</ToggleGroupItem>
-          <ToggleGroupItem value="all">All</ToggleGroupItem>
-        </ToggleGroup>
-      }
     >
       <InsightsChips dispatch={dispatch} />
       {sorted.length === 0 ? (
@@ -136,6 +129,10 @@ export function CandidateTable({ filters, dispatch }: Props) {
                   >
                     Candidate
                   </Th>
+                  <WinnerTh
+                    result={result}
+                    onToggle={toggleWinnerFilter}
+                  />
                   <Th
                     column="party"
                     sortColumn={sortColumn}
@@ -285,6 +282,47 @@ function Th({
   )
 }
 
+/**
+ * Header cell for the Winner column. Click toggles the result filter
+ * winners ⇄ all (with chip-driven losers state collapsing back to
+ * all). Visual states:
+ *   - winners: filled IconCheck in foreground color (filter active)
+ *   - all: muted IconCheck (filter off)
+ *   - losers: IconX (chip set this; click escapes back to all)
+ */
+function WinnerTh({
+  result,
+  onToggle,
+}: {
+  result: ResultFilter
+  onToggle: () => void
+}) {
+  const Icon = result === "losers" ? IconX : IconCheck
+  const active = result === "winners"
+  const title =
+    result === "winners"
+      ? "Showing winners only · click to show all"
+      : result === "losers"
+        ? "Showing losers (chip-set) · click to show all"
+        : "Click to filter to winners only"
+  return (
+    <th className="px-3 py-2 text-center">
+      <button
+        type="button"
+        onClick={onToggle}
+        title={title}
+        aria-label={title}
+        className={cn(
+          "inline-flex items-center justify-center rounded p-0.5 hover:bg-foreground/10",
+          active ? "text-foreground" : "text-muted-foreground/60"
+        )}
+      >
+        <Icon className="h-3.5 w-3.5" aria-hidden />
+      </button>
+    </th>
+  )
+}
+
 function CandidateTr({
   row,
   isSelected,
@@ -319,16 +357,16 @@ function CandidateTr({
         </span>
       </td>
       <td className="px-3 py-2">
-        <span className="flex items-center gap-1.5">
-          <span className="truncate">{row.candidateDisplay}</span>
-          {row.isWinner && (
-            <IconCheck
-              className="h-3.5 w-3.5 shrink-0"
-              style={{ color: main ? meta.color : undefined }}
-              aria-hidden
-            />
-          )}
-        </span>
+        <span className="block truncate">{row.candidateDisplay}</span>
+      </td>
+      <td className="px-3 py-2 text-center">
+        {row.isWinner && (
+          <IconCheck
+            className="inline-block h-3.5 w-3.5"
+            style={{ color: main ? meta.color : undefined }}
+            aria-label="Winner"
+          />
+        )}
       </td>
       <td className="px-3 py-2">
         <span className="truncate" title={row.candidate.party}>
