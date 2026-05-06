@@ -58,7 +58,14 @@ export function AllianceSection({
             <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
               <tr className="border-b">
                 <th className="px-3 py-3 text-left">Alliance</th>
-                <th className="px-3 py-3 text-right">Seats</th>
+                <th className="px-3 py-3 text-right">
+                  <span className="inline-flex items-baseline gap-1.5">
+                    Seats
+                    <span className="text-[10px] font-normal normal-case text-muted-foreground/60">
+                      / {summary.totalSeats}
+                    </span>
+                  </span>
+                </th>
                 <th className="px-3 py-3 text-right">Vote share</th>
                 <th className="px-3 py-3 text-right">
                   <span className="inline-flex items-center gap-1">
@@ -97,10 +104,6 @@ export function AllianceSection({
                     </td>
                     <td className="px-3 py-4 text-right tabular-nums">
                       {r.seatsWon}
-                      <span className="text-muted-foreground">
-                        {" "}
-                        / {summary.totalSeats}
-                      </span>
                     </td>
                     <td className="px-3 py-4 text-right tabular-nums">
                       {formatPercent(r.voteShare, 1)}
