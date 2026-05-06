@@ -29,8 +29,7 @@ Source: <https://en.wikipedia.org/wiki/2026_Kerala_Legislative_Assembly_election
 
 The "Left Democratic Front", "United Democratic Front", "National Democratic Alliance", and "Others" lists were copied from this page and used to build:
 
-- `data/alliances.json` — `partyToAlliance` map, party abbreviations, and alliance metadata (color, code, name, led-by)
-- The 4 Independent winners (PAYYANNUR, TALIPARAMBA, PALA, AMBALAPPUZHA) are user-classified as UDF-aligned in the `independentOverrides` block of the same file
+- `data/alliances.json` — party abbreviations, party→current-alliance map (used for chart line colours), and alliance metadata (color, code, name, led-by). Per-cycle alliance assignment lives on each candidate record directly: `alliance` field on every entry in `data/kerala-2026.json` and `data/historical/S11-*.json`. Independent candidates and front-aligned mid-cycle defectors are tagged in the same place — no separate override block.
 
 ### 2b. Constituency → district mapping
 

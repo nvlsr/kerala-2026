@@ -208,7 +208,7 @@ export function CandidateTable({ filters, dispatch }: Props) {
                 }}
                 className="rounded-full border bg-background px-2 py-0.5 font-medium text-foreground hover:bg-foreground/5"
               >
-                Show all {searchCounts!.total}
+                Show all {searchCounts?.total}
               </button>
             </div>
           )}
