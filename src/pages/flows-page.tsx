@@ -214,6 +214,18 @@ export function FlowsPage() {
                 event.
               </p>
               <p>
+                <span className="font-medium text-foreground">
+                  Religion mix figures.
+                </span>{" "}
+                The "Observations" notes on multi-cycle drift cards use the
+                2011 census — the most recent available. Differential
+                fertility since 2011 means the Hindu and Christian numbers
+                shown are likely a slight high-end estimate, and the Muslim
+                number a slight low-end. Composition is averaged equally
+                across the seats in each card (each seat contributes its
+                district's mix once), not population-weighted.
+              </p>
+              <p>
                 The full methodology document (with caveats and validation
                 cases) lives at{" "}
                 <a

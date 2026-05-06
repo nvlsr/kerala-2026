@@ -13,6 +13,7 @@ import {
   type MultiCycleDrift,
   type SeatFlow,
 } from "@/lib/data/flows"
+import { computeCardObservations } from "@/lib/data/flow-insights"
 import type { Constituency } from "@/lib/data"
 import { displayConstituencyName } from "@/lib/data"
 import { cn } from "@/lib/utils"
@@ -244,7 +245,24 @@ export function MultiCycleDriftSection({
           </div>
         </div>
       </div>
+      <ObservationsBlock seats={drifts.map((d) => d.constituency)} />
     </article>
+  )
+}
+
+function ObservationsBlock({ seats }: { seats: Constituency[] }) {
+  const obs = computeCardObservations(seats)
+  if (!obs.geography && !obs.religion) return null
+  return (
+    <aside className="mt-4 rounded-md border-l-2 border-foreground/30 bg-muted/30 px-3 py-2 text-xs text-muted-foreground">
+      <p className="mb-1 text-[10px] font-medium tracking-wider text-foreground/70 uppercase">
+        Observations
+      </p>
+      <ul className="space-y-1">
+        {obs.geography && <li>{obs.geography}</li>}
+        {obs.religion && <li>{obs.religion}</li>}
+      </ul>
+    </aside>
   )
 }
 
