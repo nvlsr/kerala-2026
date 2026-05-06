@@ -7,6 +7,7 @@
  */
 import alliancesJson from "@data/alliances.json"
 import candidateAliasesJson from "@data/candidate-aliases.json"
+import communityBeltsJson from "@data/community-belts.json"
 import constituenciesJson from "@data/kerala-2026.json"
 import constituencyNamesJson from "@data/constituency-names.json"
 import demographicsJson from "@data/demographics.json"
@@ -64,4 +65,17 @@ export const demoMeta = demographicsJson as {
   source: string
   note?: string
   districts: Record<string, DistrictDemographics>
+}
+
+export type BeltDef = {
+  id: string
+  label: string
+  description: string
+  color: string
+}
+
+export const beltsMeta = communityBeltsJson as {
+  belts: BeltDef[]
+  districtToBelt: Record<string, string>
+  constituencyOverrides: Record<string, string | { _doc?: string }>
 }

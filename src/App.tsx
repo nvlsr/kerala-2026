@@ -18,6 +18,11 @@ const FlowsPage = lazy(() =>
 const DriftsPage = lazy(() =>
   import("@/pages/drifts-page").then((m) => ({ default: m.DriftsPage }))
 )
+// Exploratory page — community-belt overlay against drift findings.
+// Intentionally not linked from anywhere yet; reachable only via direct URL.
+const BeltsPage = lazy(() =>
+  import("@/pages/belts-page").then((m) => ({ default: m.BeltsPage }))
+)
 
 /** Minimal skeleton — keeps the page footprint stable while the chunk
  *  loads. No spinner: the chunks are small and on a warm cache the
@@ -36,6 +41,7 @@ export function App() {
           <Route path="/insights" element={<InsightsPage />} />
           <Route path="/flows" element={<FlowsPage />} />
           <Route path="/drifts" element={<DriftsPage />} />
+          <Route path="/belts" element={<BeltsPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
