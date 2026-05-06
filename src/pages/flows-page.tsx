@@ -2,6 +2,7 @@ import { useEffect, useMemo } from "react"
 import { Link } from "react-router-dom"
 import { IconInfoCircle } from "@tabler/icons-react"
 
+import { BeltOverlaySection } from "@/components/belt-overlay-section"
 import { DriftsTeaser } from "@/components/drifts-teaser"
 import { SingleCyclePatternSection } from "@/components/flow-pattern-section"
 import { SiteFooter } from "@/components/site-footer"
@@ -18,6 +19,28 @@ import {
   singleCyclePatternLabel,
   type SeatFlow,
 } from "@/lib/data/flows"
+
+// Hand-written editorial framings for the single-cycle flow × belt
+// overlay. Only two patterns earn a framing — the others are either
+// too small, too diffuse, or have district-level belt labels that
+// mislead at AC level (see SECTION_INTRO below for why).
+const SINGLE_CYCLE_BELT_FRAMINGS: Record<string, string> = {
+  LDF_to_UDF:
+    "Half the pattern — 24 of 48 seats — sits in the two northern belts (Malappuram, Kasaragod, Kannur, Kozhikode). The Muslim community, which had voted LDF more heavily than usual in 2021, returned to UDF/IUML in 2026 — a textbook anti-incumbency consolidation. The non-northern half spreads across central and southern belts and reads as the broader anti-LDF wave. Mainstream post-result analysis frames the 2026 swing as a minority-vote consolidation against the CPI(M)-led LDF; this northern concentration is the dominant geographic signature of that consolidation.",
+  "LDF+NDA_to_UDF":
+    "The most concentrated single-cycle belt pattern in the entire dataset: 12 of 21 seats sit in central-syromalabar (Thrissur + Ernakulam Catholic country) — Thrissur, Eranakulam, Thrikkakara, Muvattupuzha, Kothamangalam, Perumbavoor, Vypen, Irinjalakuda, Pudukkad, Kunnamkulam, Kunnathunad, Kodungallur. UDF gained at the expense of both LDF and NDA in these seats — the Christian community consolidated decisively with UDF, pulling votes from both fronts simultaneously. Several converging drivers in mainstream reporting: diocesan bishops in Kanjirappally, Thrissur, and Pala publicly campaigned for UDF; Catholic newspaper Deepika ran a pro-Congress line; the FCRA amendment was named as the trigger nudging Christian voters who had drifted toward BJP back into UDF; and Kerala Congress (M)'s LDF affiliation since 2020 backfired — all 12 KC(M) candidates lost in 2026, including chairman Jose K. Mani at Pala. KCBC institutionally kept its standard neutral line; the visible pro-UDF push came from individual dioceses, not the Bishops' Conference as a body.",
+}
+
+const SINGLE_CYCLE_CROSS_PATTERN_OBSERVATION =
+  "Two community-keyed consolidations against LDF drove most of 2026's single-cycle movement: Muslim voters returned to UDF (24 of the 48-seat LDF→UDF pattern), and Christian voters consolidated with UDF (12 of the 21-seat LDF+NDA→UDF pattern). Together those two community blocs account for 36 of 85 classified flow seats — over 40% of all 2026 flow movement is explained by community-keyed consolidation against the incumbent. The remainder is the broader anti-incumbency wave plus seat-specific candidate effects. Worth noting separately: NDA's three actual wins in 2026 — Nemom, Kazhakoottam (both Trivandrum), and Chathannoor (Kollam) — sit in southern Hindu-Nair / Hindu-Ezhava terrain. Only Chathannoor passes the LDF→NDA single-cycle threshold cleanly; Nemom and Kazhakoottam don't classify as flows because UDF and NDA both gained while LDF dropped (a three-way share movement the binary classification doesn't catch). For the structural Hindu-belt rise of NDA in southern Kerala, the multi-cycle /drifts page is the right lens."
+
+const SINGLE_CYCLE_BELT_SECTION_INTRO =
+  "Of the five single-cycle flow patterns, two have clear community-keyed belt geography. The other three are skipped: NDA→UDF (n=1, only Kochi) is too small; LDF+UDF→NDA (n=6) is scattered across five belts with no concentration; LDF→NDA (n=9) has district-level belt labels that mislead at AC granularity — four seats fall under 'central-syromalabar' by district but at AC level are Hindu-temple (Guruvayoor), SC-reserved (Chelakkara, Devikulam), or mixed-coastal (Kaipamangalam) seats, not actually Catholic. Forcing belt analysis on those would produce a misleading 'Christian shift to NDA' framing that the AC-level demographics don't support. The two patterns covered below are where the data and the belt taxonomy genuinely line up."
+
+// Patterns whose belt geography earns a per-pattern framing block.
+// Other classified patterns (NDA→UDF, LDF+UDF→NDA, LDF→NDA) are
+// deliberately excluded — see SECTION_INTRO above.
+const BELT_SECTION_PATTERN_KEYS = new Set(["LDF_to_UDF", "LDF+NDA_to_UDF"])
 
 function groupBy<T, K extends string>(
   items: T[],
@@ -147,6 +170,25 @@ export function FlowsPage() {
         </section>
 
         <section className="mt-12">
+          <p className="mb-6 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            {SINGLE_CYCLE_BELT_SECTION_INTRO}
+          </p>
+          <BeltOverlaySection
+            patternGroups={singleGroups
+              .filter((g) => BELT_SECTION_PATTERN_KEYS.has(g.key))
+              .map((g) => ({
+                key: g.key,
+                label: g.label,
+                seats: g.items.map((f) => f.constituency),
+              }))}
+            framings={SINGLE_CYCLE_BELT_FRAMINGS}
+            crossPatternObservation={SINGLE_CYCLE_CROSS_PATTERN_OBSERVATION}
+            sectionTitle="By community belt — what each flow tells us about who moved"
+            sectionDescription="The single-cycle flows where the geography lines up with Kerala's community-belt taxonomy. Two community blocs — Muslim and Christian — drove most of 2026's anti-LDF movement; the maps and per-pattern framings below trace where each consolidation happened."
+          />
+        </section>
+
+        <section className="mt-12">
           <details className="rounded-lg border bg-card/40 p-6 text-sm">
             <summary className="cursor-pointer font-medium">
               Methodology &amp; thresholds
@@ -176,6 +218,35 @@ export function FlowsPage() {
                 a seat (e.g. Ottappalam). Treat seats with large OTHER swings
                 cautiously — the alliance-flow story may not be the main
                 event.
+              </p>
+              <p>
+                <span className="font-medium text-foreground">
+                  Community-belt overlay.
+                </span>{" "}
+                The "By community belt" section above applies a 9-belt
+                qualitative taxonomy (academic literature: Zachariah 2003,
+                GeoCurrents 2014, KCBC diocese geography) at district
+                level. Hand-written framings carry interpretation;
+                numeric breakdowns per pattern are data-derived. Three
+                of the five flow patterns are excluded from belt
+                framing — see the section intro for why. The full belt
+                taxonomy reference lives at{" "}
+                <Link
+                  to="/belts"
+                  className="underline-offset-2 hover:underline"
+                >
+                  /belts
+                </Link>
+                ; raw assignments at{" "}
+                <a
+                  href="https://github.com/nvlsr/kerala-2026/blob/main/data/community-belts.json"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-2 hover:underline"
+                >
+                  data/community-belts.json
+                </a>
+                .
               </p>
               <p>
                 The full methodology document (with caveats and validation
