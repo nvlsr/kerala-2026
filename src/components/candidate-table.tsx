@@ -187,6 +187,7 @@ export function CandidateTable({ filters, dispatch }: Props) {
                     sortDir={sortDir}
                     onSort={setSort}
                     className="px-3 py-2 text-right"
+                    tooltip="Votes ahead of the runner-up (winners, positive) or behind the winner (losers, negative). The smaller value is the margin as a share of total votes cast in this constituency."
                   >
                     Margin
                   </Th>
