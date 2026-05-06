@@ -24,9 +24,11 @@
  *     voters with old LDF voters staying home, or (c) any combination.
  *   - The thresholds (5pp gain, 5pp loss, 2pp stable) are heuristics. Tune
  *     after eyeballing results.
- *   - Party→alliance is fixed at the 2026 mapping. For 2021 this is fine
- *     for major parties but may misclassify minor parties that switched
- *     fronts between cycles.
+ *   - Each candidate (2026 + every historical record) carries its OWN
+ *     `alliance` field per cycle, set by the data layer. Parties that
+ *     switched fronts (KC(M) UDF→LDF in 2020, RSP LDF→UDF in 2014, KC(B)
+ *     UDF→LDF in 2016) are correctly attributed to whichever alliance they
+ *     ran with that year — no 2026 anchoring.
  */
 
 import { readFileSync, readdirSync } from "fs"
@@ -38,11 +40,12 @@ const root = join(__dirname, "..")
 
 // ─── Types ────────────────────────────────────────────────────────────
 
-type AllianceCode = "UDF" | "LDF" | "NDA" | "OTHER"
+type AllianceCode = "UDF" | "LDF" | "NDA" | "OTHER" | "NOTA"
 
 type Candidate2026 = {
   name: string
   party: string
+  alliance: AllianceCode
   votes: number
   margin: number
   status: string
@@ -58,6 +61,7 @@ type Seat2026 = {
 type HistoricalCandidate = {
   name: string
   party: string
+  alliance: AllianceCode
   votes: number
   votePct: number
 }
@@ -74,17 +78,8 @@ type HistoricalSeat = {
   elections: HistoricalElection[]
 }
 
-type AlliancesMeta = {
-  partyToAlliance: Record<string, string>
-  partyAbbreviation: Record<string, string>
-  partyAliases: Record<string, string>
-}
-
 // ─── Load data ────────────────────────────────────────────────────────
 
-const alliancesMeta: AlliancesMeta = JSON.parse(
-  readFileSync(join(root, "data/alliances.json"), "utf8")
-)
 const seats2026: Seat2026[] = JSON.parse(
   readFileSync(join(root, "data/kerala-2026.json"), "utf8")
 )
@@ -101,37 +96,20 @@ for (const file of historicalFiles) {
   historicalByNumber.set(data.constituencyNumber, data)
 }
 
-// ─── Party → alliance mapping ─────────────────────────────────────────
-
-// Reverse the partyAbbreviation map (full→abbr) so we can resolve
-// historical entries that use abbreviations like "IUML", "BJP", "CPI(M)".
-const abbreviationToFull: Record<string, string> = {}
-for (const [full, abbr] of Object.entries(alliancesMeta.partyAbbreviation)) {
-  abbreviationToFull[abbr] = full
-}
-
-function canonicalPartyName(raw: string): string {
-  const trimmed = raw.trim()
-  if (!trimmed) return trimmed
-  if (alliancesMeta.partyAbbreviation[trimmed]) return trimmed
-  if (alliancesMeta.partyAliases[trimmed]) {
-    return alliancesMeta.partyAliases[trimmed]
-  }
-  if (abbreviationToFull[trimmed]) return abbreviationToFull[trimmed]
-  return trimmed
-}
-
-function partyToAlliance(rawParty: string): AllianceCode {
-  const canonical = canonicalPartyName(rawParty)
-  const a = alliancesMeta.partyToAlliance[canonical]
-  if (a) return a as AllianceCode
-  return "OTHER"
-}
-
 // ─── Compute alliance shares per cycle ────────────────────────────────
+//
+// Each candidate carries its own `alliance` field, set by the data layer
+// to reflect whichever alliance that candidate ran with in that cycle.
+// We just sum by it — no party→alliance lookup, no 2026 anchoring.
 
 type AllianceShares = Record<AllianceCode, number>
-const emptyShares = (): AllianceShares => ({ UDF: 0, LDF: 0, NDA: 0, OTHER: 0 })
+const emptyShares = (): AllianceShares => ({
+  UDF: 0,
+  LDF: 0,
+  NDA: 0,
+  OTHER: 0,
+  NOTA: 0,
+})
 
 function shares2026(seat: Seat2026): AllianceShares {
   const real = seat.candidates.filter((c) => !c.isNota)
@@ -139,7 +117,7 @@ function shares2026(seat: Seat2026): AllianceShares {
   if (total === 0) return emptyShares()
   const out = emptyShares()
   for (const c of real) {
-    out[partyToAlliance(c.party)] += (c.votes / total) * 100
+    out[c.alliance] += (c.votes / total) * 100
   }
   return out
 }
@@ -156,7 +134,7 @@ function sharesForYear(
   if (!election) return null
   const out = emptyShares()
   for (const c of election.candidates) {
-    out[partyToAlliance(c.party)] += c.votePct
+    out[c.alliance] += c.votePct
   }
   return out
 }
@@ -245,6 +223,7 @@ for (const seat of seats2026) {
     LDF: s2026.LDF - s2021.LDF,
     NDA: s2026.NDA - s2021.NDA,
     OTHER: s2026.OTHER - s2021.OTHER,
+    NOTA: s2026.NOTA - s2021.NOTA,
   }
   const flow = classifyFlow(deltas)
   if (flow) {
@@ -338,6 +317,7 @@ for (const seat of seats2026) {
     LDF: s2026.LDF - s2011.LDF,
     NDA: s2026.NDA - s2011.NDA,
     OTHER: s2026.OTHER - s2011.OTHER,
+    NOTA: s2026.NOTA - s2011.NOTA,
   }
   const main = (["UDF", "LDF", "NDA"] as const).map((a) => ({
     alliance: a,

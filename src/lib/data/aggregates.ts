@@ -573,12 +573,13 @@ export function getAllianceTrendData(
         if (e.candidates.length === 0) continue
         const entry = ensureYear(e.year)
         const winner = [...e.candidates].sort((a, b) => b.votes - a.votes)[0]!
-        const winnerAlliance = allianceForRawParty(winner.party)
-        entry.perAlliance[winnerAlliance].seats++
+        // Use the candidate's per-cycle alliance — KC(M) was UDF in 2011/2016
+        // and LDF from 2020 onwards, etc. The 2026-anchored partyToAlliance
+        // mapping mis-attributes pre-switch cycles.
+        entry.perAlliance[winner.alliance].seats++
         for (const cand of e.candidates) {
-          const a = allianceForRawParty(cand.party)
-          entry.perAlliance[a].contested++
-          entry.perAlliance[a].votes += cand.votes
+          entry.perAlliance[cand.alliance].contested++
+          entry.perAlliance[cand.alliance].votes += cand.votes
           entry.totalVotes += cand.votes
         }
       }

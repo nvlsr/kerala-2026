@@ -51,7 +51,7 @@ Seats not meeting these → unclassified.
 ## Caveats worth flagging on any UI surface
 
 1. **Inferred, not observed.** Phrasing like "voters moved" should be qualified — say "share shifted" or "alliance gained at the other's expense" to avoid the causal-claim pitfall.
-2. **Party→alliance is fixed at the 2026 mapping.** Major parties (INC, IUML, BJP, BDJS, CPI(M), CPI) have been alliance-stable, so this is fine for them. Minor parties that switched fronts get mis-attributed in earlier cycles.
+2. **Per-cycle alliance attribution.** Each candidate (2026 + every historical record) carries its own `alliance` field reflecting whichever alliance they ran with that cycle — not anchored to the 2026 mapping. Parties that switched fronts (KC(M) UDF→LDF in 2020, KC(B) UDF→LDF in 2016, RSP LDF→UDF in 2014) are correctly placed in each cycle's alliance. Earlier versions of this analysis used the 2026 party→alliance mapping retroactively and produced different counts; that approach is no longer used anywhere.
 3. **Thresholds are heuristic.** The 5pp / 10pp / 2pp / 3pp numbers were tuned against three known examples (Manjeshwar, Karunagappally, Attingal). Defensible but not derived from anything more rigorous.
 4. **OTHER absorbs noise.** Big swings into OTHER (e.g. Ottappalam +29.8pp OTHER) usually indicate an Independent or non-front candidate doing well; treat such seats with care.
 
@@ -61,23 +61,22 @@ The full per-seat lists are visible on `/flows`. Headline counts:
 
 | Single-cycle pattern (2021 → 2026) | Seats |
 |---|---|
-| LDF → UDF | 37 |
-| LDF + NDA → UDF | 18 (combined "two-way + both-to-one" subgroups) |
-| LDF → NDA | 7 |
-| LDF + UDF → NDA | 2 |
+| LDF → UDF | 47 |
+| LDF + NDA → UDF | 21 (combined "two-way + both-to-one" subgroups) |
+| LDF → NDA | 9 |
+| LDF + UDF → NDA | 4 (combined two-way + both-to-one) |
 | UDF → NDA | 1 |
 | NDA → UDF | 1 |
-| **Total classified** | **66 of 140** |
+| **Total classified** | **83 of 140** |
 
 | Multi-cycle drift (2011 → 2026, sustained) | Seats |
 |---|---|
-| LDF → UDF | 25 |
-| LDF → NDA | 20 *— the sustained third-pole rise* |
+| LDF → NDA | 24 *— the sustained third-pole rise* |
+| LDF → UDF | 11 |
 | UDF → NDA | 7 |
-| UDF → LDF | 2 |
-| **Total classified** | **54 of 140** |
+| **Total classified** | **42 of 140** |
 
-The most consequential single finding is **20 seats with sustained LDF → NDA drift over 15 years** — including Attingal (NDA 4 → 20 → 26 → 31 across four cycles), Chathannoor, Palakkad, Malampuzha. Geographically concentrated in southern districts plus Hindu-belt central pockets.
+The most consequential single finding is **24 seats with sustained LDF → NDA drift over 15 years** — including Attingal (NDA 4 → 20 → 26 → 31 across four cycles), Chathannoor, Malampuzha. Geographically concentrated in southern districts (Kollam, Trivandrum) plus Hindu-belt central pockets (Palakkad, Thrissur, Ernakulam). The southern UDF→NDA seats (Trivandrum + Kottayam Hindu pockets) make a separate but adjacent story.
 
 ## Validation against three test intuitions
 
