@@ -436,7 +436,7 @@ function CandidateTr({
       >
         {row.margin >= 0 ? "+" : ""}
         {formatNumber(row.margin)}
-        <span className="ml-1 text-[11px] text-muted-foreground/70">
+        <span className="ml-1 inline-block min-w-[2.75rem] text-right text-[11px] text-muted-foreground/70">
           {row.marginPct >= 0 ? "+" : ""}
           {formatPercent(row.marginPct / 100, 1)}
         </span>
