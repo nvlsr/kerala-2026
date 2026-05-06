@@ -128,15 +128,16 @@ export function PartySection({
           )}
         </div>
         <div className="flex min-h-[176px] items-center justify-center rounded-lg border bg-muted/40 p-4 lg:col-span-2">
-          {selectedParty ? (
+          {rows.length > 0 ? (
             <PartyHistoricalChart
-              party={selectedParty}
+              parties={rows.map((r) => r.party)}
+              selected={selectedParty}
               scope={scope}
               mode="share"
             />
           ) : (
             <div className="px-4 text-center text-xs text-muted-foreground">
-              Select a party to see its history
+              No parties recorded for this alliance.
             </div>
           )}
         </div>
