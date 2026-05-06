@@ -459,7 +459,7 @@ function Hint({ mode }: { mode: EncodingMode }) {
       ? "Single neutral hue; darker shades = higher values on the active sort column."
       : mode === "diverging"
         ? "Green = gain over 2021, rose = loss; darker shades = larger swings."
-        : "Polygons are colored by alliance (winner's by default, runner-up's when the table is filtered to losers); when sorted by a numeric column, darker shades mean a bigger value or swing."
+        : "Polygons are colored by alliance. When sorted by a numeric column, darker shades mean a bigger value or swing."
   return (
     <div className="rounded-lg border border-dashed p-4 text-xs text-muted-foreground">
       <div className="mb-2 font-medium tracking-wide text-foreground/70 uppercase">
