@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export function SiteFooter() {
   return (
-    <footer className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-2 gap-y-1 px-6 pt-2 pb-10 text-xs text-muted-foreground">
+    <footer className="mx-auto mt-auto flex w-full max-w-6xl flex-wrap items-center gap-x-2 gap-y-1 px-6 pt-8 pb-10 text-xs text-muted-foreground">
       <span>Data: Election Commission of India · results.eci.gov.in</span>
       <span aria-hidden>·</span>
       <Link

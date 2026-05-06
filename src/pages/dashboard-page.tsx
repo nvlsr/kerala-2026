@@ -15,7 +15,7 @@ export function DashboardPage() {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-svh bg-background text-foreground">
+    <div className="flex min-h-svh flex-col bg-background text-foreground">
       <HomeHeader />
       <SearchBar prominent />
       <BrowseLink />

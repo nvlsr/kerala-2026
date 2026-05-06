@@ -79,7 +79,7 @@ export function ExplorePage() {
       : null
 
   return (
-    <div className="min-h-svh bg-background text-foreground">
+    <div className="flex min-h-svh flex-col bg-background text-foreground">
       <header>
         <div className="mx-auto flex max-w-6xl items-start justify-between gap-4 px-6 pt-6 pb-2">
           <div className="min-w-0">
