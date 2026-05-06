@@ -153,10 +153,17 @@ export type TrendPoint = {
   share: number | null
   votes: number | null
   candidate: string | null
+  /** The party of the candidate at this point (may differ across years for the
+   *  same alliance — e.g. KC(M) in 2011/2016 then IUML in 2026 both UDF). */
+  party: string | null
+  partyShort: string | null
 }
 
 export type TrendSeries = {
+  /** Alliance code, used as the React key and for highlight matching. */
   party: string
+  /** Display label (e.g. "UDF"). Kept under `partyShort` for backwards
+   *  compatibility with the chart's tooltip code. */
   partyShort: string
   color: string
   allianceCode: AllianceCode
@@ -164,10 +171,23 @@ export type TrendSeries = {
   points: TrendPoint[]
 }
 
+export type PartyOption = {
+  party: string
+  partyShort: string
+  color: string
+  allianceCode: AllianceCode
+  isCurrent2026: boolean
+}
+
 export type TrendData = {
   years: number[]
   byelectionYears: number[]
+  /** One series per alliance (UDF / LDF / NDA / OTHER), used by the chart. */
   series: TrendSeries[]
+  /** Party-level options used by chips and party-filtered tables. Order:
+   *  highest to lowest by total votes across cycles. Each party carries
+   *  its most-recent alliance for chip colouring. */
+  parties: PartyOption[]
 }
 
 export function getTrendData(constituencyNumber: number): TrendData | null {
@@ -225,19 +245,33 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
 
   elections.sort((a, b) => a.year - b.year)
 
-  const top3PartiesPerElection = new Set<string>()
+  // Series is one-per-alliance, not one-per-party. A seat where UDF was
+  // KC(M) in 2011/2016 then IUML in 2026 (with an Independent UDF-backed
+  // candidate in 2021) becomes a single UDF line spanning all four cycles
+  // — the underlying party at each cycle goes into the point metadata for
+  // the tooltip. Parties that switched alliances are correctly placed by
+  // year because we read the candidate's own `alliance` field rather than
+  // a global party→alliance map.
+  const ALLIANCES_BY_PRESENCE: AllianceCode[] = []
+  const seenAlliances = new Set<AllianceCode>()
   for (const e of elections) {
-    const sorted = [...e.candidates]
-      .sort((a, b) => b.votes - a.votes)
-      .slice(0, 3)
-    for (const cd of sorted) top3PartiesPerElection.add(cd.party)
+    for (const cand of e.candidates) {
+      if (!seenAlliances.has(cand.alliance)) {
+        seenAlliances.add(cand.alliance)
+        ALLIANCES_BY_PRESENCE.push(cand.alliance)
+      }
+    }
   }
 
-  const partyKeys = [...top3PartiesPerElection]
+  // Skip NOTA — it's not an alliance, it's an option.
+  const allianceKeys = ALLIANCES_BY_PRESENCE.filter((a) => a !== "NOTA")
 
-  const seriesWithTotals = partyKeys.map((partyKey) => {
+  const seriesWithTotals = allianceKeys.map((allianceKey) => {
     const points: TrendPoint[] = elections.map((e) => {
-      const cand = e.candidates.find((cd) => cd.party === partyKey)
+      // Pick the highest-vote candidate of this alliance in this election.
+      const cand = e.candidates
+        .filter((cd) => cd.alliance === allianceKey)
+        .sort((a, b) => b.votes - a.votes)[0]
       return {
         year: e.year,
         type: e.type,
@@ -245,32 +279,19 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
         share: cand ? cand.votePct : null,
         votes: cand ? cand.votes : null,
         candidate: cand ? cand.name : null,
+        party: cand ? cand.party : null,
+        partyShort: cand ? partyShort(cand.party) : null,
       }
     })
-    // Use the most recent candidate's actual `alliance` field rather than the
-    // global 2026 partyToAlliance map. This matters for parties that switched
-    // fronts during the dataset (KC(M), KC(B), RSP, …) — without this, a
-    // 2011 KC(M) candidate would be coloured LDF (their 2026 alliance) when
-    // they were actually UDF at the time. We pick the most recent because
-    // visually it best reflects the line's "current" semantic; tooltip
-    // metadata (party + candidate name) preserves the per-point detail.
-    let allianceCode: AllianceCode = "OTHER"
-    for (let i = elections.length - 1; i >= 0; i--) {
-      const cand = elections[i].candidates.find((c) => c.party === partyKey)
-      if (cand) {
-        allianceCode = cand.alliance
-        break
-      }
-    }
-    const meta = alliancesMeta.alliances[allianceCode]
+    const meta = alliancesMeta.alliances[allianceKey]
     const totalVotes = points.reduce((s, p) => s + (p.votes ?? 0), 0)
     const trendSeries: TrendSeries = {
-      party: partyKey,
-      partyShort: partyShort(partyKey),
+      party: allianceKey,
+      partyShort: meta.code,
       color: meta.color,
-      allianceCode,
+      allianceCode: allianceKey,
       isCurrent2026: c.candidates.some(
-        (cd) => canonicalPartyName(cd.party) === partyKey && !cd.isNota
+        (cd) => !cd.isNota && cd.alliance === allianceKey
       ),
       points,
     }
@@ -280,12 +301,46 @@ export function getTrendData(constituencyNumber: number): TrendData | null {
   seriesWithTotals.sort((a, b) => b.totalVotes - a.totalVotes)
   const series: TrendSeries[] = seriesWithTotals.map((s) => s.trendSeries)
 
+  // Party-level options for chips/table — top-3 parties per cycle, ordered by
+  // their cumulative votes. Each party carries its MOST RECENT alliance so
+  // the chip colour reflects current affiliation (e.g. KC(M) which switched
+  // 2020 will be LDF-coloured because their most recent appearance was LDF).
+  const partyTotals = new Map<string, number>()
+  const partyMostRecentAlliance = new Map<string, AllianceCode>()
+  const partyAppearedIn2026 = new Set<string>()
+  for (const e of elections) {
+    const top3 = [...e.candidates].sort((a, b) => b.votes - a.votes).slice(0, 3)
+    for (const cd of top3) {
+      partyTotals.set(
+        cd.party,
+        (partyTotals.get(cd.party) ?? 0) + cd.votes
+      )
+      // elections is sorted ascending; later writes override → most recent
+      partyMostRecentAlliance.set(cd.party, cd.alliance)
+      if (e.year === 2026) partyAppearedIn2026.add(cd.party)
+    }
+  }
+  const parties: PartyOption[] = [...partyTotals.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([party]) => {
+      const allianceCode =
+        partyMostRecentAlliance.get(party) ?? ("OTHER" as AllianceCode)
+      const meta = alliancesMeta.alliances[allianceCode]
+      return {
+        party,
+        partyShort: partyShort(party),
+        color: meta.color,
+        allianceCode,
+        isCurrent2026: partyAppearedIn2026.has(party),
+      }
+    })
+
   const years = elections.map((e) => e.year)
   const byelectionYears = elections
     .filter((e) => e.type === "by-election")
     .map((e) => e.year)
 
-  return { years, byelectionYears, series }
+  return { years, byelectionYears, series, parties }
 }
 
 // ─── Past candidates (filterable timeline) ─────────────────────────────
@@ -352,11 +407,7 @@ export function getPastCandidates(
       }
 
       const partyCanonical = canonicalPartyName(cand.party)
-      const allianceCode: AllianceCode =
-        partyCanonical === "Independent"
-          ? "OTHER"
-          : ((alliancesMeta.partyToAlliance[partyCanonical] ??
-              "OTHER") as AllianceCode)
+      const allianceCode = cand.alliance
       const isWinnerRow = cand === winner
       const margin = isWinnerRow ? (e.margin ?? 0) : cand.votes - winner.votes
       const marginPct = isWinnerRow
@@ -390,7 +441,7 @@ export function getPastCandidates(
           (cd) => !cd.isNota && canonicalPartyName(cd.party) === partyKey
         )
   if (cand2026) {
-    const allianceCode2026 = allianceForCandidate(c, cand2026)
+    const allianceCode2026 = cand2026.alliance
     const isWinnerRow = cand2026.status === "won"
     const margin = cand2026.margin
     const marginPct = total2026 > 0 ? (margin / total2026) * 100 : 0

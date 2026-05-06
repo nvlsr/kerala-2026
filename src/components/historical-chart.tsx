@@ -15,14 +15,21 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/components/ui/chart"
-import { formatPercent, getTrendData } from "@/lib/data"
+import {
+  formatPercent,
+  getTrendData,
+  type AllianceCode,
+} from "@/lib/data"
 
 type Props = {
   constituencyNumber: number
-  highlightParty?: string | null
+  highlightAlliance?: AllianceCode | null
 }
 
-export function HistoricalChart({ constituencyNumber, highlightParty }: Props) {
+export function HistoricalChart({
+  constituencyNumber,
+  highlightAlliance,
+}: Props) {
   const trend = useMemo(
     () => getTrendData(constituencyNumber),
     [constituencyNumber]
@@ -56,7 +63,7 @@ export function HistoricalChart({ constituencyNumber, highlightParty }: Props) {
       ) / 10
     ) * 10
 
-  const noHighlight = !highlightParty
+  const noHighlight = !highlightAlliance
 
   return (
     <ChartContainer config={chartConfig} className="h-44 w-full">
@@ -123,7 +130,7 @@ export function HistoricalChart({ constituencyNumber, highlightParty }: Props) {
           }
         />
         {trend.series.map((s) => {
-          const isHighlighted = highlightParty === s.party
+          const isHighlighted = highlightAlliance === s.allianceCode
           const dimmed = !noHighlight && !isHighlighted
           return (
             <Line

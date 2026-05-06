@@ -59,11 +59,16 @@ export function ConstituencySection({ constituency }: Props) {
     () => getTrendData(constituency.constituencyNumber),
     [constituency.constituencyNumber]
   )
-  const partyOptions = trend?.series ?? []
+  const partyOptions = trend?.parties ?? []
   const isRoster = selectedKey === ROSTER_KEY
   const isWinners = selectedKey === WINNERS_KEY
   const selectedParty = isRoster || isWinners ? null : selectedKey
-  const highlightParty = isRoster ? null : selectedParty
+  // The chart shows alliance lines, so a party-chip selection highlights the
+  // alliance that party belongs to (using its most-recent affiliation).
+  const highlightAlliance = isRoster
+    ? null
+    : (partyOptions.find((p) => p.party === selectedParty)?.allianceCode ??
+      null)
 
   return (
     <Section
@@ -176,7 +181,7 @@ export function ConstituencySection({ constituency }: Props) {
         <div className="rounded-lg border bg-muted/40 p-4 lg:col-span-2">
           <HistoricalChart
             constituencyNumber={constituency.constituencyNumber}
-            highlightParty={highlightParty}
+            highlightAlliance={highlightAlliance}
           />
         </div>
       </div>
