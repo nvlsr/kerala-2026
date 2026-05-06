@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useReducer } from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 import { FilterBreadcrumb } from "@/components/scope-title"
 import { AllianceSection } from "@/components/alliance-section"
@@ -42,6 +42,7 @@ export function ExplorePage() {
     undefined,
     loadInitialFilters
   )
+  const location = useLocation()
 
   // Sync filter state to URL on every change.
   useEffect(() => {
@@ -52,6 +53,15 @@ export function ExplorePage() {
       : window.location.pathname
     window.history.replaceState(null, "", url)
   }, [filters])
+
+  // Sync URL → filters when React Router drives a navigation (search bar
+  // routing to /explore?alliance=…, deep links from elsewhere, back/forward).
+  // Internal filter changes use window.history.replaceState which bypasses
+  // React Router, so this effect doesn't loop with the one above.
+  useEffect(() => {
+    const next = parseFilters(new URLSearchParams(location.search))
+    dispatch({ type: "replace", filters: next })
+  }, [location.search])
 
   // Auto-scroll to the constituency detail panel when a seat becomes
   // selected (either via deep-link load, search-result click, or

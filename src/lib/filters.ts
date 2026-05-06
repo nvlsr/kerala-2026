@@ -52,6 +52,10 @@ export type FilterAction =
   | { type: "reset" }
   /** Apply a curated combo (Insights chips) — overwrites multiple slots at once. */
   | { type: "apply-preset"; preset: Partial<Filters> }
+  /** Replace the whole state — used to sync filters from URL changes
+   *  driven by React Router (e.g., the SearchBar navigating to
+   *  /explore?alliance=NDA while the page is already mounted). */
+  | { type: "replace"; filters: Filters }
 
 export function filtersReducer(state: Filters, action: FilterAction): Filters {
   switch (action.type) {
@@ -88,6 +92,8 @@ export function filtersReducer(state: Filters, action: FilterAction): Filters {
       return initialFilters
     case "apply-preset":
       return { ...state, ...action.preset }
+    case "replace":
+      return action.filters
   }
 }
 
