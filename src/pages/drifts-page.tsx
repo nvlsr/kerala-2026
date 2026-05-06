@@ -2,6 +2,7 @@ import { useEffect, useMemo } from "react"
 import { Link } from "react-router-dom"
 import { IconInfoCircle } from "@tabler/icons-react"
 
+import { BeltOverlaySection } from "@/components/belt-overlay-section"
 import { MultiCycleDriftSection } from "@/components/flow-pattern-section"
 import { RecentLegChart } from "@/components/recent-leg-chart"
 import { SiteFooter } from "@/components/site-footer"
@@ -17,6 +18,21 @@ import {
   multiCyclePatternLabel,
   type MultiCycleDrift,
 } from "@/lib/data/flows"
+
+// Hand-written editorial framings for the multi-cycle drift × belt
+// overlay. Numeric specifics are data-derived inside BeltOverlaySection;
+// these sentences carry interpretation the data alone can't.
+const MULTI_CYCLE_BELT_FRAMINGS: Record<string, string> = {
+  LDF_to_NDA:
+    "Spread across central and southern Kerala — central-syromalabar (5), southern-ezhava (5), and southern-nair-latin (4) lead, with smaller clusters across the central-reformed-christian, central-hindu, northern-mixed, and southern-coastal-mixed belts. The conspicuous absence is northern-muslim: IUML's structural hold in Malappuram blocks NDA's third-pole rise from reaching the Muslim belt at all. The drift lives in Hindu and Christian sub-community zones; it stops at the Muslim border.",
+  LDF_to_UDF:
+    "Heavily Christian-belt. The central-syromalabar zone holds 4 of 11 (Angamaly, Piravom, Muvattupuzha, Peerumade) — Syro-Malabar Catholic seats where KC(M) was historically UDF before its 2020 switch to LDF. The cumulative 15-year arc still reads as LDF→UDF in those seats because UDF's earlier base survives the cycle math. This pattern is largely a denominational story.",
+  UDF_to_NDA:
+    "Tightly clustered. Half (3 of 6) sit in southern-nair-latin — the Trivandrum Nair belt is the one place NDA has stripped UDF votes at scale. Two more in central-reformed-christian (Pala, Poonjar in Kottayam highlands), one in central-hindu (Ottappalam). The Ezhava and Syro-Malabar belts that drive LDF→NDA are absent here entirely; this is a different drift in a different geography.",
+}
+
+const MULTI_CYCLE_CROSS_PATTERN_OBSERVATION =
+  "Notice that central-syromalabar appears in both LDF→NDA (5 seats) and LDF→UDF (4 seats). The Syro-Malabar Catholic belt is the most politically churned in the dataset — drifting in opposite directions in different seats simultaneously. Most other belts feed at most one drift pattern."
 
 function groupBy<T, K extends string>(
   items: T[],
@@ -185,6 +201,20 @@ export function DriftsPage() {
         </section>
 
         <section className="mt-12">
+          <BeltOverlaySection
+            patternGroups={driftGroups.map((g) => ({
+              key: g.key,
+              label: g.label,
+              seats: g.items.map((d) => d.constituency),
+            }))}
+            framings={MULTI_CYCLE_BELT_FRAMINGS}
+            crossPatternObservation={MULTI_CYCLE_CROSS_PATTERN_OBSERVATION}
+            sectionTitle="By community belt — where each drift sits"
+            sectionDescription="Each drift pattern's seats overlaid on Kerala's community-belt geography (Hindu / Muslim / Christian sub-community zones drawn from academic literature). The clusters tell three different stories about which communities are moving, and which aren't."
+          />
+        </section>
+
+        <section className="mt-12">
           <details className="rounded-lg border bg-card/40 p-6 text-sm">
             <summary className="cursor-pointer font-medium">
               Methodology &amp; thresholds
@@ -226,6 +256,34 @@ export function DriftsPage() {
                 slight low-end. Composition is averaged equally across the
                 seats in each card (each seat contributes its district's
                 mix once), not population-weighted.
+              </p>
+              <p>
+                <span className="font-medium text-foreground">
+                  Community-belt overlay.
+                </span>{" "}
+                The "By community belt" section uses a 9-belt qualitative
+                taxonomy derived from academic literature (Zachariah
+                2003; GeoCurrents 2014; KCBC diocese geography), assigned
+                at district level. Hand-written editorial framings carry
+                interpretation; numeric breakdowns per pattern are
+                data-derived. The full belt taxonomy reference, with the
+                map and click-to-highlight legend, lives on{" "}
+                <Link
+                  to="/belts"
+                  className="underline-offset-2 hover:underline"
+                >
+                  /belts
+                </Link>
+                . Raw belt assignments are at{" "}
+                <a
+                  href="https://github.com/nvlsr/kerala-2026/blob/main/data/community-belts.json"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline-offset-2 hover:underline"
+                >
+                  data/community-belts.json
+                </a>{" "}
+                — open to challenge and PRs.
               </p>
               <p>
                 The full methodology document (with caveats and validation
