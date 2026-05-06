@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react"
 import { Link } from "react-router-dom"
 
+import { FlowsTeaser } from "@/components/flows-teaser"
 import { InsightCard } from "@/components/insight-card"
 import {
   InsightsFilterBar,
@@ -78,14 +79,6 @@ export function InsightsPage() {
               with its own top-5 table and constituency-map snippet. Open any
               card in the full dashboard to refine, drill in, and share.
             </p>
-            <p className="mt-3 text-sm">
-              <Link
-                to="/flows"
-                className="font-medium underline-offset-2 hover:underline"
-              >
-                See also: where votes shifted between alliances ↗
-              </Link>
-            </p>
           </div>
           <ThemeToggle />
         </div>
@@ -125,6 +118,7 @@ export function InsightsPage() {
           </ul>
         )}
       </main>
+      <FlowsTeaser />
       <SiteFooter />
     </div>
   )
