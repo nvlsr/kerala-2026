@@ -112,8 +112,8 @@ export function CandidateTable({ filters, dispatch }: Props) {
               <colgroup>
                 <col style={{ width: "15%" }} />
                 <col style={{ width: "22%" }} />
-                <col style={{ width: "5%" }} />
                 <col style={{ width: "8%" }} />
+                <col style={{ width: "5%" }} />
                 <col style={{ width: "10%" }} />
                 <col style={{ width: "8%" }} />
                 <col style={{ width: "10%" }} />
@@ -142,11 +142,6 @@ export function CandidateTable({ filters, dispatch }: Props) {
                   >
                     Candidate
                   </Th>
-                  <WinnerTh
-                    result={result}
-                    onToggle={toggleWinnerFilter}
-                    rowSpan={2}
-                  />
                   <Th
                     column="party"
                     sortColumn={sortColumn}
@@ -157,6 +152,11 @@ export function CandidateTable({ filters, dispatch }: Props) {
                   >
                     Party
                   </Th>
+                  <WinnerTh
+                    result={result}
+                    onToggle={toggleWinnerFilter}
+                    rowSpan={2}
+                  />
                   <Th
                     column="votes"
                     sortColumn={sortColumn}
@@ -405,19 +405,18 @@ function CandidateTr({
       <td className="px-3 py-2">
         <span className="block truncate">{row.candidateDisplay}</span>
       </td>
-      <td className="px-3 py-2 text-center">
-        {row.isWinner && (
-          <IconCheck
-            className="inline-block h-3.5 w-3.5"
-            style={{ color: main ? meta.color : undefined }}
-            aria-label="Winner"
-          />
-        )}
-      </td>
       <td className="px-3 py-2">
         <span className="block truncate" title={row.candidate.party}>
           {row.partyShort}
         </span>
+      </td>
+      <td className="px-3 py-2 text-center">
+        {row.isWinner && (
+          <IconCheck
+            className="inline-block h-3.5 w-3.5 text-emerald-500"
+            aria-label="Winner"
+          />
+        )}
       </td>
       <td className="px-3 py-2 text-right tabular-nums">
         {formatNumber(row.votes)}
