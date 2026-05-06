@@ -11,19 +11,22 @@ export function InsightsTeaser() {
     <section className="border-t">
       <div className="mx-auto max-w-6xl px-6 py-10">
         <article className="rounded-lg border bg-card/40 p-6 sm:p-8">
-          <h3 className="font-heading flex items-center gap-3 text-xl font-semibold tracking-tight sm:text-2xl">
+          <h3 className="flex items-center gap-3 font-heading text-xl font-semibold tracking-tight sm:text-2xl">
             <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
               <IconGift className="h-5 w-5" aria-hidden />
             </span>
             A treat for the curious
           </h3>
           <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
-            Most readers stop at the headline numbers; you didn't. I'm sure
-            you'll enjoy the curated questions I've been working through —
-            each with a top-5 table, a focused constituency map, and a
-            one-click path back to the full dashboard. Started this to answer
-            my own questions about the 2026 results; sharing in case it's
-            useful for yours. Free, open source, no signup.{" "}
+            Most readers stop at the headline numbers; you didn't. As a small
+            treat for you, I've curated a few questions I've been working
+            through.
+            <em>
+              Which seats did a particular party grow thier vote share the
+              most/least?
+            </em>{" "}
+            <br />
+            Free, open source, no signup.{" "}
             <Link
               to="/insights"
               className="group font-medium text-foreground underline-offset-2 hover:underline"
@@ -32,7 +35,7 @@ export function InsightsTeaser() {
                 See the curated set
                 <IconArrowUpRight
                   aria-hidden
-                  className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                  className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 />
               </span>
             </Link>
