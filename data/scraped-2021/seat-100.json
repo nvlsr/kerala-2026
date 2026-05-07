@@ -1,0 +1,43 @@
+{
+  "seat": 100,
+  "constituencyName": "Kanjirappally",
+  "electorate": 186682,
+  "validVotesPolled": 137703,
+  "pollingPct": 73.76,
+  "nota": 624,
+  "margin": 13703,
+  "candidates": [
+    {
+      "name": "N. Jayaraj",
+      "party": "KCM",
+      "votes": 60299,
+      "pct": 43.79
+    },
+    {
+      "name": "Joseph Vazhackan",
+      "party": "INC",
+      "votes": 46596,
+      "pct": 33.84
+    },
+    {
+      "name": "Alphons Kannamthanam",
+      "party": "BJP",
+      "votes": 29157,
+      "pct": 21.17
+    },
+    {
+      "name": "M. M. Ashik",
+      "party": "BSP",
+      "votes": 727,
+      "pct": 0.53
+    },
+    {
+      "name": "K. P. Mayamol",
+      "party": "SUCIC",
+      "votes": 300,
+      "pct": 0.22
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=100",
+  "fetchedAt": "2026-05-07T02:49:06.511Z"
+}

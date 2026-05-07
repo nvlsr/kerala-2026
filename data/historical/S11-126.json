@@ -132,10 +132,31 @@
           "alliance": "NOTA"
         },
         {
+          "name": "Shanmughan Paravoor",
+          "party": "Anna DHRM",
+          "votes": 524,
+          "votePct": 0.38,
+          "alliance": "OTHER"
+        },
+        {
           "name": "Sunu Bhaskaran",
           "party": "Bahujan Samaj Party",
           "votes": 364,
           "votePct": 0.26,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sethu",
+          "party": "Independent",
+          "votes": 172,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Varinjam Rajeev",
+          "party": "Independent",
+          "votes": 135,
+          "votePct": 0.1,
           "alliance": "OTHER"
         }
       ],

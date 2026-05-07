@@ -1,0 +1,73 @@
+{
+  "seat": 119,
+  "constituencyName": "Kottarakkara",
+  "electorate": 200587,
+  "validVotesPolled": 149552,
+  "pollingPct": 74.56,
+  "nota": 574,
+  "margin": 10814,
+  "candidates": [
+    {
+      "name": "K. N. Balagopal",
+      "party": "CPIM",
+      "votes": 68770,
+      "pct": 45.98
+    },
+    {
+      "name": "R. Resmi",
+      "party": "INC",
+      "votes": 57956,
+      "pct": 38.75
+    },
+    {
+      "name": "Vayakkal Soman",
+      "party": "BJP",
+      "votes": 21223,
+      "pct": 14.19
+    },
+    {
+      "name": "Usha Kottarakkara",
+      "party": "ADHMPI",
+      "votes": 460,
+      "pct": 0.31
+    },
+    {
+      "name": "Mathews K. Lukose",
+      "party": "IND",
+      "votes": 136,
+      "pct": 0.09
+    },
+    {
+      "name": "Lal Viswan",
+      "party": "IND",
+      "votes": 103,
+      "pct": 0.07
+    },
+    {
+      "name": "V. Venugopal",
+      "party": "DSJP",
+      "votes": 96,
+      "pct": 0.06
+    },
+    {
+      "name": "Iyyamkodu Manikuttan",
+      "party": "IND",
+      "votes": 90,
+      "pct": 0.06
+    },
+    {
+      "name": "E. Kunjumon",
+      "party": "SUCIC",
+      "votes": 87,
+      "pct": 0.06
+    },
+    {
+      "name": "T. Jainendran",
+      "party": "SS",
+      "votes": 57,
+      "pct": 0.04
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=119",
+  "fetchedAt": "2026-05-07T02:49:06.614Z"
+}

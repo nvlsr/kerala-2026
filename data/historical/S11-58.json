@@ -137,12 +137,26 @@
           "votes": 918,
           "votePct": 0.6,
           "alliance": "OTHER"
+        },
+        {
+          "name": "K. Prameela",
+          "party": "Independent",
+          "votes": 552,
+          "votePct": 0.36,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "N. S. K. Puram Sasikumar",
+          "party": "Independent",
+          "votes": 226,
+          "votePct": 0.15,
+          "alliance": "OTHER"
         }
       ],
       "margin": 33878,
-      "marginPct": 22.15,
+      "marginPct": 22.16,
       "turnout": 152905,
-      "turnoutPct": null,
+      "turnoutPct": 80.82,
       "result": "JD(S) hold"
     }
   ]

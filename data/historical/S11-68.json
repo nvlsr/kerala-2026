@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "C. C. Mukundan",
+          "name": "C. C. Mukundhan",
           "party": "Communist Party of India",
           "votes": 72930,
           "votePct": 47.49,
@@ -118,7 +118,7 @@
           "alliance": "UDF"
         },
         {
-          "name": "Lojanan Ambatt",
+          "name": "Lojanan Ambattu",
           "party": "Bharatiya Janata Party",
           "votes": 33716,
           "votePct": 21.96,
@@ -127,8 +127,8 @@
         {
           "name": "NOTA",
           "party": "None of the Above",
-          "votes": 903,
-          "votePct": 0.6,
+          "votes": 830,
+          "votePct": 0.54,
           "alliance": "NOTA"
         },
         {
@@ -137,12 +137,26 @@
           "votes": 617,
           "votePct": 0.4,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Sivaratnan Alathi",
+          "party": "Independent",
+          "votes": 595,
+          "votePct": 0.39,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Vimal Mallika Vijayan",
+          "party": "Bahujan Samaj Party",
+          "votes": 367,
+          "votePct": 0.24,
+          "alliance": "OTHER"
         }
       ],
       "margin": 28431,
-      "marginPct": 18.51,
+      "marginPct": 18.52,
       "turnout": 153554,
-      "turnoutPct": null,
+      "turnoutPct": 72.91,
       "result": "CPI hold"
     }
   ]

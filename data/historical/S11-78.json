@@ -137,12 +137,26 @@
           "votes": 724,
           "votePct": 0.46,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Satyanesan Ezhikara",
+          "party": "Independent",
+          "votes": 287,
+          "votePct": 0.18,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Prasanth",
+          "party": "Independent",
+          "votes": 279,
+          "votePct": 0.18,
+          "alliance": "OTHER"
         }
       ],
       "margin": 21301,
-      "marginPct": 13.47,
-      "turnout": 159217,
-      "turnoutPct": 79.02,
+      "marginPct": 13.43,
+      "turnout": 158594,
+      "turnoutPct": 78.78,
       "result": "INC hold"
     }
   ]

@@ -1,0 +1,55 @@
+{
+  "seat": 121,
+  "constituencyName": "Punaloor",
+  "electorate": 205830,
+  "validVotesPolled": 146251,
+  "pollingPct": 71.05,
+  "nota": 688,
+  "margin": 37057,
+  "candidates": [
+    {
+      "name": "P. S. Supal",
+      "party": "CPI",
+      "votes": 80428,
+      "pct": 54.99
+    },
+    {
+      "name": "Abdurahman Randathani",
+      "party": "IUML",
+      "votes": 43371,
+      "pct": 29.66
+    },
+    {
+      "name": "Ayoor Murali",
+      "party": "BJP",
+      "votes": 20069,
+      "pct": 13.72
+    },
+    {
+      "name": "Shibu M. Scaria",
+      "party": "IND",
+      "votes": 617,
+      "pct": 0.42
+    },
+    {
+      "name": "Prakash Anchal",
+      "party": "ADHMPI",
+      "votes": 407,
+      "pct": 0.28
+    },
+    {
+      "name": "K. Mahesh",
+      "party": "SUCIC",
+      "votes": 407,
+      "pct": 0.28
+    },
+    {
+      "name": "Thenmala Nagarajan",
+      "party": "IND",
+      "votes": 264,
+      "pct": 0.18
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=121",
+  "fetchedAt": "2026-05-07T02:49:06.664Z"
+}

@@ -97,7 +97,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Ansajitha Russal",
+          "name": "R. K. Ansajitha Ressel",
           "party": "Indian National Congress",
           "votes": 52720,
           "votePct": 32.33,
@@ -111,17 +111,38 @@
           "alliance": "NDA"
         },
         {
+          "name": "J. R. Jayakumar",
+          "party": "Bahujan Samaj Party",
+          "votes": 778,
+          "votePct": 0.48,
+          "alliance": "OTHER"
+        },
+        {
           "name": "NOTA",
           "party": "None of the Above",
           "votes": 630,
-          "votePct": 0.49,
+          "votePct": 0.39,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Shaju Paliyodu",
+          "party": "Independent",
+          "votes": 402,
+          "votePct": 0.25,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "J. R. Selvaraj",
+          "party": "Independent",
+          "votes": 162,
+          "votePct": 0.1,
+          "alliance": "OTHER"
         }
       ],
       "margin": 25828,
       "marginPct": 15.84,
       "turnout": 163090,
-      "turnoutPct": null,
+      "turnoutPct": 74.43,
       "result": "CPI(M) hold"
     }
   ]

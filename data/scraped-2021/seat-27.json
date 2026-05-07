@@ -1,0 +1,61 @@
+{
+  "seat": 27,
+  "constituencyName": "Kozhikode North",
+  "electorate": 180909,
+  "validVotesPolled": 137562,
+  "pollingPct": 76.04,
+  "nota": 516,
+  "margin": 12928,
+  "candidates": [
+    {
+      "name": "Thottathil Ravindran",
+      "party": "CPIM",
+      "votes": 59124,
+      "pct": 42.98
+    },
+    {
+      "name": "K. M. Abhijith",
+      "party": "INC",
+      "votes": 46196,
+      "pct": 33.58
+    },
+    {
+      "name": "M. T. Ramesh",
+      "party": "BJP",
+      "votes": 30952,
+      "pct": 22.5
+    },
+    {
+      "name": "N. Abhijit",
+      "party": "IND",
+      "votes": 328,
+      "pct": 0.24
+    },
+    {
+      "name": "K. Rahim",
+      "party": "SUCIC",
+      "votes": 156,
+      "pct": 0.11
+    },
+    {
+      "name": "A. Ramesh",
+      "party": "IND",
+      "votes": 104,
+      "pct": 0.08
+    },
+    {
+      "name": "V. P. Ramesh",
+      "party": "IND",
+      "votes": 96,
+      "pct": 0.07
+    },
+    {
+      "name": "Urandiyil Raveendran",
+      "party": "IND",
+      "votes": 90,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=27",
+  "fetchedAt": "2026-05-07T02:49:05.972Z"
+}

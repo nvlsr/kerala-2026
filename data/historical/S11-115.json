@@ -132,15 +132,36 @@
           "alliance": "NOTA"
         },
         {
-          "name": "R. Kannan S/o Rajan",
+          "name": "R. Kannan s/o Rajan",
           "party": "Independent",
           "votes": 218,
           "votePct": 0.14,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Vipin Kanikonathu",
+          "party": "Bahujan Samaj Party",
+          "votes": 178,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Saranya Raj",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 127,
+          "votePct": 0.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Rajan Kulakkada",
+          "party": "Anna DHRM",
+          "votes": 95,
+          "votePct": 0.06,
+          "alliance": "OTHER"
         }
       ],
       "margin": 2919,
-      "marginPct": 1.87,
+      "marginPct": 1.88,
       "turnout": 155411,
       "turnoutPct": 74.68,
       "result": "CPI hold"

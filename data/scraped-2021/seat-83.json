@@ -1,0 +1,73 @@
+{
+  "seat": 83,
+  "constituencyName": "Thrikkakara",
+  "electorate": 194031,
+  "validVotesPolled": 136570,
+  "pollingPct": 70.39,
+  "nota": 695,
+  "margin": 14329,
+  "candidates": [
+    {
+      "name": "P. T. Thomas",
+      "party": "INC",
+      "votes": 59839,
+      "pct": 43.82
+    },
+    {
+      "name": "J. Jacob",
+      "party": "LDF",
+      "votes": 45510,
+      "pct": 33.32
+    },
+    {
+      "name": "S. Saji",
+      "party": "BJP",
+      "votes": 15483,
+      "pct": 11.34
+    },
+    {
+      "name": "Terry Thomas",
+      "party": "T2P",
+      "votes": 13897,
+      "pct": 10.18
+    },
+    {
+      "name": "P. M. Shibu",
+      "party": "BSP",
+      "votes": 331,
+      "pct": 0.24
+    },
+    {
+      "name": "Riyas Yusuf",
+      "party": "IND",
+      "votes": 298,
+      "pct": 0.22
+    },
+    {
+      "name": "Krishnaprasad",
+      "party": "DSJP",
+      "votes": 181,
+      "pct": 0.13
+    },
+    {
+      "name": "Jinu",
+      "party": "IND",
+      "votes": 143,
+      "pct": 0.1
+    },
+    {
+      "name": "Benoj",
+      "party": "IND",
+      "votes": 134,
+      "pct": 0.1
+    },
+    {
+      "name": "Subin",
+      "party": "IND",
+      "votes": 59,
+      "pct": 0.04
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=83",
+  "fetchedAt": "2026-05-07T02:49:06.396Z"
+}

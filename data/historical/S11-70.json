@@ -120,22 +120,50 @@
         {
           "name": "Jacob Thomas",
           "party": "Bharatiya Janata Party",
-          "votes": 33685,
+          "votes": 34329,
           "votePct": 22.12,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
           "party": "None of the Above",
-          "votes": 583,
+          "votes": 590,
           "votePct": 0.38,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Vaxarin Pereppadan",
+          "party": "Independent",
+          "votes": 536,
+          "votePct": 0.35,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Joshi Elavuthungal",
+          "party": "Independent",
+          "votes": 305,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. Bindu w/o Ramachandran",
+          "party": "Independent",
+          "votes": 220,
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. Bindu w/o Sivadasan",
+          "party": "Independent",
+          "votes": 162,
+          "votePct": 0.1,
+          "alliance": "OTHER"
         }
       ],
       "margin": 5949,
       "marginPct": 3.83,
       "turnout": 155179,
-      "turnoutPct": null,
+      "turnoutPct": 76.86,
       "result": "CPI(M) hold"
     }
   ]

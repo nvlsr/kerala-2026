@@ -111,7 +111,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Sunil Anthikad",
+          "name": "Sunil Anthikad (P. V. Sunil Kumar)",
           "party": "Indian National Congress",
           "votes": 46012,
           "votePct": 29.44,
@@ -125,11 +125,18 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 1069,
+          "votePct": 0.68,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Rajesh Appat",
-          "party": "CPI(M-L)",
+          "party": "Communist Party of India (Marxist-Leninist) Red Star",
           "votes": 489,
           "votePct": 0.31,
-          "alliance": "LDF"
+          "alliance": "OTHER"
         },
         {
           "name": "P. C. Pushpakaran",

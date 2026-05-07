@@ -125,6 +125,13 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 723,
+          "votePct": 0.56,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Ajith Menon Ponnemkattil",
           "party": "Independent",
           "votes": 252,
@@ -140,7 +147,7 @@
         }
       ],
       "margin": 946,
-      "marginPct": 0.33,
+      "marginPct": 0.73,
       "turnout": 129237,
       "turnoutPct": 70.73,
       "result": "CPI hold"

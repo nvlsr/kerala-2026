@@ -1,0 +1,49 @@
+{
+  "seat": 23,
+  "constituencyName": "Quilandy",
+  "electorate": 205993,
+  "validVotesPolled": 162084,
+  "pollingPct": 78.68,
+  "nota": 492,
+  "margin": 8472,
+  "candidates": [
+    {
+      "name": "Kanathil Jameela",
+      "party": "CPIM",
+      "votes": 75628,
+      "pct": 46.66
+    },
+    {
+      "name": "N. Subramaniyan",
+      "party": "INC",
+      "votes": 67156,
+      "pct": 41.43
+    },
+    {
+      "name": "N. P. Radhakrishnan",
+      "party": "BJP",
+      "votes": 17555,
+      "pct": 10.83
+    },
+    {
+      "name": "P. P. Jameela",
+      "party": "IND",
+      "votes": 651,
+      "pct": 0.4
+    },
+    {
+      "name": "Subramanyan Kanaran",
+      "party": "IND",
+      "votes": 381,
+      "pct": 0.24
+    },
+    {
+      "name": "Praveen Cheruvathu",
+      "party": "SUCIC",
+      "votes": 221,
+      "pct": 0.14
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=23",
+  "fetchedAt": "2026-05-07T02:49:05.912Z"
+}

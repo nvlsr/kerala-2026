@@ -1,0 +1,49 @@
+{
+  "seat": 114,
+  "constituencyName": "Konni",
+  "electorate": 202728,
+  "validVotesPolled": 149722,
+  "pollingPct": 73.85,
+  "nota": 372,
+  "margin": 8508,
+  "candidates": [
+    {
+      "name": "K. U. Jenish Kumar",
+      "party": "CPIM",
+      "votes": 62318,
+      "pct": 41.62
+    },
+    {
+      "name": "Robin Peter",
+      "party": "INC",
+      "votes": 53810,
+      "pct": 35.94
+    },
+    {
+      "name": "K. Surendran",
+      "party": "BJP",
+      "votes": 32811,
+      "pct": 21.91
+    },
+    {
+      "name": "P. Raghu",
+      "party": "ADHMPI",
+      "votes": 214,
+      "pct": 0.14
+    },
+    {
+      "name": "Suku Balan",
+      "party": "API",
+      "votes": 122,
+      "pct": 0.08
+    },
+    {
+      "name": "Manoharan",
+      "party": "IND",
+      "votes": 75,
+      "pct": 0.05
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=114",
+  "fetchedAt": "2026-05-07T02:49:06.613Z"
+}

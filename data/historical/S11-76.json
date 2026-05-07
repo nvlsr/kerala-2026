@@ -86,36 +86,43 @@
           "name": "Anwar Sadath",
           "party": "Indian National Congress",
           "votes": 73703,
-          "votePct": 49.3,
+          "votePct": 49,
           "alliance": "UDF"
         },
         {
-          "name": "Adv. Shelna Nishad",
-          "party": "Communist Party of India (Marxist)",
+          "name": "Shelna Nishad",
+          "party": "Independent (LDF)",
           "votes": 54817,
-          "votePct": 36.67,
+          "votePct": 36.44,
           "alliance": "LDF"
         },
         {
           "name": "M. N. Gopi",
           "party": "Bharatiya Janata Party",
           "votes": 15893,
-          "votePct": 10.63,
+          "votePct": 10.57,
           "alliance": "NDA"
         },
         {
           "name": "V. A. Rasheed",
           "party": "Social Democratic Party Of India",
           "votes": 2224,
-          "votePct": 1.49,
+          "votePct": 1.48,
           "alliance": "OTHER"
         },
         {
-          "name": "K. M. Shefrin",
+          "name": "M. Shefrin",
           "party": "Welfare Party of India",
           "votes": 1713,
-          "votePct": 1.15,
+          "votePct": 1.14,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 939,
+          "votePct": 0.62,
+          "alliance": "NOTA"
         },
         {
           "name": "K. V. Sarala",
@@ -126,7 +133,7 @@
         },
         {
           "name": "Viswakala Thankappan",
-          "party": "Marxist Communist Party of India",
+          "party": "MCPI(U)",
           "votes": 342,
           "votePct": 0.23,
           "alliance": "OTHER"
@@ -140,9 +147,9 @@
         }
       ],
       "margin": 18886,
-      "marginPct": 12.63,
-      "turnout": 149489,
-      "turnoutPct": null,
+      "marginPct": 12.55,
+      "turnout": 150428,
+      "turnoutPct": 76.56,
       "result": "INC hold"
     }
   ]

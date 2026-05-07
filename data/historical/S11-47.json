@@ -92,7 +92,7 @@
         {
           "name": "K. T. Jaleel",
           "party": "Independent (LDF)",
-          "votes": 69358,
+          "votes": 70358,
           "votePct": 46.46,
           "alliance": "LDF"
         },
@@ -104,7 +104,7 @@
           "alliance": "UDF"
         },
         {
-          "name": "Ramesh Kottayapurath",
+          "name": "Ramesh Kottayappurathu",
           "party": "Bharath Dharma Jana Sena",
           "votes": 9914,
           "votePct": 6.55,
@@ -116,12 +116,61 @@
           "votes": 1747,
           "votePct": 1.15,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 478,
+          "votePct": 0.32,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Jaleel s/o Muhammad Kutty",
+          "party": "Independent",
+          "votes": 308,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Vellarickattu Muhammed Rafi",
+          "party": "Independent",
+          "votes": 227,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Firos Kunnathparambil",
+          "party": "Independent",
+          "votes": 194,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Feros Paruvingal",
+          "party": "Independent",
+          "votes": 175,
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Muhammed Firos Nurukkuparambil",
+          "party": "Independent",
+          "votes": 152,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Firos Nellamkunnath",
+          "party": "Independent",
+          "votes": 79,
+          "votePct": 0.05,
+          "alliance": "OTHER"
         }
       ],
-      "margin": 2185,
+      "margin": 2564,
       "marginPct": 1.69,
       "turnout": 151426,
-      "turnoutPct": 75.72,
+      "turnoutPct": 75.73,
       "result": "LDF hold"
     }
   ]

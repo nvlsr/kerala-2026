@@ -1,0 +1,49 @@
+{
+  "seat": 78,
+  "constituencyName": "Paravur",
+  "electorate": 201317,
+  "validVotesPolled": 158594,
+  "pollingPct": 78.78,
+  "nota": 1113,
+  "margin": 21301,
+  "candidates": [
+    {
+      "name": "V. D. Satheesan",
+      "party": "INC",
+      "votes": 82264,
+      "pct": 51.87
+    },
+    {
+      "name": "M. T. Nixon",
+      "party": "CPI",
+      "votes": 60963,
+      "pct": 38.44
+    },
+    {
+      "name": "A. B. Jayaprakash",
+      "party": "BDJS",
+      "votes": 12964,
+      "pct": 8.17
+    },
+    {
+      "name": "N. K. Biju",
+      "party": "BSP",
+      "votes": 724,
+      "pct": 0.46
+    },
+    {
+      "name": "Satyanesan Ezhikara",
+      "party": "IND",
+      "votes": 287,
+      "pct": 0.18
+    },
+    {
+      "name": "Prasanth",
+      "party": "IND",
+      "votes": 279,
+      "pct": 0.18
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=78",
+  "fetchedAt": "2026-05-07T02:49:06.345Z"
+}

@@ -106,15 +106,15 @@
         {
           "name": "K. Babu",
           "party": "Indian National Congress",
-          "votes": 66875,
-          "votePct": 41.14,
+          "votes": 65875,
+          "votePct": 42.14,
           "alliance": "UDF"
         },
         {
           "name": "M. Swaraj",
           "party": "Communist Party of India (Marxist)",
           "votes": 64883,
-          "votePct": 39.21,
+          "votePct": 41.51,
           "alliance": "LDF"
         },
         {
@@ -137,11 +137,32 @@
           "votes": 232,
           "votePct": 0.15,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Rajesh Pairoad",
+          "party": "Independent",
+          "votes": 201,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "C. B. Asokan",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 173,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. P. Ayappen",
+          "party": "Independent",
+          "votes": 88,
+          "votePct": 0.06,
+          "alliance": "OTHER"
         }
       ],
-      "margin": 1992,
-      "marginPct": 1.22,
-      "turnout": 178307,
+      "margin": 992,
+      "marginPct": 0.63,
+      "turnout": 156307,
       "turnoutPct": 73.88,
       "result": "INC gain from CPI(M)"
     }

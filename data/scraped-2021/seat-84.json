@@ -1,0 +1,61 @@
+{
+  "seat": 84,
+  "constituencyName": "Kunnathunad",
+  "electorate": 187701,
+  "validVotesPolled": 154924,
+  "pollingPct": 82.54,
+  "nota": 565,
+  "margin": 2715,
+  "candidates": [
+    {
+      "name": "P. V. Sreenijin",
+      "party": "CPIM",
+      "votes": 52351,
+      "pct": 33.79
+    },
+    {
+      "name": "V. P. Sajeendran",
+      "party": "INC",
+      "votes": 49636,
+      "pct": 32.04
+    },
+    {
+      "name": "Sujith P. Surendran",
+      "party": "T2P",
+      "votes": 42701,
+      "pct": 27.56
+    },
+    {
+      "name": "Renu Suresh",
+      "party": "BJP",
+      "votes": 7218,
+      "pct": 4.66
+    },
+    {
+      "name": "Krishnan Eranhikal",
+      "party": "SDPI",
+      "votes": 1294,
+      "pct": 0.84
+    },
+    {
+      "name": "Sujith K. Surendran",
+      "party": "IND",
+      "votes": 786,
+      "pct": 0.51
+    },
+    {
+      "name": "A. T. Manikuttan",
+      "party": "BSP",
+      "votes": 205,
+      "pct": 0.13
+    },
+    {
+      "name": "V. K. Velayudhan",
+      "party": "IND",
+      "votes": 168,
+      "pct": 0.11
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=84",
+  "fetchedAt": "2026-05-07T02:49:06.399Z"
+}

@@ -111,7 +111,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "S. Sharath",
+          "name": "S. Sarath",
           "party": "Indian National Congress",
           "votes": 77554,
           "votePct": 43.55,
@@ -137,6 +137,34 @@
           "votes": 602,
           "votePct": 0.34,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Sarath S. Kannattuveli",
+          "party": "Independent",
+          "votes": 501,
+          "votePct": 0.28,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. A. Shajahan",
+          "party": "Independent",
+          "votes": 201,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Karthikeyan",
+          "party": "Independent",
+          "votes": 193,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sonymon K. Mathew",
+          "party": "Independent",
+          "votes": 169,
+          "votePct": 0.09,
+          "alliance": "OTHER"
         }
       ],
       "margin": 6148,

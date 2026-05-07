@@ -120,7 +120,7 @@
         {
           "name": "Sangeetha Viswanathan",
           "party": "Bharath Dharma Jana Sena",
-          "votes": 9148,
+          "votes": 9286,
           "votePct": 7.07,
           "alliance": "NDA"
         },
@@ -132,17 +132,38 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 677,
+          "votePct": 0.52,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Bijeesh Thomas",
           "party": "Independent",
           "votes": 610,
           "votePct": 0.46,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Vincent Jacob",
+          "party": "Independent",
+          "votes": 340,
+          "votePct": 0.26,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sajeev",
+          "party": "Independent",
+          "votes": 169,
+          "votePct": 0.13,
+          "alliance": "OTHER"
         }
       ],
       "margin": 5573,
       "marginPct": 4.24,
-      "turnout": 131737,
-      "turnoutPct": 70.64,
+      "turnout": 131351,
+      "turnoutPct": 70.51,
       "result": "LDF gain from UDF"
     }
   ]

@@ -104,25 +104,32 @@
       "reason": null,
       "candidates": [
         {
-          "name": "T. Siddique",
+          "name": "T. Siddhique",
           "party": "Indian National Congress",
           "votes": 70252,
-          "votePct": 46.16,
+          "votePct": 46.15,
           "alliance": "UDF"
         },
         {
-          "name": "M. V. Shreyams Kumar",
+          "name": "M. V. Sreyams Kumar",
           "party": "Loktantrik Janata Dal",
           "votes": 64782,
           "votePct": 42.56,
           "alliance": "LDF"
         },
         {
-          "name": "Subeesh T. M.",
+          "name": "T. M. Subheesh",
           "party": "Bharatiya Janata Party",
           "votes": 14113,
           "votePct": 9.27,
           "alliance": "NDA"
+        },
+        {
+          "name": "Aswin Bhimnath",
+          "party": "Bahujan Samaj Party",
+          "votes": 928,
+          "votePct": 0.61,
+          "alliance": "OTHER"
         },
         {
           "name": "NOTA",
@@ -130,12 +137,33 @@
           "votes": 828,
           "votePct": 0.54,
           "alliance": "NOTA"
+        },
+        {
+          "name": "T. Sidique s/o Abdullah",
+          "party": "Independent",
+          "votes": 641,
+          "votePct": 0.42,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sunil Vaidyar",
+          "party": "Anna DHRM",
+          "votes": 455,
+          "votePct": 0.3,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Shylesh",
+          "party": "Independent",
+          "votes": 210,
+          "votePct": 0.14,
+          "alliance": "OTHER"
         }
       ],
       "margin": 5470,
-      "marginPct": 3.6,
+      "marginPct": 3.59,
       "turnout": 152209,
-      "turnoutPct": 75.65,
+      "turnoutPct": 75.77,
       "result": "INC gain from CPI(M)"
     }
   ]

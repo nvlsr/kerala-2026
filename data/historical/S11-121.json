@@ -111,7 +111,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Abdurahiman Randathani",
+          "name": "Abdurahman Randathani",
           "party": "Indian Union Muslim League",
           "votes": 43371,
           "votePct": 29.66,
@@ -137,10 +137,31 @@
           "votes": 617,
           "votePct": 0.42,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Prakash Anchal",
+          "party": "Anna DHRM",
+          "votes": 407,
+          "votePct": 0.28,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Mahesh",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 407,
+          "votePct": 0.28,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Thenmala Nagarajan",
+          "party": "Independent",
+          "votes": 264,
+          "votePct": 0.18,
+          "alliance": "OTHER"
         }
       ],
       "margin": 37057,
-      "marginPct": 25.33,
+      "marginPct": 25.34,
       "turnout": 146251,
       "turnoutPct": 71.05,
       "result": "CPI hold"

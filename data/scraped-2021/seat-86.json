@@ -1,0 +1,43 @@
+{
+  "seat": 86,
+  "constituencyName": "Muvattupuzha",
+  "electorate": 191116,
+  "validVotesPolled": 144354,
+  "pollingPct": 75.53,
+  "nota": 427,
+  "margin": 6161,
+  "candidates": [
+    {
+      "name": "Mathew Kuzhalnadan",
+      "party": "INC",
+      "votes": 64425,
+      "pct": 44.63
+    },
+    {
+      "name": "Eldho Abraham",
+      "party": "CPI",
+      "votes": 58264,
+      "pct": 40.36
+    },
+    {
+      "name": "C. N. Prakash",
+      "party": "T2P",
+      "votes": 13535,
+      "pct": 9.38
+    },
+    {
+      "name": "Jiji Joseph",
+      "party": "BJP",
+      "votes": 7527,
+      "pct": 5.21
+    },
+    {
+      "name": "C. K. Thampi",
+      "party": "SUCIC",
+      "votes": 176,
+      "pct": 0.12
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=86",
+  "fetchedAt": "2026-05-07T02:49:06.399Z"
+}

@@ -1,0 +1,43 @@
+{
+  "seat": 7,
+  "constituencyName": "Kalliasseri",
+  "electorate": 184923,
+  "validVotesPolled": 145585,
+  "pollingPct": 78.73,
+  "nota": 666,
+  "margin": 44393,
+  "candidates": [
+    {
+      "name": "M. Vijin",
+      "party": "CPIM",
+      "votes": 88252,
+      "pct": 60.62
+    },
+    {
+      "name": "Brijesh Kumar",
+      "party": "INC",
+      "votes": 43859,
+      "pct": 30.13
+    },
+    {
+      "name": "Arun Kaithapram",
+      "party": "BJP",
+      "votes": 11365,
+      "pct": 7.81
+    },
+    {
+      "name": "Faisal Madayi",
+      "party": "WPI",
+      "votes": 1169,
+      "pct": 0.8
+    },
+    {
+      "name": "M. Brijeshkumar s/o Ambu",
+      "party": "IND",
+      "votes": 274,
+      "pct": 0.19
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=7",
+  "fetchedAt": "2026-05-07T02:49:05.711Z"
+}

@@ -111,7 +111,21 @@
           "alliance": "UDF"
         },
         {
-          "name": "Abdul Raheem S.",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 1054,
+          "votePct": 0.64,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "K. Prasad",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 555,
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "S. Abdul Rahim",
           "party": "Independent",
           "votes": 418,
           "votePct": 0.26,
@@ -119,9 +133,9 @@
         }
       ],
       "margin": 25734,
-      "marginPct": 15.72,
+      "marginPct": 15.73,
       "turnout": 163605,
-      "turnoutPct": null,
+      "turnoutPct": 76.73,
       "result": "CPI(M) hold"
     }
   ]

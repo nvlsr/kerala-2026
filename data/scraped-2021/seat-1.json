@@ -1,0 +1,49 @@
+{
+  "seat": 1,
+  "constituencyName": "Manjeshwar",
+  "electorate": 221682,
+  "validVotesPolled": 172426,
+  "pollingPct": 77.78,
+  "nota": 387,
+  "margin": 745,
+  "candidates": [
+    {
+      "name": "A. K. M. Ashraf",
+      "party": "IUML",
+      "votes": 65758,
+      "pct": 38.14
+    },
+    {
+      "name": "K. Surendran",
+      "party": "BJP",
+      "votes": 65013,
+      "pct": 37.7
+    },
+    {
+      "name": "V. V. Ramesan",
+      "party": "CPIM",
+      "votes": 40639,
+      "pct": 23.57
+    },
+    {
+      "name": "S. Praveen Kumar",
+      "party": "ADHMPI",
+      "votes": 251,
+      "pct": 0.15
+    },
+    {
+      "name": "M. Surendran",
+      "party": "IND",
+      "votes": 197,
+      "pct": 0.11
+    },
+    {
+      "name": "I. John D Souza",
+      "party": "IND",
+      "votes": 181,
+      "pct": 0.1
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=1",
+  "fetchedAt": "2026-05-07T02:48:55.850Z"
+}

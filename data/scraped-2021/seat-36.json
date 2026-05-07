@@ -1,0 +1,37 @@
+{
+  "seat": 36,
+  "constituencyName": "Wandoor",
+  "electorate": 226426,
+  "validVotesPolled": 169931,
+  "pollingPct": 75.05,
+  "nota": 664,
+  "margin": 15563,
+  "candidates": [
+    {
+      "name": "A. P. Anilkumar",
+      "party": "INC",
+      "votes": 87415,
+      "pct": 51.44
+    },
+    {
+      "name": "P. Mithuna",
+      "party": "CPIM",
+      "votes": 71852,
+      "pct": 42.28
+    },
+    {
+      "name": "P. C. Vijayan",
+      "party": "BJP",
+      "votes": 7057,
+      "pct": 4.15
+    },
+    {
+      "name": "C. Krishnan",
+      "party": "WPI",
+      "votes": 2943,
+      "pct": 1.73
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=36",
+  "fetchedAt": "2026-05-07T02:49:06.026Z"
+}

@@ -130,12 +130,19 @@
           "votes": 867,
           "votePct": 0.69,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 687,
+          "votePct": 0.55,
+          "alliance": "NOTA"
         }
       ],
       "margin": 38305,
       "marginPct": 30.59,
-      "turnout": 126018,
-      "turnoutPct": 75.56,
+      "turnout": 125219,
+      "turnoutPct": 74.78,
       "result": "CPI(M) hold"
     }
   ]

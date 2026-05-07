@@ -1,0 +1,49 @@
+{
+  "seat": 24,
+  "constituencyName": "Perambra",
+  "electorate": 198218,
+  "validVotesPolled": 163737,
+  "pollingPct": 82.6,
+  "nota": 458,
+  "margin": 22592,
+  "candidates": [
+    {
+      "name": "T. P. Ramakrishnan",
+      "party": "CPIM",
+      "votes": 86023,
+      "pct": 52.54
+    },
+    {
+      "name": "C. H. Ibrahimkutty",
+      "party": "UDF",
+      "votes": 63431,
+      "pct": 38.74
+    },
+    {
+      "name": "K. V. Sudheer",
+      "party": "BJP",
+      "votes": 11165,
+      "pct": 6.82
+    },
+    {
+      "name": "Ismail Kammana",
+      "party": "SDPI",
+      "votes": 1465,
+      "pct": 0.89
+    },
+    {
+      "name": "M. Ibrahimkutty s/o Pokker",
+      "party": "IND",
+      "votes": 915,
+      "pct": 0.56
+    },
+    {
+      "name": "V. K. Chandran",
+      "party": "IND",
+      "votes": 280,
+      "pct": 0.17
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=24",
+  "fetchedAt": "2026-05-07T02:49:05.919Z"
+}

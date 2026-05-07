@@ -1,0 +1,73 @@
+{
+  "seat": 45,
+  "constituencyName": "Tirur",
+  "electorate": 229458,
+  "validVotesPolled": 170742,
+  "pollingPct": 74.41,
+  "nota": 417,
+  "margin": 7214,
+  "candidates": [
+    {
+      "name": "Kurukkoli Moideen",
+      "party": "IUML",
+      "votes": 82314,
+      "pct": 48.21
+    },
+    {
+      "name": "Gafoor P. Lillies",
+      "party": "CPIM",
+      "votes": 75100,
+      "pct": 43.98
+    },
+    {
+      "name": "M. Abdul Salam",
+      "party": "BJP",
+      "votes": 9097,
+      "pct": 5.33
+    },
+    {
+      "name": "Ashraf",
+      "party": "SDPI",
+      "votes": 2712,
+      "pct": 1.59
+    },
+    {
+      "name": "Moideen Meenthakath",
+      "party": "IND",
+      "votes": 477,
+      "pct": 0.28
+    },
+    {
+      "name": "Aboobacker Sidkeek",
+      "party": "IND",
+      "votes": 240,
+      "pct": 0.14
+    },
+    {
+      "name": "Moideen Valiyakath",
+      "party": "IND",
+      "votes": 169,
+      "pct": 0.1
+    },
+    {
+      "name": "A. K. Abdul Mahroof",
+      "party": "IND",
+      "votes": 111,
+      "pct": 0.07
+    },
+    {
+      "name": "Abdul Gafoor Pulickal",
+      "party": "IND",
+      "votes": 68,
+      "pct": 0.04
+    },
+    {
+      "name": "Abdul Gafoor Valiayapeedikackal",
+      "party": "IND",
+      "votes": 37,
+      "pct": 0.02
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=45",
+  "fetchedAt": "2026-05-07T02:49:06.081Z"
+}

@@ -151,8 +151,8 @@
       "reason": null,
       "candidates": [
         {
-          "name": "Mani C. Kappan",
-          "party": "DCK",
+          "name": "Mani C. Kappen",
+          "party": "Independent (UDF)",
           "votes": 69804,
           "votePct": 50.43,
           "alliance": "UDF"
@@ -165,7 +165,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Prameeladevi J.",
+          "name": "J. Prameeladevi",
           "party": "Bharatiya Janata Party",
           "votes": 10869,
           "votePct": 7.85,
@@ -179,17 +179,66 @@
           "alliance": "OTHER"
         },
         {
-          "name": "Santosh Pulickal",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 604,
+          "votePct": 0.44,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Santhosh Pulickal",
           "party": "Independent",
           "votes": 444,
           "votePct": 0.32,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Joy Thomas Vazhamattom",
+          "party": "Bahujan Samaj Party",
+          "votes": 368,
+          "votePct": 0.27,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "C. V. John",
+          "party": "Independent",
+          "votes": 249,
+          "votePct": 0.18,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. S. Sreejith",
+          "party": "Independent",
+          "votes": 195,
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Thomas J. Nidiri",
+          "party": "Independent",
+          "votes": 160,
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Albin Mathew",
+          "party": "Independent",
+          "votes": 121,
+          "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sunil Alancheril",
+          "party": "Independent",
+          "votes": 93,
+          "votePct": 0.07,
           "alliance": "OTHER"
         }
       ],
       "margin": 15378,
       "marginPct": 11.11,
       "turnout": 138431,
-      "turnoutPct": 76.46,
+      "turnoutPct": 74.89,
       "result": "DCK gain from NCP"
     }
   ]

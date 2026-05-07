@@ -1,0 +1,49 @@
+{
+  "seat": 80,
+  "constituencyName": "Kochi",
+  "electorate": 181842,
+  "validVotesPolled": 128703,
+  "pollingPct": 70.78,
+  "nota": 474,
+  "margin": 14079,
+  "candidates": [
+    {
+      "name": "K. J. Maxy",
+      "party": "CPIM",
+      "votes": 54632,
+      "pct": 42.45
+    },
+    {
+      "name": "Tony Chammany",
+      "party": "INC",
+      "votes": 40553,
+      "pct": 31.51
+    },
+    {
+      "name": "Shyni Antony",
+      "party": "T2P",
+      "votes": 19676,
+      "pct": 15.29
+    },
+    {
+      "name": "C. G. Rajagopal",
+      "party": "BJP",
+      "votes": 10991,
+      "pct": 8.54
+    },
+    {
+      "name": "Nipun Cheriyan",
+      "party": "IND",
+      "votes": 2149,
+      "pct": 1.67
+    },
+    {
+      "name": "Rajneesh Babu",
+      "party": "IND",
+      "votes": 228,
+      "pct": 0.18
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=80",
+  "fetchedAt": "2026-05-07T02:49:06.346Z"
+}

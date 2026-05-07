@@ -1,0 +1,49 @@
+{
+  "seat": 35,
+  "constituencyName": "Nilambur",
+  "electorate": 225356,
+  "validVotesPolled": 173205,
+  "pollingPct": 76.86,
+  "nota": 507,
+  "margin": 2700,
+  "candidates": [
+    {
+      "name": "P. V. Anvar",
+      "party": "LDF",
+      "votes": 81227,
+      "pct": 46.9
+    },
+    {
+      "name": "V. V. Prakash",
+      "party": "INC",
+      "votes": 78527,
+      "pct": 45.34
+    },
+    {
+      "name": "T. K. Asok Kumar",
+      "party": "BJP",
+      "votes": 8595,
+      "pct": 4.96
+    },
+    {
+      "name": "K. Babu Mani",
+      "party": "SDPI",
+      "votes": 3281,
+      "pct": 1.89
+    },
+    {
+      "name": "C. P. Sajadurahman",
+      "party": "IND",
+      "votes": 559,
+      "pct": 0.32
+    },
+    {
+      "name": "Anila Mathew",
+      "party": "ICSP",
+      "votes": 509,
+      "pct": 0.29
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=35",
+  "fetchedAt": "2026-05-07T02:49:06.025Z"
+}

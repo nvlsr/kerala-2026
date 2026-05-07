@@ -132,10 +132,24 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 758,
+          "votePct": 0.52,
+          "alliance": "NOTA"
+        },
+        {
           "name": "G. Anilkumar",
           "party": "Welfare Party of India",
           "votes": 616,
           "votePct": 0.42,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Anoop Gangan",
+          "party": "Independent",
+          "votes": 372,
+          "votePct": 0.26,
           "alliance": "OTHER"
         }
       ],

@@ -125,14 +125,21 @@
           "alliance": "NDA"
         },
         {
-          "name": "Prakash. C",
+          "name": "C. Prakash",
           "party": "Bahujan Samaj Party",
           "votes": 1350,
           "votePct": 0.89,
           "alliance": "OTHER"
         },
         {
-          "name": "Babu S/o Kunchu",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 1070,
+          "votePct": 0.71,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Babu s/o Kunchu",
           "party": "Independent",
           "votes": 863,
           "votePct": 0.57,
@@ -142,7 +149,7 @@
       "margin": 28704,
       "marginPct": 18.94,
       "turnout": 151535,
-      "turnoutPct": null,
+      "turnoutPct": 78.68,
       "result": "CPI(M) hold"
     }
   ]

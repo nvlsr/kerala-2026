@@ -1,0 +1,61 @@
+{
+  "seat": 5,
+  "constituencyName": "Trikaripur",
+  "electorate": 202249,
+  "validVotesPolled": 160408,
+  "pollingPct": 79.31,
+  "nota": 558,
+  "margin": 26137,
+  "candidates": [
+    {
+      "name": "M. Ragopalan",
+      "party": "CPIM",
+      "votes": 86151,
+      "pct": 53.71
+    },
+    {
+      "name": "M. P. Joseph",
+      "party": "KC",
+      "votes": 60014,
+      "pct": 37.41
+    },
+    {
+      "name": "T. V. Shibin",
+      "party": "BJP",
+      "votes": 10961,
+      "pct": 6.83
+    },
+    {
+      "name": "P. Liyakhathli",
+      "party": "SDPI",
+      "votes": 1211,
+      "pct": 0.75
+    },
+    {
+      "name": "T. Mahesh Master",
+      "party": "WPI",
+      "votes": 817,
+      "pct": 0.51
+    },
+    {
+      "name": "Joy John",
+      "party": "IND",
+      "votes": 362,
+      "pct": 0.23
+    },
+    {
+      "name": "M. V. Joseph",
+      "party": "IND",
+      "votes": 218,
+      "pct": 0.14
+    },
+    {
+      "name": "Sudhan Vellarikundu",
+      "party": "ADHMPI",
+      "votes": 116,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=5",
+  "fetchedAt": "2026-05-07T02:49:05.711Z"
+}

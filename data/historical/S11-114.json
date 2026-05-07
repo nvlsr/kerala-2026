@@ -158,8 +158,15 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 372,
+          "votePct": 0.25,
+          "alliance": "NOTA"
+        },
+        {
           "name": "P. Raghu",
-          "party": "ADHMPI",
+          "party": "Anna DHRM",
           "votes": 214,
           "votePct": 0.14,
           "alliance": "OTHER"

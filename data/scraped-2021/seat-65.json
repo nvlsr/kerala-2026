@@ -1,0 +1,37 @@
+{
+  "seat": 65,
+  "constituencyName": "Wadakkanchery",
+  "electorate": 217849,
+  "validVotesPolled": 169861,
+  "pollingPct": 77.97,
+  "nota": 842,
+  "margin": 15168,
+  "candidates": [
+    {
+      "name": "Xavier Chittilappally",
+      "party": "CPIM",
+      "votes": 81026,
+      "pct": 47.7
+    },
+    {
+      "name": "Anil Akkara",
+      "party": "INC",
+      "votes": 65858,
+      "pct": 38.77
+    },
+    {
+      "name": "T. S. Ullas Babu",
+      "party": "BJP",
+      "votes": 21747,
+      "pct": 12.8
+    },
+    {
+      "name": "Haji Aboobacker Kundukkadan",
+      "party": "IND",
+      "votes": 388,
+      "pct": 0.23
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=65",
+  "fetchedAt": "2026-05-07T02:49:06.290Z"
+}

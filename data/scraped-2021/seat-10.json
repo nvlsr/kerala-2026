@@ -1,0 +1,67 @@
+{
+  "seat": 10,
+  "constituencyName": "Azhikode",
+  "electorate": 181562,
+  "validVotesPolled": 144897,
+  "pollingPct": 79.81,
+  "nota": 517,
+  "margin": 6141,
+  "candidates": [
+    {
+      "name": "K. V. Sumesh",
+      "party": "CPIM",
+      "votes": 65794,
+      "pct": 45.41
+    },
+    {
+      "name": "K. M. Shaji",
+      "party": "IUML",
+      "votes": 59653,
+      "pct": 41.17
+    },
+    {
+      "name": "K. Ranjith",
+      "party": "BJP",
+      "votes": 15741,
+      "pct": 10.86
+    },
+    {
+      "name": "K. K. Abdul Jabbar",
+      "party": "SDPI",
+      "votes": 2357,
+      "pct": 1.63
+    },
+    {
+      "name": "K. M. Shaji Mamba",
+      "party": "IND",
+      "votes": 277,
+      "pct": 0.19
+    },
+    {
+      "name": "Resmi Ravi",
+      "party": "SUCIC",
+      "votes": 226,
+      "pct": 0.16
+    },
+    {
+      "name": "M. Sumesh",
+      "party": "IND",
+      "votes": 180,
+      "pct": 0.12
+    },
+    {
+      "name": "V. P. Prasad",
+      "party": "IND",
+      "votes": 104,
+      "pct": 0.07
+    },
+    {
+      "name": "Pavitharan Kurikalottu",
+      "party": "IND",
+      "votes": 48,
+      "pct": 0.03
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=10",
+  "fetchedAt": "2026-05-07T02:49:05.810Z"
+}

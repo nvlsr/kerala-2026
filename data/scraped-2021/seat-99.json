@@ -1,0 +1,67 @@
+{
+  "seat": 99,
+  "constituencyName": "Changanassery",
+  "electorate": 171497,
+  "validVotesPolled": 123585,
+  "pollingPct": 72.06,
+  "nota": 434,
+  "margin": 6059,
+  "candidates": [
+    {
+      "name": "Job Michael",
+      "party": "KCM",
+      "votes": 55425,
+      "pct": 44.85
+    },
+    {
+      "name": "V. J. Laly",
+      "party": "KC",
+      "votes": 49366,
+      "pct": 39.94
+    },
+    {
+      "name": "G. Raman Nair",
+      "party": "BJP",
+      "votes": 14491,
+      "pct": 11.73
+    },
+    {
+      "name": "Tijo Karikkandam",
+      "party": "IND",
+      "votes": 1094,
+      "pct": 0.89
+    },
+    {
+      "name": "T. Amrith Dev",
+      "party": "BSP",
+      "votes": 1079,
+      "pct": 0.87
+    },
+    {
+      "name": "M. K. Nisamuddin",
+      "party": "SDPI",
+      "votes": 1075,
+      "pct": 0.87
+    },
+    {
+      "name": "Rajitha Jayaram",
+      "party": "SUCIC",
+      "votes": 328,
+      "pct": 0.27
+    },
+    {
+      "name": "Jomon Joseph Srampikal",
+      "party": "IND",
+      "votes": 157,
+      "pct": 0.13
+    },
+    {
+      "name": "Babychen Mukkadan",
+      "party": "IND",
+      "votes": 136,
+      "pct": 0.11
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=99",
+  "fetchedAt": "2026-05-07T02:49:06.510Z"
+}

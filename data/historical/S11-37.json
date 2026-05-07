@@ -111,14 +111,14 @@
           "alliance": "UDF"
         },
         {
-          "name": "Nazar Debona",
+          "name": "Naser Dibona",
           "party": "Communist Party of India",
           "votes": 64263,
           "votePct": 40.93,
           "alliance": "LDF"
         },
         {
-          "name": "P. R. Rashmilnath",
+          "name": "P. R. Rashmil Nath",
           "party": "Bharatiya Janata Party",
           "votes": 11350,
           "votePct": 7.23,
@@ -130,10 +130,17 @@
           "votes": 1341,
           "votePct": 0.85,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 1202,
+          "votePct": 0.77,
+          "alliance": "NOTA"
         }
       ],
       "margin": 14573,
-      "marginPct": 9.29,
+      "marginPct": 9.28,
       "turnout": 156992,
       "turnoutPct": 75.86,
       "result": "IUML hold"

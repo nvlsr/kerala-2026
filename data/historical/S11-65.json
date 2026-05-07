@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "Xavier Chittilappilly",
+          "name": "Xavier Chittilappally",
           "party": "Communist Party of India (Marxist)",
           "votes": 81026,
           "votePct": 47.7,
@@ -125,24 +125,24 @@
           "alliance": "NDA"
         },
         {
-          "name": "Haji Aboobaker Kundukadan",
-          "party": "Independent",
-          "votes": 388,
-          "votePct": 0.23,
-          "alliance": "OTHER"
-        },
-        {
           "name": "NOTA",
           "party": "None of the Above",
           "votes": 842,
           "votePct": 0.5,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Haji Aboobacker Kundukkadan",
+          "party": "Independent",
+          "votes": 388,
+          "votePct": 0.23,
+          "alliance": "OTHER"
         }
       ],
       "margin": 15168,
       "marginPct": 8.93,
       "turnout": 169861,
-      "turnoutPct": 76.17,
+      "turnoutPct": 77.97,
       "result": "CPI(M) gain from INC"
     }
   ]

@@ -125,7 +125,7 @@
           "alliance": "NDA"
         },
         {
-          "name": "Faisal Ibrahim",
+          "name": "P. Faizal Ibrahim",
           "party": "Social Democratic Party Of India",
           "votes": 2294,
           "votePct": 1.37,
@@ -137,12 +137,26 @@
           "votes": 712,
           "votePct": 0.43,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Devarajan Mukola",
+          "party": "Independent",
+          "votes": 660,
+          "votePct": 0.39,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abhayan Manaloor",
+          "party": "Bahujan Samaj Party",
+          "votes": 472,
+          "votePct": 0.28,
+          "alliance": "OTHER"
         }
       ],
       "margin": 29876,
       "marginPct": 17.84,
       "turnout": 167502,
-      "turnoutPct": 79.17,
+      "turnoutPct": 75.24,
       "result": "CPI(M) hold"
     }
   ]

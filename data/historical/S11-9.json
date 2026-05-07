@@ -118,7 +118,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Aniyamma Rajendran",
+          "name": "Aniamma Teacher",
           "party": "Bharatiya Janata Party",
           "votes": 7825,
           "votePct": 5.13,
@@ -132,17 +132,31 @@
           "alliance": "NOTA"
         },
         {
-          "name": "Chacko Karimbil",
+          "name": "Chacko Karimpil",
           "party": "Independent",
           "votes": 311,
           "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sajan Kuttiyanickal",
+          "party": "Independent",
+          "votes": 275,
+          "votePct": 0.18,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Joy John",
+          "party": "Independent",
+          "votes": 128,
+          "votePct": 0.08,
           "alliance": "OTHER"
         }
       ],
       "margin": 10010,
       "marginPct": 6.56,
       "turnout": 152516,
-      "turnoutPct": 75.63,
+      "turnoutPct": 78.23,
       "result": "INC hold"
     }
   ]

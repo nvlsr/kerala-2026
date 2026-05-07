@@ -125,10 +125,24 @@
           "alliance": "UDF"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 1071,
+          "votePct": 0.73,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Vipinlal Vidhyadharan",
           "party": "Bahujan Samaj Party",
           "votes": 927,
           "votePct": 0.63,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Asa Prakash",
+          "party": "Anna DHRM",
+          "votes": 339,
+          "votePct": 0.23,
           "alliance": "OTHER"
         },
         {

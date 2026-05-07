@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "P. Rajeev",
+          "name": "P. Rajeeve",
           "party": "Communist Party of India (Marxist)",
           "votes": 77141,
           "votePct": 49.49,
@@ -137,6 +137,27 @@
           "votes": 1518,
           "votePct": 0.97,
           "alliance": "NOTA"
+        },
+        {
+          "name": "P. S. Unnikrishnan",
+          "party": "Bahujan Samaj Party",
+          "votes": 857,
+          "votePct": 0.55,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. M. K. Bava",
+          "party": "Independent",
+          "votes": 526,
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Nayana Unnikrishnan",
+          "party": "Independent",
+          "votes": 452,
+          "votePct": 0.29,
+          "alliance": "OTHER"
         }
       ],
       "margin": 15336,

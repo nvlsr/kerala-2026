@@ -1,0 +1,67 @@
+{
+  "seat": 113,
+  "constituencyName": "Aranmula",
+  "electorate": 237351,
+  "validVotesPolled": 161866,
+  "pollingPct": 68.2,
+  "nota": 575,
+  "margin": 19003,
+  "candidates": [
+    {
+      "name": "Veena George",
+      "party": "CPIM",
+      "votes": 74950,
+      "pct": 46.3
+    },
+    {
+      "name": "K. Sivadasan Nair",
+      "party": "INC",
+      "votes": 55947,
+      "pct": 34.56
+    },
+    {
+      "name": "Biju Mathew",
+      "party": "BJP",
+      "votes": 29099,
+      "pct": 17.98
+    },
+    {
+      "name": "Sivadasan Nair s/o Raghavan Nair",
+      "party": "IND",
+      "votes": 629,
+      "pct": 0.39
+    },
+    {
+      "name": "Omallur Ramachandran",
+      "party": "API",
+      "votes": 236,
+      "pct": 0.15
+    },
+    {
+      "name": "Prasanth Aranmula",
+      "party": "IND",
+      "votes": 143,
+      "pct": 0.09
+    },
+    {
+      "name": "Shanthi Omallur",
+      "party": "ADHMPI",
+      "votes": 133,
+      "pct": 0.08
+    },
+    {
+      "name": "G. Sugathan",
+      "party": "IND",
+      "votes": 87,
+      "pct": 0.05
+    },
+    {
+      "name": "C. K. Arjunan",
+      "party": "IND",
+      "votes": 67,
+      "pct": 0.04
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=113",
+  "fetchedAt": "2026-05-07T02:49:06.613Z"
+}

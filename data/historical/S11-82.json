@@ -151,7 +151,7 @@
           "alliance": "UDF"
         },
         {
-          "name": "Shaji George",
+          "name": "Shaji George Pranatha",
           "party": "Independent (LDF)",
           "votes": 34960,
           "votePct": 31.75,
@@ -170,11 +170,53 @@
           "votes": 10634,
           "votePct": 9.66,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Sujith C. Sukumaran",
+          "party": "Independent",
+          "votes": 1042,
+          "votePct": 0.95,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 712,
+          "votePct": 0.65,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Shaji George Plakkil",
+          "party": "Independent",
+          "votes": 305,
+          "votePct": 0.28,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. S. Anilkumar",
+          "party": "Independent",
+          "votes": 225,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Asokan",
+          "party": "Independent",
+          "votes": 176,
+          "votePct": 0.16,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Siciliamma Teacher",
+          "party": "Independent",
+          "votes": 71,
+          "votePct": 0.06,
+          "alliance": "OTHER"
         }
       ],
       "margin": 10970,
-      "marginPct": 9.97,
-      "turnout": 108434,
+      "marginPct": 9.96,
+      "turnout": 110098,
       "turnoutPct": 66.92,
       "result": "INC hold"
     }

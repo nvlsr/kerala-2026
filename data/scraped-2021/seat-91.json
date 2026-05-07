@@ -1,0 +1,55 @@
+{
+  "seat": 91,
+  "constituencyName": "Idukki",
+  "electorate": 186276,
+  "validVotesPolled": 131351,
+  "pollingPct": 70.51,
+  "nota": 677,
+  "margin": 5573,
+  "candidates": [
+    {
+      "name": "Roshy Augustine",
+      "party": "KCM",
+      "votes": 62368,
+      "pct": 47.48
+    },
+    {
+      "name": "K. Francis George",
+      "party": "KC",
+      "votes": 56795,
+      "pct": 43.24
+    },
+    {
+      "name": "Sangeetha Viswanathan",
+      "party": "BDJS",
+      "votes": 9286,
+      "pct": 7.07
+    },
+    {
+      "name": "Babu Varghese Vattoli",
+      "party": "BSP",
+      "votes": 1106,
+      "pct": 0.84
+    },
+    {
+      "name": "Bijeesh Thomas",
+      "party": "IND",
+      "votes": 610,
+      "pct": 0.46
+    },
+    {
+      "name": "Vincent Jacob",
+      "party": "IND",
+      "votes": 340,
+      "pct": 0.26
+    },
+    {
+      "name": "Sajeev",
+      "party": "IND",
+      "votes": 169,
+      "pct": 0.13
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=91",
+  "fetchedAt": "2026-05-07T02:49:06.448Z"
+}

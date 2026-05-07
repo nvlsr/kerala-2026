@@ -104,14 +104,14 @@
       "reason": null,
       "candidates": [
         {
-          "name": "K. K. Shailaja",
+          "name": "K. K. Shailaja Teacher",
           "party": "Communist Party of India (Marxist)",
           "votes": 96129,
           "votePct": 61.97,
           "alliance": "LDF"
         },
         {
-          "name": "Illikkal Augusthy",
+          "name": "Illickal Agusthy",
           "party": "Revolutionary Socialist Party",
           "votes": 35166,
           "votePct": 22.67,
@@ -125,7 +125,7 @@
           "alliance": "NDA"
         },
         {
-          "name": "Rafeekh Keecheri",
+          "name": "Rafeeq Keecheri",
           "party": "Social Democratic Party Of India",
           "votes": 4201,
           "votePct": 2.71,
@@ -137,12 +137,19 @@
           "votes": 796,
           "votePct": 0.51,
           "alliance": "NOTA"
+        },
+        {
+          "name": "N. A. Augusthy",
+          "party": "Independent",
+          "votes": 619,
+          "votePct": 0.4,
+          "alliance": "OTHER"
         }
       ],
       "margin": 60963,
-      "marginPct": 39.24,
-      "turnout": 156127,
-      "turnoutPct": 82.11,
+      "marginPct": 39.3,
+      "turnout": 155134,
+      "turnoutPct": 81.95,
       "result": "CPI(M) hold"
     }
   ]

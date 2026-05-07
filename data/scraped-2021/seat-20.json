@@ -1,0 +1,67 @@
+{
+  "seat": 20,
+  "constituencyName": "Vadakara",
+  "electorate": 167406,
+  "validVotesPolled": 136673,
+  "pollingPct": 81.64,
+  "nota": 353,
+  "margin": 7491,
+  "candidates": [
+    {
+      "name": "K. K. Rema",
+      "party": "RMP",
+      "votes": 65093,
+      "pct": 47.63
+    },
+    {
+      "name": "Manayathu Chandran",
+      "party": "LJD",
+      "votes": 57602,
+      "pct": 42.15
+    },
+    {
+      "name": "M. Rajesh Kumar",
+      "party": "BJP",
+      "votes": 10225,
+      "pct": 7.48
+    },
+    {
+      "name": "Musthafa Paleri",
+      "party": "SDPI",
+      "votes": 2836,
+      "pct": 2.08
+    },
+    {
+      "name": "Gangadharan Madappally",
+      "party": "IND",
+      "votes": 186,
+      "pct": 0.14
+    },
+    {
+      "name": "K. T. K. Rama Padannayil",
+      "party": "IND",
+      "votes": 137,
+      "pct": 0.1
+    },
+    {
+      "name": "Rama Kuniyil",
+      "party": "IND",
+      "votes": 126,
+      "pct": 0.09
+    },
+    {
+      "name": "Velluparambathu Chandran",
+      "party": "IND",
+      "votes": 63,
+      "pct": 0.05
+    },
+    {
+      "name": "Rama Cheriyakaiyil",
+      "party": "IND",
+      "votes": 52,
+      "pct": 0.04
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=20",
+  "fetchedAt": "2026-05-07T02:49:05.912Z"
+}

@@ -104,14 +104,14 @@
       "reason": null,
       "candidates": [
         {
-          "name": "C. H. Kunhambu",
+          "name": "C. H. Kunhampu",
           "party": "Communist Party of India (Marxist)",
           "votes": 78664,
           "votePct": 47.58,
           "alliance": "LDF"
         },
         {
-          "name": "Periya Balakrishnan",
+          "name": "Balakrishanan Periya",
           "party": "Indian National Congress",
           "votes": 65342,
           "votePct": 39.52,
@@ -125,7 +125,14 @@
           "alliance": "NDA"
         },
         {
-          "name": "Rameshan K.",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 434,
+          "votePct": 0.26,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "K. Ramesan",
           "party": "Independent",
           "votes": 207,
           "votePct": 0.13,
@@ -137,12 +144,19 @@
           "votes": 194,
           "votePct": 0.12,
           "alliance": "OTHER"
+        },
+        {
+          "name": "K. Kunhampu s/o K. C. Kuttappan",
+          "party": "Independent",
+          "votes": 140,
+          "votePct": 0.08,
+          "alliance": "OTHER"
         }
       ],
       "margin": 13322,
       "marginPct": 8.06,
       "turnout": 165341,
-      "turnoutPct": 77.31,
+      "turnoutPct": 77.19,
       "result": "CPI(M) hold"
     }
   ]

@@ -1,0 +1,79 @@
+{
+  "seat": 16,
+  "constituencyName": "Peravoor",
+  "electorate": 177249,
+  "validVotesPolled": 142138,
+  "pollingPct": 80.19,
+  "nota": 404,
+  "margin": 3172,
+  "candidates": [
+    {
+      "name": "Sunny Joseph",
+      "party": "INC",
+      "votes": 66706,
+      "pct": 46.93
+    },
+    {
+      "name": "K. V. Sakheer Hussain",
+      "party": "CPIM",
+      "votes": 63534,
+      "pct": 44.7
+    },
+    {
+      "name": "Smitha Jayamohan",
+      "party": "BJP",
+      "votes": 9155,
+      "pct": 6.44
+    },
+    {
+      "name": "A. C. Jalaludhin",
+      "party": "SDPI",
+      "votes": 1541,
+      "pct": 1.08
+    },
+    {
+      "name": "Sakheer Hussain s/o Hamsa",
+      "party": "IND",
+      "votes": 243,
+      "pct": 0.17
+    },
+    {
+      "name": "Sunny Vazhackamalayil",
+      "party": "IND",
+      "votes": 121,
+      "pct": 0.09
+    },
+    {
+      "name": "E. K. Sakeer s/o Asiya",
+      "party": "IND",
+      "votes": 116,
+      "pct": 0.08
+    },
+    {
+      "name": "P. K. Saji",
+      "party": "NEWLP",
+      "votes": 106,
+      "pct": 0.07
+    },
+    {
+      "name": "John Pallickamalil",
+      "party": "SDC",
+      "votes": 92,
+      "pct": 0.06
+    },
+    {
+      "name": "Narayana Kumar",
+      "party": "IND",
+      "votes": 60,
+      "pct": 0.04
+    },
+    {
+      "name": "Sunny Muthukulathel",
+      "party": "IND",
+      "votes": 60,
+      "pct": 0.04
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=16",
+  "fetchedAt": "2026-05-07T02:49:05.859Z"
+}

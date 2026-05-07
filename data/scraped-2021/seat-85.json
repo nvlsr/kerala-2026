@@ -1,0 +1,49 @@
+{
+  "seat": 85,
+  "constituencyName": "Piravom",
+  "electorate": 211861,
+  "validVotesPolled": 158097,
+  "pollingPct": 74.62,
+  "nota": 1109,
+  "margin": 25364,
+  "candidates": [
+    {
+      "name": "Anoop Jacob",
+      "party": "KCA",
+      "votes": 85056,
+      "pct": 53.8
+    },
+    {
+      "name": "Sindhumol Jacob",
+      "party": "KCM",
+      "votes": 59692,
+      "pct": 37.76
+    },
+    {
+      "name": "M. Asish",
+      "party": "BJP",
+      "votes": 11021,
+      "pct": 6.97
+    },
+    {
+      "name": "C. Sindhumol",
+      "party": "IND",
+      "votes": 563,
+      "pct": 0.36
+    },
+    {
+      "name": "C. N. Mukundan",
+      "party": "SUCIC",
+      "votes": 454,
+      "pct": 0.29
+    },
+    {
+      "name": "P. B. Renju",
+      "party": "IND",
+      "votes": 202,
+      "pct": 0.13
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=85",
+  "fetchedAt": "2026-05-07T02:49:06.399Z"
+}

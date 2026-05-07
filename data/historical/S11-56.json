@@ -95,12 +95,47 @@
           "votes": 36433,
           "votePct": 25.64,
           "alliance": "LDF"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 528,
+          "votePct": 0.37,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "E. T. K. Valsan",
+          "party": "Bahujan Samaj Party",
+          "votes": 359,
+          "votePct": 0.25,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "J. Jayaprakash",
+          "party": "SFB",
+          "votes": 221,
+          "votePct": 0.16,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. Sachidanandan",
+          "party": "Independent",
+          "votes": 159,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Rajesh",
+          "party": "ABHMS",
+          "votes": 105,
+          "votePct": 0.07,
+          "alliance": "OTHER"
         }
       ],
       "margin": 3859,
-      "marginPct": 2.71,
+      "marginPct": 2.72,
       "turnout": 142104,
-      "turnoutPct": 75.44,
+      "turnoutPct": 75.37,
       "result": "INC hold"
     },
     {

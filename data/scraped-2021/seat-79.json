@@ -1,0 +1,43 @@
+{
+  "seat": 79,
+  "constituencyName": "Vypen",
+  "electorate": 172086,
+  "validVotesPolled": 130596,
+  "pollingPct": 75.89,
+  "nota": 525,
+  "margin": 8201,
+  "candidates": [
+    {
+      "name": "K. M. Unnikrishnan",
+      "party": "CPIM",
+      "votes": 53858,
+      "pct": 41.24
+    },
+    {
+      "name": "Deepak Joy",
+      "party": "INC",
+      "votes": 45657,
+      "pct": 34.96
+    },
+    {
+      "name": "Job Chakkalackal",
+      "party": "T2P",
+      "votes": 16707,
+      "pct": 12.79
+    },
+    {
+      "name": "K. S. Shaiju",
+      "party": "BJP",
+      "votes": 13540,
+      "pct": 10.37
+    },
+    {
+      "name": "M. K. Mukundan",
+      "party": "IND",
+      "votes": 309,
+      "pct": 0.24
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=79",
+  "fetchedAt": "2026-05-07T02:49:06.346Z"
+}

@@ -125,11 +125,18 @@
           "alliance": "NDA"
         },
         {
-          "name": "Sharafath Mallam",
+          "name": "Sharafat Mallam",
           "party": "Social Democratic Party Of India",
           "votes": 1879,
           "votePct": 1.28,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 685,
+          "votePct": 0.47,
+          "alliance": "NOTA"
         },
         {
           "name": "Archana Prajith",
@@ -137,12 +144,33 @@
           "votes": 605,
           "votePct": 0.41,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Lalu",
+          "party": "Bahujan Samaj Party",
+          "votes": 406,
+          "votePct": 0.28,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Ratheesh Kadackal",
+          "party": "Anna DHRM",
+          "votes": 280,
+          "votePct": 0.19,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shibu K. Chadayamangalam",
+          "party": "Independent",
+          "votes": 258,
+          "votePct": 0.18,
+          "alliance": "OTHER"
         }
       ],
       "margin": 13678,
       "marginPct": 9.29,
       "turnout": 147177,
-      "turnoutPct": 74.6,
+      "turnoutPct": 73.26,
       "result": "CPI hold"
     }
   ]

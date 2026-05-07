@@ -1,0 +1,55 @@
+{
+  "seat": 110,
+  "constituencyName": "Chengannur",
+  "electorate": 206858,
+  "validVotesPolled": 147171,
+  "pollingPct": 71.15,
+  "nota": 491,
+  "margin": 32093,
+  "candidates": [
+    {
+      "name": "Saji Cheriyan",
+      "party": "CPIM",
+      "votes": 71502,
+      "pct": 48.58
+    },
+    {
+      "name": "M. Murali",
+      "party": "INC",
+      "votes": 39409,
+      "pct": 26.78
+    },
+    {
+      "name": "M. V. Gopakumar",
+      "party": "BJP",
+      "votes": 34620,
+      "pct": 23.52
+    },
+    {
+      "name": "Shaji T. George",
+      "party": "BSP",
+      "votes": 534,
+      "pct": 0.36
+    },
+    {
+      "name": "T. K. Gopinathan",
+      "party": "SUCIC",
+      "votes": 316,
+      "pct": 0.21
+    },
+    {
+      "name": "Melvin K. Mathew",
+      "party": "DSJP",
+      "votes": 198,
+      "pct": 0.13
+    },
+    {
+      "name": "Poulose",
+      "party": "IND",
+      "votes": 101,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=110",
+  "fetchedAt": "2026-05-07T02:49:06.564Z"
+}

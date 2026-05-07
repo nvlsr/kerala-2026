@@ -1,0 +1,73 @@
+{
+  "seat": 131,
+  "constituencyName": "Vamanapuram",
+  "electorate": 199992,
+  "validVotesPolled": 146525,
+  "pollingPct": 73.27,
+  "nota": 716,
+  "margin": 10242,
+  "candidates": [
+    {
+      "name": "D. K. Murali",
+      "party": "CPIM",
+      "votes": 73137,
+      "pct": 49.91
+    },
+    {
+      "name": "Anad Jayan",
+      "party": "INC",
+      "votes": 62895,
+      "pct": 42.92
+    },
+    {
+      "name": "Thazhava Sahadevan",
+      "party": "BDJS",
+      "votes": 5603,
+      "pct": 3.82
+    },
+    {
+      "name": "Ajmal Ismail",
+      "party": "SDPI",
+      "votes": 2325,
+      "pct": 1.59
+    },
+    {
+      "name": "T. Santhosh",
+      "party": "BSP",
+      "votes": 552,
+      "pct": 0.38
+    },
+    {
+      "name": "Attukal Aji",
+      "party": "IND",
+      "votes": 420,
+      "pct": 0.29
+    },
+    {
+      "name": "R. Murali",
+      "party": "IND",
+      "votes": 310,
+      "pct": 0.21
+    },
+    {
+      "name": "Asokan T. Vamanapuram",
+      "party": "API",
+      "votes": 301,
+      "pct": 0.21
+    },
+    {
+      "name": "C. M. Nawaz",
+      "party": "IND",
+      "votes": 134,
+      "pct": 0.09
+    },
+    {
+      "name": "Bharathannoor Maniraj",
+      "party": "IND",
+      "votes": 132,
+      "pct": 0.09
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=131",
+  "fetchedAt": "2026-05-07T02:49:06.805Z"
+}

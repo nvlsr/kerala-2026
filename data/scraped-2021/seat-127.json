@@ -1,0 +1,55 @@
+{
+  "seat": 127,
+  "constituencyName": "Varkala",
+  "electorate": 187646,
+  "validVotesPolled": 135229,
+  "pollingPct": 72.07,
+  "nota": 815,
+  "margin": 17821,
+  "candidates": [
+    {
+      "name": "V. Joy",
+      "party": "CPIM",
+      "votes": 68816,
+      "pct": 50.89
+    },
+    {
+      "name": "B. R. M. Shafeer",
+      "party": "INC",
+      "votes": 50995,
+      "pct": 37.71
+    },
+    {
+      "name": "S. Aji",
+      "party": "BDJS",
+      "votes": 11214,
+      "pct": 8.29
+    },
+    {
+      "name": "M. C. Anu",
+      "party": "BSP",
+      "votes": 1948,
+      "pct": 1.44
+    },
+    {
+      "name": "Prince",
+      "party": "IND",
+      "votes": 658,
+      "pct": 0.49
+    },
+    {
+      "name": "P. Anil Kumar",
+      "party": "DHRMP",
+      "votes": 460,
+      "pct": 0.34
+    },
+    {
+      "name": "Shefeer",
+      "party": "IND",
+      "votes": 323,
+      "pct": 0.24
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=127",
+  "fetchedAt": "2026-05-07T02:49:06.666Z"
+}

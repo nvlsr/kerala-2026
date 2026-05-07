@@ -1,0 +1,73 @@
+{
+  "seat": 30,
+  "constituencyName": "Kunnamangalam",
+  "electorate": 231284,
+  "validVotesPolled": 193822,
+  "pollingPct": 83.8,
+  "nota": 864,
+  "margin": 10276,
+  "candidates": [
+    {
+      "name": "P. T. A. Rahim",
+      "party": "LDF",
+      "votes": 85138,
+      "pct": 43.93
+    },
+    {
+      "name": "Dinesh Perumanna",
+      "party": "UDF",
+      "votes": 74862,
+      "pct": 38.62
+    },
+    {
+      "name": "V. K. Sajeevan",
+      "party": "BJP",
+      "votes": 27672,
+      "pct": 14.28
+    },
+    {
+      "name": "Abdul Wahid",
+      "party": "SDPI",
+      "votes": 1299,
+      "pct": 0.67
+    },
+    {
+      "name": "E. P. Anwar Sadath",
+      "party": "WPI",
+      "votes": 1057,
+      "pct": 0.55
+    },
+    {
+      "name": "Dineshan Pakkath",
+      "party": "IND",
+      "votes": 1021,
+      "pct": 0.53
+    },
+    {
+      "name": "Abdul Rahim P. s/o Hassan Koya",
+      "party": "IND",
+      "votes": 738,
+      "pct": 0.38
+    },
+    {
+      "name": "K. G. Babu",
+      "party": "IND",
+      "votes": 724,
+      "pct": 0.37
+    },
+    {
+      "name": "Dinesan Mundakkal",
+      "party": "IND",
+      "votes": 225,
+      "pct": 0.12
+    },
+    {
+      "name": "Abdul Rahim P. s/o Abdul Kareem",
+      "party": "IND",
+      "votes": 222,
+      "pct": 0.11
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=30",
+  "fetchedAt": "2026-05-07T02:49:05.973Z"
+}

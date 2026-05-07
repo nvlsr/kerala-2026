@@ -1,0 +1,55 @@
+{
+  "seat": 2,
+  "constituencyName": "Kasaragod",
+  "electorate": 201812,
+  "validVotesPolled": 144500,
+  "pollingPct": 71.6,
+  "nota": 639,
+  "margin": 12901,
+  "candidates": [
+    {
+      "name": "N. A Nellikunnu",
+      "party": "IUML",
+      "votes": 63296,
+      "pct": 43.8
+    },
+    {
+      "name": "K. Sreekant",
+      "party": "BJP",
+      "votes": 50395,
+      "pct": 34.88
+    },
+    {
+      "name": "M. A. Latheef",
+      "party": "INL",
+      "votes": 28323,
+      "pct": 19.6
+    },
+    {
+      "name": "K. P. Vijaya",
+      "party": "BSP",
+      "votes": 679,
+      "pct": 0.47
+    },
+    {
+      "name": "M. Ranjith Raj",
+      "party": "ADHMPI",
+      "votes": 555,
+      "pct": 0.38
+    },
+    {
+      "name": "I. B. Nishant kumar",
+      "party": "IND",
+      "votes": 417,
+      "pct": 0.29
+    },
+    {
+      "name": "K. Sudhakaran",
+      "party": "IND",
+      "votes": 196,
+      "pct": 0.14
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=2",
+  "fetchedAt": "2026-05-07T02:48:55.851Z"
+}

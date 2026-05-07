@@ -125,17 +125,38 @@
           "alliance": "OTHER"
         },
         {
+          "name": "Asharaf Vadakkoot",
+          "party": "Social Democratic Party Of India",
+          "votes": 2889,
+          "votePct": 1.97,
+          "alliance": "OTHER"
+        },
+        {
           "name": "NOTA",
           "party": "None of the Above",
           "votes": 1007,
           "votePct": 0.69,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Antony",
+          "party": "Independent",
+          "votes": 392,
+          "votePct": 0.27,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. Kumar",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 301,
+          "votePct": 0.21,
+          "alliance": "OTHER"
         }
       ],
       "margin": 18268,
       "marginPct": 12.45,
       "turnout": 146759,
-      "turnoutPct": 69.65,
+      "turnoutPct": 69.42,
       "result": "CPI(M) hold"
     }
   ]

@@ -146,8 +146,8 @@
           "alliance": "UDF"
         },
         {
-          "name": "K. T. Abdul Rahiman",
-          "party": "Communist Party of India",
+          "name": "K. T. Abdul Rahiman (CPI)",
+          "party": "Independent (LDF)",
           "votes": 55530,
           "votePct": 38.76,
           "alliance": "LDF"
@@ -172,6 +172,13 @@
           "votes": 1100,
           "votePct": 0.77,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 636,
+          "votePct": 0.44,
+          "alliance": "NOTA"
         }
       ],
       "margin": 22546,

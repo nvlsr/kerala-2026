@@ -113,12 +113,12 @@
         {
           "name": "V. S. Sivakumar",
           "party": "Indian National Congress",
-          "votes": 41669,
+          "votes": 41659,
           "votePct": 32.49,
           "alliance": "UDF"
         },
         {
-          "name": "Krishnakumar G.",
+          "name": "G. Krishnakumar",
           "party": "Bharatiya Janata Party",
           "votes": 34996,
           "votePct": 27.29,
@@ -137,12 +137,54 @@
           "votes": 436,
           "votePct": 0.34,
           "alliance": "OTHER"
+        },
+        {
+          "name": "A. Saboora",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 366,
+          "votePct": 0.29,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Raju Antony",
+          "party": "Independent",
+          "votes": 289,
+          "votePct": 0.23,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Chala Mohanan D.",
+          "party": "Independent",
+          "votes": 245,
+          "votePct": 0.19,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Antony Raju s/o Raju",
+          "party": "Independent",
+          "votes": 190,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Sivakumar s/o Kumara Swamy",
+          "party": "Independent",
+          "votes": 164,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. S. Krishnakuar s/o Sankarankutty",
+          "party": "Independent",
+          "votes": 89,
+          "votePct": 0.07,
+          "alliance": "OTHER"
         }
       ],
       "margin": 7089,
-      "marginPct": 5.57,
-      "turnout": 128322,
-      "turnoutPct": 63.03,
+      "marginPct": 5.53,
+      "turnout": 128236,
+      "turnoutPct": 63.07,
       "result": "JKC gain from INC"
     }
   ]

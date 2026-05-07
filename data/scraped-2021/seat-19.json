@@ -1,0 +1,55 @@
+{
+  "seat": 19,
+  "constituencyName": "Kalpetta",
+  "electorate": 200895,
+  "validVotesPolled": 152209,
+  "pollingPct": 75.77,
+  "nota": 828,
+  "margin": 5470,
+  "candidates": [
+    {
+      "name": "T. Siddhique",
+      "party": "INC",
+      "votes": 70252,
+      "pct": 46.15
+    },
+    {
+      "name": "M. V. Sreyams Kumar",
+      "party": "LJD",
+      "votes": 64782,
+      "pct": 42.56
+    },
+    {
+      "name": "T. M. Subheesh",
+      "party": "BJP",
+      "votes": 14113,
+      "pct": 9.27
+    },
+    {
+      "name": "Aswin Bhimnath",
+      "party": "BSP",
+      "votes": 928,
+      "pct": 0.61
+    },
+    {
+      "name": "T. Sidique s/o Abdullah",
+      "party": "IND",
+      "votes": 641,
+      "pct": 0.42
+    },
+    {
+      "name": "Sunil Vaidyar",
+      "party": "ADHMPI",
+      "votes": 455,
+      "pct": 0.3
+    },
+    {
+      "name": "K. Shylesh",
+      "party": "IND",
+      "votes": 210,
+      "pct": 0.14
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=19",
+  "fetchedAt": "2026-05-07T02:49:05.911Z"
+}

@@ -112,7 +112,7 @@
         },
         {
           "name": "Niyas Pulickalakath",
-          "party": "Communist Party of India",
+          "party": "Independent (LDF)",
           "votes": 63921,
           "votePct": 43.26,
           "alliance": "LDF"
@@ -128,7 +128,7 @@
           "name": "NOTA",
           "party": "None of the Above",
           "votes": 721,
-          "votePct": 0.48,
+          "votePct": 0.49,
           "alliance": "NOTA"
         },
         {
@@ -136,6 +136,34 @@
           "party": "Independent",
           "votes": 487,
           "votePct": 0.33,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdul Majeed Panackal",
+          "party": "Bahujan Samaj Party",
+          "votes": 303,
+          "votePct": 0.21,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Moosa Jarathingal",
+          "party": "SI",
+          "votes": 274,
+          "votePct": 0.19,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Chandran",
+          "party": "Independent",
+          "votes": 132,
+          "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdulrahim Naha",
+          "party": "Independent",
+          "votes": 120,
+          "votePct": 0.08,
           "alliance": "OTHER"
         }
       ],

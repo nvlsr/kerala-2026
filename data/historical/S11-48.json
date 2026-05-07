@@ -118,7 +118,7 @@
           "alliance": "UDF"
         },
         {
-          "name": "Subramannian Chunkappallii",
+          "name": "Subramanyan Chunkappally",
           "party": "Bharath Dharma Jana Sena",
           "votes": 7419,
           "votePct": 5.1,
@@ -137,12 +137,33 @@
           "votes": 1863,
           "votePct": 1.28,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 467,
+          "votePct": 0.32,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "M. P. Roshit",
+          "party": "Independent",
+          "votes": 168,
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Sadanandan",
+          "party": "Independent",
+          "votes": 147,
+          "votePct": 0.1,
+          "alliance": "OTHER"
         }
       ],
       "margin": 17043,
       "marginPct": 11.72,
       "turnout": 145422,
-      "turnoutPct": 70.83,
+      "turnoutPct": 70.84,
       "result": "CPI(M) hold"
     }
   ]

@@ -1,0 +1,55 @@
+{
+  "seat": 62,
+  "constituencyName": "Kunnamkulam",
+  "electorate": 198258,
+  "validVotesPolled": 154831,
+  "pollingPct": 78.1,
+  "nota": 559,
+  "margin": 26631,
+  "candidates": [
+    {
+      "name": "A. C. Moideen",
+      "party": "CPIM",
+      "votes": 75532,
+      "pct": 48.78
+    },
+    {
+      "name": "K. Jayasankar",
+      "party": "INC",
+      "votes": 48901,
+      "pct": 31.58
+    },
+    {
+      "name": "K. K. Aneeshkumar",
+      "party": "BJP",
+      "votes": 27833,
+      "pct": 17.98
+    },
+    {
+      "name": "V. S. Aboobacker",
+      "party": "SDPI",
+      "votes": 1241,
+      "pct": 0.8
+    },
+    {
+      "name": "K. M. Moideen s/o Muhammed",
+      "party": "IND",
+      "votes": 380,
+      "pct": 0.25
+    },
+    {
+      "name": "James Panadan",
+      "party": "IND",
+      "votes": 265,
+      "pct": 0.17
+    },
+    {
+      "name": "A. K. Moidheenkutty",
+      "party": "IND",
+      "votes": 120,
+      "pct": 0.08
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=62",
+  "fetchedAt": "2026-05-07T02:49:06.237Z"
+}

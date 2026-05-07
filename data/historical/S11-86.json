@@ -106,14 +106,14 @@
         {
           "name": "Mathew Kuzhalnadan",
           "party": "Indian National Congress",
-          "votes": 74425,
+          "votes": 64425,
           "votePct": 44.63,
           "alliance": "UDF"
         },
         {
-          "name": "Eldo Abraham",
+          "name": "Eldho Abraham",
           "party": "Communist Party of India",
-          "votes": 68264,
+          "votes": 58264,
           "votePct": 40.36,
           "alliance": "LDF"
         },
@@ -132,6 +132,13 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 427,
+          "votePct": 0.3,
+          "alliance": "NOTA"
+        },
+        {
           "name": "C. K. Thampi",
           "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 176,
@@ -139,10 +146,10 @@
           "alliance": "OTHER"
         }
       ],
-      "margin": 6961,
+      "margin": 6161,
       "marginPct": 4.27,
-      "turnout": 145005,
-      "turnoutPct": 75.83,
+      "turnout": 144354,
+      "turnoutPct": 75.53,
       "result": "INC gain from CPI"
     }
   ]

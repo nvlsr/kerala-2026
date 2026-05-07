@@ -151,11 +151,39 @@
           "alliance": "LDF"
         },
         {
-          "name": "N. Ashish",
+          "name": "M. Asish",
           "party": "Bharatiya Janata Party",
           "votes": 11021,
           "votePct": 6.97,
           "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 1109,
+          "votePct": 0.7,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "C. Sindhumol",
+          "party": "Independent",
+          "votes": 563,
+          "votePct": 0.36,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "C. N. Mukundan",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 454,
+          "votePct": 0.29,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. B. Renju",
+          "party": "Independent",
+          "votes": 202,
+          "votePct": 0.13,
+          "alliance": "OTHER"
         }
       ],
       "margin": 25364,

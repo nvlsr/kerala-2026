@@ -1,0 +1,55 @@
+{
+  "seat": 95,
+  "constituencyName": "Vaikom",
+  "electorate": 164469,
+  "validVotesPolled": 127576,
+  "pollingPct": 77.57,
+  "nota": 670,
+  "margin": 29122,
+  "candidates": [
+    {
+      "name": "C. K. Asha",
+      "party": "CPI",
+      "votes": 71388,
+      "pct": 55.96
+    },
+    {
+      "name": "P. R. Sona",
+      "party": "INC",
+      "votes": 42266,
+      "pct": 33.13
+    },
+    {
+      "name": "Ajitha Sabu",
+      "party": "BDJS",
+      "votes": 11953,
+      "pct": 9.37
+    },
+    {
+      "name": "Akhiljith Kallara",
+      "party": "BSP",
+      "votes": 726,
+      "pct": 0.57
+    },
+    {
+      "name": "Bindu",
+      "party": "BDP",
+      "votes": 258,
+      "pct": 0.2
+    },
+    {
+      "name": "Kuttan Kattachira",
+      "party": "IND",
+      "votes": 163,
+      "pct": 0.13
+    },
+    {
+      "name": "T. K. Sabu",
+      "party": "SUCIC",
+      "votes": 152,
+      "pct": 0.12
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=95",
+  "fetchedAt": "2026-05-07T02:49:06.456Z"
+}

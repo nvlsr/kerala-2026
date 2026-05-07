@@ -125,10 +125,24 @@
           "alliance": "NDA"
         },
         {
-          "name": "Ramanan",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 750,
+          "votePct": 0.57,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Remanan",
           "party": "Bahujan Samaj Party",
           "votes": 290,
           "votePct": 0.22,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "S. Baby",
+          "party": "Anna DHRM",
+          "votes": 183,
+          "votePct": 0.14,
           "alliance": "OTHER"
         }
       ],

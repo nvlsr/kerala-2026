@@ -144,6 +144,13 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 907,
+          "votePct": 0.65,
+          "alliance": "NOTA"
+        },
+        {
           "name": "T. R. Premkumar",
           "party": "Bahujan Samaj Party",
           "votes": 643,

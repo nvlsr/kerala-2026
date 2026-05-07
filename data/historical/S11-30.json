@@ -175,7 +175,7 @@
       "candidates": [
         {
           "name": "P. T. A. Rahim",
-          "party": "National Secular Conference",
+          "party": "Independent (LDF)",
           "votes": 85138,
           "votePct": 43.93,
           "alliance": "LDF"
@@ -214,6 +214,13 @@
           "votes": 1021,
           "votePct": 0.53,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 864,
+          "votePct": 0.45,
+          "alliance": "NOTA"
         },
         {
           "name": "Abdul Rahim P. s/o Hassan Koya",

@@ -1,0 +1,55 @@
+{
+  "seat": 77,
+  "constituencyName": "Kalamassery",
+  "electorate": 201707,
+  "validVotesPolled": 155863,
+  "pollingPct": 77.27,
+  "nota": 1518,
+  "margin": 15336,
+  "candidates": [
+    {
+      "name": "P. Rajeeve",
+      "party": "CPIM",
+      "votes": 77141,
+      "pct": 49.49
+    },
+    {
+      "name": "V. E. Abdul Gafoor",
+      "party": "IUML",
+      "votes": 61805,
+      "pct": 39.65
+    },
+    {
+      "name": "P. S. Jayaraj",
+      "party": "BDJS",
+      "votes": 11179,
+      "pct": 7.17
+    },
+    {
+      "name": "V. M. Faizal",
+      "party": "SDPI",
+      "votes": 2385,
+      "pct": 1.53
+    },
+    {
+      "name": "P. S. Unnikrishnan",
+      "party": "BSP",
+      "votes": 857,
+      "pct": 0.55
+    },
+    {
+      "name": "P. M. K. Bava",
+      "party": "IND",
+      "votes": 526,
+      "pct": 0.34
+    },
+    {
+      "name": "Nayana Unnikrishnan",
+      "party": "IND",
+      "votes": 452,
+      "pct": 0.29
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=77",
+  "fetchedAt": "2026-05-07T02:49:06.344Z"
+}

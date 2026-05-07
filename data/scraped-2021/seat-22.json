@@ -1,0 +1,49 @@
+{
+  "seat": 22,
+  "constituencyName": "Nadapuram",
+  "electorate": 216141,
+  "validVotesPolled": 175503,
+  "pollingPct": 81.2,
+  "nota": 316,
+  "margin": 4035,
+  "candidates": [
+    {
+      "name": "E. K. Vijayan",
+      "party": "CPI",
+      "votes": 83293,
+      "pct": 47.46
+    },
+    {
+      "name": "K. Praveen Kumar",
+      "party": "INC",
+      "votes": 79258,
+      "pct": 45.16
+    },
+    {
+      "name": "M. P. Rajan",
+      "party": "BJP",
+      "votes": 10537,
+      "pct": 6
+    },
+    {
+      "name": "K. K. Nasar Master",
+      "party": "SDPI",
+      "votes": 1676,
+      "pct": 0.95
+    },
+    {
+      "name": "T. Praveen Kumar s/o Kannan",
+      "party": "IND",
+      "votes": 258,
+      "pct": 0.15
+    },
+    {
+      "name": "K. K. Sreedharan",
+      "party": "NLP",
+      "votes": 165,
+      "pct": 0.09
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=22",
+  "fetchedAt": "2026-05-07T02:49:05.919Z"
+}

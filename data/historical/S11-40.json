@@ -111,14 +111,14 @@
           "alliance": "UDF"
         },
         {
-          "name": "Paloli Abdurahman",
+          "name": "Paloli Abdurahiman",
           "party": "Communist Party of India (Marxist)",
           "votes": 57958,
           "votePct": 35.82,
           "alliance": "LDF"
         },
         {
-          "name": "Areekkad Sethumadhavan",
+          "name": "Areekad Sethumadhavan",
           "party": "Bharatiya Janata Party",
           "votes": 5883,
           "votePct": 3.64,
@@ -137,10 +137,24 @@
           "votes": 994,
           "votePct": 0.61,
           "alliance": "NOTA"
+        },
+        {
+          "name": "T. Prasobh",
+          "party": "Bahujan Samaj Party",
+          "votes": 321,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. K. Bose",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 309,
+          "votePct": 0.19,
+          "alliance": "OTHER"
         }
       ],
       "margin": 35208,
-      "marginPct": 21.75,
+      "marginPct": 21.76,
       "turnout": 161825,
       "turnoutPct": 76.34,
       "result": "IUML hold"

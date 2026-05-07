@@ -118,31 +118,59 @@
           "alliance": "UDF"
         },
         {
-          "name": "Ashokan Kulanada",
+          "name": "Asokan Kulanada",
           "party": "Bharatiya Janata Party",
           "votes": 22674,
           "votePct": 16.25,
           "alliance": "NDA"
         },
         {
-          "name": "Thomas Mathew",
+          "name": "Thomas Mathew (Roy)",
           "party": "Independent",
           "votes": 1461,
           "votePct": 1.05,
           "alliance": "OTHER"
         },
         {
-          "name": "Rajendra Das",
+          "name": "Rajendradas",
           "party": "Bahujan Samaj Party",
           "votes": 1074,
           "votePct": 0.77,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 608,
+          "votePct": 0.44,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Vinod Kumar",
+          "party": "Independent",
+          "votes": 380,
+          "votePct": 0.27,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Surendran Kottoorathil",
+          "party": "Independent",
+          "votes": 216,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. P. Yesudas",
+          "party": "Independent",
+          "votes": 196,
+          "votePct": 0.14,
+          "alliance": "OTHER"
         }
       ],
       "margin": 11421,
-      "marginPct": 8.19,
+      "marginPct": 8.18,
       "turnout": 139544,
-      "turnoutPct": null,
+      "turnoutPct": 65.73,
       "result": "JD(S) hold"
     }
   ]

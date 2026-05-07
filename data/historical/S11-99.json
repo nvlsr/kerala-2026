@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "Job Maichil",
+          "name": "Job Michael",
           "party": "Kerala Congress (M)",
           "votes": 55425,
           "votePct": 44.85,
@@ -125,24 +125,59 @@
           "alliance": "NDA"
         },
         {
-          "name": "Tijo Karikkanadam",
+          "name": "Tijo Karikkandam",
           "party": "Independent",
           "votes": 1094,
           "votePct": 0.89,
           "alliance": "OTHER"
         },
         {
-          "name": "Amruth Dev T",
+          "name": "T. Amrith Dev",
           "party": "Bahujan Samaj Party",
           "votes": 1079,
           "votePct": 0.87,
           "alliance": "OTHER"
+        },
+        {
+          "name": "M. K. Nisamuddin",
+          "party": "Social Democratic Party Of India",
+          "votes": 1075,
+          "votePct": 0.87,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 434,
+          "votePct": 0.35,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Rajitha Jayaram",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 328,
+          "votePct": 0.27,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Jomon Joseph Srampikal",
+          "party": "Independent",
+          "votes": 157,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Babychen Mukkadan",
+          "party": "Independent",
+          "votes": 136,
+          "votePct": 0.11,
+          "alliance": "OTHER"
         }
       ],
       "margin": 6059,
-      "marginPct": 4.91,
+      "marginPct": 4.9,
       "turnout": 123585,
-      "turnoutPct": 70.23,
+      "turnoutPct": 72.06,
       "result": "KC(M) hold"
     }
   ]

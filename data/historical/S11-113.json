@@ -95,12 +95,61 @@
           "votes": 29099,
           "votePct": 17.98,
           "alliance": "NDA"
+        },
+        {
+          "name": "Sivadasan Nair s/o Raghavan Nair",
+          "party": "Independent",
+          "votes": 629,
+          "votePct": 0.39,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 575,
+          "votePct": 0.36,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Omallur Ramachandran",
+          "party": "Ambedkarite Party of India",
+          "votes": 236,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Prasanth Aranmula",
+          "party": "Independent",
+          "votes": 143,
+          "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shanthi Omallur",
+          "party": "Anna DHRM",
+          "votes": 133,
+          "votePct": 0.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "G. Sugathan",
+          "party": "Independent",
+          "votes": 87,
+          "votePct": 0.05,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "C. K. Arjunan",
+          "party": "Independent",
+          "votes": 67,
+          "votePct": 0.04,
+          "alliance": "OTHER"
         }
       ],
       "margin": 19003,
       "marginPct": 11.74,
       "turnout": 161866,
-      "turnoutPct": 68.19,
+      "turnoutPct": 68.2,
       "result": "CPI(M) hold"
     }
   ]

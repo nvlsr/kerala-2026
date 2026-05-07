@@ -125,6 +125,13 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 867,
+          "votePct": 0.54,
+          "alliance": "NOTA"
+        },
+        {
           "name": "P. P. Sivan",
           "party": "Bahujan Samaj Party",
           "votes": 672,
@@ -133,9 +140,9 @@
         }
       ],
       "margin": 15152,
-      "marginPct": 9.96,
-      "turnout": 161509,
-      "turnoutPct": 77.75,
+      "marginPct": 9.4,
+      "turnout": 161161,
+      "turnoutPct": 77.58,
       "result": "CPI(M) hold"
     }
   ]

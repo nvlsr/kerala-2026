@@ -1,0 +1,55 @@
+{
+  "seat": 8,
+  "constituencyName": "Taliparamba",
+  "electorate": 213096,
+  "validVotesPolled": 178112,
+  "pollingPct": 83.58,
+  "nota": 789,
+  "margin": 22689,
+  "candidates": [
+    {
+      "name": "M. V. Govindan Master",
+      "party": "CPIM",
+      "votes": 92870,
+      "pct": 52.14
+    },
+    {
+      "name": "V. P. Abdul Rasheed",
+      "party": "INC",
+      "votes": 70181,
+      "pct": 39.4
+    },
+    {
+      "name": "A. P. Gangadharan",
+      "party": "BJP",
+      "votes": 13058,
+      "pct": 7.33
+    },
+    {
+      "name": "K. O. P. Shijith",
+      "party": "IND",
+      "votes": 508,
+      "pct": 0.29
+    },
+    {
+      "name": "Abdul Rasheed s/o Ismail",
+      "party": "IND",
+      "votes": 365,
+      "pct": 0.2
+    },
+    {
+      "name": "C. Balakrishnan Yadav",
+      "party": "IND",
+      "votes": 191,
+      "pct": 0.11
+    },
+    {
+      "name": "Govindan Karayapath",
+      "party": "IND",
+      "votes": 150,
+      "pct": 0.08
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=8",
+  "fetchedAt": "2026-05-07T02:49:05.710Z"
+}

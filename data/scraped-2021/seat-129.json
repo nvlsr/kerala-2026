@@ -1,0 +1,49 @@
+{
+  "seat": 129,
+  "constituencyName": "Chirayinkeezhu",
+  "electorate": 199220,
+  "validVotesPolled": 145080,
+  "pollingPct": 72.82,
+  "nota": 758,
+  "margin": 14017,
+  "candidates": [
+    {
+      "name": "V. Sasi",
+      "party": "CPI",
+      "votes": 62634,
+      "pct": 43.17
+    },
+    {
+      "name": "B. S. Anoop",
+      "party": "INC",
+      "votes": 48617,
+      "pct": 33.51
+    },
+    {
+      "name": "G. S. Ashanath",
+      "party": "BJP",
+      "votes": 30986,
+      "pct": 21.36
+    },
+    {
+      "name": "Anil Mangalapuram",
+      "party": "BSP",
+      "votes": 1097,
+      "pct": 0.76
+    },
+    {
+      "name": "G. Anilkumar",
+      "party": "WPI",
+      "votes": 616,
+      "pct": 0.42
+    },
+    {
+      "name": "Anoop Gangan",
+      "party": "IND",
+      "votes": 372,
+      "pct": 0.26
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=129",
+  "fetchedAt": "2026-05-07T02:49:06.804Z"
+}

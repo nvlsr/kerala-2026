@@ -1,0 +1,79 @@
+{
+  "seat": 49,
+  "constituencyName": "Thrithala",
+  "electorate": 194108,
+  "validVotesPolled": 152311,
+  "pollingPct": 78.47,
+  "nota": 427,
+  "margin": 3016,
+  "candidates": [
+    {
+      "name": "M. B. Rajesh",
+      "party": "CPIM",
+      "votes": 69814,
+      "pct": 45.84
+    },
+    {
+      "name": "V. T. Balram",
+      "party": "INC",
+      "votes": 66798,
+      "pct": 43.86
+    },
+    {
+      "name": "Sanku T. Das",
+      "party": "BJP",
+      "votes": 12851,
+      "pct": 8.44
+    },
+    {
+      "name": "M. K. Abdul Nasar",
+      "party": "SDPI",
+      "votes": 1582,
+      "pct": 1.04
+    },
+    {
+      "name": "Rajagopal Thrithala",
+      "party": "BSP",
+      "votes": 333,
+      "pct": 0.22
+    },
+    {
+      "name": "Sreenivas Kuruppath",
+      "party": "IND",
+      "votes": 136,
+      "pct": 0.09
+    },
+    {
+      "name": "Hussain Thattathazhath",
+      "party": "IND",
+      "votes": 107,
+      "pct": 0.07
+    },
+    {
+      "name": "Rajesh s/o E. Raman",
+      "party": "IND",
+      "votes": 91,
+      "pct": 0.06
+    },
+    {
+      "name": "E. V, Noorudeen",
+      "party": "IND",
+      "votes": 70,
+      "pct": 0.05
+    },
+    {
+      "name": "K. Balaraman s/o Kunjunni",
+      "party": "IND",
+      "votes": 57,
+      "pct": 0.04
+    },
+    {
+      "name": "T. T. Balaraman s/o Krishnan Nair",
+      "party": "IND",
+      "votes": 45,
+      "pct": 0.03
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=49",
+  "fetchedAt": "2026-05-07T02:49:06.131Z"
+}

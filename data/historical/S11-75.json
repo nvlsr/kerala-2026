@@ -137,12 +137,33 @@
           "votes": 623,
           "votePct": 0.45,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Stalin Nikathithara",
+          "party": "Bahujan Samaj Party",
+          "votes": 326,
+          "votePct": 0.24,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Jyothilakshmi",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 301,
+          "votePct": 0.22,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Velayudhan",
+          "party": "Independent",
+          "votes": 206,
+          "votePct": 0.15,
+          "alliance": "OTHER"
         }
       ],
       "margin": 15929,
-      "marginPct": 11.55,
+      "marginPct": 11.54,
       "turnout": 137997,
-      "turnoutPct": 77.55,
+      "turnoutPct": 77.56,
       "result": "INC hold"
     }
   ]

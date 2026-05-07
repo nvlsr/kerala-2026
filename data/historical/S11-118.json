@@ -104,14 +104,14 @@
       "reason": null,
       "candidates": [
         {
-          "name": "Kovoor Kunjumon",
-          "party": "RSP(L)",
+          "name": "Kovoor Kunjumon (RSP-L)",
+          "party": "Independent (LDF)",
           "votes": 69436,
           "votePct": 43.13,
           "alliance": "LDF"
         },
         {
-          "name": "Ullas Kovur",
+          "name": "Ullas Kovoor",
           "party": "Revolutionary Socialist Party",
           "votes": 66646,
           "votePct": 41.4,
@@ -128,20 +128,41 @@
           "name": "R. S. Anju",
           "party": "Bahujan Samaj Party",
           "votes": 946,
-          "votePct": 0.6,
+          "votePct": 0.59,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 922,
+          "votePct": 0.57,
+          "alliance": "NOTA"
         },
         {
           "name": "Manthara Velayudhan",
           "party": "Independent",
           "votes": 623,
-          "votePct": 0.4,
+          "votePct": 0.39,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "R. Sukumaran",
+          "party": "Anna DHRM",
+          "votes": 326,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Arunkumar S. Uliyacovil",
+          "party": "Independent",
+          "votes": 325,
+          "votePct": 0.2,
           "alliance": "OTHER"
         }
       ],
       "margin": 2790,
-      "marginPct": 1.74,
-      "turnout": 160062,
+      "marginPct": 1.73,
+      "turnout": 160984,
       "turnoutPct": 78.1,
       "result": "RSP(L) hold"
     }

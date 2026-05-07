@@ -1,0 +1,43 @@
+{
+  "seat": 15,
+  "constituencyName": "Mattannur",
+  "electorate": 189308,
+  "validVotesPolled": 155134,
+  "pollingPct": 81.95,
+  "nota": 796,
+  "margin": 60963,
+  "candidates": [
+    {
+      "name": "K. K. Shailaja Teacher",
+      "party": "CPIM",
+      "votes": 96129,
+      "pct": 61.97
+    },
+    {
+      "name": "Illickal Agusthy",
+      "party": "RSP",
+      "votes": 35166,
+      "pct": 22.67
+    },
+    {
+      "name": "Biju Elakkuzhi",
+      "party": "BJP",
+      "votes": 18223,
+      "pct": 11.75
+    },
+    {
+      "name": "Rafeeq Keecheri",
+      "party": "SDPI",
+      "votes": 4201,
+      "pct": 2.71
+    },
+    {
+      "name": "N. A. Augusthy",
+      "party": "IND",
+      "votes": 619,
+      "pct": 0.4
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=15",
+  "fetchedAt": "2026-05-07T02:49:05.858Z"
+}

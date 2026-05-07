@@ -1,0 +1,49 @@
+{
+  "seat": 94,
+  "constituencyName": "Kaduthuruthy",
+  "electorate": 187725,
+  "validVotesPolled": 131411,
+  "pollingPct": 70,
+  "nota": 731,
+  "margin": 4256,
+  "candidates": [
+    {
+      "name": "Mons Joseph",
+      "party": "KC",
+      "votes": 59666,
+      "pct": 45.4
+    },
+    {
+      "name": "Stephen George",
+      "party": "KCM",
+      "votes": 55410,
+      "pct": 42.17
+    },
+    {
+      "name": "Ligin Lal",
+      "party": "BJP",
+      "votes": 11670,
+      "pct": 8.88
+    },
+    {
+      "name": "Vinod K. Jose",
+      "party": "IND",
+      "votes": 2425,
+      "pct": 1.85
+    },
+    {
+      "name": "Anju Mathew",
+      "party": "BSP",
+      "votes": 1207,
+      "pct": 0.92
+    },
+    {
+      "name": "Jaimon Thankachan",
+      "party": "SVJP",
+      "votes": 302,
+      "pct": 0.23
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=94",
+  "fetchedAt": "2026-05-07T02:49:06.456Z"
+}

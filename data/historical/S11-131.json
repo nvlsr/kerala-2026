@@ -132,6 +132,13 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 716,
+          "votePct": 0.49,
+          "alliance": "NOTA"
+        },
+        {
           "name": "T. Santhosh",
           "party": "Bahujan Samaj Party",
           "votes": 552,

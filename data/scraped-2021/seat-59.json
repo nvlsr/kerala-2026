@@ -1,0 +1,43 @@
+{
+  "seat": 59,
+  "constituencyName": "Nenmara",
+  "electorate": 192592,
+  "validVotesPolled": 151535,
+  "pollingPct": 78.68,
+  "nota": 1070,
+  "margin": 28704,
+  "candidates": [
+    {
+      "name": "K. Babu",
+      "party": "CPIM",
+      "votes": 80145,
+      "pct": 52.89
+    },
+    {
+      "name": "C. N. Vijayakrishnan",
+      "party": "CMP",
+      "votes": 51441,
+      "pct": 33.95
+    },
+    {
+      "name": "A. N. Anurag",
+      "party": "BDJS",
+      "votes": 16666,
+      "pct": 11
+    },
+    {
+      "name": "C. Prakash",
+      "party": "BSP",
+      "votes": 1350,
+      "pct": 0.89
+    },
+    {
+      "name": "Babu s/o Kunchu",
+      "party": "IND",
+      "votes": 863,
+      "pct": 0.57
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=59",
+  "fetchedAt": "2026-05-07T02:49:06.236Z"
+}

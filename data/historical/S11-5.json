@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "M. Rajagopalan",
+          "name": "M. Ragopalan",
           "party": "Communist Party of India (Marxist)",
           "votes": 86151,
           "votePct": 53.71,
@@ -118,14 +118,14 @@
           "alliance": "UDF"
         },
         {
-          "name": "Shibin T. V.",
+          "name": "T. V. Shibin",
           "party": "Bharatiya Janata Party",
           "votes": 10961,
           "votePct": 6.83,
           "alliance": "NDA"
         },
         {
-          "name": "Liyakathali P.",
+          "name": "P. Liyakhathli",
           "party": "Social Democratic Party Of India",
           "votes": 1211,
           "votePct": 0.75,
@@ -137,12 +137,40 @@
           "votes": 817,
           "votePct": 0.51,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 558,
+          "votePct": 0.35,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Joy John",
+          "party": "Independent",
+          "votes": 362,
+          "votePct": 0.23,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. V. Joseph",
+          "party": "Independent",
+          "votes": 218,
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sudhan Vellarikundu",
+          "party": "Anna DHRM",
+          "votes": 116,
+          "votePct": 0.07,
+          "alliance": "OTHER"
         }
       ],
       "margin": 26137,
-      "marginPct": 16.3,
+      "marginPct": 16.29,
       "turnout": 160408,
-      "turnoutPct": 78.95,
+      "turnoutPct": 79.31,
       "result": "CPI(M) hold"
     }
   ]

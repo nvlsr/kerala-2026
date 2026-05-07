@@ -104,28 +104,35 @@
       "reason": null,
       "candidates": [
         {
-          "name": "K. P. Kunhammadkutty",
+          "name": "K. P. Kunhammedkutti Master",
           "party": "Communist Party of India (Marxist)",
           "votes": 80143,
           "votePct": 47.2,
           "alliance": "LDF"
         },
         {
-          "name": "Parakkal Abdulla",
+          "name": "Parackal Abdullah",
           "party": "Indian Union Muslim League",
           "votes": 79810,
           "votePct": 47.01,
           "alliance": "UDF"
         },
         {
-          "name": "P. P. Murali",
+          "name": "P. P. Murali Master",
           "party": "Bharatiya Janata Party",
           "votes": 9139,
           "votePct": 5.38,
           "alliance": "NDA"
         },
         {
-          "name": "Suresh Babu M.K",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 296,
+          "votePct": 0.17,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "M. K. Suresh Babu",
           "party": "Independent",
           "votes": 128,
           "votePct": 0.08,
@@ -137,12 +144,26 @@
           "votes": 108,
           "votePct": 0.06,
           "alliance": "OTHER"
+        },
+        {
+          "name": "K. K. Kunhammed Kutty",
+          "party": "Independent",
+          "votes": 80,
+          "votePct": 0.05,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdullah s/o Pokker",
+          "party": "Independent",
+          "votes": 75,
+          "votePct": 0.04,
+          "alliance": "OTHER"
         }
       ],
       "margin": 333,
-      "marginPct": 0.19,
-      "turnout": 164404,
-      "turnoutPct": 81.3,
+      "marginPct": 0.2,
+      "turnout": 169779,
+      "turnoutPct": 83.96,
       "result": "CPI(M) gain from IUML"
     }
   ]

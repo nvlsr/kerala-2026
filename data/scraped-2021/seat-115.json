@@ -1,0 +1,55 @@
+{
+  "seat": 115,
+  "constituencyName": "Adoor",
+  "electorate": 208099,
+  "validVotesPolled": 155411,
+  "pollingPct": 74.68,
+  "nota": 594,
+  "margin": 2919,
+  "candidates": [
+    {
+      "name": "Chittayam Gopakumar",
+      "party": "CPI",
+      "votes": 66569,
+      "pct": 42.83
+    },
+    {
+      "name": "M. G. Kannan",
+      "party": "INC",
+      "votes": 63650,
+      "pct": 40.96
+    },
+    {
+      "name": "Pandalam Prathapan",
+      "party": "BJP",
+      "votes": 23980,
+      "pct": 15.43
+    },
+    {
+      "name": "R. Kannan s/o Rajan",
+      "party": "IND",
+      "votes": 218,
+      "pct": 0.14
+    },
+    {
+      "name": "Vipin Kanikonathu",
+      "party": "BSP",
+      "votes": 178,
+      "pct": 0.11
+    },
+    {
+      "name": "Saranya Raj",
+      "party": "SUCIC",
+      "votes": 127,
+      "pct": 0.08
+    },
+    {
+      "name": "Rajan Kulakkada",
+      "party": "ADHMPI",
+      "votes": 95,
+      "pct": 0.06
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=115",
+  "fetchedAt": "2026-05-07T02:49:06.613Z"
+}

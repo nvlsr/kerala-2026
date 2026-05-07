@@ -146,6 +146,13 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 565,
+          "votePct": 0.36,
+          "alliance": "NOTA"
+        },
+        {
           "name": "A. T. Manikuttan",
           "party": "Bahujan Samaj Party",
           "votes": 205,

@@ -1,0 +1,55 @@
+{
+  "seat": 56,
+  "constituencyName": "Palakkad",
+  "electorate": 188534,
+  "validVotesPolled": 142104,
+  "pollingPct": 75.37,
+  "nota": 528,
+  "margin": 3859,
+  "candidates": [
+    {
+      "name": "Shafi Parambil",
+      "party": "INC",
+      "votes": 54079,
+      "pct": 38.06
+    },
+    {
+      "name": "E. Sreedharan",
+      "party": "BJP",
+      "votes": 50220,
+      "pct": 35.34
+    },
+    {
+      "name": "C. P. Pramod",
+      "party": "CPIM",
+      "votes": 36433,
+      "pct": 25.64
+    },
+    {
+      "name": "E. T. K. Valsan",
+      "party": "BSP",
+      "votes": 359,
+      "pct": 0.25
+    },
+    {
+      "name": "J. Jayaprakash",
+      "party": "SFB",
+      "votes": 221,
+      "pct": 0.16
+    },
+    {
+      "name": "V. Sachidanandan",
+      "party": "IND",
+      "votes": 159,
+      "pct": 0.11
+    },
+    {
+      "name": "K. Rajesh",
+      "party": "ABHMS",
+      "votes": 105,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=56",
+  "fetchedAt": "2026-05-07T02:49:06.135Z"
+}

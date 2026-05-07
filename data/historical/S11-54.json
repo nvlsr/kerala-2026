@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "N. Samsudheen",
+          "name": "N. Shamsudheen",
           "party": "Indian Union Muslim League",
           "votes": 71657,
           "votePct": 47.11,
@@ -136,6 +136,55 @@
           "party": "Bahujan Samaj Party",
           "votes": 827,
           "votePct": 0.54,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 760,
+          "votePct": 0.5,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Shamsudden s/o Hamza",
+          "party": "Independent",
+          "votes": 511,
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Suresh",
+          "party": "Independent",
+          "votes": 440,
+          "votePct": 0.29,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Suresh Babu",
+          "party": "Independent",
+          "votes": 304,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shamsudeen s/o Yusaf",
+          "party": "Independent",
+          "votes": 192,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Ajikumar",
+          "party": "Independent",
+          "votes": 159,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shibhu George",
+          "party": "Independent",
+          "votes": 101,
+          "votePct": 0.07,
           "alliance": "OTHER"
         }
       ],

@@ -1,0 +1,37 @@
+{
+  "seat": 136,
+  "constituencyName": "Aruvikkara",
+  "electorate": 193134,
+  "validVotesPolled": 145708,
+  "pollingPct": 75.44,
+  "nota": 900,
+  "margin": 5046,
+  "candidates": [
+    {
+      "name": "G. Stephan",
+      "party": "CPIM",
+      "votes": 66776,
+      "pct": 45.83
+    },
+    {
+      "name": "K. S. Sabarinathan",
+      "party": "INC",
+      "votes": 61730,
+      "pct": 42.37
+    },
+    {
+      "name": "C. Sivankutty",
+      "party": "BJP",
+      "votes": 15379,
+      "pct": 10.55
+    },
+    {
+      "name": "M. Krishnankutty",
+      "party": "BSP",
+      "votes": 923,
+      "pct": 0.63
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=136",
+  "fetchedAt": "2026-05-07T02:49:06.805Z"
+}

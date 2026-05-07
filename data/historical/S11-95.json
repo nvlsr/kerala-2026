@@ -144,12 +144,47 @@
           "votes": 11953,
           "votePct": 9.37,
           "alliance": "NDA"
+        },
+        {
+          "name": "Akhiljith Kallara",
+          "party": "Bahujan Samaj Party",
+          "votes": 726,
+          "votePct": 0.57,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 670,
+          "votePct": 0.53,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Bindu",
+          "party": "Bahujan Dravida Party",
+          "votes": 258,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Kuttan Kattachira",
+          "party": "Independent",
+          "votes": 163,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. K. Sabu",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 152,
+          "votePct": 0.12,
+          "alliance": "OTHER"
         }
       ],
       "margin": 29122,
       "marginPct": 22.83,
-      "turnout": 134132,
-      "turnoutPct": 82.01,
+      "turnout": 127576,
+      "turnoutPct": 77.57,
       "result": "CPI hold"
     }
   ]

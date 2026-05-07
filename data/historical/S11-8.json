@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "M. V. Govindan",
+          "name": "M. V. Govindan Master",
           "party": "Communist Party of India (Marxist)",
           "votes": 92870,
           "votePct": 52.14,
@@ -137,10 +137,31 @@
           "votes": 508,
           "votePct": 0.29,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Abdul Rasheed s/o Ismail",
+          "party": "Independent",
+          "votes": 365,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "C. Balakrishnan Yadav",
+          "party": "Independent",
+          "votes": 191,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Govindan Karayapath",
+          "party": "Independent",
+          "votes": 150,
+          "votePct": 0.08,
+          "alliance": "OTHER"
         }
       ],
       "margin": 22689,
-      "marginPct": 10.74,
+      "marginPct": 12.74,
       "turnout": 178112,
       "turnoutPct": 83.58,
       "result": "CPI(M) hold"

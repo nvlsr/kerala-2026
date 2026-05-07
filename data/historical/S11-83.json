@@ -84,7 +84,7 @@
         },
         {
           "name": "J. Jacob",
-          "party": "Kerala Congress (M)",
+          "party": "Independent (LDF)",
           "votes": 45510,
           "votePct": 33.32,
           "alliance": "LDF"
@@ -102,6 +102,13 @@
           "votes": 13897,
           "votePct": 10.18,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 695,
+          "votePct": 0.51,
+          "alliance": "NOTA"
         },
         {
           "name": "P. M. Shibu",

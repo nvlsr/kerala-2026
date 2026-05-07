@@ -1,0 +1,61 @@
+{
+  "seat": 76,
+  "constituencyName": "Aluva",
+  "electorate": 196483,
+  "validVotesPolled": 150428,
+  "pollingPct": 76.56,
+  "nota": 939,
+  "margin": 18886,
+  "candidates": [
+    {
+      "name": "Anwar Sadath",
+      "party": "INC",
+      "votes": 73703,
+      "pct": 49
+    },
+    {
+      "name": "Shelna Nishad",
+      "party": "LDF",
+      "votes": 54817,
+      "pct": 36.44
+    },
+    {
+      "name": "M. N. Gopi",
+      "party": "BJP",
+      "votes": 15893,
+      "pct": 10.57
+    },
+    {
+      "name": "V. A. Rasheed",
+      "party": "SDPI",
+      "votes": 2224,
+      "pct": 1.48
+    },
+    {
+      "name": "M. Shefrin",
+      "party": "WPI",
+      "votes": 1713,
+      "pct": 1.14
+    },
+    {
+      "name": "K. V. Sarala",
+      "party": "IND",
+      "votes": 569,
+      "pct": 0.38
+    },
+    {
+      "name": "Viswakala Thankappan",
+      "party": "MCPIU",
+      "votes": 342,
+      "pct": 0.23
+    },
+    {
+      "name": "A. G. Ajayan",
+      "party": "SUCIC",
+      "votes": 228,
+      "pct": 0.15
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=76",
+  "fetchedAt": "2026-05-07T02:49:06.343Z"
+}

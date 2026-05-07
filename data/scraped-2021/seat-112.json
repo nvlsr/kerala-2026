@@ -1,0 +1,67 @@
+{
+  "seat": 112,
+  "constituencyName": "Ranni",
+  "electorate": 193634,
+  "validVotesPolled": 127777,
+  "pollingPct": 65.99,
+  "nota": 431,
+  "margin": 1285,
+  "candidates": [
+    {
+      "name": "Pramod Narayan",
+      "party": "KCM",
+      "votes": 52669,
+      "pct": 41.22
+    },
+    {
+      "name": "Rinku Cheriyan",
+      "party": "INC",
+      "votes": 51384,
+      "pct": 40.21
+    },
+    {
+      "name": "K. Padmakumar",
+      "party": "BDJS",
+      "votes": 19587,
+      "pct": 15.33
+    },
+    {
+      "name": "N. Anumol",
+      "party": "BSP",
+      "votes": 1159,
+      "pct": 0.91
+    },
+    {
+      "name": "Ashraf Pezhumkattil",
+      "party": "SDPI",
+      "votes": 886,
+      "pct": 0.69
+    },
+    {
+      "name": "Benny Puthenparambil",
+      "party": "IND",
+      "votes": 842,
+      "pct": 0.66
+    },
+    {
+      "name": "Jomon Kochethu",
+      "party": "RJD",
+      "votes": 339,
+      "pct": 0.27
+    },
+    {
+      "name": "Aji B. Ranni",
+      "party": "IND",
+      "votes": 282,
+      "pct": 0.22
+    },
+    {
+      "name": "Manju K. Nair (Kottarathil)",
+      "party": "IND",
+      "votes": 198,
+      "pct": 0.15
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=112",
+  "fetchedAt": "2026-05-07T02:49:06.564Z"
+}

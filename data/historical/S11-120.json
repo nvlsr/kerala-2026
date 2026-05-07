@@ -125,7 +125,7 @@
           "alliance": "NDA"
         },
         {
-          "name": "P. Krishnammal",
+          "name": "P. Krisnambal",
           "party": "MCPI(U)",
           "votes": 2091,
           "votePct": 1.53,
@@ -137,12 +137,33 @@
           "votes": 1192,
           "votePct": 0.87,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 474,
+          "votePct": 0.35,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Baiju Pathanapuram",
+          "party": "Anna DHRM",
+          "votes": 411,
+          "votePct": 0.3,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Aji Kadasseri",
+          "party": "Independent",
+          "votes": 254,
+          "votePct": 0.19,
+          "alliance": "OTHER"
         }
       ],
       "margin": 14336,
-      "marginPct": 10.47,
-      "turnout": 137327,
-      "turnoutPct": 74.18,
+      "marginPct": 10.46,
+      "turnout": 137036,
+      "turnoutPct": 74.36,
       "result": "KC(B) hold"
     }
   ]

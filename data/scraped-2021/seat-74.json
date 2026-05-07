@@ -1,0 +1,55 @@
+{
+  "seat": 74,
+  "constituencyName": "Perumbavoor",
+  "electorate": 184514,
+  "validVotesPolled": 144171,
+  "pollingPct": 78.14,
+  "nota": 703,
+  "margin": 2899,
+  "candidates": [
+    {
+      "name": "Eldhose P. Kunnapillil",
+      "party": "INC",
+      "votes": 53484,
+      "pct": 37.1
+    },
+    {
+      "name": "Babu Joseph Perumbavoor",
+      "party": "KCM",
+      "votes": 50585,
+      "pct": 35.09
+    },
+    {
+      "name": "Chithra Sukumaran",
+      "party": "T2P",
+      "votes": 20536,
+      "pct": 14.24
+    },
+    {
+      "name": "T. P. Sindhumol",
+      "party": "BJP",
+      "votes": 15135,
+      "pct": 10.5
+    },
+    {
+      "name": "Ajmal K. Mujeeb",
+      "party": "SDPI",
+      "votes": 2494,
+      "pct": 1.73
+    },
+    {
+      "name": "K. M. Arshad",
+      "party": "WPI",
+      "votes": 1038,
+      "pct": 0.72
+    },
+    {
+      "name": "Babu Joseph Erumala",
+      "party": "IND",
+      "votes": 196,
+      "pct": 0.14
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=74",
+  "fetchedAt": "2026-05-07T02:49:06.343Z"
+}

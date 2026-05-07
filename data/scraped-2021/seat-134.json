@@ -1,0 +1,73 @@
+{
+  "seat": 134,
+  "constituencyName": "Thiruvananthapuram",
+  "electorate": 203319,
+  "validVotesPolled": 128236,
+  "pollingPct": 63.07,
+  "nota": 1054,
+  "margin": 7089,
+  "candidates": [
+    {
+      "name": "Antony Raju",
+      "party": "JKC",
+      "votes": 48748,
+      "pct": 38.01
+    },
+    {
+      "name": "V. S. Sivakumar",
+      "party": "INC",
+      "votes": 41659,
+      "pct": 32.49
+    },
+    {
+      "name": "G. Krishnakumar",
+      "party": "BJP",
+      "votes": 34996,
+      "pct": 27.29
+    },
+    {
+      "name": "Abhilash Vadakkan",
+      "party": "IND",
+      "votes": 436,
+      "pct": 0.34
+    },
+    {
+      "name": "A. Saboora",
+      "party": "SUCIC",
+      "votes": 366,
+      "pct": 0.29
+    },
+    {
+      "name": "Raju Antony",
+      "party": "IND",
+      "votes": 289,
+      "pct": 0.23
+    },
+    {
+      "name": "Chala Mohanan D.",
+      "party": "IND",
+      "votes": 245,
+      "pct": 0.19
+    },
+    {
+      "name": "Antony Raju s/o Raju",
+      "party": "IND",
+      "votes": 190,
+      "pct": 0.15
+    },
+    {
+      "name": "K. Sivakumar s/o Kumara Swamy",
+      "party": "IND",
+      "votes": 164,
+      "pct": 0.13
+    },
+    {
+      "name": "T. S. Krishnakuar s/o Sankarankutty",
+      "party": "IND",
+      "votes": 89,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=134",
+  "fetchedAt": "2026-05-07T02:49:06.805Z"
+}

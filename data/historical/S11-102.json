@@ -154,18 +154,18 @@
           "name": "Daleema",
           "party": "Communist Party of India (Marxist)",
           "votes": 75617,
-          "votePct": 45.98,
+          "votePct": 45.97,
           "alliance": "LDF"
         },
         {
-          "name": "Shanimol Usman",
+          "name": "Shanimol Osman",
           "party": "Indian National Congress",
           "votes": 68604,
           "votePct": 41.71,
           "alliance": "UDF"
         },
         {
-          "name": "T. Aniyappan",
+          "name": "Aniyappan",
           "party": "Bharath Dharma Jana Sena",
           "votes": 17479,
           "votePct": 10.63,
@@ -179,10 +179,45 @@
           "alliance": "NOTA"
         },
         {
-          "name": "Rugma Prasad",
+          "name": "Rugma Pradeep",
           "party": "Bahujan Samaj Party",
           "votes": 682,
           "votePct": 0.41,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. N. Ambika (Priyanka Anoop)",
+          "party": "DSJP",
+          "votes": 475,
+          "votePct": 0.29,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Pratapan",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 374,
+          "votePct": 0.23,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Vayalar Rajeevan",
+          "party": "Bahujan Dravida Party",
+          "votes": 164,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Pramod Perumpuzha",
+          "party": "Anna DHRM",
+          "votes": 161,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Chandran",
+          "party": "Independent",
+          "votes": 89,
+          "votePct": 0.05,
           "alliance": "OTHER"
         }
       ],

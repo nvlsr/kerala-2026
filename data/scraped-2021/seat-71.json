@@ -1,0 +1,43 @@
+{
+  "seat": 71,
+  "constituencyName": "Puthukkad",
+  "electorate": 201035,
+  "validVotesPolled": 156283,
+  "pollingPct": 77.74,
+  "nota": 1069,
+  "margin": 27353,
+  "candidates": [
+    {
+      "name": "K. K. Ramachandran",
+      "party": "CPIM",
+      "votes": 73365,
+      "pct": 46.94
+    },
+    {
+      "name": "Sunil Anthikad (P. V. Sunil Kumar)",
+      "party": "INC",
+      "votes": 46012,
+      "pct": 29.44
+    },
+    {
+      "name": "A. Nagesh",
+      "party": "BJP",
+      "votes": 34893,
+      "pct": 22.33
+    },
+    {
+      "name": "Rajesh Appat",
+      "party": "CPIMLR",
+      "votes": 489,
+      "pct": 0.31
+    },
+    {
+      "name": "P. C. Pushpakaran",
+      "party": "BSP",
+      "votes": 455,
+      "pct": 0.29
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=71",
+  "fetchedAt": "2026-05-07T02:49:06.291Z"
+}

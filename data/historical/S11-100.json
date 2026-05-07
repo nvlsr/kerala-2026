@@ -111,17 +111,31 @@
           "alliance": "UDF"
         },
         {
-          "name": "Alphons Kannanthanam",
+          "name": "Alphons Kannamthanam",
           "party": "Bharatiya Janata Party",
           "votes": 29157,
           "votePct": 21.17,
           "alliance": "NDA"
         },
         {
-          "name": "Ashik M. M.",
+          "name": "M. M. Ashik",
           "party": "Bahujan Samaj Party",
           "votes": 727,
           "votePct": 0.53,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 624,
+          "votePct": 0.45,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "K. P. Mayamol",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 300,
+          "votePct": 0.22,
           "alliance": "OTHER"
         }
       ],

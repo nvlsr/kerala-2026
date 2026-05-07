@@ -132,21 +132,21 @@
       "reason": null,
       "candidates": [
         {
-          "name": "P. A. Mohammed Riyas",
+          "name": "P. A. Muhammed Riyas",
           "party": "Communist Party of India (Marxist)",
           "votes": 82165,
           "votePct": 49.73,
           "alliance": "LDF"
         },
         {
-          "name": "PM Niyas",
+          "name": "P. M. Niyas",
           "party": "Indian National Congress",
           "votes": 53418,
           "votePct": 32.33,
           "alliance": "UDF"
         },
         {
-          "name": "KP Prakash Babu",
+          "name": "Prakash Babu",
           "party": "Bharatiya Janata Party",
           "votes": 26267,
           "votePct": 15.9,
@@ -165,12 +165,40 @@
           "votes": 621,
           "votePct": 0.38,
           "alliance": "NOTA"
+        },
+        {
+          "name": "K. K. Abdul Gafoor",
+          "party": "Bahujan Samaj Party",
+          "votes": 272,
+          "votePct": 0.16,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. P. Muhammed Riyas s/o Mamukoya",
+          "party": "Independent",
+          "votes": 165,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "E. M. Niyas s/o Saleem Babu",
+          "party": "Independent",
+          "votes": 162,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Niyaz s/o Koya Kunnil",
+          "party": "Independent",
+          "votes": 111,
+          "votePct": 0.07,
+          "alliance": "OTHER"
         }
       ],
       "margin": 28747,
       "marginPct": 17.4,
       "turnout": 165210,
-      "turnoutPct": 79.4,
+      "turnoutPct": 79.41,
       "result": "CPI(M) hold"
     }
   ]

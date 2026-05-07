@@ -118,17 +118,24 @@
           "alliance": "UDF"
         },
         {
-          "name": "Ganesan S.",
-          "party": "Independent (NDA)",
+          "name": "S. Ganesan",
+          "party": "Independent",
           "votes": 4717,
           "votePct": 4.07,
-          "alliance": "NDA"
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 807,
+          "votePct": 0.7,
+          "alliance": "NOTA"
         }
       ],
       "margin": 7848,
       "marginPct": 6.78,
       "turnout": 115774,
-      "turnoutPct": 68.34,
+      "turnoutPct": 68.38,
       "result": "CPI(M) hold"
     }
   ]

@@ -1,0 +1,61 @@
+{
+  "seat": 132,
+  "constituencyName": "Kazhakkoottam",
+  "electorate": 194365,
+  "validVotesPolled": 138325,
+  "pollingPct": 71.17,
+  "nota": 668,
+  "margin": 23497,
+  "candidates": [
+    {
+      "name": "Kadakampally Surendran",
+      "party": "CPIM",
+      "votes": 63690,
+      "pct": 46.04
+    },
+    {
+      "name": "Shobha Surendran",
+      "party": "BJP",
+      "votes": 40193,
+      "pct": 29.06
+    },
+    {
+      "name": "S. S. Lal",
+      "party": "INC",
+      "votes": 32995,
+      "pct": 23.85
+    },
+    {
+      "name": "Kochumani",
+      "party": "BSP",
+      "votes": 377,
+      "pct": 0.27
+    },
+    {
+      "name": "V. Sasikumaran Nair",
+      "party": "IND",
+      "votes": 129,
+      "pct": 0.09
+    },
+    {
+      "name": "Lalumon",
+      "party": "IND",
+      "votes": 112,
+      "pct": 0.08
+    },
+    {
+      "name": "Syamlal",
+      "party": "IND",
+      "votes": 85,
+      "pct": 0.06
+    },
+    {
+      "name": "A. G. Sen",
+      "party": "IND",
+      "votes": 76,
+      "pct": 0.05
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=132",
+  "fetchedAt": "2026-05-07T02:49:06.804Z"
+}

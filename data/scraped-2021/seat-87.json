@@ -1,0 +1,61 @@
+{
+  "seat": 87,
+  "constituencyName": "Kothamangalam",
+  "electorate": 172640,
+  "validVotesPolled": 136697,
+  "pollingPct": 79.18,
+  "nota": 414,
+  "margin": 6605,
+  "candidates": [
+    {
+      "name": "Antony John",
+      "party": "CPIM",
+      "votes": 64234,
+      "pct": 46.99
+    },
+    {
+      "name": "Shibu Thekkumpuram",
+      "party": "KC",
+      "votes": 57629,
+      "pct": 42.16
+    },
+    {
+      "name": "Joe Joseph",
+      "party": "T2P",
+      "votes": 7978,
+      "pct": 5.84
+    },
+    {
+      "name": "Shine K. Krishnan",
+      "party": "BDJS",
+      "votes": 4638,
+      "pct": 3.39
+    },
+    {
+      "name": "T. M. Moosa",
+      "party": "SDPI",
+      "votes": 1286,
+      "pct": 0.94
+    },
+    {
+      "name": "Shibu Thekkan",
+      "party": "IND",
+      "votes": 276,
+      "pct": 0.2
+    },
+    {
+      "name": "Anto Johny",
+      "party": "IND",
+      "votes": 136,
+      "pct": 0.1
+    },
+    {
+      "name": "Shibu",
+      "party": "IND",
+      "votes": 106,
+      "pct": 0.08
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=87",
+  "fetchedAt": "2026-05-07T02:49:06.399Z"
+}

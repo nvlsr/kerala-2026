@@ -1,0 +1,73 @@
+{
+  "seat": 44,
+  "constituencyName": "Tanur",
+  "electorate": 196087,
+  "validVotesPolled": 152570,
+  "pollingPct": 77.81,
+  "nota": 336,
+  "margin": 985,
+  "candidates": [
+    {
+      "name": "V. Abdurahiman",
+      "party": "NSC",
+      "votes": 70704,
+      "pct": 46.34
+    },
+    {
+      "name": "P. K. Firos",
+      "party": "IUML",
+      "votes": 69719,
+      "pct": 45.7
+    },
+    {
+      "name": "K. Narayanan Master",
+      "party": "BJP",
+      "votes": 10590,
+      "pct": 6.94
+    },
+    {
+      "name": "Feroz Kunhumarakar",
+      "party": "IND",
+      "votes": 247,
+      "pct": 0.16
+    },
+    {
+      "name": "V. Abdurahiman s/o Kathiyamu",
+      "party": "IND",
+      "votes": 224,
+      "pct": 0.15
+    },
+    {
+      "name": "Kunhimuhammed M. Bapputty",
+      "party": "IND",
+      "votes": 213,
+      "pct": 0.14
+    },
+    {
+      "name": "Mueenudheen",
+      "party": "BSP",
+      "votes": 183,
+      "pct": 0.12
+    },
+    {
+      "name": "V. Abdurahiman s/o Alavi Haji",
+      "party": "IND",
+      "votes": 179,
+      "pct": 0.12
+    },
+    {
+      "name": "V. Abdurahiman s/o Muhamed",
+      "party": "IND",
+      "votes": 102,
+      "pct": 0.07
+    },
+    {
+      "name": "Firoz s/o Avarankutty",
+      "party": "IND",
+      "votes": 73,
+      "pct": 0.05
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=44",
+  "fetchedAt": "2026-05-07T02:49:06.080Z"
+}

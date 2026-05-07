@@ -1,0 +1,49 @@
+{
+  "seat": 69,
+  "constituencyName": "Kaipamangalam",
+  "electorate": 173965,
+  "validVotesPolled": 136083,
+  "pollingPct": 78.22,
+  "nota": 466,
+  "margin": 22698,
+  "candidates": [
+    {
+      "name": "E. T. Taison Master",
+      "party": "CPI",
+      "votes": 73161,
+      "pct": 53.76
+    },
+    {
+      "name": "Shoba Subin",
+      "party": "INC",
+      "votes": 50463,
+      "pct": 37.08
+    },
+    {
+      "name": "C. D. Sreelal",
+      "party": "BDJS",
+      "votes": 9066,
+      "pct": 6.66
+    },
+    {
+      "name": "M. K. Aslam",
+      "party": "WPI",
+      "votes": 1671,
+      "pct": 1.23
+    },
+    {
+      "name": "M.K. Shameer",
+      "party": "SDPI",
+      "votes": 814,
+      "pct": 0.6
+    },
+    {
+      "name": "Thankamany Tharayil",
+      "party": "BSP",
+      "votes": 442,
+      "pct": 0.32
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=69",
+  "fetchedAt": "2026-05-07T02:49:06.291Z"
+}

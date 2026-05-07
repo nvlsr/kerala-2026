@@ -104,14 +104,14 @@
       "reason": null,
       "candidates": [
         {
-          "name": "Muhammed Muhsin",
+          "name": "Muhammed Muhassin",
           "party": "Communist Party of India",
           "votes": 75311,
           "votePct": 49.58,
           "alliance": "LDF"
         },
         {
-          "name": "Riyas Mukkoli",
+          "name": "Riyaz Mukkoli",
           "party": "Indian National Congress",
           "votes": 57337,
           "votePct": 37.74,
@@ -137,6 +137,20 @@
           "votes": 801,
           "votePct": 0.53,
           "alliance": "OTHER"
+        },
+        {
+          "name": "T. P. Narayanan",
+          "party": "Bahujan Samaj Party",
+          "votes": 517,
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 390,
+          "votePct": 0.26,
+          "alliance": "NOTA"
         }
       ],
       "margin": 17974,

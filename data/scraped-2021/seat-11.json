@@ -1,0 +1,61 @@
+{
+  "seat": 11,
+  "constituencyName": "Kannur",
+  "electorate": 173961,
+  "validVotesPolled": 134089,
+  "pollingPct": 77.08,
+  "nota": 504,
+  "margin": 1745,
+  "candidates": [
+    {
+      "name": "Ramachandran Kadannappally",
+      "party": "CS",
+      "votes": 60313,
+      "pct": 44.98
+    },
+    {
+      "name": "Satheesan Pacheni",
+      "party": "INC",
+      "votes": 58568,
+      "pct": 43.68
+    },
+    {
+      "name": "Archana Vandichal",
+      "party": "BJP",
+      "votes": 11581,
+      "pct": 8.64
+    },
+    {
+      "name": "B. Shamsudheen Moulavi",
+      "party": "SDPI",
+      "votes": 2069,
+      "pct": 1.54
+    },
+    {
+      "name": "T. K. Ganesh Babu",
+      "party": "NEWLP",
+      "votes": 716,
+      "pct": 0.53
+    },
+    {
+      "name": "P. Satheesan",
+      "party": "IND",
+      "votes": 147,
+      "pct": 0.11
+    },
+    {
+      "name": "P. V. Ramachandran",
+      "party": "IND",
+      "votes": 107,
+      "pct": 0.08
+    },
+    {
+      "name": "N. K. Surendran",
+      "party": "IND",
+      "votes": 84,
+      "pct": 0.06
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=11",
+  "fetchedAt": "2026-05-07T02:49:05.816Z"
+}

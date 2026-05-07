@@ -1,0 +1,43 @@
+{
+  "seat": 34,
+  "constituencyName": "Eranad",
+  "electorate": 179786,
+  "validVotesPolled": 143272,
+  "pollingPct": 79.69,
+  "nota": 636,
+  "margin": 22546,
+  "candidates": [
+    {
+      "name": "P. K. Basheer",
+      "party": "IUML",
+      "votes": 78076,
+      "pct": 54.49
+    },
+    {
+      "name": "K. T. Abdul Rahiman (CPI)",
+      "party": "LDF",
+      "votes": 55530,
+      "pct": 38.76
+    },
+    {
+      "name": "C. Dinesh",
+      "party": "BJP",
+      "votes": 6683,
+      "pct": 4.66
+    },
+    {
+      "name": "Velayudhan",
+      "party": "BSP",
+      "votes": 1247,
+      "pct": 0.87
+    },
+    {
+      "name": "Sebastian",
+      "party": "IND",
+      "votes": 1100,
+      "pct": 0.77
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=34",
+  "fetchedAt": "2026-05-07T02:49:06.026Z"
+}

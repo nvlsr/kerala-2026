@@ -98,7 +98,7 @@
         },
         {
           "name": "R. Sajilal",
-          "party": "Communist Party of India",
+          "party": "Communist Party of India (Marxist)",
           "votes": 59102,
           "votePct": 39.24,
           "alliance": "LDF"
@@ -109,12 +109,33 @@
           "votes": 17890,
           "votePct": 11.88,
           "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 536,
+          "votePct": 0.36,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "T. Madhu",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 204,
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Niyaz Bharati",
+          "party": "Independent",
+          "votes": 123,
+          "votePct": 0.08,
+          "alliance": "OTHER"
         }
       ],
       "margin": 13666,
       "marginPct": 9.07,
-      "turnout": 196024,
-      "turnoutPct": 74.2,
+      "turnout": 150623,
+      "turnoutPct": 76.84,
       "result": "INC hold"
     }
   ]

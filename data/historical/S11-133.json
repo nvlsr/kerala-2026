@@ -125,15 +125,36 @@
         {
           "name": "Veena S. Nair",
           "party": "Indian National Congress",
-          "votes": 35655,
+          "votes": 35455,
           "votePct": 25.76,
           "alliance": "UDF"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 854,
+          "votePct": 0.62,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "N. Murali",
+          "party": "Bahujan Samaj Party",
+          "votes": 419,
+          "votePct": 0.3,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "A. Shaiju",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 201,
+          "votePct": 0.15,
+          "alliance": "OTHER"
         }
       ],
       "margin": 21515,
       "marginPct": 15.63,
       "turnout": 137636,
-      "turnoutPct": null,
+      "turnoutPct": 66.13,
       "result": "CPI(M) hold"
     }
   ]

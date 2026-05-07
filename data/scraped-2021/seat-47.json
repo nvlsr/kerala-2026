@@ -1,0 +1,73 @@
+{
+  "seat": 47,
+  "constituencyName": "Thavanur",
+  "electorate": 199960,
+  "validVotesPolled": 151426,
+  "pollingPct": 75.73,
+  "nota": 478,
+  "margin": 2564,
+  "candidates": [
+    {
+      "name": "K. T. Jaleel",
+      "party": "LDF",
+      "votes": 70358,
+      "pct": 46.46
+    },
+    {
+      "name": "Firos Kunnamparambil",
+      "party": "INC",
+      "votes": 67794,
+      "pct": 44.77
+    },
+    {
+      "name": "Ramesh Kottayappurathu",
+      "party": "BDJS",
+      "votes": 9914,
+      "pct": 6.55
+    },
+    {
+      "name": "Hassan Chiyanoor",
+      "party": "SDPI",
+      "votes": 1747,
+      "pct": 1.15
+    },
+    {
+      "name": "Jaleel s/o Muhammad Kutty",
+      "party": "IND",
+      "votes": 308,
+      "pct": 0.2
+    },
+    {
+      "name": "Vellarickattu Muhammed Rafi",
+      "party": "IND",
+      "votes": 227,
+      "pct": 0.15
+    },
+    {
+      "name": "Firos Kunnathparambil",
+      "party": "IND",
+      "votes": 194,
+      "pct": 0.13
+    },
+    {
+      "name": "Feros Paruvingal",
+      "party": "IND",
+      "votes": 175,
+      "pct": 0.12
+    },
+    {
+      "name": "Muhammed Firos Nurukkuparambil",
+      "party": "IND",
+      "votes": 152,
+      "pct": 0.1
+    },
+    {
+      "name": "Firos Nellamkunnath",
+      "party": "IND",
+      "votes": 79,
+      "pct": 0.05
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=47",
+  "fetchedAt": "2026-05-07T02:49:06.081Z"
+}

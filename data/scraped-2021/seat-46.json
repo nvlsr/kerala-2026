@@ -1,0 +1,55 @@
+{
+  "seat": 46,
+  "constituencyName": "Kottakkal",
+  "electorate": 216480,
+  "validVotesPolled": 159933,
+  "pollingPct": 73.88,
+  "nota": 668,
+  "margin": 16588,
+  "candidates": [
+    {
+      "name": "Abid Hussain Thangal",
+      "party": "IUML",
+      "votes": 81700,
+      "pct": 51.08
+    },
+    {
+      "name": "N. A. Muhammad Kutty (Mammuty)",
+      "party": "NCP",
+      "votes": 65112,
+      "pct": 40.71
+    },
+    {
+      "name": "P. P. Ganesan",
+      "party": "BJP",
+      "votes": 10796,
+      "pct": 6.75
+    },
+    {
+      "name": "Muhammed Kutty",
+      "party": "IND",
+      "votes": 675,
+      "pct": 0.42
+    },
+    {
+      "name": "Bindhu Devarajan",
+      "party": "IND",
+      "votes": 481,
+      "pct": 0.3
+    },
+    {
+      "name": "Ayisha",
+      "party": "IND",
+      "votes": 328,
+      "pct": 0.21
+    },
+    {
+      "name": "Sainul Abid Thangal",
+      "party": "IND",
+      "votes": 173,
+      "pct": 0.11
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=46",
+  "fetchedAt": "2026-05-07T02:49:06.081Z"
+}

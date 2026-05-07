@@ -1,0 +1,49 @@
+{
+  "seat": 104,
+  "constituencyName": "Alappuzha",
+  "electorate": 201990,
+  "validVotesPolled": 158446,
+  "pollingPct": 78.44,
+  "nota": 1089,
+  "margin": 11644,
+  "candidates": [
+    {
+      "name": "P. P. Chitharanjan",
+      "party": "CPIM",
+      "votes": 73412,
+      "pct": 46.33
+    },
+    {
+      "name": "K. S. Manoj",
+      "party": "INC",
+      "votes": 61768,
+      "pct": 38.98
+    },
+    {
+      "name": "Sandeep Vachaspathi",
+      "party": "BJP",
+      "votes": 21650,
+      "pct": 13.66
+    },
+    {
+      "name": "K. C. Subeendran",
+      "party": "BSP",
+      "votes": 207,
+      "pct": 0.13
+    },
+    {
+      "name": "K. A. Vinod",
+      "party": "SUCIC",
+      "votes": 205,
+      "pct": 0.13
+    },
+    {
+      "name": "Shylendran",
+      "party": "BDP",
+      "votes": 115,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=104",
+  "fetchedAt": "2026-05-07T02:49:06.512Z"
+}

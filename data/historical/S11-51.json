@@ -111,14 +111,14 @@
           "alliance": "LDF"
         },
         {
-          "name": "T. H. Firoz Babu",
+          "name": "T. H. Feroz Babu",
           "party": "Indian National Congress",
           "votes": 37726,
           "votePct": 24.83,
           "alliance": "UDF"
         },
         {
-          "name": "Sandeep Varier",
+          "name": "Sandeep Varrier",
           "party": "Bharatiya Janata Party",
           "votes": 36973,
           "votePct": 24.34,
@@ -137,10 +137,17 @@
           "votes": 883,
           "votePct": 0.58,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 678,
+          "votePct": 0.45,
+          "alliance": "NOTA"
         }
       ],
       "margin": 36674,
-      "marginPct": 24.15,
+      "marginPct": 24.14,
       "turnout": 151911,
       "turnoutPct": 78.31,
       "result": "CPI(M) hold"

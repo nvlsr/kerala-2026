@@ -1,0 +1,49 @@
+{
+  "seat": 50,
+  "constituencyName": "Pattambi",
+  "electorate": 194858,
+  "validVotesPolled": 151909,
+  "pollingPct": 77.96,
+  "nota": 390,
+  "margin": 17974,
+  "candidates": [
+    {
+      "name": "Muhammed Muhassin",
+      "party": "CPI",
+      "votes": 75311,
+      "pct": 49.58
+    },
+    {
+      "name": "Riyaz Mukkoli",
+      "party": "INC",
+      "votes": 57337,
+      "pct": 37.74
+    },
+    {
+      "name": "K. M. Haridas",
+      "party": "BJP",
+      "votes": 14578,
+      "pct": 9.6
+    },
+    {
+      "name": "S. P. Ameer Ali",
+      "party": "SDPI",
+      "votes": 2975,
+      "pct": 1.96
+    },
+    {
+      "name": "S. Mujeeb Rahman",
+      "party": "WPI",
+      "votes": 801,
+      "pct": 0.53
+    },
+    {
+      "name": "T. P. Narayanan",
+      "party": "BSP",
+      "votes": 517,
+      "pct": 0.34
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=50",
+  "fetchedAt": "2026-05-07T02:49:06.134Z"
+}

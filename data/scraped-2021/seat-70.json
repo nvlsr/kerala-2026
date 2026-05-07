@@ -1,0 +1,55 @@
+{
+  "seat": 70,
+  "constituencyName": "Irinjalakkuda",
+  "electorate": 201886,
+  "validVotesPolled": 155179,
+  "pollingPct": 76.86,
+  "nota": 590,
+  "margin": 5949,
+  "candidates": [
+    {
+      "name": "R. Bindu",
+      "party": "CPIM",
+      "votes": 62493,
+      "pct": 40.27
+    },
+    {
+      "name": "Thomas Unniyadan",
+      "party": "KC",
+      "votes": 56544,
+      "pct": 36.44
+    },
+    {
+      "name": "Jacob Thomas",
+      "party": "BJP",
+      "votes": 34329,
+      "pct": 22.12
+    },
+    {
+      "name": "Vaxarin Pereppadan",
+      "party": "IND",
+      "votes": 536,
+      "pct": 0.35
+    },
+    {
+      "name": "Joshi Elavuthungal",
+      "party": "IND",
+      "votes": 305,
+      "pct": 0.2
+    },
+    {
+      "name": "V. Bindu w/o Ramachandran",
+      "party": "IND",
+      "votes": 220,
+      "pct": 0.14
+    },
+    {
+      "name": "M. Bindu w/o Sivadasan",
+      "party": "IND",
+      "votes": 162,
+      "pct": 0.1
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=70",
+  "fetchedAt": "2026-05-07T02:49:06.291Z"
+}

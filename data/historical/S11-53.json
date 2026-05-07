@@ -121,8 +121,15 @@
           "name": "P. E. Guruvayoorappan",
           "party": "Bahujan Samaj Party",
           "votes": 1351,
-          "votePct": 0.59,
+          "votePct": 0.98,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 953,
+          "votePct": 0.69,
+          "alliance": "NOTA"
         }
       ],
       "margin": 27219,

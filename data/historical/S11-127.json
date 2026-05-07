@@ -118,14 +118,14 @@
           "alliance": "UDF"
         },
         {
-          "name": "Aji S",
+          "name": "S. Aji",
           "party": "Bharath Dharma Jana Sena",
           "votes": 11214,
           "votePct": 8.29,
           "alliance": "NDA"
         },
         {
-          "name": "Anu M. C",
+          "name": "M. C. Anu",
           "party": "Bahujan Samaj Party",
           "votes": 1948,
           "votePct": 1.44,
@@ -137,12 +137,33 @@
           "votes": 815,
           "votePct": 0.6,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Prince",
+          "party": "Independent",
+          "votes": 658,
+          "votePct": 0.49,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. Anil Kumar",
+          "party": "Anna DHRM",
+          "votes": 460,
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shefeer",
+          "party": "Independent",
+          "votes": 323,
+          "votePct": 0.24,
+          "alliance": "OTHER"
         }
       ],
       "margin": 17821,
       "marginPct": 13.18,
       "turnout": 135229,
-      "turnoutPct": 72.06,
+      "turnoutPct": 72.07,
       "result": "CPI(M) hold"
     }
   ]

@@ -104,7 +104,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "P. C. George",
+          "name": "P. C. George Plathottam",
           "party": "KJ(S)",
           "votes": 41851,
           "votePct": 29.92,
@@ -123,10 +123,52 @@
           "votes": 2965,
           "votePct": 2.12,
           "alliance": "NDA"
+        },
+        {
+          "name": "Ancy George",
+          "party": "Bahujan Samaj Party",
+          "votes": 596,
+          "votePct": 0.43,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 345,
+          "votePct": 0.25,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "M. V. George",
+          "party": "Independent",
+          "votes": 278,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdu Samad",
+          "party": "KJP",
+          "votes": 259,
+          "votePct": 0.19,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Albin Mathew",
+          "party": "Independent",
+          "votes": 205,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Tomy Chemmarappallil",
+          "party": "Independent",
+          "votes": 94,
+          "votePct": 0.07,
+          "alliance": "OTHER"
         }
       ],
-      "margin": 16581,
-      "marginPct": 11.85,
+      "margin": 16817,
+      "marginPct": 12.02,
       "turnout": 139894,
       "turnoutPct": 73.98,
       "result": "KC(M) gain from Independent"

@@ -1,0 +1,49 @@
+{
+  "seat": 92,
+  "constituencyName": "Peerumade",
+  "electorate": 174354,
+  "validVotesPolled": 127291,
+  "pollingPct": 73.01,
+  "nota": 401,
+  "margin": 1835,
+  "candidates": [
+    {
+      "name": "Vazhoor Soman",
+      "party": "CPI",
+      "votes": 60141,
+      "pct": 47.25
+    },
+    {
+      "name": "Syriac Thomas",
+      "party": "INC",
+      "votes": 58306,
+      "pct": 45.81
+    },
+    {
+      "name": "Sreenagari Rajan",
+      "party": "BJP",
+      "votes": 7126,
+      "pct": 5.6
+    },
+    {
+      "name": "Biju Mattappally",
+      "party": "BSP",
+      "votes": 818,
+      "pct": 0.64
+    },
+    {
+      "name": "P. K. Gopakakrishnan",
+      "party": "IND",
+      "votes": 251,
+      "pct": 0.2
+    },
+    {
+      "name": "Soman",
+      "party": "IND",
+      "votes": 248,
+      "pct": 0.19
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=92",
+  "fetchedAt": "2026-05-07T02:49:06.456Z"
+}

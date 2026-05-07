@@ -1,0 +1,55 @@
+{
+  "seat": 81,
+  "constituencyName": "Thripunithura",
+  "electorate": 211581,
+  "validVotesPolled": 156307,
+  "pollingPct": 73.88,
+  "nota": 1099,
+  "margin": 992,
+  "candidates": [
+    {
+      "name": "K. Babu",
+      "party": "INC",
+      "votes": 65875,
+      "pct": 42.14
+    },
+    {
+      "name": "M. Swaraj",
+      "party": "CPIM",
+      "votes": 64883,
+      "pct": 41.51
+    },
+    {
+      "name": "K. S. Radhakrishnan",
+      "party": "BJP",
+      "votes": 23756,
+      "pct": 15.2
+    },
+    {
+      "name": "Arun Babu",
+      "party": "SS",
+      "votes": 232,
+      "pct": 0.15
+    },
+    {
+      "name": "Rajesh Pairoad",
+      "party": "IND",
+      "votes": 201,
+      "pct": 0.13
+    },
+    {
+      "name": "C. B. Asokan",
+      "party": "SUCIC",
+      "votes": 173,
+      "pct": 0.11
+    },
+    {
+      "name": "K. P. Ayappen",
+      "party": "IND",
+      "votes": 88,
+      "pct": 0.06
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=81",
+  "fetchedAt": "2026-05-07T02:49:06.396Z"
+}

@@ -1,0 +1,49 @@
+{
+  "seat": 73,
+  "constituencyName": "Kodungallur",
+  "electorate": 192933,
+  "validVotesPolled": 148902,
+  "pollingPct": 77.18,
+  "nota": 870,
+  "margin": 23893,
+  "candidates": [
+    {
+      "name": "V. R. Sunil Kumar",
+      "party": "CPI",
+      "votes": 71457,
+      "pct": 47.99
+    },
+    {
+      "name": "M. P. Jackson",
+      "party": "INC",
+      "votes": 47564,
+      "pct": 31.94
+    },
+    {
+      "name": "Santhosh Cherakkulam",
+      "party": "BJP",
+      "votes": 28204,
+      "pct": 18.94
+    },
+    {
+      "name": "Ramya Mohanan",
+      "party": "BSP",
+      "votes": 366,
+      "pct": 0.25
+    },
+    {
+      "name": "O. M. Sreeja",
+      "party": "SUCIC",
+      "votes": 270,
+      "pct": 0.18
+    },
+    {
+      "name": "Rajan Painat",
+      "party": "IND",
+      "votes": 171,
+      "pct": 0.11
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=73",
+  "fetchedAt": "2026-05-07T02:49:06.341Z"
+}

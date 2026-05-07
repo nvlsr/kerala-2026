@@ -1,0 +1,49 @@
+{
+  "seat": 68,
+  "constituencyName": "Nattika",
+  "electorate": 210622,
+  "validVotesPolled": 153554,
+  "pollingPct": 72.91,
+  "nota": 830,
+  "margin": 28431,
+  "candidates": [
+    {
+      "name": "C. C. Mukundhan",
+      "party": "CPI",
+      "votes": 72930,
+      "pct": 47.49
+    },
+    {
+      "name": "Sunil Laloor",
+      "party": "INC",
+      "votes": 44499,
+      "pct": 28.98
+    },
+    {
+      "name": "Lojanan Ambattu",
+      "party": "BJP",
+      "votes": 33716,
+      "pct": 21.96
+    },
+    {
+      "name": "C. S. Jitheshkumar",
+      "party": "IND",
+      "votes": 617,
+      "pct": 0.4
+    },
+    {
+      "name": "Sivaratnan Alathi",
+      "party": "IND",
+      "votes": 595,
+      "pct": 0.39
+    },
+    {
+      "name": "Vimal Mallika Vijayan",
+      "party": "BSP",
+      "votes": 367,
+      "pct": 0.24
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=68",
+  "fetchedAt": "2026-05-07T02:49:06.291Z"
+}

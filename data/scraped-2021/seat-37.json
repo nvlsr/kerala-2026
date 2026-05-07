@@ -1,0 +1,37 @@
+{
+  "seat": 37,
+  "constituencyName": "Manjeri",
+  "electorate": 206960,
+  "validVotesPolled": 156992,
+  "pollingPct": 75.86,
+  "nota": 1202,
+  "margin": 14573,
+  "candidates": [
+    {
+      "name": "U. A. Latheef",
+      "party": "IUML",
+      "votes": 78836,
+      "pct": 50.22
+    },
+    {
+      "name": "Naser Dibona",
+      "party": "CPI",
+      "votes": 64263,
+      "pct": 40.93
+    },
+    {
+      "name": "P. R. Rashmil Nath",
+      "party": "BJP",
+      "votes": 11350,
+      "pct": 7.23
+    },
+    {
+      "name": "Palathingal Aboobacker",
+      "party": "IND",
+      "votes": 1341,
+      "pct": 0.85
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=37",
+  "fetchedAt": "2026-05-07T02:49:06.026Z"
+}

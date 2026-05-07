@@ -214,7 +214,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "G. Steephen",
+          "name": "G. Stephan",
           "party": "Communist Party of India (Marxist)",
           "votes": 66776,
           "votePct": 45.83,
@@ -233,12 +233,26 @@
           "votes": 15379,
           "votePct": 10.55,
           "alliance": "NDA"
+        },
+        {
+          "name": "M. Krishnankutty",
+          "party": "Bahujan Samaj Party",
+          "votes": 923,
+          "votePct": 0.63,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 900,
+          "votePct": 0.62,
+          "alliance": "NOTA"
         }
       ],
       "margin": 5046,
-      "marginPct": 3.47,
-      "turnout": 146160,
-      "turnoutPct": 75.39,
+      "marginPct": 3.46,
+      "turnout": 145708,
+      "turnoutPct": 75.44,
       "result": "CPI(M) gain from INC"
     }
   ]

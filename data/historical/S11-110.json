@@ -151,7 +151,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "Saji Cherian",
+          "name": "Saji Cheriyan",
           "party": "Communist Party of India (Marxist)",
           "votes": 71502,
           "votePct": 48.58,
@@ -173,10 +173,17 @@
         },
         {
           "name": "Shaji T. George",
-          "party": "Independent",
+          "party": "Bahujan Samaj Party",
           "votes": 534,
           "votePct": 0.36,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 491,
+          "votePct": 0.33,
+          "alliance": "NOTA"
         },
         {
           "name": "T. K. Gopinathan",
@@ -184,12 +191,26 @@
           "votes": 316,
           "votePct": 0.21,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Melvin K. Mathew",
+          "party": "DSJP",
+          "votes": 198,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Poulose",
+          "party": "Independent",
+          "votes": 101,
+          "votePct": 0.07,
+          "alliance": "OTHER"
         }
       ],
       "margin": 32093,
-      "marginPct": 21.87,
+      "marginPct": 21.81,
       "turnout": 147171,
-      "turnoutPct": 70.59,
+      "turnoutPct": 71.15,
       "result": "CPI(M) hold"
     }
   ]

@@ -1,0 +1,55 @@
+{
+  "seat": 17,
+  "constituencyName": "Mananthavady",
+  "electorate": 195048,
+  "validVotesPolled": 152581,
+  "pollingPct": 78.23,
+  "nota": 797,
+  "margin": 9282,
+  "candidates": [
+    {
+      "name": "O. R. Kelu",
+      "party": "CPIM",
+      "votes": 72536,
+      "pct": 47.54
+    },
+    {
+      "name": "P. K. Jayalekshmi",
+      "party": "INC",
+      "votes": 63254,
+      "pct": 41.46
+    },
+    {
+      "name": "Palliyara Mukundan",
+      "party": "BJP",
+      "votes": 13142,
+      "pct": 8.61
+    },
+    {
+      "name": "Babitha Sreenu",
+      "party": "SDPI",
+      "votes": 1992,
+      "pct": 1.31
+    },
+    {
+      "name": "Lekshmi",
+      "party": "IND",
+      "votes": 382,
+      "pct": 0.25
+    },
+    {
+      "name": "K. K. Kelu s/o Kunkan",
+      "party": "IND",
+      "votes": 288,
+      "pct": 0.19
+    },
+    {
+      "name": "Vijaya Cheloor",
+      "party": "BSP",
+      "votes": 190,
+      "pct": 0.12
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=17",
+  "fetchedAt": "2026-05-07T02:49:05.911Z"
+}

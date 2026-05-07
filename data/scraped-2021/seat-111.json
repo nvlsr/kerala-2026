@@ -1,0 +1,61 @@
+{
+  "seat": 111,
+  "constituencyName": "Thiruvalla",
+  "electorate": 212288,
+  "validVotesPolled": 139544,
+  "pollingPct": 65.73,
+  "nota": 608,
+  "margin": 11421,
+  "candidates": [
+    {
+      "name": "Mathew T. Thomas",
+      "party": "JDS",
+      "votes": 62178,
+      "pct": 44.56
+    },
+    {
+      "name": "Kunju Koshy Paul",
+      "party": "KC",
+      "votes": 50757,
+      "pct": 36.37
+    },
+    {
+      "name": "Asokan Kulanada",
+      "party": "BJP",
+      "votes": 22674,
+      "pct": 16.25
+    },
+    {
+      "name": "Thomas Mathew (Roy)",
+      "party": "IND",
+      "votes": 1461,
+      "pct": 1.05
+    },
+    {
+      "name": "Rajendradas",
+      "party": "BSP",
+      "votes": 1074,
+      "pct": 0.77
+    },
+    {
+      "name": "Vinod Kumar",
+      "party": "IND",
+      "votes": 380,
+      "pct": 0.27
+    },
+    {
+      "name": "Surendran Kottoorathil",
+      "party": "IND",
+      "votes": 216,
+      "pct": 0.15
+    },
+    {
+      "name": "K. P. Yesudas",
+      "party": "IND",
+      "votes": 196,
+      "pct": 0.14
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=111",
+  "fetchedAt": "2026-05-07T02:49:06.564Z"
+}

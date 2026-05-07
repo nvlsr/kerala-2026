@@ -1,0 +1,61 @@
+{
+  "seat": 123,
+  "constituencyName": "Kundara",
+  "electorate": 205947,
+  "validVotesPolled": 156401,
+  "pollingPct": 75.94,
+  "nota": 710,
+  "margin": 4523,
+  "candidates": [
+    {
+      "name": "P. C. Vishnunath",
+      "party": "INC",
+      "votes": 76405,
+      "pct": 48.85
+    },
+    {
+      "name": "J. Mercykutty Amma",
+      "party": "CPIM",
+      "votes": 71882,
+      "pct": 45.96
+    },
+    {
+      "name": "Vanaja Vidyadharan",
+      "party": "BDJS",
+      "votes": 6100,
+      "pct": 3.9
+    },
+    {
+      "name": "R. Rahul",
+      "party": "SUCIC",
+      "votes": 457,
+      "pct": 0.29
+    },
+    {
+      "name": "Santhosh Adooran",
+      "party": "IND",
+      "votes": 260,
+      "pct": 0.17
+    },
+    {
+      "name": "Sibu Karamkodu",
+      "party": "ADHMPI",
+      "votes": 229,
+      "pct": 0.15
+    },
+    {
+      "name": "Shiju M. Varhese",
+      "party": "DSJP",
+      "votes": 186,
+      "pct": 0.12
+    },
+    {
+      "name": "Vinod Bahuleyan",
+      "party": "RJD",
+      "votes": 172,
+      "pct": 0.11
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=123",
+  "fetchedAt": "2026-05-07T02:49:06.666Z"
+}

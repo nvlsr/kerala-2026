@@ -132,10 +132,52 @@
           "alliance": "NOTA"
         },
         {
+          "name": "Usha Kottarakkara",
+          "party": "Anna DHRM",
+          "votes": 460,
+          "votePct": 0.31,
+          "alliance": "OTHER"
+        },
+        {
           "name": "Mathews K. Lukose",
           "party": "Independent",
           "votes": 136,
           "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Lal Viswan",
+          "party": "Independent",
+          "votes": 103,
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. Venugopal",
+          "party": "DSJP",
+          "votes": 96,
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Iyyamkodu Manikuttan",
+          "party": "Independent",
+          "votes": 90,
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "E. Kunjumon",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 87,
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. Jainendran",
+          "party": "SS",
+          "votes": 57,
+          "votePct": 0.04,
           "alliance": "OTHER"
         }
       ],

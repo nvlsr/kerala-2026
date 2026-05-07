@@ -118,31 +118,59 @@
           "alliance": "UDF"
         },
         {
-          "name": "M. T Ramesh",
+          "name": "M. T. Ramesh",
           "party": "Bharatiya Janata Party",
           "votes": 30952,
           "votePct": 22.5,
           "alliance": "NDA"
         },
         {
-          "name": "N. Abhijith",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 516,
+          "votePct": 0.38,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "N. Abhijit",
           "party": "Independent",
           "votes": 328,
-          "votePct": 0.34,
+          "votePct": 0.24,
           "alliance": "OTHER"
         },
         {
           "name": "K. Rahim",
           "party": "Socialist Unity Centre Of India (COMMUNIST)",
-          "votes": 152,
+          "votes": 156,
           "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "A. Ramesh",
+          "party": "Independent",
+          "votes": 104,
+          "votePct": 0.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. P. Ramesh",
+          "party": "Independent",
+          "votes": 96,
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Urandiyil Raveendran",
+          "party": "Independent",
+          "votes": 90,
+          "votePct": 0.07,
           "alliance": "OTHER"
         }
       ],
       "margin": 12928,
-      "marginPct": 9.39,
+      "marginPct": 9.4,
       "turnout": 137562,
-      "turnoutPct": 76.03,
+      "turnoutPct": 76.04,
       "result": "CPI(M) hold"
     }
   ]

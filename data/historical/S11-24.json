@@ -107,28 +107,35 @@
           "name": "T. P. Ramakrishnan",
           "party": "Communist Party of India (Marxist)",
           "votes": 86023,
-          "votePct": 52.7,
+          "votePct": 52.54,
           "alliance": "LDF"
         },
         {
-          "name": "C H Ebrahimkutty",
-          "party": "Independent",
+          "name": "C. H. Ibrahimkutty",
+          "party": "Independent (UDF)",
           "votes": 63431,
-          "votePct": 38.8,
+          "votePct": 38.74,
           "alliance": "UDF"
         },
         {
-          "name": "K V Sudheer",
+          "name": "K. V. Sudheer",
           "party": "Bharatiya Janata Party",
           "votes": 11165,
-          "votePct": 6.8,
+          "votePct": 6.82,
           "alliance": "NDA"
         },
         {
           "name": "Ismail Kammana",
           "party": "Social Democratic Party Of India",
           "votes": 1465,
-          "votePct": 0.9,
+          "votePct": 0.89,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. Ibrahimkutty s/o Pokker",
+          "party": "Independent",
+          "votes": 915,
+          "votePct": 0.56,
           "alliance": "OTHER"
         },
         {
@@ -137,12 +144,19 @@
           "votes": 458,
           "votePct": 0.28,
           "alliance": "NOTA"
+        },
+        {
+          "name": "V. K. Chandran",
+          "party": "Independent",
+          "votes": 280,
+          "votePct": 0.17,
+          "alliance": "OTHER"
         }
       ],
       "margin": 22592,
-      "marginPct": 13.9,
-      "turnout": 163279,
-      "turnoutPct": 86.63,
+      "marginPct": 13.8,
+      "turnout": 163737,
+      "turnoutPct": 82.6,
       "result": "CPI(M) hold"
     }
   ]

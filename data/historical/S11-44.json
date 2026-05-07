@@ -107,7 +107,7 @@
           "name": "P. K. Firos",
           "party": "Indian Union Muslim League",
           "votes": 69719,
-          "votePct": 45.71,
+          "votePct": 45.7,
           "alliance": "UDF"
         },
         {
@@ -118,17 +118,66 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 336,
+          "votePct": 0.22,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Feroz Kunhumarakar",
+          "party": "Independent",
+          "votes": 247,
+          "votePct": 0.16,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. Abdurahiman s/o Kathiyamu",
+          "party": "Independent",
+          "votes": 224,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Kunhimuhammed M. Bapputty",
+          "party": "Independent",
+          "votes": 213,
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        },
+        {
           "name": "Mueenudheen",
           "party": "Bahujan Samaj Party",
           "votes": 183,
           "votePct": 0.12,
           "alliance": "OTHER"
+        },
+        {
+          "name": "V. Abdurahiman s/o Alavi Haji",
+          "party": "Independent",
+          "votes": 179,
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. Abdurahiman s/o Muhamed",
+          "party": "Independent",
+          "votes": 102,
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Firoz s/o Avarankutty",
+          "party": "Independent",
+          "votes": 73,
+          "votePct": 0.05,
+          "alliance": "OTHER"
         }
       ],
       "margin": 985,
-      "marginPct": 4.93,
+      "marginPct": 0.65,
       "turnout": 152570,
-      "turnoutPct": 78.36,
+      "turnoutPct": 77.81,
       "result": "NSC hold"
     }
   ]

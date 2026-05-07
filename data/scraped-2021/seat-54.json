@@ -1,0 +1,79 @@
+{
+  "seat": 54,
+  "constituencyName": "Mannarkad",
+  "electorate": 198223,
+  "validVotesPolled": 152102,
+  "pollingPct": 76.73,
+  "nota": 760,
+  "margin": 5870,
+  "candidates": [
+    {
+      "name": "N. Shamsudheen",
+      "party": "IUML",
+      "votes": 71657,
+      "pct": 47.11
+    },
+    {
+      "name": "K. P. Suresh Raj",
+      "party": "CPI",
+      "votes": 65787,
+      "pct": 43.25
+    },
+    {
+      "name": "Agali Naseema P.",
+      "party": "AIADMK",
+      "votes": 10376,
+      "pct": 6.82
+    },
+    {
+      "name": "James Mash",
+      "party": "IND",
+      "votes": 988,
+      "pct": 0.65
+    },
+    {
+      "name": "Sivadasan",
+      "party": "BSP",
+      "votes": 827,
+      "pct": 0.54
+    },
+    {
+      "name": "Shamsudden s/o Hamza",
+      "party": "IND",
+      "votes": 511,
+      "pct": 0.34
+    },
+    {
+      "name": "Suresh",
+      "party": "IND",
+      "votes": 440,
+      "pct": 0.29
+    },
+    {
+      "name": "Suresh Babu",
+      "party": "IND",
+      "votes": 304,
+      "pct": 0.2
+    },
+    {
+      "name": "Shamsudeen s/o Yusaf",
+      "party": "IND",
+      "votes": 192,
+      "pct": 0.13
+    },
+    {
+      "name": "Ajikumar",
+      "party": "IND",
+      "votes": 159,
+      "pct": 0.1
+    },
+    {
+      "name": "Shibhu George",
+      "party": "IND",
+      "votes": 101,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=54",
+  "fetchedAt": "2026-05-07T02:49:06.135Z"
+}

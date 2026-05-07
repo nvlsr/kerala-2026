@@ -1,0 +1,43 @@
+{
+  "seat": 67,
+  "constituencyName": "Thrissur",
+  "electorate": 182727,
+  "validVotesPolled": 129237,
+  "pollingPct": 70.73,
+  "nota": 723,
+  "margin": 946,
+  "candidates": [
+    {
+      "name": "P. Balachandran",
+      "party": "CPI",
+      "votes": 44263,
+      "pct": 34.25
+    },
+    {
+      "name": "Padmaja Venugopal",
+      "party": "INC",
+      "votes": 43317,
+      "pct": 33.52
+    },
+    {
+      "name": "Suresh Gopi",
+      "party": "BJP",
+      "votes": 40457,
+      "pct": 31.3
+    },
+    {
+      "name": "Ajith Menon Ponnemkattil",
+      "party": "IND",
+      "votes": 252,
+      "pct": 0.19
+    },
+    {
+      "name": "Thrissur Mukundan",
+      "party": "IGP",
+      "votes": 225,
+      "pct": 0.17
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=67",
+  "fetchedAt": "2026-05-07T02:49:06.289Z"
+}

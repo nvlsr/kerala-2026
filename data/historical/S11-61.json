@@ -123,6 +123,13 @@
           "votes": 1120,
           "votePct": 0.73,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 720,
+          "votePct": 0.47,
+          "alliance": "NOTA"
         }
       ],
       "margin": 39400,

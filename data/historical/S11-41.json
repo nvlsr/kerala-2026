@@ -165,7 +165,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Sabah Kundupuzhakkal",
+          "name": "Sahab Kundupuzhackal",
           "party": "Independent",
           "votes": 11255,
           "votePct": 8.56,
@@ -179,10 +179,38 @@
           "alliance": "NDA"
         },
         {
-          "name": "E. K. Kunhahammed Kutty Master",
+          "name": "E. K. Kunhammedkutty Master",
           "party": "Welfare Party of India",
           "votes": 2051,
           "votePct": 1.56,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Keeran",
+          "party": "Bahujan Samaj Party",
+          "votes": 1060,
+          "votePct": 0.81,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 787,
+          "votePct": 0.6,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Anannyahkumari Alex",
+          "party": "DSJP",
+          "votes": 135,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Adil Abdurahiman Thangal",
+          "party": "Independent",
+          "votes": 129,
+          "votePct": 0.1,
           "alliance": "OTHER"
         }
       ],

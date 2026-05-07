@@ -181,6 +181,13 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 554,
+          "votePct": 0.34,
+          "alliance": "NOTA"
+        },
+        {
           "name": "C. V. Ibrahim s/o Muhammed",
           "party": "Independent",
           "votes": 233,

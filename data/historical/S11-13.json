@@ -121,7 +121,7 @@
           "name": "NOTA",
           "party": "None of the Above",
           "votes": 2313,
-          "votePct": 1.73,
+          "votePct": 1.74,
           "alliance": "NOTA"
         },
         {
@@ -137,10 +137,24 @@
           "votes": 1163,
           "votePct": 0.87,
           "alliance": "OTHER"
+        },
+        {
+          "name": "Aravindakshan s/o Kausu",
+          "party": "Independent",
+          "votes": 533,
+          "votePct": 0.4,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Haridasan",
+          "party": "Independent",
+          "votes": 198,
+          "votePct": 0.15,
+          "alliance": "OTHER"
         }
       ],
       "margin": 36801,
-      "marginPct": 27.68,
+      "marginPct": 27.67,
       "turnout": 132989,
       "turnoutPct": 75.93,
       "result": "CPI(M) hold"

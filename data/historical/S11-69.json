@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "E. T. Taison",
+          "name": "E. T. Taison Master",
           "party": "Communist Party of India",
           "votes": 73161,
           "votePct": 53.76,
@@ -132,16 +132,30 @@
           "alliance": "OTHER"
         },
         {
-          "name": "M. K. Shameer",
+          "name": "M.K. Shameer",
           "party": "Social Democratic Party Of India",
           "votes": 814,
           "votePct": 0.6,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 466,
+          "votePct": 0.34,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Thankamany Tharayil",
+          "party": "Bahujan Samaj Party",
+          "votes": 442,
+          "votePct": 0.32,
           "alliance": "OTHER"
         }
       ],
       "margin": 22698,
       "marginPct": 16.68,
-      "turnout": 135779,
+      "turnout": 136083,
       "turnoutPct": 78.22,
       "result": "CPI hold"
     }

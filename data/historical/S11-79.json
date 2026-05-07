@@ -97,7 +97,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "K. N. Unnikrishnan",
+          "name": "K. M. Unnikrishnan",
           "party": "Communist Party of India (Marxist)",
           "votes": 53858,
           "votePct": 41.24,
@@ -123,6 +123,20 @@
           "votes": 13540,
           "votePct": 10.37,
           "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 525,
+          "votePct": 0.4,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "M. K. Mukundan",
+          "party": "Independent",
+          "votes": 309,
+          "votePct": 0.24,
+          "alliance": "OTHER"
         }
       ],
       "margin": 8201,

@@ -111,7 +111,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Praveenkumar",
+          "name": "K. Praveen Kumar",
           "party": "Indian National Congress",
           "votes": 79258,
           "votePct": 45.16,
@@ -132,17 +132,31 @@
           "alliance": "OTHER"
         },
         {
-          "name": "T. Praveen Kumar",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 316,
+          "votePct": 0.18,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "T. Praveen Kumar s/o Kannan",
           "party": "Independent",
           "votes": 258,
           "votePct": 0.15,
           "alliance": "OTHER"
+        },
+        {
+          "name": "K. K. Sreedharan",
+          "party": "NLP",
+          "votes": 165,
+          "votePct": 0.09,
+          "alliance": "OTHER"
         }
       ],
       "margin": 4035,
-      "marginPct": 2.12,
-      "turnout": 162950,
-      "turnoutPct": 80.5,
+      "marginPct": 2.3,
+      "turnout": 175503,
+      "turnoutPct": 81.2,
       "result": "CPI hold"
     }
   ]

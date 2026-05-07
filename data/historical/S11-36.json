@@ -104,14 +104,14 @@
       "reason": null,
       "candidates": [
         {
-          "name": "A. P. Anil Kumar",
+          "name": "A. P. Anilkumar",
           "party": "Indian National Congress",
           "votes": 87415,
           "votePct": 51.44,
           "alliance": "UDF"
         },
         {
-          "name": "P. Midhuna",
+          "name": "P. Mithuna",
           "party": "Communist Party of India (Marxist)",
           "votes": 71852,
           "votePct": 42.28,
@@ -125,11 +125,18 @@
           "alliance": "NDA"
         },
         {
-          "name": "Krishnan. C",
+          "name": "C. Krishnan",
           "party": "Welfare Party of India",
           "votes": 2943,
           "votePct": 1.73,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 664,
+          "votePct": 0.39,
+          "alliance": "NOTA"
         }
       ],
       "margin": 15563,

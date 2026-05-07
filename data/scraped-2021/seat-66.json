@@ -1,0 +1,49 @@
+{
+  "seat": 66,
+  "constituencyName": "Ollur",
+  "electorate": 207881,
+  "validVotesPolled": 156171,
+  "pollingPct": 75.13,
+  "nota": 827,
+  "margin": 21506,
+  "candidates": [
+    {
+      "name": "K. Rajan",
+      "party": "CPI",
+      "votes": 76657,
+      "pct": 49.09
+    },
+    {
+      "name": "Jose Valloor",
+      "party": "INC",
+      "votes": 55151,
+      "pct": 35.31
+    },
+    {
+      "name": "B. Gopalakrishnan",
+      "party": "BJP",
+      "votes": 22295,
+      "pct": 14.28
+    },
+    {
+      "name": "K. K. George Kakkassery",
+      "party": "IND",
+      "votes": 628,
+      "pct": 0.4
+    },
+    {
+      "name": "Benny Kodiyattil",
+      "party": "IND",
+      "votes": 331,
+      "pct": 0.21
+    },
+    {
+      "name": "P. K. Subramanian",
+      "party": "BSP",
+      "votes": 282,
+      "pct": 0.18
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=66",
+  "fetchedAt": "2026-05-07T02:49:06.290Z"
+}

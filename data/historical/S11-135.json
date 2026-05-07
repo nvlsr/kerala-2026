@@ -95,11 +95,74 @@
           "votes": 36524,
           "votePct": 25.01,
           "alliance": "UDF"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 756,
+          "votePct": 0.52,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "D. Vijayan",
+          "party": "Bahujan Samaj Party",
+          "votes": 356,
+          "votePct": 0.24,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Jain Wilson",
+          "party": "Independent",
+          "votes": 165,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Arampally Vijayaraj",
+          "party": "Independent",
+          "votes": 138,
+          "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "L. Satyan Nadar",
+          "party": "Independent",
+          "votes": 100,
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Balachandran Valkannadi",
+          "party": "Independent",
+          "votes": 85,
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "B. Shine Raj",
+          "party": "Independent",
+          "votes": 70,
+          "votePct": 0.05,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Rajasekharan",
+          "party": "Independent",
+          "votes": 50,
+          "votePct": 0.03,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Muraleedharan Nair",
+          "party": "Independent",
+          "votes": 48,
+          "votePct": 0.03,
+          "alliance": "OTHER"
         }
       ],
       "margin": 3949,
-      "marginPct": 2.71,
-      "turnout": 146354,
+      "marginPct": 2.7,
+      "turnout": 146017,
       "turnoutPct": 71.49,
       "result": "CPI(M) gain from BJP"
     }

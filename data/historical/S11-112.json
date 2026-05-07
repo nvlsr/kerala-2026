@@ -111,18 +111,39 @@
           "alliance": "LDF"
         },
         {
-          "name": "Rinku Cherian",
+          "name": "Rinku Cheriyan",
           "party": "Indian National Congress",
           "votes": 51384,
           "votePct": 40.21,
           "alliance": "UDF"
         },
         {
-          "name": "Padmakumar K",
+          "name": "K. Padmakumar",
           "party": "Bharath Dharma Jana Sena",
           "votes": 19587,
           "votePct": 15.33,
           "alliance": "NDA"
+        },
+        {
+          "name": "N. Anumol",
+          "party": "Bahujan Samaj Party",
+          "votes": 1159,
+          "votePct": 0.91,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Ashraf Pezhumkattil",
+          "party": "Social Democratic Party Of India",
+          "votes": 886,
+          "votePct": 0.69,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Benny Puthenparambil",
+          "party": "Independent",
+          "votes": 842,
+          "votePct": 0.66,
+          "alliance": "OTHER"
         },
         {
           "name": "NOTA",
@@ -130,12 +151,33 @@
           "votes": 431,
           "votePct": 0.34,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Jomon Kochethu",
+          "party": "Rashtriya Janata Dal",
+          "votes": 339,
+          "votePct": 0.27,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Aji B. Ranni",
+          "party": "Independent",
+          "votes": 282,
+          "votePct": 0.22,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Manju K. Nair (Kottarathil)",
+          "party": "Independent",
+          "votes": 198,
+          "votePct": 0.15,
+          "alliance": "OTHER"
         }
       ],
       "margin": 1285,
       "marginPct": 1.01,
       "turnout": 127777,
-      "turnoutPct": 65.97,
+      "turnoutPct": 65.99,
       "result": "KC(M) hold"
     }
   ]

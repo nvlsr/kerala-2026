@@ -1,0 +1,67 @@
+{
+  "seat": 72,
+  "constituencyName": "Chalakkudy",
+  "electorate": 192767,
+  "validVotesPolled": 143154,
+  "pollingPct": 74.26,
+  "nota": 1000,
+  "margin": 1057,
+  "candidates": [
+    {
+      "name": "Saneeshkumar Joseph",
+      "party": "INC",
+      "votes": 61888,
+      "pct": 43.23
+    },
+    {
+      "name": "Dennies K. Antony",
+      "party": "KCM",
+      "votes": 60831,
+      "pct": 42.49
+    },
+    {
+      "name": "K. A. Unnikrishnan",
+      "party": "BDJS",
+      "votes": 17301,
+      "pct": 12.09
+    },
+    {
+      "name": "T. N. Rajan",
+      "party": "IND",
+      "votes": 713,
+      "pct": 0.5
+    },
+    {
+      "name": "M. S. Asokan",
+      "party": "BSP",
+      "votes": 617,
+      "pct": 0.43
+    },
+    {
+      "name": "P. K. Dharmajan",
+      "party": "SUCIC",
+      "votes": 253,
+      "pct": 0.18
+    },
+    {
+      "name": "Rosilin",
+      "party": "IND",
+      "votes": 248,
+      "pct": 0.17
+    },
+    {
+      "name": "Joshy Vattoli",
+      "party": "IND",
+      "votes": 160,
+      "pct": 0.11
+    },
+    {
+      "name": "Cheriya",
+      "party": "IND",
+      "votes": 143,
+      "pct": 0.1
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=72",
+  "fetchedAt": "2026-05-07T02:49:06.291Z"
+}

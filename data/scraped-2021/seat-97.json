@@ -1,0 +1,49 @@
+{
+  "seat": 97,
+  "constituencyName": "Kottayam",
+  "electorate": 165261,
+  "validVotesPolled": 121738,
+  "pollingPct": 73.66,
+  "nota": 473,
+  "margin": 18743,
+  "candidates": [
+    {
+      "name": "Thiruvanchoor Radhakrishnan",
+      "party": "INC",
+      "votes": 65401,
+      "pct": 53.72
+    },
+    {
+      "name": "K. Anilkumar",
+      "party": "CPIM",
+      "votes": 46658,
+      "pct": 38.33
+    },
+    {
+      "name": "Minerva Mohan",
+      "party": "BJP",
+      "votes": 8611,
+      "pct": 7.07
+    },
+    {
+      "name": "Sreekumar Chakkala",
+      "party": "BSP",
+      "votes": 374,
+      "pct": 0.31
+    },
+    {
+      "name": "M. K. Shahazad",
+      "party": "SUCIC",
+      "votes": 144,
+      "pct": 0.12
+    },
+    {
+      "name": "Arun Mangat",
+      "party": "ABHMS",
+      "votes": 77,
+      "pct": 0.06
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=97",
+  "fetchedAt": "2026-05-07T02:49:06.511Z"
+}

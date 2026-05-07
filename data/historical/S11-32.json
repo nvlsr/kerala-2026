@@ -97,7 +97,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "C. P Cheriya Muhammed",
+          "name": "C. P. Cheriya Muhammed",
           "party": "Indian Union Muslim League",
           "votes": 63224,
           "votePct": 44.21,
@@ -111,10 +111,45 @@
           "alliance": "NDA"
         },
         {
-          "name": "Sunny V Joseph",
+          "name": "Sunny V. Joseph",
           "party": "Independent",
           "votes": 1847,
           "votePct": 1.29,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. P. Cheriya Muhammed s/o Kunhoyi",
+          "party": "Independent",
+          "votes": 1121,
+          "votePct": 0.78,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Linto Joseph s/o Sali",
+          "party": "Independent",
+          "votes": 579,
+          "votePct": 0.4,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 419,
+          "votePct": 0.29,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "T. D. Lenilal",
+          "party": "Independent",
+          "votes": 80,
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "George Mathew Thottathimyalil",
+          "party": "Independent",
+          "votes": 78,
+          "votePct": 0.05,
           "alliance": "OTHER"
         }
       ],

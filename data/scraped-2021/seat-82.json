@@ -1,0 +1,67 @@
+{
+  "seat": 82,
+  "constituencyName": "Eranakulam",
+  "electorate": 164534,
+  "validVotesPolled": 110098,
+  "pollingPct": 66.92,
+  "nota": 712,
+  "margin": 10970,
+  "candidates": [
+    {
+      "name": "T. J. Vinod",
+      "party": "INC",
+      "votes": 45930,
+      "pct": 41.72
+    },
+    {
+      "name": "Shaji George Pranatha",
+      "party": "LDF",
+      "votes": 34960,
+      "pct": 31.75
+    },
+    {
+      "name": "Padmaja S. Menon",
+      "party": "BJP",
+      "votes": 16043,
+      "pct": 14.57
+    },
+    {
+      "name": "Leslie Pallath",
+      "party": "T2P",
+      "votes": 10634,
+      "pct": 9.66
+    },
+    {
+      "name": "Sujith C. Sukumaran",
+      "party": "IND",
+      "votes": 1042,
+      "pct": 0.95
+    },
+    {
+      "name": "Shaji George Plakkil",
+      "party": "IND",
+      "votes": 305,
+      "pct": 0.28
+    },
+    {
+      "name": "K. S. Anilkumar",
+      "party": "IND",
+      "votes": 225,
+      "pct": 0.2
+    },
+    {
+      "name": "Asokan",
+      "party": "IND",
+      "votes": 176,
+      "pct": 0.16
+    },
+    {
+      "name": "Siciliamma Teacher",
+      "party": "IND",
+      "votes": 71,
+      "pct": 0.06
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=82",
+  "fetchedAt": "2026-05-07T02:49:06.397Z"
+}

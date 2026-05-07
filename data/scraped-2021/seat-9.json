@@ -1,0 +1,49 @@
+{
+  "seat": 9,
+  "constituencyName": "Irikkur",
+  "electorate": 194966,
+  "validVotesPolled": 152516,
+  "pollingPct": 78.23,
+  "nota": 459,
+  "margin": 10010,
+  "candidates": [
+    {
+      "name": "Sajeev Joseph",
+      "party": "INC",
+      "votes": 76764,
+      "pct": 50.33
+    },
+    {
+      "name": "Saji Kuttiyanimattom",
+      "party": "KCM",
+      "votes": 66754,
+      "pct": 43.77
+    },
+    {
+      "name": "Aniamma Teacher",
+      "party": "BJP",
+      "votes": 7825,
+      "pct": 5.13
+    },
+    {
+      "name": "Chacko Karimpil",
+      "party": "IND",
+      "votes": 311,
+      "pct": 0.2
+    },
+    {
+      "name": "Sajan Kuttiyanickal",
+      "party": "IND",
+      "votes": 275,
+      "pct": 0.18
+    },
+    {
+      "name": "Joy John",
+      "party": "IND",
+      "votes": 128,
+      "pct": 0.08
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=9",
+  "fetchedAt": "2026-05-07T02:49:05.809Z"
+}

@@ -1,0 +1,55 @@
+{
+  "seat": 96,
+  "constituencyName": "Ettumanoor",
+  "electorate": 168034,
+  "validVotesPolled": 126167,
+  "pollingPct": 75.08,
+  "nota": 780,
+  "margin": 14303,
+  "candidates": [
+    {
+      "name": "V. N. Vasavan",
+      "party": "CPIM",
+      "votes": 58289,
+      "pct": 46.2
+    },
+    {
+      "name": "Prince Lukose",
+      "party": "KC",
+      "votes": 43986,
+      "pct": 34.86
+    },
+    {
+      "name": "T. N. Harikumar",
+      "party": "BJP",
+      "votes": 13746,
+      "pct": 10.9
+    },
+    {
+      "name": "Lathika Subhash",
+      "party": "IND",
+      "votes": 7624,
+      "pct": 6.04
+    },
+    {
+      "name": "Jijith K. Roy",
+      "party": "BSP",
+      "votes": 1165,
+      "pct": 0.92
+    },
+    {
+      "name": "Charley Thomas Panikharidam",
+      "party": "IND",
+      "votes": 330,
+      "pct": 0.26
+    },
+    {
+      "name": "A. G. Ajayakumar",
+      "party": "SUCIC",
+      "votes": 247,
+      "pct": 0.2
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=96",
+  "fetchedAt": "2026-05-07T02:49:06.456Z"
+}

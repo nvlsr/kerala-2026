@@ -111,7 +111,7 @@
           "alliance": "UDF"
         },
         {
-          "name": "Manayath Chandran",
+          "name": "Manayathu Chandran",
           "party": "Loktantrik Janata Dal",
           "votes": 57602,
           "votePct": 42.15,
@@ -132,10 +132,45 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 353,
+          "votePct": 0.26,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Gangadharan Madappally",
           "party": "Independent",
           "votes": 186,
           "votePct": 0.14,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. T. K. Rama Padannayil",
+          "party": "Independent",
+          "votes": 137,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Rama Kuniyil",
+          "party": "Independent",
+          "votes": 126,
+          "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Velluparambathu Chandran",
+          "party": "Independent",
+          "votes": 63,
+          "votePct": 0.05,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Rama Cheriyakaiyil",
+          "party": "Independent",
+          "votes": 52,
+          "votePct": 0.04,
           "alliance": "OTHER"
         }
       ],

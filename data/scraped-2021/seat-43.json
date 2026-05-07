@@ -1,0 +1,61 @@
+{
+  "seat": 43,
+  "constituencyName": "Tirurangadi",
+  "electorate": 197080,
+  "validVotesPolled": 147771,
+  "pollingPct": 74.98,
+  "nota": 721,
+  "margin": 9578,
+  "candidates": [
+    {
+      "name": "K. P. A. Majeed",
+      "party": "IUML",
+      "votes": 73499,
+      "pct": 49.74
+    },
+    {
+      "name": "Niyas Pulickalakath",
+      "party": "LDF",
+      "votes": 63921,
+      "pct": 43.26
+    },
+    {
+      "name": "Kalliyath Sathar Haji",
+      "party": "BJP",
+      "votes": 8314,
+      "pct": 5.63
+    },
+    {
+      "name": "Niyas",
+      "party": "IND",
+      "votes": 487,
+      "pct": 0.33
+    },
+    {
+      "name": "Abdul Majeed Panackal",
+      "party": "BSP",
+      "votes": 303,
+      "pct": 0.21
+    },
+    {
+      "name": "Moosa Jarathingal",
+      "party": "SI",
+      "votes": 274,
+      "pct": 0.19
+    },
+    {
+      "name": "Chandran",
+      "party": "IND",
+      "votes": 132,
+      "pct": 0.09
+    },
+    {
+      "name": "Abdulrahim Naha",
+      "party": "IND",
+      "votes": 120,
+      "pct": 0.08
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=43",
+  "fetchedAt": "2026-05-07T02:49:06.080Z"
+}

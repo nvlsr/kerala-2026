@@ -111,7 +111,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Adv Brijesh Kumar",
+          "name": "Brijesh Kumar",
           "party": "Indian National Congress",
           "votes": 43859,
           "votePct": 30.13,
@@ -125,14 +125,21 @@
           "alliance": "NDA"
         },
         {
-          "name": "Faizal Madayi",
+          "name": "Faisal Madayi",
           "party": "Welfare Party of India",
           "votes": 1169,
-          "votePct": 0.78,
+          "votePct": 0.8,
           "alliance": "OTHER"
         },
         {
-          "name": "Brijeshkumar M",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 666,
+          "votePct": 0.46,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "M. Brijeshkumar s/o Ambu",
           "party": "Independent",
           "votes": 274,
           "votePct": 0.19,
@@ -140,9 +147,9 @@
         }
       ],
       "margin": 44393,
-      "marginPct": 30.51,
+      "marginPct": 30.49,
       "turnout": 145585,
-      "turnoutPct": 79.26,
+      "turnoutPct": 78.73,
       "result": "CPI(M) hold"
     }
   ]

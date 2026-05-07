@@ -153,7 +153,7 @@
         {
           "name": "A. K. M. Ashraf",
           "party": "Indian Union Muslim League",
-          "votes": 65858,
+          "votes": 65758,
           "votePct": 38.14,
           "alliance": "UDF"
         },
@@ -165,31 +165,45 @@
           "alliance": "NDA"
         },
         {
-          "name": "V. V. Rameshan",
+          "name": "V. V. Ramesan",
           "party": "Communist Party of India (Marxist)",
           "votes": 40639,
           "votePct": 23.57,
           "alliance": "LDF"
         },
         {
-          "name": "Praveen Kumar S",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 387,
+          "votePct": 0.22,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "S. Praveen Kumar",
           "party": "Anna DHRM",
           "votes": 251,
           "votePct": 0.15,
           "alliance": "OTHER"
         },
         {
-          "name": "John D'Souza I",
+          "name": "M. Surendran",
+          "party": "Independent",
+          "votes": 197,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "I. John D Souza",
           "party": "Independent",
           "votes": 181,
           "votePct": 0.1,
           "alliance": "OTHER"
         }
       ],
-      "margin": 845,
-      "marginPct": 0.44,
-      "turnout": 170431,
-      "turnoutPct": 76.88,
+      "margin": 745,
+      "marginPct": 0.43,
+      "turnout": 172426,
+      "turnoutPct": 77.78,
       "result": "IUML hold"
     }
   ]

@@ -1,0 +1,43 @@
+{
+  "seat": 124,
+  "constituencyName": "Kollam",
+  "electorate": 176041,
+  "validVotesPolled": 130451,
+  "pollingPct": 74.1,
+  "nota": 750,
+  "margin": 2072,
+  "candidates": [
+    {
+      "name": "M. Mukesh",
+      "party": "CPIM",
+      "votes": 58524,
+      "pct": 44.86
+    },
+    {
+      "name": "Bindu Krishna",
+      "party": "INC",
+      "votes": 56452,
+      "pct": 43.27
+    },
+    {
+      "name": "M. Sunil",
+      "party": "BJP",
+      "votes": 14252,
+      "pct": 10.93
+    },
+    {
+      "name": "Remanan",
+      "party": "BSP",
+      "votes": 290,
+      "pct": 0.22
+    },
+    {
+      "name": "S. Baby",
+      "party": "ADHMPI",
+      "votes": 183,
+      "pct": 0.14
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=124",
+  "fetchedAt": "2026-05-07T02:49:06.666Z"
+}

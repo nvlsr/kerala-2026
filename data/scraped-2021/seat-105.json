@@ -1,0 +1,49 @@
+{
+  "seat": 105,
+  "constituencyName": "Ambalapuzha",
+  "electorate": 178623,
+  "validVotesPolled": 137021,
+  "pollingPct": 76.71,
+  "nota": 591,
+  "margin": 11125,
+  "candidates": [
+    {
+      "name": "H. Salam",
+      "party": "CPIM",
+      "votes": 61365,
+      "pct": 44.79
+    },
+    {
+      "name": "M. Liju",
+      "party": "INC",
+      "votes": 50240,
+      "pct": 36.67
+    },
+    {
+      "name": "Anoop Antony",
+      "party": "BJP",
+      "votes": 22389,
+      "pct": 16.34
+    },
+    {
+      "name": "M. M. Thahir",
+      "party": "SDPI",
+      "votes": 1690,
+      "pct": 1.23
+    },
+    {
+      "name": "Subadramma Thottappally",
+      "party": "WPI",
+      "votes": 525,
+      "pct": 0.38
+    },
+    {
+      "name": "Subaida",
+      "party": "SUCIC",
+      "votes": 221,
+      "pct": 0.16
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=105",
+  "fetchedAt": "2026-05-07T02:49:06.561Z"
+}

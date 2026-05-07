@@ -1,0 +1,43 @@
+{
+  "seat": 51,
+  "constituencyName": "Shornur",
+  "electorate": 193992,
+  "validVotesPolled": 151911,
+  "pollingPct": 78.31,
+  "nota": 678,
+  "margin": 36674,
+  "candidates": [
+    {
+      "name": "P. Mammikutty",
+      "party": "CPIM",
+      "votes": 74400,
+      "pct": 48.98
+    },
+    {
+      "name": "T. H. Feroz Babu",
+      "party": "INC",
+      "votes": 37726,
+      "pct": 24.83
+    },
+    {
+      "name": "Sandeep Varrier",
+      "party": "BJP",
+      "votes": 36973,
+      "pct": 24.34
+    },
+    {
+      "name": "Muhammad Musthafa",
+      "party": "SDPI",
+      "votes": 1251,
+      "pct": 0.82
+    },
+    {
+      "name": "T. C. Ayyappankutty",
+      "party": "BSP",
+      "votes": 883,
+      "pct": 0.58
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=51",
+  "fetchedAt": "2026-05-07T02:49:06.135Z"
+}

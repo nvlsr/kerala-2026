@@ -184,6 +184,20 @@
           "votes": 207,
           "votePct": 0.13,
           "alliance": "OTHER"
+        },
+        {
+          "name": "K. A. Vinod",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 205,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shylendran",
+          "party": "Bahujan Dravida Party",
+          "votes": 115,
+          "votePct": 0.07,
+          "alliance": "OTHER"
         }
       ],
       "margin": 11644,

@@ -125,17 +125,45 @@
           "alliance": "NDA"
         },
         {
+          "name": "V. S. Aboobacker",
+          "party": "Social Democratic Party Of India",
+          "votes": 1241,
+          "votePct": 0.8,
+          "alliance": "OTHER"
+        },
+        {
           "name": "NOTA",
           "party": "None of the Above",
           "votes": 559,
           "votePct": 0.36,
           "alliance": "NOTA"
+        },
+        {
+          "name": "K. M. Moideen s/o Muhammed",
+          "party": "Independent",
+          "votes": 380,
+          "votePct": 0.25,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "James Panadan",
+          "party": "Independent",
+          "votes": 265,
+          "votePct": 0.17,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "A. K. Moidheenkutty",
+          "party": "Independent",
+          "votes": 120,
+          "votePct": 0.08,
+          "alliance": "OTHER"
         }
       ],
       "margin": 26631,
-      "marginPct": 17.27,
-      "turnout": 150898,
-      "turnoutPct": 78.24,
+      "marginPct": 17.2,
+      "turnout": 154831,
+      "turnoutPct": 78.1,
       "result": "CPI(M) hold"
     }
   ]

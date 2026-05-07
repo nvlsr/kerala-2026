@@ -125,6 +125,13 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 473,
+          "votePct": 0.39,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Sreekumar Chakkala",
           "party": "Bahujan Samaj Party",
           "votes": 374,

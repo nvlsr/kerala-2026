@@ -1,0 +1,79 @@
+{
+  "seat": 31,
+  "constituencyName": "Koduvally",
+  "electorate": 183388,
+  "validVotesPolled": 151154,
+  "pollingPct": 82.42,
+  "nota": 269,
+  "margin": 6344,
+  "candidates": [
+    {
+      "name": "M. K. Muneer",
+      "party": "IUML",
+      "votes": 72336,
+      "pct": 47.86
+    },
+    {
+      "name": "Karat Razak",
+      "party": "LDF",
+      "votes": 65992,
+      "pct": 43.66
+    },
+    {
+      "name": "T. Balasoman",
+      "party": "BJP",
+      "votes": 9498,
+      "pct": 6.28
+    },
+    {
+      "name": "Musthafa Kommeri",
+      "party": "SDPI",
+      "votes": 1769,
+      "pct": 1.17
+    },
+    {
+      "name": "Abdul Razak s/o Ahamedkutty",
+      "party": "IND",
+      "votes": 381,
+      "pct": 0.25
+    },
+    {
+      "name": "Abdul Razak s/o Muhammed",
+      "party": "IND",
+      "votes": 325,
+      "pct": 0.22
+    },
+    {
+      "name": "M. K. Muneer s/o Muhamed",
+      "party": "IND",
+      "votes": 228,
+      "pct": 0.15
+    },
+    {
+      "name": "K. P. Lakshmanan Thamarassery",
+      "party": "IND",
+      "votes": 104,
+      "pct": 0.07
+    },
+    {
+      "name": "Salim Necholi",
+      "party": "IND",
+      "votes": 92,
+      "pct": 0.06
+    },
+    {
+      "name": "Abdul Muneer",
+      "party": "IND",
+      "votes": 86,
+      "pct": 0.06
+    },
+    {
+      "name": "K. C. Shahim",
+      "party": "SFB",
+      "votes": 74,
+      "pct": 0.05
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=31",
+  "fetchedAt": "2026-05-07T02:49:05.973Z"
+}

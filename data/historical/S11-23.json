@@ -111,31 +111,45 @@
           "alliance": "LDF"
         },
         {
-          "name": "N. Subramanian",
+          "name": "N. Subramaniyan",
           "party": "Indian National Congress",
           "votes": 67156,
           "votePct": 41.43,
           "alliance": "UDF"
         },
         {
-          "name": "N.P. Radhakrishnan",
+          "name": "N. P. Radhakrishnan",
           "party": "Bharatiya Janata Party",
           "votes": 17555,
           "votePct": 10.83,
           "alliance": "NDA"
         },
         {
-          "name": "Jameela. P.P.",
+          "name": "P. P. Jameela",
           "party": "Independent",
           "votes": 651,
           "votePct": 0.4,
           "alliance": "OTHER"
         },
         {
-          "name": "Subrahmanyan Kanaran",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 492,
+          "votePct": 0.3,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Subramanyan Kanaran",
           "party": "Independent",
           "votes": 381,
           "votePct": 0.24,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Praveen Cheruvathu",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 221,
+          "votePct": 0.14,
           "alliance": "OTHER"
         }
       ],

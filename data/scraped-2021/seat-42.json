@@ -1,0 +1,37 @@
+{
+  "seat": 42,
+  "constituencyName": "Vallikkunnu",
+  "electorate": 198814,
+  "validVotesPolled": 151414,
+  "pollingPct": 76.16,
+  "nota": 1150,
+  "margin": 14116,
+  "candidates": [
+    {
+      "name": "Abdul Hameed Master",
+      "party": "IUML",
+      "votes": 71823,
+      "pct": 47.43
+    },
+    {
+      "name": "A. P. Abdul Wahab",
+      "party": "INL",
+      "votes": 57707,
+      "pct": 38.11
+    },
+    {
+      "name": "Peethambaran Palat",
+      "party": "BJP",
+      "votes": 19853,
+      "pct": 13.11
+    },
+    {
+      "name": "Sasi Kizhakkan",
+      "party": "BSP",
+      "votes": 881,
+      "pct": 0.58
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=42",
+  "fetchedAt": "2026-05-07T02:49:06.080Z"
+}

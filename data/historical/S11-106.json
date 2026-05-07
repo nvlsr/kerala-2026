@@ -95,6 +95,27 @@
           "votes": 14946,
           "votePct": 11.9,
           "alliance": "NDA"
+        },
+        {
+          "name": "Vinu",
+          "party": "DSJP",
+          "votes": 533,
+          "votePct": 0.42,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 523,
+          "votePct": 0.42,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Biju Xavier",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 392,
+          "votePct": 0.31,
+          "alliance": "OTHER"
         }
       ],
       "margin": 5516,

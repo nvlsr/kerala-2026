@@ -1,0 +1,61 @@
+{
+  "seat": 108,
+  "constituencyName": "Kayamkulam",
+  "electorate": 213618,
+  "validVotesPolled": 161257,
+  "pollingPct": 75.49,
+  "nota": 420,
+  "margin": 6298,
+  "candidates": [
+    {
+      "name": "U. Prathibha",
+      "party": "CPIM",
+      "votes": 77348,
+      "pct": 47.97
+    },
+    {
+      "name": "Aritha Babu",
+      "party": "INC",
+      "votes": 71050,
+      "pct": 44.06
+    },
+    {
+      "name": "Pradeeplal",
+      "party": "BDJS",
+      "votes": 11413,
+      "pct": 7.08
+    },
+    {
+      "name": "Maniyappan Achari",
+      "party": "IND",
+      "votes": 367,
+      "pct": 0.23
+    },
+    {
+      "name": "R. Rajeev",
+      "party": "IND",
+      "votes": 231,
+      "pct": 0.14
+    },
+    {
+      "name": "Geevarghese Samuel",
+      "party": "IND",
+      "votes": 205,
+      "pct": 0.13
+    },
+    {
+      "name": "Myna Gopinath",
+      "party": "SUCIC",
+      "votes": 150,
+      "pct": 0.09
+    },
+    {
+      "name": "S. Satyanarayanan",
+      "party": "IND",
+      "votes": 73,
+      "pct": 0.05
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=108",
+  "fetchedAt": "2026-05-07T02:49:06.564Z"
+}

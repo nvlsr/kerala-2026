@@ -111,7 +111,7 @@
           "alliance": "UDF"
         },
         {
-          "name": "Jayaprakashan K. P.",
+          "name": "K. P. Jayaprakashan",
           "party": "Bharatiya Janata Party",
           "votes": 18465,
           "votePct": 14.06,
@@ -123,12 +123,19 @@
           "votes": 985,
           "votePct": 0.75,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 940,
+          "votePct": 0.72,
+          "alliance": "NOTA"
         }
       ],
       "margin": 24531,
-      "marginPct": 18.67,
-      "turnout": 128310,
-      "turnoutPct": 78.13,
+      "marginPct": 18.68,
+      "turnout": 131347,
+      "turnoutPct": 77.21,
       "result": "CPI(M) hold"
     }
   ]

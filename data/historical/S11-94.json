@@ -104,17 +104,45 @@
           "alliance": "LDF"
         },
         {
-          "name": "Lijin Lal",
+          "name": "Ligin Lal",
           "party": "Bharatiya Janata Party",
           "votes": 11670,
           "votePct": 8.88,
           "alliance": "NDA"
+        },
+        {
+          "name": "Vinod K. Jose",
+          "party": "Independent",
+          "votes": 2425,
+          "votePct": 1.85,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Anju Mathew",
+          "party": "Bahujan Samaj Party",
+          "votes": 1207,
+          "votePct": 0.92,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 731,
+          "votePct": 0.56,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Jaimon Thankachan",
+          "party": "SVJP",
+          "votes": 302,
+          "votePct": 0.23,
+          "alliance": "OTHER"
         }
       ],
       "margin": 4256,
-      "marginPct": 3.21,
-      "turnout": 132444,
-      "turnoutPct": 70.48,
+      "marginPct": 3.24,
+      "turnout": 131411,
+      "turnoutPct": 70,
       "result": "KEC hold"
     }
   ]

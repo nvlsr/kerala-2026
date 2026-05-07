@@ -106,9 +106,16 @@
         {
           "name": "Prasanth Sivan",
           "party": "Bharatiya Janata Party",
-          "votes": 18115,
+          "votes": 18349,
           "votePct": 13.56,
           "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 783,
+          "votePct": 0.58,
+          "alliance": "NOTA"
         },
         {
           "name": "Chandran",
@@ -118,7 +125,7 @@
           "alliance": "OTHER"
         },
         {
-          "name": "Rajesh.M",
+          "name": "M. Rajesh",
           "party": "Independent",
           "votes": 347,
           "votePct": 0.26,
@@ -128,7 +135,7 @@
       "margin": 34118,
       "marginPct": 25.2,
       "turnout": 135366,
-      "turnoutPct": null,
+      "turnoutPct": 79.17,
       "result": "CPI(M) hold"
     }
   ]

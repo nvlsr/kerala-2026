@@ -1,0 +1,43 @@
+{
+  "seat": 28,
+  "constituencyName": "Kozhikode South",
+  "electorate": 157275,
+  "validVotesPolled": 119054,
+  "pollingPct": 75.7,
+  "nota": 603,
+  "margin": 12459,
+  "candidates": [
+    {
+      "name": "Ahammad Devarkovil",
+      "party": "INL",
+      "votes": 52557,
+      "pct": 44.15
+    },
+    {
+      "name": "Noorbeena Rashid",
+      "party": "IUML",
+      "votes": 40098,
+      "pct": 33.68
+    },
+    {
+      "name": "Navya Haridas",
+      "party": "BJP",
+      "votes": 24873,
+      "pct": 20.89
+    },
+    {
+      "name": "Mubina",
+      "party": "IND",
+      "votes": 513,
+      "pct": 0.43
+    },
+    {
+      "name": "P. Hareendranath",
+      "party": "DSJP",
+      "votes": 410,
+      "pct": 0.34
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=28",
+  "fetchedAt": "2026-05-07T02:49:05.973Z"
+}

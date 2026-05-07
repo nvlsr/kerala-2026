@@ -1,0 +1,67 @@
+{
+  "seat": 102,
+  "constituencyName": "Aroor",
+  "electorate": 200005,
+  "validVotesPolled": 164491,
+  "pollingPct": 82.24,
+  "nota": 846,
+  "margin": 7013,
+  "candidates": [
+    {
+      "name": "Daleema",
+      "party": "CPIM",
+      "votes": 75617,
+      "pct": 45.97
+    },
+    {
+      "name": "Shanimol Osman",
+      "party": "INC",
+      "votes": 68604,
+      "pct": 41.71
+    },
+    {
+      "name": "Aniyappan",
+      "party": "BDJS",
+      "votes": 17479,
+      "pct": 10.63
+    },
+    {
+      "name": "Rugma Pradeep",
+      "party": "BSP",
+      "votes": 682,
+      "pct": 0.41
+    },
+    {
+      "name": "K. N. Ambika (Priyanka Anoop)",
+      "party": "DSJP",
+      "votes": 475,
+      "pct": 0.29
+    },
+    {
+      "name": "K. Pratapan",
+      "party": "SUCIC",
+      "votes": 374,
+      "pct": 0.23
+    },
+    {
+      "name": "Vayalar Rajeevan",
+      "party": "BDP",
+      "votes": 164,
+      "pct": 0.1
+    },
+    {
+      "name": "Pramod Perumpuzha",
+      "party": "ADHMPI",
+      "votes": 161,
+      "pct": 0.1
+    },
+    {
+      "name": "Chandran",
+      "party": "IND",
+      "votes": 89,
+      "pct": 0.05
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=102",
+  "fetchedAt": "2026-05-07T02:49:06.511Z"
+}

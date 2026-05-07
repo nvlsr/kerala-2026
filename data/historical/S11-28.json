@@ -104,14 +104,14 @@
       "reason": null,
       "candidates": [
         {
-          "name": "Ahamed Devarkovil",
+          "name": "Ahammad Devarkovil",
           "party": "Indian National League",
           "votes": 52557,
           "votePct": 44.15,
           "alliance": "LDF"
         },
         {
-          "name": "Noorbeena Rasheed",
+          "name": "Noorbeena Rashid",
           "party": "Indian Union Muslim League",
           "votes": 40098,
           "votePct": 33.68,
@@ -132,17 +132,24 @@
           "alliance": "NOTA"
         },
         {
-          "name": "Mubeena",
+          "name": "Mubina",
           "party": "Independent",
           "votes": 513,
           "votePct": 0.43,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. Hareendranath",
+          "party": "DSJP",
+          "votes": 410,
+          "votePct": 0.34,
           "alliance": "OTHER"
         }
       ],
       "margin": 12459,
       "marginPct": 10.46,
       "turnout": 119054,
-      "turnoutPct": 75.69,
+      "turnoutPct": 75.7,
       "result": "INL gain from IUML"
     }
   ]

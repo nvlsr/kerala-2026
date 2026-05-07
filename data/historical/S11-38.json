@@ -132,6 +132,13 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 867,
+          "votePct": 0.52,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Najeeb Kutteeri",
           "party": "Independent",
           "votes": 828,

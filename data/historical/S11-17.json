@@ -111,7 +111,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "P. K. Jayalakshmi",
+          "name": "P. K. Jayalekshmi",
           "party": "Indian National Congress",
           "votes": 63254,
           "votePct": 41.46,
@@ -121,7 +121,7 @@
           "name": "Palliyara Mukundan",
           "party": "Bharatiya Janata Party",
           "votes": 13142,
-          "votePct": 8.62,
+          "votePct": 8.61,
           "alliance": "NDA"
         },
         {
@@ -130,12 +130,40 @@
           "votes": 1992,
           "votePct": 1.31,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 797,
+          "votePct": 0.52,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Lekshmi",
+          "party": "Independent",
+          "votes": 382,
+          "votePct": 0.25,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. K. Kelu s/o Kunkan",
+          "party": "Independent",
+          "votes": 288,
+          "votePct": 0.19,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Vijaya Cheloor",
+          "party": "Bahujan Samaj Party",
+          "votes": 190,
+          "votePct": 0.12,
+          "alliance": "OTHER"
         }
       ],
       "margin": 9282,
-      "marginPct": 6.1,
-      "turnout": 151784,
-      "turnoutPct": null,
+      "marginPct": 6.08,
+      "turnout": 152581,
+      "turnoutPct": 78.23,
       "result": "CPI(M) hold"
     }
   ]

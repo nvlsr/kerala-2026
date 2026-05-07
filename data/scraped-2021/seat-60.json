@@ -1,0 +1,43 @@
+{
+  "seat": 60,
+  "constituencyName": "Alathur",
+  "electorate": 170984,
+  "validVotesPolled": 135366,
+  "pollingPct": 79.17,
+  "nota": 783,
+  "margin": 34118,
+  "candidates": [
+    {
+      "name": "K. D. Prasenan",
+      "party": "CPIM",
+      "votes": 74653,
+      "pct": 55.15
+    },
+    {
+      "name": "Palayam Pradeep",
+      "party": "INC",
+      "votes": 40535,
+      "pct": 29.94
+    },
+    {
+      "name": "Prasanth Sivan",
+      "party": "BJP",
+      "votes": 18349,
+      "pct": 13.56
+    },
+    {
+      "name": "Chandran",
+      "party": "BSP",
+      "votes": 699,
+      "pct": 0.52
+    },
+    {
+      "name": "M. Rajesh",
+      "party": "IND",
+      "votes": 347,
+      "pct": 0.26
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=60",
+  "fetchedAt": "2026-05-07T02:49:06.236Z"
+}

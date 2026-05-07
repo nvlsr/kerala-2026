@@ -132,17 +132,52 @@
           "alliance": "OTHER"
         },
         {
-          "name": "Bipin Pallipuram",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 917,
+          "votePct": 0.6,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Bipin Pallippuram",
           "party": "Bahujan Samaj Party",
           "votes": 563,
           "votePct": 0.37,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Thathankodu Kannan",
+          "party": "Independent",
+          "votes": 170,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "C. Prasanth s/o K. Chandran",
+          "party": "Independent",
+          "votes": 160,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "S. Ebinu",
+          "party": "Independent",
+          "votes": 146,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Hari Vellanad",
+          "party": "Independent",
+          "votes": 126,
+          "votePct": 0.08,
           "alliance": "OTHER"
         }
       ],
       "margin": 23309,
       "marginPct": 15.23,
       "turnout": 153002,
-      "turnoutPct": 73.52,
+      "turnoutPct": 73.83,
       "result": "CPI hold"
     }
   ]

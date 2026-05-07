@@ -1,0 +1,55 @@
+{
+  "seat": 90,
+  "constituencyName": "Thodupuzha",
+  "electorate": 191210,
+  "validVotesPolled": 138807,
+  "pollingPct": 72.59,
+  "nota": 674,
+  "margin": 20259,
+  "candidates": [
+    {
+      "name": "P. J. Joseph",
+      "party": "KC",
+      "votes": 67495,
+      "pct": 48.63
+    },
+    {
+      "name": "K. I. Antony",
+      "party": "KCM",
+      "votes": 47236,
+      "pct": 34.03
+    },
+    {
+      "name": "P. Syamraj",
+      "party": "BJP",
+      "votes": 21263,
+      "pct": 15.32
+    },
+    {
+      "name": "P. T. Leethesh",
+      "party": "BSP",
+      "votes": 934,
+      "pct": 0.67
+    },
+    {
+      "name": "M. T. Thomas",
+      "party": "IND",
+      "votes": 562,
+      "pct": 0.4
+    },
+    {
+      "name": "K. Parthasaradhi",
+      "party": "IND",
+      "votes": 370,
+      "pct": 0.27
+    },
+    {
+      "name": "T. R. Sreedharan",
+      "party": "SUCIC",
+      "votes": 273,
+      "pct": 0.2
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=90",
+  "fetchedAt": "2026-05-07T02:49:06.455Z"
+}

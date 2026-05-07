@@ -1,0 +1,43 @@
+{
+  "seat": 55,
+  "constituencyName": "Malampuzha",
+  "electorate": 213231,
+  "validVotesPolled": 163605,
+  "pollingPct": 76.73,
+  "nota": 1054,
+  "margin": 25734,
+  "candidates": [
+    {
+      "name": "A. Prabhakaran",
+      "party": "CPIM",
+      "votes": 75934,
+      "pct": 46.41
+    },
+    {
+      "name": "C. Krishnakumar",
+      "party": "BJP",
+      "votes": 50200,
+      "pct": 30.68
+    },
+    {
+      "name": "S. K. Ananthakrishnan",
+      "party": "INC",
+      "votes": 35444,
+      "pct": 21.66
+    },
+    {
+      "name": "K. Prasad",
+      "party": "SUCIC",
+      "votes": 555,
+      "pct": 0.34
+    },
+    {
+      "name": "S. Abdul Rahim",
+      "party": "IND",
+      "votes": 418,
+      "pct": 0.26
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=55",
+  "fetchedAt": "2026-05-07T02:49:06.135Z"
+}

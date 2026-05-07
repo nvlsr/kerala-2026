@@ -15,10 +15,10 @@ exports[`flow detection — pattern counts > single-cycle (2021 → 2026) breakd
 {
   "byPattern": {
     "LDF+NDA_to_UDF": 14,
-    "LDF+UDF_to_NDA": 5,
+    "LDF+UDF_to_NDA": 6,
     "LDF_to_NDA": 9,
     "LDF_to_UDF": 50,
   },
-  "total": 78,
+  "total": 79,
 }
 `;

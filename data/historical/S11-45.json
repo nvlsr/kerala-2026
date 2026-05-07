@@ -111,14 +111,14 @@
           "alliance": "UDF"
         },
         {
-          "name": "Gafoor P. Lillis",
+          "name": "Gafoor P. Lillies",
           "party": "Communist Party of India (Marxist)",
           "votes": 75100,
           "votePct": 43.98,
           "alliance": "LDF"
         },
         {
-          "name": "Abdul Salam",
+          "name": "M. Abdul Salam",
           "party": "Bharatiya Janata Party",
           "votes": 9097,
           "votePct": 5.33,
@@ -128,7 +128,14 @@
           "name": "Ashraf",
           "party": "Social Democratic Party Of India",
           "votes": 2712,
-          "votePct": 1.9,
+          "votePct": 1.59,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Moideen Meenthakath",
+          "party": "Independent",
+          "votes": 477,
+          "votePct": 0.28,
           "alliance": "OTHER"
         },
         {
@@ -137,12 +144,47 @@
           "votes": 417,
           "votePct": 0.24,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Aboobacker Sidkeek",
+          "party": "Independent",
+          "votes": 240,
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Moideen Valiyakath",
+          "party": "Independent",
+          "votes": 169,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "A. K. Abdul Mahroof",
+          "party": "Independent",
+          "votes": 111,
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdul Gafoor Pulickal",
+          "party": "Independent",
+          "votes": 68,
+          "votePct": 0.04,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdul Gafoor Valiayapeedikackal",
+          "party": "Independent",
+          "votes": 37,
+          "votePct": 0.02,
+          "alliance": "OTHER"
         }
       ],
       "margin": 7214,
-      "marginPct": 4.93,
+      "marginPct": 4.23,
       "turnout": 170742,
-      "turnoutPct": 78.36,
+      "turnoutPct": 74.41,
       "result": "IUML hold"
     }
   ]

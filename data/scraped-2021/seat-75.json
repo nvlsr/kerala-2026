@@ -1,0 +1,55 @@
+{
+  "seat": 75,
+  "constituencyName": "Angamaly",
+  "electorate": 177927,
+  "validVotesPolled": 137997,
+  "pollingPct": 77.56,
+  "nota": 669,
+  "margin": 15929,
+  "candidates": [
+    {
+      "name": "Roji M. John",
+      "party": "INC",
+      "votes": 71562,
+      "pct": 51.86
+    },
+    {
+      "name": "Jose Thettayil",
+      "party": "JDS",
+      "votes": 55633,
+      "pct": 40.31
+    },
+    {
+      "name": "K. V. Sabu",
+      "party": "BJP",
+      "votes": 8677,
+      "pct": 6.29
+    },
+    {
+      "name": "Martin Paul",
+      "party": "IND",
+      "votes": 623,
+      "pct": 0.45
+    },
+    {
+      "name": "Stalin Nikathithara",
+      "party": "BSP",
+      "votes": 326,
+      "pct": 0.24
+    },
+    {
+      "name": "Jyothilakshmi",
+      "party": "SUCIC",
+      "votes": 301,
+      "pct": 0.22
+    },
+    {
+      "name": "Velayudhan",
+      "party": "IND",
+      "votes": 206,
+      "pct": 0.15
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=75",
+  "fetchedAt": "2026-05-07T02:49:06.343Z"
+}

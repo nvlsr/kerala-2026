@@ -1,0 +1,55 @@
+{
+  "seat": 118,
+  "constituencyName": "Kunnathur",
+  "electorate": 206117,
+  "validVotesPolled": 160984,
+  "pollingPct": 78.1,
+  "nota": 922,
+  "margin": 2790,
+  "candidates": [
+    {
+      "name": "Kovoor Kunjumon (RSP-L)",
+      "party": "LDF",
+      "votes": 69436,
+      "pct": 43.13
+    },
+    {
+      "name": "Ullas Kovoor",
+      "party": "RSP",
+      "votes": 66646,
+      "pct": 41.4
+    },
+    {
+      "name": "Raji Prasad",
+      "party": "BJP",
+      "votes": 21760,
+      "pct": 13.52
+    },
+    {
+      "name": "R. S. Anju",
+      "party": "BSP",
+      "votes": 946,
+      "pct": 0.59
+    },
+    {
+      "name": "Manthara Velayudhan",
+      "party": "IND",
+      "votes": 623,
+      "pct": 0.39
+    },
+    {
+      "name": "R. Sukumaran",
+      "party": "ADHMPI",
+      "votes": 326,
+      "pct": 0.2
+    },
+    {
+      "name": "Arunkumar S. Uliyacovil",
+      "party": "IND",
+      "votes": 325,
+      "pct": 0.2
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=118",
+  "fetchedAt": "2026-05-07T02:49:06.614Z"
+}

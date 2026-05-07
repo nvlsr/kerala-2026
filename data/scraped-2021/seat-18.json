@@ -1,0 +1,37 @@
+{
+  "seat": 18,
+  "constituencyName": "Sulthanbathery",
+  "electorate": 220167,
+  "validVotesPolled": 167432,
+  "pollingPct": 76.05,
+  "nota": 1160,
+  "margin": 11822,
+  "candidates": [
+    {
+      "name": "I. C. Balakrishnan",
+      "party": "INC",
+      "votes": 81077,
+      "pct": 48.42
+    },
+    {
+      "name": "M. S. Viswanathan",
+      "party": "CPIM",
+      "votes": 69255,
+      "pct": 41.36
+    },
+    {
+      "name": "C. K. Janu",
+      "party": "BJP",
+      "votes": 15198,
+      "pct": 9.08
+    },
+    {
+      "name": "Odan Paniyan",
+      "party": "IND",
+      "votes": 742,
+      "pct": 0.44
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=18",
+  "fetchedAt": "2026-05-07T02:49:05.912Z"
+}

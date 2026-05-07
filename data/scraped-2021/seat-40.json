@@ -1,0 +1,49 @@
+{
+  "seat": 40,
+  "constituencyName": "Malappuram",
+  "electorate": 211990,
+  "validVotesPolled": 161825,
+  "pollingPct": 76.34,
+  "nota": 994,
+  "margin": 35208,
+  "candidates": [
+    {
+      "name": "P. Ubaidulla",
+      "party": "IUML",
+      "votes": 93166,
+      "pct": 57.57
+    },
+    {
+      "name": "Paloli Abdurahiman",
+      "party": "CPIM",
+      "votes": 57958,
+      "pct": 35.82
+    },
+    {
+      "name": "Areekad Sethumadhavan",
+      "party": "BJP",
+      "votes": 5883,
+      "pct": 3.64
+    },
+    {
+      "name": "E. C. Ayisha",
+      "party": "WPI",
+      "votes": 3194,
+      "pct": 1.97
+    },
+    {
+      "name": "T. Prasobh",
+      "party": "BSP",
+      "votes": 321,
+      "pct": 0.2
+    },
+    {
+      "name": "T. K. Bose",
+      "party": "SUCIC",
+      "votes": 309,
+      "pct": 0.19
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=40",
+  "fetchedAt": "2026-05-07T02:49:06.027Z"
+}

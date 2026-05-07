@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "M. S. Arun Kumar",
+          "name": "M. S. Arunkumar",
           "party": "Communist Party of India (Marxist)",
           "votes": 71743,
           "votePct": 47.61,
@@ -125,6 +125,13 @@
           "alliance": "NDA"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 519,
+          "votePct": 0.34,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Suresh Nooranad",
           "party": "Ambedkarite Party of India",
           "votes": 165,
@@ -137,12 +144,19 @@
           "votes": 151,
           "votePct": 0.1,
           "alliance": "OTHER"
+        },
+        {
+          "name": "B. Subhash",
+          "party": "Independent",
+          "votes": 131,
+          "votePct": 0.09,
+          "alliance": "OTHER"
         }
       ],
       "margin": 24717,
       "marginPct": 16.4,
       "turnout": 150690,
-      "turnoutPct": 73.16,
+      "turnoutPct": 73.67,
       "result": "CPI(M) hold"
     }
   ]

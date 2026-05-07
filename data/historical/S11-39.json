@@ -130,6 +130,34 @@
           "votes": 599,
           "votePct": 0.36,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Ali s/o Musthafa",
+          "party": "Independent",
+          "votes": 350,
+          "votePct": 0.21,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Ali s/o Alavi Haji",
+          "party": "Independent",
+          "votes": 193,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Rasheedali s/o Mammunni",
+          "party": "Independent",
+          "votes": 183,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. Ali",
+          "party": "Independent",
+          "votes": 86,
+          "votePct": 0.05,
+          "alliance": "OTHER"
         }
       ],
       "margin": 6246,

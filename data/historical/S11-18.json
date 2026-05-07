@@ -112,20 +112,20 @@
         },
         {
           "name": "C. K. Janu",
-          "party": "JRS",
+          "party": "Bharatiya Janata Party",
           "votes": 15198,
           "votePct": 9.08,
-          "alliance": "OTHER"
+          "alliance": "NDA"
         },
         {
           "name": "NOTA",
           "party": "None of the Above",
           "votes": 1160,
-          "votePct": 0.7,
+          "votePct": 0.69,
           "alliance": "NOTA"
         },
         {
-          "name": "Ondan Paniyan",
+          "name": "Odan Paniyan",
           "party": "Independent",
           "votes": 742,
           "votePct": 0.44,

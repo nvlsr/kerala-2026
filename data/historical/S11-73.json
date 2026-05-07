@@ -114,7 +114,7 @@
           "name": "M. P. Jackson",
           "party": "Indian National Congress",
           "votes": 47564,
-          "votePct": 30.37,
+          "votePct": 31.94,
           "alliance": "UDF"
         },
         {
@@ -136,6 +136,20 @@
           "party": "Bahujan Samaj Party",
           "votes": 366,
           "votePct": 0.25,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "O. M. Sreeja",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 270,
+          "votePct": 0.18,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Rajan Painat",
+          "party": "Independent",
+          "votes": 171,
+          "votePct": 0.11,
           "alliance": "OTHER"
         }
       ],

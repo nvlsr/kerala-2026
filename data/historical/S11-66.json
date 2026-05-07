@@ -125,7 +125,21 @@
           "alliance": "NDA"
         },
         {
-          "name": "Benny Kodiyatil",
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 827,
+          "votePct": 0.53,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "K. K. George Kakkassery",
+          "party": "Independent",
+          "votes": 628,
+          "votePct": 0.4,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Benny Kodiyattil",
           "party": "Independent",
           "votes": 331,
           "votePct": 0.21,
@@ -140,7 +154,7 @@
         }
       ],
       "margin": 21506,
-      "marginPct": 13.78,
+      "marginPct": 13.77,
       "turnout": 156171,
       "turnoutPct": 75.13,
       "result": "CPI hold"

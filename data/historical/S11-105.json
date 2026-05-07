@@ -132,10 +132,24 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 591,
+          "votePct": 0.43,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Subadramma Thottappally",
           "party": "Welfare Party of India",
           "votes": 525,
           "votePct": 0.38,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Subaida",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 221,
+          "votePct": 0.16,
           "alliance": "OTHER"
         }
       ],

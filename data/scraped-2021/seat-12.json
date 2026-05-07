@@ -1,0 +1,61 @@
+{
+  "seat": 12,
+  "constituencyName": "Dharmadam",
+  "electorate": 193486,
+  "validVotesPolled": 160247,
+  "pollingPct": 82.82,
+  "nota": 400,
+  "margin": 50123,
+  "candidates": [
+    {
+      "name": "Pinarayi Vijayan",
+      "party": "CPIM",
+      "votes": 95522,
+      "pct": 59.61
+    },
+    {
+      "name": "C. Raghunathan",
+      "party": "INC",
+      "votes": 45399,
+      "pct": 28.33
+    },
+    {
+      "name": "C. K. Padmanabhan",
+      "party": "BJP",
+      "votes": 14623,
+      "pct": 9.13
+    },
+    {
+      "name": "Basheer Kannadiparamba",
+      "party": "SDPI",
+      "votes": 2280,
+      "pct": 1.42
+    },
+    {
+      "name": "Valayar Bhagyavathi",
+      "party": "IND",
+      "votes": 1753,
+      "pct": 1.09
+    },
+    {
+      "name": "Chouva Raghunathan",
+      "party": "IND",
+      "votes": 137,
+      "pct": 0.09
+    },
+    {
+      "name": "C. P. Maharoof",
+      "party": "IND",
+      "votes": 72,
+      "pct": 0.04
+    },
+    {
+      "name": "Vadi Harindran",
+      "party": "IND",
+      "votes": 61,
+      "pct": 0.04
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=12",
+  "fetchedAt": "2026-05-07T02:49:05.810Z"
+}

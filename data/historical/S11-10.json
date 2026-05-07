@@ -125,7 +125,7 @@
           "alliance": "NDA"
         },
         {
-          "name": "Abdul Jabbar K.K",
+          "name": "K. K. Abdul Jabbar",
           "party": "Social Democratic Party Of India",
           "votes": 2357,
           "votePct": 1.63,
@@ -137,12 +137,47 @@
           "votes": 517,
           "votePct": 0.36,
           "alliance": "NOTA"
+        },
+        {
+          "name": "K. M. Shaji Mamba",
+          "party": "Independent",
+          "votes": 277,
+          "votePct": 0.19,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Resmi Ravi",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 226,
+          "votePct": 0.16,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. Sumesh",
+          "party": "Independent",
+          "votes": 180,
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. P. Prasad",
+          "party": "Independent",
+          "votes": 104,
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Pavitharan Kurikalottu",
+          "party": "Independent",
+          "votes": 48,
+          "votePct": 0.03,
+          "alliance": "OTHER"
         }
       ],
       "margin": 6141,
       "marginPct": 4.24,
       "turnout": 144897,
-      "turnoutPct": 79.8,
+      "turnoutPct": 79.81,
       "result": "CPI(M) gain from IUML"
     }
   ]

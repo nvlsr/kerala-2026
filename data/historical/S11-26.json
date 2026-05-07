@@ -118,8 +118,8 @@
           "alliance": "LDF"
         },
         {
-          "name": "Sulfikar Mayoori",
-          "party": "Nationalist Congress Kerala",
+          "name": "Sulfikar Mayoori (NCK)",
+          "party": "Independent (UDF)",
           "votes": 45137,
           "votePct": 27.46,
           "alliance": "UDF"
@@ -137,6 +137,13 @@
           "votes": 2000,
           "votePct": 1.22,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 984,
+          "votePct": 0.6,
+          "alliance": "NOTA"
         },
         {
           "name": "P. K. Radhakrishnan",

@@ -1,0 +1,61 @@
+{
+  "seat": 41,
+  "constituencyName": "Vengara",
+  "electorate": 185356,
+  "validVotesPolled": 131551,
+  "pollingPct": 70.97,
+  "nota": 787,
+  "margin": 30596,
+  "candidates": [
+    {
+      "name": "P. K. Kunhalikutty",
+      "party": "IUML",
+      "votes": 70381,
+      "pct": 53.5
+    },
+    {
+      "name": "P. Jiji",
+      "party": "CPIM",
+      "votes": 39785,
+      "pct": 30.24
+    },
+    {
+      "name": "Sahab Kundupuzhackal",
+      "party": "IND",
+      "votes": 11255,
+      "pct": 8.56
+    },
+    {
+      "name": "Preman Master",
+      "party": "BJP",
+      "votes": 5968,
+      "pct": 4.54
+    },
+    {
+      "name": "E. K. Kunhammedkutty Master",
+      "party": "WPI",
+      "votes": 2051,
+      "pct": 1.56
+    },
+    {
+      "name": "Keeran",
+      "party": "BSP",
+      "votes": 1060,
+      "pct": 0.81
+    },
+    {
+      "name": "Anannyahkumari Alex",
+      "party": "DSJP",
+      "votes": 135,
+      "pct": 0.1
+    },
+    {
+      "name": "Adil Abdurahiman Thangal",
+      "party": "IND",
+      "votes": 129,
+      "pct": 0.1
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=41",
+  "fetchedAt": "2026-05-07T02:49:06.078Z"
+}

@@ -1,0 +1,37 @@
+{
+  "seat": 6,
+  "constituencyName": "Payyannur",
+  "electorate": 183223,
+  "validVotesPolled": 149945,
+  "pollingPct": 81.84,
+  "nota": 686,
+  "margin": 49780,
+  "candidates": [
+    {
+      "name": "T. I. Madhusoodanan",
+      "party": "CPIM",
+      "votes": 93695,
+      "pct": 62.49
+    },
+    {
+      "name": "M. Pradeep Kumar",
+      "party": "INC",
+      "votes": 43915,
+      "pct": 29.29
+    },
+    {
+      "name": "K. K. Sreedharan",
+      "party": "BJP",
+      "votes": 11308,
+      "pct": 7.54
+    },
+    {
+      "name": "K. V. Abhilash",
+      "party": "IND",
+      "votes": 341,
+      "pct": 0.23
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=6",
+  "fetchedAt": "2026-05-07T02:49:05.758Z"
+}

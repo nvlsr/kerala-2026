@@ -1,0 +1,49 @@
+{
+  "seat": 63,
+  "constituencyName": "Guruvayoor",
+  "electorate": 211401,
+  "validVotesPolled": 146759,
+  "pollingPct": 69.42,
+  "nota": 1007,
+  "margin": 18268,
+  "candidates": [
+    {
+      "name": "N. K. Akbar",
+      "party": "CPIM",
+      "votes": 77072,
+      "pct": 52.52
+    },
+    {
+      "name": "K. N. A. Khader",
+      "party": "IUML",
+      "votes": 58804,
+      "pct": 40.07
+    },
+    {
+      "name": "Dileep Nair",
+      "party": "DSJP",
+      "votes": 6294,
+      "pct": 4.29
+    },
+    {
+      "name": "Asharaf Vadakkoot",
+      "party": "SDPI",
+      "votes": 2889,
+      "pct": 1.97
+    },
+    {
+      "name": "Antony",
+      "party": "IND",
+      "votes": 392,
+      "pct": 0.27
+    },
+    {
+      "name": "M. Kumar",
+      "party": "SUCIC",
+      "votes": 301,
+      "pct": 0.21
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=63",
+  "fetchedAt": "2026-05-07T02:49:06.236Z"
+}

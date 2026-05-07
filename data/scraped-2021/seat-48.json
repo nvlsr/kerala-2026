@@ -1,0 +1,55 @@
+{
+  "seat": 48,
+  "constituencyName": "Ponnani",
+  "electorate": 205291,
+  "validVotesPolled": 145422,
+  "pollingPct": 70.84,
+  "nota": 467,
+  "margin": 17043,
+  "candidates": [
+    {
+      "name": "P. Nandakumar",
+      "party": "CPIM",
+      "votes": 74668,
+      "pct": 51.35
+    },
+    {
+      "name": "A. M. Rohith",
+      "party": "INC",
+      "votes": 57625,
+      "pct": 39.63
+    },
+    {
+      "name": "Subramanyan Chunkappally",
+      "party": "BDJS",
+      "votes": 7419,
+      "pct": 5.1
+    },
+    {
+      "name": "Anvar Pazhanji",
+      "party": "SDPI",
+      "votes": 3065,
+      "pct": 2.11
+    },
+    {
+      "name": "Ganesh Vaderi",
+      "party": "WPI",
+      "votes": 1863,
+      "pct": 1.28
+    },
+    {
+      "name": "M. P. Roshit",
+      "party": "IND",
+      "votes": 168,
+      "pct": 0.12
+    },
+    {
+      "name": "K. Sadanandan",
+      "party": "IND",
+      "votes": 147,
+      "pct": 0.1
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=48",
+  "fetchedAt": "2026-05-07T02:49:06.081Z"
+}

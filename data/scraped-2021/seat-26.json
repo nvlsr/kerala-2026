@@ -1,0 +1,43 @@
+{
+  "seat": 26,
+  "constituencyName": "Elathur",
+  "electorate": 203267,
+  "validVotesPolled": 164350,
+  "pollingPct": 80.85,
+  "nota": 984,
+  "margin": 38502,
+  "candidates": [
+    {
+      "name": "A. K. Saseendran",
+      "party": "NCP",
+      "votes": 83639,
+      "pct": 50.89
+    },
+    {
+      "name": "Sulfikar Mayoori (NCK)",
+      "party": "UDF",
+      "votes": 45137,
+      "pct": 27.46
+    },
+    {
+      "name": "T. P. Jayachandran Master",
+      "party": "BJP",
+      "votes": 32010,
+      "pct": 19.48
+    },
+    {
+      "name": "Tahir Mokandi",
+      "party": "WPI",
+      "votes": 2000,
+      "pct": 1.22
+    },
+    {
+      "name": "P. K. Radhakrishnan",
+      "party": "IND",
+      "votes": 580,
+      "pct": 0.35
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=26",
+  "fetchedAt": "2026-05-07T02:49:05.973Z"
+}

@@ -1,0 +1,49 @@
+{
+  "seat": 3,
+  "constituencyName": "Udma",
+  "electorate": 214209,
+  "validVotesPolled": 165341,
+  "pollingPct": 77.19,
+  "nota": 434,
+  "margin": 13322,
+  "candidates": [
+    {
+      "name": "C. H. Kunhampu",
+      "party": "CPIM",
+      "votes": 78664,
+      "pct": 47.58
+    },
+    {
+      "name": "Balakrishanan Periya",
+      "party": "INC",
+      "votes": 65342,
+      "pct": 39.52
+    },
+    {
+      "name": "A. Velayudhan",
+      "party": "BJP",
+      "votes": 20360,
+      "pct": 12.31
+    },
+    {
+      "name": "K. Ramesan",
+      "party": "IND",
+      "votes": 207,
+      "pct": 0.13
+    },
+    {
+      "name": "Govindan B. Alinthazhe",
+      "party": "API",
+      "votes": 194,
+      "pct": 0.12
+    },
+    {
+      "name": "K. Kunhampu s/o K. C. Kuttappan",
+      "party": "IND",
+      "votes": 140,
+      "pct": 0.08
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=3",
+  "fetchedAt": "2026-05-07T02:48:55.852Z"
+}

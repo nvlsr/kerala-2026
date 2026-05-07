@@ -123,12 +123,40 @@
           "votes": 12144,
           "votePct": 7.01,
           "alliance": "NDA"
+        },
+        {
+          "name": "Sumayya Najeeb",
+          "party": "Social Democratic Party Of India",
+          "votes": 1037,
+          "votePct": 0.6,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 450,
+          "votePct": 0.26,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "S. Bharghavan",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 283,
+          "votePct": 0.16,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Madhu",
+          "party": "Anna DHRM",
+          "votes": 128,
+          "votePct": 0.07,
+          "alliance": "OTHER"
         }
       ],
       "margin": 29208,
-      "marginPct": 16.68,
+      "marginPct": 16.86,
       "turnout": 173284,
-      "turnoutPct": 80.97,
+      "turnoutPct": 80.98,
       "result": "INC gain from CPI"
     }
   ]

@@ -103,9 +103,12 @@ describe("get2021Baseline (Aluva, INC)", () => {
   test("returns baseline for INC in Aluva 2021", () => {
     const baseline = get2021Baseline(ALUVA, "Indian National Congress")
     expect(baseline).not.toBeNull()
-    // Anwar Sadath INC won Aluva 2021 with 73,703 votes / 49.30% share / 12.63 pp margin
-    expect(baseline!.sharePct).toBeCloseTo(49.3, 1)
-    expect(baseline!.marginPct).toBeCloseTo(12.63, 1)
+    // Anwar Sadath INC won Aluva 2021 with 73,703 votes / 49.0% share /
+    // 12.6pp margin. Share % is computed against valid votes incl NOTA
+    // per ECI convention (post 2021-data re-ingestion from
+    // keralaassembly.org).
+    expect(baseline!.sharePct).toBeCloseTo(49.0, 1)
+    expect(baseline!.marginPct).toBeCloseTo(12.6, 1)
   })
 
   test("returns null for party that didn't contest", () => {

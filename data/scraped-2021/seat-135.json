@@ -1,0 +1,79 @@
+{
+  "seat": 135,
+  "constituencyName": "Nemom",
+  "electorate": 204240,
+  "validVotesPolled": 146017,
+  "pollingPct": 71.49,
+  "nota": 756,
+  "margin": 3949,
+  "candidates": [
+    {
+      "name": "V. Sivankutty",
+      "party": "CPIM",
+      "votes": 55837,
+      "pct": 38.24
+    },
+    {
+      "name": "Kummanam Rajasekharan",
+      "party": "BJP",
+      "votes": 51888,
+      "pct": 35.54
+    },
+    {
+      "name": "K. Muraleedharan",
+      "party": "INC",
+      "votes": 36524,
+      "pct": 25.01
+    },
+    {
+      "name": "D. Vijayan",
+      "party": "BSP",
+      "votes": 356,
+      "pct": 0.24
+    },
+    {
+      "name": "Jain Wilson",
+      "party": "IND",
+      "votes": 165,
+      "pct": 0.11
+    },
+    {
+      "name": "Arampally Vijayaraj",
+      "party": "IND",
+      "votes": 138,
+      "pct": 0.09
+    },
+    {
+      "name": "L. Satyan Nadar",
+      "party": "IND",
+      "votes": 100,
+      "pct": 0.07
+    },
+    {
+      "name": "Balachandran Valkannadi",
+      "party": "IND",
+      "votes": 85,
+      "pct": 0.06
+    },
+    {
+      "name": "B. Shine Raj",
+      "party": "IND",
+      "votes": 70,
+      "pct": 0.05
+    },
+    {
+      "name": "Rajasekharan",
+      "party": "IND",
+      "votes": 50,
+      "pct": 0.03
+    },
+    {
+      "name": "Muraleedharan Nair",
+      "party": "IND",
+      "votes": 48,
+      "pct": 0.03
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=135",
+  "fetchedAt": "2026-05-07T02:49:06.805Z"
+}

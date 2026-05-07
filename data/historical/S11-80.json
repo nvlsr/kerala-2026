@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "K. J. Maxi",
+          "name": "K. J. Maxy",
           "party": "Communist Party of India (Marxist)",
           "votes": 54632,
           "votePct": 42.45,
@@ -118,7 +118,7 @@
           "alliance": "UDF"
         },
         {
-          "name": "Shiny Antony",
+          "name": "Shyni Antony",
           "party": "Twenty 20 Party",
           "votes": 19676,
           "votePct": 15.29,
@@ -130,6 +130,27 @@
           "votes": 10991,
           "votePct": 8.54,
           "alliance": "NDA"
+        },
+        {
+          "name": "Nipun Cheriyan",
+          "party": "Independent",
+          "votes": 2149,
+          "votePct": 1.67,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 474,
+          "votePct": 0.37,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Rajneesh Babu",
+          "party": "Independent",
+          "votes": 228,
+          "votePct": 0.18,
+          "alliance": "OTHER"
         }
       ],
       "margin": 14079,

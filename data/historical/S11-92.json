@@ -111,7 +111,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Cyriac Thomas",
+          "name": "Syriac Thomas",
           "party": "Indian National Congress",
           "votes": 58306,
           "votePct": 45.81,
@@ -130,12 +130,33 @@
           "votes": 818,
           "votePct": 0.64,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 401,
+          "votePct": 0.32,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "P. K. Gopakakrishnan",
+          "party": "Independent",
+          "votes": 251,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Soman",
+          "party": "Independent",
+          "votes": 248,
+          "votePct": 0.19,
+          "alliance": "OTHER"
         }
       ],
       "margin": 1835,
       "marginPct": 1.44,
       "turnout": 127291,
-      "turnoutPct": 72.27,
+      "turnoutPct": 73.01,
       "result": "CPI hold"
     }
   ]

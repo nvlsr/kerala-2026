@@ -137,12 +137,40 @@
           "votes": 1753,
           "votePct": 1.09,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 400,
+          "votePct": 0.25,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Chouva Raghunathan",
+          "party": "Independent",
+          "votes": 137,
+          "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "C. P. Maharoof",
+          "party": "Independent",
+          "votes": 72,
+          "votePct": 0.04,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Vadi Harindran",
+          "party": "Independent",
+          "votes": 61,
+          "votePct": 0.04,
+          "alliance": "OTHER"
         }
       ],
       "margin": 50123,
-      "marginPct": 31.16,
-      "turnout": 161232,
-      "turnoutPct": 83.33,
+      "marginPct": 31.28,
+      "turnout": 160247,
+      "turnoutPct": 82.82,
       "result": "CPI(M) hold"
     }
   ]

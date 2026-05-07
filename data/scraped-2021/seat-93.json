@@ -1,0 +1,79 @@
+{
+  "seat": 93,
+  "constituencyName": "Pala",
+  "electorate": 184857,
+  "validVotesPolled": 138431,
+  "pollingPct": 74.89,
+  "nota": 604,
+  "margin": 15378,
+  "candidates": [
+    {
+      "name": "Mani C. Kappen",
+      "party": "UDF",
+      "votes": 69804,
+      "pct": 50.43
+    },
+    {
+      "name": "Jose K. Mani",
+      "party": "KCM",
+      "votes": 54426,
+      "pct": 39.32
+    },
+    {
+      "name": "J. Prameeladevi",
+      "party": "BJP",
+      "votes": 10869,
+      "pct": 7.85
+    },
+    {
+      "name": "Mani C. Kuriakose",
+      "party": "IND",
+      "votes": 1098,
+      "pct": 0.79
+    },
+    {
+      "name": "Santhosh Pulickal",
+      "party": "IND",
+      "votes": 444,
+      "pct": 0.32
+    },
+    {
+      "name": "Joy Thomas Vazhamattom",
+      "party": "BSP",
+      "votes": 368,
+      "pct": 0.27
+    },
+    {
+      "name": "C. V. John",
+      "party": "IND",
+      "votes": 249,
+      "pct": 0.18
+    },
+    {
+      "name": "V. S. Sreejith",
+      "party": "IND",
+      "votes": 195,
+      "pct": 0.14
+    },
+    {
+      "name": "Thomas J. Nidiri",
+      "party": "IND",
+      "votes": 160,
+      "pct": 0.12
+    },
+    {
+      "name": "Albin Mathew",
+      "party": "IND",
+      "votes": 121,
+      "pct": 0.09
+    },
+    {
+      "name": "Sunil Alancheril",
+      "party": "IND",
+      "votes": 93,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=93",
+  "fetchedAt": "2026-05-07T02:49:06.456Z"
+}

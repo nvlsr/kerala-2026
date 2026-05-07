@@ -104,14 +104,14 @@
       "reason": null,
       "candidates": [
         {
-          "name": "K.P. Mohanan",
+          "name": "K. P. Mohanan",
           "party": "Loktantrik Janata Dal",
           "votes": 70626,
           "votePct": 45.36,
           "alliance": "LDF"
         },
         {
-          "name": "Pottankandi Abdulla",
+          "name": "Pottankandi Abdullah",
           "party": "Indian Union Muslim League",
           "votes": 61085,
           "votePct": 39.23,
@@ -125,24 +125,38 @@
           "alliance": "NDA"
         },
         {
-          "name": "Mohanan Kunhiparambath Meethal",
+          "name": "Mohanan Kunhiparambathu Meethal",
           "party": "Independent",
           "votes": 1360,
           "votePct": 0.87,
           "alliance": "OTHER"
         },
         {
-          "name": "Mohanan K.P. Kaithavecha Parambath",
+          "name": "K. P. Mohanan Kaithavechaprambathu",
           "party": "Independent",
           "votes": 543,
           "votePct": 0.35,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 494,
+          "votePct": 0.32,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Abdulla Puthiaparambathu",
+          "party": "Independent",
+          "votes": 389,
+          "votePct": 0.25,
+          "alliance": "OTHER"
         }
       ],
       "margin": 9541,
-      "marginPct": 7.5,
-      "turnout": 154826,
-      "turnoutPct": 79.76,
+      "marginPct": 6.13,
+      "turnout": 155709,
+      "turnoutPct": 80.21,
       "result": "LDF hold"
     }
   ]

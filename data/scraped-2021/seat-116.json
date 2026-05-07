@@ -1,0 +1,49 @@
+{
+  "seat": 116,
+  "constituencyName": "Karunagappally",
+  "electorate": 213993,
+  "validVotesPolled": 173284,
+  "pollingPct": 80.98,
+  "nota": 450,
+  "margin": 29208,
+  "candidates": [
+    {
+      "name": "C. R. Mahesh",
+      "party": "INC",
+      "votes": 94225,
+      "pct": 54.38
+    },
+    {
+      "name": "R. Ramachandran",
+      "party": "CPI",
+      "votes": 65017,
+      "pct": 37.52
+    },
+    {
+      "name": "Bitty Sudheer",
+      "party": "BJP",
+      "votes": 12144,
+      "pct": 7.01
+    },
+    {
+      "name": "Sumayya Najeeb",
+      "party": "SDPI",
+      "votes": 1037,
+      "pct": 0.6
+    },
+    {
+      "name": "S. Bharghavan",
+      "party": "SUCIC",
+      "votes": 283,
+      "pct": 0.16
+    },
+    {
+      "name": "Madhu",
+      "party": "ADHMPI",
+      "votes": 128,
+      "pct": 0.07
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=116",
+  "fetchedAt": "2026-05-07T02:49:06.614Z"
+}

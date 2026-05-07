@@ -104,7 +104,7 @@
       "reason": null,
       "candidates": [
         {
-          "name": "P. C. Vishnunadh",
+          "name": "P. C. Vishnunath",
           "party": "Indian National Congress",
           "votes": 76405,
           "votePct": 48.85,
@@ -118,11 +118,25 @@
           "alliance": "LDF"
         },
         {
-          "name": "Vanaja Vidhyadharan",
+          "name": "Vanaja Vidyadharan",
           "party": "Bharath Dharma Jana Sena",
           "votes": 6100,
           "votePct": 3.9,
           "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 710,
+          "votePct": 0.45,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "R. Rahul",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 457,
+          "votePct": 0.29,
+          "alliance": "OTHER"
         },
         {
           "name": "Santhosh Adooran",
@@ -132,10 +146,24 @@
           "alliance": "OTHER"
         },
         {
-          "name": "R. Rahul",
-          "party": "Socialist Unity Centre Of India (COMMUNIST)",
-          "votes": 457,
-          "votePct": 0.29,
+          "name": "Sibu Karamkodu",
+          "party": "Anna DHRM",
+          "votes": 229,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shiju M. Varhese",
+          "party": "DSJP",
+          "votes": 186,
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Vinod Bahuleyan",
+          "party": "Rashtriya Janata Dal",
+          "votes": 172,
+          "votePct": 0.11,
           "alliance": "OTHER"
         }
       ],

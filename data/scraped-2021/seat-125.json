@@ -1,0 +1,61 @@
+{
+  "seat": 125,
+  "constituencyName": "Eravipuram",
+  "electorate": 175832,
+  "validVotesPolled": 127241,
+  "pollingPct": 72.37,
+  "nota": 931,
+  "margin": 28121,
+  "candidates": [
+    {
+      "name": "M. Noushad",
+      "party": "CPIM",
+      "votes": 71573,
+      "pct": 56.25
+    },
+    {
+      "name": "Babu Divakaran",
+      "party": "RSP",
+      "votes": 43452,
+      "pct": 34.15
+    },
+    {
+      "name": "Ranjith Raveendran",
+      "party": "BDJS",
+      "votes": 8468,
+      "pct": 6.66
+    },
+    {
+      "name": "Ayathil Riyas",
+      "party": "SDPI",
+      "votes": 1444,
+      "pct": 1.13
+    },
+    {
+      "name": "Mohanan Mayyanad",
+      "party": "BSP",
+      "votes": 543,
+      "pct": 0.43
+    },
+    {
+      "name": "M. Unnikrishnan",
+      "party": "ADHMPI",
+      "votes": 430,
+      "pct": 0.34
+    },
+    {
+      "name": "S. Sudhilal",
+      "party": "SUCIC",
+      "votes": 213,
+      "pct": 0.17
+    },
+    {
+      "name": "N. Shihabudeen",
+      "party": "IND",
+      "votes": 187,
+      "pct": 0.15
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=125",
+  "fetchedAt": "2026-05-07T02:49:06.667Z"
+}

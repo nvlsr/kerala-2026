@@ -118,14 +118,14 @@
           "alliance": "LDF"
         },
         {
-          "name": "Shyamraj P.",
+          "name": "P. Syamraj",
           "party": "Bharatiya Janata Party",
           "votes": 21263,
           "votePct": 15.32,
           "alliance": "NDA"
         },
         {
-          "name": "Leethesh P. T.",
+          "name": "P. T. Leethesh",
           "party": "Bahujan Samaj Party",
           "votes": 934,
           "votePct": 0.67,
@@ -137,6 +137,27 @@
           "votes": 674,
           "votePct": 0.49,
           "alliance": "NOTA"
+        },
+        {
+          "name": "M. T. Thomas",
+          "party": "Independent",
+          "votes": 562,
+          "votePct": 0.4,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Parthasaradhi",
+          "party": "Independent",
+          "votes": 370,
+          "votePct": 0.27,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. R. Sreedharan",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 273,
+          "votePct": 0.2,
+          "alliance": "OTHER"
         }
       ],
       "margin": 20259,

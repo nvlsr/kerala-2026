@@ -111,14 +111,14 @@
           "alliance": "LDF"
         },
         {
-          "name": "M Pradeep Kumar",
+          "name": "M. Pradeep Kumar",
           "party": "Indian National Congress",
           "votes": 43915,
           "votePct": 29.29,
           "alliance": "UDF"
         },
         {
-          "name": "Adv K K Sreedharan",
+          "name": "K. K. Sreedharan",
           "party": "Bharatiya Janata Party",
           "votes": 11308,
           "votePct": 7.54,
@@ -132,7 +132,7 @@
           "alliance": "NOTA"
         },
         {
-          "name": "Abhilash KV",
+          "name": "K. V. Abhilash",
           "party": "Independent",
           "votes": 341,
           "votePct": 0.23,
@@ -142,7 +142,7 @@
       "margin": 49780,
       "marginPct": 33.2,
       "turnout": 149945,
-      "turnoutPct": 83.09,
+      "turnoutPct": 81.84,
       "result": "CPI(M) hold"
     }
   ]

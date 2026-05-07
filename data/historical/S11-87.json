@@ -93,35 +93,70 @@
           "name": "Antony John",
           "party": "Communist Party of India (Marxist)",
           "votes": 64234,
-          "votePct": 47.1,
+          "votePct": 46.99,
           "alliance": "LDF"
         },
         {
           "name": "Shibu Thekkumpuram",
           "party": "Kerala Congress",
           "votes": 57629,
-          "votePct": 42.3,
+          "votePct": 42.16,
           "alliance": "UDF"
         },
         {
           "name": "Joe Joseph",
           "party": "Twenty 20 Party",
           "votes": 7978,
-          "votePct": 5.8,
+          "votePct": 5.84,
           "alliance": "OTHER"
         },
         {
           "name": "Shine K. Krishnan",
           "party": "Bharath Dharma Jana Sena",
           "votes": 4638,
-          "votePct": 3.4,
+          "votePct": 3.39,
           "alliance": "NDA"
+        },
+        {
+          "name": "T. M. Moosa",
+          "party": "Social Democratic Party Of India",
+          "votes": 1286,
+          "votePct": 0.94,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 414,
+          "votePct": 0.3,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Shibu Thekkan",
+          "party": "Independent",
+          "votes": 276,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Anto Johny",
+          "party": "Independent",
+          "votes": 136,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shibu",
+          "party": "Independent",
+          "votes": 106,
+          "votePct": 0.08,
+          "alliance": "OTHER"
         }
       ],
       "margin": 6605,
-      "marginPct": 4.8,
-      "turnout": 136283,
-      "turnoutPct": 84.41,
+      "marginPct": 4.83,
+      "turnout": 136697,
+      "turnoutPct": 79.18,
       "result": "CPI(M) hold"
     }
   ]

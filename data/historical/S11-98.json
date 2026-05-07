@@ -130,12 +130,26 @@
           "votes": 763,
           "votePct": 0.58,
           "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 497,
+          "votePct": 0.38,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "M. V. Cherian",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
+          "votes": 146,
+          "votePct": 0.11,
+          "alliance": "OTHER"
         }
       ],
       "margin": 9044,
       "marginPct": 6.86,
       "turnout": 131797,
-      "turnoutPct": 77.36,
+      "turnoutPct": 74.9,
       "result": "INC hold"
     },
     {

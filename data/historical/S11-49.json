@@ -132,10 +132,59 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 427,
+          "votePct": 0.28,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Rajagopal Thrithala",
           "party": "Bahujan Samaj Party",
           "votes": 333,
           "votePct": 0.22,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sreenivas Kuruppath",
+          "party": "Independent",
+          "votes": 136,
+          "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Hussain Thattathazhath",
+          "party": "Independent",
+          "votes": 107,
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Rajesh s/o E. Raman",
+          "party": "Independent",
+          "votes": 91,
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "E. V, Noorudeen",
+          "party": "Independent",
+          "votes": 70,
+          "votePct": 0.05,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Balaraman s/o Kunjunni",
+          "party": "Independent",
+          "votes": 57,
+          "votePct": 0.04,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. T. Balaraman s/o Krishnan Nair",
+          "party": "Independent",
+          "votes": 45,
+          "votePct": 0.03,
           "alliance": "OTHER"
         }
       ],

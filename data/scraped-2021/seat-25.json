@@ -1,0 +1,55 @@
+{
+  "seat": 25,
+  "constituencyName": "Balusseri",
+  "electorate": 224239,
+  "validVotesPolled": 181954,
+  "pollingPct": 81.14,
+  "nota": 431,
+  "margin": 20372,
+  "candidates": [
+    {
+      "name": "K. M. Sachindev",
+      "party": "CPIM",
+      "votes": 91839,
+      "pct": 50.47
+    },
+    {
+      "name": "Dharmajan Bolgatty",
+      "party": "INC",
+      "votes": 71467,
+      "pct": 39.28
+    },
+    {
+      "name": "Libin Balusseri",
+      "party": "BJP",
+      "votes": 16490,
+      "pct": 9.06
+    },
+    {
+      "name": "Chandrika",
+      "party": "WPI",
+      "votes": 889,
+      "pct": 0.49
+    },
+    {
+      "name": "Jobish Balusseri",
+      "party": "BSP",
+      "votes": 476,
+      "pct": 0.26
+    },
+    {
+      "name": "Dharmendran",
+      "party": "IND",
+      "votes": 247,
+      "pct": 0.14
+    },
+    {
+      "name": "Mohandas Unnikulam",
+      "party": "RPIA",
+      "votes": 115,
+      "pct": 0.06
+    }
+  ],
+  "sourceUrl": "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no=25",
+  "fetchedAt": "2026-05-07T02:49:05.969Z"
+}

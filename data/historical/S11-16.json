@@ -111,7 +111,7 @@
           "alliance": "UDF"
         },
         {
-          "name": "Sakeer Hussain",
+          "name": "K. V. Sakheer Hussain",
           "party": "Communist Party of India (Marxist)",
           "votes": 63534,
           "votePct": 44.7,
@@ -125,7 +125,7 @@
           "alliance": "NDA"
         },
         {
-          "name": "A.C. Jalaluddeen",
+          "name": "A. C. Jalaludhin",
           "party": "Social Democratic Party Of India",
           "votes": 1541,
           "votePct": 1.08,
@@ -137,12 +137,61 @@
           "votes": 404,
           "votePct": 0.28,
           "alliance": "NOTA"
+        },
+        {
+          "name": "Sakheer Hussain s/o Hamsa",
+          "party": "Independent",
+          "votes": 243,
+          "votePct": 0.17,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sunny Vazhackamalayil",
+          "party": "Independent",
+          "votes": 121,
+          "votePct": 0.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "E. K. Sakeer s/o Asiya",
+          "party": "Independent",
+          "votes": 116,
+          "votePct": 0.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. K. Saji",
+          "party": "NEWLP",
+          "votes": 106,
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "John Pallickamalil",
+          "party": "SDC",
+          "votes": 92,
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Narayana Kumar",
+          "party": "Independent",
+          "votes": 60,
+          "votePct": 0.04,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sunny Muthukulathel",
+          "party": "Independent",
+          "votes": 60,
+          "votePct": 0.04,
+          "alliance": "OTHER"
         }
       ],
       "margin": 3172,
       "marginPct": 2.23,
       "turnout": 142138,
-      "turnoutPct": 78.07,
+      "turnoutPct": 80.19,
       "result": "INC hold"
     }
   ]

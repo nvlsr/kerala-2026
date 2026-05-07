@@ -104,14 +104,14 @@
       "reason": null,
       "candidates": [
         {
-          "name": "N. A. Nellikkunnu",
+          "name": "N. A Nellikunnu",
           "party": "Indian Union Muslim League",
           "votes": 63296,
           "votePct": 43.8,
           "alliance": "UDF"
         },
         {
-          "name": "K. Shreekanth",
+          "name": "K. Sreekant",
           "party": "Bharatiya Janata Party",
           "votes": 50395,
           "votePct": 34.88,
@@ -125,7 +125,7 @@
           "alliance": "LDF"
         },
         {
-          "name": "Vijaya K. P.",
+          "name": "K. P. Vijaya",
           "party": "Bahujan Samaj Party",
           "votes": 679,
           "votePct": 0.47,
@@ -137,12 +137,33 @@
           "votes": 639,
           "votePct": 0.44,
           "alliance": "NOTA"
+        },
+        {
+          "name": "M. Ranjith Raj",
+          "party": "Anna DHRM",
+          "votes": 555,
+          "votePct": 0.38,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "I. B. Nishant kumar",
+          "party": "Independent",
+          "votes": 417,
+          "votePct": 0.29,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Sudhakaran",
+          "party": "Independent",
+          "votes": 196,
+          "votePct": 0.14,
+          "alliance": "OTHER"
         }
       ],
       "margin": 12901,
-      "marginPct": 8.92,
-      "turnout": 143032,
-      "turnoutPct": 70.87,
+      "marginPct": 8.93,
+      "turnout": 144500,
+      "turnoutPct": 71.6,
       "result": "IUML hold"
     }
   ]

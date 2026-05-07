@@ -132,6 +132,13 @@
           "alliance": "OTHER"
         },
         {
+          "name": "NOTA",
+          "party": "None of the Above",
+          "votes": 931,
+          "votePct": 0.73,
+          "alliance": "NOTA"
+        },
+        {
           "name": "Mohanan Mayyanad",
           "party": "Bahujan Samaj Party",
           "votes": 543,
@@ -140,7 +147,7 @@
         },
         {
           "name": "M. Unnikrishnan",
-          "party": "ADHMPI",
+          "party": "Anna DHRM",
           "votes": 430,
           "votePct": 0.34,
           "alliance": "OTHER"
