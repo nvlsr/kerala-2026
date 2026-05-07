@@ -148,7 +148,7 @@ export function Hint({ mode }: { mode: EncodingMode }) {
         ? "Green = gain over 2021, rose = loss; darker shades = larger swings."
         : "Polygons are colored by alliance. When sorted by a numeric column, darker shades mean a bigger value or swing."
   return (
-    <div className="rounded-lg border border-dashed p-4 text-xs text-muted-foreground">
+    <div className="min-h-[12rem] rounded-lg border border-dashed p-4 text-xs text-muted-foreground">
       <div className="mb-2 font-medium tracking-wide text-foreground/70 uppercase">
         Hover or click a seat
       </div>
