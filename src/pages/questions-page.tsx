@@ -2,22 +2,22 @@ import { useEffect, useMemo, useState } from "react"
 import { Link } from "react-router-dom"
 
 import { FlowsTeaser } from "@/components/flows-teaser"
-import { InsightCard } from "@/components/insight-card"
+import { QuestionCard } from "@/components/question-card"
 import {
-  InsightsFilterBar,
+  QuestionsFilterBar,
   type PartyFilter,
   type ThemeFilter,
-} from "@/components/insights-filter-bar"
+} from "@/components/questions-filter-bar"
 import { SiteFooter } from "@/components/site-footer"
 import { ThemeToggle } from "@/components/theme-toggle"
 import {
-  allianceForInsightParty,
-  curatedInsights,
+  allianceForQuestionParty,
+  curatedQuestions,
   getAvailableParties,
   getAvailableThemes,
-} from "@/lib/curated-insights"
+} from "@/lib/curated-questions"
 
-export function InsightsPage() {
+export function QuestionsPage() {
   const [partyFilter, setPartyFilter] = useState<PartyFilter>("all")
   const [themeFilter, setThemeFilter] = useState<ThemeFilter>("all")
 
@@ -42,15 +42,15 @@ export function InsightsPage() {
     return () => cancelAnimationFrame(handle)
   }, [])
 
-  const visibleInsights = useMemo(() => {
-    return curatedInsights.filter((insight) => {
+  const visibleQuestions = useMemo(() => {
+    return curatedQuestions.filter((q) => {
       if (partyFilter !== "all") {
-        const partyMatch = insight.tags.party === partyFilter
+        const partyMatch = q.tags.party === partyFilter
         const allianceMatch =
-          insight.tags.alliance === allianceForInsightParty(partyFilter)
+          q.tags.alliance === allianceForQuestionParty(partyFilter)
         if (!partyMatch && !allianceMatch) return false
       }
-      if (themeFilter !== "all" && insight.tags.theme !== themeFilter) {
+      if (themeFilter !== "all" && q.tags.theme !== themeFilter) {
         return false
       }
       return true
@@ -69,7 +69,7 @@ export function InsightsPage() {
               <Link to="/" className="hover:text-foreground">
                 Kerala 2026
               </Link>{" "}
-              · Insights
+              · Questions
             </p>
             <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Curated questions
@@ -78,20 +78,20 @@ export function InsightsPage() {
           <ThemeToggle />
         </div>
       </header>
-      <InsightsFilterBar
+      <QuestionsFilterBar
         parties={parties}
         themes={themes}
         partyFilter={partyFilter}
         themeFilter={themeFilter}
         onPartyChange={setPartyFilter}
         onThemeChange={setThemeFilter}
-        shownCount={visibleInsights.length}
-        totalCount={curatedInsights.length}
+        shownCount={visibleQuestions.length}
+        totalCount={curatedQuestions.length}
       />
       <main className="mx-auto max-w-6xl px-6 py-6 pb-10">
-        {visibleInsights.length === 0 ? (
+        {visibleQuestions.length === 0 ? (
           <div className="rounded-lg border border-dashed px-6 py-12 text-center text-sm text-muted-foreground">
-            No insights match this combination.{" "}
+            No questions match this combination.{" "}
             <button
               type="button"
               onClick={() => {
@@ -105,9 +105,9 @@ export function InsightsPage() {
           </div>
         ) : (
           <ul className="flex flex-col gap-6">
-            {visibleInsights.map((insight) => (
-              <li key={insight.id}>
-                <InsightCard insight={insight} />
+            {visibleQuestions.map((q) => (
+              <li key={q.id}>
+                <QuestionCard question={q} />
               </li>
             ))}
           </ul>

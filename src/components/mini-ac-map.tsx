@@ -17,7 +17,7 @@ type Props = {
 }
 
 /**
- * Read-only AC choropleth for snippet contexts (insight cards, etc.).
+ * Read-only AC choropleth for snippet contexts (question cards, etc.).
  * Reuses the same encoding pipeline as the live ConstituencyMap, but
  * skips hover state, click handlers, and the SeatPanel popup.
  */

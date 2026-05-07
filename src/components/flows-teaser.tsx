@@ -2,12 +2,12 @@ import { Link } from "react-router-dom"
 import { IconArrowUpRight, IconKey } from "@tabler/icons-react"
 
 /**
- * Bottom-of-/insights invitation to /flows. The reader has scrolled
+ * Bottom-of-/questions invitation to /flows. The reader has scrolled
  * through curated questions; reward that depth with the next layer down —
  * alliance-level vote share moving between fronts across cycles, the
  * cross-currents the per-question cards can't capture.
  *
- * Mirrors `InsightsTeaser` (homepage → /insights) in tone and structure
+ * Mirrors `QuestionsTeaser` (homepage → /questions) in tone and structure
  * but with an "unlocked" framing instead of "treat" — the reader has
  * earned this layer by demonstrating analytic interest.
  */

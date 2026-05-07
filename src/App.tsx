@@ -12,8 +12,8 @@ import { DashboardPage } from "@/pages/dashboard-page"
 const ExplorePage = lazy(() =>
   import("@/pages/explore-page").then((m) => ({ default: m.ExplorePage }))
 )
-const InsightsPage = lazy(() =>
-  import("@/pages/insights-page").then((m) => ({ default: m.InsightsPage }))
+const QuestionsPage = lazy(() =>
+  import("@/pages/questions-page").then((m) => ({ default: m.QuestionsPage }))
 )
 const FlowsPage = lazy(() =>
   import("@/pages/flows-page").then((m) => ({ default: m.FlowsPage }))
@@ -44,8 +44,8 @@ function PageFallback() {
 /** Scrolls to top of viewport whenever the route's pathname changes.
  *  Without this, in-app navigations via React Router's <Link> carry
  *  the previous page's scroll position with them — e.g. clicking the
- *  InsightsTeaser link near the bottom of /explore would land the
- *  user at the bottom of /insights too. Direct visits (fresh page
+ *  QuestionsTeaser link near the bottom of /explore would land the
+ *  user at the bottom of /questions too. Direct visits (fresh page
  *  loads) are unaffected. Query-string changes within the same
  *  pathname (e.g. /explore?seat=39) don't trigger a scroll, so
  *  filter interactions keep scroll position. */
@@ -66,7 +66,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/explore" element={<ExplorePage />} />
-          <Route path="/insights" element={<InsightsPage />} />
+          <Route path="/questions" element={<QuestionsPage />} />
           <Route path="/flows" element={<FlowsPage />} />
           <Route path="/drifts" element={<DriftsPage />} />
           <Route path="/belts" element={<BeltsPage />} />

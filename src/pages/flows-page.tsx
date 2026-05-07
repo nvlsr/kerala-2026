@@ -81,7 +81,7 @@ export function FlowsPage() {
   // Browsers compute :target before React mounts the cards on initial load,
   // so the native scroll lands nowhere. Re-set the hash after the first paint
   // to trigger :target and produce the correct scroll. Same trick the
-  // /insights page uses.
+  // /questions page uses.
   useEffect(() => {
     if (!window.location.hash) return
     const hash = window.location.hash

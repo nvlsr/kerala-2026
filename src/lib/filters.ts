@@ -50,7 +50,7 @@ export type FilterAction =
   | { type: "clear-party" }
   | { type: "clear-seat" }
   | { type: "reset" }
-  /** Apply a curated combo (Insights chips) — overwrites multiple slots at once. */
+  /** Apply a curated combo (Quick views chips) — overwrites multiple slots at once. */
   | { type: "apply-preset"; preset: Partial<Filters> }
   /** Replace the whole state — used to sync filters from URL changes
    *  driven by React Router (e.g., the SearchBar navigating to

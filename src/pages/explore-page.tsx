@@ -11,7 +11,7 @@ import {
   describeMapSubtitle,
 } from "@/components/constituency-map"
 import { ConstituencySection } from "@/components/constituency-section"
-import { InsightsTeaser } from "@/components/insights-teaser"
+import { QuestionsTeaser } from "@/components/questions-teaser"
 import { SearchBar } from "@/components/search-bar"
 import { SeatPreviewCard } from "@/components/seat-preview-card"
 import { Section } from "@/components/section"
@@ -157,7 +157,7 @@ export function ExplorePage() {
         selectedConstituency={selectedConstituency}
         onSelectSeat={(seat) => dispatch({ type: "set-seat", seat })}
       />
-      <InsightsTeaser />
+      <QuestionsTeaser />
       <SiteFooter />
     </div>
   )

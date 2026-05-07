@@ -1,6 +1,6 @@
 import type { Filters } from "@/lib/filters"
 
-export type InsightParty =
+export type QuestionParty =
   | "BJP"
   | "BDJS"
   | "INC"
@@ -8,32 +8,32 @@ export type InsightParty =
   | "CPI(M)"
   | "CPI"
 
-export type InsightAlliance = "UDF" | "LDF" | "NDA"
+export type QuestionAlliance = "UDF" | "LDF" | "NDA"
 
-export type InsightTheme =
+export type QuestionTheme =
   | "vote-share"
   | "margins"
   | "margin-movement"
   | "multi-cycle"
   | "geographic"
 
-export type CuratedInsight = {
+export type CuratedQuestion = {
   id: string
   question: string
   filters: Partial<Filters>
   tags: {
     /** Party this card is about. Omit for cross-party / state-level cards. */
-    party?: InsightParty
+    party?: QuestionParty
     /** Alliance this card is about. A party-pill selection also surfaces the
      *  matching alliance's cards (e.g. clicking BJP shows NDA cards too). */
-    alliance?: InsightAlliance
+    alliance?: QuestionAlliance
     /** The dimension being measured. Direction (gains vs losses) is encoded
      *  in the filters' sort dir, not the tag — paired questions share a tag. */
-    theme: InsightTheme
+    theme: QuestionTheme
   }
 }
 
-const ALLIANCE_FOR_PARTY: Record<InsightParty, InsightAlliance> = {
+const ALLIANCE_FOR_PARTY: Record<QuestionParty, QuestionAlliance> = {
   BJP: "NDA",
   BDJS: "NDA",
   INC: "UDF",
@@ -43,22 +43,22 @@ const ALLIANCE_FOR_PARTY: Record<InsightParty, InsightAlliance> = {
 }
 
 /** Which alliance a party belongs to. Drives the "BJP filter also shows
- *  NDA-level cards" behaviour on /insights. */
-export function allianceForInsightParty(party: InsightParty): InsightAlliance {
+ *  NDA-level cards" behaviour on /questions. */
+export function allianceForQuestionParty(party: QuestionParty): QuestionAlliance {
   return ALLIANCE_FOR_PARTY[party]
 }
 
 /**
  * Hand-picked questions worth answering with the dashboard. Each entry maps to
- * a card on /insights — the card renders the top-5 matching constituencies
+ * a card on /questions — the card renders the top-5 matching constituencies
  * plus the corresponding constituency-map view, and links to the full
  * dashboard pre-loaded with the same filters.
  *
- * Adding a new insight: append a record. The `filters` field is the same
+ * Adding a new question: append a record. The `filters` field is the same
  * partial-Filters shape used by QuickView presets in src/lib/quick-views.ts.
- * Tag the card so the /insights filter bar can group it with related cards.
+ * Tag the card so the /questions filter bar can group it with related cards.
  */
-export const curatedInsights: CuratedInsight[] = [
+export const curatedQuestions: CuratedQuestion[] = [
   {
     id: "bjp-gains",
     question: "Where did BJP gain the most vote share, 2021 → 2026?",
@@ -476,7 +476,7 @@ export const curatedInsights: CuratedInsight[] = [
 ]
 
 /** Stable display order for party filter pills (grouped by alliance: NDA, UDF, LDF). */
-const PARTY_ORDER: InsightParty[] = [
+const PARTY_ORDER: QuestionParty[] = [
   "BJP",
   "BDJS",
   "INC",
@@ -486,7 +486,7 @@ const PARTY_ORDER: InsightParty[] = [
 ]
 
 /** Stable display order for theme filter pills. */
-const THEME_ORDER: InsightTheme[] = [
+const THEME_ORDER: QuestionTheme[] = [
   "vote-share",
   "margins",
   "margin-movement",
@@ -494,7 +494,7 @@ const THEME_ORDER: InsightTheme[] = [
   "geographic",
 ]
 
-const THEME_LABELS: Record<InsightTheme, string> = {
+const THEME_LABELS: Record<QuestionTheme, string> = {
   "vote-share": "Vote share",
   margins: "Margins",
   "margin-movement": "Margin movement",
@@ -502,22 +502,22 @@ const THEME_LABELS: Record<InsightTheme, string> = {
   geographic: "Geographic",
 }
 
-export function themeLabel(theme: InsightTheme): string {
+export function themeLabel(theme: QuestionTheme): string {
   return THEME_LABELS[theme]
 }
 
-/** Parties that appear in at least one curated insight, in stable order. */
-export function getAvailableParties(): InsightParty[] {
-  const present = new Set<InsightParty>()
-  for (const i of curatedInsights) {
+/** Parties that appear in at least one curated question, in stable order. */
+export function getAvailableParties(): QuestionParty[] {
+  const present = new Set<QuestionParty>()
+  for (const i of curatedQuestions) {
     if (i.tags.party) present.add(i.tags.party)
   }
   return PARTY_ORDER.filter((p) => present.has(p))
 }
 
-/** Themes that appear in at least one curated insight, in stable order. */
-export function getAvailableThemes(): InsightTheme[] {
-  const present = new Set<InsightTheme>()
-  for (const i of curatedInsights) present.add(i.tags.theme)
+/** Themes that appear in at least one curated question, in stable order. */
+export function getAvailableThemes(): QuestionTheme[] {
+  const present = new Set<QuestionTheme>()
+  for (const i of curatedQuestions) present.add(i.tags.theme)
   return THEME_ORDER.filter((t) => present.has(t))
 }

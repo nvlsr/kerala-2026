@@ -7,8 +7,8 @@ import { IconArrowUpRight, IconHistory } from "@tabler/icons-react"
  * sustained drifts across four cycles. Different time horizon, different
  * question.
  *
- * Mirrors InsightsTeaser (homepage→/insights) and FlowsTeaser
- * (/insights→/flows) but escalates the metaphor again: amber + history
+ * Mirrors QuestionsTeaser (homepage→/questions) and FlowsTeaser
+ * (/questions→/flows) but escalates the metaphor again: amber + history
  * icon for the time-tinted "zoom out" feel.
  */
 export function DriftsTeaser() {

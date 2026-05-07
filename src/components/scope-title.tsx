@@ -20,7 +20,7 @@ import {
  * The site's home-page title block — "Kerala · May 2026 / Legislative
  * Assembly Election Results" + the theme toggle. Used on `/` only.
  * Other pages (/explore, /flows, /drifts, /belts, /religion-map,
- * /insights, /religion-map) render their own custom headers.
+ * /questions, /religion-map) render their own custom headers.
  */
 export function HomeHeader() {
   return (

@@ -1,16 +1,16 @@
 import {
   themeLabel,
-  type InsightParty,
-  type InsightTheme,
-} from "@/lib/curated-insights"
+  type QuestionParty,
+  type QuestionTheme,
+} from "@/lib/curated-questions"
 import { cn } from "@/lib/utils"
 
-export type PartyFilter = InsightParty | "all"
-export type ThemeFilter = InsightTheme | "all"
+export type PartyFilter = QuestionParty | "all"
+export type ThemeFilter = QuestionTheme | "all"
 
 type Props = {
-  parties: InsightParty[]
-  themes: InsightTheme[]
+  parties: QuestionParty[]
+  themes: QuestionTheme[]
   partyFilter: PartyFilter
   themeFilter: ThemeFilter
   onPartyChange: (next: PartyFilter) => void
@@ -19,7 +19,7 @@ type Props = {
   totalCount: number
 }
 
-export function InsightsFilterBar({
+export function QuestionsFilterBar({
   parties,
   themes,
   partyFilter,
@@ -32,7 +32,7 @@ export function InsightsFilterBar({
   const isFiltered = partyFilter !== "all" || themeFilter !== "all"
   return (
     <nav
-      aria-label="Insight filters"
+      aria-label="Question filters"
       className="sticky top-0 z-40 border-y bg-background/85 supports-backdrop-filter:backdrop-blur"
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-3 text-xs sm:flex-row sm:items-center sm:gap-4">

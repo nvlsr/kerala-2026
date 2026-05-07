@@ -10,7 +10,7 @@ import {
   formatPercent,
   type CandidateRow,
 } from "@/lib/data"
-import type { CuratedInsight } from "@/lib/curated-insights"
+import type { CuratedQuestion } from "@/lib/curated-questions"
 import {
   getFilteredConstituencyNumbers,
   initialFilters,
@@ -60,11 +60,11 @@ function pickSignFilter(
 }
 
 type Props = {
-  insight: CuratedInsight
+  question: CuratedQuestion
 }
 
-export function InsightCard({ insight }: Props) {
-  const filters = useMemo(() => resolveFilters(insight.filters), [insight])
+export function QuestionCard({ question }: Props) {
+  const filters = useMemo(() => resolveFilters(question.filters), [question])
   const inFilterSet = useMemo(
     () => getFilteredConstituencyNumbers(filters),
     [filters]
@@ -91,7 +91,7 @@ export function InsightCard({ insight }: Props) {
 
   const [copied, setCopied] = useState(false)
   const handleCopyPermalink = async () => {
-    const url = `${window.location.origin}/insights#${insight.id}`
+    const url = `${window.location.origin}/questions#${question.id}`
     try {
       await navigator.clipboard.writeText(url)
       setCopied(true)
@@ -104,7 +104,7 @@ export function InsightCard({ insight }: Props) {
 
   return (
     <article
-      id={insight.id}
+      id={question.id}
       className="scroll-mt-24 rounded-lg border bg-card/50 p-6 transition hover:border-foreground/40 target:border-foreground/60 target:ring-2 target:ring-foreground/30"
     >
       <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
@@ -114,10 +114,10 @@ export function InsightCard({ insight }: Props) {
               <Link
                 to={dashboardUrl}
                 className="group inline-flex items-baseline gap-2 hover:text-foreground/80"
-                aria-label={`${insight.question} — open in dashboard`}
+                aria-label={`${question.question} — open in dashboard`}
               >
                 <span className="underline-offset-4 group-hover:underline">
-                  {insight.question}
+                  {question.question}
                 </span>
                 <IconArrowUpRight
                   aria-hidden
@@ -126,10 +126,10 @@ export function InsightCard({ insight }: Props) {
               </Link>
             </h2>
             <a
-              href={`#${insight.id}`}
+              href={`#${question.id}`}
               onClick={(e) => {
                 e.preventDefault()
-                window.history.replaceState(null, "", `#${insight.id}`)
+                window.history.replaceState(null, "", `#${question.id}`)
                 void handleCopyPermalink()
               }}
               aria-label={
@@ -156,7 +156,7 @@ export function InsightCard({ insight }: Props) {
               filters={filters}
               inFilterSet={inFilterSet}
               focusSeats={focusSeats}
-              ariaLabel={`Constituency map for: ${insight.question}`}
+              ariaLabel={`Constituency map for: ${question.question}`}
             />
           </div>
         </div>
