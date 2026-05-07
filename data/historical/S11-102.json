@@ -18,21 +18,21 @@
         },
         {
           "name": "A. A. Shukoor",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 59823,
           "votePct": 40.79,
           "alliance": "UDF"
         },
         {
           "name": "T. Sajeev Lal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7486,
           "votePct": 5.1,
           "alliance": "NDA"
         },
         {
           "name": "V. Lenin",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 787,
           "votePct": 0.54,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "C. R. Jayaprakash",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 46201,
           "votePct": 28.54,
           "alliance": "UDF"
         },
         {
           "name": "T. Aniyappan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 27753,
           "votePct": 17.14,
           "alliance": "NDA"
         },
         {
           "name": "Mohan Chacko",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 761,
           "votePct": 0.47,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 736,
           "votePct": 0.45,
           "alliance": "NOTA"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "Shanimol Usman",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 69356,
           "votePct": 44.88,
           "alliance": "UDF"
@@ -119,14 +119,14 @@
         },
         {
           "name": "K. P. Prakash Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 16289,
           "votePct": 10.54,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 840,
           "votePct": 0.54,
           "alliance": "NOTA"
@@ -159,28 +159,28 @@
         },
         {
           "name": "Shanimol Usman",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 68604,
           "votePct": 41.71,
           "alliance": "UDF"
         },
         {
           "name": "T. Aniyappan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 17479,
           "votePct": 10.63,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 846,
           "votePct": 0.51,
           "alliance": "NOTA"
         },
         {
           "name": "Rugma Prasad",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 682,
           "votePct": 0.41,
           "alliance": "OTHER"

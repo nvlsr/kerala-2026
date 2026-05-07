@@ -25,21 +25,21 @@
         },
         {
           "name": "K. Jayaprakash",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6492,
           "votePct": 4.5,
           "alliance": "NDA"
         },
         {
           "name": "Muhammadali S. P.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1930,
           "votePct": 1.34,
           "alliance": "OTHER"
         },
         {
           "name": "Nidheesh Thillankeri",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 927,
           "votePct": 0.64,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "P. Balakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14742,
           "votePct": 9.21,
           "alliance": "NDA"
         },
         {
           "name": "Ibrahim Thiruvatoor",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1323,
           "votePct": 0.83,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 867,
           "votePct": 0.54,
           "alliance": "NOTA"
@@ -112,21 +112,21 @@
         },
         {
           "name": "V. P. Abdul Rasheed",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 70181,
           "votePct": 39.4,
           "alliance": "UDF"
         },
         {
           "name": "A. P. Gangadharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 13058,
           "votePct": 7.33,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 789,
           "votePct": 0.44,
           "alliance": "NOTA"

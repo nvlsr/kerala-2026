@@ -18,28 +18,28 @@
         },
         {
           "name": "C. K. Sreedharan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50266,
           "votePct": 39.08,
           "alliance": "UDF"
         },
         {
           "name": "Sunita Prasanth",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 13073,
           "votePct": 10.16,
           "alliance": "NDA"
         },
         {
           "name": "Faisal Koliyadukkam",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1265,
           "votePct": 0.98,
           "alliance": "OTHER"
         },
         {
           "name": "P. Damodaran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1096,
           "votePct": 0.85,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "K. Sudhakaran",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 66487,
           "votePct": 41.55,
           "alliance": "UDF"
         },
         {
           "name": "K. Shreenath",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 21231,
           "votePct": 13.2,
           "alliance": "NDA"
@@ -112,14 +112,14 @@
         },
         {
           "name": "Periya Balakrishnan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 65342,
           "votePct": 39.52,
           "alliance": "UDF"
         },
         {
           "name": "A. Velayudhan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 20360,
           "votePct": 12.31,
           "alliance": "NDA"

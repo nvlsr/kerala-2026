@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Adoor Prakash",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 65724,
           "votePct": 50.15,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "V. S. Harish Chandran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5994,
           "votePct": 4.57,
           "alliance": "NDA"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Adoor Prakash",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 72800,
           "votePct": 50.81,
           "alliance": "UDF"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Asoka Kumar D.",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 16713,
           "votePct": 11.66,
           "alliance": "NDA"
         },
         {
           "name": "Reyash",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 401,
           "votePct": 0.28,
           "alliance": "OTHER"
         },
         {
           "name": "Joshy Joseph",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 365,
           "votePct": 0.25,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "P. Mohanraj",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 44146,
           "votePct": 31.79,
           "alliance": "UDF"
         },
         {
           "name": "K. Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 39786,
           "votePct": 28.65,
           "alliance": "NDA"
@@ -145,14 +145,14 @@
         },
         {
           "name": "Robin Peter",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 53810,
           "votePct": 35.94,
           "alliance": "UDF"
         },
         {
           "name": "K. Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 32811,
           "votePct": 21.91,
           "alliance": "NDA"

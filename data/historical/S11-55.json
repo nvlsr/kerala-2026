@@ -18,21 +18,21 @@
         },
         {
           "name": "Lathika Subhash",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 54312,
           "votePct": 39.84,
           "alliance": "UDF"
         },
         {
           "name": "P. K. Majeed Pedikkat",
-          "party": "JD(U)",
+          "party": "Janata Dal (United)",
           "votes": 2772,
           "votePct": 2.03,
           "alliance": "NDA"
         },
         {
           "name": "Ravi Pallatheri",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1480,
           "votePct": 1.09,
           "alliance": "OTHER"
@@ -58,14 +58,14 @@
         },
         {
           "name": "C. Krishnakumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 46157,
           "votePct": 28.9,
           "alliance": "NDA"
         },
         {
           "name": "V. S. Joy",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 35333,
           "votePct": 22.12,
           "alliance": "UDF"
@@ -98,14 +98,14 @@
         },
         {
           "name": "C. Krishnakumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 50200,
           "votePct": 30.68,
           "alliance": "NDA"
         },
         {
           "name": "S. K. Ananthakrishnan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 35444,
           "votePct": 21.66,
           "alliance": "UDF"

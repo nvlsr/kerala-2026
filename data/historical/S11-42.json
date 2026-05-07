@@ -25,7 +25,7 @@
         },
         {
           "name": "Preman",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11099,
           "votePct": 9.8,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Abdul Latheef",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2571,
           "votePct": 2.27,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "O. K. Thangal",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 47110,
           "votePct": 34.27,
           "alliance": "LDF"
         },
         {
           "name": "K. Janachandran Master",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 22887,
           "votePct": 16.65,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "Haneefa Haji",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2499,
           "votePct": 1.82,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "A. P. Abdul Wahab",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 57707,
           "votePct": 38.11,
           "alliance": "LDF"
         },
         {
           "name": "Peethambaran Palat",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 19853,
           "votePct": 13.11,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1150,
           "votePct": 0.76,
           "alliance": "NOTA"
         },
         {
           "name": "Sasi Kizhakkan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 881,
           "votePct": 0.58,
           "alliance": "OTHER"

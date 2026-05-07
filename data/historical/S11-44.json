@@ -25,14 +25,14 @@
         },
         {
           "name": "Ravi Thelath",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7304,
           "votePct": 7.02,
           "alliance": "NDA"
         },
         {
           "name": "K. K. Majeed Khasimi",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3137,
           "votePct": 3.01,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "P. R. Rasmilnath",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11051,
           "votePct": 7.85,
           "alliance": "NDA"
         },
         {
           "name": "Asharaf Vailathur",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1291,
           "votePct": 0.92,
           "alliance": "OTHER"
         },
         {
           "name": "K. K. Majeed Khasimi",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1151,
           "votePct": 0.82,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "K. Narayanan Master",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 10590,
           "votePct": 6.94,
           "alliance": "NDA"
         },
         {
           "name": "Mueenudheen",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 183,
           "votePct": 0.12,
           "alliance": "OTHER"

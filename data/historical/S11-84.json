@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "V. P. Sajendran",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 63624,
           "votePct": 49.72,
           "alliance": "UDF"
@@ -25,21 +25,21 @@
         },
         {
           "name": "M. Ravi",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5862,
           "votePct": 4.58,
           "alliance": "NDA"
         },
         {
           "name": "M. K. Manoj Kumar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2969,
           "votePct": 2.32,
           "alliance": "OTHER"
         },
         {
           "name": "Rajeev P. T.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 625,
           "votePct": 0.49,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "V. P. Sajendran",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 65445,
           "votePct": 44.13,
           "alliance": "UDF"
@@ -72,7 +72,7 @@
         },
         {
           "name": "Thuravoor Suresh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 16459,
           "votePct": 11.1,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1179,
           "votePct": 0.79,
           "alliance": "NOTA"
@@ -112,7 +112,7 @@
         },
         {
           "name": "V. P. Sajeendran",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49636,
           "votePct": 32.04,
           "alliance": "UDF"
@@ -126,14 +126,14 @@
         },
         {
           "name": "Renu Suresh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7218,
           "votePct": 4.66,
           "alliance": "NDA"
         },
         {
           "name": "Krishnan Eranhikal",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1294,
           "votePct": 0.84,
           "alliance": "OTHER"
@@ -147,7 +147,7 @@
         },
         {
           "name": "A. T. Manikuttan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 205,
           "votePct": 0.13,
           "alliance": "OTHER"

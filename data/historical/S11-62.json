@@ -25,7 +25,7 @@
         },
         {
           "name": "K. K. Aneesh Kumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11725,
           "votePct": 8.93,
           "alliance": "NDA"
@@ -72,14 +72,14 @@
         },
         {
           "name": "K. K. Aneeshkumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 29325,
           "votePct": 19.43,
           "alliance": "NDA"
         },
         {
           "name": "Jileef",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1204,
           "votePct": 0.74,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "K. Jayasankar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 48901,
           "votePct": 31.58,
           "alliance": "UDF"
         },
         {
           "name": "K. K. Aneeshkumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 27833,
           "votePct": 17.98,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 559,
           "votePct": 0.36,
           "alliance": "NOTA"

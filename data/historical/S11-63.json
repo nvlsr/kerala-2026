@@ -25,14 +25,14 @@
         },
         {
           "name": "Dayanandan Mampully",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9306,
           "votePct": 7.25,
           "alliance": "NDA"
         },
         {
           "name": "Ashraf Vadakoot",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2187,
           "votePct": 1.7,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Nivedida Subramanian",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 25490,
           "votePct": 17.26,
           "alliance": "NDA"
         },
         {
           "name": "P. R. Siyad",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1406,
           "votePct": 0.95,
           "alliance": "OTHER"
         },
         {
           "name": "K. G. Mohanan",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1382,
           "votePct": 0.94,
           "alliance": "OTHER"
@@ -126,7 +126,7 @@
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1007,
           "votePct": 0.69,
           "alliance": "NOTA"

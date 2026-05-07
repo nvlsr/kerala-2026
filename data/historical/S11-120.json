@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "K. B. Ganesh Kumar",
-          "party": "KC(B)",
+          "party": "Kerala Congress (B)",
           "votes": 71421,
           "votePct": 55.64,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "R. Subhash Pattazhy",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 2839,
           "votePct": 2.21,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Punalur Salim",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 864,
           "votePct": 0.67,
           "alliance": "OTHER"
@@ -58,35 +58,35 @@
       "candidates": [
         {
           "name": "K. B. Ganesh Kumar",
-          "party": "KC(B)",
+          "party": "Kerala Congress (B)",
           "votes": 74429,
           "votePct": 52.39,
           "alliance": "LDF"
         },
         {
           "name": "P. V. Jagadish Kumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49867,
           "votePct": 35.1,
           "alliance": "UDF"
         },
         {
           "name": "Raghu Damodharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11700,
           "votePct": 8.24,
           "alliance": "NDA"
         },
         {
           "name": "Faizy M. Pasha",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3843,
           "votePct": 2.71,
           "alliance": "OTHER"
         },
         {
           "name": "Perinadu Gopalakrishnan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 846,
           "votePct": 0.6,
           "alliance": "OTHER"
@@ -105,21 +105,21 @@
       "candidates": [
         {
           "name": "K. B. Ganesh Kumar",
-          "party": "KC(B)",
+          "party": "Kerala Congress (B)",
           "votes": 67276,
           "votePct": 49.09,
           "alliance": "LDF"
         },
         {
           "name": "Jyothikumar Chamakkala",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52940,
           "votePct": 38.63,
           "alliance": "UDF"
         },
         {
           "name": "V. S. Jithin Dev",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12398,
           "votePct": 9.05,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "Faizy M. Pasha",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1192,
           "votePct": 0.87,
           "alliance": "OTHER"

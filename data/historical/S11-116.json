@@ -25,14 +25,14 @@
         },
         {
           "name": "Nazarudeen Elamaram",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 7645,
           "votePct": 5.55,
           "alliance": "OTHER"
         },
         {
           "name": "Malumel Sumesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5097,
           "votePct": 3.7,
           "alliance": "NDA"
@@ -65,21 +65,21 @@
         },
         {
           "name": "C. R. Mahesh",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 68143,
           "votePct": 41.97,
           "alliance": "UDF"
         },
         {
           "name": "V. Sadasivan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 19115,
           "votePct": 11.77,
           "alliance": "NDA"
         },
         {
           "name": "A. K. Salahudeen",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1737,
           "votePct": 1.07,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "C. R. Mahesh",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 94225,
           "votePct": 54.38,
           "alliance": "UDF"
@@ -119,7 +119,7 @@
         },
         {
           "name": "Bitty Sudheer",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12144,
           "votePct": 7.01,
           "alliance": "NDA"

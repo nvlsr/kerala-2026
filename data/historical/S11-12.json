@@ -18,14 +18,14 @@
         },
         {
           "name": "Mambaram Divakaran",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57192,
           "votePct": 42,
           "alliance": "UDF"
         },
         {
           "name": "C. P. Sangeetha",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4963,
           "votePct": 3.64,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Madhu S. Vayanan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 797,
           "votePct": 0.59,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "Mambaram Divakaran",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50424,
           "votePct": 32.82,
           "alliance": "UDF"
         },
         {
           "name": "Mohanan Mananthery",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12763,
           "votePct": 8.31,
           "alliance": "NDA"
         },
         {
           "name": "Tharammal Niyas",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1994,
           "votePct": 1.3,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "C. Raghunathan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 45399,
           "votePct": 28.33,
           "alliance": "UDF"
         },
         {
           "name": "C. K. Padmanabhan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14623,
           "votePct": 9.13,
           "alliance": "NDA"
         },
         {
           "name": "Basheer Kannadiparamba",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2280,
           "votePct": 1.42,
           "alliance": "OTHER"

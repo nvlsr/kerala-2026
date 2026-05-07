@@ -25,7 +25,7 @@
         },
         {
           "name": "C. C. Krishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3013,
           "votePct": 2.52,
           "alliance": "NDA"
@@ -72,14 +72,14 @@
         },
         {
           "name": "Biju Madhavan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 27403,
           "votePct": 19.4,
           "alliance": "NDA"
         },
         {
           "name": "Sabu Kochuparambil",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 566,
           "votePct": 0.4,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "K. Francis George",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 56795,
           "votePct": 43.24,
           "alliance": "UDF"
         },
         {
           "name": "Sangeetha Viswanathan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 9148,
           "votePct": 7.07,
           "alliance": "NDA"
         },
         {
           "name": "Babu Varghese Vattoli",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1106,
           "votePct": 0.84,
           "alliance": "OTHER"

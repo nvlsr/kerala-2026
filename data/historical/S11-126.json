@@ -18,14 +18,14 @@
         },
         {
           "name": "Bindu Krishna",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47598,
           "votePct": 41.64,
           "alliance": "UDF"
         },
         {
           "name": "Kizhakkanela Sudhakaran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3839,
           "votePct": 3.36,
           "alliance": "NDA"
@@ -65,14 +65,14 @@
         },
         {
           "name": "B. B. Gopakumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 33199,
           "votePct": 24.92,
           "alliance": "NDA"
         },
         {
           "name": "Soorand Rajasekharan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 30139,
           "votePct": 22.63,
           "alliance": "UDF"
@@ -86,7 +86,7 @@
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 604,
           "votePct": 0.45,
           "alliance": "NOTA"
@@ -112,28 +112,28 @@
         },
         {
           "name": "B. B. Gopakumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 42090,
           "votePct": 30.61,
           "alliance": "NDA"
         },
         {
           "name": "N. Peethambara Kurup",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 34280,
           "votePct": 24.93,
           "alliance": "UDF"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 642,
           "votePct": 0.47,
           "alliance": "NOTA"
         },
         {
           "name": "Sunu Bhaskaran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 364,
           "votePct": 0.26,
           "alliance": "OTHER"

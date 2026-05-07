@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Palode Ravi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 59789,
           "votePct": 47.87,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "Anjana K. S.",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5971,
           "votePct": 4.78,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Noorjahan A.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1200,
           "votePct": 0.96,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "Palode Ravi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 54124,
           "votePct": 35.76,
           "alliance": "UDF"
         },
         {
           "name": "V. V. Rajesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 35139,
           "votePct": 23.22,
           "alliance": "NDA"
         },
         {
           "name": "Abdul Salam A.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1039,
           "votePct": 0.69,
           "alliance": "OTHER"
         },
         {
           "name": "Bipin M. I.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 910,
           "votePct": 0.6,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "P. S. Prasanth",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49433,
           "votePct": 32.31,
           "alliance": "UDF"
         },
         {
           "name": "J. R. Padmakumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 26861,
           "votePct": 17.56,
           "alliance": "NDA"
         },
         {
           "name": "Irshad Kanyakulangara",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1884,
           "votePct": 1.23,
           "alliance": "OTHER"
         },
         {
           "name": "Bipin Pallipuram",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 563,
           "votePct": 0.37,
           "alliance": "OTHER"

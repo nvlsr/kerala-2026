@@ -18,14 +18,14 @@
         },
         {
           "name": "K.P. Anil Kumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 60235,
           "votePct": 44.16,
           "alliance": "UDF"
         },
         {
           "name": "T. P. Jayachandran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8086,
           "votePct": 5.93,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Rashid P. T.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 985,
           "votePct": 0.72,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "N. Subramanian",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57224,
           "votePct": 37.24,
           "alliance": "UDF"
         },
         {
           "name": "K. Rajinesh Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 22087,
           "votePct": 14.37,
           "alliance": "NDA"
         },
         {
           "name": "Ismayil Kammana",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 798,
           "votePct": 0.52,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "N. Subramanian",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 67156,
           "votePct": 41.43,
           "alliance": "UDF"
         },
         {
           "name": "N.P. Radhakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 17555,
           "votePct": 10.83,
           "alliance": "NDA"

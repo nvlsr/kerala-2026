@@ -25,14 +25,14 @@
         },
         {
           "name": "P. T. Ali Haji",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5543,
           "votePct": 4.39,
           "alliance": "NDA"
         },
         {
           "name": "A. K. Majeed Master",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2696,
           "votePct": 2.13,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "M. K. Devidasan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9083,
           "votePct": 5.79,
           "alliance": "NDA"
         },
         {
           "name": "Ganesh Vaderi",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 2001,
           "votePct": 1.28,
           "alliance": "OTHER"
         },
         {
           "name": "Ibrahim Tirur",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1828,
           "votePct": 1.17,
           "alliance": "OTHER"
@@ -119,21 +119,21 @@
         },
         {
           "name": "Abdul Salam",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9097,
           "votePct": 5.33,
           "alliance": "NDA"
         },
         {
           "name": "Ashraf",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2712,
           "votePct": 1.9,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 417,
           "votePct": 0.24,
           "alliance": "NOTA"

@@ -18,14 +18,14 @@
         },
         {
           "name": "Johnson Abraham",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 54643,
           "votePct": 41.01,
           "alliance": "UDF"
         },
         {
           "name": "B. Radhamani",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4155,
           "votePct": 3.12,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Kuzhichayil Sunil",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 606,
           "votePct": 0.45,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Sisil Fernandes",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 10558,
           "votePct": 7.31,
           "alliance": "NDA"
         },
         {
           "name": "K. Sasankan",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 1117,
           "votePct": 0.77,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 888,
           "votePct": 0.61,
           "alliance": "NOTA"
@@ -119,14 +119,14 @@
         },
         {
           "name": "Ayoor Murali",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 20069,
           "votePct": 13.72,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 688,
           "votePct": 0.47,
           "alliance": "NOTA"

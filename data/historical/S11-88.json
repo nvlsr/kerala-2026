@@ -18,14 +18,14 @@
         },
         {
           "name": "A. K. Mony",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47771,
           "votePct": 44.62,
           "alliance": "UDF"
         },
         {
           "name": "S. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3582,
           "votePct": 3.35,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "T. C. Thankappan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 913,
           "votePct": 0.85,
           "alliance": "OTHER"
@@ -65,7 +65,7 @@
         },
         {
           "name": "A. K. Mony",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 43728,
           "votePct": 37.25,
           "alliance": "UDF"
@@ -79,7 +79,7 @@
         },
         {
           "name": "N. Chandran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9592,
           "votePct": 8.17,
           "alliance": "NDA"
@@ -112,7 +112,7 @@
         },
         {
           "name": "D. Kumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51201,
           "votePct": 44.22,
           "alliance": "UDF"

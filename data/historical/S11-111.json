@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Mathew T. Thomas",
-          "party": "JD(S)",
+          "party": "Janata Dal (Secular)",
           "votes": 63289,
           "votePct": 49.97,
           "alliance": "LDF"
@@ -25,21 +25,21 @@
         },
         {
           "name": "Rajan Moolaveetil",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7656,
           "votePct": 6.05,
           "alliance": "NDA"
         },
         {
           "name": "Kurian Joseph",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1511,
           "votePct": 1.19,
           "alliance": "OTHER"
         },
         {
           "name": "Radhamani S.",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 456,
           "votePct": 0.36,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Mathew T. Thomas",
-          "party": "JD(S)",
+          "party": "Janata Dal (Secular)",
           "votes": 59660,
           "votePct": 41.28,
           "alliance": "LDF"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Akkerman Kalidasan Bhattathiripad",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 31439,
           "votePct": 21.75,
           "alliance": "NDA"
         },
         {
           "name": "Saji Kadampanad",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 756,
           "votePct": 0.52,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 479,
           "votePct": 0.33,
           "alliance": "NOTA"
@@ -105,21 +105,21 @@
       "candidates": [
         {
           "name": "Mathew T. Thomas",
-          "party": "JD(S)",
+          "party": "Janata Dal (Secular)",
           "votes": 62178,
           "votePct": 44.56,
           "alliance": "LDF"
         },
         {
           "name": "Kunju Koshy Paul",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 50757,
           "votePct": 36.37,
           "alliance": "UDF"
         },
         {
           "name": "Ashokan Kulanada",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 22674,
           "votePct": 16.25,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "Rajendra Das",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1074,
           "votePct": 0.77,
           "alliance": "OTHER"

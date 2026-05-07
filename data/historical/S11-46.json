@@ -25,7 +25,7 @@
         },
         {
           "name": "K. K. Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7782,
           "votePct": 6.58,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "K. C. Naser",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2644,
           "votePct": 2.24,
           "alliance": "OTHER"
@@ -72,7 +72,7 @@
         },
         {
           "name": "V. Unnikrishnan Master",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 13205,
           "votePct": 8.89,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "K. P. O. Rahmathullah",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1719,
           "votePct": 1.16,
           "alliance": "OTHER"
@@ -119,14 +119,14 @@
         },
         {
           "name": "P. P. Ganesan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 10796,
           "votePct": 6.8,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 668,
           "votePct": 0.42,
           "alliance": "NOTA"

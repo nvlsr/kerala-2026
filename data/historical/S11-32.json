@@ -25,14 +25,14 @@
         },
         {
           "name": "Jose Kappattmala",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3894,
           "votePct": 3.36,
           "alliance": "NDA"
         },
         {
           "name": "C. T. Ashraf",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 790,
           "votePct": 0.68,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "Giri Pambanal",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 8749,
           "votePct": 6.45,
           "alliance": "NDA"
         },
         {
           "name": "Raju Punnakkal",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 2226,
           "votePct": 1.64,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
         },
         {
           "name": "Baby Ambattu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7794,
           "votePct": 5.45,
           "alliance": "NDA"

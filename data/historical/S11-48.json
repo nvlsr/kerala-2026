@@ -18,21 +18,21 @@
         },
         {
           "name": "P. T. Ajay Mohan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 53514,
           "votePct": 44.17,
           "alliance": "UDF"
         },
         {
           "name": "V. T. Jayaprakash",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5680,
           "votePct": 4.69,
           "alliance": "NDA"
         },
         {
           "name": "Yahiya Koya Thangal",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3250,
           "votePct": 2.68,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "P. T. Ajay Mohan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 53692,
           "votePct": 37.87,
           "alliance": "UDF"
         },
         {
           "name": "K. K. Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11662,
           "votePct": 8.23,
           "alliance": "NDA"
         },
         {
           "name": "M. M. Shakkir",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 2048,
           "votePct": 1.44,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "A. M. Rohith",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57625,
           "votePct": 39.63,
           "alliance": "UDF"
         },
         {
           "name": "Subramannian Chunkappallii",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 7419,
           "votePct": 5.1,
           "alliance": "NDA"
         },
         {
           "name": "Anvar Pazhanji",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3065,
           "votePct": 2.11,
           "alliance": "OTHER"
         },
         {
           "name": "Ganesh Vaderi",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1863,
           "votePct": 1.28,
           "alliance": "OTHER"

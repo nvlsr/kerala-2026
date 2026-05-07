@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Varkala Kahar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57775,
           "votePct": 52.4,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "Elakaman Satheesan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3430,
           "votePct": 3.11,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Kunnil Shahjahan",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 795,
           "votePct": 0.72,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "Varkala Kahar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50716,
           "votePct": 39.57,
           "alliance": "UDF"
         },
         {
           "name": "Aji S. R. M.",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 19872,
           "votePct": 15.5,
           "alliance": "NDA"
         },
         {
           "name": "Varkala P. Linees",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1888,
           "votePct": 1.47,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 628,
           "votePct": 0.49,
           "alliance": "NOTA"
@@ -112,28 +112,28 @@
         },
         {
           "name": "B. R. M. Shafeer",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50995,
           "votePct": 37.71,
           "alliance": "UDF"
         },
         {
           "name": "Aji S",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 11214,
           "votePct": 8.29,
           "alliance": "NDA"
         },
         {
           "name": "Anu M. C",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1948,
           "votePct": 1.44,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 815,
           "votePct": 0.6,
           "alliance": "NOTA"

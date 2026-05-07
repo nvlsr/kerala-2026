@@ -25,7 +25,7 @@
         },
         {
           "name": "M. K. Saseendran Master",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7540,
           "votePct": 6.19,
           "alliance": "NDA"
@@ -72,14 +72,14 @@
         },
         {
           "name": "A. V. Kesavan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12580,
           "votePct": 8.89,
           "alliance": "NDA"
         },
         {
           "name": "K. K. Abdul Jabbar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1705,
           "votePct": 1.2,
           "alliance": "OTHER"
@@ -119,21 +119,21 @@
         },
         {
           "name": "K. Ranjith",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 15741,
           "votePct": 10.86,
           "alliance": "NDA"
         },
         {
           "name": "Abdul Jabbar K.K",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2357,
           "votePct": 1.63,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 517,
           "votePct": 0.36,
           "alliance": "NOTA"

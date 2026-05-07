@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "K. Sivadasan Nair",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 64845,
           "votePct": 47.69,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "K. Haridas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 10227,
           "votePct": 7.52,
           "alliance": "NDA"
@@ -51,14 +51,14 @@
         },
         {
           "name": "K. Sivadasan Nair",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 56877,
           "votePct": 35.23,
           "alliance": "UDF"
         },
         {
           "name": "M. T. Ramesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 37906,
           "votePct": 23.48,
           "alliance": "NDA"
@@ -84,14 +84,14 @@
         },
         {
           "name": "K. Sivadasan Nair",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 55947,
           "votePct": 34.56,
           "alliance": "UDF"
         },
         {
           "name": "Biju Mathew",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 29099,
           "votePct": 17.98,
           "alliance": "NDA"

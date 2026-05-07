@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "N. Shakthan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52368,
           "votePct": 44.63,
           "alliance": "UDF"
@@ -25,21 +25,21 @@
         },
         {
           "name": "P. K. Krishnadas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 22550,
           "votePct": 19.22,
           "alliance": "NDA"
         },
         {
           "name": "Vengode Sunil Kumar",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1303,
           "votePct": 1.11,
           "alliance": "OTHER"
         },
         {
           "name": "Kattakada Rajan",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 613,
           "votePct": 0.52,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "N. Sakthan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50765,
           "votePct": 35.34,
           "alliance": "UDF"
         },
         {
           "name": "P. K. Krishnadas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 38700,
           "votePct": 26.94,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 732,
           "votePct": 0.51,
           "alliance": "NOTA"
         },
         {
           "name": "Biju S. R.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 709,
           "votePct": 0.49,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "Malayainkeezhu Venugopal",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 43062,
           "votePct": 29.55,
           "alliance": "UDF"
         },
         {
           "name": "P. K. Krishnadas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 34642,
           "votePct": 23.77,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 701,
           "votePct": 0.48,
           "alliance": "NOTA"
         },
         {
           "name": "Kandala Suresh",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 628,
           "votePct": 0.43,
           "alliance": "OTHER"

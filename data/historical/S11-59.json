@@ -25,21 +25,21 @@
         },
         {
           "name": "N. Sivarajan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9123,
           "votePct": 6.8,
           "alliance": "NDA"
         },
         {
           "name": "Sakeer Hussain",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1809,
           "votePct": 1.41,
           "alliance": "OTHER"
         },
         {
           "name": "Chandran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1484,
           "votePct": 1.11,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "A. V. Gopinathan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 58908,
           "votePct": 38.11,
           "alliance": "UDF"
         },
         {
           "name": "N. Sivarajan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 23096,
           "votePct": 14.94,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "Ajith Kumar",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 772,
           "votePct": 0.5,
           "alliance": "OTHER"
@@ -119,14 +119,14 @@
         },
         {
           "name": "A. N. Anurag",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 16666,
           "votePct": 11,
           "alliance": "NDA"
         },
         {
           "name": "Prakash. C",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1350,
           "votePct": 0.89,
           "alliance": "OTHER"

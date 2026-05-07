@@ -18,28 +18,28 @@
         },
         {
           "name": "Rijil Makkutty",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 40361,
           "votePct": 34.27,
           "alliance": "UDF"
         },
         {
           "name": "V. Ratnakaran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6973,
           "votePct": 5.92,
           "alliance": "NDA"
         },
         {
           "name": "A. C. Jalaluddin",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2068,
           "votePct": 1.76,
           "alliance": "OTHER"
         },
         {
           "name": "K. Raghunath",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 674,
           "votePct": 0.57,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "A. P. Abdullakutty",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 36624,
           "votePct": 27.61,
           "alliance": "UDF"
         },
         {
           "name": "V. K. Sajeevan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 22125,
           "votePct": 16.68,
           "alliance": "NDA"
         },
         {
           "name": "Jabeena Irshad",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1337,
           "votePct": 1.01,
           "alliance": "OTHER"
         },
         {
           "name": "A. C. Jalaludeen",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 959,
           "votePct": 0.72,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "M. P. Aravindakshan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 45009,
           "votePct": 33.84,
           "alliance": "UDF"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 2313,
           "votePct": 1.73,
           "alliance": "NOTA"
         },
         {
           "name": "Shamseer Ibrahim",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1963,
           "votePct": 1.48,
           "alliance": "OTHER"

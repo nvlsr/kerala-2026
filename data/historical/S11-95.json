@@ -18,14 +18,14 @@
         },
         {
           "name": "A. Saneeshkumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52035,
           "votePct": 42.91,
           "alliance": "UDF"
         },
         {
           "name": "Ramesh Kavimattam",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4512,
           "votePct": 3.72,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "P. K. Prakashan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 645,
           "votePct": 0.53,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "A. Saneeshkumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 37413,
           "votePct": 28.33,
           "alliance": "UDF"
         },
         {
           "name": "N. K. Neelakandan Master",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 30067,
           "votePct": 22.77,
           "alliance": "NDA"
         },
         {
           "name": "K. C. Chandrasekharan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 540,
           "votePct": 0.41,
           "alliance": "OTHER"
@@ -93,14 +93,14 @@
         },
         {
           "name": "Anila Bose",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 420,
           "votePct": 0.32,
           "alliance": "OTHER"
         },
         {
           "name": "K. C. Prakash",
-          "party": "CPI(ML)RS",
+          "party": "Communist Party of India (Marxist-Leninist) Red Star",
           "votes": 204,
           "votePct": 0.15,
           "alliance": "OTHER"
@@ -133,14 +133,14 @@
         },
         {
           "name": "P. R. Sona",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 42266,
           "votePct": 33.13,
           "alliance": "UDF"
         },
         {
           "name": "Ajitha Sabu",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 11953,
           "votePct": 9.37,
           "alliance": "NDA"

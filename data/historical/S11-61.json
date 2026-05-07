@@ -18,28 +18,28 @@
         },
         {
           "name": "K. B. Sasikumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49007,
           "votePct": 36.86,
           "alliance": "UDF"
         },
         {
           "name": "V. A. Krishnakmaran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7056,
           "votePct": 5.31,
           "alliance": "NDA"
         },
         {
           "name": "A. Subramanian",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2224,
           "votePct": 1.67,
           "alliance": "OTHER"
         },
         {
           "name": "Suresh Babu",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 972,
           "votePct": 0.73,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "Thulasi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57571,
           "votePct": 38.07,
           "alliance": "UDF"
         },
         {
           "name": "Shajumon P. P.",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 23845,
           "votePct": 15.77,
           "alliance": "NDA"
         },
         {
           "name": "A. Subramanian",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1116,
           "votePct": 0.74,
           "alliance": "OTHER"
@@ -105,21 +105,21 @@
         },
         {
           "name": "C. C. Sreekumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 44015,
           "votePct": 28.71,
           "alliance": "UDF"
         },
         {
           "name": "Shajumon Vattekkad",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 24045,
           "votePct": 15.68,
           "alliance": "NDA"
         },
         {
           "name": "Chandran Thiyyath",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1120,
           "votePct": 0.73,
           "alliance": "OTHER"
@@ -145,14 +145,14 @@
         },
         {
           "name": "Ramya Haridas",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52626,
           "votePct": 33.64,
           "alliance": "UDF"
         },
         {
           "name": "K. Balakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 33609,
           "votePct": 21.49,
           "alliance": "NDA"

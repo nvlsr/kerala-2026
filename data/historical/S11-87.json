@@ -25,14 +25,14 @@
         },
         {
           "name": "K. Radhakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5769,
           "votePct": 5.37,
           "alliance": "NDA"
         },
         {
           "name": "Shine Muhammed",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 4691,
           "votePct": 4.37,
           "alliance": "OTHER"
@@ -72,7 +72,7 @@
         },
         {
           "name": "Anas N. A.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1490,
           "votePct": 1.16,
           "alliance": "OTHER"
@@ -98,7 +98,7 @@
         },
         {
           "name": "Shibu Thekkumpuram",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 57629,
           "votePct": 42.3,
           "alliance": "UDF"
@@ -112,7 +112,7 @@
         },
         {
           "name": "Shine K. Krishnan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 4638,
           "votePct": 3.4,
           "alliance": "NDA"

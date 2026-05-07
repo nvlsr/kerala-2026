@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Sunny Joseph",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 56151,
           "votePct": 48.07,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "P. K. Velayudhan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4055,
           "votePct": 3.47,
           "alliance": "NDA"
         },
         {
           "name": "P. K. Ayyappan",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1537,
           "votePct": 1.32,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Sunny Joseph",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 65659,
           "votePct": 48.1,
           "alliance": "UDF"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Paily Vathiattu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9129,
           "votePct": 6.69,
           "alliance": "NDA"
         },
         {
           "name": "P. K. Farookh",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1935,
           "votePct": 1.42,
           "alliance": "OTHER"
         },
         {
           "name": "Pallipram Prasannan",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 513,
           "votePct": 0.38,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "Sunny Joseph",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 66706,
           "votePct": 46.93,
           "alliance": "UDF"
@@ -119,21 +119,21 @@
         },
         {
           "name": "Smitha Jayamohan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9155,
           "votePct": 6.44,
           "alliance": "NDA"
         },
         {
           "name": "A.C. Jalaluddeen",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1541,
           "votePct": 1.08,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 404,
           "votePct": 0.28,
           "alliance": "NOTA"

@@ -25,14 +25,14 @@
         },
         {
           "name": "C. K. Kunhimuhammed",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 1989,
           "votePct": 1.49,
           "alliance": "NDA"
         },
         {
           "name": "Saidalikkutty",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1067,
           "votePct": 0.8,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "M. K. Sunil",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5917,
           "votePct": 3.91,
           "alliance": "NDA"
         },
         {
           "name": "Saleem Mampad",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1757,
           "votePct": 1.16,
           "alliance": "OTHER"
         },
         {
           "name": "Suniya Siraj",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 698,
           "votePct": 0.46,
           "alliance": "OTHER"
@@ -119,7 +119,7 @@
         },
         {
           "name": "Suchitra",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8021,
           "votePct": 4.84,
           "alliance": "NDA"

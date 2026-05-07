@@ -25,21 +25,21 @@
         },
         {
           "name": "Gireesh Thevally",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6519,
           "votePct": 5.73,
           "alliance": "NDA"
         },
         {
           "name": "M. T. Abdul Haji",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1688,
           "votePct": 1.48,
           "alliance": "OTHER"
         },
         {
           "name": "Aboobacker",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 496,
           "votePct": 0.44,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Ali Akbar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11537,
           "votePct": 8.4,
           "alliance": "NDA"
         },
         {
           "name": "P. K. Zakariya",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1566,
           "votePct": 1.14,
           "alliance": "OTHER"
         },
         {
           "name": "E. Nazar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1466,
           "votePct": 1.07,
           "alliance": "OTHER"
@@ -119,14 +119,14 @@
         },
         {
           "name": "T Balasoman",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9498,
           "votePct": 6.27,
           "alliance": "NDA"
         },
         {
           "name": "Musthafa Kommeri",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1769,
           "votePct": 1.17,
           "alliance": "OTHER"

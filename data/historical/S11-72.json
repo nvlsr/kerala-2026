@@ -18,14 +18,14 @@
         },
         {
           "name": "Benny K. T.",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 61061,
           "votePct": 46.25,
           "alliance": "UDF"
         },
         {
           "name": "Sudheer Baby",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5976,
           "votePct": 4.53,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Subramanian V. K.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 451,
           "votePct": 0.34,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "T. U. Radhakrishnan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47603,
           "votePct": 31.65,
           "alliance": "UDF"
         },
         {
           "name": "Unnikrishnan K. A.",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 26229,
           "votePct": 17.44,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 739,
           "votePct": 0.49,
           "alliance": "NOTA"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "T. J. Saneesh Kumar Joseph",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 61888,
           "votePct": 43.23,
           "alliance": "UDF"
@@ -119,14 +119,14 @@
         },
         {
           "name": "Unnikrishnan K. A.",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 17301,
           "votePct": 12.09,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1000,
           "votePct": 0.7,
           "alliance": "NOTA"

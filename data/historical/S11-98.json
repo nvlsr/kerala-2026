@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Oommen Chandy",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 69922,
           "votePct": 59.74,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "P. Sunilkumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6679,
           "votePct": 5.71,
           "alliance": "NDA"
         },
         {
           "name": "Saji K. Cheraman",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 3230,
           "votePct": 2.76,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Oommen Chandy",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 71597,
           "votePct": 53.42,
           "alliance": "UDF"
@@ -72,14 +72,14 @@
         },
         {
           "name": "George Kurien",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 15993,
           "votePct": 11.93,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 630,
           "votePct": 0.47,
           "alliance": "NOTA"
@@ -98,7 +98,7 @@
       "candidates": [
         {
           "name": "Oommen Chandy",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 63372,
           "votePct": 48.08,
           "alliance": "UDF"
@@ -112,7 +112,7 @@
         },
         {
           "name": "N. Hari",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11694,
           "votePct": 8.87,
           "alliance": "NDA"
@@ -126,7 +126,7 @@
         },
         {
           "name": "P. P. Abhilash",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 763,
           "votePct": 0.58,
           "alliance": "OTHER"
@@ -145,7 +145,7 @@
       "candidates": [
         {
           "name": "Chandy Oommen",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 80144,
           "votePct": 61.38,
           "alliance": "UDF"
@@ -159,21 +159,21 @@
         },
         {
           "name": "G. Lijinlal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6558,
           "votePct": 5.02,
           "alliance": "NDA"
         },
         {
           "name": "Luke Thomas",
-          "party": "AAP",
+          "party": "Aam Aadmi Party",
           "votes": 835,
           "votePct": 0.64,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 400,
           "votePct": 0.31,
           "alliance": "NOTA"

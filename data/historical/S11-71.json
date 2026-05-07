@@ -18,14 +18,14 @@
         },
         {
           "name": "K. P. Vishwanathan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 46565,
           "votePct": 33.68,
           "alliance": "UDF"
         },
         {
           "name": "Sobha Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14425,
           "votePct": 10.43,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "P. C. Pushpakaran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1013,
           "votePct": 0.73,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "Sundaran Kunnathully",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 40986,
           "votePct": 25.82,
           "alliance": "UDF"
         },
         {
           "name": "A. Nagesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 35833,
           "votePct": 22.58,
           "alliance": "NDA"
@@ -112,14 +112,14 @@
         },
         {
           "name": "Sunil Anthikad",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 46012,
           "votePct": 29.44,
           "alliance": "UDF"
         },
         {
           "name": "A. Nagesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 34893,
           "votePct": 22.33,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "P. C. Pushpakaran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 455,
           "votePct": 0.29,
           "alliance": "OTHER"

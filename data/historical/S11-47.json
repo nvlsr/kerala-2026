@@ -11,24 +11,32 @@
       "candidates": [
         {
           "name": "K. T. Jaleel",
-          "party": "LDF Independent",
+          "party": "Independent (LDF)",
           "votes": 57729,
-          "votePct": 47.2, "alliance": "LDF" },
+          "votePct": 47.2,
+          "alliance": "LDF"
+        },
         {
           "name": "V. V. Prakash",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50875,
-          "votePct": 41.6, "alliance": "UDF" },
+          "votePct": 41.6,
+          "alliance": "UDF"
+        },
         {
           "name": "Nirmala Kuttikrishnan Punnakkal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7107,
-          "votePct": 5.81, "alliance": "NDA" },
+          "votePct": 5.81,
+          "alliance": "NDA"
+        },
         {
           "name": "Nurul Hack",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3116,
-          "votePct": 2.55, "alliance": "OTHER" }
+          "votePct": 2.55,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6854,
       "marginPct": 5.6,
@@ -45,22 +53,30 @@
           "name": "K. T. Jaleel",
           "party": "Independent (LDF)",
           "votes": 68179,
-          "votePct": 47.97, "alliance": "LDF" },
+          "votePct": 47.97,
+          "alliance": "LDF"
+        },
         {
           "name": "Ifthiquarudheen Master",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51115,
-          "votePct": 35.96, "alliance": "UDF" },
+          "votePct": 35.96,
+          "alliance": "UDF"
+        },
         {
           "name": "Ravi Thelath",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 15801,
-          "votePct": 11.12, "alliance": "NDA" },
+          "votePct": 11.12,
+          "alliance": "NDA"
+        },
         {
           "name": "P. K. Jaleel Parakkuzhiyil",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2649,
-          "votePct": 1.86, "alliance": "OTHER" }
+          "votePct": 1.86,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 17064,
       "marginPct": 12.01,
@@ -77,22 +93,30 @@
           "name": "K. T. Jaleel",
           "party": "Independent (LDF)",
           "votes": 69358,
-          "votePct": 46.46, "alliance": "LDF" },
+          "votePct": 46.46,
+          "alliance": "LDF"
+        },
         {
           "name": "Firos Kunnamparambil",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 67794,
-          "votePct": 44.77, "alliance": "UDF" },
+          "votePct": 44.77,
+          "alliance": "UDF"
+        },
         {
           "name": "Ramesh Kottayapurath",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 9914,
-          "votePct": 6.55, "alliance": "NDA" },
+          "votePct": 6.55,
+          "alliance": "NDA"
+        },
         {
           "name": "Hassan Chiyanoor",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1747,
-          "votePct": 1.15, "alliance": "OTHER" }
+          "votePct": 1.15,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 2185,
       "marginPct": 1.69,

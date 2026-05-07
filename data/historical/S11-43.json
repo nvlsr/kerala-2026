@@ -25,7 +25,7 @@
         },
         {
           "name": "Sasidharan Punnassery",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5480,
           "votePct": 5.46,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "A. A. Rahim",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2945,
           "votePct": 2.94,
           "alliance": "OTHER"
@@ -72,14 +72,14 @@
         },
         {
           "name": "P. V. Geetha Madhavan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8046,
           "votePct": 5.95,
           "alliance": "NDA"
         },
         {
           "name": "K. C. Naseer",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2478,
           "votePct": 1.83,
           "alliance": "OTHER"
@@ -119,14 +119,14 @@
         },
         {
           "name": "Kalliyath Sathar Haji",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8314,
           "votePct": 5.63,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 721,
           "votePct": 0.48,
           "alliance": "NOTA"

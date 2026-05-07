@@ -25,14 +25,14 @@
         },
         {
           "name": "Rajamohan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8037,
           "votePct": 7.1,
           "alliance": "NDA"
         },
         {
           "name": "P. K. Geetha Krishnan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 3268,
           "votePct": 2.89,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "V. N. Manoj",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 31411,
           "votePct": 22.98,
           "alliance": "NDA"
         },
         {
           "name": "Arun M. John",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1113,
           "votePct": 0.81,
           "alliance": "OTHER"
         },
         {
           "name": "Muhammed Siyad",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 839,
           "votePct": 0.61,
           "alliance": "OTHER"
@@ -105,21 +105,21 @@
         },
         {
           "name": "Joseph Vazhackan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 46596,
           "votePct": 33.84,
           "alliance": "UDF"
         },
         {
           "name": "Alphons Kannanthanam",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 29157,
           "votePct": 21.17,
           "alliance": "NDA"
         },
         {
           "name": "Ashik M. M.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 727,
           "votePct": 0.53,
           "alliance": "OTHER"

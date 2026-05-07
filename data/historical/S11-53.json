@@ -18,14 +18,14 @@
         },
         {
           "name": "P. Swaminathan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49355,
           "votePct": 43.49,
           "alliance": "UDF"
         },
         {
           "name": "V. Devayani",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8467,
           "votePct": 7.46,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "K. Velayudhan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1198,
           "votePct": 1.06,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "Pandalam Sudhakaran",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47519,
           "votePct": 35.45,
           "alliance": "UDF"
         },
         {
           "name": "Renu Suresh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 23800,
           "votePct": 17.75,
           "alliance": "NDA"
         },
         {
           "name": "Ramesh P. V. Kannampariyam",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 789,
           "votePct": 0.59,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "M. Suresh Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 27661,
           "votePct": 19.97,
           "alliance": "NDA"
         },
         {
           "name": "P. E. Guruvayoorappan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1351,
           "votePct": 0.59,
           "alliance": "OTHER"

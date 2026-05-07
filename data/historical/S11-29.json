@@ -18,21 +18,21 @@
         },
         {
           "name": "Adam Mulsi M. P.",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 55234,
           "votePct": 42.69,
           "alliance": "UDF"
         },
         {
           "name": "K. P. Sreesan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11040,
           "votePct": 8.53,
           "alliance": "NDA"
         },
         {
           "name": "Muhammed Musthafa",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 954,
           "votePct": 0.74,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "M. P. Adam Mulsi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 54751,
           "votePct": 35.16,
           "alliance": "UDF"
         },
         {
           "name": "Prakash Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 27958,
           "votePct": 17.96,
           "alliance": "NDA"
         },
         {
           "name": "P. C. Muhammedkutty Master",
-          "party": "WPI",
+          "party": "Welfare Party of India",
           "votes": 1387,
           "votePct": 0.89,
           "alliance": "OTHER"
         },
         {
           "name": "Musthafa Kommeri",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1126,
           "votePct": 0.72,
           "alliance": "OTHER"
@@ -140,28 +140,28 @@
         },
         {
           "name": "PM Niyas",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 53418,
           "votePct": 32.33,
           "alliance": "UDF"
         },
         {
           "name": "KP Prakash Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 26267,
           "votePct": 15.9,
           "alliance": "NDA"
         },
         {
           "name": "Jamal Chaliyam",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2029,
           "votePct": 1.23,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 621,
           "votePct": 0.38,
           "alliance": "NOTA"

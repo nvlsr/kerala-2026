@@ -25,7 +25,7 @@
         },
         {
           "name": "K. Soman",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4395,
           "votePct": 3.72,
           "alliance": "NDA"
@@ -58,7 +58,7 @@
         },
         {
           "name": "Subash Vasu",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 33044,
           "votePct": 25.4,
           "alliance": "NDA"
@@ -84,14 +84,14 @@
         },
         {
           "name": "Jacob Abraham",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 51863,
           "votePct": 41.28,
           "alliance": "UDF"
         },
         {
           "name": "Thampi Mettuthara",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 14946,
           "votePct": 11.9,
           "alliance": "NDA"

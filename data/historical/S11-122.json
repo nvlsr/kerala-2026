@@ -18,21 +18,21 @@
         },
         {
           "name": "Shahida Kamal",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47607,
           "votePct": 37.56,
           "alliance": "UDF"
         },
         {
           "name": "T. C. Saju Kumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4160,
           "votePct": 3.26,
           "alliance": "NDA"
         },
         {
           "name": "Jaleel Kadakkal",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1800,
           "votePct": 1.41,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "M. M. Hassan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49334,
           "votePct": 33.99,
           "alliance": "UDF"
         },
         {
           "name": "K. Sivadasan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 19259,
           "votePct": 13.27,
           "alliance": "NDA"
         },
         {
           "name": "Jaleel Kadakkal",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1445,
           "votePct": 1,
           "alliance": "OTHER"
         },
         {
           "name": "Sajeed Khaleedu",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1222,
           "votePct": 0.84,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "M. M. Naseer",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 53574,
           "votePct": 36.4,
           "alliance": "UDF"
         },
         {
           "name": "Vishnu Pattathanam",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 22238,
           "votePct": 15.11,
           "alliance": "NDA"
         },
         {
           "name": "Sharafath Mallam",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1879,
           "votePct": 1.28,
           "alliance": "OTHER"
         },
         {
           "name": "Archana Prajith",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 605,
           "votePct": 0.41,
           "alliance": "OTHER"

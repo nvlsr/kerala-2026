@@ -25,14 +25,14 @@
         },
         {
           "name": "P. K. Binoy",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5933,
           "votePct": 3.66,
           "alliance": "NDA"
         },
         {
           "name": "K. R. Rajeevan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1185,
           "votePct": 0.73,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "S. Sarath",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 74001,
           "votePct": 41.65,
           "alliance": "UDF"
         },
         {
           "name": "P. S. Rajeev",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 19614,
           "votePct": 11.04,
           "alliance": "NDA"
         },
         {
           "name": "C. P. Thilakan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 845,
           "votePct": 0.48,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 687,
           "votePct": 0.39,
           "alliance": "NOTA"
@@ -112,28 +112,28 @@
         },
         {
           "name": "S. Sharath",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 77554,
           "votePct": 43.55,
           "alliance": "UDF"
         },
         {
           "name": "P. S. Jyothis",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 14562,
           "votePct": 8.18,
           "alliance": "NDA"
         },
         {
           "name": "Vayalar Jayakumar",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 613,
           "votePct": 0.34,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 602,
           "votePct": 0.34,
           "alliance": "NOTA"

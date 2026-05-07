@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "A. A. Azeez",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 51271,
           "votePct": 49,
           "alliance": "LDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "Pattathanam Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5048,
           "votePct": 4.82,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Sushama Vijayan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 580,
           "votePct": 0.55,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "A. A. Azeez",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 36589,
           "votePct": 29.28,
           "alliance": "UDF"
         },
         {
           "name": "Akkavila Satheek",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 19714,
           "votePct": 15.77,
           "alliance": "NDA"
         },
         {
           "name": "Ayathil Razak",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 988,
           "votePct": 0.79,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 950,
           "votePct": 0.76,
           "alliance": "NOTA"
@@ -112,28 +112,28 @@
         },
         {
           "name": "Babu Divakaran",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 43452,
           "votePct": 34.15,
           "alliance": "UDF"
         },
         {
           "name": "Ranjith Raveendran",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 8468,
           "votePct": 6.66,
           "alliance": "NDA"
         },
         {
           "name": "Ayathil Riyas",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1444,
           "votePct": 1.13,
           "alliance": "OTHER"
         },
         {
           "name": "Mohanan Mayyanad",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 543,
           "votePct": 0.43,
           "alliance": "OTHER"
@@ -147,7 +147,7 @@
         },
         {
           "name": "S. Sudhilal",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 213,
           "votePct": 0.17,
           "alliance": "OTHER"

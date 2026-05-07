@@ -18,14 +18,14 @@
         },
         {
           "name": "M. Murali",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 66094,
           "votePct": 47.34,
           "alliance": "UDF"
         },
         {
           "name": "T. O. Noushad",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3083,
           "votePct": 2.21,
           "alliance": "NDA"
@@ -65,14 +65,14 @@
         },
         {
           "name": "M. Liju",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 61099,
           "votePct": 38.96,
           "alliance": "UDF"
         },
         {
           "name": "Shaji M. Panicker",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 20000,
           "votePct": 12.75,
           "alliance": "NDA"
@@ -112,14 +112,14 @@
         },
         {
           "name": "Aritha Babu",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 71050,
           "votePct": 44.06,
           "alliance": "UDF"
         },
         {
           "name": "P. Pradeeplal",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 11413,
           "votePct": 7.08,
           "alliance": "NDA"

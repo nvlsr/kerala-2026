@@ -25,14 +25,14 @@
         },
         {
           "name": "P. G. Bijukumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5340,
           "votePct": 4.38,
           "alliance": "NDA"
         },
         {
           "name": "M. D. Thomas",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 2169,
           "votePct": 1.78,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
         },
         {
           "name": "Scaria Thomas",
-          "party": "Kerala Congress (Skaria Thomas)",
+          "party": "Kerala Congress (Thomas)",
           "votes": 31537,
           "votePct": 24.8,
           "alliance": "LDF"
@@ -72,7 +72,7 @@
         },
         {
           "name": "Ginish John M",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1473,
           "votePct": 1.16,
           "alliance": "OTHER"
@@ -91,7 +91,7 @@
       "candidates": [
         {
           "name": "Mons Joseph",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 59666,
           "votePct": 45.4,
           "alliance": "UDF"
@@ -105,7 +105,7 @@
         },
         {
           "name": "Lijin Lal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11670,
           "votePct": 8.88,
           "alliance": "NDA"

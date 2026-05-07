@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "A. P. Anil Kumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 77580,
           "votePct": 58.5,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "Kotheri Ayyapan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 2885,
           "votePct": 2.18,
           "alliance": "NDA"
         },
         {
           "name": "Krishnan Eranhikkal",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1682,
           "votePct": 1.27,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "A. P. Anil Kumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 81964,
           "votePct": 52.59,
           "alliance": "UDF"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Sunitha Mohandas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9471,
           "votePct": 6.08,
           "alliance": "NDA"
         },
         {
           "name": "Krishnan Kuniyil",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 3399,
           "votePct": 2.18,
           "alliance": "OTHER"
         },
         {
           "name": "Krishnan Eranhikkal",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1178,
           "votePct": 0.76,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "A. P. Anil Kumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 87415,
           "votePct": 51.44,
           "alliance": "UDF"
@@ -119,14 +119,14 @@
         },
         {
           "name": "P. C. Vijayan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7057,
           "votePct": 4.15,
           "alliance": "NDA"
         },
         {
           "name": "Krishnan. C",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 2943,
           "votePct": 1.73,
           "alliance": "OTHER"

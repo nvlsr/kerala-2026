@@ -18,7 +18,7 @@
         },
         {
           "name": "O. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 43661,
           "votePct": 37.49,
           "alliance": "NDA"
@@ -44,7 +44,7 @@
       "candidates": [
         {
           "name": "O. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 67813,
           "votePct": 47.46,
           "alliance": "NDA"
@@ -58,7 +58,7 @@
         },
         {
           "name": "V. Surendran Pillai",
-          "party": "JD(U)",
+          "party": "Janata Dal (United)",
           "votes": 13860,
           "votePct": 9.7,
           "alliance": "UDF"
@@ -84,14 +84,14 @@
         },
         {
           "name": "Kummanam Rajasekharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 51888,
           "votePct": 35.54,
           "alliance": "NDA"
         },
         {
           "name": "K. Muraleedharan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 36524,
           "votePct": 25.01,
           "alliance": "UDF"

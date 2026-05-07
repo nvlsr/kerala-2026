@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "V. T. Balaram",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57848,
           "votePct": 47.37,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "V. Ramankutty",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5899,
           "votePct": 4.83,
           "alliance": "NDA"
         },
         {
           "name": "Baburajan O. T.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1320,
           "votePct": 1.08,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "V. T. Balaram",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 66505,
           "votePct": 47.16,
           "alliance": "UDF"
@@ -72,14 +72,14 @@
         },
         {
           "name": "V. T. Rema",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14510,
           "votePct": 10.29,
           "alliance": "NDA"
         },
         {
           "name": "C. P. Mohammedali",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1313,
           "votePct": 0.93,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "V. T. Balram",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 66798,
           "votePct": 43.86,
           "alliance": "UDF"
         },
         {
           "name": "Sanku T. Das",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12851,
           "votePct": 8.44,
           "alliance": "NDA"
         },
         {
           "name": "M. K. Abdul Nasar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1582,
           "votePct": 1.04,
           "alliance": "OTHER"
         },
         {
           "name": "Rajagopal Thrithala",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 333,
           "votePct": 0.22,
           "alliance": "OTHER"

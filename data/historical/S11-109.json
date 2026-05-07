@@ -25,7 +25,7 @@
         },
         {
           "name": "S. Girija",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4984,
           "votePct": 3.73,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Subhash Mankamkuzhy",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 860,
           "votePct": 0.64,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "Baiju Kalasala",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 43013,
           "votePct": 28.74,
           "alliance": "UDF"
         },
         {
           "name": "P. M. Velayudhan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 30929,
           "votePct": 20.66,
           "alliance": "NDA"
         },
         {
           "name": "Asha T.",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 242,
           "votePct": 0.16,
           "alliance": "OTHER"
         },
         {
           "name": "Kattanam Suresh",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 213,
           "votePct": 0.14,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "K. K. Shaju",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47026,
           "votePct": 31.21,
           "alliance": "UDF"
         },
         {
           "name": "K. Sanju",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 30955,
           "votePct": 20.54,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "K. Sasikumar",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 151,
           "votePct": 0.1,
           "alliance": "OTHER"

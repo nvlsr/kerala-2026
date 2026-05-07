@@ -18,14 +18,14 @@
         },
         {
           "name": "Thampanoor Ravi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 48009,
           "votePct": 42.98,
           "alliance": "UDF"
         },
         {
           "name": "Athiyannoor Sreekumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6730,
           "votePct": 6.03,
           "alliance": "NDA"
@@ -44,7 +44,7 @@
       "candidates": [
         {
           "name": "R. Selvaraj",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52528,
           "votePct": 39.96,
           "alliance": "UDF"
@@ -58,7 +58,7 @@
         },
         {
           "name": "O. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 30507,
           "votePct": 23.21,
           "alliance": "NDA"
@@ -84,21 +84,21 @@
         },
         {
           "name": "R. Selvaraj",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 54016,
           "votePct": 40.12,
           "alliance": "UDF"
         },
         {
           "name": "Punchakkari Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 15531,
           "votePct": 11.53,
           "alliance": "NDA"
         },
         {
           "name": "Prabhakaran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 566,
           "votePct": 0.42,
           "alliance": "OTHER"
@@ -131,21 +131,21 @@
         },
         {
           "name": "R. Selvaraj",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51235,
           "votePct": 36.78,
           "alliance": "UDF"
         },
         {
           "name": "Chenkal S. Rajasekharan Nair",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 21009,
           "votePct": 15.08,
           "alliance": "NDA"
         },
         {
           "name": "T. R. Premkumar",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 643,
           "votePct": 0.46,
           "alliance": "OTHER"

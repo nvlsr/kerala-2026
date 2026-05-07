@@ -18,28 +18,28 @@
         },
         {
           "name": "A. Balaram",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 65377,
           "votePct": 43.29,
           "alliance": "UDF"
         },
         {
           "name": "T. K. Raman",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9304,
           "votePct": 6.16,
           "alliance": "NDA"
         },
         {
           "name": "Bhadran M. P.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1404,
           "votePct": 0.93,
           "alliance": "OTHER"
         },
         {
           "name": "K. K. Satheesh",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 660,
           "votePct": 0.14,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "P. K. Supran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 19324,
           "votePct": 11.07,
           "alliance": "NDA"
         },
         {
           "name": "Balan Nadavannur",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1764,
           "votePct": 1.01,
           "alliance": "OTHER"
         },
         {
           "name": "Saseendran Bappankad",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 959,
           "votePct": 0.59,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "Dharmajan Bolgatty",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 71467,
           "votePct": 38.54,
           "alliance": "UDF"
         },
         {
           "name": "Libin Balussery",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 16490,
           "votePct": 9.04,
           "alliance": "NDA"
         },
         {
           "name": "Chandrika",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 889,
           "votePct": 0.48,
           "alliance": "OTHER"
         },
         {
           "name": "Jobish Balussery",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 476,
           "votePct": 0.26,
           "alliance": "OTHER"

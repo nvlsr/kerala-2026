@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Therambil Ramakrishnan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 59991,
           "votePct": 53.19,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "Ravikumar Uppath",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6697,
           "votePct": 5.94,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "A. Jayaram",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 879,
           "votePct": 0.78,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "Padmaja Venugopal",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 46677,
           "votePct": 36.7,
           "alliance": "UDF"
         },
         {
           "name": "B. Gopalakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 24748,
           "votePct": 19.46,
           "alliance": "NDA"
@@ -112,14 +112,14 @@
         },
         {
           "name": "Padmaja Venugopal",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 43317,
           "votePct": 33.52,
           "alliance": "UDF"
         },
         {
           "name": "Suresh Gopi",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 40457,
           "votePct": 31.3,
           "alliance": "NDA"

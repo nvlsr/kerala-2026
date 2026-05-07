@@ -18,7 +18,7 @@
         },
         {
           "name": "K. Vidyadharan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47376,
           "votePct": 42.07,
           "alliance": "UDF"
@@ -32,7 +32,7 @@
         },
         {
           "name": "Anil Mangalapuram",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1414,
           "votePct": 1.26,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "K. S. Ajith Kumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50370,
           "votePct": 36.3,
           "alliance": "UDF"
         },
         {
           "name": "P. P. Vava",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 19478,
           "votePct": 14.08,
           "alliance": "NDA"
         },
         {
           "name": "Sasi Panthalam",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 955,
           "votePct": 0.69,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "B. S. Anoop",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 48617,
           "votePct": 33.51,
           "alliance": "UDF"
         },
         {
           "name": "G. S. Ashanath",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 30986,
           "votePct": 21.36,
           "alliance": "NDA"
         },
         {
           "name": "Anil Mangalapuram",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1097,
           "votePct": 0.76,
           "alliance": "OTHER"
         },
         {
           "name": "G. Anilkumar",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 616,
           "votePct": 0.42,
           "alliance": "OTHER"

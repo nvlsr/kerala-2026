@@ -25,7 +25,7 @@
         },
         {
           "name": "K. C. Venu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6669,
           "votePct": 5.04,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Subramanian",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 449,
           "votePct": 0.34,
           "alliance": "OTHER"
@@ -72,14 +72,14 @@
         },
         {
           "name": "Santhosh Cherkalam",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 30420,
           "votePct": 20.37,
           "alliance": "NDA"
         },
         {
           "name": "V. C. Unnikrishnan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 639,
           "votePct": 0.43,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "Thomas Unniyadan",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 56544,
           "votePct": 36.44,
           "alliance": "UDF"
         },
         {
           "name": "Jacob Thomas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 33685,
           "votePct": 22.12,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 583,
           "votePct": 0.38,
           "alliance": "NOTA"

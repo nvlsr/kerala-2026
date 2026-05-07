@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "A. A. Shukoor",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 42774,
           "votePct": 49.96,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "K. Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 2247,
           "votePct": 2.62,
           "alliance": "NDA"
@@ -65,21 +65,21 @@
         },
         {
           "name": "P. J. Mathew",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 59515,
           "votePct": 42.14,
           "alliance": "UDF"
         },
         {
           "name": "Kottaram Unnikrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3450,
           "votePct": 2.51,
           "alliance": "NDA"
         },
         {
           "name": "T. M. Samad",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1158,
           "votePct": 0.82,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "Laly Vincent",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52179,
           "votePct": 33.42,
           "alliance": "UDF"
         },
         {
           "name": "Ranjith Sreenivas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 18214,
           "votePct": 11.66,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 856,
           "votePct": 0.55,
           "alliance": "NOTA"
         },
         {
           "name": "P. A. Sulaiman",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 703,
           "votePct": 0.45,
           "alliance": "OTHER"
@@ -159,28 +159,28 @@
         },
         {
           "name": "K. S. Manoj",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 61768,
           "votePct": 38.98,
           "alliance": "UDF"
         },
         {
           "name": "Sandeep Vachaspathi",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 21650,
           "votePct": 13.66,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1089,
           "votePct": 0.69,
           "alliance": "NOTA"
         },
         {
           "name": "K. C. Subeendran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 207,
           "votePct": 0.13,
           "alliance": "OTHER"

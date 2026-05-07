@@ -18,28 +18,28 @@
         },
         {
           "name": "Santha Jayaram",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 46123,
           "votePct": 38.35,
           "alliance": "UDF"
         },
         {
           "name": "V. B. Muralidharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 10562,
           "votePct": 8.78,
           "alliance": "NDA"
         },
         {
           "name": "Khalid A.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3065,
           "votePct": 2.55,
           "alliance": "OTHER"
         },
         {
           "name": "M. C. Velayudhan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 894,
           "votePct": 0.74,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "C. Sangeetha",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 41618,
           "votePct": 29.38,
           "alliance": "UDF"
         },
         {
           "name": "V. P. Chandran",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 28836,
           "votePct": 20.36,
           "alliance": "NDA"
         },
         {
           "name": "M. Saidalavi",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1246,
           "votePct": 0.88,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "T. H. Firoz Babu",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 37726,
           "votePct": 24.83,
           "alliance": "UDF"
         },
         {
           "name": "Sandeep Varier",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 36973,
           "votePct": 24.34,
           "alliance": "NDA"
         },
         {
           "name": "Muhammad Musthafa",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1251,
           "votePct": 0.82,
           "alliance": "OTHER"
         },
         {
           "name": "T. C. Ayyappankutty",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 883,
           "votePct": 0.58,
           "alliance": "OTHER"

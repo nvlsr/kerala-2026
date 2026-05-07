@@ -18,21 +18,21 @@
         },
         {
           "name": "Jaison Joseph",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 56246,
           "votePct": 44.73,
           "alliance": "UDF"
         },
         {
           "name": "O. C. Asokan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5464,
           "votePct": 4.35,
           "alliance": "NDA"
         },
         {
           "name": "O. Aliyar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2401,
           "votePct": 1.9,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Eldose Kunnapilly",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 64285,
           "votePct": 44.11,
           "alliance": "UDF"
@@ -72,21 +72,21 @@
         },
         {
           "name": "E. S. Biju",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 19731,
           "votePct": 13.54,
           "alliance": "NDA"
         },
         {
           "name": "V. V. Shoukkath Ali",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2061,
           "votePct": 1.41,
           "alliance": "OTHER"
         },
         {
           "name": "Thomas K. George",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 971,
           "votePct": 0.67,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "Eldose Kunnapilly",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 53484,
           "votePct": 37.1,
           "alliance": "UDF"
@@ -126,14 +126,14 @@
         },
         {
           "name": "T. P. Sindhumol",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 15135,
           "votePct": 10.5,
           "alliance": "NDA"
         },
         {
           "name": "Ajmal K. Mujeeb",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2494,
           "votePct": 1.73,
           "alliance": "OTHER"

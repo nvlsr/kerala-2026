@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "K. Achuthan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 69916,
           "votePct": 51.33,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "A. K. Omanakuttan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4518,
           "votePct": 3.32,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "A. Muhammed Haneefa",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1192,
           "votePct": 0.88,
           "alliance": "OTHER"
@@ -58,21 +58,21 @@
       "candidates": [
         {
           "name": "K. Krishnakutty",
-          "party": "JD(S)",
+          "party": "Janata Dal (Secular)",
           "votes": 69270,
           "votePct": 44.9,
           "alliance": "LDF"
         },
         {
           "name": "K. Achuthan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 61985,
           "votePct": 40.18,
           "alliance": "UDF"
         },
         {
           "name": "Sasikumar M.",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12537,
           "votePct": 8.13,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1260,
           "votePct": 0.82,
           "alliance": "NOTA"
@@ -105,35 +105,35 @@
       "candidates": [
         {
           "name": "K. Krishnankutty",
-          "party": "JD(S)",
+          "party": "Janata Dal (Secular)",
           "votes": 84672,
           "votePct": 55.38,
           "alliance": "LDF"
         },
         {
           "name": "Sumesh Achuthan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50794,
           "votePct": 33.22,
           "alliance": "UDF"
         },
         {
           "name": "V. Natesan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14458,
           "votePct": 9.46,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1285,
           "votePct": 0.84,
           "alliance": "NOTA"
         },
         {
           "name": "A. Chandran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 918,
           "votePct": 0.6,
           "alliance": "OTHER"

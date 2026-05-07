@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "K. C. Joseph",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 68503,
           "votePct": 52.41,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "M. G. Ramakrishnan Nair",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3529,
           "votePct": 2.7,
           "alliance": "NDA"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "K. C. Joseph",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 72548,
           "votePct": 49,
           "alliance": "UDF"
@@ -72,7 +72,7 @@
         },
         {
           "name": "A. P. Gangadharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8294,
           "votePct": 5.6,
           "alliance": "NDA"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "Sajeev Joseph",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 76764,
           "votePct": 50.33,
           "alliance": "UDF"
@@ -119,14 +119,14 @@
         },
         {
           "name": "Aniyamma Rajendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7825,
           "votePct": 5.13,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 459,
           "votePct": 0.3,
           "alliance": "NOTA"

@@ -18,21 +18,21 @@
         },
         {
           "name": "Ajay Tharayil",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 55572,
           "votePct": 46.03,
           "alliance": "UDF"
         },
         {
           "name": "T. G. Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 2930,
           "votePct": 2.43,
           "alliance": "NDA"
         },
         {
           "name": "T. K. Sivanandan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 546,
           "votePct": 0.45,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "K. R. Subhash",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49173,
           "votePct": 37.49,
           "alliance": "UDF"
         },
         {
           "name": "Vamalochanan K. K.",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 10051,
           "votePct": 7.66,
           "alliance": "NDA"
         },
         {
           "name": "Jyothidas Paravur",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1406,
           "votePct": 1.07,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
         },
         {
           "name": "Deepak Joy",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 45657,
           "votePct": 34.96,
           "alliance": "UDF"
@@ -119,7 +119,7 @@
         },
         {
           "name": "K. S. Shaiju",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 13540,
           "votePct": 10.37,
           "alliance": "NDA"

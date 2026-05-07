@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Ramesh Chennithala",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 67378,
           "votePct": 50.03,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "Ajith Sankar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3145,
           "votePct": 2.34,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Somalal Babu",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 425,
           "votePct": 0.32,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Ramesh Chennithala",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 75980,
           "votePct": 51.05,
           "alliance": "UDF"
@@ -72,7 +72,7 @@
         },
         {
           "name": "D. Aswanidev",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12985,
           "votePct": 8.72,
           "alliance": "NDA"
@@ -91,7 +91,7 @@
       "candidates": [
         {
           "name": "Ramesh Chennithala",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 72768,
           "votePct": 48.31,
           "alliance": "UDF"
@@ -105,7 +105,7 @@
         },
         {
           "name": "K. Soman",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 17890,
           "votePct": 11.88,
           "alliance": "NDA"

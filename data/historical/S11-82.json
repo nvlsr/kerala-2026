@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Hibi Eden",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 59919,
           "votePct": 61.58,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "C. G. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6362,
           "votePct": 6.54,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Iqbal Thamarassery",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 742,
           "votePct": 0.76,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Hibi Eden",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57819,
           "votePct": 52.32,
           "alliance": "UDF"
@@ -72,14 +72,14 @@
         },
         {
           "name": "N. K. Mohandas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14878,
           "votePct": 13.46,
           "alliance": "NDA"
         },
         {
           "name": "Iqbal Thamarassery",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 397,
           "votePct": 0.36,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "T. J. Vinod",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 37891,
           "votePct": 42.13,
           "alliance": "UDF"
@@ -119,7 +119,7 @@
         },
         {
           "name": "C. G. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 13351,
           "votePct": 14.85,
           "alliance": "NDA"
@@ -145,7 +145,7 @@
       "candidates": [
         {
           "name": "T. J. Vinod",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 45930,
           "votePct": 41.72,
           "alliance": "UDF"
@@ -159,7 +159,7 @@
         },
         {
           "name": "Padmaja S. Menon",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 16043,
           "votePct": 14.57,
           "alliance": "NDA"

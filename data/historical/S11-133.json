@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "K. Muraleedharan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 56531,
           "votePct": 50.19,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "V. V. Rajesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 13494,
           "votePct": 11.98,
           "alliance": "NDA"
@@ -44,14 +44,14 @@
       "candidates": [
         {
           "name": "K. Muraleedharan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51322,
           "votePct": 37.81,
           "alliance": "UDF"
         },
         {
           "name": "Kummanam Rajasekharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 43700,
           "votePct": 32.19,
           "alliance": "NDA"
@@ -84,14 +84,14 @@
         },
         {
           "name": "K. Mohankumar",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 40365,
           "votePct": 32.58,
           "alliance": "UDF"
         },
         {
           "name": "S. Suresh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 27453,
           "votePct": 22.16,
           "alliance": "NDA"
@@ -117,14 +117,14 @@
         },
         {
           "name": "V. V. Rajesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 39596,
           "votePct": 28.77,
           "alliance": "NDA"
         },
         {
           "name": "Veena S. Nair",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 35655,
           "votePct": 25.76,
           "alliance": "UDF"

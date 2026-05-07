@@ -25,21 +25,21 @@
         },
         {
           "name": "K. M. Santhosh Kumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5010,
           "votePct": 4.25,
           "alliance": "NDA"
         },
         {
           "name": "V. M. Sulaiman Moulavi",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3579,
           "votePct": 3.04,
           "alliance": "OTHER"
         },
         {
           "name": "P. P. Joshy",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 2956,
           "votePct": 2.51,
           "alliance": "OTHER"
@@ -79,7 +79,7 @@
         },
         {
           "name": "M. R. Ullas",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 19966,
           "votePct": 13.7,
           "alliance": "NDA"
@@ -112,14 +112,14 @@
         },
         {
           "name": "Tomy Kallany",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 34633,
           "votePct": 24.76,
           "alliance": "UDF"
         },
         {
           "name": "M. P. Sen",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 2965,
           "votePct": 2.12,
           "alliance": "NDA"

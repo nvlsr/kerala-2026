@@ -25,21 +25,21 @@
         },
         {
           "name": "O. P. Vasudevanunni",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5655,
           "votePct": 4.67,
           "alliance": "NDA"
         },
         {
           "name": "Muhammed Gafoor Madani",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1238,
           "votePct": 1.02,
           "alliance": "OTHER"
         },
         {
           "name": "Ramakrishnan A.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 820,
           "votePct": 0.68,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Kesavadev Puthumanna",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 10170,
           "votePct": 6.85,
           "alliance": "NDA"
         },
         {
           "name": "M. Sulaiman",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1112,
           "votePct": 0.75,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 927,
           "votePct": 0.62,
           "alliance": "NOTA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "Sivadasan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 827,
           "votePct": 0.54,
           "alliance": "OTHER"

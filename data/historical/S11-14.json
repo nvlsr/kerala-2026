@@ -18,14 +18,14 @@
         },
         {
           "name": "S. A. Puthiya Valappil",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 53861,
           "votePct": 42.1,
           "alliance": "LDF"
         },
         {
           "name": "O. K. Vasu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11835,
           "votePct": 9.25,
           "alliance": "NDA"
@@ -65,21 +65,21 @@
         },
         {
           "name": "K. P. Mohanan",
-          "party": "JD(U)",
+          "party": "Janata Dal (United)",
           "votes": 54722,
           "votePct": 37.27,
           "alliance": "UDF"
         },
         {
           "name": "C. Sadanandan Master",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 20787,
           "votePct": 16.68,
           "alliance": "NDA"
         },
         {
           "name": "Muhammad Shabeer K. C.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1681,
           "votePct": 1.14,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "K.P. Mohanan",
-          "party": "RJD",
+          "party": "Rashtriya Janata Dal",
           "votes": 70626,
           "votePct": 45.36,
           "alliance": "LDF"
@@ -119,7 +119,7 @@
         },
         {
           "name": "C. Sadanandan Master",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 21212,
           "votePct": 13.62,
           "alliance": "NDA"

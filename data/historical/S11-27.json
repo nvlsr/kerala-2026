@@ -18,14 +18,14 @@
         },
         {
           "name": "P. V. Gangadharan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 48125,
           "votePct": 41.38,
           "alliance": "UDF"
         },
         {
           "name": "P. Reghunathan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9894,
           "votePct": 8.51,
           "alliance": "NDA"
@@ -65,28 +65,28 @@
         },
         {
           "name": "P. M. Suresh Babu",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 36319,
           "votePct": 27.39,
           "alliance": "UDF"
         },
         {
           "name": "K. P. Sreesan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 29860,
           "votePct": 22.52,
           "alliance": "NDA"
         },
         {
           "name": "K. P. Velayudhan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 457,
           "votePct": 0.34,
           "alliance": "OTHER"
         },
         {
           "name": "Abdul Vahid",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 351,
           "votePct": 0.26,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "K. M. Abhijith",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 46196,
           "votePct": 33.58,
           "alliance": "UDF"
         },
         {
           "name": "M. T Ramesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 30952,
           "votePct": 22.5,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "K. Rahim",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 152,
           "votePct": 0.11,
           "alliance": "OTHER"

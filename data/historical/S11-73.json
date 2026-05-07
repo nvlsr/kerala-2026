@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "T. N. Prathapan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 64495,
           "votePct": 50.11,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "I. R. Vijayan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6732,
           "votePct": 5.23,
           "alliance": "NDA"
         },
         {
           "name": "Ambily Unnikrishnan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 624,
           "votePct": 0.48,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "K. P. Dhanapalan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 45118,
           "votePct": 30.37,
           "alliance": "UDF"
         },
         {
           "name": "Sangeetha",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 32793,
           "votePct": 22.07,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 886,
           "votePct": 0.6,
           "alliance": "NOTA"
         },
         {
           "name": "Manaf A. K.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 558,
           "votePct": 0.38,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "M. P. Jackson",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47564,
           "votePct": 30.37,
           "alliance": "UDF"
         },
         {
           "name": "Santhosh Cherakkulam",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 28204,
           "votePct": 18.94,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 870,
           "votePct": 0.58,
           "alliance": "NOTA"
         },
         {
           "name": "Ramya Mohanan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 366,
           "votePct": 0.25,
           "alliance": "OTHER"

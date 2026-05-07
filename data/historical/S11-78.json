@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "V. D. Satheesan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 74632,
           "votePct": 51.78,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "E. S. Purushottaman",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3934,
           "votePct": 2.73,
           "alliance": "NDA"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "V. D. Satheesan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 74985,
           "votePct": 46.7,
           "alliance": "UDF"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Hari Vijayan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 28097,
           "votePct": 17.5,
           "alliance": "NDA"
         },
         {
           "name": "Faizal",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 923,
           "votePct": 0.57,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 900,
           "votePct": 0.56,
           "alliance": "NOTA"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "V. D. Satheesan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 82264,
           "votePct": 51.87,
           "alliance": "UDF"
@@ -119,21 +119,21 @@
         },
         {
           "name": "A. B. Jayaprakash",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 12964,
           "votePct": 8.17,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1113,
           "votePct": 0.7,
           "alliance": "NOTA"
         },
         {
           "name": "N. K. Biju",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 724,
           "votePct": 0.46,
           "alliance": "OTHER"

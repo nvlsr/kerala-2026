@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "A. T. George",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 60578,
           "votePct": 44.8,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "S. Suresh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 10310,
           "votePct": 7.63,
           "alliance": "NDA"
         },
         {
           "name": "J. Sudhakaran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 2269,
           "votePct": 1.68,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "A. T. George",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51590,
           "votePct": 32.66,
           "alliance": "UDF"
         },
         {
           "name": "Karamana Jayan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 33028,
           "votePct": 20.91,
           "alliance": "NDA"
@@ -98,21 +98,21 @@
         },
         {
           "name": "Ansajitha Russal",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52720,
           "votePct": 32.33,
           "alliance": "UDF"
         },
         {
           "name": "Karamana Jayan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 29850,
           "votePct": 18.3,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 630,
           "votePct": 0.49,
           "alliance": "NOTA"

@@ -18,14 +18,14 @@
         },
         {
           "name": "M. C. Jose",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 54462,
           "votePct": 38.95,
           "alliance": "UDF"
         },
         {
           "name": "Madikai Kammaran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 15543,
           "votePct": 11.11,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Gopalan K.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1277,
           "votePct": 0.91,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "Dhanya Suresh",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 54547,
           "votePct": 33.84,
           "alliance": "UDF"
         },
         {
           "name": "M. P. Raghavan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 21104,
           "votePct": 13.09,
           "alliance": "NDA"
         },
         {
           "name": "Chandran Parappa",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 965,
           "votePct": 0.6,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "P. V. Suresh",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57476,
           "votePct": 34.45,
           "alliance": "UDF"
         },
         {
           "name": "Balraj",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 21570,
           "votePct": 12.93,
           "alliance": "NDA"
         },
         {
           "name": "Abdul Samad T.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 775,
           "votePct": 0.46,
           "alliance": "OTHER"

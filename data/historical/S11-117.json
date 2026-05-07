@@ -13,27 +13,37 @@
           "name": "Shibu Baby John",
           "party": "KRSP(B)",
           "votes": 65002,
-          "votePct": 51.16, "alliance": "UDF" },
+          "votePct": 51.16,
+          "alliance": "UDF"
+        },
         {
           "name": "N. K. Premachandran",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 58941,
-          "votePct": 46.8, "alliance": "LDF" },
+          "votePct": 46.8,
+          "alliance": "LDF"
+        },
         {
           "name": "Nalini Sankaramangalam",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 2028,
-          "votePct": 1.59, "alliance": "NDA" },
+          "votePct": 1.59,
+          "alliance": "NDA"
+        },
         {
           "name": "Maniyan G.",
           "party": "Independent",
           "votes": 567,
-          "votePct": 0.45, "alliance": "OTHER" },
+          "votePct": 0.45,
+          "alliance": "OTHER"
+        },
         {
           "name": "V. Varadharajan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 532,
-          "votePct": 0.42, "alliance": "OTHER" }
+          "votePct": 0.42,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6061,
       "marginPct": 4.77,
@@ -50,27 +60,37 @@
           "name": "N. Vijayan Pillai",
           "party": "Communist Marxist Party (Aravindakshan)",
           "votes": 64666,
-          "votePct": 46.8, "alliance": "LDF" },
+          "votePct": 46.8,
+          "alliance": "LDF"
+        },
         {
           "name": "Shibu Baby John",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 58477,
-          "votePct": 42.32, "alliance": "UDF" },
+          "votePct": 42.32,
+          "alliance": "UDF"
+        },
         {
           "name": "M. Sunil",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 10276,
-          "votePct": 7.44, "alliance": "NDA" },
+          "votePct": 7.44,
+          "alliance": "NDA"
+        },
         {
           "name": "Shahul Thengumthara",
           "party": "PDP",
           "votes": 1439,
-          "votePct": 1.04, "alliance": "OTHER" },
+          "votePct": 1.04,
+          "alliance": "OTHER"
+        },
         {
           "name": "Ansar Thevalakkara",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1106,
-          "votePct": 0.8, "alliance": "OTHER" }
+          "votePct": 0.8,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6189,
       "marginPct": 4.48,
@@ -87,27 +107,37 @@
           "name": "Sujith Vijayanpillai",
           "party": "Independent (LDF)",
           "votes": 63282,
-          "votePct": 44.29, "alliance": "LDF" },
+          "votePct": 44.29,
+          "alliance": "LDF"
+        },
         {
           "name": "Shibu Baby John",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 62186,
-          "votePct": 43.52, "alliance": "UDF" },
+          "votePct": 43.52,
+          "alliance": "UDF"
+        },
         {
           "name": "Vivek Gopan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14211,
-          "votePct": 9.95, "alliance": "NDA" },
+          "votePct": 9.95,
+          "alliance": "NDA"
+        },
         {
           "name": "Johnson Kandachira",
           "party": "Independent",
           "votes": 1223,
-          "votePct": 0.86, "alliance": "OTHER" },
+          "votePct": 0.86,
+          "alliance": "OTHER"
+        },
         {
           "name": "Sujithmon",
           "party": "Independent",
           "votes": 901,
-          "votePct": 0.63, "alliance": "OTHER" }
+          "votePct": 0.63,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1096,
       "marginPct": 0.77,

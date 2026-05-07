@@ -25,14 +25,14 @@
         },
         {
           "name": "Jaya Sadanandan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7512,
           "votePct": 7.25,
           "alliance": "NDA"
         },
         {
           "name": "Faiz Mohammed",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 749,
           "votePct": 0.72,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "A. P. Abdul Vahab",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 43536,
           "votePct": 37.66,
           "alliance": "LDF"
         },
         {
           "name": "Satheesh Kuttiyil",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 19146,
           "votePct": 16.56,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 788,
           "votePct": 0.68,
           "alliance": "NOTA"
         },
         {
           "name": "U. K. Deysi Balasubrahmanyan",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 593,
           "votePct": 0.51,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "Ahamed Devarkovil",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 52557,
           "votePct": 44.15,
           "alliance": "LDF"
@@ -119,14 +119,14 @@
         },
         {
           "name": "Navya Haridas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 24873,
           "votePct": 20.89,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 603,
           "votePct": 0.51,
           "alliance": "NOTA"

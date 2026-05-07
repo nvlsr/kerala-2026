@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Shafi Parambil",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47641,
           "votePct": 42.41,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "C. Udaybhaskar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 22317,
           "votePct": 19.86,
           "alliance": "NDA"
@@ -44,14 +44,14 @@
       "candidates": [
         {
           "name": "Shafi Parambil",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 57559,
           "votePct": 41.77,
           "alliance": "UDF"
         },
         {
           "name": "Sobha Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 40076,
           "votePct": 29.08,
           "alliance": "NDA"
@@ -77,14 +77,14 @@
       "candidates": [
         {
           "name": "Shafi Parambil",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 54079,
           "votePct": 38.06,
           "alliance": "UDF"
         },
         {
           "name": "E. Sreedharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 50220,
           "votePct": 35.34,
           "alliance": "NDA"
@@ -110,14 +110,14 @@
       "candidates": [
         {
           "name": "Rahul Mamkootathil",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 58389,
           "votePct": 44.27,
           "alliance": "UDF"
         },
         {
           "name": "C. Krishnakumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 39549,
           "votePct": 28.63,
           "alliance": "NDA"

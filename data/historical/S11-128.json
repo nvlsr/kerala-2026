@@ -18,7 +18,7 @@
         },
         {
           "name": "Thankamony Divakaran",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 33493,
           "votePct": 29.22,
           "alliance": "UDF"
@@ -32,7 +32,7 @@
         },
         {
           "name": "P. P. Vava",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4844,
           "votePct": 4.23,
           "alliance": "NDA"
@@ -65,28 +65,28 @@
         },
         {
           "name": "K. Chandrababu",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 32425,
           "votePct": 23.47,
           "alliance": "UDF"
         },
         {
           "name": "Raji Prasad",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 27602,
           "votePct": 19.98,
           "alliance": "NDA"
         },
         {
           "name": "M. K. Manoj Kumar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1437,
           "votePct": 1.04,
           "alliance": "OTHER"
         },
         {
           "name": "K. Sivanandan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 789,
           "votePct": 0.57,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "P. Sudheer",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 38262,
           "votePct": 25.92,
           "alliance": "NDA"
         },
         {
           "name": "A. Sreedharan",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 36938,
           "votePct": 25.02,
           "alliance": "UDF"
         },
         {
           "name": "Vipinlal Vidhyadharan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 927,
           "votePct": 0.63,
           "alliance": "OTHER"

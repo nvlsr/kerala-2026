@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "P. A. Madhavan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 63077,
           "votePct": 45.22,
           "alliance": "UDF"
@@ -25,21 +25,21 @@
         },
         {
           "name": "A. N. Radhakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 10543,
           "votePct": 7.56,
           "alliance": "NDA"
         },
         {
           "name": "P. K. Usman",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2293,
           "votePct": 1.64,
           "alliance": "OTHER"
         },
         {
           "name": "Suresh Tachapally",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 594,
           "votePct": 0.43,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "O. Abdurahiman Kutty",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51097,
           "votePct": 31.42,
           "alliance": "UDF"
         },
         {
           "name": "A. N. Radhakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 37680,
           "votePct": 23.17,
           "alliance": "NDA"
         },
         {
           "name": "Hussain K. K",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1180,
           "votePct": 0.73,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 730,
           "votePct": 0.45,
           "alliance": "NOTA"
@@ -112,28 +112,28 @@
         },
         {
           "name": "Vijay Hari",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 48461,
           "votePct": 28.93,
           "alliance": "UDF"
         },
         {
           "name": "A. N. Radhakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 36566,
           "votePct": 21.83,
           "alliance": "NDA"
         },
         {
           "name": "Faisal Ibrahim",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2294,
           "votePct": 1.37,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 712,
           "votePct": 0.43,
           "alliance": "NOTA"

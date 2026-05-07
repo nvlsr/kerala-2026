@@ -25,21 +25,21 @@
         },
         {
           "name": "V. K. Sajeevan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6272,
           "votePct": 4.4,
           "alliance": "NDA"
         },
         {
           "name": "Abdul Raheem",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1045,
           "votePct": 0.73,
           "alliance": "OTHER"
         },
         {
           "name": "M. Sathi",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 407,
           "votePct": 0.29,
           "alliance": "OTHER"
@@ -72,14 +72,14 @@
         },
         {
           "name": "Ramadas Manaleri",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12327,
           "votePct": 7.81,
           "alliance": "NDA"
         },
         {
           "name": "P. C. Balakrishnan",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1125,
           "votePct": 0.71,
           "alliance": "OTHER"
@@ -119,7 +119,7 @@
         },
         {
           "name": "P. P. Murali",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9139,
           "votePct": 5.38,
           "alliance": "NDA"

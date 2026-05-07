@@ -25,7 +25,7 @@
         },
         {
           "name": "Sarju Thoykkavu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11144,
           "votePct": 8.67,
           "alliance": "NDA"
@@ -65,21 +65,21 @@
         },
         {
           "name": "K. V. Dasan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 43441,
           "votePct": 28.86,
           "alliance": "UDF"
         },
         {
           "name": "T. V. Babu",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 33650,
           "votePct": 22.36,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 903,
           "votePct": 0.6,
           "alliance": "NOTA"
@@ -112,21 +112,21 @@
         },
         {
           "name": "Sunil Laloor",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 44499,
           "votePct": 28.98,
           "alliance": "UDF"
         },
         {
           "name": "Lojanan Ambatt",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 33716,
           "votePct": 21.96,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 903,
           "votePct": 0.6,
           "alliance": "NOTA"

@@ -18,28 +18,28 @@
         },
         {
           "name": "Jossy Sebastian",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 47090,
           "votePct": 42.59,
           "alliance": "UDF"
         },
         {
           "name": "Narayana Raju",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3836,
           "votePct": 3.47,
           "alliance": "NDA"
         },
         {
           "name": "Muhammed Sharafudeen",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1331,
           "votePct": 1.2,
           "alliance": "OTHER"
         },
         {
           "name": "Benny Thomas",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 714,
           "votePct": 0.65,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "Senapathy Venu",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49704,
           "votePct": 39.44,
           "alliance": "UDF"
         },
         {
           "name": "Saji Parambath",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 21799,
           "votePct": 17.3,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "Shanavas Baker",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 831,
           "votePct": 0.66,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "E. M. Augusthy",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 39076,
           "votePct": 31.21,
           "alliance": "UDF"
         },
         {
           "name": "Santhosh Madhavan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 7208,
           "votePct": 5.76,
           "alliance": "NDA"
         },
         {
           "name": "A. C. Biju",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 867,
           "votePct": 0.69,
           "alliance": "OTHER"

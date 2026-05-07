@@ -25,14 +25,14 @@
         },
         {
           "name": "Anand Kumar P. G.",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6580,
           "votePct": 5.2,
           "alliance": "NDA"
         },
         {
           "name": "Jameela",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1597,
           "votePct": 1.26,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "M. V. Shreyams Kumar",
-          "party": "JD(U)",
+          "party": "Janata Dal (United)",
           "votes": 59876,
           "votePct": 39.68,
           "alliance": "UDF"
         },
         {
           "name": "K. Sadanandan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12938,
           "votePct": 8.57,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1172,
           "votePct": 0.78,
           "alliance": "NOTA"
         },
         {
           "name": "Joseph Ambalavayal",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 900,
           "votePct": 0.6,
           "alliance": "OTHER"
@@ -105,28 +105,28 @@
       "candidates": [
         {
           "name": "T. Siddique",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 70252,
           "votePct": 46.16,
           "alliance": "UDF"
         },
         {
           "name": "M. V. Shreyams Kumar",
-          "party": "LJD",
+          "party": "Loktantrik Janata Dal",
           "votes": 64782,
           "votePct": 42.56,
           "alliance": "LDF"
         },
         {
           "name": "Subeesh T. M.",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14113,
           "votePct": 9.27,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 828,
           "votePct": 0.54,
           "alliance": "NOTA"

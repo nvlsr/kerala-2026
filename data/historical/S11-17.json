@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "P. K. Jayalakshmi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 62996,
           "votePct": 50.78,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "Irumuttoor Kunhiraman",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5732,
           "votePct": 4.62,
           "alliance": "NDA"
         },
         {
           "name": "A. Gopakumar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2342,
           "votePct": 1.89,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "P. K. Jayalakshmi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 61129,
           "votePct": 42.2,
           "alliance": "UDF"
         },
         {
           "name": "K. Mohandas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 16230,
           "votePct": 11.2,
           "alliance": "NDA"
         },
         {
           "name": "Soman P. N.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1377,
           "votePct": 0.95,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "P. K. Jayalakshmi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 63254,
           "votePct": 41.46,
           "alliance": "UDF"
         },
         {
           "name": "Palliyara Mukundan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 13142,
           "votePct": 8.62,
           "alliance": "NDA"
         },
         {
           "name": "Babitha Sreenu",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1992,
           "votePct": 1.31,
           "alliance": "OTHER"

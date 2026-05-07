@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "M. P. Vincent",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 64823,
           "votePct": 49.21,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "Sundararajan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6761,
           "votePct": 5.13,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Sunny K. John",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 434,
           "votePct": 0.33,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "M. P. Vincent",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 58418,
           "votePct": 38.76,
           "alliance": "UDF"
         },
         {
           "name": "P. K. Santosh",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 17694,
           "votePct": 11.74,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "Sajimon Manjamattam",
-          "party": "CPI(ML) Red Star",
+          "party": "Communist Party of India (Marxist-Leninist) Red Star",
           "votes": 334,
           "votePct": 0.22,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "Jose Valloor",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 55151,
           "votePct": 35.31,
           "alliance": "UDF"
         },
         {
           "name": "B. Gopalakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 22295,
           "votePct": 14.28,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "P. K. Subramanian",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 282,
           "votePct": 0.18,
           "alliance": "OTHER"

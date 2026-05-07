@@ -25,14 +25,14 @@
         },
         {
           "name": "K. A. Sulaiman",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5460,
           "votePct": 4.71,
           "alliance": "NDA"
         },
         {
           "name": "P. D. Paulose",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1372,
           "votePct": 1.18,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "M. P. Sreekumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 19610,
           "votePct": 15.24,
           "alliance": "NDA"
         },
         {
           "name": "Krishnankutty K.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1010,
           "votePct": 0.79,
           "alliance": "OTHER"
@@ -98,21 +98,21 @@
         },
         {
           "name": "Palayam Pradeep",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 40535,
           "votePct": 29.94,
           "alliance": "UDF"
         },
         {
           "name": "Prasanth Sivan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 18115,
           "votePct": 13.56,
           "alliance": "NDA"
         },
         {
           "name": "Chandran",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 699,
           "votePct": 0.52,
           "alliance": "OTHER"

@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "T. M. Jacob",
-          "party": "KC(J)",
+          "party": "Kerala Congress (Jacob)",
           "votes": 66503,
           "votePct": 47.53,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "M. N. Madhu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4234,
           "votePct": 3.03,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "M. K. Usha",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 908,
           "votePct": 0.65,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Anoop Jacob",
-          "party": "KC(J)",
+          "party": "Kerala Congress (Jacob)",
           "votes": 82756,
           "votePct": 52.81,
           "alliance": "UDF"
@@ -72,7 +72,7 @@
         },
         {
           "name": "K. R. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3241,
           "votePct": 2.07,
           "alliance": "NDA"
@@ -91,7 +91,7 @@
       "candidates": [
         {
           "name": "Anoop Jacob",
-          "party": "KC(J)",
+          "party": "Kerala Congress (Jacob)",
           "votes": 73770,
           "votePct": 45.77,
           "alliance": "UDF"
@@ -105,7 +105,7 @@
         },
         {
           "name": "C. P. Sathyan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 17503,
           "votePct": 10.86,
           "alliance": "NDA"
@@ -119,7 +119,7 @@
         },
         {
           "name": "K. O. Sudheer",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 342,
           "votePct": 0.21,
           "alliance": "OTHER"
@@ -138,7 +138,7 @@
       "candidates": [
         {
           "name": "Anoop Jacob",
-          "party": "KC(J)",
+          "party": "Kerala Congress (Jacob)",
           "votes": 85056,
           "votePct": 53.8,
           "alliance": "UDF"
@@ -152,7 +152,7 @@
         },
         {
           "name": "N. Ashish",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11021,
           "votePct": 6.97,
           "alliance": "NDA"

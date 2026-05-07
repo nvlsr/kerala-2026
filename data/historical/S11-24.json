@@ -25,14 +25,14 @@
         },
         {
           "name": "P. Chandrika",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7214,
           "votePct": 5.33,
           "alliance": "NDA"
         },
         {
           "name": "T. K. Kunammad Faisy",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1494,
           "votePct": 1.1,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "Sukumaran Nair",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 8561,
           "votePct": 5.58,
           "alliance": "NDA"
         },
         {
           "name": "Razak Paleri",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1673,
           "votePct": 1.09,
           "alliance": "OTHER"
         },
         {
           "name": "K. P. Gopi",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1036,
           "votePct": 0.67,
           "alliance": "OTHER"
@@ -119,21 +119,21 @@
         },
         {
           "name": "K V Sudheer",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11165,
           "votePct": 6.8,
           "alliance": "NDA"
         },
         {
           "name": "Ismail Kammana",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1465,
           "votePct": 0.9,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 458,
           "votePct": 0.28,
           "alliance": "NOTA"

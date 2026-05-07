@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Joseph Vazhackan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 58012,
           "votePct": 49.9,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "Jiji Joseph",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4367,
           "votePct": 3.76,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Boby Kaloor",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 487,
           "votePct": 0.42,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "Joseph Vazhackan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 60894,
           "votePct": 42.7,
           "alliance": "UDF"
         },
         {
           "name": "P. J. Thomas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9759,
           "votePct": 6.84,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "P. P. Moideenkunju",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 426,
           "votePct": 0.3,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "Mathew Kuzhalnadan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 74425,
           "votePct": 44.63,
           "alliance": "UDF"
@@ -126,14 +126,14 @@
         },
         {
           "name": "Jiji Joseph",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7527,
           "votePct": 5.21,
           "alliance": "NDA"
         },
         {
           "name": "C. K. Thampi",
-          "party": "SUCI",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 176,
           "votePct": 0.12,
           "alliance": "OTHER"

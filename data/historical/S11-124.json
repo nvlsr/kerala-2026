@@ -18,28 +18,28 @@
         },
         {
           "name": "K. C. Rajan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 49446,
           "votePct": 43.37,
           "alliance": "UDF"
         },
         {
           "name": "G. Hari",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4207,
           "votePct": 3.69,
           "alliance": "NDA"
         },
         {
           "name": "A. A. Shafi",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1168,
           "votePct": 1.02,
           "alliance": "OTHER"
         },
         {
           "name": "Mangad Thulaseedharan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 507,
           "votePct": 0.44,
           "alliance": "OTHER"
@@ -65,7 +65,7 @@
         },
         {
           "name": "Sooraj Ravi",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 45492,
           "votePct": 35.19,
           "alliance": "UDF"
@@ -79,14 +79,14 @@
         },
         {
           "name": "Johnson Kandachira",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1576,
           "votePct": 1.22,
           "alliance": "OTHER"
         },
         {
           "name": "K. Balakrishnan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 431,
           "votePct": 0.33,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "Bindu Krishna",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 56452,
           "votePct": 43.27,
           "alliance": "UDF"
         },
         {
           "name": "M. Sunil",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14252,
           "votePct": 10.93,
           "alliance": "NDA"
         },
         {
           "name": "Ramanan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 290,
           "votePct": 0.22,
           "alliance": "OTHER"

@@ -25,21 +25,21 @@
         },
         {
           "name": "M. B. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6281,
           "votePct": 5.8,
           "alliance": "NDA"
         },
         {
           "name": "Mathews John",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1058,
           "votePct": 0.98,
           "alliance": "OTHER"
         },
         {
           "name": "Mansoor",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 907,
           "votePct": 0.84,
           "alliance": "OTHER"
@@ -72,14 +72,14 @@
         },
         {
           "name": "Ettumanoor Radhakrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 21455,
           "votePct": 17.06,
           "alliance": "NDA"
         },
         {
           "name": "Althaph Hassan",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1797,
           "votePct": 1.43,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "V. J. Laly",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 49366,
           "votePct": 39.94,
           "alliance": "UDF"
         },
         {
           "name": "G. Raman Nair",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 14491,
           "votePct": 11.73,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "Amruth Dev T",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1079,
           "votePct": 0.87,
           "alliance": "OTHER"

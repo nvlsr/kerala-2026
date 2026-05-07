@@ -25,14 +25,14 @@
         },
         {
           "name": "Manikandan K.",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 4387,
           "votePct": 3.62,
           "alliance": "NDA"
         },
         {
           "name": "C. H. Ashraf",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3015,
           "votePct": 2.49,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "B. Ratheesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6641,
           "votePct": 4.42,
           "alliance": "NDA"
         },
         {
           "name": "Hameed Vaniyambalam",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 3999,
           "votePct": 2.66,
           "alliance": "OTHER"
         },
         {
           "name": "A. A. Raheem",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1456,
           "votePct": 0.97,
           "alliance": "OTHER"
@@ -119,14 +119,14 @@
         },
         {
           "name": "Sajesh Elayil",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6641,
           "votePct": 3.95,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 599,
           "votePct": 0.36,
           "alliance": "NOTA"

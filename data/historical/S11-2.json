@@ -18,21 +18,21 @@
         },
         {
           "name": "Jayalakshmi N. Bhatt",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 43330,
           "votePct": 37.02,
           "alliance": "NDA"
         },
         {
           "name": "Azeez Kadappuram",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 16467,
           "votePct": 14.07,
           "alliance": "LDF"
         },
         {
           "name": "A. H. Muneer",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1260,
           "votePct": 1.08,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "Ravisha Thantri Kuntar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 56120,
           "votePct": 38.77,
           "alliance": "NDA"
         },
         {
           "name": "A. A. Ameen",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 21615,
           "votePct": 14.93,
           "alliance": "LDF"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 661,
           "votePct": 0.46,
           "alliance": "NOTA"
         },
         {
           "name": "Vijaykumar B.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 585,
           "votePct": 0.4,
           "alliance": "OTHER"
@@ -112,28 +112,28 @@
         },
         {
           "name": "K. Shreekanth",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 50395,
           "votePct": 34.88,
           "alliance": "NDA"
         },
         {
           "name": "M. A. Latheef",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 28323,
           "votePct": 19.6,
           "alliance": "LDF"
         },
         {
           "name": "Vijaya K. P.",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 679,
           "votePct": 0.47,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 639,
           "votePct": 0.44,
           "alliance": "NOTA"

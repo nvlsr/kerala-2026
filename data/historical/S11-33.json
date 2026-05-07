@@ -25,14 +25,14 @@
         },
         {
           "name": "Kumari Sukumaran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 6840,
           "votePct": 5.72,
           "alliance": "NDA"
         },
         {
           "name": "Abdu Rahman P. T.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2026,
           "votePct": 1.69,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "K. Ramachandran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12513,
           "votePct": 8.37,
           "alliance": "NDA"
         },
         {
           "name": "Nazarudheen Elamaram",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3667,
           "votePct": 2.45,
           "alliance": "OTHER"
         },
         {
           "name": "Saleem Vazhakkad",
-          "party": "WPI",
+          "party": "Welfare Party of India",
           "votes": 2344,
           "votePct": 1.57,
           "alliance": "OTHER"
@@ -154,21 +154,21 @@
         },
         {
           "name": "Sheeba Unnikrishnan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 11114,
           "votePct": 6.77,
           "alliance": "NDA"
         },
         {
           "name": "Razaq Paleri",
-          "party": "WPI",
+          "party": "Welfare Party of India",
           "votes": 2579,
           "votePct": 1.57,
           "alliance": "OTHER"
         },
         {
           "name": "T. Sivadasan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 908,
           "votePct": 0.55,
           "alliance": "OTHER"

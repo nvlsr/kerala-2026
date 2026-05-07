@@ -18,14 +18,14 @@
         },
         {
           "name": "P. Jermias",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52342,
           "votePct": 40.92,
           "alliance": "UDF"
         },
         {
           "name": "Vellimon Dileep",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5990,
           "votePct": 4.68,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "Suseela Mohan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 947,
           "votePct": 0.74,
           "alliance": "OTHER"
@@ -65,21 +65,21 @@
         },
         {
           "name": "Rajmohan Unnithan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 48587,
           "votePct": 31.85,
           "alliance": "UDF"
         },
         {
           "name": "M. S. Shyam Kumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 20257,
           "votePct": 13.28,
           "alliance": "NDA"
         },
         {
           "name": "Sharafath Mallam",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1325,
           "votePct": 0.87,
           "alliance": "OTHER"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "P. C. Vishnunadh",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 76405,
           "votePct": 48.85,
           "alliance": "UDF"
@@ -119,7 +119,7 @@
         },
         {
           "name": "Vanaja Vidhyadharan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 6100,
           "votePct": 3.9,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "R. Rahul",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 457,
           "votePct": 0.29,
           "alliance": "OTHER"

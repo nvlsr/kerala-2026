@@ -25,14 +25,14 @@
         },
         {
           "name": "P. Krishnadas",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8438,
           "votePct": 6.41,
           "alliance": "NDA"
         },
         {
           "name": "P. A. Muhammed Aslam",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2104,
           "votePct": 1.6,
           "alliance": "OTHER"
@@ -72,21 +72,21 @@
         },
         {
           "name": "V. Gopakumar",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 24244,
           "votePct": 15.65,
           "alliance": "NDA"
         },
         {
           "name": "Safeer Muhammed",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1706,
           "votePct": 1.1,
           "alliance": "OTHER"
         },
         {
           "name": "Prema G. Pisharady",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1391,
           "votePct": 0.9,
           "alliance": "OTHER"
@@ -119,21 +119,21 @@
         },
         {
           "name": "P. S. Jayaraj",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 11179,
           "votePct": 7.17,
           "alliance": "NDA"
         },
         {
           "name": "V. M. Faizal",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2385,
           "votePct": 1.53,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1518,
           "votePct": 0.97,
           "alliance": "NOTA"

@@ -25,14 +25,14 @@
         },
         {
           "name": "V. G. Gopakumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3385,
           "votePct": 2.86,
           "alliance": "NDA"
         },
         {
           "name": "K. T. Thomas",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 763,
           "votePct": 0.65,
           "alliance": "OTHER"
@@ -72,7 +72,7 @@
         },
         {
           "name": "A. G. Thankappan",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 27540,
           "votePct": 20.82,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "Abdul Nazar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 706,
           "votePct": 0.53,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "Prince Lukose",
-          "party": "KEC",
+          "party": "Kerala Congress",
           "votes": 43986,
           "votePct": 34.86,
           "alliance": "UDF"
         },
         {
           "name": "T. N. Harikumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 13746,
           "votePct": 10.4,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "Jijith K. Joy",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1165,
           "votePct": 0.92,
           "alliance": "OTHER"

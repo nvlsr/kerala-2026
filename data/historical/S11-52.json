@@ -18,21 +18,21 @@
         },
         {
           "name": "V. K. Sreekandan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51820,
           "votePct": 39.43,
           "alliance": "UDF"
         },
         {
           "name": "P. Venugopalan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9631,
           "votePct": 7.33,
           "alliance": "NDA"
         },
         {
           "name": "E. S. Kajahussain",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1933,
           "votePct": 1.47,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "Shanimol Usman",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51073,
           "votePct": 34,
           "alliance": "UDF"
         },
         {
           "name": "P. Venugopalan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 27605,
           "votePct": 18.38,
           "alliance": "NDA"
         },
         {
           "name": "A. A. Sulfikar",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1166,
           "votePct": 0.78,
           "alliance": "OTHER"
         },
         {
           "name": "K. T. Padmini",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 811,
           "votePct": 0.54,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "P. Sarin",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 59707,
           "votePct": 37.05,
           "alliance": "UDF"
         },
         {
           "name": "P. Venugopalan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 25056,
           "votePct": 15.55,
           "alliance": "NDA"
         },
         {
           "name": "P. P. Sivan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 672,
           "votePct": 0.42,
           "alliance": "OTHER"

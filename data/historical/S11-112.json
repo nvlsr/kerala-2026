@@ -18,28 +18,28 @@
         },
         {
           "name": "Peelipose Thomas",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51777,
           "votePct": 43.02,
           "alliance": "UDF"
         },
         {
           "name": "Suresh Kadambari",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7442,
           "votePct": 6.18,
           "alliance": "NDA"
         },
         {
           "name": "V. D. Saji Mon",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1300,
           "votePct": 1.08,
           "alliance": "OTHER"
         },
         {
           "name": "Ibrahim Kutty",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 905,
           "votePct": 0.75,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "Mariamma Cherian",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 44153,
           "votePct": 32.97,
           "alliance": "UDF"
         },
         {
           "name": "Padmakumar K.",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 28201,
           "votePct": 21.06,
           "alliance": "NDA"
         },
         {
           "name": "Prasad Uthimoodu",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1072,
           "votePct": 0.8,
           "alliance": "OTHER"
         },
         {
           "name": "Fawseena Thakbeer",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 862,
           "votePct": 0.64,
           "alliance": "OTHER"
@@ -112,21 +112,21 @@
         },
         {
           "name": "Rinku Cherian",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 51384,
           "votePct": 40.21,
           "alliance": "UDF"
         },
         {
           "name": "Padmakumar K",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 19587,
           "votePct": 15.33,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 431,
           "votePct": 0.34,
           "alliance": "NOTA"

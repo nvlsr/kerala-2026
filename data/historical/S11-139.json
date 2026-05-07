@@ -11,21 +11,21 @@
       "candidates": [
         {
           "name": "Jameela Prakasham",
-          "party": "JD(S)",
+          "party": "Janata Dal (Secular)",
           "votes": 59510,
           "votePct": 47.6,
           "alliance": "LDF"
         },
         {
           "name": "George Mercier",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 52305,
           "votePct": 41.84,
           "alliance": "UDF"
         },
         {
           "name": "Venganoor Satheesh",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 9127,
           "votePct": 7.3,
           "alliance": "NDA"
@@ -39,7 +39,7 @@
         },
         {
           "name": "A. M. Nizam",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1193,
           "votePct": 0.95,
           "alliance": "OTHER"
@@ -58,28 +58,28 @@
       "candidates": [
         {
           "name": "M. Vincent",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 60268,
           "votePct": 39.14,
           "alliance": "UDF"
         },
         {
           "name": "Jameela Prakasham",
-          "party": "JD(S)",
+          "party": "Janata Dal (Secular)",
           "votes": 57653,
           "votePct": 37.45,
           "alliance": "LDF"
         },
         {
           "name": "Kovalam T. N. Suresh",
-          "party": "BDJS",
+          "party": "Bharath Dharma Jana Sena",
           "votes": 30987,
           "votePct": 20.13,
           "alliance": "NDA"
         },
         {
           "name": "K. R. Anish",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 996,
           "votePct": 0.65,
           "alliance": "OTHER"
@@ -105,14 +105,14 @@
       "candidates": [
         {
           "name": "M. Vincent",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 74868,
           "votePct": 47.06,
           "alliance": "UDF"
         },
         {
           "name": "Neelalohitadasan Nadar",
-          "party": "JD(S)",
+          "party": "Janata Dal (Secular)",
           "votes": 63306,
           "votePct": 39.79,
           "alliance": "LDF"
@@ -126,7 +126,7 @@
         },
         {
           "name": "K. R. Anish",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 641,
           "votePct": 0.4,
           "alliance": "OTHER"

@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "C. N. Balakrishnan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 67911,
           "votePct": 48.79,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "Shajumon Vattakad",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7451,
           "votePct": 5.35,
           "alliance": "NDA"
         },
         {
           "name": "Govindan Machad",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1419,
           "votePct": 1.02,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Anil Akkara",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 65535,
           "votePct": 41.02,
           "alliance": "UDF"
@@ -72,21 +72,21 @@
         },
         {
           "name": "T. S. Ullas Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 26652,
           "votePct": 16.68,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 969,
           "votePct": 0.6,
           "alliance": "NOTA"
         },
         {
           "name": "Gaddafi A. K.",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 477,
           "votePct": 0.3,
           "alliance": "OTHER"
@@ -112,14 +112,14 @@
         },
         {
           "name": "Anil Akkara",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 65858,
           "votePct": 38.77,
           "alliance": "UDF"
         },
         {
           "name": "T. S. Ullas Babu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 21747,
           "votePct": 12.8,
           "alliance": "NDA"
@@ -133,7 +133,7 @@
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 842,
           "votePct": 0.5,
           "alliance": "NOTA"

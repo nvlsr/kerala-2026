@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Dominic Presentation",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 56352,
           "votePct": 53.37,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "K. Sasidharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5480,
           "votePct": 5.19,
           "alliance": "NDA"
         },
         {
           "name": "Yoosuf Mufti",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 1992,
           "votePct": 1.89,
           "alliance": "OTHER"
@@ -65,14 +65,14 @@
         },
         {
           "name": "Dominic Presentation",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 46881,
           "votePct": 37.82,
           "alliance": "UDF"
         },
         {
           "name": "Praveen Damodara Prabhu",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 15212,
           "votePct": 12.27,
           "alliance": "NDA"
@@ -86,7 +86,7 @@
         },
         {
           "name": "A. S. Muhammed",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 2357,
           "votePct": 1.9,
           "alliance": "OTHER"
@@ -112,7 +112,7 @@
         },
         {
           "name": "Tony Chammany",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 40553,
           "votePct": 31.51,
           "alliance": "UDF"
@@ -126,7 +126,7 @@
         },
         {
           "name": "C. G. Rajagopal",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 10991,
           "votePct": 8.54,
           "alliance": "NDA"

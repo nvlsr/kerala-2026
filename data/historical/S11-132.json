@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "M. A. Vaheed",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 50787,
           "votePct": 46.38,
           "alliance": "UDF"
@@ -25,7 +25,7 @@
         },
         {
           "name": "J. R. Padmakumar",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7508,
           "votePct": 6.86,
           "alliance": "NDA"
@@ -51,14 +51,14 @@
         },
         {
           "name": "V. Muraleedharan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 42732,
           "votePct": 31.9,
           "alliance": "NDA"
         },
         {
           "name": "M. A. Vaheed",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 38602,
           "votePct": 28.82,
           "alliance": "UDF"
@@ -84,14 +84,14 @@
         },
         {
           "name": "Shobha Surendran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 40193,
           "votePct": 29.06,
           "alliance": "NDA"
         },
         {
           "name": "S. S. Lal",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 33995,
           "votePct": 23.85,
           "alliance": "UDF"

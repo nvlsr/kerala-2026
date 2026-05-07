@@ -25,14 +25,14 @@
         },
         {
           "name": "Biju Elakkuzhi",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8707,
           "votePct": 6.55,
           "alliance": "NDA"
         },
         {
           "name": "K. C. Muhammad Sabeer",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 2757,
           "votePct": 2.07,
           "alliance": "OTHER"
@@ -65,28 +65,28 @@
         },
         {
           "name": "K. P. Prashanth",
-          "party": "JD(U)",
+          "party": "Janata Dal (United)",
           "votes": 40649,
           "votePct": 27.34,
           "alliance": "UDF"
         },
         {
           "name": "Biju Elakkuzhi",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 18620,
           "votePct": 12.52,
           "alliance": "NDA"
         },
         {
           "name": "Rafeekh Keecheri",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3188,
           "votePct": 2.14,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 1420,
           "votePct": 0.96,
           "alliance": "NOTA"
@@ -112,28 +112,28 @@
         },
         {
           "name": "Illikkal Augusthy",
-          "party": "RSP",
+          "party": "Revolutionary Socialist Party",
           "votes": 35166,
           "votePct": 22.67,
           "alliance": "UDF"
         },
         {
           "name": "Biju Elakkuzhi",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 18223,
           "votePct": 11.75,
           "alliance": "NDA"
         },
         {
           "name": "Rafeekh Keecheri",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 4201,
           "votePct": 2.71,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 796,
           "votePct": 0.51,
           "alliance": "NOTA"

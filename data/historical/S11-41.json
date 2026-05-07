@@ -18,21 +18,21 @@
         },
         {
           "name": "K. P. Ismayil",
-          "party": "INL",
+          "party": "Indian National League",
           "votes": 24901,
           "votePct": 25.02,
           "alliance": "LDF"
         },
         {
           "name": "Abduil Majeed Faizi",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 4683,
           "votePct": 4.71,
           "alliance": "OTHER"
         },
         {
           "name": "Subrahmanian",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 3417,
           "votePct": 3.43,
           "alliance": "NDA"
@@ -72,21 +72,21 @@
         },
         {
           "name": "P. T. Ali Haji",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 7055,
           "votePct": 5.87,
           "alliance": "NDA"
         },
         {
           "name": "Kallen Aboobacker Master",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 3049,
           "votePct": 2.54,
           "alliance": "OTHER"
         },
         {
           "name": "Surendran Karippuzha",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 1864,
           "votePct": 1.55,
           "alliance": "OTHER"
@@ -119,21 +119,21 @@
         },
         {
           "name": "K. C. Naseer",
-          "party": "SDPI",
+          "party": "Social Democratic Party Of India",
           "votes": 8648,
           "votePct": 7.05,
           "alliance": "OTHER"
         },
         {
           "name": "K. Janachandran Master",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5728,
           "votePct": 4.67,
           "alliance": "NDA"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 502,
           "votePct": 0.41,
           "alliance": "NOTA"
@@ -173,14 +173,14 @@
         },
         {
           "name": "Preman Master",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5968,
           "votePct": 4.54,
           "alliance": "NDA"
         },
         {
           "name": "E. K. Kunhahammed Kutty Master",
-          "party": "WPOI",
+          "party": "Welfare Party of India",
           "votes": 2051,
           "votePct": 1.56,
           "alliance": "OTHER"

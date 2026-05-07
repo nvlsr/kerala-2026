@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "Thiruvanchoor Radhakrishnan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 53825,
           "votePct": 46.84,
           "alliance": "UDF"
@@ -25,14 +25,14 @@
         },
         {
           "name": "Narayanan Namboothiri",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 5449,
           "votePct": 4.74,
           "alliance": "NDA"
         },
         {
           "name": "V. S. Shajan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 1737,
           "votePct": 1.51,
           "alliance": "OTHER"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Thiruvanchoor Radhakrishnan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 73894,
           "votePct": 57.46,
           "alliance": "UDF"
@@ -72,21 +72,21 @@
         },
         {
           "name": "M. S. Karunakaran",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 12582,
           "votePct": 9.78,
           "alliance": "NDA"
         },
         {
           "name": "P. K. Geetha Krishnan",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 651,
           "votePct": 0.51,
           "alliance": "OTHER"
         },
         {
           "name": "NOTA",
-          "party": "NOTA",
+          "party": "None of the Above",
           "votes": 483,
           "votePct": 0.38,
           "alliance": "NOTA"
@@ -105,7 +105,7 @@
       "candidates": [
         {
           "name": "Thiruvanchoor Radhakrishnan",
-          "party": "INC",
+          "party": "Indian National Congress",
           "votes": 65401,
           "votePct": 53.72,
           "alliance": "UDF"
@@ -119,21 +119,21 @@
         },
         {
           "name": "Minerva Mohan",
-          "party": "BJP",
+          "party": "Bharatiya Janata Party",
           "votes": 8611,
           "votePct": 7.07,
           "alliance": "NDA"
         },
         {
           "name": "Sreekumar Chakkala",
-          "party": "BSP",
+          "party": "Bahujan Samaj Party",
           "votes": 374,
           "votePct": 0.31,
           "alliance": "OTHER"
         },
         {
           "name": "M. K. Shahazad",
-          "party": "SUCI(C)",
+          "party": "Socialist Unity Centre Of India (COMMUNIST)",
           "votes": 144,
           "votePct": 0.12,
           "alliance": "OTHER"
