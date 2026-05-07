@@ -1,3 +1,4 @@
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import {
   themeLabel,
   type QuestionParty,
@@ -64,6 +65,14 @@ export function QuestionsFilterBar({
   )
 }
 
+// className overrides to keep the existing pill aesthetic (rounded-full,
+// shorter than default Toggle height) while leveraging ToggleGroup's
+// single-select state machine and ARIA wiring. Tokens preserved from the
+// previous hand-rolled Pill component. `aria-pressed:` (set by base-ui
+// Toggle when active) drives the pressed-state styling.
+const PILL_ITEM_CLASSES =
+  "h-auto rounded-full border bg-muted/40 px-2.5 py-0.5 text-xs font-medium hover:bg-foreground/10 aria-pressed:border-foreground aria-pressed:bg-foreground aria-pressed:text-background aria-pressed:hover:bg-foreground"
+
 function FilterRow({
   label,
   allLabel,
@@ -82,44 +91,30 @@ function FilterRow({
       <span className="font-medium tracking-wide text-muted-foreground uppercase">
         {label}
       </span>
-      <Pill active={active === "all"} onClick={() => onChange("all")}>
-        {allLabel}
-      </Pill>
-      {options.map((opt) => (
-        <Pill
-          key={opt.value}
-          active={active === opt.value}
-          onClick={() => onChange(opt.value)}
-        >
-          {opt.label}
-        </Pill>
-      ))}
+      <ToggleGroup
+        // base-ui ToggleGroup is single-select by default (multiple=false);
+        // value is an array for shape consistency with the multi-select
+        // case. Empty array can result if the user clicks the active
+        // option to deselect — we treat that as "back to all".
+        value={[active]}
+        onValueChange={(v) => onChange((v[0] as string | undefined) ?? "all")}
+        spacing={1.5}
+        className="flex-wrap"
+        aria-label={label}
+      >
+        <ToggleGroupItem value="all" className={PILL_ITEM_CLASSES}>
+          {allLabel}
+        </ToggleGroupItem>
+        {options.map((opt) => (
+          <ToggleGroupItem
+            key={opt.value}
+            value={opt.value}
+            className={PILL_ITEM_CLASSES}
+          >
+            {opt.label}
+          </ToggleGroupItem>
+        ))}
+      </ToggleGroup>
     </div>
-  )
-}
-
-function Pill({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean
-  onClick: () => void
-  children: React.ReactNode
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={active}
-      className={cn(
-        "rounded-full border px-2.5 py-0.5 text-xs font-medium transition",
-        active
-          ? "border-foreground bg-foreground text-background"
-          : "bg-muted/40 hover:bg-foreground/10"
-      )}
-    >
-      {children}
-    </button>
   )
 }

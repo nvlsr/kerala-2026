@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { IconX } from "@tabler/icons-react"
 
 import { BeltsMap } from "@/components/belts-map"
+import { MethodologyDisclosure } from "@/components/methodology-disclosure"
 import { PageShell } from "@/components/page-shell"
 import { belts } from "@/lib/data/belts"
 import { cn } from "@/lib/utils"
@@ -90,11 +91,7 @@ export function BeltsPage() {
         </section>
 
         <section>
-          <details className="rounded-lg border bg-card/40 p-6 text-sm">
-            <summary className="cursor-pointer font-medium">
-              Methodology &amp; sources
-            </summary>
-            <div className="mt-3 space-y-3 text-muted-foreground">
+          <MethodologyDisclosure title="Methodology & sources">
               <p>
                 <span className="font-medium text-foreground">
                   Belt taxonomy.
@@ -181,8 +178,7 @@ export function BeltsPage() {
                 </a>
                 .
               </p>
-            </div>
-          </details>
+          </MethodologyDisclosure>
         </section>
       </main>
     </PageShell>

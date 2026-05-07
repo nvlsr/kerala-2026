@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 
 import { DriftsTeaser } from "@/components/drifts-teaser"
 import { SingleCyclePatternSection } from "@/components/flow-pattern-section"
+import { MethodologyDisclosure } from "@/components/methodology-disclosure"
 import { PageShell } from "@/components/page-shell"
 import { ReligionOverlaySection } from "@/components/religion-overlay-section"
 import { StateFlowSankey } from "@/components/state-flow-sankey"
@@ -165,11 +166,7 @@ export function FlowsPage() {
         </section>
 
         <section className="mt-12">
-          <details className="rounded-lg border bg-card/40 p-6 text-sm">
-            <summary className="cursor-pointer font-medium">
-              Methodology &amp; thresholds
-            </summary>
-            <div className="mt-3 space-y-3 text-muted-foreground">
+          <MethodologyDisclosure title="Methodology & thresholds">
               <p>
                 <span className="font-medium text-foreground">
                   Single-cycle thresholds.
@@ -239,8 +236,7 @@ export function FlowsPage() {
                 </a>
                 .
               </p>
-            </div>
-          </details>
+          </MethodologyDisclosure>
         </section>
       </main>
       <DriftsTeaser />

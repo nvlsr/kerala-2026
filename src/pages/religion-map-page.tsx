@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
+import { MethodologyDisclosure } from "@/components/methodology-disclosure"
 import { PageShell } from "@/components/page-shell"
 import { ReligionGradientMap } from "@/components/religion-gradient-map"
 import districtPaths from "@data/kerala-districts-paths.json"
@@ -105,11 +106,7 @@ export function ReligionMapPage() {
         </section>
 
         <section>
-          <details className="rounded-lg border bg-card/40 p-6 text-sm">
-            <summary className="cursor-pointer font-medium">
-              Methodology &amp; caveats
-            </summary>
-            <div className="mt-3 space-y-3 text-muted-foreground">
+          <MethodologyDisclosure title="Methodology & caveats">
               <p>
                 <span className="font-medium text-foreground">
                   Data source.
@@ -177,8 +174,7 @@ export function ReligionMapPage() {
                 {" "}— a qualitative belt taxonomy that maps
                 sub-community geography from academic literature.
               </p>
-            </div>
-          </details>
+          </MethodologyDisclosure>
         </section>
       </main>
     </PageShell>

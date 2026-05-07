@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 
 import { BeltOverlaySection } from "@/components/belt-overlay-section"
 import { MultiCycleDriftSection } from "@/components/flow-pattern-section"
+import { MethodologyDisclosure } from "@/components/methodology-disclosure"
 import { PageShell } from "@/components/page-shell"
 import { RecentLegChart } from "@/components/recent-leg-chart"
 import { TOTAL_SEATS } from "@/lib/constants"
@@ -217,11 +218,7 @@ export function DriftsPage() {
         </section>
 
         <section className="mt-12">
-          <details className="rounded-lg border bg-card/40 p-6 text-sm">
-            <summary className="cursor-pointer font-medium">
-              Methodology &amp; thresholds
-            </summary>
-            <div className="mt-3 space-y-3 text-muted-foreground">
+          <MethodologyDisclosure title="Methodology & thresholds">
               <p>
                 <span className="font-medium text-foreground">
                   Multi-cycle thresholds.
@@ -300,8 +297,7 @@ export function DriftsPage() {
                 </a>
                 .
               </p>
-            </div>
-          </details>
+          </MethodologyDisclosure>
         </section>
       </main>
     </PageShell>
