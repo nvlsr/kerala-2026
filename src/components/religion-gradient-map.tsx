@@ -173,6 +173,18 @@ export function ReligionGradientMap({
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
+      // Clear hover state ONLY when cursor leaves the whole SVG.
+      // Moving between adjacent path elements would otherwise fire each
+      // path's own mouseLeave on its way to the next path's mouseEnter,
+      // creating a brief "no hover" frame that flickers as a stutter.
+      onMouseLeave={
+        interactive
+          ? () => {
+              onAcHover?.(null)
+              onDistrictHover?.(null)
+            }
+          : undefined
+      }
     >
       {paths.constituencies.map((p) => {
         const districtId =
@@ -220,14 +232,6 @@ export function ReligionGradientMap({
                 ? () => {
                     if (level === "ac") onAcHover?.(p.constituencyNumber)
                     if (districtId) onDistrictHover?.(districtId)
-                  }
-                : undefined
-            }
-            onMouseLeave={
-              interactive
-                ? () => {
-                    if (level === "ac") onAcHover?.(null)
-                    onDistrictHover?.(null)
                   }
                 : undefined
             }
