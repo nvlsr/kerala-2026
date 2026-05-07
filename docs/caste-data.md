@@ -1,8 +1,16 @@
 # Caste data — Hindu sub-community shares by district (Kerala)
 
-⚠️ **Provenance unverified.** This data is transcribed from the [Demographics of Kerala](https://en.wikipedia.org/wiki/Demographics_of_Kerala) Wikipedia article. **Wikipedia doesn't cite an explicit source for this table.** Before publishing analysis based on these numbers, we need to identify and verify the original source — most likely NSSO socio-religious survey data or KSPB / Kerala Sastra Sahitya Parishad estimates, but neither is confirmed.
+✅ **Provenance verified.** The Wikipedia table sources to:
 
-**Action item:** web search for the underlying source, ideally a peer-reviewed publication or government release. Until then, treat all caste-based analysis as exploratory.
+> **Zachariah, K.C.; Mathew, E.T.; Rajan, S. Irudaya (2003).** *Dynamics of Migration in Kerala: Dimensions, Differentials, and Consequences.* Orient Longman.
+
+Confirmed via cross-citation in the [Wikipedia "Demographics of Nair community"](https://en.wikipedia.org/wiki/Demographics_of_Nair_community) article, which states: *"the district-wise table sources from household surveys by the Kerala Statistical Institute (last conducted in 2000)."*
+
+**Caveats baked into use:**
+- **Year:** 2000 baseline. ~25 years old as of 2026. Differential fertility has shifted absolute shares; geographic rank is generally stable.
+- **Methodology:** Sample-based household survey, not Census. Has confidence intervals we don't have specific numbers for.
+- **Denominator:** percentages are of the district's **Hindu population**, not total population. To convert to total-district share, multiply by the district's Hindu share from `data/demographics.json`.
+- **Granularity:** district-level only. Within-district AC variation (Pala vs rural Kottayam) invisible. Subject to the same ecological-fallacy caveat as our v1 religion analysis.
 
 ## What the table covers
 
