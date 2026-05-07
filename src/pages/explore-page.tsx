@@ -39,7 +39,7 @@ function loadInitialFilters() {
 }
 
 /**
- * Browse-driven explorer for the 140-seat dataset. Inherits the filter
+ * Filter-cascade explorer for the 140-seat dataset. Inherits the filter
  * cascade UI, candidate table, and detail panel that lived on the old
  * single-page dashboard. Reachable via:
  *   - Direct nav from `/` (the lean home)
@@ -100,7 +100,7 @@ export function ExplorePage() {
   return (
     <PageShell
       breadcrumbs={[{ label: "Explorer" }]}
-      title="Browse all 140 seats"
+      title="Explore all 140 seats"
       variant="compact"
     >
       <FilterBreadcrumb

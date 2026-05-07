@@ -8,7 +8,7 @@ import { SiteFooter } from "@/components/site-footer"
 /**
  * Lean home page. Search-led: the search bar is the page's hero
  * affordance, with the alliance summary as supporting headline
- * context and a small inline "browse" link for users who'd rather
+ * context and a small inline "explore" link for users who'd rather
  * scroll than search.
  */
 export function DashboardPage() {
@@ -18,7 +18,7 @@ export function DashboardPage() {
     <div className="flex min-h-svh flex-col bg-background text-foreground">
       <HomeHeader />
       <SearchBar prominent />
-      <BrowseLink />
+      <ExploreLink />
       <AllianceSection
         scope={null}
         selectedAlliance={null}
@@ -31,7 +31,7 @@ export function DashboardPage() {
   )
 }
 
-function BrowseLink() {
+function ExploreLink() {
   return (
     <div className="mx-auto max-w-3xl px-6 -mt-8 mb-12 text-center">
       <p className="text-xs text-muted-foreground">
@@ -40,7 +40,7 @@ function BrowseLink() {
           to="/explore"
           className="underline-offset-2 hover:text-foreground hover:underline"
         >
-          browse all 140 seats →
+          explore all 140 seats →
         </Link>
       </p>
     </div>
