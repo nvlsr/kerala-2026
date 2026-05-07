@@ -1,7 +1,7 @@
 {
   "year": 2011,
   "source": "Census 2011 Table C-01 + SHRUG shrid \u2192 AC keys (post-2008 delimitation)",
-  "note": "Religion shares aggregated from sub-district (rural) and town (urban) Census 2011 data, weighted by shrid population and SHRUG fragment-weights to Kerala's 140 ACs. ACs with no SHRUG match (mostly major urban centres) fall back to district-level religion shares \u2014 flagged via `source: 'district-fallback'`.",
+  "note": "Religion shares aggregated from sub-district (rural) and town (urban) Census 2011 data, weighted by shrid population and SHRUG fragment-weights to Kerala's 140 ACs. ACs with no SHRUG match are urban-heavy (major city corporations whose ward-level Census data isn't published) and fall back to district URBAN religion shares \u2014 flagged via `source: 'district-urban-fallback'`. See docs/data-pipeline.md.",
   "constituencies": {
     "1": {
       "matchedPopulation": 275617,
@@ -97,15 +97,15 @@
     "8": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 59.83,
-        "muslim": 29.43,
-        "christian": 10.41,
+        "hindu": 64.15,
+        "muslim": 33.43,
+        "christian": 2.1,
         "sikh": 0.02,
-        "buddhist": 0.04,
+        "buddhist": 0.01,
         "jain": 0.01,
-        "other": 0.03
+        "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "9": {
       "matchedPopulation": 250195,
@@ -292,28 +292,28 @@
     "23": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 56.21,
-        "muslim": 39.24,
-        "christian": 4.26,
+        "hindu": 60.33,
+        "muslim": 37.58,
+        "christian": 1.79,
         "sikh": 0.01,
-        "buddhist": 0.01,
-        "jain": 0.02,
+        "buddhist": 0.0,
+        "jain": 0.03,
         "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "24": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 56.21,
-        "muslim": 39.24,
-        "christian": 4.26,
+        "hindu": 60.33,
+        "muslim": 37.58,
+        "christian": 1.79,
         "sikh": 0.01,
-        "buddhist": 0.01,
-        "jain": 0.02,
+        "buddhist": 0.0,
+        "jain": 0.03,
         "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "25": {
       "matchedPopulation": 305090,
@@ -331,54 +331,54 @@
     "26": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 56.21,
-        "muslim": 39.24,
-        "christian": 4.26,
+        "hindu": 60.33,
+        "muslim": 37.58,
+        "christian": 1.79,
         "sikh": 0.01,
-        "buddhist": 0.01,
-        "jain": 0.02,
+        "buddhist": 0.0,
+        "jain": 0.03,
         "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "27": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 56.21,
-        "muslim": 39.24,
-        "christian": 4.26,
+        "hindu": 60.33,
+        "muslim": 37.58,
+        "christian": 1.79,
         "sikh": 0.01,
-        "buddhist": 0.01,
-        "jain": 0.02,
+        "buddhist": 0.0,
+        "jain": 0.03,
         "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "28": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 56.21,
-        "muslim": 39.24,
-        "christian": 4.26,
+        "hindu": 60.33,
+        "muslim": 37.58,
+        "christian": 1.79,
         "sikh": 0.01,
-        "buddhist": 0.01,
-        "jain": 0.02,
+        "buddhist": 0.0,
+        "jain": 0.03,
         "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "29": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 56.21,
-        "muslim": 39.24,
-        "christian": 4.26,
+        "hindu": 60.33,
+        "muslim": 37.58,
+        "christian": 1.79,
         "sikh": 0.01,
-        "buddhist": 0.01,
-        "jain": 0.02,
+        "buddhist": 0.0,
+        "jain": 0.03,
         "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "30": {
       "matchedPopulation": 213692,
@@ -396,15 +396,15 @@
     "31": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 56.21,
-        "muslim": 39.24,
-        "christian": 4.26,
+        "hindu": 60.33,
+        "muslim": 37.58,
+        "christian": 1.79,
         "sikh": 0.01,
-        "buddhist": 0.01,
-        "jain": 0.02,
+        "buddhist": 0.0,
+        "jain": 0.03,
         "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "32": {
       "matchedPopulation": 206634,
@@ -474,15 +474,15 @@
     "37": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 27.6,
-        "muslim": 70.24,
-        "christian": 1.98,
+        "hindu": 27.23,
+        "muslim": 71.64,
+        "christian": 0.96,
         "sikh": 0.0,
-        "buddhist": 0.0,
+        "buddhist": 0.01,
         "jain": 0.0,
         "other": 0.01
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "38": {
       "matchedPopulation": 225775,
@@ -513,15 +513,15 @@
     "40": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 27.6,
-        "muslim": 70.24,
-        "christian": 1.98,
+        "hindu": 27.23,
+        "muslim": 71.64,
+        "christian": 0.96,
         "sikh": 0.0,
-        "buddhist": 0.0,
+        "buddhist": 0.01,
         "jain": 0.0,
         "other": 0.01
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "41": {
       "matchedPopulation": 236419,
@@ -708,28 +708,28 @@
     "55": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.76,
-        "muslim": 28.93,
-        "christian": 4.07,
+        "hindu": 65.88,
+        "muslim": 30.91,
+        "christian": 3.05,
         "sikh": 0.01,
-        "buddhist": 0.01,
+        "buddhist": 0.0,
         "jain": 0.0,
         "other": 0.01
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "56": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.76,
-        "muslim": 28.93,
-        "christian": 4.07,
+        "hindu": 65.88,
+        "muslim": 30.91,
+        "christian": 3.05,
         "sikh": 0.01,
-        "buddhist": 0.01,
+        "buddhist": 0.0,
         "jain": 0.0,
         "other": 0.01
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "57": {
       "matchedPopulation": 209110,
@@ -851,15 +851,15 @@
     "66": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 58.42,
-        "muslim": 17.07,
-        "christian": 24.27,
+        "hindu": 57.42,
+        "muslim": 17.73,
+        "christian": 24.59,
         "sikh": 0.01,
         "buddhist": 0.01,
         "jain": 0.0,
         "other": 0.02
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "67": {
       "matchedPopulation": 244765,
@@ -994,15 +994,15 @@
     "77": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 45.99,
-        "muslim": 15.67,
-        "christian": 38.03,
+        "hindu": 46.49,
+        "muslim": 18.62,
+        "christian": 34.52,
         "sikh": 0.03,
         "buddhist": 0.02,
-        "jain": 0.04,
-        "other": 0.03
+        "jain": 0.05,
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "78": {
       "matchedPopulation": 214447,
@@ -1046,41 +1046,41 @@
     "81": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 45.99,
-        "muslim": 15.67,
-        "christian": 38.03,
+        "hindu": 46.49,
+        "muslim": 18.62,
+        "christian": 34.52,
         "sikh": 0.03,
         "buddhist": 0.02,
-        "jain": 0.04,
-        "other": 0.03
+        "jain": 0.05,
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "82": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 45.99,
-        "muslim": 15.67,
-        "christian": 38.03,
+        "hindu": 46.49,
+        "muslim": 18.62,
+        "christian": 34.52,
         "sikh": 0.03,
         "buddhist": 0.02,
-        "jain": 0.04,
-        "other": 0.03
+        "jain": 0.05,
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "83": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 45.99,
-        "muslim": 15.67,
-        "christian": 38.03,
+        "hindu": 46.49,
+        "muslim": 18.62,
+        "christian": 34.52,
         "sikh": 0.03,
         "buddhist": 0.02,
-        "jain": 0.04,
-        "other": 0.03
+        "jain": 0.05,
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "84": {
       "matchedPopulation": 226725,
@@ -1332,28 +1332,28 @@
     "103": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 68.64,
-        "muslim": 10.55,
-        "christian": 20.45,
+        "hindu": 68.06,
+        "muslim": 13.43,
+        "christian": 18.16,
         "sikh": 0.01,
         "buddhist": 0.01,
         "jain": 0.0,
         "other": 0.01
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "104": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 68.64,
-        "muslim": 10.55,
-        "christian": 20.45,
+        "hindu": 68.06,
+        "muslim": 13.43,
+        "christian": 18.16,
         "sikh": 0.01,
         "buddhist": 0.01,
         "jain": 0.0,
         "other": 0.01
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "105": {
       "matchedPopulation": 227546,
@@ -1657,28 +1657,28 @@
     "128": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.46,
-        "muslim": 13.72,
-        "christian": 19.1,
-        "sikh": 0.01,
+        "hindu": 70.3,
+        "muslim": 12.13,
+        "christian": 16.83,
+        "sikh": 0.02,
         "buddhist": 0.01,
         "jain": 0.0,
-        "other": 0.03
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "129": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.46,
-        "muslim": 13.72,
-        "christian": 19.1,
-        "sikh": 0.01,
+        "hindu": 70.3,
+        "muslim": 12.13,
+        "christian": 16.83,
+        "sikh": 0.02,
         "buddhist": 0.01,
         "jain": 0.0,
-        "other": 0.03
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "130": {
       "matchedPopulation": 296111,
@@ -1709,15 +1709,15 @@
     "132": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.46,
-        "muslim": 13.72,
-        "christian": 19.1,
-        "sikh": 0.01,
+        "hindu": 70.3,
+        "muslim": 12.13,
+        "christian": 16.83,
+        "sikh": 0.02,
         "buddhist": 0.01,
         "jain": 0.0,
-        "other": 0.03
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "133": {
       "matchedPopulation": 178551,
@@ -1735,28 +1735,28 @@
     "134": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.46,
-        "muslim": 13.72,
-        "christian": 19.1,
-        "sikh": 0.01,
+        "hindu": 70.3,
+        "muslim": 12.13,
+        "christian": 16.83,
+        "sikh": 0.02,
         "buddhist": 0.01,
         "jain": 0.0,
-        "other": 0.03
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "135": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.46,
-        "muslim": 13.72,
-        "christian": 19.1,
-        "sikh": 0.01,
+        "hindu": 70.3,
+        "muslim": 12.13,
+        "christian": 16.83,
+        "sikh": 0.02,
         "buddhist": 0.01,
         "jain": 0.0,
-        "other": 0.03
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "136": {
       "matchedPopulation": 181825,
@@ -1800,28 +1800,28 @@
     "139": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.46,
-        "muslim": 13.72,
-        "christian": 19.1,
-        "sikh": 0.01,
+        "hindu": 70.3,
+        "muslim": 12.13,
+        "christian": 16.83,
+        "sikh": 0.02,
         "buddhist": 0.01,
         "jain": 0.0,
-        "other": 0.03
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     },
     "140": {
       "matchedPopulation": null,
       "religions": {
-        "hindu": 66.46,
-        "muslim": 13.72,
-        "christian": 19.1,
-        "sikh": 0.01,
+        "hindu": 70.3,
+        "muslim": 12.13,
+        "christian": 16.83,
+        "sikh": 0.02,
         "buddhist": 0.01,
         "jain": 0.0,
-        "other": 0.03
+        "other": 0.04
       },
-      "source": "district-fallback"
+      "source": "district-urban-fallback"
     }
   }
 }

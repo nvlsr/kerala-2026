@@ -5,6 +5,7 @@
  * single boundary between "static JSON" and "typed runtime values used by the
  * app".
  */
+import acDemographicsJson from "@data/ac-demographics.json"
 import alliancesJson from "@data/alliances.json"
 import candidateAliasesJson from "@data/candidate-aliases.json"
 import communityBeltsJson from "@data/community-belts.json"
@@ -65,6 +66,26 @@ export const demoMeta = demographicsJson as {
   source: string
   note?: string
   districts: Record<string, DistrictDemographics>
+}
+
+export type AcDemographics = {
+  matchedPopulation: number | null
+  religions: Record<ReligionCode | "sikh" | "buddhist" | "jain", number>
+  /**
+   * `shrug-c01-aggregated` — directly aggregated from sub-district + town
+   * Census shares using SHRUG keys (high-quality, 114 of 140 ACs)
+   * `district-urban-fallback` — urban-heavy AC where SHRUG's spatial
+   * join failed; uses district URBAN religion shares as a tactical fix
+   * (see docs/data-pipeline.md for the improvement roadmap)
+   */
+  source: "shrug-c01-aggregated" | "district-urban-fallback" | "district-total-fallback"
+}
+
+export const acDemoMeta = acDemographicsJson as {
+  year: number
+  source: string
+  note?: string
+  constituencies: Record<string, AcDemographics>
 }
 
 export type BeltDef = {

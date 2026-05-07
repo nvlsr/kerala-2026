@@ -4,7 +4,11 @@ import { Link } from "react-router-dom"
 import { MethodologyDisclosure } from "@/components/methodology-disclosure"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
-import { ReligionGradientMap } from "@/components/religion-gradient-map"
+import {
+  ReligionGradientMap,
+  type GradientLevel,
+} from "@/components/religion-gradient-map"
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import districtPaths from "@data/kerala-districts-paths.json"
 import { demoMeta } from "@/lib/data/loaders"
 import { getReligion, type ReligionCode } from "@/lib/data/demographics"
@@ -22,6 +26,7 @@ export function ReligionMapPage() {
   const [hoveredDistrictId, setHoveredDistrictId] = useState<string | null>(
     null
   )
+  const [level, setLevel] = useState<GradientLevel>("ac")
 
   return (
     <PageShell
@@ -74,6 +79,31 @@ export function ReligionMapPage() {
     >
       <PageMain className="space-y-12">
         <section>
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+            <p className="text-sm text-muted-foreground">
+              {level === "ac"
+                ? "AC-level shading: each constituency carries its own religion mix (114 of 140 from SHRUG + Census; 26 urban-heavy ACs use district-Urban fallback)."
+                : "District-level shading: every constituency in a district shares the same religion mix."}
+            </p>
+            <ToggleGroup
+              value={[level]}
+              onValueChange={(v) => {
+                const next = (v[0] as GradientLevel | undefined) ?? "ac"
+                setLevel(next)
+              }}
+              variant="outline"
+              size="sm"
+              spacing={2}
+              aria-label="Map granularity"
+            >
+              <ToggleGroupItem value="district" className="rounded-full">
+                By district
+              </ToggleGroupItem>
+              <ToggleGroupItem value="ac" className="rounded-full">
+                By AC
+              </ToggleGroupItem>
+            </ToggleGroup>
+          </div>
           <ul className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {RELIGIONS_TO_SHOW.map((r) => (
               <li
@@ -93,9 +123,10 @@ export function ReligionMapPage() {
                 <ReligionGradientMap
                   religion={r.code}
                   baseColor={getReligion(r.code).color}
+                  level={level}
                   hoveredDistrictId={hoveredDistrictId}
                   onDistrictHover={setHoveredDistrictId}
-                  ariaLabel={`Kerala districts shaded by ${r.label} percentage of population`}
+                  ariaLabel={`Kerala ${level === "ac" ? "constituencies" : "districts"} shaded by ${r.label} percentage of population`}
                 />
                 <ReligionMapCaption
                   religion={r.code}

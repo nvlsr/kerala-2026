@@ -45,9 +45,15 @@ COL_JAIN_PERSONS = 25
 COL_OTHER_PERSONS = 28
 
 
-def parse_c01() -> tuple[dict, dict, dict]:
-    """Returns (district_religion, subdistrict_rural_religion, town_religion)
-    where each maps {code: {religion: share_percent}}."""
+def parse_c01() -> tuple[dict, dict, dict, dict]:
+    """Returns (district_total_religion, district_urban_religion,
+    subdistrict_rural_religion, town_religion) where each maps
+    {code: {religion: share_percent}}.
+
+    district_urban_religion is used for the 26 fallback ACs which
+    are urban-heavy — closer to their actual mix than district TOTAL
+    (which averages rural + urban populations of the whole district).
+    """
     df = pd.read_excel(
         ROOT / "data" / "census-c01" / "DDW32C-01-MDDS.XLS",
         sheet_name="C01",
@@ -81,7 +87,8 @@ def parse_c01() -> tuple[dict, dict, dict]:
             out[name] = (v or 0) / total * 100
         return out
 
-    district_rel: dict[str, dict] = {}
+    district_total_rel: dict[str, dict] = {}
+    district_urban_rel: dict[str, dict] = {}
     subdist_rural_rel: dict[str, dict] = {}
     town_rel: dict[str, dict] = {}
 
@@ -102,14 +109,16 @@ def parse_c01() -> tuple[dict, dict, dict]:
         is_town = town != "000000"
 
         if is_district and tru == "Total":
-            district_rel[distt] = rel
+            district_total_rel[distt] = rel
+        elif is_district and tru == "Urban":
+            district_urban_rel[distt] = rel
         elif is_subdist and tru == "Rural":
             subdist_rural_rel[tehsil] = rel
         elif is_town and tru == "Urban":
             # Towns are urban by definition — only one row per town with tru=Urban.
             town_rel[town] = rel
 
-    return district_rel, subdist_rural_rel, town_rel
+    return district_total_rel, district_urban_rel, subdist_rural_rel, town_rel
 
 
 def load_kerala_shrug() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -138,10 +147,11 @@ def load_kerala_shrug() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Da
 
 def main() -> None:
     print("Parsing Census C-01...", file=sys.stderr)
-    district_rel, subdist_rel, town_rel = parse_c01()
+    district_total_rel, district_urban_rel, subdist_rel, town_rel = parse_c01()
     print(
-        f"  → {len(district_rel)} districts, "
-        f"{len(subdist_rel)} sub-districts (rural), "
+        f"  → {len(district_total_rel)} districts (Total), "
+        f"{len(district_urban_rel)} districts (Urban), "
+        f"{len(subdist_rel)} sub-districts (Rural), "
         f"{len(town_rel)} towns",
         file=sys.stderr,
     )
@@ -278,14 +288,23 @@ def main() -> None:
             print(f"  (no census code for district '{district_id}')", file=sys.stderr)
             continue
 
-        rel = district_rel.get(census_dist_code)
+        # Prefer district URBAN religion for fallback ACs (these are
+        # urban-heavy — SHRUG's spatial join failed precisely because
+        # they sit in major city corporations). District URBAN is closer
+        # to their actual mix than district TOTAL, which averages rural
+        # + urban populations of the whole district.
+        rel = district_urban_rel.get(census_dist_code)
+        source = "district-urban-fallback"
+        if not rel:
+            rel = district_total_rel.get(census_dist_code)
+            source = "district-total-fallback"
         if not rel:
             print(f"  (no district religion for code {census_dist_code})", file=sys.stderr)
             continue
         output_acs[ac_num] = {
             "matchedPopulation": None,
             "religions": {r: round(rel[r], 2) for r in RELIGIONS},
-            "source": "district-fallback",
+            "source": source,
         }
         fallback_count += 1
 
@@ -302,9 +321,10 @@ def main() -> None:
         "note": (
             "Religion shares aggregated from sub-district (rural) and town (urban) "
             "Census 2011 data, weighted by shrid population and SHRUG fragment-weights "
-            "to Kerala's 140 ACs. ACs with no SHRUG match (mostly major urban "
-            "centres) fall back to district-level religion shares — flagged via "
-            "`source: 'district-fallback'`."
+            "to Kerala's 140 ACs. ACs with no SHRUG match are urban-heavy (major "
+            "city corporations whose ward-level Census data isn't published) and "
+            "fall back to district URBAN religion shares — flagged via "
+            "`source: 'district-urban-fallback'`. See docs/data-pipeline.md."
         ),
         "constituencies": {
             str(k): output_acs[k] for k in sorted(output_acs.keys())
@@ -316,9 +336,11 @@ def main() -> None:
     print(f"\nWrote {out_path}", file=sys.stderr)
     print(f"Total ACs: {len(output_acs)}/140", file=sys.stderr)
     aggregated = sum(1 for v in output_acs.values() if v["source"] == "shrug-c01-aggregated")
-    fallback = sum(1 for v in output_acs.values() if v["source"] == "district-fallback")
-    print(f"  shrug-c01-aggregated: {aggregated}", file=sys.stderr)
-    print(f"  district-fallback:    {fallback}", file=sys.stderr)
+    urban_fb = sum(1 for v in output_acs.values() if v["source"] == "district-urban-fallback")
+    total_fb = sum(1 for v in output_acs.values() if v["source"] == "district-total-fallback")
+    print(f"  shrug-c01-aggregated:    {aggregated}", file=sys.stderr)
+    print(f"  district-urban-fallback: {urban_fb}", file=sys.stderr)
+    print(f"  district-total-fallback: {total_fb}", file=sys.stderr)
 
 
 if __name__ == "__main__":

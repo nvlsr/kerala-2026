@@ -1,4 +1,4 @@
-import { demoMeta } from "@/lib/data/loaders"
+import { acDemoMeta, demoMeta } from "@/lib/data/loaders"
 
 export type ReligionCode = "hindu" | "muslim" | "christian" | "other"
 
@@ -20,6 +20,37 @@ export function getReligion(code: ReligionCode): Religion {
 }
 
 export const demographicsYear = demoMeta.year
+
+/**
+ * AC-level religion shares from SHRUG + Census C-01 aggregation.
+ * 114 of 140 ACs are directly aggregated; 26 urban-heavy ACs fall back
+ * to district URBAN religion shares. See docs/data-pipeline.md.
+ */
+export type AcDemographicsResult = {
+  religions: Record<ReligionCode, number>
+  source: "shrug-c01-aggregated" | "district-urban-fallback" | "district-total-fallback" | null
+}
+
+export function getReligionForAC(
+  constituencyNumber: number
+): AcDemographicsResult | null {
+  const entry = acDemoMeta.constituencies[String(constituencyNumber)]
+  if (!entry) return null
+  // Collapse smaller religion buckets into "other" to match the
+  // ReligionCode shape the rest of the app uses.
+  const r = entry.religions
+  const other =
+    (r.other ?? 0) + (r.sikh ?? 0) + (r.buddhist ?? 0) + (r.jain ?? 0)
+  return {
+    religions: {
+      hindu: r.hindu,
+      muslim: r.muslim,
+      christian: r.christian,
+      other,
+    },
+    source: entry.source,
+  }
+}
 
 export type Demographics = {
   scope: "state" | "district"

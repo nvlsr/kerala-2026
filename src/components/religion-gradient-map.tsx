@@ -1,12 +1,23 @@
 import paths from "@data/kerala-constituencies-paths.json"
 
-import { districtsMeta } from "@/lib/data/loaders"
+import { acDemoMeta, districtsMeta } from "@/lib/data/loaders"
 import { demoMeta } from "@/lib/data/loaders"
 import type { ReligionCode } from "@/lib/data/demographics"
+
+export type GradientLevel = "district" | "ac"
 
 type Props = {
   religion: ReligionCode
   baseColor: string
+  /**
+   * "district" — every AC inherits its district's religion share.
+   *              Coarser, but uniform across the whole district.
+   * "ac"       — each AC carries its own share (114 ACs at SHRUG +
+   *              Census aggregation; 26 urban-heavy ACs fall back to
+   *              district-URBAN). Higher resolution; reveals
+   *              within-district variation (Pala vs rural Kottayam).
+   */
+  level?: GradientLevel
   /** Min opacity floor for districts with very low % of this religion. Keeps
    *  outlines visible without making low-share districts invisible. */
   minOpacity?: number
@@ -40,6 +51,7 @@ type Props = {
 export function ReligionGradientMap({
   religion,
   baseColor,
+  level = "district",
   minOpacity = 0.1,
   maxOpacity = 0.9,
   outlinedSeats,
@@ -49,10 +61,19 @@ export function ReligionGradientMap({
   ariaLabel,
 }: Props) {
   // Anchor the gradient to the actual range of the chosen religion so
-  // mid-share districts read as mid-saturated rather than faint.
-  const maxPct = Math.max(
-    ...Object.values(demoMeta.districts).map((d) => d.religions[religion])
-  )
+  // mid-share ACs/districts read as mid-saturated rather than faint.
+  // For AC level, we measure against the AC max (which is higher than
+  // district max — extreme ACs like Vengara at 83% Muslim).
+  const maxPct =
+    level === "ac"
+      ? Math.max(
+          ...Object.values(acDemoMeta.constituencies).map(
+            (c) => c.religions[religion] ?? 0
+          )
+        )
+      : Math.max(
+          ...Object.values(demoMeta.districts).map((d) => d.religions[religion])
+        )
 
   const interactive = onDistrictHover != null
 
@@ -66,10 +87,16 @@ export function ReligionGradientMap({
       {paths.constituencies.map((p) => {
         const districtId =
           districtsMeta.constituencyToDistrict[String(p.constituencyNumber)]
-        const districtMeta = districtId
-          ? demoMeta.districts[districtId]
-          : null
-        const pct = districtMeta?.religions[religion] ?? 0
+        let pct = 0
+        if (level === "ac") {
+          const ac = acDemoMeta.constituencies[String(p.constituencyNumber)]
+          pct = ac?.religions[religion] ?? 0
+        } else {
+          const districtMeta = districtId
+            ? demoMeta.districts[districtId]
+            : null
+          pct = districtMeta?.religions[religion] ?? 0
+        }
         const norm = maxPct > 0 ? pct / maxPct : 0
         const opacity = minOpacity + norm * (maxOpacity - minOpacity)
         const isInHoveredDistrict =
