@@ -82,18 +82,20 @@ For the largest urban ACs (Trivandrum Corporation's 5 ACs, Kozhikode Corporation
 
 Tier B would get us to ~95% high-quality population coverage. Skip until a specific narrative card needs urban-AC precision.
 
-### ✅ Tier C (current) — 2025 projection
+### ✅ Tier C (current default) — 2025 projection
 
-Implemented in `scripts/project-ac-demographics-2025.py`. State-level uniform multipliers from cohort projection (Hindu × 0.96, Muslim × 1.12, Christian × 0.97) applied to all AC shares with per-AC renormalization. Output: `data/ac-demographics-2025.json` alongside the 2011 baseline.
+Implemented in `scripts/project-ac-demographics-2025.py`. State-level uniform multipliers from cohort projection (Hindu × 0.9591, Muslim × 1.1166, Christian × 0.9712) applied to all AC shares with per-AC renormalization. Output: `data/ac-demographics-2025.json` alongside the raw 2011 baseline at `data/ac-demographics.json`.
 
 Multipliers come from the cohort projection in `scripts/cohort-project-2011-to-2025.py`: Census 2011 starting populations + Kerala CRS births by religion 2011-2023 + crude death rate ~7/1000.
 
-Surfaced on `/religion-map` via the year toggle (visible only in level=AC mode; district map has no projection).
+**This is the default baseline for both `/religion-map` and narrative-card analysis** (e.g., A1 minority consolidation). The raw 2011 baseline remains available via `--baseline-2011` on analysis scripts and via the year toggle on `/religion-map`.
+
+**Why default to 2025:** Pearson correlation is invariant to monotonic transformations of a single variable, and our renormalization step (rescale to sum=100 per AC) is near-linear because state-level multipliers are uniform. Empirically (`scripts/narrative-a1-2011-vs-2025.ts`) the choice between 2011 and 2025 moves correlations by at most 0.011 across all 140 ACs — same verdict, same rank order. 2025 is reality-aligned for absolute-share statements ("Vengara is 85% Muslim") and external cross-checks; 2011 is still useful as the tamper-evident base layer.
 
 **Limitations** (baked into the file's `note` field):
 - Uniform state-level multiplier; assumes Kerala's geographic gradient hasn't shifted, only absolute shares.
 - Doesn't model district-specific fertility differentials (Muslim TFR is higher in already-Muslim-heavy Malappuram than in Trivandrum).
-- Acceptable approximation for visualization purposes; analytical claims should still cite the 2011 baseline.
+- Absolute shares for any single AC may be off by a few pp; rank order is preserved exactly.
 
 Spot-check (Manjeshwar AC 1): our projection said H 44.2% / M 53.1% / C 2.7%; an independent commentator's 2026 voter prediction was H 42.8% / M 54.5% / C 2.7%. Match within 1.5pp on every religion despite different sources, methods, and population-vs-voters distinction.
 

@@ -42,8 +42,17 @@ const reservations = JSON.parse(
 ).constituencyToReservation as Record<string, "SC" | "ST">
 
 const excludeReserved = process.argv.includes("--exclude-reserved")
+// Default baseline: 2025 projection (closer to election year). Use
+// `--baseline-2011` to fall back to the raw Census 2011 baseline. The
+// two are empirically near-identical for correlation analysis (uniform
+// multipliers preserve rank order), but 2025 is reality-aligned for
+// absolute-share claims and external cross-checks.
+const useBaseline2011 = process.argv.includes("--baseline-2011")
+const baselineFile = useBaseline2011
+  ? "data/ac-demographics.json"
+  : "data/ac-demographics-2025.json"
 
-const acDemo = JSON.parse(fs.readFileSync("data/ac-demographics.json", "utf8"))
+const acDemo = JSON.parse(fs.readFileSync(baselineFile, "utf8"))
 type AcRel = {
   matchedPopulation: number | null
   religions: Record<string, number>
@@ -101,12 +110,16 @@ for (const c of data2026) {
   })
 }
 
+const baselineLabel = useBaseline2011
+  ? "Census 2011 baseline"
+  : "2025 projection (default; use --baseline-2011 for raw Census 2011)"
 console.log(
   `Loaded ${rows.length}/140 ACs with AC-level religion + 2021/2026 deltas` +
     (excludeReserved
       ? ` (${reservedSkipped} reserved seats excluded)`
       : ` (use --exclude-reserved to drop the 16 SC/ST seats)`)
 )
+console.log(`Demographics baseline: ${baselineLabel}`)
 console.log()
 
 function corr(xs: number[], ys: number[]): number {

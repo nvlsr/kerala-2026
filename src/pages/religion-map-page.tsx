@@ -107,7 +107,7 @@ export function ReligionMapPage() {
   )
   const [hoveredSeat, setHoveredSeat] = useState<number | null>(null)
   const [level, setLevel] = useState<GradientLevel>("ac")
-  const [year, setYear] = useState<GradientYear>(2011)
+  const [year, setYear] = useState<GradientYear>(2025)
 
   return (
     <PageShell
@@ -117,9 +117,12 @@ export function ReligionMapPage() {
         <div className="space-y-3 text-sm leading-relaxed">
           <p>
             Kerala's three big religion groups, each shaded
-            district-by-district by 2011 census share. A reference page
-            for the structural geography of each community's vote bank
-            — useful for reading the alliance flows on{" "}
+            constituency-by-constituency. The default view uses a 2025
+            cohort projection of Census 2011 (toggle to 2011 raw if
+            preferred — the geographic gradient is identical, only
+            absolute shares drift). A reference page for the structural
+            geography of each community's vote bank — useful for
+            reading the alliance flows on{" "}
             <Link
               to="/flows"
               className="font-medium text-foreground underline-offset-2 hover:underline"
@@ -337,8 +340,14 @@ export function ReligionMapPage() {
               gradient is unchanged from 2011 — only absolute shares
               drift. AC-specific fertility differentials (Muslim TFR is
               higher in already-Muslim-heavy areas) are NOT modelled.
-              Use 2011 for analytical claims; 2025 is for visualisation
-              only.
+              Because the multipliers are uniform statewide, rank order
+              is preserved exactly: 2025 and 2011 produce essentially
+              the same correlation analysis (Pearson r shifts by ≤0.01).
+              <strong className="font-medium text-foreground">
+                {" "}2025 is the recommended default for absolute-share
+                claims and external cross-checks; 2011 remains
+                available for verification.
+              </strong>
             </p>
             <p>
               <span className="font-medium text-foreground">

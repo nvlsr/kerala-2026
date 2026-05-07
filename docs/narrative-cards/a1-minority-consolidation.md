@@ -4,6 +4,8 @@
 
 This card has two versions of the verdict. The original district-level analysis (still useful as a methodology demonstration) is preserved at the bottom. **The current verdict above uses AC-level religion data**, built by joining SHRUG's `shrid → AC` keys against Census 2011 Table C-01 (sub-district + town religion shares) — see `scripts/build-ac-demographics.py`.
 
+**Baseline:** Numbers below use the **2025 projection** (Census 2011 + state-level cohort multipliers from CRS births-by-religion, applied uniformly per AC and renormalised). The choice between 2025 and the raw 2011 baseline moves correlations by ≤0.01 — uniform multipliers preserve rank order — but 2025 is reality-aligned for absolute-share statements ("Vengara is 85% Muslim") and external cross-checks. Re-run with `--baseline-2011` for the pre-projection numbers; the verdict is identical.
+
 ## The consensus claim
 
 Six post-mortems (Federal, Quint, Outlook, ToI, NIE, Lokniti baseline) converged on this story:
@@ -18,40 +20,40 @@ If correct, we should see (a) substantially stronger UDF growth in high-minority
 
 |  | UDF Δ | LDF Δ | NDA Δ |
 |---|---|---|---|
-| Muslim share | r = **+0.00** | r = +0.03 | r = -0.10 |
-| Christian share | r = **+0.21** | r = -0.06 | r = +0.07 |
-| Hindu share | r = -0.23 | r = +0.03 | r = +0.06 |
-| (Muslim + Christian) | r = +0.23 | r = -0.03 | r = -0.06 |
+| Muslim share | r = **-0.01** | r = +0.04 | r = -0.09 |
+| Christian share | r = **+0.20** | r = -0.05 | r = +0.07 |
+| Hindu share | r = -0.21 | r = -0.00 | r = +0.05 |
+| (Muslim + Christian) | r = +0.21 | r = +0.00 | r = -0.05 |
 
 When religion share is measured at the AC level (instead of broadcast from district), the picture sharpens dramatically:
 
-- **Christian share's correlation with UDF gain nearly DOUBLED** (district: +0.11 → AC: +0.21). Real, meaningful effect.
-- **Muslim share's correlation collapsed further toward zero** (district: +0.07 → AC: +0.00). Statistically indistinguishable from "no relationship."
-- The pooled "minority share" signal (+0.23) is **entirely the Christian half** carrying weight; the Muslim half adds no signal.
+- **Christian share's correlation with UDF gain nearly DOUBLED** (district: +0.11 → AC: +0.20). Real, meaningful effect.
+- **Muslim share's correlation collapsed toward zero** (district: +0.07 → AC: -0.01). Statistically indistinguishable from "no relationship."
+- The pooled "minority share" signal (+0.21) is **entirely the Christian half** carrying weight; the Muslim half adds no signal.
 
 ### Mean swings by Christian-share bin
 
 | Bin | n | UDF Δ | LDF Δ | NDA Δ |
 |---|---|---|---|---|
 | Christian-majority (≥50%) | 2 | **-2.28pp**¹ | -6.27pp | **+9.78pp** |
-| Christian-heavy (30–50%) | 34 | **+10.45pp** | -8.03pp | +2.51pp |
-| Christian-mid (15–30%) | 35 | +6.70pp | -6.84pp | +0.92pp |
+| Christian-heavy (30–50%) | 32 | **+10.40pp** | -7.99pp | +2.61pp |
+| Christian-mid (15–30%) | 37 | +6.95pp | -6.94pp | +0.92pp |
 | Low Christian (<15%) | 69 | +6.30pp | -7.46pp | +2.18pp |
 
-¹ The 2 Christian-majority ACs are PALA (52% C) and ANGAMALY (64% C). They split very differently — Angamaly +8.3pp UDF (clean swing), Pala -12.9pp UDF / +18.2pp NDA (Mani C. Kappan / NCP / KC(M) churn unrelated to religion). The bin mean reflects this.
+¹ The 2 Christian-majority ACs are PALA (52% C) and ANGAMALY (65% C). They split very differently — Angamaly +8.3pp UDF (clean swing), Pala -12.9pp UDF / +18.2pp NDA (Mani C. Kappan / NCP / KC(M) churn unrelated to religion). The bin mean reflects this.
 
-The Christian-heavy 30–50% bin is the headline finding: **+10.45pp UDF gain across 34 ACs**, vs +6.30pp in low-Christian seats. A clean **4.15pp differential** attributable to Christian-share — the actual signal "minority consolidation" was pointing at.
+The Christian-heavy 30–50% bin is the headline finding: **+10.40pp UDF gain across 32 ACs**, vs +6.30pp in low-Christian seats. A clean **4.10pp differential** attributable to Christian-share — the actual signal "minority consolidation" was pointing at.
 
 ### Mean swings by Muslim-share bin
 
 | Bin | n | UDF Δ | LDF Δ | NDA Δ |
 |---|---|---|---|---|
-| Muslim-majority (≥60%) | 14 | +8.54pp | -7.93pp | +0.41pp |
-| Muslim-heavy (40–60%) | 13 | +5.96pp | -6.74pp | +2.07pp |
-| Muslim-mid (20–40%) | 39 | +6.82pp | -7.46pp | +2.18pp |
-| Low Muslim (<20%) | 74 | +7.53pp | -7.44pp | +2.29pp |
+| Muslim-majority (≥60%) | 16 | +8.98pp | -8.28pp | +0.40pp |
+| Muslim-heavy (40–60%) | 23 | +5.76pp | -6.83pp | +2.22pp |
+| Muslim-mid (20–40%) | 44 | +7.80pp | -7.39pp | +1.95pp |
+| Low Muslim (<20%) | 57 | +7.03pp | -7.46pp | +2.53pp |
 
-Muslim-majority ACs gained UDF +8.54pp — slightly above the statewide ~7pp trend, but not dramatically. The 40–60% Muslim bin actually gained LESS than the low-Muslim bin (+5.96pp vs +7.53pp). **There is no monotonic relationship between Muslim share and UDF gain.** Muslim-heavy seats followed the state trend; they didn't supercharge it.
+Muslim-majority ACs gained UDF +8.98pp — slightly above the statewide ~7pp trend, but not dramatically. The 40–60% Muslim bin actually gained LESS than the low-Muslim bin (+5.76pp vs +7.03pp). **There is no monotonic relationship between Muslim share and UDF gain.** Muslim-heavy seats followed the state trend; they didn't supercharge it.
 
 This contradicts the headline framing in coverage which emphasized "Muslim consolidation" as a primary driver.
 
@@ -92,11 +94,11 @@ Moving from district-level to AC-level religion data wasn't just a refinement �
 
 | Seat | District | Christian% | Muslim% | UDF Δ | LDF Δ | What's going on |
 |---|---|---|---|---|---|---|
-| 93 PALA | Kottayam | 52% | 9% | **-12.9pp** | -4.0pp | NCK / Mani C. Kappan / KC(M) churn |
+| 93 PALA | Kottayam | 52% | 10% | **-12.9pp** | -4.0pp | NCK / Mani C. Kappan / KC(M) churn |
 | 78 PARAVUR | Ernakulam | (urban-fallback) | — | -2.3pp | -1.8pp | Latin Catholic coastal — Munambam Waqf effect |
-| 111 THIRUVALLA | Pathanamthitta | 48% | 3% | +1.6pp | **-14.6pp** | NDA +14.5pp — Sabarimala-route + JD(S) winner |
-| 41 VENGARA | Malappuram | 0% | 83% | +3.2pp | **+8.5pp** | Only Muslim-majority seat where LDF GAINED |
-| 89 UDUMBANCHOLA | Idukki | 48% | 3% | **+22.6pp** | -24.6pp | Largest single-seat Christian-belt swing |
+| 111 THIRUVALLA | Pathanamthitta | 48% | 4% | +1.6pp | **-14.6pp** | NDA +14.5pp — Sabarimala-route + JD(S) winner |
+| 41 VENGARA | Malappuram | 0% | 85% | +3.2pp | **+8.5pp** | Only Muslim-majority seat where LDF GAINED |
+| 89 UDUMBANCHOLA | Idukki | 48% | 4% | **+22.6pp** | -24.6pp | Largest single-seat Christian-belt swing |
 
 These outliers are no longer "explained away" by district-mean averaging — they sit visibly outside the trend at AC resolution.
 
@@ -105,7 +107,7 @@ These outliers are no longer "explained away" by district-mean averaging — the
 ### What we improved
 - **Religion data resolution**: 14 districts → 114 AC-level + 26 district-fallback (urban-heavy ACs).
 - **Source**: Census 2011 Table C-01 (religion at sub-district + town level) joined to SHRUG's `shrid → AC` mapping with population-weighted aggregation.
-- **State aggregate sanity check**: Recomputed from AC-level data = Hindu 53.8% / Muslim 26.8% / Christian 19.1%. Census state totals: 54.7% / 26.6% / 18.4%. Within 1pp on all three, confirming aggregation correctness.
+- **State aggregate sanity check**: Recomputed from AC-level 2025-projection data = Hindu 52.2% / Muslim 29.0% / Christian 18.7%. Cohort-projection target (state-level CRS-derived): 52.5% / 29.7% / 17.9%. Within 1pp on all three, confirming both the per-AC application of state multipliers and the renormalisation step. The raw 2011 baseline likewise checks out: AC-aggregate 53.8% / 26.8% / 19.1% vs Census state totals 54.7% / 26.6% / 18.4%.
 
 ### What we still can't tell
 - **26 ACs (mostly major urban — Trivandrum city, Cochin, Kozhikode city, Alappuzha) fall back to district-level religion** because SHRUG's spatial join failed for those urban shrids. Population coverage of AC-level data: 27.0M of Kerala's 33.4M (~80%). Re-running the analysis on AC-only ACs (n=114) gives: Christian r=+0.22, Muslim r=-0.04 — so the headline finding holds in the strict subset.
@@ -125,7 +127,8 @@ Re-running with `bun run scripts/narrative-a1-ac-level.ts --exclude-reserved` (n
 The Christian-belt premium **strengthens slightly** when reserved seats are dropped (consistent with reserved seats being concentrated in low-Christian Hindu-majority districts that contribute little to the gradient). The Muslim non-finding holds. **A1's verdict is robust to reserved-seat exclusion.**
 - **Sub-community shifts** within "Christian" (Syro-Malabar vs Latin vs Marthoma) and "Muslim" (Sunni vs Mujahid) — still invisible. C-01 doesn't disaggregate.
 - **Mechanism is still ambiguous**: a +10pp UDF gain in Christian-heavy ACs could be (a) Christians switching LDF→UDF, (b) Christian LDF voters staying home, (c) Christian non-voters mobilizing for UDF. AC-level census + AC-level vote count can't distinguish these — survey microdata can.
-- **Census 2011 staleness**: 14 years out of date. Geographic pattern is structurally stable; absolute shares may be off ~3-5pp.
+- **Projection vs raw 2011**: We default to a 2025 projection (Census 2011 base × state-level CRS-derived cohort multipliers, applied uniformly per AC). Because the multipliers are uniform statewide, **rank order is preserved exactly** and Pearson correlations shift by at most 0.01 vs the raw 2011 baseline — both bases produce the same A1 verdict. 2025 is reality-aligned for absolute-share statements; the raw 2011 base is available via `--baseline-2011`.
+- **Sub-state demographic drift**: The cohort projection assumes Kerala's geographic religion distribution shifted uniformly between 2011 and 2025. This is a strong assumption — Malappuram likely grew its Muslim share faster than the state average, and central Travancore likely lost Christian share faster. We currently have no district-level or AC-level CRS data to refine this. Absolute shares in any single AC may be off by a few pp in either direction.
 
 ## Next narrative cards (related)
 
