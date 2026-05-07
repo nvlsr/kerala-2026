@@ -4,7 +4,6 @@ import paths from "@data/kerala-constituencies-paths.json"
 import {
   buildMapData,
   NEGATIVE_HUE,
-  NEUTRAL_HUE,
   POSITIVE_HUE,
   type EncodingMode,
 } from "@/lib/seat-encoding"
@@ -142,9 +141,13 @@ function sortLabel(col: SortColumn): string {
 /**
  * Empty-state hint shown in the detail column when no seat is
  * selected. Explains the map's encoding and prompts the user to
- * click a polygon. Each color label gets its own line and is
- * rendered in the actual color it stands for, so the legend is
- * visually self-demonstrating.
+ * click a polygon. Follows the standard data-viz legend convention:
+ * a small swatch on the left demonstrates the color; the text
+ * after it describes what that color means in plain readable text.
+ *
+ * Alliance mode is a special case — UDF / LDF / NDA are entity
+ * labels (not color names), so they're rendered in their alliance
+ * color (consistent with how political maps usually work).
  */
 export function Hint({ mode }: { mode: EncodingMode }) {
   return (
@@ -155,38 +158,42 @@ export function Hint({ mode }: { mode: EncodingMode }) {
       <ul className="space-y-1.5">
         {mode === "diverging" && (
           <>
-            <LegendRow color={POSITIVE_HUE} label="Green" hint="= gain over 2021" />
-            <LegendRow color={NEGATIVE_HUE} label="Rose" hint="= loss vs 2021" />
+            <SwatchRow color={POSITIVE_HUE}>Gain over 2021</SwatchRow>
+            <SwatchRow color={NEGATIVE_HUE}>Loss vs 2021</SwatchRow>
             <li className="text-muted-foreground/80">
               Darker shades = larger swing
             </li>
           </>
         )}
-        {mode === "alliance" &&
-          MAIN_FRONT_CODES.map((code) => {
-            const a = getAlliance(code)
-            return (
-              <LegendRow
-                key={code}
-                color={a.color}
-                label={a.code}
-                hint={`= ${a.name}`}
-              />
-            )
-          })}
         {mode === "alliance" && (
-          <li className="text-muted-foreground/80">
-            Darker shades = bigger value on the active sort
-          </li>
+          <>
+            {MAIN_FRONT_CODES.map((code) => {
+              const a = getAlliance(code)
+              return (
+                <li key={code} className="flex items-center gap-2">
+                  <span
+                    className="h-2.5 w-2.5 shrink-0 rounded-sm"
+                    style={{ backgroundColor: a.color }}
+                    aria-hidden
+                  />
+                  <span className="font-medium" style={{ color: a.color }}>
+                    {a.code}
+                  </span>
+                  <span className="text-muted-foreground/80">
+                    — {a.name}
+                  </span>
+                </li>
+              )
+            })}
+            <li className="text-muted-foreground/80">
+              Darker shades = bigger value on the active sort
+            </li>
+          </>
         )}
         {mode === "magnitude" && (
-          <>
-            <LegendRow
-              color={NEUTRAL_HUE}
-              label="Darker shades"
-              hint="= higher values on the active sort"
-            />
-          </>
+          <li className="text-muted-foreground/80">
+            Darker shades = higher values on the active sort
+          </li>
         )}
         <li className="text-muted-foreground/80">
           Out-of-filter seats fade
@@ -196,14 +203,15 @@ export function Hint({ mode }: { mode: EncodingMode }) {
   )
 }
 
-function LegendRow({
+/** Standard swatch + plain-text legend row. Color is conveyed by
+ *  the swatch only — the text is in normal foreground for
+ *  readability. */
+function SwatchRow({
   color,
-  label,
-  hint,
+  children,
 }: {
   color: string
-  label: string
-  hint: string
+  children: React.ReactNode
 }) {
   return (
     <li className="flex items-center gap-2">
@@ -212,10 +220,7 @@ function LegendRow({
         style={{ backgroundColor: color }}
         aria-hidden
       />
-      <span className="font-medium" style={{ color }}>
-        {label}
-      </span>
-      <span className="text-muted-foreground/80">{hint}</span>
+      <span className="text-foreground/80">{children}</span>
     </li>
   )
 }
