@@ -66,25 +66,10 @@ export function ReligionMapPage() {
           </p>
         </div>
       }
-      subtitle={
-        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-          Hover any district to see its full breakdown. The Christian
-          and Muslim concentrations are tighter than the statewide
-          averages suggest — most of Malappuram is ~70% Muslim while
-          most other districts are under 30%; Kottayam and
-          Pathanamthitta lead the Christian map at 35-45% while
-          northern districts barely register.
-        </p>
-      }
     >
       <PageMain className="space-y-12">
         <section>
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-            <p className="text-sm text-muted-foreground">
-              {level === "ac"
-                ? "AC-level shading: each constituency carries its own religion mix (114 of 140 from SHRUG + Census; 26 urban-heavy ACs use district-Urban fallback)."
-                : "District-level shading: every constituency in a district shares the same religion mix."}
-            </p>
+          <div className="mb-4 flex justify-end">
             <ToggleGroup
               value={[level]}
               onValueChange={(v) => {
