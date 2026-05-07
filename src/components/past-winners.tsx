@@ -3,6 +3,7 @@ import { IconCheck } from "@tabler/icons-react"
 import { tint } from "@/lib/color"
 import { cn } from "@/lib/utils"
 import {
+  formatNumber,
   formatPercent,
   getAlliance,
   getPastCandidates,
@@ -31,12 +32,13 @@ export function PastWinners({ constituencyNumber, selectedParty }: Props) {
   return (
     <table className="w-full table-fixed text-sm">
       <colgroup>
-        <col style={{ width: "12%" }} />
-        {showParty && <col style={{ width: "14%" }} />}
-        <col style={{ width: showParty ? "44%" : "58%" }} />
-        <col style={{ width: "8%" }} />
         <col style={{ width: "10%" }} />
-        <col style={{ width: "12%" }} />
+        {showParty && <col style={{ width: "12%" }} />}
+        <col style={{ width: showParty ? "32%" : "44%" }} />
+        <col style={{ width: "7%" }} />
+        <col style={{ width: "14%" }} />
+        <col style={{ width: "10%" }} />
+        <col style={{ width: "15%" }} />
       </colgroup>
       <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
         <tr>
@@ -49,6 +51,7 @@ export function PastWinners({ constituencyNumber, selectedParty }: Props) {
               aria-label="Winner"
             />
           </th>
+          <th className="border-b px-3 py-2 text-right">Votes</th>
           <th className="border-b px-3 py-2 text-right">Share</th>
           <th className="border-b px-3 py-2 text-right">Margin</th>
         </tr>
@@ -157,6 +160,9 @@ function PastCandidateRow({
             aria-label="Winner"
           />
         )}
+      </td>
+      <td className="px-3 py-2 text-right tabular-nums">
+        {dnc ? "—" : formatNumber(record.votes)}
       </td>
       <td className="px-3 py-2 text-right tabular-nums">
         {dnc ? "—" : formatPercent(record.share / 100, 1)}
