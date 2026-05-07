@@ -373,6 +373,39 @@ describe("getPastCandidates / getPastWinners edge cases", () => {
 // produces a phantom-empty UI state — the bug we hit when an NDA-
 // aligned Independent appeared in PartySection but the candidate
 // table came back empty under the default winners-only filter.
+describe("historical candidate names have no unrecovered parenthetical party tags", () => {
+  // keralaassembly.org's 2021 scrape sometimes records the alliance code
+  // (LDF/UDF/NDA) in the party field and disambiguates the actual party
+  // via a parenthetical in the candidate name — e.g. "K. T. Abdul
+  // Rahiman (CPI)". scripts/merge-2021.ts now extracts and resolves
+  // those parentheticals. This test guards against a regression where
+  // a future scrape introduces a new paren-tagged candidate that the
+  // merge logic doesn't know how to resolve, leaving the parenthetical
+  // in the stored name as evidence of unrecovered party data.
+  test("no historical candidate has a party-code parenthetical in name", async () => {
+    const { getHistoricalFor } = await import("./historical")
+    const offenders: string[] = []
+    for (const c of constituencies) {
+      const h = getHistoricalFor(c.constituencyNumber)
+      if (!h) continue
+      for (const e of h.elections) {
+        for (const cand of e.candidates) {
+          // Match a parenthetical at the end with an uppercase code or
+          // hyphenated abbrev (e.g. "(CPI)", "(NCK)", "(RSP-L)").
+          // Personal-name disambiguators like "(P. V. Sunil Kumar)" or
+          // "(Mammuty)" are mixed-case and won't match.
+          if (/\(([A-Z][A-Z0-9-]{1,9})\)\s*$/.test(cand.name)) {
+            offenders.push(
+              `${e.year} ${h.constituencyName} / ${cand.name} (party=${cand.party})`
+            )
+          }
+        }
+      }
+    }
+    expect(offenders, offenders.join("\n")).toEqual([])
+  })
+})
+
 describe("party listings always have matching candidates", () => {
   const all2026 = buildCandidateRows(null)
   for (const allianceCode of MAIN_FRONT_CODES) {

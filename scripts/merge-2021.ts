@@ -25,10 +25,23 @@ const partyMap: Record<string, Mapped> = {
   RMP: { canonicalName: "Revolutionary Marxist Party of India", alliance: "UDF" },
   UDF: { canonicalName: "Independent (UDF)", alliance: "UDF" },
   CMP: { canonicalName: "Communist Marxist Party Kerala State Committee", alliance: "UDF" },
+  // NCK is the splinter party founded by Mani C. Kappan in early 2021;
+  // keralaassembly.org tagged the party field as "UDF" but disambiguated
+  // via the candidate's name parenthetical "(NCK)" — see paren-extract
+  // logic below.
+  NCK: { canonicalName: "Nationalist Congress Kerala", alliance: "UDF" },
 
   // ============= LDF =============
   CPIM: { canonicalName: "Communist Party of India (Marxist)", alliance: "LDF" },
   CPI: { canonicalName: "Communist Party of India", alliance: "LDF" },
+  // RSP-L = Revolutionary Socialist Party (Leninist), the same party that
+  // contests in 2026 as "Kerala Revolutionary Socialist Party (Leninist-
+  // Marxist)" with the same Kovoor Kunjumon. keralaassembly.org tagged
+  // the party field as "LDF" with the disambiguator "(RSP-L)" in the name.
+  "RSP-L": {
+    canonicalName: "Kerala Revolutionary Socialist Party (Leninist- Marxist)",
+    alliance: "LDF",
+  },
   KCM: { canonicalName: "Kerala Congress (M)", alliance: "LDF" },
   JDS: { canonicalName: "Janata Dal (Secular)", alliance: "LDF" },
   NCP: {
@@ -89,11 +102,56 @@ const partyMap: Record<string, Mapped> = {
 }
 
 const unmappedCodes = new Map<string, number>()
+const allianceCodes = new Set(["LDF", "UDF", "NDA"])
+const parenRecoveries: Array<{
+  seat: number
+  originalName: string
+  fieldParty: string
+  parenCode: string
+  resolvedTo: string
+}> = []
 
 function mapParty(code: string): Mapped {
   if (partyMap[code]) return partyMap[code]
   unmappedCodes.set(code, (unmappedCodes.get(code) || 0) + 1)
   return { canonicalName: code, alliance: "OTHER" }
+}
+
+/**
+ * keralaassembly.org's `party` field is sometimes just an alliance code
+ * (LDF/UDF/NDA) when the candidate is alliance-supported but contesting
+ * on a different/independent symbol. In those cases the actual party is
+ * disambiguated in the candidate's NAME via a parenthetical — e.g. the
+ * scrape records `name="K. T. Abdul Rahiman (CPI)"`, `party="LDF"`. We
+ * recover the actual party from the parenthetical when (a) the source
+ * `party` is an alliance code AND (b) the parenthetical's inner code is
+ * a key in `partyMap`. The cleaned name (parenthetical stripped) is
+ * what we store going forward.
+ */
+function extractParenParty(
+  fieldParty: string,
+  name: string,
+  seat: number
+): { name: string; mapped: Mapped } {
+  if (!allianceCodes.has(fieldParty)) {
+    return { name, mapped: mapParty(fieldParty) }
+  }
+  const m = name.match(/^(.*?)\s*\(([^)]+)\)\s*$/)
+  if (!m) return { name, mapped: mapParty(fieldParty) }
+  const cleanedName = m[1].trim()
+  const parenCode = m[2].trim()
+  if (!partyMap[parenCode]) {
+    return { name, mapped: mapParty(fieldParty) }
+  }
+  const resolved = partyMap[parenCode]
+  parenRecoveries.push({
+    seat,
+    originalName: name,
+    fieldParty,
+    parenCode,
+    resolvedTo: resolved.canonicalName,
+  })
+  return { name: cleanedName, mapped: resolved }
 }
 
 type ScrapedSeat = {
@@ -143,13 +201,13 @@ for (let n = 1; n <= 140; n++) {
   }> = []
 
   for (const c of scrape.candidates) {
-    const m = mapParty(c.party)
+    const { name, mapped } = extractParenParty(c.party, c.name, n)
     newCandidates.push({
-      name: c.name,
-      party: m.canonicalName,
+      name,
+      party: mapped.canonicalName,
       votes: c.votes,
       votePct: parseFloat((c.votes / totalValid * 100).toFixed(2)),
-      alliance: m.alliance,
+      alliance: mapped.alliance,
     })
   }
 
@@ -200,4 +258,16 @@ if (unmappedCodes.size > 0) {
   }
 } else {
   console.log("All party codes mapped ✓")
+}
+
+if (parenRecoveries.length > 0) {
+  console.log("")
+  console.log(
+    `Parenthetical-party recoveries (${parenRecoveries.length}): scrape's party field was alliance-only, actual party recovered from name:`
+  )
+  for (const r of parenRecoveries) {
+    console.log(
+      `  seat=${r.seat.toString().padStart(3)}  ${r.fieldParty}+(${r.parenCode}) → ${r.resolvedTo}    (was: "${r.originalName}")`
+    )
+  }
 }
