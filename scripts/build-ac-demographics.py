@@ -45,10 +45,18 @@ COL_JAIN_PERSONS = 25
 COL_OTHER_PERSONS = 28
 
 
-def parse_c01() -> tuple[dict, dict, dict, dict]:
+def parse_c01() -> tuple[dict, dict, dict, dict, dict]:
     """Returns (district_total_religion, district_urban_religion,
-    subdistrict_rural_religion, town_religion) where each maps
-    {code: {religion: share_percent}}.
+    subdistrict_rural_religion, town_by_tehsil_religion,
+    town_aggregate_religion).
+
+    Most towns sit in a single sub-district and emit one C-01 row.
+    Three Kerala cities (Trivandrum/Kochi/Kollam Corporations) span
+    multiple sub-districts and emit per-tehsil-Part rows + an
+    aggregate row. We key tehsil-Part data by (tehsil, town) so the
+    correct Part is matched when a shrid sits in a specific
+    sub-district. The aggregate map is the fallback for shrids whose
+    (tehsil, town) lookup misses.
 
     district_urban_religion is used for the 26 fallback ACs which
     are urban-heavy — closer to their actual mix than district TOTAL
@@ -90,7 +98,16 @@ def parse_c01() -> tuple[dict, dict, dict, dict]:
     district_total_rel: dict[str, dict] = {}
     district_urban_rel: dict[str, dict] = {}
     subdist_rural_rel: dict[str, dict] = {}
-    town_rel: dict[str, dict] = {}
+    # Town religion keyed by (tehsil_id, town_id). Three Kerala cities
+    # span multiple sub-districts and C-01 emits one row per (tehsil,
+    # town) part PLUS an aggregate row with tehsil="00000". Keying by
+    # tehsil too prevents the aggregate or the wrong part from
+    # overwriting the right one (was a real bug — Vattiyoorkavu AC 133
+    # ended up with the small "Part 2" of Trivandrum Corp's mix).
+    town_rel: dict[tuple[str, str], dict] = {}
+    # Aggregate town row (no tehsil split) — used as fallback if a
+    # shrid's subdistrict_id doesn't match any specific tehsil-part row.
+    town_rel_aggregate: dict[str, dict] = {}
 
     for _, row in df.iterrows():
         distt = str(row[COL_DISTT]) if pd.notna(row[COL_DISTT]) else ""
@@ -115,10 +132,29 @@ def parse_c01() -> tuple[dict, dict, dict, dict]:
         elif is_subdist and tru == "Rural":
             subdist_rural_rel[tehsil] = rel
         elif is_town and tru == "Urban":
-            # Towns are urban by definition — only one row per town with tru=Urban.
-            town_rel[town] = rel
+            if tehsil == "00000":
+                # Aggregate row for the whole town — fallback only
+                town_rel_aggregate[town] = rel
+            else:
+                # Tehsil-specific part of a town that spans sub-districts
+                town_rel[(tehsil, town)] = rel
 
-    return district_total_rel, district_urban_rel, subdist_rural_rel, town_rel
+    # For towns that DON'T span sub-districts, C-01 emits only one row
+    # (with tehsil != 00000). For towns that span, it emits a 00000
+    # aggregate + per-tehsil parts. We've keyed parts by (tehsil, town);
+    # for non-spanning towns, also expose them via the aggregate dict so
+    # the lookup logic can fall back uniformly when subdistrict_id of a
+    # shrid doesn't match any (tehsil, town) entry.
+    for (tehsil, town), rel in town_rel.items():
+        town_rel_aggregate.setdefault(town, rel)
+
+    return (
+        district_total_rel,
+        district_urban_rel,
+        subdist_rural_rel,
+        town_rel,
+        town_rel_aggregate,
+    )
 
 
 def load_kerala_shrug() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -147,12 +183,19 @@ def load_kerala_shrug() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Da
 
 def main() -> None:
     print("Parsing Census C-01...", file=sys.stderr)
-    district_total_rel, district_urban_rel, subdist_rel, town_rel = parse_c01()
+    (
+        district_total_rel,
+        district_urban_rel,
+        subdist_rel,
+        town_rel_by_tehsil,
+        town_rel_aggregate,
+    ) = parse_c01()
     print(
         f"  → {len(district_total_rel)} districts (Total), "
         f"{len(district_urban_rel)} districts (Urban), "
         f"{len(subdist_rel)} sub-districts (Rural), "
-        f"{len(town_rel)} towns",
+        f"{len(town_rel_aggregate)} towns "
+        f"({len(town_rel_by_tehsil)} (tehsil, town) parts)",
         file=sys.stderr,
     )
 
@@ -178,11 +221,21 @@ def main() -> None:
             continue
         shrid_religion[r["shrid2"]] = rel
 
-    # Urban shrids: use town-level religion shares (fall back to subdistrict)
+    # Urban shrids: prefer (subdistrict, town) keyed lookup so that
+    # tehsil-split city corporations (Trivandrum/Kochi/Kollam) get the
+    # right Part of their religion data, not the last one written.
+    # Falls back to the town aggregate if the (tehsil, town) miss; then
+    # to the subdistrict rural mix; then unmatched.
     urban_misses = 0
+    urban_aggregate_used = 0
     urban_fallbacks = 0
     for _, r in urban_keys.iterrows():
-        rel = town_rel.get(r["pc11_town_id"])
+        key = (r["pc11_subdistrict_id"], r["pc11_town_id"])
+        rel = town_rel_by_tehsil.get(key)
+        if rel is None:
+            rel = town_rel_aggregate.get(r["pc11_town_id"])
+            if rel is not None:
+                urban_aggregate_used += 1
         if rel is None:
             rel = subdist_rel.get(r["pc11_subdistrict_id"])
             if rel is None:
@@ -194,6 +247,7 @@ def main() -> None:
     print(
         f"  → matched {len(shrid_religion)} shrids to religion data "
         f"(rural misses: {rural_misses}, urban misses: {urban_misses}, "
+        f"urban→aggregate fallbacks: {urban_aggregate_used}, "
         f"urban→subdist fallbacks: {urban_fallbacks})",
         file=sys.stderr,
     )

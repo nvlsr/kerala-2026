@@ -1722,13 +1722,13 @@
     "133": {
       "matchedPopulation": 178551,
       "religions": {
-        "hindu": 16.79,
-        "muslim": 46.11,
-        "christian": 36.92,
-        "sikh": 0.0,
+        "hindu": 70.25,
+        "muslim": 12.68,
+        "christian": 16.11,
+        "sikh": 0.02,
         "buddhist": 0.01,
         "jain": 0.0,
-        "other": 0.0
+        "other": 0.06
       },
       "source": "shrug-c01-aggregated"
     },
