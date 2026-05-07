@@ -1,5 +1,5 @@
-import { lazy, Suspense } from "react"
-import { Navigate, Route, Routes } from "react-router-dom"
+import { lazy, Suspense, useEffect } from "react"
+import { Navigate, Route, Routes, useLocation } from "react-router-dom"
 
 import { AnalyticsProvider } from "@/components/analytics-provider"
 import { TooltipProvider } from "@/components/ui/tooltip"
@@ -41,10 +41,27 @@ function PageFallback() {
   return <div className="min-h-svh bg-background" aria-busy="true" />
 }
 
+/** Scrolls to top of viewport whenever the route's pathname changes.
+ *  Without this, in-app navigations via React Router's <Link> carry
+ *  the previous page's scroll position with them — e.g. clicking the
+ *  InsightsTeaser link near the bottom of /explore would land the
+ *  user at the bottom of /insights too. Direct visits (fresh page
+ *  loads) are unaffected. Query-string changes within the same
+ *  pathname (e.g. /explore?seat=39) don't trigger a scroll, so
+ *  filter interactions keep scroll position. */
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
 export function App() {
   return (
     <TooltipProvider delay={200}>
       <AnalyticsProvider />
+      <ScrollToTop />
       <Suspense fallback={<PageFallback />}>
         <Routes>
           <Route path="/" element={<DashboardPage />} />
