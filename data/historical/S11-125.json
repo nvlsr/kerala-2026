@@ -13,27 +13,37 @@
           "name": "A. A. Azeez",
           "party": "RSP",
           "votes": 51271,
-          "votePct": 49.0, "alliance": "LDF" },
+          "votePct": 49,
+          "alliance": "LDF"
+        },
         {
           "name": "P. K. K. Bava",
-          "party": "IUML",
+          "party": "Indian Union Muslim League",
           "votes": 43259,
-          "votePct": 41.34, "alliance": "UDF" },
+          "votePct": 41.34,
+          "alliance": "UDF"
+        },
         {
           "name": "Pattathanam Babu",
           "party": "BJP",
           "votes": 5048,
-          "votePct": 4.82, "alliance": "NDA" },
+          "votePct": 4.82,
+          "alliance": "NDA"
+        },
         {
           "name": "Mylakkad Shah",
           "party": "Independent",
           "votes": 3234,
-          "votePct": 3.09, "alliance": "OTHER" },
+          "votePct": 3.09,
+          "alliance": "OTHER"
+        },
         {
           "name": "Sushama Vijayan",
           "party": "BSP",
           "votes": 580,
-          "votePct": 0.55, "alliance": "OTHER" }
+          "votePct": 0.55,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 8012,
       "marginPct": 7.66,
@@ -50,27 +60,37 @@
           "name": "M. Noushad",
           "party": "CPI(M)",
           "votes": 65392,
-          "votePct": 52.33, "alliance": "LDF" },
+          "votePct": 52.33,
+          "alliance": "LDF"
+        },
         {
           "name": "A. A. Azeez",
           "party": "RSP",
           "votes": 36589,
-          "votePct": 29.28, "alliance": "UDF" },
+          "votePct": 29.28,
+          "alliance": "UDF"
+        },
         {
           "name": "Akkavila Satheek",
           "party": "BDJS",
           "votes": 19714,
-          "votePct": 15.77, "alliance": "NDA" },
+          "votePct": 15.77,
+          "alliance": "NDA"
+        },
         {
           "name": "Ayathil Razak",
           "party": "SDPI",
           "votes": 988,
-          "votePct": 0.79, "alliance": "OTHER" },
+          "votePct": 0.79,
+          "alliance": "OTHER"
+        },
         {
           "name": "NOTA",
           "party": "NOTA",
           "votes": 950,
-          "votePct": 0.76, "alliance": "NOTA" }
+          "votePct": 0.76,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 28803,
       "marginPct": 23.05,
@@ -87,42 +107,58 @@
           "name": "M. Noushad",
           "party": "CPI(M)",
           "votes": 71573,
-          "votePct": 56.25, "alliance": "LDF" },
+          "votePct": 56.25,
+          "alliance": "LDF"
+        },
         {
           "name": "Babu Divakaran",
           "party": "RSP",
           "votes": 43452,
-          "votePct": 34.15, "alliance": "UDF" },
+          "votePct": 34.15,
+          "alliance": "UDF"
+        },
         {
           "name": "Ranjith Raveendran",
           "party": "BDJS",
           "votes": 8468,
-          "votePct": 6.66, "alliance": "NDA" },
+          "votePct": 6.66,
+          "alliance": "NDA"
+        },
         {
           "name": "Ayathil Riyas",
           "party": "SDPI",
           "votes": 1444,
-          "votePct": 1.13, "alliance": "OTHER" },
+          "votePct": 1.13,
+          "alliance": "OTHER"
+        },
         {
           "name": "Mohanan Mayyanad",
           "party": "BSP",
           "votes": 543,
-          "votePct": 0.43, "alliance": "OTHER" },
+          "votePct": 0.43,
+          "alliance": "OTHER"
+        },
         {
           "name": "M. Unnikrishnan",
           "party": "ADHMPI",
           "votes": 430,
-          "votePct": 0.34, "alliance": "OTHER" },
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
         {
           "name": "S. Sudhilal",
           "party": "SUCI(C)",
           "votes": 213,
-          "votePct": 0.17, "alliance": "OTHER" },
+          "votePct": 0.17,
+          "alliance": "OTHER"
+        },
         {
           "name": "N. Shihabudeen",
           "party": "Independent",
           "votes": 187,
-          "votePct": 0.15, "alliance": "OTHER" }
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 28121,
       "marginPct": 22.1,

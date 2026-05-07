@@ -9,16 +9,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. B. Abdul Razak", "party": "IUML", "votes": 49817, "votePct": 37.46, "alliance": "UDF" },
-        { "name": "K. Surendran", "party": "BJP", "votes": 43989, "votePct": 33.08, "alliance": "NDA" },
-        { "name": "C. H. Kunhambu", "party": "CPI(M)", "votes": 35067, "votePct": 26.37, "alliance": "LDF" },
-        { "name": "Hafsa Muneer", "party": "Independent", "votes": 1076, "votePct": 0.81, "alliance": "OTHER" },
-        { "name": "Abdul Majeed", "party": "BSP", "votes": 869, "votePct": 0.65, "alliance": "OTHER" }
+        {
+          "name": "P. B. Abdul Razak",
+          "party": "Indian Union Muslim League",
+          "votes": 49817,
+          "votePct": 37.46,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Surendran",
+          "party": "BJP",
+          "votes": 43989,
+          "votePct": 33.08,
+          "alliance": "NDA"
+        },
+        {
+          "name": "C. H. Kunhambu",
+          "party": "CPI(M)",
+          "votes": 35067,
+          "votePct": 26.37,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Hafsa Muneer",
+          "party": "Independent",
+          "votes": 1076,
+          "votePct": 0.81,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdul Majeed",
+          "party": "BSP",
+          "votes": 869,
+          "votePct": 0.65,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 5828,
       "marginPct": 4.38,
       "turnout": 132973,
-      "turnoutPct": 75.20,
+      "turnoutPct": 75.2,
       "result": "IUML gain from CPI(M)"
     },
     {
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. B. Abdul Razak", "party": "IUML", "votes": 56870, "votePct": 35.79, "alliance": "UDF" },
-        { "name": "K. Surendran", "party": "BJP", "votes": 56781, "votePct": 35.74, "alliance": "NDA" },
-        { "name": "C. H. Kunhambu", "party": "CPI(M)", "votes": 42565, "votePct": 26.79, "alliance": "LDF" },
-        { "name": "Basheer Ahammad S. M.", "party": "PDP", "votes": 759, "votePct": 0.48, "alliance": "OTHER" },
-        { "name": "Sundara K.", "party": "Independent", "votes": 467, "votePct": 0.29, "alliance": "OTHER" }
+        {
+          "name": "P. B. Abdul Razak",
+          "party": "Indian Union Muslim League",
+          "votes": 56870,
+          "votePct": 35.79,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Surendran",
+          "party": "BJP",
+          "votes": 56781,
+          "votePct": 35.74,
+          "alliance": "NDA"
+        },
+        {
+          "name": "C. H. Kunhambu",
+          "party": "CPI(M)",
+          "votes": 42565,
+          "votePct": 26.79,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Basheer Ahammad S. M.",
+          "party": "PDP",
+          "votes": 759,
+          "votePct": 0.48,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sundara K.",
+          "party": "Independent",
+          "votes": 467,
+          "votePct": 0.29,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 89,
       "marginPct": 0.05,
@@ -43,11 +103,41 @@
       "type": "by-election",
       "reason": "death of sitting MLA",
       "candidates": [
-        { "name": "M. C. Kamaruddin", "party": "IUML", "votes": 65407, "votePct": 40.19, "alliance": "UDF" },
-        { "name": "Raveesh Thanthri Kuntar", "party": "BJP", "votes": 57484, "votePct": 35.32, "alliance": "NDA" },
-        { "name": "M. Shankara Rai", "party": "CPI(M)", "votes": 38233, "votePct": 23.49, "alliance": "LDF" },
-        { "name": "Govindan B. Alinthazhe", "party": "Independent", "votes": 337, "votePct": 0.21, "alliance": "OTHER" },
-        { "name": "John D. Souza", "party": "Independent", "votes": 277, "votePct": 0.17, "alliance": "OTHER" }
+        {
+          "name": "M. C. Kamaruddin",
+          "party": "Indian Union Muslim League",
+          "votes": 65407,
+          "votePct": 40.19,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Raveesh Thanthri Kuntar",
+          "party": "BJP",
+          "votes": 57484,
+          "votePct": 35.32,
+          "alliance": "NDA"
+        },
+        {
+          "name": "M. Shankara Rai",
+          "party": "CPI(M)",
+          "votes": 38233,
+          "votePct": 23.49,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Govindan B. Alinthazhe",
+          "party": "Independent",
+          "votes": 337,
+          "votePct": 0.21,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "John D. Souza",
+          "party": "Independent",
+          "votes": 277,
+          "votePct": 0.17,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 7923,
       "marginPct": 4.87,
@@ -60,11 +150,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. K. M. Ashraf", "party": "IUML", "votes": 65858, "votePct": 38.14, "alliance": "UDF" },
-        { "name": "K. Surendran", "party": "BJP", "votes": 65013, "votePct": 37.70, "alliance": "NDA" },
-        { "name": "V. V. Rameshan", "party": "CPI(M)", "votes": 40639, "votePct": 23.57, "alliance": "LDF" },
-        { "name": "Praveen Kumar S", "party": "Anna DHRM", "votes": 251, "votePct": 0.15, "alliance": "OTHER" },
-        { "name": "John D'Souza I", "party": "Independent", "votes": 181, "votePct": 0.10, "alliance": "OTHER" }
+        {
+          "name": "A. K. M. Ashraf",
+          "party": "Indian Union Muslim League",
+          "votes": 65858,
+          "votePct": 38.14,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Surendran",
+          "party": "BJP",
+          "votes": 65013,
+          "votePct": 37.7,
+          "alliance": "NDA"
+        },
+        {
+          "name": "V. V. Rameshan",
+          "party": "CPI(M)",
+          "votes": 40639,
+          "votePct": 23.57,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Praveen Kumar S",
+          "party": "Anna DHRM",
+          "votes": 251,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "John D'Souza I",
+          "party": "Independent",
+          "votes": 181,
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 845,
       "marginPct": 0.44,

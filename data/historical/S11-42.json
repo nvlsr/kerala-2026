@@ -9,14 +9,44 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. N. A. Khader", "party": "IUML", "votes": 57250, "votePct": 50.53, "alliance": "UDF" },
-        { "name": "K. V. Sankaranarayanan", "party": "Independent", "votes": 39128, "votePct": 34.53, "alliance": "LDF" },
-        { "name": "Preman", "party": "BJP", "votes": 11099, "votePct": 9.80, "alliance": "NDA" },
-        { "name": "Salam Mooonniyur", "party": "PDP", "votes": 2666, "votePct": 2.35, "alliance": "OTHER" },
-        { "name": "Abdul Latheef", "party": "SDPI", "votes": 2571, "votePct": 2.27, "alliance": "OTHER" }
+        {
+          "name": "K. N. A. Khader",
+          "party": "Indian Union Muslim League",
+          "votes": 57250,
+          "votePct": 50.53,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. V. Sankaranarayanan",
+          "party": "Independent",
+          "votes": 39128,
+          "votePct": 34.53,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Preman",
+          "party": "BJP",
+          "votes": 11099,
+          "votePct": 9.8,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Salam Mooonniyur",
+          "party": "PDP",
+          "votes": 2666,
+          "votePct": 2.35,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdul Latheef",
+          "party": "SDPI",
+          "votes": 2571,
+          "votePct": 2.27,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 18122,
-      "marginPct": 16.00,
+      "marginPct": 16,
       "turnout": 113304,
       "turnoutPct": 72.49,
       "result": "IUML win (new seat)"
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Abdul Hameed", "party": "IUML", "votes": 59720, "votePct": 43.44, "alliance": "UDF" },
-        { "name": "O. K. Thangal", "party": "INL", "votes": 47110, "votePct": 34.27, "alliance": "LDF" },
-        { "name": "K. Janachandran Master", "party": "BJP", "votes": 22887, "votePct": 16.65, "alliance": "NDA" },
-        { "name": "Nissar Methar", "party": "PDP", "votes": 2975, "votePct": 2.16, "alliance": "OTHER" },
-        { "name": "Haneefa Haji", "party": "SDPI", "votes": 2499, "votePct": 1.82, "alliance": "OTHER" }
+        {
+          "name": "P. Abdul Hameed",
+          "party": "Indian Union Muslim League",
+          "votes": 59720,
+          "votePct": 43.44,
+          "alliance": "UDF"
+        },
+        {
+          "name": "O. K. Thangal",
+          "party": "INL",
+          "votes": 47110,
+          "votePct": 34.27,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. Janachandran Master",
+          "party": "BJP",
+          "votes": 22887,
+          "votePct": 16.65,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Nissar Methar",
+          "party": "PDP",
+          "votes": 2975,
+          "votePct": 2.16,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Haneefa Haji",
+          "party": "SDPI",
+          "votes": 2499,
+          "votePct": 1.82,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 12610,
       "marginPct": 9.17,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Abdul Hameed", "party": "IUML", "votes": 71823, "votePct": 47.43, "alliance": "UDF" },
-        { "name": "A. P. Abdul Wahab", "party": "INL", "votes": 57707, "votePct": 38.11, "alliance": "LDF" },
-        { "name": "Peethambaran Palat", "party": "BJP", "votes": 19853, "votePct": 13.11, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 1150, "votePct": 0.76, "alliance": "NOTA" },
-        { "name": "Sasi Kizhakkan", "party": "BSP", "votes": 881, "votePct": 0.58, "alliance": "OTHER" }
+        {
+          "name": "P. Abdul Hameed",
+          "party": "Indian Union Muslim League",
+          "votes": 71823,
+          "votePct": 47.43,
+          "alliance": "UDF"
+        },
+        {
+          "name": "A. P. Abdul Wahab",
+          "party": "INL",
+          "votes": 57707,
+          "votePct": 38.11,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Peethambaran Palat",
+          "party": "BJP",
+          "votes": 19853,
+          "votePct": 13.11,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 1150,
+          "votePct": 0.76,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Sasi Kizhakkan",
+          "party": "BSP",
+          "votes": 881,
+          "votePct": 0.58,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 14116,
       "marginPct": 9.32,

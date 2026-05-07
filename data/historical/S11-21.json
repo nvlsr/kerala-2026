@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. K. Lathika", "party": "CPI(M)", "votes": 70258, "votePct": 49.32, "alliance": "LDF" },
-        { "name": "Sooppy Narikkatteri", "party": "IUML", "votes": 63286, "votePct": 44.43, "alliance": "UDF" },
-        { "name": "V. K. Sajeevan", "party": "BJP", "votes": 6272, "votePct": 4.40, "alliance": "NDA" },
-        { "name": "Abdul Raheem", "party": "SDPI", "votes": 1045, "votePct": 0.73, "alliance": "OTHER" },
-        { "name": "M. Sathi", "party": "BSP", "votes": 407, "votePct": 0.29, "alliance": "OTHER" }
+        {
+          "name": "K. K. Lathika",
+          "party": "CPI(M)",
+          "votes": 70258,
+          "votePct": 49.32,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Sooppy Narikkatteri",
+          "party": "Indian Union Muslim League",
+          "votes": 63286,
+          "votePct": 44.43,
+          "alliance": "UDF"
+        },
+        {
+          "name": "V. K. Sajeevan",
+          "party": "BJP",
+          "votes": 6272,
+          "votePct": 4.4,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Abdul Raheem",
+          "party": "SDPI",
+          "votes": 1045,
+          "votePct": 0.73,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. Sathi",
+          "party": "BSP",
+          "votes": 407,
+          "votePct": 0.29,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6972,
       "marginPct": 4.89,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Parakkal Abdulla", "party": "IUML", "votes": 71809, "votePct": 45.50, "alliance": "UDF" },
-        { "name": "K. K. Lathika", "party": "CPI(M)", "votes": 70652, "votePct": 44.77, "alliance": "LDF" },
-        { "name": "Ramadas Manaleri", "party": "BJP", "votes": 12327, "votePct": 7.81, "alliance": "NDA" },
-        { "name": "P. C. Balakrishnan", "party": "WPOI", "votes": 1125, "votePct": 0.71, "alliance": "OTHER" },
-        { "name": "Sabu Kakkattil", "party": "SP", "votes": 860, "votePct": 0.54, "alliance": "OTHER" }
+        {
+          "name": "Parakkal Abdulla",
+          "party": "Indian Union Muslim League",
+          "votes": 71809,
+          "votePct": 45.5,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. K. Lathika",
+          "party": "CPI(M)",
+          "votes": 70652,
+          "votePct": 44.77,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Ramadas Manaleri",
+          "party": "BJP",
+          "votes": 12327,
+          "votePct": 7.81,
+          "alliance": "NDA"
+        },
+        {
+          "name": "P. C. Balakrishnan",
+          "party": "WPOI",
+          "votes": 1125,
+          "votePct": 0.71,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sabu Kakkattil",
+          "party": "SP",
+          "votes": 860,
+          "votePct": 0.54,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1157,
       "marginPct": 0.73,
@@ -43,16 +103,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. P. Kunhammadkutty", "party": "CPI(M)", "votes": 80143, "votePct": 47.2, "alliance": "LDF" },
-        { "name": "Parakkal Abdulla", "party": "IUML", "votes": 79810, "votePct": 47.01, "alliance": "UDF" },
-        { "name": "P. P. Murali", "party": "BJP", "votes": 9139, "votePct": 5.38, "alliance": "NDA" },
-        { "name": "Suresh Babu M.K", "party": "Independent", "votes": 128, "votePct": 0.08, "alliance": "OTHER" },
-        { "name": "V. P. Pratheesh", "party": "Independent", "votes": 108, "votePct": 0.06, "alliance": "OTHER" }
+        {
+          "name": "K. P. Kunhammadkutty",
+          "party": "CPI(M)",
+          "votes": 80143,
+          "votePct": 47.2,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Parakkal Abdulla",
+          "party": "Indian Union Muslim League",
+          "votes": 79810,
+          "votePct": 47.01,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. P. Murali",
+          "party": "BJP",
+          "votes": 9139,
+          "votePct": 5.38,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Suresh Babu M.K",
+          "party": "Independent",
+          "votes": 128,
+          "votePct": 0.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "V. P. Pratheesh",
+          "party": "Independent",
+          "votes": 108,
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 333,
       "marginPct": 0.19,
       "turnout": 164404,
-      "turnoutPct": 81.30,
+      "turnoutPct": 81.3,
       "result": "CPI(M) gain from IUML"
     }
   ]

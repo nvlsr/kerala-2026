@@ -66,45 +66,7 @@ Each entry below merges sources from across the six input files. Where multiple 
 
 ---
 
-## A3. CPM rebels backed by UDF broke "unshakeable" Left fortresses in Kannur and Alappuzha
-
-**Claim:** Three CPM expellees won as UDF-backed independents — V. Kunhikrishnan (Payyannur, by ~7,500 vs T.I. Madhusoodanan), T.K. Govindan (Taliparamba, defeating P.K. Syamala — wife of CPM state secretary M.V. Govindan), G. Sudhakaran (Ambalapuzha). Payyannur fell to a non-Communist for the first time in its history. Three-time CPM MLA Aisha Potty (now Congress) nearly took Kottarakkara (lost by 1,012). Onmanorama described this as the UDF "letting resentment channel toward one point: the rebels." T.M. Thomas Isaac (CPM): "a section of Left sympathisers voted for the UDF in some constituencies."
-
-**Sources:**
-- The Federal — UDF landslide / What led to LDF's rout (May 2026)
-- The Print — What went wrong with CPI(M) strategy (May 2026)
-- The Week — Nirmal Jovial decoding switch + How rebels foiled Left (May 2026)
-- Onmanorama — Devastated, nothing Left + Payyannur result (May 2026)
-- Organiser — Rebels deliver irreversible blow to CPI(M) (May 2026)
-- Times of India — CPM bleeds votes across Kannur strongholds (May 2026)
-
-**Evidence strength:** Multiple agreeing across journalism + Kerala-specific + ChatGPT
-
-**Theme:** organizational
-
-**Testable now?** **Yes.** Compare margins in Payyannur, Taliparamba, Ambalapuzha, Kottarakkara, Mattannur, Dharmadam vs 2021. Margin shrinkage in surrounding LDF strongholds (Onmanorama: Sumesh in Azheekode 6,141 → 349; Ravindranath in Manalur 29,876 → 126) is directly observable. The rebel-flow story is exactly what `/flows` is built for.
-
----
-
-## A4. IUML's record 22-of-27 haul came from deliberate generational rebalancing under Panakkad Sadiq Ali Shihab Thangal
-
-**Claim:** IUML achieved its highest-ever assembly tally — 22 of 27 contested seats, swept all seats in Malappuram and Kozhikode. P.K. Kunhalikutty took Malappuram by 85,327 votes — the largest margin in Kerala assembly history. Fathima Thahiliya became IUML's first woman MLA (defeating CPM's T.P. Ramakrishnan in Perambra, an LDF-held seat) despite internal IUML dissent. The party also defeated former IUML defectors K.T. Jaleel and P.T.A. Rahim. Six IUML candidates won by margins above 50,000.
-
-**Sources:**
-- Onmanorama — "Candidate selection, youth push turbocharge IUML" (May 2026)
-- Outlook — "IUML emerges kingmaker" (May 2026)
-- ETV Bharat — Kunhalikutty's record margin (May 2026)
-- The Print — IUML track record / 23 of 27 leads (May 2026)
-
-**Evidence strength:** Multiple agreeing
-
-**Theme:** candidate-quality / community-specific
-
-**Testable now?** **Yes.** Compare IUML strike rate per seat 2021 vs 2026; isolate seats with new young/woman candidates and compare margin growth.
-
----
-
-## A5. BJP's 3 wins came from concentrated Hindu pockets + weak UDF candidates, not statewide consolidation
+## A3. BJP's 3 wins came from concentrated Hindu pockets + weak UDF candidates, not statewide consolidation
 
 **Claim:** BJP statewide vote share grew only ~0.12pp (11.30% → 11.42%); NDA crossed 20% in 29 of 140 constituencies — concentration, not diffusion. The three wins came in Nemom (Rajeev Chandrasekhar, ~5,000 margin), Chathannoor (B.B. Gopakumar, 4,402), and Kazhakoottam (V. Muraleedharan, 428). Onmanorama analysis argues these wins owe more to weak UDF candidates than BJP strength: in Nemom, UDF's K.S. Sabarinadhan couldn't match Muraleedharan's 2021 hold; Kazhakoottam was a three-way split. **All three BJP wins came on Hindu candidates** — every Christian BJP candidate (P.C. George, Shone George, George Kurian, Anoop Antony) lost.
 
@@ -126,7 +88,7 @@ Each entry below merges sources from across the six input files. Where multiple 
 
 ---
 
-## A6. FCRA Amendment crippled BJP's Christian outreach and pulled drifters back to UDF
+## A4. FCRA Amendment crippled BJP's Christian outreach and pulled drifters back to UDF
 
 **Claim:** The Modi government's FCRA amendments became a flashpoint with Kerala churches who saw it as a mechanism to seize assets. Pala Bishop Mar Joseph Kallarangatt rejected neutrality publicly. A BJP MP told The Print "the timing was not great"; state chief Rajeev Chandrasekhar said he had urged the Centre against it "because it has fuelled apprehensions among religious minorities." BJP's internal survey (per The Week) concluded the party "could not woo Christians" — and central-Kerala denominations swung back to UDF, not BJP.
 
@@ -146,25 +108,8 @@ Each entry below merges sources from across the six input files. Where multiple 
 
 ---
 
-## A7. Kerala Congress (Mani) wiped out — Pala lost, Christian Central Travancore re-aligned
 
-**Claim:** Jose K. Mani's Kerala Congress (M) — the third-largest LDF partner — drew zero seats wherever it contested. Mani himself lost Pala to UDF-backed Mani C. Kappen by 2,991 votes. P.J. Joseph's Kerala Congress (UDF) won 7 seats, defeating KCM directly in Changanassery, Kaduthuruthy, Thodupuzha. BJP's Shone George (P.C. George's son) surged in Pala from ~10,000 (2021) to 35,304 votes — compressing Kappen's margin but also taking from KCM's pool.
-
-**Sources:**
-- Onmanorama — KCM autopsy (May 2026)
-- Onmanorama — Pala result Kappen wins (May 2026)
-- The South First — Central Kerala kingmaker region
-- Catholic World Report
-
-**Evidence strength:** Multiple agreeing
-
-**Theme:** coalition-dynamics
-
-**Testable now?** **Yes.** Compare KCM vs P.J. Joseph faction strike rates per seat. BJP vote rise in Pala is directly observable. The Kerala Congress flip is a single-cycle alliance flow — testable on `/flows`.
-
----
-
-## A8. Twenty20-NDA experiment imploded in Ernakulam
+## A5. Twenty20-NDA experiment imploded in Ernakulam
 
 **Claim:** Sabu M. Jacob's Twenty20 (Kitex-backed) joined NDA in January 2026 with a "Viksit Kerala" pitch. Contested 19 seats, won zero — Jacob had publicly predicted "at least six seats in Ernakulam alone." The South First reported an internal split with leaders quitting to join Congress after the NDA tie-up. Onmanorama: alliance "lost its apolitical appeal and alienated key minority voters" (Christians wary of BJP), pushing them to UDF. Vote erosion in Twenty20's traditional base of Kunnathunad, Kothamangalam, Perumbavoor.
 
@@ -182,7 +127,7 @@ Each entry below merges sources from across the six input files. Where multiple 
 
 ---
 
-## A9. 13 of 21 LDF ministers defeated — anti-incumbency was minister-targeted
+## A6. 13 of 21 LDF ministers defeated — anti-incumbency was minister-targeted
 
 **Claim:** Cabinet collapse signaled governance rejection beyond candidate-level effects. Ministers who lost include Veena George (Aranmula), V.N. Vasavan (Ettumanoor), Kadakampally Surendran (Kazhakoottam), K.K. Saseendran, K. Krishnankutty, Saji Cheriyan, A.K. Saseendran, R. Bindu, K. Rajan, P. Rajeeve, Chinchu Rani, M.B. Rajesh, Roshy Augustine. Pinarayi himself saw Dharmadam margin collapse from 50,123 to 19,247.
 
@@ -200,7 +145,7 @@ Each entry below merges sources from across the six input files. Where multiple 
 
 ---
 
-## A10. Munambam Waqf dispute moved Latin Catholic coastal pockets
+## A7. Munambam Waqf dispute moved Latin Catholic coastal pockets
 
 **Claim:** ~600 Latin Catholic fishing families in Munambam (Vypin/Paravur, Ernakulam) protested Kerala Waqf Board's claim on land they hold since the 1950s. After Parliament passed the Waqf Amendment Bill, residents burst crackers and chanted "Hail Modi" at 1 a.m. on April 3, 2025. KCBC actively lobbied MPs. UDF MP Hibi Eden warned residents the BJP was "trying to create conflict between Muslim and Christian communities." LDF's Waqf Board appointment in Feb 2026 kept Munambam "simmering ahead of polls" — and Latin Catholic shifts moved against LDF in coastal pockets.
 
@@ -216,23 +161,6 @@ Each entry below merges sources from across the six input files. Where multiple 
 **Theme:** community-specific / specific-issue
 
 **Testable now?** **Yes.** Examine Vypin, Paravur, Kochi (Mattancherry/Fort Kochi), and Latin Catholic coastal pockets for swings against LDF + BJP/UDF gains 2021 vs 2026.
-
----
-
-## A11. Higher turnout (78.03%) historically favored the challenger
-
-**Claim:** Turnout climbed 4.13pp from 73.9% (2021) to 78.03% (2026). Political scientist G. Gopa Kumar told The Print: "In 2016, voter turnout rose to 77.1% from 74.92%, leading to the ouster of the Oommen Chandy-led UDF" — a comparable surge with a comparable result. Three drivers: improved electoral rolls (Special Intensive Revision), anti-incumbency, BJP's Hindu-vote mobilisation.
-
-**Sources:**
-- The Print — How higher voter turnout impacts fates (Apr 2026)
-- The CSR Journal — turnout coverage
-- The Week — Does high turnout signal anti-incumbency?
-
-**Evidence strength:** Multiple (with single primary voice)
-
-**Theme:** anti-incumbency / generational
-
-**Testable now?** **Yes.** Correlate per-AC turnout delta (2021→2026) with LDF→UDF and LDF→BJP swings. Cross-tab: high-turnout-delta seats vs LDF-loss-magnitude.
 
 ---
 
@@ -421,19 +349,7 @@ Each entry below merges sources from across the six input files. Where multiple 
 
 ---
 
-## B7. K-Rail / SilverLine residue across corridor districts
-
-**Claim:** Original SilverLine (~₹63,000 cr, 1,300 hectares acquisition) was a flashpoint over wetland/paddy destruction and forced acquisition surveys. After Centre's refusal, E. Sreedharan advanced an alternative — splitting Congress voices. Residual memory was a liability across corridor districts. Deccan Herald listed K-Rail among Pinarayi's "trifecta of liabilities" alongside gold-smuggling and Exalogic.
-
-**Sources:** The Federal, Deccan Herald, The Wire
-
-**Theme:** specific-issue
-
-**Testable?** Partly. Would need to map original K-Rail alignment AC's (Kasaragod-to-Trivandrum corridor) and check anti-LDF swing concentration there.
-
----
-
-## B8. Wayanad rehabilitation politics — Mundakkai/Chooralmala township
+## B7. Wayanad rehabilitation politics — Mundakkai/Chooralmala township
 
 **Claim:** ₹299 cr township for 1,662 landslide-affected residents (first phase 178 houses inaugurated by Pinarayi March 2026). LDF projected as flagship achievement; UDF still swept Wayanad. Survivors waited beyond Congress-promised housing. The Federal noted the 2024 Wayanad relief fund row had become an election issue.
 
@@ -443,63 +359,6 @@ Each entry below merges sources from across the six input files. Where multiple 
 
 **Testable?** Partly. Examine Sulthanbathery, Kalpetta, Mananthavady swings — but causality from rehab politics specifically is hard to isolate from broader Christian-Muslim shift.
 
----
-
-## B9. CMRL-Exalogic / Veena Vijayan SFIO chargesheet
-
-**Claim:** SFIO chargesheet (Apr 2025) named CM's daughter T. Veena and 26 others under Section 447 of the Companies Act for ₹2.73 cr in payments from CMRL to Exalogic "for non-existent services." UDF talking point throughout the campaign. Personal corruption framing. Pinarayi's reduced Dharmadam margin is the visible scar.
-
-**Sources:** Onmanorama, Mathrubhumi, Bar & Bench, The South First
-
-**Theme:** anti-incumbency
-
-**Testable?** Partly. Pinarayi's Dharmadam margin shrinkage is observable. Isolating "scandal-effect" from "rebel-effect" + general anti-incumbency requires booth-level data.
-
----
-
-## B10. Public debt + youth unemployment as voter concern
-
-**Claim:** Kerala's debt above ₹4.5 lakh crore; one-in-three youth unemployment; outmigration. Pre-poll surveys converged on jobs (~17-23%) and inflation (~15-19%) as top voter concerns.
-
-**Sources:** Vote Vibe, Manorama-C Voter, Zee News, Open Magazine, Business Today
-
-**Theme:** specific-issue
-
-**Testable?** No directly. Issue salience requires survey microdata.
-
----
-
-# TIER C — Untestable with seat-level data
-
-## C1. National context — Congress recovery + Left's national disappearance
-
-**Claim:** Kerala win frames as part of broader Congress revival and the Left's complete loss of state power for the first time in 50 years. Interpretive national framing.
-
-**Theme:** national-context. Inherently macro, not seat-coded.
-
----
-
-## C2. CPM-BJP "B-team" mutual accusations
-
-**Claim:** Both alliances accused each other of being BJP's "B-team." UDF's "BJP-CPI(M) understanding" claim ended up resonating more with minority voters than the Left's counter-charge.
-
-**Theme:** national-context. Narrative-level claim, hard to isolate from broader minority consolidation.
-
----
-
-## C3. CPM's "secular image" erosion
-
-**Claim:** CPM's social engineering blurred its secular brand. Open Magazine: "death of an ideal." Interpretive framing.
-
-**Theme:** religion. Too broad to test as a single claim — operationalized into specific sub-narratives (A1, A12, A13).
-
----
-
-## C4. Kerala's "alternation pattern"
-
-**Claim:** Voters traditionally alternate every 5 years; 2021 was the COVID exception; 2026 was the return to pattern.
-
-**Theme:** anti-incumbency. Historical interpretive framing — describes the cycle but doesn't predict which seats moved.
 
 ---
 

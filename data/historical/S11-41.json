@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Kunhalikutty", "party": "IUML", "votes": 63138, "votePct": 63.44, "alliance": "UDF" },
-        { "name": "K. P. Ismayil", "party": "INL", "votes": 24901, "votePct": 25.02, "alliance": "LDF" },
-        { "name": "Abduil Majeed Faizi", "party": "SDPI", "votes": 4683, "votePct": 4.71, "alliance": "OTHER" },
-        { "name": "Subrahmanian", "party": "BJP", "votes": 3417, "votePct": 3.43, "alliance": "NDA" },
-        { "name": "K. P. Ismayil (Kalluparamban)", "party": "Independent", "votes": 1615, "votePct": 1.62, "alliance": "OTHER" }
+        {
+          "name": "P. K. Kunhalikutty",
+          "party": "Indian Union Muslim League",
+          "votes": 63138,
+          "votePct": 63.44,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. P. Ismayil",
+          "party": "INL",
+          "votes": 24901,
+          "votePct": 25.02,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Abduil Majeed Faizi",
+          "party": "SDPI",
+          "votes": 4683,
+          "votePct": 4.71,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Subrahmanian",
+          "party": "BJP",
+          "votes": 3417,
+          "votePct": 3.43,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. P. Ismayil (Kalluparamban)",
+          "party": "Independent",
+          "votes": 1615,
+          "votePct": 1.62,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 38237,
       "marginPct": 38.42,
@@ -26,16 +56,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Kunhalikutty", "party": "IUML", "votes": 72181, "votePct": 60.01, "alliance": "UDF" },
-        { "name": "P. P. Basheer", "party": "CPI(M)", "votes": 34124, "votePct": 28.37, "alliance": "LDF" },
-        { "name": "P. T. Ali Haji", "party": "BJP", "votes": 7055, "votePct": 5.87, "alliance": "NDA" },
-        { "name": "Kallen Aboobacker Master", "party": "SDPI", "votes": 3049, "votePct": 2.54, "alliance": "OTHER" },
-        { "name": "Surendran Karippuzha", "party": "WPOI", "votes": 1864, "votePct": 1.55, "alliance": "OTHER" }
+        {
+          "name": "P. K. Kunhalikutty",
+          "party": "Indian Union Muslim League",
+          "votes": 72181,
+          "votePct": 60.01,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. P. Basheer",
+          "party": "CPI(M)",
+          "votes": 34124,
+          "votePct": 28.37,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. T. Ali Haji",
+          "party": "BJP",
+          "votes": 7055,
+          "votePct": 5.87,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Kallen Aboobacker Master",
+          "party": "SDPI",
+          "votes": 3049,
+          "votePct": 2.54,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Surendran Karippuzha",
+          "party": "WPOI",
+          "votes": 1864,
+          "votePct": 1.55,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 38057,
       "marginPct": 31.64,
       "turnout": 120276,
-      "turnoutPct": 70.90,
+      "turnoutPct": 70.9,
       "result": "IUML hold"
     },
     {
@@ -43,11 +103,41 @@
       "type": "by-election",
       "reason": "Election of sitting MLA P. K. Kunhalikutty to Lok Sabha",
       "candidates": [
-        { "name": "K. N. A. Khader", "party": "IUML", "votes": 65227, "votePct": 53.19, "alliance": "UDF" },
-        { "name": "P. P. Basheer", "party": "CPI(M)", "votes": 41917, "votePct": 34.18, "alliance": "LDF" },
-        { "name": "K. C. Naseer", "party": "SDPI", "votes": 8648, "votePct": 7.05, "alliance": "OTHER" },
-        { "name": "K. Janachandran Master", "party": "BJP", "votes": 5728, "votePct": 4.67, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 502, "votePct": 0.41, "alliance": "NOTA" }
+        {
+          "name": "K. N. A. Khader",
+          "party": "Indian Union Muslim League",
+          "votes": 65227,
+          "votePct": 53.19,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. P. Basheer",
+          "party": "CPI(M)",
+          "votes": 41917,
+          "votePct": 34.18,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. C. Naseer",
+          "party": "SDPI",
+          "votes": 8648,
+          "votePct": 7.05,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Janachandran Master",
+          "party": "BJP",
+          "votes": 5728,
+          "votePct": 4.67,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 502,
+          "votePct": 0.41,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 23310,
       "marginPct": 19.01,
@@ -60,11 +150,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Kunhalikutty", "party": "IUML", "votes": 70381, "votePct": 53.50, "alliance": "UDF" },
-        { "name": "P. Jiji", "party": "CPI(M)", "votes": 39785, "votePct": 30.24, "alliance": "LDF" },
-        { "name": "Sabah Kundupuzhakkal", "party": "Independent", "votes": 11255, "votePct": 8.56, "alliance": "OTHER" },
-        { "name": "Preman Master", "party": "BJP", "votes": 5968, "votePct": 4.54, "alliance": "NDA" },
-        { "name": "E. K. Kunhahammed Kutty Master", "party": "WPOI", "votes": 2051, "votePct": 1.56, "alliance": "OTHER" }
+        {
+          "name": "P. K. Kunhalikutty",
+          "party": "Indian Union Muslim League",
+          "votes": 70381,
+          "votePct": 53.5,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. Jiji",
+          "party": "CPI(M)",
+          "votes": 39785,
+          "votePct": 30.24,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Sabah Kundupuzhakkal",
+          "party": "Independent",
+          "votes": 11255,
+          "votePct": 8.56,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Preman Master",
+          "party": "BJP",
+          "votes": 5968,
+          "votePct": 4.54,
+          "alliance": "NDA"
+        },
+        {
+          "name": "E. K. Kunhahammed Kutty Master",
+          "party": "WPOI",
+          "votes": 2051,
+          "votePct": 1.56,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 30596,
       "marginPct": 23.26,

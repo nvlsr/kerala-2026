@@ -9,16 +9,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Dominic Presentation", "party": "INC", "votes": 56352, "votePct": 53.37, "alliance": "UDF" },
-        { "name": "M. C. Josephine", "party": "CPI(M)", "votes": 39849, "votePct": 37.74, "alliance": "LDF" },
-        { "name": "K. Sasidharan", "party": "BJP", "votes": 5480, "votePct": 5.19, "alliance": "NDA" },
-        { "name": "Yoosuf Mufti", "party": "SDPI", "votes": 1992, "votePct": 1.89, "alliance": "OTHER" },
-        { "name": "Dominic C. J.", "party": "Independent", "votes": 590, "votePct": 0.56, "alliance": "OTHER" }
+        {
+          "name": "Dominic Presentation",
+          "party": "INC",
+          "votes": 56352,
+          "votePct": 53.37,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. C. Josephine",
+          "party": "CPI(M)",
+          "votes": 39849,
+          "votePct": 37.74,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. Sasidharan",
+          "party": "BJP",
+          "votes": 5480,
+          "votePct": 5.19,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Yoosuf Mufti",
+          "party": "SDPI",
+          "votes": 1992,
+          "votePct": 1.89,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Dominic C. J.",
+          "party": "Independent",
+          "votes": 590,
+          "votePct": 0.56,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 16863,
       "marginPct": 15.63,
       "turnout": 105592,
-      "turnoutPct": 66.60,
+      "turnoutPct": 66.6,
       "result": "INC win"
     },
     {
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. J. Maxi", "party": "CPI(M)", "votes": 47967, "votePct": 38.70, "alliance": "LDF" },
-        { "name": "Dominic Presentation", "party": "INC", "votes": 46881, "votePct": 37.82, "alliance": "UDF" },
-        { "name": "Praveen Damodara Prabhu", "party": "BJP", "votes": 15212, "votePct": 12.27, "alliance": "NDA" },
-        { "name": "K. J. Leenus", "party": "Independent", "votes": 7588, "votePct": 6.12, "alliance": "OTHER" },
-        { "name": "A. S. Muhammed", "party": "WPOI", "votes": 2357, "votePct": 1.90, "alliance": "OTHER" }
+        {
+          "name": "K. J. Maxi",
+          "party": "CPI(M)",
+          "votes": 47967,
+          "votePct": 38.7,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Dominic Presentation",
+          "party": "INC",
+          "votes": 46881,
+          "votePct": 37.82,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Praveen Damodara Prabhu",
+          "party": "BJP",
+          "votes": 15212,
+          "votePct": 12.27,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. J. Leenus",
+          "party": "Independent",
+          "votes": 7588,
+          "votePct": 6.12,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "A. S. Muhammed",
+          "party": "WPOI",
+          "votes": 2357,
+          "votePct": 1.9,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1086,
       "marginPct": 0.88,
@@ -43,10 +103,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. J. Maxi", "party": "CPI(M)", "votes": 54632, "votePct": 42.45, "alliance": "LDF" },
-        { "name": "Tony Chammany", "party": "INC", "votes": 40553, "votePct": 31.51, "alliance": "UDF" },
-        { "name": "Shiny Antony", "party": "Twenty20 Party", "votes": 19676, "votePct": 15.29, "alliance": "NDA" },
-        { "name": "C. G. Rajagopal", "party": "BJP", "votes": 10991, "votePct": 8.54, "alliance": "NDA" }
+        {
+          "name": "K. J. Maxi",
+          "party": "CPI(M)",
+          "votes": 54632,
+          "votePct": 42.45,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Tony Chammany",
+          "party": "INC",
+          "votes": 40553,
+          "votePct": 31.51,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Shiny Antony",
+          "party": "Twenty 20 Party",
+          "votes": 19676,
+          "votePct": 15.29,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "C. G. Rajagopal",
+          "party": "BJP",
+          "votes": 10991,
+          "votePct": 8.54,
+          "alliance": "NDA"
+        }
       ],
       "margin": 14079,
       "marginPct": 10.94,

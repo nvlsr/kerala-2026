@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. A. Ahmed Kabir", "party": "IUML", "votes": 67756, "votePct": 55.88, "alliance": "UDF" },
-        { "name": "Kadeeja Sathar", "party": "CPI(M)", "votes": 44163, "votePct": 36.42, "alliance": "LDF" },
-        { "name": "Manikandan K.", "party": "BJP", "votes": 4387, "votePct": 3.62, "alliance": "NDA" },
-        { "name": "C. H. Ashraf", "party": "SDPI", "votes": 3015, "votePct": 2.49, "alliance": "OTHER" },
-        { "name": "Anwar Babu", "party": "Independent", "votes": 1926, "votePct": 1.59, "alliance": "OTHER" }
+        {
+          "name": "T. A. Ahmed Kabir",
+          "party": "Indian Union Muslim League",
+          "votes": 67756,
+          "votePct": 55.88,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Kadeeja Sathar",
+          "party": "CPI(M)",
+          "votes": 44163,
+          "votePct": 36.42,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Manikandan K.",
+          "party": "BJP",
+          "votes": 4387,
+          "votePct": 3.62,
+          "alliance": "NDA"
+        },
+        {
+          "name": "C. H. Ashraf",
+          "party": "SDPI",
+          "votes": 3015,
+          "votePct": 2.49,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Anwar Babu",
+          "party": "Independent",
+          "votes": 1926,
+          "votePct": 1.59,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 23593,
       "marginPct": 19.46,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. A. Ahmed Kabir", "party": "IUML", "votes": 69165, "votePct": 46.08, "alliance": "UDF" },
-        { "name": "T. K. Rasheed Ali", "party": "CPI(M)", "votes": 67657, "votePct": 45.07, "alliance": "LDF" },
-        { "name": "B. Ratheesh", "party": "BJP", "votes": 6641, "votePct": 4.42, "alliance": "NDA" },
-        { "name": "Hameed Vaniyambalam", "party": "WPOI", "votes": 3999, "votePct": 2.66, "alliance": "OTHER" },
-        { "name": "A. A. Raheem", "party": "SDPI", "votes": 1456, "votePct": 0.97, "alliance": "OTHER" }
+        {
+          "name": "T. A. Ahmed Kabir",
+          "party": "Indian Union Muslim League",
+          "votes": 69165,
+          "votePct": 46.08,
+          "alliance": "UDF"
+        },
+        {
+          "name": "T. K. Rasheed Ali",
+          "party": "CPI(M)",
+          "votes": 67657,
+          "votePct": 45.07,
+          "alliance": "LDF"
+        },
+        {
+          "name": "B. Ratheesh",
+          "party": "BJP",
+          "votes": 6641,
+          "votePct": 4.42,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Hameed Vaniyambalam",
+          "party": "WPOI",
+          "votes": 3999,
+          "votePct": 2.66,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "A. A. Raheem",
+          "party": "SDPI",
+          "votes": 1456,
+          "votePct": 0.97,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1508,
       "marginPct": 1.01,
@@ -43,10 +103,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Manjalamkuzhi Ali", "party": "IUML", "votes": 83231, "votePct": 49.46, "alliance": "UDF" },
-        { "name": "T. K. Rasheedali", "party": "CPI(M)", "votes": 76985, "votePct": 45.75, "alliance": "LDF" },
-        { "name": "Sajesh Elayil", "party": "BJP", "votes": 6641, "votePct": 3.95, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 599, "votePct": 0.36, "alliance": "NOTA" }
+        {
+          "name": "Manjalamkuzhi Ali",
+          "party": "Indian Union Muslim League",
+          "votes": 83231,
+          "votePct": 49.46,
+          "alliance": "UDF"
+        },
+        {
+          "name": "T. K. Rasheedali",
+          "party": "CPI(M)",
+          "votes": 76985,
+          "votePct": 45.75,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Sajesh Elayil",
+          "party": "BJP",
+          "votes": 6641,
+          "votePct": 3.95,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 599,
+          "votePct": 0.36,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 6246,
       "marginPct": 3.71,

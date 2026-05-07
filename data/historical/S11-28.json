@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. K. Muneer", "party": "IUML", "votes": 47771, "votePct": 46.08, "alliance": "UDF" },
-        { "name": "C. P. Musaffer Ahammed", "party": "CPI(M)", "votes": 46395, "votePct": 44.75, "alliance": "LDF" },
-        { "name": "Jaya Sadanandan", "party": "BJP", "votes": 7512, "votePct": 7.25, "alliance": "NDA" },
-        { "name": "Faiz Mohammed", "party": "SDPI", "votes": 749, "votePct": 0.72, "alliance": "OTHER" },
-        { "name": "T. T. Muneer", "party": "Independent", "votes": 488, "votePct": 0.47, "alliance": "OTHER" }
+        {
+          "name": "M. K. Muneer",
+          "party": "Indian Union Muslim League",
+          "votes": 47771,
+          "votePct": 46.08,
+          "alliance": "UDF"
+        },
+        {
+          "name": "C. P. Musaffer Ahammed",
+          "party": "CPI(M)",
+          "votes": 46395,
+          "votePct": 44.75,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Jaya Sadanandan",
+          "party": "BJP",
+          "votes": 7512,
+          "votePct": 7.25,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Faiz Mohammed",
+          "party": "SDPI",
+          "votes": 749,
+          "votePct": 0.72,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. T. Muneer",
+          "party": "Independent",
+          "votes": 488,
+          "votePct": 0.47,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1376,
       "marginPct": 2.03,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. K. Muneer", "party": "IUML", "votes": 49863, "votePct": 43.13, "alliance": "UDF" },
-        { "name": "A. P. Abdul Vahab", "party": "INL", "votes": 43536, "votePct": 37.66, "alliance": "LDF" },
-        { "name": "Satheesh Kuttiyil", "party": "BDJS", "votes": 19146, "votePct": 16.56, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 788, "votePct": 0.68, "alliance": "NOTA" },
-        { "name": "U. K. Deysi Balasubrahmanyan", "party": "SDPI", "votes": 593, "votePct": 0.51, "alliance": "OTHER" }
+        {
+          "name": "M. K. Muneer",
+          "party": "Indian Union Muslim League",
+          "votes": 49863,
+          "votePct": 43.13,
+          "alliance": "UDF"
+        },
+        {
+          "name": "A. P. Abdul Vahab",
+          "party": "INL",
+          "votes": 43536,
+          "votePct": 37.66,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Satheesh Kuttiyil",
+          "party": "BDJS",
+          "votes": 19146,
+          "votePct": 16.56,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 788,
+          "votePct": 0.68,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "U. K. Deysi Balasubrahmanyan",
+          "party": "SDPI",
+          "votes": 593,
+          "votePct": 0.51,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6327,
       "marginPct": 5.47,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Ahamed Devarkovil", "party": "INL", "votes": 52557, "votePct": 44.15, "alliance": "LDF" },
-        { "name": "Noorbeena Rasheed", "party": "IUML", "votes": 40098, "votePct": 33.68, "alliance": "UDF" },
-        { "name": "Navya Haridas", "party": "BJP", "votes": 24873, "votePct": 20.89, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 603, "votePct": 0.51, "alliance": "NOTA" },
-        { "name": "Mubeena", "party": "Independent", "votes": 513, "votePct": 0.43, "alliance": "OTHER" }
+        {
+          "name": "Ahamed Devarkovil",
+          "party": "INL",
+          "votes": 52557,
+          "votePct": 44.15,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Noorbeena Rasheed",
+          "party": "Indian Union Muslim League",
+          "votes": 40098,
+          "votePct": 33.68,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Navya Haridas",
+          "party": "BJP",
+          "votes": 24873,
+          "votePct": 20.89,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 603,
+          "votePct": 0.51,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Mubeena",
+          "party": "Independent",
+          "votes": 513,
+          "votePct": 0.43,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 12459,
       "marginPct": 10.46,

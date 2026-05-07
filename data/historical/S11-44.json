@@ -9,10 +9,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Abdurahiman Randathani", "party": "IUML", "votes": 51549, "votePct": 49.52, "alliance": "UDF" },
-        { "name": "E. Jayan", "party": "CPI(M)", "votes": 42116, "votePct": 40.45, "alliance": "LDF" },
-        { "name": "Ravi Thelath", "party": "BJP", "votes": 7304, "votePct": 7.02, "alliance": "NDA" },
-        { "name": "K. K. Majeed Khasimi", "party": "SDPI", "votes": 3137, "votePct": 3.01, "alliance": "OTHER" }
+        {
+          "name": "Abdurahiman Randathani",
+          "party": "Indian Union Muslim League",
+          "votes": 51549,
+          "votePct": 49.52,
+          "alliance": "UDF"
+        },
+        {
+          "name": "E. Jayan",
+          "party": "CPI(M)",
+          "votes": 42116,
+          "votePct": 40.45,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Ravi Thelath",
+          "party": "BJP",
+          "votes": 7304,
+          "votePct": 7.02,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. K. Majeed Khasimi",
+          "party": "SDPI",
+          "votes": 3137,
+          "votePct": 3.01,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 9433,
       "marginPct": 9.07,
@@ -25,11 +49,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. Abdurahiman", "party": "NSC", "votes": 64472, "votePct": 45.78, "alliance": "LDF" },
-        { "name": "Abdurahiman Randathani", "party": "IUML", "votes": 59554, "votePct": 42.29, "alliance": "UDF" },
-        { "name": "P. R. Rasmilnath", "party": "BJP", "votes": 11051, "votePct": 7.85, "alliance": "NDA" },
-        { "name": "Asharaf Vailathur", "party": "WPOI", "votes": 1291, "votePct": 0.92, "alliance": "OTHER" },
-        { "name": "K. K. Majeed Khasimi", "party": "SDPI", "votes": 1151, "votePct": 0.82, "alliance": "OTHER" }
+        {
+          "name": "V. Abdurahiman",
+          "party": "NSC",
+          "votes": 64472,
+          "votePct": 45.78,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Abdurahiman Randathani",
+          "party": "Indian Union Muslim League",
+          "votes": 59554,
+          "votePct": 42.29,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. R. Rasmilnath",
+          "party": "BJP",
+          "votes": 11051,
+          "votePct": 7.85,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Asharaf Vailathur",
+          "party": "WPOI",
+          "votes": 1291,
+          "votePct": 0.92,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. K. Majeed Khasimi",
+          "party": "SDPI",
+          "votes": 1151,
+          "votePct": 0.82,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 4918,
       "marginPct": 3.49,
@@ -42,10 +96,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. Abdurahiman", "party": "NSC", "votes": 70704, "votePct": 46.34, "alliance": "LDF" },
-        { "name": "P. K. Firos", "party": "IUML", "votes": 69719, "votePct": 45.71, "alliance": "UDF" },
-        { "name": "K. Narayanan Master", "party": "BJP", "votes": 10590, "votePct": 6.94, "alliance": "NDA" },
-        { "name": "Mueenudheen", "party": "BSP", "votes": 183, "votePct": 0.12, "alliance": "OTHER" }
+        {
+          "name": "V. Abdurahiman",
+          "party": "NSC",
+          "votes": 70704,
+          "votePct": 46.34,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. K. Firos",
+          "party": "Indian Union Muslim League",
+          "votes": 69719,
+          "votePct": 45.71,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Narayanan Master",
+          "party": "BJP",
+          "votes": 10590,
+          "votePct": 6.94,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Mueenudheen",
+          "party": "BSP",
+          "votes": 183,
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 985,
       "marginPct": 4.93,

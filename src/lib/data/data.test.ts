@@ -291,18 +291,22 @@ describe("getPastCandidates regression: party-keyed filtering", () => {
   // Background: a brief refactor switched the filter from party-name
   // to alliance-code, which collapsed multiple parties sharing an
   // alliance into a single row. KUNNATHUNAD (#84) 2021 had BOTH
-  // Twenty 20 Party (42,701 votes, NDA) and BJP (7,218 votes, NDA).
+  // Twenty 20 Party (42,701 votes) and BJP (7,218 votes).
   // Asking for "Twenty 20 Party" must return Twenty 20's specific
-  // row, not whichever NDA candidate happens to come up first.
+  // row, not whichever candidate happens to come up first.
+  //
+  // Note: Twenty 20 Party joined NDA only in Jan 2026 — pre-2026
+  // Twenty 20 entries are tagged OTHER (matching ECI/Wikipedia
+  // 2021 NDA composition of BJP + BDJS only).
 
-  test("Twenty 20 Party's 2021 row is returned, not collapsed with BJP (same alliance)", () => {
+  test("Twenty 20 Party's 2021 row is returned, not collapsed with BJP", () => {
     const rows = getPastCandidates(84, "Twenty 20 Party")
     const row2021 = rows.find((r) => r.year === 2021)
     expect(row2021).toBeDefined()
     expect(row2021!.party).toBe("Twenty 20 Party")
     expect(row2021!.didNotContest).toBe(false)
     expect(row2021!.votes).toBe(42_701)
-    expect(row2021!.allianceCode).toBe("NDA")
+    expect(row2021!.allianceCode).toBe("OTHER")
   })
 
   test("BJP's 2021 row in the same seat is its own row, not Twenty 20's", () => {

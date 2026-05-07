@@ -13,27 +13,37 @@
           "name": "V. P. Sajendran",
           "party": "INC",
           "votes": 63624,
-          "votePct": 49.72, "alliance": "UDF" },
+          "votePct": 49.72,
+          "alliance": "UDF"
+        },
         {
           "name": "M. A. Surendran",
           "party": "CPI(M)",
           "votes": 54892,
-          "votePct": 42.89, "alliance": "LDF" },
+          "votePct": 42.89,
+          "alliance": "LDF"
+        },
         {
           "name": "M. Ravi",
           "party": "BJP",
           "votes": 5862,
-          "votePct": 4.58, "alliance": "NDA" },
+          "votePct": 4.58,
+          "alliance": "NDA"
+        },
         {
           "name": "M. K. Manoj Kumar",
           "party": "SDPI",
           "votes": 2969,
-          "votePct": 2.32, "alliance": "OTHER" },
+          "votePct": 2.32,
+          "alliance": "OTHER"
+        },
         {
           "name": "Rajeev P. T.",
           "party": "BSP",
           "votes": 625,
-          "votePct": 0.49, "alliance": "OTHER" }
+          "votePct": 0.49,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 8732,
       "marginPct": 6.83,
@@ -50,27 +60,37 @@
           "name": "V. P. Sajendran",
           "party": "INC",
           "votes": 65445,
-          "votePct": 44.13, "alliance": "UDF" },
+          "votePct": 44.13,
+          "alliance": "UDF"
+        },
         {
           "name": "Shiji Sivaji",
           "party": "CPI(M)",
           "votes": 62766,
-          "votePct": 42.32, "alliance": "LDF" },
+          "votePct": 42.32,
+          "alliance": "LDF"
+        },
         {
           "name": "Thuravoor Suresh",
           "party": "BJP",
           "votes": 16459,
-          "votePct": 11.1, "alliance": "NDA" },
+          "votePct": 11.1,
+          "alliance": "NDA"
+        },
         {
           "name": "N. O. Kuttapan",
           "party": "SP",
           "votes": 1263,
-          "votePct": 0.85, "alliance": "OTHER" },
+          "votePct": 0.85,
+          "alliance": "OTHER"
+        },
         {
           "name": "NOTA",
           "party": "NOTA",
           "votes": 1179,
-          "votePct": 0.79, "alliance": "NOTA" }
+          "votePct": 0.79,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 2679,
       "marginPct": 1.81,
@@ -87,42 +107,58 @@
           "name": "P. V. Sreenijin",
           "party": "CPI(M)",
           "votes": 52351,
-          "votePct": 33.79, "alliance": "LDF" },
+          "votePct": 33.79,
+          "alliance": "LDF"
+        },
         {
           "name": "V. P. Sajeendran",
           "party": "INC",
           "votes": 49636,
-          "votePct": 32.04, "alliance": "UDF" },
+          "votePct": 32.04,
+          "alliance": "UDF"
+        },
         {
           "name": "Sujith P. Surendran",
           "party": "Twenty 20 Party",
           "votes": 42701,
-          "votePct": 27.56, "alliance": "NDA" },
+          "votePct": 27.56,
+          "alliance": "OTHER"
+        },
         {
           "name": "Renu Suresh",
           "party": "BJP",
           "votes": 7218,
-          "votePct": 4.66, "alliance": "NDA" },
+          "votePct": 4.66,
+          "alliance": "NDA"
+        },
         {
           "name": "Krishnan Eranhikal",
           "party": "SDPI",
           "votes": 1294,
-          "votePct": 0.84, "alliance": "OTHER" },
+          "votePct": 0.84,
+          "alliance": "OTHER"
+        },
         {
           "name": "Sujith K. Surendran",
           "party": "Independent",
           "votes": 786,
-          "votePct": 0.51, "alliance": "OTHER" },
+          "votePct": 0.51,
+          "alliance": "OTHER"
+        },
         {
           "name": "A. T. Manikuttan",
           "party": "BSP",
           "votes": 205,
-          "votePct": 0.13, "alliance": "OTHER" },
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        },
         {
           "name": "V. K. Velayudhan",
           "party": "Independent",
           "votes": 168,
-          "votePct": 0.11, "alliance": "OTHER" }
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 2715,
       "marginPct": 1.75,

@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Saju Paul", "party": "CPI(M)", "votes": 59628, "votePct": 47.42, "alliance": "LDF" },
-        { "name": "Jaison Joseph", "party": "INC", "votes": 56246, "votePct": 44.73, "alliance": "UDF" },
-        { "name": "O. C. Asokan", "party": "BJP", "votes": 5464, "votePct": 4.35, "alliance": "NDA" },
-        { "name": "O. Aliyar", "party": "SDPI", "votes": 2401, "votePct": 1.90, "alliance": "OTHER" },
-        { "name": "N. K. Muhammed Haji", "party": "PDP", "votes": 1094, "votePct": 0.87, "alliance": "OTHER" }
+        {
+          "name": "Saju Paul",
+          "party": "CPI(M)",
+          "votes": 59628,
+          "votePct": 47.42,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Jaison Joseph",
+          "party": "INC",
+          "votes": 56246,
+          "votePct": 44.73,
+          "alliance": "UDF"
+        },
+        {
+          "name": "O. C. Asokan",
+          "party": "BJP",
+          "votes": 5464,
+          "votePct": 4.35,
+          "alliance": "NDA"
+        },
+        {
+          "name": "O. Aliyar",
+          "party": "SDPI",
+          "votes": 2401,
+          "votePct": 1.9,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "N. K. Muhammed Haji",
+          "party": "PDP",
+          "votes": 1094,
+          "votePct": 0.87,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 3382,
       "marginPct": 2.69,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Eldose Kunnapilly", "party": "INC", "votes": 64285, "votePct": 44.11, "alliance": "UDF" },
-        { "name": "Saju Paul", "party": "CPI(M)", "votes": 57197, "votePct": 39.25, "alliance": "LDF" },
-        { "name": "E. S. Biju", "party": "BJP", "votes": 19731, "votePct": 13.54, "alliance": "NDA" },
-        { "name": "V. V. Shoukkath Ali", "party": "SDPI", "votes": 2061, "votePct": 1.41, "alliance": "OTHER" },
-        { "name": "Thomas K. George", "party": "WPOI", "votes": 971, "votePct": 0.67, "alliance": "OTHER" }
+        {
+          "name": "Eldose Kunnapilly",
+          "party": "INC",
+          "votes": 64285,
+          "votePct": 44.11,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Saju Paul",
+          "party": "CPI(M)",
+          "votes": 57197,
+          "votePct": 39.25,
+          "alliance": "LDF"
+        },
+        {
+          "name": "E. S. Biju",
+          "party": "BJP",
+          "votes": 19731,
+          "votePct": 13.54,
+          "alliance": "NDA"
+        },
+        {
+          "name": "V. V. Shoukkath Ali",
+          "party": "SDPI",
+          "votes": 2061,
+          "votePct": 1.41,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Thomas K. George",
+          "party": "WPOI",
+          "votes": 971,
+          "votePct": 0.67,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 7088,
       "marginPct": 4.86,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Eldose Kunnapilly", "party": "INC", "votes": 53484, "votePct": 37.10, "alliance": "UDF" },
-        { "name": "Babu Joseph Perumbavoor", "party": "KC(M)", "votes": 50585, "votePct": 35.09, "alliance": "LDF" },
-        { "name": "Chithra Sukumaran", "party": "Twenty20 Party", "votes": 20536, "votePct": 14.24, "alliance": "NDA" },
-        { "name": "T. P. Sindhumol", "party": "BJP", "votes": 15135, "votePct": 10.50, "alliance": "NDA" },
-        { "name": "Ajmal K. Mujeeb", "party": "SDPI", "votes": 2494, "votePct": 1.73, "alliance": "OTHER" }
+        {
+          "name": "Eldose Kunnapilly",
+          "party": "INC",
+          "votes": 53484,
+          "votePct": 37.1,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Babu Joseph Perumbavoor",
+          "party": "KC(M)",
+          "votes": 50585,
+          "votePct": 35.09,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Chithra Sukumaran",
+          "party": "Twenty 20 Party",
+          "votes": 20536,
+          "votePct": 14.24,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. P. Sindhumol",
+          "party": "BJP",
+          "votes": 15135,
+          "votePct": 10.5,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Ajmal K. Mujeeb",
+          "party": "SDPI",
+          "votes": 2494,
+          "votePct": 1.73,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 2899,
       "marginPct": 2.01,

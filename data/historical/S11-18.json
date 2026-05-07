@@ -9,10 +9,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "I. C. Balakrishnan", "party": "INC", "votes": 71540, "votePct": 49.14, "alliance": "UDF" },
-        { "name": "E. A. Sankaran", "party": "CPI(M)", "votes": 63926, "votePct": 43.93, "alliance": "LDF" },
-        { "name": "Palliyara Raman", "party": "BJP", "votes": 8829, "votePct": 6.07, "alliance": "NDA" },
-        { "name": "Mukundan Cheengeri", "party": "BSP", "votes": 679, "votePct": 0.47, "alliance": "OTHER" }
+        {
+          "name": "I. C. Balakrishnan",
+          "party": "INC",
+          "votes": 71540,
+          "votePct": 49.14,
+          "alliance": "UDF"
+        },
+        {
+          "name": "E. A. Sankaran",
+          "party": "CPI(M)",
+          "votes": 63926,
+          "votePct": 43.93,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Palliyara Raman",
+          "party": "BJP",
+          "votes": 8829,
+          "votePct": 6.07,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Mukundan Cheengeri",
+          "party": "BSP",
+          "votes": 679,
+          "votePct": 0.47,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 7583,
       "marginPct": 10.26,
@@ -25,11 +49,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "I. C. Balakrishnan", "party": "INC", "votes": 75747, "votePct": 44.04, "alliance": "UDF" },
-        { "name": "Rugmini Subrahmanian", "party": "CPI(M)", "votes": 64549, "votePct": 37.53, "alliance": "LDF" },
-        { "name": "C. K. Janu", "party": "JRS", "votes": 27920, "votePct": 16.23, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 1261, "votePct": 0.73, "alliance": "NOTA" },
-        { "name": "Mukundan Cheengeri", "party": "BSP", "votes": 791, "votePct": 0.46, "alliance": "OTHER" }
+        {
+          "name": "I. C. Balakrishnan",
+          "party": "INC",
+          "votes": 75747,
+          "votePct": 44.04,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Rugmini Subrahmanian",
+          "party": "CPI(M)",
+          "votes": 64549,
+          "votePct": 37.53,
+          "alliance": "LDF"
+        },
+        {
+          "name": "C. K. Janu",
+          "party": "JRS",
+          "votes": 27920,
+          "votePct": 16.23,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 1261,
+          "votePct": 0.73,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Mukundan Cheengeri",
+          "party": "BSP",
+          "votes": 791,
+          "votePct": 0.46,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 11198,
       "marginPct": 6.51,
@@ -42,11 +96,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "I. C. Balakrishnan", "party": "INC", "votes": 81077, "votePct": 48.42, "alliance": "UDF" },
-        { "name": "M. S. Viswanathan", "party": "CPI(M)", "votes": 69255, "votePct": 41.36, "alliance": "LDF" },
-        { "name": "C. K. Janu", "party": "JRS", "votes": 15198, "votePct": 9.08, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 1160, "votePct": 0.70, "alliance": "NOTA" },
-        { "name": "Ondan Paniyan", "party": "Independent", "votes": 742, "votePct": 0.44, "alliance": "OTHER" }
+        {
+          "name": "I. C. Balakrishnan",
+          "party": "INC",
+          "votes": 81077,
+          "votePct": 48.42,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. S. Viswanathan",
+          "party": "CPI(M)",
+          "votes": 69255,
+          "votePct": 41.36,
+          "alliance": "LDF"
+        },
+        {
+          "name": "C. K. Janu",
+          "party": "JRS",
+          "votes": 15198,
+          "votePct": 9.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 1160,
+          "votePct": 0.7,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Ondan Paniyan",
+          "party": "Independent",
+          "votes": 742,
+          "votePct": 0.44,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 11822,
       "marginPct": 7.06,

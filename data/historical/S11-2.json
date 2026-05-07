@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "N. A. Nellikkunnu", "party": "IUML", "votes": 53068, "votePct": 45.35, "alliance": "UDF" },
-        { "name": "Jayalakshmi N. Bhatt", "party": "BJP", "votes": 43330, "votePct": 37.02, "alliance": "NDA" },
-        { "name": "Azeez Kadappuram", "party": "INL", "votes": 16467, "votePct": 14.07, "alliance": "LDF" },
-        { "name": "A. H. Muneer", "party": "SDPI", "votes": 1260, "votePct": 1.08, "alliance": "OTHER" },
-        { "name": "Govinda Raja Kuntikkanamata", "party": "Independent", "votes": 938, "votePct": 0.80, "alliance": "OTHER" }
+        {
+          "name": "N. A. Nellikkunnu",
+          "party": "Indian Union Muslim League",
+          "votes": 53068,
+          "votePct": 45.35,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Jayalakshmi N. Bhatt",
+          "party": "BJP",
+          "votes": 43330,
+          "votePct": 37.02,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Azeez Kadappuram",
+          "party": "INL",
+          "votes": 16467,
+          "votePct": 14.07,
+          "alliance": "LDF"
+        },
+        {
+          "name": "A. H. Muneer",
+          "party": "SDPI",
+          "votes": 1260,
+          "votePct": 1.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Govinda Raja Kuntikkanamata",
+          "party": "Independent",
+          "votes": 938,
+          "votePct": 0.8,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 9738,
       "marginPct": 8.32,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "N. A. Nellikkunnu", "party": "IUML", "votes": 64727, "votePct": 44.72, "alliance": "UDF" },
-        { "name": "Ravisha Thantri Kuntar", "party": "BJP", "votes": 56120, "votePct": 38.77, "alliance": "NDA" },
-        { "name": "A. A. Ameen", "party": "INL", "votes": 21615, "votePct": 14.93, "alliance": "LDF" },
-        { "name": "NOTA", "party": "NOTA", "votes": 661, "votePct": 0.46, "alliance": "NOTA" },
-        { "name": "Vijaykumar B.", "party": "BSP", "votes": 585, "votePct": 0.40, "alliance": "OTHER" }
+        {
+          "name": "N. A. Nellikkunnu",
+          "party": "Indian Union Muslim League",
+          "votes": 64727,
+          "votePct": 44.72,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Ravisha Thantri Kuntar",
+          "party": "BJP",
+          "votes": 56120,
+          "votePct": 38.77,
+          "alliance": "NDA"
+        },
+        {
+          "name": "A. A. Ameen",
+          "party": "INL",
+          "votes": 21615,
+          "votePct": 14.93,
+          "alliance": "LDF"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 661,
+          "votePct": 0.46,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Vijaykumar B.",
+          "party": "BSP",
+          "votes": 585,
+          "votePct": 0.4,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 8607,
       "marginPct": 5.95,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "N. A. Nellikkunnu", "party": "IUML", "votes": 63296, "votePct": 43.80, "alliance": "UDF" },
-        { "name": "K. Shreekanth", "party": "BJP", "votes": 50395, "votePct": 34.88, "alliance": "NDA" },
-        { "name": "M. A. Latheef", "party": "INL", "votes": 28323, "votePct": 19.60, "alliance": "LDF" },
-        { "name": "Vijaya K. P.", "party": "BSP", "votes": 679, "votePct": 0.47, "alliance": "OTHER" },
-        { "name": "NOTA", "party": "NOTA", "votes": 639, "votePct": 0.44, "alliance": "NOTA" }
+        {
+          "name": "N. A. Nellikkunnu",
+          "party": "Indian Union Muslim League",
+          "votes": 63296,
+          "votePct": 43.8,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Shreekanth",
+          "party": "BJP",
+          "votes": 50395,
+          "votePct": 34.88,
+          "alliance": "NDA"
+        },
+        {
+          "name": "M. A. Latheef",
+          "party": "INL",
+          "votes": 28323,
+          "votePct": 19.6,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Vijaya K. P.",
+          "party": "BSP",
+          "votes": 679,
+          "votePct": 0.47,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 639,
+          "votePct": 0.44,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 12901,
       "marginPct": 8.92,

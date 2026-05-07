@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. M. Shaji", "party": "IUML", "votes": 55077, "votePct": 45.21, "alliance": "UDF" },
-        { "name": "M. Prakashan Master", "party": "CPI(M)", "votes": 54584, "votePct": 44.80, "alliance": "LDF" },
-        { "name": "M. K. Saseendran Master", "party": "BJP", "votes": 7540, "votePct": 6.19, "alliance": "NDA" },
-        { "name": "Noushad Punnakkal", "party": "Independent", "votes": 2935, "votePct": 2.41, "alliance": "OTHER" },
-        { "name": "Shaji K. M.", "party": "Independent", "votes": 602, "votePct": 0.49, "alliance": "OTHER" }
+        {
+          "name": "K. M. Shaji",
+          "party": "Indian Union Muslim League",
+          "votes": 55077,
+          "votePct": 45.21,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. Prakashan Master",
+          "party": "CPI(M)",
+          "votes": 54584,
+          "votePct": 44.8,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. K. Saseendran Master",
+          "party": "BJP",
+          "votes": 7540,
+          "votePct": 6.19,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Noushad Punnakkal",
+          "party": "Independent",
+          "votes": 2935,
+          "votePct": 2.41,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shaji K. M.",
+          "party": "Independent",
+          "votes": 602,
+          "votePct": 0.49,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 493,
       "marginPct": 0.41,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. M. Shaji", "party": "IUML", "votes": 63082, "votePct": 44.58, "alliance": "UDF" },
-        { "name": "M. V. Nikesh Kumar", "party": "CPI(M)", "votes": 60795, "votePct": 42.97, "alliance": "LDF" },
-        { "name": "A. V. Kesavan", "party": "BJP", "votes": 12580, "votePct": 8.89, "alliance": "NDA" },
-        { "name": "K. K. Abdul Jabbar", "party": "SDPI", "votes": 1705, "votePct": 1.20, "alliance": "OTHER" },
-        { "name": "P. K. Ragesh", "party": "Independent", "votes": 1518, "votePct": 1.07, "alliance": "OTHER" }
+        {
+          "name": "K. M. Shaji",
+          "party": "Indian Union Muslim League",
+          "votes": 63082,
+          "votePct": 44.58,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. V. Nikesh Kumar",
+          "party": "CPI(M)",
+          "votes": 60795,
+          "votePct": 42.97,
+          "alliance": "LDF"
+        },
+        {
+          "name": "A. V. Kesavan",
+          "party": "BJP",
+          "votes": 12580,
+          "votePct": 8.89,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. K. Abdul Jabbar",
+          "party": "SDPI",
+          "votes": 1705,
+          "votePct": 1.2,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. K. Ragesh",
+          "party": "Independent",
+          "votes": 1518,
+          "votePct": 1.07,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 2287,
       "marginPct": 1.61,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. V. Sumesh", "party": "CPI(M)", "votes": 65794, "votePct": 45.41, "alliance": "LDF" },
-        { "name": "K. M. Shaji", "party": "IUML", "votes": 59653, "votePct": 41.17, "alliance": "UDF" },
-        { "name": "K. Ranjith", "party": "BJP", "votes": 15741, "votePct": 10.86, "alliance": "NDA" },
-        { "name": "Abdul Jabbar K.K", "party": "SDPI", "votes": 2357, "votePct": 1.63, "alliance": "OTHER" },
-        { "name": "NOTA", "party": "NOTA", "votes": 517, "votePct": 0.36, "alliance": "NOTA" }
+        {
+          "name": "K. V. Sumesh",
+          "party": "CPI(M)",
+          "votes": 65794,
+          "votePct": 45.41,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. M. Shaji",
+          "party": "Indian Union Muslim League",
+          "votes": 59653,
+          "votePct": 41.17,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Ranjith",
+          "party": "BJP",
+          "votes": 15741,
+          "votePct": 10.86,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Abdul Jabbar K.K",
+          "party": "SDPI",
+          "votes": 2357,
+          "votePct": 1.63,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 517,
+          "votePct": 0.36,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 6141,
       "marginPct": 4.24,

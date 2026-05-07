@@ -11,29 +11,39 @@
       "candidates": [
         {
           "name": "P. K. Basheer",
-          "party": "IUML",
+          "party": "Indian Union Muslim League",
           "votes": 58698,
-          "votePct": 51.29, "alliance": "UDF" },
+          "votePct": 51.29,
+          "alliance": "UDF"
+        },
         {
           "name": "P. V. Anvar",
           "party": "Independent",
           "votes": 47452,
-          "votePct": 41.47, "alliance": "OTHER" },
+          "votePct": 41.47,
+          "alliance": "OTHER"
+        },
         {
           "name": "K. P. Baburaj",
           "party": "BJP",
           "votes": 3448,
-          "votePct": 3.01, "alliance": "NDA" },
+          "votePct": 3.01,
+          "alliance": "NDA"
+        },
         {
           "name": "Ashrafali Kaliyath",
           "party": "CPI",
           "votes": 2700,
-          "votePct": 2.36, "alliance": "LDF" },
+          "votePct": 2.36,
+          "alliance": "LDF"
+        },
         {
           "name": "P. P. Showkathali",
           "party": "SDPI",
           "votes": 2137,
-          "votePct": 1.87, "alliance": "OTHER" }
+          "votePct": 1.87,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 11246,
       "marginPct": 9.82,
@@ -50,52 +60,72 @@
           "name": "P. K. Basheer",
           "party": "Indian Union Muslim League",
           "votes": 69048,
-          "votePct": 50.83, "alliance": "UDF" },
+          "votePct": 50.83,
+          "alliance": "UDF"
+        },
         {
           "name": "Abdurahiman",
           "party": "Communist Party of India",
           "votes": 56155,
-          "votePct": 41.34, "alliance": "LDF" },
+          "votePct": 41.34,
+          "alliance": "LDF"
+        },
         {
           "name": "K. P. Baburaj Master Thundathil",
           "party": "BJP",
           "votes": 6055,
-          "votePct": 4.46, "alliance": "NDA" },
+          "votePct": 4.46,
+          "alliance": "NDA"
+        },
         {
           "name": "Ummer Chelakkode",
           "party": "SP",
           "votes": 1298,
-          "votePct": 0.96, "alliance": "OTHER" },
+          "votePct": 0.96,
+          "alliance": "OTHER"
+        },
         {
           "name": "Velayudhan",
           "party": "BSP",
           "votes": 885,
-          "votePct": 0.65, "alliance": "OTHER" },
+          "votePct": 0.65,
+          "alliance": "OTHER"
+        },
         {
           "name": "K. T. Abdul Rahiman",
           "party": "Independent",
           "votes": 825,
-          "votePct": 0.61, "alliance": "OTHER" },
+          "votePct": 0.61,
+          "alliance": "OTHER"
+        },
         {
           "name": "Farooq Chengara",
           "party": "PDP",
           "votes": 536,
-          "votePct": 0.39, "alliance": "OTHER" },
+          "votePct": 0.39,
+          "alliance": "OTHER"
+        },
         {
           "name": "V. K. Basheer",
           "party": "Independent",
           "votes": 245,
-          "votePct": 0.18, "alliance": "OTHER" },
+          "votePct": 0.18,
+          "alliance": "OTHER"
+        },
         {
           "name": "K. V. Shahanas",
           "party": "Independent",
           "votes": 193,
-          "votePct": 0.14, "alliance": "OTHER" },
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        },
         {
           "name": "P. K. Basheer",
           "party": "Independent",
           "votes": 149,
-          "votePct": 0.11, "alliance": "OTHER" }
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 12893,
       "marginPct": 9.49,
@@ -112,27 +142,37 @@
           "name": "P. K. Basheer",
           "party": "Indian Union Muslim League",
           "votes": 78076,
-          "votePct": 54.49, "alliance": "UDF" },
+          "votePct": 54.49,
+          "alliance": "UDF"
+        },
         {
           "name": "K. T. Abdul Rahiman",
           "party": "Communist Party of India",
           "votes": 55530,
-          "votePct": 38.76, "alliance": "LDF" },
+          "votePct": 38.76,
+          "alliance": "LDF"
+        },
         {
           "name": "C. Dinesh",
           "party": "BJP",
           "votes": 6683,
-          "votePct": 4.66, "alliance": "NDA" },
+          "votePct": 4.66,
+          "alliance": "NDA"
+        },
         {
           "name": "Velayudhan",
           "party": "BSP",
           "votes": 1247,
-          "votePct": 0.87, "alliance": "OTHER" },
+          "votePct": 0.87,
+          "alliance": "OTHER"
+        },
         {
           "name": "Sebastian",
           "party": "Independent",
           "votes": 1100,
-          "votePct": 0.77, "alliance": "OTHER" }
+          "votePct": 0.77,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 22546,
       "marginPct": 15.74,
