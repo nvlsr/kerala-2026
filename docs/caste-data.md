@@ -14,31 +14,37 @@ Confirmed via cross-citation in the [Wikipedia "Demographics of Nair community"]
 
 ## What the table covers
 
-District-level percentages of Hindu sub-communities. **Denominator = Hindu population in that district**, not total population. To convert to district-as-fraction-of-total, multiply by the district's overall Hindu share from C-01.
+District-level percentages of Hindu sub-communities. **Denominator = Hindu population in that district**, not total population. To convert to district-as-fraction-of-total, multiply by the district's overall Hindu share from `data/demographics.json`.
 
-State-level numbers (Nair 21.6%, Ezhava 39.2%, SC 16.9%) match well-known Kerala estimates, suggesting the table is at least directionally correct even before we verify the source.
+State-level numbers (Nair 21.6%, Ezhava 39.2%, SC 16.9%, ST 1.2%) match well-known Kerala estimates and corroborate the academic provenance.
 
-## The table (parsed from Wikipedia, May 2026)
+## The table (verified parse, after user re-paste, May 2026)
 
-| District | Nair | Ezhava | Brahmins | Nadar | Viswakarma | Barber | SC | ST | Others |
+| District | Nair | Ezhava | Brahmin | Nadar | Vish'karma | Barber | SC | ST | Other |
 |---|---|---|---|---|---|---|---|---|---|
-| Thiruvananthapuram | 38.9 | 26.8 | 1.2 | 4.3 | 5.9 | 0.3 | 15.0 | 0.5 | 7.0 |
-| Kollam | 32.0 | 30.5 | 2.0 | 16.9 | 0.4 | 0.4 | 7.7 | 2.1 | 7.8 |
-| Pathanamthitta | 37.5 | 26.3 | 0.9 | 0.6 | 16.9 | 0.5 | 13.4 | 0.3 | 2.6 |
-| Alappuzha | 20.2 | 55.3 | 2.0 | 1.1 | 1.3 | 0.5 | 13.3 | 0.3 | 6.7 |
-| Kottayam | 24.0 | 38.1 | 1.8 | 0.3 | 4.9 | 0.5 | 9.8 | 0.4 | 6.2 |
-| Idukki | 6.8 | 41.3 | 0.3 | 1.8 | 4.4 | 0.5 | 13.4 | 0.6 | 5.0 |
-| Ernakulam | 18.3 | 39.5 | 4.1 | 1.1 | 4.6 | 0.6 | 13.3 | 0.4 | 13.8 |
-| Thrissur | 15.9 | 46.2 | 1.3 | 2.0 | 0.3 | 5.3 | 9.5 | 0.8 | 11.7 |
-| Palakkad | 15.8 | 31.0 | 0.6 | 0.6 | 5.3 | 0.4 | 33.7 | 0.6 | 20.8 |
-| Malappuram | 14.3 | 37.5 | 3.3 | 1.9 | 4.7 | 0.1 | 17.6 | 0.5 | 8.5 |
-| Kozhikode | 21.6 | 52.1 | 2.1 | 0.3 | 6.2 | 0.6 | 16.9 | 0.4 | 5.6 |
-| Wayanad | 17.1 | 24.8 | 2.0 | 7.6 | 0.3 | 0.3 | 23.4 | 7.6 | 8.8 |
-| Kannur | 15.5 | 65.1 | 0.6 | 7.3 | 0.3 | 0.5 | 10.6 | 1.7 | 7.6 |
-| Kasaragod | 14.9 | 26.0 | 6.4 | 3.5 | 0.3 | 0.5 | 35.4 | 2.1 | 33.4 |
-| **KERALA** | **21.6** | **39.2** | **2.2** | — | — | — | **16.9** | **1.2** | **10.9** |
+| Thiruvananthapuram | 38.9 | 26.8 | 1.2 | 5.9 | 0.3 | 4.3 | 15.0 | 0.5 | 7.0 |
+| Kollam | 32.0 | 30.5 | 2.0 | 0.4 | 0.4 | 0.3 | 16.9 | 2.1 | 7.8 |
+| Pathanamthitta | 37.5 | 26.3 | 0.9 | 1.8 | 2.0 | 0.6 | 20.1 | 0.3 | 2.6 |
+| Alappuzha | 20.2 | 55.3 | 2.0 | 0.3 | 0.3 | 0.0 |  9.8 | 0.3 | 6.7 |
+| Kottayam | 24.0 | 38.1 | 1.8 | 0.0 | 0.7 | 0.1 | 13.3 | 0.4 | 6.2 |
+| Idukki |  6.8 | 41.3 | 0.3 | 0.3 | 0.8 | 7.7 | 33.7 | 0.6 | 5.0 |
+| Ernakulam | 18.3 | 39.5 | 4.1 | 10.6 | 4.9 | 13.4 | 17.6 | 0.4 | 13.8 |
+| Thrissur | 15.9 | 46.2 | 1.3 | 9.5 | 5.3 | 6.2 | 16.9 | 0.8 | 11.7 |
+| Palakkad | 15.8 | 31.0 | 3.3 | 4.7 | 7.6 | 7.3 | 23.4 | 0.6 | 20.8 |
+| Malappuram | 14.3 | 37.5 | 1.9 | 3.5 | 4.4 | 5.3 | 29.6 | 0.5 | 8.5 |
+| Kozhikode | 21.6 | 52.1 | 2.1 | 6.7 | 0.6 | 1.3 | 10.6 | 0.4 | 5.6 |
+| Wayanad | 17.1 | 24.8 | 2.0 | 0.5 | 1.1 | 0.8 | 35.4 | 7.6 | 8.8 |
+| Kannur | 15.5 | 65.1 | 0.6 | 0.4 | 0.6 | 0.1 |  4.6 | 1.7 | 7.6 |
+| Kasaragod | 14.9 | 26.0 | 6.4 | 0.3 | 0.3 | 0.3 | 10.9 | 2.1 | 33.4 |
+| **KERALA** | **21.6** | **39.2** | **2.2** | **0.5** | **0.8** | **0.5** | **16.9** | **1.2** | **10.9** |
 
-⚠️ Several cells in the original Wikipedia table had ambiguous column delimiters; the values above are my best parse but should be re-verified against the original alongside the source check.
+**Caveat: rows don't sum cleanly to 100% in all districts.** State row sums to ~93.8%, individual district rows range ~92–102%. Some of this is rounding (cells reported to 1 decimal); the residual likely reflects minor Hindu sub-castes not separately tabulated. Use the values for relative comparison and gradient mapping; don't treat them as a closed partition of Hindu population.
+
+## What's surfaced where
+
+- **`data/hindu-caste-by-district.json`** — full data, all 9 columns retained even though only Nair/Ezhava are currently visualised
+- **`/religion-map` page** — Nair and Ezhava district-shaded gradient maps in the "Hindu sub-communities" section. The other castes (Brahmin, Nadar, Viswakarma, Barber, SC, ST, Other) are in the JSON but not rendered yet — easy to add when needed.
+- **Analytical findings** — see `docs/narrative-cards/b3b4-caste-shifts.md` for the v1 verdict on B3/B4 (Ezhava base erosion + Nair UDF lean): both narratives reverse or wash out at this resolution. **Headline:** Nair-heavy areas saw smaller UDF gains (LDF→NDA outpaced LDF→UDF in Trivandrum); Ezhava share doesn't differentially predict the 2026 swing.
 
 ## Notable district patterns (assuming numbers hold)
 

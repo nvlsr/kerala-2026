@@ -3,22 +3,22 @@
   "source": "Zachariah, K.C.; Mathew, E.T.; Rajan, S. Irudaya (2003). 'Dynamics of migration in Kerala: dimensions, differentials, and consequences.' Orient Longman.",
   "sourceMethodology": "Kerala Statistical Institute household survey, last conducted in 2000. Sample-based, not census.",
   "denominator": "Hindu population in the district. Multiply by district Hindu share (data/demographics.json) to get fraction of total district population.",
-  "note": "Provenance verified via Wikipedia 'Demographics of Nair community' article which cites the same source. ~25 years old; geographic rank stable, absolute shares may have shifted. SC/ST share from this table is approximate; for authoritative SC/ST data per AC, aggregate Census 2011 PCA `pc11_pca_p_sc` / `pc11_pca_p_st` via SHRUG keys (separate pipeline). Only Nair, Ezhava, Brahmin transcribed cleanly from the original Wikipedia table image; columns after Brahmin had ambiguous parsing in the user's paste and are deferred until verified against the original.",
+  "note": "Provenance verified via Wikipedia 'Demographics of Nair community' article which cites the same source. ~25 years old; geographic rank stable, absolute shares may have shifted. SC/ST share from this table is approximate; for authoritative SC/ST data per AC, aggregate Census 2011 PCA `pc11_pca_p_sc` / `pc11_pca_p_st` via SHRUG keys (separate pipeline). Row sums for some districts don't reach exactly 100% — likely a mix of source rounding and/or minor sub-castes not separately tabulated. State aggregate row sums to ~94%.",
   "districts": {
-    "thiruvananthapuram": { "nair": 38.9, "ezhava": 26.8, "brahmin": 1.2 },
-    "kollam":             { "nair": 32.0, "ezhava": 30.5, "brahmin": 2.0 },
-    "pathanamthitta":     { "nair": 37.5, "ezhava": 26.3, "brahmin": 0.9 },
-    "alappuzha":          { "nair": 20.2, "ezhava": 55.3, "brahmin": 2.0 },
-    "kottayam":           { "nair": 24.0, "ezhava": 38.1, "brahmin": 1.8 },
-    "idukki":             { "nair":  6.8, "ezhava": 41.3, "brahmin": 0.3 },
-    "ernakulam":          { "nair": 18.3, "ezhava": 39.5, "brahmin": 4.1 },
-    "thrissur":           { "nair": 15.9, "ezhava": 46.2, "brahmin": 1.3 },
-    "palakkad":           { "nair": 15.8, "ezhava": 31.0, "brahmin": null },
-    "malappuram":         { "nair": 14.3, "ezhava": 37.5, "brahmin": 3.3 },
-    "kozhikode":          { "nair": 21.6, "ezhava": 52.1, "brahmin": 2.1 },
-    "wayanad":            { "nair": 17.1, "ezhava": 24.8, "brahmin": 2.0 },
-    "kannur":             { "nair": 15.5, "ezhava": 65.1, "brahmin": 0.6 },
-    "kasaragod":          { "nair": 14.9, "ezhava": 26.0, "brahmin": 6.4 }
+    "thiruvananthapuram": { "nair": 38.9, "ezhava": 26.8, "brahmin": 1.2, "nadar": 5.9, "viswakarma": 0.3, "barber": 4.3, "sc": 15.0, "st": 0.5, "other": 7.0 },
+    "kollam":             { "nair": 32.0, "ezhava": 30.5, "brahmin": 2.0, "nadar": 0.4, "viswakarma": 0.4, "barber": 0.3, "sc": 16.9, "st": 2.1, "other": 7.8 },
+    "pathanamthitta":     { "nair": 37.5, "ezhava": 26.3, "brahmin": 0.9, "nadar": 1.8, "viswakarma": 2.0, "barber": 0.6, "sc": 20.1, "st": 0.3, "other": 2.6 },
+    "alappuzha":          { "nair": 20.2, "ezhava": 55.3, "brahmin": 2.0, "nadar": 0.3, "viswakarma": 0.3, "barber": 0.0, "sc":  9.8, "st": 0.3, "other": 6.7 },
+    "kottayam":           { "nair": 24.0, "ezhava": 38.1, "brahmin": 1.8, "nadar": 0.0, "viswakarma": 0.7, "barber": 0.1, "sc": 13.3, "st": 0.4, "other": 6.2 },
+    "idukki":             { "nair":  6.8, "ezhava": 41.3, "brahmin": 0.3, "nadar": 0.3, "viswakarma": 0.8, "barber": 7.7, "sc": 33.7, "st": 0.6, "other": 5.0 },
+    "ernakulam":          { "nair": 18.3, "ezhava": 39.5, "brahmin": 4.1, "nadar": 10.6, "viswakarma": 4.9, "barber": 13.4, "sc": 17.6, "st": 0.4, "other": 13.8 },
+    "thrissur":           { "nair": 15.9, "ezhava": 46.2, "brahmin": 1.3, "nadar": 9.5, "viswakarma": 5.3, "barber": 6.2, "sc": 16.9, "st": 0.8, "other": 11.7 },
+    "palakkad":           { "nair": 15.8, "ezhava": 31.0, "brahmin": 3.3, "nadar": 4.7, "viswakarma": 7.6, "barber": 7.3, "sc": 23.4, "st": 0.6, "other": 20.8 },
+    "malappuram":         { "nair": 14.3, "ezhava": 37.5, "brahmin": 1.9, "nadar": 3.5, "viswakarma": 4.4, "barber": 5.3, "sc": 29.6, "st": 0.5, "other": 8.5 },
+    "kozhikode":          { "nair": 21.6, "ezhava": 52.1, "brahmin": 2.1, "nadar": 6.7, "viswakarma": 0.6, "barber": 1.3, "sc": 10.6, "st": 0.4, "other": 5.6 },
+    "wayanad":            { "nair": 17.1, "ezhava": 24.8, "brahmin": 2.0, "nadar": 0.5, "viswakarma": 1.1, "barber": 0.8, "sc": 35.4, "st": 7.6, "other": 8.8 },
+    "kannur":             { "nair": 15.5, "ezhava": 65.1, "brahmin": 0.6, "nadar": 0.4, "viswakarma": 0.6, "barber": 0.1, "sc":  4.6, "st": 1.7, "other": 7.6 },
+    "kasaragod":          { "nair": 14.9, "ezhava": 26.0, "brahmin": 6.4, "nadar": 0.3, "viswakarma": 0.3, "barber": 0.3, "sc": 10.9, "st": 2.1, "other": 33.4 }
   },
-  "stateAggregate": { "nair": 21.6, "ezhava": 39.2, "brahmin": 2.2 }
+  "stateAggregate":       { "nair": 21.6, "ezhava": 39.2, "brahmin": 2.2, "nadar": 0.5, "viswakarma": 0.8, "barber": 0.5, "sc": 16.9, "st": 1.2, "other": 10.9 }
 }

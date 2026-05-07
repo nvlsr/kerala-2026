@@ -38,7 +38,10 @@ SHRUG data is gitignored (DDL CC-BY-NC-SA license restricts redistribution); re-
 | Category | Count | How religion is computed |
 |---|---|---|
 | `shrug-c01-aggregated` | 114 ACs | Per-shrid religion (sub-district rural for rural shrids, town for urban shrids) × shrid population × SHRUG con08 fragment weight, aggregated to AC |
-| `district-fallback` | 26 ACs | Inherits the AC's district URBAN religion shares from C-01 (these are urban-heavy ACs that SHRUG's spatial join couldn't allocate; using district URBAN is closer than district TOTAL since these ACs are mostly urban) |
+| `district-urban-fallback` | 26 ACs | Inherits the AC's district URBAN religion shares from C-01 (these are urban-heavy ACs that SHRUG's spatial join couldn't allocate; using district URBAN is closer than district TOTAL since these ACs are mostly urban) |
+| `district-total-fallback` | 0 ACs | Reserved for ACs where even district URBAN fallback isn't available — none in current Kerala data. |
+
+**Bug-fix note (2026-05-07):** A previous version of the parser keyed town religion by town_id only. Three Kerala towns span multiple sub-districts and emit separate per-tehsil "Part" rows in C-01 (Trivandrum Corp, Kochi Corp, Kollam Corp). The parser was writing each Part over the previous and ending up with the smallest weirdest part for AC 133 Vattiyoorkavu (showing H 16.8% / M 46.1% / C 36.9% — implausible). Fix: key town religion by `(tehsil_id, town_id)`. Vattiyoorkavu now shows H 70.2% / M 12.7% / C 16.1% as expected.
 
 **State aggregate sanity check (post-build):** Hindu 53.8% / Muslim 26.8% / Christian 19.1% (matches Census state totals 54.7% / 26.6% / 18.4% within 1pp).
 
@@ -79,11 +82,20 @@ For the largest urban ACs (Trivandrum Corporation's 5 ACs, Kozhikode Corporation
 
 Tier B would get us to ~95% high-quality population coverage. Skip until a specific narrative card needs urban-AC precision.
 
-### 🟡 Tier C (future, deferred) — 2025 projection
+### ✅ Tier C (current) — 2025 projection
 
-State-level uniform multipliers from cohort projection (Hindu × 0.96, Muslim × 1.12, Christian × 0.97) applied to all AC shares with renormalization. Output: `data/ac-demographics-2025.json` alongside the 2011 baseline.
+Implemented in `scripts/project-ac-demographics-2025.py`. State-level uniform multipliers from cohort projection (Hindu × 0.96, Muslim × 1.12, Christian × 0.97) applied to all AC shares with per-AC renormalization. Output: `data/ac-demographics-2025.json` alongside the 2011 baseline.
 
-**Limitation:** assumes Kerala's geographic religion gradient hasn't shifted, only absolute shares. Doesn't model district-specific fertility differentials (Muslim TFR > Hindu TFR is bigger in Malappuram than Trivandrum). Acceptable approximation for visualization purposes; not for strict analytical claims.
+Multipliers come from the cohort projection in `scripts/cohort-project-2011-to-2025.py`: Census 2011 starting populations + Kerala CRS births by religion 2011-2023 + crude death rate ~7/1000.
+
+Surfaced on `/religion-map` via the year toggle (visible only in level=AC mode; district map has no projection).
+
+**Limitations** (baked into the file's `note` field):
+- Uniform state-level multiplier; assumes Kerala's geographic gradient hasn't shifted, only absolute shares.
+- Doesn't model district-specific fertility differentials (Muslim TFR is higher in already-Muslim-heavy Malappuram than in Trivandrum).
+- Acceptable approximation for visualization purposes; analytical claims should still cite the 2011 baseline.
+
+Spot-check (Manjeshwar AC 1): our projection said H 44.2% / M 53.1% / C 2.7%; an independent commentator's 2026 voter prediction was H 42.8% / M 54.5% / C 2.7%. Match within 1.5pp on every religion despite different sources, methods, and population-vs-voters distinction.
 
 ### 🔴 Tier D (deferred, ~3-4 weeks effort) — district-specific drift via NFHS-5 microdata
 
