@@ -111,12 +111,7 @@ export function SearchBar({ prominent = false }: Props = {}) {
   const noMatches = showDropdown && flat.length === 0
 
   return (
-    <section
-      className={cn(
-        "border-b border-border/50",
-        prominent ? "py-12 sm:py-16" : "py-4"
-      )}
-    >
+    <section className={cn(prominent ? "py-12 sm:py-16" : "py-4")}>
       <div
         className={cn(
           "mx-auto px-6",

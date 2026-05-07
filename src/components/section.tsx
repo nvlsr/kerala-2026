@@ -31,7 +31,7 @@ export function Section({
   )
 
   return (
-    <section ref={refEl} className={cn("border-t", className)}>
+    <section ref={refEl} className={cn(className)}>
       <div className="mx-auto max-w-6xl px-6 py-6">
         {actions ? (
           <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
