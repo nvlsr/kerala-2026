@@ -8,7 +8,6 @@ import {
   formatNumber,
   formatPercent,
   normalizeCandidateName,
-  partyShort,
   totalVotesIn,
   winnerOf,
   type Constituency,

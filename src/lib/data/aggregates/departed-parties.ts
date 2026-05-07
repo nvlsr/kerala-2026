@@ -60,7 +60,10 @@ export function getDepartedAllianceParties(
     if (!e || e.candidates.length === 0) continue
     const winner = [...e.candidates].sort((a, b) => b.votes - a.votes)[0]!
     for (const cand of e.candidates) {
-      if (cand.isNota) continue
+      // NOTA candidates have alliance="NOTA"; the `!== code` check
+      // below excludes them from the departed tally. We DO include
+      // their votes in the denominator to stay consistent with
+      // getAllianceTrendData (which includes NOTA in totalVotes).
       totalValid2021 += cand.votes
       if (cand.alliance !== code) continue
       if (currentParties.has(cand.party)) continue
