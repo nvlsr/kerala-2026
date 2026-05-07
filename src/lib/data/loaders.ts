@@ -6,6 +6,7 @@
  * app".
  */
 import acDemographicsJson from "@data/ac-demographics.json"
+import acDemographics2025Json from "@data/ac-demographics-2025.json"
 import alliancesJson from "@data/alliances.json"
 import candidateAliasesJson from "@data/candidate-aliases.json"
 import communityBeltsJson from "@data/community-belts.json"
@@ -85,6 +86,21 @@ export const acDemoMeta = acDemographicsJson as {
   year: number
   source: string
   note?: string
+  constituencies: Record<string, AcDemographics>
+}
+
+/**
+ * State-level uniform projection of `acDemoMeta` to ~2025 using
+ * cohort multipliers from CRS births-by-religion data. Accuracy
+ * caveats in the file's `note` field; see docs/data-pipeline.md.
+ * Use for visualisation only, not for analytical claims.
+ */
+export const acDemo2025Meta = acDemographics2025Json as {
+  year: number
+  baseYear: number
+  source: string
+  note?: string
+  multipliers: Record<string, number>
   constituencies: Record<string, AcDemographics>
 }
 

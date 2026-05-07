@@ -2,12 +2,13 @@ import { useRef, useState } from "react"
 import { IconPlus, IconMinus, IconRefresh } from "@tabler/icons-react"
 import paths from "@data/kerala-constituencies-paths.json"
 
-import { acDemoMeta, districtsMeta } from "@/lib/data/loaders"
+import { acDemo2025Meta, acDemoMeta, districtsMeta } from "@/lib/data/loaders"
 import { demoMeta } from "@/lib/data/loaders"
 import type { ReligionCode } from "@/lib/data/demographics"
 import { cn } from "@/lib/utils"
 
 export type GradientLevel = "district" | "ac"
+export type GradientYear = 2011 | 2025
 
 type ViewBox = { x: number; y: number; w: number; h: number }
 const FULL_VIEW: ViewBox = { x: 0, y: 0, w: paths.width, h: paths.height }
@@ -26,6 +27,15 @@ type Props = {
    *              within-district variation (Pala vs rural Kottayam).
    */
   level?: GradientLevel
+  /**
+   * 2011 — Census 2011 baseline (default).
+   * 2025 — state-level uniform projection of 2011 (Hindu × 0.96,
+   *         Muslim × 1.12, Christian × 0.97). District-specific
+   *         drift is NOT modelled. Visualisation only.
+   * Only consulted when `level === "ac"` — district-level data
+   * (demoMeta) doesn't have a 2025 counterpart yet.
+   */
+  year?: GradientYear
   /** Min opacity floor for districts with very low % of this religion. Keeps
    *  outlines visible without making low-share districts invisible. */
   minOpacity?: number
@@ -67,6 +77,7 @@ export function ReligionGradientMap({
   religion,
   baseColor,
   level = "district",
+  year = 2011,
   minOpacity = 0.1,
   maxOpacity = 0.9,
   outlinedSeats,
@@ -78,6 +89,8 @@ export function ReligionGradientMap({
   zoomable = false,
   ariaLabel,
 }: Props) {
+  const acData =
+    year === 2025 ? acDemo2025Meta.constituencies : acDemoMeta.constituencies
   // Independent zoom state per map instance — each of the 3 religion
   // maps on /religion-map can be zoomed/panned to a different region.
   // Stored as a viewBox so the SVG natively renders at any zoom.
@@ -146,7 +159,7 @@ export function ReligionGradientMap({
   const maxPct =
     level === "ac"
       ? Math.max(
-          ...Object.values(acDemoMeta.constituencies).map(
+          ...Object.values(acData).map(
             (c) => c.religions[religion] ?? 0
           )
         )
@@ -191,7 +204,7 @@ export function ReligionGradientMap({
           districtsMeta.constituencyToDistrict[String(p.constituencyNumber)]
         let pct = 0
         if (level === "ac") {
-          const ac = acDemoMeta.constituencies[String(p.constituencyNumber)]
+          const ac = acData[String(p.constituencyNumber)]
           pct = ac?.religions[religion] ?? 0
         } else {
           const districtMeta = districtId

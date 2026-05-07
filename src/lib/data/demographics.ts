@@ -1,4 +1,4 @@
-import { acDemoMeta, demoMeta } from "@/lib/data/loaders"
+import { acDemo2025Meta, acDemoMeta, demoMeta } from "@/lib/data/loaders"
 
 export type ReligionCode = "hindu" | "muslim" | "christian" | "other"
 
@@ -32,9 +32,14 @@ export type AcDemographicsResult = {
 }
 
 export function getReligionForAC(
-  constituencyNumber: number
+  constituencyNumber: number,
+  year: 2011 | 2025 = 2011
 ): AcDemographicsResult | null {
-  const entry = acDemoMeta.constituencies[String(constituencyNumber)]
+  const data =
+    year === 2025
+      ? acDemo2025Meta.constituencies
+      : acDemoMeta.constituencies
+  const entry = data[String(constituencyNumber)]
   if (!entry) return null
   // Collapse smaller religion buckets into "other" to match the
   // ReligionCode shape the rest of the app uses.

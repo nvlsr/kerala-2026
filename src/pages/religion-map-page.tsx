@@ -7,10 +7,11 @@ import { PageShell } from "@/components/page-shell"
 import {
   ReligionGradientMap,
   type GradientLevel,
+  type GradientYear,
 } from "@/components/religion-gradient-map"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import districtPaths from "@data/kerala-districts-paths.json"
-import { acDemoMeta, demoMeta } from "@/lib/data/loaders"
+import { acDemo2025Meta, acDemoMeta, demoMeta } from "@/lib/data/loaders"
 import {
   getReligionForAC,
   getReligion,
@@ -33,6 +34,7 @@ export function ReligionMapPage() {
   )
   const [hoveredSeat, setHoveredSeat] = useState<number | null>(null)
   const [level, setLevel] = useState<GradientLevel>("ac")
+  const [year, setYear] = useState<GradientYear>(2011)
 
   return (
     <PageShell
@@ -75,7 +77,7 @@ export function ReligionMapPage() {
     >
       <PageMain className="space-y-12">
         <section>
-          <div className="mb-4 flex justify-end">
+          <div className="mb-4 flex flex-wrap justify-end gap-2">
             <ToggleGroup
               value={[level]}
               onValueChange={(v) => {
@@ -94,6 +96,26 @@ export function ReligionMapPage() {
                 By AC
               </ToggleGroupItem>
             </ToggleGroup>
+            {level === "ac" && (
+              <ToggleGroup
+                value={[String(year)]}
+                onValueChange={(v) => {
+                  const next = v[0] === "2025" ? 2025 : 2011
+                  setYear(next as GradientYear)
+                }}
+                variant="outline"
+                size="sm"
+                spacing={2}
+                aria-label="Year"
+              >
+                <ToggleGroupItem value="2011" className="rounded-full">
+                  2011
+                </ToggleGroupItem>
+                <ToggleGroupItem value="2025" className="rounded-full">
+                  2025 est.
+                </ToggleGroupItem>
+              </ToggleGroup>
+            )}
           </div>
           <ul className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {RELIGIONS_TO_SHOW.map((r) => (
@@ -115,16 +137,18 @@ export function ReligionMapPage() {
                   religion={r.code}
                   baseColor={getReligion(r.code).color}
                   level={level}
+                  year={year}
                   hoveredDistrictId={hoveredDistrictId}
                   onDistrictHover={setHoveredDistrictId}
                   hoveredSeat={hoveredSeat}
                   onAcHover={setHoveredSeat}
                   zoomable
-                  ariaLabel={`Kerala ${level === "ac" ? "constituencies" : "districts"} shaded by ${r.label} percentage of population`}
+                  ariaLabel={`Kerala ${level === "ac" ? "constituencies" : "districts"} shaded by ${r.label} percentage of population (${year === 2025 ? "2025 estimate" : "2011 census"})`}
                 />
                 <ReligionMapCaption
                   religion={r.code}
                   level={level}
+                  year={year}
                   hoveredDistrictId={hoveredDistrictId}
                   hoveredSeat={hoveredSeat}
                 />
@@ -212,19 +236,24 @@ export function ReligionMapPage() {
 function ReligionMapCaption({
   religion,
   level,
+  year,
   hoveredDistrictId,
   hoveredSeat,
 }: {
   religion: ReligionCode
   level: GradientLevel
+  year: GradientYear
   hoveredDistrictId: string | null
   hoveredSeat: number | null
 }) {
   // AC mode + hovered seat: show that AC's specific religion share
   if (level === "ac" && hoveredSeat != null) {
-    const ac = getReligionForAC(hoveredSeat)
+    const ac = getReligionForAC(hoveredSeat, year)
     const seatMeta = constituencies.find((c) => c.constituencyNumber === hoveredSeat)
-    const acDemo = acDemoMeta.constituencies[String(hoveredSeat)]
+    const acDemo =
+      year === 2025
+        ? acDemo2025Meta.constituencies[String(hoveredSeat)]
+        : acDemoMeta.constituencies[String(hoveredSeat)]
     const isFallback = acDemo?.source === "district-urban-fallback"
     if (ac && seatMeta) {
       return (
@@ -263,15 +292,17 @@ function ReligionMapCaption({
 
   // Default: show the highest-share district/AC as the orientation anchor
   if (level === "ac") {
-    const entries = Object.entries(acDemoMeta.constituencies).map(
-      ([num, c]) => ({
-        seat: Number(num),
-        name:
-          constituencies.find((x) => x.constituencyNumber === Number(num))
-            ?.constituencyName ?? `AC ${num}`,
-        pct: c.religions[religion] ?? 0,
-      })
-    )
+    const data =
+      year === 2025
+        ? acDemo2025Meta.constituencies
+        : acDemoMeta.constituencies
+    const entries = Object.entries(data).map(([num, c]) => ({
+      seat: Number(num),
+      name:
+        constituencies.find((x) => x.constituencyNumber === Number(num))
+          ?.constituencyName ?? `AC ${num}`,
+      pct: c.religions[religion] ?? 0,
+    }))
     entries.sort((a, b) => b.pct - a.pct)
     const top = entries[0]
     if (!top) return null
@@ -280,6 +311,7 @@ function ReligionMapCaption({
         Highest share:{" "}
         <span className="font-medium text-foreground">{top.name}</span>{" "}
         at {top.pct.toFixed(1)}%
+        {year === 2025 && " (est.)"}
       </p>
     )
   }
