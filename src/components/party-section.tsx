@@ -9,6 +9,7 @@ import {
   formatPercent,
   getAlliance,
   getAllianceBreakdown,
+  getDepartedAllianceParties,
   getPartyTrendData,
   type AllianceCode,
 } from "@/lib/data"
@@ -27,6 +28,15 @@ export function PartySection({
   onSelectParty,
 }: Props) {
   const allianceMeta = getAlliance(alliance)
+
+  const departed = useMemo(
+    () => getDepartedAllianceParties(alliance, scope),
+    [alliance, scope]
+  )
+  const departedTotalShare = useMemo(
+    () => departed.reduce((s, p) => s + p.share2021, 0),
+    [departed]
+  )
 
   const rows = useMemo(() => {
     const breakdown = getAllianceBreakdown(alliance, scope)
@@ -73,7 +83,8 @@ export function PartySection({
       subtitle="click a row to drill in"
     >
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
-        <div className="overflow-hidden rounded-lg border lg:col-span-3">
+        <div className="flex flex-col gap-3 lg:col-span-3">
+          <div className="overflow-hidden rounded-lg border">
           {rows.length === 0 ? (
             <div className="px-3 py-6 text-center text-xs text-muted-foreground">
               No parties recorded for this alliance.
@@ -150,6 +161,51 @@ export function PartySection({
                 })}
               </tbody>
             </table>
+          )}
+          </div>
+          {departed.length > 0 && (
+            <div className="overflow-hidden rounded-lg border border-dashed bg-muted/20">
+              <div className="border-b border-dashed bg-muted/30 px-3 py-1.5 text-xs font-medium tracking-wide text-muted-foreground uppercase">
+                <span className="inline-flex items-center gap-1">
+                  No longer in {alliance}
+                  <InfoIcon
+                    text={`Parties that contested under ${alliance} in 2021 but not in 2026 (left the alliance, dissolved, or merged). Their absence accounts for −${departedTotalShare.toFixed(2)}pp of the alliance's Δ '21.`}
+                  />
+                </span>
+              </div>
+              <table className="w-full text-xs">
+                <tbody>
+                  {departed.map((p) => (
+                    <tr
+                      key={p.party}
+                      className="border-b border-dashed last:border-b-0 text-muted-foreground"
+                    >
+                      <td className="px-3 py-1.5">
+                        <span className="font-medium" title={p.party}>
+                          {p.partyShort}
+                        </span>
+                        <span className="ml-2 opacity-70">
+                          ({p.won2021}/{p.contested2021} seats '21)
+                        </span>
+                      </td>
+                      <td className="px-3 py-1.5 text-right tabular-nums">
+                        <span className="text-red-600 dark:text-red-500">
+                          −{p.share2021.toFixed(2)}%
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                  <tr className="bg-muted/40 text-xs font-medium">
+                    <td className="px-3 py-1.5 text-muted-foreground">
+                      Lost from {alliance} since 2021
+                    </td>
+                    <td className="px-3 py-1.5 text-right tabular-nums text-red-600 dark:text-red-500">
+                      −{departedTotalShare.toFixed(2)}%
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           )}
         </div>
         <div className="flex min-h-[176px] items-center justify-center rounded-lg border bg-muted/40 p-4 lg:col-span-2">

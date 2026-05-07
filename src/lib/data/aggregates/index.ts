@@ -4,6 +4,7 @@
  *
  *   - state-summary.ts    — getStateSummary (state-level totals)
  *   - alliance-breakdown.ts — getAllianceBreakdown (parties within an alliance)
+ *   - departed-parties.ts — getDepartedAllianceParties (parties that left)
  *   - seat-trend.ts       — getTrendData (per-seat historical chart)
  *   - seat-history.ts     — getPastCandidates / getPastWinners /
  *                           get2021Baseline (per-seat historical lookups)
@@ -17,6 +18,7 @@
 
 export * from "./alliance-breakdown"
 export * from "./alliance-trend"
+export * from "./departed-parties"
 export * from "./party-trend"
 export * from "./seat-history"
 export * from "./seat-trend"

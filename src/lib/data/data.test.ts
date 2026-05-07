@@ -373,6 +373,46 @@ describe("getPastCandidates / getPastWinners edge cases", () => {
 // produces a phantom-empty UI state — the bug we hit when an NDA-
 // aligned Independent appeared in PartySection but the candidate
 // table came back empty under the default winners-only filter.
+// Math invariant: for each alliance, the sum of (current parties' Δ) +
+// (departed parties' 2021 share, negated) + (parties new to alliance,
+// their 2026 share) must equal the alliance's overall Δ '21. This test
+// guards the data-side correctness of the breakdown shown in
+// PartySection: the user can mentally compute alliance Δ '21 from the
+// rows shown, with the "no longer in <alliance>" subsection completing
+// the math.
+describe("alliance Δ '21 reconciles with party-level breakdowns", () => {
+  for (const code of MAIN_FRONT_CODES) {
+    test(`${code}: continuing + departed + new sums to alliance Δ`, async () => {
+      const { getDepartedAllianceParties } = await import(
+        "./aggregates/departed-parties"
+      )
+      const trend = getAllianceTrendData(null)
+      const yearIdx = trend.years.indexOf(2026)
+      const prevIdx = trend.years.indexOf(2021)
+      const cur = trend.series[code][yearIdx]!
+      const prev = trend.series[code][prevIdx]!
+      const allianceShareCur = (cur.votes / cur.totalVotes) * 100
+      const allianceSharePrev = (prev.votes / prev.totalVotes) * 100
+      const allianceDelta = allianceShareCur - allianceSharePrev
+
+      const breakdown = getAllianceBreakdown(code, null)
+      let continuingSum = 0
+      for (const p of breakdown.parties) {
+        const t = getPartyTrendData(p.party, null, code)
+        const c = t.points[t.points.length - 1]
+        const pr = t.points.length >= 2 ? t.points[t.points.length - 2] : null
+        if (c && pr) continuingSum += c.share - pr.share
+        else if (c) continuingSum += c.share
+      }
+      const departed = getDepartedAllianceParties(code, null)
+      const departedSum = departed.reduce((s, p) => s - p.share2021, 0)
+      const reconciled = continuingSum + departedSum
+      // Tolerance ≤ 0.01pp accounts for floating-point rounding.
+      expect(Math.abs(reconciled - allianceDelta)).toBeLessThan(0.01)
+    })
+  }
+})
+
 describe("historical candidate names have no unrecovered parenthetical party tags", () => {
   // keralaassembly.org's 2021 scrape sometimes records the alliance code
   // (LDF/UDF/NDA) in the party field and disambiguates the actual party
