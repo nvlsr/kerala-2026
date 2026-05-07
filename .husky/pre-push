@@ -1,9 +1,12 @@
-# Pre-push gate. Runs typecheck + tests before letting the push leave
-# your machine. ~3 seconds on a clean run; skip with `git push --no-verify`
-# when you need to push WIP and know what you're doing.
+# Pre-push gate. Runs the full Vercel build + tests before letting the
+# push leave your machine. `bun run build` (= `tsc -b && vite build`) is
+# what Vercel runs — using it here gives perfect parity and catches
+# things `tsc --noEmit` misses (e.g. unused imports under tsc -b).
+# ~4 seconds on a clean run; skip with `git push --no-verify` when you
+# need to push WIP and know what you're doing.
 
-echo "→ typecheck"
-bun run typecheck || exit 1
+echo "→ build"
+bun run build || exit 1
 
 echo "→ test"
 bun run test || exit 1
