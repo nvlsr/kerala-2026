@@ -22,6 +22,11 @@ data/maps-master/
 # for which modules to fetch.
 data/shrug/
 
+# Working/scratch downloads (raw PDFs, scratch CSVs, etc.) — never commit.
+# Files we use for analysis get extracted into versioned data/ siblings;
+# the source PDFs are too large + redistribution-iffy.
+data/temp/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
