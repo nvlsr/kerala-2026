@@ -119,6 +119,7 @@ export function ReligionMapPage() {
                   onDistrictHover={setHoveredDistrictId}
                   hoveredSeat={hoveredSeat}
                   onAcHover={setHoveredSeat}
+                  zoomable
                   ariaLabel={`Kerala ${level === "ac" ? "constituencies" : "districts"} shaded by ${r.label} percentage of population`}
                 />
                 <ReligionMapCaption
