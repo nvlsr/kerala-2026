@@ -31,11 +31,20 @@ export function PartySection({
   const rows = useMemo(() => {
     const breakdown = getAllianceBreakdown(alliance, scope)
     return breakdown.parties.map((p) => {
-      const trend = getPartyTrendData(p.party, scope)
+      // Alliance-filter the trend so a party's prior-cycle vote share
+      // only counts contributions from the SAME alliance. Without this
+      // filter, e.g. LDF-RJD's Δ '21 would include 511 votes from two
+      // OTHER-tagged fringe RJD candidates in 2021 — apples-to-oranges.
+      const trend = getPartyTrendData(p.party, scope, alliance)
       const cur = trend.points[trend.points.length - 1]
       const prev =
         trend.points.length >= 2 ? trend.points[trend.points.length - 2] : null
       const rawDelta = cur && prev ? cur.share - prev.share : null
+      // "new" means the party did not contest in this alliance last cycle
+      // but does this cycle. Distinct from threshold suppression below;
+      // surfaces a "new" indicator instead of a numeric delta.
+      const isNewToAlliance =
+        cur != null && prev != null && prev.share === 0 && cur.share > 0
       // Suppress delta when both cycles are below 0.5% statewide share —
       // tiny-base deltas (e.g. a single Independent's 0.03pp move) are
       // rounding noise and read as misleadingly large in the UI. We use
@@ -43,7 +52,8 @@ export function PartySection({
       // now zero) still surfaces a meaningful negative delta.
       const peakShare =
         cur && prev ? Math.max(cur.share, prev.share) : (cur?.share ?? 0)
-      const delta = peakShare < 0.5 ? null : rawDelta
+      const delta =
+        isNewToAlliance || peakShare < 0.5 ? null : rawDelta
       return {
         party: p.party,
         partyShort: p.partyShort,
@@ -52,6 +62,7 @@ export function PartySection({
         voteShare: p.voteShare,
         winRate: p.contested > 0 ? p.won / p.contested : null,
         delta,
+        isNewToAlliance,
       }
     })
   }, [alliance, scope])
@@ -126,7 +137,13 @@ export function PartySection({
                         {r.winRate != null ? formatPercent(r.winRate, 0) : "—"}
                       </td>
                       <td className="px-3 py-2 text-right tabular-nums">
-                        <DeltaPercent value={r.delta} />
+                        {r.isNewToAlliance ? (
+                          <span className="text-xs text-muted-foreground italic">
+                            new to {alliance}
+                          </span>
+                        ) : (
+                          <DeltaPercent value={r.delta} />
+                        )}
                       </td>
                     </tr>
                   )

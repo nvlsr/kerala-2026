@@ -8,6 +8,15 @@
  * because the alliance-trend chart already handles that story; this
  * function exists to draw a single-party line whose colour is keyed to
  * its present-day affiliation.
+ *
+ * `allianceFilter` (optional) restricts the numerator to candidates
+ * whose per-cycle alliance matches. Used by PartySection so the Δ '21
+ * for, e.g., LDF-RJD compares 2021 LDF-tagged RJD candidates (zero) to
+ * 2026 LDF-tagged RJD candidates — without it, fringe OTHER-tagged
+ * 2021 RJD entries (511 votes) leak into the comparison and produce a
+ * misleading delta. Denominator (constituency-year totalVotes) is
+ * unchanged, so the resulting share is still relative to the whole
+ * electorate, just attributing only same-alliance contributions.
  */
 
 import {
@@ -42,7 +51,8 @@ export type PartyTrendData = {
 
 export function getPartyTrendData(
   party: string,
-  districtId: string | null = null
+  districtId: string | null = null,
+  allianceFilter: AllianceCode | null = null
 ): PartyTrendData {
   const list = constituenciesIn(districtId)
   const yearMap = new Map<
@@ -69,19 +79,30 @@ export function getPartyTrendData(
         const winnerCanonical = canonicalPartyName(winner.party)
         for (const cand of e.candidates) {
           entry.totalVotes += cand.votes
-          if (canonicalPartyName(cand.party) === party) {
+          const partyMatches = canonicalPartyName(cand.party) === party
+          const allianceMatches =
+            allianceFilter == null || cand.alliance === allianceFilter
+          if (partyMatches && allianceMatches) {
             entry.contested++
             entry.votes += cand.votes
           }
         }
-        if (winnerCanonical === party) entry.seats++
+        if (
+          winnerCanonical === party &&
+          (allianceFilter == null || winner.alliance === allianceFilter)
+        ) {
+          entry.seats++
+        }
       }
     }
 
     const entry2026 = ensureYear(2026)
     for (const cand of c.candidates) {
       entry2026.totalVotes += cand.votes
-      if (canonicalPartyName(cand.party) === party) {
+      const partyMatches = canonicalPartyName(cand.party) === party
+      const allianceMatches =
+        allianceFilter == null || cand.alliance === allianceFilter
+      if (partyMatches && allianceMatches) {
         entry2026.contested++
         entry2026.votes += cand.votes
         if (cand.status === "won") entry2026.seats++
