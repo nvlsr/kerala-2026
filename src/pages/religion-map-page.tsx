@@ -10,8 +10,13 @@ import {
 } from "@/components/religion-gradient-map"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import districtPaths from "@data/kerala-districts-paths.json"
-import { demoMeta } from "@/lib/data/loaders"
-import { getReligion, type ReligionCode } from "@/lib/data/demographics"
+import { acDemoMeta, demoMeta } from "@/lib/data/loaders"
+import {
+  getReligionForAC,
+  getReligion,
+  type ReligionCode,
+} from "@/lib/data/demographics"
+import { constituencies } from "@/lib/data"
 
 const RELIGIONS_TO_SHOW: Array<{
   code: ReligionCode
@@ -26,6 +31,7 @@ export function ReligionMapPage() {
   const [hoveredDistrictId, setHoveredDistrictId] = useState<string | null>(
     null
   )
+  const [hoveredSeat, setHoveredSeat] = useState<number | null>(null)
   const [level, setLevel] = useState<GradientLevel>("ac")
 
   return (
@@ -111,11 +117,15 @@ export function ReligionMapPage() {
                   level={level}
                   hoveredDistrictId={hoveredDistrictId}
                   onDistrictHover={setHoveredDistrictId}
+                  hoveredSeat={hoveredSeat}
+                  onAcHover={setHoveredSeat}
                   ariaLabel={`Kerala ${level === "ac" ? "constituencies" : "districts"} shaded by ${r.label} percentage of population`}
                 />
                 <ReligionMapCaption
                   religion={r.code}
+                  level={level}
                   hoveredDistrictId={hoveredDistrictId}
+                  hoveredSeat={hoveredSeat}
                 />
               </li>
             ))}
@@ -200,38 +210,90 @@ export function ReligionMapPage() {
 
 function ReligionMapCaption({
   religion,
+  level,
   hoveredDistrictId,
+  hoveredSeat,
 }: {
   religion: ReligionCode
+  level: GradientLevel
   hoveredDistrictId: string | null
+  hoveredSeat: number | null
 }) {
-  if (!hoveredDistrictId) {
-    // Default: show the highest-share district as the orientation anchor
-    const entries = Object.entries(demoMeta.districts).map(([id, d]) => ({
-      id,
-      name: districtPaths.districts.find((p) => p.id === id)?.name ?? id,
-      pct: d.religions[religion],
-    }))
+  // AC mode + hovered seat: show that AC's specific religion share
+  if (level === "ac" && hoveredSeat != null) {
+    const ac = getReligionForAC(hoveredSeat)
+    const seatMeta = constituencies.find((c) => c.constituencyNumber === hoveredSeat)
+    const acDemo = acDemoMeta.constituencies[String(hoveredSeat)]
+    const isFallback = acDemo?.source === "district-urban-fallback"
+    if (ac && seatMeta) {
+      return (
+        <p className="mt-2 text-xs">
+          <span className="font-medium text-foreground">
+            {seatMeta.constituencyName}
+          </span>
+          :{" "}
+          <span className="tabular-nums">
+            {ac.religions[religion].toFixed(1)}%
+          </span>{" "}
+          <span className="text-muted-foreground">
+            {getReligion(religion).label}
+            {isFallback && " (district-urban fallback)"}
+          </span>
+        </p>
+      )
+    }
+  }
+
+  // District mode + hovered district, OR AC mode falling back to district highlight:
+  if (hoveredDistrictId) {
+    const d = demoMeta.districts[hoveredDistrictId]
+    if (!d) return null
+    const name =
+      districtPaths.districts.find((p) => p.id === hoveredDistrictId)?.name ??
+      hoveredDistrictId
+    return (
+      <p className="mt-2 text-xs">
+        <span className="font-medium text-foreground">{name}</span>:{" "}
+        <span className="tabular-nums">{d.religions[religion].toFixed(1)}%</span>{" "}
+        <span className="text-muted-foreground">{getReligion(religion).label}</span>
+      </p>
+    )
+  }
+
+  // Default: show the highest-share district/AC as the orientation anchor
+  if (level === "ac") {
+    const entries = Object.entries(acDemoMeta.constituencies).map(
+      ([num, c]) => ({
+        seat: Number(num),
+        name:
+          constituencies.find((x) => x.constituencyNumber === Number(num))
+            ?.constituencyName ?? `AC ${num}`,
+        pct: c.religions[religion] ?? 0,
+      })
+    )
     entries.sort((a, b) => b.pct - a.pct)
     const top = entries[0]
     if (!top) return null
     return (
       <p className="mt-2 text-xs text-muted-foreground">
-        Highest share: <span className="font-medium text-foreground">{top.name}</span>{" "}
+        Highest share:{" "}
+        <span className="font-medium text-foreground">{top.name}</span>{" "}
         at {top.pct.toFixed(1)}%
       </p>
     )
   }
-  const d = demoMeta.districts[hoveredDistrictId]
-  if (!d) return null
-  const name =
-    districtPaths.districts.find((p) => p.id === hoveredDistrictId)?.name ??
-    hoveredDistrictId
+  const entries = Object.entries(demoMeta.districts).map(([id, d]) => ({
+    id,
+    name: districtPaths.districts.find((p) => p.id === id)?.name ?? id,
+    pct: d.religions[religion],
+  }))
+  entries.sort((a, b) => b.pct - a.pct)
+  const top = entries[0]
+  if (!top) return null
   return (
-    <p className="mt-2 text-xs">
-      <span className="font-medium text-foreground">{name}</span>:{" "}
-      <span className="tabular-nums">{d.religions[religion].toFixed(1)}%</span>{" "}
-      <span className="text-muted-foreground">{getReligion(religion).label}</span>
+    <p className="mt-2 text-xs text-muted-foreground">
+      Highest share: <span className="font-medium text-foreground">{top.name}</span>{" "}
+      at {top.pct.toFixed(1)}%
     </p>
   )
 }

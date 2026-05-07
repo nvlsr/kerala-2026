@@ -32,6 +32,10 @@ type Props = {
    *  /religion-map can highlight the same district in sync. */
   hoveredDistrictId?: string | null
   onDistrictHover?: (id: string | null) => void
+  /** Hovered AC number; like hoveredDistrictId but for level="ac" mode where
+   *  highlighting tracks individual seats rather than whole districts. */
+  hoveredSeat?: number | null
+  onAcHover?: (seat: number | null) => void
   ariaLabel: string
 }
 
@@ -58,6 +62,8 @@ export function ReligionGradientMap({
   outlineColor = "var(--foreground)",
   hoveredDistrictId,
   onDistrictHover,
+  hoveredSeat,
+  onAcHover,
   ariaLabel,
 }: Props) {
   // Anchor the gradient to the actual range of the chosen religion so
@@ -75,7 +81,7 @@ export function ReligionGradientMap({
           ...Object.values(demoMeta.districts).map((d) => d.religions[religion])
         )
 
-  const interactive = onDistrictHover != null
+  const interactive = onDistrictHover != null || onAcHover != null
 
   return (
     <svg
@@ -99,8 +105,13 @@ export function ReligionGradientMap({
         }
         const norm = maxPct > 0 ? pct / maxPct : 0
         const opacity = minOpacity + norm * (maxOpacity - minOpacity)
-        const isInHoveredDistrict =
-          hoveredDistrictId != null && hoveredDistrictId === districtId
+        // Highlight rules:
+        //   level="ac"      → individual AC under cursor lights up
+        //   level="district" → all ACs in the hovered district light up
+        const isHighlighted =
+          level === "ac"
+            ? hoveredSeat != null && hoveredSeat === p.constituencyNumber
+            : hoveredDistrictId != null && hoveredDistrictId === districtId
         const isOutlined = outlinedSeats?.has(p.constituencyNumber) ?? false
         return (
           <path
@@ -108,19 +119,33 @@ export function ReligionGradientMap({
             d={p.pathD}
             fill={baseColor}
             fillOpacity={
-              isInHoveredDistrict ? Math.min(1, opacity + 0.1) : opacity
+              isHighlighted ? Math.min(1, opacity + 0.15) : opacity
             }
-            stroke={isOutlined ? outlineColor : "var(--background)"}
-            strokeWidth={isOutlined ? 1.4 : 0.3}
-            strokeOpacity={isOutlined ? 0.9 : 0.5}
+            stroke={
+              isOutlined
+                ? outlineColor
+                : isHighlighted
+                  ? "var(--foreground)"
+                  : "var(--background)"
+            }
+            strokeWidth={isOutlined ? 1.4 : isHighlighted ? 1.0 : 0.3}
+            strokeOpacity={isOutlined ? 0.9 : isHighlighted ? 0.9 : 0.5}
             className={interactive ? "cursor-default" : undefined}
             onMouseEnter={
-              interactive && districtId
-                ? () => onDistrictHover?.(districtId)
+              interactive
+                ? () => {
+                    if (level === "ac") onAcHover?.(p.constituencyNumber)
+                    if (districtId) onDistrictHover?.(districtId)
+                  }
                 : undefined
             }
             onMouseLeave={
-              interactive ? () => onDistrictHover?.(null) : undefined
+              interactive
+                ? () => {
+                    if (level === "ac") onAcHover?.(null)
+                    onDistrictHover?.(null)
+                  }
+                : undefined
             }
             style={isOutlined ? { pointerEvents: "none" } : undefined}
           />
