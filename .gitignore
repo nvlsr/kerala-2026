@@ -16,6 +16,12 @@ dist-ssr
 # https://github.com/datameet/maps when re-running scripts/extract-kerala-map.py)
 data/maps-master/
 
+# SHRUG data (Development Data Lab) — licensed CC-BY-NC-SA, redistribution
+# restricted. Re-download from https://www.devdatalab.org/shrug_download/
+# (free, requires email registration). See docs/narrative-cards/ pipelines
+# for which modules to fetch.
+data/shrug/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
