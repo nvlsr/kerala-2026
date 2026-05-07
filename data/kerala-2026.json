@@ -146,7 +146,7 @@
       },
       {
         "name": "SHANAVAS PADHOOR",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 36678,
         "margin": -39718,
         "status": "lost",
@@ -405,7 +405,7 @@
     "candidates": [
       {
         "name": "V. KUNHIKRISHNAN",
-        "party": "Independent",
+        "party": "Independent (UDF)",
         "votes": 76640,
         "margin": 7487,
         "status": "won",
@@ -530,7 +530,7 @@
     "candidates": [
       {
         "name": "T K GOVINDAN MASTER S/O KUNHIKKANNAN NAMBIAR",
-        "party": "Independent",
+        "party": "Independent (UDF)",
         "votes": 91339,
         "margin": 12551,
         "status": "won",
@@ -2378,7 +2378,7 @@
       },
       {
         "name": "P V ANVAR S/O SHOUKATHALI",
-        "party": "Independent",
+        "party": "Independent (UDF)",
         "votes": 74362,
         "margin": -7487,
         "status": "lost",
@@ -2472,7 +2472,7 @@
       },
       {
         "name": "ADV. P T A RAHIM",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 78285,
         "margin": -13313,
         "status": "lost",
@@ -2575,7 +2575,7 @@
       },
       {
         "name": "SALEEM MADAVOOR",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 58482,
         "margin": -36682,
         "status": "lost",
@@ -2942,7 +2942,7 @@
       },
       {
         "name": "U SHARAFALI",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 58735,
         "margin": -54851,
         "status": "lost",
@@ -3009,7 +3009,7 @@
       },
       {
         "name": "KUMARADAS",
-        "party": "Independent",
+        "party": "Independent (NDA)",
         "votes": 6018,
         "margin": -115056,
         "status": "lost",
@@ -3058,7 +3058,7 @@
       },
       {
         "name": "V.M. MUSTHAFA",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 55735,
         "margin": -57887,
         "status": "lost",
@@ -3219,7 +3219,7 @@
       },
       {
         "name": "KUNNATH MOHAMED S/O ALI HAJI",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 65083,
         "margin": -45609,
         "status": "lost",
@@ -3371,7 +3371,7 @@
       },
       {
         "name": "SABAH KUNDUPUZHAKKAL",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 65538,
         "margin": -30325,
         "status": "lost",
@@ -3447,7 +3447,7 @@
       },
       {
         "name": "ADV. MUSTHAFA",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 49429,
         "margin": -51289,
         "status": "lost",
@@ -3590,7 +3590,7 @@
       },
       {
         "name": "MOHAMED SAMEER T THIRUTHIYIL HOUSE",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 64861,
         "margin": -27131,
         "status": "lost",
@@ -3845,7 +3845,7 @@
       },
       {
         "name": "DR. K T JALEEL",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 65014,
         "margin": -14647,
         "status": "lost",
@@ -4252,7 +4252,7 @@
       },
       {
         "name": "P.K SASI P.K.S S/O PADMINI AMMA",
-        "party": "Independent",
+        "party": "Independent (UDF)",
         "votes": 48585,
         "margin": -26777,
         "status": "lost",
@@ -4556,7 +4556,7 @@
       },
       {
         "name": "N.M.R. RAZACK",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 33931,
         "margin": -28268,
         "status": "lost",
@@ -4909,7 +4909,7 @@
       },
       {
         "name": "SIVADASAN (SIVAN VEETTIKUNNU)",
-        "party": "Independent",
+        "party": "Independent (UDF)",
         "votes": 46687,
         "margin": -29386,
         "status": "lost",
@@ -6532,7 +6532,7 @@
       },
       {
         "name": "SABU GEORGE",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 25133,
         "margin": -36163,
         "status": "lost",
@@ -7305,7 +7305,7 @@
     "candidates": [
       {
         "name": "MANI C KAPPEN",
-        "party": "Independent",
+        "party": "Independent (UDF)",
         "votes": 50799,
         "margin": 2991,
         "status": "won",
@@ -8280,7 +8280,7 @@
     "candidates": [
       {
         "name": "G.SUDHAKARAN",
-        "party": "Independent",
+        "party": "Independent (UDF)",
         "votes": 75184,
         "margin": 27935,
         "status": "won",
@@ -8691,7 +8691,7 @@
       },
       {
         "name": "ADV. MATHEW T THOMAS",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 42023,
         "margin": -11201,
         "status": "lost",
@@ -9084,7 +9084,7 @@
       },
       {
         "name": "DR.SUJITH VIJAYANPILLAI",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 55735,
         "margin": -18573,
         "status": "lost",
@@ -10394,7 +10394,7 @@
       },
       {
         "name": "SUDHIR KARAMANA",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 35723,
         "margin": -9863,
         "status": "lost",
@@ -10873,7 +10873,7 @@
       },
       {
         "name": "BHAGATH RUFUS",
-        "party": "Independent",
+        "party": "Independent (LDF)",
         "votes": 46952,
         "margin": -32709,
         "status": "lost",
