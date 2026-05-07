@@ -60,10 +60,27 @@ export function CandidateTable({ filters, dispatch }: Props) {
     [allRows, result, alliance, party]
   )
 
+  // Count of rows that match the structural filters (alliance/party/scope)
+  // BUT ignoring the result filter — used to detect "everything is hidden by
+  // the Winner column toggle" cases (e.g., clicking a party that has 0
+  // winners produces an empty table even though candidates exist).
+  const ignoreResultMatchCount = useMemo(
+    () =>
+      allRows.filter((r) => {
+        if (alliance && r.allianceCode !== alliance) return false
+        if (party && r.party !== party) return false
+        return true
+      }).length,
+    [allRows, alliance, party]
+  )
+
   const sorted = useMemo(
     () => sortCandidateRows(filtered, sortColumn, sortDir),
     [filtered, sortColumn, sortDir]
   )
+
+  const hiddenByResultFilter =
+    sorted.length === 0 && ignoreResultMatchCount > 0 && result !== "all"
 
   const totalPages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE))
   const safePage = Math.min(page, totalPages)
@@ -102,9 +119,39 @@ export function CandidateTable({ filters, dispatch }: Props) {
     >
       <QuickViewsChips dispatch={dispatch} />
       {sorted.length === 0 ? (
-        <div className="rounded-lg border border-dashed py-16 text-center text-sm text-muted-foreground">
-          No candidates match your filters.
-        </div>
+        hiddenByResultFilter ? (
+          <div className="rounded-lg border border-dashed p-6 text-center">
+            <p className="mb-2 text-sm">
+              <span className="font-medium">
+                {ignoreResultMatchCount} candidate
+                {ignoreResultMatchCount === 1 ? "" : "s"}
+              </span>{" "}
+              hidden by the Winner filter.
+            </p>
+            <p className="mb-4 text-xs text-muted-foreground">
+              The{" "}
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full border bg-background align-text-bottom text-foreground/80">
+                <IconCheck className="h-3 w-3" aria-hidden />
+              </span>{" "}
+              in the table header (next to "Winner") toggles between winners-only and all candidates. Click it to switch.
+            </p>
+            <button
+              type="button"
+              onClick={() => {
+                dispatch({ type: "set-result", result: "all" })
+                setPage(1)
+              }}
+              className="rounded-full border bg-background px-3 py-1 text-xs font-medium hover:bg-foreground/5"
+            >
+              Show all {ignoreResultMatchCount} candidate
+              {ignoreResultMatchCount === 1 ? "" : "s"}
+            </button>
+          </div>
+        ) : (
+          <div className="rounded-lg border border-dashed py-16 text-center text-sm text-muted-foreground">
+            No candidates match your filters.
+          </div>
+        )
       ) : (
         <>
           <div className="overflow-hidden rounded-lg border">

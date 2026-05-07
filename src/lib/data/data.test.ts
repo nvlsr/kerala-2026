@@ -5,6 +5,7 @@ import { allianceForRawParty } from "./alliances"
 import { constituencies, totalVotesIn, winnerOf } from "./constituencies"
 import {
   get2021Baseline,
+  getAllianceBreakdown,
   getAllianceTrendData,
   getPartyTrendData,
   getPastCandidates,
@@ -12,6 +13,7 @@ import {
   getStateSummary,
   getTrendData,
 } from "./aggregates"
+import { MAIN_FRONT_CODES } from "./alliances"
 import { buildCandidateRows } from "./candidate-rows"
 import { sortCandidateRows } from "@/lib/candidate-sort"
 import {
@@ -361,6 +363,31 @@ describe("getPastCandidates / getPastWinners edge cases", () => {
     expect(getPastCandidates(99999)).toEqual([])
     expect(getPastWinners(99999)).toEqual([])
   })
+})
+
+// Structural-integrity test: every party that getAllianceBreakdown
+// surfaces (i.e., every row PartySection would render) must correspond
+// to ≥1 actual candidate in our data when filtered by the same
+// (alliance, party) pair. If a party shows up in the breakdown but
+// resolves to zero candidates under the filter, clicking the row
+// produces a phantom-empty UI state — the bug we hit when an NDA-
+// aligned Independent appeared in PartySection but the candidate
+// table came back empty under the default winners-only filter.
+describe("party listings always have matching candidates", () => {
+  const all2026 = buildCandidateRows(null)
+  for (const allianceCode of MAIN_FRONT_CODES) {
+    test(`every ${allianceCode} party in getAllianceBreakdown has ≥1 candidate`, () => {
+      const breakdown = getAllianceBreakdown(allianceCode, null)
+      for (const p of breakdown.parties) {
+        const matching = all2026.filter(
+          (r) => r.allianceCode === allianceCode && r.party === p.party
+        )
+        expect(matching.length, `${allianceCode} / ${p.party}`).toBeGreaterThan(
+          0
+        )
+      }
+    })
+  }
 })
 
 describe("sortCandidateRows", () => {
