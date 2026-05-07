@@ -1,3 +1,4 @@
+import { TOTAL_SEATS } from "@/lib/constants"
 import {
   allianceForCandidate,
   canonicalPartyName,
@@ -183,7 +184,7 @@ export function parseFilters(params: URLSearchParams): Filters {
   const seat = params.get("seat")
   if (seat) {
     const n = Number(seat)
-    if (Number.isInteger(n) && n >= 1 && n <= 140) filters.seat = n
+    if (Number.isInteger(n) && n >= 1 && n <= TOTAL_SEATS) filters.seat = n
   }
 
   const result = params.get("result")

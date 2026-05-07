@@ -1,15 +1,13 @@
 import { useEffect, useMemo, useState } from "react"
-import { Link } from "react-router-dom"
 
 import { FlowsTeaser } from "@/components/flows-teaser"
+import { PageShell } from "@/components/page-shell"
 import { QuestionCard } from "@/components/question-card"
 import {
   QuestionsFilterBar,
   type PartyFilter,
   type ThemeFilter,
 } from "@/components/questions-filter-bar"
-import { SiteFooter } from "@/components/site-footer"
-import { ThemeToggle } from "@/components/theme-toggle"
 import {
   allianceForQuestionParty,
   curatedQuestions,
@@ -61,23 +59,7 @@ export function QuestionsPage() {
   const themes = getAvailableThemes()
 
   return (
-    <div className="flex min-h-svh flex-col bg-background text-foreground">
-      <header>
-        <div className="mx-auto flex max-w-6xl items-start justify-between gap-4 px-6 py-6">
-          <div className="min-w-0">
-            <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
-              <Link to="/" className="hover:text-foreground">
-                Kerala 2026
-              </Link>{" "}
-              · Questions
-            </p>
-            <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-              Curated questions
-            </h1>
-          </div>
-          <ThemeToggle />
-        </div>
-      </header>
+    <PageShell breadcrumb="Questions" title="Curated questions">
       <QuestionsFilterBar
         parties={parties}
         themes={themes}
@@ -114,7 +96,6 @@ export function QuestionsPage() {
         )}
       </main>
       <FlowsTeaser />
-      <SiteFooter />
-    </div>
+    </PageShell>
   )
 }

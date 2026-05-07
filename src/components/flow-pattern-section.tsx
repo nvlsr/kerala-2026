@@ -4,6 +4,10 @@ import { useState } from "react"
 
 import { MiniACMap } from "@/components/mini-ac-map"
 import {
+  DELTA_NOISE_THRESHOLD_PERCENT,
+  TOTAL_SEATS,
+} from "@/lib/constants"
+import {
   initialFilters,
   serializeFilters,
   type Filters,
@@ -37,7 +41,10 @@ function fmtSigned(n: number): string {
   return `${n >= 0 ? "+" : ""}${n.toFixed(1)}%`
 }
 
-function deltaColor(n: number, threshold = 0.5): string {
+function deltaColor(
+  n: number,
+  threshold = DELTA_NOISE_THRESHOLD_PERCENT
+): string {
   if (n > threshold) return "text-emerald-600 dark:text-emerald-500"
   if (n < -threshold) return "text-red-600 dark:text-red-500"
   return "text-muted-foreground/70"
@@ -129,8 +136,8 @@ export function SingleCyclePatternSection({
               filters={filtersForMap}
               inFilterSet={
                 new Set(
-                  // pass all 140 so unfocused seats render muted
-                  Array.from({ length: 140 }, (_, i) => i + 1)
+                  // pass every seat so unfocused ones render muted
+                  Array.from({ length: TOTAL_SEATS }, (_, i) => i + 1)
                 )
               }
               focusSeats={focusSeats}
@@ -237,7 +244,7 @@ export function MultiCycleDriftSection({
             <MiniACMap
               filters={filtersForMap}
               inFilterSet={
-                new Set(Array.from({ length: 140 }, (_, i) => i + 1))
+                new Set(Array.from({ length: TOTAL_SEATS }, (_, i) => i + 1))
               }
               focusSeats={focusSeats}
               ariaLabel={`Constituency map for: ${patternLabel}`}

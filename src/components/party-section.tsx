@@ -4,6 +4,7 @@ import { DeltaPercent } from "@/components/delta-percent"
 import { InfoIcon } from "@/components/info-icon"
 import { PartyHistoricalChart } from "@/components/party-historical-chart"
 import { Section } from "@/components/section"
+import { DELTA_NOISE_THRESHOLD_PERCENT } from "@/lib/constants"
 import { cn } from "@/lib/utils"
 import {
   formatPercent,
@@ -55,7 +56,7 @@ export function PartySection({
       // surfaces a "new" indicator instead of a numeric delta.
       const isNewToAlliance =
         cur != null && prev != null && prev.share === 0 && cur.share > 0
-      // Suppress delta when both cycles are below 0.5% statewide share —
+      // Suppress delta when both cycles are below the noise threshold —
       // tiny-base deltas (e.g. a single Independent's 0.03pp move) are
       // rounding noise and read as misleadingly large in the UI. We use
       // max() rather than min() so a party that disappeared (was big,
@@ -63,7 +64,9 @@ export function PartySection({
       const peakShare =
         cur && prev ? Math.max(cur.share, prev.share) : (cur?.share ?? 0)
       const delta =
-        isNewToAlliance || peakShare < 0.5 ? null : rawDelta
+        isNewToAlliance || peakShare < DELTA_NOISE_THRESHOLD_PERCENT
+          ? null
+          : rawDelta
       return {
         party: p.party,
         partyShort: p.partyShort,

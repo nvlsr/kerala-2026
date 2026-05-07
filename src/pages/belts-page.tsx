@@ -1,15 +1,9 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { IconInfoCircle, IconX } from "@tabler/icons-react"
+import { IconX } from "@tabler/icons-react"
 
 import { BeltsMap } from "@/components/belts-map"
-import { SiteFooter } from "@/components/site-footer"
-import { ThemeToggle } from "@/components/theme-toggle"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+import { PageShell } from "@/components/page-shell"
 import { belts } from "@/lib/data/belts"
 import { cn } from "@/lib/utils"
 
@@ -27,70 +21,45 @@ export function BeltsPage() {
   const [selectedBeltId, setSelectedBeltId] = useState<string | null>(null)
 
   return (
-    <div className="flex min-h-svh flex-col bg-background text-foreground">
-      <header>
-        <div className="mx-auto flex max-w-6xl items-start justify-between gap-4 px-6 py-6">
-          <div className="min-w-0">
-            <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
-              <Link to="/" className="hover:text-foreground">
-                Kerala 2026
-              </Link>{" "}
-              · Belts
-            </p>
-            <h1 className="font-heading flex items-center gap-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Community belts
-              <Popover>
-                <PopoverTrigger
-                  aria-label="About this page"
-                  className="inline-flex shrink-0 items-center justify-center rounded-md p-1 text-muted-foreground/60 transition-colors hover:bg-foreground/5 hover:text-foreground"
-                >
-                  <IconInfoCircle className="h-5 w-5" aria-hidden />
-                </PopoverTrigger>
-                <PopoverContent
-                  className="w-80 sm:w-96"
-                  align="start"
-                  sideOffset={8}
-                >
-                  <div className="space-y-3 text-sm leading-relaxed">
-                    <p>
-                      A qualitative geography of Kerala's community
-                      "belts" — the rough zones where particular
-                      religious or caste-community groups dominate.
-                      Reference page: just the taxonomy.
-                    </p>
-                    <p className="border-t pt-3 text-muted-foreground">
-                      The per-pattern overlay analysis (which drifts
-                      sit in which belts) lives on{" "}
-                      <Link
-                        to="/drifts"
-                        className="font-medium text-foreground underline-offset-2 hover:underline"
-                      >
-                        /drifts
-                      </Link>{" "}
-                      under the "By community belt" section.
-                    </p>
-                  </div>
-                </PopoverContent>
-              </Popover>
-            </h1>
-            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-              Nine belts assigned to Kerala's 14 districts. Click any
-              card on the right to highlight just that belt on the map.
-              For analytical interpretation overlaid on the multi-cycle
-              drift findings, see the "By community belt" section on{" "}
-              <Link
-                to="/drifts"
-                className="font-medium text-foreground underline-offset-2 hover:underline"
-              >
-                /drifts
-              </Link>
-              .
-            </p>
-          </div>
-          <ThemeToggle />
+    <PageShell
+      breadcrumb="Belts"
+      title="Community belts"
+      aboutContent={
+        <div className="space-y-3 text-sm leading-relaxed">
+          <p>
+            A qualitative geography of Kerala's community "belts" — the
+            rough zones where particular religious or caste-community
+            groups dominate. Reference page: just the taxonomy.
+          </p>
+          <p className="border-t pt-3 text-muted-foreground">
+            The per-pattern overlay analysis (which drifts sit in which
+            belts) lives on{" "}
+            <Link
+              to="/drifts"
+              className="font-medium text-foreground underline-offset-2 hover:underline"
+            >
+              /drifts
+            </Link>{" "}
+            under the "By community belt" section.
+          </p>
         </div>
-      </header>
-
+      }
+      subtitle={
+        <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+          Nine belts assigned to Kerala's 14 districts. Click any card on
+          the right to highlight just that belt on the map. For analytical
+          interpretation overlaid on the multi-cycle drift findings, see
+          the "By community belt" section on{" "}
+          <Link
+            to="/drifts"
+            className="font-medium text-foreground underline-offset-2 hover:underline"
+          >
+            /drifts
+          </Link>
+          .
+        </p>
+      }
+    >
       <main className="mx-auto max-w-6xl space-y-12 px-6 py-8">
         <section>
           <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-3">
@@ -216,9 +185,7 @@ export function BeltsPage() {
           </details>
         </section>
       </main>
-
-      <SiteFooter />
-    </div>
+    </PageShell>
   )
 }
 

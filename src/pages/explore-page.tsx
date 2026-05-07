@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useReducer, useState } from "react"
-import { Link, useLocation } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 import { FilterBreadcrumb } from "@/components/scope-title"
 import { AllianceSection } from "@/components/alliance-section"
+import { PageShell } from "@/components/page-shell"
 import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
 import {
@@ -15,8 +16,6 @@ import { QuestionsTeaser } from "@/components/questions-teaser"
 import { SearchBar } from "@/components/search-bar"
 import { SeatPreviewCard } from "@/components/seat-preview-card"
 import { Section } from "@/components/section"
-import { SiteFooter } from "@/components/site-footer"
-import { ThemeToggle } from "@/components/theme-toggle"
 import {
   constituencies,
   displayConstituencyName,
@@ -99,23 +98,11 @@ export function ExplorePage() {
       : null
 
   return (
-    <div className="flex min-h-svh flex-col bg-background text-foreground">
-      <header>
-        <div className="mx-auto flex max-w-6xl items-start justify-between gap-4 px-6 pt-6 pb-2">
-          <div className="min-w-0">
-            <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
-              <Link to="/" className="hover:text-foreground">
-                Kerala 2026
-              </Link>{" "}
-              · Explorer
-            </p>
-            <h1 className="font-heading mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
-              Browse all 140 seats
-            </h1>
-          </div>
-          <ThemeToggle />
-        </div>
-      </header>
+    <PageShell
+      breadcrumb="Explorer"
+      title="Browse all 140 seats"
+      variant="compact"
+    >
       <FilterBreadcrumb
         scope={filters.district}
         selectedAlliance={filters.alliance}
@@ -158,8 +145,7 @@ export function ExplorePage() {
         onSelectSeat={(seat) => dispatch({ type: "set-seat", seat })}
       />
       <QuestionsTeaser />
-      <SiteFooter />
-    </div>
+    </PageShell>
   )
 }
 

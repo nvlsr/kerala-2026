@@ -25,6 +25,7 @@ import {
   type CandidateRow,
 } from "@/lib/data"
 import { sortCandidateRows } from "@/lib/candidate-sort"
+import { CANDIDATE_TABLE_PAGE_SIZE as PAGE_SIZE } from "@/lib/constants"
 import type {
   FilterAction,
   Filters,
@@ -32,8 +33,6 @@ import type {
   SortColumn,
   SortDir,
 } from "@/lib/filters"
-
-const PAGE_SIZE = 10
 
 type Props = {
   filters: Filters

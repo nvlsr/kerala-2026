@@ -1,17 +1,11 @@
 import { useEffect, useMemo } from "react"
 import { Link } from "react-router-dom"
-import { IconInfoCircle } from "@tabler/icons-react"
 
 import { BeltOverlaySection } from "@/components/belt-overlay-section"
 import { MultiCycleDriftSection } from "@/components/flow-pattern-section"
+import { PageShell } from "@/components/page-shell"
 import { RecentLegChart } from "@/components/recent-leg-chart"
-import { SiteFooter } from "@/components/site-footer"
-import { ThemeToggle } from "@/components/theme-toggle"
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover"
+import { TOTAL_SEATS } from "@/lib/constants"
 import {
   getMultiCycleDrifts,
   multiCyclePatternKey,
@@ -89,69 +83,46 @@ export function DriftsPage() {
   }, [])
 
   return (
-    <div className="flex min-h-svh flex-col bg-background text-foreground">
-      <header>
-        <div className="mx-auto flex max-w-6xl items-start justify-between gap-4 px-6 py-6">
-          <div className="min-w-0">
-            <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
-              <Link to="/" className="hover:text-foreground">
-                Kerala 2026
-              </Link>{" "}
-              ·{" "}
-              <Link to="/flows" className="hover:text-foreground">
-                Vote flows
-              </Link>{" "}
-              · Drifts
-            </p>
-            <h1 className="font-heading flex items-center gap-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Sustained drifts
-              <Popover>
-                <PopoverTrigger
-                  aria-label="About this page"
-                  className="inline-flex shrink-0 items-center justify-center rounded-md p-1 text-muted-foreground/60 transition-colors hover:bg-foreground/5 hover:text-foreground"
-                >
-                  <IconInfoCircle className="h-5 w-5" aria-hidden />
-                </PopoverTrigger>
-                <PopoverContent
-                  className="w-80 sm:w-96"
-                  align="start"
-                  sideOffset={8}
-                >
-                  <div className="space-y-3 text-sm leading-relaxed">
-                    <p>
-                      The 15-year view. Seats where the same alliance has
-                      been gaining (or losing) for multiple cycles running
-                      — patterns that survived candidate changes, campaign
-                      cycles, and at least one government in between. A
-                      different question from the single-cycle{" "}
-                      <Link
-                        to="/flows"
-                        className="font-medium text-foreground underline-offset-2 hover:underline"
-                      >
-                        Vote flows
-                      </Link>
-                      .
-                    </p>
-                    <p className="border-t pt-3 text-muted-foreground">
-                      <span className="font-medium text-foreground">
-                        Inferred, not observed.
-                      </span>{" "}
-                      We classify a seat by net change in alliance vote
-                      share across cycles. A drift labelled "LDF → NDA"
-                      could mean LDF voters chose NDA, <em>or</em> old LDF
-                      voters stayed home while new NDA voters showed up.
-                      Read it as "alliance X gained at alliance Y's
-                      expense", not "voters moved from Y to X".
-                    </p>
-                  </div>
-                </PopoverContent>
-              </Popover>
-            </h1>
-          </div>
-          <ThemeToggle />
+    <PageShell
+      breadcrumb={
+        <>
+          <Link to="/flows" className="hover:text-foreground">
+            Vote flows
+          </Link>{" "}
+          · Drifts
+        </>
+      }
+      title="Sustained drifts"
+      aboutContent={
+        <div className="space-y-3 text-sm leading-relaxed">
+          <p>
+            The 15-year view. Seats where the same alliance has been
+            gaining (or losing) for multiple cycles running — patterns
+            that survived candidate changes, campaign cycles, and at
+            least one government in between. A different question from
+            the single-cycle{" "}
+            <Link
+              to="/flows"
+              className="font-medium text-foreground underline-offset-2 hover:underline"
+            >
+              Vote flows
+            </Link>
+            .
+          </p>
+          <p className="border-t pt-3 text-muted-foreground">
+            <span className="font-medium text-foreground">
+              Inferred, not observed.
+            </span>{" "}
+            We classify a seat by net change in alliance vote share
+            across cycles. A drift labelled "LDF → NDA" could mean LDF
+            voters chose NDA, <em>or</em> old LDF voters stayed home
+            while new NDA voters showed up. Read it as "alliance X
+            gained at alliance Y's expense", not "voters moved from Y
+            to X".
+          </p>
         </div>
-      </header>
-
+      }
+    >
       <main className="mx-auto max-w-6xl px-6 py-8">
         <section>
           <div className="mb-4 flex items-baseline justify-between gap-3">
@@ -159,7 +130,7 @@ export function DriftsPage() {
               Sustained 15-year drifts (2011 → 2026)
             </h2>
             <span className="text-xs tracking-wide text-muted-foreground uppercase">
-              {drifts.length} of 140 seats
+              {drifts.length} of {TOTAL_SEATS} seats
             </span>
           </div>
           <p className="mb-5 max-w-2xl text-sm text-muted-foreground">
@@ -333,8 +304,6 @@ export function DriftsPage() {
           </details>
         </section>
       </main>
-
-      <SiteFooter />
-    </div>
+    </PageShell>
   )
 }
