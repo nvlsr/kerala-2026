@@ -11,29 +11,39 @@
       "candidates": [
         {
           "name": "E. Chandrasekharan",
-          "party": "CPI",
+          "party": "Communist Party of India",
           "votes": 66640,
-          "votePct": 47.65, "alliance": "LDF" },
+          "votePct": 47.65,
+          "alliance": "LDF"
+        },
         {
           "name": "M. C. Jose",
           "party": "INC",
           "votes": 54462,
-          "votePct": 38.95, "alliance": "UDF" },
+          "votePct": 38.95,
+          "alliance": "UDF"
+        },
         {
           "name": "Madikai Kammaran",
           "party": "BJP",
           "votes": 15543,
-          "votePct": 11.11, "alliance": "NDA" },
+          "votePct": 11.11,
+          "alliance": "NDA"
+        },
         {
           "name": "P. M. Joseph",
           "party": "Independent",
           "votes": 1919,
-          "votePct": 1.37, "alliance": "OTHER" },
+          "votePct": 1.37,
+          "alliance": "OTHER"
+        },
         {
           "name": "Gopalan K.",
           "party": "BSP",
           "votes": 1277,
-          "votePct": 0.91, "alliance": "OTHER" }
+          "votePct": 0.91,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 12178,
       "marginPct": 8.7,
@@ -48,29 +58,39 @@
       "candidates": [
         {
           "name": "E. Chandrasekharan",
-          "party": "CPI",
+          "party": "Communist Party of India",
           "votes": 80558,
-          "votePct": 49.98, "alliance": "LDF" },
+          "votePct": 49.98,
+          "alliance": "LDF"
+        },
         {
           "name": "Dhanya Suresh",
           "party": "INC",
           "votes": 54547,
-          "votePct": 33.84, "alliance": "UDF" },
+          "votePct": 33.84,
+          "alliance": "UDF"
+        },
         {
           "name": "M. P. Raghavan",
           "party": "BDJS",
           "votes": 21104,
-          "votePct": 13.09, "alliance": "NDA" },
+          "votePct": 13.09,
+          "alliance": "NDA"
+        },
         {
           "name": "Chandran Parappa",
           "party": "BSP",
           "votes": 965,
-          "votePct": 0.6, "alliance": "OTHER" },
+          "votePct": 0.6,
+          "alliance": "OTHER"
+        },
         {
           "name": "Assainar Muttumthala",
           "party": "PDP",
           "votes": 959,
-          "votePct": 0.59, "alliance": "OTHER" }
+          "votePct": 0.59,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 26011,
       "marginPct": 16.14,
@@ -85,24 +105,32 @@
       "candidates": [
         {
           "name": "E. Chandrasekharan",
-          "party": "CPI",
+          "party": "Communist Party of India",
           "votes": 84615,
-          "votePct": 50.72, "alliance": "LDF" },
+          "votePct": 50.72,
+          "alliance": "LDF"
+        },
         {
           "name": "P. V. Suresh",
           "party": "INC",
           "votes": 57476,
-          "votePct": 34.45, "alliance": "UDF" },
+          "votePct": 34.45,
+          "alliance": "UDF"
+        },
         {
           "name": "Balraj",
           "party": "BJP",
           "votes": 21570,
-          "votePct": 12.93, "alliance": "NDA" },
+          "votePct": 12.93,
+          "alliance": "NDA"
+        },
         {
           "name": "Abdul Samad T.",
           "party": "SDPI",
           "votes": 775,
-          "votePct": 0.46, "alliance": "OTHER" }
+          "votePct": 0.46,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 27139,
       "marginPct": 16.27,

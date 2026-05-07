@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "B. Satyan", "party": "CPI(M)", "votes": 63558, "votePct": 55.44, "alliance": "LDF" },
-        { "name": "Thankamony Divakaran", "party": "INC", "votes": 33493, "votePct": 29.22, "alliance": "UDF" },
-        { "name": "Attingal Suresh", "party": "Independent", "votes": 7857, "votePct": 6.85, "alliance": "OTHER" },
-        { "name": "P. P. Vava", "party": "BJP", "votes": 4844, "votePct": 4.23, "alliance": "NDA" },
-        { "name": "V. V. Selvaraj", "party": "Independent", "votes": 1713, "votePct": 1.49, "alliance": "OTHER" }
+        {
+          "name": "B. Satyan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 63558,
+          "votePct": 55.44,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Thankamony Divakaran",
+          "party": "INC",
+          "votes": 33493,
+          "votePct": 29.22,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Attingal Suresh",
+          "party": "Independent",
+          "votes": 7857,
+          "votePct": 6.85,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. P. Vava",
+          "party": "BJP",
+          "votes": 4844,
+          "votePct": 4.23,
+          "alliance": "NDA"
+        },
+        {
+          "name": "V. V. Selvaraj",
+          "party": "Independent",
+          "votes": 1713,
+          "votePct": 1.49,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 30065,
       "marginPct": 26.22,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "B. Satyan", "party": "CPI(M)", "votes": 72808, "votePct": 52.71, "alliance": "LDF" },
-        { "name": "K. Chandrababu", "party": "RSP", "votes": 32425, "votePct": 23.47, "alliance": "UDF" },
-        { "name": "Raji Prasad", "party": "BJP", "votes": 27602, "votePct": 19.98, "alliance": "NDA" },
-        { "name": "M. K. Manoj Kumar", "party": "SDPI", "votes": 1437, "votePct": 1.04, "alliance": "OTHER" },
-        { "name": "K. Sivanandan", "party": "BSP", "votes": 789, "votePct": 0.57, "alliance": "OTHER" }
+        {
+          "name": "B. Satyan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 72808,
+          "votePct": 52.71,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. Chandrababu",
+          "party": "RSP",
+          "votes": 32425,
+          "votePct": 23.47,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Raji Prasad",
+          "party": "BJP",
+          "votes": 27602,
+          "votePct": 19.98,
+          "alliance": "NDA"
+        },
+        {
+          "name": "M. K. Manoj Kumar",
+          "party": "SDPI",
+          "votes": 1437,
+          "votePct": 1.04,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Sivanandan",
+          "party": "BSP",
+          "votes": 789,
+          "votePct": 0.57,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 40383,
       "marginPct": 29.24,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "O. S. Ambika", "party": "CPI(M)", "votes": 69898, "votePct": 47.35, "alliance": "LDF" },
-        { "name": "P. Sudheer", "party": "BJP", "votes": 38262, "votePct": 25.92, "alliance": "NDA" },
-        { "name": "A. Sreedharan", "party": "RSP", "votes": 36938, "votePct": 25.02, "alliance": "UDF" },
-        { "name": "Vipinlal Vidhyadharan", "party": "BSP", "votes": 927, "votePct": 0.63, "alliance": "OTHER" },
-        { "name": "Ambili", "party": "Independent", "votes": 191, "votePct": 0.13, "alliance": "OTHER" }
+        {
+          "name": "O. S. Ambika",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 69898,
+          "votePct": 47.35,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. Sudheer",
+          "party": "BJP",
+          "votes": 38262,
+          "votePct": 25.92,
+          "alliance": "NDA"
+        },
+        {
+          "name": "A. Sreedharan",
+          "party": "RSP",
+          "votes": 36938,
+          "votePct": 25.02,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Vipinlal Vidhyadharan",
+          "party": "BSP",
+          "votes": 927,
+          "votePct": 0.63,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Ambili",
+          "party": "Independent",
+          "votes": 191,
+          "votePct": 0.13,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 31636,
       "marginPct": 21.43,

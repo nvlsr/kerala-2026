@@ -11,7 +11,7 @@
       "candidates": [
         {
           "name": "T. U. Kuruvilla",
-          "party": "KC(M)",
+          "party": "Kerala Congress (M)",
           "votes": 52924,
           "votePct": 49.26,
           "alliance": "UDF"
@@ -51,14 +51,14 @@
       "candidates": [
         {
           "name": "Antony John",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 65467,
           "votePct": 50.98,
           "alliance": "LDF"
         },
         {
           "name": "T. U. Kuruvilla",
-          "party": "KC(M)",
+          "party": "Kerala Congress (M)",
           "votes": 46185,
           "votePct": 35.96,
           "alliance": "UDF"
@@ -91,7 +91,7 @@
       "candidates": [
         {
           "name": "Antony John",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 64234,
           "votePct": 47.1,
           "alliance": "LDF"

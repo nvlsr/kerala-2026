@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Kunhiraman", "party": "CPI(M)", "votes": 67871, "votePct": 49.91, "alliance": "LDF" },
-        { "name": "K. V. Gangadharan", "party": "INC", "votes": 59106, "votePct": 43.46, "alliance": "UDF" },
-        { "name": "T. Radhakrishnan", "party": "BJP", "votes": 5450, "votePct": 4.01, "alliance": "NDA" },
-        { "name": "Razak Haji Parambath", "party": "SDPI", "votes": 5450, "votePct": 4.01, "alliance": "OTHER" },
-        { "name": "Arun Kumar", "party": "BSP", "votes": 1031, "votePct": 0.76, "alliance": "OTHER" }
+        {
+          "name": "K. Kunhiraman",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 67871,
+          "votePct": 49.91,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. V. Gangadharan",
+          "party": "INC",
+          "votes": 59106,
+          "votePct": 43.46,
+          "alliance": "UDF"
+        },
+        {
+          "name": "T. Radhakrishnan",
+          "party": "BJP",
+          "votes": 5450,
+          "votePct": 4.01,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Razak Haji Parambath",
+          "party": "SDPI",
+          "votes": 5450,
+          "votePct": 4.01,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Arun Kumar",
+          "party": "BSP",
+          "votes": 1031,
+          "votePct": 0.76,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 8765,
       "marginPct": 6.45,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. Rajagopalan", "party": "CPI(M)", "votes": 79286, "votePct": 50.93, "alliance": "LDF" },
-        { "name": "K. P. Kunhikannan", "party": "INC", "votes": 62327, "votePct": 40.04, "alliance": "UDF" },
-        { "name": "M. Bhaskaran", "party": "BJP", "votes": 10767, "votePct": 6.92, "alliance": "NDA" },
-        { "name": "C. H. Muthalib", "party": "WPOI", "votes": 1029, "votePct": 0.66, "alliance": "OTHER" },
-        { "name": "M. V. Shaukathali", "party": "SDPI", "votes": 840, "votePct": 0.54, "alliance": "OTHER" }
+        {
+          "name": "M. Rajagopalan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 79286,
+          "votePct": 50.93,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. P. Kunhikannan",
+          "party": "INC",
+          "votes": 62327,
+          "votePct": 40.04,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. Bhaskaran",
+          "party": "BJP",
+          "votes": 10767,
+          "votePct": 6.92,
+          "alliance": "NDA"
+        },
+        {
+          "name": "C. H. Muthalib",
+          "party": "WPOI",
+          "votes": 1029,
+          "votePct": 0.66,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. V. Shaukathali",
+          "party": "SDPI",
+          "votes": 840,
+          "votePct": 0.54,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 16959,
       "marginPct": 10.89,
@@ -43,14 +103,44 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. Rajagopalan", "party": "CPI(M)", "votes": 86151, "votePct": 53.71, "alliance": "LDF" },
-        { "name": "M. P. Joseph", "party": "KEC", "votes": 60014, "votePct": 37.41, "alliance": "UDF" },
-        { "name": "Shibin T. V.", "party": "BJP", "votes": 10961, "votePct": 6.83, "alliance": "NDA" },
-        { "name": "Liyakathali P.", "party": "SDPI", "votes": 1211, "votePct": 0.75, "alliance": "OTHER" },
-        { "name": "T. Mahesh Master", "party": "WPOI", "votes": 817, "votePct": 0.51, "alliance": "OTHER" }
+        {
+          "name": "M. Rajagopalan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 86151,
+          "votePct": 53.71,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. P. Joseph",
+          "party": "KEC",
+          "votes": 60014,
+          "votePct": 37.41,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Shibin T. V.",
+          "party": "BJP",
+          "votes": 10961,
+          "votePct": 6.83,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Liyakathali P.",
+          "party": "SDPI",
+          "votes": 1211,
+          "votePct": 0.75,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. Mahesh Master",
+          "party": "WPOI",
+          "votes": 817,
+          "votePct": 0.51,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 26137,
-      "marginPct": 16.30,
+      "marginPct": 16.3,
       "turnout": 160408,
       "turnoutPct": 78.95,
       "result": "CPI(M) hold"

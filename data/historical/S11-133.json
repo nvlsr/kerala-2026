@@ -13,17 +13,23 @@
           "name": "K. Muraleedharan",
           "party": "INC",
           "votes": 56531,
-          "votePct": 50.19, "alliance": "UDF" },
+          "votePct": 50.19,
+          "alliance": "UDF"
+        },
         {
           "name": "Cheriyan Phillip",
           "party": "Independent (LDF)",
           "votes": 40364,
-          "votePct": 35.84, "alliance": "LDF" },
+          "votePct": 35.84,
+          "alliance": "LDF"
+        },
         {
           "name": "V. V. Rajesh",
           "party": "BJP",
           "votes": 13494,
-          "votePct": 11.98, "alliance": "NDA" }
+          "votePct": 11.98,
+          "alliance": "NDA"
+        }
       ],
       "margin": 16167,
       "marginPct": 14.35,
@@ -40,17 +46,23 @@
           "name": "K. Muraleedharan",
           "party": "INC",
           "votes": 51322,
-          "votePct": 37.81, "alliance": "UDF" },
+          "votePct": 37.81,
+          "alliance": "UDF"
+        },
         {
           "name": "Kummanam Rajasekharan",
           "party": "BJP",
           "votes": 43700,
-          "votePct": 32.19, "alliance": "NDA" },
+          "votePct": 32.19,
+          "alliance": "NDA"
+        },
         {
           "name": "T. N. Seema",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 40441,
-          "votePct": 29.79, "alliance": "LDF" }
+          "votePct": 29.79,
+          "alliance": "LDF"
+        }
       ],
       "margin": 7622,
       "marginPct": 5.56,
@@ -65,19 +77,25 @@
       "candidates": [
         {
           "name": "V. K. Prasanth",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 54830,
-          "votePct": 44.25, "alliance": "LDF" },
+          "votePct": 44.25,
+          "alliance": "LDF"
+        },
         {
           "name": "K. Mohankumar",
           "party": "INC",
           "votes": 40365,
-          "votePct": 32.58, "alliance": "UDF" },
+          "votePct": 32.58,
+          "alliance": "UDF"
+        },
         {
           "name": "S. Suresh",
           "party": "BJP",
           "votes": 27453,
-          "votePct": 22.16, "alliance": "NDA" }
+          "votePct": 22.16,
+          "alliance": "NDA"
+        }
       ],
       "margin": 14465,
       "marginPct": 11.67,
@@ -92,19 +110,25 @@
       "candidates": [
         {
           "name": "V. K. Prasanth",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 61111,
-          "votePct": 44.4, "alliance": "LDF" },
+          "votePct": 44.4,
+          "alliance": "LDF"
+        },
         {
           "name": "V. V. Rajesh",
           "party": "BJP",
           "votes": 39596,
-          "votePct": 28.77, "alliance": "NDA" },
+          "votePct": 28.77,
+          "alliance": "NDA"
+        },
         {
           "name": "Veena S. Nair",
           "party": "INC",
           "votes": 35655,
-          "votePct": 25.76, "alliance": "UDF" }
+          "votePct": 25.76,
+          "alliance": "UDF"
+        }
       ],
       "margin": 21515,
       "marginPct": 15.63,

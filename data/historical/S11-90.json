@@ -11,29 +11,39 @@
       "candidates": [
         {
           "name": "P. J. Joseph",
-          "party": "KC(M)",
+          "party": "Kerala Congress (M)",
           "votes": 66325,
-          "votePct": 51.92, "alliance": "UDF" },
+          "votePct": 51.92,
+          "alliance": "UDF"
+        },
         {
           "name": "Joseph Augustine",
           "party": "Independent",
           "votes": 43457,
-          "votePct": 34.02, "alliance": "LDF" },
+          "votePct": 34.02,
+          "alliance": "LDF"
+        },
         {
           "name": "P. M. Velayudhan",
           "party": "BJP",
           "votes": 10049,
-          "votePct": 7.87, "alliance": "NDA" },
+          "votePct": 7.87,
+          "alliance": "NDA"
+        },
         {
           "name": "M. A. Najeeb",
           "party": "SDPI",
           "votes": 5386,
-          "votePct": 4.22, "alliance": "OTHER" },
+          "votePct": 4.22,
+          "alliance": "OTHER"
+        },
         {
           "name": "Binu Sebastian",
           "party": "BSP",
           "votes": 677,
-          "votePct": 0.53, "alliance": "OTHER" }
+          "votePct": 0.53,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 22868,
       "marginPct": 17.9,
@@ -48,29 +58,39 @@
       "candidates": [
         {
           "name": "P. J. Joseph",
-          "party": "KC(M)",
+          "party": "Kerala Congress (M)",
           "votes": 76177,
-          "votePct": 54.08, "alliance": "UDF" },
+          "votePct": 54.08,
+          "alliance": "UDF"
+        },
         {
           "name": "Roy Varicattu",
           "party": "Independent (LDF)",
           "votes": 30977,
-          "votePct": 21.08, "alliance": "LDF" },
+          "votePct": 21.08,
+          "alliance": "LDF"
+        },
         {
           "name": "S. Praveen",
           "party": "BDJS",
           "votes": 28845,
-          "votePct": 20.37, "alliance": "NDA" },
+          "votePct": 20.37,
+          "alliance": "NDA"
+        },
         {
           "name": "Roy Arackal",
           "party": "SDPI",
           "votes": 1294,
-          "votePct": 0.91, "alliance": "OTHER" },
+          "votePct": 0.91,
+          "alliance": "OTHER"
+        },
         {
           "name": "NOTA",
           "party": "NOTA",
           "votes": 1219,
-          "votePct": 0.86, "alliance": "NOTA" }
+          "votePct": 0.86,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 45587,
       "marginPct": 32.2,
@@ -87,27 +107,37 @@
           "name": "P. J. Joseph",
           "party": "KEC",
           "votes": 67495,
-          "votePct": 48.63, "alliance": "UDF" },
+          "votePct": 48.63,
+          "alliance": "UDF"
+        },
         {
           "name": "K. I. Antony",
-          "party": "KC(M)",
+          "party": "Kerala Congress (M)",
           "votes": 47236,
-          "votePct": 34.03, "alliance": "LDF" },
+          "votePct": 34.03,
+          "alliance": "LDF"
+        },
         {
           "name": "Shyamraj P.",
           "party": "BJP",
           "votes": 21263,
-          "votePct": 15.32, "alliance": "NDA" },
+          "votePct": 15.32,
+          "alliance": "NDA"
+        },
         {
           "name": "Leethesh P. T.",
           "party": "BSP",
           "votes": 934,
-          "votePct": 0.67, "alliance": "OTHER" },
+          "votePct": 0.67,
+          "alliance": "OTHER"
+        },
         {
           "name": "NOTA",
           "party": "NOTA",
           "votes": 674,
-          "votePct": 0.49, "alliance": "NOTA" }
+          "votePct": 0.49,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 20259,
       "marginPct": 14.6,

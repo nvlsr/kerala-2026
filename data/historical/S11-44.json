@@ -18,7 +18,7 @@
         },
         {
           "name": "E. Jayan",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 42116,
           "votePct": 40.45,
           "alliance": "LDF"
@@ -51,7 +51,7 @@
       "candidates": [
         {
           "name": "V. Abdurahiman",
-          "party": "NSC",
+          "party": "National Secular Conference",
           "votes": 64472,
           "votePct": 45.78,
           "alliance": "LDF"
@@ -98,7 +98,7 @@
       "candidates": [
         {
           "name": "V. Abdurahiman",
-          "party": "NSC",
+          "party": "National Secular Conference",
           "votes": 70704,
           "votePct": 46.34,
           "alliance": "LDF"

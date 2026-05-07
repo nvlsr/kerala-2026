@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. V. Rajesh", "party": "CPI(M)", "votes": 73190, "votePct": 58.62, "alliance": "LDF" },
-        { "name": "P. Indira", "party": "INC", "votes": 43244, "votePct": 34.64, "alliance": "UDF" },
-        { "name": "Sreenath Ravi Varma", "party": "BJP", "votes": 5499, "votePct": 4.40, "alliance": "NDA" },
-        { "name": "A. P. Mahmood", "party": "SDPI", "votes": 2281, "votePct": 1.83, "alliance": "OTHER" },
-        { "name": "K. Gopalakrishnan", "party": "BSP", "votes": 640, "votePct": 0.51, "alliance": "OTHER" }
+        {
+          "name": "T. V. Rajesh",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 73190,
+          "votePct": 58.62,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. Indira",
+          "party": "INC",
+          "votes": 43244,
+          "votePct": 34.64,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Sreenath Ravi Varma",
+          "party": "BJP",
+          "votes": 5499,
+          "votePct": 4.4,
+          "alliance": "NDA"
+        },
+        {
+          "name": "A. P. Mahmood",
+          "party": "SDPI",
+          "votes": 2281,
+          "votePct": 1.83,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Gopalakrishnan",
+          "party": "BSP",
+          "votes": 640,
+          "votePct": 0.51,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 29966,
       "marginPct": 23.98,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. V. Rajesh", "party": "CPI(M)", "votes": 83006, "votePct": 59.83, "alliance": "LDF" },
-        { "name": "Amritha Ramakrishnan", "party": "INC", "votes": 40115, "votePct": 28.91, "alliance": "UDF" },
-        { "name": "K. P. Arun", "party": "BJP", "votes": 11036, "votePct": 7.95, "alliance": "NDA" },
-        { "name": "Sunil Koyilerian", "party": "Independent", "votes": 1455, "votePct": 1.05, "alliance": "OTHER" },
-        { "name": "K. Subair", "party": "SDPI", "votes": 1435, "votePct": 1.03, "alliance": "OTHER" }
+        {
+          "name": "T. V. Rajesh",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 83006,
+          "votePct": 59.83,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Amritha Ramakrishnan",
+          "party": "INC",
+          "votes": 40115,
+          "votePct": 28.91,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. P. Arun",
+          "party": "BJP",
+          "votes": 11036,
+          "votePct": 7.95,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Sunil Koyilerian",
+          "party": "Independent",
+          "votes": 1455,
+          "votePct": 1.05,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Subair",
+          "party": "SDPI",
+          "votes": 1435,
+          "votePct": 1.03,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 42891,
       "marginPct": 30.92,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. Vijin", "party": "CPI(M)", "votes": 88252, "votePct": 60.62, "alliance": "LDF" },
-        { "name": "Adv Brijesh Kumar", "party": "INC", "votes": 43859, "votePct": 30.13, "alliance": "UDF" },
-        { "name": "Arun Kaithapram", "party": "BJP", "votes": 11365, "votePct": 7.81, "alliance": "NDA" },
-        { "name": "Faizal Madayi", "party": "WPOI", "votes": 1169, "votePct": 0.78, "alliance": "OTHER" },
-        { "name": "Brijeshkumar M", "party": "Independent", "votes": 274, "votePct": 0.19, "alliance": "OTHER" }
+        {
+          "name": "M. Vijin",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 88252,
+          "votePct": 60.62,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Adv Brijesh Kumar",
+          "party": "INC",
+          "votes": 43859,
+          "votePct": 30.13,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Arun Kaithapram",
+          "party": "BJP",
+          "votes": 11365,
+          "votePct": 7.81,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Faizal Madayi",
+          "party": "WPOI",
+          "votes": 1169,
+          "votePct": 0.78,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Brijeshkumar M",
+          "party": "Independent",
+          "votes": 274,
+          "votePct": 0.19,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 44393,
       "marginPct": 30.51,

@@ -9,10 +9,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. S. Achuthanandan", "party": "CPI(M)", "votes": 77752, "votePct": 57.04, "alliance": "LDF" },
-        { "name": "Lathika Subhash", "party": "INC", "votes": 54312, "votePct": 39.84, "alliance": "UDF" },
-        { "name": "P. K. Majeed Pedikkat", "party": "JD(U)", "votes": 2772, "votePct": 2.03, "alliance": "NDA" },
-        { "name": "Ravi Pallatheri", "party": "BSP", "votes": 1480, "votePct": 1.09, "alliance": "OTHER" }
+        {
+          "name": "V. S. Achuthanandan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 77752,
+          "votePct": 57.04,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Lathika Subhash",
+          "party": "INC",
+          "votes": 54312,
+          "votePct": 39.84,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. K. Majeed Pedikkat",
+          "party": "JD(U)",
+          "votes": 2772,
+          "votePct": 2.03,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Ravi Pallatheri",
+          "party": "BSP",
+          "votes": 1480,
+          "votePct": 1.09,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 23440,
       "marginPct": 17.2,
@@ -25,13 +49,37 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. S. Achuthanandan", "party": "CPI(M)", "votes": 73299, "votePct": 45.9, "alliance": "LDF" },
-        { "name": "C. Krishnakumar", "party": "BJP", "votes": 46157, "votePct": 28.9, "alliance": "NDA" },
-        { "name": "V. S. Joy", "party": "INC", "votes": 35333, "votePct": 22.12, "alliance": "UDF" },
-        { "name": "C. P. Sreedharan", "party": "AIADMK", "votes": 3154, "votePct": 1.97, "alliance": "OTHER" }
+        {
+          "name": "V. S. Achuthanandan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 73299,
+          "votePct": 45.9,
+          "alliance": "LDF"
+        },
+        {
+          "name": "C. Krishnakumar",
+          "party": "BJP",
+          "votes": 46157,
+          "votePct": 28.9,
+          "alliance": "NDA"
+        },
+        {
+          "name": "V. S. Joy",
+          "party": "INC",
+          "votes": 35333,
+          "votePct": 22.12,
+          "alliance": "UDF"
+        },
+        {
+          "name": "C. P. Sreedharan",
+          "party": "AIADMK",
+          "votes": 3154,
+          "votePct": 1.97,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 27142,
-      "marginPct": 17.0,
+      "marginPct": 17,
       "turnout": 159710,
       "turnoutPct": 78.74,
       "result": "CPI(M) hold"
@@ -41,10 +89,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. Prabhakaran", "party": "CPI(M)", "votes": 75934, "votePct": 46.41, "alliance": "LDF" },
-        { "name": "C. Krishnakumar", "party": "BJP", "votes": 50200, "votePct": 30.68, "alliance": "NDA" },
-        { "name": "S. K. Ananthakrishnan", "party": "INC", "votes": 35444, "votePct": 21.66, "alliance": "UDF" },
-        { "name": "Abdul Raheem S.", "party": "Independent", "votes": 418, "votePct": 0.26, "alliance": "OTHER" }
+        {
+          "name": "A. Prabhakaran",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 75934,
+          "votePct": 46.41,
+          "alliance": "LDF"
+        },
+        {
+          "name": "C. Krishnakumar",
+          "party": "BJP",
+          "votes": 50200,
+          "votePct": 30.68,
+          "alliance": "NDA"
+        },
+        {
+          "name": "S. K. Ananthakrishnan",
+          "party": "INC",
+          "votes": 35444,
+          "votePct": 21.66,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Abdul Raheem S.",
+          "party": "Independent",
+          "votes": 418,
+          "votePct": 0.26,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 25734,
       "marginPct": 15.72,

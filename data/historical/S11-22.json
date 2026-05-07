@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "E. K. Vijayan", "party": "CPI", "votes": 72078, "votePct": 49.22, "alliance": "LDF" },
-        { "name": "V. M. Chandran", "party": "INC", "votes": 64532, "votePct": 44.07, "alliance": "UDF" },
-        { "name": "K. P. Prakash Babu", "party": "BJP", "votes": 6058, "votePct": 4.14, "alliance": "NDA" },
-        { "name": "Ismail Kammana", "party": "SDPI", "votes": 1865, "votePct": 1.27, "alliance": "OTHER" },
-        { "name": "Chandran", "party": "Independent", "votes": 745, "votePct": 0.51, "alliance": "OTHER" }
+        {
+          "name": "E. K. Vijayan",
+          "party": "Communist Party of India",
+          "votes": 72078,
+          "votePct": 49.22,
+          "alliance": "LDF"
+        },
+        {
+          "name": "V. M. Chandran",
+          "party": "INC",
+          "votes": 64532,
+          "votePct": 44.07,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. P. Prakash Babu",
+          "party": "BJP",
+          "votes": 6058,
+          "votePct": 4.14,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Ismail Kammana",
+          "party": "SDPI",
+          "votes": 1865,
+          "votePct": 1.27,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Chandran",
+          "party": "Independent",
+          "votes": 745,
+          "votePct": 0.51,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 7546,
       "marginPct": 5.15,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "E. K. Vijayan", "party": "CPI", "votes": 74742, "votePct": 45.87, "alliance": "LDF" },
-        { "name": "Praveenkumar", "party": "INC", "votes": 69983, "votePct": 42.95, "alliance": "UDF" },
-        { "name": "M. P. Rajan", "party": "BJP", "votes": 14493, "votePct": 8.90, "alliance": "NDA" },
-        { "name": "C. K. Abdul Rahim", "party": "SDPI", "votes": 2183, "votePct": 1.34, "alliance": "OTHER" },
-        { "name": "K. K. Vasu", "party": "BSP", "votes": 377, "votePct": 0.23, "alliance": "OTHER" }
+        {
+          "name": "E. K. Vijayan",
+          "party": "Communist Party of India",
+          "votes": 74742,
+          "votePct": 45.87,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Praveenkumar",
+          "party": "INC",
+          "votes": 69983,
+          "votePct": 42.95,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. P. Rajan",
+          "party": "BJP",
+          "votes": 14493,
+          "votePct": 8.9,
+          "alliance": "NDA"
+        },
+        {
+          "name": "C. K. Abdul Rahim",
+          "party": "SDPI",
+          "votes": 2183,
+          "votePct": 1.34,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. K. Vasu",
+          "party": "BSP",
+          "votes": 377,
+          "votePct": 0.23,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 4759,
       "marginPct": 2.92,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "E. K. Vijayan", "party": "CPI", "votes": 83293, "votePct": 47.46, "alliance": "LDF" },
-        { "name": "Praveenkumar", "party": "INC", "votes": 79258, "votePct": 45.16, "alliance": "UDF" },
-        { "name": "M. P. Rajan", "party": "BJP", "votes": 10537, "votePct": 6.00, "alliance": "NDA" },
-        { "name": "K. K. Nasar Master", "party": "SDPI", "votes": 1676, "votePct": 0.95, "alliance": "OTHER" },
-        { "name": "T. Praveen Kumar", "party": "Independent", "votes": 258, "votePct": 0.15, "alliance": "OTHER" }
+        {
+          "name": "E. K. Vijayan",
+          "party": "Communist Party of India",
+          "votes": 83293,
+          "votePct": 47.46,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Praveenkumar",
+          "party": "INC",
+          "votes": 79258,
+          "votePct": 45.16,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. P. Rajan",
+          "party": "BJP",
+          "votes": 10537,
+          "votePct": 6,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. K. Nasar Master",
+          "party": "SDPI",
+          "votes": 1676,
+          "votePct": 0.95,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "T. Praveen Kumar",
+          "party": "Independent",
+          "votes": 258,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 4035,
       "marginPct": 2.12,

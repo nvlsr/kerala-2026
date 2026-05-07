@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Palode Ravi", "party": "INC", "votes": 59789, "votePct": 47.87, "alliance": "UDF" },
-        { "name": "P. Ramachandran Nair", "party": "CPI", "votes": 54759, "votePct": 43.84, "alliance": "LDF" },
-        { "name": "Anjana K. S.", "party": "BJP", "votes": 5971, "votePct": 4.78, "alliance": "NDA" },
-        { "name": "Andoorkonam Sulfi", "party": "Independent", "votes": 1255, "votePct": 1.00, "alliance": "OTHER" },
-        { "name": "Noorjahan A.", "party": "SDPI", "votes": 1200, "votePct": 0.96, "alliance": "OTHER" }
+        {
+          "name": "Palode Ravi",
+          "party": "INC",
+          "votes": 59789,
+          "votePct": 47.87,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. Ramachandran Nair",
+          "party": "Communist Party of India",
+          "votes": 54759,
+          "votePct": 43.84,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Anjana K. S.",
+          "party": "BJP",
+          "votes": 5971,
+          "votePct": 4.78,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Andoorkonam Sulfi",
+          "party": "Independent",
+          "votes": 1255,
+          "votePct": 1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Noorjahan A.",
+          "party": "SDPI",
+          "votes": 1200,
+          "votePct": 0.96,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 5030,
       "marginPct": 4.03,
@@ -26,14 +56,44 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. Divakaran", "party": "CPI", "votes": 57745, "votePct": 38.16, "alliance": "LDF" },
-        { "name": "Palode Ravi", "party": "INC", "votes": 54124, "votePct": 35.76, "alliance": "UDF" },
-        { "name": "V. V. Rajesh", "party": "BJP", "votes": 35139, "votePct": 23.22, "alliance": "NDA" },
-        { "name": "Abdul Salam A.", "party": "SDPI", "votes": 1039, "votePct": 0.69, "alliance": "OTHER" },
-        { "name": "Bipin M. I.", "party": "BSP", "votes": 910, "votePct": 0.60, "alliance": "OTHER" }
+        {
+          "name": "C. Divakaran",
+          "party": "Communist Party of India",
+          "votes": 57745,
+          "votePct": 38.16,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Palode Ravi",
+          "party": "INC",
+          "votes": 54124,
+          "votePct": 35.76,
+          "alliance": "UDF"
+        },
+        {
+          "name": "V. V. Rajesh",
+          "party": "BJP",
+          "votes": 35139,
+          "votePct": 23.22,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Abdul Salam A.",
+          "party": "SDPI",
+          "votes": 1039,
+          "votePct": 0.69,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Bipin M. I.",
+          "party": "BSP",
+          "votes": 910,
+          "votePct": 0.6,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 3621,
-      "marginPct": 2.40,
+      "marginPct": 2.4,
       "turnout": 151339,
       "turnoutPct": 74.11,
       "result": "CPI gain from INC"
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "G. R. Anil", "party": "CPI", "votes": 72742, "votePct": 47.54, "alliance": "LDF" },
-        { "name": "P. S. Prasanth", "party": "INC", "votes": 49433, "votePct": 32.31, "alliance": "UDF" },
-        { "name": "J. R. Padmakumar", "party": "BJP", "votes": 26861, "votePct": 17.56, "alliance": "NDA" },
-        { "name": "Irshad Kanyakulangara", "party": "SDPI", "votes": 1884, "votePct": 1.23, "alliance": "OTHER" },
-        { "name": "Bipin Pallipuram", "party": "BSP", "votes": 563, "votePct": 0.37, "alliance": "OTHER" }
+        {
+          "name": "G. R. Anil",
+          "party": "Communist Party of India",
+          "votes": 72742,
+          "votePct": 47.54,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. S. Prasanth",
+          "party": "INC",
+          "votes": 49433,
+          "votePct": 32.31,
+          "alliance": "UDF"
+        },
+        {
+          "name": "J. R. Padmakumar",
+          "party": "BJP",
+          "votes": 26861,
+          "votePct": 17.56,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Irshad Kanyakulangara",
+          "party": "SDPI",
+          "votes": 1884,
+          "votePct": 1.23,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Bipin Pallipuram",
+          "party": "BSP",
+          "votes": 563,
+          "votePct": 0.37,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 23309,
       "marginPct": 15.23,

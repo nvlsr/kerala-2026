@@ -9,12 +9,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. A. Vaheed", "party": "INC", "votes": 50787, "votePct": 46.38, "alliance": "UDF" },
-        { "name": "C. Ajayakumar", "party": "CPI(M)", "votes": 48591, "votePct": 44.38, "alliance": "LDF" },
-        { "name": "J. R. Padmakumar", "party": "BJP", "votes": 7508, "votePct": 6.86, "alliance": "NDA" }
+        {
+          "name": "M. A. Vaheed",
+          "party": "INC",
+          "votes": 50787,
+          "votePct": 46.38,
+          "alliance": "UDF"
+        },
+        {
+          "name": "C. Ajayakumar",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 48591,
+          "votePct": 44.38,
+          "alliance": "LDF"
+        },
+        {
+          "name": "J. R. Padmakumar",
+          "party": "BJP",
+          "votes": 7508,
+          "votePct": 6.86,
+          "alliance": "NDA"
+        }
       ],
       "margin": 2196,
-      "marginPct": 2.0,
+      "marginPct": 2,
       "turnout": 109498,
       "turnoutPct": 67.09,
       "result": "INC hold"
@@ -24,9 +42,27 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Kadakampally Surendran", "party": "CPI(M)", "votes": 50079, "votePct": 37.38, "alliance": "LDF" },
-        { "name": "V. Muraleedharan", "party": "BJP", "votes": 42732, "votePct": 31.9, "alliance": "NDA" },
-        { "name": "M. A. Vaheed", "party": "INC", "votes": 38602, "votePct": 28.82, "alliance": "UDF" }
+        {
+          "name": "Kadakampally Surendran",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 50079,
+          "votePct": 37.38,
+          "alliance": "LDF"
+        },
+        {
+          "name": "V. Muraleedharan",
+          "party": "BJP",
+          "votes": 42732,
+          "votePct": 31.9,
+          "alliance": "NDA"
+        },
+        {
+          "name": "M. A. Vaheed",
+          "party": "INC",
+          "votes": 38602,
+          "votePct": 28.82,
+          "alliance": "UDF"
+        }
       ],
       "margin": 7347,
       "marginPct": 5.48,
@@ -39,12 +75,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Kadakampally Surendran", "party": "CPI(M)", "votes": 63690, "votePct": 46.04, "alliance": "LDF" },
-        { "name": "Shobha Surendran", "party": "BJP", "votes": 40193, "votePct": 29.06, "alliance": "NDA" },
-        { "name": "S. S. Lal", "party": "INC", "votes": 33995, "votePct": 23.85, "alliance": "UDF" }
+        {
+          "name": "Kadakampally Surendran",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 63690,
+          "votePct": 46.04,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Shobha Surendran",
+          "party": "BJP",
+          "votes": 40193,
+          "votePct": 29.06,
+          "alliance": "NDA"
+        },
+        {
+          "name": "S. S. Lal",
+          "party": "INC",
+          "votes": 33995,
+          "votePct": 23.85,
+          "alliance": "UDF"
+        }
       ],
       "margin": 23497,
-      "marginPct": 17.0,
+      "marginPct": 17,
       "turnout": 140707,
       "turnoutPct": null,
       "result": "CPI(M) hold"

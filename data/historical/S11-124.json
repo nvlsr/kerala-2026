@@ -11,29 +11,39 @@
       "candidates": [
         {
           "name": "P. K. Gurudasan",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 57986,
-          "votePct": 50.86, "alliance": "LDF" },
+          "votePct": 50.86,
+          "alliance": "LDF"
+        },
         {
           "name": "K. C. Rajan",
           "party": "INC",
           "votes": 49446,
-          "votePct": 43.37, "alliance": "UDF" },
+          "votePct": 43.37,
+          "alliance": "UDF"
+        },
         {
           "name": "G. Hari",
           "party": "BJP",
           "votes": 4207,
-          "votePct": 3.69, "alliance": "NDA" },
+          "votePct": 3.69,
+          "alliance": "NDA"
+        },
         {
           "name": "A. A. Shafi",
           "party": "SDPI",
           "votes": 1168,
-          "votePct": 1.02, "alliance": "OTHER" },
+          "votePct": 1.02,
+          "alliance": "OTHER"
+        },
         {
           "name": "Mangad Thulaseedharan",
           "party": "BSP",
           "votes": 507,
-          "votePct": 0.44, "alliance": "OTHER" }
+          "votePct": 0.44,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 8540,
       "marginPct": 7.49,
@@ -48,29 +58,39 @@
       "candidates": [
         {
           "name": "M. Mukesh",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 63103,
-          "votePct": 52.81, "alliance": "LDF" },
+          "votePct": 52.81,
+          "alliance": "LDF"
+        },
         {
           "name": "Sooraj Ravi",
           "party": "INC",
           "votes": 45492,
-          "votePct": 35.19, "alliance": "UDF" },
+          "votePct": 35.19,
+          "alliance": "UDF"
+        },
         {
           "name": "K. Sasikumar",
           "party": "Bharatiya Janata Party",
           "votes": 17409,
-          "votePct": 13.47, "alliance": "NDA" },
+          "votePct": 13.47,
+          "alliance": "NDA"
+        },
         {
           "name": "Johnson Kandachira",
           "party": "SDPI",
           "votes": 1576,
-          "votePct": 1.22, "alliance": "OTHER" },
+          "votePct": 1.22,
+          "alliance": "OTHER"
+        },
         {
           "name": "K. Balakrishnan",
           "party": "BSP",
           "votes": 431,
-          "votePct": 0.33, "alliance": "OTHER" }
+          "votePct": 0.33,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 17611,
       "marginPct": 13.62,
@@ -85,24 +105,32 @@
       "candidates": [
         {
           "name": "M. Mukesh",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 58524,
-          "votePct": 44.86, "alliance": "LDF" },
+          "votePct": 44.86,
+          "alliance": "LDF"
+        },
         {
           "name": "Bindu Krishna",
           "party": "INC",
           "votes": 56452,
-          "votePct": 43.27, "alliance": "UDF" },
+          "votePct": 43.27,
+          "alliance": "UDF"
+        },
         {
           "name": "M. Sunil",
           "party": "BJP",
           "votes": 14252,
-          "votePct": 10.93, "alliance": "NDA" },
+          "votePct": 10.93,
+          "alliance": "NDA"
+        },
         {
           "name": "Ramanan",
           "party": "BSP",
           "votes": 290,
-          "votePct": 0.22, "alliance": "OTHER" }
+          "votePct": 0.22,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 2072,
       "marginPct": 1.59,

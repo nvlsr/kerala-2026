@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Suresh Kurup", "party": "CPI(M)", "votes": 57381, "votePct": 48.52, "alliance": "LDF" },
-        { "name": "Thomas Chazhikadan", "party": "KC(M)", "votes": 55580, "votePct": 47.0, "alliance": "UDF" },
-        { "name": "V. G. Gopakumar", "party": "BJP", "votes": 3385, "votePct": 2.86, "alliance": "NDA" },
-        { "name": "K. T. Thomas", "party": "BSP", "votes": 763, "votePct": 0.65, "alliance": "OTHER" },
-        { "name": "Justin Mathew", "party": "Independent", "votes": 466, "votePct": 0.39, "alliance": "OTHER" }
+        {
+          "name": "K. Suresh Kurup",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 57381,
+          "votePct": 48.52,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Thomas Chazhikadan",
+          "party": "Kerala Congress (M)",
+          "votes": 55580,
+          "votePct": 47,
+          "alliance": "UDF"
+        },
+        {
+          "name": "V. G. Gopakumar",
+          "party": "BJP",
+          "votes": 3385,
+          "votePct": 2.86,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. T. Thomas",
+          "party": "BSP",
+          "votes": 763,
+          "votePct": 0.65,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Justin Mathew",
+          "party": "Independent",
+          "votes": 466,
+          "votePct": 0.39,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1801,
       "marginPct": 1.52,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Suresh Kurup", "party": "CPI(M)", "votes": 53085, "votePct": 40.67, "alliance": "LDF" },
-        { "name": "Thomas Chazhikadan", "party": "KC(M)", "votes": 44906, "votePct": 33.94, "alliance": "UDF" },
-        { "name": "A. G. Thankappan", "party": "BDJS", "votes": 27540, "votePct": 20.82, "alliance": "NDA" },
-        { "name": "Josemon Mundackal", "party": "Independent", "votes": 3774, "votePct": 2.85, "alliance": "OTHER" },
-        { "name": "Abdul Nazar", "party": "SDPI", "votes": 706, "votePct": 0.53, "alliance": "OTHER" }
+        {
+          "name": "K. Suresh Kurup",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 53085,
+          "votePct": 40.67,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Thomas Chazhikadan",
+          "party": "Kerala Congress (M)",
+          "votes": 44906,
+          "votePct": 33.94,
+          "alliance": "UDF"
+        },
+        {
+          "name": "A. G. Thankappan",
+          "party": "BDJS",
+          "votes": 27540,
+          "votePct": 20.82,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Josemon Mundackal",
+          "party": "Independent",
+          "votes": 3774,
+          "votePct": 2.85,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdul Nazar",
+          "party": "SDPI",
+          "votes": 706,
+          "votePct": 0.53,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 8899,
       "marginPct": 6.73,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. N. Vasavan", "party": "CPI(M)", "votes": 58289, "votePct": 46.2, "alliance": "LDF" },
-        { "name": "Prince Lukose", "party": "KEC", "votes": 43986, "votePct": 34.86, "alliance": "UDF" },
-        { "name": "T. N. Harikumar", "party": "BJP", "votes": 13746, "votePct": 10.4, "alliance": "NDA" },
-        { "name": "Lathika Subhash", "party": "Independent", "votes": 7624, "votePct": 6.04, "alliance": "OTHER" },
-        { "name": "Jijith K. Joy", "party": "BSP", "votes": 1165, "votePct": 0.92, "alliance": "OTHER" }
+        {
+          "name": "V. N. Vasavan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 58289,
+          "votePct": 46.2,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Prince Lukose",
+          "party": "KEC",
+          "votes": 43986,
+          "votePct": 34.86,
+          "alliance": "UDF"
+        },
+        {
+          "name": "T. N. Harikumar",
+          "party": "BJP",
+          "votes": 13746,
+          "votePct": 10.4,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Lathika Subhash",
+          "party": "Independent",
+          "votes": 7624,
+          "votePct": 6.04,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Jijith K. Joy",
+          "party": "BSP",
+          "votes": 1165,
+          "votePct": 0.92,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 14303,
       "marginPct": 11.34,

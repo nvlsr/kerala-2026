@@ -9,16 +9,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. D. Satheesan", "party": "INC", "votes": 74632, "votePct": 51.78, "alliance": "UDF" },
-        { "name": "Pannian Ravindran", "party": "CPI", "votes": 62955, "votePct": 43.91, "alliance": "LDF" },
-        { "name": "E. S. Purushottaman", "party": "BJP", "votes": 3934, "votePct": 2.73, "alliance": "NDA" },
-        { "name": "K. K. Jyothivas", "party": "Independent", "votes": 754, "votePct": 0.52, "alliance": "OTHER" },
-        { "name": "P. P. Raveendran", "party": "Independent", "votes": 493, "votePct": 0.34, "alliance": "OTHER" }
+        {
+          "name": "V. D. Satheesan",
+          "party": "INC",
+          "votes": 74632,
+          "votePct": 51.78,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Pannian Ravindran",
+          "party": "Communist Party of India",
+          "votes": 62955,
+          "votePct": 43.91,
+          "alliance": "LDF"
+        },
+        {
+          "name": "E. S. Purushottaman",
+          "party": "BJP",
+          "votes": 3934,
+          "votePct": 2.73,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. K. Jyothivas",
+          "party": "Independent",
+          "votes": 754,
+          "votePct": 0.52,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. P. Raveendran",
+          "party": "Independent",
+          "votes": 493,
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 11349,
       "marginPct": 7.87,
       "turnout": 144124,
-      "turnoutPct": 84.20,
+      "turnoutPct": 84.2,
       "result": "INC hold"
     },
     {
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. D. Satheesan", "party": "INC", "votes": 74985, "votePct": 46.70, "alliance": "UDF" },
-        { "name": "Sarada Mohan", "party": "CPI", "votes": 54351, "votePct": 33.85, "alliance": "LDF" },
-        { "name": "Hari Vijayan", "party": "BDJS", "votes": 28097, "votePct": 17.50, "alliance": "NDA" },
-        { "name": "Faizal", "party": "SDPI", "votes": 923, "votePct": 0.57, "alliance": "OTHER" },
-        { "name": "NOTA", "party": "NOTA", "votes": 900, "votePct": 0.56, "alliance": "NOTA" }
+        {
+          "name": "V. D. Satheesan",
+          "party": "INC",
+          "votes": 74985,
+          "votePct": 46.7,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Sarada Mohan",
+          "party": "Communist Party of India",
+          "votes": 54351,
+          "votePct": 33.85,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Hari Vijayan",
+          "party": "BDJS",
+          "votes": 28097,
+          "votePct": 17.5,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Faizal",
+          "party": "SDPI",
+          "votes": 923,
+          "votePct": 0.57,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 900,
+          "votePct": 0.56,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 20364,
       "marginPct": 12.85,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. D. Satheesan", "party": "INC", "votes": 82264, "votePct": 51.87, "alliance": "UDF" },
-        { "name": "M. T. Nixon", "party": "CPI", "votes": 60963, "votePct": 38.44, "alliance": "LDF" },
-        { "name": "A. B. Jayaprakash", "party": "BDJS", "votes": 12964, "votePct": 8.17, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 1113, "votePct": 0.70, "alliance": "NOTA" },
-        { "name": "N. K. Biju", "party": "BSP", "votes": 724, "votePct": 0.46, "alliance": "OTHER" }
+        {
+          "name": "V. D. Satheesan",
+          "party": "INC",
+          "votes": 82264,
+          "votePct": 51.87,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. T. Nixon",
+          "party": "Communist Party of India",
+          "votes": 60963,
+          "votePct": 38.44,
+          "alliance": "LDF"
+        },
+        {
+          "name": "A. B. Jayaprakash",
+          "party": "BDJS",
+          "votes": 12964,
+          "votePct": 8.17,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 1113,
+          "votePct": 0.7,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "N. K. Biju",
+          "party": "BSP",
+          "votes": 724,
+          "votePct": 0.46,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 21301,
       "marginPct": 13.47,

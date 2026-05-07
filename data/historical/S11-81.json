@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Babu", "party": "INC", "votes": 69886, "votePct": 53.36, "alliance": "UDF" },
-        { "name": "C. M. Dinesh Mani", "party": "CPI(M)", "votes": 54108, "votePct": 41.31, "alliance": "LDF" },
-        { "name": "Sabu Varghese", "party": "BJP", "votes": 4942, "votePct": 3.77, "alliance": "NDA" },
-        { "name": "Karthikeyan", "party": "BSP", "votes": 826, "votePct": 0.63, "alliance": "OTHER" },
-        { "name": "Babu Keezhathuparamu", "party": "Independent", "votes": 330, "votePct": 0.25, "alliance": "OTHER" }
+        {
+          "name": "K. Babu",
+          "party": "INC",
+          "votes": 69886,
+          "votePct": 53.36,
+          "alliance": "UDF"
+        },
+        {
+          "name": "C. M. Dinesh Mani",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 54108,
+          "votePct": 41.31,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Sabu Varghese",
+          "party": "BJP",
+          "votes": 4942,
+          "votePct": 3.77,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Karthikeyan",
+          "party": "BSP",
+          "votes": 826,
+          "votePct": 0.63,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Babu Keezhathuparamu",
+          "party": "Independent",
+          "votes": 330,
+          "votePct": 0.25,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 15778,
       "marginPct": 12.05,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. Swaraj", "party": "CPI(M)", "votes": 62346, "votePct": 40.53, "alliance": "LDF" },
-        { "name": "K. Babu", "party": "INC", "votes": 58230, "votePct": 37.64, "alliance": "UDF" },
-        { "name": "Thuravoor Vishwambharan", "party": "BJP", "votes": 29843, "votePct": 19.29, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 1028, "votePct": 0.66, "alliance": "NOTA" },
-        { "name": "T. A. Kamarudeen", "party": "BSP", "votes": 683, "votePct": 0.44, "alliance": "OTHER" }
+        {
+          "name": "M. Swaraj",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 62346,
+          "votePct": 40.53,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. Babu",
+          "party": "INC",
+          "votes": 58230,
+          "votePct": 37.64,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Thuravoor Vishwambharan",
+          "party": "BJP",
+          "votes": 29843,
+          "votePct": 19.29,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 1028,
+          "votePct": 0.66,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "T. A. Kamarudeen",
+          "party": "BSP",
+          "votes": 683,
+          "votePct": 0.44,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 4467,
       "marginPct": 2.89,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Babu", "party": "INC", "votes": 66875, "votePct": 41.14, "alliance": "UDF" },
-        { "name": "M. Swaraj", "party": "CPI(M)", "votes": 64883, "votePct": 39.21, "alliance": "LDF" },
-        { "name": "K. S. Radhakrishnan", "party": "BJP", "votes": 23756, "votePct": 15.2, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 1099, "votePct": 0.7, "alliance": "NOTA" },
-        { "name": "Arun Babu", "party": "SS", "votes": 232, "votePct": 0.15, "alliance": "OTHER" }
+        {
+          "name": "K. Babu",
+          "party": "INC",
+          "votes": 66875,
+          "votePct": 41.14,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. Swaraj",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 64883,
+          "votePct": 39.21,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. S. Radhakrishnan",
+          "party": "BJP",
+          "votes": 23756,
+          "votePct": 15.2,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 1099,
+          "votePct": 0.7,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Arun Babu",
+          "party": "SS",
+          "votes": 232,
+          "votePct": 0.15,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1992,
       "marginPct": 1.22,

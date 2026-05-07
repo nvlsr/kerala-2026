@@ -13,22 +13,30 @@
           "name": "G. Karthikeyan",
           "party": "INC",
           "votes": 56797,
-          "votePct": 48.79, "alliance": "UDF" },
+          "votePct": 48.79,
+          "alliance": "UDF"
+        },
         {
           "name": "Ambalathara Sreedharan Nair",
           "party": "RSP",
           "votes": 46123,
-          "votePct": 39.62, "alliance": "LDF" },
+          "votePct": 39.62,
+          "alliance": "LDF"
+        },
         {
           "name": "Sivankutty C.",
           "party": "BJP",
           "votes": 7694,
-          "votePct": 6.61, "alliance": "NDA" },
+          "votePct": 6.61,
+          "alliance": "NDA"
+        },
         {
           "name": "A. Balan",
           "party": "BSP",
           "votes": 1746,
-          "votePct": 1.5, "alliance": "OTHER" }
+          "votePct": 1.5,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 10674,
       "marginPct": 9.17,
@@ -45,82 +53,114 @@
           "name": "K. S. Sabarinadhan",
           "party": "INC",
           "votes": 56448,
-          "votePct": 39.61, "alliance": "UDF" },
+          "votePct": 39.61,
+          "alliance": "UDF"
+        },
         {
           "name": "M. Vijayakumar",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 46320,
-          "votePct": 32.51, "alliance": "LDF" },
+          "votePct": 32.51,
+          "alliance": "LDF"
+        },
         {
           "name": "O. Rajagopal",
           "party": "BJP",
           "votes": 34145,
-          "votePct": 23.96, "alliance": "NDA" },
+          "votePct": 23.96,
+          "alliance": "NDA"
+        },
         {
           "name": "Das Kumaravelu",
           "party": "Independent",
           "votes": 1197,
-          "votePct": 0.84, "alliance": "OTHER" },
+          "votePct": 0.84,
+          "alliance": "OTHER"
+        },
         {
           "name": "Poonthura Siraj",
           "party": "PDP",
           "votes": 703,
-          "votePct": 0.49, "alliance": "OTHER" },
+          "votePct": 0.49,
+          "alliance": "OTHER"
+        },
         {
           "name": "P. K. Sukumaran",
           "party": "Independent",
           "votes": 481,
-          "votePct": 0.34, "alliance": "OTHER" },
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
         {
           "name": "Sunil M. Karani",
           "party": "Independent",
           "votes": 422,
-          "votePct": 0.3, "alliance": "OTHER" },
+          "votePct": 0.3,
+          "alliance": "OTHER"
+        },
         {
           "name": "Thomas Kaitharaparambil",
           "party": "AKTP",
           "votes": 383,
-          "votePct": 0.27, "alliance": "OTHER" },
+          "votePct": 0.27,
+          "alliance": "OTHER"
+        },
         {
           "name": "Suresh Kumar",
           "party": "Independent",
           "votes": 354,
-          "votePct": 0.25, "alliance": "OTHER" },
+          "votePct": 0.25,
+          "alliance": "OTHER"
+        },
         {
           "name": "T. R. Sreejith",
           "party": "ABHM",
           "votes": 171,
-          "votePct": 0.12, "alliance": "OTHER" },
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        },
         {
           "name": "M. S. Sabarinath",
           "party": "Independent",
           "votes": 143,
-          "votePct": 0.1, "alliance": "OTHER" },
+          "votePct": 0.1,
+          "alliance": "OTHER"
+        },
         {
           "name": "N. Sasidharan Pillai",
           "party": "ESKP",
           "votes": 93,
-          "votePct": 0.07, "alliance": "OTHER" },
+          "votePct": 0.07,
+          "alliance": "OTHER"
+        },
         {
           "name": "B. Vijayakumar",
           "party": "Independent",
           "votes": 69,
-          "votePct": 0.05, "alliance": "OTHER" },
+          "votePct": 0.05,
+          "alliance": "OTHER"
+        },
         {
           "name": "K. M. Sivaprasad",
           "party": "IGP",
           "votes": 62,
-          "votePct": 0.04, "alliance": "OTHER" },
+          "votePct": 0.04,
+          "alliance": "OTHER"
+        },
         {
           "name": "Vijayakumaran Nair",
           "party": "Independent",
           "votes": 40,
-          "votePct": 0.03, "alliance": "OTHER" },
+          "votePct": 0.03,
+          "alliance": "OTHER"
+        },
         {
           "name": "K. G. Mohanan",
           "party": "Independent",
           "votes": 35,
-          "votePct": 0.02, "alliance": "OTHER" }
+          "votePct": 0.02,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 10128,
       "marginPct": 7.11,
@@ -137,22 +177,30 @@
           "name": "K. S. Sabarinathan",
           "party": "INC",
           "votes": 70910,
-          "votePct": 49.32, "alliance": "UDF" },
+          "votePct": 49.32,
+          "alliance": "UDF"
+        },
         {
           "name": "A. A. Rasheed",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 49596,
-          "votePct": 34.5, "alliance": "LDF" },
+          "votePct": 34.5,
+          "alliance": "LDF"
+        },
         {
           "name": "Rajasenan",
           "party": "BJP",
           "votes": 20294,
-          "votePct": 14.12, "alliance": "NDA" },
+          "votePct": 14.12,
+          "alliance": "NDA"
+        },
         {
           "name": "M. A. Jaleel",
           "party": "SDPI",
           "votes": 707,
-          "votePct": 0.49, "alliance": "OTHER" }
+          "votePct": 0.49,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 21314,
       "marginPct": 14.82,
@@ -167,19 +215,25 @@
       "candidates": [
         {
           "name": "G. Steephen",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 66776,
-          "votePct": 45.83, "alliance": "LDF" },
+          "votePct": 45.83,
+          "alliance": "LDF"
+        },
         {
           "name": "K. S. Sabarinathan",
           "party": "INC",
           "votes": 61730,
-          "votePct": 42.37, "alliance": "UDF" },
+          "votePct": 42.37,
+          "alliance": "UDF"
+        },
         {
           "name": "C. Sivankutty",
           "party": "BJP",
           "votes": 15379,
-          "votePct": 10.55, "alliance": "NDA" }
+          "votePct": 10.55,
+          "alliance": "NDA"
+        }
       ],
       "margin": 5046,
       "marginPct": 3.47,

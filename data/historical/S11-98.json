@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Oommen Chandy", "party": "INC", "votes": 69922, "votePct": 59.74, "alliance": "UDF" },
-        { "name": "Suja Susan George", "party": "CPI(M)", "votes": 36667, "votePct": 31.33, "alliance": "LDF" },
-        { "name": "P. Sunilkumar", "party": "BJP", "votes": 6679, "votePct": 5.71, "alliance": "NDA" },
-        { "name": "Saji K. Cheraman", "party": "BSP", "votes": 3230, "votePct": 2.76, "alliance": "OTHER" },
-        { "name": "Jayakumar Kavunkal", "party": "Independent", "votes": 537, "votePct": 0.46, "alliance": "OTHER" }
+        {
+          "name": "Oommen Chandy",
+          "party": "INC",
+          "votes": 69922,
+          "votePct": 59.74,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Suja Susan George",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 36667,
+          "votePct": 31.33,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. Sunilkumar",
+          "party": "BJP",
+          "votes": 6679,
+          "votePct": 5.71,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Saji K. Cheraman",
+          "party": "BSP",
+          "votes": 3230,
+          "votePct": 2.76,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Jayakumar Kavunkal",
+          "party": "Independent",
+          "votes": 537,
+          "votePct": 0.46,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 33255,
       "marginPct": 28.41,
@@ -26,10 +56,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Oommen Chandy", "party": "INC", "votes": 71597, "votePct": 53.42, "alliance": "UDF" },
-        { "name": "Jaick C. Thomas", "party": "CPI(M)", "votes": 44505, "votePct": 33.20, "alliance": "LDF" },
-        { "name": "George Kurien", "party": "BJP", "votes": 15993, "votePct": 11.93, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 630, "votePct": 0.47, "alliance": "NOTA" }
+        {
+          "name": "Oommen Chandy",
+          "party": "INC",
+          "votes": 71597,
+          "votePct": 53.42,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Jaick C. Thomas",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 44505,
+          "votePct": 33.2,
+          "alliance": "LDF"
+        },
+        {
+          "name": "George Kurien",
+          "party": "BJP",
+          "votes": 15993,
+          "votePct": 11.93,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 630,
+          "votePct": 0.47,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 27092,
       "marginPct": 20.22,
@@ -42,11 +96,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Oommen Chandy", "party": "INC", "votes": 63372, "votePct": 48.08, "alliance": "UDF" },
-        { "name": "Jaick C. Thomas", "party": "CPI(M)", "votes": 54328, "votePct": 41.22, "alliance": "LDF" },
-        { "name": "N. Hari", "party": "BJP", "votes": 11694, "votePct": 8.87, "alliance": "NDA" },
-        { "name": "George Joseph Vathappally", "party": "Independent", "votes": 997, "votePct": 0.76, "alliance": "OTHER" },
-        { "name": "P. P. Abhilash", "party": "BSP", "votes": 763, "votePct": 0.58, "alliance": "OTHER" }
+        {
+          "name": "Oommen Chandy",
+          "party": "INC",
+          "votes": 63372,
+          "votePct": 48.08,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Jaick C. Thomas",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 54328,
+          "votePct": 41.22,
+          "alliance": "LDF"
+        },
+        {
+          "name": "N. Hari",
+          "party": "BJP",
+          "votes": 11694,
+          "votePct": 8.87,
+          "alliance": "NDA"
+        },
+        {
+          "name": "George Joseph Vathappally",
+          "party": "Independent",
+          "votes": 997,
+          "votePct": 0.76,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. P. Abhilash",
+          "party": "BSP",
+          "votes": 763,
+          "votePct": 0.58,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 9044,
       "marginPct": 6.86,
@@ -59,11 +143,41 @@
       "type": "by-election",
       "reason": "Death of sitting MLA Oommen Chandy",
       "candidates": [
-        { "name": "Chandy Oommen", "party": "INC", "votes": 80144, "votePct": 61.38, "alliance": "UDF" },
-        { "name": "Jaick C. Thomas", "party": "CPI(M)", "votes": 42425, "votePct": 32.49, "alliance": "LDF" },
-        { "name": "G. Lijinlal", "party": "BJP", "votes": 6558, "votePct": 5.02, "alliance": "NDA" },
-        { "name": "Luke Thomas", "party": "AAP", "votes": 835, "votePct": 0.64, "alliance": "OTHER" },
-        { "name": "NOTA", "party": "NOTA", "votes": 400, "votePct": 0.31, "alliance": "NOTA" }
+        {
+          "name": "Chandy Oommen",
+          "party": "INC",
+          "votes": 80144,
+          "votePct": 61.38,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Jaick C. Thomas",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 42425,
+          "votePct": 32.49,
+          "alliance": "LDF"
+        },
+        {
+          "name": "G. Lijinlal",
+          "party": "BJP",
+          "votes": 6558,
+          "votePct": 5.02,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Luke Thomas",
+          "party": "AAP",
+          "votes": 835,
+          "votePct": 0.64,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 400,
+          "votePct": 0.31,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 37719,
       "marginPct": 29.32,

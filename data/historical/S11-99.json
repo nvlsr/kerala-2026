@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. F. Thomas", "party": "KC(M)", "votes": 51019, "votePct": 47.13, "alliance": "UDF" },
-        { "name": "B. Ekbal", "party": "CPI(M)", "votes": 48465, "votePct": 44.77, "alliance": "LDF" },
-        { "name": "M. B. Rajagopal", "party": "BJP", "votes": 6281, "votePct": 5.80, "alliance": "NDA" },
-        { "name": "Mathews John", "party": "BSP", "votes": 1058, "votePct": 0.98, "alliance": "OTHER" },
-        { "name": "Mansoor", "party": "SDPI", "votes": 907, "votePct": 0.84, "alliance": "OTHER" }
+        {
+          "name": "C. F. Thomas",
+          "party": "Kerala Congress (M)",
+          "votes": 51019,
+          "votePct": 47.13,
+          "alliance": "UDF"
+        },
+        {
+          "name": "B. Ekbal",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 48465,
+          "votePct": 44.77,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. B. Rajagopal",
+          "party": "BJP",
+          "votes": 6281,
+          "votePct": 5.8,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Mathews John",
+          "party": "BSP",
+          "votes": 1058,
+          "votePct": 0.98,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Mansoor",
+          "party": "SDPI",
+          "votes": 907,
+          "votePct": 0.84,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 2554,
       "marginPct": 2.36,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. F. Thomas", "party": "KC(M)", "votes": 50371, "votePct": 40.04, "alliance": "UDF" },
-        { "name": "K. C. Joseph", "party": "JKC", "votes": 48522, "votePct": 38.57, "alliance": "LDF" },
-        { "name": "Ettumanoor Radhakrishnan", "party": "BJP", "votes": 21455, "votePct": 17.06, "alliance": "NDA" },
-        { "name": "Althaph Hassan", "party": "SDPI", "votes": 1797, "votePct": 1.43, "alliance": "OTHER" },
-        { "name": "Sojan Paviyanose", "party": "Independent", "votes": 1050, "votePct": 0.83, "alliance": "OTHER" }
+        {
+          "name": "C. F. Thomas",
+          "party": "Kerala Congress (M)",
+          "votes": 50371,
+          "votePct": 40.04,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. C. Joseph",
+          "party": "JKC",
+          "votes": 48522,
+          "votePct": 38.57,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Ettumanoor Radhakrishnan",
+          "party": "BJP",
+          "votes": 21455,
+          "votePct": 17.06,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Althaph Hassan",
+          "party": "SDPI",
+          "votes": 1797,
+          "votePct": 1.43,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sojan Paviyanose",
+          "party": "Independent",
+          "votes": 1050,
+          "votePct": 0.83,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1849,
       "marginPct": 1.47,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Job Maichil", "party": "KC(M)", "votes": 55425, "votePct": 44.85, "alliance": "LDF" },
-        { "name": "V. J. Laly", "party": "KEC", "votes": 49366, "votePct": 39.94, "alliance": "UDF" },
-        { "name": "G. Raman Nair", "party": "BJP", "votes": 14491, "votePct": 11.73, "alliance": "NDA" },
-        { "name": "Tijo Karikkanadam", "party": "Independent", "votes": 1094, "votePct": 0.89, "alliance": "OTHER" },
-        { "name": "Amruth Dev T", "party": "BSP", "votes": 1079, "votePct": 0.87, "alliance": "OTHER" }
+        {
+          "name": "Job Maichil",
+          "party": "Kerala Congress (M)",
+          "votes": 55425,
+          "votePct": 44.85,
+          "alliance": "LDF"
+        },
+        {
+          "name": "V. J. Laly",
+          "party": "KEC",
+          "votes": 49366,
+          "votePct": 39.94,
+          "alliance": "UDF"
+        },
+        {
+          "name": "G. Raman Nair",
+          "party": "BJP",
+          "votes": 14491,
+          "votePct": 11.73,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Tijo Karikkanadam",
+          "party": "Independent",
+          "votes": 1094,
+          "votePct": 0.89,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Amruth Dev T",
+          "party": "BSP",
+          "votes": 1079,
+          "votePct": 0.87,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6059,
       "marginPct": 4.91,

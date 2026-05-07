@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. A. Baby", "party": "CPI(M)", "votes": 67135, "votePct": 52.48, "alliance": "LDF" },
-        { "name": "P. Jermias", "party": "INC", "votes": 52342, "votePct": 40.92, "alliance": "UDF" },
-        { "name": "Vellimon Dileep", "party": "BJP", "votes": 5990, "votePct": 4.68, "alliance": "NDA" },
-        { "name": "Sandhya Pallimon", "party": "Independent", "votes": 957, "votePct": 0.75, "alliance": "OTHER" },
-        { "name": "Suseela Mohan", "party": "BSP", "votes": 947, "votePct": 0.74, "alliance": "OTHER" }
+        {
+          "name": "M. A. Baby",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 67135,
+          "votePct": 52.48,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. Jermias",
+          "party": "INC",
+          "votes": 52342,
+          "votePct": 40.92,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Vellimon Dileep",
+          "party": "BJP",
+          "votes": 5990,
+          "votePct": 4.68,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Sandhya Pallimon",
+          "party": "Independent",
+          "votes": 957,
+          "votePct": 0.75,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Suseela Mohan",
+          "party": "BSP",
+          "votes": 947,
+          "votePct": 0.74,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 14793,
       "marginPct": 11.56,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "J. Mercykutty Amma", "party": "CPI(M)", "votes": 79047, "votePct": 51.81, "alliance": "LDF" },
-        { "name": "Rajmohan Unnithan", "party": "INC", "votes": 48587, "votePct": 31.85, "alliance": "UDF" },
-        { "name": "M. S. Shyam Kumar", "party": "BJP", "votes": 20257, "votePct": 13.28, "alliance": "NDA" },
-        { "name": "Sharafath Mallam", "party": "SDPI", "votes": 1325, "votePct": 0.87, "alliance": "OTHER" },
-        { "name": "Kabeer Kutty I. Puthezham", "party": "PDP", "votes": 1132, "votePct": 0.74, "alliance": "OTHER" }
+        {
+          "name": "J. Mercykutty Amma",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 79047,
+          "votePct": 51.81,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Rajmohan Unnithan",
+          "party": "INC",
+          "votes": 48587,
+          "votePct": 31.85,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. S. Shyam Kumar",
+          "party": "BJP",
+          "votes": 20257,
+          "votePct": 13.28,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Sharafath Mallam",
+          "party": "SDPI",
+          "votes": 1325,
+          "votePct": 0.87,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Kabeer Kutty I. Puthezham",
+          "party": "PDP",
+          "votes": 1132,
+          "votePct": 0.74,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 30460,
       "marginPct": 19.96,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. C. Vishnunadh", "party": "INC", "votes": 76405, "votePct": 48.85, "alliance": "UDF" },
-        { "name": "J. Mercykutty Amma", "party": "CPI(M)", "votes": 71882, "votePct": 45.96, "alliance": "LDF" },
-        { "name": "Vanaja Vidhyadharan", "party": "BDJS", "votes": 6100, "votePct": 3.9, "alliance": "NDA" },
-        { "name": "Santhosh Adooran", "party": "Independent", "votes": 260, "votePct": 0.17, "alliance": "OTHER" },
-        { "name": "R. Rahul", "party": "SUCI(C)", "votes": 457, "votePct": 0.29, "alliance": "OTHER" }
+        {
+          "name": "P. C. Vishnunadh",
+          "party": "INC",
+          "votes": 76405,
+          "votePct": 48.85,
+          "alliance": "UDF"
+        },
+        {
+          "name": "J. Mercykutty Amma",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 71882,
+          "votePct": 45.96,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Vanaja Vidhyadharan",
+          "party": "BDJS",
+          "votes": 6100,
+          "votePct": 3.9,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Santhosh Adooran",
+          "party": "Independent",
+          "votes": 260,
+          "votePct": 0.17,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "R. Rahul",
+          "party": "SUCI(C)",
+          "votes": 457,
+          "votePct": 0.29,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 4523,
       "marginPct": 2.89,

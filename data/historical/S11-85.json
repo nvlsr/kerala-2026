@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. M. Jacob", "party": "KC(J)", "votes": 66503, "votePct": 47.53, "alliance": "UDF" },
-        { "name": "M. J. Jacob", "party": "CPI(M)", "votes": 66346, "votePct": 47.41, "alliance": "LDF" },
-        { "name": "M. N. Madhu", "party": "BJP", "votes": 4234, "votePct": 3.03, "alliance": "NDA" },
-        { "name": "Sau Kunjappan", "party": "Independent", "votes": 958, "votePct": 0.65, "alliance": "OTHER" },
-        { "name": "M. K. Usha", "party": "SUCI(C)", "votes": 908, "votePct": 0.65, "alliance": "OTHER" }
+        {
+          "name": "T. M. Jacob",
+          "party": "KC(J)",
+          "votes": 66503,
+          "votePct": 47.53,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. J. Jacob",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 66346,
+          "votePct": 47.41,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. N. Madhu",
+          "party": "BJP",
+          "votes": 4234,
+          "votePct": 3.03,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Sau Kunjappan",
+          "party": "Independent",
+          "votes": 958,
+          "votePct": 0.65,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. K. Usha",
+          "party": "SUCI(C)",
+          "votes": 908,
+          "votePct": 0.65,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 157,
       "marginPct": 0.12,
@@ -26,14 +56,32 @@
       "type": "by-election",
       "reason": "Death of sitting MLA T. M. Jacob on 30 October 2011",
       "candidates": [
-        { "name": "Anoop Jacob", "party": "KC(J)", "votes": 82756, "votePct": 52.81, "alliance": "UDF" },
-        { "name": "M. J. Jacob", "party": "CPI(M)", "votes": 70686, "votePct": 45.11, "alliance": "LDF" },
-        { "name": "K. R. Rajagopal", "party": "BJP", "votes": 3241, "votePct": 2.07, "alliance": "NDA" }
+        {
+          "name": "Anoop Jacob",
+          "party": "KC(J)",
+          "votes": 82756,
+          "votePct": 52.81,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. J. Jacob",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 70686,
+          "votePct": 45.11,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. R. Rajagopal",
+          "party": "BJP",
+          "votes": 3241,
+          "votePct": 2.07,
+          "alliance": "NDA"
+        }
       ],
       "margin": 12071,
-      "marginPct": 7.70,
+      "marginPct": 7.7,
       "turnout": 156683,
-      "turnoutPct": 86.30,
+      "turnoutPct": 86.3,
       "result": "KC(J) hold"
     },
     {
@@ -41,11 +89,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Anoop Jacob", "party": "KC(J)", "votes": 73770, "votePct": 45.77, "alliance": "UDF" },
-        { "name": "M. J. Jacob", "party": "CPI(M)", "votes": 67575, "votePct": 41.93, "alliance": "LDF" },
-        { "name": "C. P. Sathyan", "party": "BDJS", "votes": 17503, "votePct": 10.86, "alliance": "NDA" },
-        { "name": "Gireesh", "party": "PpGP", "votes": 485, "votePct": 0.30, "alliance": "OTHER" },
-        { "name": "K. O. Sudheer", "party": "SUCI(C)", "votes": 342, "votePct": 0.21, "alliance": "OTHER" }
+        {
+          "name": "Anoop Jacob",
+          "party": "KC(J)",
+          "votes": 73770,
+          "votePct": 45.77,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. J. Jacob",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 67575,
+          "votePct": 41.93,
+          "alliance": "LDF"
+        },
+        {
+          "name": "C. P. Sathyan",
+          "party": "BDJS",
+          "votes": 17503,
+          "votePct": 10.86,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Gireesh",
+          "party": "PpGP",
+          "votes": 485,
+          "votePct": 0.3,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. O. Sudheer",
+          "party": "SUCI(C)",
+          "votes": 342,
+          "votePct": 0.21,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6195,
       "marginPct": 3.84,
@@ -58,9 +136,27 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Anoop Jacob", "party": "KC(J)", "votes": 85056, "votePct": 53.8, "alliance": "UDF" },
-        { "name": "Sindhumol Jacob", "party": "KC(M)", "votes": 59692, "votePct": 37.76, "alliance": "LDF" },
-        { "name": "N. Ashish", "party": "BJP", "votes": 11021, "votePct": 6.97, "alliance": "NDA" }
+        {
+          "name": "Anoop Jacob",
+          "party": "KC(J)",
+          "votes": 85056,
+          "votePct": 53.8,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Sindhumol Jacob",
+          "party": "Kerala Congress (M)",
+          "votes": 59692,
+          "votePct": 37.76,
+          "alliance": "LDF"
+        },
+        {
+          "name": "N. Ashish",
+          "party": "BJP",
+          "votes": 11021,
+          "votePct": 6.97,
+          "alliance": "NDA"
+        }
       ],
       "margin": 25364,
       "marginPct": 16.04,

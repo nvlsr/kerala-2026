@@ -11,29 +11,39 @@
       "candidates": [
         {
           "name": "P. C. George",
-          "party": "KC(M)",
+          "party": "Kerala Congress (M)",
           "votes": 59809,
-          "votePct": 50.77, "alliance": "UDF" },
+          "votePct": 50.77,
+          "alliance": "UDF"
+        },
         {
           "name": "Mohan Thomas",
           "party": "Independent (LDF)",
           "votes": 44105,
-          "votePct": 37.44, "alliance": "LDF" },
+          "votePct": 37.44,
+          "alliance": "LDF"
+        },
         {
           "name": "K. M. Santhosh Kumar",
           "party": "BJP",
           "votes": 5010,
-          "votePct": 4.25, "alliance": "NDA" },
+          "votePct": 4.25,
+          "alliance": "NDA"
+        },
         {
           "name": "V. M. Sulaiman Moulavi",
           "party": "SDPI",
           "votes": 3579,
-          "votePct": 3.04, "alliance": "OTHER" },
+          "votePct": 3.04,
+          "alliance": "OTHER"
+        },
         {
           "name": "P. P. Joshy",
           "party": "BSP",
           "votes": 2956,
-          "votePct": 2.51, "alliance": "OTHER" }
+          "votePct": 2.51,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 14984,
       "marginPct": 13.33,
@@ -50,22 +60,30 @@
           "name": "P. C. George",
           "party": "Independent",
           "votes": 63621,
-          "votePct": 43.65, "alliance": "OTHER" },
+          "votePct": 43.65,
+          "alliance": "OTHER"
+        },
         {
           "name": "Georgekutty Augustine",
-          "party": "KC(M)",
+          "party": "Kerala Congress (M)",
           "votes": 35800,
-          "votePct": 24.56, "alliance": "UDF" },
+          "votePct": 24.56,
+          "alliance": "UDF"
+        },
         {
           "name": "P. C. Joseph Ponnattu",
           "party": "JKC",
           "votes": 22270,
-          "votePct": 15.28, "alliance": "LDF" },
+          "votePct": 15.28,
+          "alliance": "LDF"
+        },
         {
           "name": "M. R. Ullas",
           "party": "BDJS",
           "votes": 19966,
-          "votePct": 13.7, "alliance": "NDA" }
+          "votePct": 13.7,
+          "alliance": "NDA"
+        }
       ],
       "margin": 27821,
       "marginPct": 19.1,
@@ -80,24 +98,32 @@
       "candidates": [
         {
           "name": "Sebastian Kulathunkal",
-          "party": "KC(M)",
+          "party": "Kerala Congress (M)",
           "votes": 58668,
-          "votePct": 41.94, "alliance": "LDF" },
+          "votePct": 41.94,
+          "alliance": "LDF"
+        },
         {
           "name": "P. C. George",
           "party": "KJ(S)",
           "votes": 41851,
-          "votePct": 29.92, "alliance": "OTHER" },
+          "votePct": 29.92,
+          "alliance": "OTHER"
+        },
         {
           "name": "Tomy Kallany",
           "party": "INC",
           "votes": 34633,
-          "votePct": 24.76, "alliance": "UDF" },
+          "votePct": 24.76,
+          "alliance": "UDF"
+        },
         {
           "name": "M. P. Sen",
           "party": "BDJS",
           "votes": 2965,
-          "votePct": 2.12, "alliance": "NDA" }
+          "votePct": 2.12,
+          "alliance": "NDA"
+        }
       ],
       "margin": 16581,
       "marginPct": 11.85,

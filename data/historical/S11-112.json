@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Raju Abraham", "party": "CPI(M)", "votes": 58391, "votePct": 48.51, "alliance": "LDF" },
-        { "name": "Peelipose Thomas", "party": "INC", "votes": 51777, "votePct": 43.02, "alliance": "UDF" },
-        { "name": "Suresh Kadambari", "party": "BJP", "votes": 7442, "votePct": 6.18, "alliance": "NDA" },
-        { "name": "V. D. Saji Mon", "party": "BSP", "votes": 1300, "votePct": 1.08, "alliance": "OTHER" },
-        { "name": "Ibrahim Kutty", "party": "SDPI", "votes": 905, "votePct": 0.75, "alliance": "OTHER" }
+        {
+          "name": "Raju Abraham",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 58391,
+          "votePct": 48.51,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Peelipose Thomas",
+          "party": "INC",
+          "votes": 51777,
+          "votePct": 43.02,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Suresh Kadambari",
+          "party": "BJP",
+          "votes": 7442,
+          "votePct": 6.18,
+          "alliance": "NDA"
+        },
+        {
+          "name": "V. D. Saji Mon",
+          "party": "BSP",
+          "votes": 1300,
+          "votePct": 1.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Ibrahim Kutty",
+          "party": "SDPI",
+          "votes": 905,
+          "votePct": 0.75,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6614,
       "marginPct": 5.42,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Raju Abraham", "party": "CPI(M)", "votes": 58749, "votePct": 43.87, "alliance": "LDF" },
-        { "name": "Mariamma Cherian", "party": "INC", "votes": 44153, "votePct": 32.97, "alliance": "UDF" },
-        { "name": "Padmakumar K.", "party": "BDJS", "votes": 28201, "votePct": 21.06, "alliance": "NDA" },
-        { "name": "Prasad Uthimoodu", "party": "BSP", "votes": 1072, "votePct": 0.8, "alliance": "OTHER" },
-        { "name": "Fawseena Thakbeer", "party": "SDPI", "votes": 862, "votePct": 0.64, "alliance": "OTHER" }
+        {
+          "name": "Raju Abraham",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 58749,
+          "votePct": 43.87,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Mariamma Cherian",
+          "party": "INC",
+          "votes": 44153,
+          "votePct": 32.97,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Padmakumar K.",
+          "party": "BDJS",
+          "votes": 28201,
+          "votePct": 21.06,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Prasad Uthimoodu",
+          "party": "BSP",
+          "votes": 1072,
+          "votePct": 0.8,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Fawseena Thakbeer",
+          "party": "SDPI",
+          "votes": 862,
+          "votePct": 0.64,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 14596,
       "marginPct": 10.9,
@@ -43,10 +103,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Pramod Narayan", "party": "KC(M)", "votes": 52669, "votePct": 41.22, "alliance": "LDF" },
-        { "name": "Rinku Cherian", "party": "INC", "votes": 51384, "votePct": 40.21, "alliance": "UDF" },
-        { "name": "Padmakumar K", "party": "BDJS", "votes": 19587, "votePct": 15.33, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 431, "votePct": 0.34, "alliance": "NOTA" }
+        {
+          "name": "Pramod Narayan",
+          "party": "Kerala Congress (M)",
+          "votes": 52669,
+          "votePct": 41.22,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Rinku Cherian",
+          "party": "INC",
+          "votes": 51384,
+          "votePct": 40.21,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Padmakumar K",
+          "party": "BDJS",
+          "votes": 19587,
+          "votePct": 15.33,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 431,
+          "votePct": 0.34,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 1285,
       "marginPct": 1.01,

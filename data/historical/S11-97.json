@@ -13,27 +13,37 @@
           "name": "Thiruvanchoor Radhakrishnan",
           "party": "INC",
           "votes": 53825,
-          "votePct": 46.84, "alliance": "UDF" },
+          "votePct": 46.84,
+          "alliance": "UDF"
+        },
         {
           "name": "V. N. Vasavan",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 53114,
-          "votePct": 46.23, "alliance": "LDF" },
+          "votePct": 46.23,
+          "alliance": "LDF"
+        },
         {
           "name": "Narayanan Namboothiri",
           "party": "BJP",
           "votes": 5449,
-          "votePct": 4.74, "alliance": "NDA" },
+          "votePct": 4.74,
+          "alliance": "NDA"
+        },
         {
           "name": "V. S. Shajan",
           "party": "BSP",
           "votes": 1737,
-          "votePct": 1.51, "alliance": "OTHER" },
+          "votePct": 1.51,
+          "alliance": "OTHER"
+        },
         {
           "name": "Rajeev Abraham",
           "party": "Independent",
           "votes": 387,
-          "votePct": 0.34, "alliance": "OTHER" }
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 711,
       "marginPct": 0.61,
@@ -50,27 +60,37 @@
           "name": "Thiruvanchoor Radhakrishnan",
           "party": "INC",
           "votes": 73894,
-          "votePct": 57.46, "alliance": "UDF" },
+          "votePct": 57.46,
+          "alliance": "UDF"
+        },
         {
           "name": "Reji Sakaria",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 40262,
-          "votePct": 31.31, "alliance": "LDF" },
+          "votePct": 31.31,
+          "alliance": "LDF"
+        },
         {
           "name": "M. S. Karunakaran",
           "party": "BJP",
           "votes": 12582,
-          "votePct": 9.78, "alliance": "NDA" },
+          "votePct": 9.78,
+          "alliance": "NDA"
+        },
         {
           "name": "P. K. Geetha Krishnan",
           "party": "BSP",
           "votes": 651,
-          "votePct": 0.51, "alliance": "OTHER" },
+          "votePct": 0.51,
+          "alliance": "OTHER"
+        },
         {
           "name": "NOTA",
           "party": "NOTA",
           "votes": 483,
-          "votePct": 0.38, "alliance": "NOTA" }
+          "votePct": 0.38,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 33632,
       "marginPct": 26.15,
@@ -87,32 +107,44 @@
           "name": "Thiruvanchoor Radhakrishnan",
           "party": "INC",
           "votes": 65401,
-          "votePct": 53.72, "alliance": "UDF" },
+          "votePct": 53.72,
+          "alliance": "UDF"
+        },
         {
           "name": "K. Anilkumar",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 46658,
-          "votePct": 38.33, "alliance": "LDF" },
+          "votePct": 38.33,
+          "alliance": "LDF"
+        },
         {
           "name": "Minerva Mohan",
           "party": "BJP",
           "votes": 8611,
-          "votePct": 7.07, "alliance": "NDA" },
+          "votePct": 7.07,
+          "alliance": "NDA"
+        },
         {
           "name": "Sreekumar Chakkala",
           "party": "BSP",
           "votes": 374,
-          "votePct": 0.31, "alliance": "OTHER" },
+          "votePct": 0.31,
+          "alliance": "OTHER"
+        },
         {
           "name": "M. K. Shahazad",
           "party": "SUCI(C)",
           "votes": 144,
-          "votePct": 0.12, "alliance": "OTHER" },
+          "votePct": 0.12,
+          "alliance": "OTHER"
+        },
         {
           "name": "Arun Mangat",
           "party": "ABHMS",
           "votes": 77,
-          "votePct": 0.06, "alliance": "OTHER" }
+          "votePct": 0.06,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 18743,
       "marginPct": 15.4,

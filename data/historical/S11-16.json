@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Sunny Joseph", "party": "INC", "votes": 56151, "votePct": 48.07, "alliance": "UDF" },
-        { "name": "K. K. Shailaja", "party": "CPI(M)", "votes": 52711, "votePct": 45.12, "alliance": "LDF" },
-        { "name": "P. K. Velayudhan", "party": "BJP", "votes": 4055, "votePct": 3.47, "alliance": "NDA" },
-        { "name": "P. K. Ayyappan", "party": "SDPI", "votes": 1537, "votePct": 1.32, "alliance": "OTHER" },
-        { "name": "Sunny Joseph", "party": "Independent", "votes": 903, "votePct": 0.77, "alliance": "OTHER" }
+        {
+          "name": "Sunny Joseph",
+          "party": "INC",
+          "votes": 56151,
+          "votePct": 48.07,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. K. Shailaja",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 52711,
+          "votePct": 45.12,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. K. Velayudhan",
+          "party": "BJP",
+          "votes": 4055,
+          "votePct": 3.47,
+          "alliance": "NDA"
+        },
+        {
+          "name": "P. K. Ayyappan",
+          "party": "SDPI",
+          "votes": 1537,
+          "votePct": 1.32,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sunny Joseph",
+          "party": "Independent",
+          "votes": 903,
+          "votePct": 0.77,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 3440,
       "marginPct": 2.95,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Sunny Joseph", "party": "INC", "votes": 65659, "votePct": 48.10, "alliance": "UDF" },
-        { "name": "Binoy Kurian", "party": "CPI(M)", "votes": 57670, "votePct": 42.25, "alliance": "LDF" },
-        { "name": "Paily Vathiattu", "party": "BJP", "votes": 9129, "votePct": 6.69, "alliance": "NDA" },
-        { "name": "P. K. Farookh", "party": "SDPI", "votes": 1935, "votePct": 1.42, "alliance": "OTHER" },
-        { "name": "Pallipram Prasannan", "party": "WPOI", "votes": 513, "votePct": 0.38, "alliance": "OTHER" }
+        {
+          "name": "Sunny Joseph",
+          "party": "INC",
+          "votes": 65659,
+          "votePct": 48.1,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Binoy Kurian",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 57670,
+          "votePct": 42.25,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Paily Vathiattu",
+          "party": "BJP",
+          "votes": 9129,
+          "votePct": 6.69,
+          "alliance": "NDA"
+        },
+        {
+          "name": "P. K. Farookh",
+          "party": "SDPI",
+          "votes": 1935,
+          "votePct": 1.42,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Pallipram Prasannan",
+          "party": "WPOI",
+          "votes": 513,
+          "votePct": 0.38,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 7989,
       "marginPct": 5.85,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Sunny Joseph", "party": "INC", "votes": 66706, "votePct": 46.93, "alliance": "UDF" },
-        { "name": "Sakeer Hussain", "party": "CPI(M)", "votes": 63534, "votePct": 44.7, "alliance": "LDF" },
-        { "name": "Smitha Jayamohan", "party": "BJP", "votes": 9155, "votePct": 6.44, "alliance": "NDA" },
-        { "name": "A.C. Jalaluddeen", "party": "SDPI", "votes": 1541, "votePct": 1.08, "alliance": "OTHER" },
-        { "name": "NOTA", "party": "NOTA", "votes": 404, "votePct": 0.28, "alliance": "NOTA" }
+        {
+          "name": "Sunny Joseph",
+          "party": "INC",
+          "votes": 66706,
+          "votePct": 46.93,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Sakeer Hussain",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 63534,
+          "votePct": 44.7,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Smitha Jayamohan",
+          "party": "BJP",
+          "votes": 9155,
+          "votePct": 6.44,
+          "alliance": "NDA"
+        },
+        {
+          "name": "A.C. Jalaluddeen",
+          "party": "SDPI",
+          "votes": 1541,
+          "votePct": 1.08,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 404,
+          "votePct": 0.28,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 3172,
       "marginPct": 2.23,

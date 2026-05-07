@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Mullakkara Ratnakaran", "party": "CPI", "votes": 71231, "votePct": 55.90, "alliance": "LDF" },
-        { "name": "Shahida Kamal", "party": "INC", "votes": 47607, "votePct": 37.56, "alliance": "UDF" },
-        { "name": "T. C. Saju Kumar", "party": "BJP", "votes": 4160, "votePct": 3.26, "alliance": "NDA" },
-        { "name": "Jaleel Kadakkal", "party": "SDPI", "votes": 1800, "votePct": 1.41, "alliance": "OTHER" },
-        { "name": "Shibu K. Chadayamangalam", "party": "Independent", "votes": 1078, "votePct": 0.85, "alliance": "OTHER" }
+        {
+          "name": "Mullakkara Ratnakaran",
+          "party": "Communist Party of India",
+          "votes": 71231,
+          "votePct": 55.9,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Shahida Kamal",
+          "party": "INC",
+          "votes": 47607,
+          "votePct": 37.56,
+          "alliance": "UDF"
+        },
+        {
+          "name": "T. C. Saju Kumar",
+          "party": "BJP",
+          "votes": 4160,
+          "votePct": 3.26,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Jaleel Kadakkal",
+          "party": "SDPI",
+          "votes": 1800,
+          "votePct": 1.41,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Shibu K. Chadayamangalam",
+          "party": "Independent",
+          "votes": 1078,
+          "votePct": 0.85,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 23624,
       "marginPct": 18.54,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Mullakkara Ratnakaran", "party": "CPI", "votes": 71262, "votePct": 49.10, "alliance": "LDF" },
-        { "name": "M. M. Hassan", "party": "INC", "votes": 49334, "votePct": 33.99, "alliance": "UDF" },
-        { "name": "K. Sivadasan", "party": "BJP", "votes": 19259, "votePct": 13.27, "alliance": "NDA" },
-        { "name": "Jaleel Kadakkal", "party": "SDPI", "votes": 1445, "votePct": 1.00, "alliance": "OTHER" },
-        { "name": "Sajeed Khaleedu", "party": "WPOI", "votes": 1222, "votePct": 0.84, "alliance": "OTHER" }
+        {
+          "name": "Mullakkara Ratnakaran",
+          "party": "Communist Party of India",
+          "votes": 71262,
+          "votePct": 49.1,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. M. Hassan",
+          "party": "INC",
+          "votes": 49334,
+          "votePct": 33.99,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Sivadasan",
+          "party": "BJP",
+          "votes": 19259,
+          "votePct": 13.27,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Jaleel Kadakkal",
+          "party": "SDPI",
+          "votes": 1445,
+          "votePct": 1,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sajeed Khaleedu",
+          "party": "WPOI",
+          "votes": 1222,
+          "votePct": 0.84,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 21928,
       "marginPct": 15.11,
@@ -43,16 +103,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "J. Chinchu Rani", "party": "CPI", "votes": 67252, "votePct": 45.69, "alliance": "LDF" },
-        { "name": "M. M. Naseer", "party": "INC", "votes": 53574, "votePct": 36.40, "alliance": "UDF" },
-        { "name": "Vishnu Pattathanam", "party": "BJP", "votes": 22238, "votePct": 15.11, "alliance": "NDA" },
-        { "name": "Sharafath Mallam", "party": "SDPI", "votes": 1879, "votePct": 1.28, "alliance": "OTHER" },
-        { "name": "Archana Prajith", "party": "WPOI", "votes": 605, "votePct": 0.41, "alliance": "OTHER" }
+        {
+          "name": "J. Chinchu Rani",
+          "party": "Communist Party of India",
+          "votes": 67252,
+          "votePct": 45.69,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. M. Naseer",
+          "party": "INC",
+          "votes": 53574,
+          "votePct": 36.4,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Vishnu Pattathanam",
+          "party": "BJP",
+          "votes": 22238,
+          "votePct": 15.11,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Sharafath Mallam",
+          "party": "SDPI",
+          "votes": 1879,
+          "votePct": 1.28,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Archana Prajith",
+          "party": "WPOI",
+          "votes": 605,
+          "votePct": 0.41,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 13678,
       "marginPct": 9.29,
       "turnout": 147177,
-      "turnoutPct": 74.60,
+      "turnoutPct": 74.6,
       "result": "CPI hold"
     }
   ]

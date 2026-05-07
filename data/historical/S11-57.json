@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. K. Balan", "party": "CPI(M)", "votes": 64175, "votePct": 57.15, "alliance": "LDF" },
-        { "name": "N. Vinesh", "party": "KC(J)", "votes": 38419, "votePct": 34.21, "alliance": "UDF" },
-        { "name": "M. Lakshmanan", "party": "BJP", "votes": 5385, "votePct": 4.80, "alliance": "NDA" },
-        { "name": "P. C. Narayanankutty", "party": "BSP", "votes": 2346, "votePct": 2.09, "alliance": "OTHER" },
-        { "name": "K. Vinesh", "party": "Independent", "votes": 1963, "votePct": 1.75, "alliance": "OTHER" }
+        {
+          "name": "A. K. Balan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 64175,
+          "votePct": 57.15,
+          "alliance": "LDF"
+        },
+        {
+          "name": "N. Vinesh",
+          "party": "KC(J)",
+          "votes": 38419,
+          "votePct": 34.21,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. Lakshmanan",
+          "party": "BJP",
+          "votes": 5385,
+          "votePct": 4.8,
+          "alliance": "NDA"
+        },
+        {
+          "name": "P. C. Narayanankutty",
+          "party": "BSP",
+          "votes": 2346,
+          "votePct": 2.09,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Vinesh",
+          "party": "Independent",
+          "votes": 1963,
+          "votePct": 1.75,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 25756,
       "marginPct": 22.94,
@@ -26,10 +56,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. K. Balan", "party": "CPI(M)", "votes": 67047, "votePct": 52.25, "alliance": "LDF" },
-        { "name": "C. Prakash", "party": "INC", "votes": 43979, "votePct": 34.28, "alliance": "UDF" },
-        { "name": "K. V. Divakaran", "party": "BJP", "votes": 15493, "votePct": 12.07, "alliance": "NDA" },
-        { "name": "K. T. Narayanankutty", "party": "BSP", "votes": 663, "votePct": 0.52, "alliance": "OTHER" }
+        {
+          "name": "A. K. Balan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 67047,
+          "votePct": 52.25,
+          "alliance": "LDF"
+        },
+        {
+          "name": "C. Prakash",
+          "party": "INC",
+          "votes": 43979,
+          "votePct": 34.28,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. V. Divakaran",
+          "party": "BJP",
+          "votes": 15493,
+          "votePct": 12.07,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. T. Narayanankutty",
+          "party": "BSP",
+          "votes": 663,
+          "votePct": 0.52,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 23068,
       "marginPct": 17.97,
@@ -42,10 +96,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. P. Sumod", "party": "CPI(M)", "votes": 67744, "votePct": 51.58, "alliance": "LDF" },
-        { "name": "K. A. Sheeba", "party": "INC", "votes": 43213, "votePct": 32.90, "alliance": "UDF" },
-        { "name": "Jayaprakashan K. P.", "party": "BJP", "votes": 18465, "votePct": 14.06, "alliance": "NDA" },
-        { "name": "C. A. Ushakumari", "party": "WPOI", "votes": 985, "votePct": 0.75, "alliance": "OTHER" }
+        {
+          "name": "P. P. Sumod",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 67744,
+          "votePct": 51.58,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. A. Sheeba",
+          "party": "INC",
+          "votes": 43213,
+          "votePct": 32.9,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Jayaprakashan K. P.",
+          "party": "BJP",
+          "votes": 18465,
+          "votePct": 14.06,
+          "alliance": "NDA"
+        },
+        {
+          "name": "C. A. Ushakumari",
+          "party": "WPOI",
+          "votes": 985,
+          "votePct": 0.75,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 24531,
       "marginPct": 18.67,

@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. V. Shreyams Kumar", "party": "SJ(D)", "votes": 67018, "votePct": 52.94, "alliance": "UDF" },
-        { "name": "P. A. Muhammed", "party": "CPI(M)", "votes": 48849, "votePct": 38.59, "alliance": "LDF" },
-        { "name": "Anand Kumar P. G.", "party": "BJP", "votes": 6580, "votePct": 5.20, "alliance": "NDA" },
-        { "name": "Jameela", "party": "SDPI", "votes": 1597, "votePct": 1.26, "alliance": "OTHER" },
-        { "name": "K. Nasrudeen", "party": "Independent", "votes": 1197, "votePct": 0.95, "alliance": "OTHER" }
+        {
+          "name": "M. V. Shreyams Kumar",
+          "party": "SJ(D)",
+          "votes": 67018,
+          "votePct": 52.94,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. A. Muhammed",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 48849,
+          "votePct": 38.59,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Anand Kumar P. G.",
+          "party": "BJP",
+          "votes": 6580,
+          "votePct": 5.2,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Jameela",
+          "party": "SDPI",
+          "votes": 1597,
+          "votePct": 1.26,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Nasrudeen",
+          "party": "Independent",
+          "votes": 1197,
+          "votePct": 0.95,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 18169,
       "marginPct": 14.35,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. K. Saseendran", "party": "CPI(M)", "votes": 72959, "votePct": 48.35, "alliance": "LDF" },
-        { "name": "M. V. Shreyams Kumar", "party": "JD(U)", "votes": 59876, "votePct": 39.68, "alliance": "UDF" },
-        { "name": "K. Sadanandan", "party": "BJP", "votes": 12938, "votePct": 8.57, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 1172, "votePct": 0.78, "alliance": "NOTA" },
-        { "name": "Joseph Ambalavayal", "party": "WPOI", "votes": 900, "votePct": 0.60, "alliance": "OTHER" }
+        {
+          "name": "C. K. Saseendran",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 72959,
+          "votePct": 48.35,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. V. Shreyams Kumar",
+          "party": "JD(U)",
+          "votes": 59876,
+          "votePct": 39.68,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Sadanandan",
+          "party": "BJP",
+          "votes": 12938,
+          "votePct": 8.57,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 1172,
+          "votePct": 0.78,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Joseph Ambalavayal",
+          "party": "WPOI",
+          "votes": 900,
+          "votePct": 0.6,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 13083,
       "marginPct": 8.67,
@@ -43,13 +103,37 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "T. Siddique", "party": "INC", "votes": 70252, "votePct": 46.16, "alliance": "UDF" },
-        { "name": "M. V. Shreyams Kumar", "party": "LJD", "votes": 64782, "votePct": 42.56, "alliance": "LDF" },
-        { "name": "Subeesh T. M.", "party": "BJP", "votes": 14113, "votePct": 9.27, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 828, "votePct": 0.54, "alliance": "NOTA" }
+        {
+          "name": "T. Siddique",
+          "party": "INC",
+          "votes": 70252,
+          "votePct": 46.16,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. V. Shreyams Kumar",
+          "party": "LJD",
+          "votes": 64782,
+          "votePct": 42.56,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Subeesh T. M.",
+          "party": "BJP",
+          "votes": 14113,
+          "votePct": 9.27,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 828,
+          "votePct": 0.54,
+          "alliance": "NOTA"
+        }
       ],
       "margin": 5470,
-      "marginPct": 3.60,
+      "marginPct": 3.6,
       "turnout": 152209,
       "turnoutPct": 75.65,
       "result": "INC gain from CPI(M)"

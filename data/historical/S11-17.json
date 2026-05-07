@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. K. Jayalakshmi", "party": "INC", "votes": 62996, "votePct": 50.78, "alliance": "UDF" },
-        { "name": "K. C. Kunhiraman", "party": "CPI(M)", "votes": 50262, "votePct": 40.52, "alliance": "LDF" },
-        { "name": "Irumuttoor Kunhiraman", "party": "BJP", "votes": 5732, "votePct": 4.62, "alliance": "NDA" },
-        { "name": "A. Gopakumar", "party": "SDPI", "votes": 2342, "votePct": 1.89, "alliance": "OTHER" },
-        { "name": "P. U. Babu", "party": "Independent", "votes": 1712, "votePct": 1.38, "alliance": "OTHER" }
+        {
+          "name": "P. K. Jayalakshmi",
+          "party": "INC",
+          "votes": 62996,
+          "votePct": 50.78,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. C. Kunhiraman",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 50262,
+          "votePct": 40.52,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Irumuttoor Kunhiraman",
+          "party": "BJP",
+          "votes": 5732,
+          "votePct": 4.62,
+          "alliance": "NDA"
+        },
+        {
+          "name": "A. Gopakumar",
+          "party": "SDPI",
+          "votes": 2342,
+          "votePct": 1.89,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "P. U. Babu",
+          "party": "Independent",
+          "votes": 1712,
+          "votePct": 1.38,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 12734,
       "marginPct": 10.26,
@@ -26,16 +56,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "O. R. Kelu", "party": "CPI(M)", "votes": 62436, "votePct": 43.10, "alliance": "LDF" },
-        { "name": "P. K. Jayalakshmi", "party": "INC", "votes": 61129, "votePct": 42.20, "alliance": "UDF" },
-        { "name": "K. Mohandas", "party": "BJP", "votes": 16230, "votePct": 11.20, "alliance": "NDA" },
-        { "name": "Soman P. N.", "party": "SDPI", "votes": 1377, "votePct": 0.95, "alliance": "OTHER" },
-        { "name": "Lakshmi", "party": "Independent", "votes": 1300, "votePct": 0.89, "alliance": "OTHER" }
+        {
+          "name": "O. R. Kelu",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 62436,
+          "votePct": 43.1,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. K. Jayalakshmi",
+          "party": "INC",
+          "votes": 61129,
+          "votePct": 42.2,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Mohandas",
+          "party": "BJP",
+          "votes": 16230,
+          "votePct": 11.2,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Soman P. N.",
+          "party": "SDPI",
+          "votes": 1377,
+          "votePct": 0.95,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Lakshmi",
+          "party": "Independent",
+          "votes": 1300,
+          "votePct": 0.89,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1307,
-      "marginPct": 0.90,
+      "marginPct": 0.9,
       "turnout": 187377,
-      "turnoutPct": 77.30,
+      "turnoutPct": 77.3,
       "result": "CPI(M) gain from INC"
     },
     {
@@ -43,13 +103,37 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "O. R. Kelu", "party": "CPI(M)", "votes": 72536, "votePct": 47.54, "alliance": "LDF" },
-        { "name": "P. K. Jayalakshmi", "party": "INC", "votes": 63254, "votePct": 41.46, "alliance": "UDF" },
-        { "name": "Palliyara Mukundan", "party": "BJP", "votes": 13142, "votePct": 8.62, "alliance": "NDA" },
-        { "name": "Babitha Sreenu", "party": "SDPI", "votes": 1992, "votePct": 1.31, "alliance": "OTHER" }
+        {
+          "name": "O. R. Kelu",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 72536,
+          "votePct": 47.54,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. K. Jayalakshmi",
+          "party": "INC",
+          "votes": 63254,
+          "votePct": 41.46,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Palliyara Mukundan",
+          "party": "BJP",
+          "votes": 13142,
+          "votePct": 8.62,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Babitha Sreenu",
+          "party": "SDPI",
+          "votes": 1992,
+          "votePct": 1.31,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 9282,
-      "marginPct": 6.10,
+      "marginPct": 6.1,
       "turnout": 151784,
       "turnoutPct": null,
       "result": "CPI(M) hold"

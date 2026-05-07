@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. Sasi", "party": "CPI", "votes": 59601, "votePct": 52.93, "alliance": "LDF" },
-        { "name": "K. Vidyadharan", "party": "INC", "votes": 47376, "votePct": 42.07, "alliance": "UDF" },
-        { "name": "Aythiyoor Surendran", "party": "Independent", "votes": 2078, "votePct": 1.85, "alliance": "OTHER" },
-        { "name": "Anil Mangalapuram", "party": "BSP", "votes": 1414, "votePct": 1.26, "alliance": "OTHER" },
-        { "name": "Sajimon Chelayam", "party": "Independent", "votes": 1277, "votePct": 1.13, "alliance": "OTHER" }
+        {
+          "name": "V. Sasi",
+          "party": "Communist Party of India",
+          "votes": 59601,
+          "votePct": 52.93,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. Vidyadharan",
+          "party": "INC",
+          "votes": 47376,
+          "votePct": 42.07,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Aythiyoor Surendran",
+          "party": "Independent",
+          "votes": 2078,
+          "votePct": 1.85,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Anil Mangalapuram",
+          "party": "BSP",
+          "votes": 1414,
+          "votePct": 1.26,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Sajimon Chelayam",
+          "party": "Independent",
+          "votes": 1277,
+          "votePct": 1.13,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 12225,
       "marginPct": 10.86,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. Sasi", "party": "CPI", "votes": 64692, "votePct": 46.75, "alliance": "LDF" },
-        { "name": "K. S. Ajith Kumar", "party": "INC", "votes": 50370, "votePct": 36.30, "alliance": "UDF" },
-        { "name": "P. P. Vava", "party": "BJP", "votes": 19478, "votePct": 14.08, "alliance": "NDA" },
-        { "name": "Sasi Panthalam", "party": "WPOI", "votes": 955, "votePct": 0.69, "alliance": "OTHER" },
-        { "name": "Santhini", "party": "Independent", "votes": 639, "votePct": 0.46, "alliance": "OTHER" }
+        {
+          "name": "V. Sasi",
+          "party": "Communist Party of India",
+          "votes": 64692,
+          "votePct": 46.75,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. S. Ajith Kumar",
+          "party": "INC",
+          "votes": 50370,
+          "votePct": 36.3,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. P. Vava",
+          "party": "BJP",
+          "votes": 19478,
+          "votePct": 14.08,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Sasi Panthalam",
+          "party": "WPOI",
+          "votes": 955,
+          "votePct": 0.69,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Santhini",
+          "party": "Independent",
+          "votes": 639,
+          "votePct": 0.46,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 14322,
       "marginPct": 10.35,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. Sasi", "party": "CPI", "votes": 62634, "votePct": 43.17, "alliance": "LDF" },
-        { "name": "B. S. Anoop", "party": "INC", "votes": 48617, "votePct": 33.51, "alliance": "UDF" },
-        { "name": "G. S. Ashanath", "party": "BJP", "votes": 30986, "votePct": 21.36, "alliance": "NDA" },
-        { "name": "Anil Mangalapuram", "party": "BSP", "votes": 1097, "votePct": 0.76, "alliance": "OTHER" },
-        { "name": "G. Anilkumar", "party": "WPOI", "votes": 616, "votePct": 0.42, "alliance": "OTHER" }
+        {
+          "name": "V. Sasi",
+          "party": "Communist Party of India",
+          "votes": 62634,
+          "votePct": 43.17,
+          "alliance": "LDF"
+        },
+        {
+          "name": "B. S. Anoop",
+          "party": "INC",
+          "votes": 48617,
+          "votePct": 33.51,
+          "alliance": "UDF"
+        },
+        {
+          "name": "G. S. Ashanath",
+          "party": "BJP",
+          "votes": 30986,
+          "votePct": 21.36,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Anil Mangalapuram",
+          "party": "BSP",
+          "votes": 1097,
+          "votePct": 0.76,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "G. Anilkumar",
+          "party": "WPOI",
+          "votes": 616,
+          "votePct": 0.42,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 14017,
       "marginPct": 9.66,

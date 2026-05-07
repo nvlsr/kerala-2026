@@ -13,27 +13,37 @@
           "name": "Adoor Prakash",
           "party": "INC",
           "votes": 65724,
-          "votePct": 50.15, "alliance": "UDF" },
+          "votePct": 50.15,
+          "alliance": "UDF"
+        },
         {
           "name": "M. S. Rajendran",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 57950,
-          "votePct": 44.22, "alliance": "LDF" },
+          "votePct": 44.22,
+          "alliance": "LDF"
+        },
         {
           "name": "V. S. Harish Chandran",
           "party": "BJP",
           "votes": 5994,
-          "votePct": 4.57, "alliance": "NDA" },
+          "votePct": 4.57,
+          "alliance": "NDA"
+        },
         {
           "name": "Sinto Stephen",
           "party": "Independent",
           "votes": 655,
-          "votePct": 0.5, "alliance": "OTHER" },
+          "votePct": 0.5,
+          "alliance": "OTHER"
+        },
         {
           "name": "Thattayil Saraswathi",
           "party": "Independent",
           "votes": 276,
-          "votePct": 0.21, "alliance": "OTHER" }
+          "votePct": 0.21,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 7774,
       "marginPct": 5.93,
@@ -50,27 +60,37 @@
           "name": "Adoor Prakash",
           "party": "INC",
           "votes": 72800,
-          "votePct": 50.81, "alliance": "UDF" },
+          "votePct": 50.81,
+          "alliance": "UDF"
+        },
         {
           "name": "R. Sanal Kumar",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 52052,
-          "votePct": 36.33, "alliance": "LDF" },
+          "votePct": 36.33,
+          "alliance": "LDF"
+        },
         {
           "name": "Asoka Kumar D.",
           "party": "BJP",
           "votes": 16713,
-          "votePct": 11.66, "alliance": "NDA" },
+          "votePct": 11.66,
+          "alliance": "NDA"
+        },
         {
           "name": "Reyash",
           "party": "SDPI",
           "votes": 401,
-          "votePct": 0.28, "alliance": "OTHER" },
+          "votePct": 0.28,
+          "alliance": "OTHER"
+        },
         {
           "name": "Joshy Joseph",
           "party": "WPOI",
           "votes": 365,
-          "votePct": 0.25, "alliance": "OTHER" }
+          "votePct": 0.25,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 20748,
       "marginPct": 14.48,
@@ -85,19 +105,25 @@
       "candidates": [
         {
           "name": "K. U. Jenish Kumar",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 54099,
-          "votePct": 38.96, "alliance": "LDF" },
+          "votePct": 38.96,
+          "alliance": "LDF"
+        },
         {
           "name": "P. Mohanraj",
           "party": "INC",
           "votes": 44146,
-          "votePct": 31.79, "alliance": "UDF" },
+          "votePct": 31.79,
+          "alliance": "UDF"
+        },
         {
           "name": "K. Surendran",
           "party": "BJP",
           "votes": 39786,
-          "votePct": 28.65, "alliance": "NDA" }
+          "votePct": 28.65,
+          "alliance": "NDA"
+        }
       ],
       "margin": 9953,
       "marginPct": 7.17,
@@ -112,34 +138,46 @@
       "candidates": [
         {
           "name": "K. U. Jenish Kumar",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 62318,
-          "votePct": 41.62, "alliance": "LDF" },
+          "votePct": 41.62,
+          "alliance": "LDF"
+        },
         {
           "name": "Robin Peter",
           "party": "INC",
           "votes": 53810,
-          "votePct": 35.94, "alliance": "UDF" },
+          "votePct": 35.94,
+          "alliance": "UDF"
+        },
         {
           "name": "K. Surendran",
           "party": "BJP",
           "votes": 32811,
-          "votePct": 21.91, "alliance": "NDA" },
+          "votePct": 21.91,
+          "alliance": "NDA"
+        },
         {
           "name": "P. Raghu",
           "party": "ADHMPI",
           "votes": 214,
-          "votePct": 0.14, "alliance": "OTHER" },
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        },
         {
           "name": "Suku Balan",
           "party": "API",
           "votes": 122,
-          "votePct": 0.08, "alliance": "OTHER" },
+          "votePct": 0.08,
+          "alliance": "OTHER"
+        },
         {
           "name": "Manoharan",
           "party": "Independent",
           "votes": 75,
-          "votePct": 0.05, "alliance": "OTHER" }
+          "votePct": 0.05,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 8508,
       "marginPct": 5.68,

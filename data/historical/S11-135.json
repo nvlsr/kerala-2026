@@ -9,12 +9,30 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. Sivankutty", "party": "CPI(M)", "votes": 50076, "votePct": 42.99, "alliance": "LDF" },
-        { "name": "O. Rajagopal", "party": "BJP", "votes": 43661, "votePct": 37.49, "alliance": "NDA" },
-        { "name": "Charupara Ravi", "party": "SJ(D)", "votes": 20248, "votePct": 17.38, "alliance": "LDF" }
+        {
+          "name": "V. Sivankutty",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 50076,
+          "votePct": 42.99,
+          "alliance": "LDF"
+        },
+        {
+          "name": "O. Rajagopal",
+          "party": "BJP",
+          "votes": 43661,
+          "votePct": 37.49,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Charupara Ravi",
+          "party": "SJ(D)",
+          "votes": 20248,
+          "votePct": 17.38,
+          "alliance": "LDF"
+        }
       ],
       "margin": 6415,
-      "marginPct": 5.50,
+      "marginPct": 5.5,
       "turnout": 116474,
       "turnoutPct": 67.52,
       "result": "CPI(M) win"
@@ -24,9 +42,27 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "O. Rajagopal", "party": "BJP", "votes": 67813, "votePct": 47.46, "alliance": "NDA" },
-        { "name": "V. Sivankutty", "party": "CPI(M)", "votes": 59142, "votePct": 41.39, "alliance": "LDF" },
-        { "name": "V. Surendran Pillai", "party": "JD(U)", "votes": 13860, "votePct": 9.70, "alliance": "UDF" }
+        {
+          "name": "O. Rajagopal",
+          "party": "BJP",
+          "votes": 67813,
+          "votePct": 47.46,
+          "alliance": "NDA"
+        },
+        {
+          "name": "V. Sivankutty",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 59142,
+          "votePct": 41.39,
+          "alliance": "LDF"
+        },
+        {
+          "name": "V. Surendran Pillai",
+          "party": "JD(U)",
+          "votes": 13860,
+          "votePct": 9.7,
+          "alliance": "UDF"
+        }
       ],
       "margin": 8671,
       "marginPct": 6.07,
@@ -39,9 +75,27 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "V. Sivankutty", "party": "CPI(M)", "votes": 55837, "votePct": 38.24, "alliance": "LDF" },
-        { "name": "Kummanam Rajasekharan", "party": "BJP", "votes": 51888, "votePct": 35.54, "alliance": "NDA" },
-        { "name": "K. Muraleedharan", "party": "INC", "votes": 36524, "votePct": 25.01, "alliance": "UDF" }
+        {
+          "name": "V. Sivankutty",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 55837,
+          "votePct": 38.24,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Kummanam Rajasekharan",
+          "party": "BJP",
+          "votes": 51888,
+          "votePct": 35.54,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. Muraleedharan",
+          "party": "INC",
+          "votes": 36524,
+          "votePct": 25.01,
+          "alliance": "UDF"
+        }
       ],
       "margin": 3949,
       "marginPct": 2.71,

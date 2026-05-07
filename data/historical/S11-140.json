@@ -11,22 +11,28 @@
       "candidates": [
         {
           "name": "R. Selvaraj",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 54711,
-          "votePct": 48.98, "alliance": "LDF" },
+          "votePct": 48.98,
+          "alliance": "LDF"
+        },
         {
           "name": "Thampanoor Ravi",
           "party": "INC",
           "votes": 48009,
-          "votePct": 42.98, "alliance": "UDF" },
+          "votePct": 42.98,
+          "alliance": "UDF"
+        },
         {
           "name": "Athiyannoor Sreekumar",
           "party": "BJP",
           "votes": 6730,
-          "votePct": 6.03, "alliance": "NDA" }
+          "votePct": 6.03,
+          "alliance": "NDA"
+        }
       ],
       "margin": 6702,
-      "marginPct": 6.0,
+      "marginPct": 6,
       "turnout": 111698,
       "turnoutPct": 70.76,
       "result": "CPI(M) hold"
@@ -40,17 +46,23 @@
           "name": "R. Selvaraj",
           "party": "INC",
           "votes": 52528,
-          "votePct": 39.96, "alliance": "UDF" },
+          "votePct": 39.96,
+          "alliance": "UDF"
+        },
         {
           "name": "F. Lawrence",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 46194,
-          "votePct": 35.14, "alliance": "LDF" },
+          "votePct": 35.14,
+          "alliance": "LDF"
+        },
         {
           "name": "O. Rajagopal",
           "party": "BJP",
           "votes": 30507,
-          "votePct": 23.21, "alliance": "NDA" }
+          "votePct": 23.21,
+          "alliance": "NDA"
+        }
       ],
       "margin": 6334,
       "marginPct": 4.82,
@@ -65,29 +77,39 @@
       "candidates": [
         {
           "name": "K. Ansalan",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 63559,
-          "votePct": 47.2, "alliance": "LDF" },
+          "votePct": 47.2,
+          "alliance": "LDF"
+        },
         {
           "name": "R. Selvaraj",
           "party": "INC",
           "votes": 54016,
-          "votePct": 40.12, "alliance": "UDF" },
+          "votePct": 40.12,
+          "alliance": "UDF"
+        },
         {
           "name": "Punchakkari Surendran",
           "party": "BJP",
           "votes": 15531,
-          "votePct": 11.53, "alliance": "NDA" },
+          "votePct": 11.53,
+          "alliance": "NDA"
+        },
         {
           "name": "Prabhakaran",
           "party": "BSP",
           "votes": 566,
-          "votePct": 0.42, "alliance": "OTHER" },
+          "votePct": 0.42,
+          "alliance": "OTHER"
+        },
         {
           "name": "Anilkumar",
           "party": "Independent",
           "votes": 280,
-          "votePct": 0.21, "alliance": "OTHER" }
+          "votePct": 0.21,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 9543,
       "marginPct": 7.09,
@@ -102,24 +124,32 @@
       "candidates": [
         {
           "name": "K. Ansalan",
-          "party": "CPI(M)",
+          "party": "Communist Party of India (Marxist)",
           "votes": 65497,
-          "votePct": 47.02, "alliance": "LDF" },
+          "votePct": 47.02,
+          "alliance": "LDF"
+        },
         {
           "name": "R. Selvaraj",
           "party": "INC",
           "votes": 51235,
-          "votePct": 36.78, "alliance": "UDF" },
+          "votePct": 36.78,
+          "alliance": "UDF"
+        },
         {
           "name": "Chenkal S. Rajasekharan Nair",
           "party": "BJP",
           "votes": 21009,
-          "votePct": 15.08, "alliance": "NDA" },
+          "votePct": 15.08,
+          "alliance": "NDA"
+        },
         {
           "name": "T. R. Premkumar",
           "party": "BSP",
           "votes": 643,
-          "votePct": 0.46, "alliance": "OTHER" }
+          "votePct": 0.46,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 14262,
       "marginPct": 10.24,

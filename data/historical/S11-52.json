@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "M. Hamza", "party": "CPI(M)", "votes": 65023, "votePct": 49.47, "alliance": "LDF" },
-        { "name": "V. K. Sreekandan", "party": "INC", "votes": 51820, "votePct": 39.43, "alliance": "UDF" },
-        { "name": "P. Venugopalan", "party": "BJP", "votes": 9631, "votePct": 7.33, "alliance": "NDA" },
-        { "name": "E. S. Kajahussain", "party": "SDPI", "votes": 1933, "votePct": 1.47, "alliance": "OTHER" },
-        { "name": "M. Hamza", "party": "Independent", "votes": 1097, "votePct": 0.83, "alliance": "OTHER" }
+        {
+          "name": "M. Hamza",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 65023,
+          "votePct": 49.47,
+          "alliance": "LDF"
+        },
+        {
+          "name": "V. K. Sreekandan",
+          "party": "INC",
+          "votes": 51820,
+          "votePct": 39.43,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. Venugopalan",
+          "party": "BJP",
+          "votes": 9631,
+          "votePct": 7.33,
+          "alliance": "NDA"
+        },
+        {
+          "name": "E. S. Kajahussain",
+          "party": "SDPI",
+          "votes": 1933,
+          "votePct": 1.47,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "M. Hamza",
+          "party": "Independent",
+          "votes": 1097,
+          "votePct": 0.83,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 13203,
       "marginPct": 10.04,
@@ -26,16 +56,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "P. Unni", "party": "CPI(M)", "votes": 67161, "votePct": 44.71, "alliance": "LDF" },
-        { "name": "Shanimol Usman", "party": "INC", "votes": 51073, "votePct": 34.0, "alliance": "UDF" },
-        { "name": "P. Venugopalan", "party": "BJP", "votes": 27605, "votePct": 18.38, "alliance": "NDA" },
-        { "name": "A. A. Sulfikar", "party": "SDPI", "votes": 1166, "votePct": 0.78, "alliance": "OTHER" },
-        { "name": "K. T. Padmini", "party": "BSP", "votes": 811, "votePct": 0.54, "alliance": "OTHER" }
+        {
+          "name": "P. Unni",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 67161,
+          "votePct": 44.71,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Shanimol Usman",
+          "party": "INC",
+          "votes": 51073,
+          "votePct": 34,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. Venugopalan",
+          "party": "BJP",
+          "votes": 27605,
+          "votePct": 18.38,
+          "alliance": "NDA"
+        },
+        {
+          "name": "A. A. Sulfikar",
+          "party": "SDPI",
+          "votes": 1166,
+          "votePct": 0.78,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. T. Padmini",
+          "party": "BSP",
+          "votes": 811,
+          "votePct": 0.54,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 16088,
       "marginPct": 10.71,
       "turnout": 150212,
-      "turnoutPct": 76.0,
+      "turnoutPct": 76,
       "result": "CPI(M) hold"
     },
     {
@@ -43,10 +103,34 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. Premkumar", "party": "CPI(M)", "votes": 74859, "votePct": 46.45, "alliance": "LDF" },
-        { "name": "P. Sarin", "party": "INC", "votes": 59707, "votePct": 37.05, "alliance": "UDF" },
-        { "name": "P. Venugopalan", "party": "BJP", "votes": 25056, "votePct": 15.55, "alliance": "NDA" },
-        { "name": "P. P. Sivan", "party": "BSP", "votes": 672, "votePct": 0.42, "alliance": "OTHER" }
+        {
+          "name": "K. Premkumar",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 74859,
+          "votePct": 46.45,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. Sarin",
+          "party": "INC",
+          "votes": 59707,
+          "votePct": 37.05,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. Venugopalan",
+          "party": "BJP",
+          "votes": 25056,
+          "votePct": 15.55,
+          "alliance": "NDA"
+        },
+        {
+          "name": "P. P. Sivan",
+          "party": "BSP",
+          "votes": 672,
+          "votePct": 0.42,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 15152,
       "marginPct": 9.96,

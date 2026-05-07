@@ -9,16 +9,46 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "C. K. Sadasivan", "party": "CPI(M)", "votes": 67409, "votePct": 48.28, "alliance": "LDF" },
-        { "name": "M. Murali", "party": "INC", "votes": 66094, "votePct": 47.34, "alliance": "UDF" },
-        { "name": "T. O. Noushad", "party": "BJP", "votes": 3083, "votePct": 2.21, "alliance": "NDA" },
-        { "name": "K. Sadasivan", "party": "Independent", "votes": 744, "votePct": 0.53, "alliance": "OTHER" },
-        { "name": "Murali", "party": "Independent", "votes": 704, "votePct": 0.50, "alliance": "OTHER" }
+        {
+          "name": "C. K. Sadasivan",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 67409,
+          "votePct": 48.28,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. Murali",
+          "party": "INC",
+          "votes": 66094,
+          "votePct": 47.34,
+          "alliance": "UDF"
+        },
+        {
+          "name": "T. O. Noushad",
+          "party": "BJP",
+          "votes": 3083,
+          "votePct": 2.21,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. Sadasivan",
+          "party": "Independent",
+          "votes": 744,
+          "votePct": 0.53,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Murali",
+          "party": "Independent",
+          "votes": 704,
+          "votePct": 0.5,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 1315,
       "marginPct": 0.94,
       "turnout": 139626,
-      "turnoutPct": 76.70,
+      "turnoutPct": 76.7,
       "result": "CPI(M) hold"
     },
     {
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "U. Prathibha", "party": "CPI(M)", "votes": 72956, "votePct": 46.53, "alliance": "LDF" },
-        { "name": "M. Liju", "party": "INC", "votes": 61099, "votePct": 38.96, "alliance": "UDF" },
-        { "name": "Shaji M. Panicker", "party": "BDJS", "votes": 20000, "votePct": 12.75, "alliance": "NDA" },
-        { "name": "Muttam Nazar", "party": "PDP", "votes": 1125, "votePct": 0.72, "alliance": "OTHER" },
-        { "name": "Maniyappan Achari", "party": "Independent", "votes": 739, "votePct": 0.47, "alliance": "OTHER" }
+        {
+          "name": "U. Prathibha",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 72956,
+          "votePct": 46.53,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. Liju",
+          "party": "INC",
+          "votes": 61099,
+          "votePct": 38.96,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Shaji M. Panicker",
+          "party": "BDJS",
+          "votes": 20000,
+          "votePct": 12.75,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Muttam Nazar",
+          "party": "PDP",
+          "votes": 1125,
+          "votePct": 0.72,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Maniyappan Achari",
+          "party": "Independent",
+          "votes": 739,
+          "votePct": 0.47,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 11857,
       "marginPct": 7.57,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "U. Prathibha", "party": "CPI(M)", "votes": 77348, "votePct": 47.97, "alliance": "LDF" },
-        { "name": "Aritha Babu", "party": "INC", "votes": 71050, "votePct": 44.06, "alliance": "UDF" },
-        { "name": "P. Pradeeplal", "party": "BDJS", "votes": 11413, "votePct": 7.08, "alliance": "NDA" },
-        { "name": "Maniyappan Achari", "party": "Independent", "votes": 367, "votePct": 0.47, "alliance": "OTHER" },
-        { "name": "Rajeev R", "party": "Independent", "votes": 231, "votePct": 0.14, "alliance": "OTHER" }
+        {
+          "name": "U. Prathibha",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 77348,
+          "votePct": 47.97,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Aritha Babu",
+          "party": "INC",
+          "votes": 71050,
+          "votePct": 44.06,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. Pradeeplal",
+          "party": "BDJS",
+          "votes": 11413,
+          "votePct": 7.08,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Maniyappan Achari",
+          "party": "Independent",
+          "votes": 367,
+          "votePct": 0.47,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Rajeev R",
+          "party": "Independent",
+          "votes": 231,
+          "votePct": 0.14,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 6298,
       "marginPct": 3.88,

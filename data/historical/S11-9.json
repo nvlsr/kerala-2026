@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. C. Joseph", "party": "INC", "votes": 68503, "votePct": 52.41, "alliance": "UDF" },
-        { "name": "P. Santhosh Kumar", "party": "CPI", "votes": 56746, "votePct": 43.42, "alliance": "LDF" },
-        { "name": "M. G. Ramakrishnan Nair", "party": "BJP", "votes": 3529, "votePct": 2.70, "alliance": "NDA" },
-        { "name": "Joseph", "party": "Independent", "votes": 740, "votePct": 0.57, "alliance": "OTHER" },
-        { "name": "Ammini Krishnan", "party": "Independent", "votes": 633, "votePct": 0.48, "alliance": "OTHER" }
+        {
+          "name": "K. C. Joseph",
+          "party": "INC",
+          "votes": 68503,
+          "votePct": 52.41,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. Santhosh Kumar",
+          "party": "Communist Party of India",
+          "votes": 56746,
+          "votePct": 43.42,
+          "alliance": "LDF"
+        },
+        {
+          "name": "M. G. Ramakrishnan Nair",
+          "party": "BJP",
+          "votes": 3529,
+          "votePct": 2.7,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Joseph",
+          "party": "Independent",
+          "votes": 740,
+          "votePct": 0.57,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Ammini Krishnan",
+          "party": "Independent",
+          "votes": 633,
+          "votePct": 0.48,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 11757,
       "marginPct": 8.99,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "K. C. Joseph", "party": "INC", "votes": 72548, "votePct": 49.00, "alliance": "UDF" },
-        { "name": "K. T. Jose", "party": "CPI(M)", "votes": 62901, "votePct": 42.48, "alliance": "LDF" },
-        { "name": "A. P. Gangadharan", "party": "BJP", "votes": 8294, "votePct": 5.60, "alliance": "NDA" },
-        { "name": "Binoy Thomas", "party": "Independent", "votes": 2734, "votePct": 1.85, "alliance": "OTHER" },
-        { "name": "Joseph K. C. Kalayakkattil", "party": "Independent", "votes": 602, "votePct": 0.41, "alliance": "OTHER" }
+        {
+          "name": "K. C. Joseph",
+          "party": "INC",
+          "votes": 72548,
+          "votePct": 49,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. T. Jose",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 62901,
+          "votePct": 42.48,
+          "alliance": "LDF"
+        },
+        {
+          "name": "A. P. Gangadharan",
+          "party": "BJP",
+          "votes": 8294,
+          "votePct": 5.6,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Binoy Thomas",
+          "party": "Independent",
+          "votes": 2734,
+          "votePct": 1.85,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Joseph K. C. Kalayakkattil",
+          "party": "Independent",
+          "votes": 602,
+          "votePct": 0.41,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 9647,
       "marginPct": 6.52,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Sajeev Joseph", "party": "INC", "votes": 76764, "votePct": 50.33, "alliance": "UDF" },
-        { "name": "Saji Kuttiyanimattom", "party": "KC(M)", "votes": 66754, "votePct": 43.77, "alliance": "LDF" },
-        { "name": "Aniyamma Rajendran", "party": "BJP", "votes": 7825, "votePct": 5.13, "alliance": "NDA" },
-        { "name": "NOTA", "party": "NOTA", "votes": 459, "votePct": 0.30, "alliance": "NOTA" },
-        { "name": "Chacko Karimbil", "party": "Independent", "votes": 311, "votePct": 0.20, "alliance": "OTHER" }
+        {
+          "name": "Sajeev Joseph",
+          "party": "INC",
+          "votes": 76764,
+          "votePct": 50.33,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Saji Kuttiyanimattom",
+          "party": "Kerala Congress (M)",
+          "votes": 66754,
+          "votePct": 43.77,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Aniyamma Rajendran",
+          "party": "BJP",
+          "votes": 7825,
+          "votePct": 5.13,
+          "alliance": "NDA"
+        },
+        {
+          "name": "NOTA",
+          "party": "NOTA",
+          "votes": 459,
+          "votePct": 0.3,
+          "alliance": "NOTA"
+        },
+        {
+          "name": "Chacko Karimbil",
+          "party": "Independent",
+          "votes": 311,
+          "votePct": 0.2,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 10010,
       "marginPct": 6.56,

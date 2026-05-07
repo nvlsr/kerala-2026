@@ -9,9 +9,27 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Thomas Chandy", "party": "NCP", "votes": 60010, "votePct": 50.81, "alliance": "LDF" },
-        { "name": "K. C. Joseph", "party": "KC(M)", "votes": 52039, "votePct": 44.06, "alliance": "UDF" },
-        { "name": "K. Soman", "party": "BJP", "votes": 4395, "votePct": 3.72, "alliance": "NDA" }
+        {
+          "name": "Thomas Chandy",
+          "party": "NCP",
+          "votes": 60010,
+          "votePct": 50.81,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. C. Joseph",
+          "party": "Kerala Congress (M)",
+          "votes": 52039,
+          "votePct": 44.06,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. Soman",
+          "party": "BJP",
+          "votes": 4395,
+          "votePct": 3.72,
+          "alliance": "NDA"
+        }
       ],
       "margin": 7971,
       "marginPct": 6.75,
@@ -24,9 +42,27 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Thomas Chandy", "party": "NCP", "votes": 50114, "votePct": 38.52, "alliance": "LDF" },
-        { "name": "Jacob Abraham", "party": "KC(M)", "votes": 45223, "votePct": 34.76, "alliance": "UDF" },
-        { "name": "Subash Vasu", "party": "BDJS", "votes": 33044, "votePct": 25.40, "alliance": "NDA" }
+        {
+          "name": "Thomas Chandy",
+          "party": "NCP",
+          "votes": 50114,
+          "votePct": 38.52,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Jacob Abraham",
+          "party": "Kerala Congress (M)",
+          "votes": 45223,
+          "votePct": 34.76,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Subash Vasu",
+          "party": "BDJS",
+          "votes": 33044,
+          "votePct": 25.4,
+          "alliance": "NDA"
+        }
       ],
       "margin": 4891,
       "marginPct": 3.76,
@@ -39,14 +75,32 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Thomas K. Thomas", "party": "NCP", "votes": 57379, "votePct": 45.67, "alliance": "LDF" },
-        { "name": "Jacob Abraham", "party": "KEC", "votes": 51863, "votePct": 41.28, "alliance": "UDF" },
-        { "name": "Thampi Mettuthara", "party": "BDJS", "votes": 14946, "votePct": 11.90, "alliance": "NDA" }
+        {
+          "name": "Thomas K. Thomas",
+          "party": "NCP",
+          "votes": 57379,
+          "votePct": 45.67,
+          "alliance": "LDF"
+        },
+        {
+          "name": "Jacob Abraham",
+          "party": "KEC",
+          "votes": 51863,
+          "votePct": 41.28,
+          "alliance": "UDF"
+        },
+        {
+          "name": "Thampi Mettuthara",
+          "party": "BDJS",
+          "votes": 14946,
+          "votePct": 11.9,
+          "alliance": "NDA"
+        }
       ],
       "margin": 5516,
       "marginPct": 4.39,
       "turnout": 125636,
-      "turnoutPct": 74.80,
+      "turnoutPct": 74.8,
       "result": "NCP hold"
     }
   ]

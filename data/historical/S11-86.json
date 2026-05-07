@@ -18,7 +18,7 @@
         },
         {
           "name": "Babu Paul",
-          "party": "CPI",
+          "party": "Communist Party of India",
           "votes": 52849,
           "votePct": 45.46,
           "alliance": "LDF"
@@ -58,7 +58,7 @@
       "candidates": [
         {
           "name": "Eldo Abraham",
-          "party": "CPI",
+          "party": "Communist Party of India",
           "votes": 70269,
           "votePct": 49.27,
           "alliance": "LDF"
@@ -112,7 +112,7 @@
         },
         {
           "name": "Eldo Abraham",
-          "party": "CPI",
+          "party": "Communist Party of India",
           "votes": 68264,
           "votePct": 40.36,
           "alliance": "LDF"

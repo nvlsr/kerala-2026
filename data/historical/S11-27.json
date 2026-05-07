@@ -9,11 +9,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. Pradeepkumar", "party": "CPI(M)", "votes": 57123, "votePct": 49.12, "alliance": "LDF" },
-        { "name": "P. V. Gangadharan", "party": "INC", "votes": 48125, "votePct": 41.38, "alliance": "UDF" },
-        { "name": "P. Reghunathan", "party": "BJP", "votes": 9894, "votePct": 8.51, "alliance": "NDA" },
-        { "name": "Pradeep Kumar", "party": "Independent", "votes": 420, "votePct": 0.36, "alliance": "OTHER" },
-        { "name": "Gangadharan", "party": "Independent", "votes": 367, "votePct": 0.32, "alliance": "OTHER" }
+        {
+          "name": "A. Pradeepkumar",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 57123,
+          "votePct": 49.12,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. V. Gangadharan",
+          "party": "INC",
+          "votes": 48125,
+          "votePct": 41.38,
+          "alliance": "UDF"
+        },
+        {
+          "name": "P. Reghunathan",
+          "party": "BJP",
+          "votes": 9894,
+          "votePct": 8.51,
+          "alliance": "NDA"
+        },
+        {
+          "name": "Pradeep Kumar",
+          "party": "Independent",
+          "votes": 420,
+          "votePct": 0.36,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Gangadharan",
+          "party": "Independent",
+          "votes": 367,
+          "votePct": 0.32,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 8998,
       "marginPct": 7.74,
@@ -26,11 +56,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "A. Pradeepkumar", "party": "CPI(M)", "votes": 64192, "votePct": 48.40, "alliance": "LDF" },
-        { "name": "P. M. Suresh Babu", "party": "INC", "votes": 36319, "votePct": 27.39, "alliance": "UDF" },
-        { "name": "K. P. Sreesan", "party": "BJP", "votes": 29860, "votePct": 22.52, "alliance": "NDA" },
-        { "name": "K. P. Velayudhan", "party": "BSP", "votes": 457, "votePct": 0.34, "alliance": "OTHER" },
-        { "name": "Abdul Vahid", "party": "SDPI", "votes": 351, "votePct": 0.26, "alliance": "OTHER" }
+        {
+          "name": "A. Pradeepkumar",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 64192,
+          "votePct": 48.4,
+          "alliance": "LDF"
+        },
+        {
+          "name": "P. M. Suresh Babu",
+          "party": "INC",
+          "votes": 36319,
+          "votePct": 27.39,
+          "alliance": "UDF"
+        },
+        {
+          "name": "K. P. Sreesan",
+          "party": "BJP",
+          "votes": 29860,
+          "votePct": 22.52,
+          "alliance": "NDA"
+        },
+        {
+          "name": "K. P. Velayudhan",
+          "party": "BSP",
+          "votes": 457,
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "Abdul Vahid",
+          "party": "SDPI",
+          "votes": 351,
+          "votePct": 0.26,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 27873,
       "marginPct": 21.01,
@@ -43,11 +103,41 @@
       "type": "general",
       "reason": null,
       "candidates": [
-        { "name": "Thottathil Ravindran", "party": "CPI(M)", "votes": 59124, "votePct": 42.98, "alliance": "LDF" },
-        { "name": "K. M. Abhijith", "party": "INC", "votes": 46196, "votePct": 33.58, "alliance": "UDF" },
-        { "name": "M. T Ramesh", "party": "BJP", "votes": 30952, "votePct": 22.50, "alliance": "NDA" },
-        { "name": "N. Abhijith", "party": "Independent", "votes": 328, "votePct": 0.34, "alliance": "OTHER" },
-        { "name": "K. Rahim", "party": "SUCI(C)", "votes": 152, "votePct": 0.11, "alliance": "OTHER" }
+        {
+          "name": "Thottathil Ravindran",
+          "party": "Communist Party of India (Marxist)",
+          "votes": 59124,
+          "votePct": 42.98,
+          "alliance": "LDF"
+        },
+        {
+          "name": "K. M. Abhijith",
+          "party": "INC",
+          "votes": 46196,
+          "votePct": 33.58,
+          "alliance": "UDF"
+        },
+        {
+          "name": "M. T Ramesh",
+          "party": "BJP",
+          "votes": 30952,
+          "votePct": 22.5,
+          "alliance": "NDA"
+        },
+        {
+          "name": "N. Abhijith",
+          "party": "Independent",
+          "votes": 328,
+          "votePct": 0.34,
+          "alliance": "OTHER"
+        },
+        {
+          "name": "K. Rahim",
+          "party": "SUCI(C)",
+          "votes": 152,
+          "votePct": 0.11,
+          "alliance": "OTHER"
+        }
       ],
       "margin": 12928,
       "marginPct": 9.39,
