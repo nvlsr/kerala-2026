@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useReducer } from "react"
+import { useEffect, useMemo, useReducer, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 
 import { FilterBreadcrumb } from "@/components/scope-title"
@@ -13,6 +13,7 @@ import {
 import { ConstituencySection } from "@/components/constituency-section"
 import { InsightsTeaser } from "@/components/insights-teaser"
 import { SearchBar } from "@/components/search-bar"
+import { SeatPreviewCard } from "@/components/seat-preview-card"
 import { Section } from "@/components/section"
 import { SiteFooter } from "@/components/site-footer"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -179,6 +180,17 @@ function ConstituencyDetailRow({
   selectedConstituency: (typeof constituencies)[number] | null
   onSelectSeat: (n: number | null) => void
 }) {
+  const [hoveredSeat, setHoveredSeat] = useState<number | null>(null)
+  const hoveredConstituency = useMemo(
+    () =>
+      hoveredSeat
+        ? (constituencies.find(
+            (c) => c.constituencyNumber === hoveredSeat
+          ) ?? null)
+        : null,
+    [hoveredSeat]
+  )
+
   const mapMode = encodingModeFor(filters)
   const mapSubtitle = describeMapSubtitle(filters, inFilterSet.size, mapMode)
   const district = selectedConstituency
@@ -215,6 +227,8 @@ function ConstituencyDetailRow({
               key={selectedConstituency.constituencyNumber}
               constituency={selectedConstituency}
             />
+          ) : hoveredConstituency ? (
+            <SeatPreviewCard constituency={hoveredConstituency} />
           ) : (
             <Hint mode={mapMode} />
           )}
@@ -224,7 +238,9 @@ function ConstituencyDetailRow({
             filters={filters}
             inFilterSet={inFilterSet}
             selectedSeat={filters.seat}
+            hoveredSeat={hoveredSeat}
             onSelect={onSelectSeat}
+            onHover={setHoveredSeat}
           />
         </div>
       </div>

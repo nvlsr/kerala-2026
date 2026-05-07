@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useMemo } from "react"
 
 import paths from "@data/kerala-constituencies-paths.json"
 import {
@@ -11,23 +11,25 @@ type Props = {
   filters: Filters
   inFilterSet: Set<number>
   selectedSeat: number | null
+  hoveredSeat: number | null
   onSelect: (n: number | null) => void
+  onHover: (n: number | null) => void
 }
 
 /**
  * Renders only the constituency-map SVG (no surrounding section,
- * no side panel). Parent owns the layout and the subtitle. Each
- * polygon is interactive — click selects the seat, hover shows a
- * native browser tooltip with the seat name.
+ * no side panel). Parent owns the hover + selection state and the
+ * left-column preview. Each polygon is interactive — click selects
+ * the seat, hover surfaces a preview in the parent's detail column.
  */
 export function ConstituencyMap({
   filters,
   inFilterSet,
   selectedSeat,
+  hoveredSeat,
   onSelect,
+  onHover,
 }: Props) {
-  const [hovered, setHovered] = useState<number | null>(null)
-
   const data = useMemo(
     () => buildMapData(filters, inFilterSet),
     [filters, inFilterSet]
@@ -41,11 +43,12 @@ export function ConstituencyMap({
         role="img"
         aria-label="Kerala constituency map"
         className="h-auto w-full max-w-md"
+        onMouseLeave={() => onHover(null)}
       >
         {paths.constituencies.map((c) => {
           const num = c.constituencyNumber
           const isSelected = selectedSeat === num
-          const isHovered = hovered === num
+          const isHovered = hoveredSeat === num
           const fill = fills.get(num) ?? {
             color: "var(--muted)",
             opacity: 0.2,
@@ -73,8 +76,7 @@ export function ConstituencyMap({
               strokeWidth={isSelected ? 1.5 : 0.5}
               className="cursor-pointer transition-opacity outline-none focus-visible:stroke-foreground focus-visible:[stroke-width:1.5]"
               onClick={() => onSelect(isSelected ? null : num)}
-              onMouseEnter={() => setHovered(num)}
-              onMouseLeave={() => setHovered(null)}
+              onMouseEnter={() => onHover(num)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault()
