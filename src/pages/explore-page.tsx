@@ -99,7 +99,7 @@ export function ExplorePage() {
 
   return (
     <PageShell
-      breadcrumb="Explorer"
+      breadcrumbs={[{ label: "Explorer" }]}
       title="Browse all 140 seats"
       variant="compact"
     >

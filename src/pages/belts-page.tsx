@@ -4,6 +4,7 @@ import { IconX } from "@tabler/icons-react"
 
 import { BeltsMap } from "@/components/belts-map"
 import { MethodologyDisclosure } from "@/components/methodology-disclosure"
+import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { belts } from "@/lib/data/belts"
 import { cn } from "@/lib/utils"
@@ -23,7 +24,7 @@ export function BeltsPage() {
 
   return (
     <PageShell
-      breadcrumb="Belts"
+      breadcrumbs={[{ label: "Belts" }]}
       title="Community belts"
       aboutContent={
         <div className="space-y-3 text-sm leading-relaxed">
@@ -61,7 +62,7 @@ export function BeltsPage() {
         </p>
       }
     >
-      <main className="mx-auto max-w-6xl space-y-12 px-6 py-8">
+      <PageMain className="space-y-12">
         <section>
           <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-3">
             <div className="lg:col-span-2">
@@ -180,7 +181,7 @@ export function BeltsPage() {
               </p>
           </MethodologyDisclosure>
         </section>
-      </main>
+      </PageMain>
     </PageShell>
   )
 }

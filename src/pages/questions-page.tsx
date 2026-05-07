@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react"
 
 import { FlowsTeaser } from "@/components/flows-teaser"
+import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { QuestionCard } from "@/components/question-card"
 import {
@@ -59,7 +60,10 @@ export function QuestionsPage() {
   const themes = getAvailableThemes()
 
   return (
-    <PageShell breadcrumb="Questions" title="Curated questions">
+    <PageShell
+      breadcrumbs={[{ label: "Questions" }]}
+      title="Curated questions"
+    >
       <QuestionsFilterBar
         parties={parties}
         themes={themes}
@@ -70,7 +74,7 @@ export function QuestionsPage() {
         shownCount={visibleQuestions.length}
         totalCount={curatedQuestions.length}
       />
-      <main className="mx-auto max-w-6xl px-6 py-6 pb-10">
+      <PageMain className="py-6 pb-10">
         {visibleQuestions.length === 0 ? (
           <div className="rounded-lg border border-dashed px-6 py-12 text-center text-sm text-muted-foreground">
             No questions match this combination.{" "}
@@ -94,7 +98,7 @@ export function QuestionsPage() {
             ))}
           </ul>
         )}
-      </main>
+      </PageMain>
       <FlowsTeaser />
     </PageShell>
   )

@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 import { MethodologyDisclosure } from "@/components/methodology-disclosure"
+import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { ReligionGradientMap } from "@/components/religion-gradient-map"
 import districtPaths from "@data/kerala-districts-paths.json"
@@ -24,7 +25,7 @@ export function ReligionMapPage() {
 
   return (
     <PageShell
-      breadcrumb="Religion map"
+      breadcrumbs={[{ label: "Religion map" }]}
       title="Where each religion lives"
       aboutContent={
         <div className="space-y-3 text-sm leading-relaxed">
@@ -71,7 +72,7 @@ export function ReligionMapPage() {
         </p>
       }
     >
-      <main className="mx-auto max-w-6xl space-y-12 px-6 py-8">
+      <PageMain className="space-y-12">
         <section>
           <ul className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {RELIGIONS_TO_SHOW.map((r) => (
@@ -176,7 +177,7 @@ export function ReligionMapPage() {
               </p>
           </MethodologyDisclosure>
         </section>
-      </main>
+      </PageMain>
     </PageShell>
   )
 }

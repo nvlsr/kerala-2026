@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { BeltOverlaySection } from "@/components/belt-overlay-section"
 import { MultiCycleDriftSection } from "@/components/flow-pattern-section"
 import { MethodologyDisclosure } from "@/components/methodology-disclosure"
+import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { RecentLegChart } from "@/components/recent-leg-chart"
 import { TOTAL_SEATS } from "@/lib/constants"
@@ -85,14 +86,10 @@ export function DriftsPage() {
 
   return (
     <PageShell
-      breadcrumb={
-        <>
-          <Link to="/flows" className="hover:text-foreground">
-            Vote flows
-          </Link>{" "}
-          · Drifts
-        </>
-      }
+      breadcrumbs={[
+        { label: "Vote flows", href: "/flows" },
+        { label: "Drifts" },
+      ]}
       title="Sustained drifts"
       aboutContent={
         <div className="space-y-3 text-sm leading-relaxed">
@@ -124,7 +121,7 @@ export function DriftsPage() {
         </div>
       }
     >
-      <main className="mx-auto max-w-6xl px-6 py-8">
+      <PageMain>
         <section>
           <div className="mb-4 flex items-baseline justify-between gap-3">
             <h2 className="font-heading text-xl font-semibold tracking-tight sm:text-2xl">
@@ -299,7 +296,7 @@ export function DriftsPage() {
               </p>
           </MethodologyDisclosure>
         </section>
-      </main>
+      </PageMain>
     </PageShell>
   )
 }

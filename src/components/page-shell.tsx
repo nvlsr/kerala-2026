@@ -1,9 +1,17 @@
-import { type ReactNode } from "react"
+import { Fragment, type ReactNode } from "react"
 import { Link } from "react-router-dom"
-import { IconInfoCircle } from "@tabler/icons-react"
+import { IconHome, IconInfoCircle } from "@tabler/icons-react"
 
 import { SiteFooter } from "@/components/site-footer"
 import { ThemeToggle } from "@/components/theme-toggle"
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 import {
   Popover,
   PopoverContent,
@@ -13,29 +21,39 @@ import { cn } from "@/lib/utils"
 
 type Variant = "default" | "compact"
 
+/**
+ * One crumb in the breadcrumb between Home and the current page.
+ * The active page (last crumb) typically omits `href`; intermediate
+ * crumbs that link to a parent route should set it.
+ */
+export type PageCrumb = {
+  label: string
+  href?: string
+}
+
 type Props = {
   /**
-   * Right side of the "Kerala 2026 · ___" breadcrumb. Usually a string
-   * page name; pass ReactNode (e.g. fragment with chained Links) for
-   * pages that nest under another, like /drifts under /flows.
+   * Crumbs after Home. Most pages pass a single-element array
+   * `[{ label: "Belts" }]`. Drifts is hierarchical:
+   * `[{ label: "Vote flows", href: "/flows" }, { label: "Drifts" }]`.
    */
-  breadcrumb: ReactNode
+  breadcrumbs: PageCrumb[]
   /** Page title — h1 content. */
   title: ReactNode
   /**
    * "default" — large title (text-3xl/4xl), full py-6 padding, supports
    *             info-icon popover beside title. Used by belts, drifts,
    *             flows, questions, religion-map.
-   * "compact" — smaller title (text-2xl/3xl), pt-6/pb-2 padding, no
-   *             popover slot. Used by explore (where the breadcrumb
-   *             section below carries the active-filter state).
+   * "compact" — smaller title (text-2xl/3xl), pt-6 pb-2 padding, no
+   *             popover slot. Used by explore (where the FilterBreadcrumb
+   *             sits below).
    */
   variant?: Variant
   /** Optional info-popover content (default variant only). */
   aboutContent?: ReactNode
   /** Optional subtitle paragraph rendered below the h1. */
   subtitle?: ReactNode
-  /** Page body — typically a <main>, but pages may slot any flow. */
+  /** Page body — typically a <PageMain>, but pages may slot any flow. */
   children: ReactNode
 }
 
@@ -43,11 +61,14 @@ type Props = {
  * Shared layout shell for routed pages. Wraps the standard
  *   <div min-h-svh> → <header> (breadcrumb + title + ThemeToggle) →
  *   {children} → <SiteFooter />
- * structure that every page repeated. The home/dashboard uses a
- * separate <HomeHeader> shell and is intentionally not migrated.
+ * structure that every page repeated.
+ *
+ * Breadcrumb: home icon (links to "/") + crumbs separated by middle
+ * dots. The home/dashboard uses a separate <HomeHeader> shell and is
+ * intentionally not migrated.
  */
 export function PageShell({
-  breadcrumb,
+  breadcrumbs,
   title,
   variant = "default",
   aboutContent,
@@ -65,18 +86,43 @@ export function PageShell({
           )}
         >
           <div className="min-w-0">
-            <p className="text-sm font-medium tracking-wide text-muted-foreground uppercase">
-              <Link to="/" className="hover:text-foreground">
-                Kerala 2026
-              </Link>{" "}
-              · {breadcrumb}
-            </p>
+            <Breadcrumb>
+              <BreadcrumbList className="text-sm font-medium tracking-wide uppercase">
+                <BreadcrumbItem>
+                  <BreadcrumbLink
+                    render={<Link to="/" aria-label="Home" />}
+                    className="inline-flex items-center"
+                  >
+                    <IconHome className="h-4 w-4" aria-hidden />
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                {breadcrumbs.map((crumb, i) => {
+                  const isLast = i === breadcrumbs.length - 1
+                  return (
+                    <Fragment key={crumb.label}>
+                      <BreadcrumbSeparator>·</BreadcrumbSeparator>
+                      <BreadcrumbItem>
+                        {isLast || !crumb.href ? (
+                          <BreadcrumbPage className="font-medium text-muted-foreground">
+                            {crumb.label}
+                          </BreadcrumbPage>
+                        ) : (
+                          <BreadcrumbLink render={<Link to={crumb.href} />}>
+                            {crumb.label}
+                          </BreadcrumbLink>
+                        )}
+                      </BreadcrumbItem>
+                    </Fragment>
+                  )
+                })}
+              </BreadcrumbList>
+            </Breadcrumb>
             <h1
               className={cn(
                 "font-heading font-semibold tracking-tight",
                 isCompact
                   ? "mt-1 text-2xl sm:text-3xl"
-                  : "flex items-center gap-2 text-3xl sm:text-4xl"
+                  : "mt-1 flex items-center gap-2 text-3xl sm:text-4xl"
               )}
             >
               {title}

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { DriftsTeaser } from "@/components/drifts-teaser"
 import { SingleCyclePatternSection } from "@/components/flow-pattern-section"
 import { MethodologyDisclosure } from "@/components/methodology-disclosure"
+import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { ReligionOverlaySection } from "@/components/religion-overlay-section"
 import { StateFlowSankey } from "@/components/state-flow-sankey"
@@ -89,7 +90,7 @@ export function FlowsPage() {
 
   return (
     <PageShell
-      breadcrumb="Vote flows"
+      breadcrumbs={[{ label: "Vote flows" }]}
       title="Where votes shifted"
       aboutContent={
         <div className="space-y-3 text-sm leading-relaxed">
@@ -113,7 +114,7 @@ export function FlowsPage() {
         </div>
       }
     >
-      <main className="mx-auto max-w-6xl px-6 py-8">
+      <PageMain>
         <section className="mb-12">
           <StateFlowSankey />
         </section>
@@ -238,7 +239,7 @@ export function FlowsPage() {
               </p>
           </MethodologyDisclosure>
         </section>
-      </main>
+      </PageMain>
       <DriftsTeaser />
     </PageShell>
   )
