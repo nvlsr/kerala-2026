@@ -74,11 +74,6 @@ export function InsightsPage() {
             <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Curated questions
             </h1>
-            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-              A growing list of questions worth asking the 2026 results, each
-              with its own top-5 table and constituency-map snippet. Open any
-              card in the full dashboard to refine, drill in, and share.
-            </p>
           </div>
           <ThemeToggle />
         </div>
