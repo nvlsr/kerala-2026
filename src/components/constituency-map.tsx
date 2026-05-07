@@ -3,9 +3,13 @@ import { useMemo } from "react"
 import paths from "@data/kerala-constituencies-paths.json"
 import {
   buildMapData,
+  NEGATIVE_HUE,
+  NEUTRAL_HUE,
+  POSITIVE_HUE,
   type EncodingMode,
 } from "@/lib/seat-encoding"
 import type { Filters, SortColumn } from "@/lib/filters"
+import { getAlliance, MAIN_FRONT_CODES } from "@/lib/data"
 
 type Props = {
   filters: Filters
@@ -138,21 +142,80 @@ function sortLabel(col: SortColumn): string {
 /**
  * Empty-state hint shown in the detail column when no seat is
  * selected. Explains the map's encoding and prompts the user to
- * click a polygon.
+ * click a polygon. Each color label gets its own line and is
+ * rendered in the actual color it stands for, so the legend is
+ * visually self-demonstrating.
  */
 export function Hint({ mode }: { mode: EncodingMode }) {
-  const explainer =
-    mode === "magnitude"
-      ? "Single neutral hue; darker shades = higher values on the active sort column."
-      : mode === "diverging"
-        ? "Green = gain over 2021, rose = loss; darker shades = larger swings."
-        : "Polygons are colored by alliance. When sorted by a numeric column, darker shades mean a bigger value or swing."
   return (
     <div className="min-h-[12rem] rounded-lg border border-dashed p-4 text-xs text-muted-foreground">
-      <div className="mb-2 font-medium tracking-wide text-foreground/70 uppercase">
+      <div className="mb-3 font-medium tracking-wide text-foreground/70 uppercase">
         Hover or click a seat
       </div>
-      {explainer} Out-of-filter seats fade.
+      <ul className="space-y-1.5">
+        {mode === "diverging" && (
+          <>
+            <LegendRow color={POSITIVE_HUE} label="Green" hint="= gain over 2021" />
+            <LegendRow color={NEGATIVE_HUE} label="Rose" hint="= loss vs 2021" />
+            <li className="text-muted-foreground/80">
+              Darker shades = larger swing
+            </li>
+          </>
+        )}
+        {mode === "alliance" &&
+          MAIN_FRONT_CODES.map((code) => {
+            const a = getAlliance(code)
+            return (
+              <LegendRow
+                key={code}
+                color={a.color}
+                label={a.code}
+                hint={`= ${a.name}`}
+              />
+            )
+          })}
+        {mode === "alliance" && (
+          <li className="text-muted-foreground/80">
+            Darker shades = bigger value on the active sort
+          </li>
+        )}
+        {mode === "magnitude" && (
+          <>
+            <LegendRow
+              color={NEUTRAL_HUE}
+              label="Darker shades"
+              hint="= higher values on the active sort"
+            />
+          </>
+        )}
+        <li className="text-muted-foreground/80">
+          Out-of-filter seats fade
+        </li>
+      </ul>
     </div>
+  )
+}
+
+function LegendRow({
+  color,
+  label,
+  hint,
+}: {
+  color: string
+  label: string
+  hint: string
+}) {
+  return (
+    <li className="flex items-center gap-2">
+      <span
+        className="h-2.5 w-2.5 shrink-0 rounded-sm"
+        style={{ backgroundColor: color }}
+        aria-hidden
+      />
+      <span className="font-medium" style={{ color }}>
+        {label}
+      </span>
+      <span className="text-muted-foreground/80">{hint}</span>
+    </li>
   )
 }
