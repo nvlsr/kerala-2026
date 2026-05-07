@@ -143,12 +143,12 @@ function RosterTable({ constituency }: { constituency: Constituency }) {
   return (
     <table className="w-full table-fixed text-sm">
       <colgroup>
-        <col style={{ width: "32%" }} />
+        <col style={{ width: "30%" }} />
         <col style={{ width: "14%" }} />
         <col style={{ width: "8%" }} />
-        <col style={{ width: "16%" }} />
-        <col style={{ width: "12%" }} />
-        <col style={{ width: "18%" }} />
+        <col style={{ width: "14%" }} />
+        <col style={{ width: "10%" }} />
+        <col style={{ width: "24%" }} />
       </colgroup>
       <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
         <tr>
@@ -242,7 +242,7 @@ function RosterRow({
       </td>
       <td
         className={cn(
-          "px-3 py-2 text-right tabular-nums",
+          "px-3 py-2 text-right whitespace-nowrap tabular-nums",
           isWinner ? "text-foreground" : "text-muted-foreground"
         )}
       >

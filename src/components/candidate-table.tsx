@@ -477,7 +477,7 @@ function CandidateTr({
       </td>
       <td
         className={cn(
-          "px-3 py-2 text-right tabular-nums",
+          "px-3 py-2 text-right whitespace-nowrap tabular-nums",
           row.isWinner ? "text-foreground" : "text-muted-foreground"
         )}
       >
