@@ -4,6 +4,7 @@ import { IconArrowUpRight, IconCheck, IconLink } from "@tabler/icons-react"
 
 import { DeltaPercent } from "@/components/delta-percent"
 import { MiniACMap } from "@/components/mini-ac-map"
+import { ReservationBadge } from "@/components/reservation-badge"
 import { sortCandidateRows } from "@/lib/candidate-sort"
 import {
   buildCandidateRows,
@@ -339,7 +340,10 @@ function TopRowsTable({
           {rows.map((r) => (
             <tr key={r.key} className="border-t">
               <td className={cellPad}>
-                <div className="font-medium">{r.constituencyName}</div>
+                <div className="flex items-center gap-1.5 font-medium">
+                  <span>{r.constituencyName}</span>
+                  <ReservationBadge seat={r.constituency.constituencyNumber} />
+                </div>
                 <div className="text-xs text-muted-foreground">
                   {r.partyShort} · {r.candidateDisplay}
                 </div>

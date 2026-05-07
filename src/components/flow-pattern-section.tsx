@@ -3,6 +3,7 @@ import { IconLink } from "@tabler/icons-react"
 import { useState } from "react"
 
 import { MiniACMap } from "@/components/mini-ac-map"
+import { ReservationBadge } from "@/components/reservation-badge"
 import {
   DELTA_NOISE_THRESHOLD_PERCENT,
   TOTAL_SEATS,
@@ -170,12 +171,15 @@ function SingleFlowsTable({ flows }: { flows: SeatFlow[] }) {
             .map((f) => (
               <tr key={f.constituency.constituencyNumber} className="border-t">
                 <td className={cell}>
-                  <Link
-                    to={buildSeatUrl(f.constituency)}
-                    className="font-medium hover:underline"
-                  >
-                    {displayConstituencyName(f.constituency)}
-                  </Link>
+                  <span className="inline-flex items-center gap-1.5">
+                    <Link
+                      to={buildSeatUrl(f.constituency)}
+                      className="font-medium hover:underline"
+                    >
+                      {displayConstituencyName(f.constituency)}
+                    </Link>
+                    <ReservationBadge seat={f.constituency.constituencyNumber} />
+                  </span>
                 </td>
                 <td className={cn(cell, "text-right", deltaColor(f.deltas.UDF))}>
                   {fmtSigned(f.deltas.UDF)}
@@ -307,12 +311,15 @@ function DriftTable({ drifts }: { drifts: MultiCycleDrift[] }) {
             return (
               <tr key={d.constituency.constituencyNumber} className="border-t">
                 <td className={cell}>
-                  <Link
-                    to={buildSeatUrl(d.constituency)}
-                    className="font-medium hover:underline"
-                  >
-                    {displayConstituencyName(d.constituency)}
-                  </Link>
+                  <span className="inline-flex items-center gap-1.5">
+                    <Link
+                      to={buildSeatUrl(d.constituency)}
+                      className="font-medium hover:underline"
+                    >
+                      {displayConstituencyName(d.constituency)}
+                    </Link>
+                    <ReservationBadge seat={d.constituency.constituencyNumber} />
+                  </span>
                 </td>
                 <td className={cell}>
                   <div

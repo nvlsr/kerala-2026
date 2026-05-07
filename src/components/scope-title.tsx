@@ -1,5 +1,6 @@
 import { IconChevronDown, IconChevronRight, IconX } from "@tabler/icons-react"
 
+import { ReservationBadge } from "@/components/reservation-badge"
 import { ThemeToggle } from "@/components/theme-toggle"
 import {
   Popover,
@@ -131,7 +132,13 @@ export function FilterBreadcrumb({
         )}
         {constituency && (
           <Crumb
-            label={displayConstituencyName(constituency)}
+            label={
+              <span className="inline-flex items-center gap-1">
+                {displayConstituencyName(constituency)}
+                <ReservationBadge seat={constituency.constituencyNumber} />
+              </span>
+            }
+            ariaLabel={displayConstituencyName(constituency)}
             onClear={onClearSeat}
           />
         )}
@@ -152,11 +159,18 @@ export function FilterBreadcrumb({
 /** Active-filter pill: value + X-to-clear, with the leading separator. */
 function Crumb({
   label,
+  ariaLabel,
   onClear,
 }: {
-  label: string
+  label: React.ReactNode
+  /** Override for the X-button's aria-label. Defaults to the label
+   *  when label is a string; required otherwise (else screen readers
+   *  hear "Clear [object Object]"). */
+  ariaLabel?: string
   onClear: () => void
 }) {
+  const clearLabel =
+    ariaLabel ?? (typeof label === "string" ? label : "filter")
   return (
     <span className="flex items-center gap-1.5">
       <IconChevronRight
@@ -168,7 +182,7 @@ function Crumb({
         <button
           type="button"
           onClick={onClear}
-          aria-label={`Clear ${label}`}
+          aria-label={`Clear ${clearLabel}`}
           className="rounded-full p-0.5 hover:bg-foreground/10"
         >
           <IconX className="h-3 w-3" aria-hidden />
