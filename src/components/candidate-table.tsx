@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button"
 import { DeltaPercent } from "@/components/delta-percent"
 import { InfoIcon } from "@/components/info-icon"
 import { QuickViewsChips } from "@/components/quick-views-chips"
+import { ReservationBadge } from "@/components/reservation-badge"
 import { Section } from "@/components/section"
 import { cn } from "@/lib/utils"
 import {
@@ -444,8 +445,9 @@ function CandidateTr({
           }}
           aria-hidden
         />
-        <span className="block truncate font-medium">
-          {row.constituencyName}
+        <span className="flex items-center gap-1.5 truncate font-medium">
+          <span className="truncate">{row.constituencyName}</span>
+          <ReservationBadge seat={row.constituency.constituencyNumber} />
         </span>
       </td>
       <td className="px-3 py-2">

@@ -109,6 +109,20 @@ These outliers are no longer "explained away" by district-mean averaging — the
 
 ### What we still can't tell
 - **26 ACs (mostly major urban — Trivandrum city, Cochin, Kozhikode city, Alappuzha) fall back to district-level religion** because SHRUG's spatial join failed for those urban shrids. Population coverage of AC-level data: 27.0M of Kerala's 33.4M (~80%). Re-running the analysis on AC-only ACs (n=114) gives: Christian r=+0.22, Muslim r=-0.04 — so the headline finding holds in the strict subset.
+
+### Robustness check — excluding SC/ST reserved seats
+
+Reserved seats (14 SC + 2 ST = 16 of 140) have structurally different dynamics: only SC/ST candidates contest. Reserved seats correlate with high-Hindu/low-minority districts which could confound the religion × vote-swing correlation we measure here.
+
+Re-running with `bun run scripts/narrative-a1-ac-level.ts --exclude-reserved` (n=124):
+
+| | All 140 | n=124 (excl. reserved) |
+|---|---|---|
+| Christian × UDF Δ | r = +0.20 | r = **+0.22** (slightly stronger) |
+| Muslim × UDF Δ | r = -0.00 | r = -0.04 (still ~zero) |
+| Muslim + Christian × UDF Δ | r = +0.22 | r = +0.21 (essentially same) |
+
+The Christian-belt premium **strengthens slightly** when reserved seats are dropped (consistent with reserved seats being concentrated in low-Christian Hindu-majority districts that contribute little to the gradient). The Muslim non-finding holds. **A1's verdict is robust to reserved-seat exclusion.**
 - **Sub-community shifts** within "Christian" (Syro-Malabar vs Latin vs Marthoma) and "Muslim" (Sunni vs Mujahid) — still invisible. C-01 doesn't disaggregate.
 - **Mechanism is still ambiguous**: a +10pp UDF gain in Christian-heavy ACs could be (a) Christians switching LDF→UDF, (b) Christian LDF voters staying home, (c) Christian non-voters mobilizing for UDF. AC-level census + AC-level vote count can't distinguish these — survey microdata can.
 - **Census 2011 staleness**: 14 years out of date. Geographic pattern is structurally stable; absolute shares may be off ~3-5pp.

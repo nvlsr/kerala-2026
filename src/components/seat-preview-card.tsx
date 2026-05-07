@@ -1,6 +1,7 @@
 import { IconCheck } from "@tabler/icons-react"
 
 import { AlliancePill } from "@/components/alliance-pill"
+import { ReservationBadge } from "@/components/reservation-badge"
 import {
   allianceForCandidate,
   displayConstituencyName,
@@ -44,6 +45,7 @@ export function SeatPreviewCard({ constituency }: Props) {
         <span className="truncate font-medium tracking-wide text-foreground/80 uppercase">
           {displayConstituencyName(constituency)}
         </span>
+        <ReservationBadge seat={constituency.constituencyNumber} />
         {district && (
           <span className="ml-auto shrink-0 text-[10px] tracking-wide text-muted-foreground/70 uppercase">
             {district.name} district

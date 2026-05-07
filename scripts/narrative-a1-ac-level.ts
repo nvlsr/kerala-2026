@@ -8,6 +8,12 @@
  * each AC carries its own religion mix (114 / 140 directly aggregated
  * from sub-district + town Census data; 26 urban-heavy ACs still fall
  * back to district-level via SHRUG limitation).
+ *
+ * Run with `--exclude-reserved` to drop the 16 SC/ST reserved seats
+ * from the analysis (they have structurally different dynamics — only
+ * SC/ST candidates contest, and reserved seats correlate with high-
+ * Hindu / low-minority districts which can confound the religion ×
+ * vote-swing correlation).
  */
 import * as fs from "fs"
 import * as path from "path"
@@ -30,6 +36,12 @@ const hist: Hist[] = fs
     JSON.parse(fs.readFileSync(path.join("data/historical", f), "utf8"))
   )
 const histByNum = new Map(hist.map((h) => [h.constituencyNumber, h]))
+
+const reservations = JSON.parse(
+  fs.readFileSync("data/reservations.json", "utf8")
+).constituencyToReservation as Record<string, "SC" | "ST">
+
+const excludeReserved = process.argv.includes("--exclude-reserved")
 
 const acDemo = JSON.parse(fs.readFileSync("data/ac-demographics.json", "utf8"))
 type AcRel = {
@@ -64,7 +76,12 @@ type Row = {
 }
 
 const rows: Row[] = []
+let reservedSkipped = 0
 for (const c of data2026) {
+  if (excludeReserved && reservations[String(c.constituencyNumber)]) {
+    reservedSkipped++
+    continue
+  }
   const ac = religionByAc[String(c.constituencyNumber)]
   if (!ac) continue
   const h = histByNum.get(c.constituencyNumber)
@@ -84,7 +101,13 @@ for (const c of data2026) {
   })
 }
 
-console.log(`Loaded ${rows.length}/140 ACs with AC-level religion + 2021/2026 deltas\n`)
+console.log(
+  `Loaded ${rows.length}/140 ACs with AC-level religion + 2021/2026 deltas` +
+    (excludeReserved
+      ? ` (${reservedSkipped} reserved seats excluded)`
+      : ` (use --exclude-reserved to drop the 16 SC/ST seats)`)
+)
+console.log()
 
 function corr(xs: number[], ys: number[]): number {
   const n = xs.length

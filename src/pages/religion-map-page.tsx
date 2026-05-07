@@ -18,7 +18,7 @@ import {
   getReligion,
   type ReligionCode,
 } from "@/lib/data/demographics"
-import { constituencies } from "@/lib/data"
+import { constituencies, getReservation } from "@/lib/data"
 
 const RELIGIONS_TO_SHOW: Array<{
   code: ReligionCode
@@ -442,12 +442,16 @@ function ReligionMapCaption({
         ? acDemo2025Meta.constituencies[String(hoveredSeat)]
         : acDemoMeta.constituencies[String(hoveredSeat)]
     const isFallback = acDemo?.source === "district-urban-fallback"
+    const reservation = getReservation(hoveredSeat)
     if (ac && seatMeta) {
       return (
         <p className="mt-2 text-xs">
           <span className="font-medium text-foreground">
             {seatMeta.constituencyName}
           </span>
+          {reservation && (
+            <span className="text-muted-foreground"> ({reservation})</span>
+          )}
           :{" "}
           <span className="tabular-nums">
             {ac.religions[religion].toFixed(1)}%

@@ -34,6 +34,12 @@ export type SearchResult = {
   matchScore: number
   /** Used as React key. */
   key: string
+  /**
+   * AC number for constituency / candidate results. Lets the search-bar
+   * UI render an SC/ST reservation badge next to a seat name without
+   * re-parsing the URL.
+   */
+  seat?: number
 }
 
 type IndexEntry = {
@@ -45,6 +51,8 @@ type IndexEntry = {
   searchKey: string
   /** Stable unique id for React keying. */
   id: string
+  /** AC number for constituency / candidate entries. */
+  seat?: number
 }
 
 let _index: IndexEntry[] | null = null
@@ -61,6 +69,7 @@ function buildIndex(): IndexEntry[] {
       url: `/explore?seat=${c.constituencyNumber}`,
       searchKey: c.constituencyName.toLowerCase(),
       id: `constituency-${c.constituencyNumber}`,
+      seat: c.constituencyNumber,
     })
   }
 
@@ -80,6 +89,7 @@ function buildIndex(): IndexEntry[] {
         searchKey:
           `${cand.name} ${cand.party} ${c.constituencyName}`.toLowerCase(),
         id: `candidate-${c.constituencyNumber}-${cand.name}`,
+        seat: c.constituencyNumber,
       })
     }
   }
@@ -176,6 +186,7 @@ export function searchAll(query: string): SearchResult[] {
       url: entry.url,
       matchScore: score,
       key: entry.id,
+      seat: entry.seat,
     })
   }
 

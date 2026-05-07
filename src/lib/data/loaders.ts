@@ -14,6 +14,7 @@ import constituenciesJson from "@data/kerala-2026.json"
 import constituencyNamesJson from "@data/constituency-names.json"
 import demographicsJson from "@data/demographics.json"
 import districtsJson from "@data/districts.json"
+import reservationsJson from "@data/reservations.json"
 
 import type { Alliance, AllianceCode } from "@/lib/data/alliances"
 import type { Constituency } from "@/lib/data/constituencies"
@@ -115,4 +116,20 @@ export const beltsMeta = communityBeltsJson as {
   belts: BeltDef[]
   districtToBelt: Record<string, string>
   constituencyOverrides: Record<string, string | { _doc?: string }>
+}
+
+export type ReservationCode = "SC" | "ST"
+
+/**
+ * Per-AC reservation status. Stable across all four elections in our
+ * dataset (2011, 2016, 2021, 2026) per the 2008 Delimitation Order;
+ * the same 14 SC + 2 ST seats apply throughout. See data/reservations.json
+ * for provenance.
+ */
+export const reservationsMeta = reservationsJson as {
+  year: number
+  source: string
+  verified: string
+  counts: { SC: number; ST: number; total: number }
+  constituencyToReservation: Record<string, ReservationCode>
 }

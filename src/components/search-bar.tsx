@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { IconSearch, IconX } from "@tabler/icons-react"
 
+import { ReservationBadge } from "@/components/reservation-badge"
+
 import {
   SEARCH_GROUP_LABEL,
   SEARCH_GROUP_LIMIT,
@@ -250,8 +252,9 @@ function ResultsList({
                           : "hover:bg-foreground/[0.03]"
                       )}
                     >
-                      <span className="min-w-0 truncate font-medium">
-                        {r.primaryText}
+                      <span className="flex min-w-0 items-center gap-1.5 truncate font-medium">
+                        <span className="truncate">{r.primaryText}</span>
+                        {r.seat != null && <ReservationBadge seat={r.seat} />}
                       </span>
                       {r.secondaryText && (
                         <span className="shrink-0 text-xs text-muted-foreground">

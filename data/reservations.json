@@ -1,0 +1,28 @@
+{
+  "year": 2008,
+  "source": "Delimitation Commission Order, 2008. Stable since first applied in the 2011 election; unchanged through 2016, 2021, and 2026 elections. Next change requires a new delimitation (expected after the post-2026 census).",
+  "verified": "Cross-checked against Wikipedia 'List of constituencies of the Kerala Legislative Assembly', Wikipedia per-constituency pages, and IndiaTVNews 2026 coverage. All four cycles in our dataset (2011, 2016, 2021, 2026) use the same 16 reserved seats.",
+  "counts": {
+    "SC": 14,
+    "ST": 2,
+    "total": 16
+  },
+  "constituencyToReservation": {
+    "17": "ST",
+    "18": "ST",
+    "25": "SC",
+    "36": "SC",
+    "53": "SC",
+    "57": "SC",
+    "61": "SC",
+    "68": "SC",
+    "84": "SC",
+    "88": "SC",
+    "95": "SC",
+    "109": "SC",
+    "115": "SC",
+    "118": "SC",
+    "128": "SC",
+    "129": "SC"
+  }
+}

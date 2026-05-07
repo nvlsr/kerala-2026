@@ -12,6 +12,7 @@ import {
   describeMapSubtitle,
 } from "@/components/constituency-map"
 import { ConstituencySection } from "@/components/constituency-section"
+import { ReservationBadge } from "@/components/reservation-badge"
 import { QuestionsTeaser } from "@/components/questions-teaser"
 import { SearchBar } from "@/components/search-bar"
 import { SeatPreviewCard } from "@/components/seat-preview-card"
@@ -184,15 +185,16 @@ function ConstituencyDetailRow({
     : null
 
   const subtitle = selectedConstituency ? (
-    <>
+    <span className="inline-flex items-center gap-2">
       {displayConstituencyName(selectedConstituency)}
+      <ReservationBadge seat={selectedConstituency.constituencyNumber} />
       {district && (
         <span className="text-muted-foreground/60">
           {" · "}
           {district.name} district
         </span>
       )}
-    </>
+    </span>
   ) : (
     mapSubtitle
   )

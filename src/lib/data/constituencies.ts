@@ -1,4 +1,9 @@
-import { constituenciesData, districtsMeta } from "@/lib/data/loaders"
+import {
+  constituenciesData,
+  districtsMeta,
+  reservationsMeta,
+  type ReservationCode,
+} from "@/lib/data/loaders"
 
 import type { AllianceCode } from "@/lib/data/alliances"
 
@@ -43,4 +48,25 @@ export function winnerOf(c: Constituency): Candidate {
 
 export function totalVotesIn(c: Constituency): number {
   return c.candidates.reduce((s, x) => s + x.votes, 0)
+}
+
+/**
+ * Returns "SC" or "ST" if the given constituency is reserved, else null.
+ * Reservations are stable since the 2008 Delimitation Order — the same
+ * 14 SC + 2 ST seats apply for 2011, 2016, 2021, and 2026 elections.
+ */
+export function getReservation(
+  constituencyNumber: number
+): ReservationCode | null {
+  return (
+    reservationsMeta.constituencyToReservation[String(constituencyNumber)] ??
+    null
+  )
+}
+
+/**
+ * Returns true if the given constituency is reserved (SC or ST).
+ */
+export function isReserved(constituencyNumber: number): boolean {
+  return getReservation(constituencyNumber) != null
 }
