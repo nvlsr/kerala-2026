@@ -164,81 +164,7 @@ Each entry below merges sources from across the six input files. Where multiple 
 
 ---
 
-## A12. SNDP / Vellappally Natesan gambit alienated Muslims and didn't deliver Ezhavas
-
-**Claim:** Pinarayi's perceived closeness to SNDP's Vellappally Natesan (known for sharp anti-Muslim rhetoric) — combined with the Global Ayyappa Sangamam government event with NSS leader G. Sukumaran Nair — was framed as creating "an impression of Islamophobia" among minorities. C.R. Neelakandan (analyst) and academic P.K. Pokker said the CPM's tonal drift "blurred the line between Left politics and Hindutva-adjacent positions." Strategy didn't deliver expected Ezhava (~25%) or Nair (~13%) consolidation.
-
-**Sources:**
-- The Print — What went wrong with CPI(M)
-- The Federal — What led to LDF's rout
-- The Wire — Fading red flag (local body)
-- Onmanorama — CPM NSS-SNDP plot may backfire
-- Open Magazine — Death of an ideal
-- Times of India — minority consolidation drives UDF's sweep
-
-**Evidence strength:** Multiple agreeing
-
-**Theme:** caste / religion
-
-**Testable now?** **Yes (partial).** Compare LDF vote-share change in Muslim-majority seats (Eranad, Mankada, Tirur, Tanur) vs Ezhava-heavy seats. Religion gradient + alliance-flow on `/flows` answers most of this.
-
----
-
-## A13. "Save Secularism Mission" — cross-community vote produced unprecedented swap seats
-
-**Claim:** BJP's late-stage polarising rhetoric (love-jihad messaging; "Why hasn't there been a single Hindu MLA from Guruvayur in 50 years?") triggered counter-defensive cross-community voting. In Guruvayur (historically Muslim-held), Christian candidate V.S. Joy won. In a traditionally Christian-reserved Kochi seat, Muslim Mohammad Shiyas won. Thavanur (Malappuram, Muslim-majority) returned a Christian. Onmanorama framed this as voters explicitly punishing BJP's polarisation strategy.
-
-**Sources:**
-- Onmanorama — Save secularism mission (May 2026)
-- The Week — Minority vote shift, rebel surge
-
-**Evidence strength:** Multiple agreeing (Onmanorama/Week — both Kerala-focused)
-
-**Theme:** religion
-
-**Testable now?** **Yes.** Examine Guruvayur, Kochi (specific seat needs identification), Thavanur for community-of-winner anomalies vs prior cycles. Specific seats are findable via candidate metadata.
-
----
-
-## A14. Local body 2025 results foreshadowed assembly outcome
-
-**Claim:** UDF improvement and BJP capital-corporation breakthrough in December 2025 local-body elections were early signals LDF misread. UDF read it correctly and continued the playbook; LDF "under-reacted." The assembly result was the trend completing, not a sudden shock.
-
-**Sources:**
-- New Indian Express — "Strong UDF show in Kerala local polls, BJP takes capital" (Dec 2025)
-- New Indian Express — Trivandrum corporation BJP victory (Dec 2025)
-- Times of India — LDF failed to read indications (May 2026)
-- Chhitblog — Kerala local results signal trouble for LDF (Dec 2025)
-- The Wire — Fading of the red flag
-
-**Evidence strength:** Multiple agreeing
-
-**Theme:** organizational
-
-**Testable now?** **Yes (with extra data).** Compare 2025 local body UDF/BJP/LDF performance per panchayat/ward to 2026 assembly swing per AC. Requires importing the 2025 local-body data — but conceptually testable.
-
----
-
-## A15. UDF "soft opposition" + unified campaign vs LDF Pinarayi-centricity
-
-**Claim:** UDF avoided the factional self-sabotage of prior cycles. V.D. Satheesan-led "Lakshya26" was data-driven. UDF projected as "softer alternative" — administratively credible, not ideologically polarising — pulling change-voters who didn't want polarised choice. Meanwhile LDF over-relied on Pinarayi's brand, which had become inaccessibility ("Captain syndrome"). Sachin Pilot: "Modi and Pinarayi are not two, but one." Supriya Shrinate: "Kerala's Modi who specialised in silencing dissent."
-
-**Sources:**
-- The Federal — Fall of the Captain (May 2026)
-- The Caravan — How CPI(M) took a hammer to its ideology
-- The Statesman — Inside Congress return in Kerala (May 2026)
-- The Quint — 7 Reasons (May 2026)
-- Onmanorama — Right strategy and unity (May 2026)
-
-**Evidence strength:** Multiple agreeing
-
-**Theme:** organizational
-
-**Testable now?** **Partly.** Compare UDF margin in seats with known factional disputes (rebel candidacies) vs cleaner UDF seats. Pinarayi's own collapse in Dharmadam (50,123 → 19,247) gives one data point for "Captain effect." Quantitative test is tricky without leadership-perception polling.
-
----
-
-## A16. Central Kerala (Christian-Muslim heartland) was the kingmaker region
+## A8. Central Kerala (Christian-Muslim heartland) was the kingmaker region
 
 **Claim:** UDF won every seat in Idukki, Ernakulam, Wayanad, Malappuram, Kottayam — losing only one each in Pathanamthitta, Kasaragod, Kozhikode. LDF residual strength: Thrissur and Kannur (and not even those fully). Pre-poll Manorama–C Voter projection had already flagged this geography (UDF 33 of 53 in Central Kerala).
 
@@ -253,25 +179,6 @@ Each entry below merges sources from across the six input files. Where multiple 
 **Theme:** regional / urban-rural
 
 **Testable now?** **Yes.** District-wise UDF/LDF/NDA seat tally and vote-share swings vs 2021 are directly computable from our data.
-
----
-
-## A17. Candidate-quality outliers — the Chandy Oommen / Suresh Gopi cases
-
-**Claim:** Chandy Oommen (son of former CM Oommen Chandy) won Puthuppally by 53,907 votes — among the largest margins of the election. Onmanorama: dynastic / high-recognition candidates outperformed. Conversely, Suresh Gopi (BJP MP from Thrissur LS 2024) "made only four appearances across his seven Assembly constituencies" — his 2024 LS win was personal (philanthropy + filmstar charisma) and didn't transfer to slate candidates. The Quint: "BJP doesn't win because voters think it can't. Voters think it can't because it doesn't."
-
-**Sources:**
-- The Quint — Chandy Oommen Puthuppally win
-- The Quint — Suresh Gopi factor BJP Thrissur (opinion)
-- The Week — Decoding Kerala's switch
-- Onmanorama — BJP 3-seat analysis
-- The Statesman — Satheesan's edge
-
-**Evidence strength:** Multiple agreeing
-
-**Theme:** candidate-quality
-
-**Testable now?** **Yes.** Compare margin distribution of dynastic / high-name-recognition UDF candidates vs party-baseline. Compare BJP performance in Thrissur-LS-segment AC's vs Kerala-wide BJP performance.
 
 ---
 
