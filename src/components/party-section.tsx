@@ -35,7 +35,15 @@ export function PartySection({
       const cur = trend.points[trend.points.length - 1]
       const prev =
         trend.points.length >= 2 ? trend.points[trend.points.length - 2] : null
-      const delta = cur && prev ? cur.share - prev.share : null
+      const rawDelta = cur && prev ? cur.share - prev.share : null
+      // Suppress delta when both cycles are below 0.5% statewide share —
+      // tiny-base deltas (e.g. a single Independent's 0.03pp move) are
+      // rounding noise and read as misleadingly large in the UI. We use
+      // max() rather than min() so a party that disappeared (was big,
+      // now zero) still surfaces a meaningful negative delta.
+      const peakShare =
+        cur && prev ? Math.max(cur.share, prev.share) : (cur?.share ?? 0)
+      const delta = peakShare < 0.5 ? null : rawDelta
       return {
         party: p.party,
         partyShort: p.partyShort,
