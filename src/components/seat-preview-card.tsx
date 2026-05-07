@@ -51,21 +51,24 @@ export function SeatPreviewCard({ constituency }: Props) {
           </span>
         )}
       </div>
-      <div className="mb-4 flex items-center gap-2 text-sm">
+      <div className="mb-1 flex items-center gap-2 text-sm">
         <IconCheck
           className="h-3.5 w-3.5 shrink-0 text-emerald-500"
           aria-label="Winner"
         />
+        <AlliancePill
+          code={allianceCode}
+          className="shrink-0 min-w-[3rem]"
+        />
         <span className="min-w-0 truncate font-medium">
           {normalizeCandidateName(winner.name)}
         </span>
-        <span
-          className="shrink-0 text-muted-foreground"
-          title={winner.party}
-        >
-          {partyShort(winner.party)}
-        </span>
-        <AlliancePill code={allianceCode} className="shrink-0" />
+      </div>
+      <div
+        className="mb-4 truncate text-xs text-muted-foreground"
+        title={winner.party}
+      >
+        {winner.party}
       </div>
       <dl className="grid grid-cols-3 gap-3">
         <Stat label="Share" value={formatPercent(sharePct / 100, 1)} />
