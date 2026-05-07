@@ -10,8 +10,9 @@ import {
   type GradientYear,
 } from "@/components/religion-gradient-map"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+import casteData from "@data/hindu-caste-by-district.json"
 import districtPaths from "@data/kerala-districts-paths.json"
-import { acDemo2025Meta, acDemoMeta, demoMeta } from "@/lib/data/loaders"
+import { acDemo2025Meta, acDemoMeta, demoMeta, districtsMeta } from "@/lib/data/loaders"
 import {
   getReligionForAC,
   getReligion,
@@ -27,6 +28,55 @@ const RELIGIONS_TO_SHOW: Array<{
   { code: "muslim", label: "Muslim" },
   { code: "christian", label: "Christian" },
 ]
+
+type CasteCode = "nair" | "ezhava"
+const CASTES_TO_SHOW: Array<{
+  code: CasteCode
+  label: string
+  color: string
+}> = [
+  { code: "nair", label: "Nair", color: "#0EA5E9" },
+  { code: "ezhava", label: "Ezhava", color: "#F97316" },
+]
+
+/**
+ * Compute per-district caste share AS PERCENT OF TOTAL POPULATION
+ * (the source data from Zachariah 2003 reports caste as % of HINDU
+ * population). For each district: caste% × hindu% / 100.
+ */
+const CASTE_DISTRICT_VALUES: Record<CasteCode, Record<string, number>> = {
+  nair: {},
+  ezhava: {},
+}
+for (const [distId, data] of Object.entries(
+  casteData.districts as Record<string, { nair?: number; ezhava?: number }>
+)) {
+  const hinduShare = demoMeta.districts[distId]?.religions?.hindu ?? 0
+  for (const code of ["nair", "ezhava"] as CasteCode[]) {
+    const sub = data[code]
+    if (sub != null) {
+      CASTE_DISTRICT_VALUES[code][distId] = (sub * hinduShare) / 100
+    }
+  }
+}
+
+/**
+ * Each AC inherits its district's caste share (caste data is district-
+ * level only — Zachariah 2003's KSI 2000 survey doesn't go finer).
+ * Subject to ecological-fallacy caveats; see docs/caste-data.md.
+ */
+const CASTE_AC_VALUES: Record<CasteCode, Record<string, number>> = {
+  nair: {},
+  ezhava: {},
+}
+for (const [acStr, distId] of Object.entries(
+  districtsMeta.constituencyToDistrict
+)) {
+  for (const code of ["nair", "ezhava"] as CasteCode[]) {
+    const v = CASTE_DISTRICT_VALUES[code][distId]
+    if (v != null) CASTE_AC_VALUES[code][acStr] = v
+  }
+}
 
 export function ReligionMapPage() {
   const [hoveredDistrictId, setHoveredDistrictId] = useState<string | null>(
@@ -151,6 +201,63 @@ export function ReligionMapPage() {
                   year={year}
                   hoveredDistrictId={hoveredDistrictId}
                   hoveredSeat={hoveredSeat}
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section>
+          <header className="mb-3">
+            <h2 className="font-heading text-xl font-semibold tracking-tight">
+              Hindu sub-communities (district-level only)
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Source: Zachariah, Mathew &amp; Rajan (2003) — Kerala
+              Statistical Institute household survey, 2000. District
+              data only; every AC in a district shares the same shade.
+              See{" "}
+              <a
+                href="https://github.com/nvlsr/kerala-2026/blob/main/docs/caste-data.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                docs/caste-data.md
+              </a>
+              .
+            </p>
+          </header>
+          <ul className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            {CASTES_TO_SHOW.map((c) => (
+              <li
+                key={c.code}
+                className="rounded-lg border bg-card/40 p-4 sm:p-5"
+              >
+                <header className="mb-2 flex items-baseline justify-between gap-2">
+                  <h3 className="font-heading text-base font-semibold tracking-tight sm:text-lg">
+                    {c.label}
+                  </h3>
+                  <span
+                    className="inline-flex h-3 w-3 shrink-0 rounded-full"
+                    style={{ backgroundColor: c.color }}
+                    aria-hidden
+                  />
+                </header>
+                <ReligionGradientMap
+                  religion="hindu"
+                  baseColor={c.color}
+                  level="district"
+                  hoveredDistrictId={hoveredDistrictId}
+                  onDistrictHover={setHoveredDistrictId}
+                  zoomable
+                  acValuesOverride={CASTE_AC_VALUES[c.code]}
+                  districtValuesOverride={CASTE_DISTRICT_VALUES[c.code]}
+                  ariaLabel={`Kerala districts shaded by ${c.label} percentage of total population`}
+                />
+                <CasteMapCaption
+                  caste={c.code}
+                  hoveredDistrictId={hoveredDistrictId}
                 />
               </li>
             ))}
@@ -326,6 +433,51 @@ function ReligionMapCaption({
   return (
     <p className="mt-2 text-xs text-muted-foreground">
       Highest share: <span className="font-medium text-foreground">{top.name}</span>{" "}
+      at {top.pct.toFixed(1)}%
+    </p>
+  )
+}
+
+
+function CasteMapCaption({
+  caste,
+  hoveredDistrictId,
+}: {
+  caste: CasteCode
+  hoveredDistrictId: string | null
+}) {
+  const label = caste === "nair" ? "Nair" : "Ezhava"
+
+  if (hoveredDistrictId) {
+    const pct = CASTE_DISTRICT_VALUES[caste][hoveredDistrictId]
+    if (pct == null) return null
+    const name =
+      districtPaths.districts.find((p) => p.id === hoveredDistrictId)?.name ??
+      hoveredDistrictId
+    return (
+      <p className="mt-2 text-xs">
+        <span className="font-medium text-foreground">{name}</span>:{" "}
+        <span className="tabular-nums">{pct.toFixed(1)}%</span>{" "}
+        <span className="text-muted-foreground">{label}</span>
+      </p>
+    )
+  }
+
+  // Default: highest district
+  const entries = Object.entries(CASTE_DISTRICT_VALUES[caste]).map(
+    ([id, pct]) => ({
+      id,
+      name: districtPaths.districts.find((p) => p.id === id)?.name ?? id,
+      pct,
+    })
+  )
+  entries.sort((a, b) => b.pct - a.pct)
+  const top = entries[0]
+  if (!top) return null
+  return (
+    <p className="mt-2 text-xs text-muted-foreground">
+      Highest share:{" "}
+      <span className="font-medium text-foreground">{top.name}</span>{" "}
       at {top.pct.toFixed(1)}%
     </p>
   )

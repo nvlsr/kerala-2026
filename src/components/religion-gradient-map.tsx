@@ -57,6 +57,21 @@ type Props = {
   /** When true, render zoom +/- and reset controls + drag-to-pan when zoomed.
    *  Default false so other pages (/flows, /drifts) get a static map. */
   zoomable?: boolean
+  /**
+   * If supplied, the component uses these per-AC values instead of
+   * the religion-based lookup. Lets non-religion gradients (e.g.
+   * Hindu sub-community shares like Nair, Ezhava) reuse this
+   * component's hover/zoom/pan/highlight machinery without
+   * duplicating it. Map keys are AC numbers as strings; values are
+   * percent (0-100) of total population.
+   */
+  acValuesOverride?: Record<string, number>
+  /**
+   * District-level value overrides. Used when `level === "district"`
+   * and `acValuesOverride` is provided. Map keys are district ids
+   * (matching `data/districts.json`), values are 0-100 percent.
+   */
+  districtValuesOverride?: Record<string, number>
   ariaLabel: string
 }
 
@@ -87,10 +102,13 @@ export function ReligionGradientMap({
   hoveredSeat,
   onAcHover,
   zoomable = false,
+  acValuesOverride,
+  districtValuesOverride,
   ariaLabel,
 }: Props) {
   const acData =
     year === 2025 ? acDemo2025Meta.constituencies : acDemoMeta.constituencies
+  const usingOverride = acValuesOverride != null
   // Independent zoom state per map instance — each of the 3 religion
   // maps on /religion-map can be zoomed/panned to a different region.
   // Stored as a viewBox so the SVG natively renders at any zoom.
@@ -152,12 +170,17 @@ export function ReligionGradientMap({
     dragRef.current = null
     setIsDragging(false)
   }
-  // Anchor the gradient to the actual range of the chosen religion so
-  // mid-share ACs/districts read as mid-saturated rather than faint.
-  // For AC level, we measure against the AC max (which is higher than
-  // district max — extreme ACs like Vengara at 83% Muslim).
-  const maxPct =
-    level === "ac"
+  // Anchor the gradient to the actual range of the metric so mid-share
+  // ACs/districts read as mid-saturated rather than faint. For AC
+  // level, we measure against the AC max (which is higher than district
+  // max — extreme ACs like Vengara at 83% Muslim).
+  const maxPct = usingOverride
+    ? level === "ac"
+      ? Math.max(...Object.values(acValuesOverride))
+      : Math.max(
+          ...Object.values(districtValuesOverride ?? acValuesOverride)
+        )
+    : level === "ac"
       ? Math.max(
           ...Object.values(acData).map(
             (c) => c.religions[religion] ?? 0
@@ -203,7 +226,15 @@ export function ReligionGradientMap({
         const districtId =
           districtsMeta.constituencyToDistrict[String(p.constituencyNumber)]
         let pct = 0
-        if (level === "ac") {
+        if (usingOverride) {
+          if (level === "ac") {
+            pct = acValuesOverride[String(p.constituencyNumber)] ?? 0
+          } else {
+            pct = districtId
+              ? (districtValuesOverride?.[districtId] ?? 0)
+              : 0
+          }
+        } else if (level === "ac") {
           const ac = acData[String(p.constituencyNumber)]
           pct = ac?.religions[religion] ?? 0
         } else {
