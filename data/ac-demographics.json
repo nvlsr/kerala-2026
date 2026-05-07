@@ -1,0 +1,1827 @@
+{
+  "year": 2011,
+  "source": "Census 2011 Table C-01 + SHRUG shrid \u2192 AC keys (post-2008 delimitation)",
+  "note": "Religion shares aggregated from sub-district (rural) and town (urban) Census 2011 data, weighted by shrid population and SHRUG fragment-weights to Kerala's 140 ACs. ACs with no SHRUG match (mostly major urban centres) fall back to district-level religion shares \u2014 flagged via `source: 'district-fallback'`.",
+  "constituencies": {
+    "1": {
+      "matchedPopulation": 275617,
+      "religions": {
+        "hindu": 47.75,
+        "muslim": 49.23,
+        "christian": 2.83,
+        "sikh": 0.02,
+        "buddhist": 0.02,
+        "jain": 0.02,
+        "other": 0.0
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "2": {
+      "matchedPopulation": 281245,
+      "religions": {
+        "hindu": 47.52,
+        "muslim": 49.72,
+        "christian": 2.58,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "3": {
+      "matchedPopulation": 232940,
+      "religions": {
+        "hindu": 55.44,
+        "muslim": 37.24,
+        "christian": 7.13,
+        "sikh": 0.01,
+        "buddhist": 0.03,
+        "jain": 0.01,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "4": {
+      "matchedPopulation": 260984,
+      "religions": {
+        "hindu": 71.23,
+        "muslim": 16.22,
+        "christian": 12.26,
+        "sikh": 0.01,
+        "buddhist": 0.04,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "5": {
+      "matchedPopulation": 238599,
+      "religions": {
+        "hindu": 71.06,
+        "muslim": 18.7,
+        "christian": 9.97,
+        "sikh": 0.01,
+        "buddhist": 0.04,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "6": {
+      "matchedPopulation": 221604,
+      "religions": {
+        "hindu": 63.4,
+        "muslim": 17.89,
+        "christian": 18.39,
+        "sikh": 0.01,
+        "buddhist": 0.08,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "7": {
+      "matchedPopulation": 284457,
+      "religions": {
+        "hindu": 58.06,
+        "muslim": 37.1,
+        "christian": 4.61,
+        "sikh": 0.01,
+        "buddhist": 0.04,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "8": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 59.83,
+        "muslim": 29.43,
+        "christian": 10.41,
+        "sikh": 0.02,
+        "buddhist": 0.04,
+        "jain": 0.01,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "9": {
+      "matchedPopulation": 250195,
+      "religions": {
+        "hindu": 51.1,
+        "muslim": 19.81,
+        "christian": 28.75,
+        "sikh": 0.02,
+        "buddhist": 0.12,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "10": {
+      "matchedPopulation": 216611,
+      "religions": {
+        "hindu": 61.59,
+        "muslim": 36.37,
+        "christian": 1.81,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "11": {
+      "matchedPopulation": 202158,
+      "religions": {
+        "hindu": 58.12,
+        "muslim": 38.79,
+        "christian": 2.64,
+        "sikh": 0.07,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "12": {
+      "matchedPopulation": 209501,
+      "religions": {
+        "hindu": 71.45,
+        "muslim": 27.9,
+        "christian": 0.39,
+        "sikh": 0.0,
+        "buddhist": 0.0,
+        "jain": 0.01,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "13": {
+      "matchedPopulation": 216489,
+      "religions": {
+        "hindu": 64.29,
+        "muslim": 33.25,
+        "christian": 1.87,
+        "sikh": 0.02,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "14": {
+      "matchedPopulation": 226014,
+      "religions": {
+        "hindu": 59.98,
+        "muslim": 33.32,
+        "christian": 6.44,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.01,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "15": {
+      "matchedPopulation": 230758,
+      "religions": {
+        "hindu": 62.0,
+        "muslim": 27.78,
+        "christian": 9.94,
+        "sikh": 0.01,
+        "buddhist": 0.04,
+        "jain": 0.01,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "16": {
+      "matchedPopulation": 230576,
+      "religions": {
+        "hindu": 53.96,
+        "muslim": 22.42,
+        "christian": 23.25,
+        "sikh": 0.01,
+        "buddhist": 0.07,
+        "jain": 0.01,
+        "other": 0.08
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "17": {
+      "matchedPopulation": 252224,
+      "religions": {
+        "hindu": 46.31,
+        "muslim": 29.52,
+        "christian": 23.6,
+        "sikh": 0.01,
+        "buddhist": 0.04,
+        "jain": 0.21,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "18": {
+      "matchedPopulation": 299354,
+      "religions": {
+        "hindu": 58.13,
+        "muslim": 16.81,
+        "christian": 24.65,
+        "sikh": 0.01,
+        "buddhist": 0.03,
+        "jain": 0.08,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "19": {
+      "matchedPopulation": 263029,
+      "religions": {
+        "hindu": 43.41,
+        "muslim": 40.95,
+        "christian": 14.95,
+        "sikh": 0.01,
+        "buddhist": 0.04,
+        "jain": 0.46,
+        "other": 0.05
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "20": {
+      "matchedPopulation": 212779,
+      "religions": {
+        "hindu": 64.92,
+        "muslim": 33.51,
+        "christian": 1.09,
+        "sikh": 0.02,
+        "buddhist": 0.01,
+        "jain": 0.02,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "21": {
+      "matchedPopulation": 240197,
+      "religions": {
+        "hindu": 62.48,
+        "muslim": 35.31,
+        "christian": 2.0,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "22": {
+      "matchedPopulation": 265705,
+      "religions": {
+        "hindu": 57.73,
+        "muslim": 39.73,
+        "christian": 2.28,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "23": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 56.21,
+        "muslim": 39.24,
+        "christian": 4.26,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.02,
+        "other": 0.02
+      },
+      "source": "district-fallback"
+    },
+    "24": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 56.21,
+        "muslim": 39.24,
+        "christian": 4.26,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.02,
+        "other": 0.02
+      },
+      "source": "district-fallback"
+    },
+    "25": {
+      "matchedPopulation": 305090,
+      "religions": {
+        "hindu": 63.29,
+        "muslim": 32.32,
+        "christian": 4.08,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "26": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 56.21,
+        "muslim": 39.24,
+        "christian": 4.26,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.02,
+        "other": 0.02
+      },
+      "source": "district-fallback"
+    },
+    "27": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 56.21,
+        "muslim": 39.24,
+        "christian": 4.26,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.02,
+        "other": 0.02
+      },
+      "source": "district-fallback"
+    },
+    "28": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 56.21,
+        "muslim": 39.24,
+        "christian": 4.26,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.02,
+        "other": 0.02
+      },
+      "source": "district-fallback"
+    },
+    "29": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 56.21,
+        "muslim": 39.24,
+        "christian": 4.26,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.02,
+        "other": 0.02
+      },
+      "source": "district-fallback"
+    },
+    "30": {
+      "matchedPopulation": 213692,
+      "religions": {
+        "hindu": 56.55,
+        "muslim": 41.16,
+        "christian": 2.05,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "31": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 56.21,
+        "muslim": 39.24,
+        "christian": 4.26,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.02,
+        "other": 0.02
+      },
+      "source": "district-fallback"
+    },
+    "32": {
+      "matchedPopulation": 206634,
+      "religions": {
+        "hindu": 35.92,
+        "muslim": 50.67,
+        "christian": 13.23,
+        "sikh": 0.0,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.0
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "33": {
+      "matchedPopulation": 261093,
+      "religions": {
+        "hindu": 29.74,
+        "muslim": 69.08,
+        "christian": 0.98,
+        "sikh": 0.0,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "34": {
+      "matchedPopulation": 213136,
+      "religions": {
+        "hindu": 24.34,
+        "muslim": 74.03,
+        "christian": 1.43,
+        "sikh": 0.0,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "35": {
+      "matchedPopulation": 292058,
+      "religions": {
+        "hindu": 34.19,
+        "muslim": 57.2,
+        "christian": 8.43,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "36": {
+      "matchedPopulation": 281305,
+      "religions": {
+        "hindu": 32.82,
+        "muslim": 58.52,
+        "christian": 8.48,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "37": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 27.6,
+        "muslim": 70.24,
+        "christian": 1.98,
+        "sikh": 0.0,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "district-fallback"
+    },
+    "38": {
+      "matchedPopulation": 225775,
+      "religions": {
+        "hindu": 29.79,
+        "muslim": 67.88,
+        "christian": 2.18,
+        "sikh": 0.0,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "39": {
+      "matchedPopulation": 248866,
+      "religions": {
+        "hindu": 26.34,
+        "muslim": 71.79,
+        "christian": 1.72,
+        "sikh": 0.0,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "40": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 27.6,
+        "muslim": 70.24,
+        "christian": 1.98,
+        "sikh": 0.0,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "district-fallback"
+    },
+    "41": {
+      "matchedPopulation": 236419,
+      "religions": {
+        "hindu": 16.38,
+        "muslim": 83.04,
+        "christian": 0.42,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "42": {
+      "matchedPopulation": 251638,
+      "religions": {
+        "hindu": 33.64,
+        "muslim": 65.66,
+        "christian": 0.59,
+        "sikh": 0.0,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "43": {
+      "matchedPopulation": 252238,
+      "religions": {
+        "hindu": 20.16,
+        "muslim": 79.28,
+        "christian": 0.42,
+        "sikh": 0.0,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.0
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "44": {
+      "matchedPopulation": 238439,
+      "religions": {
+        "hindu": 20.38,
+        "muslim": 79.23,
+        "christian": 0.24,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "45": {
+      "matchedPopulation": 283249,
+      "religions": {
+        "hindu": 24.05,
+        "muslim": 74.97,
+        "christian": 0.79,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "46": {
+      "matchedPopulation": 273182,
+      "religions": {
+        "hindu": 27.47,
+        "muslim": 71.96,
+        "christian": 0.44,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.0
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "47": {
+      "matchedPopulation": 235593,
+      "religions": {
+        "hindu": 35.96,
+        "muslim": 63.27,
+        "christian": 0.52,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "48": {
+      "matchedPopulation": 253028,
+      "religions": {
+        "hindu": 36.33,
+        "muslim": 62.92,
+        "christian": 0.48,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "49": {
+      "matchedPopulation": 231637,
+      "religions": {
+        "hindu": 55.59,
+        "muslim": 42.91,
+        "christian": 1.23,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "50": {
+      "matchedPopulation": 240253,
+      "religions": {
+        "hindu": 51.64,
+        "muslim": 47.28,
+        "christian": 0.87,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "51": {
+      "matchedPopulation": 230064,
+      "religions": {
+        "hindu": 63.97,
+        "muslim": 34.03,
+        "christian": 1.74,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "52": {
+      "matchedPopulation": 255999,
+      "religions": {
+        "hindu": 57.43,
+        "muslim": 40.03,
+        "christian": 2.25,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "53": {
+      "matchedPopulation": 185106,
+      "religions": {
+        "hindu": 68.31,
+        "muslim": 25.95,
+        "christian": 5.53,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "54": {
+      "matchedPopulation": 287617,
+      "religions": {
+        "hindu": 46.42,
+        "muslim": 45.29,
+        "christian": 8.05,
+        "sikh": 0.01,
+        "buddhist": 0.03,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "55": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.76,
+        "muslim": 28.93,
+        "christian": 4.07,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "district-fallback"
+    },
+    "56": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.76,
+        "muslim": 28.93,
+        "christian": 4.07,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "district-fallback"
+    },
+    "57": {
+      "matchedPopulation": 209110,
+      "religions": {
+        "hindu": 76.08,
+        "muslim": 18.55,
+        "christian": 5.18,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "58": {
+      "matchedPopulation": 229874,
+      "religions": {
+        "hindu": 79.57,
+        "muslim": 15.65,
+        "christian": 4.51,
+        "sikh": 0.0,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "59": {
+      "matchedPopulation": 196393,
+      "religions": {
+        "hindu": 82.16,
+        "muslim": 11.44,
+        "christian": 6.04,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "60": {
+      "matchedPopulation": 198748,
+      "religions": {
+        "hindu": 75.58,
+        "muslim": 19.17,
+        "christian": 5.04,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "61": {
+      "matchedPopulation": 249890,
+      "religions": {
+        "hindu": 63.97,
+        "muslim": 25.82,
+        "christian": 10.09,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "62": {
+      "matchedPopulation": 243388,
+      "religions": {
+        "hindu": 58.89,
+        "muslim": 19.54,
+        "christian": 21.41,
+        "sikh": 0.0,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "63": {
+      "matchedPopulation": 219088,
+      "religions": {
+        "hindu": 43.53,
+        "muslim": 49.16,
+        "christian": 7.15,
+        "sikh": 0.0,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "64": {
+      "matchedPopulation": 261848,
+      "religions": {
+        "hindu": 58.2,
+        "muslim": 21.56,
+        "christian": 20.03,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "65": {
+      "matchedPopulation": 231337,
+      "religions": {
+        "hindu": 63.89,
+        "muslim": 9.57,
+        "christian": 26.01,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "66": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 58.42,
+        "muslim": 17.07,
+        "christian": 24.27,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "district-fallback"
+    },
+    "67": {
+      "matchedPopulation": 244765,
+      "religions": {
+        "hindu": 54.86,
+        "muslim": 5.15,
+        "christian": 39.71,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.01,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "68": {
+      "matchedPopulation": 232825,
+      "religions": {
+        "hindu": 65.55,
+        "muslim": 17.52,
+        "christian": 16.63,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "69": {
+      "matchedPopulation": 175619,
+      "religions": {
+        "hindu": 57.25,
+        "muslim": 37.78,
+        "christian": 4.74,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "70": {
+      "matchedPopulation": 259084,
+      "religions": {
+        "hindu": 64.91,
+        "muslim": 8.3,
+        "christian": 26.66,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "71": {
+      "matchedPopulation": 264894,
+      "religions": {
+        "hindu": 59.12,
+        "muslim": 5.12,
+        "christian": 35.43,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "72": {
+      "matchedPopulation": 207157,
+      "religions": {
+        "hindu": 49.28,
+        "muslim": 6.05,
+        "christian": 44.52,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "73": {
+      "matchedPopulation": 291239,
+      "religions": {
+        "hindu": 58.74,
+        "muslim": 19.12,
+        "christian": 21.99,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "74": {
+      "matchedPopulation": 262537,
+      "religions": {
+        "hindu": 43.9,
+        "muslim": 16.6,
+        "christian": 39.34,
+        "sikh": 0.02,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "75": {
+      "matchedPopulation": 174615,
+      "religions": {
+        "hindu": 34.32,
+        "muslim": 1.15,
+        "christian": 64.29,
+        "sikh": 0.02,
+        "buddhist": 0.03,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "76": {
+      "matchedPopulation": 250258,
+      "religions": {
+        "hindu": 40.01,
+        "muslim": 31.16,
+        "christian": 28.52,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "77": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 45.99,
+        "muslim": 15.67,
+        "christian": 38.03,
+        "sikh": 0.03,
+        "buddhist": 0.02,
+        "jain": 0.04,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "78": {
+      "matchedPopulation": 214447,
+      "religions": {
+        "hindu": 60.23,
+        "muslim": 6.06,
+        "christian": 33.47,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "79": {
+      "matchedPopulation": 215870,
+      "religions": {
+        "hindu": 52.6,
+        "muslim": 6.14,
+        "christian": 41.07,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "80": {
+      "matchedPopulation": 269246,
+      "religions": {
+        "hindu": 44.44,
+        "muslim": 14.73,
+        "christian": 40.62,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.01,
+        "other": 0.0
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "81": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 45.99,
+        "muslim": 15.67,
+        "christian": 38.03,
+        "sikh": 0.03,
+        "buddhist": 0.02,
+        "jain": 0.04,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "82": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 45.99,
+        "muslim": 15.67,
+        "christian": 38.03,
+        "sikh": 0.03,
+        "buddhist": 0.02,
+        "jain": 0.04,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "83": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 45.99,
+        "muslim": 15.67,
+        "christian": 38.03,
+        "sikh": 0.03,
+        "buddhist": 0.02,
+        "jain": 0.04,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "84": {
+      "matchedPopulation": 226725,
+      "religions": {
+        "hindu": 46.45,
+        "muslim": 17.99,
+        "christian": 35.42,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "85": {
+      "matchedPopulation": 239630,
+      "religions": {
+        "hindu": 49.93,
+        "muslim": 7.56,
+        "christian": 42.22,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "86": {
+      "matchedPopulation": 229992,
+      "religions": {
+        "hindu": 36.73,
+        "muslim": 21.68,
+        "christian": 41.42,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "87": {
+      "matchedPopulation": 220803,
+      "religions": {
+        "hindu": 35.45,
+        "muslim": 33.83,
+        "christian": 30.51,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "88": {
+      "matchedPopulation": 189229,
+      "religions": {
+        "hindu": 61.73,
+        "muslim": 6.24,
+        "christian": 31.81,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "89": {
+      "matchedPopulation": 225146,
+      "religions": {
+        "hindu": 48.34,
+        "muslim": 3.22,
+        "christian": 48.05,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "90": {
+      "matchedPopulation": 302084,
+      "religions": {
+        "hindu": 39.9,
+        "muslim": 18.36,
+        "christian": 41.48,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "91": {
+      "matchedPopulation": 209961,
+      "religions": {
+        "hindu": 48.15,
+        "muslim": 4.29,
+        "christian": 47.2,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "92": {
+      "matchedPopulation": 131219,
+      "religions": {
+        "hindu": 51.49,
+        "muslim": 6.85,
+        "christian": 41.35,
+        "sikh": 0.01,
+        "buddhist": 0.03,
+        "jain": 0.01,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "93": {
+      "matchedPopulation": 243360,
+      "religions": {
+        "hindu": 38.26,
+        "muslim": 9.1,
+        "christian": 52.44,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "94": {
+      "matchedPopulation": 227062,
+      "religions": {
+        "hindu": 53.51,
+        "muslim": 2.36,
+        "christian": 43.92,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "95": {
+      "matchedPopulation": 220723,
+      "religions": {
+        "hindu": 72.36,
+        "muslim": 3.25,
+        "christian": 24.04,
+        "sikh": 0.02,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "96": {
+      "matchedPopulation": 204534,
+      "religions": {
+        "hindu": 50.05,
+        "muslim": 5.14,
+        "christian": 44.52,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "97": {
+      "matchedPopulation": 223128,
+      "religions": {
+        "hindu": 50.93,
+        "muslim": 7.47,
+        "christian": 41.18,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "98": {
+      "matchedPopulation": 237168,
+      "religions": {
+        "hindu": 49.45,
+        "muslim": 1.49,
+        "christian": 48.79,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "99": {
+      "matchedPopulation": 207559,
+      "religions": {
+        "hindu": 46.47,
+        "muslim": 9.41,
+        "christian": 43.77,
+        "sikh": 0.01,
+        "buddhist": 0.03,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "100": {
+      "matchedPopulation": 217849,
+      "religions": {
+        "hindu": 47.27,
+        "muslim": 9.15,
+        "christian": 43.18,
+        "sikh": 0.01,
+        "buddhist": 0.03,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "101": {
+      "matchedPopulation": 205993,
+      "religions": {
+        "hindu": 43.39,
+        "muslim": 14.3,
+        "christian": 42.05,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "102": {
+      "matchedPopulation": 267732,
+      "religions": {
+        "hindu": 66.68,
+        "muslim": 9.38,
+        "christian": 23.66,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "103": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 68.64,
+        "muslim": 10.55,
+        "christian": 20.45,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "district-fallback"
+    },
+    "104": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 68.64,
+        "muslim": 10.55,
+        "christian": 20.45,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "district-fallback"
+    },
+    "105": {
+      "matchedPopulation": 227546,
+      "religions": {
+        "hindu": 55.98,
+        "muslim": 20.52,
+        "christian": 23.22,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "106": {
+      "matchedPopulation": 222145,
+      "religions": {
+        "hindu": 59.72,
+        "muslim": 3.43,
+        "christian": 36.51,
+        "sikh": 0.03,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "107": {
+      "matchedPopulation": 245478,
+      "religions": {
+        "hindu": 80.62,
+        "muslim": 10.02,
+        "christian": 9.02,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "108": {
+      "matchedPopulation": 215431,
+      "religions": {
+        "hindu": 83.49,
+        "muslim": 9.02,
+        "christian": 7.2,
+        "sikh": 0.02,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "109": {
+      "matchedPopulation": 264568,
+      "religions": {
+        "hindu": 74.67,
+        "muslim": 6.84,
+        "christian": 18.05,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "110": {
+      "matchedPopulation": 223162,
+      "religions": {
+        "hindu": 66.7,
+        "muslim": 3.58,
+        "christian": 29.21,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "111": {
+      "matchedPopulation": 269269,
+      "religions": {
+        "hindu": 48.9,
+        "muslim": 3.18,
+        "christian": 47.61,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.01,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "112": {
+      "matchedPopulation": 182073,
+      "religions": {
+        "hindu": 48.73,
+        "muslim": 4.13,
+        "christian": 46.68,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "113": {
+      "matchedPopulation": 293952,
+      "religions": {
+        "hindu": 55.89,
+        "muslim": 7.31,
+        "christian": 36.38,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "114": {
+      "matchedPopulation": 222587,
+      "religions": {
+        "hindu": 61.78,
+        "muslim": 4.57,
+        "christian": 33.28,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "115": {
+      "matchedPopulation": 246331,
+      "religions": {
+        "hindu": 65.02,
+        "muslim": 6.97,
+        "christian": 27.76,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "116": {
+      "matchedPopulation": 246194,
+      "religions": {
+        "hindu": 68.39,
+        "muslim": 25.92,
+        "christian": 5.44,
+        "sikh": 0.01,
+        "buddhist": 0.0,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "117": {
+      "matchedPopulation": 183505,
+      "religions": {
+        "hindu": 61.61,
+        "muslim": 24.37,
+        "christian": 13.76,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "118": {
+      "matchedPopulation": 273733,
+      "religions": {
+        "hindu": 69.32,
+        "muslim": 16.39,
+        "christian": 14.06,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "119": {
+      "matchedPopulation": 248432,
+      "religions": {
+        "hindu": 66.79,
+        "muslim": 15.16,
+        "christian": 17.79,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "120": {
+      "matchedPopulation": 215252,
+      "religions": {
+        "hindu": 61.87,
+        "muslim": 17.35,
+        "christian": 20.47,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "121": {
+      "matchedPopulation": 242141,
+      "religions": {
+        "hindu": 59.21,
+        "muslim": 18.85,
+        "christian": 21.59,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.09
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "122": {
+      "matchedPopulation": 246745,
+      "religions": {
+        "hindu": 67.56,
+        "muslim": 15.33,
+        "christian": 16.86,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "123": {
+      "matchedPopulation": 242314,
+      "religions": {
+        "hindu": 60.36,
+        "muslim": 26.06,
+        "christian": 13.38,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "124": {
+      "matchedPopulation": 266593,
+      "religions": {
+        "hindu": 62.05,
+        "muslim": 18.8,
+        "christian": 18.8,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "125": {
+      "matchedPopulation": 217939,
+      "religions": {
+        "hindu": 55.56,
+        "muslim": 24.58,
+        "christian": 19.4,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.09
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "126": {
+      "matchedPopulation": 221669,
+      "religions": {
+        "hindu": 73.51,
+        "muslim": 13.03,
+        "christian": 13.17,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "127": {
+      "matchedPopulation": 206081,
+      "religions": {
+        "hindu": 73.68,
+        "muslim": 22.23,
+        "christian": 3.82,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.01
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "128": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.46,
+        "muslim": 13.72,
+        "christian": 19.1,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "129": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.46,
+        "muslim": 13.72,
+        "christian": 19.1,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "130": {
+      "matchedPopulation": 296111,
+      "religions": {
+        "hindu": 64.67,
+        "muslim": 20.91,
+        "christian": 13.68,
+        "sikh": 0.02,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "131": {
+      "matchedPopulation": 271875,
+      "religions": {
+        "hindu": 65.77,
+        "muslim": 19.83,
+        "christian": 13.34,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "132": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.46,
+        "muslim": 13.72,
+        "christian": 19.1,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "133": {
+      "matchedPopulation": 178551,
+      "religions": {
+        "hindu": 16.79,
+        "muslim": 46.11,
+        "christian": 36.92,
+        "sikh": 0.0,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.0
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "134": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.46,
+        "muslim": 13.72,
+        "christian": 19.1,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "135": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.46,
+        "muslim": 13.72,
+        "christian": 19.1,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "136": {
+      "matchedPopulation": 181825,
+      "religions": {
+        "hindu": 65.33,
+        "muslim": 19.5,
+        "christian": 14.12,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.04
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "137": {
+      "matchedPopulation": 229857,
+      "religions": {
+        "hindu": 49.6,
+        "muslim": 4.85,
+        "christian": 44.85,
+        "sikh": 0.01,
+        "buddhist": 0.02,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "138": {
+      "matchedPopulation": 235556,
+      "religions": {
+        "hindu": 68.55,
+        "muslim": 5.71,
+        "christian": 25.26,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.02
+      },
+      "source": "shrug-c01-aggregated"
+    },
+    "139": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.46,
+        "muslim": 13.72,
+        "christian": 19.1,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    },
+    "140": {
+      "matchedPopulation": null,
+      "religions": {
+        "hindu": 66.46,
+        "muslim": 13.72,
+        "christian": 19.1,
+        "sikh": 0.01,
+        "buddhist": 0.01,
+        "jain": 0.0,
+        "other": 0.03
+      },
+      "source": "district-fallback"
+    }
+  }
+}
