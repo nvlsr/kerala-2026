@@ -234,7 +234,7 @@ export function NarrativesBJPPocketPage() {
         </NarrativeSection>
 
         <NarrativeSection
-          heading="Beneath the flat aggregate, BJP reorganized its electoral map"
+          heading="Beneath the flat aggregate, gains and withdrawals tell two different stories"
           sectionType="foundational"
           layout="visual-left"
           visual={
@@ -258,46 +258,92 @@ export function NarrativesBJPPocketPage() {
           caption="BJP party-share Δ 2021 → 2026, per AC. Red = BJP withdrew or lost share; blue = BJP gained. The ±25pp range cancels to +0.18pp at the statewide aggregate."
         >
           <p>
-            Per-AC <PartyLink party="Bharatiya Janata Party">BJP</PartyLink>{" "}
+            <strong>The descriptive picture.</strong> Per-AC{" "}
+            <PartyLink party="Bharatiya Janata Party">BJP</PartyLink>{" "}
             party-share Δ ranges from -21.9pp (
             <SeatLink ac={114}>Konni</SeatLink> — BJP fielded in
             2021, withdrew in 2026) to +25.1pp (
             <SeatLink ac={101}>Poonjar</SeatLink> — BJP didn't
             seriously contest in 2021, P.C. George contested in
-            2026). 11 ACs gained ≥10pp; 26 ACs saw BJP withdraw
-            entirely, ceding ground to its two NDA allies —{" "}
-            <PartyLink party="Twenty 20 Party">Twenty 20</PartyLink>{" "}
-            and{" "}
-            <PartyLink party="Bharath Dharma Jana Sena">
-              BDJS
-            </PartyLink>{" "}
-            (Bharath Dharma Jana Sena, the SNDP-linked NDA partner).
+            2026). The counts are roughly symmetric: <strong>11
+            ACs gained ≥10pp</strong>, <strong>10 ACs lost
+            ≥10pp</strong>, <strong>26 ACs saw BJP withdraw
+            entirely</strong>. Across all 140 ACs, gains sum to{" "}
+            <strong>+349.6pp</strong> and losses to{" "}
+            <strong>-308.7pp</strong> — they roughly cancel, which
+            is what produces the +0.18pp statewide aggregate. BJP
+            fielded fewer candidates overall (down to 98 from 115).
           </p>
           <p>
-            Across all 140 ACs, BJP gained a sum of{" "}
-            <strong>+349.6pp</strong> in seats where it grew, and
-            lost <strong>-308.7pp</strong> in seats where it shrank.
-            The two roughly cancel — yielding the +0.18pp statewide
-            aggregate. BJP fielded fewer candidates in 2026 (down
-            to 98 from 115): the withdrawal pattern was deliberate
-            alliance-management, not collapse.
+            <strong>Two distinct withdrawal patterns.</strong> The
+            26 withdrawal ACs split by which NDA ally substituted,
+            and the two patterns go in <em>opposite</em> directions:
+          </p>
+          <ul className="list-disc space-y-1.5 pl-5 text-[14px] sm:text-[15px]">
+            <li>
+              <strong>
+                Where{" "}
+                <PartyLink party="Twenty 20 Party">
+                  Twenty 20
+                </PartyLink>{" "}
+                substituted (mostly Ernakulam) — NDA aggregate
+                grew.
+              </strong>{" "}
+              <SeatLink ac={81}>Thripunithura</SeatLink> +4pp,{" "}
+              <SeatLink ac={83}>Thrikkakara</SeatLink> +4pp,{" "}
+              <SeatLink ac={74}>Perumbavoor</SeatLink> +5pp. T20
+              fielded 19 candidates in 2026 (up from a much smaller
+              2021 footprint) and crossed 15-19% in several of
+              those seats, exceeding BJP's previous showing.
+            </li>
+            <li>
+              <strong>
+                Where{" "}
+                <PartyLink party="Bharath Dharma Jana Sena">
+                  BDJS
+                </PartyLink>{" "}
+                substituted (elsewhere) — NDA aggregate shrank.
+              </strong>{" "}
+              <SeatLink ac={114}>Konni</SeatLink> -11pp,{" "}
+              <SeatLink ac={62}>Kunnamkulam</SeatLink> -7pp,{" "}
+              <SeatLink ac={90}>Thodupuzha</SeatLink> -7pp. BDJS
+              recovered only about half of BJP's previous share.
+            </li>
+          </ul>
+          <p>
+            The blended mean (NDA 9.6% → 9.8% across all 26
+            withdrawal ACs) averages over these opposite directions
+            and is misleading on its own.
           </p>
           <p>
-            Withdrawal ACs went from a mean NDA-aggregate of 9.6%
-            to 9.8% — alliance allies absorbed BJP's withdrawn vote
-            share roughly 1:1. The aggregate stayed flat in those
-            ACs. So the withdrawals are alliance-management, not
-            voter-loss. But "held" doesn't mean "leveraged" — NDA
-            in those ACs was at ~10% and stayed ~10%.
+            <strong>What likely paid off, and what didn't.</strong>{" "}
+            Two things look like clear wins. First, Twenty 20's
+            Ernakulam expansion: NDA went from "BJP scraping 10-15%
+            in scattered Ernakulam seats" to "T20 broadly present
+            at 15-19%" — alliance growth, not just substitution.
+            Second, the 11 BJP gainers, where concentrated effort
+            plus marquee candidates (Anoop Antony at{" "}
+            <SeatLink ac={111}>Thiruvalla</SeatLink>, P.C. George
+            at <SeatLink ac={101}>Poonjar</SeatLink>, Shone George
+            at <SeatLink ac={93}>Pala</SeatLink>) produced +14-25pp
+            jumps. The miss was the BDJS substitution zone —
+            alliance courtesy without immediate payoff.
           </p>
           <p>
-            One note against expectations:{" "}
-            <SeatLink ac={1}>Manjeshwar</SeatLink> (BJP's
-            traditional north-tip seat) shows light red, not blue
-            — i.e. BJP slipped slightly there. The pocket strategy
-            in 2026 was decidedly southern; the traditional
-            Karnataka-border foothold did not feature in the
-            expansion plan.
+            <strong>Caveat — outcome vs intent.</strong> We observe
+            outcomes; we infer strategy. The 26 withdrawals could
+            have been deliberate seat-allocation, but they could
+            equally have been forced — local cadre weakening, no
+            candidate available, or alliance pressure to make room.
+            Vote totals don't distinguish those possibilities. The
+            "strategic reorganization" reading is plausible and the
+            data fits it, but an alternative ("BJP couldn't field
+            competitively in those 26 ACs and labeled that as
+            alliance management") is equally consistent. The 11
+            concentrated-growth seats have stronger evidence — BJP
+            fielded high-profile candidates and they performed
+            well. That's strategy visible in the candidate list,
+            not just inferred from vote totals.
           </p>
         </NarrativeSection>
 
@@ -422,17 +468,21 @@ export function NarrativesBJPPocketPage() {
 
         <TakeawayBox>
           <p>
-            BJP didn't break out statewide in 2026; it reorganized.
-            The 3 wins are a Trivandrum-area Hindu-heavy cluster
-            with weak UDF candidates underperforming by ~5pp, not a
-            broader gradient (the Hindu-share regression collapses
-            under district FE). Beneath the +0.18pp aggregate, BJP
-            withdrew from 26 ACs (mostly Christian-mixed Ernakulam)
-            and pushed hard into 11 others. Most of the big gainers
-            are contest-entry activations or candidate-driven
-            jumps; only a few (Thiruvalla, Karunagappally) look
-            like organic brand expansion. Durability vs personality
-            is the open question for 2031.
+            BJP didn't break out statewide in 2026. The 3 wins are
+            a Trivandrum-area Hindu-heavy cluster with weak UDF
+            candidates underperforming by ~5pp, not a broader
+            gradient (the Hindu-share regression collapses under
+            district FE). Beneath the +0.18pp aggregate, two
+            distinct things happened: in Ernakulam, Twenty 20
+            absorbed BJP's withdrawn share and grew NDA's footprint
+            there; outside Ernakulam, BDJS substituted but
+            recovered only half of what BJP had held. Meanwhile
+            BJP concentrated effort in 11 seats and got measurable
+            +14-25pp jumps — mostly via marquee candidates rather
+            than brand drift. Whether the withdrawal pattern was
+            deliberate strategy or de facto incapacity, vote totals
+            can't tell us. Durability vs personality is the open
+            question for 2031.
           </p>
         </TakeawayBox>
 
