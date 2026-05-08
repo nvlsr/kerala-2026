@@ -27,7 +27,7 @@ Four sub-claims to test independently.
 
 **Narrative claim: ~0.12pp.** Recomputed from candidate-level data: +0.18pp. Within rounding. **Confirmed.**
 
-NDA aggregate grew +1.83pp — meaning NDA's *non-BJP* allies (BDJS, KC(B), Twenty20 in 2026) grew by ~1.65pp combined. Most of NDA's modest aggregate growth came from these allied vehicles, not BJP itself.
+NDA aggregate grew +1.83pp — meaning NDA's *non-BJP* allies in 2026 (BDJS and Twenty 20) grew by ~1.65pp combined. Most of NDA's modest aggregate growth came from these allied vehicles, not BJP itself. (Earlier drafts of this card listed KC(B) among NDA allies; that was incorrect — Kerala Congress (B) sits in LDF, not NDA, in 2026.)
 
 ## Sub-claim (ii): NDA share concentration
 

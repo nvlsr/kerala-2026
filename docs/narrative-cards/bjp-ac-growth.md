@@ -2,7 +2,7 @@
 
 > **BJP's vote share moved by +0.18pp statewide. The same number moved by ±25pp at the AC level. Both are true.**
 >
-> The aggregate hides a major geographic reshuffle: BJP added 14-25pp of vote share in several central-Kerala mixed-religion seats (Poonjar, Pala, Thiruvalla, Guruvayoor, Vaikom) while ceding 10-22pp in 26 ACs where it withdrew from the contest entirely, mostly to NDA allies (BDJS, KC(B), Twenty20). Statewide gains and statewide cessions roughly cancel — yielding the +0.18pp aggregate that conventional readings of "BJP didn't break out" rest on.
+> The aggregate hides a major geographic reshuffle: BJP added 14-25pp of vote share in several central-Kerala mixed-religion seats (Poonjar, Pala, Thiruvalla, Guruvayoor, Vaikom) while ceding 10-22pp in 26 ACs where it withdrew from the contest entirely, mostly to its two NDA allies — Twenty 20 (Ernakulam) and BDJS (elsewhere). Statewide gains and statewide cessions roughly cancel — yielding the +0.18pp aggregate that conventional readings of "BJP didn't break out" rest on.
 
 **Confidence: Moderate-strong (descriptive / mixed mechanism)** — the per-AC vote-share movements are exact. Substantive caveat: a meaningful share of the top-line gains are *contest-entry effects* (BJP fielding seriously in 2026 from a near-zero 2021 base) rather than *organic expansion* of an existing base. The two are separated explicitly below; the durability story differs sharply between them.
 
@@ -63,22 +63,24 @@ Patterns visible in this list:
 
 ## Where BJP retreated (top 12 cessions)
 
-| AC | District | Hindu % | BJP '21 | BJP '26 | NDA Δ | Cession destination |
+| AC | District | Hindu % | BJP '21 | BJP '26 | NDA Δ | Cession destination (2026 NDA-ally share) |
 |---|---|---|---|---|---|---|
 | 114 KONNI | Pathanamthitta | 61% | 21.9% | 0.0% | -10.6pp | BDJS 11.4% |
-| 73 KODUNGALLUR | Thrissur | 57% | 18.9% | 0.0% | -2.7pp | (no ally — pure NDA loss) |
+| 73 KODUNGALLUR | Thrissur | 57% | 18.9% | 0.0% | -2.7pp | Twenty 20 16.3% |
 | 62 KUNNAMKULAM | Thrissur | 57% | 18.0% | 0.0% | -6.8pp | BDJS 11.2% |
-| 90 THODUPUZHA | Idukki | 39% | 15.3% | 0.0% | -6.6pp | (no ally) |
-| 81 THRIPUNITHURA | Ernakulam | 45% | 15.2% | 0.0% | +4.0pp | (Twenty20 / KC(B)) |
-| 121 PUNALUR | Kollam | 57% | 13.7% | 0.0% | -2.8pp | (no ally) |
-| 83 THRIKKAKARA | Ernakulam | 45% | 11.3% | 0.0% | +4.1pp | (Twenty20 / KC(B)) |
-| 96 ETTUMANOOR | Kottayam | 49% | 10.9% | 0.0% | -0.3pp | (no ally) |
-| 74 PERUMBAVOOR | Ernakulam | 43% | 10.5% | 0.0% | +4.8pp | (Twenty20 / KC(B)) |
-| 79 VYPEN | Ernakulam | 52% | 10.4% | 0.0% | +0.0pp | (no ally) |
-| 120 PATHANAPURAM | Kollam | 60% | 9.0% | 0.0% | (varies) | (no ally) |
+| 90 THODUPUZHA | Idukki | 39% | 15.3% | 0.0% | -6.6pp | Twenty 20 8.7% |
+| 81 THRIPUNITHURA | Ernakulam | 45% | 15.2% | 0.0% | +4.0pp | Twenty 20 19.2% |
+| 121 PUNALUR | Kollam | 57% | 13.7% | 0.0% | -2.8pp | Twenty 20 10.9% |
+| 83 THRIKKAKARA | Ernakulam | 45% | 11.3% | 0.0% | +4.1pp | Twenty 20 15.4% |
+| 96 ETTUMANOOR | Kottayam | 49% | 10.9% | 0.0% | -0.3pp | Twenty 20 10.6% |
+| 74 PERUMBAVOOR | Ernakulam | 43% | 10.5% | 0.0% | +4.8pp | Twenty 20 15.3% |
+| 79 VYPEN | Ernakulam | 52% | 10.4% | 0.0% | +0.0pp | Twenty 20 10.4% |
+| 120 PATHANAPURAM | Kollam | 60% | 9.0% | 0.0% | (varies) | Twenty 20 5.1% |
 | 94 KADUTHURUTHY | Kottayam | 53% | 8.9% | 0.0% | (varies) | BDJS 9.9% |
 
-26 of 140 ACs were BJP cessions (BJP fielded 2021, not 2026). Mean BJP-share in those ACs in 2021: roughly 12%. In 2026: 0%. The vote did not disappear — it went to NDA allies in many cases (BDJS, KC(B), Twenty20). Mean NDA-aggregate share in cession ACs: 9.6% (2021) → 9.8% (2026), essentially flat.
+Earlier drafts of this card listed "KC(B)" as a cession destination in some Ernakulam ACs. That was incorrect — the 2026 master data shows only one Kerala Congress (B) candidate (Pathanapuram), fielded by LDF (K.B. Ganesh Kumar's faction). NDA fielded **only three parties** in 2026: BJP (98 ACs), BDJS (22), Twenty 20 (19), plus one NDA-aligned independent. Twenty 20 was the destination in every Ernakulam withdrawal; BDJS picked up most non-Ernakulam cessions.
+
+26 of 140 ACs were BJP cessions (BJP fielded 2021, not 2026). Mean BJP-share in those ACs in 2021: roughly 12%. In 2026: 0%. The vote did not disappear — it went to BDJS or Twenty 20 in most cases. Mean NDA-aggregate share in cession ACs: 9.6% (2021) → 9.8% (2026), essentially flat.
 
 **Interpretation:** the cessions are alliance-management rather than voter-loss. BJP gave allies the slot in 26 ACs where it had previously contested with 8-22% share; the alliance carriers (BDJS especially) maintained roughly the same NDA aggregate.
 
@@ -104,7 +106,7 @@ Sorted by BJP Δshare mean per district (constituency-equal within district):
 | Ernakulam | 14 | **-4.40pp** | -15.2 | +12.8 |
 
 **Top growth zones**: Trivandrum (already concentrated, gained more), Kottayam (despite high variance — the +25 in Poonjar offsets -10 in Ettumanoor), Wayanad.
-**Biggest cession zone**: Ernakulam — BJP withdrew from 7+ ACs there, ceding to Twenty20 (Kitex-backed NDA partner) and KC(B). Christian-heavy Ernakulam was the strategic-withdrawal corridor.
+**Biggest cession zone**: Ernakulam — BJP withdrew from 7+ ACs there, ceding ground to Twenty 20 in every case (the Kitex-backed Ernakulam splinter; not KC(B), which is LDF-aligned). Christian-heavy Ernakulam was the strategic-withdrawal corridor.
 **Variable**: Kottayam's range (-10.9 to +25.1) and Pathanamthitta's range (-21.9 to +14.5) demonstrate that "Christian-mixed central Kerala" is BOTH the biggest growth zone AND the biggest cession zone for BJP — depending on which AC.
 
 ## Religion-bin cross-tab
