@@ -18,7 +18,7 @@ export function PullQuote({ children, attribution, className }: Props) {
   return (
     <aside
       className={cn(
-        "my-6 rounded-lg border-l-2 border-foreground/40 bg-muted/20 px-6 py-4",
+        "my-6 max-w-prose rounded-sm border-l-2 border-foreground/40 bg-muted/20 px-6 py-4",
         className
       )}
     >

@@ -49,7 +49,7 @@ export function NarrativesMethodologyPage() {
         {/* Table of contents */}
         <nav
           aria-label="Methodology sections"
-          className="rounded-lg border bg-card/40 p-5"
+          className="rounded-sm border bg-card/40 p-5"
         >
           <p className="mb-3 text-[10px] font-medium tracking-widest uppercase text-muted-foreground">
             On this page
@@ -383,7 +383,7 @@ export function NarrativesMethodologyPage() {
           </p>
         </Section>
 
-        <section className="rounded-lg border bg-muted/30 p-6 text-xs text-muted-foreground">
+        <section className="rounded-sm border bg-muted/30 p-6 text-xs text-muted-foreground">
           <p>
             <strong className="font-medium text-foreground">
               Source documents.

@@ -38,7 +38,7 @@ export function NarrativeArcCard({
   return (
     <article
       className={cn(
-        "flex flex-col gap-4 rounded-lg border bg-card/50 p-6",
+        "flex flex-col gap-4 rounded-sm border bg-card/50 p-6",
         "transition-colors hover:border-foreground/40"
       )}
     >
@@ -50,7 +50,7 @@ export function NarrativeArcCard({
           {title}
         </h2>
       </header>
-      <div className="flex items-center justify-center rounded-md border bg-muted/30 p-3">
+      <div className="flex items-center justify-center rounded-sm border bg-muted/30 p-3">
         {visual}
       </div>
       <p className="text-sm font-medium text-foreground/90">{headlineStat}</p>

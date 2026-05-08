@@ -63,7 +63,7 @@ export function NarrativeArcBreadcrumb({ current, className }: Props) {
               to={a.href}
               aria-current={isCurrent ? "page" : undefined}
               className={cn(
-                "inline-flex items-center gap-1 rounded-full border px-2 py-0.5",
+                "inline-flex items-center gap-1 rounded-sm border px-2 py-0.5",
                 isCurrent
                   ? "border-foreground/40 bg-muted/40 font-medium text-foreground"
                   : "border-transparent bg-muted/20 text-muted-foreground hover:bg-muted/40 hover:text-foreground"

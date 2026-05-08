@@ -80,7 +80,7 @@ export function NarrativeSection({
       ) : layout === "stacked" ? (
         <div className="space-y-4">
           <figure className="mx-auto max-w-xl">
-            <div className="rounded-lg border bg-card/40 p-4 sm:p-6">
+            <div className="rounded-sm border bg-card/40 p-4 sm:p-6">
               {visual}
             </div>
             {caption && (
@@ -92,22 +92,20 @@ export function NarrativeSection({
           <div className={proseClass}>{children}</div>
         </div>
       ) : (
-        <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-5">
+        <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
           <div
             className={cn(
-              layout === "visual-left" ? "lg:col-span-3 lg:order-2" : "lg:col-span-3"
+              layout === "visual-left" ? "lg:order-2" : ""
             )}
           >
             <div className={proseClass}>{children}</div>
           </div>
           <figure
             className={cn(
-              layout === "visual-left"
-                ? "lg:col-span-2 lg:order-1"
-                : "lg:col-span-2"
+              layout === "visual-left" ? "lg:order-1" : ""
             )}
           >
-            <div className="rounded-lg border bg-card/40 p-4 sm:p-6">
+            <div className="rounded-sm border bg-card/40 p-4 sm:p-6">
               {visual}
             </div>
             {caption && (

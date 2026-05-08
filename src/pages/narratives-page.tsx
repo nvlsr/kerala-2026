@@ -220,7 +220,7 @@ export function NarrativesPage() {
           aria-label="Cross-cutting framings"
           className="grid grid-cols-1 gap-5 lg:grid-cols-2"
         >
-          <article className="rounded-lg border bg-card/50 p-6">
+          <article className="rounded-sm border bg-card/50 p-6">
             <h2 className="font-heading text-base font-semibold tracking-tight">
               Swing source vs seat amplification
             </h2>
@@ -236,7 +236,7 @@ export function NarrativesPage() {
               explains the landslide; together they do.
             </p>
           </article>
-          <article className="rounded-lg border bg-card/50 p-6">
+          <article className="rounded-sm border bg-card/50 p-6">
             <h2 className="font-heading text-base font-semibold tracking-tight">
               Kerala 2026 was not highly polarized
             </h2>
@@ -270,7 +270,7 @@ export function NarrativesPage() {
             {SURPRISES.map((s) => (
               <li
                 key={s.title}
-                className="rounded-md border bg-card/30 p-4"
+                className="rounded-sm border bg-card/30 p-4"
               >
                 <p className="text-sm font-semibold">{s.title}</p>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
@@ -284,7 +284,7 @@ export function NarrativesPage() {
         {/* Methodology + reproduce footer */}
         <section
           aria-label="Methodology"
-          className="rounded-lg border bg-muted/30 p-6 text-xs text-muted-foreground"
+          className="rounded-sm border bg-muted/30 p-6 text-xs text-muted-foreground"
         >
           <p>
             <strong className="font-medium text-foreground">
