@@ -130,6 +130,7 @@ export function NarrativesBJPPocketPage() {
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
           heading="The 3 wins"
+          layout="visual-right"
           visual={
             <div className="space-y-2">
               <ChoroplethMap
@@ -198,6 +199,7 @@ export function NarrativesBJPPocketPage() {
 
         <NarrativeSection
           heading="The reshuffle hidden by the aggregate"
+          layout="visual-left"
           visual={
             <div className="space-y-2">
               <ChoroplethMap
@@ -246,6 +248,7 @@ export function NarrativesBJPPocketPage() {
 
         <NarrativeSection
           heading="Geography of BJP's reshuffle by district"
+          layout="stacked"
           visual={
             <StackedBarByCategory
               rows={CESSION_DISTRICTS_DATA}
@@ -285,6 +288,7 @@ export function NarrativesBJPPocketPage() {
 
         <NarrativeSection
           heading="Contest-entry vs organic expansion"
+          layout="stacked"
           visual={
             <TrajectoryLines
               cycles={[2016, 2021, 2026]}

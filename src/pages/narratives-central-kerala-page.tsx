@@ -116,6 +116,7 @@ export function NarrativesCentralKeralaPage() {
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
           heading="The 47-of-47 sweep"
+          layout="visual-right"
           visual={
             <div className="space-y-2">
               <ChoroplethMap
@@ -157,6 +158,7 @@ export function NarrativesCentralKeralaPage() {
 
         <NarrativeSection
           heading="The Christian-belt premium"
+          layout="stacked"
           visual={
             <ScatterWithTrend
               points={scatterPoints}
@@ -204,6 +206,7 @@ export function NarrativesCentralKeralaPage() {
 
         <NarrativeSection
           heading="Why a 7pp swing produced a 102-seat majority"
+          layout="visual-left"
           visual={
             <ComparisonBar
               groups={efficiencyGroups}
@@ -243,6 +246,7 @@ export function NarrativesCentralKeralaPage() {
 
         <NarrativeSection
           heading="Muslim share didn't add a separate premium"
+          layout="visual-right"
           visual={
             <ComparisonBar
               groups={muslimBinGroups}

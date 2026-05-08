@@ -65,6 +65,7 @@ export function NarrativesAntiLDFPage() {
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
           heading="The wave was uniform"
+          layout="visual-right"
           visual={
             <div className="space-y-2">
               <ChoroplethMap
@@ -103,6 +104,7 @@ export function NarrativesAntiLDFPage() {
 
         <NarrativeSection
           heading="Distribution shape: a tight bell with a small fat tail"
+          layout="stacked"
           visual={
             <Histogram
               values={ldfDeltas}
@@ -138,6 +140,7 @@ export function NarrativesAntiLDFPage() {
 
         <NarrativeSection
           heading="It wasn't Sabarimala-route-targeted"
+          layout="visual-left"
           visual={
             <ComparisonBar
               groups={[
@@ -186,6 +189,7 @@ export function NarrativesAntiLDFPage() {
 
         <NarrativeSection
           heading="It wasn't cabinet-status-targeted"
+          layout="visual-right"
           visual={
             <ComparisonBar
               groups={[
@@ -260,7 +264,7 @@ export function NarrativesAntiLDFPage() {
             />
           }
           caption="Mean per-AC Δshare 2021 → 2026. UDF absorbed 98% of LDF's loss; NDA absorbed 28%; OTHER bled."
-          layout="side-by-side"
+          layout="visual-left"
         >
           <p>
             The "UDF surge" reads more accurately as the geographic
