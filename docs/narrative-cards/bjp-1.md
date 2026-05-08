@@ -119,6 +119,22 @@ A key distinction within these gains: most are **alliance slot-rotations**, not 
 
 This nuance matters: BJP's "contest entries" weren't mostly stepping into empty terrain. They were taking back NDA slots that allies had been holding, often with marquee candidates. That fits the alliance-managing-its-portfolio reading rather than a simple breakout-expansion reading.
 
+### Religion mix doesn't separate the gain seats from the withdrawal seats
+
+One reading the data does *not* support is that BJP's Christian-belt gains reflect Christian-Muslim demographic anxiety. The most striking gain seats all have low Muslim share — Pala (Muslim 10%), Thiruvalla (4%), Vaikom (4%), Devikulam (7%) — and the seats where BJP **withdrew** within Kottayam have nearly identical religious composition to the gain seats:
+
+| Seat | Christian % | Muslim % | BJP move |
+|---|---:|---:|---|
+| Pala | 52% | 10% | **gained** +18pp |
+| Kaduthuruthy | 44% | 3% | **withdrew** −8.9pp |
+| Ettumanoor | 45% | 6% | **withdrew** −10.9pp |
+| Kottayam | 41% | 9% | **withdrew** −7.1pp |
+| Puthuppally (stable) | 49% | 2% | flat |
+
+If religious mix were driving the BJP shift, these seats should have moved together. They didn't. The only thing distinguishing the gain seats from the withdrawal seats is **candidate availability** — Pala had Shone George, Poonjar had P.C. George, Thiruvalla had Anoop Antony. Kaduthuruthy / Ettumanoor / Kottayam didn't have marquee Christian picks, so BJP ceded those slots to BDJS.
+
+The Munambam-style Christian-Muslim flashpoint is real but localized — it played out specifically in coastal Ernakulam (Vypin, Paravur), where it fed Section 4's Twenty 20 alliance switch, not the central-Kerala BJP gains discussed here. The Section 3 pattern is candidate-led, not religion-mix-led.
+
 ---
 
 ## Ernakulam: alliance-led NDA expansion
