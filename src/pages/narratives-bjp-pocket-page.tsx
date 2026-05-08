@@ -6,6 +6,12 @@ import {
   type TrajectorySeries,
 } from "@/components/charts/trajectory-lines"
 import { ConfidenceBadge } from "@/components/narratives/confidence-badge"
+import {
+  type Footnote,
+  FootnoteRef,
+  Footnotes,
+} from "@/components/narratives/footnotes"
+import { GoingInCallout } from "@/components/narratives/going-in-callout"
 import { MethodologyPopover } from "@/components/narratives/methodology-popover"
 import { NarrativeArcBreadcrumb } from "@/components/narratives/narrative-arc-breadcrumb"
 import { NarrativeSection } from "@/components/narratives/narrative-section"
@@ -67,12 +73,117 @@ const CESSION_DISTRICTS_DATA = [
 ]
 
 /**
+ * Pre-poll strategy citations referenced from Going-in callouts on
+ * this page. Numbering is manual; authors keep <FootnoteRef n={N} />
+ * usage aligned with these entries. See docs/narratives/pre-election-*.md
+ * for the full sourced strategy catalogue.
+ */
+const FOOTNOTES: Footnote[] = [
+  {
+    n: 1,
+    content: (
+      <>
+        Twenty 20 formally inducted into NDA. Rajeev Chandrasekhar /{" "}
+        <a
+          href="https://www.thehindu.com/news/national/kerala/twenty20-party-in-kerala-joins-nda/article70537444.ece"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline-offset-2 hover:underline"
+        >
+          The Hindu
+        </a>
+        {" "}/ 22 January 2026.
+      </>
+    ),
+  },
+  {
+    n: 2,
+    content: (
+      <>
+        Twenty 20 framed as ideological partner, not seat-sharing
+        convenience. Sabu M. Jacob, T20 chief coordinator: "What
+        matters more is that the ideology of development that
+        Twenty20 and NDA share should flourish." <em>Times of India</em>
+        {" "}/ 6 February 2026.
+      </>
+    ),
+  },
+  {
+    n: 3,
+    content: (
+      <>
+        BDJS allocated Kayamkulam and Kuttanad. Thushar Vellappally,
+        BDJS president. <em>The New Indian Express</em> / 7 March
+        2026.
+      </>
+    ),
+  },
+  {
+    n: 4,
+    content: (
+      <>
+        Sneha Yathra — 10-day Christian outreach.{" "}
+        <a
+          href="https://www.thehindu.com/news/national/kerala/bjp-to-rebuild-ties-with-christians-in-kerala-ahead-of-lok-sabha-elections/article67607956.ece"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline-offset-2 hover:underline"
+        >
+          The Hindu
+        </a>
+        {" "}/ BJP Kerala leadership / 2025.
+      </>
+    ),
+  },
+  {
+    n: 5,
+    content: (
+      <>
+        "Micro-minority" status framing for Christians. Rajeev
+        Chandrasekhar /{" "}
+        <a
+          href="https://www.thehindu.com/news/national/kerala/church-requested-micro-minority-status-at-meet-with-rijiju-chandrasekhar/article70667327.ece"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline-offset-2 hover:underline"
+        >
+          The Hindu
+        </a>
+        {" "}/ February 2026.
+      </>
+    ),
+  },
+  {
+    n: 6,
+    content: (
+      <>
+        BJP manifesto — institutional recognition for Christian
+        micro-minorities: "Institutional recognition will help
+        integrate micro-minorities into Keralam's development agenda."
+        BJP manifesto / <em>ThePrint</em> / 7 April 2026.
+      </>
+    ),
+  },
+  {
+    n: 7,
+    content: (
+      <>
+        Munambam Latin Catholic land-dispute plank. Amit Shah, Union
+        Home Minister: amendments to safeguard residents' property.
+        <em> The New Indian Express</em> / 6 April 2026.
+      </>
+    ),
+  },
+]
+
+/**
  * Arc 3 — BJP geographic pocket. Documents the +0.18pp / ±25pp
  * paradox: BJP grew 14-25pp in 11 ACs (mostly contest-entry
  * activations) while withdrawing entirely from 26 others, with
  * the net cancelling at the statewide aggregate.
  *
- * Built per docs/narratives-publish-plan.md Phase 8.
+ * Built per docs/narratives-publish-plan.md Phase 8. Strategy
+ * integration sourced from docs/narratives/pre-election-*.md.
  */
 export function NarrativesBJPPocketPage() {
   const all = getAllACMetrics()
@@ -156,7 +267,7 @@ export function NarrativesBJPPocketPage() {
     >
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
-          heading="BJP did not break out statewide; the 3 wins are a Trivandrum-area cluster"
+          heading="BJP turned Nemom into a 3-seat Trivandrum cluster"
           sectionType="foundational"
           layout="visual-right"
           visual={
@@ -196,20 +307,31 @@ export function NarrativesBJPPocketPage() {
           caption="NDA vote share in 2026. The 3 BJP wins (Nemom, Chathannoor, Kazhakoottam) are the darkest spots and are outlined; all three are in or adjacent to Trivandrum district."
         >
           <p>
+            Going into 2026, BJP had momentum in Trivandrum's
+            organisational politics: the party flipped Trivandrum
+            City Corporation in late 2025, ending 45 years of LDF
+            rule. The Assembly outcome — 3 wins clustered around
+            the same district — extends that pattern into state
+            politics.
+          </p>
+          <p>
             Three seats: <SeatLink ac={135}>Nemom</SeatLink>{" "}
             (Rajeev Chandrasekhar, ~5,000),{" "}
             <SeatLink ac={126}>Chathannoor</SeatLink> (B.B.
             Gopakumar, 4,402), and{" "}
             <SeatLink ac={132}>Kazhakoottam</SeatLink>{" "}
-            (V. Muraleedharan, 428 — effectively a coin flip).
+            (V. Muraleedharan, 428 — effectively a coin flip). In
+            interviews leading up to the election, Chandrasekhar
+            framed BJP's approach as candidate-quality-first; the
+            Trivandrum slate is consistent with that.
           </p>
           <p>
             <SeatLink ac={135}>Nemom</SeatLink> was already a BJP
-            seat in 2016 — so was anything actually new in 2026?
-            Yes: three things, all clustered together. All three
-            wins are in or adjacent to Trivandrum district. All
-            three are in 65%+ Hindu-share seats. Mean Hindu share
-            of the 3 wins is ~70%, vs ~53% statewide.
+            seat in 2016 — so what's new in 2026? Three things, all
+            clustered together. All three wins are in or adjacent
+            to Trivandrum district. All three are in 65%+
+            Hindu-share seats. Mean Hindu share of the 3 wins is
+            ~70%, vs ~53% statewide.
           </p>
           <p>
             <strong>
@@ -372,6 +494,16 @@ export function NarrativesBJPPocketPage() {
             's expansion — alliance growth that doesn't show up in
             BJP's column.
           </p>
+          <GoingInCallout>
+            <p>
+              Twenty 20 was formally inducted into NDA on 22 January
+              2026<FootnoteRef n={1} />. Its chief coordinator framed
+              the alliance as ideological alignment, not seat-sharing
+              convenience<FootnoteRef n={2} />. BDJS was allocated
+              specific seats — Kayamkulam and Kuttanad among them —
+              by early March<FootnoteRef n={3} />.
+            </p>
+          </GoingInCallout>
           <p>
             <strong>Two distinct withdrawal patterns.</strong> The
             26 withdrawal ACs split by which NDA ally substituted,
@@ -525,6 +657,21 @@ export function NarrativesBJPPocketPage() {
           }
           caption="BJP party-share trajectory across three cycles for the top 11 gainers. Dashed orange/yellow lines = contest-entry activations (Poonjar, Varkala, Vaikom, Thalassery, Devikulam, Paravur, Kundara, Thavanur — most start near 0% in 2021 and overlap on the x-axis). Solid blue lines = the 3 organic expansions (Thiruvalla, Karunagappally, Pala)."
         >
+          <GoingInCallout>
+            <p>
+              BJP ran a multi-year Christian outreach: a 10-day
+              <em> Sneha Yathra</em> through Christian-belt
+              districts in 2025<FootnoteRef n={4} />; a "micro-minority"
+              status framing for Christians in early 2026
+              <FootnoteRef n={5} />; an institutional-recognition
+              promise for Christian micro-minorities in the manifesto
+              <FootnoteRef n={6} />; and a Munambam Latin Catholic
+              land-dispute plank during the campaign
+              <FootnoteRef n={7} />. Christian candidates were fielded
+              prominently in central-Kerala mixed-religion seats
+              (Anoop Antony at Thiruvalla, Shone George at Pala).
+            </p>
+          </GoingInCallout>
           <p>
             Of the top 11 BJP gainers (Δ ≥ +9.6pp): 8 are
             <strong> contest-entry activations</strong> — BJP
@@ -705,6 +852,8 @@ export function NarrativesBJPPocketPage() {
             <ProseLink to="/questions">/questions</ProseLink>.
           </p>
         </section>
+
+        <Footnotes items={FOOTNOTES} />
       </PageMain>
     </PageShell>
   )
