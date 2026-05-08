@@ -7,7 +7,10 @@ import {
   TrajectoryLines,
   type TrajectorySeries,
 } from "@/components/charts/trajectory-lines"
+import { NarrativeArcBreadcrumb } from "@/components/narratives/narrative-arc-breadcrumb"
 import { NarrativeSection } from "@/components/narratives/narrative-section"
+import { PullQuote } from "@/components/narratives/pull-quote"
+import { TakeawayBox } from "@/components/narratives/takeaway-box"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
@@ -114,27 +117,39 @@ export function NarrativesBJPPocketPage() {
       ]}
       title="BJP grew +0.18pp statewide. The same number moved by ±25pp at the AC level."
       subtitle={
-        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-          BJP did not become a statewide challenger in Kerala in
-          2026. But beneath a nearly flat statewide vote share, the
-          party reorganized its electoral geography — withdrawing
-          from some constituencies, concentrating resources in
-          others, and building stronger pockets in South Kerala and
-          a few candidate-driven Central Kerala seats. The
-          Trivandrum belt looks like BJP's clearest long-term base
-          area, while some Central Kerala gains may depend heavily
-          on individual personalities rather than durable
-          ideological expansion.{" "}
-          <strong className="font-medium text-foreground/90">
-            Confidence: Moderate-strong (descriptive / mixed
-            mechanism).
-          </strong>
-        </p>
+        <>
+          <NarrativeArcBreadcrumb current={3} />
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            BJP did not become a statewide challenger in Kerala in
+            2026. But beneath a nearly flat statewide vote share,
+            the party reorganized its electoral geography —
+            withdrawing from some constituencies, concentrating
+            resources in others, and building stronger pockets in
+            South Kerala and a few candidate-driven Central Kerala
+            seats. The Trivandrum belt looks like BJP's clearest
+            long-term base area, while some Central Kerala gains
+            may depend heavily on individual personalities rather
+            than durable ideological expansion.{" "}
+            <strong className="font-medium text-foreground/90">
+              Confidence: Moderate-strong (descriptive / mixed
+              mechanism).
+            </strong>
+          </p>
+          <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
+            <strong className="font-medium text-foreground/80">
+              Surprise from this arc:
+            </strong>{" "}
+            BJP grew +14-25pp in 11 specific seats while withdrawing
+            entirely from 26 others. The aggregate cancels to
+            +0.18pp; the per-AC story is a major reshuffle.
+          </p>
+        </>
       }
     >
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
           heading="BJP did not break out statewide; the 3 wins are a Trivandrum-area cluster"
+          sectionType="foundational"
           layout="visual-right"
           visual={
             <div className="space-y-2">
@@ -204,6 +219,7 @@ export function NarrativesBJPPocketPage() {
 
         <NarrativeSection
           heading="Beneath the flat aggregate, BJP reorganized its electoral map"
+          sectionType="foundational"
           layout="visual-left"
           visual={
             <div className="space-y-2">
@@ -251,8 +267,15 @@ export function NarrativesBJPPocketPage() {
           </p>
         </NarrativeSection>
 
+        <PullQuote>
+          A statewide +0.18pp masks a +349pp / −309pp reshuffle. The
+          aggregate is the wrong unit; the per-AC pattern is the
+          story.
+        </PullQuote>
+
         <NarrativeSection
           heading="BJP retreated from Christian-mixed Ernakulam and pushed into Trivandrum"
+          sectionType="mechanism"
           layout="stacked"
           visual={
             <StackedBarByCategory
@@ -293,6 +316,7 @@ export function NarrativesBJPPocketPage() {
 
         <NarrativeSection
           heading="Most big BJP gains are candidate-driven, not durable brand expansion"
+          sectionType="exploratory"
           layout="stacked"
           visual={
             <TrajectoryLines
@@ -336,6 +360,22 @@ export function NarrativesBJPPocketPage() {
             traction beyond the specific candidate.
           </p>
         </NarrativeSection>
+
+        <TakeawayBox>
+          <p>
+            BJP didn't break out statewide in 2026; it reorganized.
+            The 3 wins are a Trivandrum-area Hindu-heavy cluster
+            with weak UDF candidates underperforming by ~5pp, not a
+            broader gradient (the Hindu-share regression collapses
+            under district FE). Beneath the +0.18pp aggregate, BJP
+            withdrew from 26 ACs (mostly Christian-mixed Ernakulam)
+            and pushed hard into 11 others. Most of the big gainers
+            are contest-entry activations or candidate-driven
+            jumps; only a few (Thiruvalla, Karunagappally) look
+            like organic brand expansion. Durability vs personality
+            is the open question for 2031.
+          </p>
+        </TakeawayBox>
 
         <section className="border-t pt-8">
           <h2 className="font-heading mb-4 text-xl font-semibold tracking-tight sm:text-2xl">

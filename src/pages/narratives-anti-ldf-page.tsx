@@ -4,7 +4,10 @@ import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import { ChoroplethLegend } from "@/components/charts/choropleth-legend"
 import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { Histogram } from "@/components/charts/histogram"
+import { NarrativeArcBreadcrumb } from "@/components/narratives/narrative-arc-breadcrumb"
 import { NarrativeSection } from "@/components/narratives/narrative-section"
+import { PullQuote } from "@/components/narratives/pull-quote"
+import { TakeawayBox } from "@/components/narratives/takeaway-box"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
@@ -52,19 +55,34 @@ export function NarrativesAntiLDFPage() {
       ]}
       title="The anti-LDF wave was uniform"
       subtitle={
-        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-          LDF lost approximately 7pp of vote share across nearly
-          every constituency. The drop was effectively
-          religion-blind, route-blind, and cabinet-status-blind: the
-          press's "Sabarimala backlash" and "minister-targeted
-          anti-incumbency" framings don't show up at the
-          constituency level. <strong className="font-medium text-foreground/90">Confidence: Strong.</strong>
-        </p>
+        <>
+          <NarrativeArcBreadcrumb current={1} />
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            LDF lost approximately 7pp of vote share across nearly
+            every constituency. The drop was effectively
+            religion-blind, route-blind, and cabinet-status-blind:
+            the press's "Sabarimala backlash" and "minister-targeted
+            anti-incumbency" framings don't show up at the
+            constituency level.{" "}
+            <strong className="font-medium text-foreground/90">
+              Confidence: Strong.
+            </strong>
+          </p>
+          <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
+            <strong className="font-medium text-foreground/80">
+              Surprise from this arc:
+            </strong>{" "}
+            the Sabarimala-route effect had the wrong sign — LDF lost
+            <em> less</em> in pilgrim-route ACs than in matched
+            controls, and NDA share fell there too.
+          </p>
+        </>
       }
     >
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
           heading="LDF lost ~7pp in nearly every constituency"
+          sectionType="foundational"
           layout="visual-right"
           visual={
             <div className="space-y-2">
@@ -87,23 +105,27 @@ export function NarrativesAntiLDFPage() {
           caption="LDF Δshare 2021 → 2026, by constituency. Red = LDF loss; blue = LDF gain. Hover for AC values."
         >
           <p>
-            Across all 140 constituencies, LDF lost an average of{" "}
+            Voters left LDF broadly and evenly, not in concentrated
+            wipeout zones. Across all 140 constituencies, LDF lost
+            an average of{" "}
             <strong>{meanLDF.toFixed(2)}pp</strong> with a standard
             deviation of just 4.47pp. Three quarters of ACs sit in
             the modest-loss range (-10 to 0pp). Only 6 ACs (4.3%)
-            had what could be called catastrophic loss
-            (worse than -15pp).
+            had what could be called catastrophic loss (worse than
+            -15pp).
           </p>
           <p>
             LDF's standard deviation is the smallest of the three
             alliances (LDF 4.47, UDF 5.65, NDA 5.04). The losing
-            party's distribution is the tightest: voters left LDF
-            broadly and evenly, not in concentrated wipeout zones.
+            party's distribution is the tightest — which is the
+            shape "broad anti-incumbency" produces, not the shape a
+            "concentrated communal realignment" would produce.
           </p>
         </NarrativeSection>
 
         <NarrativeSection
           heading="75% of ACs lost between 0 and 10pp"
+          sectionType="foundational"
           layout="stacked"
           visual={
             <Histogram
@@ -138,8 +160,15 @@ export function NarrativesAntiLDFPage() {
           </p>
         </NarrativeSection>
 
+        <PullQuote>
+          The press's "Sabarimala backlash" and "minister-targeted
+          anti-incumbency" framings each predict a concentrated
+          collapse zone. The data shows neither.
+        </PullQuote>
+
         <NarrativeSection
           heading="It wasn't Sabarimala-route-targeted"
+          sectionType="falsification"
           layout="visual-left"
           visual={
             <ComparisonBar
@@ -189,6 +218,7 @@ export function NarrativesAntiLDFPage() {
 
         <NarrativeSection
           heading="It wasn't cabinet-status-targeted"
+          sectionType="falsification"
           layout="visual-right"
           visual={
             <ComparisonBar
@@ -235,6 +265,7 @@ export function NarrativesAntiLDFPage() {
 
         <NarrativeSection
           heading="The lost LDF vote went mostly to UDF, except in Trivandrum"
+          sectionType="mechanism"
           visual={
             <ComparisonBar
               groups={[
@@ -289,6 +320,22 @@ export function NarrativesAntiLDFPage() {
             real test.
           </p>
         </NarrativeSection>
+
+        <TakeawayBox>
+          <p>
+            Kerala 2026's anti-LDF wave was real, broad, and
+            geographically uniform. LDF lost ~7pp across nearly every
+            constituency, with low variance and no concentrated
+            collapse zone. The press's preferred targeted-mechanism
+            framings — Sabarimala backlash, cabinet rejection — don't
+            survive constituency-level testing. Most of the lost LDF
+            vote landed on UDF; in southern Kerala's Hindu-heavy
+            seats, NDA picked up a meaningful share too. The
+            "anti-LDF, not pro-UDF" framing matters for 2031:
+            anti-incumbency-driven votes are more reversible than
+            ideologically realigned ones.
+          </p>
+        </TakeawayBox>
 
         <section className="border-t pt-8">
           <h2 className="font-heading mb-4 text-xl font-semibold tracking-tight sm:text-2xl">

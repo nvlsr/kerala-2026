@@ -4,7 +4,10 @@ import { ChoroplethLegend } from "@/components/charts/choropleth-legend"
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { ScatterWithTrend } from "@/components/charts/scatter-with-trend"
+import { NarrativeArcBreadcrumb } from "@/components/narratives/narrative-arc-breadcrumb"
 import { NarrativeSection } from "@/components/narratives/narrative-section"
+import { PullQuote } from "@/components/narratives/pull-quote"
+import { TakeawayBox } from "@/components/narratives/takeaway-box"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { acDemo2025Meta } from "@/lib/data/loaders"
@@ -101,21 +104,34 @@ export function NarrativesCentralKeralaPage() {
       ]}
       title="Central Kerala provided nearly half of UDF's majority margin"
       subtitle={
-        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-          UDF won 47 of 47 seats across Idukki, Ernakulam, Wayanad,
-          Malappuram, and Kottayam. Christian-heavy ACs added a
-          robust ~3-4pp UDF premium on top of the statewide ~7pp
-          wave. FPTP amplification turned that combined swing into
-          a 102-seat majority.{" "}
-          <strong className="font-medium text-foreground/90">
-            Confidence: Strong.
-          </strong>
-        </p>
+        <>
+          <NarrativeArcBreadcrumb current={2} />
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            UDF won 47 of 47 seats across Idukki, Ernakulam,
+            Wayanad, Malappuram, and Kottayam. Christian-heavy ACs
+            added a robust ~3-4pp UDF premium on top of the
+            statewide ~7pp wave. FPTP amplification turned that
+            combined swing into a 102-seat majority.{" "}
+            <strong className="font-medium text-foreground/90">
+              Confidence: Strong.
+            </strong>
+          </p>
+          <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
+            <strong className="font-medium text-foreground/80">
+              Surprise from this arc:
+            </strong>{" "}
+            UDF didn't win mostly on tight margins. Median UDF
+            winning margin was 12.19pp; LDF's was 6.99pp. The
+            efficiency story is the seat:vote-share ratio flip
+            (UDF 1.04 → 2.18), not "tight wins."
+          </p>
+        </>
       }
     >
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
           heading="UDF won every seat in 5 central-Kerala districts"
+          sectionType="foundational"
           layout="visual-right"
           visual={
             <div className="space-y-2">
@@ -158,6 +174,7 @@ export function NarrativesCentralKeralaPage() {
 
         <NarrativeSection
           heading="Christian-heavy ACs gave UDF an extra ~3-4pp on top of the wave"
+          sectionType="foundational"
           layout="stacked"
           visual={
             <ScatterWithTrend
@@ -204,8 +221,15 @@ export function NarrativesCentralKeralaPage() {
           </p>
         </NarrativeSection>
 
+        <PullQuote>
+          UDF and LDF effectively traded efficiency between cycles.
+          The same geographic vote distribution that wasted UDF's
+          votes in 2021 converted them into seats in 2026.
+        </PullQuote>
+
         <NarrativeSection
           heading="Why a 7pp swing produced a 102-seat majority"
+          sectionType="mechanism"
           layout="visual-left"
           visual={
             <ComparisonBar
@@ -246,6 +270,7 @@ export function NarrativesCentralKeralaPage() {
 
         <NarrativeSection
           heading="Muslim share didn't add a separate premium"
+          sectionType="falsification"
           layout="visual-right"
           visual={
             <ComparisonBar
@@ -285,6 +310,20 @@ export function NarrativesCentralKeralaPage() {
             they didn't supercharge it.
           </p>
         </NarrativeSection>
+
+        <TakeawayBox>
+          <p>
+            Central Kerala provided the arithmetic difference
+            between a UDF plurality and a UDF majority government.
+            The Christian-heavy ACs added a real ~3-4pp premium on
+            top of the statewide ~7pp wave (robust to district
+            fixed effects), and FPTP plurality amplified the
+            combined swing into 102 seats. Muslim-share variation
+            didn't add a separate premium — the press's "minority
+            consolidation" framing pools two distinct phenomena, and
+            only one carries constituency-level signal.
+          </p>
+        </TakeawayBox>
 
         <section className="border-t pt-8">
           <h2 className="font-heading mb-4 text-xl font-semibold tracking-tight sm:text-2xl">
