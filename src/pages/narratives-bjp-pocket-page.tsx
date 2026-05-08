@@ -201,35 +201,77 @@ export function NarrativesBJPPocketPage() {
             <SeatLink ac={126}>Chathannoor</SeatLink> (B.B.
             Gopakumar, 4,402), and{" "}
             <SeatLink ac={132}>Kazhakoottam</SeatLink>{" "}
-            (V. Muraleedharan, 428 — effectively a coin flip). All
-            three are in high-Hindu-share Trivandrum-area seats;
-            mean Hindu share of the 3 wins is ~70% vs ~53%
-            statewide.
+            (V. Muraleedharan, 428 — effectively a coin flip).
           </p>
           <p>
-            UDF underperformed in those 3 seats: mean UDF Δshare
-            +0.6pp vs +5.8pp in{" "}
+            <SeatLink ac={135}>Nemom</SeatLink> was already a BJP
+            seat in 2016 — so was anything actually new in 2026?
+            Yes: three things, all clustered together. All three
+            wins are in or adjacent to Trivandrum district. All
+            three are in 65%+ Hindu-share seats. Mean Hindu share
+            of the 3 wins is ~70%, vs ~53% statewide.
+          </p>
+          <p>
+            <strong>
+              If demographics matter so much, why didn't BJP win
+              more Hindu-heavy seats?
+            </strong>{" "}
+            UDF Δshare in the 3 wins was +0.6pp vs +5.8pp in{" "}
             <MethodologyPopover term="matched-controls">
               matched Hindu-majority controls
             </MethodologyPopover>
-            . About a 5pp UDF underperformance gap. The "weak UDF
-            candidates" reading has empirical support here, though
-            candidate quality is observed indirectly — through
-            outcomes rather than directly.
+            {" "}— a real 5pp gap. We can't fully attribute it. Two
+            factors are likely contributing, neither testable from
+            constituency-level data alone:
+          </p>
+          <ul className="list-disc space-y-2 pl-5 text-[14px] sm:text-[15px]">
+            <li>
+              <strong>Marquee BJP candidates.</strong>{" "}
+              <em>Rajeev Chandrasekhar</em> at Nemom (Union MoS,
+              national-profile name) and <em>V. Muraleedharan</em>{" "}
+              at Kazhakoottam (former Union MoS, BJP Kerala
+              state-org veteran) are observably stronger BJP picks
+              than the party's typical Kerala field. In three-way
+              contests, a marquee NDA candidate can pull crossover
+              votes that would otherwise have gone UDF.
+            </li>
+            <li>
+              <strong>
+                Sub-demographic features specific to the Trivandrum
+                belt.
+              </strong>{" "}
+              Nair share, Hindu+Muslim composition (rather than
+              Hindu+Christian), and the IT-corridor /
+              professional-class profile of Kazhakoottam and Nemom
+              are all plausible factors. None of these is
+              observable cleanly at the AC level in our data —{" "}
+              <MethodologyPopover term="fixed-effects">
+                district fixed effects
+              </MethodologyPopover>{" "}
+              absorb caste-share variation, so we can detect
+              district-level signal but not within-district.
+            </li>
+          </ul>
+          <p>
+            The "weak UDF candidates" reading common in
+            post-election commentary is consistent with the gap,
+            but it has the structure of a label applied to the
+            outcome rather than an independently observable factor.
+            Without pre-election evidence of candidate weakness,
+            we can't promote it to a primary explanation.
           </p>
           <p>
-            A natural follow-up: did BJP grow more wherever the
-            Hindu population was higher across Kerala? The data
-            says no. Once we account for{" "}
-            <MethodologyPopover term="fixed-effects">
-              district-level differences
-            </MethodologyPopover>
-            , the relationship is statistically weak (β = +0.098,
-            p = 0.213). What we actually find is a <em>cluster</em>:
-            3 specific wins concentrated in Trivandrum-area
-            Hindu-heavy seats, not a Kerala-wide pattern of "more
-            Hindu → more BJP". The distinction matters for
-            prediction — a cluster doesn't extrapolate.
+            <strong>
+              Did BJP grow generally wherever the Hindu population
+              was higher across Kerala?
+            </strong>{" "}
+            The data says no. Once we account for district-level
+            differences, the relationship is statistically weak
+            (β = +0.098, p = 0.213). What we actually find is a{" "}
+            <em>cluster</em> — 3 specific wins concentrated in
+            Trivandrum-area Hindu-heavy seats — not a Kerala-wide
+            pattern of "more Hindu → more BJP." The distinction
+            matters for prediction: a cluster doesn't extrapolate.
           </p>
         </NarrativeSection>
 
@@ -265,14 +307,94 @@ export function NarrativesBJPPocketPage() {
             2021, withdrew in 2026) to +25.1pp (
             <SeatLink ac={101}>Poonjar</SeatLink> — BJP didn't
             seriously contest in 2021, P.C. George contested in
-            2026). The counts are roughly symmetric: <strong>11
-            ACs gained ≥10pp</strong>, <strong>10 ACs lost
-            ≥10pp</strong>, <strong>26 ACs saw BJP withdraw
-            entirely</strong>. Across all 140 ACs, gains sum to{" "}
-            <strong>+349.6pp</strong> and losses to{" "}
-            <strong>-308.7pp</strong> — they roughly cancel, which
-            is what produces the +0.18pp statewide aggregate. BJP
-            fielded fewer candidates overall (down to 98 from 115).
+            2026). BJP fielded fewer candidates overall — down to
+            98 from 115 in 2021.
+          </p>
+          <p>
+            The +0.18pp statewide aggregate is the sum of three
+            distinct buckets that nearly cancel:
+          </p>
+          <figure className="my-3 max-w-prose overflow-hidden rounded-sm border bg-card/30">
+            <table className="w-full text-[13px] sm:text-[14px]">
+              <thead className="bg-muted/40 text-left text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                <tr>
+                  <th className="px-3 py-2">Bucket</th>
+                  <th className="px-3 py-2">What happened</th>
+                  <th className="px-3 py-2 text-right whitespace-nowrap">
+                    Δ-share contribution
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y">
+                <tr>
+                  <td className="px-3 py-2 align-top font-medium">
+                    1. Grew
+                  </td>
+                  <td className="px-3 py-2 align-top text-muted-foreground">
+                    ~60 ACs where BJP gained share
+                  </td>
+                  <td className="px-3 py-2 align-top text-right whitespace-nowrap font-mono text-emerald-700 dark:text-emerald-500">
+                    +349.6pp
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2 align-top font-medium">
+                    2a. Shrank but still ran
+                  </td>
+                  <td className="px-3 py-2 align-top text-muted-foreground">
+                    ~10–15 ACs (e.g. BJP 15% → 10%)
+                  </td>
+                  <td className="px-3 py-2 align-top text-right whitespace-nowrap font-mono text-red-700 dark:text-red-500">
+                    ~−47pp
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2 align-top font-medium">
+                    2b. Withdrew entirely
+                  </td>
+                  <td className="px-3 py-2 align-top text-muted-foreground">
+                    26 ACs (e.g. BJP 22% → 0%)
+                  </td>
+                  <td className="px-3 py-2 align-top text-right whitespace-nowrap font-mono text-red-700 dark:text-red-500">
+                    ~−262pp
+                  </td>
+                </tr>
+                <tr className="bg-muted/30">
+                  <td className="px-3 py-2 align-top font-semibold">
+                    Net
+                  </td>
+                  <td className="px-3 py-2 align-top text-muted-foreground">
+                    +40pp constituency-equal sum → vote-weighted to
+                  </td>
+                  <td className="px-3 py-2 align-top text-right whitespace-nowrap font-mono font-semibold">
+                    +0.18pp
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <p>
+            Counts are roughly symmetric: 11 ACs gained ≥10pp, 10
+            lost ≥10pp, 26 withdrew. Withdrawals account for most
+            of the negative side — bucket 2b alone is ≈ -262pp out
+            of the -309pp total negative.
+          </p>
+          <p>
+            One thing worth flagging up front:{" "}
+            <strong>
+              BJP-the-party was flat (+0.18pp), but NDA-the-alliance
+              modestly grew
+            </strong>{" "}
+            (+1.83pp statewide, 12.5% → 14.3%). The difference is
+            <PartyLink party="Twenty 20 Party">
+              {" "}Twenty 20
+            </PartyLink>{" "}
+            and{" "}
+            <PartyLink party="Bharath Dharma Jana Sena">
+              BDJS
+            </PartyLink>
+            : T20's expansion in particular added ~1.6pp to the
+            alliance footprint without showing up in BJP's column.
           </p>
           <p>
             <strong>Two distinct withdrawal patterns.</strong> The
@@ -338,7 +460,7 @@ export function NarrativesBJPPocketPage() {
         </PullQuote>
 
         <NarrativeSection
-          heading="BJP retreated from Christian-mixed Ernakulam and pushed into Trivandrum"
+          heading="BJP ran three different strategies in three types of districts"
           sectionType="mechanism"
           layout="visual-right"
           visual={
@@ -353,35 +475,66 @@ export function NarrativesBJPPocketPage() {
               ariaLabel="BJP gains and withdrawals summed by district"
             />
           }
-          caption="Sum of positive (gains) and negative (withdrawals) BJP party-share Δs per district. Ernakulam was the biggest withdrawal zone; Kottayam shows the biggest gains AND large withdrawals."
+          caption="Sum of positive (gains) and negative (withdrawals) BJP party-share Δs per district. The shape of each bar — gains-only, balanced gains-and-withdrawals, or withdrawals-dominated — sorts districts into three archetypes."
         >
           <p>
-            Ernakulam was the biggest withdrawal zone — BJP pulled
-            its candidate from 7+ Christian-mixed ACs there, ceding
-            ground almost entirely to{" "}
-            <PartyLink party="Twenty 20 Party">Twenty 20</PartyLink>{" "}
-            (BDJS picked up ground elsewhere, but in Ernakulam
-            Twenty 20 was the destination). Mean Ernakulam BJP Δ:
-            -4.40pp.
+            The chart slices the gains-vs-withdrawals split by
+            district. The interesting finding: BJP didn't run a
+            single statewide strategy. The bars sort cleanly into
+            three archetypes:
           </p>
+          <ul className="list-disc space-y-2 pl-5 text-[14px] sm:text-[15px]">
+            <li>
+              <strong>Push districts (gains-only).</strong>{" "}
+              Trivandrum (+20pp gains, ~0 withdrawals), Kannur
+              (+16 / -6). BJP added pockets without retreating
+              anywhere. Trivandrum holds the 3 wins plus the
+              biggest non-winning gainer (
+              <SeatLink ac={127}>Varkala</SeatLink> +19.9).
+              Kannur's gain is dominated by{" "}
+              <SeatLink ac={13}>Thalassery</SeatLink> (+15.8pp).
+            </li>
+            <li>
+              <strong>
+                Swap districts (high-variance gains AND
+                withdrawals).
+              </strong>{" "}
+              Kottayam (+60 / -27), Kollam (+23 / -23). BJP
+              repositioned <em>within</em> the district —
+              aggressive new fielding in some seats, full
+              withdrawal from others. Kottayam is the clearest
+              case: massive gains in{" "}
+              <SeatLink ac={101}>Poonjar</SeatLink> (+25),{" "}
+              <SeatLink ac={93}>Pala</SeatLink> (+18),{" "}
+              <SeatLink ac={95}>Vaikom</SeatLink> (+16) sit
+              alongside large withdrawals in{" "}
+              <SeatLink ac={96}>Ettumanoor</SeatLink> (-10.9) and{" "}
+              <SeatLink ac={94}>Kaduthuruthy</SeatLink> (-8.9).
+              The district-mean is meaningless without this
+              context.
+            </li>
+            <li>
+              <strong>
+                Retreat districts (withdrawals dominate).
+              </strong>{" "}
+              Ernakulam (+13 / -69), Thrissur (+18 / -45),
+              Pathanamthitta (+14 / -22), Idukki (+13 / -15). BJP
+              pulled its candidate from many more seats than it
+              advanced into. Ernakulam is the extreme case — 7+
+              withdrawals, mostly Christian-mixed seats handed to{" "}
+              <PartyLink party="Twenty 20 Party">
+                Twenty 20
+              </PartyLink>
+              .
+            </li>
+          </ul>
           <p>
-            Kottayam shows the most extreme variance: massive
-            gains (<SeatLink ac={101}>Poonjar</SeatLink> +25,{" "}
-            <SeatLink ac={93}>Pala</SeatLink> +18,{" "}
-            <SeatLink ac={95}>Vaikom</SeatLink> +16) AND large
-            withdrawals (<SeatLink ac={96}>Ettumanoor</SeatLink>{" "}
-            -10.9, <SeatLink ac={94}>Kaduthuruthy</SeatLink> -8.9).
-            The district-mean +3.6pp Δ averages a
-            strategic-withdrawal pattern over an aggressive-fielding
-            pattern; the average is meaningless without context.
-          </p>
-          <p>
-            Trivandrum's mean +4.5pp Δ is more uniformly positive
-            — that's where BJP's pre-existing organisational base
-            allows broader cycle-on-cycle expansion, including
-            both the 3 wins and surrounding ACs (
-            <SeatLink ac={127}>Varkala</SeatLink> +19.9, Nedumangad,
-            Kazhakoottam +6.6, Chathannoor +7.6).
+            The aggregate-level wash (+0.18pp net) hides this
+            geographic shape. Trivandrum was about expansion;
+            Kottayam was about repositioning; Ernakulam was about
+            getting out of the way for an ally. Three different
+            strategies, three different archetypes, one statewide
+            number that papers over all of it.
           </p>
         </NarrativeSection>
 
@@ -452,21 +605,23 @@ export function NarrativesBJPPocketPage() {
 
         <TakeawayBox>
           <p>
-            BJP didn't break out statewide in 2026. The 3 wins are
-            a Trivandrum-area Hindu-heavy cluster with weak UDF
-            candidates underperforming by ~5pp, not a broader
-            gradient (the Hindu-share regression collapses under
-            district FE). Beneath the +0.18pp aggregate, two
-            distinct things happened: in Ernakulam, Twenty 20
-            absorbed BJP's withdrawn share and grew NDA's footprint
-            there; outside Ernakulam, BDJS substituted but
-            recovered only half of what BJP had held. Meanwhile
-            BJP concentrated effort in 11 seats and got measurable
-            +14-25pp jumps — mostly via marquee candidates rather
-            than brand drift. Whether the withdrawal pattern was
-            deliberate strategy or de facto incapacity, vote totals
-            can't tell us. Durability vs personality is the open
-            question for 2031.
+            BJP-the-party was flat in 2026 (+0.18pp); NDA-the-alliance
+            modestly grew (+1.83pp), with{" "}
+            <PartyLink party="Twenty 20 Party">Twenty 20</PartyLink>{" "}
+            providing most of the difference. Beneath the flat
+            aggregate, three patterns play out at the district
+            level: <strong>push</strong> in Trivandrum and Kannur
+            (gains, no retreat), <strong>swap</strong> in Kottayam
+            and Kollam (big gains alongside big withdrawals), and{" "}
+            <strong>retreat</strong> in Ernakulam, Thrissur,
+            Pathanamthitta, Idukki (withdrew much more than
+            advanced). The 3 wins themselves are a Trivandrum-area
+            cluster — Hindu-heavy seats with marquee BJP candidates
+            in three-way contests; the gradient claim ("BJP grew
+            wherever Hindu share was higher") doesn't hold up under
+            district FE. Most of the +14-25pp gainers ride on
+            individual candidates more than on brand drift, which
+            sets up the 2031 durability question.
           </p>
         </TakeawayBox>
 
