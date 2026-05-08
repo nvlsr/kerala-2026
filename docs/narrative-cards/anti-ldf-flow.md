@@ -1,12 +1,12 @@
 # 2026 was anti-LDF, not pro-UDF — where the LDF vote went
 
-**Verdict: UDF's 2026 +7.29pp statewide gain is almost numerically identical to LDF's -7.43pp loss. In aggregate, UDF absorbed 98% of the LDF loss; NDA absorbed 28%; OTHER alliances/independents lost a net 1.91pp (i.e., OTHER also bled mostly to UDF). The "UDF surge" is best read as the geographic landing pattern of LDF erosion. There is no separate UDF mobilisation signal at the constituency-level: 65% of ACs show UDF-dominant absorption (>70% of LDF loss flowing to UDF), 23% show NDA-dominant absorption (>40% to NDA, concentrated in Hindu-heavy southern Kerala), and only 3% saw LDF hold or gain.**
+**Verdict: UDF's 2026 +7.29pp statewide gain is almost numerically identical to LDF's -7.43pp loss. In aggregate, UDF absorbed 98% of the LDF loss; NDA absorbed 28%; OTHER alliances/independents lost a net 1.91pp (i.e., OTHER also bled mostly to UDF). The "UDF surge" is best read as the geographic landing pattern of LDF erosion. The constituency-level arithmetic is dominated by LDF erosion rather than an independently identifiable UDF-specific surge: 65% of ACs show UDF-dominant absorption (>70% of LDF loss flowing to UDF), 23% show NDA-dominant absorption (>40% to NDA, concentrated in Hindu-heavy southern Kerala), and only 3% saw LDF hold or gain.**
 
 **Confidence: Strong (mass-conservation) / Moderate (causal interpretation)** — the per-AC Δshare arithmetic is exact (UDF, LDF, NDA, OTHER Δs sum to ~0). The "anti-LDF, not pro-UDF" causal reframing depends on interpreting the constituency-level mass-conservation as evidence about voter intent — which it is consistent with but does not directly establish. Survey microdata could discriminate between "LDF voters defected" and "differential turnout aligned with LDF erosion."
 
 This card reframes A1, A8, and the synthesis card from "UDF gained ground" to "LDF lost ground, and most of it landed on UDF." That's not just rhetoric — the per-AC arithmetic confirms it. UDF and LDF Δshares are near-mirrors at the constituency level.
 
-> **A note on inference:** Per-AC alliance Δshares sum to approximately zero (within rounding for NOTA). When LDF lost X pp in an AC, that X pp was absorbed by UDF + NDA + OTHER + (NOTA Δ) combined. We attribute "where the loss went" using positive-component shares. This is a mechanical decomposition of vote-share movement, not a voter-level claim. We are not asserting that specific LDF voters individually defected; we are showing that the *vote totals* moved in those proportions.
+> **A note on inference:** Per-AC alliance Δshares sum to approximately zero (within rounding for NOTA). When LDF lost X pp in an AC, that X pp was absorbed by UDF + NDA + OTHER + (NOTA Δ) combined. The decomposition attributes "where the loss went" using positive-component shares. This is a mechanical decomposition of vote-share movement, not a voter-level claim. The card does not assert that specific LDF voters individually defected; it shows that the *vote totals* moved in those proportions. See `methodology-core-concepts.md` § "Constituency-level vs voter-level inference".
 
 **Unit:** Constituency-equal Δshares throughout. The unit of analysis is the constituency, not the individual voter.
 
@@ -122,7 +122,7 @@ The Christian-Muslim-heartland landing is more durable (alliance affinity reason
 
 ### What this does NOT prove
 
-- **Specific LDF voters individually defected to UDF / NDA.** We observe vote-share movement, not voter-level switching. The same Δshare patterns are consistent with (a) direct switching, (b) differential turnout (LDF voters staying home, fresh UDF voters showing up), (c) generational replacement, or any combination. AC totals can't distinguish these.
+- **Specific LDF voters individually defected to UDF / NDA.** This card observes vote-share movement, not voter-level switching. The same Δshare patterns are consistent with (a) direct switching, (b) differential turnout (LDF voters staying home, fresh UDF voters showing up), (c) generational replacement, or any combination. AC totals can't distinguish these.
 - **UDF has no positive mobilisation factor.** The data is consistent with "anti-LDF dominates" but doesn't *exclude* a UDF mobilisation contribution that's collinear with LDF erosion (e.g., UDF mobilising existing supporters to higher turnout in seats where LDF collapse happens to be larger). The simplest reading is "LDF erosion lands on UDF"; richer mechanisms aren't ruled out.
 - **The 2031 baseline is fixed.** "Anti-LDF" framing predicts UDF's gains are reversible if LDF rebuilds. But the question of whether LDF *can* rebuild is separate — voters who defected may have anchored on UDF/NDA and not return, in which case the 2026 outcome is also a structural realignment, not just an anti-incumbency manifestation.
 
@@ -130,7 +130,7 @@ The Christian-Muslim-heartland landing is more durable (alliance affinity reason
 
 - **Survey microdata showing significant UDF-positive sentiment as the primary motivator** for 2026 voters in central Kerala — would suggest the per-AC Δshare patterns are *consistent with* anti-LDF but the underlying voter intent was pro-UDF, which the constituency-level data can't distinguish.
 - **Multi-cycle data showing the 2026 LDF defectors return to LDF in 2031** — would confirm the "anti-LDF, reversible" reading. Failure of LDF to recover any of its losses in 2031 would suggest realignment rather than transient defection.
-- **A finer regression decomposition** controlling for incumbency-tenure, candidate-personality, alliance changes, etc. — could quantify what fraction of the constituency-level Δshare is "explainable" by anti-LDF factors vs. what's residual. Currently we report the gross movement.
+- **A finer regression decomposition** controlling for incumbency-tenure, candidate-personality, alliance changes, etc. — could quantify what fraction of the constituency-level Δshare is "explainable" by anti-LDF factors vs. what's residual. Currently this card reports the gross movement only.
 
 ## Cross-references
 

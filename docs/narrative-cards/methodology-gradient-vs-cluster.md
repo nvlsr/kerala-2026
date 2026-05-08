@@ -26,17 +26,17 @@ These are *different statistical phenomena*. A finding can be a gradient without
 
 **Gradient claims are stronger evidence for a mechanism.** A monotonic Christian-share-vs-UDF-Δ relationship that survives district FE means *within-district* variation in Christian share predicts swing variation — strong evidence that something tied to Christian-share is driving the differential, not just the geographic clustering of Christian-heavy ACs.
 
-**Cluster claims describe a phenomenon without specifying its mechanism.** "BJP's 3 wins are clustered in Trivandrum" is a true descriptive statement; it doesn't tell us *why* they clustered there. Hindu share, Nair concentration, BJP organisational strength, NSS/SNDP politics, government-employee concentration, and three-way fragmentation are all candidate mechanisms — and the cluster framing alone doesn't discriminate among them.
+**Cluster claims describe a phenomenon without specifying its mechanism.** "BJP's 3 wins are clustered in Trivandrum" is a true descriptive statement; it doesn't establish *why* they clustered there. Hindu share, Nair concentration, BJP organisational strength, NSS/SNDP politics, government-employee concentration, and three-way fragmentation are all candidate mechanisms — and the cluster framing alone doesn't discriminate among them.
 
 ## How the catalog handles each type
 
-For **gradient claims**, we run regression with district / region fixed effects (`scripts/narrative-regression.py`). The within-district β is the test. A coefficient that survives FE → real gradient. A coefficient that collapses → between-district artifact, often a cluster effect masquerading as a gradient.
+For **gradient claims**, the catalog runs regression with district / region fixed effects (`scripts/narrative-regression.py`). The within-district β is the test. A coefficient that survives FE → real gradient. A coefficient that collapses → between-district artifact, often a cluster effect masquerading as a gradient.
 
-For **cluster claims**, we describe the subset and test specific hypotheses about *what makes the subset distinctive*. Treatment-control designs (A2, A6) compare cluster ACs to matched non-cluster ACs on candidate explanations. Bin tables (A1's Christian-heavy 30-50% bin) describe the subset and quantify the differential.
+For **cluster claims**, the subset is described and specific hypotheses about *what makes the subset distinctive* are tested. Treatment-control designs (A2, A6) compare cluster ACs to matched non-cluster ACs on candidate explanations. Bin tables (A1's Christian-heavy 30-50% bin) describe the subset and quantify the differential.
 
 ## Failure modes
 
-**False gradient** — interpreting a cluster as a gradient. *Example*: pre-FE, A1's Christian-share Pearson r was +0.20. Without controls, this looks like "more Christian = more UDF gain monotonically." District FE shows the gradient is real but smaller (β=+0.19); without FE, we'd have over-claimed magnitude. B3+B4's original framing ("Nair share predicts swing") was a similar over-claim corrected to geography-overlap reading.
+**False gradient** — interpreting a cluster as a gradient. *Example*: pre-FE, A1's Christian-share Pearson r was +0.20. Without controls, this looks like "more Christian = more UDF gain monotonically." District FE shows the gradient is real but smaller (β=+0.19); without FE, the magnitude would have been over-claimed. B3+B4's original framing ("Nair share predicts swing") was a similar over-claim corrected to geography-overlap reading.
 
 **Hidden cluster** — interpreting a gradient as fully smooth. *Example*: BJP's +0.18pp statewide aggregate looks like a uniform smooth shift. The bjp-ac-growth card breaks this by showing the +0.18 is the net of clustered +14-25pp gains and clustered cessions.
 
@@ -50,10 +50,10 @@ When a card claims **"X explains the swing in Y direction"**:
 - If accompanied by treatment-control comparison or bin tables: treat as cluster claim. Mechanism is descriptive; alternative explanations remain in play.
 - If accompanied by both: gradient + cluster overlap. The within-cluster gradient (where it survives) is the strongest evidence; the geographic cluster gives the where.
 
-When a card claims **"we do not detect X"**:
+When a card claims **"X is not detectable"**:
 
-- The non-detection is gradient-specific. We can claim "Muslim-share doesn't predict swing variation" (no gradient) without claiming "Muslims didn't move" (which would require voter-level data).
-- Cluster non-detection is rarer — usually we observe a subset and check whether it's distinctive; if no, we don't claim a cluster.
+- The non-detection is gradient-specific. The claim "Muslim-share doesn't predict swing variation" (no gradient) does not require claiming "Muslims didn't move" (which would require voter-level data).
+- Cluster non-detection is rarer — typically a subset is observed and tested for whether it's distinctive; if no, no cluster is claimed.
 
 ## Cross-references
 

@@ -1,12 +1,12 @@
 # LDF's collapse was shallow everywhere, with a small fat tail
 
-**Verdict (descriptive): The distribution of LDF Δshare across 140 ACs is tightly clustered (mean -7.43pp, SD 4.47pp, IQR width 5.80pp). 75% of ACs sit in the modest-loss range (-10 to 0pp); only 6 ACs (4.3%) had what we'd call "catastrophic loss" (worse than -15pp). LDF's standard deviation is the smallest of the three alliances (LDF 4.47, UDF 5.65, NDA 5.04) — meaning LDF's loss was the most uniform of the three Δ-distributions; UDF and NDA gains were more variable.** This is consistent with broad anti-incumbency hitting roughly evenly, NOT with a wave-style election that produced concentrated geographic wipeouts. The qualifier: kurtosis is +1.55, meaning the distribution has slightly fatter tails than normal — there ARE outliers worth naming, but the modal range holds.
+**Verdict (descriptive): The distribution of LDF Δshare across 140 ACs is tightly clustered (mean -7.43pp, SD 4.47pp, IQR width 5.80pp). 75% of ACs sit in the modest-loss range (-10 to 0pp); only 6 ACs (4.3%) had "catastrophic loss" (worse than -15pp). LDF's standard deviation is the smallest of the three alliances (LDF 4.47, UDF 5.65, NDA 5.04) — meaning LDF's loss was the most uniform of the three Δ-distributions; UDF and NDA gains were more variable.** This is consistent with broad anti-incumbency hitting roughly evenly, NOT with a wave-style election that produced concentrated geographic wipeouts. The qualifier: kurtosis is +1.55, meaning the distribution has slightly fatter tails than normal — there ARE outliers worth naming, but the modal range holds.
 
 **Confidence: Strong (descriptive)** — distribution statistics are exact at this granularity; outlier ACs are cross-documented in other cards. The "shallow everywhere" framing follows directly from low SD + tight IQR; the small fat tail is honestly reported via the kurtosis figure.
 
-This card adds rigor to a claim made implicitly in A1, A2, A6, and A8: "LDF lost ~7pp uniformly." We never showed the actual distribution. This card does.
+This card adds rigor to a claim made implicitly in A1, A2, A6, and A8: "LDF lost ~7pp uniformly." Those cards didn't show the actual distribution. This one does.
 
-> **A note on inference:** This card is purely descriptive. We characterise the distribution of LDF Δshare without claiming a causal mechanism. "Shallow everywhere" describes the pattern; explanations (uniform anti-incumbency, ceiling effects, party-machinery defense, etc.) remain a separate question.
+> **A note on inference:** This card is purely descriptive. It characterises the distribution of LDF Δshare without claiming a causal mechanism. "Shallow everywhere" describes the pattern; explanations (uniform anti-incumbency, ceiling effects, party-machinery defense, etc.) remain a separate question.
 
 **Unit:** Constituency-equal distribution (each AC counts once). Reproduce: `python3 scripts/narrative-ldf-shallow-distribution.py`.
 
@@ -84,7 +84,7 @@ If LDF Δ were drawn from a normal distribution N(-7.43, 4.47):
 
 The bottom tail (catastrophic losses) matches the normal prediction almost exactly. The top tail (LDF gains) has 1 AC where normal would predict 0.38 — a single outlier (Vengara).
 
-But the kurtosis (+1.55) tells us the *shape* of the distribution is slightly fatter-tailed than normal. The histogram shows this in the lumpy left tail (gaps at -23 to -19 then individual outliers at -24, -17, -16). It's not a smooth bell; it's a tight bell with a few standalone outliers.
+But the kurtosis (+1.55) indicates the *shape* of the distribution is slightly fatter-tailed than normal. The histogram shows this in the lumpy left tail (gaps at -23 to -19 then individual outliers at -24, -17, -16). It's not a smooth bell; it's a tight bell with a few standalone outliers.
 
 ## Outliers worth naming
 
@@ -119,7 +119,7 @@ Four ACs where LDF held or gained ground. Three have known specific stories from
 
 LDF's standard deviation (4.47pp) is the smallest of the three. UDF gains have more variability (SD 5.65) — meaning UDF gained a lot in some places and stayed flat in others. NDA gains have similar variability (SD 5.04) but a much smaller mean (+2.05pp); NDA's distribution is the "concentrated pocket" pattern documented in A3 + bjp-ac-growth.md.
 
-**Reading**: LDF's *loss* was the most uniform of the three swings. UDF's gains were more concentrated in specific ACs. NDA's were even more concentrated. This is the symmetry we should expect when one alliance bleeds broadly and the bleed lands unevenly on the other two: LDF Δ is tight, UDF/NDA Δ are diffuse.
+**Reading**: LDF's *loss* was the most uniform of the three swings. UDF's gains were more concentrated in specific ACs. NDA's were even more concentrated. This is the symmetry to expect when one alliance bleeds broadly and the bleed lands unevenly on the other two: LDF Δ is tight, UDF/NDA Δ are diffuse.
 
 ## What this confirms (and what it doesn't)
 
@@ -147,14 +147,14 @@ This distribution **does not** support the framing that:
 ### What this does NOT prove
 
 - **The wave was uniformly *caused*.** Distribution shape says nothing about mechanism. A uniform wave from "general anti-incumbency", a uniform wave from "broad welfare-disappointment", a uniform wave from "religion-blind incumbency exhaustion" all produce similar distributional shapes at the constituency level.
-- **Future LDF distributions will be similar.** This is one cycle. A 2031 distribution with similar tightness would suggest a structural feature; a 2031 distribution with concentrated zones would suggest 2026 was unusual. Currently we have one observation.
+- **Future LDF distributions will be similar.** This is one cycle. A 2031 distribution with similar tightness would suggest a structural feature; a 2031 distribution with concentrated zones would suggest 2026 was unusual. Currently this rests on one observation.
 - **The fat tail is meaningless.** The +1.55 excess kurtosis is real — the 6 catastrophic-loss ACs are genuinely outside what a pure-normal would predict. They have stories (Udumbanchola, Puthuppally, Payyannur). The distribution's modal claim ("shallow everywhere") coexists with the tail claim ("a few real outliers"); both are true.
 
 ### What would weaken the conclusion
 
 - **Same-cycle data from comparable elections (UP, Bihar, Maharashtra) showing wave elections always have tight distributions** — would suggest the "shallow everywhere" framing isn't distinctive to 2026 Kerala but is just how vote-share Δ tends to look.
 - **Multi-cycle Kerala data showing 2011/2016/2021 distributions had similar shapes regardless of outcome** — would suggest the tightness is just a feature of Kerala politics, not a feature of 2026's specific dynamics.
-- **A bimodal subgroup analysis revealing two distinct LDF-loss populations within the unimodal aggregate** — for example, if LDF lost differently in incumbent-CPI(M) vs incumbent-non-CPI(M) seats, the apparent uniformity could mask two superimposed peaks. We tested incumbent-vs-non in A6; the differential was small (+0.74pp).
+- **A bimodal subgroup analysis revealing two distinct LDF-loss populations within the unimodal aggregate** — for example, if LDF lost differently in incumbent-CPI(M) vs incumbent-non-CPI(M) seats, the apparent uniformity could mask two superimposed peaks. A6 tested incumbent-vs-non; the differential was small (+0.74pp).
 
 ## Cross-references
 

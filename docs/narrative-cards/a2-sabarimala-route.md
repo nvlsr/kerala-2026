@@ -1,10 +1,10 @@
 # A2 — Did the Sabarimala gold scandal hammer LDF in Devaswom-route seats?
 
-**Verdict: We do not detect a route-targeted LDF penalty at the constituency level. The three geographic Sabarimala-route ACs (Aranmula, Konni, Ranni) showed a smaller LDF Δshare loss than matched Hindu-majority controls (-3.6pp vs -7.3pp; differential +3.7pp), and NDA share fell in those ACs (-2.3pp vs +1.9pp). Both directions are inconsistent with the press framing's predictions. What we DO detect: the three Devaswom-related ministers' seats showed ~4pp larger LDF loss than matched controls (-11.5pp vs -7.2pp). That's consistent with a minister-incumbency penalty applied to high-visibility cabinet members, not with a Hindu-issue effect on geographic pilgrim-corridor ACs.** The press framing collapses two distinct phenomena (geographic route effect / cabinet-member effect); the constituency-level data carries signal only for the second.
+**Verdict: A route-targeted LDF penalty is not detectable at the constituency level. The three geographic Sabarimala-route ACs (Aranmula, Konni, Ranni) showed a smaller LDF Δshare loss than matched Hindu-majority controls (-3.6pp vs -7.3pp; differential +3.7pp), and NDA share fell in those ACs (-2.3pp vs +1.9pp). Both directions are inconsistent with the press framing's predictions. What is detectable: the three Devaswom-related ministers' seats showed ~4pp larger LDF loss than matched controls (-11.5pp vs -7.2pp). That's consistent with a minister-incumbency penalty applied to high-visibility cabinet members, not with a Hindu-issue effect on geographic pilgrim-corridor ACs.** The press framing collapses two distinct phenomena (geographic route effect / cabinet-member effect); the constituency-level data carries signal only for the second.
 
 **Confidence: Strong (with small-sample caveat)** — direction of the route-effect differential is robust (wrong sign in 3 of 4 nested treatment groups), but n=3-5 in each treatment group precludes formal significance testing. The minister-effect finding is sample-bounded to the 3 Devaswom-related ministers; A6 shows it doesn't generalise to the full cabinet.
 
-> **A note on inference:** This card analyses constituency-level patterns. The 6 ACs in our treatment groups are small samples; we report differentials but cannot apply formal hypothesis tests at meaningful power with n=3-5. The directional evidence (LDF lost LESS in the geographic group, NDA also lost share) is what the data shows, but readers should weight 3-AC means accordingly.
+> **A note on inference:** This card analyses constituency-level patterns. The 6 ACs in the treatment groups are small samples; differentials are reported but formal hypothesis tests cannot be applied at meaningful power with n=3-5. The directional evidence (LDF lost LESS in the geographic group, NDA also lost share) is what the data shows, but readers should weight 3-AC means accordingly. See `methodology-core-concepts.md` § "Treatment-control design".
 
 This card uses AC-level religion data (2025 projection of Census 2011) and 2021/2026 alliance share deltas. See `scripts/narrative-a2-sabarimala.ts` to reproduce.
 
@@ -14,7 +14,7 @@ This card uses AC-level religion data (2025 projection of Census 2011) and 2021/
 
 The Sabarimala gold-cladding scandal (April 2026 — A. Padmakumar, former Travancore Devaswom Board president, arrested; SIT investigation) compounded with residual anger from the 2018 women-entry decision. Press reports across The Print, The Quint, Onmanorama, Organiser, and Open Magazine attributed LDF's Devaswom-route losses — Devaswom Minister V.N. Vasavan (lost Ettumanoor), former Devaswom Minister Kadakampally Surendran (lost Kazhakoottam by 428 votes), Health Minister Veena George (lost Aranmula) — to a Hindu-issue backlash specifically concentrated along the Sabarimala pilgrim corridor.
 
-If correct, we should see (a) larger LDF share losses in the Sabarimala-route ACs vs the statewide ~7pp baseline, and (b) corresponding NDA gains in those ACs as the Hindu-shift's likely beneficiary.
+If correct, the data should show (a) larger LDF share losses in the Sabarimala-route ACs vs the statewide ~7pp baseline, and (b) corresponding NDA gains in those ACs as the Hindu-shift's likely beneficiary.
 
 ## What the data shows
 
@@ -67,7 +67,7 @@ Now isolate the ministers — the 3 LDF cabinet members the narrative connects t
 | Hindu ≥ 50% control (n=88) | | | +6.4pp | -7.2pp | +1.7pp |
 | **Differential** | | | +4.4pp | **-4.3pp** (LDF lost MORE) | +1.8pp |
 
-**Here we see a clear differential.** The three ministers lost ~4pp more share than the matched-Hindu control — consistent with a minister-incumbency penalty applied to high-visibility cabinet members. (See A6 for the broader cabinet-level test, which finds this is *not* generalisable across the full 21-member cabinet.)
+**A clear differential emerges.** The three ministers lost ~4pp more share than the matched-Hindu control — consistent with a minister-incumbency penalty applied to high-visibility cabinet members. (See A6 for the broader cabinet-level test, which finds this is *not* generalisable across the full 21-member cabinet.)
 
 But the mechanism is muddier than the narrative implies:
 - **Ettumanoor (Vasavan)**: UDF took the entire LDF loss; NDA stayed flat. This looks like a clean minister-incumbency penalty that flowed straight to UDF — not a Hindu shift to BJP.
@@ -99,7 +99,7 @@ District-wide, the differential collapses — Pathanamthitta district performed 
 >
 > 2. **Three Devaswom-related ministers lost their own seats by ~4pp more than matched controls** (LDF -11.5pp vs -7.2pp). The penalty flowed primarily to UDF, not to NDA — Kazhakoottam (the one BJP win in this group) was decided by 428 votes, statistically indistinguishable from noise.
 
-The "Sabarimala-backlash" framing implicitly predicts a *route-targeted* swing benefiting BJP. We do not detect that effect. What we observe is consistent with anti-LDF swing being roughly uniform across Hindu-share gradient, plus an additional incumbency penalty on individual high-visibility cabinet members.
+The "Sabarimala-backlash" framing implicitly predicts a *route-targeted* swing benefiting BJP. That effect is not detectable in this data. The observed pattern is consistent with anti-LDF swing being roughly uniform across Hindu-share gradient, plus an additional incumbency penalty on individual high-visibility cabinet members.
 
 ## Why this matters analytically
 
@@ -114,11 +114,11 @@ This is consistent with A1's finding that LDF's collapse was religion-blind acro
 - **Treatment AC selection**: pulled from the narrative text directly. Three nested groups (geographic / named-set / minister) test increasingly broad interpretations.
 - **Control groups**: statewide (n=137) and Hindu-majority (Hindu ≥ 50%, n=88). The matched-Hindu control is the right comparison for the narrative's claim, since the narrative is about Hindu-share-mediated effects.
 - **Religion baseline**: 2025 cohort projection. Switching to raw 2011 census moves bin assignments by ≤1 AC and doesn't change the verdict (per the Pearson invariance noted in A1).
-- **What we can't tell**:
+- **What this data cannot determine**:
   - Within each AC, did individual Hindu voters actually shift on Sabarimala specifically? Survey microdata could answer; AC totals can't.
   - Was the missing "Hindu shift" *latent* — held back by something else (UDF's local strength, candidate dynamics)? Possible but unfalsifiable from this data.
-  - Could the geographic test be too narrow? We tested 3, 5, and 5 (district) ACs. None showed the predicted signal. Adding more ACs that aren't actually pilgrim-route would dilute the test, not strengthen it.
-- **Sample sizes**: 3 and 5 ACs are small. The 4pp differentials we see are point estimates, not statistically tested with formal CIs. But the *direction* of the differential — wrong sign in Tests 1, 2, 4 — is robust to noise.
+  - Could the geographic test be too narrow? Tested 3, 5, and 5 (district) ACs. None showed the predicted signal. Adding more ACs that aren't actually pilgrim-route would dilute the test, not strengthen it.
+- **Sample sizes**: 3 and 5 ACs are small. The 4pp differentials reported are point estimates, not statistically tested with formal CIs. But the *direction* of the differential — wrong sign in Tests 1, 2, 4 — is robust to noise.
 
 ## What this directly shows / what it cannot prove / what would weaken the conclusion
 
@@ -131,21 +131,21 @@ This is consistent with A1's finding that LDF's collapse was religion-blind acro
 
 ### What this does NOT prove
 
-- **Hindu voters did not shift on Sabarimala.** We do not observe individual Hindu voters' choices. Constituency-level absence of differential is consistent with several mechanisms — including counterbalancing voter movements that net to zero at the AC level.
+- **Hindu voters did not shift on Sabarimala.** Individual Hindu voters' choices are not directly observable in this data. Constituency-level absence of differential is consistent with several mechanisms — including counterbalancing voter movements that net to zero at the AC level.
 - **The minister effect is generally about ministers.** The 3 ministers studied here are a hand-picked Devaswom-related subset. A6 finds the broader 21-member cabinet shows no penalty above non-minister LDF incumbents — these 3 are outliers within the cabinet. The "minister-incumbency penalty" framing is supported only for these 3, not generally.
 - **Sample size is small.** Three-AC means are point estimates, not formally tested. The direction of the differential (positive in Tests 1/2/4) is robust to small-sample variation, but the magnitudes are not estimated with formal precision.
 
 ### What would weaken this conclusion
 
-- **A more inclusive definition of "Sabarimala route" that includes additional ACs and shows a coherent LDF differential.** We tested 3 and 5-AC subsets; both showed wrong-sign or zero differentials. A clearly justified larger group (e.g., all ACs within ~50km of Sabarimala) showing a route-targeted penalty would force a reconsideration.
+- **A more inclusive definition of "Sabarimala route" that includes additional ACs and shows a coherent LDF differential.** Tested 3-AC and 5-AC subsets; both showed wrong-sign or zero differentials. A clearly justified larger group (e.g., all ACs within ~50km of Sabarimala) showing a route-targeted penalty would force a reconsideration.
 - **Survey microdata showing Hindu voters in pilgrim-route ACs cited Sabarimala as a primary motivator while Hindu voters elsewhere did not.** Would suggest a *latent* Sabarimala effect that was masked at the constituency level.
-- **Multi-cycle test in 2031.** If pilgrim-route ACs show systematically different LDF performance from matched-Hindu controls in future cycles when Sabarimala is no longer salient, the 2026 non-effect we documented may need reinterpreting.
+- **Multi-cycle test in 2031.** If pilgrim-route ACs show systematically different LDF performance from matched-Hindu controls in future cycles when Sabarimala is no longer salient, the 2026 non-effect documented here may need reinterpreting.
 
 ## Cross-references
 
 - **A1 (minority consolidation)**: established that LDF's collapse was religion-blind. A2 extends: also Sabarimala-geography-blind. The 3 ministers studied here showed a minister-targeted penalty; A6 shows this doesn't generalize across the full cabinet.
 - **A3 (BJP's 3 wins)**: Kazhakoottam is one of BJP's 3 wins. The 428-vote margin and the lack of a corresponding pattern in nearby ACs argue against treating it as evidence for a broader Hindu-issue shift — it's better explained as a 3-way Trivandrum-area dynamic.
-- **A6 (cabinet collapse)**: A2's "minister penalty" finding for 3 specific ministers is consistent with generic incumbency penalty applied to high-visibility cabinet members. A6's broader cabinet-level test (n=21 ministers vs n=78 non-minister LDF incumbents) finds no systematic penalty — meaning the 3 Devaswom-related ministers we studied here are outliers within the cabinet, not representatives.
+- **A6 (cabinet collapse)**: A2's "minister penalty" finding for 3 specific ministers is consistent with generic incumbency penalty applied to high-visibility cabinet members. A6's broader cabinet-level test (n=21 ministers vs n=78 non-minister LDF incumbents) finds no systematic penalty — meaning the 3 Devaswom-related ministers studied here are outliers within the cabinet, not representatives.
 
 ## Reproduce
 

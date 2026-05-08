@@ -93,7 +93,7 @@ UDF's path to 102 seats (a 71-seat majority threshold + 31 seats safety margin):
 
 **46% of UDF's 102-seat majority came from just 5 districts containing 34% of Kerala's ACs.** The kingmaker framing is empirically validated by this concentration ratio: Central Kerala wasn't merely a strong UDF region, it was the *primary numerical source* of the majority.
 
-If we strip Central-5 from the count: UDF would have 55 seats (102 - 47), enough to remain the largest bloc but below the 71-seat majority threshold. **Central Kerala provided nearly half of UDF's eventual majority margin, making it the single most important regional bloc in the coalition's path to power.** The arithmetic dependency is real, but the "kingmaker" framing is interpretive — every majority coalition depends on some region for its majority margin; what's distinctive here is the *magnitude* (46% from 5 districts representing 34% of ACs), not the structural existence of the dependency.
+Stripping Central-5 from the count: UDF would have 55 seats (102 - 47), enough to remain the largest bloc but below the 71-seat majority threshold. **Central Kerala provided nearly half of UDF's eventual majority margin, making it the single most important regional bloc in the coalition's path to power.** The arithmetic dependency is real, but the "kingmaker" framing is interpretive — every majority coalition depends on some region for its majority margin; what's distinctive here is the *magnitude* (46% from 5 districts representing 34% of ACs), not the structural existence of the dependency.
 
 ## The opinionated reframe
 
@@ -114,7 +114,7 @@ Together these tell a coherent 2026 story: **the LDF→UDF wave was uniform in s
 
 ### KC(M) base movement contributes to the Central-5 surge
 
-A meaningful chunk of the Central-5 UDF surge involves a specific party-base movement that's worth flagging: Kerala Congress (M), Jose K. Mani's faction, was alliance-tagged LDF in both 2021 and 2026 (KC(M) didn't switch alliances between our two cycles — they joined LDF in 2020, before our analysis window). KC(M)'s mean party share dropped from 41.2% to 34.4% in the 12 ACs where they contested (~7pp decline). 10 of those 12 ACs are in the Central-5 districts. In KC(M) seats, UDF gain closely tracks KC(M) loss (e.g., Idukki: KC(M) -10.88pp, UDF +12.02pp), suggesting Christian-Catholic voters partially defected from LDF-aligned KC(M) to UDF (INC/KC(J)).
+A meaningful chunk of the Central-5 UDF surge involves a specific party-base movement worth flagging: Kerala Congress (M), Jose K. Mani's faction, was alliance-tagged LDF in both 2021 and 2026 (KC(M) didn't switch alliances between the two cycles — KC(M) joined LDF in 2020, before this analysis window). KC(M)'s mean party share dropped from 41.2% to 34.4% in the 12 ACs where they contested (~7pp decline). 10 of those 12 ACs are in the Central-5 districts. In KC(M) seats, UDF gain closely tracks KC(M) loss (e.g., Idukki: KC(M) -10.88pp, UDF +12.02pp), suggesting Christian-Catholic voters partially defected from LDF-aligned KC(M) to UDF (INC/KC(J)). See `methodology-core-concepts.md` § "KC(M) handling".
 
 Per A1's KC(M) robustness check, ~12% of A1's Christian-belt UDF premium is attributable to KC(M)-specific dynamics; ~88% is non-KC(M). For A8's geographic claim, the same accounting suggests ~10-15% of the central-Kerala UDF surge is KC(M)-base-movement (a behavioral shift, but specific to that party's voters), with the remainder reflecting broader cross-community consolidation. The 47-of-47 sweep is real; the *mechanism* combines several distinct movements that aren't fully separable from constituency-level vote totals.
 
@@ -129,7 +129,7 @@ Per A1's KC(M) robustness check, ~12% of A1's Christian-belt UDF premium is attr
 
 ### What this does NOT prove
 
-- **Central Kerala voters consolidated as a unified bloc behind UDF.** What we observe is a constituency-level outcome (47-0 sweep). The mechanism overlaps with A1's Christian-belt finding (which itself splits into ~88% non-KC(M) consolidation + ~12% KC(M) base movement), Muslim-heavy IUML strongholds (which behaved like the rest of LDF-incumbent seats per A1), and district-specific dynamics. "Central Kerala consolidated" is convenient shorthand for a heterogeneous mix.
+- **Central Kerala voters consolidated as a unified bloc behind UDF.** What's directly observable is a constituency-level outcome (47-0 sweep). The mechanism overlaps with A1's Christian-belt finding (which itself splits into ~88% non-KC(M) consolidation + ~12% KC(M) base movement), Muslim-heavy IUML strongholds (which behaved like the rest of LDF-incumbent seats per A1), and district-specific dynamics. "Central Kerala consolidated" is convenient shorthand for a heterogeneous mix.
 - **The kingmaker effect is durable.** 2026 was an anti-LDF wave year; the 47-0 sweep may be cycle-specific. Without a comparable next-cycle observation, durability is unproven.
 - **Pathanamthitta's "lost only Konni" is part of the same wave.** Konni was held by LDF independently of broader trends — A2 documented Konni as an outlier (LDF +3.2pp gain when surroundings lost). The "lost only one" framing is a true statement but obscures Konni-specific local dynamics.
 
@@ -137,13 +137,13 @@ Per A1's KC(M) robustness check, ~12% of A1's Christian-belt UDF premium is attr
 
 - **2031 results showing UDF retains majority statewide but loses Central-5 seats** — would suggest the 2026 sweep was a one-cycle anti-incumbency manifestation, not a structural Central-Kerala UDF alignment.
 - **Sub-community polling revealing the Central-5 sweep was a coalition of disparate bases (Catholic farmers + Muslim IUML + cross-community voters) without unified motivation** — would dismantle the "Central Kerala kingmaker" framing and replace it with "5 different stories that happened to align in 2026."
-- **Multi-cycle data showing similar Central-5 sweeps in past anti-incumbency years** — would be evidence the kingmaker geography is structural, not 2026-specific. Currently we have a single observation.
+- **Multi-cycle data showing similar Central-5 sweeps in past anti-incumbency years** — would be evidence the kingmaker geography is structural, not 2026-specific. Currently this rests on a single observation.
 
 ## Methodology & limitations
 
-- **District definitions**: standard 14-district Kerala administrative division. "Central Kerala" doesn't have a single agreed definition; we report 5-district and 7-district readings.
+- **District definitions**: standard 14-district Kerala administrative division. "Central Kerala" doesn't have a single agreed definition; this card reports 5-district and 7-district readings.
 - **Vote share Δ**: alliance-level shares 2021→2026, constituency-equal means.
-- **Manorama-C Voter pre-poll number ("33 of 53")**: cited from narrative; we couldn't verify the exact 53-AC bundle they used. Either reading we tested places the actual UDF tally substantially above 62%.
+- **Manorama-C Voter pre-poll number ("33 of 53")**: cited from narrative; the exact 53-AC bundle they used could not be independently verified. Either reading tested here places the actual UDF tally substantially above 62%.
 
 ## Reproduce
 

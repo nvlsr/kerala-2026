@@ -25,7 +25,7 @@ Four sub-claims to test independently.
 | BJP party share | 11.30% | 11.49% | **+0.18pp** |
 | NDA alliance share | 12.45% | 14.28% | +1.83pp |
 
-**Narrative claim: ~0.12pp.** Our number: +0.18pp. Within rounding. **Confirmed.**
+**Narrative claim: ~0.12pp.** Recomputed from candidate-level data: +0.18pp. Within rounding. **Confirmed.**
 
 NDA aggregate grew +1.83pp — meaning NDA's *non-BJP* allies (BDJS, KC(B), Twenty20 in 2026) grew by ~1.65pp combined. Most of NDA's modest aggregate growth came from these allied vehicles, not BJP itself.
 
@@ -38,7 +38,7 @@ NDA aggregate grew +1.83pp — meaning NDA's *non-BJP* allies (BDJS, KC(B), Twen
 | NDA ≥ 30% | 9 |
 | NDA ≥ 40% | 1 |
 
-**Narrative claim: 29 ACs ≥ 20%. Our number: 28.** Off by 1. Either a different ECI cutoff or rounding boundary. **Confirmed.**
+**Narrative claim: 29 ACs ≥ 20%. This dataset's count: 28.** Off by 1. Either a different ECI cutoff or rounding boundary. **Confirmed.**
 
 The geography is the more interesting test. NDA ≥ 25% (n=19), broken down by district:
 
@@ -102,7 +102,7 @@ The Onmanorama "weak UDF candidates" framing has empirical support. Specifically
 - **Chathannoor (UDF +1.1pp)**: muted UDF growth in a +7pp wave year; insufficient to challenge a +7.6pp NDA surge.
 - **Kazhakoottam (UDF +4.6pp)**: closest to baseline UDF growth, but Kadakampally's LDF collapse (-10.7pp) flowed disproportionately to NDA (+6.6pp) and only partially to UDF, allowing BJP to flip by 428 votes.
 
-The pattern is consistent with weak UDF candidate performance contributing materially to the BJP wins. We do not directly observe candidate quality; we observe UDF underperformance relative to matched-Hindu-majority comparator ACs and infer that candidate selection was a contributor.
+The pattern is consistent with weak UDF candidate performance contributing materially to the BJP wins. Candidate quality is not directly observable in this dataset; the analysis observes UDF underperformance relative to matched-Hindu-majority comparator ACs and infers that candidate selection was a contributor.
 
 ## The opinionated reframe
 
@@ -133,10 +133,10 @@ The "BJP statewide breakthrough" framing some BJP-aligned coverage pushed is dis
 
 ## Methodology & limitations
 
-- **Statewide aggregate**: vote-weighted across all 140 ACs. Slightly different from ECI's headline because we recompute from candidate-level data.
+- **Statewide aggregate**: vote-weighted across all 140 ACs. Slightly different from ECI's headline because the recomputation is from candidate-level data.
 - **NDA 28 vs narrative 29 (≥20%)**: rounding boundary at 20.0% probably explains the off-by-1. Either way the *concentration* claim holds.
 - **Hindu share**: 2025 projection. Switching to 2011 baseline doesn't change the verdict.
-- **What we can't tell**:
+- **What this data cannot determine**:
   - Whether UDF candidate weakness is causally distinct from "Trivandrum is just structurally less UDF" — the two correlate. Survey microdata on candidate evaluation could separate.
   - Whether the 14-25pp BJP growth in Pala/Poonjar/Thiruvalla represents a *durable* shift or a candidate-personality bump (P.C. George had been a 5-time MLA from Poonjar before joining BJP). Multi-cycle data 2031 will answer.
 - **Christian BJP candidates**: hand-coded list of 4 from the narrative. Other Christian-named BJP candidates may exist; the 4 named are the salient ones cited across coverage.
@@ -154,15 +154,15 @@ The "BJP statewide breakthrough" framing some BJP-aligned coverage pushed is dis
 ### What this does NOT prove
 
 - **BJP grew systematically more in Hindu-heavy seats.** Simple Pearson supports this gradient; district fixed effects don't (β=+0.098, p=0.213). The 3 wins are real and concentrated, but the underlying explanation for why they fell where they did is not unambiguously "Hindu-share gradient." It's also consistent with a Trivandrum-region-specific cluster (geographic) plus UDF candidate-selection failures.
-- **UDF candidate weakness caused the BJP wins.** UDF underperformance (+0.6pp) and BJP wins are correlated; we don't observe the counterfactual where stronger UDF candidates contested. The Onmanorama framing is plausible but unprovable from this data.
-- **Christian voters embraced BJP candidates in Pala/Poonjar/Thiruvalla.** The +14-25pp BJP gains include Hindu, Muslim, Christian, and other voters in those constituencies. Without sub-community polling we can't isolate Christian-specific support for BJP candidates of any denomination. The candidate-personality alternative (P.C. George had a 5-cycle Poonjar incumbency before joining BJP) is a strong competing explanation for at least one of the 4 cases.
+- **UDF candidate weakness caused the BJP wins.** UDF underperformance (+0.6pp) and BJP wins are correlated; the counterfactual where stronger UDF candidates contested isn't observable. The Onmanorama framing is plausible but unprovable from this data.
+- **Christian voters embraced BJP candidates in Pala/Poonjar/Thiruvalla.** The +14-25pp BJP gains include Hindu, Muslim, Christian, and other voters in those constituencies. Without sub-community polling, Christian-specific support for BJP candidates of any denomination cannot be isolated. The candidate-personality alternative (P.C. George had a 5-cycle Poonjar incumbency before joining BJP) is a strong competing explanation for at least one of the 4 cases.
 - **The 2026 BJP gains are durable.** Could be one-cycle candidate-personality bumps (especially Poonjar/P.C. George; Thiruvalla/three-way-with-JD(S)). 2031 with different candidates is the test.
 
 ### What would weaken this conclusion
 
 - **2031 BJP share reverting to <10% in Pala, Poonjar, Thiruvalla** when those candidates are not on the ballot — would suggest the +14-25pp gains were candidate-specific, not BJP brand-building.
 - **Sub-community polling showing the +14-25pp gains came overwhelmingly from non-Christian voters** in those mixed-religion ACs — would dismantle the "BJP making Christian inroads" narrative.
-- **A regression with sharper geographic controls (sub-district / Lok Sabha constituency FE) showing the Hindu-share gradient survives** — would strengthen the gradient claim we've softened. We don't currently have that resolution; the district-FE result is our cleanest current test.
+- **A regression with sharper geographic controls (sub-district / Lok Sabha constituency FE) showing the Hindu-share gradient survives** — would strengthen the gradient claim now softened. That resolution isn't currently available in the dataset; the district-FE result is the strictest control feasible here.
 - **Counterfactual UDF win in Nemom or Chathannoor** demonstrating that "stronger candidate selection" was the binding constraint — testable in subsequent cycles where UDF fields different candidates.
 
 ## Cross-references

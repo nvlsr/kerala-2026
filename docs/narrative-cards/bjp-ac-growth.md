@@ -4,11 +4,11 @@
 >
 > The aggregate hides a major geographic reshuffle: BJP added 14-25pp of vote share in several central-Kerala mixed-religion seats (Poonjar, Pala, Thiruvalla, Guruvayoor, Vaikom) while ceding 10-22pp in 26 ACs where it withdrew from the contest entirely, mostly to NDA allies (BDJS, KC(B), Twenty20). Statewide gains and statewide cessions roughly cancel — yielding the +0.18pp aggregate that conventional readings of "BJP didn't break out" rest on.
 
-**Confidence: Moderate-strong (descriptive / mixed mechanism)** — the per-AC vote-share movements are exact. Substantive caveat: a meaningful share of the top-line gains are *contest-entry effects* (BJP fielding seriously in 2026 from a near-zero 2021 base) rather than *organic expansion* of an existing base. We separate these explicitly below; the durability story differs sharply between the two.
+**Confidence: Moderate-strong (descriptive / mixed mechanism)** — the per-AC vote-share movements are exact. Substantive caveat: a meaningful share of the top-line gains are *contest-entry effects* (BJP fielding seriously in 2026 from a near-zero 2021 base) rather than *organic expansion* of an existing base. The two are separated explicitly below; the durability story differs sharply between them.
 
 This card explores the per-AC distribution of BJP's vote-share movement that the statewide number obscures. Reproduce: `python3 scripts/narrative-bjp-ac-growth.py`.
 
-> **A note on inference:** This card is descriptive — it documents constituency-level BJP vote-share movements without claiming to identify causal mechanisms behind them. Several alternative explanations apply (candidate-personality bumps, alliance-fielding strategy, three-way fragmentation), and we flag them but cannot adjudicate them from constituency vote totals alone.
+> **A note on inference:** This card is descriptive — it documents constituency-level BJP vote-share movements without claiming to identify causal mechanisms behind them. Several alternative explanations apply (candidate-personality bumps, alliance-fielding strategy, three-way fragmentation); these are flagged but cannot be adjudicated from constituency vote totals alone.
 
 **Unit:** Statewide aggregates (+0.18pp) are vote-weighted; per-AC means and Δ figures are constituency-equal. The unit of analysis is the constituency, not the individual voter.
 
@@ -160,7 +160,7 @@ A slight majority of the big gains came from near-zero 2016 baselines. Combined 
 
 - **BJP is on a structural growth trajectory in central Kerala.** The +14-25pp jumps in Pala, Poonjar, Thiruvalla, Guruvayoor are concentrated in seats where BJP either fielded high-profile defectors (P.C. George/Poonjar, Shone George/Pala, Anoop Antony/Thiruvalla) or contested unusually energetically. These could be candidate-personality bumps that revert in 2031 with different candidates.
 - **The cession strategy succeeded.** NDA aggregate held in cession ACs (+0.2pp), but those are seats where NDA was at ~10% and stayed ~10%. "Held" doesn't mean "leveraged" — alliance-management may have prevented further decline without producing growth.
-- **Christian voters are warming to BJP.** The +14-25pp gains in Christian-heavy ACs include Hindu, Muslim, Christian voters in those constituencies. We cannot decompose by sub-community. The candidate-personality alternative is especially live for the four named Christian BJP candidates (3 of 4 with major gains).
+- **Christian voters are warming to BJP.** The +14-25pp gains in Christian-heavy ACs include Hindu, Muslim, Christian voters in those constituencies. Sub-community decomposition isn't available in this dataset. The candidate-personality alternative is especially live for the four named Christian BJP candidates (3 of 4 with major gains).
 - **The +5.12pp Hindu ≥ 70% bin mean is replicable.** n=10 is small; the bin mean is heavily influenced by Varkala (+19.9), Vaikom (+16.2), and Karunagappally (+11.6). Without those three, the remaining 7 average roughly flat.
 
 ### What would weaken this conclusion
@@ -168,7 +168,7 @@ A slight majority of the big gains came from near-zero 2016 baselines. Combined 
 - **2031 BJP share reverting to <10% in Pala, Poonjar, Thiruvalla** when those candidates aren't on the ballot — would suggest the +14-25pp gains were candidate-specific, not BJP brand-building.
 - **Cession ACs (Konni, Thripunithura, Thodupuzha, Ettumanoor, etc.) showing NDA aggregate decline to ≤5% in 2031** — would suggest the alliance-management strategy permanently sacrificed BJP's footprint there rather than maintaining it.
 - **Sub-community polling of Christian voters in Pala/Poonjar/Thiruvalla showing the +14-25pp BJP gain came overwhelmingly from non-Christian voters in those mixed-religion ACs** — would dismantle the implicit "BJP making Christian inroads" reading some commentary draws from the candidate-selection pattern.
-- **Multi-cycle data showing BJP's per-AC variance is always large in Kerala** — would suggest the ±25pp range we observe is normal cycle-on-cycle, not a 2026-specific reshuffle. We've reported 2021→2026 only; longer baselines would contextualize the magnitude.
+- **Multi-cycle data showing BJP's per-AC variance is always large in Kerala** — would suggest the ±25pp range observed here is normal cycle-on-cycle, not a 2026-specific reshuffle. This card reports 2021→2026 only; longer baselines would contextualize the magnitude.
 
 ## What this card adds to the catalog
 

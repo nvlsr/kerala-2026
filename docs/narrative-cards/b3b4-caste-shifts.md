@@ -1,16 +1,16 @@
 # B3 + B4 — District-level Hindu caste-belt geography overlaps with alliance geography (exploratory)
 
-> **⚠️ EXPLORATORY ONLY.** This card analyses caste data at *district* granularity assigned uniformly to all ACs within each district. It is structurally subject to ecological-fallacy: variation between caste-share and vote-swing at the AC level is bounded by district-level structure. The originally-posed B3 and B4 hypotheses — about Ezhava-base-erosion and Nair-UDF-lean as voter-behavior claims — cannot be tested at AC granularity from this data. We re-pose them as geographic-overlap questions and report what we observe under that weaker framing. Do not cite as evidence for caste-voter behavior.
+> **⚠️ EXPLORATORY ONLY.** This card analyses caste data at *district* granularity assigned uniformly to all ACs within each district. It is structurally subject to ecological-fallacy: variation between caste-share and vote-swing at the AC level is bounded by district-level structure. The originally-posed B3 and B4 hypotheses — about Ezhava-base-erosion and Nair-UDF-lean as voter-behavior claims — cannot be tested at AC granularity from this data. The card re-poses them as geographic-overlap questions and reports what is observable under that weaker framing. Do not cite as evidence for caste-voter behavior.
 
-**Verdict (geography-overlap framing): The geography of high Nair-share (concentrated in Trivandrum + adjacent districts) overlaps with the geography of NDA concentration (BJP's 3 wins, all in Trivandrum). District-level Nair share has a weak negative within-region association with UDF Δshare (β=-0.272, p=0.044 with region FE — see methodology). Ezhava-share-of-total has no detectable within-region association with any alliance Δ. We do not separate caste-voter behavior from regional clustering: with caste data district-level only, district fixed effects absorb caste perfectly, leaving no within-district variation to test against.**
+**Verdict (geography-overlap framing): The geography of high Nair-share (concentrated in Trivandrum + adjacent districts) overlaps with the geography of NDA concentration (BJP's 3 wins, all in Trivandrum). District-level Nair share has a weak negative within-region association with UDF Δshare (β=-0.272, p=0.044 with region FE — see methodology). Ezhava-share-of-total has no detectable within-region association with any alliance Δ. Caste-voter behavior cannot be separated from regional clustering at this resolution: with caste data district-level only, district fixed effects absorb caste perfectly, leaving no within-district variation to test against.**
 
-**Confidence: Exploratory** — district-level caste data + 25-year-old survey baseline + ecological-fallacy concerns mean we cannot distinguish caste-voter behavior from regional clustering. Reframed as geography-overlap observation. Do not cite as evidence for caste-voter behavior at AC granularity.
+**Confidence: Exploratory** — district-level caste data + 25-year-old survey baseline + ecological-fallacy concerns make caste-voter behavior indistinguishable from regional clustering. Reframed as geography-overlap observation. Do not cite as evidence for caste-voter behavior at AC granularity.
 
-This card uses Hindu sub-community data at **district level**, attributed uniformly to ACs within each district. The original framing tried to derive AC-level voter-behavior conclusions; we now report only what the district-level resolution supports.
+This card uses Hindu sub-community data at **district level**, attributed uniformly to ACs within each district. The original framing tried to derive AC-level voter-behavior conclusions; this version reports only what the district-level resolution supports.
 
 ## The consensus claims
 
-Both narratives appear in our `docs/narratives.md` Tier B as "needs community-coded constituency typology that we don't have." Provenance check passed; we have the typology now (Zachariah 2003 / KSI 2000 survey). Reframing them as testable hypotheses:
+Both narratives appear in `docs/narratives.md` Tier B as "needs community-coded constituency typology that isn't yet available." Provenance check passed; the typology is now available (Zachariah 2003 / KSI 2000 survey). Reframing them as testable hypotheses:
 
 **B3 — Ezhava base erosion.** *"Polstrat/CSDS-CPPR longitudinal series shows LDF's Ezhava share dropped from ~64-65% (2006/11) to ~49% (2016) to 53% (2021); BJP rose from 6-7% to ~21% (2019) to 23% (2021). Multi-cycle drift, not 2026-specific."*
 - Implies: Ezhava-heavy ACs should have shown bigger LDF losses + bigger NDA gains in 2026
@@ -81,13 +81,13 @@ Kannur is the most Ezhava-heavy district (39%) and shows a *typical* swing for t
 
 ## The opinionated reframe (geography-overlap, not voter-behavior)
 
-> **The geographic clustering of caste data complicates voter-behavior inference at the resolution we have. The visible pattern: ACs in high-Nair-share districts (concentrated in Trivandrum + adjacent) had smaller UDF gains and larger NDA gains than ACs in lower-Nair-share districts. But "high Nair share" and "Trivandrum geography" are nearly identical at district granularity — we cannot separate "Nair voters behaved differently" from "Trivandrum voters behaved differently for non-Nair reasons" from this data. We do not detect Ezhava-share variation as predictive of any alliance Δ.**
+> **The geographic clustering of caste data complicates voter-behavior inference at the resolution available here. The visible pattern: ACs in high-Nair-share districts (concentrated in Trivandrum + adjacent) had smaller UDF gains and larger NDA gains than ACs in lower-Nair-share districts. But "high Nair share" and "Trivandrum geography" are nearly identical at district granularity — "Nair voters behaved differently" cannot be separated from "Trivandrum voters behaved differently for non-Nair reasons" using this data. Ezhava-share variation is not detectable as predictive of any alliance Δ.**
 
-The press framing — that Ezhava-base-erosion explains LDF's collapse and Nair-UDF-lean explains UDF's gains — implies AC-resolution voter-behavior claims. The data does not support those claims at AC resolution because we only have district-level caste shares. The visible patterns are at the district level and are confounded with all other district-level dynamics.
+The press framing — that Ezhava-base-erosion explains LDF's collapse and Nair-UDF-lean explains UDF's gains — implies AC-resolution voter-behavior claims. The data does not support those claims at AC resolution because the catalog has only district-level caste shares. The visible patterns are at the district level and are confounded with all other district-level dynamics.
 
 Restated for the catalog:
-- **B3 (Ezhava drift)**: not visible as a 2026-cycle effect at AC resolution we have. May be true longitudinally (per Polstrat/CSDS) but doesn't show up in this swing.
-- **B4 (Nair UDF lean)**: under the geography-overlap framing only, Nair-heavy *districts* showed smaller UDF gains. We cannot ascribe this to Nair voters specifically; it could equally be a Trivandrum-region effect.
+- **B3 (Ezhava drift)**: not visible as a 2026-cycle effect at the AC resolution available here. May be true longitudinally (per Polstrat/CSDS) but doesn't show up in this swing.
+- **B4 (Nair UDF lean)**: under the geography-overlap framing only, Nair-heavy *districts* showed smaller UDF gains. Cannot be ascribed to Nair voters specifically; it could equally be a Trivandrum-region effect.
 
 ## Robustness check — region fixed effects
 
@@ -100,7 +100,7 @@ Adding region fixed effects (3 regions: North / Central / South Kerala) to the s
 | Ezhava × UDF Δ | β=+0.005, p=0.927 | β=+0.015, p=0.803 | No effect either way |
 | Ezhava × NDA Δ | β=-0.023, p=0.638 | β=-0.018, p=0.738 | No effect either way |
 
-District FE absorbs caste perfectly (caste is district-constant in our data) so we cannot run the within-district test. The region-FE result is the strictest control we can apply.
+District FE absorbs caste perfectly (caste is district-constant in this dataset), so the within-district test cannot be run. The region-FE result is the strictest control available.
 
 **Reading:** the Nair-UDF inverse association is weakly supported under region controls (p just under 0.05). The Nair-NDA association doesn't hold once region is controlled. Neither result is robust enough to ground a voter-behavior claim — they're consistent with the geography-overlap reading: Nair-heavy districts (mostly Trivandrum) had smaller UDF gains, possibly for caste reasons but possibly for the many other things that distinguish Trivandrum (urbanization, BJP organisational strength, candidate selection, government-employee concentration).
 
@@ -114,13 +114,13 @@ District FE absorbs caste perfectly (caste is district-constant in our data) so 
 
 ### What this does NOT prove
 
-- **Nair voters behaved differently than non-Nair voters.** The data is district-level. We cannot disentangle Nair-voter behavior from Trivandrum-region effects (urbanization, BJP organizational strength, government-employee base, etc.) at our resolution.
+- **Nair voters behaved differently than non-Nair voters.** The data is district-level. Nair-voter behavior cannot be disentangled from Trivandrum-region effects (urbanization, BJP organizational strength, government-employee base, etc.) at this resolution.
 - **Ezhava voters didn't shift.** The Polstrat/CSDS multi-cycle Ezhava-erosion narrative may be true; this single-cycle test doesn't directly contradict it. The drift may have plateaued, or may operate at sub-AC granularity invisible to district-level data.
-- **Caste-bloc voting is not a feature of Kerala 2026.** Our resolution can't detect it. Survey-microdata work could find caste differences within districts that are invisible here.
+- **Caste-bloc voting is not a feature of Kerala 2026.** This resolution can't detect it. Survey-microdata work could find caste differences within districts that are invisible here.
 
 ### What would weaken (or strengthen) this conclusion
 
-- **AC-resolution caste data** (NSSO microdata, recent surveys) would let us test caste effects directly within districts. Highest-priority resolution upgrade.
+- **AC-resolution caste data** (NSSO microdata, recent surveys) would permit testing caste effects directly within districts. Highest-priority resolution upgrade.
 - **Multi-cycle longitudinal test** with 2011/2016/2021/2026 caste-vs-vote correlations — would distinguish "caste drift exists historically but stalled" from "caste drift never existed at AC resolution."
 - **Sub-community resolution within "Nair"** — Nairs aren't a unified bloc (sub-community identity, NSS organisational membership, etc. matter politically). Currently treated as a single category.
 - **Replication in a different election context** — same caste-share-vs-swing patterns appearing in 2031 or earlier cycles would suggest structural caste-belt effects, even if individual cycle tests are noisy.
@@ -131,7 +131,7 @@ District FE absorbs caste perfectly (caste is district-constant in our data) so 
 - **Granularity**: district-level (14 districts). Each AC inherits its district's caste mix uniformly. Within-district variation is invisible.
 - **Year staleness**: 2000 baseline, ~25 years old. Geographic rank order is likely stable; absolute shares may have drifted.
 - **Sample variance**: household survey, not census. Confidence intervals not computed for the original survey shares.
-- **Hindu-only**: doesn't speak to Muslim sub-community or Christian denomination — those need separate sources we don't have.
+- **Hindu-only**: doesn't speak to Muslim sub-community or Christian denomination — those need separate sources not currently available.
 
 ## Cross-references
 
