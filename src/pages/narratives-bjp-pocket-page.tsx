@@ -329,22 +329,6 @@ export function NarrativesBJPPocketPage() {
             jumps. The miss was the BDJS substitution zone —
             alliance courtesy without immediate payoff.
           </p>
-          <p>
-            <strong>Caveat — outcome vs intent.</strong> We observe
-            outcomes; we infer strategy. The 26 withdrawals could
-            have been deliberate seat-allocation, but they could
-            equally have been forced — local cadre weakening, no
-            candidate available, or alliance pressure to make room.
-            Vote totals don't distinguish those possibilities. The
-            "strategic reorganization" reading is plausible and the
-            data fits it, but an alternative ("BJP couldn't field
-            competitively in those 26 ACs and labeled that as
-            alliance management") is equally consistent. The 11
-            concentrated-growth seats have stronger evidence — BJP
-            fielded high-profile candidates and they performed
-            well. That's strategy visible in the candidate list,
-            not just inferred from vote totals.
-          </p>
         </NarrativeSection>
 
         <PullQuote>
