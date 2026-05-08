@@ -64,11 +64,13 @@ But the significance is not just the three wins themselves. **Every single Triva
 
 Adjacent seats also moved in the same direction:
 
-- [Varkala](/explore?seat=127) +19.9pp
+- [Varkala](/explore?seat=127) +19.9pp[^6]
 - [Nedumangad](/explore?seat=130) +7.1pp
 - [Kazhakoottam](/explore?seat=132) +6.6pp
 - [Aruvikkara](/explore?seat=136) +5.7pp
 - [Attingal](/explore?seat=128) +4.9pp
+
+One additional piece of qualitative evidence for the pivot: **BJP took back the NDA slot at Varkala from its alliance partner BDJS.** BDJS had held that slot in 2021 (8.3%); in 2026, BJP fielded directly and got 19.9%. That seat-allocation move — the alliance reorganising who carries the banner where, with BJP claiming a former BDJS slot inside the belt — is consistent with a deliberate Trivandrum-belt strategy. (The flip side, where BJP did *not* take a belt seat back from BDJS, is in the falsification section below.)
 
 For the first time in a state Assembly cycle, BJP's Kerala performance shows geographic concentration rather than scattered isolated activity. The Trivandrum belt looks like the beginning of a regional base.
 
@@ -168,6 +170,7 @@ Kerala 2026 may mark the beginning of a different strategy entirely — one that
 ## What would weaken this conclusion
 
 - **2031 Trivandrum cluster reverting to scattered isolated seats** — would suggest the 2026 cluster was opportunistic candidate convergence, not an emerging regional base.
+- **2031 Vamanapuram still held by BDJS, not rotated back to BJP.** [Vamanapuram](/explore?seat=131) sits inside the Trivandrum belt demographically (64% Hindu, contiguous with the rest of the district), but in 2026 BDJS held the NDA slot there and got only 8.2%. BJP did not rotate it back. If the belt-pivot is real and comprehensive, Vamanapuram is the natural next step — BJP taking the slot from BDJS the way it did at Varkala in 2026. If Vamanapuram is *still* BDJS-held in 2031 (or worsens), the "Trivandrum belt as BJP's regional base" thesis is partial — selective even within the belt, not the comprehensive pivot 14-of-15 seats currently suggest.
 - **2031 Ernakulam T20 expansion plateauing or reversing** with BJP returning to direct contest — would suggest 2026 was alliance-management improvisation, not a durable terrain-by-terrain strategy. The cleanest single test is whether T20's *genuine-substitution* seats (Thripunithura, Angamaly, Piravom — where T20 had no 2021 base) hold up; the *alliance-switch* seats (Kunnathunad and the other 7 T2P-2021 seats) say more about T20's pre-existing organic base than about NDA's expansion.
 - **2031 marquee Kottayam candidates not fielded and BJP shares reverting to <10%** — would suggest the 2026 gains were candidate-personality effects, not strategic seat-deepening.
 - **2031 BJP returning to broad statewide contest** (115+ candidates) without a corresponding regional-cluster build — would suggest 2026's withdrawal pattern was constraint, not chosen reorganization.
@@ -187,6 +190,8 @@ If the same regional-cluster + alliance-vehicle pattern repeats in 2031, the 202
 [^4]: Twenty 20 framed as ideological partner, not seat-sharing convenience. Sabu M. Jacob, T20 chief coordinator. *Times of India* / 6 February 2026.
 
 [^5]: Munambam Latin Catholic land-dispute plank. Amit Shah, Union Home Minister: amendments to safeguard residents' property. *The New Indian Express* / 6 April 2026.
+
+[^6]: Varkala had no BJP candidate in 2021; BDJS held the NDA slot at 8.3%. In 2026, BJP fielded directly and got 19.9%, while BDJS did not contest. The +19.9pp BJP-only Δ corresponds to a smaller +11.6pp NDA-aggregate Δ — part organic ground expansion, part alliance-vehicle effect (BJP unlocking voter share that BDJS-as-vehicle had been suppressing).
 
 ---
 
