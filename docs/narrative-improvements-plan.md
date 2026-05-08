@@ -16,27 +16,24 @@ Sequencing principle: **methodology first, prose second, new content third** —
 
 ---
 
-## Session 1 — Methodology hardening (analysis only, no prose changes)
+## Session 1 — Methodology hardening (analysis only, no prose changes) ✓ COMPLETE
 
-Goal: find out which findings survive controls and quantify the KC(M) effect. No card edits in this session — just analysis scripts and a written summary of new numbers.
+Goal: find out which findings survive controls and quantify the KC(M) effect.
 
-- [ ] **Build `scripts/narrative-regression.ts`** — OLS with district FE and region FE controls.
-  - Spec: `UDF_delta ~ Christian_share + Muslim_share + prior_UDF_share + district_FE` and same with `region_FE` (3 regions: North = Kasaragod/Kannur/Kozhikode/Wayanad/Malappuram; Central = Palakkad/Thrissur/Ernakulam/Idukki/Kottayam/Pathanamthitta/Alappuzha; South = Kollam/Trivandrum). Pick whichever region partition is cleanest.
-  - Re-run for: UDF Δ, LDF Δ, NDA Δ, BJP-party Δ.
-  - Re-run for: Nair share + Ezhava share (B3+B4).
-  - Output: signed coefficient + "is the religion/caste effect significant after controls?" verdict per card.
+- [x] **Built `scripts/narrative-regression.py`** — OLS with district FE and region FE controls (Python instead of TypeScript; numpy-only, no scipy/statsmodels needed).
+- [x] **Built `scripts/narrative-a1-no-kcm.py`** — KC(M)-isolated A1 rerun.
+- [x] **Captured results in `docs/narrative-improvements-notes-session1.md`** — full regression tables and decision points.
 
-- [ ] **Build `scripts/narrative-a1-no-kcm.ts`** — strip KC(M) candidates from both 2021 and 2026 vote totals; recompute alliance shares; re-run A1 correlations and Christian-bin means.
-  - Spec: identify all "Kerala Congress (M)" candidates (party string match) in both cycles; subtract their votes from numerator and denominator; recompute UDF / LDF / NDA shares.
-  - Output: how much of A1's +10pp Christian-heavy UDF premium survives the KC(M)-stripped analysis. Expected: ~5-7pp survives (i.e., a real residual signal but smaller than headline).
-
-- [ ] **Capture results in a working notes file** (`docs/narrative-improvements-notes-session1.md`, gitignored or in scratch). Don't edit cards yet.
-
-**Decision points after Session 1:**
-- If district-FE collapses Christian effect to ~0, A1 needs major reframe → Session 2 rewrites A1 as "Central-Kerala coalition realignment" rather than "Christian consolidation premium."
-- If district-FE preserves Christian effect (within-district variation drives the signal), A1 strengthens.
-- If KC(M)-stripped analysis shows ≥80% of A1's premium survives, KC(M) caveat is footnote-sized. If <60%, KC(M) is a major mechanism that should be foregrounded.
-- B3+B4 will almost certainly fail district-FE — expect explicit demotion to "exploratory" in Session 2.
+**Findings that triggered:**
+- **A1 Christian effect SURVIVES district FE** (+0.225 → +0.194, p=0.008). Strengthens, not collapses. Within-district Christian variation predicts UDF gain robustly.
+- **A1 Muslim effect collapses with district FE** (β=+0.016, p=0.795). Strengthens A1's "Muslim share doesn't matter" framing — the within-district test is the clean test.
+- **A1 LDF × Christian collapses with district FE** (β=+0.001, p=0.993). Was a between-district artifact. Soften that framing.
+- **A3 BJP × Hindu gradient weakens with district FE** (p drifts 0.012 → 0.213). The 3 specific wins are still descriptively in Hindu-heavy seats, but "BJP grew more in Hindu-heavy seats" as a gradient doesn't hold robustly.
+- **A3 NDA × Hindu collapses with even region FE** (p 0.031 → 0.301). Drop the gradient framing.
+- **B3+B4 Nair × UDF Δ barely survives region FE** (β=-0.272, p=0.044). Demote to exploratory per plan.
+- **B3+B4 Nair × NDA Δ doesn't hold** (p 0.114 → 0.562 with region FE). Drop or qualify heavily.
+- **KC(M) was LDF in BOTH cycles** — agent's relabel concern was based on the 2016→2020 switch, not 2021→2026. No relabel artifact.
+- **~12% of A1's Christian-belt premium is mechanical KC(M) accounting**, ~88% is non-KC(M). Footnote-sized caveat.
 
 ---
 
@@ -113,4 +110,5 @@ Goal: write the most-original analytical card we have, surfacing the +0.18pp agg
 
 ## Progress log
 
-- 2026-05-07: Plan created. Sessions 1-3 not yet started.
+- 2026-05-07: Plan created.
+- 2026-05-07: **Session 1 complete.** Built regression and KC(M)-isolation Python scripts. Captured numbers in `docs/narrative-improvements-notes-session1.md`. Headline result: A1 strengthens, B3+B4 confirmed weak, A3 gradient claim weakens, KC(M) relabel concern is moot but base-defection is a real ~12% sub-mechanism. Sessions 2-3 still pending.
