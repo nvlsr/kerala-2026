@@ -1,12 +1,22 @@
 import type { ReactNode } from "react"
 
 import { cn } from "@/lib/utils"
+import {
+  SectionTypeBadge,
+  type SectionType,
+} from "@/components/narratives/section-type-badge"
 
 type Layout = "visual-right" | "visual-left" | "stacked"
 
 type Props = {
   /** Section heading. Rendered as h2. */
   heading: string
+  /**
+   * Optional structural role of this section. Renders a small
+   * badge above the heading. See `SectionTypeBadge` for the
+   * available types and their meanings.
+   */
+  sectionType?: SectionType
   /**
    * Visual element (chart, choropleth, etc.). Optional — when
    * omitted, the section renders as a text-only block constrained
@@ -46,6 +56,7 @@ type Props = {
  */
 export function NarrativeSection({
   heading,
+  sectionType,
   visual,
   children,
   layout = "visual-right",
@@ -55,7 +66,12 @@ export function NarrativeSection({
     "max-w-prose space-y-3 text-sm leading-relaxed sm:text-[15px]"
 
   return (
-    <section className="border-t pt-8 first:border-t-0 first:pt-0">
+    <section className="border-t pt-10 first:border-t-0 first:pt-0">
+      {sectionType && (
+        <div className="mb-2">
+          <SectionTypeBadge type={sectionType} />
+        </div>
+      )}
       <h2 className="font-heading mb-4 text-xl font-semibold tracking-tight sm:text-2xl">
         {heading}
       </h2>
