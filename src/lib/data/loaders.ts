@@ -9,6 +9,7 @@ import acDemographicsJson from "@data/ac-demographics.json"
 import acDemographics2025Json from "@data/ac-demographics-2025.json"
 import alliancesJson from "@data/alliances.json"
 import candidateAliasesJson from "@data/candidate-aliases.json"
+import casteByDistrictJson from "@data/hindu-caste-by-district.json"
 import communityBeltsJson from "@data/community-belts.json"
 import constituenciesJson from "@data/kerala-2026.json"
 import constituencyNamesJson from "@data/constituency-names.json"
@@ -92,9 +93,13 @@ export const acDemoMeta = acDemographicsJson as {
 
 /**
  * State-level uniform projection of `acDemoMeta` to ~2025 using
- * cohort multipliers from CRS births-by-religion data. Accuracy
- * caveats in the file's `note` field; see docs/data-pipeline.md.
- * Use for visualisation only, not for analytical claims.
+ * cohort multipliers from CRS births-by-religion data. This is the
+ * **default baseline** for both visualisation (/religion-map) and
+ * narrative-card analysis. Pearson correlation differs from the raw
+ * 2011 base by ≤0.011 (uniform multipliers preserve rank order), but
+ * 2025 is reality-aligned for absolute-share statements. The raw
+ * 2011 baseline lives in `acDemoMeta` and is available for
+ * verification. See docs/data-pipeline.md.
  */
 export const acDemo2025Meta = acDemographics2025Json as {
   year: number
@@ -103,6 +108,37 @@ export const acDemo2025Meta = acDemographics2025Json as {
   note?: string
   multipliers: Record<string, number>
   constituencies: Record<string, AcDemographics>
+}
+
+/**
+ * Hindu sub-community shares per district (~2000, Zachariah/KSI
+ * survey). District-level only — no AC granularity. Denominator is
+ * Hindu population in the district; multiply by district Hindu share
+ * to recover fraction of total district population. State aggregate
+ * is provided for fallback at non-district scopes. ~25 years stale;
+ * geographic rank order is structurally stable, absolute shares may
+ * have shifted modestly. See docs/caste-data.md.
+ */
+export type HinduCasteShares = {
+  nair: number
+  ezhava: number
+  brahmin: number
+  nadar: number
+  viswakarma: number
+  barber: number
+  sc: number
+  st: number
+  other: number
+}
+
+export const casteByDistrictMeta = casteByDistrictJson as {
+  year: number
+  source: string
+  sourceMethodology: string
+  denominator: string
+  note: string
+  districts: Record<string, HinduCasteShares>
+  stateAggregate: HinduCasteShares
 }
 
 export type BeltDef = {

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react"
 import { IconCheck } from "@tabler/icons-react"
 
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+import { DemographicsPanel } from "@/components/demographics-panel"
 import { HistoricalChart } from "@/components/historical-chart"
 import { PastWinners } from "@/components/past-winners"
 import { cn } from "@/lib/utils"
@@ -113,11 +114,16 @@ export function ConstituencySection({ constituency }: Props) {
           />
         )}
       </div>
-      <div className="mx-auto w-full max-w-md rounded-lg border bg-muted/40 p-4">
-        <HistoricalChart
-          constituencyNumber={constituency.constituencyNumber}
-          highlightAlliance={highlightAlliance}
+      <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2">
+        <DemographicsPanel
+          scope={{ kind: "ac", acNumber: constituency.constituencyNumber }}
         />
+        <div className="rounded-lg border bg-muted/40 p-4">
+          <HistoricalChart
+            constituencyNumber={constituency.constituencyNumber}
+            highlightAlliance={highlightAlliance}
+          />
+        </div>
       </div>
     </div>
   )
