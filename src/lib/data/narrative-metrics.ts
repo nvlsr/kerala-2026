@@ -262,6 +262,32 @@ export function getPerACWinner2026(): Map<number, keyof AllianceShares> {
   return out
 }
 
+/**
+ * BJP party share in a given year. Used by the Arc 3 trajectory
+ * chart to plot 2016 → 2021 → 2026 BJP share per AC.
+ */
+export function getBJPShareInYear(
+  acNumber: number,
+  year: 2011 | 2016 | 2021
+): number | null {
+  const hist = getHistoricalFor(acNumber)
+  if (!hist) return null
+  const election = hist.elections.find(
+    (e) => e.year === year && e.type === "general"
+  )
+  if (!election) return null
+  // 2021 includes NOTA in denominator (matches Python script
+  // asymmetry — see shares2021Of). 2011/2016 historical data is
+  // similar in structure; treat all historical years the same way.
+  let total = 0
+  let bjp = 0
+  for (const cand of election.candidates) {
+    total += cand.votes
+    if (cand.party === BJP_PARTY) bjp += cand.votes
+  }
+  return total === 0 ? 0 : (bjp / total) * 100
+}
+
 /** Statewide vote-weighted summary stats. Used in sanity checks
  *  and copy. Mean here is constituency-equal across the 140 ACs. */
 export function getStatewideSummary(): {
