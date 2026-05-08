@@ -3,6 +3,7 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
+  Cell,
   ReferenceLine,
   XAxis,
   YAxis,
@@ -147,35 +148,17 @@ export function Histogram({
             }}
           />
         )}
-        <Bar
-          dataKey="count"
-          fill={fill}
-          radius={[3, 3, 0, 0]}
-          shape={(props: unknown) => {
-            const p = props as {
-              x: number
-              y: number
-              width: number
-              height: number
-              payload: { binEnd: number }
-            }
+        <Bar dataKey="count" fill={fill} radius={[3, 3, 0, 0]}>
+          {data.map((d, i) => {
             const useNegative =
               fillNegative != null &&
               divergeAt != null &&
-              p.payload.binEnd <= divergeAt
+              d.binEnd <= divergeAt
             return (
-              <rect
-                x={p.x}
-                y={p.y}
-                width={p.width}
-                height={p.height}
-                fill={useNegative ? fillNegative : fill}
-                rx={3}
-                ry={3}
-              />
+              <Cell key={i} fill={useNegative ? fillNegative : fill} />
             )
-          }}
-        />
+          })}
+        </Bar>
       </BarChart>
     </ChartContainer>
   )

@@ -1,4 +1,4 @@
-import { Bar, BarChart, CartesianGrid, ReferenceLine, XAxis, YAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, Cell, ReferenceLine, XAxis, YAxis } from "recharts"
 
 import {
   ChartContainer,
@@ -120,30 +120,11 @@ export function ComparisonBar({
             }
           />
         )}
-        <Bar
-          dataKey="mean"
-          radius={[4, 4, 0, 0]}
-          shape={(props: unknown) => {
-            const p = props as {
-              x: number
-              y: number
-              width: number
-              height: number
-              payload: Group
-            }
-            return (
-              <rect
-                x={p.x}
-                y={p.y}
-                width={p.width}
-                height={p.height}
-                fill={p.payload.color ?? "var(--primary)"}
-                rx={4}
-                ry={4}
-              />
-            )
-          }}
-        />
+        <Bar dataKey="mean" radius={[4, 4, 0, 0]}>
+          {groups.map((g, i) => (
+            <Cell key={i} fill={g.color ?? "var(--primary)"} />
+          ))}
+        </Bar>
       </BarChart>
     </ChartContainer>
   )
