@@ -91,23 +91,39 @@ The cluster is real and concentrated, but it doesn't extrapolate. A statewide Hi
 
 **Section type: Mechanism**
 
-> **Kottayam** · 9 ACs · 5 grew (+60.2pp) · 1 shrank (−1.2pp) · 3 withdrew (−26.9pp) · **net +32.1pp**
+> **Strategy impact (Kottayam)** · 3 treated ACs · BJP Δ **+59.5pp** / NDA aggregate Δ **+48pp** · vs continuity baseline ~0pp/AC across 3 untreated controls
+>
+> *District context: 9 ACs total — 3 treated (candidate-led probes), 3 continuity (BJP fielded both years, no marquee), 3 ceded to BDJS / Twenty 20. District-net BJP Δ = +32.1pp.*
 
-Kottayam is the clearest example of selective probing. The district contains **both** some of BJP's largest gains in 2026 **and** some of its largest withdrawals — within nine constituencies. That is not uniform ideological expansion; it is targeted experimentation.
+Kottayam is the canonical district for "selective candidate-led probes." BJP didn't expand district-wide. It applied a specific strategic move — fielding a marquee candidate — in 3 of the district's 9 ACs and let the rest go either to alliance partners or to no-effort continuity.
 
-Aggressive new fielding in three seats — and in two of them, BJP took the NDA slot back from its alliance partner BDJS:
+The full per-seat picture, sorted by what BJP did:
 
-- **[Poonjar](/explore?seat=101)** — BJP +25.1pp. P.C. George (5-cycle Poonjar incumbency under different colours before joining BJP). BDJS had held the NDA slot at 2.1% in 2021; BJP took it back. **NDA aggregate +23pp.**
-- **[Pala](/explore?seat=93)** — BJP +18.2pp. Shone George, Catholic candidate. BJP already had the slot in 2021 (7.9%); this is BJP roughly tripling its own base.
-- **[Vaikom](/explore?seat=95)** — BJP +16.2pp. BDJS had held the NDA slot at 9.4% in 2021; BJP took it back. **NDA aggregate +6.8pp.**
+| AC | 2026 NDA candidate (party) | Marquee? | NDA slot 2021 → 2026 | Hindu | Christ | Muslim | BJP Δ | NDA Δ | Mechanism |
+|---|---|:---:|---|---:|---:|---:|---:|---:|---|
+| **Poonjar** | P.C. George (BJP) | ✓ Christian | KJS / BDJS → BJP | 42% | 42% | 16% | **+25.1pp** | +23.0pp | Marquee + candidate defection (P.C. George brought his ~30% KJS personal vote into BJP — most of the headline Δ is arithmetic) |
+| **Pala** | Shone George (BJP) | ✓ Christian | BJP → BJP | 37% | 52% | 10% | **+18.2pp** | **+18.2pp** | Marquee + organic growth — cleanest test case of the strategy |
+| **Vaikom** | K. Ajith (BJP) | ✗ | BDJS → BJP | 72% | 24% | 4% | **+16.2pp** | +6.8pp | Slot-rotation only (no marquee; BJP-as-vehicle unlocked the underlying base BDJS had been suppressing) |
+| Puthuppally | Raveendranath Vakathanam (BJP) | ✗ | BJP → BJP | 49% | 49% | 2% | +0.2pp | +0.2pp | Continuity (untreated control) |
+| Changanassery | B. Radhakrishna Menon (BJP) | ✗ | BJP → BJP | 46% | 43% | 11% | +0.5pp | +0.5pp | Continuity (untreated control) |
+| Kanjirappally | George Kurian (BJP) | ✓ Christian | BJP → BJP | 46% | 43% | 11% | −1.2pp | −1.2pp | Marquee both years (Alphons Kannamthanam in 2021) — bump already priced in |
+| **Kottayam** | P. Anilkumar (BDJS) | n/a | BJP → BDJS | 50% | 41% | 9% | **−7.1pp** | +1.5pp | Slot ceded to BDJS |
+| **Kaduthuruthy** | Suresh Ettikunnel (BDJS) | n/a | BJP → BDJS | 53% | 44% | 3% | **−8.9pp** | +1.0pp | Slot ceded to BDJS |
+| **Ettumanoor** | Athira D. Nair (T20) | n/a | BJP → T20 | 49% | 45% | 6% | **−10.9pp** | −0.3pp | Slot ceded to T20 |
 
-Full withdrawals from three others:
+Five things this table makes visible that the bullet form did not:
 
-- **[Ettumanoor](/explore?seat=96)** — BJP withdrew (−10.9pp); BDJS picked up the slot
-- **[Kaduthuruthy](/explore?seat=94)** — BJP withdrew (−8.9pp); BDJS picked up the slot
-- **[Kottayam](/explore?seat=97)** — BJP withdrew (−7.1pp); BDJS picked up the slot
+1. **Pala is the cleanest test case** of the candidate-led-probe strategy. BJP fielded both years, no slot-rotation noise, no candidate defection. Shone George (Catholic candidate) tripled BJP's Pala base — +18.2pp on both BJP and NDA measures.
 
-The pattern reads as **selective probing with marquee candidates** rather than district-wide expansion. BJP fielded high-profile names in seats it judged winnable, and rotated the slot to BDJS in others. The Kottayam district is the cleanest example in Kerala of the alliance-managing-its-own-portfolio idea: BJP and BDJS each held three of the nine seats, with BJP taking the marquee plays and BDJS holding the rest.
+2. **Poonjar's +25.1pp BJP Δ is largely arithmetic.** P.C. George had ~30% of the Poonjar vote in 2021 under KJS (Kerala Janapaksham Secular). In 2026 he ran under BJP and got 25.1%. He actually *lost* some personal vote in the alliance switch. The +23pp NDA aggregate counts what voters gave to "the NDA candidate" — but most of those voters were already P.C. George supporters who happened to be outside NDA in 2021. So Poonjar tells us about candidate-defection arithmetic more than about NDA's organic growth.
+
+3. **Vaikom shows the slot-rotation effect alone.** No marquee, no candidate defection — just BDJS-to-BJP as the alliance vehicle. NDA aggregate grew +6.8pp; the BJP-only +16.2pp reflects BJP unlocking what BDJS-as-vehicle had been suppressing.
+
+4. **Kanjirappally is the breaking case for "marquee = gain."** George Kurian (BJP) is a marquee Christian; Alphons Kannamthanam (BJP, former Union MoS Tourism) ran in 2021. So BJP had marquee Christians both years. The −1.2pp shrink reflects Kerala Congress (M)'s strong Catholic-vote dominance there — even a marquee Christian BJP can't break in. The marquee bump is real but already priced into the 2021 baseline.
+
+5. **The 3 continuity seats are the natural untreated control.** Puthuppally, Changanassery, Kanjirappally have similar Christian-belt religious composition to the treated seats (43–49% Christian) but BJP didn't deploy a *new* marquee or rotate the slot. Mean BJP Δ ≈ −0.2pp/AC — essentially zero. That's what BJP's Kottayam looks like *without* the candidate-led-probe strategy.
+
+The right way to read the strategy's effect-size is the treated/control gap: **+19.8pp/AC** where applied vs **−0.2pp/AC** where not applied. The 3 ceded seats are a different strategic move (slot rotation to allies), not a control for the probe strategy.
 
 > **Going in.** In interviews leading up to the election, Rajeev Chandrasekhar framed BJP's approach as candidate-quality-first. The Kottayam slate is consistent with that. Christian outreach was a multi-year backdrop — a 10-day *Sneha Yathra* in 2025[^1], a "micro-minority" status framing for Christians in early 2026[^2] — and Christian candidates were fielded prominently in central-Kerala mixed-religion seats.
 
@@ -115,23 +131,9 @@ The pattern reads as **selective probing with marquee candidates** rather than d
 
 [Supporting chart: Contest-entry vs organic expansion trajectories across 2016 → 2021 → 2026 for top 11 BJP gainers. Dashed = contest-entry activations from a near-zero 2021 base; solid = organic multi-cycle expansion.]
 
-A key distinction within these gains: most are **alliance slot-rotations**, not BJP entering empty terrain. Of the top 11 BJP gainers across all districts, 6 had BDJS holding the NDA slot in 2021 (Poonjar, Varkala, Vaikom, Paravur, Kundara, Thavanur). BJP took the slot back and, in three of those (Poonjar, Varkala, Vaikom), substantially exceeded what BDJS had done. Two seats — Thalassery and Devikulam — were true contest-entry from a zero NDA base. The remaining three (Thiruvalla, Karunagappally, Pala) show genuine multi-cycle organic BJP growth from a non-zero 2021 base.
-
-This nuance matters: BJP's "contest entries" weren't mostly stepping into empty terrain. They were taking back NDA slots that allies had been holding, often with marquee candidates. That fits the alliance-managing-its-portfolio reading rather than a simple breakout-expansion reading.
-
 ### Religion mix doesn't separate the gain seats from the withdrawal seats
 
-One reading the data does *not* support is that BJP's Christian-belt gains reflect Christian-Muslim demographic anxiety. The most striking gain seats all have low Muslim share — Pala (Muslim 10%), Thiruvalla (4%), Vaikom (4%), Devikulam (7%) — and the seats where BJP **withdrew** within Kottayam have nearly identical religious composition to the gain seats:
-
-| Seat | Christian % | Muslim % | BJP move |
-|---|---:|---:|---|
-| Pala | 52% | 10% | **gained** +18pp |
-| Kaduthuruthy | 44% | 3% | **withdrew** −8.9pp |
-| Ettumanoor | 45% | 6% | **withdrew** −10.9pp |
-| Kottayam | 41% | 9% | **withdrew** −7.1pp |
-| Puthuppally (stable) | 49% | 2% | flat |
-
-If religious mix were driving the BJP shift, these seats should have moved together. They didn't. The only thing distinguishing the gain seats from the withdrawal seats is **candidate availability** — Pala had Shone George, Poonjar had P.C. George, Thiruvalla had Anoop Antony. Kaduthuruthy / Ettumanoor / Kottayam didn't have marquee Christian picks, so BJP ceded those slots to BDJS.
+The table above makes the falsification visceral: Pala (gained +18pp) and Kaduthuruthy (withdrew −8.9pp) have nearly identical religious composition (52% vs 44% Christian; 10% vs 3% Muslim). Same for Ettumanoor (withdrew, 45% Christian) and Pala (gained, 52% Christian). If religious mix were driving the BJP shift, these seats should have moved together. They didn't. The only thing distinguishing the gain seats from the withdrawal seats is **candidate availability** — Pala had Shone George, Poonjar had P.C. George, Thiruvalla (in adjacent Pathanamthitta district) had Anoop Antony. Kaduthuruthy / Kottayam / Ettumanoor didn't have marquee Christian picks, so BJP ceded those slots to BDJS or T20.
 
 The Munambam-style Christian-Muslim flashpoint is real but localized — it played out specifically in coastal Ernakulam (Vypin, Paravur), where it fed Section 4's Twenty 20 alliance switch, not the central-Kerala BJP gains discussed here. The Section 3 pattern is candidate-led, not religion-mix-led.
 
@@ -216,7 +218,8 @@ If the same regional-cluster + alliance-vehicle pattern repeats in 2031, the 202
 - **Per-district bucket numbers** are computed from `data/kerala-2026.json` + `data/scraped-2021/` for each AC, summed by district. Statewide totals (60 grew / 12 shrank / 26 withdrew / +0.18pp) are from `docs/narrative-cards/bjp-ac-growth.md` to maintain consistency with the source card's threshold conventions.
 - **The "Why a pivot" subsection in Section 1** is the thesis-supporting move. Hindu-share gradient falsification (β=+0.098, p=0.213) is now framed as the *reason* BJP would have shifted strategy — not just a counter to a press claim.
 - **Heading style:** "District: pattern" per agreement. Section 2 uses "Trivandrum belt" since one of the 3 wins (Chathannoor) sits in Kollam district, not Trivandrum. The belt is defined explicitly.
-- **Section 3 (Kottayam) reframes "contest-entry" as "BJP-for-BDJS slot rotation."** Most of the so-called "contest entries" were actually BJP taking back the NDA slot from BDJS, not entering empty terrain. Verified per-seat against 2021 data: 6 of 8 had BDJS in 2021 at 2-9% share. Only Thalassery and Devikulam were true zero-NDA-base entries.
+- **Section 3 (Kottayam) headline shifted from district-level to treated-seats-only.** The strategy's effect-size is best measured on the 3 treated seats (+59.5pp BJP / +48pp NDA), not the district-net (+32.1pp), which averages the strategy with the alliance's withdrawal moves and continuity seats. Treated/control gap: +19.8pp/AC where applied vs −0.2pp/AC across 3 untreated continuity controls (Puthuppally, Changanassery, Kanjirappally).
+- **Section 3 unified table** consolidates what were three separate displays (gains list + withdrawals list + religion-mix sub-table) into one ordered table covering all 9 Kottayam ACs with religious composition + mechanism column. Surfaces several nuances bullet-form hid: Pala is the cleanest test case (no slot-rotation/defection noise); Poonjar's headline +25.1pp is largely candidate-defection arithmetic (P.C. George brought ~30% KJS personal vote into BJP); Vaikom is pure slot-rotation effect (no marquee); Kanjirappally is the breaking case for "marquee = gain" (BJP fielded marquee Christians both years).
 - **Section 4 (Ernakulam) is T20-only**, with two distinct mechanisms surfaced explicitly: **alliance switch** (T2P fielded as an independent party in 8 Ernakulam ACs in 2021 with shares up to 28%; those votes flipped to NDA when T20 was inducted in Jan 2026 — Kunnathunad is the extreme case where the +20pp NDA "gain" is mostly arithmetic from the alliance switch) and **genuine substitution** (Thripunithura, Angamaly, Piravom — where T20 came in fresh in 2026 with no 2021 base, and produced real alliance-vehicle expansion). The second mechanism is the actual test of NDA's strategic-pivot thesis. Earlier "T20 had no Ernakulam presence in 2021" claim was wrong; corrected after canonicalizing 2021 data.
 - **What got dropped from the prior version:** the trajectory chart now sits inside Section 3 rather than as its own section. Manjeshwar callout, "weak UDF candidates" framing, BDJS sub-paragraph in Section 4. Sub-demographic factors compressed into one sentence.
 - **What got added:** Trivandrum belt (15 ACs) instead of district (14). Slot-rotation framing in Section 3. Two-mechanism framing for Ernakulam (alliance switch vs genuine substitution) in Section 4. Thripunithura now the standout genuine-substitution case (replacing the previously-incorrect Kunnathunad standout claim).
