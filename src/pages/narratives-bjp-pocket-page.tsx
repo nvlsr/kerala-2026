@@ -253,25 +253,14 @@ export function NarrativesBJPPocketPage() {
             </li>
           </ul>
           <p>
-            The "weak UDF candidates" reading common in
-            post-election commentary is consistent with the gap,
-            but it has the structure of a label applied to the
-            outcome rather than an independently observable factor.
-            Without pre-election evidence of candidate weakness,
-            we can't promote it to a primary explanation.
-          </p>
-          <p>
             <strong>
               Did BJP grow generally wherever the Hindu population
               was higher across Kerala?
             </strong>{" "}
-            The data says no. Once we account for district-level
-            differences, the relationship is statistically weak
-            (β = +0.098, p = 0.213). What we actually find is a{" "}
-            <em>cluster</em> — 3 specific wins concentrated in
-            Trivandrum-area Hindu-heavy seats — not a Kerala-wide
-            pattern of "more Hindu → more BJP." The distinction
-            matters for prediction: a cluster doesn't extrapolate.
+            No — once we account for district-level differences,
+            the relationship collapses (β = +0.098, p = 0.213).
+            What we have is a <em>cluster</em>, not a gradient — and
+            a cluster doesn't extrapolate.
           </p>
         </NarrativeSection>
 
@@ -321,42 +310,42 @@ export function NarrativesBJPPocketPage() {
                   <th className="px-3 py-2">Bucket</th>
                   <th className="px-3 py-2">What happened</th>
                   <th className="px-3 py-2 text-right whitespace-nowrap">
-                    Δ-share contribution
+                    VS delta
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y">
                 <tr>
                   <td className="px-3 py-2 align-top font-medium">
-                    1. Grew
+                    Grew
                   </td>
                   <td className="px-3 py-2 align-top text-muted-foreground">
                     ~60 ACs where BJP gained share
                   </td>
                   <td className="px-3 py-2 align-top text-right whitespace-nowrap font-mono text-emerald-700 dark:text-emerald-500">
-                    +349.6pp
+                    +350pp
                   </td>
                 </tr>
                 <tr>
                   <td className="px-3 py-2 align-top font-medium">
-                    2a. Shrank but still ran
+                    Shrank but still ran
                   </td>
                   <td className="px-3 py-2 align-top text-muted-foreground">
-                    ~10–15 ACs (e.g. BJP 15% → 10%)
+                    ~12 ACs (e.g. BJP 15% → 10%)
                   </td>
                   <td className="px-3 py-2 align-top text-right whitespace-nowrap font-mono text-red-700 dark:text-red-500">
-                    ~−47pp
+                    −47pp
                   </td>
                 </tr>
                 <tr>
                   <td className="px-3 py-2 align-top font-medium">
-                    2b. Withdrew entirely
+                    Withdrew entirely
                   </td>
                   <td className="px-3 py-2 align-top text-muted-foreground">
                     26 ACs (e.g. BJP 22% → 0%)
                   </td>
                   <td className="px-3 py-2 align-top text-right whitespace-nowrap font-mono text-red-700 dark:text-red-500">
-                    ~−262pp
+                    −262pp
                   </td>
                 </tr>
                 <tr className="bg-muted/30">
@@ -364,7 +353,7 @@ export function NarrativesBJPPocketPage() {
                     Net
                   </td>
                   <td className="px-3 py-2 align-top text-muted-foreground">
-                    +40pp constituency-equal sum → vote-weighted to
+                    +40pp constituency-equal → vote-weighted
                   </td>
                   <td className="px-3 py-2 align-top text-right whitespace-nowrap font-mono font-semibold">
                     +0.18pp
@@ -374,27 +363,14 @@ export function NarrativesBJPPocketPage() {
             </table>
           </figure>
           <p>
-            Counts are roughly symmetric: 11 ACs gained ≥10pp, 10
-            lost ≥10pp, 26 withdrew. Withdrawals account for most
-            of the negative side — bucket 2b alone is ≈ -262pp out
-            of the -309pp total negative.
-          </p>
-          <p>
-            One thing worth flagging up front:{" "}
             <strong>
-              BJP-the-party was flat (+0.18pp), but NDA-the-alliance
-              modestly grew
+              BJP-the-party was flat (+0.18pp), but
+              NDA-the-alliance modestly grew (+1.83pp).
             </strong>{" "}
-            (+1.83pp statewide, 12.5% → 14.3%). The difference is
-            <PartyLink party="Twenty 20 Party">
-              {" "}Twenty 20
-            </PartyLink>{" "}
-            and{" "}
-            <PartyLink party="Bharath Dharma Jana Sena">
-              BDJS
-            </PartyLink>
-            : T20's expansion in particular added ~1.6pp to the
-            alliance footprint without showing up in BJP's column.
+            Of that 1.83pp, ~1.6pp came from{" "}
+            <PartyLink party="Twenty 20 Party">Twenty 20</PartyLink>
+            's expansion — alliance growth that doesn't show up in
+            BJP's column.
           </p>
           <p>
             <strong>Two distinct withdrawal patterns.</strong> The
@@ -432,11 +408,6 @@ export function NarrativesBJPPocketPage() {
               recovered only about half of BJP's previous share.
             </li>
           </ul>
-          <p>
-            The blended mean (NDA 9.6% → 9.8% across all 26
-            withdrawal ACs) averages over these opposite directions
-            and is misleading on its own.
-          </p>
           <p>
             <strong>What likely paid off, and what didn't.</strong>{" "}
             Two things look like clear wins. First, Twenty 20's
@@ -541,7 +512,7 @@ export function NarrativesBJPPocketPage() {
         <NarrativeSection
           heading="Most big BJP gains are candidate-driven, not durable brand expansion"
           sectionType="exploratory"
-          layout="stacked"
+          layout="visual-right"
           visual={
             <TrajectoryLines
               cycles={[2016, 2021, 2026]}
