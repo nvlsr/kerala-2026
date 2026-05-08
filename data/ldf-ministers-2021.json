@@ -1,0 +1,28 @@
+{
+  "_doc": "Second Pinarayi Vijayan ministry (2021-2026). 21 cabinet members including the Chief Minister. Source: Wikipedia 'Second Vijayan ministry' article + cross-checked against The Hindu / Onmanorama coverage. Used by scripts/narrative-a6-cabinet-collapse.ts to test the narrative claim '13 of 21 LDF ministers were defeated'. Note: Kadakampally Surendran (lost Kazhakoottam 2026) is excluded — he was 2016 cabinet, not 2021.",
+  "source": "https://en.wikipedia.org/wiki/Second_Vijayan_ministry",
+  "compiledFor": "2026-05-07",
+  "ministers": [
+    { "name": "Pinarayi Vijayan", "party": "CPI(M)", "portfolio": "Chief Minister", "constituency": "Dharmadam", "constituencyNumber": 12 },
+    { "name": "K. Rajan", "party": "CPI", "portfolio": "Revenue and Housing", "constituency": "Ollur", "constituencyNumber": 66 },
+    { "name": "Roshy Augustine", "party": "KC(M)", "portfolio": "Water Resources", "constituency": "Idukki", "constituencyNumber": 91 },
+    { "name": "K. Krishnankutty", "party": "JD(S)", "portfolio": "Electricity", "constituency": "Chittur", "constituencyNumber": 58 },
+    { "name": "A. K. Saseendran", "party": "NCP(SP)", "portfolio": "Forest and Wildlife", "constituency": "Elathur", "constituencyNumber": 26 },
+    { "name": "Kadannappalli Ramachandran", "party": "C(S)", "portfolio": "Registration, Museums", "constituency": "Kannur", "constituencyNumber": 11 },
+    { "name": "K. B. Ganesh Kumar", "party": "KC(B)", "portfolio": "Transport", "constituency": "Pathanapuram", "constituencyNumber": 120 },
+    { "name": "V. Abdurahiman", "party": "NSC", "portfolio": "Sports, Wakf, Haj, Minority Welfare", "constituency": "Tanur", "constituencyNumber": 44 },
+    { "name": "G. R. Anil", "party": "CPI", "portfolio": "Food and Civil Supplies", "constituency": "Nedumangad", "constituencyNumber": 130 },
+    { "name": "K. N. Balagopal", "party": "CPI(M)", "portfolio": "Finance", "constituency": "Kottarakkara", "constituencyNumber": 119 },
+    { "name": "R. Bindu", "party": "CPI(M)", "portfolio": "Higher Education, Social Justice", "constituency": "Irinjalakuda", "constituencyNumber": 70 },
+    { "name": "J. Chinchu Rani", "party": "CPI", "portfolio": "Animal Husbandry, Dairy", "constituency": "Chadayamangalam", "constituencyNumber": 122 },
+    { "name": "M. B. Rajesh", "party": "CPI(M)", "portfolio": "Local Self Govt, Excise, Parliamentary Affairs", "constituency": "Thrithala", "constituencyNumber": 49 },
+    { "name": "P. A. Mohammed Riyas", "party": "CPI(M)", "portfolio": "Public Works, Tourism", "constituency": "Beypore", "constituencyNumber": 29 },
+    { "name": "P. Prasad", "party": "CPI", "portfolio": "Agriculture", "constituency": "Cherthala", "constituencyNumber": 103 },
+    { "name": "O. R. Kelu", "party": "CPI(M)", "portfolio": "SC/ST/BC Welfare", "constituency": "Mananthavady", "constituencyNumber": 17 },
+    { "name": "P. Rajeeve", "party": "CPI(M)", "portfolio": "Law, Industries, Coir", "constituency": "Kalamassery", "constituencyNumber": 77 },
+    { "name": "V. Sivankutty", "party": "CPI(M)", "portfolio": "General Education, Labour", "constituency": "Nemom", "constituencyNumber": 135 },
+    { "name": "V. N. Vasavan", "party": "CPI(M)", "portfolio": "Co-operation, Ports, Devaswoms", "constituency": "Ettumanoor", "constituencyNumber": 96 },
+    { "name": "Veena George", "party": "CPI(M)", "portfolio": "Health, Women and Child Development", "constituency": "Aranmula", "constituencyNumber": 113 },
+    { "name": "Saji Cherian", "party": "CPI(M)", "portfolio": "Fisheries, Culture", "constituency": "Chengannur", "constituencyNumber": 110 }
+  ]
+}
