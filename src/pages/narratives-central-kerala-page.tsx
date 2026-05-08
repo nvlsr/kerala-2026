@@ -4,9 +4,12 @@ import { ChoroplethLegend } from "@/components/charts/choropleth-legend"
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { ScatterWithTrend } from "@/components/charts/scatter-with-trend"
+import { ConfidenceBadge } from "@/components/narratives/confidence-badge"
+import { MethodologyPopover } from "@/components/narratives/methodology-popover"
 import { NarrativeArcBreadcrumb } from "@/components/narratives/narrative-arc-breadcrumb"
 import { NarrativeSection } from "@/components/narratives/narrative-section"
 import { PullQuote } from "@/components/narratives/pull-quote"
+import { SeeAlsoQuestions } from "@/components/narratives/see-also-questions"
 import { TakeawayBox } from "@/components/narratives/takeaway-box"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
@@ -106,15 +109,15 @@ export function NarrativesCentralKeralaPage() {
       subtitle={
         <>
           <NarrativeArcBreadcrumb current={2} />
+          <div className="mt-3">
+            <ConfidenceBadge level="strong" />
+          </div>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
             UDF won 47 of 47 seats across Idukki, Ernakulam,
-            Wayanad, Malappuram, and Kottayam. Christian-heavy ACs
-            added a robust ~3-4pp UDF premium on top of the
-            statewide ~7pp wave. FPTP amplification turned that
-            combined swing into a 102-seat majority.{" "}
-            <strong className="font-medium text-foreground/90">
-              Confidence: Strong.
-            </strong>
+            Wayanad, Malappuram, and Kottayam. Christian-heavy
+            constituencies (ACs) added a robust ~3-4pp UDF premium
+            on top of the statewide ~7pp wave. FPTP amplification
+            turned that combined swing into a 102-seat majority.
           </p>
           <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
             <strong className="font-medium text-foreground/80">
@@ -300,14 +303,18 @@ export function NarrativesCentralKeralaPage() {
             (+7.03pp). No monotonic relationship.
           </p>
           <p>
-            Under district fixed effects, the Muslim-share
-            coefficient on UDF Δshare collapses to β = +0.016
-            (p = 0.795). Within a district, Muslim share has no
-            detectable predictive power. The simple-Pearson signal
-            in the raw data was driven entirely by between-district
-            clustering — primarily Malappuram. Muslim-heavy ACs
-            participated in the LDF→UDF wave at the statewide rate;
-            they didn't supercharge it.
+            Once we account for{" "}
+            <MethodologyPopover term="fixed-effects">
+              district-level differences
+            </MethodologyPopover>
+            , the Muslim-share coefficient on UDF Δshare collapses
+            to β = +0.016 (p = 0.795). Within a district, Muslim
+            share has no detectable predictive power. The
+            simple-Pearson signal in the raw data was driven
+            entirely by between-district clustering — primarily
+            Malappuram. Muslim-heavy ACs participated in the
+            LDF→UDF wave at the statewide rate; they didn't
+            supercharge it.
           </p>
         </NarrativeSection>
 
@@ -324,6 +331,31 @@ export function NarrativesCentralKeralaPage() {
             only one carries constituency-level signal.
           </p>
         </TakeawayBox>
+
+        <SeeAlsoQuestions
+          items={[
+            {
+              id: "udf-gains-christian-heavy",
+              label: "Where did UDF gain most in Christian-heavy seats?",
+              hint: "Direct seat-level evidence on the Christian-belt premium.",
+            },
+            {
+              id: "ldf-collapse-christian-heavy",
+              label: "Where did LDF collapse most in Christian-heavy seats?",
+              hint: "Mirror image of the UDF gains in the same belt.",
+            },
+            {
+              id: "udf-gains-muslim-majority",
+              label: "Where did UDF gain most in Muslim-majority seats?",
+              hint: "Cross-checks the 'minority consolidation' framing.",
+            },
+            {
+              id: "udf-underperformed-christian-heavy",
+              label: "Where did UDF underperform in Christian-heavy seats?",
+              hint: "Negative cases inside the central belt.",
+            },
+          ]}
+        />
 
         <section className="border-t pt-8">
           <h2 className="font-heading mb-4 text-xl font-semibold tracking-tight sm:text-2xl">

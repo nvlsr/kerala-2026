@@ -57,6 +57,51 @@ type IndexEntry = {
 
 let _index: IndexEntry[] | null = null
 
+/**
+ * Generates extra search tokens for parties whose canonical names
+ * differ from common reader abbreviations. Returned tokens are
+ * appended to the party's searchKey so substring match catches
+ * abbreviated forms like "BJP", "KCB", "KC(B)", "INC", "IUML".
+ *
+ * Strategy:
+ * - Split the canonical name on spaces and parens.
+ * - Build initials from each capitalized word ("Kerala Congress" → "KC").
+ * - For parenthetical suffixes, also attach the suffix: "Kerala Congress (B)" → "KCB", "KC(B)".
+ * - Punctuation-stripped variants too ("kc(b)" → also indexable as "kcb").
+ */
+function partyAliases(party: string): string[] {
+  const out = new Set<string>()
+  const lower = party.toLowerCase()
+  // Strip-punct variant of the full party
+  out.add(lower.replace(/[().,]/g, ""))
+  // Initials of capitalized words (excluding parenthetical content)
+  const main = party.replace(/\([^)]*\)/g, "").trim()
+  const initials = main
+    .split(/\s+/)
+    .filter((w) => /^[A-Z]/.test(w))
+    .map((w) => w[0])
+    .join("")
+    .toLowerCase()
+  if (initials.length >= 2) out.add(initials)
+  // Parenthetical suffix attached to initials: "Kerala Congress (B)" → "kcb" + "kc(b)"
+  const parenMatch = party.match(/\(([^)]+)\)/)
+  if (parenMatch && initials.length >= 2) {
+    const inner = parenMatch[1].trim()
+    const suffix = inner.toLowerCase().replace(/\s+/g, "")
+    out.add(initials + suffix) // kcb / cpimarxist
+    out.add(`${initials}(${suffix})`) // kc(b)
+    // Also generate "first letter only" version for multi-letter
+    // parentheticals so CPI(M) (canonical "(Marxist)") still matches
+    // user queries like "cpim" or "cpi(m)".
+    const firstLetter = inner[0]?.toLowerCase()
+    if (firstLetter && firstLetter !== suffix) {
+      out.add(initials + firstLetter) // cpim
+      out.add(`${initials}(${firstLetter})`) // cpi(m)
+    }
+  }
+  return [...out]
+}
+
 function buildIndex(): IndexEntry[] {
   const entries: IndexEntry[] = []
 
@@ -95,17 +140,26 @@ function buildIndex(): IndexEntry[] {
   }
 
   // ─── Parties (deduplicated by canonical party name) ─────────────────
+  // Each party also gets common abbreviation variants appended to its
+  // searchKey so users typing "KCB", "KC(B)", "KCM", "BJP", "INC", etc.
+  // surface the canonical "Kerala Congress (B)" / "Indian National
+  // Congress" entries. The substring-match search would otherwise miss
+  // these (e.g. "kcb" isn't a substring of "kerala congress (b)").
   const seenParties = new Set<string>()
   for (const c of constituencies) {
     for (const cand of c.candidates) {
       if (cand.isNota) continue
       if (seenParties.has(cand.party)) continue
       seenParties.add(cand.party)
+      const aliases = partyAliases(cand.party)
+      const searchKey = [cand.party.toLowerCase(), ...aliases]
+        .filter(Boolean)
+        .join(" ")
       entries.push({
         type: "party",
         primaryText: cand.party,
         url: `/explore?party=${encodeURIComponent(cand.party)}`,
-        searchKey: cand.party.toLowerCase(),
+        searchKey,
         id: `party-${cand.party}`,
       })
     }

@@ -4,9 +4,12 @@ import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import { ChoroplethLegend } from "@/components/charts/choropleth-legend"
 import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { Histogram } from "@/components/charts/histogram"
+import { ConfidenceBadge } from "@/components/narratives/confidence-badge"
+import { MethodologyPopover } from "@/components/narratives/methodology-popover"
 import { NarrativeArcBreadcrumb } from "@/components/narratives/narrative-arc-breadcrumb"
 import { NarrativeSection } from "@/components/narratives/narrative-section"
 import { PullQuote } from "@/components/narratives/pull-quote"
+import { SeeAlsoQuestions } from "@/components/narratives/see-also-questions"
 import { TakeawayBox } from "@/components/narratives/takeaway-box"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
@@ -57,16 +60,16 @@ export function NarrativesAntiLDFPage() {
       subtitle={
         <>
           <NarrativeArcBreadcrumb current={1} />
+          <div className="mt-3">
+            <ConfidenceBadge level="strong" />
+          </div>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
             LDF lost approximately 7pp of vote share across nearly
-            every constituency. The drop was effectively
+            every constituency (AC). The drop was effectively
             religion-blind, route-blind, and cabinet-status-blind:
             the press's "Sabarimala backlash" and "minister-targeted
             anti-incumbency" framings don't show up at the
-            constituency level.{" "}
-            <strong className="font-medium text-foreground/90">
-              Confidence: Strong.
-            </strong>
+            constituency level.
           </p>
           <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
             <strong className="font-medium text-foreground/80">
@@ -201,10 +204,13 @@ export function NarrativesAntiLDFPage() {
             gold-cladding scandal and lingering 2018 anger. The data
             shows the opposite: the three geographic Sabarimala-route
             ACs (Aranmula, Konni, Ranni) had a smaller LDF loss
-            ({routeMean.toFixed(1)}pp) than matched Hindu-majority
-            controls (-7.3pp). NDA share also fell in those ACs
-            (-2.3pp vs +1.9pp in matched controls), the wrong sign
-            for the "Hindu shift to BJP" hypothesis.
+            ({routeMean.toFixed(1)}pp) than{" "}
+            <MethodologyPopover term="matched-controls">
+              matched Hindu-majority controls
+            </MethodologyPopover>{" "}
+            (-7.3pp). NDA share also fell in those ACs (-2.3pp vs
+            +1.9pp in matched controls), the wrong sign for the
+            "Hindu shift to BJP" hypothesis.
           </p>
           <p>
             What does happen: the three Devaswom-related ministers
@@ -336,6 +342,26 @@ export function NarrativesAntiLDFPage() {
             ideologically realigned ones.
           </p>
         </TakeawayBox>
+
+        <SeeAlsoQuestions
+          items={[
+            {
+              id: "cpim-declines",
+              label: "Where did CPIM lose the most vote share?",
+              hint: "LDF's main party — the seat-level shape of the wave.",
+            },
+            {
+              id: "ldf-at-risk-wins",
+              label: "Where is LDF losing ground in winning seats?",
+              hint: "Holds with a much-reduced cushion vs 2021.",
+            },
+            {
+              id: "udf-gap-closers",
+              label: "Where is UDF gaining ground in losing seats?",
+              hint: "The receiving end of the vote-flow accounting.",
+            },
+          ]}
+        />
 
         <section className="border-t pt-8">
           <h2 className="font-heading mb-4 text-xl font-semibold tracking-tight sm:text-2xl">

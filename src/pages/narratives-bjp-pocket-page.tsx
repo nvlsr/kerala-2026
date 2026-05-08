@@ -7,9 +7,12 @@ import {
   TrajectoryLines,
   type TrajectorySeries,
 } from "@/components/charts/trajectory-lines"
+import { ConfidenceBadge } from "@/components/narratives/confidence-badge"
+import { MethodologyPopover } from "@/components/narratives/methodology-popover"
 import { NarrativeArcBreadcrumb } from "@/components/narratives/narrative-arc-breadcrumb"
 import { NarrativeSection } from "@/components/narratives/narrative-section"
 import { PullQuote } from "@/components/narratives/pull-quote"
+import { SeeAlsoQuestions } from "@/components/narratives/see-also-questions"
 import { TakeawayBox } from "@/components/narratives/takeaway-box"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
@@ -33,6 +36,8 @@ const CONTEST_ENTRY_AC_LABELS: Array<{
   { ac: 13, label: "Thalassery", color: "rgb(255, 195, 100)" },
   { ac: 88, label: "Devikulam", color: "rgb(255, 215, 130)" },
   { ac: 78, label: "Paravur", color: "rgb(255, 230, 160)" },
+  { ac: 123, label: "Kundara", color: "rgb(255, 165, 60)" },
+  { ac: 47, label: "Thavanur", color: "rgb(255, 185, 80)" },
 ]
 
 const ORGANIC_AC_LABELS: Array<{
@@ -115,25 +120,24 @@ export function NarrativesBJPPocketPage() {
         { label: "Narratives", href: "/narratives" },
         { label: "BJP geographic pocket" },
       ]}
-      title="BJP grew +0.18pp statewide. The same number moved by ±25pp at the AC level."
+      title="BJP grew +0.18pp statewide. The same number moved by ±25pp at the constituency level."
       subtitle={
         <>
           <NarrativeArcBreadcrumb current={3} />
+          <div className="mt-3">
+            <ConfidenceBadge level="moderate-strong" />
+          </div>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
             BJP did not become a statewide challenger in Kerala in
             2026. But beneath a nearly flat statewide vote share,
             the party reorganized its electoral geography —
-            withdrawing from some constituencies, concentrating
-            resources in others, and building stronger pockets in
-            South Kerala and a few candidate-driven Central Kerala
-            seats. The Trivandrum belt looks like BJP's clearest
-            long-term base area, while some Central Kerala gains
-            may depend heavily on individual personalities rather
-            than durable ideological expansion.{" "}
-            <strong className="font-medium text-foreground/90">
-              Confidence: Moderate-strong (descriptive / mixed
-              mechanism).
-            </strong>
+            withdrawing its candidate from some constituencies (ACs),
+            concentrating resources in others, and building stronger
+            pockets in South Kerala and a few candidate-driven
+            Central Kerala seats. The Trivandrum belt looks like
+            BJP's clearest long-term base area, while some Central
+            Kerala gains may depend heavily on individual
+            personalities rather than durable ideological expansion.
           </p>
           <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
             <strong className="font-medium text-foreground/80">
@@ -188,32 +192,56 @@ export function NarrativesBJPPocketPage() {
           caption="NDA vote share in 2026. The 3 BJP wins (Nemom, Chathannoor, Kazhakoottam) are the darkest spots and are outlined; all three are in or adjacent to Trivandrum district."
         >
           <p>
-            BJP captured 3 seats in 2026: <strong>Nemom</strong>{" "}
-            (Rajeev Chandrasekhar, ~5,000-vote margin),{" "}
-            <strong>Chathannoor</strong> (B.B. Gopakumar, 4,402),
-            and <strong>Kazhakoottam</strong> (V. Muraleedharan,
-            428 — effectively a coin flip). All three are in
-            high-Hindu-share Trivandrum-area seats; mean Hindu
-            share of the 3 wins is 70.2% vs 53.4% statewide.
+            Three seats:{" "}
+            <Link
+              to="/explore?seat=135"
+              className="font-medium text-foreground underline-offset-2 hover:underline"
+            >
+              Nemom
+            </Link>{" "}
+            (Rajeev Chandrasekhar, ~5,000),{" "}
+            <Link
+              to="/explore?seat=126"
+              className="font-medium text-foreground underline-offset-2 hover:underline"
+            >
+              Chathannoor
+            </Link>{" "}
+            (B.B. Gopakumar, 4,402), and{" "}
+            <Link
+              to="/explore?seat=132"
+              className="font-medium text-foreground underline-offset-2 hover:underline"
+            >
+              Kazhakoottam
+            </Link>{" "}
+            (V. Muraleedharan, 428 — effectively a coin flip). All
+            three are in high-Hindu-share Trivandrum-area seats;
+            mean Hindu share of the 3 wins is 70.2% vs 53.4%
+            statewide.
           </p>
           <p>
             UDF underperformed in those 3 seats: mean UDF Δshare
-            +0.6pp vs +5.8pp in matched Hindu-majority controls.
-            About a 5pp UDF underperformance gap. The Onmanorama
-            "weak UDF candidates" framing has empirical support
-            here — though candidate quality is observed
-            indirectly, through outcomes rather than directly.
+            +0.6pp vs +5.8pp in{" "}
+            <MethodologyPopover term="matched-controls">
+              matched Hindu-majority controls
+            </MethodologyPopover>
+            . About a 5pp UDF underperformance gap. The "weak UDF
+            candidates" reading has empirical support here, though
+            candidate quality is observed indirectly — through
+            outcomes rather than directly.
           </p>
           <p>
-            The "BJP grew systematically more in Hindu-heavy
-            seats" gradient claim weakens substantially under
-            district fixed effects (β = +0.098, p = 0.213). The 3
-            specific wins are real and concentrated, but the
-            broader gradient is not robustly detectable. The
-            accurate framing: <em>the 3 wins are in Hindu-heavy
-            Trivandrum-area seats</em> (descriptive cluster),
-            not <em>BJP grew more wherever Hindu share was
-            higher</em> (the gradient claim).
+            A natural follow-up: did BJP grow more wherever the
+            Hindu population was higher across Kerala? The data
+            says no. Once we account for{" "}
+            <MethodologyPopover term="fixed-effects">
+              district-level differences
+            </MethodologyPopover>
+            , the relationship is statistically weak (β = +0.098,
+            p = 0.213). What we actually find is a <em>cluster</em>:
+            3 specific wins concentrated in Trivandrum-area
+            Hindu-heavy seats, not a Kerala-wide pattern of "more
+            Hindu → more BJP". The distinction matters for
+            prediction — a cluster doesn't extrapolate.
           </p>
         </NarrativeSection>
 
@@ -246,24 +274,34 @@ export function NarrativesBJPPocketPage() {
             BJP fielded in 2021, withdrew in 2026) to +25.1pp
             (Poonjar — BJP didn't seriously contest in 2021,
             P.C. George contested in 2026). 11 ACs gained ≥10pp;
-            26 ACs were BJP cessions to NDA allies (BDJS, KC(B),
-            Twenty20).
+            26 ACs saw BJP withdraw entirely, ceding ground to its
+            two NDA allies — Twenty 20 and BDJS (Bharath Dharma Jana
+            Sena, the SNDP-linked NDA partner).
           </p>
           <p>
-            Sum of positive Δs: +349.6pp across 129 ACs. Sum of
-            negative Δs: -308.7pp across 136 ACs. The two roughly
-            cancel — yielding the +0.18pp statewide aggregate.
-            BJP fielded fewer candidates in 2026 (98 of 140) than
-            in 2021 (115 of 140): the cession strategy was
-            deliberate alliance-management.
+            Across all 140 ACs, BJP gained a sum of{" "}
+            <strong>+349.6pp</strong> in seats where it grew, and
+            lost <strong>-308.7pp</strong> in seats where it shrank.
+            The two roughly cancel — yielding the +0.18pp statewide
+            aggregate. BJP fielded fewer candidates in 2026 (98 of
+            140) than in 2021 (115 of 140): the withdrawal pattern
+            was deliberate alliance-management, not collapse.
           </p>
           <p>
-            Cession ACs went from a mean NDA-aggregate of 9.6% to
-            9.8% — alliance allies absorbed BJP's withdrawn vote
+            Withdrawal ACs went from a mean NDA-aggregate of 9.6%
+            to 9.8% — alliance allies absorbed BJP's withdrawn vote
             share roughly 1:1. The aggregate stayed flat in those
-            ACs. So the cessions are alliance-management, not
+            ACs. So the withdrawals are alliance-management, not
             voter-loss. But "held" doesn't mean "leveraged" — NDA
             in those ACs was at ~10% and stayed ~10%.
+          </p>
+          <p>
+            One note against expectations: <strong>Manjeswar</strong>{" "}
+            (BJP's traditional north-tip seat) shows light red, not
+            blue — i.e. BJP slipped slightly there. The pocket
+            strategy in 2026 was decidedly southern; the
+            traditional Karnataka-border foothold did not feature
+            in the expansion plan.
           </p>
         </NarrativeSection>
 
@@ -289,18 +327,19 @@ export function NarrativesBJPPocketPage() {
               ariaLabel="BJP gains and cessions summed by district"
             />
           }
-          caption="Sum of positive (gains) and negative (cessions) BJP party-share Δs per district. Ernakulam was the biggest cession zone; Kottayam shows the biggest gains AND large cessions."
+          caption="Sum of positive (gains) and negative (withdrawals) BJP party-share Δs per district. Ernakulam was the biggest withdrawal zone; Kottayam shows the biggest gains AND large withdrawals."
         >
           <p>
-            Ernakulam was the biggest cession zone — BJP withdrew
-            from 7+ Christian-mixed ACs there, ceding ground to
-            Twenty20 (Kitex-backed NDA partner) and KC(B). Mean
-            Ernakulam BJP Δ: -4.40pp.
+            Ernakulam was the biggest withdrawal zone — BJP pulled
+            its candidate from 7+ Christian-mixed ACs there, ceding
+            ground almost entirely to Twenty 20 (BDJS picked up
+            ground elsewhere, but in Ernakulam Twenty 20 was the
+            destination). Mean Ernakulam BJP Δ: -4.40pp.
           </p>
           <p>
             Kottayam shows the most extreme variance: massive
             gains (Poonjar +25, Pala +18, Vaikom +16) AND large
-            cessions (Ettumanoor -10.9, Kaduthuruthy -8.9). The
+            withdrawals (Ettumanoor -10.9, Kaduthuruthy -8.9). The
             district-mean +3.6pp Δ averages a strategic-withdrawal
             pattern over an aggressive-fielding pattern; the
             average is meaningless without context.
@@ -325,18 +364,18 @@ export function NarrativesBJPPocketPage() {
               yUnit="%"
               yDecimals={0}
               yDomain={[0, 35]}
-              ariaLabel="BJP party-share trajectory 2016 → 2021 → 2026 for top 9 gainer ACs, color-coded by contest-entry vs organic"
+              ariaLabel="BJP party-share trajectory 2016 → 2021 → 2026 for top 11 gainer ACs, color-coded by contest-entry vs organic"
             />
           }
-          caption="BJP party-share trajectory across three cycles. Dashed lines = contest-entry activations (BJP fielded seriously in 2026 from a near-zero 2021 base). Solid lines = organic expansion."
+          caption="BJP party-share trajectory across three cycles for the top 11 gainers. Dashed orange/yellow lines = contest-entry activations (Poonjar, Varkala, Vaikom, Thalassery, Devikulam, Paravur, Kundara, Thavanur — most start near 0% in 2021 and overlap on the x-axis). Solid blue lines = the 3 organic expansions (Thiruvalla, Karunagappally, Pala)."
         >
           <p>
-            Of the top 12 BJP gainers (Δ ≥ +9.6pp): 8 are
+            Of the top 11 BJP gainers (Δ ≥ +9.6pp): 8 are
             <strong> contest-entry activations</strong> — BJP
             fielding seriously where it had previously stood
             aside. Poonjar (0% → 25%), Varkala (0% → 20%), Vaikom
             (0% → 16%), Thalassery (0% → 16%), Devikulam,
-            Paravur, Kundara, Thavanur. Only 3-4 are{" "}
+            Paravur, Kundara, Thavanur. Only 3 are{" "}
             <strong>organic expansion</strong>: Thiruvalla
             (16% → 31%), Karunagappally (7% → 19%), Pala (8% → 26%
             with the Shone George candidacy).
@@ -354,10 +393,21 @@ export function NarrativesBJPPocketPage() {
             effect.
           </p>
           <p>
-            Organic expansion (Thiruvalla, Karunagappally) is
-            stronger evidence for durable BJP advance. Those ACs
-            doubled or tripled an existing base — suggesting brand
-            traction beyond the specific candidate.
+            Even the "organic" cases aren't pure brand expansion.
+            Anoop Antony at Thiruvalla is a BJP heavyweight with
+            his own Christian-leadership network — the +14.5pp
+            gain is hard to fully separate from him personally.
+            The cleaner distinction we can draw: Thiruvalla had a
+            16% baseline to grow from (doubling), while Poonjar
+            grew from a 0% base (pure activation). The 2031 test
+            is whether Thiruvalla holds 20%+ even with a different
+            candidate.
+          </p>
+          <p>
+            Karunagappally is the cleanest organic case in the
+            list — no marquee candidate, but a 7% → 19% climb that
+            looks like genuine ground-level brand drift in a
+            Hindu-mixed seat.
           </p>
         </NarrativeSection>
 
@@ -377,6 +427,36 @@ export function NarrativesBJPPocketPage() {
           </p>
         </TakeawayBox>
 
+        <SeeAlsoQuestions
+          items={[
+            {
+              id: "bjp-gains",
+              label: "Where did BJP gain the most vote share?",
+              hint: "Table of the top BJP gainers across all 140 ACs.",
+            },
+            {
+              id: "bjp-declines",
+              label: "Where did BJP lose the most vote share?",
+              hint: "The withdrawal pattern as a sortable seat table.",
+            },
+            {
+              id: "bjp-closest-wins",
+              label: "Where did BJP win by the smallest margin?",
+              hint: "Surfaces the Kazhakoottam coin flip.",
+            },
+            {
+              id: "nda-growth-hindu-heavy",
+              label: "Where did NDA grow the most in Hindu-heavy seats?",
+              hint: "Direct evidence on the Hindu-share gradient question.",
+            },
+            {
+              id: "bjp-closest-hindu-heavy",
+              label: "Where did BJP come closest to winning in Hindu-heavy seats?",
+              hint: "Trivandrum belt expansion in detail.",
+            },
+          ]}
+        />
+
         <section className="border-t pt-8">
           <h2 className="font-heading mb-4 text-xl font-semibold tracking-tight sm:text-2xl">
             What would weaken this conclusion
@@ -393,7 +473,7 @@ export function NarrativesBJPPocketPage() {
             </li>
             <li>
               <strong className="font-medium text-foreground">
-                Cession ACs showing NDA-aggregate decline to ≤5%
+                Withdrawal ACs showing NDA-aggregate decline to ≤5%
                 in 2031
               </strong>{" "}
               — would suggest the alliance-management strategy
