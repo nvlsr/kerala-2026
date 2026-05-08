@@ -115,7 +115,7 @@ export function NarrativesCentralKeralaPage() {
     >
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
-          heading="The 47-of-47 sweep"
+          heading="UDF won every seat in 5 central-Kerala districts"
           layout="visual-right"
           visual={
             <div className="space-y-2">
@@ -157,7 +157,7 @@ export function NarrativesCentralKeralaPage() {
         </NarrativeSection>
 
         <NarrativeSection
-          heading="The Christian-belt premium"
+          heading="Christian-heavy ACs gave UDF an extra ~3-4pp on top of the wave"
           layout="stacked"
           visual={
             <ScatterWithTrend

@@ -64,7 +64,7 @@ export function NarrativesAntiLDFPage() {
     >
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
-          heading="The wave was uniform"
+          heading="LDF lost ~7pp in nearly every constituency"
           layout="visual-right"
           visual={
             <div className="space-y-2">
@@ -103,7 +103,7 @@ export function NarrativesAntiLDFPage() {
         </NarrativeSection>
 
         <NarrativeSection
-          heading="Distribution shape: a tight bell with a small fat tail"
+          heading="75% of ACs lost between 0 and 10pp"
           layout="stacked"
           visual={
             <Histogram
@@ -234,7 +234,7 @@ export function NarrativesAntiLDFPage() {
         </NarrativeSection>
 
         <NarrativeSection
-          heading="Where the LDF loss landed"
+          heading="The lost LDF vote went mostly to UDF, except in Trivandrum"
           visual={
             <ComparisonBar
               groups={[

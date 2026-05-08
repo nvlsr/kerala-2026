@@ -115,11 +115,16 @@ export function NarrativesBJPPocketPage() {
       title="BJP grew +0.18pp statewide. The same number moved by ±25pp at the AC level."
       subtitle={
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-          The aggregate hides a major geographic reshuffle: BJP
-          added 14-25pp of share in several central-Kerala
-          mixed-religion seats while ceding 10-22pp in 26 ACs where
-          it withdrew entirely (yielding to NDA allies BDJS, KC(B),
-          Twenty20). Statewide gains and cessions roughly cancel.{" "}
+          BJP did not become a statewide challenger in Kerala in
+          2026. But beneath a nearly flat statewide vote share, the
+          party reorganized its electoral geography — withdrawing
+          from some constituencies, concentrating resources in
+          others, and building stronger pockets in South Kerala and
+          a few candidate-driven Central Kerala seats. The
+          Trivandrum belt looks like BJP's clearest long-term base
+          area, while some Central Kerala gains may depend heavily
+          on individual personalities rather than durable
+          ideological expansion.{" "}
           <strong className="font-medium text-foreground/90">
             Confidence: Moderate-strong (descriptive / mixed
             mechanism).
@@ -129,7 +134,7 @@ export function NarrativesBJPPocketPage() {
     >
       <PageMain className="space-y-10 py-6 pb-12">
         <NarrativeSection
-          heading="The 3 wins"
+          heading="BJP did not break out statewide; the 3 wins are a Trivandrum-area cluster"
           layout="visual-right"
           visual={
             <div className="space-y-2">
@@ -198,7 +203,7 @@ export function NarrativesBJPPocketPage() {
         </NarrativeSection>
 
         <NarrativeSection
-          heading="The reshuffle hidden by the aggregate"
+          heading="Beneath the flat aggregate, BJP reorganized its electoral map"
           layout="visual-left"
           visual={
             <div className="space-y-2">
@@ -247,7 +252,7 @@ export function NarrativesBJPPocketPage() {
         </NarrativeSection>
 
         <NarrativeSection
-          heading="Geography of BJP's reshuffle by district"
+          heading="BJP retreated from Christian-mixed Ernakulam and pushed into Trivandrum"
           layout="stacked"
           visual={
             <StackedBarByCategory
@@ -287,7 +292,7 @@ export function NarrativesBJPPocketPage() {
         </NarrativeSection>
 
         <NarrativeSection
-          heading="Contest-entry vs organic expansion"
+          heading="Most big BJP gains are candidate-driven, not durable brand expansion"
           layout="stacked"
           visual={
             <TrajectoryLines
