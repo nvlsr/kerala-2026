@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 
-export type ConfidenceLevel = "strong" | "moderate-strong" | "moderate"
+export type ConfidenceLevel = "strong" | "tentative"
 
 const STYLES: Record<
   ConfidenceLevel,
@@ -8,24 +8,16 @@ const STYLES: Record<
 > = {
   strong: {
     label: "Strong",
-    classes:
-      "border-emerald-500/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400",
+    classes: "border-foreground/20 text-muted-foreground",
     tooltip:
       "Multiple independent tests converge; effect is robust to specification changes.",
   },
-  "moderate-strong": {
-    label: "Moderate-strong",
+  tentative: {
+    label: "Tentative",
     classes:
-      "border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-400",
+      "border-amber-500/40 text-amber-700 dark:text-amber-500",
     tooltip:
-      "Pattern is clear, but extrapolation or causal mechanism is partial.",
-  },
-  moderate: {
-    label: "Moderate",
-    classes:
-      "border-amber-500/30 bg-amber-500/5 text-amber-700 dark:text-amber-400",
-    tooltip:
-      "Suggestive evidence; sensitive to data resolution or specification choices.",
+      "Suggestive evidence; sensitive to data resolution, specification choices, or extrapolation beyond the observed cycle.",
   },
 }
 
@@ -35,10 +27,12 @@ type Props = {
 }
 
 /**
- * Compact confidence indicator used near arc-page titles. Replaces
- * the longer "Confidence: ... (descriptive / mixed mechanism)" text
- * with a sharper visual signal. Methodology nuance is in
- * /narratives/methodology — this badge just establishes the level.
+ * Compact confidence indicator used near arc-page titles. Two
+ * levels: Strong (default; muted neutral) and Tentative (subtle
+ * amber). Strong is the catalog norm — it's not meant to draw the
+ * eye. Tentative is reserved for findings whose extrapolation,
+ * mechanism, or specification stability is genuinely uncertain;
+ * those should *deserve* the reader's attention.
  */
 export function ConfidenceBadge({ level, className }: Props) {
   const meta = STYLES[level]

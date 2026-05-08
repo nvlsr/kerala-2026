@@ -73,7 +73,7 @@ export function NarrativesAntiLDFPage() {
           </p>
           <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
             <strong className="font-medium text-foreground/80">
-              Surprise from this arc:
+              What's surprising here:
             </strong>{" "}
             the Sabarimala-route effect had the wrong sign — LDF lost
             <em> less</em> in pilgrim-route ACs than in matched
@@ -88,7 +88,7 @@ export function NarrativesAntiLDFPage() {
           sectionType="foundational"
           layout="visual-right"
           visual={
-            <div className="space-y-2">
+            <div className="mx-auto max-w-sm space-y-2">
               <ChoroplethMap
                 valueByAC={ldfDeltaMap}
                 colorScale="diverging"

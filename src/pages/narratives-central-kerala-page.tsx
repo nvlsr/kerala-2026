@@ -121,7 +121,7 @@ export function NarrativesCentralKeralaPage() {
           </p>
           <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
             <strong className="font-medium text-foreground/80">
-              Surprise from this arc:
+              What's surprising here:
             </strong>{" "}
             UDF didn't win mostly on tight margins. Median UDF
             winning margin was 12.19pp; LDF's was 6.99pp. The
@@ -137,7 +137,7 @@ export function NarrativesCentralKeralaPage() {
           sectionType="foundational"
           layout="visual-right"
           visual={
-            <div className="space-y-2">
+            <div className="mx-auto max-w-sm space-y-2">
               <ChoroplethMap
                 valueByAC={udfDeltaMap}
                 colorScale="diverging"
