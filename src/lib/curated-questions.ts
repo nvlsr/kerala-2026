@@ -582,17 +582,6 @@ export const curatedQuestions: CuratedQuestion[] = [
     },
     tags: { theme: "reservation" },
   },
-  {
-    id: "udf-flips-sc-reserved",
-    question: "Where did UDF gain ground in SC reserved seats?",
-    filters: {
-      alliance: "UDF",
-      reservation: "SC",
-      result: "all",
-      sort: { column: "shareDelta", dir: "desc" },
-    },
-    tags: { alliance: "UDF", theme: "reservation" },
-  },
 ]
 
 /** Stable display order for party filter pills (grouped by alliance: NDA, UDF, LDF). */
