@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react"
 
-import { FlowsTeaser } from "@/components/flows-teaser"
+import { NarrativesTeaser } from "@/components/narratives-teaser"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { QuestionCard } from "@/components/question-card"
@@ -99,7 +99,7 @@ export function QuestionsPage() {
           </ul>
         )}
       </PageMain>
-      <FlowsTeaser />
+      <NarrativesTeaser />
     </PageShell>
   )
 }

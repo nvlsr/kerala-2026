@@ -34,6 +34,29 @@ const ReligionMapPage = lazy(() =>
   }))
 )
 
+// Narratives — public-facing analytical surface with three arc pages.
+// Top page summarises; arc pages carry choropleths + supporting charts.
+const NarrativesPage = lazy(() =>
+  import("@/pages/narratives-page").then((m) => ({
+    default: m.NarrativesPage,
+  }))
+)
+const NarrativesAntiLDFPage = lazy(() =>
+  import("@/pages/narratives-anti-ldf-page").then((m) => ({
+    default: m.NarrativesAntiLDFPage,
+  }))
+)
+const NarrativesCentralKeralaPage = lazy(() =>
+  import("@/pages/narratives-central-kerala-page").then((m) => ({
+    default: m.NarrativesCentralKeralaPage,
+  }))
+)
+const NarrativesBJPPocketPage = lazy(() =>
+  import("@/pages/narratives-bjp-pocket-page").then((m) => ({
+    default: m.NarrativesBJPPocketPage,
+  }))
+)
+
 /** Minimal skeleton — keeps the page footprint stable while the chunk
  *  loads. No spinner: the chunks are small and on a warm cache the
  *  swap is imperceptible; a spinner would be more flicker than help. */
@@ -71,6 +94,19 @@ export function App() {
           <Route path="/drifts" element={<DriftsPage />} />
           <Route path="/belts" element={<BeltsPage />} />
           <Route path="/religion-map" element={<ReligionMapPage />} />
+          <Route path="/narratives" element={<NarrativesPage />} />
+          <Route
+            path="/narratives/anti-ldf-wave"
+            element={<NarrativesAntiLDFPage />}
+          />
+          <Route
+            path="/narratives/central-kerala"
+            element={<NarrativesCentralKeralaPage />}
+          />
+          <Route
+            path="/narratives/bjp-pocket"
+            element={<NarrativesBJPPocketPage />}
+          />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
