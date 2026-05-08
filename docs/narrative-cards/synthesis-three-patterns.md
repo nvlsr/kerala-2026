@@ -4,8 +4,8 @@
 
 This card is a synthesis spine for the catalog. Individual evidence chapters are:
 
-- **Pattern 1 (anti-LDF wave):** A1 (religion-blind LDF collapse), A2 (Sabarimala-route doesn't add a separate effect), A6 (cabinet status doesn't add a separate effect)
-- **Pattern 2 (Central Kerala UDF surge):** A1 (Christian-belt premium with district-FE robustness), A8 (47-of-47 sweep across 5 districts)
+- **Pattern 1 (anti-LDF wave):** A1 (religion-blind LDF collapse), A2 (Sabarimala-route doesn't add a separate effect), A6 (cabinet status doesn't add a separate effect), `ldf-shallow-distribution.md` (the full distribution shape backing "uniform"), `anti-ldf-flow.md` (where the LDF loss landed)
+- **Pattern 2 (Central Kerala UDF surge):** A1 (Christian-belt premium with district-FE robustness), A8 (47-of-47 sweep across 5 districts), `vote-efficiency.md` (FPTP amplification of the Central-5 swing into 102 seats)
 - **Pattern 3 (BJP geographic pocket):** A3 (3 wins in Hindu-heavy Trivandrum-area + UDF underperformance), B3+B4 (district-level Nair-belt overlaps with NDA concentration, exploratory)
 
 > **A note on inference:** This synthesis describes constituency-level patterns aggregated across the catalog. Each pattern's underlying mechanism is multi-causal and not fully resolvable from constituency vote totals alone. We avoid voter-level claims; the language throughout is constrained to AC-level outcomes and direction-of-effect tests against press claims.
@@ -75,9 +75,9 @@ Mechanism note: this pattern is concentrated AND reshuffled, not gradient. The 3
 
 | Pattern | Primary cards | Secondary cards |
 |---|---|---|
-| 1: Anti-LDF wave | A1, A2, A6 | A8 (geographic distribution of the wave) |
-| 2: Central Kerala UDF surge | A1, A8 | A2 (Sabarimala falsification clarifies the geography is Christian-belt, not Hindu-route) |
-| 3: BJP geographic pocket | A3, BJP AC-growth | B3+B4 (district-level Nair-belt overlap, exploratory) |
+| 1: Anti-LDF wave | A1, A2, A6, ldf-shallow-distribution, anti-ldf-flow | A8 (geographic distribution of the wave) |
+| 2: Central Kerala UDF surge | A1, A8, vote-efficiency | A2 (Sabarimala falsification clarifies the geography is Christian-belt, not Hindu-route), anti-ldf-flow (Central-5 absorbed 110% of LDF loss) |
+| 3: BJP geographic pocket | A3, bjp-ac-growth | B3+B4 (district-level Nair-belt overlap, exploratory), anti-ldf-flow (South Kerala 45% NDA absorption) |
 
 For methodology and data:
 - `scripts/narrative-regression.py` — regression with district / region FE
