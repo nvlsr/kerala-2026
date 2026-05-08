@@ -2,6 +2,8 @@
 
 **Thesis: Kerala 2026 is best read as three distinct patterns laid over the same map. The press post-mortems collapse them into one "minority consolidation defeated LDF" narrative; the constituency-level data shows them as separate phenomena that happen to align in some places and diverge in others.** Anti-LDF anti-incumbency was the broad universal driver (~7pp uniform); a Christian-belt UDF coalition-share premium added ~3-4pp on top in Central Kerala (with a partly KC(M)-base-movement mechanism); and a geographically concentrated BJP advance captured 3 wins in Trivandrum-area Hindu-heavy seats where UDF candidate selection was weak. Reading these three layers together — instead of as one bloc story — is what the AC-level data buys you.
 
+**Confidence: Interpretive synthesis** — the three patterns are each grounded in their own evidence cards (cited below). The synthesis itself is a framework for reading the catalog, not a separate empirical finding. The pattern-decomposition is testable in 2031 (do the same three patterns recur, or do they merge / diverge differently?).
+
 This card is a synthesis spine for the catalog. Individual evidence chapters are:
 
 - **Pattern 1 (anti-LDF wave):** A1 (religion-blind LDF collapse), A2 (Sabarimala-route doesn't add a separate effect), A6 (cabinet status doesn't add a separate effect), `ldf-shallow-distribution.md` (the full distribution shape backing "uniform"), `anti-ldf-flow.md` (where the LDF loss landed)

@@ -4,6 +4,8 @@
 
 **Verdict (geography-overlap framing): The geography of high Nair-share (concentrated in Trivandrum + adjacent districts) overlaps with the geography of NDA concentration (BJP's 3 wins, all in Trivandrum). District-level Nair share has a weak negative within-region association with UDF Δshare (β=-0.272, p=0.044 with region FE — see methodology). Ezhava-share-of-total has no detectable within-region association with any alliance Δ. We do not separate caste-voter behavior from regional clustering: with caste data district-level only, district fixed effects absorb caste perfectly, leaving no within-district variation to test against.**
 
+**Confidence: Exploratory** — district-level caste data + 25-year-old survey baseline + ecological-fallacy concerns mean we cannot distinguish caste-voter behavior from regional clustering. Reframed as geography-overlap observation. Do not cite as evidence for caste-voter behavior at AC granularity.
+
 This card uses Hindu sub-community data at **district level**, attributed uniformly to ACs within each district. The original framing tried to derive AC-level voter-behavior conclusions; we now report only what the district-level resolution supports.
 
 ## The consensus claims

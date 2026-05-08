@@ -2,6 +2,8 @@
 
 **Verdict (confirms with sharper numbers than the consensus): The "Central Kerala kingmaker" framing is consistent with the data and the magnitudes are larger than the press headlines suggested. UDF won 47 of 47 seats across Idukki, Ernakulam, Wayanad, Malappuram, and Kottayam — a complete sweep of those five districts. The pre-poll Manorama-C Voter projection of "UDF 33 of 53 in Central Kerala" was a substantial underestimate; UDF won 47 of 47 in the Central-5 reading, or 55 of 65 in the wider 7-district reading. 46% of UDF's 102-seat majority came from just 5 districts representing 34% of all ACs.**
 
+**Confidence: Strong (descriptive)** — the geographic facts are robust (district-level seat tallies are exact). The "kingmaker" framing is interpretive — every coalition's majority depends on some regional bloc; what's distinctive here is the magnitude (46% from 5 districts), not the structural dependency.
+
 > **A note on inference:** This card describes seat-level outcomes and district-level vote-share aggregates. "Central Kerala swung to UDF" is shorthand for the constituency-level pattern; the underlying mechanism overlaps with A1 (Christian-belt premium, partly KC(M) base movement, partly cross-community shift) and is separately analysed there. A8 is primarily descriptive geography.
 
 This card uses 2026 winners + 2021/2026 alliance Δ shares per district. See `scripts/narrative-a8-central-kerala.ts` to reproduce.
@@ -91,11 +93,11 @@ UDF's path to 102 seats (a 71-seat majority threshold + 31 seats safety margin):
 
 **46% of UDF's 102-seat majority came from just 5 districts containing 34% of Kerala's ACs.** The kingmaker framing is empirically validated by this concentration ratio: Central Kerala wasn't merely a strong UDF region, it was the *primary numerical source* of the majority.
 
-If we strip Central-5 from the count: UDF would have 55 seats (102 - 47), well below the 71-seat majority threshold. **Without Central Kerala, UDF doesn't form government.** The other 9 districts give UDF a plurality (55 vs LDF's 35) but no majority. The "kingmaker" label is literal.
+If we strip Central-5 from the count: UDF would have 55 seats (102 - 47), enough to remain the largest bloc but below the 71-seat majority threshold. **Central Kerala provided nearly half of UDF's eventual majority margin, making it the single most important regional bloc in the coalition's path to power.** The arithmetic dependency is real, but the "kingmaker" framing is interpretive — every majority coalition depends on some region for its majority margin; what's distinctive here is the *magnitude* (46% from 5 districts representing 34% of ACs), not the structural existence of the dependency.
 
 ## The opinionated reframe
 
-> **Central Kerala wasn't just the swing region — it was the entire majority. UDF swept 47 of 47 seats across Idukki, Ernakulam, Wayanad, Malappuram, and Kottayam, supplying 46% of its 102-seat majority. Pre-poll surveys flagged the right geography but underestimated the wave by 23-38pp. Strip those 47 wins and UDF doesn't form government.**
+> **Central Kerala provided nearly half of UDF's majority margin. UDF swept 47 of 47 seats across Idukki, Ernakulam, Wayanad, Malappuram, and Kottayam — supplying 46% of its 102-seat majority from 34% of the state's ACs. Pre-poll surveys flagged the right geography but underestimated the wave's magnitude by 23-38pp. Stripped of those 47 wins, UDF would still be Kerala's largest bloc (55 seats) but below the 71-seat majority threshold.**
 
 The story isn't "UDF won everywhere"; it's "UDF won absolutely everywhere in 5 specific districts, while remaining merely competitive in the rest of the state." The geography of the 2026 sweep is concentrated, not diffused.
 

@@ -2,6 +2,8 @@
 
 **Verdict: We do not detect a route-targeted LDF penalty at the constituency level. The three geographic Sabarimala-route ACs (Aranmula, Konni, Ranni) showed a smaller LDF Δshare loss than matched Hindu-majority controls (-3.6pp vs -7.3pp; differential +3.7pp), and NDA share fell in those ACs (-2.3pp vs +1.9pp). Both directions are inconsistent with the press framing's predictions. What we DO detect: the three Devaswom-related ministers' seats showed ~4pp larger LDF loss than matched controls (-11.5pp vs -7.2pp). That's consistent with a minister-incumbency penalty applied to high-visibility cabinet members, not with a Hindu-issue effect on geographic pilgrim-corridor ACs.** The press framing collapses two distinct phenomena (geographic route effect / cabinet-member effect); the constituency-level data carries signal only for the second.
 
+**Confidence: Strong (with small-sample caveat)** — direction of the route-effect differential is robust (wrong sign in 3 of 4 nested treatment groups), but n=3-5 in each treatment group precludes formal significance testing. The minister-effect finding is sample-bounded to the 3 Devaswom-related ministers; A6 shows it doesn't generalise to the full cabinet.
+
 > **A note on inference:** This card analyses constituency-level patterns. The 6 ACs in our treatment groups are small samples; we report differentials but cannot apply formal hypothesis tests at meaningful power with n=3-5. The directional evidence (LDF lost LESS in the geographic group, NDA also lost share) is what the data shows, but readers should weight 3-AC means accordingly.
 
 This card uses AC-level religion data (2025 projection of Census 2011) and 2021/2026 alliance share deltas. See `scripts/narrative-a2-sabarimala.ts` to reproduce.

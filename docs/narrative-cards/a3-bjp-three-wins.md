@@ -2,6 +2,8 @@
 
 **Verdict (descriptively confirms; gradient claim weakens with controls): The 3 BJP wins (Nemom, Chathannoor, Kazhakoottam) are descriptively in high-Hindu-share Trivandrum-area seats (mean Hindu share 70%, vs 53% statewide), and UDF underperformed badly in those 3 seats (+0.6pp UDF Δ vs +7.3pp statewide; differential ~6-7pp). All 4 named Christian BJP candidates (Shone George, P.C. George, George Kurian, Anoop Antony) lost. The "BJP grew most in Hindu-heavy seats" gradient claim survives simple correlation but weakens substantially under district fixed effects (β=+0.098, p=0.213) — meaning the 3 specific wins are real and concentrated, but the broader Hindu-share-mediated growth pattern is not robustly detectable. A separate finding: 3 of the 4 named Christian BJP candidates added +14 to +25pp to BJP's local share without winning. Statewide flat (+0.18pp) hides large AC-level reorganisation.**
 
+**Confidence: Moderate-strong (descriptive on the 3 wins; weakened gradient claim under controls)** — the 3-AC concentration thesis and the Christian-candidate win-rate finding are descriptively well-supported. The gradient claim ("BJP grew systematically more in Hindu-heavy seats") loses statistical significance under district fixed effects.
+
 This card uses 2021/2026 vote-share data, party-level + alliance-level Δ, and AC religion mix. See `scripts/narrative-a3-bjp-three-wins.ts` to reproduce.
 
 > **A note on inference:** "BJP wins came in Hindu-heavy seats" is a descriptive claim about 3 specific ACs — supported. "BJP wins came BECAUSE the seats are Hindu-heavy" is a causal claim that requires more than the 3-AC observation. The within-district BJP-share-vs-Hindu-share gradient weakens under controls (district FE p=0.213), suggesting the 3 wins are better explained as a Trivandrum-area cluster (geographic, not religion-share-mediated) plus UDF candidate-selection failure.
@@ -100,7 +102,7 @@ The Onmanorama "weak UDF candidates" framing has empirical support. Specifically
 - **Chathannoor (UDF +1.1pp)**: muted UDF growth in a +7pp wave year; insufficient to challenge a +7.6pp NDA surge.
 - **Kazhakoottam (UDF +4.6pp)**: closest to baseline UDF growth, but Kadakampally's LDF collapse (-10.7pp) flowed disproportionately to NDA (+6.6pp) and only partially to UDF, allowing BJP to flip by 428 votes.
 
-This is a UDF candidate-selection failure as much as it's a BJP achievement.
+The pattern is consistent with weak UDF candidate performance contributing materially to the BJP wins. We do not directly observe candidate quality; we observe UDF underperformance relative to matched-Hindu-majority comparator ACs and infer that candidate selection was a contributor.
 
 ## The opinionated reframe
 

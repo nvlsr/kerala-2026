@@ -2,6 +2,8 @@
 
 **Verdict (descriptive): The distribution of LDF Δshare across 140 ACs is tightly clustered (mean -7.43pp, SD 4.47pp, IQR width 5.80pp). 75% of ACs sit in the modest-loss range (-10 to 0pp); only 6 ACs (4.3%) had what we'd call "catastrophic loss" (worse than -15pp). LDF's standard deviation is the smallest of the three alliances (LDF 4.47, UDF 5.65, NDA 5.04) — meaning LDF's loss was the most uniform of the three Δ-distributions; UDF and NDA gains were more variable.** This is consistent with broad anti-incumbency hitting roughly evenly, NOT with a wave-style election that produced concentrated geographic wipeouts. The qualifier: kurtosis is +1.55, meaning the distribution has slightly fatter tails than normal — there ARE outliers worth naming, but the modal range holds.
 
+**Confidence: Strong (descriptive)** — distribution statistics are exact at this granularity; outlier ACs are cross-documented in other cards. The "shallow everywhere" framing follows directly from low SD + tight IQR; the small fat tail is honestly reported via the kurtosis figure.
+
 This card adds rigor to a claim made implicitly in A1, A2, A6, and A8: "LDF lost ~7pp uniformly." We never showed the actual distribution. This card does.
 
 > **A note on inference:** This card is purely descriptive. We characterise the distribution of LDF Δshare without claiming a causal mechanism. "Shallow everywhere" describes the pattern; explanations (uniform anti-incumbency, ceiling effects, party-machinery defense, etc.) remain a separate question.

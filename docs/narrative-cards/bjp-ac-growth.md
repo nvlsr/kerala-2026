@@ -4,6 +4,8 @@
 >
 > The aggregate hides a major geographic reshuffle: BJP added 14-25pp of vote share in several central-Kerala mixed-religion seats (Poonjar, Pala, Thiruvalla, Guruvayoor, Vaikom) while ceding 10-22pp in 26 ACs where it withdrew from the contest entirely, mostly to NDA allies (BDJS, KC(B), Twenty20). Statewide gains and statewide cessions roughly cancel — yielding the +0.18pp aggregate that conventional readings of "BJP didn't break out" rest on.
 
+**Confidence: Moderate-strong (descriptive / mixed mechanism)** — the per-AC vote-share movements are exact. Substantive caveat: a meaningful share of the top-line gains are *contest-entry effects* (BJP fielding seriously in 2026 from a near-zero 2021 base) rather than *organic expansion* of an existing base. We separate these explicitly below; the durability story differs sharply between the two.
+
 This card explores the per-AC distribution of BJP's vote-share movement that the statewide number obscures. Reproduce: `python3 scripts/narrative-bjp-ac-growth.py`.
 
 > **A note on inference:** This card is descriptive — it documents constituency-level BJP vote-share movements without claiming to identify causal mechanisms behind them. Several alternative explanations apply (candidate-personality bumps, alliance-fielding strategy, three-way fragmentation), and we flag them but cannot adjudicate them from constituency vote totals alone.
@@ -120,20 +122,29 @@ ACs binned by religion mix; mean BJP Δshare per bin:
 
 The clearest signal: **BJP grew most in the smaller Hindu ≥ 70% subset** (+5.12pp mean across 10 ACs). The Christian ≥ 30% bin is the most heterogeneous — bin mean is -1.44pp but with massive within-bin variance: BJP added +25pp in Poonjar, +18 in Pala, +15 in Thiruvalla, while losing -22pp in Konni, -10 in Ettumanoor, -9 in Kaduthuruthy. The bin mean averages a strategic-withdrawal pattern over an aggressive-fielding pattern, and the average is meaningless without that context.
 
-## Did 2026 growth come from prior toehold or from zero?
+## Contest-entry effects vs organic expansion
 
-For the 11 ACs with BJP Δshare ≥ +10pp:
+A critical distinction the headline obscures: did BJP's +14-25pp gains come from *expanding an existing base* (organic growth) or from *seriously contesting where it didn't seriously contest before* (contest-entry effects)? These are qualitatively different and have different durability implications. An organic expansion (5% → 18%) suggests the party brand is gaining traction; a contest-entry jump (0% → 25%) is partly the candidate showing up at all.
 
-- Mean BJP share in 2016: 6.7%
-- Mean BJP share in 2021: 2.8% (BJP withdrew from many in 2021 to give space to allies)
-- Mean BJP share in 2026: 18.9%
+For the top 12 BJP gainers (Δshare ≥ +9.6pp), broken out by 2016 / 2021 / 2026 trajectory:
+
+| Type | Definition | n | ACs |
+|---|---|---|---|
+| **Contest-entry activation** | BJP share ≤ 5% in 2021, jumped to 10-25% in 2026 | **8** | Poonjar (0→0→25), Varkala (0→0→20), Vaikom (0→0→16), Thalassery (0→0→16), Devikulam (0→0→14), Paravur (0→0→13), Kundara (0→0→12), Thavanur (0→0→10) |
+| **Organic expansion** | BJP share >5% in 2021, grew further in 2026 | **3** | Thiruvalla (16→16→31), Karunagappally (7→7→19), Pala (4→8→26 — partial: jumped both '21→'26 and benefited from the Shone George candidacy) |
+| **Mixed (organic + activation)** | Existed at low share, then candidate switch / national name | **1** | Guruvayoor (0→0→18 — but with national-name BJP candidate) |
+
+**Two-thirds of the top-tier BJP gains (8 of 12) are contest-entry activations, not organic expansion.** This sharpens the durability story:
+
+- **Contest-entry gains are partly mechanical**: they reflect BJP fielding a serious candidate where it had previously stood aside or fielded a placeholder. P.C. George contesting Poonjar (after a 5-cycle Poonjar incumbency under different colours) is not "BJP brand-building" — it's P.C. George's personal vote registering in the BJP column. The 2031 test: does the Poonjar BJP share hold at 20%+ when a different candidate runs? If not, the gain was personality-attributable.
+- **Organic gains are stronger evidence for durable BJP advance**: Thiruvalla 16% → 31% is BJP doubling its base; Karunagappally 7% → 19% is BJP nearly tripling. These are structurally meaningful even if Anoop Antony specifically isn't the candidate in 2031. The party brand presumably retains *some* of those voters.
 
 | 2016 baseline | n | Interpretation |
 |---|---|---|
 | BJP > 5% in 2016 | 5 of 11 (45%) | Gain built on prior toehold (e.g., Karunagappally 7→7→19, Thiruvalla 16→16→31) |
 | BJP ≤ 5% in 2016 | 6 of 11 (55%) | Gain from near-zero base (e.g., Poonjar 0→0→25, Vaikom 0→0→16) |
 
-A slight majority of the big gains came from near-zero 2016 baselines — meaning the 2026 jump is genuinely new BJP territory, not an extension of an existing toehold. This is the most analytically interesting subset: 6 ACs where BJP went from ~0% to 13-25% in a single cycle, often with high-profile candidates (Vaikom, Poonjar with P.C. George; Devikulam) or candidate switches (Pala with Shone George).
+A slight majority of the big gains came from near-zero 2016 baselines. Combined with the 2021 baseline check above, **the durable-growth subset is small** — perhaps Thiruvalla, Karunagappally, and possibly Pala if the 2026 jump persists past Shone George's candidacy. The other 8-9 of 12 are contest-entry effects whose 2031 status depends on who BJP fields and whether the alliance-management strategy sticks.
 
 ## What this directly shows / what it cannot prove / what would weaken the conclusion
 
@@ -142,7 +153,8 @@ A slight majority of the big gains came from near-zero 2016 baselines — meanin
 - BJP's vote-weighted statewide aggregate moved +0.18pp; the constituency-level distribution ranges from -21.9pp to +25.1pp.
 - BJP was new to 26 ACs in 2026 (didn't field 2021), and withdrew from 26 ACs (fielded 2021, not 2026). Net fielding count: 89 + 9 = 98 in 2026 vs 89 + 26 = 115 in 2021 — BJP fielded *fewer* candidates in 2026 (98 of 140 vs 115 of 140), even as its statewide share crept up.
 - Cession ACs went from mean NDA-aggregate 9.6% to 9.8% — alliance allies absorbed BJP's withdrawn vote share.
-- 6 of 11 BJP big-gainers (Δ ≥ +10pp) came from BJP-near-zero 2016 baselines — these are new footholds, not extensions.
+- 6 of 11 BJP big-gainers (Δ ≥ +10pp) came from BJP-near-zero 2016 baselines — new footholds, not extensions.
+- 8 of 12 top-tier 2021→2026 BJP gainers are *contest-entry activations* (BJP fielded seriously where it had previously stood aside); only 3-4 are *organic expansion* of an existing base.
 
 ### What this does NOT prove
 
