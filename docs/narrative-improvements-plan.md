@@ -37,39 +37,20 @@ Goal: find out which findings survive controls and quantify the KC(M) effect.
 
 ---
 
-## Session 2 — Prose tightening + reframing + synthesis card
+## Session 2 — Prose tightening + reframing + synthesis card ✓ COMPLETE
 
 Goal: incorporate Session 1 findings into the cards, fix language across the board, add the unified thesis.
 
-- [ ] **Add a "What this directly shows / What it does NOT prove" section** to every card (A1, A2, A3, A6, A8, B3+B4). Format:
-  - "What this directly shows" — the constituency-level pattern observed, in inference-disciplined language.
-  - "What it does NOT prove" — voter-level claims, mechanism causality, sub-community effects, etc.
-  - "What would weaken this conclusion" — falsification triggers (booth-level surveys, sub-community geography, multi-cycle 2031 confirmation, etc.).
-
-- [ ] **Single-pass language edit** across all 6 cards:
-  - Replace "Christian voters shifted" → "Christian-heavy constituencies swung"
-  - Replace "no Muslim consolidation" → "Muslim-share variation does not explain differential UDF swing"
-  - Replace "falsified" / "wrong" / "collapses" with confidence-gradient language: "consistent with" / "limited evidence for" / "we do not detect"
-  - Replace "minister-targeting was wrong" → "we do not detect a constituency-level minister penalty beyond the statewide anti-incumbency swing" (A6)
-  - Add the constituency-as-unit disclaimer to each: "Unless otherwise noted, bin means and correlations are constituency-equal: each AC counts once. Statewide aggregate vote-share figures are vote-weighted."
-
-- [ ] **Add KC(M) caveat to A1 + A8** with the magnitude from Session 1's KC(M)-stripped rerun. A1 gets a methodology paragraph; A8 gets a one-paragraph note in the cross-references section.
-
-- [ ] **Demote B3+B4** to exploratory framing:
-  - Retitle: "B3+B4 — district caste-belt geography overlaps with alliance geography (exploratory)"
-  - Reframe verdict: "we do not test caste effects at AC granularity (data is district-level)" — switch from voter-behavior claim to geography-overlap observation.
-  - Add "EXPLORATORY" badge in the verdict line.
-
-- [ ] **Update each card with regression-control results** from Session 1:
-  - A1: add a "with district fixed effects" subsection in the methodology block; report the controlled Christian coefficient.
-  - B3+B4: definitively demote to exploratory based on FE results.
-  - A2/A6/A8: probably unchanged (small-N treatment-control comparisons aren't materially affected by FE), but add a note confirming.
-  - A3: add FE results for the BJP-share growth claim.
-
-- [ ] **Write the synthesis card** `docs/narrative-cards/synthesis-three-patterns.md`:
-  - Top-level claim: "Three overlapping patterns: anti-LDF swing + Central-Kerala UDF coalition surge + BJP geographic pocket."
-  - Cite each as a chapter (A1, A6 → wave; A1, A8 → Central-Kerala; A3 → BJP pocket).
-  - Closing: how the press post-mortems conflate the three.
+- [x] **Added "What this directly shows / What it does NOT prove / What would weaken this conclusion" sections** to all 6 cards.
+- [x] **Single-pass language edit** across all 6 cards: inference-discipline phrasing, confidence gradients, "we do not detect" replaces "falsified" where appropriate, constituency-as-unit disclaimers added.
+- [x] **KC(M) caveat added to A1 + A8** with Session-1 magnitudes (~88% non-KC(M), ~12% KC(M)-mechanical).
+- [x] **B3+B4 demoted to exploratory.** Retitled "district-level Hindu caste-belt geography overlaps with alliance geography (exploratory)". Verdict reframed to geography-overlap rather than voter-behavior claim.
+- [x] **Regression results integrated:**
+  - A1: full FE table added showing Christian effect surviving district FE (β=+0.194, p=0.008) and Muslim effect collapsing.
+  - A3: gradient claim softened with district FE result (p=0.213).
+  - B3+B4: region-FE table shows Nair × UDF Δ barely surviving (p=0.044).
+  - A2, A6, A8: no FE test required (treatment-control / descriptive); language tightened.
+- [x] **Synthesis card written** at `docs/narrative-cards/synthesis-three-patterns.md`. Three-patterns spine: anti-LDF wave (A1/A2/A6) + Central-Kerala UDF surge (A1/A8) + BJP geographic pocket (A3/B3+B4).
 
 ---
 
@@ -111,4 +92,5 @@ Goal: write the most-original analytical card we have, surfacing the +0.18pp agg
 ## Progress log
 
 - 2026-05-07: Plan created.
-- 2026-05-07: **Session 1 complete.** Built regression and KC(M)-isolation Python scripts. Captured numbers in `docs/narrative-improvements-notes-session1.md`. Headline result: A1 strengthens, B3+B4 confirmed weak, A3 gradient claim weakens, KC(M) relabel concern is moot but base-defection is a real ~12% sub-mechanism. Sessions 2-3 still pending.
+- 2026-05-07: **Session 1 complete.** Built regression and KC(M)-isolation Python scripts. Captured numbers in `docs/narrative-improvements-notes-session1.md`. Headline result: A1 strengthens, B3+B4 confirmed weak, A3 gradient claim weakens, KC(M) relabel concern is moot but base-defection is a real ~12% sub-mechanism.
+- 2026-05-07: **Session 2 complete.** All 6 existing cards updated: inference-discipline language, confidence gradients, regression FE results integrated, KC(M) caveat in A1 + A8, B3+B4 demoted to exploratory framing, "What this directly shows / cannot prove / would weaken" sections added everywhere. Synthesis card written. Session 3 (BJP AC-level growth card) still pending.

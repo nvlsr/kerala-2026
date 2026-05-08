@@ -1,8 +1,12 @@
 # A3 — Did BJP's 3 wins come from concentrated Hindu pockets + weak UDF candidates?
 
-**Verdict (confirms with sharp numbers, plus one important surprise): Yes — all four sub-claims hold. BJP grew only +0.18pp statewide, NDA crossed 25% in only 19 of 140 ACs (6 of those in Trivandrum alone), all 3 wins came in 70%-Hindu seats, every named Christian BJP candidate lost, AND UDF dramatically underperformed in the 3 BJP-won seats (+0.6pp UDF gain vs +7.3pp statewide). The surprise: BJP actually grew enormously at the AC level — +14 to +25pp in several central-Kerala seats. The "statewide flat" headline hides large under-the-hood AC-level movement.**
+**Verdict (descriptively confirms; gradient claim weakens with controls): The 3 BJP wins (Nemom, Chathannoor, Kazhakoottam) are descriptively in high-Hindu-share Trivandrum-area seats (mean Hindu share 70%, vs 53% statewide), and UDF underperformed badly in those 3 seats (+0.6pp UDF Δ vs +7.3pp statewide; differential ~6-7pp). All 4 named Christian BJP candidates (Shone George, P.C. George, George Kurian, Anoop Antony) lost. The "BJP grew most in Hindu-heavy seats" gradient claim survives simple correlation but weakens substantially under district fixed effects (β=+0.098, p=0.213) — meaning the 3 specific wins are real and concentrated, but the broader Hindu-share-mediated growth pattern is not robustly detectable. A separate finding: 3 of the 4 named Christian BJP candidates added +14 to +25pp to BJP's local share without winning. Statewide flat (+0.18pp) hides large AC-level reorganisation.**
 
 This card uses 2021/2026 vote-share data, party-level + alliance-level Δ, and AC religion mix. See `scripts/narrative-a3-bjp-three-wins.ts` to reproduce.
+
+> **A note on inference:** "BJP wins came in Hindu-heavy seats" is a descriptive claim about 3 specific ACs — supported. "BJP wins came BECAUSE the seats are Hindu-heavy" is a causal claim that requires more than the 3-AC observation. The within-district BJP-share-vs-Hindu-share gradient weakens under controls (district FE p=0.213), suggesting the 3 wins are better explained as a Trivandrum-area cluster (geographic, not religion-share-mediated) plus UDF candidate-selection failure.
+
+**Unit:** Statewide aggregates (BJP +0.18pp) are vote-weighted. Bin means and per-AC differentials are constituency-equal. The unit of analysis is the constituency, not the individual voter.
 
 ## The consensus claim
 
@@ -58,7 +62,9 @@ The geography is the more interesting test. NDA ≥ 25% (n=19), broken down by d
 | 132 KAZHAKOOTTAM | 69.2% | 35.7% | +6.6pp | +4.6pp | -10.7pp |
 | 135 NEMOM | 69.2% | 40.9% | +5.4pp | -3.7pp | -0.9pp |
 
-Mean Hindu share in BJP wins: **70.2%** vs **53.4%** statewide. **Confirmed.** All three are in the top decile of Kerala AC Hindu shares (Hindu ≥ 65% globally — only ~16 ACs qualify, and the BJP took 3 of them).
+Mean Hindu share in BJP wins: **70.2%** vs **53.4%** statewide. **Descriptively confirmed for these 3 ACs.** All three are in the top decile of Kerala AC Hindu shares (Hindu ≥ 65% globally — only ~16 ACs qualify, and the BJP took 3 of them).
+
+**Caveat — gradient claim weakens with controls.** The simple Pearson r between Hindu share and BJP-share Δ is +0.108 (p=0.012); under district fixed effects this stays similar in coefficient (+0.098) but loses statistical significance (p=0.213). The 3 wins themselves are clustered descriptive observations; the broader "BJP grew systematically more in Hindu-heavy seats" gradient is not robustly detectable within-district. The accurate framing: *the 3 wins are in Hindu-heavy Trivandrum-area seats* (descriptive), not *BJP grew more wherever Hindu share was higher* (the gradient claim).
 
 ## Sub-claim (iv): Every Christian BJP candidate lost
 
@@ -98,11 +104,11 @@ This is a UDF candidate-selection failure as much as it's a BJP achievement.
 
 ## The opinionated reframe
 
-> **All four sub-claims of the press narrative are correct, and the data is sharper than the headlines: BJP's 3 wins came from a Trivandrum-concentrated Hindu pocket where UDF underperformed by ~5-6pp vs comparable seats. Statewide BJP was flat (+0.18pp aggregate). The Christian-candidate failure thesis is correct on win-rate (0 of 4) but misleading on momentum — 3 of the 4 Christian BJP candidates ADDED 14-25pp to BJP's local share without winning.**
+> **The press's four sub-claims hold descriptively, with one caveat: the gradient claim weakens under controls. BJP's 3 wins came from a Trivandrum-concentrated Hindu pocket where UDF underperformed by ~5-6pp vs comparable Hindu-heavy seats. Statewide BJP was flat (+0.18pp aggregate). The Christian-candidate failure thesis is correct on win-rate (0 of 4) but misleading on momentum — 3 of the 4 named Christian BJP candidates ADDED 14-25pp to BJP's local share without winning.**
 >
-> The accurate two-sentence summary of BJP's 2026: *"Wins concentrated in Trivandrum's Hindu pockets where UDF candidate selection failed. Significant per-AC growth in central-Kerala Christian seats that didn't translate to wins, but represents a structurally viable base for 2031."*
+> An accurate two-sentence summary of BJP's 2026: *"Wins were geographically concentrated in Trivandrum-area Hindu-heavy seats where UDF candidate selection failed. Significant per-AC growth in central-Kerala Christian seats didn't translate to wins, but it represents a structurally viable base if the gains hold in 2031."*
 
-The "BJP statewide breakthrough" framing some BJP-aligned coverage tried to push is correctly dismissed by the +0.18pp aggregate. The "BJP completely failed in Kerala" framing some opposition coverage pushed is also wrong — the per-AC growth in Pala, Poonjar, Thiruvalla, Guruvayoor, Vaikom, Devikulam shows real movement.
+The "BJP statewide breakthrough" framing some BJP-aligned coverage pushed is dismissed by the +0.18pp aggregate. The "BJP completely failed in Kerala" framing some opposition coverage pushed misses the per-AC growth in Pala, Poonjar, Thiruvalla, Guruvayoor, Vaikom, Devikulam — real movement, geographically clustered, that doesn't show up in statewide aggregates.
 
 ## Where BJP grew most (top 12 by party-share Δ)
 
@@ -133,11 +139,35 @@ The "BJP statewide breakthrough" framing some BJP-aligned coverage tried to push
   - Whether the 14-25pp BJP growth in Pala/Poonjar/Thiruvalla represents a *durable* shift or a candidate-personality bump (P.C. George had been a 5-time MLA from Poonjar before joining BJP). Multi-cycle data 2031 will answer.
 - **Christian BJP candidates**: hand-coded list of 4 from the narrative. Other Christian-named BJP candidates may exist; the 4 named are the salient ones cited across coverage.
 
+## What this directly shows / what it cannot prove / what would weaken the conclusion
+
+### What this directly shows
+
+- BJP's vote-weighted statewide share moved from 11.30% to 11.49% (+0.18pp).
+- 19 of 140 ACs have NDA share ≥ 25% in 2026; 6 of those 19 are in Trivandrum district.
+- The 3 BJP-won ACs (Chathannoor, Kazhakoottam, Nemom) have mean Hindu share 70.2%, vs 53.4% statewide.
+- Mean UDF Δshare across the 3 BJP-won ACs is +0.64pp, vs +5.79pp in matched Hindu-majority controls (Hindu ≥60% excl. BJP wins) and +7.29pp statewide.
+- All 4 named Christian BJP candidates lost their contests; 3 of the 4 added 14-25pp to BJP's local share.
+
+### What this does NOT prove
+
+- **BJP grew systematically more in Hindu-heavy seats.** Simple Pearson supports this gradient; district fixed effects don't (β=+0.098, p=0.213). The 3 wins are real and concentrated, but the underlying explanation for why they fell where they did is not unambiguously "Hindu-share gradient." It's also consistent with a Trivandrum-region-specific cluster (geographic) plus UDF candidate-selection failures.
+- **UDF candidate weakness caused the BJP wins.** UDF underperformance (+0.6pp) and BJP wins are correlated; we don't observe the counterfactual where stronger UDF candidates contested. The Onmanorama framing is plausible but unprovable from this data.
+- **Christian voters embraced BJP candidates in Pala/Poonjar/Thiruvalla.** The +14-25pp BJP gains include Hindu, Muslim, Christian, and other voters in those constituencies. Without sub-community polling we can't isolate Christian-specific support for BJP candidates of any denomination. The candidate-personality alternative (P.C. George had a 5-cycle Poonjar incumbency before joining BJP) is a strong competing explanation for at least one of the 4 cases.
+- **The 2026 BJP gains are durable.** Could be one-cycle candidate-personality bumps (especially Poonjar/P.C. George; Thiruvalla/three-way-with-JD(S)). 2031 with different candidates is the test.
+
+### What would weaken this conclusion
+
+- **2031 BJP share reverting to <10% in Pala, Poonjar, Thiruvalla** when those candidates are not on the ballot — would suggest the +14-25pp gains were candidate-specific, not BJP brand-building.
+- **Sub-community polling showing the +14-25pp gains came overwhelmingly from non-Christian voters** in those mixed-religion ACs — would dismantle the "BJP making Christian inroads" narrative.
+- **A regression with sharper geographic controls (sub-district / Lok Sabha constituency FE) showing the Hindu-share gradient survives** — would strengthen the gradient claim we've softened. We don't currently have that resolution; the district-FE result is our cleanest current test.
+- **Counterfactual UDF win in Nemom or Chathannoor** demonstrating that "stronger candidate selection" was the binding constraint — testable in subsequent cycles where UDF fields different candidates.
+
 ## Cross-references
 
-- **A1 (minority consolidation)**: established UDF gained ~7pp uniformly. A3 sharpens: that ~7pp average hides ~5pp underperformance in the 3 BJP-won seats and ~14-25pp BJP gains in central-Kerala Christian seats — both of which the +7pp average paper over.
-- **A2 (Sabarimala route)**: established that the "Hindu backlash → BJP gain" mechanism doesn't show up at the route-geographic level. A3's BJP growth pattern (Trivandrum + scattered central-Kerala) is consistent: BJP's growth corridor is *not* the Sabarimala pilgrim route, it's a different geography.
-- **A6 (cabinet collapse)**: V. Sivankutty (Nemom, LDF Education Minister) lost his seat to BJP. A6 showed his LDF Δ was only -0.9pp — not a personal collapse. The Nemom result is BJP's win, not Sivankutty's loss; Nemom is a 3-way fragmentation seat where small movements flip the winner.
+- **A1 (minority consolidation)**: established UDF gained ~7pp uniformly. A3 sharpens: that ~7pp average hides ~5pp UDF underperformance in the 3 BJP-won seats and ~14-25pp BJP gains in central-Kerala Christian seats — both of which the +7pp average papers over.
+- **A2 (Sabarimala route)**: established that the "Hindu backlash → BJP gain" mechanism does not appear at the route-geographic level. A3's BJP growth pattern (Trivandrum + scattered central-Kerala) is consistent: BJP's growth corridor is not the Sabarimala pilgrim route, it's a different geography.
+- **A6 (cabinet collapse)**: V. Sivankutty (Nemom, LDF Education Minister) lost his seat to BJP. A6 shows his LDF Δ was only -0.9pp — not a personal collapse. The Nemom result is consistent with three-way fragmentation flipping the winner on small movements, not a Sivankutty-specific story.
 
 ## Reproduce
 

@@ -1,8 +1,10 @@
-# B3 + B4 — Did caste-bloc voting drive 2026's swing?
+# B3 + B4 — District-level Hindu caste-belt geography overlaps with alliance geography (exploratory)
 
-**Verdict: Both narratives are wrong as stated. The Nair-UDF-lean (B4) reverses — Nair-heavy areas saw SMALLER UDF gains because more of the LDF loss went to NDA. The Ezhava-base-erosion (B3) isn't detectable as a 2026 cycle-specific signal — Ezhava-heavy ACs swung the same as everywhere else.** The post-mortem framing of "Hindu sub-community shifts" doesn't map cleanly to the observed swing pattern. What does map: the same Hindu sub-community geography (Nair-heavy Trivandrum) where BJP's three wins concentrated.
+> **⚠️ EXPLORATORY ONLY.** This card analyses caste data at *district* granularity assigned uniformly to all ACs within each district. It is structurally subject to ecological-fallacy: variation between caste-share and vote-swing at the AC level is bounded by district-level structure. The originally-posed B3 and B4 hypotheses — about Ezhava-base-erosion and Nair-UDF-lean as voter-behavior claims — cannot be tested at AC granularity from this data. We re-pose them as geographic-overlap questions and report what we observe under that weaker framing. Do not cite as evidence for caste-voter behavior.
 
-This card uses Hindu sub-community data at **district level**, attributed to ACs. Subject to ecological-fallacy caveats. See "Methodology" at the bottom.
+**Verdict (geography-overlap framing): The geography of high Nair-share (concentrated in Trivandrum + adjacent districts) overlaps with the geography of NDA concentration (BJP's 3 wins, all in Trivandrum). District-level Nair share has a weak negative within-region association with UDF Δshare (β=-0.272, p=0.044 with region FE — see methodology). Ezhava-share-of-total has no detectable within-region association with any alliance Δ. We do not separate caste-voter behavior from regional clustering: with caste data district-level only, district fixed effects absorb caste perfectly, leaving no within-district variation to test against.**
+
+This card uses Hindu sub-community data at **district level**, attributed uniformly to ACs within each district. The original framing tried to derive AC-level voter-behavior conclusions; we now report only what the district-level resolution supports.
 
 ## The consensus claims
 
@@ -75,33 +77,65 @@ The Nair-share pattern is **monotonic and clear**: as Nair share drops, UDF gain
 
 Kannur is the most Ezhava-heavy district (39%) and shows a *typical* swing for the state (UDF +8.5, LDF -9.1, NDA +1.8). Idukki and Ernakulam, which are *moderate* on Ezhava, show the *biggest* UDF gains. Trivandrum, the most Nair-heavy district, shows the *smallest* UDF gain and the *biggest* NDA gain.
 
-## The opinionated reframe
+## The opinionated reframe (geography-overlap, not voter-behavior)
 
-> **The "Hindu sub-community shifts" framing applies to ONE geography only — Nair-heavy Trivandrum, where BJP's three 2026 wins concentrated. There, the LDF→NDA channel was bigger than the LDF→UDF channel, producing a smaller UDF gain than elsewhere. Outside Trivandrum, neither Nair share nor Ezhava share carries differential signal: the LDF collapse and UDF reward followed religion (Christian-belt premium), not caste.**
+> **The geographic clustering of caste data complicates voter-behavior inference at the resolution we have. The visible pattern: ACs in high-Nair-share districts (concentrated in Trivandrum + adjacent) had smaller UDF gains and larger NDA gains than ACs in lower-Nair-share districts. But "high Nair share" and "Trivandrum geography" are nearly identical at district granularity — we cannot separate "Nair voters behaved differently" from "Trivandrum voters behaved differently for non-Nair reasons" from this data. We do not detect Ezhava-share variation as predictive of any alliance Δ.**
+
+The press framing — that Ezhava-base-erosion explains LDF's collapse and Nair-UDF-lean explains UDF's gains — implies AC-resolution voter-behavior claims. The data does not support those claims at AC resolution because we only have district-level caste shares. The visible patterns are at the district level and are confounded with all other district-level dynamics.
 
 Restated for the catalog:
-- **B3 (Ezhava drift)**: not visible as a 2026-cycle effect. May be true longitudinally (per Polstrat/CSDS) but doesn't show up in this swing. If continuing, it's happening at the same uniform state pace.
-- **B4 (Nair UDF lean)**: reverses for 2026. Nair-heavy = smaller UDF gain because BJP captured more of the LDF defectors there. The "Nair drift" framing should be **Nair → NDA** in the Trivandrum belt, not "Nair → UDF" generically.
+- **B3 (Ezhava drift)**: not visible as a 2026-cycle effect at AC resolution we have. May be true longitudinally (per Polstrat/CSDS) but doesn't show up in this swing.
+- **B4 (Nair UDF lean)**: under the geography-overlap framing only, Nair-heavy *districts* showed smaller UDF gains. We cannot ascribe this to Nair voters specifically; it could equally be a Trivandrum-region effect.
 
-## Why the BJP-3-wins point matters here
+## Robustness check — region fixed effects
 
-All three BJP 2026 wins are in **Trivandrum district** (Nemom, Kazhakoottam, Chathannoor — Chathannoor is technically Kollam district adjacent to TVM). The Nair-share-correlation finding gives the structural explanation: a Nair-heavy belt where Hindu consolidation toward BJP can outpace UDF's residual gains. **A3 (BJP's 3 wins concentration) and B3/B4 are the same finding viewed from two angles.**
+Adding region fixed effects (3 regions: North / Central / South Kerala) to the simple Pearson r:
+
+| Test | No controls | + region FE | Notes |
+|---|---|---|---|
+| Nair × UDF Δ | β=-0.222, p=0.002 | β=-0.272, p=0.044 | Survives region FE (just) |
+| Nair × NDA Δ | β=+0.102, p=0.114 | β=+0.072, p=0.562 | Doesn't hold |
+| Ezhava × UDF Δ | β=+0.005, p=0.927 | β=+0.015, p=0.803 | No effect either way |
+| Ezhava × NDA Δ | β=-0.023, p=0.638 | β=-0.018, p=0.738 | No effect either way |
+
+District FE absorbs caste perfectly (caste is district-constant in our data) so we cannot run the within-district test. The region-FE result is the strictest control we can apply.
+
+**Reading:** the Nair-UDF inverse association is weakly supported under region controls (p just under 0.05). The Nair-NDA association doesn't hold once region is controlled. Neither result is robust enough to ground a voter-behavior claim — they're consistent with the geography-overlap reading: Nair-heavy districts (mostly Trivandrum) had smaller UDF gains, possibly for caste reasons but possibly for the many other things that distinguish Trivandrum (urbanization, BJP organisational strength, candidate selection, government-employee concentration).
+
+## What this directly shows / what it cannot prove / what would weaken the conclusion
+
+### What this directly shows
+
+- District-level Nair-share is negatively associated with UDF Δshare (simple r=-0.27). Under region FE the association is β=-0.272, p=0.044. Under district FE it cannot be tested (caste constant within district).
+- Trivandrum district (highest Nair share, 25.9% of total population) has the smallest UDF Δshare mean (+3.87pp) and largest NDA Δshare mean (+4.19pp).
+- Ezhava-share variation has no detectable association with any alliance Δ.
+
+### What this does NOT prove
+
+- **Nair voters behaved differently than non-Nair voters.** The data is district-level. We cannot disentangle Nair-voter behavior from Trivandrum-region effects (urbanization, BJP organizational strength, government-employee base, etc.) at our resolution.
+- **Ezhava voters didn't shift.** The Polstrat/CSDS multi-cycle Ezhava-erosion narrative may be true; this single-cycle test doesn't directly contradict it. The drift may have plateaued, or may operate at sub-AC granularity invisible to district-level data.
+- **Caste-bloc voting is not a feature of Kerala 2026.** Our resolution can't detect it. Survey-microdata work could find caste differences within districts that are invisible here.
+
+### What would weaken (or strengthen) this conclusion
+
+- **AC-resolution caste data** (NSSO microdata, recent surveys) would let us test caste effects directly within districts. Highest-priority resolution upgrade.
+- **Multi-cycle longitudinal test** with 2011/2016/2021/2026 caste-vs-vote correlations — would distinguish "caste drift exists historically but stalled" from "caste drift never existed at AC resolution."
+- **Sub-community resolution within "Nair"** — Nairs aren't a unified bloc (sub-community identity, NSS organisational membership, etc. matter politically). Currently treated as a single category.
+- **Replication in a different election context** — same caste-share-vs-swing patterns appearing in 2031 or earlier cycles would suggest structural caste-belt effects, even if individual cycle tests are noisy.
 
 ## Methodology + limitations
 
 - **Source**: Zachariah, Mathew & Rajan (2003) "Dynamics of Migration in Kerala," based on Kerala Statistical Institute household survey, 2000.
-- **Granularity**: district-level (14 districts). Each AC inherits its district's caste mix. Same ecological-fallacy concern as our v1 religion analysis: within-district AC variation in caste mix is invisible.
-- **Year staleness**: 2000 baseline, ~25 years old. Geographic rank should be stable; absolute shares may have drifted.
-- **Sample variance**: household survey, not census. Has confidence intervals we don't have specific numbers for.
-- **Hindu-only**: this table doesn't speak to Muslim sub-community (Sunni/Mujahid/Salafi) or Christian denomination (Syro-Malabar/Latin/Marthoma/Pentecostal) — those need separate sources we don't have.
-- **The Nair r = −0.27 is moderate.** Statistical confidence is meaningful (n=140) but causal claim is weak: high-Nair districts also have high Hindu share overall (66% in TVM vs 54% statewide), so the negative Nair-vs-UDF correlation could be partially the negative Hindu-vs-UDF correlation we already saw.
+- **Granularity**: district-level (14 districts). Each AC inherits its district's caste mix uniformly. Within-district variation is invisible.
+- **Year staleness**: 2000 baseline, ~25 years old. Geographic rank order is likely stable; absolute shares may have drifted.
+- **Sample variance**: household survey, not census. Confidence intervals not computed for the original survey shares.
+- **Hindu-only**: doesn't speak to Muslim sub-community or Christian denomination — those need separate sources we don't have.
 
-## Cross-checks that would strengthen this verdict
+## Cross-references
 
-- AC-level caste data (would need NSSO/NCAES microdata or a more granular published source)
-- Multi-cycle test (B3's claim is multi-cycle; we tested only 2021→2026): correlate Ezhava share with cumulative 2011→2026 LDF share change. If the drift exists historically but stalled by 2026, that'd reconcile our finding.
-- Multivariate regression — if we control for Hindu share + Christian share simultaneously, does Nair-share have residual explanatory power?
+- **A3 (BJP's 3 wins)**: all 3 BJP wins are in the Nair-heavy Trivandrum belt. A3 finds the BJP-share × Hindu-share gradient weakens under district FE; B3+B4 finds the parallel Nair-share × UDF-Δ gradient survives barely under region FE. Both are consistent with "Trivandrum-region effect" rather than "religion-share or caste-share gradient."
+- **A1 (minority consolidation)**: A1's Christian-belt UDF premium *survives* district FE (within-district Christian variation predicts UDF gain). B3+B4's caste effects do not (caste constant within district). The religion finding is causally tighter; the caste finding is a geographic-overlap observation.
 
 ## Reproduce
 
-`bun run scripts/narrative-b3b4-caste.ts` — uses `data/hindu-caste-by-district.json` + `data/demographics.json` + 2021/2026 candidate data.
+`bun run scripts/narrative-b3b4-caste.ts` — uses `data/hindu-caste-by-district.json` + `data/demographics.json` + 2021/2026 candidate data. Regression results from `python3 scripts/narrative-regression.py`.

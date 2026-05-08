@@ -1,8 +1,12 @@
 # A6 — Was LDF's anti-incumbency wave minister-targeted, or uniform?
 
-**Verdict: The "13 of 21 ministers defeated → cabinet rejection" framing is wrong as causal explanation. Ministers actually lost slightly LESS share than non-minister LDF incumbents (-6.89pp vs -7.63pp). The anti-incumbency wave was uniform across the LDF benches; ministers were the most visible casualties because they were ministers, not because voters singled them out.** The narrative confuses *visibility* with *targeting*.
+**Verdict: We do not detect a constituency-level minister penalty beyond the statewide anti-incumbency swing. Mean LDF Δshare among 21 cabinet ministers (-6.89pp) is slightly smaller in magnitude than mean LDF Δshare among 78 non-minister LDF 2021 incumbents (-7.63pp). The "minister-targeted anti-incumbency" hypothesis predicts a more-negative differential for ministers; we observe a slightly less-negative one. The "13 of 21 ministers lost" headline is correctly reported but does not, on this data, support a causal story of voter targeting cabinet members specifically — minister losses appear consistent with a uniform ~7pp LDF wave hitting seats where ministers happened to be sitting in the LDF column.** Visibility ≠ targeting in this analysis.
+
+> **A note on inference:** "Ministers were not punished for being ministers" is a stronger claim than the data supports. Voters could have specifically targeted ministers AND ministers could still have lost similar share to non-ministers — visibility-driven punishment matched by behind-the-scenes ministerial-machinery defense, for example. What we directly observe: no additional measurable minister penalty at the constituency level. The phrasing throughout this card is constrained to constituency-level claims.
 
 This card uses the second Pinarayi cabinet roster (21 members, Wikipedia-cross-checked) and 2021/2026 LDF share deltas. See `data/ldf-ministers-2021.json` and `scripts/narrative-a6-cabinet-collapse.ts` to reproduce.
+
+**Unit:** Mean LDF Δshare comparisons are constituency-equal — each AC counts once. Statewide reference is vote-weighted. The unit of analysis is the constituency, not the individual voter.
 
 ## The consensus claim
 
@@ -57,14 +61,14 @@ Among **99 LDF 2021 winners** (alliance-level incumbents), 21 were in cabinet an
 | Non-minister LDF incumbents | 78 | **-7.63pp** |
 | All 140 ACs (statewide reference) | 140 | -7.43pp |
 
-**Differential: +0.74pp** — ministers lost slightly *less* share than non-minister LDF incumbents. Same direction as everyone, slightly smaller magnitude. The "minister-targeted anti-incumbency" hypothesis predicts a *negative* differential of meaningful size; the data shows a *positive* differential of small size. The narrative's claim flips sign.
+**Differential: +0.74pp** — ministers lost slightly *less* share than non-minister LDF incumbents. The "minister-targeted anti-incumbency" hypothesis predicts a *negative* differential of meaningful size; we observe a small *positive* differential. We do not detect a constituency-level minister penalty above the baseline LDF-incumbent swing.
 
-Why might ministers have lost slightly less? Two plausible mechanisms, both consistent with the data:
+Why might ministers have lost slightly less? Two mechanisms are consistent with this pattern:
 
-1. **Ministers had visibility, resources, and machinery for their own re-election** that ordinary backbenchers didn't. The minister tag was an electoral *asset* (slightly), not a liability.
-2. **Ministers were politically chosen for "safe" seats**, so their starting LDF margins were larger. Even with a uniform 7pp loss, their absolute defeat threshold was higher to cross. (This is partially why so many of them lost: they started at 45-50% LDF; -7pp puts them in the danger zone.)
+1. **Ministers had visibility, resources, and machinery for their own re-election** that ordinary backbenchers didn't. The minister tag may have been a small electoral asset, not a liability.
+2. **Ministers were politically chosen for "safe" seats**, so their starting LDF margins were larger. Even with a uniform 7pp loss, their absolute defeat threshold was higher to cross. (This is part of why so many of them lost despite no extra penalty: they started at 45-50% LDF; -7pp puts them in the danger zone.)
 
-The "13 of 21 lost" headline is real but doesn't identify the cause. The cause is **uniform anti-incumbency at scale** (LDF lost 7pp everywhere), not differential minister-targeting.
+The "13 of 21 lost" headline is correctly reported but, on this data, is consistent with **uniform anti-incumbency at scale** rather than differential minister-targeting. The data answers a constituency-level question (did ministers lose more share than non-minister LDF incumbents?) — not the voter-level question of whether voters specifically punished minister status.
 
 ## Outliers worth naming
 
@@ -80,11 +84,11 @@ V. Sivankutty (Nemom, -0.9pp LDF; lost to NDA) is the opposite case: tiny LDF sh
 
 ## The opinionated reframe
 
-> **Kerala 2026 was an anti-incumbency election, not an anti-minister election. LDF lost about 7pp uniformly across the 99 seats it held in 2021 — minister or not. 14 ministers lost their seats because they happened to be sitting in the LDF column when a 7pp wave hit, not because voters were targeting cabinet members.**
+> **Kerala 2026 was a broad anti-LDF-incumbency cycle whose constituency-level signal does not differentiate ministers from non-ministers. LDF shed approximately 7pp uniformly across the 99 seats it held in 2021. Of those 99, 21 were cabinet seats — and 14 of those 21 lost. But the "minister" tag does not, on this data, mark seats that swung more sharply against LDF than non-cabinet LDF incumbencies did.**
 >
-> The "13 of 21 ministers defeated" framing is a true headline that misleads about causation. The right question isn't "why did so many ministers lose?" — it's "why did the LDF base shed 7pp?" That question is answered by A1 (the question's NOT minority consolidation) and remains open for further work.
+> The "13 of 21 ministers defeated" headline is correctly reported but on this evidence is consistent with uniform LDF wave + ministers happening to be sitting in 21 of the 99 LDF-held seats. The sharper question this analysis raises is: "what drove the LDF base to shed 7pp uniformly?" — left to A1 and the broader narrative cards (which find the wave was religion-blind, route-blind, and now also minister-blind).
 
-The narrative's secondary claim — Pinarayi's Dharmadam margin collapse from 50,123 to 19,247 — is real and dramatic. His LDF Δ is -9.5pp, slightly above the statewide baseline. Even the CM lost share at roughly the average rate. That's consistent with the uniform-incumbency story, just with a larger absolute headline number because Dharmadam was a high-margin seat to begin with.
+The narrative's secondary claim — Pinarayi's Dharmadam margin collapse from 50,123 to 19,247 — is real. His LDF Δ is -9.5pp, slightly larger in magnitude than the statewide -7.4pp baseline. The absolute margin number is dramatic because Dharmadam was a high-margin seat to begin with; the Δ-share is consistent with the broader LDF-incumbent baseline.
 
 ## Methodology & limitations
 
@@ -96,11 +100,33 @@ The narrative's secondary claim — Pinarayi's Dharmadam margin collapse from 50
   - Counterfactual: would non-minister LDF candidates have lost less in the same seats? Untestable without parallel universe data.
 - **Sample size**: 21 ministers is a small group, but the test is well-defined (mean comparison). Doesn't need formal CIs — the differential is +0.74pp, which by inspection isn't a meaningful magnitude in either direction.
 
+## What this directly shows / what it cannot prove / what would weaken the conclusion
+
+### What this directly shows
+
+- 14 of 21 LDF cabinet ministers lost their 2026 contests (narrative said 13; the discrepancy comes from the narrative miscounting Kadakampally Surendran, who was 2016 cabinet not 2021).
+- Mean LDF Δshare across 21 minister incumbents: -6.89pp.
+- Mean LDF Δshare across 78 non-minister LDF 2021 incumbents: -7.63pp.
+- Differential: +0.74pp (ministers' loss is slightly smaller than non-minister incumbents' loss).
+- Outsized individual losses concentrate among small-party LDF allies (JD(S), NCP, KC(M)) — ~10-15pp Δshare losses — not among CPI(M) ministers.
+
+### What this does NOT prove
+
+- **Voters did not punish minister status.** Voters could have specifically targeted ministers, and ministers could still have lost similar share to non-ministers (visibility-driven punishment matched by cabinet-level resources for re-election defense). What we directly observe: no constituency-level differential. Voter-level intent is not measured here.
+- **Anti-incumbency was the entire story.** The +0.74pp non-detection of minister penalty doesn't claim ministers performed unaffected by the cabinet's policy record; it claims the constituency-level Δshare doesn't differ between minister and non-minister incumbents.
+- **Pinarayi's reduced Dharmadam margin is generic anti-incumbency.** His Δshare (-9.5pp) is slightly larger than baseline; it could be a CM-specific penalty, or it could be Dharmadam-specific local dynamics, or stochastic. n=1 doesn't separate these.
+
+### What would weaken this conclusion
+
+- **A more granular cabinet-status taxonomy** (e.g., separating "high-profile" ministers from "junior" ministers based on press salience or portfolio importance) showing a penalty for the salience-weighted high-profile subset. This would reveal that "all-21 mean" obscures a real penalty on the most-visible cabinet members.
+- **Survey microdata showing voters in minister seats reported minister-specific dissatisfaction at higher rates than voters in non-minister LDF seats.** Would suggest voter-level targeting that didn't manifest in constituency-level differential.
+- **Replication in a different anti-incumbency cycle.** If 2031 (or a cycle elsewhere) shows a clear minister-penalty in similar conditions, the 2026 non-detection here might be a sample-specific artifact.
+
 ## Cross-references
 
-- **A1**: established that LDF's collapse was religion-blind. A6 adds: also minister-blind. Two layers of "the collapse was uniform across the things people *thought* were targeted."
-- **A2**: established that LDF's collapse was Sabarimala-geography-blind, but minister-incumbency-sensitive (the 3 Devaswom-related ministers lost ~4pp more than matched controls). A6 sharpens: the minister-incumbency penalty is the *outliers* phenomenon — Veena George, Vasavan, Krishnankutty individually got hit harder, but the cabinet *mean* doesn't carry a minister-targeting signal.
-- **A3 (BJP's 3 wins)**: V. Sivankutty losing Nemom is one of BJP's 3 wins. The data here confirms it's not a Sivankutty-specific story — Nemom's LDF share barely moved (-0.9pp); it's a 3-way fragmentation outcome.
+- **A1**: established that LDF's collapse was religion-blind. A6 adds: also minister-blind at the cabinet aggregate. Two layers of "the wave was uniform across the things people thought were targeted."
+- **A2**: identified a ~4pp minister penalty for 3 Devaswom-related ministers (Vasavan, Veena George, Kadakampally). A6 contextualises: those 3 are outliers within the broader cabinet — the full 21-member mean doesn't carry the same signal. The A2 finding is real for those 3 specifically, but doesn't generalise.
+- **A3 (BJP's 3 wins)**: V. Sivankutty losing Nemom is one of BJP's 3 wins. A6 finds his LDF Δ was only -0.9pp — consistent with three-way fragmentation rather than a Sivankutty-specific minister penalty.
 
 ## Reproduce
 
