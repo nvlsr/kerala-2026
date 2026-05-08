@@ -293,29 +293,17 @@ export function NarrativesPage() {
             All bin means and per-AC differentials are
             constituency-equal (each AC counts once). Statewide
             aggregates are vote-weighted. The unit of analysis is
-            the constituency, not the individual voter — see{" "}
-            <a
-              href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/methodology-core-concepts.md"
-              target="_blank"
-              rel="noopener noreferrer"
+            the constituency, not the individual voter — see the{" "}
+            <Link
+              to="/narratives/methodology"
               className="font-medium text-foreground underline-offset-2 hover:underline"
             >
-              methodology-core-concepts.md
-            </a>{" "}
-            for the catalog's standing convention on inference,
-            alliance-share accounting, district / region fixed
-            effects, and falsification triggers. The
-            gradient-vs-cluster distinction that runs through every
-            card is laid out in{" "}
-            <a
-              href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/methodology-gradient-vs-cluster.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-foreground underline-offset-2 hover:underline"
-            >
-              methodology-gradient-vs-cluster.md
-            </a>
-            .
+              methodology page
+            </Link>{" "}
+            for the standing convention on inference, alliance-share
+            accounting, district / region fixed effects,
+            gradient-vs-cluster distinction, counterfactual logic,
+            and falsification triggers.
           </p>
           <p className="mt-2">
             <strong className="font-medium text-foreground">

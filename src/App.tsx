@@ -56,6 +56,11 @@ const NarrativesBJPPocketPage = lazy(() =>
     default: m.NarrativesBJPPocketPage,
   }))
 )
+const NarrativesMethodologyPage = lazy(() =>
+  import("@/pages/narratives-methodology-page").then((m) => ({
+    default: m.NarrativesMethodologyPage,
+  }))
+)
 
 /** Minimal skeleton — keeps the page footprint stable while the chunk
  *  loads. No spinner: the chunks are small and on a warm cache the
@@ -106,6 +111,10 @@ export function App() {
           <Route
             path="/narratives/bjp-pocket"
             element={<NarrativesBJPPocketPage />}
+          />
+          <Route
+            path="/narratives/methodology"
+            element={<NarrativesMethodologyPage />}
           />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
