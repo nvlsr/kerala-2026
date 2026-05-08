@@ -168,6 +168,7 @@ The "BJP statewide breakthrough" framing some BJP-aligned coverage pushed is dis
 - **A1 (minority consolidation)**: established UDF gained ~7pp uniformly. A3 sharpens: that ~7pp average hides ~5pp UDF underperformance in the 3 BJP-won seats and ~14-25pp BJP gains in central-Kerala Christian seats — both of which the +7pp average papers over.
 - **A2 (Sabarimala route)**: established that the "Hindu backlash → BJP gain" mechanism does not appear at the route-geographic level. A3's BJP growth pattern (Trivandrum + scattered central-Kerala) is consistent: BJP's growth corridor is not the Sabarimala pilgrim route, it's a different geography.
 - **A6 (cabinet collapse)**: V. Sivankutty (Nemom, LDF Education Minister) lost his seat to BJP. A6 shows his LDF Δ was only -0.9pp — not a personal collapse. The Nemom result is consistent with three-way fragmentation flipping the winner on small movements, not a Sivankutty-specific story.
+- **BJP AC-growth card (`bjp-ac-growth.md`)**: companion to A3. While A3 confirms the press story about BJP's 3 wins, the AC-growth card unpacks the broader per-AC reshuffle the press has not articulated — BJP grew +14-25pp in 11 ACs while withdrawing from 26 others, with the gains and cessions roughly cancelling at the statewide aggregate. The 3 wins themselves are a small subset of a larger geographic reorganization.
 
 ## Reproduce
 

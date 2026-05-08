@@ -54,24 +54,13 @@ Goal: incorporate Session 1 findings into the cards, fix language across the boa
 
 ---
 
-## Session 3 — BJP AC-level growth card
+## Session 3 — BJP AC-level growth card ✓ COMPLETE
 
 Goal: write the most-original analytical card we have, surfacing the +0.18pp aggregate hiding ±25pp AC-level moves.
 
-- [ ] **Write `scripts/narrative-bjp-ac-growth.ts`** — extend the A3 analysis to fully explore BJP's per-AC growth distribution.
-  - Top 20 BJP party-share gainers (already have top 12).
-  - Bottom 20 BJP party-share losers (mostly ACs ceded to NDA allies).
-  - Cross-tab with religion mix: where did BJP grow and shrink, by Hindu/Christian/Muslim profile?
-  - Cross-tab with prior-cycle 2016/2011 BJP base: was 2026 growth concentrated in ACs where BJP had any prior toehold, or did it appear from zero?
-
-- [ ] **Write `docs/narrative-cards/bjp-ac-growth.md`** with the structure the agent recommended (lead with hook, unpack):
-  - Hook: "BJP grew +0.18pp statewide. The same number moved by ±25pp at the AC level. Both are true."
-  - Geography of growth.
-  - Geography of cession.
-  - Why it cancels in aggregate.
-  - 2031 falsification triggers (especially: P.C. George/Poonjar — is the +25pp durable or candidate-specific? Test by checking if BJP holds 20%+ in Poonjar in 2031 with a different candidate.).
-
-- [ ] **Cross-link** the card from A3 + the synthesis card.
+- [x] **Built `scripts/narrative-bjp-ac-growth.py`** — 10-section analysis: statewide aggregate, distribution stats, top 20 gainers, top 20 losers/cessions, fielding patterns (26 cessions, 89 fielded both, 9 new entries), district-level reshuffle table, religion-bin cross-tab, 2016 prior-toehold check, net pp movement, NDA absorption check on cessions.
+- [x] **Wrote `docs/narrative-cards/bjp-ac-growth.md`** with hook-first structure: lead with the +0.18pp / ±25pp paradox, unpack geography of growth + cession + aggregate cancellation + 2031 falsification triggers (especially P.C. George/Poonjar candidate-personality test).
+- [x] **Cross-linked** from A3 and the synthesis card. Updated synthesis Pattern-3 section to incorporate the broader reshuffle finding.
 
 ---
 
@@ -93,4 +82,5 @@ Goal: write the most-original analytical card we have, surfacing the +0.18pp agg
 
 - 2026-05-07: Plan created.
 - 2026-05-07: **Session 1 complete.** Built regression and KC(M)-isolation Python scripts. Captured numbers in `docs/narrative-improvements-notes-session1.md`. Headline result: A1 strengthens, B3+B4 confirmed weak, A3 gradient claim weakens, KC(M) relabel concern is moot but base-defection is a real ~12% sub-mechanism.
-- 2026-05-07: **Session 2 complete.** All 6 existing cards updated: inference-discipline language, confidence gradients, regression FE results integrated, KC(M) caveat in A1 + A8, B3+B4 demoted to exploratory framing, "What this directly shows / cannot prove / would weaken" sections added everywhere. Synthesis card written. Session 3 (BJP AC-level growth card) still pending.
+- 2026-05-07: **Session 2 complete.** All 6 existing cards updated: inference-discipline language, confidence gradients, regression FE results integrated, KC(M) caveat in A1 + A8, B3+B4 demoted to exploratory framing, "What this directly shows / cannot prove / would weaken" sections added everywhere. Synthesis card written.
+- 2026-05-07: **Session 3 complete.** Built `scripts/narrative-bjp-ac-growth.py` (10-section analysis) and wrote `docs/narrative-cards/bjp-ac-growth.md` with hook-first structure. Cross-linked from A3 and synthesis card. **Full plan executed.** Catalog now has 8 cards (A1, A2, A3, A6, A8, B3+B4, synthesis, BJP AC-growth) + 1 working notes file + 4 analysis scripts (3 TS, 4 Python).

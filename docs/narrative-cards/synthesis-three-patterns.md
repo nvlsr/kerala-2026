@@ -37,14 +37,15 @@ Mechanism note: Muslim-share variation does *not* add a separate detectable prem
 
 ## Pattern 3: BJP's 3 wins as a geographically concentrated pocket
 
-What this means: BJP captured 3 seats — Nemom, Chathannoor, Kazhakoottam — all in or adjacent to Trivandrum district, all in 65%+ Hindu-share ACs, all in seats where UDF candidate selection underperformed. Statewide BJP vote-share aggregate moved only +0.18pp. The wins are real and concentrated; the "BJP grew systematically more in Hindu-heavy seats" gradient claim weakens under controls (district-FE β=+0.098, p=0.213).
+What this means: BJP captured 3 seats — Nemom, Chathannoor, Kazhakoottam — all in or adjacent to Trivandrum district, all in 65%+ Hindu-share ACs, all in seats where UDF candidate selection underperformed. Statewide BJP vote-share aggregate moved only +0.18pp — but underneath the flat aggregate, BJP gained 14-25pp in 11 specific ACs and withdrew from 26 others (yielding to NDA allies). The wins are real and concentrated; the "BJP grew systematically more in Hindu-heavy seats" gradient claim weakens under controls (district-FE β=+0.098, p=0.213).
 
 Evidence:
 
 - **A3**: 3 BJP wins have mean Hindu share 70.2% vs 53.4% statewide. UDF Δshare in those 3 ACs = +0.64pp vs +5.79pp in matched Hindu-majority controls — about 5pp UDF underperformance differential. All 4 named Christian BJP candidates lost; 3 of the 4 added 14-25pp to BJP's local share without winning. The "BJP can't make Christian inroads" framing is correct on win-rate but misleading on momentum.
+- **BJP AC-growth (`bjp-ac-growth.md`)**: documents the broader per-AC reshuffle the +0.18pp aggregate hides. Distribution: -21.9pp to +25.1pp across 140 ACs. 11 ACs gained ≥10pp; 10 ACs lost ≥10pp; 26 ACs were BJP cessions to NDA allies (BDJS, KC(B), Twenty20). Most central-Kerala BJP cessions occurred in Christian-mixed Ernakulam (mean BJP Δ -4.40pp district-wide). The +14-25pp gains in Pala, Poonjar, Thiruvalla concentrate where BJP fielded high-profile candidates (Shone George, P.C. George, Anoop Antony).
 - **B3+B4 (exploratory)**: District-level Nair share is negatively associated with UDF Δshare under region fixed effects (β=-0.272, p=0.044). District FE absorbs caste perfectly so we cannot test within-district. The Nair-heavy belt overlaps geographically with NDA concentration — consistent with a Trivandrum-region pattern, not a per-AC caste-voter behavior claim.
 
-Mechanism note: this pattern is concentrated, not gradient. The 3 wins themselves are descriptive observations on 3 specific ACs. The broader "BJP grew where Hindu share is higher" claim is statistically marginal once geographic clustering is controlled.
+Mechanism note: this pattern is concentrated AND reshuffled, not gradient. The 3 wins themselves are descriptive observations on 3 specific ACs. The broader "BJP grew where Hindu share is higher" claim is statistically marginal once geographic clustering is controlled. The under-the-aggregate reshuffle (gains in some central-Kerala ACs + cessions in others, both at ~10-25pp magnitudes) is the more striking finding.
 
 ---
 
@@ -76,7 +77,7 @@ Mechanism note: this pattern is concentrated, not gradient. The 3 wins themselve
 |---|---|---|
 | 1: Anti-LDF wave | A1, A2, A6 | A8 (geographic distribution of the wave) |
 | 2: Central Kerala UDF surge | A1, A8 | A2 (Sabarimala falsification clarifies the geography is Christian-belt, not Hindu-route) |
-| 3: BJP geographic pocket | A3 | B3+B4 (district-level Nair-belt overlap, exploratory) |
+| 3: BJP geographic pocket | A3, BJP AC-growth | B3+B4 (district-level Nair-belt overlap, exploratory) |
 
 For methodology and data:
 - `scripts/narrative-regression.py` — regression with district / region FE
