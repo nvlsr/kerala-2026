@@ -109,6 +109,8 @@ export function ExplorePage() {
         selectedAlliance={filters.alliance}
         selectedParty={filters.party}
         selectedSeat={filters.seat}
+        selectedReligionMix={filters.religionMix}
+        selectedReservation={filters.reservation}
         canReset={hasActiveFilters(filters)}
         onSetScope={(district) => dispatch({ type: "set-district", district })}
         onSetAlliance={(alliance) =>
@@ -118,26 +120,37 @@ export function ExplorePage() {
         onClearAlliance={() => dispatch({ type: "clear-alliance" })}
         onClearParty={() => dispatch({ type: "clear-party" })}
         onClearSeat={() => dispatch({ type: "clear-seat" })}
+        onClearReligionMix={() => dispatch({ type: "clear-religion-mix" })}
+        onClearReservation={() => dispatch({ type: "clear-reservation" })}
         onReset={() => dispatch({ type: "reset" })}
       />
       <SearchBar />
-      {(filters.district || filters.alliance) && (
-        <AllianceSection
-          scope={filters.district}
-          selectedAlliance={filters.alliance}
-          onSelectAlliance={(alliance) =>
-            dispatch({ type: "set-alliance", alliance })
-          }
-        />
-      )}
-      {filters.alliance && (
-        <PartySection
-          scope={filters.district}
-          alliance={filters.alliance}
-          selectedParty={filters.party}
-          onSelectParty={(party) => dispatch({ type: "set-party", party })}
-        />
-      )}
+      {/* AllianceSection + PartySection aggregate by district scope only.
+          When a religionMix or reservation filter is active (set via a
+          /questions card preset), these aggregates would show statewide
+          numbers despite the filter — misleading. Hide them; the
+          CandidateTable below honours the full filter set. */}
+      {(filters.district || filters.alliance) &&
+        !filters.religionMix &&
+        !filters.reservation && (
+          <AllianceSection
+            scope={filters.district}
+            selectedAlliance={filters.alliance}
+            onSelectAlliance={(alliance) =>
+              dispatch({ type: "set-alliance", alliance })
+            }
+          />
+        )}
+      {filters.alliance &&
+        !filters.religionMix &&
+        !filters.reservation && (
+          <PartySection
+            scope={filters.district}
+            alliance={filters.alliance}
+            selectedParty={filters.party}
+            onSelectParty={(party) => dispatch({ type: "set-party", party })}
+          />
+        )}
       <CandidateTable filters={filters} dispatch={dispatch} />
       <ConstituencyDetailRow
         filters={filters}

@@ -16,6 +16,12 @@ import {
   partyShort,
   type AllianceCode,
 } from "@/lib/data"
+import {
+  RELIGION_MIX_LABELS,
+  RESERVATION_LABELS,
+  type ReligionMix,
+  type ReservationFilter,
+} from "@/lib/filters"
 
 /**
  * The site's home-page title block — "Kerala · May 2026 / Legislative
@@ -46,6 +52,8 @@ type FilterBreadcrumbProps = {
   selectedAlliance: AllianceCode | null
   selectedParty: string | null
   selectedSeat: number | null
+  selectedReligionMix: ReligionMix | null
+  selectedReservation: ReservationFilter | null
   canReset: boolean
   onSetScope: (district: string) => void
   onSetAlliance: (alliance: AllianceCode) => void
@@ -53,6 +61,8 @@ type FilterBreadcrumbProps = {
   onClearAlliance: () => void
   onClearParty: () => void
   onClearSeat: () => void
+  onClearReligionMix: () => void
+  onClearReservation: () => void
   onReset: () => void
 }
 
@@ -72,13 +82,18 @@ const ALLIANCE_OPTIONS: FilterOption[] = MAIN_FRONT_CODES.map((code) => ({
  * the district + alliance dims (each is either a clearable value pill
  * if filtered, or a dropdown picker if not). Party + seat are
  * read-only crumbs — party is set via PartySection rows, seat via the
- * candidate table or constituency map.
+ * candidate table or constituency map. Religion-mix and reservation
+ * are read-only too: they only get set via /questions card presets,
+ * but show as clearable chips here when active so the user always
+ * sees what's filtering the view.
  */
 export function FilterBreadcrumb({
   scope,
   selectedAlliance,
   selectedParty,
   selectedSeat,
+  selectedReligionMix,
+  selectedReservation,
   canReset,
   onSetScope,
   onSetAlliance,
@@ -86,6 +101,8 @@ export function FilterBreadcrumb({
   onClearAlliance,
   onClearParty,
   onClearSeat,
+  onClearReligionMix,
+  onClearReservation,
   onReset,
 }: FilterBreadcrumbProps) {
   const district = scope ? getDistrict(scope) : null
@@ -129,6 +146,18 @@ export function FilterBreadcrumb({
         )}
         {selectedParty && (
           <Crumb label={partyShort(selectedParty)} onClear={onClearParty} />
+        )}
+        {selectedReligionMix && (
+          <Crumb
+            label={RELIGION_MIX_LABELS[selectedReligionMix]}
+            onClear={onClearReligionMix}
+          />
+        )}
+        {selectedReservation && (
+          <Crumb
+            label={RESERVATION_LABELS[selectedReservation]}
+            onClear={onClearReservation}
+          />
         )}
         {constituency && (
           <Crumb

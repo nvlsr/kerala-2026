@@ -15,6 +15,7 @@
  *                       (one public function per file under this directory;
  *                       see `aggregates/index.ts` for the layout)
  *   - candidate-rows.ts — flat row builder used by the candidate table
+ *   - religion-bins.ts — AC sets for ReligionMix bins (2025 projection)
  */
 export * from "./alliances"
 export * from "./aggregates"
@@ -25,4 +26,5 @@ export * from "./districts"
 export * from "./format"
 export * from "./historical"
 export * from "./parties"
+export * from "./religion-bins"
 export { demographicsYear } from "./demographics"

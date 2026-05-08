@@ -3,9 +3,11 @@ import {
   allianceForCandidate,
   canonicalPartyName,
   constituenciesIn,
+  getACsInReligionMix,
   isAllianceCode,
   type AllianceCode,
 } from "@/lib/data"
+import { reservationsMeta } from "@/lib/data/loaders"
 
 export type ResultFilter = "winners" | "losers" | "all"
 
@@ -21,11 +23,47 @@ export type SortColumn =
 
 export type SortDir = "asc" | "desc"
 
+/**
+ * Demographic-mix bins, computed from the 2025 religion projection.
+ * A read-only filter dimension on /explore (only set via curated
+ * question presets, not directly settable from the breadcrumb), but
+ * appears as a clearable chip when active.
+ *
+ *   muslim-majority      Muslim ≥ 60%
+ *   muslim-heavy         40 ≤ Muslim < 60
+ *   christian-majority   Christian ≥ 50%
+ *   christian-heavy      30 ≤ Christian < 50
+ *   hindu-heavy          Hindu ≥ 70%
+ */
+export type ReligionMix =
+  | "muslim-majority"
+  | "muslim-heavy"
+  | "christian-majority"
+  | "christian-heavy"
+  | "hindu-heavy"
+
+export type ReservationFilter = "SC" | "ST"
+
+export const RELIGION_MIX_LABELS: Record<ReligionMix, string> = {
+  "muslim-majority": "Muslim-majority",
+  "muslim-heavy": "Muslim-heavy",
+  "christian-majority": "Christian-majority",
+  "christian-heavy": "Christian-heavy",
+  "hindu-heavy": "Hindu-heavy",
+}
+
+export const RESERVATION_LABELS: Record<ReservationFilter, string> = {
+  SC: "SC reserved",
+  ST: "ST reserved",
+}
+
 export type Filters = {
   district: string | null
   alliance: AllianceCode | null
   party: string | null
   seat: number | null
+  religionMix: ReligionMix | null
+  reservation: ReservationFilter | null
   result: ResultFilter
   sort: { column: SortColumn; dir: SortDir }
 }
@@ -35,6 +73,8 @@ export const initialFilters: Filters = {
   alliance: null,
   party: null,
   seat: null,
+  religionMix: null,
+  reservation: null,
   result: "winners",
   sort: { column: "votes", dir: "desc" },
 }
@@ -50,6 +90,8 @@ export type FilterAction =
   | { type: "clear-alliance" }
   | { type: "clear-party" }
   | { type: "clear-seat" }
+  | { type: "clear-religion-mix" }
+  | { type: "clear-reservation" }
   | { type: "reset" }
   /** Apply a curated combo (Quick views chips) — overwrites multiple slots at once. */
   | { type: "apply-preset"; preset: Partial<Filters> }
@@ -89,6 +131,10 @@ export function filtersReducer(state: Filters, action: FilterAction): Filters {
       return { ...state, party: null }
     case "clear-seat":
       return { ...state, seat: null }
+    case "clear-religion-mix":
+      return { ...state, religionMix: null }
+    case "clear-reservation":
+      return { ...state, reservation: null }
     case "reset":
       return initialFilters
     case "apply-preset":
@@ -132,6 +178,14 @@ const SORT_COLUMNS: readonly SortColumn[] = [
   "marginDelta",
 ]
 const RESULT_VALUES: readonly ResultFilter[] = ["winners", "losers", "all"]
+const RELIGION_MIX_VALUES: readonly ReligionMix[] = [
+  "muslim-majority",
+  "muslim-heavy",
+  "christian-majority",
+  "christian-heavy",
+  "hindu-heavy",
+]
+const RESERVATION_VALUES: readonly ReservationFilter[] = ["SC", "ST"]
 
 function isSortColumn(value: string): value is SortColumn {
   return (SORT_COLUMNS as readonly string[]).includes(value)
@@ -145,6 +199,14 @@ function isResultFilter(value: string): value is ResultFilter {
   return (RESULT_VALUES as readonly string[]).includes(value)
 }
 
+function isReligionMix(value: string): value is ReligionMix {
+  return (RELIGION_MIX_VALUES as readonly string[]).includes(value)
+}
+
+function isReservationFilter(value: string): value is ReservationFilter {
+  return (RESERVATION_VALUES as readonly string[]).includes(value)
+}
+
 /**
  * Serialize active filters to URL search params. Default values are omitted to
  * keep the unfiltered URL clean.
@@ -155,6 +217,8 @@ export function serializeFilters(filters: Filters): URLSearchParams {
   if (filters.alliance) p.set("alliance", filters.alliance)
   if (filters.party) p.set("party", filters.party)
   if (filters.seat != null) p.set("seat", String(filters.seat))
+  if (filters.religionMix) p.set("religion", filters.religionMix)
+  if (filters.reservation) p.set("reservation", filters.reservation)
   if (filters.result !== initialFilters.result) p.set("result", filters.result)
   if (
     filters.sort.column !== initialFilters.sort.column ||
@@ -187,6 +251,13 @@ export function parseFilters(params: URLSearchParams): Filters {
     if (Number.isInteger(n) && n >= 1 && n <= TOTAL_SEATS) filters.seat = n
   }
 
+  const religion = params.get("religion")
+  if (religion && isReligionMix(religion)) filters.religionMix = religion
+
+  const reservation = params.get("reservation")
+  if (reservation && isReservationFilter(reservation))
+    filters.reservation = reservation
+
   const result = params.get("result")
   if (result && isResultFilter(result)) filters.result = result
 
@@ -209,8 +280,19 @@ export function parseFilters(params: URLSearchParams): Filters {
  * filter.
  */
 export function getFilteredConstituencyNumbers(filters: Filters): Set<number> {
+  const religionAllowed = filters.religionMix
+    ? getACsInReligionMix(filters.religionMix)
+    : null
   const result = new Set<number>()
   for (const c of constituenciesIn(filters.district)) {
+    if (religionAllowed && !religionAllowed.has(c.constituencyNumber)) continue
+    if (
+      filters.reservation &&
+      reservationsMeta.constituencyToReservation[
+        String(c.constituencyNumber)
+      ] !== filters.reservation
+    )
+      continue
     for (const cand of c.candidates) {
       if (cand.isNota) continue
       if (filters.result === "winners" && cand.status !== "won") continue

@@ -27,12 +27,13 @@ import {
 } from "@/lib/data"
 import { sortCandidateRows } from "@/lib/candidate-sort"
 import { CANDIDATE_TABLE_PAGE_SIZE as PAGE_SIZE } from "@/lib/constants"
-import type {
-  FilterAction,
-  Filters,
-  ResultFilter,
-  SortColumn,
-  SortDir,
+import {
+  getFilteredConstituencyNumbers,
+  type FilterAction,
+  type Filters,
+  type ResultFilter,
+  type SortColumn,
+  type SortDir,
 } from "@/lib/filters"
 
 type Props = {
@@ -48,30 +49,42 @@ export function CandidateTable({ filters, dispatch }: Props) {
   const district = scope ? getDistrict(scope) : null
   const allRows = useMemo(() => buildCandidateRows(scope), [scope])
 
+  // Set of AC numbers that pass the constituency-level filters
+  // (district + religionMix + reservation). Computed once and joined
+  // against the candidate-row list below for consistency with the
+  // ConstituencyMap's "in filter" set.
+  const acsInScope = useMemo(
+    () => getFilteredConstituencyNumbers(filters),
+    [filters]
+  )
+
   const filtered = useMemo(
     () =>
       allRows.filter((r) => {
+        if (!acsInScope.has(r.constituency.constituencyNumber)) return false
         if (result === "winners" && !r.isWinner) return false
         if (result === "losers" && r.isWinner) return false
         if (alliance && r.allianceCode !== alliance) return false
         if (party && r.party !== party) return false
         return true
       }),
-    [allRows, result, alliance, party]
+    [allRows, acsInScope, result, alliance, party]
   )
 
-  // Count of rows that match the structural filters (alliance/party/scope)
-  // BUT ignoring the result filter — used to detect "everything is hidden by
-  // the Winner column toggle" cases (e.g., clicking a party that has 0
-  // winners produces an empty table even though candidates exist).
+  // Count of rows that match the structural filters (alliance/party/scope/
+  // religionMix/reservation) BUT ignoring the result filter — used to detect
+  // "everything is hidden by the Winner column toggle" cases (e.g., clicking
+  // a party that has 0 winners produces an empty table even though candidates
+  // exist).
   const ignoreResultMatchCount = useMemo(
     () =>
       allRows.filter((r) => {
+        if (!acsInScope.has(r.constituency.constituencyNumber)) return false
         if (alliance && r.allianceCode !== alliance) return false
         if (party && r.party !== party) return false
         return true
       }).length,
-    [allRows, alliance, party]
+    [allRows, acsInScope, alliance, party]
   )
 
   const sorted = useMemo(

@@ -28,7 +28,9 @@ function resolveFilters(preset: Partial<Filters>): Filters {
 }
 
 function applyFilters(rows: CandidateRow[], filters: Filters): CandidateRow[] {
+  const inFilterSet = getFilteredConstituencyNumbers(filters)
   return rows.filter((r) => {
+    if (!inFilterSet.has(r.constituency.constituencyNumber)) return false
     if (filters.result === "winners" && !r.isWinner) return false
     if (filters.result === "losers" && r.isWinner) return false
     if (filters.alliance && r.allianceCode !== filters.alliance) return false
@@ -88,7 +90,7 @@ export function QuestionCard({ question }: Props) {
     [topRows]
   )
 
-  const dashboardUrl = `/?${serializeFilters(filters).toString()}`
+  const dashboardUrl = `/explore?${serializeFilters(filters).toString()}`
 
   const [copied, setCopied] = useState(false)
   const handleCopyPermalink = async () => {

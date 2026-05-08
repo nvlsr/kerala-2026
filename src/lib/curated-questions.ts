@@ -16,6 +16,8 @@ export type QuestionTheme =
   | "margin-movement"
   | "multi-cycle"
   | "geographic"
+  | "religion"
+  | "reservation"
 
 export type CuratedQuestion = {
   id: string
@@ -473,6 +475,124 @@ export const curatedQuestions: CuratedQuestion[] = [
     },
     tags: { party: "CPI", theme: "margin-movement" },
   },
+  // ─── Religion theme ────────────────────────────────────────────────
+  // Demographic-conditioned questions. Religion bins use the 2025
+  // projection (Census 2011 + state-level CRS multipliers); see
+  // docs/data-pipeline.md. Bin definitions live in
+  // src/lib/data/religion-bins.ts.
+  {
+    id: "udf-gains-muslim-majority",
+    question: "Where did UDF gain the most in Muslim-majority seats?",
+    filters: {
+      alliance: "UDF",
+      religionMix: "muslim-majority",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+    tags: { alliance: "UDF", theme: "religion" },
+  },
+  {
+    id: "udf-gains-christian-heavy",
+    question: "Where did UDF gain the most in Christian-heavy seats?",
+    filters: {
+      alliance: "UDF",
+      religionMix: "christian-heavy",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+    tags: { alliance: "UDF", theme: "religion" },
+  },
+  {
+    id: "udf-underperformed-christian-heavy",
+    question: "Christian-heavy seats where UDF underperformed",
+    filters: {
+      alliance: "UDF",
+      religionMix: "christian-heavy",
+      result: "all",
+      sort: { column: "shareDelta", dir: "asc" },
+    },
+    tags: { alliance: "UDF", theme: "religion" },
+  },
+  {
+    id: "ldf-collapse-christian-heavy",
+    question: "Where did LDF collapse most in Christian-heavy seats?",
+    filters: {
+      alliance: "LDF",
+      religionMix: "christian-heavy",
+      result: "all",
+      sort: { column: "shareDelta", dir: "asc" },
+    },
+    tags: { alliance: "LDF", theme: "religion" },
+  },
+  {
+    id: "ldf-held-muslim-majority",
+    question: "Muslim-majority seats where LDF held its ground",
+    filters: {
+      alliance: "LDF",
+      religionMix: "muslim-majority",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+    tags: { alliance: "LDF", theme: "religion" },
+  },
+  {
+    id: "nda-growth-hindu-heavy",
+    question: "Where did NDA grow the most in Hindu-heavy seats?",
+    filters: {
+      alliance: "NDA",
+      religionMix: "hindu-heavy",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+    tags: { alliance: "NDA", theme: "religion" },
+  },
+  {
+    id: "bjp-closest-hindu-heavy",
+    question:
+      "Where did BJP come closest to winning in Hindu-heavy seats?",
+    filters: {
+      party: "Bharatiya Janata Party",
+      religionMix: "hindu-heavy",
+      result: "losers",
+      sort: { column: "margin", dir: "desc" },
+    },
+    tags: { party: "BJP", theme: "religion" },
+  },
+  // ─── Reservation theme ─────────────────────────────────────────────
+  // The 16 SC/ST reserved seats (14 SC + 2 ST) are stable across
+  // 2011/2016/2021/2026 per the 2008 Delimitation Order; see
+  // data/reservations.json.
+  {
+    id: "sc-reserved-swings",
+    question: "How did SC reserved seats swing in 2026?",
+    filters: {
+      reservation: "SC",
+      result: "winners",
+      sort: { column: "marginDelta", dir: "desc" },
+    },
+    tags: { theme: "reservation" },
+  },
+  {
+    id: "st-reserved-results",
+    question: "How did the 2 ST reserved seats split?",
+    filters: {
+      reservation: "ST",
+      result: "winners",
+      sort: { column: "margin", dir: "desc" },
+    },
+    tags: { theme: "reservation" },
+  },
+  {
+    id: "udf-flips-sc-reserved",
+    question: "Where did UDF gain ground in SC reserved seats?",
+    filters: {
+      alliance: "UDF",
+      reservation: "SC",
+      result: "all",
+      sort: { column: "shareDelta", dir: "desc" },
+    },
+    tags: { alliance: "UDF", theme: "reservation" },
+  },
 ]
 
 /** Stable display order for party filter pills (grouped by alliance: NDA, UDF, LDF). */
@@ -490,6 +610,8 @@ const THEME_ORDER: QuestionTheme[] = [
   "vote-share",
   "margins",
   "margin-movement",
+  "religion",
+  "reservation",
   "multi-cycle",
   "geographic",
 ]
@@ -500,6 +622,8 @@ const THEME_LABELS: Record<QuestionTheme, string> = {
   "margin-movement": "Margin movement",
   "multi-cycle": "Multi-cycle",
   geographic: "Geographic",
+  religion: "Religion",
+  reservation: "Reservation",
 }
 
 export function themeLabel(theme: QuestionTheme): string {
