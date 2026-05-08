@@ -125,26 +125,23 @@ This nuance matters: BJP's "contest entries" weren't mostly stepping into empty 
 
 > **Ernakulam** · 14 ACs · 3 grew (+17.5pp) · 2 stable · 9 withdrew (−79.1pp) · **net −61.5pp**
 
-Ernakulam is the inverse of Trivandrum. BJP retreated from nine of fourteen ACs — almost all Christian-mixed — while Twenty 20 expanded its footprint across the same district.
+Ernakulam is the inverse of Trivandrum. BJP retreated from nine of fourteen ACs — almost all Christian-mixed — and Twenty 20 took those slots under NDA's banner.
 
-The single most important fact about this terrain: **Twenty 20 had no presence in any Ernakulam AC in 2021.** Every NDA slot there was BJP-only. By 2026, T20 had taken over all nine of those slots, fresh — and outperformed what BJP had held in nearly every case.
+The crucial fact for understanding what happened: **Twenty 20 was already a substantial local force in Ernakulam before it joined NDA.** As an independent civic-issue party (Kitex group's local political vehicle), T2P fielded 8 Ernakulam candidates in 2021 with shares from 6% to 28%. When T20 was inducted into NDA on 22 January 2026, the alliance instantly absorbed that pre-existing Ernakulam vote share. NDA didn't manufacture fresh capacity — it inducted an already-strong local force.
 
-> **Going in.** Twenty 20 was formally inducted into NDA on 22 January 2026[^3]. T20's chief coordinator Sabu Jacob framed the alliance as ideological alignment, not seat-sharing convenience: *"What matters more is that the ideology of development that Twenty20 and NDA share should flourish."*[^4] During the campaign, Amit Shah personally raised the Munambam Latin Catholic land-dispute plank in Ernakulam[^5] — a Christian-protection theme that fit T20's local civic-issue brand more naturally than direct BJP messaging would have.
+> **Going in.** Twenty 20 was formally inducted into NDA on 22 January 2026[^3], bringing its existing 8-AC Ernakulam footprint inside the alliance. T20's chief coordinator Sabu Jacob framed the alignment in ideological-fit terms: *"What matters more is that the ideology of development that Twenty20 and NDA share should flourish."*[^4] Read in the context of T20's existing voter base, the quote is alliance-induction logic — bringing in a vehicle that already had the local ground — not aspirational positioning for a future build. During the campaign, Amit Shah personally raised the Munambam Latin Catholic land-dispute plank in Ernakulam[^5], a Christian-protection theme that fit T20's local civic-issue brand more naturally than direct BJP messaging would have.
 
-The Ernakulam withdrawals each had a Twenty 20 candidate who absorbed BJP's previous share — and in several cases exceeded it substantially:
+Two distinct mechanisms produced NDA's Ernakulam gains, and they need to be told apart:
 
-- **[Thripunithura](/explore?seat=81)** — BJP 15.2% → 0%; T20 19.2%; **NDA aggregate +4pp**
-- **[Thrikkakara](/explore?seat=83)** — BJP 11.3% → 0%; T20 15.4%; **NDA aggregate +4pp**
-- **[Perumbavoor](/explore?seat=74)** — BJP 10.5% → 0%; T20 15.3%; **NDA aggregate +5pp**
-- **[Kunnathunad](/explore?seat=84)** — BJP 4.7% → 0%; T20 25.1%; **NDA aggregate +20.5pp**
+**1. Alliance switch — the 8 seats T2P had already contested in 2021.** Where T2P had been an independent force, the 2026 result is mostly arithmetic: the same voters that backed T2P outside NDA in 2021 now count as NDA. Kunnathunad is the extreme case — BJP got 4.7% in 2021 while T2P got 27.6% (outside NDA); in 2026 T20 (now NDA) got 25.1%, BJP got 0%. The headline-looking +20.4pp NDA gain at Kunnathunad came almost entirely from T20 changing alliances, not from voters changing minds.
 
-That last one — Kunnathunad — is the single biggest seat-level NDA gain anywhere in Kerala in 2026. Same constituency, same Christian-mixed terrain, BJP candidate replaced with T20 candidate, and the result is a five-fold expansion of NDA's local share. One AC's worth of alliance-vehicle substitution dwarfs most district-level swings.
+**2. Genuine substitution — seats where T20 came in fresh.** Where T2P hadn't fielded in 2021, T20's 2026 entry is a true alliance-vehicle expansion. **[Thripunithura](/explore?seat=81)** is the cleanest case: BJP held the NDA slot at 15.2% in 2021; T2P didn't field that year; in 2026 BJP withdrew and T20 came in fresh, getting 19.2% — a real **+4pp NDA expansion** in a seat where T20 had no prior local base. **[Angamaly](/explore?seat=75)** and **[Piravom](/explore?seat=85)** show similar smaller fresh-entry gains. These are the seats that test whether T20 can genuinely expand under the NDA banner, beyond just consolidating its pre-2026 organic base.
 
-In Ernakulam specifically, **NDA grew without BJP growing**. The alliance vehicle worked where the BJP brand could not.
+In both mechanisms, **the alliance's strategic move was the same**: stop trying to grow BJP itself in Christian-mixed Ernakulam terrain (where the BJP brand had been stuck at 5–15% across multiple cycles), and route the alliance's presence through a vehicle the local terrain already accepted. The 2026 numbers don't tell us NDA's voter base in Ernakulam grew much; they tell us NDA chose a different vehicle, and the vehicle had pre-existing ground.
 
-The pattern matters because Kerala's anti-incumbent vote did not naturally consolidate behind NDA in 2026 — most of the LDF→swing landed on UDF. Twenty 20-style expansion may represent NDA's attempt to build a broader coalition-compatible vehicle for Christian-mixed urban terrains where BJP itself remains electorally distant.
+The pattern matters because Kerala's anti-incumbent vote did not naturally consolidate behind NDA in 2026 — most of the LDF→swing landed on UDF. T20's induction may represent NDA's attempt to build a broader coalition-compatible vehicle for Christian-mixed urban terrains where BJP itself remains electorally distant.
 
-[Visualization: Ernakulam alliance-substitution map. Layers: BJP withdrawals, Twenty 20-contested seats, NDA aggregate change. Goal: visually show NDA expansion even where BJP itself retreated.]
+[Visualization: Ernakulam alliance-substitution map. Layers: BJP withdrawals, T2P-2021-as-independent (separate layer), T20-2026-as-NDA, NDA aggregate change. Goal: visually distinguish alliance-switch seats (T20 already there in 2021) from genuine-substitution seats (T20 came in fresh).]
 
 ---
 
@@ -171,7 +168,7 @@ Kerala 2026 may mark the beginning of a different strategy entirely — one that
 ## What would weaken this conclusion
 
 - **2031 Trivandrum cluster reverting to scattered isolated seats** — would suggest the 2026 cluster was opportunistic candidate convergence, not an emerging regional base.
-- **2031 Ernakulam T20 expansion plateauing or reversing** with BJP returning to direct contest — would suggest 2026 was alliance-management improvisation, not a durable terrain-by-terrain strategy. Kunnathunad's +20pp jump is the cleanest single test: does T20 hold ≥20% there?
+- **2031 Ernakulam T20 expansion plateauing or reversing** with BJP returning to direct contest — would suggest 2026 was alliance-management improvisation, not a durable terrain-by-terrain strategy. The cleanest single test is whether T20's *genuine-substitution* seats (Thripunithura, Angamaly, Piravom — where T20 had no 2021 base) hold up; the *alliance-switch* seats (Kunnathunad and the other 7 T2P-2021 seats) say more about T20's pre-existing organic base than about NDA's expansion.
 - **2031 marquee Kottayam candidates not fielded and BJP shares reverting to <10%** — would suggest the 2026 gains were candidate-personality effects, not strategic seat-deepening.
 - **2031 BJP returning to broad statewide contest** (115+ candidates) without a corresponding regional-cluster build — would suggest 2026's withdrawal pattern was constraint, not chosen reorganization.
 
@@ -199,7 +196,7 @@ If the same regional-cluster + alliance-vehicle pattern repeats in 2031, the 202
 - **The "Why a pivot" subsection in Section 1** is the thesis-supporting move. Hindu-share gradient falsification (β=+0.098, p=0.213) is now framed as the *reason* BJP would have shifted strategy — not just a counter to a press claim.
 - **Heading style:** "District: pattern" per agreement. Section 2 uses "Trivandrum belt" since one of the 3 wins (Chathannoor) sits in Kollam district, not Trivandrum. The belt is defined explicitly.
 - **Section 3 (Kottayam) reframes "contest-entry" as "BJP-for-BDJS slot rotation."** Most of the so-called "contest entries" were actually BJP taking back the NDA slot from BDJS, not entering empty terrain. Verified per-seat against 2021 data: 6 of 8 had BDJS in 2021 at 2-9% share. Only Thalassery and Devikulam were true zero-NDA-base entries.
-- **Section 4 (Ernakulam) is now T20-only.** The earlier "BDJS substitution is the inverse" sub-section was dropped — BDJS substitution had mixed results (Konni/Kunnamkulam shrank; Kaduthuruthy/Kottayam grew slightly), which diluted the cleaner T20 thesis. The T20 story is sharp: T20 had zero presence in Ernakulam in 2021; in 2026 it took all 9 BJP-withdrawal slots fresh, and grew NDA's footprint in 8 of them. Kunnathunad (+20.5pp NDA) is the standout.
+- **Section 4 (Ernakulam) is T20-only**, with two distinct mechanisms surfaced explicitly: **alliance switch** (T2P fielded as an independent party in 8 Ernakulam ACs in 2021 with shares up to 28%; those votes flipped to NDA when T20 was inducted in Jan 2026 — Kunnathunad is the extreme case where the +20pp NDA "gain" is mostly arithmetic from the alliance switch) and **genuine substitution** (Thripunithura, Angamaly, Piravom — where T20 came in fresh in 2026 with no 2021 base, and produced real alliance-vehicle expansion). The second mechanism is the actual test of NDA's strategic-pivot thesis. Earlier "T20 had no Ernakulam presence in 2021" claim was wrong; corrected after canonicalizing 2021 data.
 - **What got dropped from the prior version:** the trajectory chart now sits inside Section 3 rather than as its own section. Manjeshwar callout, "weak UDF candidates" framing, BDJS sub-paragraph in Section 4. Sub-demographic factors compressed into one sentence.
-- **What got added:** Trivandrum belt (15 ACs) instead of district (14). Slot-rotation framing in Section 3. T20-fresh-entry framing + Kunnathunad callout in Section 4.
+- **What got added:** Trivandrum belt (15 ACs) instead of district (14). Slot-rotation framing in Section 3. Two-mechanism framing for Ernakulam (alliance switch vs genuine substitution) in Section 4. Thripunithura now the standout genuine-substitution case (replacing the previously-incorrect Kunnathunad standout claim).
 - **Visualizations marked as `[bracketed notes]`** — these are placeholders for chart components in the final page. The statewide choropleth already exists; the zoom maps don't.
