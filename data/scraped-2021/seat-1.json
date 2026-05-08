@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "A. K. M. Ashraf",
-      "party": "IUML",
+      "party": "Indian Union Muslim League",
       "votes": 65758,
       "pct": 38.14
     },
     {
       "name": "K. Surendran",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 65013,
       "pct": 37.7
     },
     {
       "name": "V. V. Ramesan",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 40639,
       "pct": 23.57
     },
     {
       "name": "S. Praveen Kumar",
-      "party": "ADHMPI",
+      "party": "Democratic Human Rights Movement Party",
       "votes": 251,
       "pct": 0.15
     },
     {
       "name": "M. Surendran",
-      "party": "IND",
+      "party": "Independent",
       "votes": 197,
       "pct": 0.11
     },
     {
       "name": "I. John D Souza",
-      "party": "IND",
+      "party": "Independent",
       "votes": 181,
       "pct": 0.1
     }

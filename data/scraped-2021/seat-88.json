@@ -9,19 +9,19 @@
   "candidates": [
     {
       "name": "A. Raja",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 59049,
       "pct": 51
     },
     {
       "name": "D. Kumar",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 51201,
       "pct": 44.22
     },
     {
       "name": "S. Ganesan",
-      "party": "IND",
+      "party": "Independent",
       "votes": 4717,
       "pct": 4.07
     }

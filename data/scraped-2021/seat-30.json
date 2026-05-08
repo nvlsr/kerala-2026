@@ -9,61 +9,61 @@
   "candidates": [
     {
       "name": "P. T. A. Rahim",
-      "party": "LDF",
+      "party": "Independent (LDF)",
       "votes": 85138,
       "pct": 43.93
     },
     {
       "name": "Dinesh Perumanna",
-      "party": "UDF",
+      "party": "Independent (UDF)",
       "votes": 74862,
       "pct": 38.62
     },
     {
       "name": "V. K. Sajeevan",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 27672,
       "pct": 14.28
     },
     {
       "name": "Abdul Wahid",
-      "party": "SDPI",
+      "party": "Social Democratic Party Of India",
       "votes": 1299,
       "pct": 0.67
     },
     {
       "name": "E. P. Anwar Sadath",
-      "party": "WPI",
+      "party": "Welfare Party of India",
       "votes": 1057,
       "pct": 0.55
     },
     {
       "name": "Dineshan Pakkath",
-      "party": "IND",
+      "party": "Independent",
       "votes": 1021,
       "pct": 0.53
     },
     {
       "name": "Abdul Rahim P. s/o Hassan Koya",
-      "party": "IND",
+      "party": "Independent",
       "votes": 738,
       "pct": 0.38
     },
     {
       "name": "K. G. Babu",
-      "party": "IND",
+      "party": "Independent",
       "votes": 724,
       "pct": 0.37
     },
     {
       "name": "Dinesan Mundakkal",
-      "party": "IND",
+      "party": "Independent",
       "votes": 225,
       "pct": 0.12
     },
     {
       "name": "Abdul Rahim P. s/o Abdul Kareem",
-      "party": "IND",
+      "party": "Independent",
       "votes": 222,
       "pct": 0.11
     }

@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "Muhammed Muhassin",
-      "party": "CPI",
+      "party": "Communist Party of India",
       "votes": 75311,
       "pct": 49.58
     },
     {
       "name": "Riyaz Mukkoli",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 57337,
       "pct": 37.74
     },
     {
       "name": "K. M. Haridas",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 14578,
       "pct": 9.6
     },
     {
       "name": "S. P. Ameer Ali",
-      "party": "SDPI",
+      "party": "Social Democratic Party Of India",
       "votes": 2975,
       "pct": 1.96
     },
     {
       "name": "S. Mujeeb Rahman",
-      "party": "WPI",
+      "party": "Welfare Party of India",
       "votes": 801,
       "pct": 0.53
     },
     {
       "name": "T. P. Narayanan",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 517,
       "pct": 0.34
     }

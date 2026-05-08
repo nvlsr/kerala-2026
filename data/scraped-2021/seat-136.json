@@ -9,25 +9,25 @@
   "candidates": [
     {
       "name": "G. Stephan",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 66776,
       "pct": 45.83
     },
     {
       "name": "K. S. Sabarinathan",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 61730,
       "pct": 42.37
     },
     {
       "name": "C. Sivankutty",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 15379,
       "pct": 10.55
     },
     {
       "name": "M. Krishnankutty",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 923,
       "pct": 0.63
     }

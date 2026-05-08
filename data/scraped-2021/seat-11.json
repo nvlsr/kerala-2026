@@ -9,25 +9,25 @@
   "candidates": [
     {
       "name": "Ramachandran Kadannappally",
-      "party": "CS",
+      "party": "Congress (Secular)",
       "votes": 60313,
       "pct": 44.98
     },
     {
       "name": "Satheesan Pacheni",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 58568,
       "pct": 43.68
     },
     {
       "name": "Archana Vandichal",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 11581,
       "pct": 8.64
     },
     {
       "name": "B. Shamsudheen Moulavi",
-      "party": "SDPI",
+      "party": "Social Democratic Party Of India",
       "votes": 2069,
       "pct": 1.54
     },
@@ -39,19 +39,19 @@
     },
     {
       "name": "P. Satheesan",
-      "party": "IND",
+      "party": "Independent",
       "votes": 147,
       "pct": 0.11
     },
     {
       "name": "P. V. Ramachandran",
-      "party": "IND",
+      "party": "Independent",
       "votes": 107,
       "pct": 0.08
     },
     {
       "name": "N. K. Surendran",
-      "party": "IND",
+      "party": "Independent",
       "votes": 84,
       "pct": 0.06
     }

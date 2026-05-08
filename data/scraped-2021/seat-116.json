@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "C. R. Mahesh",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 94225,
       "pct": 54.38
     },
     {
       "name": "R. Ramachandran",
-      "party": "CPI",
+      "party": "Communist Party of India",
       "votes": 65017,
       "pct": 37.52
     },
     {
       "name": "Bitty Sudheer",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 12144,
       "pct": 7.01
     },
     {
       "name": "Sumayya Najeeb",
-      "party": "SDPI",
+      "party": "Social Democratic Party Of India",
       "votes": 1037,
       "pct": 0.6
     },
     {
       "name": "S. Bharghavan",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 283,
       "pct": 0.16
     },
     {
       "name": "Madhu",
-      "party": "ADHMPI",
+      "party": "Democratic Human Rights Movement Party",
       "votes": 128,
       "pct": 0.07
     }

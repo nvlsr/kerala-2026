@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "Oommen Chandy",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 63372,
       "pct": 48.08
     },
     {
       "name": "Jaick C. Thomas",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 54328,
       "pct": 41.22
     },
     {
       "name": "N. Hari",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 11694,
       "pct": 8.87
     },
     {
       "name": "George Joseph Vathappally",
-      "party": "IND",
+      "party": "Independent",
       "votes": 997,
       "pct": 0.76
     },
     {
       "name": "P. P. Abhilash",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 763,
       "pct": 0.58
     },
     {
       "name": "M. V. Cherian",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 146,
       "pct": 0.11
     }

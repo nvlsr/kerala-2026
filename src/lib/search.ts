@@ -17,6 +17,7 @@ import {
   districts,
   type AllianceCode,
 } from "@/lib/data"
+import { alliancesMeta } from "@/lib/data/loaders"
 
 export type SearchResultType =
   | "candidate"
@@ -58,46 +59,28 @@ type IndexEntry = {
 let _index: IndexEntry[] | null = null
 
 /**
- * Generates extra search tokens for parties whose canonical names
- * differ from common reader abbreviations. Returned tokens are
- * appended to the party's searchKey so substring match catches
- * abbreviated forms like "BJP", "KCB", "KC(B)", "INC", "IUML".
+ * Returns the variant strings (abbreviations, alternate transliterations,
+ * historical forms) that should resolve to the given canonical party
+ * name. Sourced directly from data/alliances.json — the project's
+ * single source of truth for party-name canonicalization. The returned
+ * tokens get appended to the party's searchKey so a user typing "T2P",
+ * "BJP", "KCB", "CPIM", etc. surfaces the canonical "Twenty 20 Party",
+ * "Bharatiya Janata Party", "Kerala Congress (B)", "Communist Party of
+ * India (Marxist)" entries via substring match.
  *
- * Strategy:
- * - Split the canonical name on spaces and parens.
- * - Build initials from each capitalized word ("Kerala Congress" → "KC").
- * - For parenthetical suffixes, also attach the suffix: "Kerala Congress (B)" → "KCB", "KC(B)".
- * - Punctuation-stripped variants too ("kc(b)" → also indexable as "kcb").
+ * Combines two inputs:
+ *   - alliancesMeta.partyAbbreviation[canonical]: the official short form
+ *     (e.g. "BJP", "20-20", "CPI(M)")
+ *   - alliancesMeta.partyAliases: variant strings → canonical (e.g.
+ *     "T2P" / "Twenty Twenty Party" → "Twenty 20 Party")
  */
-function partyAliases(party: string): string[] {
+function partyAliases(canonical: string): string[] {
   const out = new Set<string>()
-  const lower = party.toLowerCase()
-  // Strip-punct variant of the full party
-  out.add(lower.replace(/[().,]/g, ""))
-  // Initials of capitalized words (excluding parenthetical content)
-  const main = party.replace(/\([^)]*\)/g, "").trim()
-  const initials = main
-    .split(/\s+/)
-    .filter((w) => /^[A-Z]/.test(w))
-    .map((w) => w[0])
-    .join("")
-    .toLowerCase()
-  if (initials.length >= 2) out.add(initials)
-  // Parenthetical suffix attached to initials: "Kerala Congress (B)" → "kcb" + "kc(b)"
-  const parenMatch = party.match(/\(([^)]+)\)/)
-  if (parenMatch && initials.length >= 2) {
-    const inner = parenMatch[1].trim()
-    const suffix = inner.toLowerCase().replace(/\s+/g, "")
-    out.add(initials + suffix) // kcb / cpimarxist
-    out.add(`${initials}(${suffix})`) // kc(b)
-    // Also generate "first letter only" version for multi-letter
-    // parentheticals so CPI(M) (canonical "(Marxist)") still matches
-    // user queries like "cpim" or "cpi(m)".
-    const firstLetter = inner[0]?.toLowerCase()
-    if (firstLetter && firstLetter !== suffix) {
-      out.add(initials + firstLetter) // cpim
-      out.add(`${initials}(${firstLetter})`) // cpi(m)
-    }
+  const abbrev = alliancesMeta.partyAbbreviation[canonical]
+  if (abbrev) out.add(abbrev.toLowerCase())
+  for (const [variant, target] of Object.entries(alliancesMeta.partyAliases)) {
+    if (variant.startsWith("_")) continue
+    if (target === canonical) out.add(variant.toLowerCase())
   }
   return [...out]
 }

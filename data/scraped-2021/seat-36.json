@@ -9,25 +9,25 @@
   "candidates": [
     {
       "name": "A. P. Anilkumar",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 87415,
       "pct": 51.44
     },
     {
       "name": "P. Mithuna",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 71852,
       "pct": 42.28
     },
     {
       "name": "P. C. Vijayan",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 7057,
       "pct": 4.15
     },
     {
       "name": "C. Krishnan",
-      "party": "WPI",
+      "party": "Welfare Party of India",
       "votes": 2943,
       "pct": 1.73
     }

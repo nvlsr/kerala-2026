@@ -9,13 +9,13 @@
   "candidates": [
     {
       "name": "N. K. Akbar",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 77072,
       "pct": 52.52
     },
     {
       "name": "K. N. A. Khader",
-      "party": "IUML",
+      "party": "Indian Union Muslim League",
       "votes": 58804,
       "pct": 40.07
     },
@@ -27,19 +27,19 @@
     },
     {
       "name": "Asharaf Vadakkoot",
-      "party": "SDPI",
+      "party": "Social Democratic Party Of India",
       "votes": 2889,
       "pct": 1.97
     },
     {
       "name": "Antony",
-      "party": "IND",
+      "party": "Independent",
       "votes": 392,
       "pct": 0.27
     },
     {
       "name": "M. Kumar",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 301,
       "pct": 0.21
     }

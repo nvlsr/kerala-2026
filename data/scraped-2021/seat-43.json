@@ -9,31 +9,31 @@
   "candidates": [
     {
       "name": "K. P. A. Majeed",
-      "party": "IUML",
+      "party": "Indian Union Muslim League",
       "votes": 73499,
       "pct": 49.74
     },
     {
       "name": "Niyas Pulickalakath",
-      "party": "LDF",
+      "party": "Independent (LDF)",
       "votes": 63921,
       "pct": 43.26
     },
     {
       "name": "Kalliyath Sathar Haji",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 8314,
       "pct": 5.63
     },
     {
       "name": "Niyas",
-      "party": "IND",
+      "party": "Independent",
       "votes": 487,
       "pct": 0.33
     },
     {
       "name": "Abdul Majeed Panackal",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 303,
       "pct": 0.21
     },
@@ -45,13 +45,13 @@
     },
     {
       "name": "Chandran",
-      "party": "IND",
+      "party": "Independent",
       "votes": 132,
       "pct": 0.09
     },
     {
       "name": "Abdulrahim Naha",
-      "party": "IND",
+      "party": "Independent",
       "votes": 120,
       "pct": 0.08
     }

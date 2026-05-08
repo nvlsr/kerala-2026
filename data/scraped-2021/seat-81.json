@@ -9,19 +9,19 @@
   "candidates": [
     {
       "name": "K. Babu",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 65875,
       "pct": 42.14
     },
     {
       "name": "M. Swaraj",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 64883,
       "pct": 41.51
     },
     {
       "name": "K. S. Radhakrishnan",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 23756,
       "pct": 15.2
     },
@@ -33,19 +33,19 @@
     },
     {
       "name": "Rajesh Pairoad",
-      "party": "IND",
+      "party": "Independent",
       "votes": 201,
       "pct": 0.13
     },
     {
       "name": "C. B. Asokan",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 173,
       "pct": 0.11
     },
     {
       "name": "K. P. Ayappen",
-      "party": "IND",
+      "party": "Independent",
       "votes": 88,
       "pct": 0.06
     }

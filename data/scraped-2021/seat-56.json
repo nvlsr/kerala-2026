@@ -9,25 +9,25 @@
   "candidates": [
     {
       "name": "Shafi Parambil",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 54079,
       "pct": 38.06
     },
     {
       "name": "E. Sreedharan",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 50220,
       "pct": 35.34
     },
     {
       "name": "C. P. Pramod",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 36433,
       "pct": 25.64
     },
     {
       "name": "E. T. K. Valsan",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 359,
       "pct": 0.25
     },
@@ -39,7 +39,7 @@
     },
     {
       "name": "V. Sachidanandan",
-      "party": "IND",
+      "party": "Independent",
       "votes": 159,
       "pct": 0.11
     },

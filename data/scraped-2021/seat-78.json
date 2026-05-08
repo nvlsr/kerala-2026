@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "V. D. Satheesan",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 82264,
       "pct": 51.87
     },
     {
       "name": "M. T. Nixon",
-      "party": "CPI",
+      "party": "Communist Party of India",
       "votes": 60963,
       "pct": 38.44
     },
     {
       "name": "A. B. Jayaprakash",
-      "party": "BDJS",
+      "party": "Bharath Dharma Jana Sena",
       "votes": 12964,
       "pct": 8.17
     },
     {
       "name": "N. K. Biju",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 724,
       "pct": 0.46
     },
     {
       "name": "Satyanesan Ezhikara",
-      "party": "IND",
+      "party": "Independent",
       "votes": 287,
       "pct": 0.18
     },
     {
       "name": "Prasanth",
-      "party": "IND",
+      "party": "Independent",
       "votes": 279,
       "pct": 0.18
     }

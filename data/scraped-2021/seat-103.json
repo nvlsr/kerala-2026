@@ -9,49 +9,49 @@
   "candidates": [
     {
       "name": "P. Prasad",
-      "party": "CPI",
+      "party": "Communist Party of India",
       "votes": 83702,
       "pct": 47
     },
     {
       "name": "S. Sarath",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 77554,
       "pct": 43.55
     },
     {
       "name": "P. S. Jyothis",
-      "party": "BDJS",
+      "party": "Bharath Dharma Jana Sena",
       "votes": 14562,
       "pct": 8.18
     },
     {
       "name": "Vayalar Jayakumar",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 613,
       "pct": 0.34
     },
     {
       "name": "Sarath S. Kannattuveli",
-      "party": "IND",
+      "party": "Independent",
       "votes": 501,
       "pct": 0.28
     },
     {
       "name": "V. A. Shajahan",
-      "party": "IND",
+      "party": "Independent",
       "votes": 201,
       "pct": 0.11
     },
     {
       "name": "Karthikeyan",
-      "party": "IND",
+      "party": "Independent",
       "votes": 193,
       "pct": 0.11
     },
     {
       "name": "Sonymon K. Mathew",
-      "party": "IND",
+      "party": "Independent",
       "votes": 169,
       "pct": 0.09
     }

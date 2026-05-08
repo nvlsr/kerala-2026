@@ -9,31 +9,31 @@
   "candidates": [
     {
       "name": "Saji Cheriyan",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 71502,
       "pct": 48.58
     },
     {
       "name": "M. Murali",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 39409,
       "pct": 26.78
     },
     {
       "name": "M. V. Gopakumar",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 34620,
       "pct": 23.52
     },
     {
       "name": "Shaji T. George",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 534,
       "pct": 0.36
     },
     {
       "name": "T. K. Gopinathan",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 316,
       "pct": 0.21
     },
@@ -45,7 +45,7 @@
     },
     {
       "name": "Poulose",
-      "party": "IND",
+      "party": "Independent",
       "votes": 101,
       "pct": 0.07
     }

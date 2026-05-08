@@ -9,31 +9,31 @@
   "candidates": [
     {
       "name": "P. K. Basheer",
-      "party": "IUML",
+      "party": "Indian Union Muslim League",
       "votes": 78076,
       "pct": 54.49
     },
     {
       "name": "K. T. Abdul Rahiman (CPI)",
-      "party": "LDF",
+      "party": "Independent (LDF)",
       "votes": 55530,
       "pct": 38.76
     },
     {
       "name": "C. Dinesh",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 6683,
       "pct": 4.66
     },
     {
       "name": "Velayudhan",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 1247,
       "pct": 0.87
     },
     {
       "name": "Sebastian",
-      "party": "IND",
+      "party": "Independent",
       "votes": 1100,
       "pct": 0.77
     }

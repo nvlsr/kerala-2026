@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "P. K. Kunhalikutty",
-      "party": "IUML",
+      "party": "Indian Union Muslim League",
       "votes": 70381,
       "pct": 53.5
     },
     {
       "name": "P. Jiji",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 39785,
       "pct": 30.24
     },
     {
       "name": "Sahab Kundupuzhackal",
-      "party": "IND",
+      "party": "Independent",
       "votes": 11255,
       "pct": 8.56
     },
     {
       "name": "Preman Master",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 5968,
       "pct": 4.54
     },
     {
       "name": "E. K. Kunhammedkutty Master",
-      "party": "WPI",
+      "party": "Welfare Party of India",
       "votes": 2051,
       "pct": 1.56
     },
     {
       "name": "Keeran",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 1060,
       "pct": 0.81
     },
@@ -51,7 +51,7 @@
     },
     {
       "name": "Adil Abdurahiman Thangal",
-      "party": "IND",
+      "party": "Independent",
       "votes": 129,
       "pct": 0.1
     }

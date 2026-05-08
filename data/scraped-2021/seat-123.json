@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "P. C. Vishnunath",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 76405,
       "pct": 48.85
     },
     {
       "name": "J. Mercykutty Amma",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 71882,
       "pct": 45.96
     },
     {
       "name": "Vanaja Vidyadharan",
-      "party": "BDJS",
+      "party": "Bharath Dharma Jana Sena",
       "votes": 6100,
       "pct": 3.9
     },
     {
       "name": "R. Rahul",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 457,
       "pct": 0.29
     },
     {
       "name": "Santhosh Adooran",
-      "party": "IND",
+      "party": "Independent",
       "votes": 260,
       "pct": 0.17
     },
     {
       "name": "Sibu Karamkodu",
-      "party": "ADHMPI",
+      "party": "Democratic Human Rights Movement Party",
       "votes": 229,
       "pct": 0.15
     },
@@ -51,7 +51,7 @@
     },
     {
       "name": "Vinod Bahuleyan",
-      "party": "RJD",
+      "party": "Rashtriya Janata Dal",
       "votes": 172,
       "pct": 0.11
     }

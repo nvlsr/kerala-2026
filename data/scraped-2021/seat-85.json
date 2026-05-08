@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "Anoop Jacob",
-      "party": "KCA",
+      "party": "Kerala Congress (Jacob)",
       "votes": 85056,
       "pct": 53.8
     },
     {
       "name": "Sindhumol Jacob",
-      "party": "KCM",
+      "party": "Kerala Congress (M)",
       "votes": 59692,
       "pct": 37.76
     },
     {
       "name": "M. Asish",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 11021,
       "pct": 6.97
     },
     {
       "name": "C. Sindhumol",
-      "party": "IND",
+      "party": "Independent",
       "votes": 563,
       "pct": 0.36
     },
     {
       "name": "C. N. Mukundan",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 454,
       "pct": 0.29
     },
     {
       "name": "P. B. Renju",
-      "party": "IND",
+      "party": "Independent",
       "votes": 202,
       "pct": 0.13
     }

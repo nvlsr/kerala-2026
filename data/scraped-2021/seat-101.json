@@ -9,7 +9,7 @@
   "candidates": [
     {
       "name": "Sebastian Kulathunkal",
-      "party": "KCM",
+      "party": "Kerala Congress (M)",
       "votes": 58668,
       "pct": 41.94
     },
@@ -21,25 +21,25 @@
     },
     {
       "name": "Tomy Kallany",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 34633,
       "pct": 24.76
     },
     {
       "name": "M. P. Sen",
-      "party": "BDJS",
+      "party": "Bharath Dharma Jana Sena",
       "votes": 2965,
       "pct": 2.12
     },
     {
       "name": "Ancy George",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 596,
       "pct": 0.43
     },
     {
       "name": "M. V. George",
-      "party": "IND",
+      "party": "Independent",
       "votes": 278,
       "pct": 0.2
     },
@@ -51,13 +51,13 @@
     },
     {
       "name": "Albin Mathew",
-      "party": "IND",
+      "party": "Independent",
       "votes": 205,
       "pct": 0.15
     },
     {
       "name": "Tomy Chemmarappallil",
-      "party": "IND",
+      "party": "Independent",
       "votes": 94,
       "pct": 0.07
     }

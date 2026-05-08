@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "Vazhoor Soman",
-      "party": "CPI",
+      "party": "Communist Party of India",
       "votes": 60141,
       "pct": 47.25
     },
     {
       "name": "Syriac Thomas",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 58306,
       "pct": 45.81
     },
     {
       "name": "Sreenagari Rajan",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 7126,
       "pct": 5.6
     },
     {
       "name": "Biju Mattappally",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 818,
       "pct": 0.64
     },
     {
       "name": "P. K. Gopakakrishnan",
-      "party": "IND",
+      "party": "Independent",
       "votes": 251,
       "pct": 0.2
     },
     {
       "name": "Soman",
-      "party": "IND",
+      "party": "Independent",
       "votes": 248,
       "pct": 0.19
     }

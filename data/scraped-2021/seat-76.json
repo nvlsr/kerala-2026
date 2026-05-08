@@ -9,49 +9,49 @@
   "candidates": [
     {
       "name": "Anwar Sadath",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 73703,
       "pct": 49
     },
     {
       "name": "Shelna Nishad",
-      "party": "LDF",
+      "party": "Independent (LDF)",
       "votes": 54817,
       "pct": 36.44
     },
     {
       "name": "M. N. Gopi",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 15893,
       "pct": 10.57
     },
     {
       "name": "V. A. Rasheed",
-      "party": "SDPI",
+      "party": "Social Democratic Party Of India",
       "votes": 2224,
       "pct": 1.48
     },
     {
       "name": "M. Shefrin",
-      "party": "WPI",
+      "party": "Welfare Party of India",
       "votes": 1713,
       "pct": 1.14
     },
     {
       "name": "K. V. Sarala",
-      "party": "IND",
+      "party": "Independent",
       "votes": 569,
       "pct": 0.38
     },
     {
       "name": "Viswakala Thankappan",
-      "party": "MCPIU",
+      "party": "MCPI(U)",
       "votes": 342,
       "pct": 0.23
     },
     {
       "name": "A. G. Ajayan",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 228,
       "pct": 0.15
     }

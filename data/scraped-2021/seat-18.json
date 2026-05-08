@@ -9,25 +9,25 @@
   "candidates": [
     {
       "name": "I. C. Balakrishnan",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 81077,
       "pct": 48.42
     },
     {
       "name": "M. S. Viswanathan",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 69255,
       "pct": 41.36
     },
     {
       "name": "C. K. Janu",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 15198,
       "pct": 9.08
     },
     {
       "name": "Odan Paniyan",
-      "party": "IND",
+      "party": "Independent",
       "votes": 742,
       "pct": 0.44
     }

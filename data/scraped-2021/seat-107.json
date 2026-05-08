@@ -9,31 +9,31 @@
   "candidates": [
     {
       "name": "Ramesh Chennithala",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 72768,
       "pct": 48.31
     },
     {
       "name": "R. Sajilal",
-      "party": "CPIM",
+      "party": "Communist Party of India (Marxist)",
       "votes": 59102,
       "pct": 39.24
     },
     {
       "name": "K. Soman",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 17890,
       "pct": 11.88
     },
     {
       "name": "T. Madhu",
-      "party": "SUCIC",
+      "party": "Socialist Unity Centre Of India (COMMUNIST)",
       "votes": 204,
       "pct": 0.14
     },
     {
       "name": "Niyaz Bharati",
-      "party": "IND",
+      "party": "Independent",
       "votes": 123,
       "pct": 0.08
     }

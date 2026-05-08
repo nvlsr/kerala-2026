@@ -9,37 +9,37 @@
   "candidates": [
     {
       "name": "V. Sasi",
-      "party": "CPI",
+      "party": "Communist Party of India",
       "votes": 62634,
       "pct": 43.17
     },
     {
       "name": "B. S. Anoop",
-      "party": "INC",
+      "party": "Indian National Congress",
       "votes": 48617,
       "pct": 33.51
     },
     {
       "name": "G. S. Ashanath",
-      "party": "BJP",
+      "party": "Bharatiya Janata Party",
       "votes": 30986,
       "pct": 21.36
     },
     {
       "name": "Anil Mangalapuram",
-      "party": "BSP",
+      "party": "Bahujan Samaj Party",
       "votes": 1097,
       "pct": 0.76
     },
     {
       "name": "G. Anilkumar",
-      "party": "WPI",
+      "party": "Welfare Party of India",
       "votes": 616,
       "pct": 0.42
     },
     {
       "name": "Anoop Gangan",
-      "party": "IND",
+      "party": "Independent",
       "votes": 372,
       "pct": 0.26
     }
