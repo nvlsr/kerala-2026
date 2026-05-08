@@ -45,7 +45,7 @@ export function NarrativeSection({
       </h2>
       {layout === "stacked" ? (
         <div className="space-y-4">
-          <figure>
+          <figure className="mx-auto max-w-xl">
             <div className="rounded-lg border bg-card/40 p-4 sm:p-6">
               {visual}
             </div>

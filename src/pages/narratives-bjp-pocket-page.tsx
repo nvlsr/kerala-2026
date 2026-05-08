@@ -13,6 +13,7 @@ import { PageShell } from "@/components/page-shell"
 import {
   getAllACMetrics,
   getBJPShareInYear,
+  getPerACAllianceShare,
   getPerACBJPDelta,
   getPerACWinner2026,
 } from "@/lib/data/narrative-metrics"
@@ -72,16 +73,10 @@ export function NarrativesBJPPocketPage() {
     if (alliance === "NDA") bjpWins.add(acNumber)
   }
 
-  // Winner map: integer-encoded by alliance for the choropleth's
-  // sequential mode. UDF=0 (light), LDF=1 (mid), NDA=2 (dark) —
-  // gives 3 visually distinct shades. Then highlight NDA wins.
-  const winnerEncodingMap = new Map<number, number>()
-  for (const [acNumber, alliance] of winner2026.entries()) {
-    winnerEncodingMap.set(
-      acNumber,
-      alliance === "UDF" ? 0 : alliance === "LDF" ? 1 : 2
-    )
-  }
+  // For the "3 wins" section: use NDA share 2026 in sequential
+  // (saffron/orange) mode. The 3 BJP wins show as the darkest
+  // spots (highest NDA share), with the BJP-win seats outlined.
+  const ndaShare2026 = getPerACAllianceShare("NDA", 2026)
 
   // Build trajectory series.
   const allTrajectorySeries: TrajectorySeries[] = [
@@ -138,39 +133,38 @@ export function NarrativesBJPPocketPage() {
           visual={
             <div className="space-y-2">
               <ChoroplethMap
-                valueByAC={winnerEncodingMap}
+                valueByAC={ndaShare2026}
                 colorScale="sequential"
-                domain={[0, 2]}
+                domain={[0, 45]}
                 sequentialColor="#FF7F0E"
                 highlightSeats={bjpWins}
-                ariaLabel="2026 winner alliance per constituency; BJP wins outlined"
+                ariaLabel="NDA vote share per constituency in 2026; BJP wins outlined"
+                unit="%"
+                decimals={1}
                 tooltipFormat={(acNumber, value) => {
                   const m = all.find((x) => x.acNumber === acNumber)
-                  const winner =
-                    value === 0
-                      ? "UDF"
-                      : value === 1
-                        ? "LDF"
-                        : value === 2
-                          ? "NDA"
-                          : "—"
+                  const won =
+                    winner2026.get(acNumber) === "NDA" ? "NDA win" : null
                   return (
                     <span>
                       <span className="font-medium">
                         {m?.acName ?? `AC ${acNumber}`}
                       </span>
-                      : <span className="font-mono">{winner}</span>
+                      : <span className="font-mono">
+                        NDA {value != null ? `${value.toFixed(1)}%` : "—"}
+                      </span>
+                      {won && (
+                        <span className="ml-1 rounded-sm bg-foreground/10 px-1.5 py-0.5 text-[10px]">
+                          {won}
+                        </span>
+                      )}
                     </span>
                   )
                 }}
               />
-              <p className="text-[11px] text-muted-foreground">
-                Lightest = UDF · medium = LDF · darkest =
-                NDA · outlined = BJP win
-              </p>
             </div>
           }
-          caption="2026 winner alliance per AC. The 3 BJP wins (Nemom, Chathannoor, Kazhakoottam) are outlined and concentrated in or adjacent to Trivandrum district."
+          caption="NDA vote share in 2026. The 3 BJP wins (Nemom, Chathannoor, Kazhakoottam) are the darkest spots and are outlined; all three are in or adjacent to Trivandrum district."
         >
           <p>
             BJP captured 3 seats in 2026: <strong>Nemom</strong>{" "}
