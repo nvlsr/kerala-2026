@@ -270,3 +270,18 @@ This is a multi-session task. Rough estimate:
 - Phase 9: 1 session (polish + QA)
 
 Total: ~8 sessions equivalent. Will be executed continuously starting now.
+
+## Progress log
+
+- 2026-05-07: Plan created.
+- 2026-05-07: **Phases 1-9 complete.**
+  - Phase 1 — Routing + 4 page shells + NarrativeArcCard / NarrativeSection / NarrativesTeaser components. /questions footer now links to /narratives.
+  - Phase 2 — `narrative-metrics.ts` data layer with per-AC alliance Δshare helpers. Verified via 12 vitest tests that statewide aggregates match Python script outputs.
+  - Phase 3 — `ChoroplethMap` + `ChoroplethLegend` components. Diverging + sequential color scales; hover tooltip; highlightSeats outline; mobile-responsive viewBox.
+  - Phase 4 — 5 chart primitives: Histogram (with diverging bins + mean reference), ComparisonBar (treatment-vs-control), ScatterWithTrend (with regression line), StackedBarByCategory (positive + negative stacked), TrajectoryLines (multi-cycle multi-line).
+  - Phase 5 — Top page with 3 arc-summary cards (each with hero choropleth), "Swing source vs seat amplification" + "Kerala 2026 was not highly polarized" sidebar callouts, "What contradicted prior expectations" 5-bullet panel, methodology footer.
+  - Phase 6 — Arc 1 page (Anti-LDF wave): 5 sections covering distribution shape, Sabarimala-route falsification, cabinet-status null, where-LDF-loss-landed.
+  - Phase 7 — Arc 2 page (Central Kerala): 4 sections covering 47-of-47 sweep, Christian-belt premium scatter (with outliers labelled), efficiency-flip mechanism, Muslim-share non-finding.
+  - Phase 8 — Arc 3 page (BJP pocket): 4 sections covering the 3 wins (NDA-share sequential map), the per-AC reshuffle (BJP party-share Δ choropleth), gains-vs-cessions stacked bar by district, contest-entry vs organic trajectory chart.
+  - Phase 9 — Polish: visual sizing constraints (max-w-xl on choropleths in stacked layout); winner-map fix on Arc 3 (NDA-share-sequential instead of categorical); mobile-responsive verified at 400px viewport.
+  - 81/81 tests pass; build clean. Catalog state: 4 narrative pages + 7 reusable components + data layer + tests.
