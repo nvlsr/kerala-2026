@@ -362,15 +362,7 @@ export function WalkthroughsNDAPage() {
         { label: "NDA" },
       ]}
       title="BJP's 2026 performance — a data walkthrough"
-      subtitle={
-        <>
-          <WalkthroughBreadcrumb current="NDA" />
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-            A guided tour through BJP's 2026 results, starting from the 3 wins
-            and expanding outward through cohorts.
-          </p>
-        </>
-      }
+      subtitle={<WalkthroughBreadcrumb current="NDA" />}
     >
       <PageMain className="py-6 pb-12">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_180px]">
@@ -379,34 +371,28 @@ export function WalkthroughsNDAPage() {
             <section className="rounded-md border bg-card/50 p-5 sm:p-6">
               <p className="text-base leading-relaxed font-medium text-foreground sm:text-[16.5px]">
                 BJP's 2026 performance was{" "}
-                <strong>not statewide expansion.</strong> It was a concentrated
-                convergence:{" "}
-                <strong>
-                  ~21% of Kerala's seats absorbed effectively all of BJP's net
-                  growth
-                </strong>
-                ; 3 of those converted to wins.
+                <strong>not statewide expansion</strong>. It was{" "}
+                <strong>targeted consolidation</strong> inside a limited
+                competitive universe. Statewide BJP vote share was almost flat
+                (+0.3pp), but inside a <strong>30-seat target set</strong> —
+                about 21% of Kerala's Assembly constituencies — BJP grew by{" "}
+                <strong>+5.2pp</strong> and converted 3 seats. The party is{" "}
+                <strong>trading breadth for intensity</strong>: fewer seats
+                contested directly (115 → 98 candidates), higher share where it
+                does contest.
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[14.5px]">
-                The 3 wins sit at the intersection of three conditions: a
-                Hindu-heavy religion mix, an mature NDA base going in (≥29% in
-                2021), and above-baseline benefit from the anti-LDF wave. Two
-                distinct mechanisms appear in the data —{" "}
-                <strong>consolidation</strong> in the Trivandrum/Kollam
-                Hindu-heavy belt, and <strong>candidate-led expansion</strong>{" "}
-                in Christian-mixed Central Kerala. The cohorts below map the
-                full BJP terrain in Kerala.
+                Statewide vote share is a blunt instrument for reading this. The
+                better questions: where is BJP already structurally competitive,
+                where is it investing, and where is the ceiling still hard?
               </p>
-              <p className={cn(ASIDE, "mt-4")}>
-                <strong className="font-semibold text-foreground/80">
-                  A note on shares.
-                </strong>{" "}
-                "NDA share" = BJP + BDJS + Twenty 20 combined. "BJP share" is
-                BJP-only and labelled explicitly. The "effective baseline"
-                handles seats where BJP didn't field directly: it falls back to
-                BDJS or T20 share, or to the same individual's share under
-                another party (e.g. P.C. George at Poonjar — Independent 2016,
-                KJS 2021, BJP 2026).
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[14.5px]">
+                The data answers all three. BJP converted in 2026 only where a{" "}
+                <strong>mature NDA base</strong> already existed (≥29% going
+                in). It produced large but non-converting jumps in low-base
+                seats. It remains structurally excluded or alliance-dependent
+                across a large slice of the state. The cohorts below map each of
+                these terrains in detail.
               </p>
             </section>
 
