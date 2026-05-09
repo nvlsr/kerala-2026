@@ -221,10 +221,8 @@ export function WalkthroughsUDFPage() {
                 47.
               </p>
               <p>
-                UDF won every seat in five districts: Idukki, Ernakulam,
-                Wayanad, Malappuram, and Kottayam. Pre-poll Manorama-C Voter
-                projected "UDF 33 of 53 in Central Kerala" — an underestimate of
-                23-38pp depending on the bundle definition.
+                Idukki, Ernakulam, Wayanad, Malappuram, Kottayam. Pollsters
+                expected ~33; UDF got 47.
               </p>
               <p>
                 46% of UDF's 102-seat majority came from these 5 districts,
