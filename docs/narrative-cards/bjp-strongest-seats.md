@@ -92,30 +92,103 @@ The most consequential alias-corrected case: **Poonjar**. P.C. George had 44.9% 
 
 ---
 
+## Cohort 4a — Declining mature
+
+**Definition**: 2021 effective NDA baseline ≥ 20% **AND** 2021→2026 Δ ≤ −2pp. Seats where BJP had a meaningful base going in but *lost ground* this cycle. The "actively eroding" set.
+
+**8 seats qualify.**
+
+| AC | Name | District | H/C/M | 2021 base | 2026 BJP | Δ21-26 | Outcome | 2026 BJP candidate |
+|---|---|---|---|---:|---:|---:|---|---|
+| 114 | Konni | Pathanamthitta | 61/33/5 | 21.9% (BJP) | 0.0% | **−21.9** | LDF | (no BJP — withdrew) |
+| 67 | Thrissur | Thrissur | 54/39/5 | 31.3% (BJP) | 23.3% | **−8.0** | UDF | Padmaja Venugopal |
+| 101 | Poonjar | Kottayam | 42/41/16 | 29.9% (P.C. George/KJS) | 25.1% | **−4.8** | UDF | P.C. George |
+| 109 | Mavelikkara | Alappuzha | 73/18/7 | 20.5% (BJP) | 16.3% | **−4.2** | LDF | K. Ajimon |
+| 70 | Irinjalakuda | Thrissur | 63/26/9 | 22.1% (BJP) | 17.9% | **−4.2** | UDF | Santhosh Cherakulam |
+| 71 | Pudukkad | Thrissur | 58/35/5 | 22.3% (BJP) | 18.3% | **−4.0** | LDF | Parameswaran A |
+| 51 | Shornur | Palakkad | 60/1/37 | 24.3% (BJP) | 20.9% | **−3.4** | LDF | Adv. Sanku T. Das |
+| 2 | Kasaragod | Kasaragod | 43/2/53 | 34.9% (BJP) | 31.9% | **−3.0** | UDF | Ashwini M.L. |
+
+**Observations.** **5 of 8 declining-mature seats are Hindu+Christian** (Konni 33% C, Thrissur 39%, Mavelikkara 18%, Irinjalakuda 26%, Pudukkad 35%). One more is Christian-mixed (Poonjar 41%). That's **6 of 8 = 75% of the declining-mature cohort sitting in seats with significant Christian populations**. The Hindu+Christian terrain is BJP's most active erosion zone in 2026.
+
+This is striking when read against bjp-1.md's Section 3 ("Kottayam experimental") which highlights Pala, Thiruvalla, Poonjar as marquee Christian-candidate successes. The data show: where BJP deployed marquee Christian candidates in Hindu+Christian terrain (Pala, Thiruvalla), it gained. Where BJP fielded *non-marquee* candidates in similar terrain (Mavelikkara, Irinjalakuda, Pudukkad), it *declined*. The marquee Christian strategy is doing real work against an underlying erosion pattern. Without it, BJP is losing Hindu+Christian terrain.
+
+Special case: **Thrissur with Padmaja Venugopal**. She was previously INC at Thrissur (2016, 37% as Congress candidate) and defected to BJP for 2026. Despite BJP itself fielding both years, the seat declined 8pp from 2021 to 2026 (different BJP candidates). The marquee-Christian strategy's effect is heterogeneous within Hindu+Christian terrain — Pala/Thiruvalla worked, Thrissur didn't.
+
+---
+
+## Cohort 4b — Stable mature
+
+**Definition**: 2021 effective NDA baseline ≥ 20% **AND** |Δ21-26| < 2pp (movement within noise). Seats where BJP held a meaningful base but didn't grow or shrink meaningfully — saturation at a ceiling.
+
+**8 seats qualify.**
+
+| AC | Name | District | H/C/M | 2021 base | 2026 BJP | Δ21-26 | Outcome | 2026 BJP candidate |
+|---|---|---|---|---:|---:|---:|---|---|
+| 1 | Manjeshwar | Kasaragod | 44/2/53 | 37.7% (BJP) | 36.1% | −1.6 | UDF | K. Surendran (state pres) |
+| 56 | Palakkad | Palakkad | 62/2/34 | 35.3% (BJP) | 33.5% | −1.8 | UDF | Sobha Surendran |
+| 55 | Malampuzha | Palakkad | 62/2/34 | 30.7% (BJP) | 30.4% | −0.3 | LDF | C. Krishnakumar |
+| 133 | Vattiyoorkavu | Trivandrum | 69/16/14 | 28.8% (BJP) | 28.8% | +0.0 | UDF | R. Sreelekha |
+| 110 | Chengannur | Alappuzha | 66/29/4 | 23.5% (BJP) | 22.6% | −0.9 | LDF | M.V. Gopakumar |
+| 64 | Manalur | Thrissur | 56/19/24 | 21.8% (BJP) | 22.3% | +0.5 | LDF | Adv. K.K. Aneeshkumar |
+| 129 | Chirayinkeezhu | Trivandrum | 69/16/13 | 21.4% (BJP) | 22.5% | +1.1 | UDF | B.S. Anoop |
+| 100 | Kanjirappally | Kottayam | 46/42/10 | 21.2% (BJP) | 20.0% | −1.2 | UDF | Adv. George Kurian |
+
+**Observations.** **The stable-mature seats are dominated by Hindu+Muslim terrain and the Trivandrum belt**, in contrast to Cohort 4a's Hindu+Christian skew. Manjeshwar, Palakkad, Malampuzha — all Hindu+Muslim with 30%+ Muslim share — are all near-flat at high BJP shares. These are the "BJP's ceiling" seats: they hold the share but can't grow further. Vattiyoorkavu and Chirayinkeezhu (Trivandrum belt) show the same pattern at lower 21-29% shares.
+
+**Three of 8 stable-mature seats are also on BJP's priority list**: Manjeshwar, Palakkad, Vattiyoorkavu. **Priority placement plus stable-but-flat outcome = "tried hard, ceiling reached."** These are the seats that test BJP's structural ceiling in different terrains: Hindu-Muslim Kasaragod (Manjeshwar), Hindu-Muslim Palakkad (Palakkad), Trivandrum belt (Vattiyoorkavu). All three returned essentially the same share they had in 2021 despite marquee candidate placement.
+
+**Kanjirappally** is interesting: marquee Christian candidate (George Kurian) both years, religious composition similar to Pala (46/42/10 vs Pala's 37/52/10), yet stable rather than growing. The marquee Christian strategy has limits even with the right demographics — Kerala Congress (M)'s Catholic-vote dominance there appears to be a hard ceiling.
+
+---
+
+## Combined view — "Plateaued mature"
+
+**Cohorts 4a + 4b together = 16 seats** where BJP had ≥20% in 2021 but couldn't grow ≥+2pp by 2026. This is the saturation set: where BJP's structural presence has reached a ceiling, whether expressed as flat (4b) or active decline (4a).
+
+The split between 4a and 4b is meaningful, not arbitrary:
+- **Declining (4a)** is dominated by Hindu+Christian seats — terrain where BJP needs an active strategy (marquee Christian candidates) and absent that, *loses ground*.
+- **Stable (4b)** is dominated by Hindu+Muslim seats and Trivandrum belt — terrain where BJP has a structural floor but also a structural ceiling.
+
+Different strategic implications:
+- **Hindu+Christian non-marquee seats** are losing voters BJP could potentially recover with the right candidate pivot (the Pala/Thiruvalla template).
+- **Hindu+Muslim plateau seats** are at a ceiling that may not be breakable through candidate quality alone — Manjeshwar with the state president, Palakkad with Sobha Surendran, both flat.
+
+---
+
 ## Cross-reference against the priority list
 
 (See `bjp-priority-seats.md` for the priority list.)
 
-| Priority seat | Cohort 1? | Cohort 2? | Cohort 3? |
-|---|:---:|:---:|:---:|
-| Manjeshwar | — | — | — |
-| Palakkad (Sobha Surendran) | — | — | — |
-| Thrissur (Padmaja Venugopal) | — | — | — |
-| Aranmula | — | — | — |
-| Karunagappally | — | — | ✓ |
-| Varkala | — | — | ✓ |
-| Kazhakoottam | ✓ | — | — |
-| Thiruvananthapuram | — | — | — |
-| Nemom | ✓ | — | — |
-| Vattiyoorkavu | — | — | — |
+| Priority seat | C1 (mature+grew) | C2 (consistent) | C3 (new low-base) | C4a (declining) | C4b (stable) |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Manjeshwar | — | — | — | — | ✓ |
+| Palakkad (Sobha Surendran) | — | — | — | — | ✓ |
+| Thrissur (Padmaja Venugopal) | — | — | — | **✓** | — |
+| Aranmula | — | — | — | — | — |
+| Karunagappally | — | — | ✓ | — | — |
+| Varkala | — | — | ✓ | — | — |
+| Kazhakoottam | ✓ | — | — | — | — |
+| Thiruvananthapuram | — | — | — | — | — |
+| Nemom | ✓ | — | — | — | — |
+| Vattiyoorkavu | — | — | — | — | ✓ |
 
-**Only 4 of 10 priority seats appear in any cohort.** Three priority seats (Manjeshwar, Palakkad, Thrissur) appear in *no* cohort despite marquee placement — they're the "tried hard, didn't perform" set. The strongest "doing well" performers are mostly **not on the priority list**: Nattika, Pala, Thiruvalla, Kozhikode North, Ottappalam, Chathannoor (officially ambiguous), Haripad, Attingal, Kozhikode South. Several seats produced strong returns BJP may not have publicly prioritised.
+**Sharper picture now**: of 10 priority seats, **8 appear in some cohort** (vs 4 before adding 4a and 4b). The new view:
+
+- **2 priority seats produced "doing well" outcomes** (Nemom, Kazhakoottam — both wins, Cohort 1).
+- **2 priority seats are new-growth from low base** (Karunagappally, Varkala — Cohort 3, both lost but moved meaningfully upward).
+- **3 priority seats are stable mature** (Manjeshwar, Palakkad, Vattiyoorkavu — Cohort 4b: marquee candidates placed but ceiling held).
+- **1 priority seat is actively declining** (Thrissur with Padmaja Venugopal — Cohort 4a: lost 8pp despite marquee placement).
+- **Aranmula and Thiruvananthapuram appear in no cohort** — they're the "modest gain, didn't reach any threshold" priority seats.
+
+The strongest "doing well" performers are still mostly **not on the priority list**: Nattika, Pala, Thiruvalla, Kozhikode North, Ottappalam, Chathannoor (officially ambiguous), Haripad, Attingal, Kozhikode South. Several seats produced strong returns BJP may not have publicly prioritised.
 
 ---
 
 ## Open questions for analysis
 
-1. **Threshold tuning** — Cohort 1 thresholds (≥25% share, ≥+5pp Δ) yield 8 seats. Could tighten to ≥30% / +7pp (~5 seats) or loosen to ≥20% / +3pp (~15-20 seats).
-2. **Should we add a fourth cohort — declining mature base?** Seats with ≥25% in 2021 but Δ21-26 < 0 would surface BJP's *erosion* zones. Manjeshwar, Thrissur, Kanjirappally, Vattiyoorkavu would qualify. **Poonjar would also qualify here** — under effective-baseline accounting, P.C. George's personal-vote decline is the cleanest example of this pattern.
-3. **NDA-aggregate parallel** — should we compute the same three cohorts using NDA-aggregate share instead of BJP-only? Would surface T20-Ernakulam strength patterns we'd otherwise miss.
-4. **Geographic clustering** — Cohorts 1+2+3 contain seats from 9 districts. Are there micro-clusters within each cohort that aren't captured by the bjp-1.md "Trivandrum belt / Kottayam experimental / Ernakulam alliance" framework? Specifically: Cohort 1's Hindu-Muslim non-belt seats (Nattika, Kozhikode North, Ottappalam) and Cohort 2's Haripad + Kozhikode South suggest a possible secondary "Hindu-Muslim Central+North coastal" pattern that bjp-1.md doesn't currently capture.
+1. **Threshold tuning** — Cohort 1 thresholds (≥25% share, ≥+5pp Δ) yield 8 seats. Could tighten or loosen.
+2. **Hindu+Christian erosion as a fourth article theme.** The Cohort 4a finding — 6 of 8 declining-mature seats have significant Christian populations — points to a real strategic story not currently in bjp-1.md: BJP is *losing* Hindu+Christian terrain where it doesn't deploy marquee Christian candidates. The Pala/Thiruvalla successes are exceptions to a broader decline, not the rule. Worth integrating into the article as either a falsification (the marquee strategy is necessary, not just sufficient) or a separate theme on the Hindu+Christian belt as contested ground.
+3. **Hindu+Muslim ceiling as a fifth article theme.** Cohort 4b's stable-mature seats are dominated by Hindu+Muslim Kasaragod / Palakkad and Trivandrum belt — places where BJP has ceiling-bound presence (~30–37%) that isn't moving. If priority placement (Manjeshwar with state president, Palakkad with Sobha Surendran) couldn't break that ceiling, it suggests a structural limit BJP can't overcome through candidate quality alone. This is the inverse story to the Trivandrum belt's growth thesis.
+4. **NDA-aggregate parallel** — should we compute all five cohorts using NDA-aggregate share? Would surface T20-Ernakulam patterns we'd otherwise miss.
+5. **Geographic micro-clusters** — Cohort 1's Hindu-Muslim non-belt seats (Nattika, Kozhikode North, Ottappalam) and Cohort 2's Haripad + Kozhikode South suggest a possible secondary "Hindu-Muslim Central+North coastal" pattern. Combined with Cohort 4b's Hindu-Muslim plateau seats (Manjeshwar, Palakkad, Malampuzha), this might be a single coherent story: BJP has a Hindu+Muslim presence belt across Kerala — a few seats slowly building, more seats stuck at a ceiling. Worth examining as a possible fourth bjp-1.md theme.
