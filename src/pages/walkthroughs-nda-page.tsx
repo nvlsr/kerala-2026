@@ -452,11 +452,15 @@ export function WalkthroughsNDAPage() {
 
               <h3 className={SUB_HEADING}>3. Anti-LDF wave benefit</h3>
               <p>
-                Statewide, the UDF captured most of the anti-LDF wave, with a
-                smaller slice going to NDA. At 21 specific seats, the swing
-                pattern inverted — NDA absorbed <em>more</em> of the anti-LDF
-                redistribution than UDF did. All 3 wins are in this set; details
-                in the <CohortLink slug="wave-capture">wave capture</CohortLink>{" "}
+                Statewide, the UDF captured most of the{" "}
+                <ProseLink to="/walkthroughs/ldf-walkthrough">
+                  anti-LDF wave
+                </ProseLink>
+                , with a smaller slice going to NDA. At 21 specific seats, the
+                swing pattern inverted — NDA absorbed <em>more</em> of the
+                anti-LDF redistribution than UDF did. All 3 wins are in this
+                set; details in the{" "}
+                <CohortLink slug="wave-capture">wave-capture</CohortLink>{" "}
                 section below.
               </p>
             </CohortSection>
@@ -834,7 +838,14 @@ export function WalkthroughsNDAPage() {
                 progress in this terrain. Marquee alone isn't a guarantee — both
                 Thrissur (Padmaja Venugopal) and Poonjar (P.C. George) declined
                 despite high-profile candidates. With BJP's marquee Christian
-                roster thin, alliance swaps are the more scalable fallback.
+                roster thin, alliance swaps are the more scalable fallback. The
+                broader pattern of Christian-belt vote movement is documented in
+                the{" "}
+                <ProseLink to="/walkthroughs/udf-walkthrough#christian-belt">
+                  UDF walkthrough's Christian-belt premium
+                </ProseLink>{" "}
+                — UDF gained a robust ~3-4pp differential in Christian-heavy ACs
+                above the wave baseline.
               </p>
             </CohortSection>
 
@@ -863,9 +874,11 @@ export function WalkthroughsNDAPage() {
               <p>
                 This may be the clearest window into BJP's competitive terrain.
                 It isolates the seats where NDA out-captured UDF in the
-                redistribution of LDF voters — the ~15% of Kerala where the
-                anti-LDF wave landed on NDA rather than UDF, against the
-                statewide pattern.
+                redistribution of LDF voters — the ~15% of Kerala where the{" "}
+                <ProseLink to="/walkthroughs/ldf-walkthrough">
+                  anti-LDF wave
+                </ProseLink>{" "}
+                landed on NDA rather than UDF, against the statewide pattern.
               </p>
               <Table>
                 <TableHeader>
@@ -1668,6 +1681,37 @@ export function WalkthroughsNDAPage() {
                   Cohort membership and the conversion threshold could move in
                   2031 if base shares shift, slot allocations rotate, or the
                   candidate set changes substantially.
+                </li>
+              </ul>
+            </section>
+
+            {/* Cross-references — synthesis pointing at the other walkthroughs */}
+            <section className="rounded-md border bg-card/50 p-5 sm:p-6">
+              <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
+                Where this connects
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed">
+                <li>
+                  The 21-seat{" "}
+                  <CohortLink slug="wave-capture">wave-capture</CohortLink>{" "}
+                  cohort exists because the{" "}
+                  <ProseLink to="/walkthroughs/ldf-walkthrough">
+                    anti-LDF wave
+                  </ProseLink>{" "}
+                  redistributed voters away from LDF. NDA out-bid UDF for those
+                  defectors in this set; LDF's collapse is documented in the LDF
+                  walkthrough.
+                </li>
+                <li>
+                  The marquee-Christian-candidate finding in mature growers
+                  (Pala, Thiruvalla) and the Christian-seat ceiling in declining
+                  mature both intersect with the{" "}
+                  <ProseLink to="/walkthroughs/udf-walkthrough#christian-belt">
+                    UDF walkthrough's Christian-belt premium
+                  </ProseLink>{" "}
+                  — Christian-heavy ACs gained UDF a robust ~3-4pp above the
+                  wave baseline. The two pages illuminate the same terrain from
+                  different angles.
                 </li>
               </ul>
             </section>
