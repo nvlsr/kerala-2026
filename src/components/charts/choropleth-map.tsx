@@ -86,27 +86,21 @@ function divergingColor(
  * Sequential color scale: light → dark in a single hue. Returns
  * an opacity that the consumer applies to the hue color.
  */
-function sequentialOpacity(
-  value: number,
-  min: number,
-  max: number
-): number {
+function sequentialOpacity(value: number, min: number, max: number): number {
   if (max <= min) return 0
   const t = (value - min) / (max - min)
   return Math.max(0, Math.min(1, t)) * 0.85 + 0.15 // floor at 0.15 so paths stay visible
 }
 
-const acByNumber = new Map(
-  constituencies.map((c) => [c.constituencyNumber, c])
-)
+const acByNumber = new Map(constituencies.map((c) => [c.constituencyNumber, c]))
 
 /**
  * Reusable choropleth map of Kerala's 140 ACs. Used across the
- * /narratives surface (each arc page wires its own data + color
+ * /walkthroughs surface (each arc page wires its own data + color
  * scale). Hover shows a tooltip; supports an optional set of ACs
  * to outline as highlights.
  *
- * Built per docs/narratives-publish-plan.md Phase 3.
+ * Built per docs/walkthroughs-publish-plan.md Phase 3.
  */
 export function ChoroplethMap({
   valueByAC,
@@ -125,7 +119,9 @@ export function ChoroplethMap({
   const [hoveredSeat, setHoveredSeat] = useState<number | null>(null)
 
   // Derive domain if not provided.
-  const values = Array.from(valueByAC.values()).filter((v) => Number.isFinite(v))
+  const values = Array.from(valueByAC.values()).filter((v) =>
+    Number.isFinite(v)
+  )
   let dMin: number, dMax: number
   if (domain) {
     ;[dMin, dMax] = domain
@@ -141,7 +137,10 @@ export function ChoroplethMap({
   }
   const halfRange =
     colorScale === "diverging"
-      ? Math.max(Math.abs(dMax - divergingMidpoint), Math.abs(dMin - divergingMidpoint))
+      ? Math.max(
+          Math.abs(dMax - divergingMidpoint),
+          Math.abs(dMin - divergingMidpoint)
+        )
       : 0
 
   const hoveredAC = hoveredSeat != null ? acByNumber.get(hoveredSeat) : null
@@ -152,12 +151,16 @@ export function ChoroplethMap({
     const ac = acByNumber.get(acNum)
     return (
       <span>
-        <span className="font-medium">{ac?.constituencyName ?? `AC ${acNum}`}</span>
+        <span className="font-medium">
+          {ac?.constituencyName ?? `AC ${acNum}`}
+        </span>
         {value != null ? (
           <>
-            : <span className="font-mono">
+            :{" "}
+            <span className="font-mono">
               {value >= 0 && colorScale === "diverging" ? "+" : ""}
-              {value.toFixed(decimals)}{unit}
+              {value.toFixed(decimals)}
+              {unit}
             </span>
           </>
         ) : (
@@ -179,9 +182,7 @@ export function ChoroplethMap({
         role="img"
         aria-label={ariaLabel}
       >
-        <g
-          onMouseLeave={() => setHoveredSeat(null)}
-        >
+        <g onMouseLeave={() => setHoveredSeat(null)}>
           {paths.constituencies.map((p) => {
             const acNum = p.constituencyNumber
             const value = valueByAC.get(acNum)

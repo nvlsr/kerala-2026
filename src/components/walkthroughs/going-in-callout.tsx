@@ -30,7 +30,7 @@ export function GoingInCallout({ children, className }: Props) {
         className
       )}
     >
-      <p className="font-heading text-[10px] font-semibold tracking-widest uppercase text-foreground/70">
+      <p className="font-heading text-[10px] font-semibold tracking-widest text-foreground/70 uppercase">
         Going in
       </p>
       <div className="mt-2 space-y-2 text-sm leading-relaxed text-foreground sm:text-[15px]">

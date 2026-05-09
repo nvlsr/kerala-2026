@@ -14,8 +14,7 @@ const STYLES: Record<
   },
   tentative: {
     label: "Tentative",
-    classes:
-      "border-amber-500/40 text-amber-700 dark:text-amber-500",
+    classes: "border-amber-500/40 text-amber-700 dark:text-amber-500",
     tooltip:
       "Suggestive evidence; sensitive to data resolution, specification choices, or extrapolation beyond the observed cycle.",
   },

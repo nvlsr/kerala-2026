@@ -1,5 +1,5 @@
 /**
- * Sanity-check that narrative-metrics.ts produces statewide
+ * Sanity-check that walkthrough-metrics.ts produces statewide
  * constituency-equal aggregates matching the Python analysis
  * scripts (scripts/narrative-regression.py et al.) within
  * rounding.
@@ -12,9 +12,9 @@ import {
   getPerACBJPDelta,
   getRegionForAC,
   getStatewideSummary,
-} from "./narrative-metrics"
+} from "./walkthrough-metrics"
 
-describe("narrative-metrics", () => {
+describe("walkthrough-metrics", () => {
   test("loads all 140 ACs", () => {
     const all = getAllACMetrics()
     expect(all.length).toBe(140)

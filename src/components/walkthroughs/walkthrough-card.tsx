@@ -21,12 +21,12 @@ type Props = {
 }
 
 /**
- * One of the three arc-summary cards on the /narratives top page.
+ * One of the three arc-summary cards on the /walkthroughs top page.
  * Stacked vertically on mobile; 3-up grid on lg+. Each card is a
  * compact pitch for the arc — title + key stat + visual + 80-word
  * summary + read-more link.
  */
-export function NarrativeArcCard({
+export function WalkthroughCard({
   arcNumber,
   title,
   headlineStat,
@@ -46,7 +46,7 @@ export function NarrativeArcCard({
         <p className="text-xs font-medium tracking-wider text-muted-foreground/80 uppercase">
           Arc {arcNumber} · {confidence}
         </p>
-        <h2 className="font-heading mt-1 text-lg font-semibold leading-tight tracking-tight sm:text-xl">
+        <h2 className="mt-1 font-heading text-lg leading-tight font-semibold tracking-tight sm:text-xl">
           {title}
         </h2>
       </header>

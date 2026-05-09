@@ -1,52 +1,47 @@
 import { Link } from "react-router-dom"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
-import { NarrativeArcCard } from "@/components/narratives/narrative-arc-card"
+import { WalkthroughCard } from "@/components/walkthroughs/walkthrough-card"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
   getPerACAllianceDelta,
   getPerACBJPDelta,
   getPerACWinner2026,
-} from "@/lib/data/narrative-metrics"
+} from "@/lib/data/walkthrough-metrics"
 
 const SURPRISES = [
   {
     title: "Sabarimala-route effect: wrong sign",
-    body:
-      "Press framing predicted larger LDF losses in pilgrim-route ACs. Data shows -3.6pp vs -7.3pp in matched controls — LDF lost LESS in route ACs. NDA share also fell there, opposite of the prediction.",
+    body: "Press framing predicted larger LDF losses in pilgrim-route ACs. Data shows -3.6pp vs -7.3pp in matched controls — LDF lost LESS in route ACs. NDA share also fell there, opposite of the prediction.",
   },
   {
     title: "Muslim-share gradient: collapses under district FE",
-    body:
-      "Simple Pearson r ≈ 0; once district fixed effects are added, β=+0.016, p=0.795. Within a district, Muslim share doesn't predict UDF Δshare.",
+    body: "Simple Pearson r ≈ 0; once district fixed effects are added, β=+0.016, p=0.795. Within a district, Muslim share doesn't predict UDF Δshare.",
   },
   {
     title: "Cabinet-status: no penalty above the LDF baseline",
-    body:
-      "Mean LDF Δshare among 21 ministers: -6.89pp. Among 78 non-minister LDF incumbents: -7.63pp. Ministers lost slightly LESS than non-minister incumbents.",
+    body: "Mean LDF Δshare among 21 ministers: -6.89pp. Among 78 non-minister LDF incumbents: -7.63pp. Ministers lost slightly LESS than non-minister incumbents.",
   },
   {
     title: "UDF wins not narrow on average",
-    body:
-      "UDF's median winning margin is 12.19pp; LDF's is 6.99pp. UDF won by larger margins. The efficiency story is the seat:vote-share ratio flip (UDF 1.04 → 2.18), not 'tight wins'.",
+    body: "UDF's median winning margin is 12.19pp; LDF's is 6.99pp. UDF won by larger margins. The efficiency story is the seat:vote-share ratio flip (UDF 1.04 → 2.18), not 'tight wins'.",
   },
   {
     title: "BJP aggregate: hides ±25pp AC reorganisation",
-    body:
-      "Statewide BJP +0.18pp. Per-AC distribution ranges -21.9pp to +25.1pp. 11 ACs gained ≥10pp; 26 ACs were BJP cessions to NDA allies. Gains and cessions roughly cancel at the aggregate.",
+    body: "Statewide BJP +0.18pp. Per-AC distribution ranges -21.9pp to +25.1pp. 11 ACs gained ≥10pp; 26 ACs were BJP cessions to NDA allies. Gains and cessions roughly cancel at the aggregate.",
   },
 ]
 
 const ARC_KEY_STAT_CLASS = "text-base font-semibold"
 
 /**
- * Top page of the /narratives surface. Hero + 3 arc cards + sidebar
+ * Top page of the /walkthroughs surface. Hero + 3 arc cards + sidebar
  * callouts. The reader should grasp the three-arc thesis in 90s.
  *
- * Built per docs/narratives-publish-plan.md Phase 5.
+ * Built per docs/walkthroughs-publish-plan.md Phase 5.
  */
-export function NarrativesPage() {
+export function WalkthroughsPage() {
   // Composite hero: 3 small Kerala maps side-by-side, one per arc.
   const ldfDelta = getPerACAllianceDelta("LDF")
   const udfDelta = getPerACAllianceDelta("UDF")
@@ -61,22 +56,21 @@ export function NarrativesPage() {
 
   return (
     <PageShell
-      breadcrumbs={[{ label: "Narratives" }]}
+      breadcrumbs={[{ label: "Walkthroughs" }]}
       title="Kerala 2026 was three overlapping patterns, not one wave"
       aboutContent={
         <div className="space-y-3 text-sm leading-relaxed">
           <p>
-            A constituency-level decomposition of Kerala 2026.
-            Anti-LDF anti-incumbency was the broad universal driver
-            (~7pp uniform). Central Kerala added a Christian-belt UDF
-            premium that converted a normal anti-incumbency election
-            into a landslide. BJP's flat statewide aggregate masked a
-            major per-AC reorganisation in southern and central
-            Kerala.
+            A constituency-level decomposition of Kerala 2026. Anti-LDF
+            anti-incumbency was the broad universal driver (~7pp uniform).
+            Central Kerala added a Christian-belt UDF premium that converted a
+            normal anti-incumbency election into a landslide. BJP's flat
+            statewide aggregate masked a major per-AC reorganisation in southern
+            and central Kerala.
           </p>
           <p className="border-t pt-3 text-muted-foreground">
-            Each arc has its own page with choropleths and supporting
-            charts. Drill into individual seat data on{" "}
+            Each arc has its own page with choropleths and supporting charts.
+            Drill into individual seat data on{" "}
             <Link
               to="/explore"
               className="font-medium text-foreground underline-offset-2 hover:underline"
@@ -98,13 +92,12 @@ export function NarrativesPage() {
       }
       subtitle={
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-          Kerala 2026 is best read as three distinct patterns laid
-          over the same map. Anti-LDF anti-incumbency was the broad
-          universal driver (~7pp uniform). On top of that, Central
-          Kerala added a Christian-belt UDF premium that converted a
-          normal anti-incumbency election into a landslide. BJP's
-          near-flat statewide aggregate (+0.18pp) hid a major AC-level
-          reshuffle, with concentrated wins in the Trivandrum belt.
+          Kerala 2026 is best read as three distinct patterns laid over the same
+          map. Anti-LDF anti-incumbency was the broad universal driver (~7pp
+          uniform). On top of that, Central Kerala added a Christian-belt UDF
+          premium that converted a normal anti-incumbency election into a
+          landslide. BJP's near-flat statewide aggregate (+0.18pp) hid a major
+          AC-level reshuffle, with concentrated wins in the Trivandrum belt.
         </p>
       }
     >
@@ -114,7 +107,7 @@ export function NarrativesPage() {
           aria-label="Three arcs"
           className="grid grid-cols-1 gap-5 lg:grid-cols-3"
         >
-          <NarrativeArcCard
+          <WalkthroughCard
             arcNumber={1}
             title="The anti-LDF wave was uniform"
             confidence="Strong"
@@ -136,24 +129,24 @@ export function NarrativesPage() {
             }
             summary={
               <>
-                Three quarters of ACs fell in the modest-loss range
-                (-10 to 0pp). Only 6 (4.3%) had catastrophic loss.
-                The drop was religion-blind, route-blind, and
-                cabinet-status-blind: the press's "Sabarimala
-                backlash" and "minister-targeted anti-incumbency"
-                framings don't show up at the constituency level.
+                Three quarters of ACs fell in the modest-loss range (-10 to
+                0pp). Only 6 (4.3%) had catastrophic loss. The drop was
+                religion-blind, route-blind, and cabinet-status-blind: the
+                press's "Sabarimala backlash" and "minister-targeted
+                anti-incumbency" framings don't show up at the constituency
+                level.
               </>
             }
-            href="/narratives/anti-ldf-wave"
+            href="/walkthroughs/ldf-walkthrough"
           />
-          <NarrativeArcCard
+          <WalkthroughCard
             arcNumber={2}
             title="Central Kerala provided nearly half the majority margin"
             confidence="Strong"
             headlineStat={
               <span className={ARC_KEY_STAT_CLASS}>
-                47 of 47 UDF wins across Idukki, Ernakulam, Wayanad,
-                Malappuram, Kottayam
+                47 of 47 UDF wins across Idukki, Ernakulam, Wayanad, Malappuram,
+                Kottayam
               </span>
             }
             visual={
@@ -169,24 +162,23 @@ export function NarrativesPage() {
             }
             summary={
               <>
-                Christian-heavy ACs added a robust ~3-4pp UDF
-                premium on top of the statewide wave (β=+0.19,
-                p=0.008 with district FE). Combined with FPTP
-                amplification, the modest swing converted into a
-                102-seat majority. Muslim-share variation did not
-                add a separate detectable premium.
+                Christian-heavy ACs added a robust ~3-4pp UDF premium on top of
+                the statewide wave (β=+0.19, p=0.008 with district FE). Combined
+                with FPTP amplification, the modest swing converted into a
+                102-seat majority. Muslim-share variation did not add a separate
+                detectable premium.
               </>
             }
-            href="/narratives/central-kerala"
+            href="/walkthroughs/udf-walkthrough"
           />
-          <NarrativeArcCard
+          <WalkthroughCard
             arcNumber={3}
             title="BJP's 2026 performance — a data walkthrough"
             confidence="Moderate-strong"
             headlineStat={
               <span className={ARC_KEY_STAT_CLASS}>
-                3 BJP wins; 6 cohorts trace where the party grew,
-                declined, sat out, and stayed locked out
+                3 BJP wins; 6 cohorts trace where the party grew, declined, sat
+                out, and stayed locked out
               </span>
             }
             visual={
@@ -203,17 +195,15 @@ export function NarrativesPage() {
             }
             summary={
               <>
-                A guided tour of BJP's 2026 results, starting from
-                the 3 wins (Nemom, Chathannoor, Kazhakoottam) and
-                expanding outward through cohorts: mature-base
-                growers, sustained multi-cycle builders, low-base
-                breakouts, declining mature seats, anti-LDF
-                wave-capture, and the negative-space terrain where
-                BJP doesn't compete. Data-first; no strategic
-                reverse-engineering.
+                A guided tour of BJP's 2026 results, starting from the 3 wins
+                (Nemom, Chathannoor, Kazhakoottam) and expanding outward through
+                cohorts: mature-base growers, sustained multi-cycle builders,
+                low-base breakouts, declining mature seats, anti-LDF
+                wave-capture, and the negative-space terrain where BJP doesn't
+                compete. Data-first; no strategic reverse-engineering.
               </>
             }
-            href="/narratives/bjp-walkthrough"
+            href="/walkthroughs/nda-walkthrough"
           />
         </section>
 
@@ -227,15 +217,14 @@ export function NarrativesPage() {
               Swing source vs seat amplification
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Two analytically separable layers explain the 2026
-              outcome. The <em>swing source</em> — where votes came
-              from, where they went — is mostly LDF erosion landing
-              on UDF (98% of LDF's loss; see Arc 1's flow
-              decomposition). The <em>seat amplification</em> — how
-              FPTP plurality converted that vote movement into seats
-              — turned a 7.4pp swing into +61 UDF seats (≈8 seats
-              per pp, 6× the proportional rate). Neither alone
-              explains the landslide; together they do.
+              Two analytically separable layers explain the 2026 outcome. The{" "}
+              <em>swing source</em> — where votes came from, where they went —
+              is mostly LDF erosion landing on UDF (98% of LDF's loss; see Arc
+              1's flow decomposition). The <em>seat amplification</em> — how
+              FPTP plurality converted that vote movement into seats — turned a
+              7.4pp swing into +61 UDF seats (≈8 seats per pp, 6× the
+              proportional rate). Neither alone explains the landslide; together
+              they do.
             </p>
           </article>
           <article className="rounded-sm border bg-card/50 p-6">
@@ -243,15 +232,14 @@ export function NarrativesPage() {
               Kerala 2026 was not highly polarized
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              The catalog implies a calmer reading than the dominant
-              press framing. LDF's loss had a tight distribution
-              (SD 4.5pp); the Christian-belt premium is modest
-              (~3-4pp); BJP's pocket is concentrated in 3 specific
-              seats. A polarized communal-realignment interpretation
-              predicts bimodal distributions, large within-district
-              gradients, and broad-based BJP advance. None of those
-              show up. The 2026 result reads as a calm distribution
-              shift overlaid with modest local patterns.
+              The catalog implies a calmer reading than the dominant press
+              framing. LDF's loss had a tight distribution (SD 4.5pp); the
+              Christian-belt premium is modest (~3-4pp); BJP's pocket is
+              concentrated in 3 specific seats. A polarized communal-realignment
+              interpretation predicts bimodal distributions, large
+              within-district gradients, and broad-based BJP advance. None of
+              those show up. The 2026 result reads as a calm distribution shift
+              overlaid with modest local patterns.
             </p>
           </article>
         </section>
@@ -263,17 +251,14 @@ export function NarrativesPage() {
               What contradicted prior expectations
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Findings that reversed pre-analysis intuitions during
-              the catalog's construction. The full discussion is in
-              the synthesis card.
+              Findings that reversed pre-analysis intuitions during the
+              catalog's construction. The full discussion is in the synthesis
+              card.
             </p>
           </header>
           <ul className="grid grid-cols-1 gap-3 md:grid-cols-2">
             {SURPRISES.map((s) => (
-              <li
-                key={s.title}
-                className="rounded-sm border bg-card/30 p-4"
-              >
+              <li key={s.title} className="rounded-sm border bg-card/30 p-4">
                 <p className="text-sm font-semibold">{s.title}</p>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                   {s.body}
@@ -292,27 +277,23 @@ export function NarrativesPage() {
             <strong className="font-medium text-foreground">
               Methodology.
             </strong>{" "}
-            All bin means and per-AC differentials are
-            constituency-equal (each AC counts once). Statewide
-            aggregates are vote-weighted. The unit of analysis is
-            the constituency, not the individual voter — see the{" "}
+            All bin means and per-AC differentials are constituency-equal (each
+            AC counts once). Statewide aggregates are vote-weighted. The unit of
+            analysis is the constituency, not the individual voter — see the{" "}
             <Link
-              to="/narratives/methodology"
+              to="/walkthroughs/methodology"
               className="font-medium text-foreground underline-offset-2 hover:underline"
             >
               methodology page
             </Link>{" "}
-            for the standing convention on inference, alliance-share
-            accounting, district / region fixed effects,
-            gradient-vs-cluster distinction, counterfactual logic,
-            and falsification triggers.
+            for the standing convention on inference, alliance-share accounting,
+            district / region fixed effects, gradient-vs-cluster distinction,
+            counterfactual logic, and falsification triggers.
           </p>
           <p className="mt-2">
-            <strong className="font-medium text-foreground">
-              Reproduce.
-            </strong>{" "}
-            Source data, Python analysis scripts, and the full
-            narrative-card documents are in the project repository:{" "}
+            <strong className="font-medium text-foreground">Reproduce.</strong>{" "}
+            Source data, Python analysis scripts, and the full source cards are
+            in the project repository:{" "}
             <a
               href="https://github.com/nvlsr/kerala-2026"
               target="_blank"

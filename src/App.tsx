@@ -34,31 +34,32 @@ const ReligionMapPage = lazy(() =>
   }))
 )
 
-// Narratives — public-facing analytical surface with three arc pages.
-// Top page summarises; arc pages carry choropleths + supporting charts.
-const NarrativesPage = lazy(() =>
-  import("@/pages/narratives-page").then((m) => ({
-    default: m.NarrativesPage,
+// Walkthroughs — public-facing analytical surface with three alliance
+// pages. Top page summarises; alliance pages carry choropleths +
+// supporting charts.
+const WalkthroughsPage = lazy(() =>
+  import("@/pages/walkthroughs-page").then((m) => ({
+    default: m.WalkthroughsPage,
   }))
 )
-const NarrativesAntiLDFPage = lazy(() =>
-  import("@/pages/narratives-anti-ldf-page").then((m) => ({
-    default: m.NarrativesAntiLDFPage,
+const WalkthroughsLDFPage = lazy(() =>
+  import("@/pages/walkthroughs-ldf-page").then((m) => ({
+    default: m.WalkthroughsLDFPage,
   }))
 )
-const NarrativesCentralKeralaPage = lazy(() =>
-  import("@/pages/narratives-central-kerala-page").then((m) => ({
-    default: m.NarrativesCentralKeralaPage,
+const WalkthroughsUDFPage = lazy(() =>
+  import("@/pages/walkthroughs-udf-page").then((m) => ({
+    default: m.WalkthroughsUDFPage,
   }))
 )
-const NarrativesBJPWalkthroughPage = lazy(() =>
-  import("@/pages/narratives-bjp-walkthrough-page").then((m) => ({
-    default: m.NarrativesBJPWalkthroughPage,
+const WalkthroughsNDAPage = lazy(() =>
+  import("@/pages/walkthroughs-nda-page").then((m) => ({
+    default: m.WalkthroughsNDAPage,
   }))
 )
-const NarrativesMethodologyPage = lazy(() =>
-  import("@/pages/narratives-methodology-page").then((m) => ({
-    default: m.NarrativesMethodologyPage,
+const WalkthroughsMethodologyPage = lazy(() =>
+  import("@/pages/walkthroughs-methodology-page").then((m) => ({
+    default: m.WalkthroughsMethodologyPage,
   }))
 )
 
@@ -99,22 +100,22 @@ export function App() {
           <Route path="/drifts" element={<DriftsPage />} />
           <Route path="/belts" element={<BeltsPage />} />
           <Route path="/religion-map" element={<ReligionMapPage />} />
-          <Route path="/narratives" element={<NarrativesPage />} />
+          <Route path="/walkthroughs" element={<WalkthroughsPage />} />
           <Route
-            path="/narratives/anti-ldf-wave"
-            element={<NarrativesAntiLDFPage />}
+            path="/walkthroughs/ldf-walkthrough"
+            element={<WalkthroughsLDFPage />}
           />
           <Route
-            path="/narratives/central-kerala"
-            element={<NarrativesCentralKeralaPage />}
+            path="/walkthroughs/udf-walkthrough"
+            element={<WalkthroughsUDFPage />}
           />
           <Route
-            path="/narratives/bjp-walkthrough"
-            element={<NarrativesBJPWalkthroughPage />}
+            path="/walkthroughs/nda-walkthrough"
+            element={<WalkthroughsNDAPage />}
           />
           <Route
-            path="/narratives/methodology"
-            element={<NarrativesMethodologyPage />}
+            path="/walkthroughs/methodology"
+            element={<WalkthroughsMethodologyPage />}
           />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

@@ -27,7 +27,7 @@ export function TakeawayBox({
         className
       )}
     >
-      <h2 className="font-heading text-xs font-semibold tracking-widest uppercase text-foreground/70">
+      <h2 className="font-heading text-xs font-semibold tracking-widest text-foreground/70 uppercase">
         {heading}
       </h2>
       <div className="mt-3 text-sm leading-relaxed text-foreground sm:text-[15px]">

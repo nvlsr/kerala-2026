@@ -13,15 +13,13 @@ const STYLES: Record<
 > = {
   foundational: {
     label: "Foundational finding",
-    classes:
-      "border-foreground/30 bg-foreground/5 text-foreground/80",
+    classes: "border-foreground/30 bg-foreground/5 text-foreground/80",
     tooltip:
       "A primary descriptive observation that the rest of the arc rests on.",
   },
   falsification: {
     label: "Falsification test",
-    classes:
-      "border-red-500/30 bg-red-500/5 text-red-700 dark:text-red-400",
+    classes: "border-red-500/30 bg-red-500/5 text-red-700 dark:text-red-400",
     tooltip:
       "Tests a press claim or prior hypothesis; reports whether the data supports it.",
   },
@@ -54,7 +52,7 @@ type Props = {
 }
 
 /**
- * Small badge surfacing the structural role of a narrative section.
+ * Small badge surfacing the structural role of a walkthrough section.
  * Helps readers distinguish primary findings from falsifications,
  * mechanisms, and exploratory readings — the catalog already has
  * this hierarchy substantively; this exposes it visually.

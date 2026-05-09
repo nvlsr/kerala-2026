@@ -81,7 +81,10 @@ export type AcDemographics = {
    * join failed; uses district URBAN religion shares as a tactical fix
    * (see docs/data-pipeline.md for the improvement roadmap)
    */
-  source: "shrug-c01-aggregated" | "district-urban-fallback" | "district-total-fallback"
+  source:
+    | "shrug-c01-aggregated"
+    | "district-urban-fallback"
+    | "district-total-fallback"
 }
 
 export const acDemoMeta = acDemographicsJson as {
@@ -95,7 +98,7 @@ export const acDemoMeta = acDemographicsJson as {
  * State-level uniform projection of `acDemoMeta` to ~2025 using
  * cohort multipliers from CRS births-by-religion data. This is the
  * **default baseline** for both visualisation (/religion-map) and
- * narrative-card analysis. Pearson correlation differs from the raw
+ * walkthrough analysis. Pearson correlation differs from the raw
  * 2011 base by ≤0.011 (uniform multipliers preserve rank order), but
  * 2025 is reality-aligned for absolute-share statements. The raw
  * 2011 baseline lives in `acDemoMeta` and is available for

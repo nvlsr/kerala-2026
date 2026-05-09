@@ -1,12 +1,12 @@
 import { Fragment, useState, type ReactNode } from "react"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
-import { NarrativeArcBreadcrumb } from "@/components/narratives/narrative-arc-breadcrumb"
+import { WalkthroughBreadcrumb } from "@/components/walkthroughs/walkthrough-breadcrumb"
 import {
   PROSE_LINK_CLASS,
   ProseLink,
   SeatLink,
-} from "@/components/narratives/prose-link"
+} from "@/components/walkthroughs/prose-link"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
@@ -21,7 +21,7 @@ import {
   getAllACMetrics,
   getPerACAllianceShare,
   getPerACWinner2026,
-} from "@/lib/data/narrative-metrics"
+} from "@/lib/data/walkthrough-metrics"
 import { cn } from "@/lib/utils"
 
 import {
@@ -45,7 +45,44 @@ import {
   PARTY_DECOMPOSITION,
   SOUTH_CLUSTER_VIEWBOX,
   THREE_LENSES,
-} from "./narratives-bjp-walkthrough-data"
+} from "./walkthroughs-nda-data"
+
+/**
+ * Typography system for the BJP walkthrough page.
+ *
+ * Five named tiers, applied consistently across all sections so the
+ * reader's eye learns the hierarchy quickly:
+ *
+ * 1. SECTION_LEAD — opening paragraph of a section. Slightly larger,
+ *    almost-foreground colour. Sets the scene before detail prose
+ *    starts. Used right after each section's <h2>.
+ * 2. SUB_HEADING — h3 inside a section. Bigger than body so the
+ *    visual jump is clear; tracking-tight to match h2.
+ * 3. DEFINITION — italic muted block with a left border, one per
+ *    cohort, stating the formal selection criteria. Reads as
+ *    "metadata about this section" rather than body emphasis.
+ * 4. PREVIEW_LIST — compact ordered list shown right after a lead
+ *    paragraph that says "N patterns / N reasons / N mechanisms".
+ *    Tells the reader what the next N sub-sections will cover.
+ * 5. ASIDE — small muted text for parenthetical notes and footnote-
+ *    equivalents (e.g. "Caste data is district-level only").
+ *
+ * Body prose default is `text-sm sm:text-[15px] leading-relaxed`,
+ * applied at the section level by CohortSection, so individual <p>
+ * elements inherit it without an explicit class. Only override when
+ * the paragraph is one of the five named tiers above.
+ *
+ * Documented in `docs/architecture.md` → "Walkthrough pages" →
+ * "Typography system".
+ */
+const SECTION_LEAD =
+  "text-base leading-relaxed text-foreground/90 sm:text-[16.5px]"
+const SUB_HEADING = "mt-7 font-heading text-lg font-semibold tracking-tight"
+const DEFINITION =
+  "border-l-2 border-muted-foreground/30 pl-3 italic text-muted-foreground"
+const PREVIEW_LIST =
+  "my-3 list-inside list-decimal space-y-0.5 text-[14px] text-muted-foreground"
+const ASIDE = "text-[12.5px] text-muted-foreground"
 
 const HIGHLIGHT_ROW_CLASS =
   "bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/30 dark:hover:bg-amber-950/40"
@@ -180,7 +217,7 @@ function CohortSection({
  * the 3 wins and 6 cohort archetypes; no interpretive leaps. Source
  * markdown: `docs/narrative-cards/bjp-performance-walkthrough.md`.
  */
-export function NarrativesBJPWalkthroughPage() {
+export function WalkthroughsNDAPage() {
   const all = getAllACMetrics()
   const winner2026 = getPerACWinner2026()
 
@@ -212,13 +249,13 @@ export function NarrativesBJPWalkthroughPage() {
   return (
     <PageShell
       breadcrumbs={[
-        { label: "Narratives", href: "/narratives" },
-        { label: "BJP" },
+        { label: "Walkthroughs", href: "/walkthroughs" },
+        { label: "NDA" },
       ]}
       title="BJP's 2026 performance — a data walkthrough"
       subtitle={
         <>
-          <NarrativeArcBreadcrumb current={3} />
+          <WalkthroughBreadcrumb current="NDA" />
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
             A guided tour through BJP's 2026 results, starting from the 3 wins
             and expanding outward through cohorts.
@@ -267,30 +304,36 @@ export function NarrativesBJPWalkthroughPage() {
           }
           mapCaption="Trivandrum + Kollam districts (25 ACs). NDA vote share, 2026. The 3 BJP wins — Nemom, Kazhakoottam, Chathannoor — are outlined."
         >
-          <p>
+          <p className={SECTION_LEAD}>
             BJP won three Assembly constituencies in 2026:{" "}
             <SeatLink ac={135}>Nemom</SeatLink> (Rajeev Chandrasekhar),{" "}
             <SeatLink ac={132}>Kazhakoottam</SeatLink> (V. Muraleedharan), and{" "}
             <SeatLink ac={126}>Chathannoor</SeatLink> (B.B. Gopakumar). All
-            three converged on three observable patterns.
+            three converged on three observable patterns:
           </p>
+          <ol className={PREVIEW_LIST}>
+            <li>A Hindu-heavy religion + caste mix.</li>
+            <li>An already-mature NDA-2021 vote-share base.</li>
+            <li>An above-baseline benefit from the anti-LDF wave.</li>
+          </ol>
 
-          <h3 className="mt-5 font-heading text-base font-semibold tracking-tight">
+          <h3 className={SUB_HEADING}>
             1. Religion and caste mix — substantially more Hindu
           </h3>
           <p>
             The 3 wins (Nemom 69%, Kazhakoottam 69%, Chathannoor 72%) average{" "}
             <strong>~70% Hindu vs the state's 53%</strong> — about 17 percentage
             points above the state mean. Muslim share is correspondingly lower
-            (~14% vs 26% statewide); The 3 wins sit in Trivandrum district (Nair
+            (~14% vs 26% statewide). The 3 wins sit in Trivandrum district (Nair
             39%, Ezhava 27%) and Kollam district (Nair 28%, Ezhava 33% —
-            Chathannoor only). Caste data is district-level only, so this is
-            approximate, not AC-precise.
+            Chathannoor only).
+          </p>
+          <p className={ASIDE}>
+            Caste data is district-level only, so this is approximate — not
+            AC-precise.
           </p>
 
-          <h3 className="mt-5 font-heading text-base font-semibold tracking-tight">
-            2. Mature vote-share base going in
-          </h3>
+          <h3 className={SUB_HEADING}>2. Mature vote-share base going in</h3>
           <Table>
             <TableHeader>
               <TableRow>
@@ -367,9 +410,7 @@ export function NarrativesBJPWalkthroughPage() {
             seats had NDA bases at this level.
           </p>
 
-          <h3 className="mt-5 font-heading text-base font-semibold tracking-tight">
-            3. Anti-LDF wave benefit
-          </h3>
+          <h3 className={SUB_HEADING}>3. Anti-LDF wave benefit</h3>
           <p>
             Statewide, the swing landed mostly on UDF, with a smaller slice on
             NDA. At 21 specific seats, the swing pattern inverted — NDA absorbed{" "}
@@ -395,13 +436,20 @@ export function NarrativesBJPWalkthroughPage() {
           }
           mapCaption="11 seats where BJP/NDA grew meaningfully on a real existing base. Concentrated in the Trivandrum belt, Kollam, Central Kerala (Thiruvalla, Pala), with scattered outposts (Nattika, Kozhikode N/S, Ottappalam)."
         >
-          <p className="text-muted-foreground italic">
+          <p className={DEFINITION}>
             BJP grew meaningfully on a real existing base — either reaching ≥25%
             in 2026 with ≥+5pp gain (snapshot), or sustaining ≥+2pp growth
             across both 2016→2021 and 2021→2026 (trajectory). 11 unique seats,
             sorted by 2026 BJP share. <span className="not-italic">★</span>{" "}
             marks the 4 seats that also satisfy the multi-cycle trajectory
             criterion.
+          </p>
+          <p>
+            This is the only set where BJP grew on a real existing base — the
+            closest 8 ACs to a winning structural position, plus 3 trajectory
+            seats showing two-cycle build. If BJP is going to convert{" "}
+            <em>more than 3 seats</em> next cycle, the conversion candidates
+            most likely come from inside this cohort.
           </p>
           <Table>
             <TableHeader>
@@ -461,6 +509,18 @@ export function NarrativesBJPWalkthroughPage() {
             </TableBody>
           </Table>
           <p className="mt-3">
+            <strong>
+              Chathannoor is the only sustained-trajectory seat that converted
+              to a 2026 win.
+            </strong>{" "}
+            The 3 wins all sit at the top of the cohort by 2026 share; the other
+            8 lost despite growing. The other three trajectory seats —{" "}
+            <SeatLink ac={107}>Haripad</SeatLink> (8.9 → 11.9 → 21.5%),{" "}
+            <SeatLink ac={128}>Attingal</SeatLink> (20.4 → 25.9 → 30.8%),{" "}
+            <SeatLink ac={28}>Kozhikode South</SeatLink> (16.8 → 20.9 → 25.6%) —
+            show durable upward trajectories but lost in 2026.
+          </p>
+          <p>
             Beyond the 3 wins, the 8 non-win growers sit in mixed terrain: 2
             Christian-mixed Central Kerala (
             <SeatLink ac={111}>Thiruvalla</SeatLink>,{" "}
@@ -472,17 +532,6 @@ export function NarrativesBJPWalkthroughPage() {
             <SeatLink ac={107}>Haripad</SeatLink>); plus{" "}
             <SeatLink ac={68}>Nattika</SeatLink> and{" "}
             <SeatLink ac={52}>Ottappalam</SeatLink>. All 8 lost in 2026.
-          </p>
-          <p>
-            <strong>
-              Chathannoor is the only multi-cycle trajectory seat that converted
-              to a 2026 win.
-            </strong>{" "}
-            The other three trajectory seats —{" "}
-            <SeatLink ac={107}>Haripad</SeatLink> (8.9 → 11.9 → 21.5%),{" "}
-            <SeatLink ac={128}>Attingal</SeatLink> (20.4 → 25.9 → 30.8%),{" "}
-            <SeatLink ac={28}>Kozhikode South</SeatLink> (16.8 → 20.9 → 25.6%) —
-            show durable upward trajectories but lost in 2026.
           </p>
         </CohortSection>
 
@@ -503,9 +552,16 @@ export function NarrativesBJPWalkthroughPage() {
           }
           mapCaption="3 seats — Pala (Kottayam), Karunagappally (Kollam), Varkala (Trivandrum). Each represents a different mechanism."
         >
-          <p className="text-muted-foreground italic">
+          <p className={DEFINITION}>
             2021 effective NDA baseline &lt; 10% AND BJP Δ ≥ +10pp in 2026. 3
             seats qualify.
+          </p>
+          <p>
+            Low-base breakouts are a different story from{" "}
+            <CohortLink slug="mature-growers">mature growers</CohortLink>. These
+            are seats where BJP went from near-zero to a meaningful share in one
+            cycle — usually because of a specific lever (a marquee candidate, an
+            alliance slot rotation, or an organic local base finding the party).
           </p>
           <Table>
             <TableHeader>
@@ -582,11 +638,18 @@ export function NarrativesBJPWalkthroughPage() {
             </TableBody>
           </Table>
           <p className="mt-3">
+            <strong>None of the three converted to a win</strong> despite
+            +11-18pp jumps. Pala's +18.2pp was the largest single-cycle BJP Δ on
+            the entire 140-AC list — and still not enough to flip the seat.
+            One-cycle breakouts move the share dial dramatically but don't
+            necessarily win the seat.
+          </p>
+          <p>
             Three different mechanisms within "new growth from low base":
             marquee Christian candidate at a Christian-majority seat (Pala);
-            organic build from a real BJP base (Karunagappally);
-            alliance-vehicle slot rotation BDJS → BJP (Varkala) — the Δ here is
-            partly the alliance-vehicle effect, not pure new-voter movement.
+            organic build from a real BJP base (Karunagappally); alliance-
+            vehicle slot rotation BDJS → BJP (Varkala) — the Δ here is partly
+            the alliance-vehicle effect, not pure new-voter movement.
           </p>
         </CohortSection>
 
@@ -607,9 +670,16 @@ export function NarrativesBJPWalkthroughPage() {
           }
           mapCaption="8 seats. Heavy clustering in Thrissur (3 seats), the Kottayam/Pathanamthitta Christian belt (Konni, Poonjar), plus scattered erosions at Kasaragod, Mavelikkara, Shornur."
         >
-          <p className="text-muted-foreground italic">
+          <p className={DEFINITION}>
             2021 effective NDA baseline ≥ 20% AND Δ21-26 ≤ −2pp. 8 seats
             qualify.
+          </p>
+          <p>
+            This is the negative mirror of{" "}
+            <CohortLink slug="mature-growers">mature growers</CohortLink> — the
+            seats where BJP <em>had</em> a real base (≥20%) and lost it. Tells
+            us where the alliance got pushed back rather than pushed forward,
+            and which terrain BJP couldn't defend.
           </p>
           <Table>
             <TableHeader>
@@ -660,19 +730,26 @@ export function NarrativesBJPWalkthroughPage() {
             </TableBody>
           </Table>
           <p className="mt-3">
-            <strong>5 of 8 declining-mature seats are Hindu+Christian</strong>{" "}
-            (Konni 33% C, Thrissur 39%, Mavelikkara 18%, Irinjalakuda 26%,
-            Pudukkad 35%); one more is Christian-mixed (Poonjar 41%). 6 of 8
-            (75%) sit in seats with significant Christian populations. This sits
-            alongside the marquee Christian successes among mature growers (Pala
-            +18pp, Thiruvalla +14pp). Where BJP deployed marquee Christian
-            candidates in Hindu+Christian terrain, it gained; where it fielded
-            non-marquee candidates, it declined.
+            <strong>
+              75% of declining-mature seats sit in Hindu+Christian terrain.
+            </strong>{" "}
+            Where BJP fielded marquee Christian candidates in similar terrain
+            (Pala +18pp, Thiruvalla +14pp — see{" "}
+            <CohortLink slug="mature-growers">mature growers</CohortLink>), it
+            gained. Where it fielded non-marquee candidates in this same kind of
+            seat, it declined.
+          </p>
+          <p>
+            5 of the 8 are Hindu+Christian (Konni 33% C, Thrissur 39%,
+            Mavelikkara 18%, Irinjalakuda 26%, Pudukkad 35%); one more is
+            Christian-mixed (Poonjar 41%). 6 of 8 sit in seats with significant
+            Christian populations.
           </p>
           <p>
             <strong>Special case — Thrissur with Padmaja Venugopal.</strong> She
             ran at Thrissur in 2016 as INC (37%) and defected to BJP for 2026
-            (23.3%). BJP itself fielded both years, but the seat declined 8pp.
+            (23.3%). BJP itself fielded both years, but the seat declined 8pp —
+            defection alone didn't translate to a marquee-Christian uplift here.
           </p>
         </CohortSection>
 
@@ -693,21 +770,16 @@ export function NarrativesBJPWalkthroughPage() {
           }
           mapCaption="21 seats spread across the state — clusters in Trivandrum, Thrissur, and Kottayam, with isolated cases in Kannur, Wayanad, Palakkad, Ernakulam, Kasaragod, and Kozhikode."
         >
-          <p className="text-muted-foreground italic">
+          <p className={DEFINITION}>
             NDA Δ21-26 &gt; UDF Δ21-26 AND NDA 2026 share ≥ 15% AND LDF Δ21-26
             &lt; 0. 21 seats qualify — NDA out-captured UDF in the anti-LDF
             wave.
           </p>
           <p>
-            At 21 specific seats — about 15% of Kerala's 140 ACs — the swing
-            pattern inverted from the statewide pattern:{" "}
-            <strong>
-              NDA absorbed <em>more</em> of the anti-LDF wave than UDF did.
-            </strong>{" "}
-            All 3 BJP wins are in this set (highlighted), but conversion
-            required additional factors (mature base, demographic mix).{" "}
-            <SeatLink ac={93}>Pala</SeatLink> had the largest gap (+31.1pp) and
-            didn't win.
+            This is the best window into BJP's competitive terrain. It isolates
+            the seats where NDA actively beat UDF in the redistribution of LDF
+            voters — the ~15% of Kerala where the anti-LDF wave landed on NDA
+            rather than UDF, against the statewide pattern.
           </p>
           <Table>
             <TableHeader>
@@ -796,6 +868,24 @@ export function NarrativesBJPWalkthroughPage() {
               </button>
             </div>
           )}
+          <p className="mt-3">
+            <strong>
+              All 3 BJP wins sit in this set, but conversion required additional
+              factors.
+            </strong>{" "}
+            <SeatLink ac={93}>Pala</SeatLink> had the largest gap (+31.1pp) and
+            didn't win — wave-capture alone wasn't sufficient. The 3 wins sit in
+            the lower half of the gap distribution; what distinguishes them from
+            the 18 non-wins in this set is the mature base they already had
+            going in (see{" "}
+            <CohortLink slug="mature-growers">mature growers</CohortLink>).
+          </p>
+          <p>
+            Geographic concentration in Trivandrum (5 seats), Thrissur (5
+            seats), and Kottayam (2 seats) — over half the cohort sits in three
+            districts. Outside those clusters, single-seat appearances in
+            Kannur, Wayanad, Palakkad, Ernakulam, Kasaragod, and Kozhikode.
+          </p>
         </CohortSection>
 
         {/* SECTION 6 — Negative space (5a + 5b) */}
@@ -803,7 +893,7 @@ export function NarrativesBJPWalkthroughPage() {
           <h2 className="mb-3 font-heading text-xl font-semibold tracking-tight sm:text-2xl">
             Negative space — where BJP doesn't compete
           </h2>
-          <p className="mb-6 max-w-prose text-sm leading-relaxed">
+          <p className={cn(SECTION_LEAD, "mb-6 max-w-prose")}>
             Two distinct archetypes of non-engagement: seats where BJP{" "}
             <em>chose</em> to stay out by alliance-management (
             <em>strategic abstention</em>), and seats where BJP/NDA has{" "}
@@ -828,17 +918,18 @@ export function NarrativesBJPWalkthroughPage() {
           }
           mapCaption="14 seats where BJP fielded zero candidates across 2016, 2021, 2026. Concentrations along the Alappuzha coast, in Idukki, and in Ernakulam."
         >
-          <p className="text-muted-foreground italic">
+          <p className={DEFINITION}>
             BJP fielded zero candidates across the three recent elections (2016,
             2021, 2026). 14 seats qualify. NDA-aligned vehicles (BDJS, Twenty
             20) hold the slot — typically 5-15% — but BJP itself stays out by
             deliberate alliance-management.
           </p>
           <p>
-            <strong>Patterns:</strong> 12 of 14 seats have Christian share ≥
-            13%, half have ≥ 23%; no Muslim-majority seats. Geographic clusters:
-            Alappuzha coast (4 — all BDJS), Idukki hill (2 — both BDJS),
-            Ernakulam (2), Thrissur (2).
+            These seats expose the "BJP-the-party vs NDA-the-alliance"
+            distinction. BJP at 0%; the alliance still presents a candidate via
+            BDJS or Twenty 20, often clearing 10-15%. Tells us where BJP has
+            structurally chosen <em>not</em> to compete directly — even when
+            there's a viable NDA presence to be had.
           </p>
           <Table>
             <TableHeader>
@@ -872,6 +963,18 @@ export function NarrativesBJPWalkthroughPage() {
               ))}
             </TableBody>
           </Table>
+          <p className="mt-3">
+            <strong>NDA grew +2.07pp in this cohort</strong> entirely through
+            ally expansion (BDJS / T20). BJP itself never appeared. The alliance
+            is moving the needle in seats BJP has decided to sit out.
+          </p>
+          <p>
+            12 of 14 seats have Christian share ≥ 13%; half have ≥ 23%. No
+            Muslim-majority seats here — strategic abstention is a
+            Christian-mixed-terrain story. Geographic clusters: Alappuzha coast
+            (4, all BDJS), Idukki hill (2, both BDJS), Ernakulam (2), Thrissur
+            (2).
+          </p>
         </CohortSection>
 
         <CohortSection
@@ -890,16 +993,21 @@ export function NarrativesBJPWalkthroughPage() {
           }
           mapCaption="19 seats where BJP+BDJS aggregate has stayed under 8% across 2016, 2021, 2026. Malappuram dominance: 9 of 19 seats in this single district."
         >
-          <p className="text-muted-foreground italic">
+          <p className={DEFINITION}>
             BJP+BDJS aggregate &lt; 8% across all three cycles. 19 seats
             qualify. Effort applied (BJP fielded sometime in many of these), no
             traction.
           </p>
           <p>
-            <strong>Patterns:</strong> 13 of 19 seats are Muslim-dominant
-            terrain (10 Muslim-majority + 3 Hindu+Muslim). 9 of 19 are in
-            Malappuram district alone — 56% of Malappuram's 16 ACs are
-            persistently weak NDA across three cycles.
+            This is the floor of NDA's footprint. Even where BJP <em>does</em>{" "}
+            field, the alliance can't crack double digits across three cycles.
+            Tells us where the structural ceiling for NDA is roughly zero — and
+            contrasts with{" "}
+            <CohortLink slug="strategic-abstention">
+              strategic abstention
+            </CohortLink>
+            , where the ceiling exists but BJP has decided to hand the seat to
+            BDJS or T20.
           </p>
           <Table>
             <TableHeader>
@@ -945,6 +1053,17 @@ export function NarrativesBJPWalkthroughPage() {
               ))}
             </TableBody>
           </Table>
+          <p className="mt-3">
+            <strong>BJP fell −2.17pp in 2026</strong> in this cohort — the
+            alliance is getting <em>thinner</em> in this terrain, not building.
+            Effort applied; no traction. NDA aggregate barely moved (+0.27pp)
+            despite BDJS and small partners trying to fill the gap.
+          </p>
+          <p>
+            13 of 19 seats are Muslim-dominant terrain (10 Muslim-majority + 3
+            Hindu+Muslim). 9 of 19 are in Malappuram district alone — 56% of
+            Malappuram's 16 ACs are persistently weak NDA across three cycles.
+          </p>
         </CohortSection>
 
         {/* SECTION 7 — Vote-share decomposition */}
@@ -952,7 +1071,7 @@ export function NarrativesBJPWalkthroughPage() {
           <h2 className="mb-2 font-heading text-xl font-semibold tracking-tight sm:text-2xl">
             Vote-share decomposition
           </h2>
-          <p className="mb-6 max-w-prose text-sm leading-relaxed text-muted-foreground">
+          <p className={cn(SECTION_LEAD, "mb-6 max-w-prose")}>
             How NDA's three constituent parties (BJP, BDJS, T20) added up to the
             alliance total in 2021 vs 2026, and what the flat statewide
             aggregate hides about <em>where</em> BJP actually moved.
@@ -1030,7 +1149,7 @@ export function NarrativesBJPWalkthroughPage() {
           </div>
 
           {/* NDA party decomposition */}
-          <h3 className="mt-6 mb-3 font-heading text-base font-semibold tracking-tight">
+          <h3 className={cn(SUB_HEADING, "mt-6 mb-3")}>
             NDA party decomposition (statewide)
           </h3>
           <Table>
@@ -1090,9 +1209,7 @@ export function NarrativesBJPWalkthroughPage() {
           </p>
 
           {/* Per-cohort breakdown */}
-          <h3 className="mt-8 mb-3 font-heading text-base font-semibold tracking-tight">
-            Per-cohort breakdown
-          </h3>
+          <h3 className={cn(SUB_HEADING, "mt-8 mb-3")}>Per-cohort breakdown</h3>
           <p className="mb-3 max-w-prose text-sm leading-relaxed text-muted-foreground">
             The "targeted" union is 5 cohorts deduplicated. Click any cohort
             name to jump back to its detail.
@@ -1210,7 +1327,7 @@ export function NarrativesBJPWalkthroughPage() {
           </Table>
 
           {/* Footprint and intensity */}
-          <h3 className="mt-8 mb-3 font-heading text-base font-semibold tracking-tight">
+          <h3 className={cn(SUB_HEADING, "mt-8 mb-3")}>
             Footprint and intensity
           </h3>
           <p className="mb-3 max-w-prose text-sm leading-relaxed text-muted-foreground">
@@ -1274,7 +1391,7 @@ export function NarrativesBJPWalkthroughPage() {
           <h2 className="mb-2 font-heading text-base font-semibold tracking-tight text-foreground">
             Methodology
           </h2>
-          <p className="max-w-prose">
+          <p>
             <strong className="font-medium text-foreground/80">
               Effective baselines.
             </strong>{" "}
@@ -1290,7 +1407,7 @@ export function NarrativesBJPWalkthroughPage() {
             </code>
             .
           </p>
-          <p className="mt-3 max-w-prose">
+          <p className="mt-3">
             <strong className="font-medium text-foreground/80">
               2021 alliance attribution.
             </strong>{" "}
@@ -1299,7 +1416,7 @@ export function NarrativesBJPWalkthroughPage() {
             <code className="font-mono text-[11px]">alliance</code> attribution
             in <code className="font-mono text-[11px]">data/historical/</code>.
           </p>
-          <p className="mt-4 max-w-prose">
+          <p className="mt-4">
             <strong className="font-medium text-foreground/80">
               Source markdown:
             </strong>{" "}
@@ -1340,7 +1457,7 @@ export function NarrativesBJPWalkthroughPage() {
             </a>
             .
           </p>
-          <p className="mt-3 max-w-prose">
+          <p className="mt-3">
             Drill into individual seat data on{" "}
             <ProseLink to="/explore">/explore</ProseLink>, or browse BJP-related
             questions on <ProseLink to="/questions">/questions</ProseLink>.

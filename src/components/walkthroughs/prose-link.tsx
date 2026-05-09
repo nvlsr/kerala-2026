@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils"
  *
  * Decoration: 1px line in muted color; thickens + matches text on
  * hover. Use this class — not the bolder header/CTA link styles —
- * for in-paragraph links to /explore, /questions, /narratives, etc.
+ * for in-paragraph links to /explore, /questions, /walkthroughs, etc.
  */
 export const PROSE_LINK_CLASS =
   "underline decoration-foreground/30 decoration-[1.5px] underline-offset-2 hover:decoration-foreground hover:text-foreground"

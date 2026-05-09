@@ -156,26 +156,62 @@ If it's a per-constituency aggregate:
 - The cascading drilldown UX
 - ESLint / TS strict / Prettier — already strict
 
-## Narrative pages
+## Walkthrough pages
 
-The `/narratives` surface is a separate UX from the dashboard. Three "arc" pages (anti-LDF wave, central Kerala, BJP) plus an index and a methodology page. Each arc page composes a small set of building blocks:
+The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance walkthrough pages (LDF, UDF, NDA) plus an index and a methodology page. Each walkthrough page composes a small set of building blocks:
 
-- `NarrativeSection` — heading + prose + optional visual (`visual-right` / `visual-left` / `stacked` layout).
-- `ChoroplethMap` — the standard map; takes a `valueByAC: Map<number, number>`, a colour scale, optional `highlightSeats: Set<number>` for outlining a subset, and optional `viewBox` to crop into a region (e.g. Trivandrum + Kollam for the BJP page).
-- `CohortSection` (BJP page only) — domain-specific 2-column variant: heading on top, then map | content side-by-side, with `id` for anchor linking. See `narratives-bjp-walkthrough-page.tsx`.
+- `WalkthroughSection` — heading + prose + optional visual (`visual-right` / `visual-left` / `stacked` layout).
+- `ChoroplethMap` — the standard map; takes a `valueByAC: Map<number, number>`, a colour scale, optional `highlightSeats: Set<number>` for outlining a subset, and optional `viewBox` to crop into a region (e.g. Trivandrum + Kollam for the NDA page).
+- `CohortSection` (NDA page only, currently) — domain-specific 2-column variant: heading on top, then map | content side-by-side, with `id` for anchor linking. See `walkthroughs-nda-page.tsx`.
 - `Table` (shadcn) — built-in horizontal scroll on overflow; styled compactly via the `COMPACT_HEAD_CLASS` / `COMPACT_CELL_CLASS` shared constants.
 - `SeatLink` / `PartyLink` / `ProseLink` — subtle inline anchor links to `/explore?seat=N`, party views, etc.
 
-**Cohort data convention.** Cohort row tables for the BJP page live in `src/pages/narratives-bjp-walkthrough-data.ts`, separated from the page component so the page itself stays scannable. Each cohort defines:
+**Cohort data convention.** Cohort row tables for the NDA page live in `src/pages/walkthroughs-nda-data.ts`, separated from the page component so the page itself stays scannable. Each cohort defines:
 
 - A `*_ROWS` array (typed) — the table data.
 - A `*_ACS` set derived from `_ROWS` — used to drive the binary-highlight choropleth map for that cohort.
 
 Per-cohort vote-share aggregates (BJP / NDA Δ) are pre-computed and live in the same data file alongside the row arrays.
 
+### Typography system
+
+Each walkthrough page applies a small named-tier typography system rather than ad-hoc inline classes. The NDA page is the reference implementation; the constants live at the top of `walkthroughs-nda-page.tsx` and can be promoted to a shared `src/components/walkthroughs/typography.ts` when other walkthrough pages adopt them.
+
+Five tiers, applied consistently so the reader's eye learns the hierarchy quickly:
+
+| Tier | Constant | What it's for | Class shape |
+|---|---|---|---|
+| Section lead | `SECTION_LEAD` | The opening paragraph of a section. Slightly larger, almost-foreground colour. Sets the scene before detail prose starts. Used right after each section's `<h2>`. | `text-base sm:text-[16.5px] leading-relaxed text-foreground/90` |
+| Sub-heading | `SUB_HEADING` | `<h3>` inside a section. Bigger than body so the visual jump is clear; `tracking-tight` to match `<h2>`. | `mt-7 font-heading text-lg font-semibold tracking-tight` |
+| Definition | `DEFINITION` | One per cohort, stating the formal selection criteria. Italic muted with a left border so it reads as "metadata about this section" rather than body emphasis. | `border-l-2 border-muted-foreground/30 pl-3 italic text-muted-foreground` |
+| Preview list | `PREVIEW_LIST` | Compact ordered list shown right after a lead paragraph that says "N patterns / N reasons / N mechanisms". Tells the reader what the next N sub-sections will cover. | `my-3 list-inside list-decimal space-y-0.5 text-[14px] text-muted-foreground` |
+| Aside | `ASIDE` | Small muted text for parenthetical notes and footnote-equivalents (e.g. "Caste data is district-level only"). | `text-[12.5px] text-muted-foreground` |
+
+**Body prose default.** `text-sm sm:text-[15px] leading-relaxed`, applied at the section level by `CohortSection`'s content column, so individual `<p>` elements inherit it without an explicit class. Only override when the paragraph belongs to one of the five named tiers above.
+
+**`<h2>` (section heading).** Defined inside `CohortSection`, kept consistent across all sections: `font-heading text-xl sm:text-2xl font-semibold tracking-tight`.
+
+**Why not `@tailwindcss/typography`?** Considered and rejected: the plugin owns layout via `max-w-prose`, re-styles tables, and competes with our custom inline elements (`SeatLink`, `CohortLink`, definition lines, mechanism detail rows). For our hand-built mix of structured prose + data + maps + tables, explicit utility classes per element are a better fit than a flowing-markdown plugin.
+
+### Cohort section template
+
+Every cohort section (`mature-growers`, `low-base-breakouts`, `declining-mature`, `wave-capture`, `strategic-abstention`, `structural-exclusion`) follows the same five-block rhythm so the reader learns the structure once and can scan all six identically:
+
+1. **Definition** (`DEFINITION` tier) — formal selection criteria. One paragraph, italic muted, left-bordered. States the rule that decides which seats are in the cohort.
+2. **Why it matters** — body prose, 1-2 sentences. Answers *what looking at this group tells us analytically* — its analytical role, its relationship to other cohorts. Often references sibling cohorts via `CohortLink`.
+3. **Table** — the data. Inside `CohortSection`'s content column with horizontal-scroll on overflow. Sorted by the cohort's natural ordering (2026 share descending, gap descending, etc.).
+4. **Insight** — body prose, opens with a bolded headline finding (e.g. *"**75% of declining-mature seats** sit in Hindu+Christian terrain."*). 1 paragraph. The "newspaper lede" sentence for this cohort.
+5. **Patterns** (optional) — body prose, 1-2 paragraphs. Demographic / geographic / candidate-quality regularities visible in the data. Special cases (e.g. Padmaja at Thrissur) live here.
+
+**Order discipline.** Definition → Why → Table → Insight → Patterns. Even when an "insight = definition" temptation exists (e.g. structural exclusion's "BJP can't break in" is almost the definition itself), force a non-trivial insight that adds something the definition doesn't say (e.g. *"**BJP fell −2.17pp** — the alliance is getting thinner in this terrain, not building."*).
+
+**Implicit signposting.** No eyebrow labels above each block; the order is the structure. Once the reader has been through 1-2 cohorts, the rhythm absorbs without explicit marking.
+
+**Asides.** When a section needs a methodological caveat (e.g. an "n is small" note, a sit-out exclusion, a denominator quirk), it lives as an `ASIDE`-tier paragraph *between* the Definition and Why-it-matters blocks. Keep asides distinct from "why it matters" — one explains *the data we're showing*, the other explains *the analytical role of this group*.
+
 ## Tests
 
-`bun run test` (vitest). Three suites under `src/lib/data/`: `data.test.ts`, `flows.test.ts`, `narrative-metrics.test.ts`. `bun test` (raw bun runner) does **not** work — bun's matcher is incompatible with vitest's; always go through the npm script.
+`bun run test` (vitest). Three suites under `src/lib/data/`: `data.test.ts`, `flows.test.ts`, `walkthrough-metrics.test.ts`. `bun test` (raw bun runner) does **not** work — bun's matcher is incompatible with vitest's; always go through the npm script.
 
 ## See also
 

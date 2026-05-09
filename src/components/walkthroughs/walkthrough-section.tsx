@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import {
   SectionTypeBadge,
   type SectionType,
-} from "@/components/narratives/section-type-badge"
+} from "@/components/walkthroughs/section-type-badge"
 
 type Layout = "visual-right" | "visual-left" | "stacked"
 
@@ -54,7 +54,7 @@ type Props = {
  * page author picks per section; no auto-alternation. Mobile
  * always stacks text-then-visual regardless of `layout`.
  */
-export function NarrativeSection({
+export function WalkthroughSection({
   heading,
   sectionType,
   visual,
@@ -72,7 +72,7 @@ export function NarrativeSection({
           <SectionTypeBadge type={sectionType} />
         </div>
       )}
-      <h2 className="font-heading mb-4 text-xl font-semibold tracking-tight sm:text-2xl">
+      <h2 className="mb-4 font-heading text-xl font-semibold tracking-tight sm:text-2xl">
         {heading}
       </h2>
       {visual == null ? (
@@ -93,18 +93,10 @@ export function NarrativeSection({
         </div>
       ) : (
         <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
-          <div
-            className={cn(
-              layout === "visual-left" ? "lg:order-2" : ""
-            )}
-          >
+          <div className={cn(layout === "visual-left" ? "lg:order-2" : "")}>
             <div className={proseClass}>{children}</div>
           </div>
-          <figure
-            className={cn(
-              layout === "visual-left" ? "lg:order-1" : ""
-            )}
-          >
+          <figure className={cn(layout === "visual-left" ? "lg:order-1" : "")}>
             <div className="rounded-sm border bg-card/40 p-4 sm:p-6">
               {visual}
             </div>

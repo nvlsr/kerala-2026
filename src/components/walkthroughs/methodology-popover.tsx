@@ -48,7 +48,7 @@ type Props = {
 /**
  * Inline tooltip-style popover that explains methodology terms
  * without leaving the page. Click target is the wrapped text;
- * the popover body links out to /narratives/methodology for the
+ * the popover body links out to /walkthroughs/methodology for the
  * full treatment.
  */
 export function MethodologyPopover({ term, children, className }: Props) {
@@ -81,7 +81,7 @@ export function MethodologyPopover({ term, children, className }: Props) {
         </p>
         <p className="mt-2.5 text-xs">
           <Link
-            to={`/narratives/methodology#${meta.anchor}`}
+            to={`/walkthroughs/methodology#${meta.anchor}`}
             className="font-medium text-foreground underline-offset-2 hover:underline"
           >
             Full methodology →

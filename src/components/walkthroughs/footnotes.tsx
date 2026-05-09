@@ -50,7 +50,7 @@ export function Footnotes({ items, className }: FootnotesProps) {
       aria-label="Footnotes"
       className={cn("border-t pt-6 text-xs text-muted-foreground", className)}
     >
-      <h2 className="font-heading text-[10px] font-semibold tracking-widest uppercase text-foreground/70">
+      <h2 className="font-heading text-[10px] font-semibold tracking-widest text-foreground/70 uppercase">
         Sources
       </h2>
       <ol className="mt-3 list-decimal space-y-1.5 pl-5 leading-relaxed">

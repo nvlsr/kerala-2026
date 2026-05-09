@@ -1,9 +1,9 @@
 /**
- * Per-AC narrative metrics consumed by the /narratives surface
+ * Per-AC walkthrough metrics consumed by the /walkthroughs surface
  * components (choropleths, scatter plots, bin charts, etc.).
  *
  * Centralised here to:
- *   - guarantee every narrative visualisation reads the same numbers
+ *   - guarantee every walkthrough visualisation reads the same numbers
  *   - avoid recomputing the same per-AC Δshares in multiple components
  *   - cache the computation (cheap but worth doing once on load)
  *
@@ -35,7 +35,8 @@ const CENTRAL_DISTRICTS = new Set([
 ])
 const SOUTH_DISTRICTS = new Set(["kollam", "thiruvananthapuram"])
 
-const districtOfAC: Record<string, string> = districtsMeta.constituencyToDistrict
+const districtOfAC: Record<string, string> =
+  districtsMeta.constituencyToDistrict
 
 export function getRegionForAC(acNumber: number): Region | null {
   const district = districtOfAC[String(acNumber)]
@@ -90,7 +91,11 @@ function shares2026Of(c: Constituency): AllianceShares {
   if (total === 0) return out
   for (const cand of c.candidates) {
     if (cand.isNota) continue
-    if (cand.alliance === "UDF" || cand.alliance === "LDF" || cand.alliance === "NDA") {
+    if (
+      cand.alliance === "UDF" ||
+      cand.alliance === "LDF" ||
+      cand.alliance === "NDA"
+    ) {
       out[cand.alliance] += (cand.votes / total) * 100
     } else {
       out.OTHER += (cand.votes / total) * 100
@@ -210,8 +215,7 @@ export function getAllACMetrics(): ACMetrics[] {
       winner2026: winner2026Of(c),
       bjp2021: bjpShare2021Of(c.constituencyNumber),
       bjp2026: bjpShare2026Of(c),
-      bjpDelta:
-        bjpShare2026Of(c) - bjpShare2021Of(c.constituencyNumber),
+      bjpDelta: bjpShare2026Of(c) - bjpShare2021Of(c.constituencyNumber),
     })
   }
   cached = out

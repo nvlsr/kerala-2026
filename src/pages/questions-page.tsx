@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react"
 
-import { NarrativesTeaser } from "@/components/narratives-teaser"
+import { WalkthroughsTeaser } from "@/components/walkthroughs-teaser"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { QuestionCard } from "@/components/question-card"
@@ -60,10 +60,7 @@ export function QuestionsPage() {
   const themes = getAvailableThemes()
 
   return (
-    <PageShell
-      breadcrumbs={[{ label: "Questions" }]}
-      title="Curated questions"
-    >
+    <PageShell breadcrumbs={[{ label: "Questions" }]} title="Curated questions">
       <QuestionsFilterBar
         parties={parties}
         themes={themes}
@@ -99,7 +96,7 @@ export function QuestionsPage() {
           </ul>
         )}
       </PageMain>
-      <NarrativesTeaser />
+      <WalkthroughsTeaser />
     </PageShell>
   )
 }

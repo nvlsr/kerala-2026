@@ -1,11 +1,10 @@
 /**
  * Cohort row data + vote-share decomposition data for the BJP
- * narrative page. Extracted into a sibling file so the page
+ * walkthrough page. Extracted into a sibling file so the page
  * component itself stays scannable. All numbers are pre-computed
  * from canonical year-aware alliance attribution in
  * `data/historical/` and `data/kerala-2026.json`.
  */
-
 
 /**
  * Combined view: union of Cohort 1 (snapshot definition) and Cohort 2
@@ -26,17 +25,120 @@ export type MatureGrowerRow = {
 }
 
 export const MATURE_GROWER_ROWS: MatureGrowerRow[] = [
-  { ac: 135, seat: "Nemom", district: "Trivandrum", hcm: "69/17/14", base21: 35.5, share26: 40.9, delta: 5.4, outcome: "BJP WIN" },
-  { ac: 126, seat: "Chathannoor", district: "Kollam", hcm: "72/13/15", base21: 30.6, share26: 38.2, delta: 7.6, outcome: "BJP WIN", trajectory: true },
-  { ac: 132, seat: "Kazhakoottam", district: "Trivandrum", hcm: "69/17/14", base21: 29.1, share26: 35.7, delta: 6.6, outcome: "BJP WIN" },
-  { ac: 128, seat: "Attingal", district: "Trivandrum", hcm: "69/17/14", base21: 25.9, share26: 30.8, delta: 4.9, outcome: "LDF", trajectory: true },
-  { ac: 111, seat: "Thiruvalla", district: "Pathanamthitta", hcm: "48/48/4", base21: 16.2, share26: 30.7, delta: 14.5, outcome: "UDF" },
-  { ac: 68, seat: "Nattika", district: "Thrissur", hcm: "64/16/20", base21: 22.0, share26: 29.0, delta: 7.0, outcome: "LDF" },
-  { ac: 27, seat: "Kozhikode North", district: "Kozhikode", hcm: "57/2/41", base21: 22.5, share26: 28.3, delta: 5.8, outcome: "UDF" },
-  { ac: 93, seat: "Pala", district: "Kottayam", hcm: "38/52/10", base21: 7.9, share26: 26.1, delta: 18.2, outcome: "UDF" },
-  { ac: 28, seat: "Kozhikode South", district: "Kozhikode", hcm: "57/2/41", base21: 20.9, share26: 25.6, delta: 4.7, outcome: "UDF", trajectory: true },
-  { ac: 52, seat: "Ottappalam", district: "Palakkad", hcm: "54/2/43", base21: 15.5, share26: 25.1, delta: 9.6, outcome: "LDF" },
-  { ac: 107, seat: "Haripad", district: "Alappuzha", hcm: "79/9/11", base21: 11.9, share26: 21.5, delta: 9.6, outcome: "UDF", trajectory: true },
+  {
+    ac: 135,
+    seat: "Nemom",
+    district: "Trivandrum",
+    hcm: "69/17/14",
+    base21: 35.5,
+    share26: 40.9,
+    delta: 5.4,
+    outcome: "BJP WIN",
+  },
+  {
+    ac: 126,
+    seat: "Chathannoor",
+    district: "Kollam",
+    hcm: "72/13/15",
+    base21: 30.6,
+    share26: 38.2,
+    delta: 7.6,
+    outcome: "BJP WIN",
+    trajectory: true,
+  },
+  {
+    ac: 132,
+    seat: "Kazhakoottam",
+    district: "Trivandrum",
+    hcm: "69/17/14",
+    base21: 29.1,
+    share26: 35.7,
+    delta: 6.6,
+    outcome: "BJP WIN",
+  },
+  {
+    ac: 128,
+    seat: "Attingal",
+    district: "Trivandrum",
+    hcm: "69/17/14",
+    base21: 25.9,
+    share26: 30.8,
+    delta: 4.9,
+    outcome: "LDF",
+    trajectory: true,
+  },
+  {
+    ac: 111,
+    seat: "Thiruvalla",
+    district: "Pathanamthitta",
+    hcm: "48/48/4",
+    base21: 16.2,
+    share26: 30.7,
+    delta: 14.5,
+    outcome: "UDF",
+  },
+  {
+    ac: 68,
+    seat: "Nattika",
+    district: "Thrissur",
+    hcm: "64/16/20",
+    base21: 22.0,
+    share26: 29.0,
+    delta: 7.0,
+    outcome: "LDF",
+  },
+  {
+    ac: 27,
+    seat: "Kozhikode North",
+    district: "Kozhikode",
+    hcm: "57/2/41",
+    base21: 22.5,
+    share26: 28.3,
+    delta: 5.8,
+    outcome: "UDF",
+  },
+  {
+    ac: 93,
+    seat: "Pala",
+    district: "Kottayam",
+    hcm: "38/52/10",
+    base21: 7.9,
+    share26: 26.1,
+    delta: 18.2,
+    outcome: "UDF",
+  },
+  {
+    ac: 28,
+    seat: "Kozhikode South",
+    district: "Kozhikode",
+    hcm: "57/2/41",
+    base21: 20.9,
+    share26: 25.6,
+    delta: 4.7,
+    outcome: "UDF",
+    trajectory: true,
+  },
+  {
+    ac: 52,
+    seat: "Ottappalam",
+    district: "Palakkad",
+    hcm: "54/2/43",
+    base21: 15.5,
+    share26: 25.1,
+    delta: 9.6,
+    outcome: "LDF",
+  },
+  {
+    ac: 107,
+    seat: "Haripad",
+    district: "Alappuzha",
+    hcm: "79/9/11",
+    base21: 11.9,
+    share26: 21.5,
+    delta: 9.6,
+    outcome: "UDF",
+    trajectory: true,
+  },
 ]
 
 export type Cohort3Row = {
@@ -826,7 +928,12 @@ export type PartyRow = {
 }
 
 export const PARTY_DECOMPOSITION: PartyRow[] = [
-  { party: "Bharatiya Janata Party", abbrev: "BJP", v2021: 11.29, v2026: 11.58 },
+  {
+    party: "Bharatiya Janata Party",
+    abbrev: "BJP",
+    v2021: 11.29,
+    v2026: 11.58,
+  },
   {
     party: "Bharath Dharma Jana Sena",
     abbrev: "BDJS",
@@ -919,7 +1026,12 @@ export const PARTITIONS: PartitionRow[] = [
     bjpDelta: 5.16,
     ndaDelta: 5.84,
   },
-  { partition: "Neutral (rest of state)", n: 79, bjpDelta: -0.92, ndaDelta: 1.0 },
+  {
+    partition: "Neutral (rest of state)",
+    n: 79,
+    bjpDelta: -0.92,
+    ndaDelta: 1.0,
+  },
   {
     partition: "Negative-space (abstention ∪ exclusion)",
     n: 31,

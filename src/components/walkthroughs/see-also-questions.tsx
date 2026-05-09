@@ -17,7 +17,7 @@ type Props = {
 /**
  * Footer rail of related /questions cards. Each item deep-links to
  * the card via hash anchor (e.g. /questions#bjp-gains). Lets readers
- * pivot from the narrative essay into the explorable seat-level
+ * pivot from the walkthrough essay into the explorable seat-level
  * tables for a specific question.
  */
 export function SeeAlsoQuestions({
@@ -43,9 +43,7 @@ export function SeeAlsoQuestions({
               to={`/questions#${item.id}`}
               className="block h-full rounded-sm border bg-card/30 p-3 text-left transition-colors hover:border-foreground/40 hover:bg-card/60"
             >
-              <p className="text-sm font-medium leading-snug">
-                {item.label}
-              </p>
+              <p className="text-sm leading-snug font-medium">{item.label}</p>
               {item.hint && (
                 <p className="mt-1 text-xs text-muted-foreground">
                   {item.hint}
