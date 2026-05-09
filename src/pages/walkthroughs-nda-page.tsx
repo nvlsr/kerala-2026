@@ -940,27 +940,16 @@ export function WalkthroughsNDAPage() {
                 </TableBody>
               </Table>
               <p className="mt-3">
-                <strong>
-                  75% of declining-mature seats sit in Hindu+Christian terrain.
-                </strong>{" "}
-                Where BJP fielded marquee Christian candidates in similar
-                terrain (Pala +18pp, Thiruvalla +14pp — see{" "}
-                <CohortLink slug="mature-growers">mature growers</CohortLink>),
-                it gained. Where it fielded non-marquee candidates in this same
-                kind of seat, it declined.
-              </p>
-              <p>
-                5 of the 8 are Hindu+Christian (Konni 33% C, Thrissur 39%,
-                Mavelikkara 18%, Irinjalakuda 26%, Pudukkad 35%); one more is
-                Christian-mixed (Poonjar 41%). 6 of 8 sit in seats with
-                significant Christian populations.
-              </p>
-              <p>
-                <strong>Special case — Thrissur with Padmaja Venugopal.</strong>{" "}
-                She ran at Thrissur in 2016 as INC (37%) and defected to BJP for
-                2026 (23.3%). BJP itself fielded both years, but the seat
-                declined 8pp — defection alone didn't translate to a
-                marquee-Christian uplift here.
+                <strong>Christian-seat ceiling.</strong> 6 of 8 declining-mature
+                seats sit on Christian-mixed terrain. The pattern is consistent
+                with BJP needing either a <em>marquee Christian candidate</em>{" "}
+                (see Pala and Thiruvalla in{" "}
+                <CohortLink slug="mature-growers">mature growers</CohortLink>)
+                or an <em>alliance swap</em> (Konni's BDJS slot in 2026) to make
+                progress in this terrain. Marquee alone isn't a guarantee — both
+                Thrissur (Padmaja Venugopal) and Poonjar (P.C. George) declined
+                despite high-profile candidates. With BJP's marquee Christian
+                roster thin, alliance swaps are the more scalable fallback.
               </p>
             </CohortSection>
 
