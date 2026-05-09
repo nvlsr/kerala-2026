@@ -1,10 +1,7 @@
 import { useState } from "react"
 
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
-import {
-  casteByDistrictMeta,
-  type HinduCasteShares,
-} from "@/lib/data/loaders"
+import { casteByDistrictMeta, type HinduCasteShares } from "@/lib/data/loaders"
 import {
   constituencies,
   displayConstituencyName,
@@ -114,14 +111,14 @@ export function DemographicsPanel({ scope }: Props) {
       <footer className="text-[10px] leading-snug text-muted-foreground/80">
         {view === "religion" ? (
           <>
-            Source: Census 2011 + 2025 cohort projection (CRS births
-            by religion). {fallbackNote}
+            Source: Census 2011 + 2025 cohort projection (CRS births by
+            religion). {fallbackNote}
           </>
         ) : (
           <>
             Source: Zachariah/KSI 2000 household survey. Caste data is
-            district-level only; values shown are % of total
-            population (caste-share-of-Hindus × district Hindu share).
+            district-level only; values shown are % of total population
+            (caste-share-of-Hindus × district Hindu share).
           </>
         )}
       </footer>

@@ -27,22 +27,38 @@
 import * as fs from "fs"
 import * as path from "path"
 
-type Cand = { name: string; party: string; alliance: string; votes: number; isNota?: boolean }
-type C2026 = { constituencyNumber: number; constituencyName: string; candidates: Cand[] }
+type Cand = {
+  name: string
+  party: string
+  alliance: string
+  votes: number
+  isNota?: boolean
+}
+type C2026 = {
+  constituencyNumber: number
+  constituencyName: string
+  candidates: Cand[]
+}
 type Hist = {
   constituencyNumber: number
   constituencyName: string
   elections: { year: number; type?: string; candidates: Cand[] }[]
 }
 
-const data2026: C2026[] = JSON.parse(fs.readFileSync("data/kerala-2026.json", "utf8"))
+const data2026: C2026[] = JSON.parse(
+  fs.readFileSync("data/kerala-2026.json", "utf8")
+)
 const hist: Hist[] = fs
   .readdirSync("data/historical")
   .filter((f) => f.startsWith("S11-"))
-  .map((f) => JSON.parse(fs.readFileSync(path.join("data/historical", f), "utf8")))
+  .map((f) =>
+    JSON.parse(fs.readFileSync(path.join("data/historical", f), "utf8"))
+  )
 const histByNum = new Map(hist.map((h) => [h.constituencyNumber, h]))
 
-const caste = JSON.parse(fs.readFileSync("data/hindu-caste-by-district.json", "utf8"))
+const caste = JSON.parse(
+  fs.readFileSync("data/hindu-caste-by-district.json", "utf8")
+)
 const demo = JSON.parse(fs.readFileSync("data/demographics.json", "utf8"))
 const districtData = JSON.parse(fs.readFileSync("data/districts.json", "utf8"))
 const distByConst = new Map<number, string>()
@@ -116,7 +132,9 @@ function corr(xs: number[], ys: number[]): number {
   return num / Math.sqrt(dx * dy)
 }
 
-console.log("=== Caste-share × alliance Δ correlations (across 140 ACs, district-attributed) ===")
+console.log(
+  "=== Caste-share × alliance Δ correlations (across 140 ACs, district-attributed) ==="
+)
 console.log("                            UDF Δ      LDF Δ      NDA Δ")
 const xN = rows.map((r) => r.nairOfTotal)
 const xE = rows.map((r) => r.ezhavaOfTotal)
@@ -124,8 +142,12 @@ const yU = rows.map((r) => r.udfDelta)
 const yL = rows.map((r) => r.ldfDelta)
 const yN = rows.map((r) => r.ndaDelta)
 
-console.log(`Nair share (% total)     ${corr(xN, yU).toFixed(3).padStart(7)}    ${corr(xN, yL).toFixed(3).padStart(7)}    ${corr(xN, yN).toFixed(3).padStart(7)}`)
-console.log(`Ezhava share (% total)   ${corr(xE, yU).toFixed(3).padStart(7)}    ${corr(xE, yL).toFixed(3).padStart(7)}    ${corr(xE, yN).toFixed(3).padStart(7)}`)
+console.log(
+  `Nair share (% total)     ${corr(xN, yU).toFixed(3).padStart(7)}    ${corr(xN, yL).toFixed(3).padStart(7)}    ${corr(xN, yN).toFixed(3).padStart(7)}`
+)
+console.log(
+  `Ezhava share (% total)   ${corr(xE, yU).toFixed(3).padStart(7)}    ${corr(xE, yL).toFixed(3).padStart(7)}    ${corr(xE, yN).toFixed(3).padStart(7)}`
+)
 console.log()
 
 // Per-district summary
@@ -154,7 +176,9 @@ const distRows = [...distMap.entries()].map(([d, rs]) => {
   }
 })
 distRows.sort((a, b) => b.ezhavaOfTotal - a.ezhavaOfTotal)
-console.log("  district          H%    Nair%   Ezhava%    UDF Δ      LDF Δ      NDA Δ")
+console.log(
+  "  district          H%    Nair%   Ezhava%    UDF Δ      LDF Δ      NDA Δ"
+)
 for (const d of distRows) {
   console.log(
     `  ${d.district.padEnd(17)} ${d.hindu.toFixed(1).padStart(4)}%  ${d.nairOfTotal.toFixed(1).padStart(5)}%  ${d.ezhavaOfTotal.toFixed(1).padStart(6)}%   ${(d.udfDelta >= 0 ? "+" : "") + d.udfDelta.toFixed(2)}pp   ${(d.ldfDelta >= 0 ? "+" : "") + d.ldfDelta.toFixed(2)}pp   ${(d.ndaDelta >= 0 ? "+" : "") + d.ndaDelta.toFixed(2)}pp`
@@ -176,8 +200,14 @@ function binMean(filter: (r: Row) => boolean, label: string) {
 
 console.log("=== ACs binned by Ezhava share (% of total district pop) ===")
 binMean((r) => r.ezhavaOfTotal >= 30, "Very high Ezhava (≥30%)")
-binMean((r) => r.ezhavaOfTotal >= 22 && r.ezhavaOfTotal < 30, "High Ezhava (22-30%)")
-binMean((r) => r.ezhavaOfTotal >= 15 && r.ezhavaOfTotal < 22, "Mid Ezhava (15-22%)")
+binMean(
+  (r) => r.ezhavaOfTotal >= 22 && r.ezhavaOfTotal < 30,
+  "High Ezhava (22-30%)"
+)
+binMean(
+  (r) => r.ezhavaOfTotal >= 15 && r.ezhavaOfTotal < 22,
+  "Mid Ezhava (15-22%)"
+)
 binMean((r) => r.ezhavaOfTotal < 15, "Low Ezhava (<15%)")
 console.log()
 

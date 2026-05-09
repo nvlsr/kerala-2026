@@ -191,7 +191,11 @@ function encodeSeat(
   }
 }
 
-function rangeOpacity(absValue: number, minAbs: number, maxAbs: number): number {
+function rangeOpacity(
+  absValue: number,
+  minAbs: number,
+  maxAbs: number
+): number {
   if (maxAbs <= minAbs) return 0.7
   const t = (absValue - minAbs) / (maxAbs - minAbs)
   const clamped = Math.max(0, Math.min(1, t))

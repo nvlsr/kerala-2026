@@ -110,10 +110,7 @@ export function SearchBar({ prominent = false }: Props = {}) {
   return (
     <section className={cn(prominent ? "py-12 sm:py-16" : "py-4")}>
       <div
-        className={cn(
-          "mx-auto px-6",
-          prominent ? "max-w-3xl" : "max-w-6xl"
-        )}
+        className={cn("mx-auto px-6", prominent ? "max-w-3xl" : "max-w-6xl")}
       >
         <div ref={containerRef} className="relative">
           <div
@@ -173,7 +170,7 @@ export function SearchBar({ prominent = false }: Props = {}) {
             )}
           </div>
           {showDropdown && (
-            <div className="absolute left-0 right-0 top-full z-50 mt-1 max-h-[60vh] overflow-y-auto rounded-lg border bg-popover text-popover-foreground shadow-md">
+            <div className="absolute top-full right-0 left-0 z-50 mt-1 max-h-[60vh] overflow-y-auto rounded-lg border bg-popover text-popover-foreground shadow-md">
               {noMatches ? (
                 <div className="px-4 py-6 text-center text-sm text-muted-foreground">
                   No matches for{" "}
@@ -225,10 +222,7 @@ function ResultsList({
         const items = grouped.get(type)
         if (!items || items.length === 0) return null
         return (
-          <div
-            key={type}
-            className="border-b last:border-b-0"
-          >
+          <div key={type} className="border-b last:border-b-0">
             <p className="px-3 pt-2 pb-1 text-[10px] font-medium tracking-wider text-muted-foreground uppercase">
               {SEARCH_GROUP_LABEL[type]}
             </p>

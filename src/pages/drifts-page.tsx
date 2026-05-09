@@ -94,11 +94,10 @@ export function DriftsPage() {
       aboutContent={
         <div className="space-y-3 text-sm leading-relaxed">
           <p>
-            The 15-year view. Seats where the same alliance has been
-            gaining (or losing) for multiple cycles running — patterns
-            that survived candidate changes, campaign cycles, and at
-            least one government in between. A different question from
-            the single-cycle{" "}
+            The 15-year view. Seats where the same alliance has been gaining (or
+            losing) for multiple cycles running — patterns that survived
+            candidate changes, campaign cycles, and at least one government in
+            between. A different question from the single-cycle{" "}
             <Link
               to="/flows"
               className="font-medium text-foreground underline-offset-2 hover:underline"
@@ -111,12 +110,11 @@ export function DriftsPage() {
             <span className="font-medium text-foreground">
               Inferred, not observed.
             </span>{" "}
-            We classify a seat by net change in alliance vote share
-            across cycles. A drift labelled "LDF → NDA" could mean LDF
-            voters chose NDA, <em>or</em> old LDF voters stayed home
-            while new NDA voters showed up. Read it as "alliance X
-            gained at alliance Y's expense", not "voters moved from Y
-            to X".
+            We classify a seat by net change in alliance vote share across
+            cycles. A drift labelled "LDF → NDA" could mean LDF voters chose
+            NDA, <em>or</em> old LDF voters stayed home while new NDA voters
+            showed up. Read it as "alliance X gained at alliance Y's expense",
+            not "voters moved from Y to X".
           </p>
         </div>
       }
@@ -132,10 +130,10 @@ export function DriftsPage() {
             </span>
           </div>
           <p className="mb-5 max-w-2xl text-sm text-muted-foreground">
-            Seats where the cumulative alliance shift across four cycles is
-            at least 10pp, AND the gainer's gains were sustained across at
-            least two of the three transitions — filtering out single-cycle
-            anomalies. The long-term drifts, not one-off swings.
+            Seats where the cumulative alliance shift across four cycles is at
+            least 10pp, AND the gainer's gains were sustained across at least
+            two of the three transitions — filtering out single-cycle anomalies.
+            The long-term drifts, not one-off swings.
           </p>
           <ul className="flex flex-col gap-6">
             {driftGroups.map((g) => (
@@ -157,13 +155,12 @@ export function DriftsPage() {
             </h2>
           </div>
           <p className="mb-5 max-w-2xl text-sm text-muted-foreground">
-            The cumulative 15-year arc passes the "sustained drift"
-            filter, but the most recent cycle is the most predictive
-            slice for what 2031 looks like. Each bar shows how a
-            seat's gainer-alliance share moved between 2021 and 2026.
-            Bars to the right (positive, in the gainer's colour) mean
-            the drift is still alive; bars to the left mean the seat
-            has plateaued or reversed.
+            The cumulative 15-year arc passes the "sustained drift" filter, but
+            the most recent cycle is the most predictive slice for what 2031
+            looks like. Each bar shows how a seat's gainer-alliance share moved
+            between 2021 and 2026. Bars to the right (positive, in the gainer's
+            colour) mean the drift is still alive; bars to the left mean the
+            seat has plateaued or reversed.
           </p>
           <ul className="flex flex-col gap-6">
             {driftGroups.map((g) => {
@@ -216,84 +213,78 @@ export function DriftsPage() {
 
         <section className="mt-12">
           <MethodologyDisclosure title="Methodology & thresholds">
-              <p>
-                <span className="font-medium text-foreground">
-                  Multi-cycle thresholds.
-                </span>{" "}
-                Cumulative gainer ≥ +10pp, loser ≤ −10pp across 2011→2026,
-                and at least 2 of the 3 cycle transitions for the gainer
-                agree with the cumulative direction.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">
-                  Per-cycle alliance attribution.
-                </span>{" "}
-                Each candidate (2026 + every historical record) carries
-                their own per-cycle alliance — KC(M) is UDF in 2011/2016
-                and LDF from 2020 onwards, RSP is LDF in 2011 and UDF from
-                2014, etc. Parties that switched fronts are correctly
-                placed in each cycle's alliance, not anchored to today's.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">OTHER</span>{" "}
-                can spike when an Independent or non-front candidate does
-                well in a seat. Treat seats with large OTHER swings
-                cautiously — the alliance-flow story may not be the main
-                event.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">
-                  Religion mix figures.
-                </span>{" "}
-                The "Observations" notes on each card use the 2011 census —
-                the most recent available. Differential fertility since
-                2011 means the Hindu and Christian numbers shown are
-                likely a slight high-end estimate, and the Muslim number a
-                slight low-end. Composition is averaged equally across the
-                seats in each card (each seat contributes its district's
-                mix once), not population-weighted.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">
-                  Community-belt overlay.
-                </span>{" "}
-                The "By community belt" section uses a 9-belt qualitative
-                taxonomy derived from academic literature (Zachariah
-                2003; GeoCurrents 2014; KCBC diocese geography), assigned
-                at district level. Hand-written editorial framings carry
-                interpretation; numeric breakdowns per pattern are
-                data-derived. The full belt taxonomy reference, with the
-                map and click-to-highlight legend, lives on{" "}
-                <Link
-                  to="/belts"
-                  className="underline-offset-2 hover:underline"
-                >
-                  /belts
-                </Link>
-                . Raw belt assignments are at{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/data/community-belts.json"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline-offset-2 hover:underline"
-                >
-                  data/community-belts.json
-                </a>{" "}
-                — open to challenge and PRs.
-              </p>
-              <p>
-                The full methodology document (with caveats and validation
-                cases) lives at{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/vote-flows.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline-offset-2 hover:underline"
-                >
-                  docs/vote-flows.md
-                </a>
-                .
-              </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Multi-cycle thresholds.
+              </span>{" "}
+              Cumulative gainer ≥ +10pp, loser ≤ −10pp across 2011→2026, and at
+              least 2 of the 3 cycle transitions for the gainer agree with the
+              cumulative direction.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Per-cycle alliance attribution.
+              </span>{" "}
+              Each candidate (2026 + every historical record) carries their own
+              per-cycle alliance — KC(M) is UDF in 2011/2016 and LDF from 2020
+              onwards, RSP is LDF in 2011 and UDF from 2014, etc. Parties that
+              switched fronts are correctly placed in each cycle's alliance, not
+              anchored to today's.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">OTHER</span> can
+              spike when an Independent or non-front candidate does well in a
+              seat. Treat seats with large OTHER swings cautiously — the
+              alliance-flow story may not be the main event.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Religion mix figures.
+              </span>{" "}
+              The "Observations" notes on each card use the 2011 census — the
+              most recent available. Differential fertility since 2011 means the
+              Hindu and Christian numbers shown are likely a slight high-end
+              estimate, and the Muslim number a slight low-end. Composition is
+              averaged equally across the seats in each card (each seat
+              contributes its district's mix once), not population-weighted.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Community-belt overlay.
+              </span>{" "}
+              The "By community belt" section uses a 9-belt qualitative taxonomy
+              derived from academic literature (Zachariah 2003; GeoCurrents
+              2014; KCBC diocese geography), assigned at district level.
+              Hand-written editorial framings carry interpretation; numeric
+              breakdowns per pattern are data-derived. The full belt taxonomy
+              reference, with the map and click-to-highlight legend, lives on{" "}
+              <Link to="/belts" className="underline-offset-2 hover:underline">
+                /belts
+              </Link>
+              . Raw belt assignments are at{" "}
+              <a
+                href="https://github.com/nvlsr/kerala-2026/blob/main/data/community-belts.json"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                data/community-belts.json
+              </a>{" "}
+              — open to challenge and PRs.
+            </p>
+            <p>
+              The full methodology document (with caveats and validation cases)
+              lives at{" "}
+              <a
+                href="https://github.com/nvlsr/kerala-2026/blob/main/docs/vote-flows.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                docs/vote-flows.md
+              </a>
+              .
+            </p>
           </MethodologyDisclosure>
         </section>
       </PageMain>

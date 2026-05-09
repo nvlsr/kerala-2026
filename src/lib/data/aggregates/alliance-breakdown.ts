@@ -1,7 +1,4 @@
-import {
-  allianceForCandidate,
-  type AllianceCode,
-} from "@/lib/data/alliances"
+import { allianceForCandidate, type AllianceCode } from "@/lib/data/alliances"
 import { constituenciesIn } from "@/lib/data/constituencies"
 import { partyShort } from "@/lib/data/parties"
 

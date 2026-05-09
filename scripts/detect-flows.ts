@@ -304,7 +304,12 @@ const CUMULATIVE_LOSS = 10 // pp absolute
 type Drift = {
   seat: string
   number: number
-  shares: { 2011: AllianceShares; 2016: AllianceShares | null; 2021: AllianceShares | null; 2026: AllianceShares }
+  shares: {
+    2011: AllianceShares
+    2016: AllianceShares | null
+    2021: AllianceShares | null
+    2026: AllianceShares
+  }
   cumulative: AllianceShares
   gainer: AllianceCode
   loser: AllianceCode
@@ -337,9 +342,18 @@ for (const seat of seats2026) {
   // Count how many cycle-by-cycle deltas for the gainer agree with the
   // overall direction (positive). 2/3 = sustained, 3/3 = monotonic.
   const gainerCycleDeltas: number[] = []
-  if (s2016) gainerCycleDeltas.push(s2016[gainerEntry.alliance] - s2011[gainerEntry.alliance])
-  if (s2016 && s2021) gainerCycleDeltas.push(s2021[gainerEntry.alliance] - s2016[gainerEntry.alliance])
-  if (s2021) gainerCycleDeltas.push(s2026[gainerEntry.alliance] - s2021[gainerEntry.alliance])
+  if (s2016)
+    gainerCycleDeltas.push(
+      s2016[gainerEntry.alliance] - s2011[gainerEntry.alliance]
+    )
+  if (s2016 && s2021)
+    gainerCycleDeltas.push(
+      s2021[gainerEntry.alliance] - s2016[gainerEntry.alliance]
+    )
+  if (s2021)
+    gainerCycleDeltas.push(
+      s2026[gainerEntry.alliance] - s2021[gainerEntry.alliance]
+    )
   const consistent = gainerCycleDeltas.filter((d) => d > 0).length
 
   if (consistent < 2) continue // require at least 2 of 3 cycles in same direction
@@ -372,7 +386,9 @@ const driftKeys = [...driftByPattern.keys()].sort(
 
 for (const key of driftKeys) {
   const seats = driftByPattern.get(key)!
-  console.log(`\n━━━ ${key} ━━━ (${seats.length} seats, sustained over 4 cycles)`)
+  console.log(
+    `\n━━━ ${key} ━━━ (${seats.length} seats, sustained over 4 cycles)`
+  )
   seats
     .sort(
       (a, b) =>

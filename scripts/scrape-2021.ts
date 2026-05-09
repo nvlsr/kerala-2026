@@ -2,7 +2,8 @@ import * as fs from "fs"
 import * as path from "path"
 
 const OUT_DIR = "data/scraped-2021"
-const URL_BASE = "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no="
+const URL_BASE =
+  "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no="
 
 fs.mkdirSync(OUT_DIR, { recursive: true })
 
@@ -67,7 +68,11 @@ function parseSeat(n: number, html: string): ScrapedSeat {
     for (const row of rows) {
       if (row.includes("<b>Name") || row.includes("<b>Total")) continue
       const cells = [...row.matchAll(/<td[^>]*>([\s\S]*?)<\/td>/g)].map((m) =>
-        m[1].replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim()
+        m[1]
+          .replace(/<[^>]+>/g, "")
+          .replace(/&nbsp;/g, " ")
+          .replace(/\s+/g, " ")
+          .trim()
       )
       if (cells.length < 4) continue
       const votes = parseInt(cells[2].replace(/,/g, ""), 10)
@@ -110,7 +115,11 @@ async function scrapeSeat(n: number): Promise<Result> {
     const html = await res.text()
     const data = parseSeat(n, html)
     if (!data.constituencyName || data.candidates.length === 0) {
-      return { n, status: "error", reason: "parse failed (no name or no candidates)" }
+      return {
+        n,
+        status: "error",
+        reason: "parse failed (no name or no candidates)",
+      }
     }
     fs.writeFileSync(outFile, JSON.stringify(data, null, 2) + "\n")
     return {
@@ -146,11 +155,15 @@ async function main() {
       else errors.push({ n: r.n, reason: r.reason })
     }
     const last = batch[batch.length - 1]
-    process.stdout.write(`...up to seat ${last}: ${okCount} ok / ${skipCount} skipped / ${errors.length} errors\n`)
+    process.stdout.write(
+      `...up to seat ${last}: ${okCount} ok / ${skipCount} skipped / ${errors.length} errors\n`
+    )
   }
 
   console.log("")
-  console.log(`Done. ${okCount} fetched, ${skipCount} skipped, ${errors.length} errors`)
+  console.log(
+    `Done. ${okCount} fetched, ${skipCount} skipped, ${errors.length} errors`
+  )
   if (errors.length > 0) {
     console.log("\nErrors:")
     for (const e of errors) console.log(`  Seat ${e.n}: ${e.reason}`)

@@ -1,4 +1,12 @@
-import { Bar, BarChart, CartesianGrid, Cell, ReferenceLine, XAxis, YAxis } from "recharts"
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Cell,
+  ReferenceLine,
+  XAxis,
+  YAxis,
+} from "recharts"
 
 import {
   ChartContainer,
@@ -90,9 +98,7 @@ export function ComparisonBar({
                 return (
                   <div className="flex flex-col gap-0.5">
                     <span className="font-medium">{g.label}</span>
-                    <span className="font-mono text-xs">
-                      {fmtY(g.mean)}
-                    </span>
+                    <span className="font-mono text-xs">{fmtY(g.mean)}</span>
                     <span className="text-[11px] text-muted-foreground">
                       n = {g.n}
                     </span>

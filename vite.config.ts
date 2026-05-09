@@ -30,9 +30,7 @@ export default defineConfig({
           ) {
             return "router"
           }
-          if (
-            /\/node_modules\/(react|react-dom|scheduler)\//.test(id)
-          ) {
+          if (/\/node_modules\/(react|react-dom|scheduler)\//.test(id)) {
             return "react-vendor"
           }
           return undefined

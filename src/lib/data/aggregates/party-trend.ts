@@ -19,10 +19,7 @@
  * electorate, just attributing only same-alliance contributions.
  */
 
-import {
-  allianceForRawParty,
-  type AllianceCode,
-} from "@/lib/data/alliances"
+import { allianceForRawParty, type AllianceCode } from "@/lib/data/alliances"
 import { constituenciesIn } from "@/lib/data/constituencies"
 import { getHistoricalFor } from "@/lib/data/historical"
 import { alliancesMeta } from "@/lib/data/loaders"

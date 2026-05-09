@@ -170,7 +170,9 @@ type MissingReport = {
 function missingForCycle(year: number, seats: AuditSeat[]): MissingReport[] {
   const out: MissingReport[] = []
   for (const seat of seats) {
-    const present = new Set<AllianceCode>(seat.candidates.map((c) => c.alliance))
+    const present = new Set<AllianceCode>(
+      seat.candidates.map((c) => c.alliance)
+    )
     const missing = MAIN.filter((a) => !present.has(a))
     if (missing.length === 0) continue
     const others = seat.candidates
@@ -236,7 +238,9 @@ for (const c of cycles) {
     out()
     continue
   }
-  out(`${reports.length} seat${reports.length === 1 ? "" : "s"} missing one or more main-alliance candidates.`)
+  out(
+    `${reports.length} seat${reports.length === 1 ? "" : "s"} missing one or more main-alliance candidates.`
+  )
   out()
   out(
     `For each seat below: which alliance is missing, then the OTHER-classified candidates in that seat sorted by vote share. Reclassify the most likely one.`
@@ -339,8 +343,7 @@ const SWITCHED_PARTIES: Array<{
     switchYear: 2020,
     preSwitchAlliance: "UDF",
     postSwitchAlliance: "LDF",
-    note:
-      "KC(M) (Jose K. Mani faction) left UDF in 2020 and joined LDF. Pre-2020 KC(M) candidates should be UDF.",
+    note: "KC(M) (Jose K. Mani faction) left UDF in 2020 and joined LDF. Pre-2020 KC(M) candidates should be UDF.",
   },
   {
     party: "Kerala Congress (B)",
@@ -348,8 +351,7 @@ const SWITCHED_PARTIES: Array<{
     switchYear: 2016,
     preSwitchAlliance: "UDF",
     postSwitchAlliance: "LDF",
-    note:
-      "KC(B) (Balakrishna Pillai faction) left UDF in 2016 and joined LDF. Pre-2016 KC(B) candidates should be UDF.",
+    note: "KC(B) (Balakrishna Pillai faction) left UDF in 2016 and joined LDF. Pre-2016 KC(B) candidates should be UDF.",
   },
 ]
 

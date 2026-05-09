@@ -59,7 +59,7 @@ export function ConstituencySection({ constituency }: Props) {
       null)
 
   return (
-    <div ref={containerRef} className="flex flex-col gap-4 scroll-mt-4">
+    <div ref={containerRef} className="flex scroll-mt-4 flex-col gap-4">
       <ToggleGroup
         value={[selectedKey]}
         onValueChange={(v) => {
@@ -211,12 +211,7 @@ function RosterRow({
   const sharePct = total > 0 ? (candidate.votes / total) * 100 : 0
 
   return (
-    <tr
-      className={cn(
-        "border-b last:border-b-0",
-        isWinner && "font-medium"
-      )}
-    >
+    <tr className={cn("border-b last:border-b-0", isWinner && "font-medium")}>
       <td className="relative px-3 py-2">
         <span
           className="absolute inset-y-0 left-0 w-0.5"

@@ -62,9 +62,7 @@ export function getPastCandidates(
       const cand =
         partyKey == null
           ? winner
-          : e.candidates.find(
-              (cd) => canonicalPartyName(cd.party) === partyKey
-            )
+          : e.candidates.find((cd) => canonicalPartyName(cd.party) === partyKey)
 
       if (!cand) {
         out.push({

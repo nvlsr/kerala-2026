@@ -93,7 +93,12 @@ export function StateFlowSankey() {
         const topPath = `M ${x1} ${fromTop} C ${midX} ${fromTop}, ${midX} ${toTop}, ${x2} ${toTop}`
         const bottomPath = `L ${x2} ${toTop + h} C ${midX} ${toTop + h}, ${midX} ${fromTop + h}, ${x1} ${fromTop + h} Z`
 
-        ribbons.push({ from, to, count: pair.count, d: `${topPath} ${bottomPath}` })
+        ribbons.push({
+          from,
+          to,
+          count: pair.count,
+          d: `${topPath} ${bottomPath}`,
+        })
         fromOffsets[from] += h
         toOffsets[to] += h
       }
@@ -260,9 +265,7 @@ function FlowBreakdown({
         seats; colour is the 2021 alliance.
       </p>
       {ORDER.filter((a) => flow.fromTotals[a] > 0).map((from) => {
-        const pairs = bySource[from]
-          .slice()
-          .sort((a, b) => b.count - a.count)
+        const pairs = bySource[from].slice().sort((a, b) => b.count - a.count)
         const fromTotal = flow.fromTotals[from]
         const fromColor = getAlliance(from).color
         return (
@@ -296,7 +299,7 @@ function FlowBreakdown({
                       </span>
                     )}
                   </span>
-                  <span className="tabular-nums text-muted-foreground">
+                  <span className="text-muted-foreground tabular-nums">
                     {p.count}
                   </span>
                 </li>

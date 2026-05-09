@@ -7,11 +7,7 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/components/ui/chart"
-import {
-  formatNumber,
-  formatPercent,
-  getPartyTrendData,
-} from "@/lib/data"
+import { formatNumber, formatPercent, getPartyTrendData } from "@/lib/data"
 
 export type PartyMode = "share" | "seats" | "votes"
 
@@ -49,9 +45,9 @@ export function PartyHistoricalChart({
 
   // Union of years across all party trends, sorted ascending. (Some
   // smaller parties may have gaps, e.g., didn't contest in 2011.)
-  const years = Array.from(
-    new Set(trends.flatMap((t) => t.years))
-  ).sort((a, b) => a - b)
+  const years = Array.from(new Set(trends.flatMap((t) => t.years))).sort(
+    (a, b) => a - b
+  )
 
   const chartConfig: ChartConfig = Object.fromEntries(
     trends.map((t) => [t.party, { label: t.partyShort, color: t.color }])

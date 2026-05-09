@@ -24,7 +24,11 @@ type Election = {
   candidates: Cand[]
   totalValidVotesPolled?: number
 }
-type Hist = { constituencyName: string; constituencyNumber: number; elections: Election[] }
+type Hist = {
+  constituencyName: string
+  constituencyNumber: number
+  elections: Election[]
+}
 
 const hist: Hist[] = histFiles.map((f) =>
   JSON.parse(fs.readFileSync(path.join(histDir, f), "utf8"))
@@ -34,7 +38,10 @@ console.log(`Loaded ${hist.length} historical files\n`)
 
 // 2021 statewide
 let totalValid2021 = 0
-const tally2021: Record<string, { votes: number; cands: number; seats: number[] }> = {}
+const tally2021: Record<
+  string,
+  { votes: number; cands: number; seats: number[] }
+> = {}
 const winnerByParty2021: Record<string, number> = {}
 
 for (const h of hist) {
@@ -46,7 +53,8 @@ for (const h of hist) {
   for (const c of e.candidates) {
     if (c.isNota) continue
     constValid += c.votes
-    if (!tally2021[c.party]) tally2021[c.party] = { votes: 0, cands: 0, seats: [] }
+    if (!tally2021[c.party])
+      tally2021[c.party] = { votes: 0, cands: 0, seats: [] }
     tally2021[c.party].votes += c.votes
     tally2021[c.party].cands++
     tally2021[c.party].seats.push(h.constituencyNumber)
@@ -81,7 +89,9 @@ const ldfParties = [
 ]
 
 console.log("=== 2021 statewide totals (our data) ===")
-console.log("Party                                          Votes        Share    Cands  Wins")
+console.log(
+  "Party                                          Votes        Share    Cands  Wins"
+)
 for (const p of ldfParties) {
   const t = tally2021[p]
   if (!t) {
@@ -99,12 +109,12 @@ for (const p of ldfParties) {
 console.log("\n=== Wikipedia 2026 page's 2021 figures (LDF) ===")
 console.log("(implied from share + delta, or directly listed)")
 const wikiImplied: Array<{ party: string; share: number; votes?: number }> = [
-  { party: "CPI(M)", share: 25.38 },         // 21.77 + 3.61
-  { party: "CPI",    share: 7.58 },          // 6.64 + 0.94
-  { party: "KC(M)",  share: 3.28 },          // 2.60 + 0.68
-  { party: "NCP-SP", share: 0.99 },          // 0.68 + 0.31
-  { party: "INL",    share: 0.66 },          // 0.19 + 0.47
-  { party: "Cong(S)",share: 0.29 },          // 0.24 + 0.05
+  { party: "CPI(M)", share: 25.38 }, // 21.77 + 3.61
+  { party: "CPI", share: 7.58 }, // 6.64 + 0.94
+  { party: "KC(M)", share: 3.28 }, // 2.60 + 0.68
+  { party: "NCP-SP", share: 0.99 }, // 0.68 + 0.31
+  { party: "INL", share: 0.66 }, // 0.19 + 0.47
+  { party: "Cong(S)", share: 0.29 }, // 0.24 + 0.05
 ]
 for (const w of wikiImplied) {
   console.log(`${w.party.padEnd(10)}  Wikipedia 2021 ≈ ${w.share}%`)
@@ -114,9 +124,15 @@ for (const w of wikiImplied) {
 console.log("\n=== CPI(M) and CPI 2021 detailed ===")
 const cpim = tally2021["Communist Party of India (Marxist)"]
 const cpi = tally2021["Communist Party of India"]
-console.log(`CPI(M):  ${cpim?.votes.toLocaleString()} votes, ${cpim?.cands} candidates, ${winnerByParty2021["Communist Party of India (Marxist)"] || 0} wins`)
-console.log(`CPI:     ${cpi?.votes.toLocaleString()} votes, ${cpi?.cands} candidates, ${winnerByParty2021["Communist Party of India"] || 0} wins`)
-console.log(`Combined: ${((cpim?.votes ?? 0) + (cpi?.votes ?? 0)).toLocaleString()} votes`)
+console.log(
+  `CPI(M):  ${cpim?.votes.toLocaleString()} votes, ${cpim?.cands} candidates, ${winnerByParty2021["Communist Party of India (Marxist)"] || 0} wins`
+)
+console.log(
+  `CPI:     ${cpi?.votes.toLocaleString()} votes, ${cpi?.cands} candidates, ${winnerByParty2021["Communist Party of India"] || 0} wins`
+)
+console.log(
+  `Combined: ${((cpim?.votes ?? 0) + (cpi?.votes ?? 0)).toLocaleString()} votes`
+)
 
 // Wikipedia 2021 reported (based on 2021 page directly):
 //   CPI(M): 25.38% with 62 wins (from 85 contested)

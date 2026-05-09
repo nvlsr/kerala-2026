@@ -6,10 +6,7 @@ import { AllianceSection } from "@/components/alliance-section"
 import { PageShell } from "@/components/page-shell"
 import { PartySection } from "@/components/party-section"
 import { CandidateTable } from "@/components/candidate-table"
-import {
-  ConstituencyMap,
-  Hint,
-} from "@/components/constituency-map"
+import { ConstituencyMap, Hint } from "@/components/constituency-map"
 import { describeMapSubtitle } from "@/components/constituency-map-utils"
 import { ConstituencySection } from "@/components/constituency-section"
 import { ReservationBadge } from "@/components/reservation-badge"
@@ -141,16 +138,14 @@ export function ExplorePage() {
             }
           />
         )}
-      {filters.alliance &&
-        !filters.religionMix &&
-        !filters.reservation && (
-          <PartySection
-            scope={filters.district}
-            alliance={filters.alliance}
-            selectedParty={filters.party}
-            onSelectParty={(party) => dispatch({ type: "set-party", party })}
-          />
-        )}
+      {filters.alliance && !filters.religionMix && !filters.reservation && (
+        <PartySection
+          scope={filters.district}
+          alliance={filters.alliance}
+          selectedParty={filters.party}
+          onSelectParty={(party) => dispatch({ type: "set-party", party })}
+        />
+      )}
       <CandidateTable filters={filters} dispatch={dispatch} />
       <ConstituencyDetailRow
         filters={filters}
@@ -184,9 +179,8 @@ function ConstituencyDetailRow({
   const hoveredConstituency = useMemo(
     () =>
       hoveredSeat
-        ? (constituencies.find(
-            (c) => c.constituencyNumber === hoveredSeat
-          ) ?? null)
+        ? (constituencies.find((c) => c.constituencyNumber === hoveredSeat) ??
+          null)
         : null,
     [hoveredSeat]
   )

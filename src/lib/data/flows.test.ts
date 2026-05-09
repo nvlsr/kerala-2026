@@ -26,7 +26,10 @@ import {
   singleCyclePatternKey,
 } from "./flows"
 
-function countByPattern<T>(items: T[], keyFn: (t: T) => string): Record<string, number> {
+function countByPattern<T>(
+  items: T[],
+  keyFn: (t: T) => string
+): Record<string, number> {
   const counts: Record<string, number> = {}
   for (const item of items) {
     const k = keyFn(item)

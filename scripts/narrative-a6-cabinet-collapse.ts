@@ -166,8 +166,12 @@ const meanMinister = mean(ministerIncumbents.map((r) => r.ldfDelta))
 const meanNonMin = mean(nonMinisterIncumbents.map((r) => r.ldfDelta))
 const meanAll = mean(rows.map((r) => r.ldfDelta))
 
-console.log(`  Mean LDF Δ (minister incumbents):     ${meanMinister.toFixed(2)}pp`)
-console.log(`  Mean LDF Δ (non-minister incumbents): ${meanNonMin.toFixed(2)}pp`)
+console.log(
+  `  Mean LDF Δ (minister incumbents):     ${meanMinister.toFixed(2)}pp`
+)
+console.log(
+  `  Mean LDF Δ (non-minister incumbents): ${meanNonMin.toFixed(2)}pp`
+)
 console.log(`  Mean LDF Δ (all 140 ACs, statewide):  ${meanAll.toFixed(2)}pp`)
 console.log()
 console.log(

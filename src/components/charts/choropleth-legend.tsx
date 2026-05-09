@@ -35,7 +35,10 @@ export function ChoroplethLegend({
   if (colorScale === "diverging") {
     return (
       <div
-        className={cn("flex items-center gap-2 text-[11px] text-muted-foreground", className)}
+        className={cn(
+          "flex items-center gap-2 text-[11px] text-muted-foreground",
+          className
+        )}
         role="img"
         aria-label={`Legend: diverging color scale from ${formatNum(min)} to ${formatNum(max)}`}
       >
@@ -54,7 +57,10 @@ export function ChoroplethLegend({
 
   return (
     <div
-      className={cn("flex items-center gap-2 text-[11px] text-muted-foreground", className)}
+      className={cn(
+        "flex items-center gap-2 text-[11px] text-muted-foreground",
+        className
+      )}
       role="img"
       aria-label={`Legend: sequential color scale from ${formatNum(min)} to ${formatNum(max)}`}
     >

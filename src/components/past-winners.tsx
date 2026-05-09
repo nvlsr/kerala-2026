@@ -133,7 +133,9 @@ function PastCandidateRow({
           title={dnc ? undefined : record.winnerName}
         >
           <span className="truncate">
-            {dnc ? "did not contest" : normalizeCandidateName(record.winnerName)}
+            {dnc
+              ? "did not contest"
+              : normalizeCandidateName(record.winnerName)}
           </span>
           {record.type === "by-election" && !dnc && (
             <span className="shrink-0 rounded px-1 py-px text-[9px] font-semibold tracking-wider text-muted-foreground/70 uppercase ring-1 ring-border ring-inset">

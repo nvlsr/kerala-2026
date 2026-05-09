@@ -1,12 +1,6 @@
 import type { Filters } from "@/lib/filters"
 
-export type QuestionParty =
-  | "BJP"
-  | "BDJS"
-  | "INC"
-  | "IUML"
-  | "CPI(M)"
-  | "CPI"
+export type QuestionParty = "BJP" | "BDJS" | "INC" | "IUML" | "CPI(M)" | "CPI"
 
 export type QuestionAlliance = "UDF" | "LDF" | "NDA"
 
@@ -46,7 +40,9 @@ const ALLIANCE_FOR_PARTY: Record<QuestionParty, QuestionAlliance> = {
 
 /** Which alliance a party belongs to. Drives the "BJP filter also shows
  *  NDA-level cards" behaviour on /questions. */
-export function allianceForQuestionParty(party: QuestionParty): QuestionAlliance {
+export function allianceForQuestionParty(
+  party: QuestionParty
+): QuestionAlliance {
   return ALLIANCE_FOR_PARTY[party]
 }
 
@@ -339,7 +335,8 @@ export const curatedQuestions: CuratedQuestion[] = [
   },
   {
     id: "statewide-gap-closers",
-    question: "Across Kerala, where did losing candidates close the biggest gap?",
+    question:
+      "Across Kerala, where did losing candidates close the biggest gap?",
     filters: {
       result: "losers",
       sort: { column: "marginDelta", dir: "desc" },
@@ -548,8 +545,7 @@ export const curatedQuestions: CuratedQuestion[] = [
   },
   {
     id: "bjp-closest-hindu-heavy",
-    question:
-      "Where did BJP come closest to winning in Hindu-heavy seats?",
+    question: "Where did BJP come closest to winning in Hindu-heavy seats?",
     filters: {
       party: "Bharatiya Janata Party",
       religionMix: "hindu-heavy",

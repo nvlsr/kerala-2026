@@ -100,16 +100,18 @@ for (const c of all) {
 }
 
 // 2: seats sum to 140
-const sumSeats = (
-  Object.keys(seatsByAlliance) as AllianceCode[]
-).reduce((s, a) => s + seatsByAlliance[a], 0)
+const sumSeats = (Object.keys(seatsByAlliance) as AllianceCode[]).reduce(
+  (s, a) => s + seatsByAlliance[a],
+  0
+)
 if (sumSeats !== 140) {
   issues.push(`alliance seats sum to ${sumSeats}, expected 140`)
 }
 
 // 3: party→alliance metadata coverage (for legacy chart-colour lookup)
 const seenParties = new Set<string>()
-for (const c of all) for (const cand of c.candidates) seenParties.add(cand.party)
+for (const c of all)
+  for (const cand of c.candidates) seenParties.add(cand.party)
 for (const p of seenParties) {
   if (p === "None of the Above") continue
   if (!(p in meta.partyToAlliance)) {

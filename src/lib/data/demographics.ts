@@ -28,7 +28,11 @@ export const demographicsYear = demoMeta.year
  */
 export type AcDemographicsResult = {
   religions: Record<ReligionCode, number>
-  source: "shrug-c01-aggregated" | "district-urban-fallback" | "district-total-fallback" | null
+  source:
+    | "shrug-c01-aggregated"
+    | "district-urban-fallback"
+    | "district-total-fallback"
+    | null
 }
 
 export function getReligionForAC(
@@ -36,9 +40,7 @@ export function getReligionForAC(
   year: 2011 | 2025 = 2011
 ): AcDemographicsResult | null {
   const data =
-    year === 2025
-      ? acDemo2025Meta.constituencies
-      : acDemoMeta.constituencies
+    year === 2025 ? acDemo2025Meta.constituencies : acDemoMeta.constituencies
   const entry = data[String(constituencyNumber)]
   if (!entry) return null
   // Collapse smaller religion buckets into "other" to match the

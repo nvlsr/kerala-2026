@@ -97,23 +97,41 @@ export function StackedBarByCategory({
                 if (name === "positive") {
                   return (
                     <>
-                      <span className="text-xs text-muted-foreground">{positiveLabel}: </span>
-                      <span className="font-mono text-xs">{fmtY(r.positive)}</span>
+                      <span className="text-xs text-muted-foreground">
+                        {positiveLabel}:{" "}
+                      </span>
+                      <span className="font-mono text-xs">
+                        {fmtY(r.positive)}
+                      </span>
                     </>
                   )
                 }
                 return (
                   <>
-                    <span className="text-xs text-muted-foreground">{negativeLabel}: </span>
-                    <span className="font-mono text-xs">{fmtY(r.negative)}</span>
+                    <span className="text-xs text-muted-foreground">
+                      {negativeLabel}:{" "}
+                    </span>
+                    <span className="font-mono text-xs">
+                      {fmtY(r.negative)}
+                    </span>
                   </>
                 )
               }}
             />
           }
         />
-        <Bar dataKey="positive" stackId="a" fill={positiveColor} radius={[3, 3, 0, 0]} />
-        <Bar dataKey="negative" stackId="a" fill={negativeColor} radius={[0, 0, 3, 3]} />
+        <Bar
+          dataKey="positive"
+          stackId="a"
+          fill={positiveColor}
+          radius={[3, 3, 0, 0]}
+        />
+        <Bar
+          dataKey="negative"
+          stackId="a"
+          fill={negativeColor}
+          radius={[0, 0, 3, 3]}
+        />
       </BarChart>
     </ChartContainer>
   )

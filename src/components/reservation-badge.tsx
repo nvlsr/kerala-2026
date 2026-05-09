@@ -19,11 +19,7 @@ type Props = {
  * (set by the 2008 Delimitation Order). See data/reservations.json
  * and src/lib/data/constituencies.ts:getReservation.
  */
-export function ReservationBadge({
-  seat,
-  size = "sm",
-  className,
-}: Props) {
+export function ReservationBadge({ seat, size = "sm", className }: Props) {
   const reservation = getReservation(seat)
   if (!reservation) return null
 
@@ -37,7 +33,7 @@ export function ReservationBadge({
     <span
       title={title}
       className={cn(
-        "inline-flex shrink-0 items-center rounded-sm border font-medium uppercase tracking-wide tabular-nums",
+        "inline-flex shrink-0 items-center rounded-sm border font-medium tracking-wide uppercase tabular-nums",
         size === "sm"
           ? "px-1 py-0 text-[0.625rem] leading-tight"
           : "px-1.5 py-0.5 text-xs",

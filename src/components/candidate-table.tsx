@@ -146,7 +146,8 @@ export function CandidateTable({ filters, dispatch }: Props) {
               <span className="inline-flex h-5 w-5 items-center justify-center rounded-full border bg-background align-text-bottom text-foreground/80">
                 <IconCheck className="h-3 w-3" aria-hidden />
               </span>{" "}
-              in the table header (next to "Winner") toggles between winners-only and all candidates. Click it to switch.
+              in the table header (next to "Winner") toggles between
+              winners-only and all candidates. Click it to switch.
             </p>
             <button
               type="button"

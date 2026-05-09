@@ -16,7 +16,11 @@ type Cand = {
 }
 type C2026 = { candidates: Cand[]; totalVotesPolled?: number }
 type Hist = {
-  elections: { year: number; candidates: { party: string; votes: number; isNota?: boolean }[]; totalValidVotesPolled?: number }[]
+  elections: {
+    year: number
+    candidates: { party: string; votes: number; isNota?: boolean }[]
+    totalValidVotesPolled?: number
+  }[]
 }
 
 const _raw = JSON.parse(fs.readFileSync("data/kerala-2026.json", "utf8"))
@@ -60,7 +64,11 @@ function statewideShareByParty(year: number): Record<string, number> {
 const share26 = statewideShareByParty(2026)
 const share21 = statewideShareByParty(2021)
 
-const allianceParties: Record<string, Set<string>> = { LDF: new Set(), UDF: new Set(), NDA: new Set() }
+const allianceParties: Record<string, Set<string>> = {
+  LDF: new Set(),
+  UDF: new Set(),
+  NDA: new Set(),
+}
 for (const c of data2026) {
   for (const cand of c.candidates) {
     if (cand.isNota) continue

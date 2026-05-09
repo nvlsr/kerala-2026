@@ -22,9 +22,15 @@ const partyMap: Record<string, Mapped> = {
   KC: { canonicalName: "Kerala Congress", alliance: "UDF" },
   RSP: { canonicalName: "Revolutionary Socialist Party", alliance: "UDF" },
   KCA: { canonicalName: "Kerala Congress (Jacob)", alliance: "UDF" },
-  RMP: { canonicalName: "Revolutionary Marxist Party of India", alliance: "UDF" },
+  RMP: {
+    canonicalName: "Revolutionary Marxist Party of India",
+    alliance: "UDF",
+  },
   UDF: { canonicalName: "Independent (UDF)", alliance: "UDF" },
-  CMP: { canonicalName: "Communist Marxist Party Kerala State Committee", alliance: "UDF" },
+  CMP: {
+    canonicalName: "Communist Marxist Party Kerala State Committee",
+    alliance: "UDF",
+  },
   // NCK is the splinter party founded by Mani C. Kappan in early 2021;
   // keralaassembly.org tagged the party field as "UDF" but disambiguated
   // via the candidate's name parenthetical "(NCK)" — see paren-extract
@@ -32,7 +38,10 @@ const partyMap: Record<string, Mapped> = {
   NCK: { canonicalName: "Nationalist Congress Kerala", alliance: "UDF" },
 
   // ============= LDF =============
-  CPIM: { canonicalName: "Communist Party of India (Marxist)", alliance: "LDF" },
+  CPIM: {
+    canonicalName: "Communist Party of India (Marxist)",
+    alliance: "LDF",
+  },
   CPI: { canonicalName: "Communist Party of India", alliance: "LDF" },
   // RSP-L = Revolutionary Socialist Party (Leninist), the same party that
   // contests in 2026 as "Kerala Revolutionary Socialist Party (Leninist-
@@ -65,7 +74,10 @@ const partyMap: Record<string, Mapped> = {
   // ============= OTHER (small parties / generic Independents) =============
   IND: { canonicalName: "Independent", alliance: "OTHER" },
   T2P: { canonicalName: "Twenty 20 Party", alliance: "OTHER" },
-  SDPI: { canonicalName: "Social Democratic Party Of India", alliance: "OTHER" },
+  SDPI: {
+    canonicalName: "Social Democratic Party Of India",
+    alliance: "OTHER",
+  },
   BSP: { canonicalName: "Bahujan Samaj Party", alliance: "OTHER" },
   KJS: { canonicalName: "KJ(S)", alliance: "OTHER" },
   WPI: { canonicalName: "Welfare Party of India", alliance: "OTHER" },
@@ -206,7 +218,7 @@ for (let n = 1; n <= 140; n++) {
       name,
       party: mapped.canonicalName,
       votes: c.votes,
-      votePct: parseFloat((c.votes / totalValid * 100).toFixed(2)),
+      votePct: parseFloat(((c.votes / totalValid) * 100).toFixed(2)),
       alliance: mapped.alliance,
     })
   }
@@ -217,7 +229,7 @@ for (let n = 1; n <= 140; n++) {
       name: "NOTA",
       party: "None of the Above",
       votes: scrape.nota,
-      votePct: parseFloat((scrape.nota / totalValid * 100).toFixed(2)),
+      votePct: parseFloat(((scrape.nota / totalValid) * 100).toFixed(2)),
       alliance: "NOTA",
     })
   }
@@ -227,7 +239,8 @@ for (let n = 1; n <= 140; n++) {
 
   // Recompute margin from top two candidates (excluding NOTA)
   const topTwo = newCandidates.filter((c) => c.alliance !== "NOTA").slice(0, 2)
-  const computedMargin = topTwo.length === 2 ? topTwo[0].votes - topTwo[1].votes : 0
+  const computedMargin =
+    topTwo.length === 2 ? topTwo[0].votes - topTwo[1].votes : 0
   const finalMargin = scrape.margin ?? computedMargin
 
   hist.elections[e2021Idx] = {
@@ -236,7 +249,7 @@ for (let n = 1; n <= 140; n++) {
     reason: old.reason ?? null,
     candidates: newCandidates,
     margin: finalMargin,
-    marginPct: parseFloat((finalMargin / totalValid * 100).toFixed(2)),
+    marginPct: parseFloat(((finalMargin / totalValid) * 100).toFixed(2)),
     turnout: totalValid,
     turnoutPct: scrape.pollingPct ?? old.turnoutPct,
     result: old.result ?? null,

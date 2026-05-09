@@ -58,10 +58,15 @@ console.log("\n=== Independent (LDF) seats — checking who won ===")
 for (const h of hist) {
   const e = h.elections.find((x) => x.year === 2021)
   if (!e) continue
-  const ldfCand = e.candidates.find((c) => c.alliance === "LDF" && c.party === "Independent (LDF)")
+  const ldfCand = e.candidates.find(
+    (c) => c.alliance === "LDF" && c.party === "Independent (LDF)"
+  )
   if (!ldfCand) continue
   const winner = e.candidates.reduce((a, b) => (a.votes > b.votes ? a : b))
-  const winnerLabel = winner.party === ldfCand.party && winner.name === ldfCand.name ? "WON" : `lost (winner: ${winner.party})`
+  const winnerLabel =
+    winner.party === ldfCand.party && winner.name === ldfCand.name
+      ? "WON"
+      : `lost (winner: ${winner.party})`
   console.log(
     `${h.constituencyNumber.toString().padStart(3)}  ${h.constituencyName.padEnd(20)}  ${ldfCand.name.padEnd(30)}  votes=${ldfCand.votes.toLocaleString().padStart(7)}  ${winnerLabel}`
   )

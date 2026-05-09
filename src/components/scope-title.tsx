@@ -198,8 +198,7 @@ function Crumb({
   ariaLabel?: string
   onClear: () => void
 }) {
-  const clearLabel =
-    ariaLabel ?? (typeof label === "string" ? label : "filter")
+  const clearLabel = ariaLabel ?? (typeof label === "string" ? label : "filter")
   return (
     <span className="flex items-center gap-1.5">
       <IconChevronRight

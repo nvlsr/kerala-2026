@@ -3,11 +3,7 @@ import { Link } from "react-router-dom"
 import { getAlliance, type AllianceCode } from "@/lib/data"
 import { displayConstituencyName } from "@/lib/data"
 import type { MultiCycleDrift } from "@/lib/data/flows"
-import {
-  initialFilters,
-  serializeFilters,
-  type Filters,
-} from "@/lib/filters"
+import { initialFilters, serializeFilters, type Filters } from "@/lib/filters"
 import { cn } from "@/lib/utils"
 
 type Props = {
@@ -63,10 +59,7 @@ export function RecentLegChart({ drifts }: Props) {
     .filter((r) => r.delta !== null)
     .sort((a, b) => (b.delta ?? 0) - (a.delta ?? 0))
 
-  const maxAbs = rows.reduce(
-    (m, r) => Math.max(m, Math.abs(r.delta ?? 0)),
-    0
-  )
+  const maxAbs = rows.reduce((m, r) => Math.max(m, Math.abs(r.delta ?? 0)), 0)
   const scale = maxAbs > 0 ? 50 / maxAbs : 0 // each unit pp = N% of half-width
   const gainer = rows[0]?.gainer
   const gainerColor = gainer ? getAlliance(gainer).color : "var(--foreground)"
@@ -108,9 +101,7 @@ export function RecentLegChart({ drifts }: Props) {
               <span
                 className={cn(
                   "text-right tabular-nums",
-                  positive
-                    ? "text-foreground"
-                    : "text-muted-foreground"
+                  positive ? "text-foreground" : "text-muted-foreground"
                 )}
                 title={`${r.gainer} share: ${r.trajectory.y2021?.toFixed(1) ?? "—"}% in 2021 → ${r.trajectory.y2026.toFixed(1)}% in 2026`}
               >

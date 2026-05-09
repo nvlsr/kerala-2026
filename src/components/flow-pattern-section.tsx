@@ -4,15 +4,8 @@ import { useState } from "react"
 
 import { MiniACMap } from "@/components/mini-ac-map"
 import { ReservationBadge } from "@/components/reservation-badge"
-import {
-  DELTA_NOISE_THRESHOLD_PERCENT,
-  TOTAL_SEATS,
-} from "@/lib/constants"
-import {
-  initialFilters,
-  serializeFilters,
-  type Filters,
-} from "@/lib/filters"
+import { DELTA_NOISE_THRESHOLD_PERCENT, TOTAL_SEATS } from "@/lib/constants"
+import { initialFilters, serializeFilters, type Filters } from "@/lib/filters"
 import {
   type AllianceShares,
   type MultiCycleDrift,
@@ -83,7 +76,9 @@ function PermalinkButton({ id }: { id: string }) {
     <a
       href={`#${id}`}
       onClick={handleClick}
-      aria-label={copied ? "Permalink copied" : "Copy permalink to this section"}
+      aria-label={
+        copied ? "Permalink copied" : "Copy permalink to this section"
+      }
       title={copied ? "Copied" : "Copy permalink"}
       className="shrink-0 rounded-md p-1.5 text-muted-foreground/50 transition-colors hover:bg-foreground/5 hover:text-foreground"
     >
@@ -119,7 +114,7 @@ export function SingleCyclePatternSection({
       className="scroll-mt-8 rounded-lg border bg-card/50 p-6 target:border-foreground/60 target:ring-2 target:ring-foreground/30"
     >
       <header className="flex items-center justify-between gap-3">
-        <h3 className="font-heading flex items-center gap-2 text-base font-semibold tracking-tight sm:text-lg">
+        <h3 className="flex items-center gap-2 font-heading text-base font-semibold tracking-tight sm:text-lg">
           {patternLabel}
           <PermalinkButton id={patternId} />
         </h3>
@@ -178,16 +173,24 @@ function SingleFlowsTable({ flows }: { flows: SeatFlow[] }) {
                     >
                       {displayConstituencyName(f.constituency)}
                     </Link>
-                    <ReservationBadge seat={f.constituency.constituencyNumber} />
+                    <ReservationBadge
+                      seat={f.constituency.constituencyNumber}
+                    />
                   </span>
                 </td>
-                <td className={cn(cell, "text-right", deltaColor(f.deltas.UDF))}>
+                <td
+                  className={cn(cell, "text-right", deltaColor(f.deltas.UDF))}
+                >
                   {fmtSigned(f.deltas.UDF)}
                 </td>
-                <td className={cn(cell, "text-right", deltaColor(f.deltas.LDF))}>
+                <td
+                  className={cn(cell, "text-right", deltaColor(f.deltas.LDF))}
+                >
                   {fmtSigned(f.deltas.LDF)}
                 </td>
-                <td className={cn(cell, "text-right", deltaColor(f.deltas.NDA))}>
+                <td
+                  className={cn(cell, "text-right", deltaColor(f.deltas.NDA))}
+                >
                   {fmtSigned(f.deltas.NDA)}
                 </td>
               </tr>
@@ -230,7 +233,7 @@ export function MultiCycleDriftSection({
       className="scroll-mt-8 rounded-lg border bg-card/50 p-6 target:border-foreground/60 target:ring-2 target:ring-foreground/30"
     >
       <header className="flex items-center justify-between gap-3">
-        <h3 className="font-heading flex items-center gap-2 text-base font-semibold tracking-tight sm:text-lg">
+        <h3 className="flex items-center gap-2 font-heading text-base font-semibold tracking-tight sm:text-lg">
           {patternLabel}
           <PermalinkButton id={patternId} />
         </h3>
@@ -318,7 +321,9 @@ function DriftTable({ drifts }: { drifts: MultiCycleDrift[] }) {
                     >
                       {displayConstituencyName(d.constituency)}
                     </Link>
-                    <ReservationBadge seat={d.constituency.constituencyNumber} />
+                    <ReservationBadge
+                      seat={d.constituency.constituencyNumber}
+                    />
                   </span>
                 </td>
                 <td className={cell}>
@@ -341,18 +346,12 @@ function DriftTable({ drifts }: { drifts: MultiCycleDrift[] }) {
                 </td>
                 <td className={cn(cell, "text-right")}>
                   <div
-                    className={cn(
-                      "text-xs",
-                      deltaColor(d.cumulative[ga], 1)
-                    )}
+                    className={cn("text-xs", deltaColor(d.cumulative[ga], 1))}
                   >
                     {ALLIANCE_LABEL[ga]} {fmtSigned(d.cumulative[ga])}
                   </div>
                   <div
-                    className={cn(
-                      "text-xs",
-                      deltaColor(d.cumulative[lo], 1)
-                    )}
+                    className={cn("text-xs", deltaColor(d.cumulative[lo], 1))}
                   >
                     {ALLIANCE_LABEL[lo]} {fmtSigned(d.cumulative[lo])}
                   </div>

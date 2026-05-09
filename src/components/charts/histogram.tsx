@@ -63,13 +63,23 @@ export function Histogram({
 }: Props) {
   const data = useMemo(() => {
     if (values.length === 0) return []
-    const min = domain?.[0] ?? Math.floor(Math.min(...values) / binWidth) * binWidth
+    const min =
+      domain?.[0] ?? Math.floor(Math.min(...values) / binWidth) * binWidth
     const max =
       domain?.[1] ?? Math.ceil(Math.max(...values) / binWidth) * binWidth
-    const bins: { binStart: number; binEnd: number; count: number; binMid: number }[] =
-      []
+    const bins: {
+      binStart: number
+      binEnd: number
+      count: number
+      binMid: number
+    }[] = []
     for (let edge = min; edge < max; edge += binWidth) {
-      bins.push({ binStart: edge, binEnd: edge + binWidth, count: 0, binMid: edge + binWidth / 2 })
+      bins.push({
+        binStart: edge,
+        binEnd: edge + binWidth,
+        count: 0,
+        binMid: edge + binWidth / 2,
+      })
     }
     for (const v of values) {
       const i = Math.floor((v - min) / binWidth)
@@ -96,7 +106,11 @@ export function Histogram({
         <XAxis
           dataKey="binMid"
           type="number"
-          domain={data.length > 0 ? [data[0].binStart, data[data.length - 1].binEnd] : ["auto", "auto"]}
+          domain={
+            data.length > 0
+              ? [data[0].binStart, data[data.length - 1].binEnd]
+              : ["auto", "auto"]
+          }
           tickLine={false}
           axisLine={false}
           fontSize={11}
@@ -151,12 +165,8 @@ export function Histogram({
         <Bar dataKey="count" fill={fill} radius={[3, 3, 0, 0]}>
           {data.map((d, i) => {
             const useNegative =
-              fillNegative != null &&
-              divergeAt != null &&
-              d.binEnd <= divergeAt
-            return (
-              <Cell key={i} fill={useNegative ? fillNegative : fill} />
-            )
+              fillNegative != null && divergeAt != null && d.binEnd <= divergeAt
+            return <Cell key={i} fill={useNegative ? fillNegative : fill} />
           })}
         </Bar>
       </BarChart>

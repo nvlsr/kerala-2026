@@ -29,13 +29,13 @@ export function BeltsPage() {
       aboutContent={
         <div className="space-y-3 text-sm leading-relaxed">
           <p>
-            A qualitative geography of Kerala's community "belts" — the
-            rough zones where particular religious or caste-community
-            groups dominate. Reference page: just the taxonomy.
+            A qualitative geography of Kerala's community "belts" — the rough
+            zones where particular religious or caste-community groups dominate.
+            Reference page: just the taxonomy.
           </p>
           <p className="border-t pt-3 text-muted-foreground">
-            The per-pattern overlay analysis (which drifts sit in which
-            belts) lives on{" "}
+            The per-pattern overlay analysis (which drifts sit in which belts)
+            lives on{" "}
             <Link
               to="/drifts"
               className="font-medium text-foreground underline-offset-2 hover:underline"
@@ -48,10 +48,10 @@ export function BeltsPage() {
       }
       subtitle={
         <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
-          Nine belts assigned to Kerala's 14 districts. Click any card on
-          the right to highlight just that belt on the map. For analytical
-          interpretation overlaid on the multi-cycle drift findings, see
-          the "By community belt" section on{" "}
+          Nine belts assigned to Kerala's 14 districts. Click any card on the
+          right to highlight just that belt on the map. For analytical
+          interpretation overlaid on the multi-cycle drift findings, see the "By
+          community belt" section on{" "}
           <Link
             to="/drifts"
             className="font-medium text-foreground underline-offset-2 hover:underline"
@@ -76,8 +76,8 @@ export function BeltsPage() {
               />
               {selectedBeltId && (
                 <p className="mt-2 text-xs text-muted-foreground">
-                  Showing only the selected belt. Click another card to
-                  switch, or use the reset button to see all belts.
+                  Showing only the selected belt. Click another card to switch,
+                  or use the reset button to see all belts.
                 </p>
               )}
             </div>
@@ -93,92 +93,84 @@ export function BeltsPage() {
 
         <section>
           <MethodologyDisclosure title="Methodology & sources">
-              <p>
-                <span className="font-medium text-foreground">
-                  Belt taxonomy.
-                </span>{" "}
-                Nine belts, one primary label per district. The
-                assignments live in{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/data/community-belts.json"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline-offset-2 hover:underline"
-                >
-                  data/community-belts.json
-                </a>{" "}
-                — readers can challenge specific labels and submit
-                corrections.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">
-                  Sources informing the taxonomy.
-                </span>{" "}
-                Zachariah, Mathew &amp; Rajan,{" "}
-                <em>Dynamics of Migration in Kerala</em> (2003); the
-                GeoCurrents 2014 Kerala electoral-geography synthesis;
-                KCBC diocese boundaries; Wikipedia AC pages where they
-                describe community character. The 2011 Census
-                religion-mix at district level (already in the data
-                layer) was used as the quantitative cross-check.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">
-                  Caveats worth holding on to.
-                </span>
-              </p>
-              <ul className="ml-4 list-disc space-y-1">
-                <li>
-                  Districts are administrative units; community
-                  boundaries cross them. Within a belt, AC-level
-                  variation is real and not yet captured here. Pass 2
-                  will refine per-AC labels for the 41 multi-cycle
-                  drift seats.
-                </li>
-                <li>
-                  Author judgement shaped each label. Where two belts
-                  could plausibly fit (e.g. Pathanamthitta is both
-                  Reformed Christian and significantly Ezhava-Hindu),
-                  the primary label may understate the secondary
-                  presence.
-                </li>
-                <li>
-                  The 2011 Census is the most recent — differential
-                  fertility since then has shifted the picture
-                  modestly, especially raising Muslim share and
-                  lowering Hindu and Christian shares versus what's
-                  shown here.
-                </li>
-                <li>
-                  No public dataset captures Christian denomination
-                  geography below diocese level; KCBC diocese
-                  boundaries are an approximation.
-                </li>
-              </ul>
-              <p>
-                <span className="font-medium text-foreground">
-                  Related pages.
-                </span>{" "}
-                The drift overlay analysis (which patterns sit in which
-                belts) lives on{" "}
-                <Link
-                  to="/drifts"
-                  className="underline-offset-2 hover:underline"
-                >
-                  /drifts
-                </Link>
-                . The future religion-gradient page (planned, not
-                built) is sketched in{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/religion-map.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline-offset-2 hover:underline"
-                >
-                  docs/religion-map.md
-                </a>
-                .
-              </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Belt taxonomy.
+              </span>{" "}
+              Nine belts, one primary label per district. The assignments live
+              in{" "}
+              <a
+                href="https://github.com/nvlsr/kerala-2026/blob/main/data/community-belts.json"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                data/community-belts.json
+              </a>{" "}
+              — readers can challenge specific labels and submit corrections.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Sources informing the taxonomy.
+              </span>{" "}
+              Zachariah, Mathew &amp; Rajan,{" "}
+              <em>Dynamics of Migration in Kerala</em> (2003); the GeoCurrents
+              2014 Kerala electoral-geography synthesis; KCBC diocese
+              boundaries; Wikipedia AC pages where they describe community
+              character. The 2011 Census religion-mix at district level (already
+              in the data layer) was used as the quantitative cross-check.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Caveats worth holding on to.
+              </span>
+            </p>
+            <ul className="ml-4 list-disc space-y-1">
+              <li>
+                Districts are administrative units; community boundaries cross
+                them. Within a belt, AC-level variation is real and not yet
+                captured here. Pass 2 will refine per-AC labels for the 41
+                multi-cycle drift seats.
+              </li>
+              <li>
+                Author judgement shaped each label. Where two belts could
+                plausibly fit (e.g. Pathanamthitta is both Reformed Christian
+                and significantly Ezhava-Hindu), the primary label may
+                understate the secondary presence.
+              </li>
+              <li>
+                The 2011 Census is the most recent — differential fertility
+                since then has shifted the picture modestly, especially raising
+                Muslim share and lowering Hindu and Christian shares versus
+                what's shown here.
+              </li>
+              <li>
+                No public dataset captures Christian denomination geography
+                below diocese level; KCBC diocese boundaries are an
+                approximation.
+              </li>
+            </ul>
+            <p>
+              <span className="font-medium text-foreground">
+                Related pages.
+              </span>{" "}
+              The drift overlay analysis (which patterns sit in which belts)
+              lives on{" "}
+              <Link to="/drifts" className="underline-offset-2 hover:underline">
+                /drifts
+              </Link>
+              . The future religion-gradient page (planned, not built) is
+              sketched in{" "}
+              <a
+                href="https://github.com/nvlsr/kerala-2026/blob/main/docs/religion-map.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                docs/religion-map.md
+              </a>
+              .
+            </p>
           </MethodologyDisclosure>
         </section>
       </PageMain>
@@ -236,7 +228,7 @@ function BeltLegend({ selectedBeltId, onSelect, onReset }: BeltLegendProps) {
                   aria-hidden
                 />
                 <div className="min-w-0">
-                  <p className="font-medium leading-tight">{b.label}</p>
+                  <p className="leading-tight font-medium">{b.label}</p>
                   <p className="mt-0.5 text-xs leading-snug text-muted-foreground">
                     {b.description}
                   </p>

@@ -17,8 +17,8 @@ export function QuestionsTeaser() {
           to="/questions"
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
         >
-          <IconGift className="h-4 w-4" aria-hidden />
-          A few curated questions for the curious →
+          <IconGift className="h-4 w-4" aria-hidden />A few curated questions
+          for the curious →
         </Link>
       </div>
     </section>

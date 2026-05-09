@@ -122,7 +122,7 @@ function PerPatternBlock({
   return (
     <article className="rounded-lg border bg-card/40 p-5 sm:p-6">
       <header className="flex items-baseline justify-between gap-3">
-        <h3 className="font-heading flex items-center gap-2 text-base font-semibold tracking-tight sm:text-lg">
+        <h3 className="flex items-center gap-2 font-heading text-base font-semibold tracking-tight sm:text-lg">
           <span
             className="inline-block h-3 w-3 shrink-0 rounded-full"
             style={{ backgroundColor: religionMeta.color }}
@@ -130,8 +130,7 @@ function PerPatternBlock({
           />
           {label}
           <span className="text-sm font-normal text-muted-foreground">
-            ·{" "}
-            <span className="font-medium">{religionMeta.label} gradient</span>
+            · <span className="font-medium">{religionMeta.label} gradient</span>
           </span>
         </h3>
         <span className="text-xs tracking-wide text-muted-foreground uppercase">
@@ -157,9 +156,8 @@ function PerPatternBlock({
             <span style={{ color: religionMeta.color }} className="font-medium">
               {religionMeta.label}
             </span>
-            ; black outlines mark this pattern's seats. The gradient
-            anchor is the highest-share district (saturated) versus
-            lowest (faint).
+            ; black outlines mark this pattern's seats. The gradient anchor is
+            the highest-share district (saturated) versus lowest (faint).
           </p>
         </div>
         <div>
@@ -177,7 +175,7 @@ function PerPatternBlock({
             </li>
             <li className="flex items-baseline justify-between gap-2 border-b pb-2">
               <span className="text-muted-foreground">State baseline</span>
-              <span className="font-medium tabular-nums text-muted-foreground">
+              <span className="font-medium text-muted-foreground tabular-nums">
                 {stateAverage.toFixed(1)}%
               </span>
             </li>
@@ -196,11 +194,10 @@ function PerPatternBlock({
             </li>
           </ul>
           <p className="mt-3 text-xs leading-snug text-muted-foreground">
-            Read the difference: positive means the pattern's seats
-            sit in districts with notably higher{" "}
-            {religionMeta.label.toLowerCase()} share than the state
-            average — the concentration is real, not just sampling
-            noise.
+            Read the difference: positive means the pattern's seats sit in
+            districts with notably higher {religionMeta.label.toLowerCase()}{" "}
+            share than the state average — the concentration is real, not just
+            sampling noise.
           </p>
         </div>
       </div>

@@ -156,7 +156,7 @@ function PerPatternBlock({
                   aria-hidden
                 />
                 <span className="flex-1 truncate">{p.belt.label}</span>
-                <span className="font-medium tabular-nums text-foreground">
+                <span className="font-medium text-foreground tabular-nums">
                   {p.count}
                 </span>
               </li>

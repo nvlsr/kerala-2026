@@ -2,16 +2,25 @@ import * as fs from "fs"
 import * as path from "path"
 
 const dir = "data/historical"
-const files = fs.readdirSync(dir).filter((f) => f.endsWith(".json") && f.startsWith("S11-"))
+const files = fs
+  .readdirSync(dir)
+  .filter((f) => f.endsWith(".json") && f.startsWith("S11-"))
 
 let total2021 = 0
-const a2021: Record<string, number> = { UDF: 0, LDF: 0, NDA: 0, OTHER: 0, NOTA: 0 }
+const a2021: Record<string, number> = {
+  UDF: 0,
+  LDF: 0,
+  NDA: 0,
+  OTHER: 0,
+  NOTA: 0,
+}
 const partyTotals2021: Record<string, number> = {}
 
 for (const f of files) {
   const j = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))
   const e = (j.elections || []).find(
-    (e: { year: number; type: string }) => e.year === 2021 && e.type === "general"
+    (e: { year: number; type: string }) =>
+      e.year === 2021 && e.type === "general"
   )
   if (!e) continue
   for (const c of e.candidates || []) {
@@ -23,7 +32,13 @@ for (const f of files) {
 
 const data2026 = JSON.parse(fs.readFileSync("data/kerala-2026.json", "utf8"))
 let total2026 = 0
-const a2026: Record<string, number> = { UDF: 0, LDF: 0, NDA: 0, OTHER: 0, NOTA: 0 }
+const a2026: Record<string, number> = {
+  UDF: 0,
+  LDF: 0,
+  NDA: 0,
+  OTHER: 0,
+  NOTA: 0,
+}
 for (const c of data2026.constituencies || data2026) {
   for (const cand of c.candidates || []) {
     total2026 += cand.votes

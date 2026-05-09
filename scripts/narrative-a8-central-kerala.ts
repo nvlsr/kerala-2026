@@ -165,10 +165,8 @@ for (const d of LDF_STRONGHOLD_DISTRICTS) {
   const ldfWins = dRows.filter((r) => r.winner2026 === "LDF").length
   const udfWins = dRows.filter((r) => r.winner2026 === "UDF").length
   const ndaWins = dRows.filter((r) => r.winner2026 === "NDA").length
-  const ldfShare =
-    dRows.reduce((a, b) => a + b.ldf26, 0) / dRows.length
-  const ldfDelta =
-    dRows.reduce((a, b) => a + b.ldfDelta, 0) / dRows.length
+  const ldfShare = dRows.reduce((a, b) => a + b.ldf26, 0) / dRows.length
+  const ldfDelta = dRows.reduce((a, b) => a + b.ldfDelta, 0) / dRows.length
   console.log(
     `  ${districtById[d]?.name.padEnd(15) ?? d.padEnd(15)} (${dRows.length} ACs): UDF ${udfWins}, LDF ${ldfWins}, NDA ${ndaWins}  ` +
       `mean LDF share ${ldfShare.toFixed(1)}%  Δ ${ldfDelta >= 0 ? "+" : ""}${ldfDelta.toFixed(1)}pp`
@@ -186,7 +184,10 @@ const CENTRAL_5 = SWEEP_DISTRICTS // 5-district reading
 const CENTRAL_7 = [...SWEEP_DISTRICTS, "pathanamthitta", "thrissur"] // 7-district reading
 for (const set of [
   { name: "5-district reading (sweep districts only)", districts: CENTRAL_5 },
-  { name: "7-district reading (+ Pathanamthitta + Thrissur)", districts: CENTRAL_7 },
+  {
+    name: "7-district reading (+ Pathanamthitta + Thrissur)",
+    districts: CENTRAL_7,
+  },
 ]) {
   const dRows = rows.filter((r) => set.districts.includes(r.district))
   const udfWins = dRows.filter((r) => r.winner2026 === "UDF").length
@@ -202,7 +203,14 @@ console.log("  Pre-poll Manorama-C Voter prediction: UDF 33 of 53\n")
 console.log("=== (v) Full district-by-district 2026 result ===")
 const byDist: Record<
   string,
-  { udf: number; ldf: number; nda: number; udfΔ: number; ldfΔ: number; total: number }
+  {
+    udf: number
+    ldf: number
+    nda: number
+    udfΔ: number
+    ldfΔ: number
+    total: number
+  }
 > = {}
 for (const r of rows) {
   if (!byDist[r.district])
@@ -230,7 +238,9 @@ for (const d of ordered) {
 }
 
 // ─── (vi) "Kingmaker" framing: did Central Kerala flip the result? ─
-console.log("\n=== (vi) Central Kerala's contribution to UDF's 102-seat majority ===")
+console.log(
+  "\n=== (vi) Central Kerala's contribution to UDF's 102-seat majority ==="
+)
 const total = rows.length
 const udfStateTotal = rows.filter((r) => r.winner2026 === "UDF").length
 const c5Rows = rows.filter((r) => CENTRAL_5.includes(r.district))

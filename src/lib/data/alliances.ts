@@ -24,7 +24,9 @@ export const COMPARABLE_ALLIANCE_CODES: readonly AllianceCode[] = [
 ]
 
 export function isAllianceCode(value: unknown): value is AllianceCode {
-  return typeof value === "string" && ALLIANCE_CODE_SET.has(value as AllianceCode)
+  return (
+    typeof value === "string" && ALLIANCE_CODE_SET.has(value as AllianceCode)
+  )
 }
 
 export type Alliance = {

@@ -78,11 +78,10 @@ export function QuestionCard({ question }: Props) {
     let rows = applyFilters(all, filters)
     const signFilter = pickSignFilter(filters)
     if (signFilter) rows = rows.filter(signFilter)
-    return sortCandidateRows(
-      rows,
-      filters.sort.column,
-      filters.sort.dir
-    ).slice(0, TOP_N)
+    return sortCandidateRows(rows, filters.sort.column, filters.sort.dir).slice(
+      0,
+      TOP_N
+    )
   }, [filters])
 
   const focusSeats = useMemo(
@@ -108,7 +107,7 @@ export function QuestionCard({ question }: Props) {
   return (
     <article
       id={question.id}
-      className="scroll-mt-24 rounded-lg border bg-card/50 p-6 transition hover:border-foreground/40 target:border-foreground/60 target:ring-2 target:ring-foreground/30"
+      className="scroll-mt-24 rounded-lg border bg-card/50 p-6 transition target:border-foreground/60 target:ring-2 target:ring-foreground/30 hover:border-foreground/40"
     >
       <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-3">
         <div className="flex flex-col lg:col-span-2">
@@ -124,7 +123,7 @@ export function QuestionCard({ question }: Props) {
                 </span>
                 <IconArrowUpRight
                   aria-hidden
-                  className="h-4 w-4 shrink-0 self-center text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground"
+                  className="h-4 w-4 shrink-0 self-center text-muted-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground"
                 />
               </Link>
             </h2>

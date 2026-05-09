@@ -61,7 +61,7 @@ export function AllianceSection({
                 <th className="px-3 py-3 text-right">
                   <span className="inline-flex items-baseline gap-1.5">
                     Seats
-                    <span className="text-[10px] font-normal normal-case text-muted-foreground/60">
+                    <span className="text-[10px] font-normal text-muted-foreground/60 normal-case">
                       / {summary.totalSeats}
                     </span>
                   </span>

@@ -20,9 +20,7 @@ export type BeltCode = string
 
 export const belts: BeltDef[] = beltsMeta.belts
 
-const BELT_BY_ID: Map<string, BeltDef> = new Map(
-  belts.map((b) => [b.id, b])
-)
+const BELT_BY_ID: Map<string, BeltDef> = new Map(belts.map((b) => [b.id, b]))
 
 export function getBelt(id: string): BeltDef | null {
   return BELT_BY_ID.get(id) ?? null

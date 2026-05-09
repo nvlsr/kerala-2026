@@ -10,10 +10,7 @@
  * party's 2021 share is exactly the contribution they no longer make
  * to the alliance in 2026.
  */
-import {
-  allianceForCandidate,
-  type AllianceCode,
-} from "@/lib/data/alliances"
+import { allianceForCandidate, type AllianceCode } from "@/lib/data/alliances"
 import { constituenciesIn } from "@/lib/data/constituencies"
 import { getHistoricalFor } from "@/lib/data/historical"
 import { partyShort } from "@/lib/data/parties"
@@ -56,7 +53,9 @@ export function getDepartedAllianceParties(
   for (const c of list) {
     const hist = getHistoricalFor(c.constituencyNumber)
     if (!hist) continue
-    const e = hist.elections.find((x) => x.year === 2021 && x.type === "general")
+    const e = hist.elections.find(
+      (x) => x.year === 2021 && x.type === "general"
+    )
     if (!e || e.candidates.length === 0) continue
     const winner = [...e.candidates].sort((a, b) => b.votes - a.votes)[0]!
     for (const cand of e.candidates) {

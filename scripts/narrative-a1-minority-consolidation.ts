@@ -18,8 +18,18 @@
 import * as fs from "fs"
 import * as path from "path"
 
-type Cand = { name: string; party: string; alliance: string; votes: number; isNota?: boolean }
-type C2026 = { constituencyNumber: number; constituencyName: string; candidates: Cand[] }
+type Cand = {
+  name: string
+  party: string
+  alliance: string
+  votes: number
+  isNota?: boolean
+}
+type C2026 = {
+  constituencyNumber: number
+  constituencyName: string
+  candidates: Cand[]
+}
 type Hist = {
   constituencyNumber: number
   constituencyName: string
@@ -48,10 +58,20 @@ for (const [k, v] of Object.entries(districtData.constituencyToDistrict)) {
 const demoData = JSON.parse(fs.readFileSync("data/demographics.json", "utf8"))
 const religionByDist = demoData.districts as Record<
   string,
-  { religions: { hindu: number; muslim: number; christian: number; other: number } }
+  {
+    religions: {
+      hindu: number
+      muslim: number
+      christian: number
+      other: number
+    }
+  }
 >
 
-function shareForAC(c: C2026 | { candidates: Cand[] }, alliance: string): number {
+function shareForAC(
+  c: C2026 | { candidates: Cand[] },
+  alliance: string
+): number {
   let v = 0,
     total = 0
   for (const cand of c.candidates) {
@@ -111,7 +131,9 @@ for (const c of data2026) {
   })
 }
 
-console.log(`Loaded ${rows.length}/140 ACs with full religion + 2021 + 2026 data\n`)
+console.log(
+  `Loaded ${rows.length}/140 ACs with full religion + 2021 + 2026 data\n`
+)
 
 // Pearson correlation
 function corr(xs: number[], ys: number[]): number {
@@ -158,7 +180,9 @@ function binMean(filter: (r: Row) => boolean, label: string) {
 }
 
 console.log("=== Mean swings by minority-share bin ===")
-console.log("  (residual = LDF loss not absorbed by UDF — went to NDA/OTHER/turnout shifts)")
+console.log(
+  "  (residual = LDF loss not absorbed by UDF — went to NDA/OTHER/turnout shifts)"
+)
 binMean((r) => r.minorityPct >= 60, "Very high minority (≥60%)")
 binMean((r) => r.minorityPct >= 50 && r.minorityPct < 60, "High (50–60%)")
 binMean((r) => r.minorityPct >= 40 && r.minorityPct < 50, "Mid-high (40–50%)")
@@ -183,9 +207,7 @@ const distSummary = [...distRows.entries()].map(([d, rs]) => ({
   christian: rs[0].christianPct,
 }))
 distSummary.sort((a, b) => b.minPct - a.minPct)
-console.log(
-  "  district          n  min%   M%    C%    H%    UDF Δ      LDF Δ"
-)
+console.log("  district          n  min%   M%    C%    H%    UDF Δ      LDF Δ")
 for (const d of distSummary) {
   console.log(
     `  ${d.district.padEnd(17)} ${d.n.toString().padStart(2)}  ${d.minPct.toFixed(1).padStart(4)}%  ${d.muslim.toFixed(1).padStart(4)}%  ${d.christian.toFixed(1).padStart(4)}%  ${d.hindu.toFixed(1).padStart(4)}%  ${(d.meanUDF >= 0 ? "+" : "") + d.meanUDF.toFixed(2)}pp  ${(d.meanLDF >= 0 ? "+" : "") + d.meanLDF.toFixed(2)}pp`
@@ -195,10 +217,8 @@ console.log()
 
 // Where did LDF's lost vote go?
 console.log("=== LDF loss decomposition (statewide totals) ===")
-const totalUDFDelta =
-  rows.reduce((s, r) => s + r.udfDelta, 0) / rows.length
-const totalLDFDelta =
-  rows.reduce((s, r) => s + r.ldfDelta, 0) / rows.length
+const totalUDFDelta = rows.reduce((s, r) => s + r.udfDelta, 0) / rows.length
+const totalLDFDelta = rows.reduce((s, r) => s + r.ldfDelta, 0) / rows.length
 // NDA Δ: we have 2026 NDA and need 2021 NDA. Get from the rows
 let totalNDA21 = 0,
   totalNDA26 = 0,
@@ -222,21 +242,37 @@ for (const h of hist) {
 }
 const ndaShare21 = (totalNDA21 / totalValid21) * 100
 const ndaShare26 = (totalNDA26 / totalValid) * 100
-console.log(`  Mean UDF Δ across 140 ACs:  ${totalUDFDelta >= 0 ? "+" : ""}${totalUDFDelta.toFixed(2)}pp`)
-console.log(`  Mean LDF Δ:                 ${totalLDFDelta >= 0 ? "+" : ""}${totalLDFDelta.toFixed(2)}pp`)
-console.log(`  Statewide NDA Δ:            ${(ndaShare26 - ndaShare21) >= 0 ? "+" : ""}${(ndaShare26 - ndaShare21).toFixed(2)}pp`)
+console.log(
+  `  Mean UDF Δ across 140 ACs:  ${totalUDFDelta >= 0 ? "+" : ""}${totalUDFDelta.toFixed(2)}pp`
+)
+console.log(
+  `  Mean LDF Δ:                 ${totalLDFDelta >= 0 ? "+" : ""}${totalLDFDelta.toFixed(2)}pp`
+)
+console.log(
+  `  Statewide NDA Δ:            ${ndaShare26 - ndaShare21 >= 0 ? "+" : ""}${(ndaShare26 - ndaShare21).toFixed(2)}pp`
+)
 console.log()
 
 // District-level NDA Δ vs minority share
 console.log("=== District NDA Δ — does NDA grow more in Hindu-heavy areas? ===")
-const distSummary2: Array<{ district: string; minPct: number; ndaDelta: number; ldfDelta: number }> = []
+const distSummary2: Array<{
+  district: string
+  minPct: number
+  ndaDelta: number
+  ldfDelta: number
+}> = []
 for (const [d, rs] of distRows.entries()) {
   // get mean NDA Δ for this district
-  let nda21Sum = 0, nda26Sum = 0, valid21Sum = 0, valid26Sum = 0
+  let nda21Sum = 0,
+    nda26Sum = 0,
+    valid21Sum = 0,
+    valid26Sum = 0
   for (const r of rs) {
     const c26 = data2026.find((x) => x.constituencyNumber === r.seat)!
     const h = histByNum.get(r.seat)!
-    const e21 = h.elections.find((e) => e.year === 2021 && e.type === "general")!
+    const e21 = h.elections.find(
+      (e) => e.year === 2021 && e.type === "general"
+    )!
     for (const cand of c26.candidates) {
       if (cand.isNota) continue
       valid26Sum += cand.votes
@@ -250,7 +286,12 @@ for (const [d, rs] of distRows.entries()) {
   }
   const ndaDelta = (nda26Sum / valid26Sum) * 100 - (nda21Sum / valid21Sum) * 100
   const meanLDF = rs.reduce((s, r) => s + r.ldfDelta, 0) / rs.length
-  distSummary2.push({ district: d, minPct: rs[0].minorityPct, ndaDelta, ldfDelta: meanLDF })
+  distSummary2.push({
+    district: d,
+    minPct: rs[0].minorityPct,
+    ndaDelta,
+    ldfDelta: meanLDF,
+  })
 }
 distSummary2.sort((a, b) => a.minPct - b.minPct)
 console.log("  district          min%   NDA Δ      LDF Δ")

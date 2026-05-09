@@ -88,83 +88,87 @@ export function PartySection({
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
         <div className="flex flex-col gap-3 lg:col-span-3">
           <div className="overflow-hidden rounded-lg border">
-          {rows.length === 0 ? (
-            <div className="px-3 py-6 text-center text-xs text-muted-foreground">
-              No parties recorded for this alliance.
-            </div>
-          ) : (
-            <table className="w-full text-sm">
-              <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
-                <tr className="border-b">
-                  <th className="px-3 py-2 text-left">Party</th>
-                  <th className="px-3 py-2 text-right">Seats</th>
-                  <th className="px-3 py-2 text-right">Share</th>
-                  <th className="px-3 py-2 text-right">Win rate</th>
-                  <th className="px-3 py-2 text-right">
-                    <span className="inline-flex items-center gap-1">
-                      Δ share '21
-                      <InfoIcon text="Change in this party's statewide vote share between 2021 and 2026 (percentage points)" />
-                    </span>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((r) => {
-                  const isSelected = r.party === selectedParty
-                  return (
-                    <tr
-                      key={r.party}
-                      onClick={() => onSelectParty(isSelected ? null : r.party)}
-                      className={cn(
-                        "cursor-pointer border-b last:border-b-0 hover:bg-foreground/5",
-                        isSelected && "bg-foreground/5"
-                      )}
-                    >
-                      <td className="relative px-3 py-2">
-                        <span
-                          className="absolute inset-y-0 left-0 w-0.5"
-                          style={{ backgroundColor: allianceMeta.color }}
-                          aria-hidden
-                        />
-                        <span className="flex items-center gap-2">
+            {rows.length === 0 ? (
+              <div className="px-3 py-6 text-center text-xs text-muted-foreground">
+                No parties recorded for this alliance.
+              </div>
+            ) : (
+              <table className="w-full text-sm">
+                <thead className="bg-muted/40 text-xs font-medium tracking-wide text-muted-foreground uppercase">
+                  <tr className="border-b">
+                    <th className="px-3 py-2 text-left">Party</th>
+                    <th className="px-3 py-2 text-right">Seats</th>
+                    <th className="px-3 py-2 text-right">Share</th>
+                    <th className="px-3 py-2 text-right">Win rate</th>
+                    <th className="px-3 py-2 text-right">
+                      <span className="inline-flex items-center gap-1">
+                        Δ share '21
+                        <InfoIcon text="Change in this party's statewide vote share between 2021 and 2026 (percentage points)" />
+                      </span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map((r) => {
+                    const isSelected = r.party === selectedParty
+                    return (
+                      <tr
+                        key={r.party}
+                        onClick={() =>
+                          onSelectParty(isSelected ? null : r.party)
+                        }
+                        className={cn(
+                          "cursor-pointer border-b last:border-b-0 hover:bg-foreground/5",
+                          isSelected && "bg-foreground/5"
+                        )}
+                      >
+                        <td className="relative px-3 py-2">
                           <span
-                            className="inline-block h-2 w-2 rounded-full"
+                            className="absolute inset-y-0 left-0 w-0.5"
                             style={{ backgroundColor: allianceMeta.color }}
                             aria-hidden
                           />
-                          <span className="font-medium" title={r.party}>
-                            {r.partyShort}
+                          <span className="flex items-center gap-2">
+                            <span
+                              className="inline-block h-2 w-2 rounded-full"
+                              style={{ backgroundColor: allianceMeta.color }}
+                              aria-hidden
+                            />
+                            <span className="font-medium" title={r.party}>
+                              {r.partyShort}
+                            </span>
                           </span>
-                        </span>
-                      </td>
-                      <td className="px-3 py-2 text-right tabular-nums">
-                        {r.seatsWon}
-                        <span className="text-muted-foreground">
-                          {" "}
-                          / {r.contested}
-                        </span>
-                      </td>
-                      <td className="px-3 py-2 text-right tabular-nums">
-                        {formatPercent(r.voteShare, 1)}
-                      </td>
-                      <td className="px-3 py-2 text-right text-muted-foreground tabular-nums">
-                        {r.winRate != null ? formatPercent(r.winRate, 0) : "—"}
-                      </td>
-                      <td className="px-3 py-2 text-right tabular-nums">
-                        {r.isNewToAlliance ? (
-                          <span className="text-xs text-muted-foreground italic">
-                            new to {alliance}
+                        </td>
+                        <td className="px-3 py-2 text-right tabular-nums">
+                          {r.seatsWon}
+                          <span className="text-muted-foreground">
+                            {" "}
+                            / {r.contested}
                           </span>
-                        ) : (
-                          <DeltaPercent value={r.delta} />
-                        )}
-                      </td>
-                    </tr>
-                  )
-                })}
-              </tbody>
-            </table>
-          )}
+                        </td>
+                        <td className="px-3 py-2 text-right tabular-nums">
+                          {formatPercent(r.voteShare, 1)}
+                        </td>
+                        <td className="px-3 py-2 text-right text-muted-foreground tabular-nums">
+                          {r.winRate != null
+                            ? formatPercent(r.winRate, 0)
+                            : "—"}
+                        </td>
+                        <td className="px-3 py-2 text-right tabular-nums">
+                          {r.isNewToAlliance ? (
+                            <span className="text-xs text-muted-foreground italic">
+                              new to {alliance}
+                            </span>
+                          ) : (
+                            <DeltaPercent value={r.delta} />
+                          )}
+                        </td>
+                      </tr>
+                    )
+                  })}
+                </tbody>
+              </table>
+            )}
           </div>
           {departed.length > 0 && (
             <div className="overflow-hidden rounded-lg border border-dashed bg-muted/20">
@@ -181,7 +185,7 @@ export function PartySection({
                   {departed.map((p) => (
                     <tr
                       key={p.party}
-                      className="border-b border-dashed last:border-b-0 text-muted-foreground"
+                      className="border-b border-dashed text-muted-foreground last:border-b-0"
                     >
                       <td className="px-3 py-1.5">
                         <span className="font-medium" title={p.party}>
@@ -202,7 +206,7 @@ export function PartySection({
                     <td className="px-3 py-1.5 text-muted-foreground">
                       Lost from {alliance} since 2021
                     </td>
-                    <td className="px-3 py-1.5 text-right tabular-nums text-red-600 dark:text-red-500">
+                    <td className="px-3 py-1.5 text-right text-red-600 tabular-nums dark:text-red-500">
                       −{departedTotalShare.toFixed(2)}%
                     </td>
                   </tr>

@@ -30,7 +30,11 @@ const hist: Hist[] = fs
   .filter((f) => f.startsWith("S11-"))
   .map((f) => JSON.parse(fs.readFileSync(path.join(histDir, f), "utf8")))
 
-function shareForPartyAlliance(year: number, party: string, alliance: string): number {
+function shareForPartyAlliance(
+  year: number,
+  party: string,
+  alliance: string
+): number {
   let votes = 0
   let total = 0
   if (year === 2026) {
@@ -38,7 +42,8 @@ function shareForPartyAlliance(year: number, party: string, alliance: string): n
       for (const cand of c.candidates) {
         if (cand.isNota) continue
         total += cand.votes
-        if (cand.party === party && cand.alliance === alliance) votes += cand.votes
+        if (cand.party === party && cand.alliance === alliance)
+          votes += cand.votes
       }
     }
   } else {
@@ -48,14 +53,19 @@ function shareForPartyAlliance(year: number, party: string, alliance: string): n
       for (const cand of e.candidates) {
         if (cand.isNota) continue
         total += cand.votes
-        if (cand.party === party && cand.alliance === alliance) votes += cand.votes
+        if (cand.party === party && cand.alliance === alliance)
+          votes += cand.votes
       }
     }
   }
   return total > 0 ? (votes / total) * 100 : 0
 }
 
-const allianceParties: Record<string, Set<string>> = { LDF: new Set(), UDF: new Set(), NDA: new Set() }
+const allianceParties: Record<string, Set<string>> = {
+  LDF: new Set(),
+  UDF: new Set(),
+  NDA: new Set(),
+}
 for (const c of data2026) {
   for (const cand of c.candidates) {
     if (cand.isNota) continue

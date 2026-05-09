@@ -33,7 +33,7 @@ export function DashboardPage() {
 
 function ExploreLink() {
   return (
-    <div className="mx-auto max-w-3xl px-6 -mt-8 mb-12 text-center">
+    <div className="mx-auto -mt-8 mb-12 max-w-3xl px-6 text-center">
       <p className="text-xs text-muted-foreground">
         or{" "}
         <Link

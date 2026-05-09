@@ -15,11 +15,7 @@ import {
   ChartTooltipContent,
   type ChartConfig,
 } from "@/components/ui/chart"
-import {
-  formatPercent,
-  getTrendData,
-  type AllianceCode,
-} from "@/lib/data"
+import { formatPercent, getTrendData, type AllianceCode } from "@/lib/data"
 
 type Props = {
   constituencyNumber: number

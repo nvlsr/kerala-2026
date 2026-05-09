@@ -14,8 +14,18 @@
 import * as fs from "fs"
 import * as path from "path"
 
-type Cand = { name: string; party: string; alliance: string; votes: number; isNota?: boolean }
-type C2026 = { constituencyNumber: number; constituencyName: string; candidates: Cand[] }
+type Cand = {
+  name: string
+  party: string
+  alliance: string
+  votes: number
+  isNota?: boolean
+}
+type C2026 = {
+  constituencyNumber: number
+  constituencyName: string
+  candidates: Cand[]
+}
 type Hist = {
   constituencyNumber: number
   constituencyName: string
@@ -33,8 +43,12 @@ const hist: Hist[] = fs
   )
 const histByNum = new Map(hist.map((h) => [h.constituencyNumber, h]))
 
-const acDemo2011 = JSON.parse(fs.readFileSync("data/ac-demographics.json", "utf8"))
-const acDemo2025 = JSON.parse(fs.readFileSync("data/ac-demographics-2025.json", "utf8"))
+const acDemo2011 = JSON.parse(
+  fs.readFileSync("data/ac-demographics.json", "utf8")
+)
+const acDemo2025 = JSON.parse(
+  fs.readFileSync("data/ac-demographics-2025.json", "utf8")
+)
 const reservations = JSON.parse(
   fs.readFileSync("data/reservations.json", "utf8")
 ).constituencyToReservation as Record<string, "SC" | "ST">
@@ -117,16 +131,27 @@ function showCorrs(rows: AcRow[], label: string) {
 
   console.log(`=== ${label} (n=${rows.length}) ===`)
   console.log("                          UDF Δ           LDF Δ           NDA Δ")
-  console.log("                       2011    2025    2011    2025    2011    2025")
+  console.log(
+    "                       2011    2025    2011    2025    2011    2025"
+  )
   const fmt = (x: number) => (x >= 0 ? "+" : "") + x.toFixed(3)
-  console.log(`Hindu share         ${fmt(corr(xH11, yU)).padStart(8)}${fmt(corr(xH25, yU)).padStart(8)}${fmt(corr(xH11, yL)).padStart(8)}${fmt(corr(xH25, yL)).padStart(8)}${fmt(corr(xH11, yN)).padStart(8)}${fmt(corr(xH25, yN)).padStart(8)}`)
-  console.log(`Muslim share        ${fmt(corr(xM11, yU)).padStart(8)}${fmt(corr(xM25, yU)).padStart(8)}${fmt(corr(xM11, yL)).padStart(8)}${fmt(corr(xM25, yL)).padStart(8)}${fmt(corr(xM11, yN)).padStart(8)}${fmt(corr(xM25, yN)).padStart(8)}`)
-  console.log(`Christian share     ${fmt(corr(xC11, yU)).padStart(8)}${fmt(corr(xC25, yU)).padStart(8)}${fmt(corr(xC11, yL)).padStart(8)}${fmt(corr(xC25, yL)).padStart(8)}${fmt(corr(xC11, yN)).padStart(8)}${fmt(corr(xC25, yN)).padStart(8)}`)
+  console.log(
+    `Hindu share         ${fmt(corr(xH11, yU)).padStart(8)}${fmt(corr(xH25, yU)).padStart(8)}${fmt(corr(xH11, yL)).padStart(8)}${fmt(corr(xH25, yL)).padStart(8)}${fmt(corr(xH11, yN)).padStart(8)}${fmt(corr(xH25, yN)).padStart(8)}`
+  )
+  console.log(
+    `Muslim share        ${fmt(corr(xM11, yU)).padStart(8)}${fmt(corr(xM25, yU)).padStart(8)}${fmt(corr(xM11, yL)).padStart(8)}${fmt(corr(xM25, yL)).padStart(8)}${fmt(corr(xM11, yN)).padStart(8)}${fmt(corr(xM25, yN)).padStart(8)}`
+  )
+  console.log(
+    `Christian share     ${fmt(corr(xC11, yU)).padStart(8)}${fmt(corr(xC25, yU)).padStart(8)}${fmt(corr(xC11, yL)).padStart(8)}${fmt(corr(xC25, yL)).padStart(8)}${fmt(corr(xC11, yN)).padStart(8)}${fmt(corr(xC25, yN)).padStart(8)}`
+  )
   console.log()
 }
 
 showCorrs(rows, "All 140 ACs")
-showCorrs(rows.filter((r) => !r.reserved), "Excluding 16 SC/ST reserved")
+showCorrs(
+  rows.filter((r) => !r.reserved),
+  "Excluding 16 SC/ST reserved"
+)
 
 // Show a few specific ACs where projection shifts the most
 console.log("=== Largest absolute share shifts (2011 → 2025) ===")

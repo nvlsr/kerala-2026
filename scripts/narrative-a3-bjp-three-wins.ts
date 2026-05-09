@@ -113,13 +113,12 @@ for (const c of data2026) {
     if (cd.party === "Bharatiya Janata Party") totalBJP2026 += cd.votes
   }
 
-  const winner26 =
-    c.candidates
-      .filter((x) => !x.isNota)
-      .reduce<Cand | null>(
-        (best, x) => (best == null || x.votes > best.votes ? x : best),
-        null
-      )
+  const winner26 = c.candidates
+    .filter((x) => !x.isNota)
+    .reduce<Cand | null>(
+      (best, x) => (best == null || x.votes > best.votes ? x : best),
+      null
+    )
 
   rows.push({
     seat: c.constituencyNumber,
@@ -147,10 +146,10 @@ const nda26 = (totalNDA2026 / totalVotes2026) * 100
 
 console.log("=== (i) Statewide BJP/NDA vote share ===")
 console.log(
-  `  BJP party share: ${bjp21.toFixed(2)}% → ${bjp26.toFixed(2)}%  Δ ${(bjp26 - bjp21 >= 0 ? "+" : "")}${(bjp26 - bjp21).toFixed(2)}pp`
+  `  BJP party share: ${bjp21.toFixed(2)}% → ${bjp26.toFixed(2)}%  Δ ${bjp26 - bjp21 >= 0 ? "+" : ""}${(bjp26 - bjp21).toFixed(2)}pp`
 )
 console.log(
-  `  NDA alliance:    ${nda21.toFixed(2)}% → ${nda26.toFixed(2)}%  Δ ${(nda26 - nda21 >= 0 ? "+" : "")}${(nda26 - nda21).toFixed(2)}pp`
+  `  NDA alliance:    ${nda21.toFixed(2)}% → ${nda26.toFixed(2)}%  Δ ${nda26 - nda21 >= 0 ? "+" : ""}${(nda26 - nda21).toFixed(2)}pp`
 )
 console.log(`  Narrative claim: BJP grew ~0.12pp (11.30 → 11.42)`)
 console.log()
@@ -168,9 +167,7 @@ console.log(`  NDA ≥ 30%   : ${ndaAt30}`)
 console.log(`  NDA ≥ 40%   : ${ndaAt40}`)
 
 // What % of total NDA votes are in the top-N ACs? (Lorenz-style concentration)
-const ndaShares = rows
-  .map((r) => r.ndaShare2026)
-  .sort((a, b) => b - a)
+const ndaShares = rows.map((r) => r.ndaShare2026).sort((a, b) => b - a)
 const topN = (n: number) =>
   ndaShares.slice(0, n).reduce((a, b) => a + b, 0) /
   ndaShares.reduce((a, b) => a + b, 0)
@@ -194,7 +191,9 @@ for (const r of rows.filter((r) => r.ndaShare2026 >= 25)) {
   districtCounts[d] = (districtCounts[d] ?? 0) + 1
 }
 console.log(`\n  NDA ≥ 25% ACs by district:`)
-for (const [d, n] of Object.entries(districtCounts).sort((a, b) => b[1] - a[1])) {
+for (const [d, n] of Object.entries(districtCounts).sort(
+  (a, b) => b[1] - a[1]
+)) {
   console.log(`    ${d.padEnd(20)} ${n}`)
 }
 console.log()
@@ -247,14 +246,14 @@ console.log()
 // ─── (v) The "weak UDF" sub-claim in the 3 BJP-won seats ────────────
 console.log("=== (v) UDF performance in the 3 BJP-won seats ===")
 const ndaWinUDFΔ =
-  rows.filter((r) => BJP_WINS.includes(r.seat)).reduce((a, b) => a + b.udfDelta, 0) /
-  3
+  rows
+    .filter((r) => BJP_WINS.includes(r.seat))
+    .reduce((a, b) => a + b.udfDelta, 0) / 3
 const allUDFΔ = rows.reduce((a, b) => a + b.udfDelta, 0) / rows.length
-const hindu60UDFΔ =
-  (() => {
-    const h = rows.filter((r) => r.hindu >= 60 && !BJP_WINS.includes(r.seat))
-    return h.reduce((a, b) => a + b.udfDelta, 0) / h.length
-  })()
+const hindu60UDFΔ = (() => {
+  const h = rows.filter((r) => r.hindu >= 60 && !BJP_WINS.includes(r.seat))
+  return h.reduce((a, b) => a + b.udfDelta, 0) / h.length
+})()
 console.log(
   `  Mean UDF Δ in BJP-won seats: ${ndaWinUDFΔ >= 0 ? "+" : ""}${ndaWinUDFΔ.toFixed(2)}pp`
 )

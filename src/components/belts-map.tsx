@@ -45,7 +45,9 @@ export function BeltsMap({
         const inFocus = !focusSeats || focusSeats.has(num)
         const visible = inSelectedBelt && inFocus
 
-        const fill = visible ? (belt?.color ?? "var(--muted)") : "var(--muted-foreground)"
+        const fill = visible
+          ? (belt?.color ?? "var(--muted)")
+          : "var(--muted-foreground)"
         const fillOpacity = visible ? (hasSelection ? 0.7 : 0.55) : 0.06
         const stroked = strokeSeats?.has(num) ?? false
 

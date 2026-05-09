@@ -177,14 +177,10 @@ export function ReligionGradientMap({
   const maxPct = usingOverride
     ? level === "ac"
       ? Math.max(...Object.values(acValuesOverride))
-      : Math.max(
-          ...Object.values(districtValuesOverride ?? acValuesOverride)
-        )
+      : Math.max(...Object.values(districtValuesOverride ?? acValuesOverride))
     : level === "ac"
       ? Math.max(
-          ...Object.values(acData).map(
-            (c) => c.religions[religion] ?? 0
-          )
+          ...Object.values(acData).map((c) => c.religions[religion] ?? 0)
         )
       : Math.max(
           ...Object.values(demoMeta.districts).map((d) => d.religions[religion])
@@ -230,9 +226,7 @@ export function ReligionGradientMap({
           if (level === "ac") {
             pct = acValuesOverride[String(p.constituencyNumber)] ?? 0
           } else {
-            pct = districtId
-              ? (districtValuesOverride?.[districtId] ?? 0)
-              : 0
+            pct = districtId ? (districtValuesOverride?.[districtId] ?? 0) : 0
           }
         } else if (level === "ac") {
           const ac = acData[String(p.constituencyNumber)]
@@ -258,9 +252,7 @@ export function ReligionGradientMap({
             key={p.constituencyNumber}
             d={p.pathD}
             fill={baseColor}
-            fillOpacity={
-              isHighlighted ? Math.min(1, opacity + 0.15) : opacity
-            }
+            fillOpacity={isHighlighted ? Math.min(1, opacity + 0.15) : opacity}
             stroke={
               isOutlined
                 ? outlineColor
@@ -292,7 +284,7 @@ export function ReligionGradientMap({
   return (
     <div className="relative">
       {svg}
-      <div className="absolute right-2 top-2 flex flex-col gap-1 rounded-md border bg-background/85 p-0.5 shadow-sm supports-backdrop-filter:backdrop-blur">
+      <div className="absolute top-2 right-2 flex flex-col gap-1 rounded-md border bg-background/85 p-0.5 shadow-sm supports-backdrop-filter:backdrop-blur">
         <button
           type="button"
           onClick={() => zoomBy(1 / ZOOM_FACTOR)}

@@ -78,7 +78,7 @@ function beltFor(num: number): BeltDef | null {
   const districtId = constToDistrict[String(num)]
   if (!districtId) return null
   const beltId = beltsJson.districtToBelt[districtId]
-  return beltId ? beltById.get(beltId) ?? null : null
+  return beltId ? (beltById.get(beltId) ?? null) : null
 }
 
 // ─── Share computation (matches v5-aligned src/lib/data/flows.ts) ────
@@ -117,7 +117,11 @@ const MAIN: AllianceCode[] = ["UDF", "LDF", "NDA"]
 
 type Flow =
   | { kind: "two-way"; from: AllianceCode; to: AllianceCode }
-  | { kind: "both-to-one"; from: [AllianceCode, AllianceCode]; to: AllianceCode }
+  | {
+      kind: "both-to-one"
+      from: [AllianceCode, AllianceCode]
+      to: AllianceCode
+    }
 
 function classify(deltas: Shares): Flow | null {
   const sorted = MAIN.map((a) => ({ a, d: deltas[a] })).sort(
@@ -168,7 +172,10 @@ for (const s of seats2026) {
 
 // ─── Group + cross-tab ───────────────────────────────────────────────
 
-const groups = new Map<string, { key: string; label: string; items: FlowSeat[] }>()
+const groups = new Map<
+  string,
+  { key: string; label: string; items: FlowSeat[] }
+>()
 for (const f of flows) {
   const k = patternKey(f.flow)
   if (!groups.has(k)) {
@@ -201,9 +208,7 @@ for (const g of sortedGroups) {
     entry.count++
     entry.seats.push(it.seat.constituencyName)
   }
-  const sorted = [...byBelt.entries()].sort(
-    (a, b) => b[1].count - a[1].count
-  )
+  const sorted = [...byBelt.entries()].sort((a, b) => b[1].count - a[1].count)
   for (const [, data] of sorted) {
     console.log(
       `  ${data.label.padEnd(45)} ${data.count.toString().padStart(3)}  (${data.seats.join(", ")})`

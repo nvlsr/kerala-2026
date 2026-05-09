@@ -12,7 +12,12 @@ import {
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import casteData from "@data/hindu-caste-by-district.json"
 import districtPaths from "@data/kerala-districts-paths.json"
-import { acDemo2025Meta, acDemoMeta, demoMeta, districtsMeta } from "@/lib/data/loaders"
+import {
+  acDemo2025Meta,
+  acDemoMeta,
+  demoMeta,
+  districtsMeta,
+} from "@/lib/data/loaders"
 import {
   getReligionForAC,
   getReligion,
@@ -117,12 +122,11 @@ export function ReligionMapPage() {
         <div className="space-y-3 text-sm leading-relaxed">
           <p>
             Kerala's three big religion groups, each shaded
-            constituency-by-constituency. The default view uses a 2025
-            cohort projection of Census 2011 (toggle to 2011 raw if
-            preferred — the geographic gradient is identical, only
-            absolute shares drift). A reference page for the structural
-            geography of each community's vote bank — useful for
-            reading the alliance flows on{" "}
+            constituency-by-constituency. The default view uses a 2025 cohort
+            projection of Census 2011 (toggle to 2011 raw if preferred — the
+            geographic gradient is identical, only absolute shares drift). A
+            reference page for the structural geography of each community's vote
+            bank — useful for reading the alliance flows on{" "}
             <Link
               to="/flows"
               className="font-medium text-foreground underline-offset-2 hover:underline"
@@ -142,11 +146,10 @@ export function ReligionMapPage() {
             <span className="font-medium text-foreground">
               Structural, not behavioural.
             </span>{" "}
-            The map shows where each religion's population lives. It
-            does not show how they vote — religion and vote choice
-            correlate but aren't identical. Census 2011 is the most
-            recent; differential fertility since has shifted shares
-            modestly.
+            The map shows where each religion's population lives. It does not
+            show how they vote — religion and vote choice correlate but aren't
+            identical. Census 2011 is the most recent; differential fertility
+            since has shifted shares modestly.
           </p>
         </div>
       }
@@ -239,11 +242,10 @@ export function ReligionMapPage() {
               Hindu sub-communities &amp; SC/ST (district-level only)
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Source: Zachariah, Mathew &amp; Rajan (2003) — Kerala
-              Statistical Institute household survey, 2000. District
-              data only; every AC in a district shares the same shade.
-              All shares shown as % of total district population.
-              See{" "}
+              Source: Zachariah, Mathew &amp; Rajan (2003) — Kerala Statistical
+              Institute household survey, 2000. District data only; every AC in
+              a district shares the same shade. All shares shown as % of total
+              district population. See{" "}
               <a
                 href="https://github.com/nvlsr/kerala-2026/blob/main/docs/caste-data.md"
                 target="_blank"
@@ -298,10 +300,9 @@ export function ReligionMapPage() {
                 Religion — 2011 baseline.
               </span>{" "}
               Source: Census 2011 Table C-01 (religious community), at
-              sub-district (Rural rows) and town (Urban rows)
-              granularity. AC-level shading is built by joining each
-              shrid&apos;s religion mix from C-01 to its assembly
-              constituency via{" "}
+              sub-district (Rural rows) and town (Urban rows) granularity.
+              AC-level shading is built by joining each shrid&apos;s religion
+              mix from C-01 to its assembly constituency via{" "}
               <a
                 href="https://www.devdatalab.org/shrug"
                 target="_blank"
@@ -310,14 +311,13 @@ export function ReligionMapPage() {
               >
                 SHRUG
               </a>{" "}
-              (post-2008 delimitation), weighted by shrid population
-              and SHRUG&apos;s con08 fragment-weights. 114 of 140 ACs
-              are aggregated at this resolution; 26 urban-heavy ACs
-              fall back to district-Urban shares because their city
-              corporations span multiple constituencies and Census
-              doesn&apos;t publish ward-level data uniformly. State
-              aggregate from this pipeline matches Census state totals
-              within ~0.6pp on each religion. See{" "}
+              (post-2008 delimitation), weighted by shrid population and
+              SHRUG&apos;s con08 fragment-weights. 114 of 140 ACs are aggregated
+              at this resolution; 26 urban-heavy ACs fall back to district-Urban
+              shares because their city corporations span multiple
+              constituencies and Census doesn&apos;t publish ward-level data
+              uniformly. State aggregate from this pipeline matches Census state
+              totals within ~0.6pp on each religion. See{" "}
               <a
                 href="https://github.com/nvlsr/kerala-2026/blob/main/docs/data-pipeline.md"
                 target="_blank"
@@ -332,21 +332,20 @@ export function ReligionMapPage() {
               <span className="font-medium text-foreground">
                 Religion — 2025 projection.
               </span>{" "}
-              State-level uniform cohort projection of the 2011
-              baseline: Hindu × 0.96, Muslim × 1.12, Christian × 0.97,
-              renormalised per AC. Multipliers come from Kerala CRS
-              births-by-religion (2011–2023) + crude death rate ~7/1000.
-              The projection assumes Kerala&apos;s geographic religion
-              gradient is unchanged from 2011 — only absolute shares
-              drift. AC-specific fertility differentials (Muslim TFR is
-              higher in already-Muslim-heavy areas) are NOT modelled.
-              Because the multipliers are uniform statewide, rank order
-              is preserved exactly: 2025 and 2011 produce essentially
-              the same correlation analysis (Pearson r shifts by ≤0.01).
+              State-level uniform cohort projection of the 2011 baseline: Hindu
+              × 0.96, Muslim × 1.12, Christian × 0.97, renormalised per AC.
+              Multipliers come from Kerala CRS births-by-religion (2011–2023) +
+              crude death rate ~7/1000. The projection assumes Kerala&apos;s
+              geographic religion gradient is unchanged from 2011 — only
+              absolute shares drift. AC-specific fertility differentials (Muslim
+              TFR is higher in already-Muslim-heavy areas) are NOT modelled.
+              Because the multipliers are uniform statewide, rank order is
+              preserved exactly: 2025 and 2011 produce essentially the same
+              correlation analysis (Pearson r shifts by ≤0.01).
               <strong className="font-medium text-foreground">
-                {" "}2025 is the recommended default for absolute-share
-                claims and external cross-checks; 2011 remains
-                available for verification.
+                {" "}
+                2025 is the recommended default for absolute-share claims and
+                external cross-checks; 2011 remains available for verification.
               </strong>
             </p>
             <p>
@@ -354,14 +353,13 @@ export function ReligionMapPage() {
                 Hindu sub-communities (Nair, Ezhava).
               </span>{" "}
               Source: Zachariah, Mathew &amp; Rajan (2003),{" "}
-              <em>Dynamics of Migration in Kerala</em> (Orient Longman),
-              based on Kerala Statistical Institute household survey
-              (last conducted 2000). Provenance verified via the
-              Wikipedia &quot;Demographics of Nair community&quot;
-              article&apos;s cross-citation. ~25 years old, sample-
-              based, district-level only. Within a district, every AC
-              shares the same caste shade — same ecological-fallacy
-              caveat as the district-level religion view. See{" "}
+              <em>Dynamics of Migration in Kerala</em> (Orient Longman), based
+              on Kerala Statistical Institute household survey (last conducted
+              2000). Provenance verified via the Wikipedia &quot;Demographics of
+              Nair community&quot; article&apos;s cross-citation. ~25 years old,
+              sample- based, district-level only. Within a district, every AC
+              shares the same caste shade — same ecological-fallacy caveat as
+              the district-level religion view. See{" "}
               <a
                 href="https://github.com/nvlsr/kerala-2026/blob/main/docs/caste-data.md"
                 target="_blank"
@@ -385,27 +383,22 @@ export function ReligionMapPage() {
               <span className="font-medium text-foreground">
                 Religion ≠ vote choice.
               </span>{" "}
-              This is structural geography. Religion correlates with
-              voting in Kerala in known ways (Muslim → IUML/UDF;
-              Catholic → historically UDF; Hindu sub-communities vary
-              widely) but the correlation is partial. People in
-              Malappuram still vote — IUML&apos;s dominance is one of
-              several explanations, not the explanation.
+              This is structural geography. Religion correlates with voting in
+              Kerala in known ways (Muslim → IUML/UDF; Catholic → historically
+              UDF; Hindu sub-communities vary widely) but the correlation is
+              partial. People in Malappuram still vote — IUML&apos;s dominance
+              is one of several explanations, not the explanation.
             </p>
             <p>
               <span className="font-medium text-foreground">
                 What we can&apos;t see.
               </span>{" "}
-              Christian denomination geography (Syro-Malabar / Latin /
-              Marthoma / Pentecostal) and Muslim sub-community geography
-              (Sunni / Mujahid / Salafi) are politically distinct in
-              Kerala but Census doesn&apos;t disaggregate. For
-              qualitative sub-community boundaries derived from academic
-              literature, see{" "}
-              <Link
-                to="/belts"
-                className="underline-offset-2 hover:underline"
-              >
+              Christian denomination geography (Syro-Malabar / Latin / Marthoma
+              / Pentecostal) and Muslim sub-community geography (Sunni / Mujahid
+              / Salafi) are politically distinct in Kerala but Census
+              doesn&apos;t disaggregate. For qualitative sub-community
+              boundaries derived from academic literature, see{" "}
+              <Link to="/belts" className="underline-offset-2 hover:underline">
                 /belts
               </Link>
               .
@@ -414,13 +407,12 @@ export function ReligionMapPage() {
               <span className="font-medium text-foreground">
                 Mechanism is ambiguous.
               </span>{" "}
-              An AC&apos;s alliance Δ vs its religion mix correlates
-              with vote outcome but doesn&apos;t prove the mechanism.
-              A +X pp UDF gain in a Christian-heavy AC could be (a)
-              Christians switching LDF→UDF, (b) Christian LDF voters
-              staying home while UDF held, or (c) Christian non-voters
-              mobilising for UDF. Distinguishing these requires survey
-              microdata we don&apos;t have.
+              An AC&apos;s alliance Δ vs its religion mix correlates with vote
+              outcome but doesn&apos;t prove the mechanism. A +X pp UDF gain in
+              a Christian-heavy AC could be (a) Christians switching LDF→UDF,
+              (b) Christian LDF voters staying home while UDF held, or (c)
+              Christian non-voters mobilising for UDF. Distinguishing these
+              requires survey microdata we don&apos;t have.
             </p>
           </MethodologyDisclosure>
         </section>
@@ -445,7 +437,9 @@ function ReligionMapCaption({
   // AC mode + hovered seat: show that AC's specific religion share
   if (level === "ac" && hoveredSeat != null) {
     const ac = getReligionForAC(hoveredSeat, year)
-    const seatMeta = constituencies.find((c) => c.constituencyNumber === hoveredSeat)
+    const seatMeta = constituencies.find(
+      (c) => c.constituencyNumber === hoveredSeat
+    )
     const acDemo =
       year === 2025
         ? acDemo2025Meta.constituencies[String(hoveredSeat)]
@@ -484,8 +478,12 @@ function ReligionMapCaption({
     return (
       <p className="mt-2 text-xs">
         <span className="font-medium text-foreground">{name}</span>:{" "}
-        <span className="tabular-nums">{d.religions[religion].toFixed(1)}%</span>{" "}
-        <span className="text-muted-foreground">{getReligion(religion).label}</span>
+        <span className="tabular-nums">
+          {d.religions[religion].toFixed(1)}%
+        </span>{" "}
+        <span className="text-muted-foreground">
+          {getReligion(religion).label}
+        </span>
       </p>
     )
   }
@@ -493,9 +491,7 @@ function ReligionMapCaption({
   // Default: show the highest-share district/AC as the orientation anchor
   if (level === "ac") {
     const data =
-      year === 2025
-        ? acDemo2025Meta.constituencies
-        : acDemoMeta.constituencies
+      year === 2025 ? acDemo2025Meta.constituencies : acDemoMeta.constituencies
     const entries = Object.entries(data).map(([num, c]) => ({
       seat: Number(num),
       name:
@@ -509,9 +505,8 @@ function ReligionMapCaption({
     return (
       <p className="mt-2 text-xs text-muted-foreground">
         Highest share:{" "}
-        <span className="font-medium text-foreground">{top.name}</span>{" "}
-        at {top.pct.toFixed(1)}%
-        {year === 2025 && " (est.)"}
+        <span className="font-medium text-foreground">{top.name}</span> at{" "}
+        {top.pct.toFixed(1)}%{year === 2025 && " (est.)"}
       </p>
     )
   }
@@ -525,12 +520,12 @@ function ReligionMapCaption({
   if (!top) return null
   return (
     <p className="mt-2 text-xs text-muted-foreground">
-      Highest share: <span className="font-medium text-foreground">{top.name}</span>{" "}
-      at {top.pct.toFixed(1)}%
+      Highest share:{" "}
+      <span className="font-medium text-foreground">{top.name}</span> at{" "}
+      {top.pct.toFixed(1)}%
     </p>
   )
 }
-
 
 function CasteMapCaption({
   caste,
@@ -539,8 +534,7 @@ function CasteMapCaption({
   caste: CasteCode
   hoveredDistrictId: string | null
 }) {
-  const label =
-    CASTES_TO_SHOW.find((c) => c.code === caste)?.label ?? caste
+  const label = CASTES_TO_SHOW.find((c) => c.code === caste)?.label ?? caste
 
   if (hoveredDistrictId) {
     const pct = CASTE_DISTRICT_VALUES[caste][hoveredDistrictId]
@@ -571,8 +565,8 @@ function CasteMapCaption({
   return (
     <p className="mt-2 text-xs text-muted-foreground">
       Highest share:{" "}
-      <span className="font-medium text-foreground">{top.name}</span>{" "}
-      at {top.pct.toFixed(1)}%
+      <span className="font-medium text-foreground">{top.name}</span> at{" "}
+      {top.pct.toFixed(1)}%
     </p>
   )
 }

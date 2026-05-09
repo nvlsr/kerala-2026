@@ -17,7 +17,10 @@ const dir = "data/scraped-2021"
 const files = fs
   .readdirSync(dir)
   .filter((f) => f.endsWith(".json"))
-  .sort((a, b) => parseInt(a.match(/seat-(\d+)/)![1]) - parseInt(b.match(/seat-(\d+)/)![1]))
+  .sort(
+    (a, b) =>
+      parseInt(a.match(/seat-(\d+)/)![1]) - parseInt(b.match(/seat-(\d+)/)![1])
+  )
 
 const found: Array<{
   seat: number
@@ -55,9 +58,13 @@ for (const f of found) {
   byParen[f.paren].push(f)
 }
 
-console.log(`=== ${found.length} candidate names with parenthetical annotations ===\n`)
+console.log(
+  `=== ${found.length} candidate names with parenthetical annotations ===\n`
+)
 
-const sortedParens = Object.entries(byParen).sort((a, b) => b[1].length - a[1].length)
+const sortedParens = Object.entries(byParen).sort(
+  (a, b) => b[1].length - a[1].length
+)
 for (const [paren, list] of sortedParens) {
   console.log(`(${paren})  ×${list.length}`)
   for (const c of list) {
@@ -69,7 +76,9 @@ for (const [paren, list] of sortedParens) {
 }
 
 // Specifically: which parentheticals are followed by party=LDF/UDF/NDA?
-console.log(`=== Parentheticals where party field is alliance code (LDF/UDF/NDA) ===\n`)
+console.log(
+  `=== Parentheticals where party field is alliance code (LDF/UDF/NDA) ===\n`
+)
 const allianceFields = new Set(["LDF", "UDF", "NDA"])
 const allianceMisclassed = found.filter((c) => allianceFields.has(c.partyField))
 console.log(`Total: ${allianceMisclassed.length}\n`)

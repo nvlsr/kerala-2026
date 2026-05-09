@@ -383,9 +383,8 @@ describe("getPastCandidates / getPastWinners edge cases", () => {
 describe("alliance Δ '21 reconciles with party-level breakdowns", () => {
   for (const code of MAIN_FRONT_CODES) {
     test(`${code}: continuing + departed + new sums to alliance Δ`, async () => {
-      const { getDepartedAllianceParties } = await import(
-        "./aggregates/departed-parties"
-      )
+      const { getDepartedAllianceParties } =
+        await import("./aggregates/departed-parties")
       const trend = getAllianceTrendData(null)
       const yearIdx = trend.years.indexOf(2026)
       const prevIdx = trend.years.indexOf(2021)
@@ -477,9 +476,9 @@ describe("sortCandidateRows", () => {
   test("asc by constituency uses numeric AC number, not string", () => {
     const sorted = sortCandidateRows(rows, "constituency", "asc")
     for (let i = 1; i < sorted.length; i++) {
-      expect(
-        sorted[i]!.constituency.constituencyNumber
-      ).toBeGreaterThanOrEqual(sorted[i - 1]!.constituency.constituencyNumber)
+      expect(sorted[i]!.constituency.constituencyNumber).toBeGreaterThanOrEqual(
+        sorted[i - 1]!.constituency.constituencyNumber
+      )
     }
   })
 
@@ -518,7 +517,8 @@ describe("sortCandidateRows", () => {
     for (const dir of ["asc", "desc"] as const) {
       const sorted = sortCandidateRows(rows, "marginDelta", dir)
       const lastNonNullIdx = sorted.findIndex(
-        (r, i, arr) => r.marginDelta2021 != null && arr[i + 1]?.marginDelta2021 == null
+        (r, i, arr) =>
+          r.marginDelta2021 != null && arr[i + 1]?.marginDelta2021 == null
       )
       if (lastNonNullIdx !== -1) {
         for (let i = lastNonNullIdx + 1; i < sorted.length; i++) {

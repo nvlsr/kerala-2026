@@ -73,9 +73,7 @@ export function ConstituencyMap({
                     ? Math.min(1, baseOpacity + 0.2)
                     : baseOpacity
               }
-              stroke={
-                isSelected ? "var(--foreground)" : "var(--border)"
-              }
+              stroke={isSelected ? "var(--foreground)" : "var(--border)"}
               strokeWidth={isSelected ? 1.5 : 0.5}
               className="cursor-pointer transition-opacity outline-none focus-visible:stroke-foreground focus-visible:[stroke-width:1.5]"
               onClick={() => onSelect(isSelected ? null : num)}
@@ -95,7 +93,6 @@ export function ConstituencyMap({
     </div>
   )
 }
-
 
 /**
  * Empty-state hint shown in the detail column when no seat is
@@ -138,9 +135,7 @@ export function Hint({ mode }: { mode: EncodingMode }) {
                   <span className="font-medium" style={{ color: a.color }}>
                     {a.code}
                   </span>
-                  <span className="text-muted-foreground/80">
-                    — {a.name}
-                  </span>
+                  <span className="text-muted-foreground/80">— {a.name}</span>
                 </li>
               )
             })}
@@ -154,9 +149,7 @@ export function Hint({ mode }: { mode: EncodingMode }) {
             Darker shades = higher values on the active sort
           </li>
         )}
-        <li className="text-muted-foreground/80">
-          Out-of-filter seats fade
-        </li>
+        <li className="text-muted-foreground/80">Out-of-filter seats fade</li>
       </ul>
     </div>
   )

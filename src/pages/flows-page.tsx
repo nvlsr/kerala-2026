@@ -36,10 +36,7 @@ const SINGLE_CYCLE_RELIGION_SECTION_INTRO =
 // Patterns whose geography earns a per-pattern religion-overlay block.
 // Other classified patterns (NDA→UDF, LDF+UDF→NDA, LDF→NDA) are
 // deliberately excluded — see SECTION_INTRO above.
-const RELIGION_SECTION_PATTERN_KEYS = new Set([
-  "LDF_to_UDF",
-  "LDF+NDA_to_UDF",
-])
+const RELIGION_SECTION_PATTERN_KEYS = new Set(["LDF_to_UDF", "LDF+NDA_to_UDF"])
 
 // Map of which religion's gradient explains each pattern.
 const PATTERN_RELIGION: Record<string, "hindu" | "muslim" | "christian"> = {
@@ -95,21 +92,20 @@ export function FlowsPage() {
       aboutContent={
         <div className="space-y-3 text-sm leading-relaxed">
           <p>
-            Seats grouped by alliance-level vote share movement. The
-            dashboard's tables show how a single party did; this page
-            shows how the three fronts moved against each other — the
-            cross-current the cards format can't capture.
+            Seats grouped by alliance-level vote share movement. The dashboard's
+            tables show how a single party did; this page shows how the three
+            fronts moved against each other — the cross-current the cards format
+            can't capture.
           </p>
           <p className="border-t pt-3 text-muted-foreground">
             <span className="font-medium text-foreground">
               Inferred, not observed.
             </span>{" "}
-            We classify a seat by the net change in alliance vote share
-            between elections. A flow labelled "LDF → NDA" could mean
-            LDF voters chose NDA, <em>or</em> old LDF voters stayed home
-            while new NDA voters showed up — both produce the same
-            deltas. Read it as "alliance X gained at alliance Y's
-            expense", not "voters moved from Y to X".
+            We classify a seat by the net change in alliance vote share between
+            elections. A flow labelled "LDF → NDA" could mean LDF voters chose
+            NDA, <em>or</em> old LDF voters stayed home while new NDA voters
+            showed up — both produce the same deltas. Read it as "alliance X
+            gained at alliance Y's expense", not "voters moved from Y to X".
           </p>
         </div>
       }
@@ -129,9 +125,9 @@ export function FlowsPage() {
             </span>
           </div>
           <p className="mb-5 max-w-2xl text-sm text-muted-foreground">
-            Seats where one alliance gained at least 5pp at another's expense
-            in this election alone. The third alliance is roughly stable, or
-            (for the "both → one" patterns) lost alongside the first.
+            Seats where one alliance gained at least 5pp at another's expense in
+            this election alone. The third alliance is roughly stable, or (for
+            the "both → one" patterns) lost alongside the first.
           </p>
           <ul className="flex flex-col gap-6">
             {singleGroups.map((g) => (
@@ -168,75 +164,68 @@ export function FlowsPage() {
 
         <section className="mt-12">
           <MethodologyDisclosure title="Methodology & thresholds">
-              <p>
-                <span className="font-medium text-foreground">
-                  Single-cycle thresholds.
-                </span>{" "}
-                Two-way: biggest gainer ≥ +5pp, biggest loser ≤ −5pp, third
-                alliance moved less than ±2pp. Both-to-one: gainer ≥ +5pp, both
-                others lost ≥ 2pp each, combined drop within 3pp of the gain.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">
-                  Per-cycle alliance attribution.
-                </span>{" "}
-                Each candidate carries their own per-cycle alliance — KC(M)
-                is UDF in 2011/2016 and LDF from 2020 onwards, RSP is LDF in
-                2011 and UDF from 2014, etc. Parties that switched fronts
-                are correctly placed in each cycle's alliance, not anchored
-                to today's.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">OTHER</span> can
-                spike when an Independent or non-front candidate does well in
-                a seat (e.g. Ottappalam). Treat seats with large OTHER swings
-                cautiously — the alliance-flow story may not be the main
-                event.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">
-                  Religion-gradient overlay.
-                </span>{" "}
-                The "By religion" section above applies district-level
-                religion shares (2011 census) as a colour gradient
-                under each flow pattern's outlined seats. Religion is
-                the right lens for single-cycle flows because the
-                conclusions (Muslim consolidation, Christian
-                consolidation) operate at religion-level, not at
-                sub-community level — Kerala's tactical anti-incumbency
-                consolidations move whole religious blocs, not specific
-                Hindu sub-communities. For the multi-cycle structural
-                drifts where sub-community matters (Ezhava vs Nair,
-                Syro-Malabar vs Marthoma), see the community-belt
-                analysis on{" "}
-                <Link
-                  to="/drifts"
-                  className="underline-offset-2 hover:underline"
-                >
-                  /drifts
-                </Link>
-                . The bare religion-map reference is at{" "}
-                <Link
-                  to="/religion-map"
-                  className="underline-offset-2 hover:underline"
-                >
-                  /religion-map
-                </Link>
-                .
-              </p>
-              <p>
-                The full methodology document (with caveats and validation
-                cases) lives at{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/vote-flows.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline-offset-2 hover:underline"
-                >
-                  docs/vote-flows.md
-                </a>
-                .
-              </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Single-cycle thresholds.
+              </span>{" "}
+              Two-way: biggest gainer ≥ +5pp, biggest loser ≤ −5pp, third
+              alliance moved less than ±2pp. Both-to-one: gainer ≥ +5pp, both
+              others lost ≥ 2pp each, combined drop within 3pp of the gain.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Per-cycle alliance attribution.
+              </span>{" "}
+              Each candidate carries their own per-cycle alliance — KC(M) is UDF
+              in 2011/2016 and LDF from 2020 onwards, RSP is LDF in 2011 and UDF
+              from 2014, etc. Parties that switched fronts are correctly placed
+              in each cycle's alliance, not anchored to today's.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">OTHER</span> can
+              spike when an Independent or non-front candidate does well in a
+              seat (e.g. Ottappalam). Treat seats with large OTHER swings
+              cautiously — the alliance-flow story may not be the main event.
+            </p>
+            <p>
+              <span className="font-medium text-foreground">
+                Religion-gradient overlay.
+              </span>{" "}
+              The "By religion" section above applies district-level religion
+              shares (2011 census) as a colour gradient under each flow
+              pattern's outlined seats. Religion is the right lens for
+              single-cycle flows because the conclusions (Muslim consolidation,
+              Christian consolidation) operate at religion-level, not at
+              sub-community level — Kerala's tactical anti-incumbency
+              consolidations move whole religious blocs, not specific Hindu
+              sub-communities. For the multi-cycle structural drifts where
+              sub-community matters (Ezhava vs Nair, Syro-Malabar vs Marthoma),
+              see the community-belt analysis on{" "}
+              <Link to="/drifts" className="underline-offset-2 hover:underline">
+                /drifts
+              </Link>
+              . The bare religion-map reference is at{" "}
+              <Link
+                to="/religion-map"
+                className="underline-offset-2 hover:underline"
+              >
+                /religion-map
+              </Link>
+              .
+            </p>
+            <p>
+              The full methodology document (with caveats and validation cases)
+              lives at{" "}
+              <a
+                href="https://github.com/nvlsr/kerala-2026/blob/main/docs/vote-flows.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                docs/vote-flows.md
+              </a>
+              .
+            </p>
           </MethodologyDisclosure>
         </section>
       </PageMain>

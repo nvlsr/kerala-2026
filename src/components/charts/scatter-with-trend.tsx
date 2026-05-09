@@ -110,9 +110,7 @@ export function ScatterWithTrend({
       className={className ?? "h-72 w-full"}
       aria-label={ariaLabel}
     >
-      <ComposedChart
-        margin={{ top: 8, right: 16, bottom: 28, left: 0 }}
-      >
+      <ComposedChart margin={{ top: 8, right: 16, bottom: 28, left: 0 }}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis
           type="number"
@@ -145,7 +143,11 @@ export function ScatterWithTrend({
             fill: "var(--muted-foreground)",
           }}
         />
-        <ReferenceLine y={0} stroke="var(--muted-foreground)" strokeOpacity={0.3} />
+        <ReferenceLine
+          y={0}
+          stroke="var(--muted-foreground)"
+          strokeOpacity={0.3}
+        />
         <ChartTooltip
           cursor={{ stroke: "var(--muted-foreground)", strokeDasharray: "3 3" }}
           content={

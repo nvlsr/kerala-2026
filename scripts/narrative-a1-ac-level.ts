@@ -18,8 +18,18 @@
 import * as fs from "fs"
 import * as path from "path"
 
-type Cand = { name: string; party: string; alliance: string; votes: number; isNota?: boolean }
-type C2026 = { constituencyNumber: number; constituencyName: string; candidates: Cand[] }
+type Cand = {
+  name: string
+  party: string
+  alliance: string
+  votes: number
+  isNota?: boolean
+}
+type C2026 = {
+  constituencyNumber: number
+  constituencyName: string
+  candidates: Cand[]
+}
 type Hist = {
   constituencyNumber: number
   constituencyName: string
@@ -146,13 +156,23 @@ const mc = rows.map((r) => r.minorityPct)
 const yU = rows.map((r) => r.udfDelta)
 const yL = rows.map((r) => r.ldfDelta)
 const yN = rows.map((r) => r.ndaDelta)
-console.log(`Muslim share        ${corr(m, yU).toFixed(3).padStart(7)}    ${corr(m, yL).toFixed(3).padStart(7)}    ${corr(m, yN).toFixed(3).padStart(7)}`)
-console.log(`Christian share     ${corr(c, yU).toFixed(3).padStart(7)}    ${corr(c, yL).toFixed(3).padStart(7)}    ${corr(c, yN).toFixed(3).padStart(7)}`)
-console.log(`Hindu share         ${corr(h, yU).toFixed(3).padStart(7)}    ${corr(h, yL).toFixed(3).padStart(7)}    ${corr(h, yN).toFixed(3).padStart(7)}`)
-console.log(`Muslim + Christian  ${corr(mc, yU).toFixed(3).padStart(7)}    ${corr(mc, yL).toFixed(3).padStart(7)}    ${corr(mc, yN).toFixed(3).padStart(7)}`)
+console.log(
+  `Muslim share        ${corr(m, yU).toFixed(3).padStart(7)}    ${corr(m, yL).toFixed(3).padStart(7)}    ${corr(m, yN).toFixed(3).padStart(7)}`
+)
+console.log(
+  `Christian share     ${corr(c, yU).toFixed(3).padStart(7)}    ${corr(c, yL).toFixed(3).padStart(7)}    ${corr(c, yN).toFixed(3).padStart(7)}`
+)
+console.log(
+  `Hindu share         ${corr(h, yU).toFixed(3).padStart(7)}    ${corr(h, yL).toFixed(3).padStart(7)}    ${corr(h, yN).toFixed(3).padStart(7)}`
+)
+console.log(
+  `Muslim + Christian  ${corr(mc, yU).toFixed(3).padStart(7)}    ${corr(mc, yL).toFixed(3).padStart(7)}    ${corr(mc, yN).toFixed(3).padStart(7)}`
+)
 console.log()
 
-console.log("=== Same correlation, restricted to AC-level (excludes 26 fallbacks) ===")
+console.log(
+  "=== Same correlation, restricted to AC-level (excludes 26 fallbacks) ==="
+)
 const acOnly = rows.filter((r) => r.source === "shrug-c01-aggregated")
 console.log(`n = ${acOnly.length}\n`)
 const m2 = acOnly.map((r) => r.muslimPct)
@@ -162,10 +182,18 @@ const mc2 = acOnly.map((r) => r.minorityPct)
 const yU2 = acOnly.map((r) => r.udfDelta)
 const yL2 = acOnly.map((r) => r.ldfDelta)
 const yN2 = acOnly.map((r) => r.ndaDelta)
-console.log(`Muslim share        ${corr(m2, yU2).toFixed(3).padStart(7)}    ${corr(m2, yL2).toFixed(3).padStart(7)}    ${corr(m2, yN2).toFixed(3).padStart(7)}`)
-console.log(`Christian share     ${corr(c2, yU2).toFixed(3).padStart(7)}    ${corr(c2, yL2).toFixed(3).padStart(7)}    ${corr(c2, yN2).toFixed(3).padStart(7)}`)
-console.log(`Hindu share         ${corr(h2, yU2).toFixed(3).padStart(7)}    ${corr(h2, yL2).toFixed(3).padStart(7)}    ${corr(h2, yN2).toFixed(3).padStart(7)}`)
-console.log(`Muslim + Christian  ${corr(mc2, yU2).toFixed(3).padStart(7)}    ${corr(mc2, yL2).toFixed(3).padStart(7)}    ${corr(mc2, yN2).toFixed(3).padStart(7)}`)
+console.log(
+  `Muslim share        ${corr(m2, yU2).toFixed(3).padStart(7)}    ${corr(m2, yL2).toFixed(3).padStart(7)}    ${corr(m2, yN2).toFixed(3).padStart(7)}`
+)
+console.log(
+  `Christian share     ${corr(c2, yU2).toFixed(3).padStart(7)}    ${corr(c2, yL2).toFixed(3).padStart(7)}    ${corr(c2, yN2).toFixed(3).padStart(7)}`
+)
+console.log(
+  `Hindu share         ${corr(h2, yU2).toFixed(3).padStart(7)}    ${corr(h2, yL2).toFixed(3).padStart(7)}    ${corr(h2, yN2).toFixed(3).padStart(7)}`
+)
+console.log(
+  `Muslim + Christian  ${corr(mc2, yU2).toFixed(3).padStart(7)}    ${corr(mc2, yL2).toFixed(3).padStart(7)}    ${corr(mc2, yN2).toFixed(3).padStart(7)}`
+)
 console.log()
 
 function binMean(filter: (r: Row) => boolean, label: string) {
@@ -189,8 +217,14 @@ console.log()
 
 console.log("=== Bins by CHRISTIAN share (AC-level) ===")
 binMean((r) => r.christianPct >= 50, "Christian-majority (≥50%)")
-binMean((r) => r.christianPct >= 30 && r.christianPct < 50, "Christian-heavy (30–50%)")
-binMean((r) => r.christianPct >= 15 && r.christianPct < 30, "Christian-mid (15–30%)")
+binMean(
+  (r) => r.christianPct >= 30 && r.christianPct < 50,
+  "Christian-heavy (30–50%)"
+)
+binMean(
+  (r) => r.christianPct >= 15 && r.christianPct < 30,
+  "Christian-mid (15–30%)"
+)
 binMean((r) => r.christianPct < 15, "Low Christian (<15%)")
 console.log()
 
@@ -202,8 +236,12 @@ binMean((r) => r.muslimPct < 20, "Low Muslim (<20%)")
 console.log()
 
 console.log("=== Top 10 most-Christian ACs and their swings ===")
-const topC = [...rows].sort((a, b) => b.christianPct - a.christianPct).slice(0, 10)
-console.log("seat name                     C%      H%      M%   UDF Δ    LDF Δ    NDA Δ")
+const topC = [...rows]
+  .sort((a, b) => b.christianPct - a.christianPct)
+  .slice(0, 10)
+console.log(
+  "seat name                     C%      H%      M%   UDF Δ    LDF Δ    NDA Δ"
+)
 for (const r of topC) {
   console.log(
     `${r.seat.toString().padStart(3)}  ${r.name.padEnd(22)} ${r.christianPct.toFixed(1).padStart(5)}%  ${r.hinduPct.toFixed(1).padStart(5)}%  ${r.muslimPct.toFixed(1).padStart(5)}%  ${(r.udfDelta >= 0 ? "+" : "") + r.udfDelta.toFixed(1).padStart(5)}pp  ${(r.ldfDelta >= 0 ? "+" : "") + r.ldfDelta.toFixed(1).padStart(5)}pp  ${(r.ndaDelta >= 0 ? "+" : "") + r.ndaDelta.toFixed(1).padStart(5)}pp`
@@ -213,7 +251,9 @@ console.log()
 
 console.log("=== Top 10 most-Muslim ACs and their swings ===")
 const topM = [...rows].sort((a, b) => b.muslimPct - a.muslimPct).slice(0, 10)
-console.log("seat name                     M%      H%      C%   UDF Δ    LDF Δ    NDA Δ")
+console.log(
+  "seat name                     M%      H%      C%   UDF Δ    LDF Δ    NDA Δ"
+)
 for (const r of topM) {
   console.log(
     `${r.seat.toString().padStart(3)}  ${r.name.padEnd(22)} ${r.muslimPct.toFixed(1).padStart(5)}%  ${r.hinduPct.toFixed(1).padStart(5)}%  ${r.christianPct.toFixed(1).padStart(5)}%  ${(r.udfDelta >= 0 ? "+" : "") + r.udfDelta.toFixed(1).padStart(5)}pp  ${(r.ldfDelta >= 0 ? "+" : "") + r.ldfDelta.toFixed(1).padStart(5)}pp  ${(r.ndaDelta >= 0 ? "+" : "") + r.ndaDelta.toFixed(1).padStart(5)}pp`

@@ -9,10 +9,7 @@
  * 2011 and UDF from 2014, etc. — those switches are honoured here.
  */
 
-import {
-  allianceForCandidate,
-  type AllianceCode,
-} from "@/lib/data/alliances"
+import { allianceForCandidate, type AllianceCode } from "@/lib/data/alliances"
 import { constituenciesIn } from "@/lib/data/constituencies"
 import { getHistoricalFor } from "@/lib/data/historical"
 
