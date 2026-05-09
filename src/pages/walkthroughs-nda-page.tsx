@@ -2,7 +2,6 @@ import { Fragment, useEffect, useState, type ReactNode } from "react"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import {
-  PROSE_LINK_CLASS,
   ProseLink,
   SeatLink,
 } from "@/components/walkthroughs/prose-link"
@@ -1808,57 +1807,6 @@ export function WalkthroughsNDAPage() {
                 <code className="font-mono text-[11px]">
                   data/candidate-aliases.json
                 </code>
-                .
-              </p>
-              <p className="mt-3">
-                <strong className="font-medium text-foreground/80">
-                  2021 alliance attribution.
-                </strong>{" "}
-                JD(S), LJD, NCP small-ally allocations to LDF in 2021 are
-                credited to LDF (not OTHER) via per-candidate{" "}
-                <code className="font-mono text-[11px]">alliance</code>{" "}
-                attribution in{" "}
-                <code className="font-mono text-[11px]">data/historical/</code>.
-              </p>
-              <p className="mt-4">
-                <strong className="font-medium text-foreground/80">
-                  Source markdown:
-                </strong>{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/bjp-performance-walkthrough.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={PROSE_LINK_CLASS}
-                >
-                  bjp-performance-walkthrough.md
-                </a>
-                . Companion cards on GitHub:{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/bjp-strongest-seats.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={PROSE_LINK_CLASS}
-                >
-                  bjp-strongest-seats
-                </a>
-                ,{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/bjp-hindu-vote-decomposition.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={PROSE_LINK_CLASS}
-                >
-                  bjp-hindu-vote-decomposition
-                </a>
-                ,{" "}
-                <a
-                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/bjp-priority-seats.md"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={PROSE_LINK_CLASS}
-                >
-                  bjp-priority-seats
-                </a>
                 .
               </p>
               <p className="mt-3">
