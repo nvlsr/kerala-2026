@@ -6,10 +6,12 @@ import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { ScatterWithTrend } from "@/components/charts/scatter-with-trend"
 import { ConfidenceBadge } from "@/components/walkthroughs/confidence-badge"
 import { MethodologyPopover } from "@/components/walkthroughs/methodology-popover"
-import { WalkthroughSection } from "@/components/walkthroughs/walkthrough-section"
+import { SeatLink } from "@/components/walkthroughs/prose-link"
 import { PullQuote } from "@/components/walkthroughs/pull-quote"
 import { SeeAlsoQuestions } from "@/components/walkthroughs/see-also-questions"
-import { TakeawayBox } from "@/components/walkthroughs/takeaway-box"
+import { ASIDE, SECTION_LEAD } from "@/components/walkthroughs/typography"
+import { WalkthroughSection } from "@/components/walkthroughs/walkthrough-section"
+import { PageRail } from "@/components/walkthroughs/walkthrough-rail"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { acDemo2025Meta } from "@/lib/data/loaders"
@@ -28,14 +30,33 @@ const OUTLIER_AC_NUMBERS = new Set([
   98, // Puthuppally
 ])
 
+/** Right-rail nav anchors for this page. Each id matches a `<section id="...">` below. */
+const RAIL_GROUPS = [
+  {
+    label: "The geography",
+    items: [
+      { id: "central-5-sweep", label: "Central-5 sweep" },
+      { id: "christian-belt", label: "Christian-belt premium" },
+    ],
+  },
+  {
+    label: "The mechanism",
+    items: [
+      { id: "fptp-amplification", label: "FPTP amplification" },
+      { id: "muslim-null", label: "Muslim-share null" },
+    ],
+  },
+  {
+    label: "Caveats",
+    items: [{ id: "what-would-weaken", label: "What would weaken this" }],
+  },
+] as const
+
 /**
- * Arc 2 — Central Kerala UDF amplification. The 47-of-47 sweep
- * across 5 districts + the Christian-belt premium (β=+0.19,
- * p=0.008 with district FE) + the FPTP mechanism (UDF
- * seat:vote-share ratio 1.04 → 2.18) that turned a 7pp swing
- * into a 102-seat majority.
- *
- * Built per docs/walkthroughs-publish-plan.md Phase 7.
+ * Arc 2 — Central Kerala UDF amplification. The 47-of-47 sweep across
+ * 5 districts + the Christian-belt premium (β=+0.19, p=0.008 with
+ * district FE) + the FPTP mechanism (UDF seat:vote-share ratio
+ * 1.04 → 2.18) that turned a 7pp swing into a 102-seat majority.
  */
 export function WalkthroughsUDFPage() {
   const all = getAllACMetrics()
@@ -105,339 +126,445 @@ export function WalkthroughsUDFPage() {
         { label: "UDF" },
       ]}
       title="Central Kerala provided nearly half of UDF's majority margin"
-      subtitle={
-        <>
-          <ConfidenceBadge level="strong" />
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-            UDF won 47 of 47 seats across Idukki, Ernakulam, Wayanad,
-            Malappuram, and Kottayam. Christian-heavy constituencies (ACs) added
-            a robust ~3-4pp UDF premium on top of the statewide ~7pp wave. FPTP
-            amplification turned that combined swing into a 102-seat majority.
-          </p>
-          <p className="mt-2 max-w-3xl text-xs leading-relaxed text-muted-foreground/80">
-            <strong className="font-medium text-foreground/80">
-              What's surprising here:
-            </strong>{" "}
-            UDF didn't win mostly on tight margins. Median UDF winning margin
-            was 12.19pp; LDF's was 6.99pp. The efficiency story is the
-            seat:vote-share ratio flip (UDF 1.04 → 2.18), not "tight wins."
-          </p>
-        </>
-      }
     >
-      <PageMain className="space-y-10 py-6 pb-12">
-        <WalkthroughSection
-          heading="UDF won every seat in 5 central-Kerala districts"
-          sectionType="foundational"
-          layout="visual-right"
-          visual={
-            <div className="mx-auto max-w-sm space-y-2">
-              <ChoroplethMap
-                valueByAC={udfDeltaMap}
-                colorScale="diverging"
-                domain={[-25, 25]}
-                ariaLabel="Kerala constituencies shaded by UDF Δshare 2021 → 2026"
-                unit="pp"
-                decimals={1}
-                highlightSeats={udfWins}
-              />
-              <ChoroplethLegend
-                colorScale="diverging"
-                domain={[-25, 25]}
-                unit="pp"
-                decimals={0}
-              />
-            </div>
-          }
-          caption="UDF Δshare 2021 → 2026; UDF-won ACs outlined. Central-5 (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) shows uniformly strong UDF gains."
-        >
-          <p>
-            UDF won every seat in five districts: Idukki, Ernakulam, Wayanad,
-            Malappuram, and Kottayam. 47 of 47. Pre-poll Manorama-C Voter
-            projected "UDF 33 of 53 in Central Kerala" — an underestimate of
-            23-38pp depending on the bundle definition.
-          </p>
-          <p>
-            46% of UDF's 102-seat majority came from these 5 districts, which
-            contain only 34% of Kerala's ACs. Stripping Central-5 from the
-            count: UDF would have 55 seats — enough to remain the largest bloc
-            but below the 71-seat majority threshold. Central Kerala provided
-            the arithmetic difference between a plurality and a majority
-            government.
-          </p>
-        </WalkthroughSection>
+      <PageMain className="py-6 pb-12">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_180px]">
+          <div className="min-w-0 space-y-10">
+            {/* THESIS LEDE */}
+            <section className="rounded-md border bg-card/50 p-5 sm:p-6">
+              <div className="mb-3 flex items-center justify-between gap-3">
+                <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
+                  Thesis
+                </p>
+                <ConfidenceBadge level="strong" />
+              </div>
+              <p className="text-base leading-relaxed font-medium text-foreground sm:text-[16.5px]">
+                <strong>
+                  UDF's 102-seat majority was concentrated, not statewide.
+                </strong>{" "}
+                Central Kerala provided 46% of UDF's majority margin via a
+                47-of-47 sweep across five districts. Christian-heavy ACs added
+                a robust ~3-4pp premium on top of the statewide ~7pp{" "}
+                <Link
+                  to="/walkthroughs/ldf-walkthrough"
+                  className="font-medium underline-offset-2 hover:underline"
+                >
+                  anti-LDF wave
+                </Link>
+                .{" "}
+                <strong>
+                  FPTP amplified the combined swing into a 2× seat-conversion
+                  ratio
+                </strong>{" "}
+                — doubling UDF's seats-per-vote-share from 1.04 (in 2021) to
+                2.18 (in 2026).
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[14.5px]">
+                Behind the landslide is a less-romantic finding: UDF didn't win
+                mostly on tight margins (median UDF margin was 12.19pp). The
+                mechanism is the <strong>seat:vote-share ratio flip</strong> —
+                UDF and LDF effectively traded efficiency between cycles. The
+                same vote distribution that wasted UDF's votes in 2021 converted
+                them in 2026.
+              </p>
+            </section>
 
-        <WalkthroughSection
-          heading="Christian-heavy ACs gave UDF an extra ~3-4pp on top of the wave"
-          sectionType="foundational"
-          layout="stacked"
-          visual={
-            <ScatterWithTrend
-              points={scatterPoints}
-              xLabel="Christian share (%)"
-              yLabel="UDF Δshare (pp)"
-              xUnit="%"
-              yUnit="pp"
-              showTrend
-              pointColor="rgb(31, 119, 180)"
-              ariaLabel="Christian share vs UDF Δshare, 140 ACs"
+            {/* SECTION 1 — Central-5 sweep */}
+            <WalkthroughSection
+              id="central-5-sweep"
+              heading="Central-5 sweep"
+              sectionType="foundational"
+              layout="visual-right"
+              visual={
+                <div className="mx-auto max-w-sm space-y-2">
+                  <ChoroplethMap
+                    valueByAC={udfDeltaMap}
+                    colorScale="diverging"
+                    domain={[-25, 25]}
+                    ariaLabel="Kerala constituencies shaded by UDF Δshare 2021 → 2026"
+                    unit="pp"
+                    decimals={1}
+                    highlightSeats={udfWins}
+                  />
+                  <ChoroplethLegend
+                    colorScale="diverging"
+                    domain={[-25, 25]}
+                    unit="pp"
+                    decimals={0}
+                  />
+                </div>
+              }
+              caption="UDF Δshare 2021 → 2026; UDF-won ACs outlined. Central-5 (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) shows uniformly strong UDF gains."
+            >
+              <p className={SECTION_LEAD}>
+                <strong>Five districts went UDF in every seat.</strong> 47 of
+                47.
+              </p>
+              <p>
+                UDF won every seat in five districts: Idukki, Ernakulam,
+                Wayanad, Malappuram, and Kottayam. Pre-poll Manorama-C Voter
+                projected "UDF 33 of 53 in Central Kerala" — an underestimate of
+                23-38pp depending on the bundle definition.
+              </p>
+              <p>
+                46% of UDF's 102-seat majority came from these 5 districts,
+                which contain only 34% of Kerala's ACs. Stripping Central-5 from
+                the count: UDF would have 55 seats — enough to remain the
+                largest bloc but below the 71-seat majority threshold.{" "}
+                <strong>
+                  Central Kerala provided the arithmetic difference between a
+                  plurality and a majority government.
+                </strong>
+              </p>
+            </WalkthroughSection>
+
+            {/* SECTION 2 — Christian-belt premium */}
+            <WalkthroughSection
+              id="christian-belt"
+              heading="The Christian-belt premium"
+              sectionType="foundational"
+              layout="stacked"
+              visual={
+                <ScatterWithTrend
+                  points={scatterPoints}
+                  xLabel="Christian share (%)"
+                  yLabel="UDF Δshare (pp)"
+                  xUnit="%"
+                  yUnit="pp"
+                  showTrend
+                  pointColor="rgb(31, 119, 180)"
+                  ariaLabel="Christian share vs UDF Δshare, 140 ACs"
+                />
+              }
+              caption="Each dot is one of 140 ACs. Outlier ACs (Pala, Poonjar, Thiruvalla, Udumbanchola, Puthuppally, Vengara) are highlighted with stronger styling."
+            >
+              <p className={SECTION_LEAD}>
+                <strong>
+                  Christian-heavy ACs added a real, robust premium on top of the
+                  wave.
+                </strong>{" "}
+                The relationship survives the strictest geographic control
+                available at this resolution.
+              </p>
+              <p>
+                Pearson r = +0.20; under district fixed effects, β = +0.194 (p =
+                0.008). Within a Kerala district, ACs with higher Christian
+                share systematically swung more strongly to UDF.
+              </p>
+              <p>
+                About ~12% of the Christian-belt premium is mechanical KC(M)-
+                base movement: Kerala Congress (M) stayed alliance-tagged LDF in
+                both cycles, but its party-share dropped ~7pp on average across
+                the 12 ACs it contested, and that base partially defected to
+                UDF. The remaining ~88% is a non-KC(M) cross-community signal —
+                Christian-heavy ACs gained UDF beyond what KC(M) churn alone
+                explains.
+              </p>
+              <p>
+                Outliers visible on the chart:{" "}
+                <strong>
+                  <SeatLink ac={93}>Pala</SeatLink>
+                </strong>{" "}
+                (52% Christian, UDF −12.9pp) — Mani C. Kappan moved his personal
+                vote from UDF-side (NCK, 2021) to LDF-side (NCP-SP, 2026), and
+                BJP fielded marquee Christian candidate Shone George; see the{" "}
+                <Link
+                  to="/walkthroughs/nda-walkthrough#low-base-breakouts"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  NDA walkthrough's low-base breakouts
+                </Link>{" "}
+                for the BJP angle.{" "}
+                <strong>
+                  <SeatLink ac={111}>Thiruvalla</SeatLink>
+                </strong>{" "}
+                (48% Christian, UDF +1.6pp, NDA +14.5pp; three-way fragmentation
+                — Kerala Congress (UDF) won by ~10k over BJP's Anoop Antony with
+                the LDF-Independent close third). On the gain side,{" "}
+                <strong>
+                  <SeatLink ac={89}>Udumbanchola</SeatLink>
+                </strong>{" "}
+                at 48% Christian had the largest single-AC swing (UDF +22.6pp).
+              </p>
+            </WalkthroughSection>
+
+            <PullQuote>
+              UDF and LDF effectively traded efficiency between cycles. The same
+              geographic vote distribution that wasted UDF's votes in 2021
+              converted them into seats in 2026.
+            </PullQuote>
+
+            {/* SECTION 3 — FPTP amplification */}
+            <WalkthroughSection
+              id="fptp-amplification"
+              heading="FPTP amplification"
+              sectionType="mechanism"
+              layout="visual-left"
+              visual={
+                <ComparisonBar
+                  groups={efficiencyGroups}
+                  yUnit=""
+                  yDecimals={2}
+                  ariaLabel="Seats per percentage point of statewide vote share — UDF and LDF, 2021 vs 2026"
+                  yDomain={[0, 2.5]}
+                />
+              }
+              caption="Seats won per percentage point of statewide vote share. UDF and LDF effectively traded efficiency between cycles. Higher = more seats per vote."
+            >
+              <p className={SECTION_LEAD}>
+                <strong>
+                  FPTP near threshold doubled UDF's seats-per-vote.
+                </strong>{" "}
+                A 7pp swing produced 61 additional UDF seats — six times the
+                proportional rate.
+              </p>
+              <p>
+                The mechanism: Kerala's vote distribution sat close to 50/50 in
+                many ACs in 2021, and a uniform 7pp swing crossed those
+                thresholds simultaneously.
+              </p>
+              <p>
+                UDF's seats-per-vote-share ratio more than doubled (1.04 →
+                2.18). LDF's halved (2.19 → 0.93). The two alliances effectively
+                swapped efficiency. Under a counterfactual where 2021 vote
+                shares had held statewide, UDF would have won 44 seats — not
+                102. About 58 of UDF's 102 seats are amplification beyond what
+                proportional representation would produce.
+              </p>
+              <p>
+                The combination is what produced the landslide. The{" "}
+                <Link
+                  to="/walkthroughs/ldf-walkthrough"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  anti-LDF wave
+                </Link>{" "}
+                supplied the swing; Central-5's geography (sitting near
+                threshold) routed it into seat conversion. Neither alone
+                explains a 102-35-3 split — together they do.
+              </p>
+            </WalkthroughSection>
+
+            {/* SECTION 4 — Muslim-share null (falsification) */}
+            <WalkthroughSection
+              id="muslim-null"
+              heading="Muslim share didn't add a separate premium"
+              sectionType="falsification"
+              layout="visual-right"
+              visual={
+                <ComparisonBar
+                  groups={muslimBinGroups}
+                  yUnit="pp"
+                  yDecimals={1}
+                  baseline={7.29}
+                  baselineLabel="statewide mean +7.29pp"
+                  ariaLabel="UDF Δshare by Muslim-share bin"
+                  yDomain={[0, 12]}
+                />
+              }
+              caption="Mean UDF Δshare by Muslim-share bin. Each bar's height shows mean UDF gain across the bin's ACs. Muslim-majority and low-Muslim bins both track the statewide mean."
+            >
+              <p className={SECTION_LEAD}>
+                <strong>
+                  Muslim share didn't predict differential UDF swing.
+                </strong>{" "}
+                The press's "minority consolidation" framing pools two distinct
+                phenomena; only one carries constituency-level signal.
+              </p>
+              <p>
+                Muslim-majority ACs (≥60%, n=16) gained +8.98pp UDF — slightly
+                above the statewide ~7.3pp baseline but within the noise. The
+                40-60% Muslim bin actually gained <em>less</em> (+5.76pp) than
+                the low-Muslim bin (+7.03pp). No monotonic relationship.
+              </p>
+              <p>
+                Once we account for{" "}
+                <MethodologyPopover term="fixed-effects">
+                  district-level differences
+                </MethodologyPopover>
+                , the Muslim-share coefficient on UDF Δshare collapses to β =
+                +0.016 (p = 0.795). Within a district, Muslim share has no
+                detectable predictive power. The simple-Pearson signal in the
+                raw data was driven entirely by between-district clustering —
+                primarily Malappuram. Muslim-heavy ACs participated in the
+                LDF→UDF wave at the statewide rate; they didn't supercharge it.
+              </p>
+              <p className={ASIDE}>
+                Numbers from the A1 minority-consolidation analysis. See
+                "Underlying analyses" at the bottom for the full derivation.
+              </p>
+            </WalkthroughSection>
+
+            {/* Cross-references — synthesis pointing at the other walkthroughs */}
+            <section className="rounded-md border bg-card/50 p-5 sm:p-6">
+              <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
+                Where this connects
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed">
+                <li>
+                  The supply side of UDF's amplification was the{" "}
+                  <Link
+                    to="/walkthroughs/ldf-walkthrough"
+                    className="font-medium text-foreground underline-offset-2 hover:underline"
+                  >
+                    anti-LDF wave
+                  </Link>
+                  . LDF lost ~7pp uniformly across nearly every constituency;
+                  UDF absorbed most of it (98% on average) and FPTP did the
+                  rest.
+                </li>
+                <li>
+                  In 21 southern Hindu-heavy seats, UDF lost the absorption
+                  competition to NDA. See the{" "}
+                  <Link
+                    to="/walkthroughs/nda-walkthrough#wave-capture"
+                    className="font-medium text-foreground underline-offset-2 hover:underline"
+                  >
+                    NDA walkthrough's wave-capture cohort
+                  </Link>{" "}
+                  — the seats where BJP and UDF directly bid for the same
+                  defectors and NDA out-bid.
+                </li>
+              </ul>
+            </section>
+
+            <SeeAlsoQuestions
+              items={[
+                {
+                  id: "udf-gains-christian-heavy",
+                  label: "Where did UDF gain most in Christian-heavy seats?",
+                  hint: "Direct seat-level evidence on the Christian-belt premium.",
+                },
+                {
+                  id: "ldf-collapse-christian-heavy",
+                  label:
+                    "Where did LDF collapse most in Christian-heavy seats?",
+                  hint: "Mirror image of the UDF gains in the same belt.",
+                },
+                {
+                  id: "udf-gains-muslim-majority",
+                  label: "Where did UDF gain most in Muslim-majority seats?",
+                  hint: "Cross-checks the 'minority consolidation' framing.",
+                },
+                {
+                  id: "udf-underperformed-christian-heavy",
+                  label: "Where did UDF underperform in Christian-heavy seats?",
+                  hint: "Negative cases inside the central belt.",
+                },
+              ]}
             />
-          }
-          caption="Each dot is one of 140 ACs. Outlier ACs (Pala, Poonjar, Thiruvalla, Udumbanchola, Puthuppally, Vengara) are highlighted with stronger styling."
-        >
-          <p>
-            Christian-heavy ACs gained UDF more than the statewide average.
-            Pearson r = +0.20; under district fixed effects, β = +0.194 (p =
-            0.008). The relationship survives the strictest geographic control
-            available at this resolution — within a Kerala district, ACs with
-            higher Christian share systematically swung more strongly to UDF.
-          </p>
-          <p>
-            About ~12% of the Christian-belt premium is mechanical KC(M)-base
-            movement: Kerala Congress (M) stayed alliance-tagged LDF in both
-            cycles, but its party-share dropped ~7pp on average across the 12
-            ACs it contested, and that base partially defected to UDF. The
-            remaining ~88% is a non-KC(M) cross-community signal —
-            Christian-heavy ACs gained UDF beyond what KC(M) churn alone
-            explains.
-          </p>
-          <p>
-            Outliers visible on the chart: <strong>Pala</strong> (52% Christian,
-            UDF -12.9pp; Mani C. Kappan / NCP / KC(M) churn unrelated to
-            religion) and <strong>Thiruvalla</strong> (48% Christian, UDF
-            +1.6pp, NDA +14.5pp; three-way fragmentation with a JD(S) winner).
-            On the gain side, <strong>Udumbanchola</strong> at 48% Christian had
-            the largest single-AC swing (UDF +22.6pp).
-          </p>
-        </WalkthroughSection>
 
-        <PullQuote>
-          UDF and LDF effectively traded efficiency between cycles. The same
-          geographic vote distribution that wasted UDF's votes in 2021 converted
-          them into seats in 2026.
-        </PullQuote>
-
-        <WalkthroughSection
-          heading="Why a 7pp swing produced a 102-seat majority"
-          sectionType="mechanism"
-          layout="visual-left"
-          visual={
-            <ComparisonBar
-              groups={efficiencyGroups}
-              yUnit=""
-              yDecimals={2}
-              ariaLabel="Seats per percentage point of statewide vote share — UDF and LDF, 2021 vs 2026"
-              yDomain={[0, 2.5]}
-            />
-          }
-          caption="Seats won per percentage point of statewide vote share. UDF and LDF effectively traded efficiency between cycles. Higher = more seats per vote."
-        >
-          <p>
-            The 7.4pp UDF gain produced 61 additional UDF seats — roughly 8
-            seats per pp, six times the proportional rate. This is FPTP
-            plurality near threshold: Kerala's vote distribution sat close to
-            50/50 in many ACs in 2021, and a uniform 7pp swing crossed those
-            thresholds simultaneously.
-          </p>
-          <p>
-            UDF's seats-per-vote-share ratio more than doubled (1.04 → 2.18).
-            LDF's halved (2.19 → 0.93). The two alliances effectively swapped
-            efficiency. Under a counterfactual where 2021 vote shares had held
-            statewide, UDF would have won 44 seats — not 102. About 58 of UDF's
-            102 seats are amplification beyond what proportional representation
-            would produce.
-          </p>
-          <p>
-            The combination is what produced the landslide. Pattern 1 (anti-LDF
-            wave) supplied the swing. Pattern 2's geography (Central-5 sitting
-            near threshold) routed it into seat conversion. Neither alone
-            explains a 102-35-3 split — together they do.
-          </p>
-        </WalkthroughSection>
-
-        <WalkthroughSection
-          heading="Muslim share didn't add a separate premium"
-          sectionType="falsification"
-          layout="visual-right"
-          visual={
-            <ComparisonBar
-              groups={muslimBinGroups}
-              yUnit="pp"
-              yDecimals={1}
-              baseline={7.29}
-              baselineLabel="statewide mean +7.29pp"
-              ariaLabel="UDF Δshare by Muslim-share bin"
-              yDomain={[0, 12]}
-            />
-          }
-          caption="Mean UDF Δshare by Muslim-share bin. Each bar's height shows mean UDF gain across the bin's ACs. Muslim-majority and low-Muslim bins both track the statewide mean."
-        >
-          <p>
-            The press's "minority consolidation" framing pooled Muslim and
-            Christian shares as a single consolidating bloc. The data splits the
-            two: Christian-share predicts differential UDF swing (above), but
-            Muslim-share doesn't.
-          </p>
-          <p>
-            Muslim-majority ACs (≥60%, n=16) gained +8.98pp UDF — slightly above
-            the statewide ~7.3pp baseline but within the noise. The 40-60%
-            Muslim bin actually gained <em>less</em> (+5.76pp) than the
-            low-Muslim bin (+7.03pp). No monotonic relationship.
-          </p>
-          <p>
-            Once we account for{" "}
-            <MethodologyPopover term="fixed-effects">
-              district-level differences
-            </MethodologyPopover>
-            , the Muslim-share coefficient on UDF Δshare collapses to β = +0.016
-            (p = 0.795). Within a district, Muslim share has no detectable
-            predictive power. The simple-Pearson signal in the raw data was
-            driven entirely by between-district clustering — primarily
-            Malappuram. Muslim-heavy ACs participated in the LDF→UDF wave at the
-            statewide rate; they didn't supercharge it.
-          </p>
-        </WalkthroughSection>
-
-        <TakeawayBox>
-          <p>
-            Central Kerala provided the arithmetic difference between a UDF
-            plurality and a UDF majority government. The Christian-heavy ACs
-            added a real ~3-4pp premium on top of the statewide ~7pp wave
-            (robust to district fixed effects), and FPTP plurality amplified the
-            combined swing into 102 seats. Muslim-share variation didn't add a
-            separate premium — the press's "minority consolidation" framing
-            pools two distinct phenomena, and only one carries
-            constituency-level signal.
-          </p>
-        </TakeawayBox>
-
-        <SeeAlsoQuestions
-          items={[
-            {
-              id: "udf-gains-christian-heavy",
-              label: "Where did UDF gain most in Christian-heavy seats?",
-              hint: "Direct seat-level evidence on the Christian-belt premium.",
-            },
-            {
-              id: "ldf-collapse-christian-heavy",
-              label: "Where did LDF collapse most in Christian-heavy seats?",
-              hint: "Mirror image of the UDF gains in the same belt.",
-            },
-            {
-              id: "udf-gains-muslim-majority",
-              label: "Where did UDF gain most in Muslim-majority seats?",
-              hint: "Cross-checks the 'minority consolidation' framing.",
-            },
-            {
-              id: "udf-underperformed-christian-heavy",
-              label: "Where did UDF underperform in Christian-heavy seats?",
-              hint: "Negative cases inside the central belt.",
-            },
-          ]}
-        />
-
-        <section className="border-t pt-8">
-          <h2 className="mb-4 font-heading text-xl font-semibold tracking-tight sm:text-2xl">
-            What would weaken this conclusion
-          </h2>
-          <ul className="max-w-prose list-disc space-y-2 pl-6 text-sm leading-relaxed text-muted-foreground">
-            <li>
-              <strong className="font-medium text-foreground">
-                Higher-resolution geographic controls
-              </strong>{" "}
-              (sub-district / Lok Sabha constituency FE) showing the
-              Christian-belt premium dissolves at finer geographic resolution —
-              would force a reframe to "central-Kerala region effect" rather
-              than "Christian-share effect."
-            </li>
-            <li>
-              <strong className="font-medium text-foreground">
-                Sub-community survey microdata
-              </strong>{" "}
-              showing the Christian-belt premium is concentrated in one
-              denomination (e.g. Latin Catholic Munambam backlash, Syro-Malabar
-              specifically) — would shift the interpretation from a generic
-              Christian shift to a specific community reaction.
-            </li>
-            <li>
-              <strong className="font-medium text-foreground">
-                A 2031 Christian-belt revert
-              </strong>{" "}
-              — would suggest 2026 was anti-incumbency channelled through the
-              Christian belt, not a structural re-alignment.
-            </li>
-            <li>
-              <strong className="font-medium text-foreground">
-                Multi-cycle FPTP analysis showing Kerala's vote distribution
-                doesn't typically sit near threshold
-              </strong>{" "}
-              — would suggest the 2026 amplification was an unusual
-              configuration that won't recur.
-            </li>
-          </ul>
-        </section>
-
-        <section className="border-t pt-8 text-xs text-muted-foreground">
-          <p>
-            <strong className="font-medium text-foreground">
-              Source analyses (full detail).
-            </strong>{" "}
-            <a
-              href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a1-minority-consolidation.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-foreground underline-offset-2 hover:underline"
+            {/* What would weaken this conclusion */}
+            <section
+              id="what-would-weaken"
+              className="scroll-mt-20 border-t pt-8"
             >
-              A1 — Minority consolidation
-            </a>
-            {" · "}
-            <a
-              href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a8-central-kerala-kingmaker.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-foreground underline-offset-2 hover:underline"
-            >
-              A8 — Central Kerala kingmaker
-            </a>
-            {" · "}
-            <a
-              href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/vote-efficiency.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-foreground underline-offset-2 hover:underline"
-            >
-              Vote efficiency
-            </a>
-            .
-          </p>
-          <p className="mt-2">
-            <strong className="font-medium text-foreground">
-              Explore the data:
-            </strong>{" "}
-            see the central-Kerala UDF gainers on{" "}
-            <Link
-              to="/explore?seat=89"
-              className="font-medium text-foreground underline-offset-2 hover:underline"
-            >
-              Udumbanchola
-            </Link>
-            ,{" "}
-            <Link
-              to="/explore?seat=98"
-              className="font-medium text-foreground underline-offset-2 hover:underline"
-            >
-              Puthuppally
-            </Link>
-            ,{" "}
-            <Link
-              to="/explore?seat=96"
-              className="font-medium text-foreground underline-offset-2 hover:underline"
-            >
-              Ettumanoor
-            </Link>
-            .
-          </p>
-        </section>
+              <h2 className="mb-4 font-heading text-xl font-semibold tracking-tight sm:text-2xl">
+                What would weaken this conclusion
+              </h2>
+              <ul className="max-w-prose list-disc space-y-2 pl-6 text-sm leading-relaxed text-muted-foreground">
+                <li>
+                  <strong className="font-medium text-foreground">
+                    Higher-resolution geographic controls
+                  </strong>{" "}
+                  (sub-district / Lok Sabha constituency FE) showing the
+                  Christian-belt premium dissolves at finer geographic
+                  resolution — would force a reframe to "central-Kerala region
+                  effect" rather than "Christian-share effect."
+                </li>
+                <li>
+                  <strong className="font-medium text-foreground">
+                    Sub-community survey microdata
+                  </strong>{" "}
+                  showing the Christian-belt premium is concentrated in one
+                  denomination (e.g. Latin Catholic Munambam backlash,
+                  Syro-Malabar specifically) — would shift the interpretation
+                  from a generic Christian shift to a specific community
+                  reaction.
+                </li>
+                <li>
+                  <strong className="font-medium text-foreground">
+                    A 2031 Christian-belt revert
+                  </strong>{" "}
+                  — would suggest 2026 was anti-incumbency channelled through
+                  the Christian belt, not a structural re-alignment.
+                </li>
+                <li>
+                  <strong className="font-medium text-foreground">
+                    Multi-cycle FPTP analysis showing Kerala's vote distribution
+                    doesn't typically sit near threshold
+                  </strong>{" "}
+                  — would suggest the 2026 amplification was an unusual
+                  configuration that won't recur.
+                </li>
+              </ul>
+            </section>
+
+            {/* Underlying analyses (renamed from "Source analyses") */}
+            <section className="border-t pt-8 text-xs leading-relaxed text-muted-foreground">
+              <p>
+                <strong className="font-medium text-foreground">
+                  Underlying analyses.
+                </strong>{" "}
+                <a
+                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a1-minority-consolidation.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  A1 — Minority consolidation
+                </a>
+                {" · "}
+                <a
+                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a8-central-kerala-kingmaker.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  A8 — Central Kerala kingmaker
+                </a>
+                {" · "}
+                <a
+                  href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/vote-efficiency.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  Vote efficiency
+                </a>
+                .
+              </p>
+              <p className="mt-2">
+                <strong className="font-medium text-foreground">
+                  Explore the data:
+                </strong>{" "}
+                see the central-Kerala UDF gainers on{" "}
+                <Link
+                  to="/explore?seat=89"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  Udumbanchola
+                </Link>
+                ,{" "}
+                <Link
+                  to="/explore?seat=98"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  Puthuppally
+                </Link>
+                ,{" "}
+                <Link
+                  to="/explore?seat=96"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  Ettumanoor
+                </Link>
+                .
+              </p>
+            </section>
+          </div>
+          <PageRail groups={RAIL_GROUPS} />
+        </div>
       </PageMain>
     </PageShell>
   )
