@@ -13,7 +13,7 @@ import { WalkthroughSection } from "@/components/walkthroughs/walkthrough-sectio
 import { PageRail } from "@/components/walkthroughs/walkthrough-rail"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
-import { acDemo2025Meta } from "@/lib/data/loaders"
+import { acDemo2025Meta, districtsMeta } from "@/lib/data/loaders"
 import {
   getAllACMetrics,
   getPerACWinner2026,
@@ -29,14 +29,18 @@ const OUTLIER_AC_NUMBERS = new Set([
 ])
 
 /**
- * Bounding box for the Central-5 districts (Idukki, Ernakulam, Wayanad,
- * Malappuram, Kottayam) in the `kerala-constituencies-paths.json`
- * coordinate space (canvas 600 × 900). Used to crop the Central-5
- * sweep map so the reader's eye focuses on the swept area instead of
- * scanning the full state. Computed from the 47 ACs in those five
- * districts with a 5% margin.
+ * The five districts where UDF swept 47-of-47: Idukki, Ernakulam,
+ * Wayanad, Malappuram, Kottayam. Drives the binary highlight on the
+ * Central-5 sweep choropleth — only ACs in these districts get
+ * coloured; the rest of the state is muted.
  */
-const CENTRAL_5_VIEWBOX: [number, number, number, number] = [212, 137, 354, 595]
+const CENTRAL_5_DISTRICTS = new Set([
+  "idukki",
+  "ernakulam",
+  "wayanad",
+  "malappuram",
+  "kottayam",
+])
 
 /** Right-rail nav anchors for this page. Each id matches a `<section id="...">` below. */
 const RAIL_GROUPS = [
@@ -73,11 +77,19 @@ export function WalkthroughsUDFPage() {
   for (const [acNumber, alliance] of winner2026.entries()) {
     if (alliance === "UDF") udfWins.add(acNumber)
   }
-  // Binary map: 1 if UDF won the seat, 0 otherwise. Drives the
-  // sequential blue highlight on the Central-5 sweep choropleth.
-  const udfWonValueMap = new Map<number, number>()
+  // Binary map: 1 if AC is in one of the Central-5 districts, 0 otherwise.
+  // UDF won all 47 of these — the sweep IS the cohort, so highlighting
+  // by district is equivalent to highlighting UDF wins inside Central-5.
+  const central5Acs = new Set<number>()
   for (const m of all) {
-    udfWonValueMap.set(m.acNumber, udfWins.has(m.acNumber) ? 1 : 0)
+    const district = districtsMeta.constituencyToDistrict[String(m.acNumber)]
+    if (district && CENTRAL_5_DISTRICTS.has(district)) {
+      central5Acs.add(m.acNumber)
+    }
+  }
+  const central5ValueMap = new Map<number, number>()
+  for (const m of all) {
+    central5ValueMap.set(m.acNumber, central5Acs.has(m.acNumber) ? 1 : 0)
   }
 
   // Christian-share × UDF Δshare scatter points
@@ -191,19 +203,18 @@ export function WalkthroughsUDFPage() {
               visual={
                 <div className="mx-auto max-w-sm space-y-2">
                   <ChoroplethMap
-                    valueByAC={udfWonValueMap}
+                    valueByAC={central5ValueMap}
                     colorScale="sequential"
                     domain={[0, 1]}
                     sequentialColor="#1F77B4"
-                    ariaLabel="Central-5 districts (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam): UDF-won ACs in blue, non-UDF-won ACs muted"
+                    ariaLabel="Kerala constituencies; the 5 districts where UDF swept 47-of-47 (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) highlighted in blue"
                     unit=""
                     decimals={0}
-                    highlightSeats={udfWins}
-                    viewBox={CENTRAL_5_VIEWBOX}
+                    highlightSeats={central5Acs}
                   />
                 </div>
               }
-              caption="Central-5 districts (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) cropped from full state. UDF-won ACs in blue; non-UDF-won ACs muted."
+              caption="The 5 districts where UDF swept 47-of-47 — Idukki, Ernakulam, Wayanad, Malappuram, Kottayam — highlighted in blue across the full state. The non-contiguous geography is itself part of the story."
             >
               <p className={SECTION_LEAD}>
                 <strong>Five districts went UDF in every seat.</strong> 47 of
