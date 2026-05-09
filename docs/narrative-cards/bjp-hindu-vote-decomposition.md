@@ -187,6 +187,95 @@ The belt's structural strength is real but conditional: its growth path runs thr
 
 ---
 
+## Finding 5 — A third criterion: Hindu-vote headroom
+
+The earlier work in `bjp-strongest-seats.md` established a two-condition model for BJP wins:
+1. **Mature base** (NDA 2021 ≥ ~29%)
+2. **Local LDF→swing flows toward NDA** (wave-capture conditions)
+
+This Hindu-vote analysis adds a **third condition: meaningful headroom remaining within the Hindu-vote pool.**
+
+### Ceiling formula
+
+For each seat, define a realistic BJP ceiling under stated assumptions:
+> **Ceiling = (Hindu_share × 0.75) + (Christian_share × 0.15)**
+> *(75% Hindu capture is the realistic upper bound — Manjeshwar at 81% suggests the ceiling sits between 70-85% in practice. 0.15 Christian is the statewide-average BJP-Christian capture.)*
+
+> **Headroom = Ceiling − current BJP share**
+
+Seats with **headroom ≤ 5pp are ceiling-locked**: BJP cannot grow further without expanding into Christian or Muslim pools (both structurally unlikely except via the Pala/Thiruvalla-style marquee Christian play).
+
+### Applied to the 8 mature-base seats
+
+| AC | Seat | H/C/M | Base 2021 | BJP 2026 | BJP-Hindu-capture | Ceiling | Headroom | Wave-fav? | Won? |
+|---|---|---|---:|---:|---:|---:|---:|---|---|
+| 1 | **Manjeshwar** | 44/2/53 | 37.7% | 36.1% | **81%** | 33.6% | **−2.6** 🔒 | ✗ | no |
+| 2 | **Kasaragod** | 43/2/53 | 34.9% | 31.9% | **72%** | 33.3% | **+1.5** 🔒 | ✗ | no |
+| 135 | Nemom | 69/16/13 | 35.5% | 40.9% | 55% | 54.4% | +13.5 | ✓ | **YES** |
+| 56 | Palakkad | 62/2/34 | 35.3% | 33.5% | 53% | 47.5% | +14.0 | ✗ | no |
+| 55 | Malampuzha | 62/2/34 | 30.7% | 30.4% | 48% | 47.5% | +17.1 | ~0 | no |
+| 126 | Chathannoor | 72/13/14 | 30.6% | 38.2% | 50% | 56.0% | +17.7 | ✓ | **YES** |
+| 132 | Kazhakoottam | 69/16/13 | 29.1% | 35.7% | 48% | 54.4% | +18.8 | ✓ | **YES** |
+| 67 | Thrissur | 54/39/5 | 31.3% | 23.3% | 32% | 46.6% | +23.4 | ✗ | no |
+
+**Two clean strategic groupings emerge:**
+
+**Ceiling-locked (2 seats — Manjeshwar, Kasaragod):**
+- BJP already captures 70-80% of the Hindu vote.
+- With Hindu population only ~44%, the structural ceiling on BJP is around 33-34%. Both seats are *at* or *past* that ceiling.
+- Both are also wave-against (Hindu+Muslim Kasaragod district where IUML absorbs Muslim swings; LDF→swing flows naturally to UDF, not NDA).
+- **These seats are effectively unwinnable for BJP under current demographics.** No candidate strategy fixes this. The structural constraint is the Hindu population share, not the candidate or campaign quality.
+- Implication: K. Surendran (state president) at Manjeshwar can repeat for cycles and not win. The seat is symbolic — flagship for BJP organizational presence in the north — but not a realistic conversion target.
+
+**Growth-runway (6 seats):**
+- BJP-Hindu-capture 32-55%, headroom 13-23pp.
+- Of these, **3 won** (Nemom, Chathannoor, Kazhakoottam — all wave-favored). The wave-favored condition is what separated wins from losses within the growth-runway set.
+- 3 lost (Palakkad, Malampuzha, Thrissur — wave-against). These remain *theoretically* winnable in a future cycle if the demographic-mix-driven wave conditions shift, but it's a heavy lift.
+
+### The refined three-condition model
+
+**A mature-base seat converts wave-capture into a BJP win when all three conditions hold:**
+1. **Mature base** — NDA 2021 ≥ ~29%
+2. **Hindu-vote headroom** — capture rate ≤ ~70%, headroom ≥ ~5pp
+3. **Wave-favored** — LDF→swing flows toward NDA, not UDF
+
+**All 3 BJP wins satisfy all three conditions.** The 5 mature-base losers fail at least one:
+
+| Seat | Fails which condition? |
+|---|---|
+| Manjeshwar | (2) Ceiling-locked + (3) wave-against |
+| Kasaragod | (2) Ceiling-locked + (3) wave-against |
+| Palakkad | (3) Wave-against |
+| Malampuzha | (3) Wave-against |
+| Thrissur | (3) Wave-against (though Padmaja's −8pp also points to candidate weakness) |
+
+The Hindu-vote headroom check **rules out 2 of 8 mature-base seats from BJP's realistic 2031 conversion list.** Manjeshwar and Kasaragod aren't in the running regardless of candidate quality, wave conditions, or campaign effort. The structural ceiling has already been hit.
+
+### Implications for which seats are "watchlist for 2031"
+
+Re-ranking the close-misses with the headroom filter:
+
+| Seat | Base 2021 | Wave 2026? | Headroom | 2031 winnable? |
+|---|---:|---|---:|---|
+| Attingal | 25.9% | partial | +13.7 | **Yes** — needs only ~3pp more base |
+| Vattiyoorkavu | 28.8% | ✗ | +13.6 | Conditional on wave shift |
+| Kozhikode North | 22.5% | ✓ | +13.7 | Yes — needs ~6pp more base |
+| Nattika | 22.0% | ✓ | +14.6 | Yes — needs ~7pp more base |
+| Palakkad | 35.3% | ✗ | +14.0 | Conditional on demographic wave shift (unlikely) |
+| Malampuzha | 30.7% | ✗ | +17.1 | Conditional on wave shift |
+| **Manjeshwar** | 37.7% | ✗ | **−2.6** | **No — ceiling-locked** |
+| **Kasaragod** | 34.9% | ✗ | **+1.5** | **No — ceiling-locked** |
+
+The headroom filter **dramatically reshapes the 2031 watchlist**. Manjeshwar and Kasaragod — which would naturally appear as "high mature base, should be winnable" candidates — are removed. Attingal, Kozhikode North, and Nattika rise to the top: all have meaningful headroom AND saw favorable wave conditions in 2026, and need only modest base accumulation to cross the threshold.
+
+This refines the bjp-1.md article's Section 1 framing significantly. **The answer to "why these 3 wins and not more?"** is now:
+
+> *Of 21 wave-favored seats in 2026, 8 had mature ≥29% bases. Of those 8, only 6 had Hindu-vote headroom (the other 2 — Manjeshwar, Kasaragod — were ceiling-locked). Of those 6, only 3 simultaneously had wave-favored conditions and won. The other 3 (Palakkad, Malampuzha, Thrissur) had headroom but lacked the wave.*
+
+Three filters, applied sequentially: wave-favored (21) → mature base (8) → Hindu-vote headroom (6) → wave-favored AND headroom AND mature base = **3 wins**. The funnel is sharp at every stage.
+
+---
+
 ## Strategic implications
 
 ### For BJP's growth runway
