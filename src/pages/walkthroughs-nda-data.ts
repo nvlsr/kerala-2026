@@ -214,7 +214,7 @@ export const COHORT_4A_ROWS: Cohort4Row[] = [
     base21: 21.9,
     share26: 0.0,
     delta: -21.9,
-    outcome: "LDF (BJP withdrew)",
+    outcome: "LDF (BDJS swap)",
   },
   {
     ac: 67,

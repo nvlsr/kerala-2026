@@ -438,15 +438,15 @@ export function WalkthroughsNDAPage() {
             >
               <p className={SECTION_LEAD}>
                 BJP won three Assembly constituencies in 2026:{" "}
-                <SeatLink ac={135}>Nemom</SeatLink> (Rajeev Chandrasekhar),{" "}
-                <SeatLink ac={132}>Kazhakoottam</SeatLink> (V. Muraleedharan),
-                and <SeatLink ac={126}>Chathannoor</SeatLink> (B.B. Gopakumar).
-                All three converged on three observable patterns:
+                <SeatLink ac={135}>Nemom</SeatLink>,{" "}
+                <SeatLink ac={132}>Kazhakoottam</SeatLink>, and{" "}
+                <SeatLink ac={126}>Chathannoor</SeatLink>. All three converged
+                on three observable patterns:
               </p>
               <ol className={PREVIEW_LIST}>
                 <li>A Hindu-heavy religion + caste mix.</li>
-                <li>An mature NDA-2021 base.</li>
-                <li>An above-baseline benefit from the anti-LDF wave.</li>
+                <li>A mature NDA-2021 base.</li>
+                <li>Ability to capture the anti-LDF wave.</li>
               </ol>
 
               <h3 className={SUB_HEADING}>
@@ -454,14 +454,9 @@ export function WalkthroughsNDAPage() {
               </h3>
               <p>
                 All three wins are heavily Hindu-majority (
-                <strong>~70% on average vs 53% statewide</strong>), with
+                <strong>70% on average vs 53% statewide</strong>), with
                 correspondingly lower Muslim share. They sit in Nair-meaningful
-                districts (Trivandrum and Kollam). Per-seat religion and caste
-                figures are in the cohort tables below.
-              </p>
-              <p className={ASIDE}>
-                Caste data is district-level only, so it's approximate — not
-                AC-precise.
+                districts (Trivandrum and Kollam).
               </p>
 
               <h3 className={SUB_HEADING}>
@@ -565,18 +560,18 @@ export function WalkthroughsNDAPage() {
               </Table>
               <p className="mt-3">
                 All 3 wins had a 2021 NDA base ≥ 29% — already structurally
-                close to a winning share before the cycle started. Statewide,
-                only 8 seats had bases at or above that level going in (see the{" "}
-                <CohortLink slug="mature-growers">mature growers</CohortLink>{" "}
-                section for the full set).
+                close to a winning share before the cycle started. Statewide, 8
+                seats had bases at or above that level going in (see the{" "}
+                <CohortLink slug="mature-growers">mature growers</CohortLink> ).
               </p>
 
               <h3 className={SUB_HEADING}>3. Anti-LDF wave benefit</h3>
               <p>
-                Statewide, the swing landed mostly on UDF, with a smaller slice
-                on NDA. At 21 specific seats, the swing pattern inverted — NDA
-                absorbed <em>more</em> of the anti-LDF redistribution than UDF
-                did. All 3 wins are in this set; details in the wave-capture
+                Statewide, the UDF captured most of the anti-LDF wave, with a
+                smaller slice going to NDA. At 21 specific seats, the swing
+                pattern inverted — NDA absorbed <em>more</em> of the anti-LDF
+                redistribution than UDF did. All 3 wins are in this set; details
+                in the <CohortLink slug="wave-capture">wave capture</CohortLink>{" "}
                 section below.
               </p>
             </CohortSection>
@@ -599,10 +594,10 @@ export function WalkthroughsNDAPage() {
               mapCaption="11 seats where BJP/NDA grew meaningfully on a mature base. Concentrated in the Trivandrum belt, Kollam, Central Kerala (Thiruvalla, Pala), with scattered outposts (Nattika, Kozhikode N/S, Ottappalam)."
             >
               <p className={DEFINITION}>
-                BJP grew meaningfully on a mature base — either reaching ≥25% in
-                2026 with ≥+5pp gain (snapshot), or sustaining ≥+2pp growth
-                across both 2016→2021 and 2021→2026 (trajectory). 11 unique
-                seats, sorted by 2026 BJP share.{" "}
+                Seats where BJP grew meaningfully on a mature base — either
+                reaching ≥25% in 2026 with ≥+5pp gain, or sustaining ≥+2pp
+                growth across both 2016→2021 and 2021→2026 (trajectory). 11
+                unique seats, sorted by 2026 BJP share.{" "}
                 <span className="not-italic">★</span> marks the 4 seats that
                 also satisfy the multi-cycle trajectory criterion.
               </p>
@@ -691,29 +686,8 @@ export function WalkthroughsNDAPage() {
                 </TableBody>
               </Table>
               <p className="mt-3">
-                <strong>
-                  Chathannoor is the only sustained-trajectory seat that
-                  converted to a 2026 win.
-                </strong>{" "}
-                The 3 wins all sit at the top of the cohort by 2026 share; the
-                other 8 lost despite growing. The other three trajectory seats —{" "}
-                <SeatLink ac={107}>Haripad</SeatLink> (8.9 → 11.9 → 21.5%),{" "}
-                <SeatLink ac={128}>Attingal</SeatLink> (20.4 → 25.9 → 30.8%),{" "}
-                <SeatLink ac={28}>Kozhikode South</SeatLink> (16.8 → 20.9 →
-                25.6%) — show durable upward trajectories but lost in 2026.
-              </p>
-              <p>
-                Beyond the 3 wins, the 8 non-win growers sit in mixed terrain: 2
-                Christian-mixed Central Kerala (
-                <SeatLink ac={111}>Thiruvalla</SeatLink>,{" "}
-                <SeatLink ac={93}>Pala</SeatLink> — both with marquee Christian
-                candidates Anoop Antony and Shone George); 2 Hindu-Muslim
-                Kozhikode (<SeatLink ac={27}>Kozhikode North</SeatLink>,{" "}
-                <SeatLink ac={28}>Kozhikode South</SeatLink>); 1 Trivandrum-belt
-                (<SeatLink ac={128}>Attingal</SeatLink>); 1 Alappuzha (
-                <SeatLink ac={107}>Haripad</SeatLink>); plus{" "}
-                <SeatLink ac={68}>Nattika</SeatLink> and{" "}
-                <SeatLink ac={52}>Ottappalam</SeatLink>. All 8 lost in 2026.
+                Chathannoor is the only sustained-trajectory seat that converted
+                to a 2026 win.
               </p>
 
               <h3 className={SUB_HEADING}>A practical conversion threshold?</h3>
