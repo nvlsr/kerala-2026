@@ -55,7 +55,7 @@ Per-region tally of flow types:
 
 **The flow direction varies sharply by region.** In the North, 72% of ACs are UDF-dominant absorption — Muslim-majority Malappuram + Kannur stronghold collapse both flow primarily to UDF. In Central Kerala, 65% UDF-dominant. In South Kerala, only 48% UDF-dominant and 40% NDA-dominant — the LDF loss in Trivandrum + south Kollam fragmented across UDF and NDA roughly equally.
 
-This is the geographic anchor for the synthesis card's "Three patterns" reading. Pattern 2 (Central Kerala UDF surge) corresponds to the North + Central UDF-dominant absorption. Pattern 3 (BJP geographic pocket) corresponds to the South's NDA-dominant absorption.
+This is the geographic anchor for the synthesis card's "Three patterns" reading. Pattern 2 (Central Kerala UDF surge) corresponds to the North + Central UDF-dominant absorption. Pattern 3 (BJP walkthrough) corresponds to the South's NDA-dominant absorption.
 
 ## Mean flow proportions by region
 
@@ -82,7 +82,7 @@ This is the geographic anchor for the synthesis card's "Three patterns" reading.
 **Two clean patterns visible:**
 
 1. **In Christian-heavy and Muslim-majority ACs, the LDF loss flows almost exclusively to UDF.** Christian-heavy: UDF absorbs 122% (more than LDF lost; OTHER's collapse provides the extra). Muslim-majority: UDF absorbs 108%; NDA gets just 5%. These are seats with structural UDF affinity (Christian-Catholic + IUML-aligned populations) where the LDF loss represents reverting to a prior alliance preference.
-2. **In Hindu-heavy ACs (≥70% Hindu, n=10), NDA absorbs 44% of the LDF loss** — by far the highest NDA-absorption rate. UDF only 61%. The Hindu-heavy seats are exactly where Pattern 3 (BJP pocket) concentrates; they're also where the LDF loss splits most evenly between UDF and NDA.
+2. **In Hindu-heavy ACs (≥70% Hindu, n=10), NDA absorbs 44% of the LDF loss** — by far the highest NDA-absorption rate. UDF only 61%. The Hindu-heavy seats are exactly where Pattern 3 (BJP walkthrough) concentrates; they're also where the LDF loss splits most evenly between UDF and NDA.
 
 ## Net pp accounting (constituency-equal sums)
 

@@ -51,9 +51,9 @@ const NarrativesCentralKeralaPage = lazy(() =>
     default: m.NarrativesCentralKeralaPage,
   }))
 )
-const NarrativesBJPPocketPage = lazy(() =>
-  import("@/pages/narratives-bjp-pocket-page").then((m) => ({
-    default: m.NarrativesBJPPocketPage,
+const NarrativesBJPWalkthroughPage = lazy(() =>
+  import("@/pages/narratives-bjp-walkthrough-page").then((m) => ({
+    default: m.NarrativesBJPWalkthroughPage,
   }))
 )
 const NarrativesMethodologyPage = lazy(() =>
@@ -109,8 +109,15 @@ export function App() {
             element={<NarrativesCentralKeralaPage />}
           />
           <Route
+            path="/narratives/bjp-walkthrough"
+            element={<NarrativesBJPWalkthroughPage />}
+          />
+          {/* Legacy URL — redirect for any external/bookmarked links */}
+          <Route
             path="/narratives/bjp-pocket"
-            element={<NarrativesBJPPocketPage />}
+            element={
+              <Navigate to="/narratives/bjp-walkthrough" replace />
+            }
           />
           <Route
             path="/narratives/methodology"

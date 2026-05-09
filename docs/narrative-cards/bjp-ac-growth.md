@@ -184,7 +184,7 @@ Forward implications worth tracking in 2031:
 ## Cross-references
 
 - **A3 (BJP's 3 wins concentrated)**: confirms the 3 wins are in Hindu-heavy Trivandrum-area seats. This card extends to the broader BJP-share-Δ distribution including the ACs where BJP grew but didn't win.
-- **Synthesis (Three overlapping patterns)**: Pattern 3 (BJP geographic pocket). This card is the detailed evidence for Pattern 3's per-AC reshuffle.
+- **Synthesis (Three overlapping patterns)**: Pattern 3 (BJP walkthrough). This card is the detailed evidence for Pattern 3's per-AC reshuffle.
 - **A1 (minority consolidation)**: A1's KC(M) defection finding overlaps with this card's documentation of BJP's gains in central-Kerala mixed-religion ACs. Some of the +14-25pp BJP gains in Pala/Poonjar/Kanjirappally area might be tracking similar voter movements (away from LDF/KC(M)) but landing on a different alliance (NDA via BJP candidates, instead of UDF via INC/KC(J)).
 
 ## Reproduce

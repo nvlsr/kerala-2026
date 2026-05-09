@@ -43,6 +43,14 @@ type Props = {
   ariaLabel: string
   /** Optional className applied to the wrapping <svg>. */
   className?: string
+  /**
+   * Optional viewBox override to zoom into a region (e.g. just
+   * Trivandrum + Kollam districts) instead of the full state.
+   * `[x, y, width, height]` in the same coordinate space as the
+   * raw paths. Off-region paths still render but get clipped by
+   * the SVG viewport.
+   */
+  viewBox?: [number, number, number, number]
 }
 
 /**
@@ -112,6 +120,7 @@ export function ChoroplethMap({
   decimals = 1,
   ariaLabel,
   className,
+  viewBox,
 }: Props) {
   const [hoveredSeat, setHoveredSeat] = useState<number | null>(null)
 
@@ -161,7 +170,11 @@ export function ChoroplethMap({
   return (
     <div className="relative">
       <svg
-        viewBox={`0 0 ${paths.width} ${paths.height}`}
+        viewBox={
+          viewBox
+            ? `${viewBox[0]} ${viewBox[1]} ${viewBox[2]} ${viewBox[3]}`
+            : `0 0 ${paths.width} ${paths.height}`
+        }
         className={cn("h-auto w-full", className)}
         role="img"
         aria-label={ariaLabel}

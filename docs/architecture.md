@@ -156,9 +156,26 @@ If it's a per-constituency aggregate:
 - The cascading drilldown UX
 - ESLint / TS strict / Prettier — already strict
 
+## Narrative pages
+
+The `/narratives` surface is a separate UX from the dashboard. Three "arc" pages (anti-LDF wave, central Kerala, BJP) plus an index and a methodology page. Each arc page composes a small set of building blocks:
+
+- `NarrativeSection` — heading + prose + optional visual (`visual-right` / `visual-left` / `stacked` layout).
+- `ChoroplethMap` — the standard map; takes a `valueByAC: Map<number, number>`, a colour scale, optional `highlightSeats: Set<number>` for outlining a subset, and optional `viewBox` to crop into a region (e.g. Trivandrum + Kollam for the BJP page).
+- `CohortSection` (BJP page only) — domain-specific 2-column variant: heading on top, then map | content side-by-side, with `id` for anchor linking. See `narratives-bjp-walkthrough-page.tsx`.
+- `Table` (shadcn) — built-in horizontal scroll on overflow; styled compactly via the `COMPACT_HEAD_CLASS` / `COMPACT_CELL_CLASS` shared constants.
+- `SeatLink` / `PartyLink` / `ProseLink` — subtle inline anchor links to `/explore?seat=N`, party views, etc.
+
+**Cohort data convention.** Cohort row tables for the BJP page live in `src/pages/narratives-bjp-walkthrough-data.ts`, separated from the page component so the page itself stays scannable. Each cohort defines:
+
+- A `*_ROWS` array (typed) — the table data.
+- A `*_ACS` set derived from `_ROWS` — used to drive the binary-highlight choropleth map for that cohort.
+
+Per-cohort vote-share aggregates (BJP / NDA Δ) are pre-computed and live in the same data file alongside the row arrays.
+
 ## Tests
 
-Currently none. See `docs/roadmap.md` step 10 — recommended thin-layer tests for `canonicalPartyName`, `get2021Baseline`, `getAllianceTrendData`, `getPartyTrendData`, and `buildCandidateRows`.
+`bun run test` (vitest). Three suites under `src/lib/data/`: `data.test.ts`, `flows.test.ts`, `narrative-metrics.test.ts`. `bun test` (raw bun runner) does **not** work — bun's matcher is incompatible with vitest's; always go through the npm script.
 
 ## See also
 

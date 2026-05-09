@@ -181,12 +181,12 @@ export function NarrativesPage() {
           />
           <NarrativeArcCard
             arcNumber={3}
-            title="BJP's flat aggregate hid a ±25pp AC reshuffle"
+            title="BJP's 2026 performance — a data walkthrough"
             confidence="Moderate-strong"
             headlineStat={
               <span className={ARC_KEY_STAT_CLASS}>
-                BJP +0.18pp statewide; per-AC range from -21.9pp to
-                +25.1pp
+                3 BJP wins; 6 cohorts trace where the party grew,
+                declined, sat out, and stayed locked out
               </span>
             }
             visual={
@@ -203,15 +203,17 @@ export function NarrativesPage() {
             }
             summary={
               <>
-                BJP grew +14-25pp in 11 ACs (mostly contest-entry
-                activations rather than organic expansion) and
-                withdrew from 26 others, ceding ground to NDA
-                allies. The 3 wins (Nemom, Chathannoor,
-                Kazhakoottam) are concentrated in Trivandrum-area
-                Hindu-heavy seats where UDF underperformed by ~5pp.
+                A guided tour of BJP's 2026 results, starting from
+                the 3 wins (Nemom, Chathannoor, Kazhakoottam) and
+                expanding outward through cohorts: mature-base
+                growers, sustained multi-cycle builders, low-base
+                breakouts, declining mature seats, anti-LDF
+                wave-capture, and the negative-space terrain where
+                BJP doesn't compete. Data-first; no strategic
+                reverse-engineering.
               </>
             }
-            href="/narratives/bjp-pocket"
+            href="/narratives/bjp-walkthrough"
           />
         </section>
 

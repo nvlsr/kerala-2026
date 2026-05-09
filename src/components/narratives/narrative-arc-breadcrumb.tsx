@@ -15,8 +15,8 @@ const ARCS = [
   },
   {
     arcNumber: 3 as const,
-    title: "BJP geographic pocket",
-    href: "/narratives/bjp-pocket",
+    title: "BJP",
+    href: "/narratives/bjp-walkthrough",
   },
 ]
 
