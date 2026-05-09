@@ -9,6 +9,13 @@ import {
 type Layout = "visual-right" | "visual-left" | "stacked"
 
 type Props = {
+  /**
+   * Optional anchor id for the section. When set, the section can
+   * be linked to via `#id` from the page rail or other inline anchors.
+   * Pairs with `scroll-mt-20` so the heading doesn't end up flush
+   * against the top of the viewport on jump.
+   */
+  id?: string
   /** Section heading. Rendered as h2. */
   heading: string
   /**
@@ -55,6 +62,7 @@ type Props = {
  * always stacks text-then-visual regardless of `layout`.
  */
 export function WalkthroughSection({
+  id,
   heading,
   sectionType,
   visual,
@@ -66,7 +74,10 @@ export function WalkthroughSection({
     "max-w-prose space-y-3 text-sm leading-relaxed sm:text-[15px]"
 
   return (
-    <section className="border-t pt-10 first:border-t-0 first:pt-0">
+    <section
+      id={id}
+      className="scroll-mt-20 border-t pt-10 first:border-t-0 first:pt-0"
+    >
       {sectionType && (
         <div className="mb-2">
           <SectionTypeBadge type={sectionType} />

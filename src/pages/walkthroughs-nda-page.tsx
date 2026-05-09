@@ -1,7 +1,15 @@
-import { Fragment, useEffect, useState, type ReactNode } from "react"
+import { Fragment, useState, type ReactNode } from "react"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import { ProseLink, SeatLink } from "@/components/walkthroughs/prose-link"
+import {
+  ASIDE,
+  DEFINITION,
+  PREVIEW_LIST,
+  SECTION_LEAD,
+  SUB_HEADING,
+} from "@/components/walkthroughs/typography"
+import { PageRail } from "@/components/walkthroughs/walkthrough-rail"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
@@ -41,43 +49,6 @@ import {
   SOUTH_CLUSTER_VIEWBOX,
   THREE_LENSES,
 } from "./walkthroughs-nda-data"
-
-/**
- * Typography system for the BJP walkthrough page.
- *
- * Five named tiers, applied consistently across all sections so the
- * reader's eye learns the hierarchy quickly:
- *
- * 1. SECTION_LEAD — opening paragraph of a section. Slightly larger,
- *    almost-foreground colour. Sets the scene before detail prose
- *    starts. Used right after each section's <h2>.
- * 2. SUB_HEADING — h3 inside a section. Bigger than body so the
- *    visual jump is clear; tracking-tight to match h2.
- * 3. DEFINITION — italic muted block with a left border, one per
- *    cohort, stating the formal selection criteria. Reads as
- *    "metadata about this section" rather than body emphasis.
- * 4. PREVIEW_LIST — compact ordered list shown right after a lead
- *    paragraph that says "N patterns / N reasons / N mechanisms".
- *    Tells the reader what the next N sub-sections will cover.
- * 5. ASIDE — small muted text for parenthetical notes and footnote-
- *    equivalents (e.g. "Caste data is district-level only").
- *
- * Body prose default is `text-sm sm:text-[15px] leading-relaxed`,
- * applied at the section level by CohortSection, so individual <p>
- * elements inherit it without an explicit class. Only override when
- * the paragraph is one of the five named tiers above.
- *
- * Documented in `docs/architecture.md` → "Walkthrough pages" →
- * "Typography system".
- */
-const SECTION_LEAD =
-  "text-base leading-relaxed text-foreground/90 sm:text-[16.5px]"
-const SUB_HEADING = "mt-7 font-heading text-lg font-semibold tracking-tight"
-const DEFINITION =
-  "border-l-2 border-muted-foreground/30 pl-3 italic text-muted-foreground"
-const PREVIEW_LIST =
-  "my-3 list-inside list-decimal space-y-0.5 text-[14px] text-muted-foreground"
-const ASIDE = "text-[12.5px] text-muted-foreground"
 
 const HIGHLIGHT_ROW_CLASS =
   "bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/30 dark:hover:bg-amber-950/40"
@@ -207,16 +178,8 @@ function CohortSection({
   )
 }
 
-/**
- * Right-rail navigation. Sticky list of section anchors; the active
- * section is highlighted as the reader scrolls. Hidden on mobile —
- * the chip-strip breadcrumb at the top covers cross-walkthrough nav,
- * and within-page jumps are less critical on small viewports.
- */
-const RAIL_GROUPS: ReadonlyArray<{
-  label: string
-  items: ReadonlyArray<{ id: string; label: string }>
-}> = [
+/** Right-rail nav anchors for this page. Each id matches a `<section id="...">` below. */
+const RAIL_GROUPS = [
   {
     label: "The cohorts",
     items: [
@@ -242,79 +205,7 @@ const RAIL_GROUPS: ReadonlyArray<{
       { id: "methodology", label: "Methodology" },
     ],
   },
-]
-
-const RAIL_IDS: string[] = RAIL_GROUPS.flatMap((g) => g.items.map((i) => i.id))
-
-function useActiveSection(ids: ReadonlyArray<string>): string | null {
-  const [active, setActive] = useState<string | null>(null)
-  useEffect(() => {
-    if (typeof window === "undefined") return
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort(
-            (a, b) =>
-              a.target.getBoundingClientRect().top -
-              b.target.getBoundingClientRect().top
-          )
-        if (visible.length > 0) setActive(visible[0].target.id)
-      },
-      { rootMargin: "-15% 0px -65% 0px", threshold: 0 }
-    )
-    ids.forEach((id) => {
-      const el = document.getElementById(id)
-      if (el) observer.observe(el)
-    })
-    return () => observer.disconnect()
-  }, [ids])
-  return active
-}
-
-function PageRail() {
-  const active = useActiveSection(RAIL_IDS)
-  return (
-    <aside className="hidden lg:block">
-      <nav
-        aria-label="On this page"
-        className="sticky top-6 space-y-4 text-[13px]"
-      >
-        <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
-          On this page
-        </p>
-        {RAIL_GROUPS.map((g) => (
-          <div key={g.label} className="space-y-1.5">
-            <p className="text-[10px] font-medium tracking-wider text-muted-foreground/70 uppercase">
-              {g.label}
-            </p>
-            <ul className="space-y-0.5 border-l border-border">
-              {g.items.map((item) => {
-                const isActive = active === item.id
-                return (
-                  <li key={item.id}>
-                    <a
-                      href={`#${item.id}`}
-                      aria-current={isActive ? "true" : undefined}
-                      className={cn(
-                        "-ml-px block border-l-2 py-1 pl-3 leading-snug transition-colors",
-                        isActive
-                          ? "border-foreground font-medium text-foreground"
-                          : "border-transparent text-muted-foreground hover:border-foreground/40 hover:text-foreground"
-                      )}
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-        ))}
-      </nav>
-    </aside>
-  )
-}
+] as const
 
 /**
  * Arc 3 — BJP's 2026 performance walkthrough. Data-first tour through
@@ -1821,7 +1712,7 @@ export function WalkthroughsNDAPage() {
               </ProseLink>
             </section>
           </div>
-          <PageRail />
+          <PageRail groups={RAIL_GROUPS} />
         </div>
       </PageMain>
     </PageShell>
