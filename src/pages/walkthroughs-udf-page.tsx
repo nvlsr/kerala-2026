@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-import { ChoroplethLegend } from "@/components/charts/choropleth-legend"
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { ScatterWithTrend } from "@/components/charts/scatter-with-trend"
@@ -17,7 +16,6 @@ import { PageShell } from "@/components/page-shell"
 import { acDemo2025Meta } from "@/lib/data/loaders"
 import {
   getAllACMetrics,
-  getPerACAllianceDelta,
   getPerACWinner2026,
 } from "@/lib/data/walkthrough-metrics"
 
@@ -70,11 +68,16 @@ const RAIL_GROUPS = [
  */
 export function WalkthroughsUDFPage() {
   const all = getAllACMetrics()
-  const udfDeltaMap = getPerACAllianceDelta("UDF")
   const winner2026 = getPerACWinner2026()
   const udfWins = new Set<number>()
   for (const [acNumber, alliance] of winner2026.entries()) {
     if (alliance === "UDF") udfWins.add(acNumber)
+  }
+  // Binary map: 1 if UDF won the seat, 0 otherwise. Drives the
+  // sequential blue highlight on the Central-5 sweep choropleth.
+  const udfWonValueMap = new Map<number, number>()
+  for (const m of all) {
+    udfWonValueMap.set(m.acNumber, udfWins.has(m.acNumber) ? 1 : 0)
   }
 
   // Christian-share × UDF Δshare scatter points
@@ -188,24 +191,19 @@ export function WalkthroughsUDFPage() {
               visual={
                 <div className="mx-auto max-w-sm space-y-2">
                   <ChoroplethMap
-                    valueByAC={udfDeltaMap}
-                    colorScale="diverging"
-                    domain={[-25, 25]}
-                    ariaLabel="Central-5 districts (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) shaded by UDF Δshare 2021 → 2026"
-                    unit="pp"
-                    decimals={1}
+                    valueByAC={udfWonValueMap}
+                    colorScale="sequential"
+                    domain={[0, 1]}
+                    sequentialColor="#1F77B4"
+                    ariaLabel="Central-5 districts (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam): UDF-won ACs in blue, non-UDF-won ACs muted"
+                    unit=""
+                    decimals={0}
                     highlightSeats={udfWins}
                     viewBox={CENTRAL_5_VIEWBOX}
                   />
-                  <ChoroplethLegend
-                    colorScale="diverging"
-                    domain={[-25, 25]}
-                    unit="pp"
-                    decimals={0}
-                  />
                 </div>
               }
-              caption="Central-5 districts (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) cropped from full state. UDF Δshare 2021 → 2026; UDF-won ACs outlined."
+              caption="Central-5 districts (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) cropped from full state. UDF-won ACs in blue; non-UDF-won ACs muted."
             >
               <p className={SECTION_LEAD}>
                 <strong>Five districts went UDF in every seat.</strong> 47 of
