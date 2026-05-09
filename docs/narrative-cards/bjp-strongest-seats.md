@@ -280,6 +280,91 @@ The strongest "doing well" performers are still mostly **not on the priority lis
 
 ---
 
+## Demographic overlay — caste, belt, religion trend, C-M dynamics
+
+Four additional demographic dimensions overlaid against the cohorts to surface or falsify common political-discourse hypotheses.
+
+### Dimensions defined
+
+1. **Belt** — pre-defined community taxonomy from `data/community-belts.json`. Nine belts: northern-muslim, northern-mixed, northeastern-tribal, central-hindu, central-syromalabar, central-reformed-christian, central-syromalabar (overlapping), southern-nair-latin, southern-ezhava, southern-coastal-mixed.
+
+2. **Caste shares** (district-level only — `data/hindu-caste-by-district.json`) — Nair %, Ezhava %, SC %. Note: this is a broad-stroke approximation. AC-level caste data isn't available; all ACs in a district share the same caste profile in this analysis.
+
+3. **Religion trend** — Δ between the older AC demographics file (2011 census base) and the 2025 projection (`data/ac-demographics-2025.json`). Captures the projected demographic shift over ~14 years. Christian Δ and Muslim Δ at each AC.
+
+4. **C-M competition** — flag for seats where both Christian ≥ 15% AND Muslim ≥ 15%. 31 seats statewide.
+
+5. **Christian-anxiety zone** — flag for seats where Christian ≥ 20% AND Muslim trend > +0.5pp AND Christian trend ≤ +0.5pp. 48 seats statewide. Captures the "Christians worried about Muslim growth" press hypothesis at AC level.
+
+### Belt distribution by cohort
+
+| Cohort | Most-represented belts |
+|---|---|
+| **C1 — Mature + grew** (8 seats) | Spread across 6 belts. No concentration: 2 central-reformed-christian, 2 southern-nair-latin, 1 each in 4 others. **Diverse — BJP grows in many belts when conditions align.** |
+| **C4a — Declining mature** (8) | **5 of 8 in central-Christian belts** (3 central-syromalabar, 2 central-reformed-christian). Strong concentration. |
+| **C4b — Stable mature** (8) | 2 central-hindu, 2 southern-nair-latin, mix elsewhere. Tilts toward Hindu-belt and southern-nair-latin. |
+| **C5a — Strategic abstention** (14) | **10 of 14 in central-syromalabar (6) or southern-coastal-mixed (4)**. Christian/coastal central-Kerala — exactly the BDJS / T20 cession terrain. |
+| **C5b — Structural exclusion** (19) | **15 of 19 in northern belts (9 northern-muslim, 6 northern-mixed)**. Overwhelming northern Muslim/Hindu-Muslim concentration. |
+
+**Strongest belt-level finding: BJP's "doesn't prioritize" cohorts (5a + 5b) are extremely belt-concentrated** — central-syromalabar/coastal for ceding (5a), northern-muslim/mixed for exclusion (5b). The growth and ceiling cohorts are more belt-mixed.
+
+### Caste means by cohort (district-level approximation)
+
+| Cohort | Mean Nair % | Mean Ezhava % | Mean SC % |
+|---|---:|---:|---:|
+| C1 (Mature + grew) | **28.1** | 34.7 | 16.4 |
+| C4a (Declining mature) | 20.0 | 39.4 | 16.0 |
+| C4b (Stable mature) | 23.1 | 35.1 | 16.0 |
+| C5a (Strategic abstention) | 20.5 | 42.1 | 17.9 |
+| C5b (Structural exclusion) | **16.3** | 42.1 | **20.8** |
+
+Pattern: BJP's strongest cohort (C1) has the **highest mean Nair share** (28%); C5b (structural exclusion) has the **lowest mean Nair share** (16%) and **highest SC share** (21%). Suggests a Nair-belt skew in BJP's strongest performance — but caveat: caste data is district-level, so this is broad-stroke. AC-level Nair share could change the picture meaningfully.
+
+### Christian-anxiety zones — does the hypothesis hold?
+
+The press narrative says "Christians shift to BJP when threatened by Muslim growth." If true, the 48 Christian-anxiety seats should disproportionately appear in C1 + C3 (where BJP grew). Let's see:
+
+| Cohort | Christian-anxiety seats present |
+|---|:---:|
+| C1 (Mature + grew) | **1** (Pala) |
+| C3 (New growth) | **2** (Pala, Devikulam) |
+| C4a (Declining) | 5 (Konni, Thrissur, Poonjar, Pudukkad, Irinjalakuda) |
+| C4b (Stable) | 2 (Kanjirappally, Chengannur) |
+| C5a (Strategic abstention) | 7 (Idukki, Ranni, Chalakudy, Kothamangalam, Kuttanad, Aroor, Kalamassery) |
+| C5b (Structural exclusion) | 5 (Kothamangalam shared with 5a, Irikkur, Peravoor, Muvattupuzha, plus 1 more) |
+| **No cohort** (modest movement that didn't reach any threshold) | ~25 seats |
+
+**Of 48 Christian-anxiety seats, only 2 are in BJP-grew cohorts (Pala, Devikulam)** — and both involved a marquee Christian candidate fielding. The vast majority of anxiety seats are either declining (C4a), plateaued (C4b), ceded to allies (C5a), or alliance-excluded (C5b).
+
+**Christian-anxiety alone is not a BJP-gain predictor.** The marquee Christian candidate strategy is doing the work; demographic signal is necessary but not sufficient. Pala/Thiruvalla/Devikulam show what works (anxiety + marquee → growth). Kothamangalam/Idukki/Ranni show what's at the same anxiety level *without* marquee deployment — abstention or exclusion. Same demographic input, opposite alliance behavior.
+
+This is a clean falsification of the press narrative as a standalone driver — and it sharpens bjp-1.md Section 3's claim. The Christian outreach Going-in callout (Sneha Yathra, micro-minority framing, Munambam plank) is *thematic* signaling; the actual operational lever is candidate selection.
+
+### C-M competition seats (both ≥15%)
+
+31 seats. Distribution by cohort:
+- 0 in C1 (no mature-base BJP gains in C-M competition seats)
+- 1 in C4a (Poonjar — and that's candidate-defection arithmetic)
+- 1 in C4b (Manalur)
+- 4 in C5a (Kothamangalam, Kalamassery, Eravipuram, Cherthala)
+- 4 in C5b (Kothamangalam shared, Muvattupuzha, Irikkur, Peravoor)
+- 1 in C1 — wait, **Nattika** has H/C/M 64/16/20 → C ≥15% AND M ≥15%, so it qualifies. Yes 1 in C1.
+
+**The Hindu-Christian-Muslim three-way mix terrain is mostly NOT where BJP performs well.** It correlates strongly with Cohorts 5a (ceded) and 5b (excluded). Where BJP did gain in 3-way territory (Nattika), it didn't win.
+
+The press narrative that BJP exploits 3-way C-M tension to grow is not what the data shows. The 3-way mixes are where the alliance steps back, not steps forward.
+
+### Religion-trend stats (overall)
+
+- Mean Christian Δ across 140 ACs: **−0.2pp** (slight overall decline)
+- Mean Muslim Δ across 140 ACs: **+1.4pp** (visible overall growth)
+- Seats with Muslim trend > +0.5pp: **75 of 140** (54%)
+- Seats with Christian trend < −0.5pp: **24 of 140** (17%)
+
+The demographic backdrop is real — Muslim share is projected to grow faster than Christian and Hindu share across most of Kerala. But this trend doesn't translate to BJP gains in Christian-mixed seats unless candidate quality also fits.
+
+---
+
 ## Open questions for analysis
 
 1. **Threshold tuning** — Cohort 1 thresholds (≥25% share, ≥+5pp Δ) yield 8 seats. Could tighten or loosen. Cohort 5b uses BJP+BDJS aggregate (excluding T20) for cross-cycle comparability since T20 wasn't NDA-aligned in 2016/2021; including T20 would shift several Ernakulam seats out of 5b.
@@ -288,3 +373,81 @@ The strongest "doing well" performers are still mostly **not on the priority lis
 4. **The Alappuzha coast cohort.** 5a contains 4 contiguous Alappuzha-coast seats (Aroor, Cherthala, Kuttanad, Kayamkulam) — all ceded to BDJS at 10–15%. This is a clear sub-pattern within the strategic-abstention set. Worth investigating as a candidate "Alappuzha BDJS belt" theme — it's the inverse of the Ernakulam T20 belt (Cohort 4 of bjp-1.md).
 5. **NDA-aggregate parallel** — should we compute the full cohort set using NDA-aggregate share? Would surface T20-Ernakulam patterns and re-shape Cohort 5b.
 6. **Geographic micro-clusters** — Cohort 1's Hindu-Muslim non-belt seats (Nattika, Kozhikode North, Ottappalam) and Cohort 2's Haripad + Kozhikode South suggest a possible secondary "Hindu-Muslim Central+North coastal" pattern. Worth examining as a possible additional bjp-1.md theme.
+
+---
+
+## Master demographic-overlay table — all cohort seats
+
+All 63 seats appearing in any of C1–C5b. Compact column codes:
+
+- **Belt**: short form (`N-` = northern, `S-` = southern, prefix-stripped from `central-`).
+- **Flags**: `CM` = C-M competition (both ≥15%); `CA` = Christian-anxiety (C ≥20% + M trend > +0.5pp + C trend ≤ +0.5pp).
+- **Caste**: district-level Nair / Ezhava / SC %, attached to all ACs in the district.
+- **BJP %16→21→26**: BJP-only effective shares across cycles (BJP, with same-individual fallback).
+- **Δ21-26**: BJP-only change.
+
+| AC | Name | Dist | Belt | Cohorts | H/C/M | ΔC/ΔM | Flags | Nair/Ezh/SC | BJP %16→21→26 | Δ21-26 |
+|---:|---|---|---|---|---|---|---|---|---|---:|
+| 1 | MANJESHWAR         | Kasar | N-mixed   | C4b            | 44/3/53 | -0.2/+3.8 | —     | 15/26/11 | 36→38→36 | -1.6 |
+| 2 | KASARAGOD          | Kasar | N-mixed   | C4a            | 44/2/54 | -0.2/+3.9 | —     | 15/26/11 | 39→35→32 | -3.0 |
+| 5 | TRIKARIPUR         | Kasar | N-mixed   | C5b            | 69/10/21 | -0.2/+2.4 | —     | 15/26/11 | 7→7→0 | -6.8 |
+| 9 | IRIKKUR            | Kannu | N-mixed   | C5b            | 49/28/22 | -0.6/+2.5 | CM/CA | 16/65/5 | 6→5→0 | -5.1 |
+| 13 | THALASSERY         | Kannu | N-mixed   | C3             | 61/2/37 | -0.1/+3.6 | —     | 16/65/5 | 17→0→16 | +15.8 |
+| 16 | PERAVOOR           | Kannu | N-mixed   | C5b            | 52/23/25 | -0.6/+2.7 | CM/CA | 16/65/5 | 7→6→0 | -6.4 |
+| 21 | KUTTIADI           | Kozhi | N-mixed   | C5b            | 59/2/39 | -0.1/+3.6 | —     | 22/52/11 | 8→5→7 | +1.4 |
+| 24 | PERAMBRA           | Kozhi | N-mixed   | C5b            | 57/2/41 | -0.1/+3.7 | —     | 22/52/11 | 0→7→8 | +0.8 |
+| 27 | KOZHIKODE NORTH    | Kozhi | N-mixed   | C1             | 57/2/41 | -0.1/+3.7 | —     | 22/52/11 | 23→23→28 | +5.8 |
+| 28 | KOZHIKODE SOUTH    | Kozhi | N-mixed   | C2             | 57/2/41 | -0.1/+3.7 | —     | 22/52/11 | 0→21→26 | +4.7 |
+| 32 | THIRUVAMBADI       | Kozhi | N-mixed   | C5b            | 33/12/54 | -0.9/+3.8 | —     | 22/52/11 | 0→5→0 | -5.5 |
+| 34 | ERNAD              | Malap | N-muslim  | C5b            | 22/1/77 | -0.1/+2.9 | —     | 14/38/30 | 4→5→5 | +0.5 |
+| 35 | NILAMBUR           | Malap | N-muslim  | C5b            | 31/8/61 | -0.6/+3.7 | —     | 14/38/30 | 0→5→0 | -5.0 |
+| 36 | WANDOOR            | Malap | N-muslim  | C5b            | 30/8/62 | -0.6/+3.6 | —     | 14/38/30 | 6→4→0 | -4.2 |
+| 38 | PERINTHALMANNA     | Malap | N-muslim  | C5b            | 27/2/71 | -0.2/+3.3 | —     | 14/38/30 | 4→5→4 | -0.9 |
+| 39 | MANKADA            | Malap | N-muslim  | C5b            | 24/2/75 | -0.2/+3.0 | —     | 14/38/30 | 4→4→5 | +1.4 |
+| 40 | MALAPPURAM         | Malap | N-muslim  | C5b            | 24/1/75 | -0.1/+3.1 | —     | 14/38/30 | 5→4→5 | +1.0 |
+| 41 | VENGARA            | Malap | N-muslim  | C5b            | 14/0/85 | -0.0/+2.1 | —     | 14/38/30 | 6→5→4 | -0.9 |
+| 43 | TIRURANGADI        | Malap | N-muslim  | C5b            | 18/0/82 | -0.0/+2.5 | —     | 14/38/30 | 6→6→7 | +0.9 |
+| 45 | TIRUR              | Malap | N-muslim  | C5b            | 21/1/78 | -0.1/+2.8 | —     | 14/38/30 | 6→5→4 | -1.0 |
+| 51 | SHORNUR            | Palak | hindu     | C4a            | 61/2/38 | -0.1/+3.6 | —     | 16/31/23 | 0→24→21 | -3.4 |
+| 52 | OTTAPPALAM         | Palak | hindu     | C1             | 54/2/44 | -0.1/+3.8 | —     | 16/31/23 | 19→16→25 | +9.6 |
+| 54 | MANNARKKAD         | Palak | hindu     | C5a,C5b        | 43/8/49 | -0.5/+3.8 | —     | 16/31/23 | 0→0→0 | +0.0 |
+| 55 | MALAMPUZHA         | Palak | hindu     | C4b            | 63/3/34 | -0.1/+3.4 | —     | 16/31/23 | 29→31→30 | -0.3 |
+| 56 | PALAKKAD           | Palak | hindu     | C4b            | 63/3/34 | -0.1/+3.4 | —     | 16/31/23 | 29→35→34 | -1.8 |
+| 63 | GURUVAYOOR         | Thris | syromalab | C3             | 40/7/53 | -0.5/+3.8 | —     | 16/46/17 | 18→0→18 | +17.9 |
+| 64 | MANALUR            | Thris | syromalab | C4b            | 56/20/24 | -0.5/+2.7 | CM    | 16/46/17 | 23→22→22 | +0.5 |
+| 67 | THRISSUR           | Thris | syromalab | C4a            | 54/40/6 | +0.0/+0.8 | CA    | 16/46/17 | 20→31→23 | -8.0 |
+| 68 | NATTIKA            | Thris | syromalab | C1             | 64/16/20 | -0.2/+2.3 | CM    | 16/46/17 | 0→22→29 | +7.0 |
+| 69 | KAIPAMANGALAM      | Thris | syromalab | C5a            | 54/5/41 | -0.2/+3.7 | —     | 16/46/17 | 0→0→0 | -6.7 |
+| 70 | IRINJALAKUDA       | Thris | syromalab | C4a            | 64/27/10 | -0.1/+1.2 | CA    | 16/46/17 | 21→22→18 | -4.2 |
+| 71 | PUDUKKAD           | Thris | syromalab | C4a            | 59/36/6 | +0.1/+0.8 | CA    | 16/46/17 | 23→22→18 | -4.0 |
+| 72 | CHALAKUDY          | Thris | syromalab | C5a            | 49/44/7 | -0.1/+0.9 | CA    | 16/46/17 | 0→0→0 | -12.1 |
+| 75 | ANGAMALY           | Ernak | syromalab | C5b            | 34/65/1 | +0.3/+0.2 | —     | 18/40/18 | 0→6→0 | -6.3 |
+| 77 | KALAMASSERY        | Ernak | syromalab | C5a            | 45/34/21 | -0.7/+2.4 | CM/CA | 18/40/18 | 0→0→0 | -7.2 |
+| 86 | MUVATTUPUZHA       | Ernak | syromalab | C5b            | 35/40/24 | -1.1/+2.6 | CM/CA | 18/40/18 | 7→5→0 | -5.2 |
+| 87 | KOTHAMANGALAM      | Ernak | syromalab | C5a,C5b        | 34/29/37 | -1.3/+3.4 | CM/CA | 18/40/18 | 0→0→0 | -3.4 |
+| 88 | DEVIKULAM          | Idukk | syromalab | C3             | 61/32/7 | +0.0/+0.9 | CA    | 7/41/34 | 8→0→13 | +13.5 |
+| 89 | UDUMBANCHOLA       | Idukk | syromalab | C5a            | 48/48/4 | +0.2/+0.5 | —     | 7/41/34 | 0→0→0 | -5.8 |
+| 91 | IDUKKI             | Idukk | syromalab | C5a            | 48/47/5 | +0.1/+0.7 | CA    | 7/41/34 | 0→0→0 | -7.1 |
+| 93 | PALA               | Kotta | reformed- | C1,C3          | 38/52/10 | -0.4/+1.3 | CA    | 24/38/13 | 18→8→26 | +18.2 |
+| 100 | KANJIRAPPALLY      | Kotta | reformed- | C4b            | 46/43/10 | -0.2/+1.3 | CA    | 24/38/13 | 23→21→20 | -1.2 |
+| 101 | POONJAR            | Kotta | reformed- | C4a            | 42/41/16 | -0.6/+1.9 | CM/CA | 24/38/13 | 0→0→25 | -4.8 |
+| 102 | AROOR              | Alapp | S-coastal | C5a            | 66/24/11 | -0.1/+1.4 | CA    | 20/55/10 | 0→0→0 | -10.6 |
+| 103 | CHERTHALA          | Alapp | S-coastal | C5a            | 67/18/15 | -0.1/+1.9 | CM    | 20/55/10 | 0→0→0 | -8.2 |
+| 106 | KUTTANAD           | Alapp | S-coastal | C5a            | 59/37/4 | +0.2/+0.5 | CA    | 20/55/10 | 0→0→0 | -11.9 |
+| 107 | HARIPAD            | Alapp | S-coastal | C2             | 79/9/12 | -0.0/+1.5 | —     | 20/55/10 | 9→12→21 | +9.6 |
+| 108 | KAYAMKULAM         | Alapp | S-coastal | C5a            | 82/7/10 | +0.0/+1.3 | —     | 20/55/10 | 0→0→0 | -7.1 |
+| 109 | MAVELIKKARA        | Alapp | S-coastal | C4a            | 74/18/8 | +0.1/+1.0 | —     | 20/55/10 | 21→21→16 | -4.2 |
+| 110 | CHENGANNUR         | Alapp | S-coastal | C4b            | 66/29/4 | +0.2/+0.6 | CA    | 20/55/10 | 29→24→23 | -0.9 |
+| 111 | THIRUVALLA         | Patha | reformed- | C1             | 48/48/4 | +0.2/+0.5 | —     | 38/26/20 | 0→16→31 | +14.5 |
+| 112 | RANNI              | Patha | reformed- | C5a            | 48/47/5 | +0.2/+0.6 | CA    | 38/26/20 | 0→0→0 | -15.3 |
+| 114 | KONNI              | Patha | reformed- | C4a            | 61/33/5 | +0.1/+0.7 | CA    | 38/26/20 | 12→22→0 | -21.9 |
+| 116 | KARUNAGAPPALLY     | Kolla | S-ezhava  | C3             | 66/5/29 | -0.2/+3.1 | —     | 32/30/17 | 0→7→19 | +11.6 |
+| 125 | ERAVIPURAM         | Kolla | S-ezhava  | C5a            | 53/19/28 | -0.5/+3.0 | CM    | 32/30/17 | 0→0→0 | -6.7 |
+| 126 | CHATHANNOOR        | Kolla | S-ezhava  | C1,C2          | 72/13/15 | -0.1/+1.8 | —     | 32/30/17 | 25→31→38 | +7.6 |
+| 127 | VARKALA            | Thiru | S-nair-la | C3             | 71/4/25 | -0.1/+2.8 | —     | 39/27/15 | 0→0→20 | +11.6 |
+| 128 | ATTINGAL           | Thiru | S-nair-la | C2             | 69/17/14 | -0.0/+1.8 | —     | 39/27/15 | 20→26→31 | +4.9 |
+| 129 | CHIRAYINKEEZHU     | Thiru | S-nair-la | C4b            | 69/17/14 | -0.0/+1.8 | —     | 39/27/15 | 14→21→22 | +1.1 |
+| 131 | VAMANAPURAM        | Thiru | S-nair-la | C5a            | 64/13/23 | -0.2/+2.7 | —     | 39/27/15 | 0→0→0 | -3.8 |
+| 132 | KAZHAKOOTTAM       | Thiru | S-nair-la | C1             | 69/17/14 | -0.0/+1.8 | —     | 39/27/15 | 33→29→36 | +6.6 |
+| 133 | VATTIYOORKAVU      | Thiru | S-nair-la | C4b            | 69/16/15 | -0.0/+1.9 | —     | 39/27/15 | 32→29→29 | +0.0 |
+| 135 | NEMOM              | Thiru | S-nair-la | C1             | 69/17/14 | -0.0/+1.8 | —     | 39/27/15 | 48→36→41 | +5.4 |
