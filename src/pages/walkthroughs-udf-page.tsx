@@ -30,6 +30,16 @@ const OUTLIER_AC_NUMBERS = new Set([
   98, // Puthuppally
 ])
 
+/**
+ * Bounding box for the Central-5 districts (Idukki, Ernakulam, Wayanad,
+ * Malappuram, Kottayam) in the `kerala-constituencies-paths.json`
+ * coordinate space (canvas 600 × 900). Used to crop the Central-5
+ * sweep map so the reader's eye focuses on the swept area instead of
+ * scanning the full state. Computed from the 47 ACs in those five
+ * districts with a 5% margin.
+ */
+const CENTRAL_5_VIEWBOX: [number, number, number, number] = [212, 137, 354, 595]
+
 /** Right-rail nav anchors for this page. Each id matches a `<section id="...">` below. */
 const RAIL_GROUPS = [
   {
@@ -181,10 +191,11 @@ export function WalkthroughsUDFPage() {
                     valueByAC={udfDeltaMap}
                     colorScale="diverging"
                     domain={[-25, 25]}
-                    ariaLabel="Kerala constituencies shaded by UDF Δshare 2021 → 2026"
+                    ariaLabel="Central-5 districts (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) shaded by UDF Δshare 2021 → 2026"
                     unit="pp"
                     decimals={1}
                     highlightSeats={udfWins}
+                    viewBox={CENTRAL_5_VIEWBOX}
                   />
                   <ChoroplethLegend
                     colorScale="diverging"
@@ -194,7 +205,7 @@ export function WalkthroughsUDFPage() {
                   />
                 </div>
               }
-              caption="UDF Δshare 2021 → 2026; UDF-won ACs outlined. Central-5 (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) shows uniformly strong UDF gains."
+              caption="Central-5 districts (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) cropped from full state. UDF Δshare 2021 → 2026; UDF-won ACs outlined."
             >
               <p className={SECTION_LEAD}>
                 <strong>Five districts went UDF in every seat.</strong> 47 of
