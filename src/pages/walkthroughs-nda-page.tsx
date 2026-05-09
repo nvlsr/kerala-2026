@@ -1244,13 +1244,13 @@ export function WalkthroughsNDAPage() {
               <p>
                 This is the floor of NDA's footprint. Even where BJP{" "}
                 <em>does</em> field, the alliance can't crack double digits
-                across three cycles. Tells us where the structural ceiling for
-                NDA is roughly zero — and contrasts with{" "}
+                across three cycles. NDA's vote share is stuck in the single
+                digits — too low to threaten a seat under FPTP. Contrasts with{" "}
                 <CohortLink slug="strategic-abstention">
                   strategic abstention
                 </CohortLink>
-                , where the ceiling exists but BJP has decided to hand the seat
-                to BDJS or T20.
+                , where a viable ceiling does exist (10-15% via BDJS or T20) but
+                BJP chooses not to compete directly.
               </p>
               <Table>
                 <TableHeader>
