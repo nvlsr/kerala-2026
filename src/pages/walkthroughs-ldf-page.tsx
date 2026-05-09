@@ -6,6 +6,7 @@ import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { Histogram } from "@/components/charts/histogram"
 import { ConfidenceBadge } from "@/components/walkthroughs/confidence-badge"
 import { MethodologyPopover } from "@/components/walkthroughs/methodology-popover"
+import { SeatLink } from "@/components/walkthroughs/prose-link"
 import { PullQuote } from "@/components/walkthroughs/pull-quote"
 import { SeeAlsoQuestions } from "@/components/walkthroughs/see-also-questions"
 import { ASIDE, SECTION_LEAD } from "@/components/walkthroughs/typography"
@@ -39,7 +40,7 @@ const RAIL_GROUPS = [
   {
     label: "Mechanism + caveats",
     items: [
-      { id: "where-it-went", label: "The lost vote landed on UDF" },
+      { id: "where-it-went", label: "Most went to UDF" },
       { id: "what-would-weaken", label: "What would weaken this" },
     ],
   },
@@ -191,12 +192,14 @@ export function WalkthroughsLDFPage() {
                 between −12pp and −3pp.
               </p>
               <p>
-                Excess kurtosis is +1.55, slightly fatter-tailed than a normal
-                distribution. The outliers worth naming — Udumbanchola
-                (−24.6pp), Payyannur (−17.8pp), Puthuppally (−16.8pp) on the
-                loss side; Vengara (+8.5pp), Konni (+3.2pp) on the gain side —
-                sit visibly outside the modal cluster. The "shallow everywhere"
-                framing coexists with these specific outliers; both are true.
+                A few outliers sit visibly outside the modal cluster —{" "}
+                <SeatLink ac={89}>Udumbanchola</SeatLink> (−24.6pp),{" "}
+                <SeatLink ac={6}>Payyannur</SeatLink> (−17.8pp),{" "}
+                <SeatLink ac={98}>Puthuppally</SeatLink> (−16.8pp) on the loss
+                side; <SeatLink ac={41}>Vengara</SeatLink> (+8.5pp),{" "}
+                <SeatLink ac={114}>Konni</SeatLink> (+3.2pp) on the gain side.
+                The "shallow everywhere" framing coexists with these specific
+                outliers; both are true.
               </p>
             </WalkthroughSection>
 
@@ -246,8 +249,11 @@ export function WalkthroughsLDFPage() {
                 Press framing predicted larger LDF losses in pilgrim-route ACs
                 as evidence of Hindu backlash over the Sabarimala gold-cladding
                 scandal and lingering 2018 anger. The data shows the opposite:
-                the three geographic Sabarimala-route ACs (Aranmula, Konni,
-                Ranni) had a smaller LDF loss ({routeMean.toFixed(1)}pp) than{" "}
+                the three geographic Sabarimala-route ACs (
+                <SeatLink ac={113}>Aranmula</SeatLink>,{" "}
+                <SeatLink ac={114}>Konni</SeatLink>,{" "}
+                <SeatLink ac={112}>Ranni</SeatLink>) had a smaller LDF loss (
+                {routeMean.toFixed(1)}pp) than{" "}
                 <MethodologyPopover term="matched-controls">
                   matched Hindu-majority controls
                 </MethodologyPopover>{" "}
@@ -257,11 +263,12 @@ export function WalkthroughsLDFPage() {
               </p>
               <p>
                 What does happen: the three Devaswom-related ministers (Vasavan
-                / Ettumanoor, Veena George / Aranmula, Kadakampally /
-                Kazhakoottam) lost their own seats by ~4pp more than matched
-                controls. That's a minister-incumbency penalty applied to
-                specific high-visibility cabinet members, not a route-targeted
-                geographic effect.
+                / <SeatLink ac={96}>Ettumanoor</SeatLink>, Veena George /{" "}
+                <SeatLink ac={113}>Aranmula</SeatLink>, Kadakampally /{" "}
+                <SeatLink ac={132}>Kazhakoottam</SeatLink>) lost their own seats
+                by ~4pp more than matched controls. That's a minister-incumbency
+                penalty applied to specific high-visibility cabinet members, not
+                a route-targeted geographic effect.
               </p>
               <p className={ASIDE}>
                 Numbers from the A2 matched-controls analysis. See "Underlying
@@ -325,7 +332,7 @@ export function WalkthroughsLDFPage() {
             {/* SECTION 5 — Mechanism: where the vote went */}
             <WalkthroughSection
               id="where-it-went"
-              heading="The lost vote landed on UDF"
+              heading="Most of the lost vote landed on UDF"
               sectionType="mechanism"
               visual={
                 <ComparisonBar
@@ -351,35 +358,40 @@ export function WalkthroughsLDFPage() {
                   ]}
                   yUnit="pp"
                   yDecimals={2}
-                  ariaLabel="Mean Δshare by alliance — UDF absorbed almost the entire LDF loss"
+                  ariaLabel="Mean Δshare by alliance — UDF absorbed most of the LDF loss; NDA absorbed a smaller slice"
                   yDomain={[-3, 9]}
                 />
               }
-              caption="Mean per-AC Δshare 2021 → 2026. UDF absorbed 98% of LDF's loss; NDA absorbed 28%; OTHER bled."
+              caption="Mean per-AC Δshare 2021 → 2026. UDF absorbed 98% on average; NDA absorbed 28%; OTHER bled."
               layout="visual-left"
             >
               <p className={SECTION_LEAD}>
-                <strong>UDF absorbed almost the entire LDF loss.</strong> The
-                "UDF surge" reads more accurately as the geographic landing
-                pattern of LDF erosion.
+                <strong>
+                  Most of the LDF loss flowed to UDF — but not all of it.
+                </strong>{" "}
+                In ~65% of ACs, UDF absorbed the bulk of LDF's defectors. In a
+                meaningful subset (23%), NDA out-bid UDF for those voters
+                instead.
               </p>
               <p>
-                UDF gained an average of +7.29pp per AC — almost numerically
+                On average, UDF gained +7.29pp per AC — almost numerically
                 identical to LDF's −7.43pp loss. NDA also gained (+2.05pp), and
-                OTHER alliances/independents bled (−1.91pp).
+                OTHER alliances/independents bled (−1.91pp). The statewide
+                averages mask a real geographic split:
               </p>
               <p>
                 65% of ACs show UDF-dominant absorption (UDF received &gt;70% of
                 LDF's loss). 23% show NDA-dominant absorption — concentrated in
-                southern Kerala. See the{" "}
+                southern Kerala, where BJP and UDF directly competed for the
+                same defectors. See the{" "}
                 <Link
                   to="/walkthroughs/nda-walkthrough#wave-capture"
                   className="font-medium text-foreground underline-offset-2 hover:underline"
                 >
                   NDA walkthrough's wave-capture section
                 </Link>{" "}
-                for the 21 seats where NDA out-bid UDF for those defectors. Only
-                3% of ACs saw LDF hold or gain.
+                for the 21 seats where NDA out-bid. Only 3% of ACs saw LDF hold
+                or gain.
               </p>
               <p>
                 <strong>Why this matters for 2031.</strong> An "anti-LDF wave"
