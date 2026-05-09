@@ -9,7 +9,9 @@ Five slices of BJP's 2026 Kerala posture — three positive ("doing well"), two 
 - **C4b — Stable mature:** had a base, ceiling-bound (8 seats).
 - **C5a — Strategic abstention:** BJP never fielded across 3 cycles (14 seats).
 - **C5b — Structural exclusion:** alliance can't break 8% in any cycle (19 seats).
-- **C6 — NDA out-captured UDF in the anti-LDF wave:** NDA Δ > UDF Δ at meaningful seats (21 seats).
+- **C6 — NDA out-captured UDF in the anti-LDF wave:** NDA Δ > UDF Δ at meaningful seats (21 seats). Conversion to win requires a *second* condition: NDA 2021 base ≥ ~29%. All 3 BJP wins satisfy both; the 18 wave-favored losers fail at least one.
+
+Plus a candidate-quality classification (orthogonal to cohorts): **Marquee** (13 candidates, manual annotation), **Successful** (Δ ≥ +5pp + ≥15% share — 18 candidates), **Poor** (Δ ≤ −3pp from ≥10% base — 12 non-withdrawal candidates), **Cross-seat-no-uplift** (3). Helps separate "BJP can't win here" (base/demographics) from "BJP wasted this opportunity" (candidate selection).
 
 ## Methodology — effective baselines
 
@@ -287,6 +289,41 @@ The strongest "doing well" performers are still mostly **not on the priority lis
 
 **21 seats qualify** (vs statewide means: LDF Δ −4pp, UDF Δ +7pp, NDA Δ +1.4pp). These are the seats where BJP/NDA out-competed UDF for the LDF→swing voters.
 
+### The two-condition model (replacing the earlier "Trivandrum belt" framing)
+
+Looking at the 21 wave-favored seats sorted by NDA 2021 base reveals a sharp threshold:
+
+| NDA 2021 base | Won? | Examples |
+|---|---|---|
+| **≥29%** (3 seats) | **3 of 3 won** | Nemom (35.5%), Kazhakoottam (29.1%), Chathannoor (30.6%) |
+| 22–26% (3 seats) | 0 of 3 won | Attingal 25.9%, Kozhikode N 22.5%, Nattika 22.0% |
+| 15–18% (5 seats) | 0 of 5 won | Ottappalam, Nedumangad, Chelakkara, Wadakkanchery, Thripunithura |
+| <15% (10 seats) | 0 of 10 won | Pala (7.9%!), Karunagappally, Varkala, Sulthanbathery |
+
+**Below NDA-2021 ≈ 29%, even the strongest wave-capture in Kerala (Pala +18pp BJP, +31pp NDA-UDF gap) doesn't reach winning share.** The base does the heavy lifting; the wave just gets you over the line.
+
+The earlier "Trivandrum belt" framing was a confound. Looking at all 8 seats with NDA 2021 ≥ 25%:
+
+| AC | NDA 2021 | Wave-favored? | Won? |
+|---|---:|---|---|
+| Nemom | 35.5% | ✓ | ✓ |
+| Kazhakoottam | 29.1% | ✓ | ✓ |
+| Chathannoor | 30.6% | ✓ | ✓ |
+| Manjeshwar | 37.7% | ✗ (Hindu+Muslim Kasaragod, IUML absorbs swing) | ✗ |
+| Palakkad | 35.3% | ✗ (Hindu+Muslim Palakkad, same dynamic) | ✗ |
+| Malampuzha | 30.7% | ✗ (same) | ✗ |
+| Vattiyoorkavu | 28.8% | ✗ | ✗ |
+| Attingal | 25.9% | partial | ✗ |
+
+**Two conditions, both necessary**:
+
+1. **Mature base** — NDA 2021 effective baseline ≥ ~29%. Below this, conversion to win is structurally impossible in a three-way contest.
+2. **Local LDF→swing flows toward NDA, not UDF** — depends on demographic mix and candidate fit. In Hindu+Muslim Kasaragod/Palakkad, IUML absorbs Muslim votes structurally so even when LDF loses, NDA doesn't gain. In Hindu+Muslim Trivandrum, the swing does flow toward NDA.
+
+The earlier "belt" reading conflated these because Trivandrum belt happens to combine both conditions. Manjeshwar/Palakkad have condition 1 but lack condition 2, and don't win. Pala has condition 2 (massive +31pp NDA-UDF gap) but lacks condition 1, and doesn't win.
+
+**The 18 wave-favored losers fail at least one condition.** The closest-misses (just below the base threshold) are interesting 2031 watch-list candidates: Attingal (25.9% base, +4.9pp gain → 30.8%), Kozhikode North (22.5% → 28.3%), Nattika (22.0% → 29.0%). One more cycle of base-building could put them at the threshold.
+
 | AC | Name | District | H/C/M | NDA 2021 | NDA 2026 | NDA Δ | UDF Δ | LDF Δ | NDA-UDF gap | Win |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---|
 | 93 | **Pala** | Kottayam | 37/52/10 | 7.9% | 26.1% | +18.2 | −12.9 | −4.0 | **+31.1** | UDF |
@@ -350,6 +387,102 @@ The 13 C6 seats *not* in C1 are interesting: they're seats where NDA out-capture
 The standard reading of Kerala 2026 is "anti-LDF wave landed mostly on UDF; BJP picked up scraps." Cohort 6 says: **at 21 specific seats (15% of Kerala's 140 ACs), the anti-LDF wave landed mostly on NDA instead of UDF**. Where? Mostly in Trivandrum belt + scattered Christian-mixed and Hindu-Muslim seats. These are the seats where NDA's brand or candidate-fit successfully competed with UDF for swing voters — not just absorbed BJP-base voters.
 
 Cohort 6 is also the best window into BJP's *competitive* terrain — seats where BJP isn't just holding a Hindu-vote ceiling (C4b) but actively winning the strategic argument against UDF in the LDF→opposition redistribution.
+
+---
+
+## Candidate quality classification
+
+A separate dimension from cohort placement: tagging each 2026 BJP candidate by track-record signal. Helps separate seats that lost because of *base* problems from seats that lost because of *candidate* problems — and surfaces ACs that might be unfairly written off as "BJP can't win here" when in fact a poor candidate did the damage.
+
+### Tags
+
+- **Marquee** — manual annotation based on external knowledge. Candidates with national or state-level political profile (Union MoS, BJP state president, defectors with established personal vote, multi-cycle veterans). 13 candidates statewide. Manual list — not computable from data alone.
+- **Successful** — vote-share Δ ≥ +5pp AND 2026 share ≥ 15%. Captures candidates whose seat moved meaningfully upward. 18 candidates statewide.
+- **Poor** — vote-share Δ ≤ −3pp at same seat (BJP fielded both years) AND 2021 base ≥ 10% (meaningful base going in). Signals decline despite a real starting position. 12 candidates statewide (excluding withdrawal cases where there's no 2026 candidate).
+- **Cross-seat-no-uplift** — ran in another AC in 2021, moved to a new AC for 2026, didn't lift the new seat's NDA share by ≥+2pp. Signals that the candidate didn't bring new voters with them. 3 candidates.
+- **Neutral** — none of the above (modest or no movement, no track record signal).
+
+A candidate can carry multiple tags (e.g., Marquee + Successful, or Marquee + Poor).
+
+### Marquee candidates (13)
+
+| AC | Seat | Candidate | 2021 → 2026 | Tag |
+|---|---|---|---|---|
+| 135 | Nemom | Rajeev Chandrasekhar | 35.5% → 40.9% (+5.4) | Marquee + Successful (won) |
+| 132 | Kazhakoottam | V. Muraleedharan | 29.1% → 35.7% (+6.6) | Marquee + Successful (won) |
+| 126 | Chathannoor | B.B. Gopakumar | 30.6% → 38.2% (+7.6) | Marquee + Successful (won) |
+| 93 | Pala | Shone George | 7.9% → 26.1% (+18.2) | Marquee + Successful (lost — insufficient base) |
+| 111 | Thiruvalla | Anoop Antony | 16.2% → 30.7% (+14.5) | Marquee + Successful (lost — insufficient base) |
+| 113 | Aranmula | Kummanam Rajasekharan | 18.0% → 22.3% (+4.3) | Marquee + Neutral |
+| 100 | Kanjirappally | Adv. George Kurian | 21.2% → 20.0% (−1.2) | Marquee + Neutral (marquee both years — no fresh bump) |
+| 1 | Manjeshwar | K. Surendran | 37.7% → 36.1% (−1.6) | Marquee + Neutral (no wave) |
+| 56 | Palakkad | Sobha Surendran | 35.3% → 33.5% (−1.8) | Marquee + Neutral (no wave) |
+| 55 | Malampuzha | C. Krishnakumar | 30.7% → 30.4% (−0.3) | Marquee + Neutral (no wave) |
+| 133 | Vattiyoorkavu | R. Sreelekha | 28.8% → 28.8% (+0.0) | Marquee + Neutral (no wave) |
+| 67 | Thrissur | Padmaja Venugopal | 31.3% → 23.3% (−8.0) | **Marquee + Poor** |
+| 101 | Poonjar | P.C. George | 29.9% → 25.1% (−4.8) | **Marquee + Poor** (declining personal vote across 3 cycles) |
+
+**Two marquee + poor cases**: Padmaja Venugopal at Thrissur (despite Suresh-Gopi-family + INC-defector profile, lost 8pp) and P.C. George at Poonjar (declining personal vote across 3 cycles). Both seats had high 2021 bases that the candidates couldn't hold.
+
+### Poor candidates (12, excluding withdrawals)
+
+These are seats where BJP fielded both years, had ≥10% base in 2021, but declined ≥3pp in 2026:
+
+| AC | Seat | Candidate | 2021 → 2026 |
+|---|---|---|---:|
+| 67 | Thrissur | Padmaja Venugopal | 31.3% → 23.3% (−8.0) ★Marquee |
+| 101 | Poonjar | P.C. George | 29.9% → 25.1% (−4.8) ★Marquee |
+| 105 | Ambalappuzha | Arun Anirudhan | 16.3% → 11.7% (−4.6) |
+| 70 | Irinjalakuda | Santhosh Cherakulam | 22.1% → 17.9% (−4.2) |
+| 109 | Mavelikkara | K. Ajimon | 20.5% → 16.3% (−4.2) |
+| 71 | Pudukkad | Parameswaran A | 22.3% → 18.3% (−4.0) |
+| 104 | Alappuzha | M.J. Job | 13.7% → 9.8% (−3.9) |
+| 51 | Shornur | Adv. Sanku T. Das | 24.3% → 20.9% (−3.4) |
+| 53 | Kongad | Dr. Renu Suresh | 20.0% → 16.9% (−3.1) ⓒ Cross-seat-no-uplift |
+| 2 | Kasaragod | Ashwini M.L. | 34.9% → 31.9% (−3.0) |
+
+The most analytically interesting cases are seats where Poor + meaningful base coincided:
+- **Kasaragod (Ashwini M.L.)** had 34.9% in 2021 — would have qualified for Cohort 1 territory if the candidate had even held flat. Worth flagging as a "candidate problem, not seat problem" case.
+- **Shornur, Pudukkad, Irinjalakuda, Mavelikkara, Ambalappuzha** all had 16–24% 2021 bases that eroded. Hindu+Christian Thrissur belt mostly. These are seats that *could* have been competitive with stronger candidates.
+
+### Successful candidates not on the marquee list (12)
+
+| AC | Seat | Candidate | 2021 → 2026 | Notes |
+|---|---|---|---:|---|
+| 52 | Ottappalam | Major Ravi | 15.5% → 25.1% (+9.6) | Director, military background — semi-marquee |
+| 130 | Nedumangad | Yuvraj Gokul | 17.6% → 24.7% (+7.1) | |
+| 27 | Kozhikode North | Navya Haridas | 22.5% → 28.3% (+5.8) | Cross-seat (was at Kozhikode S 2021 with 20.9%) — successful at new seat |
+| 61 | Chelakkara | K. Balakrishnan | 15.7% → 23.0% (+7.3) | |
+| 68 | Nattika | C.C. Mukundan | 22.0% → 29.0% (+7.0) | |
+| 107 | Haripad | Sandheep Vaachaspathi | 11.9% → 21.5% (+9.6) | |
+| 95 | Vaikom | K. Ajith | 9.4% → 16.2% (+6.8) | Slot-rotation effect — caveat |
+| 18 | Sulthanbathery | Kavitha A.S. | 9.1% → 17.8% (+8.8) | |
+| 116 | Karunagappally | V.S. Jithin Dev | 7.0% → 18.7% (+11.6) | |
+| 13 | Thalassery | O. Nidheesh | 0.0% → 15.8% (+15.8) | Re-entry from non-fielding |
+| 63 | Guruvayoor | Adv. B. Gopalakrishnan | 0.0% → 17.9% (+17.9) | Re-entry from non-fielding |
+| 127 | Varkala | Adv. Smitha Sundaresan | 8.3% → 19.9% (+11.6) | BDJS → BJP slot rotation |
+| 136 | Aruvikkara | Vivek Gopan | 10.6% → 16.3% (+5.7) | Cross-seat (was at AC 117 in 2021 with 9.9%) |
+
+**Major Ravi at Ottappalam** is the user's reference example for "successful but not marquee." +9.6pp gain — strongest non-marquee growth in the data.
+
+### Cross-seat candidates without uplift (3)
+
+| AC | Seat | Candidate | 2026 NDA | Prior 2021 |
+|---|---|---|---:|---|
+| 6 | Payyannur | A.P. Gangadharan | 5.4% (Δ −2.1) | AC 8 @ 7.3% |
+| 42 | Vallikunnu | Premkumar (Preman Master) | 13.0% (Δ −0.2) | AC 41 @ 4.5% |
+| 53 | Kongad | Dr. Renu Suresh | 16.9% (Δ −3.1) | AC 84 @ 4.7% |
+
+These are candidates who moved seats and didn't bring uplift. Useful weak-signal indicator.
+
+### What this classification lets us claim
+
+- **2 of 12 marquee placements outside the Trivandrum belt converted to wins** (Chathannoor's Gopakumar — but he's marquee + multi-cycle continuity at the same seat). The other marquee placements (Manjeshwar, Palakkad, Malampuzha, Aranmula, Kanjirappally, Vattiyoorkavu) all had mature bases but lacked condition 2 (wave-favored swing).
+- **Seats lost because of candidate weakness, not base problems**: Kasaragod (Ashwini M.L.), Shornur, Pudukkad, Irinjalakuda, Mavelikkara, Ambalappuzha. These are recoverable in 2031 with stronger candidate selection — they shouldn't be written off.
+- **Poor candidates wasted favorable conditions**: Padmaja Venugopal at Thrissur is the most striking — marquee profile, mature base, but declined 8pp anyway.
+- **Major Ravi (Ottappalam)** is the cleanest "non-marquee successful" — produces real growth without national-name positioning.
+
+The "Marquee" tag is rare (13 candidates) and partial (manual annotation). The Successful/Poor tags are computable and internally consistent. Together they let us separate "BJP can't win here" from "BJP wasted this opportunity" in a way the cohort taxonomy alone doesn't.
 
 ---
 
