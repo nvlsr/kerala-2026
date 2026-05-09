@@ -386,59 +386,55 @@ export function WalkthroughsInsightsPage() {
           <ul className="ml-5 list-disc space-y-1.5">
             <li>
               <strong className="font-medium text-foreground/80">
-                BJP cohort definitions:
+                Election results:
               </strong>{" "}
-              defined on the{" "}
+              Election Commission of India and{" "}
               <a
-                href="/walkthroughs/nda-walkthrough"
+                href="http://keralaassembly.org/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-medium text-foreground underline-offset-2 hover:underline"
               >
-                NDA walkthrough
-              </a>
-              . Each cohort has explicit selection criteria and is constructed
-              from per-AC vote-share data (
-              <code className="font-mono text-[11px]">data/historical/</code> +{" "}
-              <code className="font-mono text-[11px]">
-                data/kerala-2026.json
-              </code>
-              ).
+                keralaassembly.org
+              </a>{" "}
+              (2026); keralaassembly.org, Wikipedia, and{" "}
+              <a
+                href="https://datameet.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground underline-offset-2 hover:underline"
+              >
+                datameet
+              </a>{" "}
+              (historical 2011 / 2016 / 2021).
             </li>
             <li>
               <strong className="font-medium text-foreground/80">
                 Religion shares:
               </strong>{" "}
-              <code className="font-mono text-[11px]">
-                data/ac-demographics-2025.json
-              </code>{" "}
-              — projected from 2011 Census via SHRUG aggregation, with
-              cohort-multiplier projection to ~2025. AC-level precision.
-            </li>
-            <li>
-              <strong className="font-medium text-foreground/80">
-                Community belts:
-              </strong>{" "}
-              <code className="font-mono text-[11px]">
-                data/community-belts.json
-              </code>{" "}
-              — district-level classification curated against historical
-              community geography (NSS / SNDP / Syro-Malabar / Marthoma / IUML
-              strongholds). District-level only; AC-precision overrides reserved
-              for future passes.
+              2011 Census of India via{" "}
+              <a
+                href="https://www.devdatalab.org/shrug"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-foreground underline-offset-2 hover:underline"
+              >
+                SHRUG
+              </a>{" "}
+              (Socioeconomic High-resolution Rural-Urban Geographic Platform),
+              with cohort-multiplier projection to ~2025.
             </li>
             <li>
               <strong className="font-medium text-foreground/80">
                 Reservation status:
               </strong>{" "}
-              <code className="font-mono text-[11px]">
-                data/reservations.json
-              </code>{" "}
-              — per the 2008 Delimitation Order. 14 SC + 2 ST seats; stable
-              across all four elections in this dataset (2011, 2016, 2021,
-              2026).
+              2008 Delimitation Order, Government of India. 14 SC + 2 ST seats,
+              stable across the 2011 / 2016 / 2021 / 2026 cycles.
             </li>
           </ul>
           <p className="mt-3 max-w-prose">
-            Full source notes and methodology live on the{" "}
+            Full methodology — including how cohort criteria are operationalised
+            and how community belts are derived — lives on the{" "}
             <a
               href="/walkthroughs/methodology"
               className="font-medium text-foreground underline-offset-2 hover:underline"
