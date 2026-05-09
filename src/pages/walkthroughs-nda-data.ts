@@ -894,7 +894,7 @@ export const SOUTH_CLUSTER_VIEWBOX: [number, number, number, number] = [
  */
 export type ThreeLensRow = {
   lens: string
-  question: string
+  meaning: string
   n: number
   bjpDelta: number
 }
@@ -902,19 +902,19 @@ export type ThreeLensRow = {
 export const THREE_LENSES: ThreeLensRow[] = [
   {
     lens: "Statewide",
-    question: "Average across all 140 ACs (uniform-effort assumption)",
+    meaning: "All 140 seats; non-fielded seats counted as 0%",
     n: 140,
     bjpDelta: 0.3,
   },
   {
-    lens: "Where BJP fielded both years (paired)",
-    question: "At seats BJP contested in both 2021 and 2026",
+    lens: "Contested in both cycles",
+    meaning: "Seats BJP fielded in 2021 and 2026",
     n: 89,
     bjpDelta: 1.65,
   },
   {
-    lens: "Targeted seats",
-    question: "Five-cohort union — where BJP put real effort",
+    lens: "Target universe",
+    meaning: "5 cohorts deduplicated",
     n: 30,
     bjpDelta: 5.16,
   },

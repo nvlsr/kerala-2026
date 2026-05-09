@@ -242,7 +242,7 @@ const RAIL_GROUPS: ReadonlyArray<{
   {
     label: "Synthesis",
     items: [
-      { id: "vote-share-decomposition", label: "Vote-share decomposition" },
+      { id: "vote-share-decomposition", label: "Statewide is the wrong lens" },
       { id: "does-not-mean", label: "What this does NOT mean" },
       { id: "methodology", label: "Methodology" },
     ],
@@ -1358,102 +1358,327 @@ export function WalkthroughsNDAPage() {
               </p>
             </CohortSection>
 
-            {/* SECTION 7 — Vote-share decomposition */}
+            {/* SECTION 7 — Why the statewide number misleads */}
             <section
               id="vote-share-decomposition"
               className="scroll-mt-20 border-t pt-10"
             >
               <h2 className="mb-2 font-heading text-xl font-semibold tracking-tight sm:text-2xl">
-                Vote-share decomposition
+                Statewide is the wrong lens
               </h2>
               <p className={cn(SECTION_LEAD, "mb-6 max-w-prose")}>
-                How NDA's three constituent parties (BJP, BDJS, T20) added up to
-                the alliance total in 2021 vs 2026, and what the flat statewide
-                aggregate hides about <em>where</em> BJP actually moved.
+                The statewide BJP figure (+0.3pp) looks almost flat. But that
+                single number averages together three very different terrains: a
+                30-seat target universe where BJP grew strongly, a neutral
+                middle where movement was limited, and an abstention-or-
+                exclusion set where BJP either declined or didn't field. The
+                right question isn't "how much did BJP grow statewide?" but
+                "where did BJP choose to compete, and what happened there?"
               </p>
 
-              {/* Punchline + three-lens table */}
-              <div className="mb-8 rounded-md border bg-card/50 p-5 sm:p-6">
-                <p className="mb-4 max-w-prose text-[15px] leading-relaxed font-medium">
-                  All of BJP's net 2026 growth happened inside ~21% of Kerala's
-                  seats. The flat statewide aggregate is the average of three
-                  very different regimes — a targeted 30-seat set where BJP grew
-                  strongly, a neutral middle, and a negative-space set where BJP
-                  declined or sat out.
-                </p>
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead className={COMPACT_HEAD_CLASS}>Lens</TableHead>
-                      <TableHead className={COMPACT_HEAD_CLASS}>
-                        Question it answers
-                      </TableHead>
-                      <TableHead
-                        className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                      >
-                        n
-                      </TableHead>
-                      <TableHead
-                        className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                      >
-                        BJP Δ
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {THREE_LENSES.map((r, i) => (
-                      <TableRow
-                        key={r.lens}
-                        className={
-                          i === THREE_LENSES.length - 1
-                            ? HIGHLIGHT_ROW_CLASS
-                            : ""
-                        }
-                      >
-                        <TableCell
-                          className={cn(COMPACT_CELL_CLASS, "font-medium")}
-                        >
-                          {r.lens}
-                        </TableCell>
-                        <TableCell
-                          className={cn(
-                            COMPACT_CELL_CLASS,
-                            "whitespace-normal text-muted-foreground"
-                          )}
-                        >
-                          {r.question}
-                        </TableCell>
-                        <TableCell
-                          className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                        >
-                          {r.n}
-                        </TableCell>
-                        <TableCell
-                          className={cn(
-                            COMPACT_CELL_CLASS,
-                            NUM_CELL_CLASS,
-                            "font-semibold"
-                          )}
-                        >
-                          {fmtPp(r.bjpDelta)}pp
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-                <p className="mt-3 text-xs text-muted-foreground">
-                  Same data, three lenses. The statewide figure includes ACs
-                  where BJP didn't field (counts as 0%), dragging the mean
-                  toward zero. The paired view at 89 ACs strips that out. The
-                  targeted view zooms further to the 30 ACs where BJP put real
-                  effort.
-                </p>
-              </div>
-
-              {/* NDA party decomposition */}
+              {/* Subsection 1 — Three lenses */}
               <h3 className={cn(SUB_HEADING, "mt-6 mb-3")}>
-                NDA party decomposition (statewide)
+                Same election, three stories
               </h3>
+              <p className="mb-3 max-w-prose text-sm leading-relaxed">
+                The same election produces three very different stories
+                depending on the lens used. Read top-to-bottom, each lens strips
+                away seats where BJP either didn't compete or was structurally
+                weak.
+              </p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Lens</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Meaning
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      n
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      BJP Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {THREE_LENSES.map((r, i) => (
+                    <TableRow
+                      key={r.lens}
+                      className={
+                        i === THREE_LENSES.length - 1 ? HIGHLIGHT_ROW_CLASS : ""
+                      }
+                    >
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, "font-medium")}
+                      >
+                        {r.lens}
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          "whitespace-normal text-muted-foreground"
+                        )}
+                      >
+                        {r.meaning}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.n}
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          NUM_CELL_CLASS,
+                          "font-semibold"
+                        )}
+                      >
+                        {fmtPp(r.bjpDelta)}pp
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+
+              {/* Subsection 2 — Trading breadth for intensity */}
+              <h3 className={cn(SUB_HEADING, "mt-8 mb-3")}>
+                Trading breadth for intensity
+              </h3>
+              <p className="mb-3 max-w-prose text-base leading-relaxed font-medium text-foreground sm:text-[15.5px]">
+                BJP shrank its footprint while raising per-seat share — fewer
+                seats contested directly, higher share where contested.
+              </p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Party</TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      2021 fielded
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      2021 share-where-fielded
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      2026 fielded
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      2026 share-where-fielded
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {FOOTPRINT.map((r) => (
+                    <TableRow
+                      key={r.party}
+                      className={r.party === "BJP" ? HIGHLIGHT_ROW_CLASS : ""}
+                    >
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, "font-medium")}
+                      >
+                        {r.party}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.fielded21}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.share21.toFixed(2)}%
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.fielded26}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.share26.toFixed(2)}%
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+              <p className="mt-3 max-w-prose text-sm leading-relaxed">
+                BJP fielded 98 candidates in 2026, down from 115 (−15%); average
+                share where contested rose from 13.74% to 16.50%. T20 more than
+                doubled its footprint (8 → 19 ACs); per-fielded share dropped
+                because the new ACs are thinner terrain, but aggregate impact
+                grew. BDJS held footprint steady with a small per-fielded
+                uptick.
+              </p>
+
+              {/* Subsection 3 — Where the growth lives */}
+              <h3 className={cn(SUB_HEADING, "mt-8 mb-3")}>
+                Where the growth lives
+              </h3>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Partition
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      n
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      BJP Δ
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      NDA Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {PARTITIONS.map((r, i) => (
+                    <TableRow
+                      key={r.partition}
+                      className={i === 0 ? HIGHLIGHT_ROW_CLASS : ""}
+                    >
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, "font-medium")}
+                      >
+                        {r.partition}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.n}
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          NUM_CELL_CLASS,
+                          "font-semibold"
+                        )}
+                      >
+                        {fmtPp(r.bjpDelta)}pp
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {fmtPp(r.ndaDelta)}pp
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+              <p className="mt-3 max-w-prose text-sm leading-relaxed">
+                This is the cleanest single piece of evidence for the
+                concentration thesis. BJP's gains weren't distributed across
+                Kerala — they concentrated inside the 30-seat targeted subset,
+                while the rest of the state was flat-to-negative.
+              </p>
+              <p className="mt-3 max-w-prose text-sm leading-relaxed">
+                <strong>
+                  Under first-past-the-post, concentrated growth can convert
+                  seats more effectively than thin statewide spread.
+                </strong>{" "}
+                BJP's 2026 looks less like a broad expansion attempt and more
+                like a selective seat-conversion strategy under structural
+                constraints.
+              </p>
+
+              {/* Subsection 4 — Per-cohort detail */}
+              <h3 className={cn(SUB_HEADING, "mt-8 mb-3")}>
+                Per-cohort detail
+              </h3>
+              <p className="mb-3 max-w-prose text-sm leading-relaxed text-muted-foreground">
+                The 6 cohorts that make up the targeted, neutral, and
+                abstention/exclusion partitions. Click a cohort name to jump
+                back to its detail.
+              </p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Cohort</TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      n
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      BJP 2021
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      BJP 2026
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      BJP Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {COHORT_BREAKDOWN.map((r) => (
+                    <TableRow key={r.name}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <CohortLink slug={r.slug}>{r.name}</CohortLink>
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.n}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.bjp21.toFixed(2)}%
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {r.bjp26.toFixed(2)}%
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          NUM_CELL_CLASS,
+                          "font-semibold"
+                        )}
+                      >
+                        {fmtPp(r.bjp26 - r.bjp21)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+
+              {/* Subsection 5 — Alliance arithmetic */}
+              <h3 className={cn(SUB_HEADING, "mt-8 mb-3")}>
+                Alliance arithmetic
+              </h3>
+              <p className="mb-3 max-w-prose text-sm leading-relaxed text-muted-foreground">
+                Supporting detail: how the three NDA constituents added up. NDA
+                grew +2.05pp statewide while BJP itself was flat — the
+                difference came from T20's expansion.
+              </p>
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -1523,253 +1748,6 @@ export function WalkthroughsNDAPage() {
                   </TableRow>
                 </TableBody>
               </Table>
-              <p className="mt-3 max-w-prose text-sm leading-relaxed">
-                BJP itself was essentially flat (+0.30pp on a base of 11.29%).
-                NDA grew +2.05pp, with{" "}
-                <strong>T20 the biggest mover in relative terms</strong> — a
-                100% jump on a tiny base after T20 was inducted into NDA in
-                January 2026 and contested 19 ACs (up from 8 in 2021). BJP +
-                BDJS + T20 totals (14.51%) match the NDA aggregate (14.54%)
-                within rounding.
-              </p>
-
-              {/* Per-cohort breakdown */}
-              <h3 className={cn(SUB_HEADING, "mt-8 mb-3")}>
-                Per-cohort breakdown
-              </h3>
-              <p className="mb-3 max-w-prose text-sm leading-relaxed text-muted-foreground">
-                The "targeted" union is 5 cohorts deduplicated. Click any cohort
-                name to jump back to its detail.
-              </p>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead className={COMPACT_HEAD_CLASS}>Cohort</TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      n
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      BJP 2021
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      BJP 2026
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      BJP Δ
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      NDA 2021
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      NDA 2026
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      NDA Δ
-                    </TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {COHORT_BREAKDOWN.map((r) => (
-                    <TableRow key={r.name}>
-                      <TableCell className={COMPACT_CELL_CLASS}>
-                        <CohortLink slug={r.slug}>{r.name}</CohortLink>
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.n}
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.bjp21.toFixed(2)}%
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.bjp26.toFixed(2)}%
-                      </TableCell>
-                      <TableCell
-                        className={cn(
-                          COMPACT_CELL_CLASS,
-                          NUM_CELL_CLASS,
-                          "font-semibold"
-                        )}
-                      >
-                        {fmtPp(r.bjp26 - r.bjp21)}
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.nda21.toFixed(2)}%
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.nda26.toFixed(2)}%
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {fmtPp(r.nda26 - r.nda21)}
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-
-              <h4 className="mt-6 mb-2 font-heading text-sm font-semibold tracking-tight">
-                Partition aggregates
-              </h4>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead className={COMPACT_HEAD_CLASS}>
-                      Partition
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      n
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      BJP Δ
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      NDA Δ
-                    </TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {PARTITIONS.map((r, i) => (
-                    <TableRow
-                      key={r.partition}
-                      className={i === 0 ? HIGHLIGHT_ROW_CLASS : ""}
-                    >
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, "font-medium")}
-                      >
-                        {r.partition}
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.n}
-                      </TableCell>
-                      <TableCell
-                        className={cn(
-                          COMPACT_CELL_CLASS,
-                          NUM_CELL_CLASS,
-                          "font-semibold"
-                        )}
-                      >
-                        {fmtPp(r.bjpDelta)}pp
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {fmtPp(r.ndaDelta)}pp
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-
-              {/* Footprint and intensity */}
-              <h3 className={cn(SUB_HEADING, "mt-8 mb-3")}>
-                Footprint and intensity
-              </h3>
-              <p className="mb-3 max-w-prose text-sm leading-relaxed text-muted-foreground">
-                A different angle: count only the ACs where the party fielded a
-                candidate that year. Tells you "how strong was the alliance
-                where it actually contested."
-              </p>
-              <Table>
-                <TableHeader>
-                  <TableRow>
-                    <TableHead className={COMPACT_HEAD_CLASS}>Party</TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      2021 fielded
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      2021 share-where-fielded
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      2026 fielded
-                    </TableHead>
-                    <TableHead
-                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
-                    >
-                      2026 share-where-fielded
-                    </TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {FOOTPRINT.map((r) => (
-                    <TableRow key={r.party}>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, "font-medium")}
-                      >
-                        {r.party}
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.fielded21}
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.share21.toFixed(2)}%
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.fielded26}
-                      </TableCell>
-                      <TableCell
-                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
-                      >
-                        {r.share26.toFixed(2)}%
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-              <p className="mt-3 max-w-prose text-sm leading-relaxed">
-                <strong>BJP shrank footprint</strong> (115 → 98 candidates,
-                −15%) but average share at the seats it did field rose from
-                13.74% to 16.50%.{" "}
-                <strong>T20's footprint more than doubled</strong> (8 → 19 ACs);
-                per-fielded share dropped because the new ACs are thinner
-                terrain, but aggregate impact still grew.{" "}
-                <strong>BDJS held footprint steady</strong> with a small
-                per-fielded uptick.
-              </p>
             </section>
 
             {/* What this does NOT mean — defensive bracketing */}
