@@ -2,88 +2,78 @@
 
 Three slices of "doing well," each capturing a different dimension of strength. A seat can qualify for multiple cohorts; cross-cohort membership is shown at the bottom.
 
-**Caveat on 2016 baselines.** A "0.0%" 2016 BJP share usually means BJP didn't field a candidate at that AC in 2016 (a separate NDA ally fielded, or no NDA contest). It does not necessarily mean voters rejected BJP. Where 2016 = 0%, the 2016→2021 Δ reflects "BJP showed up" rather than organic vote-share change.
+## Methodology — effective baselines
+
+Comparing 2016/2021/2026 BJP-only shares produces misleadingly large Δs when BJP didn't field but BDJS/Twenty20 did, or when the same individual ran under a different party. To prevent this, we compute an **effective NDA baseline** at each AC for each cycle, in priority order:
+
+1. **BJP share** if BJP fielded a candidate
+2. **Same-individual share under any party** if the 2026 BJP candidate ran at the same AC under another flag (e.g. P.C. George at Poonjar — Independent 2016, KJS 2021, BJP 2026)
+3. **BDJS share** if BJP didn't field but BDJS did
+4. **Twenty 20 share** if neither BJP nor BDJS fielded but T20 did
+5. **0%** otherwise (no NDA-aligned vehicle present)
+
+Candidate continuity is resolved via `data/candidate-aliases.json`. Source field used in the tables: shows which vehicle / individual contributed the baseline at that cycle.
+
+The most consequential alias-corrected case: **Poonjar**. P.C. George had 44.9% as Independent in 2016, 29.9% as KJS in 2021, and 25.1% as BJP in 2026 — a steady **personal-vote decline of ~20pp across three cycles**. The naïve BJP-only comparison would show "Poonjar BJP +25.1pp in 2026" — a complete inversion of what's actually happening.
 
 ---
 
 ## Cohort 1 — Mature base + successful growth
 
-**Definition**: 2026 BJP share ≥ 25% **AND** 2021→2026 Δ ≥ +5pp. Seats with structural BJP presence that *also* grew this cycle. The most demanding cohort — must have both presence and momentum.
+**Definition**: 2026 BJP share ≥ 25% **AND** 2021→2026 Δ ≥ +5pp (using effective baselines). Seats with structural BJP presence that *also* grew this cycle. The most demanding cohort — must have both presence and momentum.
 
-**9 seats qualify.**
+**8 seats qualify.**
 
-| AC | Name | District | H/C/M | 2016 | 2021 | 2026 | Δ16-21 | Δ21-26 | Outcome | 2026 BJP candidate |
-|---|---|---|---|---:|---:|---:|---:|---:|---|---|
-| 135 | **Nemom** | Trivandrum | 69/16/13 | 48.2% | 35.5% | 40.9% | −12.6 | **+5.4** | **BJP win** | Rajeev Chandrasekhar |
-| 126 | **Chathannoor** | Kollam | 72/13/14 | 25.1% | 30.6% | 38.2% | +5.5 | **+7.6** | **BJP win** | B.B. Gopakumar |
-| 132 | **Kazhakoottam** | Trivandrum | 69/16/13 | 32.5% | 29.1% | 35.7% | −3.5 | **+6.6** | **BJP win** | V. Muraleedharan |
-| 111 | Thiruvalla | Pathanamthitta | 48/47/3 | 0.0%* | 16.2% | 30.7% | +16.2 | **+14.5** | UDF | Anoop Antony |
-| 68 | Nattika | Thrissur | 63/16/19 | 0.0%* | 22.0% | 29.0% | +22.0 | **+7.0** | LDF | C.C. Mukundan |
-| 27 | Kozhikode North | Kozhikode | 56/1/41 | 22.8% | 22.5% | 28.3% | −0.3 | **+5.8** | UDF | Navya Haridas |
-| 93 | Pala | Kottayam | 37/52/10 | 17.9% | 7.9% | 26.1% | −10.1 | **+18.2** | UDF | Shone George |
-| 52 | Ottappalam | Palakkad | 54/2/43 | 18.7% | 15.5% | 25.1% | −3.1 | **+9.6** | LDF | Major Ravi |
-| 101 | Poonjar | Kottayam | 42/41/16 | 0.0%* | 0.0%* | 25.1% | +0.0 | **+25.1** | UDF | P.C. George |
+| AC | Name | District | H/C/M | 2016 | 2021 | 2026 | Δ21-26 | Outcome | 2026 BJP candidate |
+|---|---|---|---|---:|---:|---:|---:|---|---|
+| 135 | **Nemom** | Trivandrum | 69/16/13 | 48.2% | 35.5% | 40.9% | **+5.4** | **BJP win** | Rajeev Chandrasekhar |
+| 126 | **Chathannoor** | Kollam | 72/13/14 | 25.1% | 30.6% | 38.2% | **+7.6** | **BJP win** | B.B. Gopakumar |
+| 132 | **Kazhakoottam** | Trivandrum | 69/16/13 | 32.5% | 29.1% | 35.7% | **+6.6** | **BJP win** | V. Muraleedharan |
+| 111 | Thiruvalla | Pathanamthitta | 48/47/3 | 21.9% (BDJS) | 16.2% | 30.7% | **+14.5** | UDF | Anoop Antony |
+| 68 | Nattika | Thrissur | 63/16/19 | 22.6% (BDJS) | 22.0% | 29.0% | **+7.0** | LDF | C.C. Mukundan |
+| 27 | Kozhikode North | Kozhikode | 56/1/41 | 22.8% | 22.5% | 28.3% | **+5.8** | UDF | Navya Haridas |
+| 93 | Pala | Kottayam | 37/52/10 | 17.9% | 7.9% | 26.1% | **+18.2** | UDF | Shone George |
+| 52 | Ottappalam | Palakkad | 54/2/43 | 18.7% | 15.5% | 25.1% | **+9.6** | LDF | Major Ravi |
 
-*\*BJP didn't field in those cycles.*
-
-**Observations.** All 3 BJP wins are in this cohort. Trivandrum belt accounts for 3 of 9 seats (Nemom, Kazhakoottam, plus Chathannoor in adjacent Kollam district). The remaining 6 are scattered: 2 Christian-mixed Central Kerala (Thiruvalla, Pala — both with marquee Christian candidates), 1 Hindu-Muslim Thrissur (Nattika), 1 Hindu-Muslim Kozhikode (Kozhikode North), 1 Hindu-Muslim Palakkad (Ottappalam), 1 Christian-mixed candidate-defection case (Poonjar). Of these 6 non-belt mature-grower seats, all lost — none converted to a win.
+**Observations.** All 3 BJP wins are in this cohort. Trivandrum belt accounts for 3 of 8 (Nemom, Kazhakoottam, plus Chathannoor in adjacent Kollam district). The remaining 5 are scattered: 2 Christian-mixed Central Kerala (Thiruvalla, Pala — both with marquee Christian candidates), 1 Hindu-Muslim Thrissur (Nattika), 1 Hindu-Muslim Kozhikode (Kozhikode North), 1 Hindu-Muslim Palakkad (Ottappalam). Of these 5 non-belt mature-grower seats, all lost — none converted to a win. **Poonjar dropped out** of this cohort under effective-baseline accounting: P.C. George's vote shrank steadily from 45% (Indep 2016) → 30% (KJS 2021) → 25% (BJP 2026), so Δ21-26 effective is −4.8pp, failing the threshold.
 
 ---
 
 ## Cohort 2 — Consistent multi-cycle growth
 
-**Definition**: BJP grew in *both* 2016→2021 *and* 2021→2026 transitions (Δ > 0 in each). Captures durable upward trajectory across two cycles, distinguishing sustained build from one-cycle spike.
+**Definition**: BJP / NDA-vehicle share grew by **≥ +2pp in *both* cycles** (2016→2021 *and* 2021→2026), AND 2016 baseline > 0% (NDA had a candidate fielded that cycle, so "growth" is real not "showed up"). Captures durable upward trajectory.
 
-**21 seats qualify.** Sorted by cumulative growth (Δ16-21 + Δ21-26).
+**4 seats qualify.**
 
 | AC | Name | District | H/C/M | 2016 | 2021 | 2026 | Δ16-21 | Δ21-26 | Cumul. | Outcome |
 |---|---|---|---|---:|---:|---:|---:|---:|---:|---|
-| 111 | Thiruvalla | Pathanamthitta | 48/47/3 | 0.0%* | 16.2% | 30.7% | +16.2 | +14.5 | **+30.7** | UDF |
-| 68 | Nattika | Thrissur | 63/16/19 | 0.0%* | 22.0% | 29.0% | +22.0 | +7.0 | **+29.0** | LDF |
-| 28 | Kozhikode South | Kozhikode | 56/1/41 | 0.0%* | 20.9% | 25.6% | +20.9 | +4.7 | **+25.6** | UDF |
-| 116 | Karunagappally | Kollam | 65/5/28 | 0.0%* | 7.0% | 18.7% | +7.0 | +11.6 | **+18.7** | UDF |
-| 18 | Sulthanbathery | Wayanad | 56/24/19 | 0.0%* | 9.1% | 17.8% | +9.1 | +8.8 | **+17.8** | UDF |
-| 139 | Kovalam | Trivandrum | 69/16/13 | 0.0%* | 11.7% | 16.5% | +11.7 | +4.7 | **+16.5** | UDF |
-| 4 | Kanhangad | Kasaragod | 69/12/18 | 0.0%* | 12.9% | 15.5% | +12.9 | +2.6 | **+15.5** | LDF |
-| 118 | Kunnathur | Kollam | 67/13/18 | 0.0%* | 13.5% | 15.2% | +13.5 | +1.7 | **+15.2** | UDF |
 | 126 | **Chathannoor** | Kollam | 72/13/14 | 25.1% | 30.6% | 38.2% | +5.5 | +7.6 | **+13.1** | **BJP win** |
 | 107 | Haripad | Alappuzha | 79/9/11 | 8.9% | 11.9% | 21.5% | +3.0 | +9.6 | **+12.6** | UDF |
 | 128 | Attingal | Trivandrum | 69/16/13 | 20.4% | 25.9% | 30.8% | +5.5 | +4.9 | **+10.4** | LDF |
-| 129 | Chirayinkeezhu | Trivandrum | 69/16/13 | 14.3% | 21.4% | 22.5% | +7.0 | +1.1 | **+8.1** | UDF |
-| 24 | Perambra | Kozhikode | 56/1/41 | 0.0%* | 6.8% | 7.6% | +6.8 | +0.8 | **+7.6** | UDF |
-| 140 | Neyyattinkara | Trivandrum | 69/16/13 | 11.6% | 15.1% | 16.4% | +3.5 | +1.4 | **+4.9** | UDF |
-| 82 | Eranakulam | Ernakulam | 45/33/20 | 13.6% | 14.6% | 18.0% | +0.9 | +3.4 | **+4.3** | UDF |
-| 57 | Tarur | Palakkad | 73/5/20 | 12.2% | 14.1% | 16.1% | +1.9 | +2.1 | **+4.0** | LDF |
-| 19 | Kalpetta | Wayanad | 40/14/44 | 8.8% | 9.3% | 11.1% | +0.5 | +1.9 | **+2.4** | UDF |
-| 12 | Dharmadam | Kannur | 68/0/31 | 8.3% | 9.1% | 10.9% | +0.8 | +1.7 | **+2.5** | LDF |
-| 10 | Azhikode | Kannur | 58/1/40 | 9.0% | 10.9% | 11.8% | +1.9 | +1.0 | **+2.9** | LDF |
-| 58 | Chittur | Palakkad | 77/4/17 | 8.3% | 9.5% | 10.0% | +1.2 | +0.6 | **+1.8** | UDF |
-| 34 | Ernad | Malappuram | 21/1/76 | 4.5% | 4.7% | 5.2% | +0.2 | +0.5 | **+0.7** | UDF |
+| 28 | Kozhikode South | Kozhikode | 56/1/41 | 16.8% (BDJS) | 20.9% | 25.6% | +4.1 | +4.7 | **+8.8** | UDF |
 
-**Observations.** Many 2016 baselines are 0% — meaning BJP first contested in 2021 — so "consistent multi-cycle growth" here mostly means "BJP showed up in 2021 *and* grew further in 2026" rather than "BJP organically improved across multiple competitive cycles." The cleanest sustained-builders (where BJP was already present in 2016 and grew in *both* transitions): **Chathannoor, Attingal, Haripad, Eranakulam, Tarur**. Five seats. Of these, only Chathannoor won.
+**Observations.** The strict cohort — only 4 seats show meaningful sustained growth across both cycles from a real NDA baseline. **Chathannoor is the only seat that converted sustained build into a 2026 win.** Haripad (Alappuzha), Attingal (Trivandrum belt), Kozhikode South (Kozhikode) all show durable upward trajectories but lost in 2026. Note that 2 of 4 (Haripad, Kozhikode South) are Hindu-Muslim mix with very low Christian share — the same demographic profile that dominates the Trivandrum belt.
 
 ---
 
 ## Cohort 3 — New growth from a low base
 
-**Definition**: 2021 BJP share < 10% **AND** 2021→2026 Δ ≥ +10pp. Seats where BJP went from negligible-to-meaningful in one cycle. Captures contest-entry activations + sharp reorganisation moves.
+**Definition**: 2021 effective NDA baseline < 10% **AND** 2021→2026 Δ ≥ +10pp. Seats where NDA went from negligible-to-meaningful in one cycle.
 
-**10 seats qualify.**
+**6 seats qualify.**
 
-| AC | Name | District | H/C/M | 2016 | 2021 | 2026 | Δ16-21 | Δ21-26 | Outcome | 2026 BJP candidate | Mechanism |
-|---|---|---|---|---:|---:|---:|---:|---:|---|---|---|
-| 101 | Poonjar | Kottayam | 42/41/16 | 0.0%* | 0.0%* | 25.1% | +0.0 | **+25.1** | UDF | P.C. George | Candidate defection (KJS → BJP) |
-| 127 | Varkala | Trivandrum | 71/3/25 | 0.0%* | 0.0%* | 19.9% | +0.0 | **+19.9** | LDF | Adv. Smitha Sundaresan | Slot-rotation (BDJS → BJP) |
-| 93 | Pala | Kottayam | 37/52/10 | 17.9% | 7.9% | 26.1% | −10.1 | **+18.2** | UDF | Shone George | Marquee Christian fielding |
-| 63 | Guruvayoor | Thrissur | 40/6/52 | 17.5% | 0.0%* | 17.9% | −17.5 | **+17.9** | LDF | Adv. B. Gopalakrishnan | Re-entry after non-fielding |
-| 95 | Vaikom | Kottayam | 71/24/3 | 0.0%* | 0.0%* | 16.2% | +0.0 | **+16.2** | UDF | K. Ajith | Slot-rotation (BDJS → BJP) |
-| 13 | Thalassery | Kannur | 61/1/36 | 16.8% | 0.0%* | 15.8% | −16.8 | **+15.8** | LDF | O. Nidheesh | Re-entry after non-fielding |
-| 88 | Devikulam | Idukki | 60/31/7 | 8.3% | 0.0%* | 13.5% | −8.3 | **+13.5** | UDF | S. Rajendran | Re-entry after non-fielding |
-| 78 | Paravur | Ernakulam | 59/33/6 | 0.0%* | 0.0%* | 12.8% | +0.0 | **+12.8** | UDF | Valsala Prasannakumar | Contest-entry from zero base |
-| 116 | Karunagappally | Kollam | 65/5/28 | 0.0%* | 7.0% | 18.7% | +7.0 | **+11.6** | UDF | V.S. Jithin Dev | Marquee priority + sustained build |
-| 123 | Kundara | Kollam | 57/12/29 | 13.5% | 0.0%* | 11.6% | −13.5 | **+11.6** | UDF | Dr. Robin Radhakrishnan | Re-entry after non-fielding |
+| AC | Name | District | H/C/M | 2016 | 2021 | 2026 | Δ21-26 | Outcome | 2026 BJP candidate | Pattern |
+|---|---|---|---|---:|---:|---:|---:|---|---|---|
+| 93 | Pala | Kottayam | 37/52/10 | 17.9% | 7.9% | 26.1% | **+18.2** | UDF | Shone George | Marquee Christian fielding |
+| 63 | Guruvayoor | Thrissur | 40/6/52 | 17.5% | 0.0%* | 17.9% | **+17.9** | LDF | Adv. B. Gopalakrishnan | Re-entry after non-fielding |
+| 13 | Thalassery | Kannur | 61/1/36 | 16.8% | 0.0%* | 15.8% | **+15.8** | LDF | O. Nidheesh | Re-entry after non-fielding |
+| 88 | Devikulam | Idukki | 60/31/7 | 8.3% | 0.0%* | 13.5% | **+13.5** | UDF | S. Rajendran | Re-entry after non-fielding |
+| 116 | Karunagappally | Kollam | 65/5/28 | 11.9% (BDJS) | 7.0% | 18.7% | **+11.6** | UDF | V.S. Jithin Dev | Marquee priority + sustained build |
+| 127 | Varkala | Trivandrum | 71/3/25 | 15.7% (BDJS) | 8.3% (BDJS) | 19.9% | **+11.6** | LDF | Adv. Smitha Sundaresan | BDJS → BJP slot rotation |
 
-**Observations.** Most "new growth" cases are **re-entries** (BJP fielded in 2016, sat out 2021, returned in 2026) or **contest entries from genuine zero**. Only Karunagappally shows sustained build across both cycles (the only Cohort 3 seat that's also in Cohort 2). Pala is the cleanest *new-base build with marquee* (was 17.9% in 2016, dipped to 7.9% in 2021, jumped to 26% with Shone George — pattern of recovery + marquee deployment together). Poonjar is the candidate-defection arithmetic case.
+*\*BJP didn't field in 2021; no other NDA vehicle present.*
+
+**Observations.** Most "new growth" cases are **re-entries** (BJP fielded in 2016, sat out 2021, returned in 2026) or seats where BJP sat above the 2026 base in 2016 already — so they're more accurately recoveries than new growth. **Pala is the cleanest** new-base build with marquee — was 17.9% in 2016, dipped to 7.9% in 2021, jumped to 26% with Shone George. **Karunagappally is the only seat with sustained build** across both cycles AND a low-base origin (BDJS 11.9% → BJP 7.0% → BJP 18.7%). Poonjar previously appeared here with +22.9pp; under candidate-continuity accounting it correctly drops out (P.C. George had 30% in 2021, not 0%).
 
 ---
 
@@ -91,12 +81,14 @@ Three slices of "doing well," each capturing a different dimension of strength. 
 
 | Membership | Seats |
 |---|---|
-| Cohort 1 ∩ Cohort 2 (mature base + consistent build) | **Chathannoor**, Thiruvalla, Nattika |
-| Cohort 1 ∩ Cohort 3 (mature 2026 share reached via new-growth jump) | Pala, Poonjar |
-| Cohort 2 ∩ Cohort 3 (consistent build *from* a low base) | Karunagappally |
+| Cohort 1 ∩ Cohort 2 (mature base + consistent multi-cycle build) | **Chathannoor** |
+| Cohort 1 ∩ Cohort 3 (mature now, reached via low-base jump) | **Pala** |
+| Cohort 2 ∩ Cohort 3 (consistent build *from* a low base) | (none) |
 | Cohort 1 ∩ 2 ∩ 3 (all three) | (none) |
 
-The seats appearing in *both* Cohort 1 (mature now) and Cohort 2 (durably built) are the most genuinely strong — **Chathannoor, Thiruvalla, Nattika**. Of the three, only Chathannoor won.
+**Chathannoor is the only seat that satisfies both Cohort 1 and Cohort 2** — it has the structural strength (38.2% share), the recent-cycle growth (+7.6pp Δ21-26), AND the durable build across two cycles (+5.5pp Δ16-21). And it won. **It is BJP's single strongest performance in Kerala 2026** by every "doing well" measure simultaneously.
+
+**Pala is the cleanest "rebuilt from a 2021 dip"** — was 17.9% in 2016, dipped to 7.9% in 2021, jumped to 26.1% in 2026 with Shone George. Both mature-now and recovered-from-low.
 
 ---
 
@@ -108,24 +100,22 @@ The seats appearing in *both* Cohort 1 (mature now) and Cohort 2 (durably built)
 |---|:---:|:---:|:---:|
 | Manjeshwar | — | — | — |
 | Palakkad (Sobha Surendran) | — | — | — |
-| Thrissur | — | — | — |
+| Thrissur (Padmaja Venugopal) | — | — | — |
 | Aranmula | — | — | — |
-| Karunagappally | — | ✓ | ✓ |
+| Karunagappally | — | — | ✓ |
 | Varkala | — | — | ✓ |
 | Kazhakoottam | ✓ | — | — |
 | Thiruvananthapuram | — | — | — |
 | Nemom | ✓ | — | — |
 | Vattiyoorkavu | — | — | — |
 
-**Of 10 priority seats, only 4 appear in any "doing well" cohort.** Three priority seats (Manjeshwar, Palakkad, Thrissur) appear in *no* cohort despite marquee placement — they're the "tried hard, didn't perform" set. Karunagappally is the only priority seat in 2 cohorts simultaneously (consistent build + new-growth jump from low base).
-
-The strongest "doing well" performers are mostly **not on the priority list**: Nattika, Pala, Thiruvalla, Kozhikode North, Ottappalam, Chathannoor (officially ambiguous), Poonjar. Several of these are seats BJP may not have publicly prioritised but where the candidate slate or terrain produced strong returns anyway.
+**Only 4 of 10 priority seats appear in any cohort.** Three priority seats (Manjeshwar, Palakkad, Thrissur) appear in *no* cohort despite marquee placement — they're the "tried hard, didn't perform" set. The strongest "doing well" performers are mostly **not on the priority list**: Nattika, Pala, Thiruvalla, Kozhikode North, Ottappalam, Chathannoor (officially ambiguous), Haripad, Attingal, Kozhikode South. Several seats produced strong returns BJP may not have publicly prioritised.
 
 ---
 
 ## Open questions for analysis
 
-1. **Threshold tuning** — Cohort 1 thresholds (≥25% share, ≥+5pp Δ) yield 9 seats. Could tighten to ≥30% / +7pp (probably 4-5 seats) for stricter "elite" set, or loosen to ≥20% / +3pp for broader inclusion. What's the right cutoff for the article's use?
-2. **Cohort 2 noise filter** — current "any growth in both cycles" includes seats with +0.2pp / +0.5pp which is statistical noise. A meaningful-growth threshold (≥+2pp per cycle?) would tighten to ~10 seats.
-3. **What about declining mature base?** A fourth slice — seats with ≥25% in 2021 but Δ < 0 in 2021→2026 — would surface BJP's *erosion* zones. Manjeshwar, Thrissur, Kanjirappally would qualify. Worth adding for symmetry?
-4. **NDA-aggregate parallel** — should we compute the same three cohorts using NDA-aggregate share instead of BJP-only? Would surface T20-Ernakulam strength patterns we'd otherwise miss.
+1. **Threshold tuning** — Cohort 1 thresholds (≥25% share, ≥+5pp Δ) yield 8 seats. Could tighten to ≥30% / +7pp (~5 seats) or loosen to ≥20% / +3pp (~15-20 seats).
+2. **Should we add a fourth cohort — declining mature base?** Seats with ≥25% in 2021 but Δ21-26 < 0 would surface BJP's *erosion* zones. Manjeshwar, Thrissur, Kanjirappally, Vattiyoorkavu would qualify. **Poonjar would also qualify here** — under effective-baseline accounting, P.C. George's personal-vote decline is the cleanest example of this pattern.
+3. **NDA-aggregate parallel** — should we compute the same three cohorts using NDA-aggregate share instead of BJP-only? Would surface T20-Ernakulam strength patterns we'd otherwise miss.
+4. **Geographic clustering** — Cohorts 1+2+3 contain seats from 9 districts. Are there micro-clusters within each cohort that aren't captured by the bjp-1.md "Trivandrum belt / Kottayam experimental / Ernakulam alliance" framework? Specifically: Cohort 1's Hindu-Muslim non-belt seats (Nattika, Kozhikode North, Ottappalam) and Cohort 2's Haripad + Kozhikode South suggest a possible secondary "Hindu-Muslim Central+North coastal" pattern that bjp-1.md doesn't currently capture.
