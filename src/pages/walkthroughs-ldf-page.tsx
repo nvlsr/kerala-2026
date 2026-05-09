@@ -109,8 +109,8 @@ export function WalkthroughsLDFPage() {
                   ideologically realigned ones,
                 </strong>{" "}
                 so LDF's recovery prospects in 2031 depend on whether the wave
-                will be situational (UDF-fatigue, Sabarimala memory, inflation)
-                or structural (community-shift away from the Left).
+                will be situational (UDF-fatigue, inflation) or structural
+                (community-shift away from the Left).
               </p>
             </section>
 
