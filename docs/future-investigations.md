@@ -52,3 +52,21 @@ Each item is scoped as a follow-up narrative card. The discipline:
 3. Surface findings on the relevant arc page only after the card is written and the source-discipline is verified.
 
 If a third or fourth investigation surfaces during ongoing review, append here with the same structure.
+
+
+## BJP Growth
+Initally
+ - Kasargod
+ - Palakkad
+
+then expanded to:
+- Thiruvanthapuram
+- Thrissur
+
+then expanded to:
+- Kozhikode
+- Kollam
+
+
+Is BJP doing better in these urban vs rural?
+
