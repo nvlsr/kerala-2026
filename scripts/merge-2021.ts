@@ -169,7 +169,7 @@ const scrapeDir = "data/scraped-2021"
 const histDir = "data/historical"
 
 let updatedFiles = 0
-let unchangedFiles = 0
+const unchangedFiles = 0
 
 for (let n = 1; n <= 140; n++) {
   const scrapeFile = path.join(scrapeDir, `seat-${n}.json`)

@@ -7,7 +7,7 @@ import {
   POSITIVE_HUE,
   type EncodingMode,
 } from "@/lib/seat-encoding"
-import type { Filters, SortColumn } from "@/lib/filters"
+import type { Filters } from "@/lib/filters"
 import { getAlliance, MAIN_FRONT_CODES } from "@/lib/data"
 
 type Props = {
@@ -96,47 +96,6 @@ export function ConstituencyMap({
   )
 }
 
-/**
- * Subtitle string for the map's surrounding Section. Reflects the
- * current filter set size + the encoding mode (winner alliance,
- * runner-up alliance, magnitude, gain/loss).
- */
-export function describeMapSubtitle(
-  filters: Filters,
-  inFilterSize: number,
-  mode: EncodingMode
-): string {
-  const subset =
-    inFilterSize === paths.constituencies.length
-      ? null
-      : `${inFilterSize} of ${paths.constituencies.length} seats`
-  const encoding =
-    mode === "magnitude"
-      ? `colored by ${sortLabel(filters.sort.column)}`
-      : mode === "diverging"
-        ? `colored by ${sortLabel(filters.sort.column)} (gain / loss)`
-        : filters.result === "losers"
-          ? "colored by runner-up's alliance"
-          : "colored by winning alliance"
-  return [subset, encoding].filter(Boolean).join(" · ")
-}
-
-function sortLabel(col: SortColumn): string {
-  switch (col) {
-    case "votes":
-      return "votes"
-    case "share":
-      return "vote share"
-    case "margin":
-      return "margin"
-    case "shareDelta":
-      return "Δ share '21"
-    case "marginDelta":
-      return "Δ margin '21"
-    default:
-      return ""
-  }
-}
 
 /**
  * Empty-state hint shown in the detail column when no seat is

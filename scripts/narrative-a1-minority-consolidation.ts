@@ -149,8 +149,7 @@ function binMean(filter: (r: Row) => boolean, label: string) {
     subset.reduce((s, r) => s + (r[key] as number), 0) /
     Math.max(1, subset.length)
   const mu = m("udfDelta"),
-    ml = m("ldfDelta"),
-    mn = subset.reduce((s, r) => s + (r.ndaPct2026 - 0), 0) / Math.max(1, subset.length)
+    ml = m("ldfDelta")
   // residual: where did LDF's loss go that UDF didn't catch?
   const residual = -ml - mu
   console.log(

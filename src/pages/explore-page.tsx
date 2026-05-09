@@ -9,8 +9,8 @@ import { CandidateTable } from "@/components/candidate-table"
 import {
   ConstituencyMap,
   Hint,
-  describeMapSubtitle,
 } from "@/components/constituency-map"
+import { describeMapSubtitle } from "@/components/constituency-map-utils"
 import { ConstituencySection } from "@/components/constituency-section"
 import { ReservationBadge } from "@/components/reservation-badge"
 import { QuestionsTeaser } from "@/components/questions-teaser"

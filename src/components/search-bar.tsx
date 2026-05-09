@@ -61,11 +61,6 @@ export function SearchBar({ prominent = false }: Props = {}) {
     return { grouped: cappedGroups, flat }
   }, [query])
 
-  // Reset highlight when results change
-  useEffect(() => {
-    setHighlightIdx(0)
-  }, [query])
-
   // Click-outside to close
   useEffect(() => {
     if (!open) return
@@ -142,6 +137,7 @@ export function SearchBar({ prominent = false }: Props = {}) {
               value={query}
               onChange={(e) => {
                 setQuery(e.target.value)
+                setHighlightIdx(0)
                 setOpen(true)
               }}
               onFocus={() => setOpen(true)}
@@ -163,6 +159,7 @@ export function SearchBar({ prominent = false }: Props = {}) {
                 type="button"
                 onClick={() => {
                   setQuery("")
+                  setHighlightIdx(0)
                   inputRef.current?.focus()
                 }}
                 aria-label="Clear search"

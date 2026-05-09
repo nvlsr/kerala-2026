@@ -7,17 +7,39 @@
 import * as fs from "fs"
 import * as path from "path"
 
-const _r = JSON.parse(fs.readFileSync("data/kerala-2026.json", "utf8"))
-const cs2026: any[] = Array.isArray(_r) ? _r : _r.constituencies
+type Cand2026 = {
+  party: string
+  votes: number
+  alliance: string
+  isNota?: boolean
+}
+type AC2026 = { candidates: Cand2026[] }
+
+type HistCand = {
+  name: string
+  party: string
+  votes: number
+  alliance: string
+  isNota?: boolean
+}
+type HistElection = { year: number; candidates: HistCand[] }
+type HistAC = { elections: HistElection[] }
+
+const _r = JSON.parse(fs.readFileSync("data/kerala-2026.json", "utf8")) as
+  | AC2026[]
+  | { constituencies: AC2026[] }
+const cs2026: AC2026[] = Array.isArray(_r) ? _r : _r.constituencies
 const histDir = "data/historical"
-const hist: any[] = fs
+const hist: HistAC[] = fs
   .readdirSync(histDir)
   .filter((f) => f.startsWith("S11-"))
-  .map((f) => JSON.parse(fs.readFileSync(path.join(histDir, f), "utf8")))
+  .map(
+    (f) => JSON.parse(fs.readFileSync(path.join(histDir, f), "utf8")) as HistAC
+  )
 
 let totalValid2021 = 0
 for (const h of hist) {
-  const e = h.elections.find((x: any) => x.year === 2021)
+  const e = h.elections.find((x) => x.year === 2021)
   if (!e) continue
   for (const c of e.candidates) {
     if (c.isNota) continue
@@ -34,11 +56,12 @@ for (const code of ["LDF", "UDF", "NDA"]) {
       if (cand.alliance === code) currentParties.add(cand.party)
     }
   }
-  const tally: Record<string, { votes: number; cands: number; wins: number }> = {}
+  const tally: Record<string, { votes: number; cands: number; wins: number }> =
+    {}
   for (const h of hist) {
-    const e = h.elections.find((x: any) => x.year === 2021)
+    const e = h.elections.find((x) => x.year === 2021)
     if (!e) continue
-    const winner = [...e.candidates].sort((a: any, b: any) => b.votes - a.votes)[0]
+    const winner = [...e.candidates].sort((a, b) => b.votes - a.votes)[0]
     for (const c of e.candidates) {
       if (c.isNota) continue
       if (c.alliance !== code) continue
@@ -46,7 +69,8 @@ for (const code of ["LDF", "UDF", "NDA"]) {
       if (!tally[c.party]) tally[c.party] = { votes: 0, cands: 0, wins: 0 }
       tally[c.party].votes += c.votes
       tally[c.party].cands++
-      if (winner.name === c.name && winner.party === c.party) tally[c.party].wins++
+      if (winner.name === c.name && winner.party === c.party)
+        tally[c.party].wins++
     }
   }
   const sorted = Object.entries(tally).sort((a, b) => b[1].votes - a[1].votes)
