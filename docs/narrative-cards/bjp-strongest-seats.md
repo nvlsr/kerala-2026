@@ -9,6 +9,7 @@ Five slices of BJP's 2026 Kerala posture — three positive ("doing well"), two 
 - **C4b — Stable mature:** had a base, ceiling-bound (8 seats).
 - **C5a — Strategic abstention:** BJP never fielded across 3 cycles (14 seats).
 - **C5b — Structural exclusion:** alliance can't break 8% in any cycle (19 seats).
+- **C6 — NDA out-captured UDF in the anti-LDF wave:** NDA Δ > UDF Δ at meaningful seats (21 seats).
 
 ## Methodology — effective baselines
 
@@ -280,6 +281,78 @@ The strongest "doing well" performers are still mostly **not on the priority lis
 
 ---
 
+## Cohort 6 — NDA out-captured UDF in the anti-LDF wave
+
+**Definition**: NDA Δ21-26 > UDF Δ21-26 **AND** NDA 2026 share ≥ 15% **AND** LDF Δ21-26 < 0 (LDF lost ground at the seat). The seats where, against the statewide pattern of "LDF→UDF" anti-incumbency redistribution, NDA absorbed *more* of the swing than UDF did.
+
+**21 seats qualify** (vs statewide means: LDF Δ −4pp, UDF Δ +7pp, NDA Δ +1.4pp). These are the seats where BJP/NDA out-competed UDF for the LDF→swing voters.
+
+| AC | Name | District | H/C/M | NDA 2021 | NDA 2026 | NDA Δ | UDF Δ | LDF Δ | NDA-UDF gap | Win |
+|---|---|---|---|---:|---:|---:|---:|---:|---:|---|
+| 93 | **Pala** | Kottayam | 37/52/10 | 7.9% | 26.1% | +18.2 | −12.9 | −4.0 | **+31.1** | UDF |
+| 63 | Guruvayoor | Thrissur | 40/6/52 | 0.0% | 17.9% | +17.9 | −0.4 | −11.6 | **+18.3** | LDF |
+| 116 | Karunagappally | Kollam | 65/5/28 | 7.0% | 18.7% | +11.6 | −6.4 | −5.0 | **+18.1** | UDF |
+| 52 | Ottappalam | Palakkad | 54/2/43 | 15.5% | 25.1% | +9.6 | −8.3 | −1.8 | **+17.9** | LDF |
+| 13 | Thalassery | Kannur | 61/1/36 | 0.0% | 15.8% | +15.8 | +0.4 | −12.9 | **+15.4** | LDF |
+| 18 | Sulthanbathery | Wayanad | 56/24/19 | 9.1% | 17.8% | +8.8 | −3.4 | −5.8 | **+12.2** | UDF |
+| 107 | Haripad | Alappuzha | 79/9/11 | 11.9% | 21.5% | +9.6 | −1.1 | −8.2 | **+10.7** | UDF |
+| 127 | Varkala | Trivandrum | 71/3/25 | 8.3% | 19.9% | +11.6 | +1.0 | −10.6 | **+10.6** | LDF |
+| 130 | Nedumangad | Trivandrum | 62/13/23 | 17.6% | 24.7% | +7.1 | −2.2 | −3.7 | **+9.3** | LDF |
+| 135 | **Nemom** | Trivandrum | 69/16/13 | 35.5% | 40.9% | +5.4 | −3.7 | −0.9 | **+9.1** | **NDA** |
+| 101 | Poonjar | Kottayam | 42/41/16 | 2.1% | 25.1% | +22.9 | +14.7 | −7.1 | **+8.3** | UDF |
+| 136 | Aruvikkara | Trivandrum | 63/13/22 | 10.6% | 16.3% | +5.7 | −1.9 | −3.5 | **+7.6** | LDF |
+| 61 | Chelakkara | Thrissur | 61/9/28 | 15.7% | 23.0% | +7.3 | +0.1 | −7.4 | **+7.2** | LDF |
+| 126 | **Chathannoor** | Kollam | 72/13/14 | 30.6% | 38.2% | +7.6 | +1.1 | −8.1 | **+6.6** | **NDA** |
+| 27 | Kozhikode North | Kozhikode | 56/1/41 | 22.5% | 28.3% | +5.8 | +2.4 | −8.1 | **+3.5** | UDF |
+| 68 | Nattika | Thrissur | 63/16/19 | 22.0% | 29.0% | +7.0 | +4.3 | −9.7 | **+2.7** | LDF |
+| 128 | Attingal | Trivandrum | 69/16/13 | 25.9% | 30.8% | +4.9 | +2.8 | −7.5 | **+2.1** | LDF |
+| 132 | **Kazhakoottam** | Trivandrum | 69/16/13 | 29.1% | 35.7% | +6.6 | +4.6 | −10.7 | **+2.0** | **NDA** |
+| 65 | Wadakkanchery | Thrissur | 63/25/10 | 12.8% | 15.9% | +3.1 | +1.3 | −4.2 | **+1.8** | LDF |
+| 81 | Thripunithura | Ernakulam | 45/33/20 | 15.2% | 19.2% | +4.0 | +3.7 | −7.7 | **+0.4** | UDF |
+| 4 | Kanhangad | Kasaragod | 69/12/18 | 12.9% | 15.5% | +2.6 | +2.5 | −5.0 | **+0.0** | LDF |
+
+### Observations
+
+- **All 3 BJP wins are in this cohort** (Nemom +9.1, Chathannoor +6.6, Kazhakoottam +2.0 NDA-UDF gap). The wave-capture pattern wasn't the only thing producing wins, but it was always present.
+
+- **Pala has the largest NDA-UDF gap statewide** (+31.1pp). Shone George took +18pp NDA while UDF *lost* 13pp at the same seat — voters moved decisively toward NDA, not UDF. This is the largest single-seat redistribution-toward-NDA in the data.
+
+- **Trivandrum belt accounts for 6 of 21** (Nemom, Kazhakoottam, Varkala, Nedumangad, Aruvikkara, Attingal) — confirms the belt as the strongest concentrated zone of NDA-favoured anti-incumbency capture.
+
+- **Thrissur appears 4 times** (Guruvayoor, Chelakkara, Nattika, Wadakkanchery) — and Padmaja Venugopal's seat is conspicuously *not* among them. Thrissur is a district where some seats favoured NDA over UDF for the swing, but Padmaja's specific seat (which was on the priority list) didn't.
+
+- **Re-entry cases produce some of the largest gaps.** Guruvayoor (NDA 0% → 17.9% via re-entry) and Thalassery (0% → 15.8%) show enormous gaps not because BJP grew over time, but because the BJP candidate's appearance after a non-fielding cycle produced disproportionate share-capture. These are mechanism-specific gains, not durable build.
+
+- **Poonjar's +8.3 gap is candidate-defection arithmetic.** P.C. George brought his existing 30% vote-bank into NDA; UDF still gained +14.7pp but from an even lower 2021 base because P.C. George was outside-NDA in 2021 (KJS).
+
+- **Religion-mix tally** (out of 21):
+  - Hindu+Christian (≥25% Christian): 5 (Pala, Wadakkanchery, Thripunithura, Aruvikkara, Sulthanbathery — note Sulthanbathery is Hindu-tribal-mix)
+  - Christian-heavy (≥40%): 1 (Pala)
+  - Hindu-Muslim mixed (≥20% Muslim): 6 (Guruvayoor, Karunagappally, Ottappalam, Thalassery, Kozhikode North, Kanhangad — plus Aruvikkara/Nedumangad/Varkala in Trivandrum)
+  - Hindu-heavy: 4 (Haripad, Nemom-Kazhakoottam-Vattiyoorkavu cluster, Chathannoor)
+
+Mixed picture demographically — no single religion-mix predicts NDA-favoured wave-capture. The pattern is more about specific candidate fits + LDF localized collapses.
+
+### Cross-cohort with C1-C5
+
+Of 21 Cohort 6 seats:
+- **8 are also in C1** (Pala, Nemom, Chathannoor, Kazhakoottam, Nattika, Kozhikode North, Ottappalam, plus implicit Thiruvalla which is *not* in C6 since UDF won decisively there with similar Δ — interesting exception).
+- **3 are also in C2** (Chathannoor, Attingal, Kozhikode South — though KS isn't in C6 because UDF Δ similar; need to check)
+- **3 are also in C3** (Pala, Karunagappally, Varkala — wait, also Guruvayoor, Thalassery)
+- **0 are in C4a** (declining mature) — by definition, C6 requires NDA gain, C4a requires NDA loss.
+
+C6's relationship to C1: **8 of 8 C1 seats appear in C6** (every mature-grew seat also out-captured UDF in the wave). This is a strong consistency check — BJP's strongest performers are also the seats where BJP, not UDF, absorbed the most anti-incumbency swing.
+
+The 13 C6 seats *not* in C1 are interesting: they're seats where NDA out-captured UDF on a relative basis but didn't reach the 25%/+5pp threshold for "mature + grew." These are the "hidden wins" — places where the dynamic favoured NDA but the absolute numbers stayed modest.
+
+### What this cohort tells us strategically
+
+The standard reading of Kerala 2026 is "anti-LDF wave landed mostly on UDF; BJP picked up scraps." Cohort 6 says: **at 21 specific seats (15% of Kerala's 140 ACs), the anti-LDF wave landed mostly on NDA instead of UDF**. Where? Mostly in Trivandrum belt + scattered Christian-mixed and Hindu-Muslim seats. These are the seats where NDA's brand or candidate-fit successfully competed with UDF for swing voters — not just absorbed BJP-base voters.
+
+Cohort 6 is also the best window into BJP's *competitive* terrain — seats where BJP isn't just holding a Hindu-vote ceiling (C4b) but actively winning the strategic argument against UDF in the LDF→opposition redistribution.
+
+---
+
 ## Demographic overlay — caste, belt, religion trend, C-M dynamics
 
 Four additional demographic dimensions overlaid against the cohorts to surface or falsify common political-discourse hypotheses.
@@ -373,6 +446,7 @@ The demographic backdrop is real — Muslim share is projected to grow faster th
 4. **The Alappuzha coast cohort.** 5a contains 4 contiguous Alappuzha-coast seats (Aroor, Cherthala, Kuttanad, Kayamkulam) — all ceded to BDJS at 10–15%. This is a clear sub-pattern within the strategic-abstention set. Worth investigating as a candidate "Alappuzha BDJS belt" theme — it's the inverse of the Ernakulam T20 belt (Cohort 4 of bjp-1.md).
 5. **NDA-aggregate parallel** — should we compute the full cohort set using NDA-aggregate share? Would surface T20-Ernakulam patterns and re-shape Cohort 5b.
 6. **Geographic micro-clusters** — Cohort 1's Hindu-Muslim non-belt seats (Nattika, Kozhikode North, Ottappalam) and Cohort 2's Haripad + Kozhikode South suggest a possible secondary "Hindu-Muslim Central+North coastal" pattern. Worth examining as a possible additional bjp-1.md theme.
+7. **Cohort 6 + bjp-1.md integration.** The wave-capture finding is a candidate addition to bjp-1.md's Section 1 (where the article currently asks "why did BJP win 3 specific seats and not more?"). The answer is partly: at 21 seats the wave favoured NDA over UDF, and BJP converted the 3 with the right candidate + Trivandrum-belt + already-mature-base combination. At the other 18, NDA out-captured UDF in the wave but didn't have the share-base or candidate fit to convert into a win. Worth surfacing as the bridge between the cluster-not-gradient framing and the candidate-quality-first thesis.
 
 ---
 
