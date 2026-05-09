@@ -112,13 +112,6 @@ export function App() {
             path="/narratives/bjp-walkthrough"
             element={<NarrativesBJPWalkthroughPage />}
           />
-          {/* Legacy URL — redirect for any external/bookmarked links */}
-          <Route
-            path="/narratives/bjp-pocket"
-            element={
-              <Navigate to="/narratives/bjp-walkthrough" replace />
-            }
-          />
           <Route
             path="/narratives/methodology"
             element={<NarrativesMethodologyPage />}
