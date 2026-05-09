@@ -1096,23 +1096,31 @@ export function WalkthroughsNDAPage() {
                 </div>
               )}
               <p className="mt-3">
-                <strong>
-                  All 3 BJP wins sit in this set, but conversion required
-                  additional factors.
-                </strong>{" "}
-                <SeatLink ac={93}>Pala</SeatLink> had the largest gap (+31.1pp)
-                and didn't win — wave-capture alone wasn't sufficient. The 3
-                wins sit in the lower half of the gap distribution; what
-                distinguishes them from the 18 non-wins in this set is the
-                mature base they already had going in (see{" "}
-                <CohortLink slug="mature-growers">mature growers</CohortLink>).
+                <strong>BJP's competitive frontier with UDF.</strong> This is
+                the only cohort where BJP and UDF directly compete for the same
+                swing voters — anti-LDF defectors that both alliances bid for.
+                NDA out-bid UDF here; the 3 BJP wins concentrate in this set.
+                Direct BJP-vs-UDF competition at this scale (21 seats) is a new
+                structural feature of Kerala politics — earlier cycles had
+                isolated BJP-competitive seats, not a contiguous cohort.
               </p>
               <p>
-                Geographic concentration in Trivandrum (5 seats), Thrissur (5
-                seats), and Kottayam (2 seats) — over half the cohort sits in
-                three districts. Outside those clusters, single-seat appearances
-                in Kannur, Wayanad, Palakkad, Ernakulam, Kasaragod, and
-                Kozhikode.
+                <strong>
+                  The contests are overwhelmingly BJP-direct, not BDJS/T20 swap
+                </strong>{" "}
+                — 20 of 21 wave-capture seats had BJP fielding the NDA candidate
+                itself. These contests matter disproportionately under FPTP,
+                because they're the only seats where NDA's ceiling is "win"
+                rather than "second place." Concentrated growth here converts to
+                seats; equivalent growth spread across structurally weak terrain
+                wouldn't.
+              </p>
+              <p>
+                <strong>A strategic study set for 2031.</strong> UDF is likely
+                to defend these seats more aggressively next cycle, having lost
+                the absorption competition in 2026. BJP's positioning and
+                execution from these specific wins becomes the playbook against
+                which 2031 contests are measured.
               </p>
             </CohortSection>
 
