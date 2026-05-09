@@ -109,8 +109,8 @@ export function WalkthroughsLDFPage() {
                   ideologically realigned ones,
                 </strong>{" "}
                 so LDF's recovery prospects in 2031 depend on whether the wave
-                was situational (UPA-fatigue, Sabarimala memory, inflation) or
-                structural (community-shift away from the Left).
+                will be situational (UDF-fatigue, Sabarimala memory, inflation)
+                or structural (community-shift away from the Left).
               </p>
             </section>
 
@@ -392,14 +392,6 @@ export function WalkthroughsLDFPage() {
                 </Link>{" "}
                 for the 21 seats where NDA out-bid. Only 3% of ACs saw LDF hold
                 or gain.
-              </p>
-              <p>
-                <strong>Why this matters for 2031.</strong> An "anti-LDF wave"
-                interpretation predicts that recovering LDF voters could reverse
-                the swing in future cycles. A "UDF mobilisation" interpretation
-                would predict more durable UDF strength. The data on this cycle
-                is more consistent with the former, but a 2031 LDF recovery (or
-                its absence) is the real test.
               </p>
             </WalkthroughSection>
 
