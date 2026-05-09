@@ -1,7 +1,6 @@
 import { Fragment, useEffect, useState, type ReactNode } from "react"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
-import { WalkthroughBreadcrumb } from "@/components/walkthroughs/walkthrough-breadcrumb"
 import {
   PROSE_LINK_CLASS,
   ProseLink,
@@ -362,7 +361,6 @@ export function WalkthroughsNDAPage() {
         { label: "NDA" },
       ]}
       title="BJP's 2026 performance — a data walkthrough"
-      subtitle={<WalkthroughBreadcrumb current="NDA" />}
     >
       <PageMain className="py-6 pb-12">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_180px]">

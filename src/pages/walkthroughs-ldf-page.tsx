@@ -6,7 +6,6 @@ import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { Histogram } from "@/components/charts/histogram"
 import { ConfidenceBadge } from "@/components/walkthroughs/confidence-badge"
 import { MethodologyPopover } from "@/components/walkthroughs/methodology-popover"
-import { WalkthroughBreadcrumb } from "@/components/walkthroughs/walkthrough-breadcrumb"
 import { WalkthroughSection } from "@/components/walkthroughs/walkthrough-section"
 import { PullQuote } from "@/components/walkthroughs/pull-quote"
 import { SeeAlsoQuestions } from "@/components/walkthroughs/see-also-questions"
@@ -58,10 +57,7 @@ export function WalkthroughsLDFPage() {
       title="The anti-LDF wave was uniform"
       subtitle={
         <>
-          <WalkthroughBreadcrumb current="LDF" />
-          <div className="mt-3">
-            <ConfidenceBadge level="strong" />
-          </div>
+          <ConfidenceBadge level="strong" />
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
             LDF lost approximately 7pp of vote share across nearly every
             constituency (AC). The drop was effectively religion-blind,

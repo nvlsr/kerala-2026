@@ -6,7 +6,6 @@ import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { ScatterWithTrend } from "@/components/charts/scatter-with-trend"
 import { ConfidenceBadge } from "@/components/walkthroughs/confidence-badge"
 import { MethodologyPopover } from "@/components/walkthroughs/methodology-popover"
-import { WalkthroughBreadcrumb } from "@/components/walkthroughs/walkthrough-breadcrumb"
 import { WalkthroughSection } from "@/components/walkthroughs/walkthrough-section"
 import { PullQuote } from "@/components/walkthroughs/pull-quote"
 import { SeeAlsoQuestions } from "@/components/walkthroughs/see-also-questions"
@@ -108,10 +107,7 @@ export function WalkthroughsUDFPage() {
       title="Central Kerala provided nearly half of UDF's majority margin"
       subtitle={
         <>
-          <WalkthroughBreadcrumb current="UDF" />
-          <div className="mt-3">
-            <ConfidenceBadge level="strong" />
-          </div>
+          <ConfidenceBadge level="strong" />
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted-foreground">
             UDF won 47 of 47 seats across Idukki, Ernakulam, Wayanad,
             Malappuram, and Kottayam. Christian-heavy constituencies (ACs) added
