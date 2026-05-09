@@ -228,7 +228,7 @@ export function WalkthroughsUDFPage() {
               </p>
               <p>
                 46% of UDF's 102-seat majority came from these 5 districts,
-                which contain only 34% of Kerala's ACs. Stripping Central-5 from
+                which contain 34% of Kerala's ACs. Stripping Central-5 from
                 the count: UDF would have 55 seats — enough to remain the
                 largest bloc but below the 71-seat majority threshold.{" "}
                 <strong>
