@@ -1,6 +1,14 @@
-# Where BJP performed strongest in Kerala 2026 — three cohorts
+# Where BJP performed strongest (and weakest) in Kerala 2026 — five cohorts
 
-Three slices of "doing well," each capturing a different dimension of strength. A seat can qualify for multiple cohorts; cross-cohort membership is shown at the bottom.
+Five slices of BJP's 2026 Kerala posture — three positive ("doing well"), two negative ("not prioritised"). A seat can qualify for multiple cohorts; cross-cohort membership is shown at the bottom.
+
+- **C1 — Mature base + grew:** structural strength + recent momentum (8 seats).
+- **C2 — Consistent multi-cycle growth:** durable upward trajectory (4 seats).
+- **C3 — New growth from low base:** big jump from negligible (6 seats).
+- **C4a — Declining mature:** had a base, lost ground this cycle (8 seats).
+- **C4b — Stable mature:** had a base, ceiling-bound (8 seats).
+- **C5a — Strategic abstention:** BJP never fielded across 3 cycles (14 seats).
+- **C5b — Structural exclusion:** alliance can't break 8% in any cycle (19 seats).
 
 ## Methodology — effective baselines
 
@@ -142,6 +150,93 @@ Special case: **Thrissur with Padmaja Venugopal**. She was previously INC at Thr
 
 ---
 
+## Cohort 5 — Where BJP doesn't prioritize
+
+The negative space — seats BJP either never contests or where the alliance consistently can't break through. Computed two ways, surfacing **two distinct strategic shapes**: ceding to allies vs structural exclusion.
+
+### 5a — Strategic abstention (BJP never fielded across 2016, 2021, 2026)
+
+**14 seats.** BJP has not contested any of these in three consecutive cycles. NDA-aligned vehicles (BDJS, Twenty 20) hold the slot — typically getting 5–15% — but BJP itself stays out by deliberate alliance-management.
+
+| AC | Name | District | H/C/M | NDA 2026 (vehicle) |
+|---|---|---|---|---|
+| 54 | Mannarkkad | Palakkad | 43/7/49 | BDJS 6.4% |
+| 69 | Kaipamangalam | Thrissur | 53/4/41 | BDJS 13.8% |
+| 72 | Chalakudy | Thrissur | 48/44/6 | T20 11.7% |
+| 77 | Kalamassery | Ernakulam | 45/33/20 | BDJS 8.7% |
+| 87 | Kothamangalam | Ernakulam | 33/29/37 | BDJS 5.1% |
+| 89 | Udumbanchola | Idukki | 47/48/3 | BDJS 8.4% |
+| 91 | Idukki | Idukki | 47/47/4 | BDJS 7.4% |
+| 102 | Aroor | Alappuzha | 65/23/10 | BDJS 12.6% |
+| 103 | Cherthala | Alappuzha | 66/18/15 | BDJS 10.5% |
+| 106 | Kuttanad | Alappuzha | 59/36/3 | BDJS 15.1% |
+| 108 | Kayamkulam | Alappuzha | 82/7/10 | BDJS 11.0% |
+| 112 | Ranni | Pathanamthitta | 48/46/4 | T20 14.6% |
+| 125 | Eravipuram | Kollam | 53/18/27 | BDJS 8.0% |
+| 131 | Vamanapuram | Trivandrum | 64/13/22 | BDJS 8.2% |
+
+**Religion mix:** 6 of 14 are Hindu+Christian (≥30% Christian); 6 are mixed (no single dominant secondary community); only 1 is Muslim-mixed and 1 Hindu-heavy. **No Muslim-majority seats here** — those go to Cohort 5b.
+
+**Geography:** clusters in Alappuzha coast (4 seats: Aroor, Cherthala, Kuttanad, Kayamkulam), Idukki hill (2: Udumbanchola, Idukki), Ernakulam (2: Kalamassery, Kothamangalam), Thrissur (2: Kaipamangalam, Chalakudy). The pattern is **Christian-mixed coastal/central Kerala** where the alliance has organically-strong vehicles other than BJP itself.
+
+**Strategic reading:** these are the seats BJP *cedes* to allies, not abandons. NDA presence is meaningful (5–15%), it's just not BJP-flagged. This is alliance-management terrain, geographically concentrated where BDJS/T20 have organic standing.
+
+Notable: **Vamanapuram** (Trivandrum belt's lone non-BJP seat — already flagged as the falsification of the belt-pivot thesis), **Kuttanad** and **Kayamkulam** (the BDJS-allocated seats announced by Vellappally in March 2026), and **Kalamassery / Kothamangalam** (Ernakulam district seats explicitly handed to T20 — though the table shows BDJS contesting at Kalamassery; T20 only contested 19 of the Ernakulam seats).
+
+### 5b — Structural exclusion (BJP+BDJS aggregate < 8% across all 3 cycles)
+
+**19 seats.** Where the alliance has never broken into single digits — BJP/BDJS combined stays below 8% across 2016, 2021, AND 2026. This isn't ceding; it's incapacity.
+
+| AC | Name | District | H/C/M | BJP+BDJS 2016 | 2021 | 2026 |
+|---|---|---|---|---:|---:|---:|
+| 5 | Trikaripur | Kasaragod | 68/9/21 | 7.0% | 6.8% | 0% |
+| 9 | Irikkur | Kannur | 49/28/22 | 5.6% | 5.1% | 0% |
+| 16 | Peravoor | Kannur | 51/22/25 | 6.8% | 6.4% | 5.5% |
+| 21 | Kuttiadi | Kozhikode | 59/1/38 | 7.9% | 5.4% | 6.8% |
+| 24 | Perambra | Kozhikode | 56/1/41 | 5.6% | 6.8% | 7.6% |
+| 32 | Thiruvambadi | Kozhikode | 33/12/54 | 6.6% | 5.5% | 0% |
+| 34 | Ernad | Malappuram | 21/1/76 | 4.5% | 4.7% | 5.2% |
+| 35 | Nilambur | Malappuram | 31/7/60 | 7.6% | 5.0% | 6.8% |
+| 36 | Wandoor | Malappuram | 29/7/62 | 6.1% | 4.2% | 0% |
+| 38 | Perinthalmanna | Malappuram | 26/1/71 | 4.0% | 4.8% | 3.9% |
+| 39 | Mankada | Malappuram | 23/1/74 | 4.5% | 3.9% | 5.3% |
+| 40 | Malappuram | Malappuram | 24/0/74 | 5.2% | 3.6% | 4.7% |
+| 41 | Vengara | Malappuram | 14/0/85 | 6.0% | 4.5% | 3.6% |
+| 43 | Tirurangadi | Malappuram | 17/0/81 | 6.1% | 5.6% | 6.6% |
+| 45 | Tirur | Malappuram | 21/0/77 | 5.9% | 5.3% | 4.4% |
+| 54 | Mannarkkad | Palakkad | 43/7/49 | 7.0% | 0% | 6.4% |
+| 75 | Angamaly | Ernakulam | 34/64/1 | 0% | 6.3% | 0% |
+| 86 | Muvattupuzha | Ernakulam | 35/40/24 | 6.9% | 5.2% | 0% |
+| 87 | Kothamangalam | Ernakulam | 33/29/37 | 0% | 3.4% | 5.1% |
+
+**Religion mix:** **10 of 19 are Muslim-majority** (≥50% Muslim share). Add 2 more Hindu+Muslim and 1 Muslim-heavy mixed → **13 of 19 are Muslim-dominant terrain**. Only 2 are Hindu+Christian.
+
+**Geography:** **9 of 19 are in Malappuram district** (which has 16 ACs total — so 9/16 = 56% of Malappuram is structurally weak NDA). Plus 3 each in Kozhikode and Ernakulam, 2 in Kannur. The pattern is **Muslim-belt Northern Kerala**.
+
+**Strategic reading:** these are the seats where the alliance has no organic foothold — BJP and BDJS combined can't crack 8% even after multiple cycles of trying. The Malappuram belt in particular is a hard structural exclusion zone driven by the IUML's near-total Muslim-vote consolidation.
+
+### Combined picture — overlap and contrast
+
+- **Overlap of 5a + 5b** (never contested AND persistently weak): 2 seats (Mannarkkad, Kothamangalam). These are the cleanest "abandonment" cases — both no BJP presence AND no NDA presence even via allies.
+- **5a − 5b** (12 seats): Ceded to allies but allies have meaningful presence. These are **strategic concessions** within an alliance plan.
+- **5b − 5a** (17 seats): BJP fielded sometime but couldn't break through. These are **structural exclusion** — effort-applied-but-no-traction terrain.
+
+The two sub-cohorts answer different strategic questions:
+
+| Sub-cohort | What it tells us | Demographic skew |
+|---|---|---|
+| **5a — Strategic abstention** | Where BJP *chose* to step back for allies | Hindu+Christian coastal/central |
+| **5b — Structural exclusion** | Where the alliance *can't* break through | Muslim-majority Malappuram belt |
+
+This is the inverse of bjp-1.md's three positive themes (Trivandrum / Kottayam / Ernakulam). Together with the strongest-seats cohorts above, the picture of BJP's 2026 Kerala strategic posture is now reasonably complete:
+
+- **Where BJP grows directly**: Trivandrum belt + scattered marquee plays (Pala, Thiruvalla, Nattika, Ottappalam, Kozhikode North).
+- **Where BJP plateaus or declines**: Hindu+Christian non-marquee terrain (Cohort 4a) + Hindu+Muslim ceiling seats (Cohort 4b).
+- **Where BJP cedes to allies**: Hindu+Christian coastal/central Alappuzha-Ernakulam-Idukki belt (Cohort 5a).
+- **Where the alliance is structurally excluded**: Muslim-majority Malappuram + Kozhikode + Kannur belt (Cohort 5b).
+
+---
+
 ## Combined view — "Plateaued mature"
 
 **Cohorts 4a + 4b together = 16 seats** where BJP had ≥20% in 2021 but couldn't grow ≥+2pp by 2026. This is the saturation set: where BJP's structural presence has reached a ceiling, whether expressed as flat (4b) or active decline (4a).
@@ -187,8 +282,9 @@ The strongest "doing well" performers are still mostly **not on the priority lis
 
 ## Open questions for analysis
 
-1. **Threshold tuning** — Cohort 1 thresholds (≥25% share, ≥+5pp Δ) yield 8 seats. Could tighten or loosen.
-2. **Hindu+Christian erosion as a fourth article theme.** The Cohort 4a finding — 6 of 8 declining-mature seats have significant Christian populations — points to a real strategic story not currently in bjp-1.md: BJP is *losing* Hindu+Christian terrain where it doesn't deploy marquee Christian candidates. The Pala/Thiruvalla successes are exceptions to a broader decline, not the rule. Worth integrating into the article as either a falsification (the marquee strategy is necessary, not just sufficient) or a separate theme on the Hindu+Christian belt as contested ground.
-3. **Hindu+Muslim ceiling as a fifth article theme.** Cohort 4b's stable-mature seats are dominated by Hindu+Muslim Kasaragod / Palakkad and Trivandrum belt — places where BJP has ceiling-bound presence (~30–37%) that isn't moving. If priority placement (Manjeshwar with state president, Palakkad with Sobha Surendran) couldn't break that ceiling, it suggests a structural limit BJP can't overcome through candidate quality alone. This is the inverse story to the Trivandrum belt's growth thesis.
-4. **NDA-aggregate parallel** — should we compute all five cohorts using NDA-aggregate share? Would surface T20-Ernakulam patterns we'd otherwise miss.
-5. **Geographic micro-clusters** — Cohort 1's Hindu-Muslim non-belt seats (Nattika, Kozhikode North, Ottappalam) and Cohort 2's Haripad + Kozhikode South suggest a possible secondary "Hindu-Muslim Central+North coastal" pattern. Combined with Cohort 4b's Hindu-Muslim plateau seats (Manjeshwar, Palakkad, Malampuzha), this might be a single coherent story: BJP has a Hindu+Muslim presence belt across Kerala — a few seats slowly building, more seats stuck at a ceiling. Worth examining as a possible fourth bjp-1.md theme.
+1. **Threshold tuning** — Cohort 1 thresholds (≥25% share, ≥+5pp Δ) yield 8 seats. Could tighten or loosen. Cohort 5b uses BJP+BDJS aggregate (excluding T20) for cross-cycle comparability since T20 wasn't NDA-aligned in 2016/2021; including T20 would shift several Ernakulam seats out of 5b.
+2. **Hindu+Christian erosion as a fourth article theme.** Cohort 4a finding (6 of 8 declining-mature seats have significant Christian populations) plus Cohort 5a finding (6 of 14 strategic-abstention seats are Hindu+Christian coastal/central) together suggest a coherent thesis: BJP's Hindu+Christian terrain falls into three buckets — (a) marquee plays that worked (Pala, Thiruvalla in Cohorts 1+3), (b) non-marquee terrain that's actively eroding (Cohort 4a), and (c) seats ceded to BDJS/T20 entirely (Cohort 5a). The Pala/Thiruvalla successes are exceptions to a broader pattern of disengagement or decline.
+3. **Hindu+Muslim ceiling as a fifth article theme.** Cohort 4b's stable-mature seats (Manjeshwar, Palakkad, Malampuzha) cluster in Hindu+Muslim terrain at ~30–37% shares that won't move even with priority placement. Combined with Cohort 5b's Muslim-majority Malappuram exclusion (9 of 16 Malappuram ACs persistently <8% NDA), the Muslim-vote landscape splits cleanly: BJP holds a structural floor in Hindu+Muslim mixed terrain (~30% ceiling) but is structurally excluded from Muslim-majority terrain (~5% floor).
+4. **The Alappuzha coast cohort.** 5a contains 4 contiguous Alappuzha-coast seats (Aroor, Cherthala, Kuttanad, Kayamkulam) — all ceded to BDJS at 10–15%. This is a clear sub-pattern within the strategic-abstention set. Worth investigating as a candidate "Alappuzha BDJS belt" theme — it's the inverse of the Ernakulam T20 belt (Cohort 4 of bjp-1.md).
+5. **NDA-aggregate parallel** — should we compute the full cohort set using NDA-aggregate share? Would surface T20-Ernakulam patterns and re-shape Cohort 5b.
+6. **Geographic micro-clusters** — Cohort 1's Hindu-Muslim non-belt seats (Nattika, Kozhikode North, Ottappalam) and Cohort 2's Haripad + Kozhikode South suggest a possible secondary "Hindu-Muslim Central+North coastal" pattern. Worth examining as a possible additional bjp-1.md theme.
