@@ -158,7 +158,7 @@ If it's a per-constituency aggregate:
 
 ## Walkthrough pages
 
-The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance walkthrough pages (LDF, UDF, NDA) plus an index and a methodology page. Each walkthrough page composes a small set of building blocks:
+The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance walkthrough pages (LDF, UDF, NDA) plus an index, a methodology page, and an interactive insights page (`/walkthroughs/insights`) for cohort-overlap exploration. Each walkthrough page composes a small set of building blocks:
 
 - `WalkthroughSection` — heading + prose + optional visual (`visual-right` / `visual-left` / `stacked` layout).
 - `ChoroplethMap` — the standard map; takes a `valueByAC: Map<number, number>`, a colour scale, optional `highlightSeats: Set<number>` for outlining a subset, and optional `viewBox` to crop into a region (e.g. Trivandrum + Kollam for the NDA page).

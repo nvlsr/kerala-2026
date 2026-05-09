@@ -62,6 +62,11 @@ const WalkthroughsMethodologyPage = lazy(() =>
     default: m.WalkthroughsMethodologyPage,
   }))
 )
+const WalkthroughsInsightsPage = lazy(() =>
+  import("@/pages/walkthroughs-insights-page").then((m) => ({
+    default: m.WalkthroughsInsightsPage,
+  }))
+)
 
 /** Minimal skeleton — keeps the page footprint stable while the chunk
  *  loads. No spinner: the chunks are small and on a warm cache the
@@ -116,6 +121,10 @@ export function App() {
           <Route
             path="/walkthroughs/methodology"
             element={<WalkthroughsMethodologyPage />}
+          />
+          <Route
+            path="/walkthroughs/insights"
+            element={<WalkthroughsInsightsPage />}
           />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

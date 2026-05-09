@@ -1,10 +1,7 @@
 import { Fragment, useEffect, useState, type ReactNode } from "react"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
-import {
-  ProseLink,
-  SeatLink,
-} from "@/components/walkthroughs/prose-link"
+import { ProseLink, SeatLink } from "@/components/walkthroughs/prose-link"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
@@ -1815,6 +1812,13 @@ export function WalkthroughsNDAPage() {
                 BJP-related questions on{" "}
                 <ProseLink to="/questions">/questions</ProseLink>.
               </p>
+            </section>
+
+            {/* Insights teaser — soft handoff to the cohort overlap explorer */}
+            <section className="border-t pt-6 text-center">
+              <ProseLink to="/walkthroughs/insights">
+                Build your own cohort overlap →
+              </ProseLink>
             </section>
           </div>
           <PageRail />
