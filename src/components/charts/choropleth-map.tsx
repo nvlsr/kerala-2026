@@ -229,7 +229,7 @@ export function ChoroplethMap({
                     ? "var(--foreground)"
                     : isHovered
                       ? "var(--foreground)"
-                      : "var(--background)"
+                      : "var(--border)"
                 }
                 strokeWidth={isHighlighted ? 1.5 : isHovered ? 1.2 : 0.5}
                 style={{ cursor: "default" }}

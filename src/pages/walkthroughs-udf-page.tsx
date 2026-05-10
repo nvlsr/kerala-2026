@@ -245,16 +245,11 @@ export function WalkthroughsUDFPage() {
                 <strong>
                   UDF's 102-seat majority was concentrated, not statewide.
                 </strong>{" "}
-                Central Kerala provided 46% of UDF's majority margin via a
-                47-of-47 sweep across five districts. Christian-heavy ACs added
-                a robust ~3-4pp premium on top of the statewide ~7pp{" "}
-                <Link
-                  to="/walkthroughs/ldf-walkthrough"
-                  className="font-medium underline-offset-2 hover:underline"
-                >
-                  anti-LDF wave
-                </Link>
-                .
+                Two religious belts in central Kerala provided 46% of UDF's
+                majority margin via a 47-of-47 sweep across five districts.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[14.5px]">
+                The rest of this article is how they did it.
               </p>
             </section>
 
