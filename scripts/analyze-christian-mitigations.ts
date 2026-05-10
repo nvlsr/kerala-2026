@@ -1,23 +1,29 @@
 /**
  * Christian-walkthrough draft — confounder mitigations.
  *
- * Tests two ecological-fallacy bounds raised during draft review:
+ * Tests three ecological-fallacy bounds raised during draft review:
  *
  *   M1 — Does NDA share GROW between 2021→2026 in south Latin ACs?
- *        If yes, "Hindu shift to NDA absorbed Christian UDF swing" gains
- *        aggregate support. If no, south Latin UDF swing (+6.8pp) is
- *        genuinely smaller than central/north (+10pp) — not absorption.
+ *        Tests Hindu→NDA absorption alternative explanation.
  *
  *   M2 — Within Ernakulam district, do SM-cohort and Latin-cohort ACs
- *        swing differently? If yes, the cohort effect survives a
- *        same-district control. If no, the cohort effect is mostly a
- *        district effect.
+ *        swing differently? Tests district-effect confounding.
+ *
+ *   M3 — Within each cohort, do high-Christian-share ACs swing
+ *        differently from low-Christian-share ACs? Tests within-cohort
+ *        heterogeneity — whether the cohort label means the same thing
+ *        in a 40%-Christian AC and a 12%-Christian AC.
  *
  * Usage: bun run scripts/analyze-christian-mitigations.ts
  */
 import { readdirSync } from "node:fs"
 
-import { christianSubRiteCohortFor } from "@/lib/data/subrite-bins"
+import {
+  christianSubRiteCohortFor,
+  CHRISTIAN_SUBRITE_COHORTS,
+  type ChristianSubRiteCohort,
+} from "@/lib/data/subrite-bins"
+import { getReligiousSignatureForAC } from "@/lib/data/religious-pois"
 
 type AllianceShares = { UDF: number; LDF: number; NDA: number; OTHER: number }
 type Candidate2026 = {
@@ -129,6 +135,7 @@ type Row = {
   district: string
   zone: "south" | "central" | "north" | "(unzoned)"
   cohort: ReturnType<typeof christianSubRiteCohortFor>
+  christianPct: number
   s2021: AllianceShares
   s2026: AllianceShares
   delta: AllianceShares
@@ -142,12 +149,14 @@ for (const c of cs) {
   if (!s21) continue
   const s26 = shares2026(c)
   const dist = distByAc.get(c.constituencyNumber) ?? ""
+  const sig = getReligiousSignatureForAC(c.constituencyNumber)
   rows.push({
     acNumber: c.constituencyNumber,
     acName: nameByAc.get(c.constituencyNumber) ?? c.constituencyName,
     district: dist,
     zone: ZONE[dist] ?? "(unzoned)",
     cohort: christianSubRiteCohortFor(c.constituencyNumber),
+    christianPct: sig?.religionPopPct.christian ?? 0,
     s2021: s21,
     s2026: s26,
     delta: {
@@ -248,6 +257,97 @@ for (const dist of TARGET_DISTRICTS) {
       )
     }
   }
+}
+
+// ── M3 — Within-cohort heterogeneity by Christian share ──────────────
+console.log(
+  "═".repeat(80) +
+    "\nM3 — Within-cohort heterogeneity: does Christian-share split the cohort signal?\n" +
+    "═".repeat(80)
+)
+console.log(
+  `\nHypothesis to test: a cohort like Latin Catholic includes ACs at\n` +
+    `41% Christian (Vypeen) AND 10% Christian (Trikaripur). If high- and\n` +
+    `low-share ACs swing similarly, the cohort signal generalises. If\n` +
+    `they swing differently, the cohort mean is mixing two distinct\n` +
+    `populations.\n`
+)
+
+const COHORTS_TO_TEST: ChristianSubRiteCohort[] = [
+  "latin_catholic",
+  "syro_malabar",
+  "indian_orthodox",
+  "jacobite_syrian",
+  "below_threshold",
+]
+
+for (const cohort of COHORTS_TO_TEST) {
+  const cohortRows = rows.filter((r) => r.cohort === cohort)
+  if (cohortRows.length < 4) {
+    console.log(
+      `\n${CHRISTIAN_SUBRITE_COHORTS.find((c) => c.code === cohort)?.label ?? cohort}: n=${cohortRows.length}, too small to split meaningfully — skipping`
+    )
+    continue
+  }
+  // Split at median Christian share within the cohort
+  const sorted = [...cohortRows].sort((a, b) => a.christianPct - b.christianPct)
+  const medianIdx = Math.floor(sorted.length / 2)
+  const median = sorted[medianIdx].christianPct
+  const lo = sorted.slice(0, medianIdx)
+  const hi = sorted.slice(medianIdx)
+
+  const fLo = (key: "UDF" | "NDA", year: "s2021" | "s2026" | "delta") =>
+    mean(lo.map((r) => r[year][key])).toFixed(1).padStart(5)
+  const fHi = (key: "UDF" | "NDA", year: "s2021" | "s2026" | "delta") =>
+    mean(hi.map((r) => r[year][key])).toFixed(1).padStart(5)
+  const cMin = (xs: Row[]) =>
+    xs
+      .reduce((a, b) => Math.min(a, b.christianPct), Infinity)
+      .toFixed(1)
+      .padStart(5)
+  const cMax = (xs: Row[]) =>
+    xs
+      .reduce((a, b) => Math.max(a, b.christianPct), -Infinity)
+      .toFixed(1)
+      .padStart(5)
+
+  const label =
+    CHRISTIAN_SUBRITE_COHORTS.find((c) => c.code === cohort)?.label ?? cohort
+
+  console.log(
+    `\n${label} (n=${cohortRows.length}, median Christian = ${median.toFixed(1)}%):`
+  )
+  console.log(
+    `  Half       n    Christian-range   UDF21  UDF26  ΔUDF    NDA21  NDA26  ΔNDA`
+  )
+  console.log(
+    `  LOW-share  ${String(lo.length).padStart(2)}   ${cMin(lo)}-${cMax(lo)}%   ${fLo("UDF", "s2021")}  ${fLo("UDF", "s2026")}  ${signed(mean(lo.map((r) => r.delta.UDF)))}    ${fLo("NDA", "s2021")}  ${fLo("NDA", "s2026")}  ${signed(mean(lo.map((r) => r.delta.NDA)))}`
+  )
+  console.log(
+    `  HIGH-share ${String(hi.length).padStart(2)}   ${cMin(hi)}-${cMax(hi)}%   ${fHi("UDF", "s2021")}  ${fHi("UDF", "s2026")}  ${signed(mean(hi.map((r) => r.delta.UDF)))}    ${fHi("NDA", "s2021")}  ${fHi("NDA", "s2026")}  ${signed(mean(hi.map((r) => r.delta.NDA)))}`
+  )
+
+  // Diagnostic: did the swing differ meaningfully?
+  const loDelta = mean(lo.map((r) => r.delta.UDF))
+  const hiDelta = mean(hi.map((r) => r.delta.UDF))
+  const gap = hiDelta - loDelta
+  console.log(
+    `  Gap (HIGH − LOW) ΔUDF: ${signed(gap)}pp  →  ${Math.abs(gap) < 2 ? "swings are similar — cohort signal generalises" : Math.abs(gap) < 5 ? "moderate heterogeneity" : "STRONG heterogeneity — investigate"}`
+  )
+}
+
+// Within-cohort detail for cohorts that show heterogeneity — print per-AC
+console.log("\nPer-AC detail for Latin Catholic, sorted by Christian share:")
+const latinSorted = [...rows.filter((r) => r.cohort === "latin_catholic")].sort(
+  (a, b) => a.christianPct - b.christianPct
+)
+console.log(
+  `  ${"AC".padEnd(20)} ${"district".padEnd(20)} ${"Christian%".padStart(10)} ${"UDF21".padStart(6)} ${"UDF26".padStart(6)} ${"ΔUDF".padStart(6)} ${"ΔNDA".padStart(6)}`
+)
+for (const r of latinSorted) {
+  console.log(
+    `  ${r.acName.padEnd(20)} ${r.district.padEnd(20)} ${r.christianPct.toFixed(1).padStart(10)} ${r.s2021.UDF.toFixed(1).padStart(6)} ${r.s2026.UDF.toFixed(1).padStart(6)} ${signed(r.delta.UDF)} ${signed(r.delta.NDA)}`
+  )
 }
 
 console.log(``)
