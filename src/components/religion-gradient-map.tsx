@@ -72,6 +72,13 @@ type Props = {
    * (matching `data/districts.json`), values are 0-100 percent.
    */
   districtValuesOverride?: Record<string, number>
+  /**
+   * When `acValuesOverride` is supplied, ACs that are MISSING from the
+   * override map render with this fill colour (instead of the default
+   * "missing = 0 = faint tint" behaviour). Used by /religion-map to
+   * gray out electorally-irrelevant ACs in the sub-rite section.
+   */
+  noDataColor?: string
   ariaLabel: string
 }
 
@@ -104,6 +111,7 @@ export function ReligionGradientMap({
   zoomable = false,
   acValuesOverride,
   districtValuesOverride,
+  noDataColor,
   ariaLabel,
 }: Props) {
   const acData =
@@ -222,11 +230,18 @@ export function ReligionGradientMap({
         const districtId =
           districtsMeta.constituencyToDistrict[String(p.constituencyNumber)]
         let pct = 0
+        let isMissing = false
         if (usingOverride) {
           if (level === "ac") {
-            pct = acValuesOverride[String(p.constituencyNumber)] ?? 0
+            const raw = acValuesOverride[String(p.constituencyNumber)]
+            isMissing = raw == null
+            pct = raw ?? 0
           } else {
-            pct = districtId ? (districtValuesOverride?.[districtId] ?? 0) : 0
+            const raw = districtId
+              ? districtValuesOverride?.[districtId]
+              : undefined
+            isMissing = raw == null
+            pct = raw ?? 0
           }
         } else if (level === "ac") {
           const ac = acData[String(p.constituencyNumber)]
@@ -237,6 +252,7 @@ export function ReligionGradientMap({
             : null
           pct = districtMeta?.religions[religion] ?? 0
         }
+        const useNoData = usingOverride && isMissing && noDataColor != null
         const norm = maxPct > 0 ? pct / maxPct : 0
         const opacity = minOpacity + norm * (maxOpacity - minOpacity)
         // Highlight rules:
@@ -251,8 +267,16 @@ export function ReligionGradientMap({
           <path
             key={p.constituencyNumber}
             d={p.pathD}
-            fill={baseColor}
-            fillOpacity={isHighlighted ? Math.min(1, opacity + 0.15) : opacity}
+            fill={useNoData ? noDataColor : baseColor}
+            fillOpacity={
+              useNoData
+                ? isHighlighted
+                  ? 1
+                  : 0.7
+                : isHighlighted
+                  ? Math.min(1, opacity + 0.15)
+                  : opacity
+            }
             stroke={
               isOutlined
                 ? outlineColor

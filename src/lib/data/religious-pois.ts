@@ -3,15 +3,23 @@
  *
  * Source: `data/ac-religious-poi-inventory.json` — derived from the
  * Overpass dump via `scripts/classify-osm-pow.ts` +
- * `scripts/aggregate-ac-religion-pois.ts`. See `data/raw/osm/README.md`
- * for the pipeline and caveats.
+ * `scripts/aggregate-ac-religion-pois.ts`. See `data/raw/osm/README.md`.
  *
- * CAVEAT: POI counts are NOT population shares. Hindu temples are
- * smaller and more numerous per capita than churches/mosques. Use these
- * counts to identify *dominant sub-rite among that religion's POIs in
- * an AC*, not to estimate religious composition.
+ * The primary metric exposed here is **estimated sub-rite share of
+ * total voters per AC** = `(sub-rite POI share among religion's POIs)
+ * × (religion's population share from Census)`. This combines the OSM
+ * within-religion mix with Census religion shares to produce something
+ * that approximates "what fraction of this AC's voters belong to this
+ * sub-community" — the electorally meaningful question.
+ *
+ * The assumption is that within a religion, POI distribution proxies
+ * for population distribution. Between religions, POI counts mislead
+ * (Hindu temples are smaller and more numerous per capita) and the
+ * Census religion share carries the load.
  */
 import inventoryJson from "@data/ac-religious-poi-inventory.json"
+
+import { getReligionForAC } from "@/lib/data/demographics"
 
 export type ChristianDenomination =
   | "latin_catholic"
@@ -34,6 +42,9 @@ export type MuslimDenomination =
   | "ahmadiyya"
   | "shia"
   | "other_muslim"
+
+export type SubRiteReligion = "christian" | "muslim"
+export type Year = 2011 | 2025
 
 export type ACReligiousInventory = {
   ac_id: number
@@ -65,78 +76,10 @@ export function getReligiousPOIsForAC(
   return byAc.get(acNumber)
 }
 
-/**
- * Build a `{ ac_id (as string) → share (0-100) }` map for a single
- * sub-rite. Share is computed as a percent of that religion's
- * classified POIs in the AC (i.e. excluding the "(none)" bucket).
- * ACs with zero classified POIs of that religion get omitted.
- */
-export function buildChristianDenominationShareMap(
-  denom: ChristianDenomination
-): Record<string, number> {
-  const out: Record<string, number> = {}
-  for (const r of religiousPOIs) {
-    const buckets = r.by_christian_denomination
-    let classified = 0
-    for (const [k, v] of Object.entries(buckets)) {
-      if (k !== "(none)") classified += v
-    }
-    if (classified === 0) continue
-    const n = buckets[denom] ?? 0
-    out[String(r.ac_id)] = (n / classified) * 100
-  }
-  return out
-}
-
-export function buildMuslimDenominationShareMap(
-  denom: MuslimDenomination
-): Record<string, number> {
-  const out: Record<string, number> = {}
-  for (const r of religiousPOIs) {
-    const buckets = r.by_muslim_denomination
-    let classified = 0
-    for (const [k, v] of Object.entries(buckets)) {
-      if (k !== "(none)") classified += v
-    }
-    if (classified === 0) continue
-    const n = buckets[denom] ?? 0
-    out[String(r.ac_id)] = (n / classified) * 100
-  }
-  return out
-}
-
-/**
- * Map of `{ ac_id (as string) → dominant sub-rite }`. ACs with no
- * classified POIs of that religion get omitted (so consumers can show
- * them as a separate "no data" colour).
- */
-export function buildDominantChristianMap(): Record<
-  string,
-  ChristianDenomination
-> {
-  const out: Record<string, ChristianDenomination> = {}
-  for (const r of religiousPOIs) {
-    if (r.dominant_christian_denomination) {
-      out[String(r.ac_id)] = r.dominant_christian_denomination
-    }
-  }
-  return out
-}
-
-export function buildDominantMuslimMap(): Record<string, MuslimDenomination> {
-  const out: Record<string, MuslimDenomination> = {}
-  for (const r of religiousPOIs) {
-    if (r.dominant_muslim_denomination) {
-      out[String(r.ac_id)] = r.dominant_muslim_denomination
-    }
-  }
-  return out
-}
-
 /** Total classified POIs of a religion in an AC (excludes "(none)" bucket). */
 export function getClassifiedCount(
   ac: ACReligiousInventory,
-  religion: "christian" | "muslim"
+  religion: SubRiteReligion
 ): number {
   const buckets =
     religion === "christian"
@@ -147,4 +90,113 @@ export function getClassifiedCount(
     if (k !== "(none)") n += v
   }
   return n
+}
+
+/**
+ * Detailed breakdown of a sub-rite's voter-share estimate for one AC.
+ * Returns null if the AC is missing demographics or has no classified
+ * POIs of that religion (i.e. the sub-rite mix is undetermined).
+ */
+export type VoterShareBreakdown = {
+  religionPopPct: number // Census religion share of total population (0-100)
+  subriteCount: number // POIs tagged/inferred to this sub-rite
+  classifiedCount: number // total POIs of that religion with a known sub-rite
+  subriteShareOfReligion: number // 0-100, POI share among classified
+  voterSharePct: number // 0-100, the combined metric
+}
+
+export function getVoterShareBreakdown(
+  acNumber: number,
+  religion: SubRiteReligion,
+  subrite: string,
+  year: Year
+): VoterShareBreakdown | null {
+  const ac = byAc.get(acNumber)
+  if (!ac) return null
+  const demo = getReligionForAC(acNumber, year)
+  if (!demo) return null
+  const religionPopPct = demo.religions[religion] ?? 0
+  if (religionPopPct === 0) return null
+  const buckets =
+    religion === "christian"
+      ? ac.by_christian_denomination
+      : ac.by_muslim_denomination
+  const classified = getClassifiedCount(ac, religion)
+  if (classified === 0) return null
+  const subriteCount = buckets[subrite] ?? 0
+  const subriteShareOfReligion = (subriteCount / classified) * 100
+  const voterSharePct = (subriteShareOfReligion / 100) * religionPopPct
+  return {
+    religionPopPct,
+    subriteCount,
+    classifiedCount: classified,
+    subriteShareOfReligion,
+    voterSharePct,
+  }
+}
+
+/**
+ * Build `{ ac_id (as string) → voter-share % }` for a sub-rite.
+ * Skips ACs where the sub-rite mix is undetermined (no classified POIs
+ * of that religion) or where the religion is absent.
+ */
+export function buildSubRiteVoterShareMap(
+  religion: SubRiteReligion,
+  subrite: string,
+  year: Year
+): Record<string, number> {
+  const out: Record<string, number> = {}
+  for (const ac of religiousPOIs) {
+    const b = getVoterShareBreakdown(ac.ac_id, religion, subrite, year)
+    if (!b) continue
+    out[String(ac.ac_id)] = b.voterSharePct
+  }
+  return out
+}
+
+/**
+ * Build `{ ac_id (as string) → dominant sub-rite }` filtered to ACs
+ * where the dominant sub-rite is at least `minVoterSharePct` of the
+ * total voter population. Below the threshold, the sub-rite isn't
+ * electorally consequential and the AC is omitted.
+ */
+export function buildDominantSubRiteByVoterShare(
+  religion: SubRiteReligion,
+  year: Year,
+  minVoterSharePct: number
+): Record<string, string> {
+  const out: Record<string, string> = {}
+  for (const ac of religiousPOIs) {
+    const dominantField =
+      religion === "christian"
+        ? ac.dominant_christian_denomination
+        : ac.dominant_muslim_denomination
+    if (!dominantField) continue
+    const b = getVoterShareBreakdown(
+      ac.ac_id,
+      religion,
+      dominantField,
+      year
+    )
+    if (!b) continue
+    if (b.voterSharePct < minVoterSharePct) continue
+    out[String(ac.ac_id)] = dominantField
+  }
+  return out
+}
+
+/**
+ * Filter a voter-share map to only ACs at/above `minVoterSharePct`.
+ * Used at render time so the gradient map can render below-threshold
+ * ACs as a separate no-data colour rather than a faint tint.
+ */
+export function filterVoterShareMap(
+  m: Record<string, number>,
+  minVoterSharePct: number
+): Record<string, number> {
+  const out: Record<string, number> = {}
+  for (const [k, v] of Object.entries(m)) {
+    if (v >= minVoterSharePct) out[k] = v
+  }
+  return out
 }
