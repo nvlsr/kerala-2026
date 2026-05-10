@@ -9,9 +9,22 @@ import {
   getDemographicsFor,
   getDistrict,
   getReligionForAC,
+  getReligiousSignatureForAC,
 } from "@/lib/data"
+import {
+  CHRISTIAN_SUBRITE_COHORTS,
+  MUSLIM_SUBRITE_COHORTS,
+} from "@/lib/data/subrite-bins"
 import { districtsMeta } from "@/lib/data/loaders"
 import { cn } from "@/lib/utils"
+
+// Lookup tables for sub-rite label + color (from cohort metadata).
+const CHRISTIAN_SUBRITE_LABEL = new Map(
+  CHRISTIAN_SUBRITE_COHORTS.map((c) => [c.code, c])
+)
+const MUSLIM_SUBRITE_LABEL = new Map(
+  MUSLIM_SUBRITE_COHORTS.map((c) => [c.code, c])
+)
 
 type CasteRow = {
   key: keyof HinduCasteShares
@@ -104,15 +117,25 @@ export function DemographicsPanel({ scope }: Props) {
         </ToggleGroup>
       </header>
       {view === "religion" ? (
-        <ReligionTable religion={religion} />
+        <ReligionTable
+          religion={religion}
+          acNumber={scope.kind === "ac" ? scope.acNumber : undefined}
+        />
       ) : (
         <CasteTable caste={caste} />
       )}
       <footer className="text-[10px] leading-snug text-muted-foreground/80">
         {view === "religion" ? (
           <>
-            Source: Census 2011 + 2025 cohort projection (CRS births by
+            Religion: Census 2011 + 2025 cohort projection (CRS births by
             religion). {fallbackNote}
+            {scope.kind === "ac" && (
+              <>
+                {" "}
+                Sub-rite: OSM place-of-worship POI mix × Census religion
+                share. ≥5% est. voters + ≥3 POIs to display.
+              </>
+            )}
           </>
         ) : (
           <>
@@ -128,26 +151,88 @@ export function DemographicsPanel({ scope }: Props) {
 
 function ReligionTable({
   religion,
+  acNumber,
 }: {
   religion: Record<"hindu" | "muslim" | "christian" | "other", number>
+  acNumber?: number
 }) {
+  // Sub-rite rows are AC-only — district/state dominant sub-rite
+  // doesn't have a clean definition.
+  const sig =
+    acNumber != null ? getReligiousSignatureForAC(acNumber) : null
+  const christianSub = sig?.christian.dominant ?? null
+  const muslimSub = sig?.muslim.dominant ?? null
   return (
     <table className="w-full text-sm tabular-nums">
       <tbody>
         {RELIGION_ROWS.map((r) => {
           const value = religion[r.key]
+          const subRow =
+            r.key === "christian" && christianSub
+              ? renderSubRiteRow(
+                  CHRISTIAN_SUBRITE_LABEL.get(
+                    christianSub.code as never
+                  ),
+                  christianSub.voterSharePct
+                )
+              : r.key === "muslim" && muslimSub
+                ? renderSubRiteRow(
+                    MUSLIM_SUBRITE_LABEL.get(
+                      muslimSub.code as never
+                    ),
+                    muslimSub.voterSharePct
+                  )
+                : null
           return (
-            <Row
-              key={r.key}
-              label={r.label}
-              color={r.color}
-              value={value}
-              dim={value < 0.5}
-            />
+            <>
+              <Row
+                key={r.key}
+                label={r.label}
+                color={r.color}
+                value={value}
+                dim={value < 0.5}
+              />
+              {subRow}
+            </>
           )
         })}
       </tbody>
     </table>
+  )
+}
+
+/** Indented sub-rite row rendered immediately under its parent religion. */
+function renderSubRiteRow(
+  meta: { label: string; color: string } | undefined,
+  voterSharePct: number
+) {
+  if (!meta) return null
+  return (
+    <tr
+      key={`subrite-${meta.label}`}
+      className="border-b border-border/40 last:border-b-0"
+    >
+      <td className="py-1 pr-2 pl-6">
+        <span className="inline-flex items-center gap-2 text-xs">
+          <span className="text-muted-foreground/60">↳</span>
+          <span
+            className="inline-block h-1.5 w-1.5 rounded-full"
+            style={{ backgroundColor: meta.color }}
+            aria-hidden
+          />
+          <span className="text-muted-foreground">
+            {meta.label}{" "}
+            <span className="text-muted-foreground/70">(dominant)</span>
+          </span>
+        </span>
+      </td>
+      <td className="py-1 text-right text-xs text-muted-foreground">
+        <span className="tabular-nums">
+          {formatPercent(voterSharePct / 100, 1)}
+        </span>{" "}
+        <span className="text-muted-foreground/60">est. voters</span>
+      </td>
+    </tr>
   )
 }
 
