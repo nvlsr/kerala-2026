@@ -1,7 +1,15 @@
 import { Fragment, useState, type ReactNode } from "react"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
+import { CohortSection } from "@/components/walkthroughs/cohort-section"
 import { ProseLink, SeatLink } from "@/components/walkthroughs/prose-link"
+import {
+  COMPACT_CELL_CLASS,
+  COMPACT_HEAD_CLASS,
+  HIGHLIGHT_ROW_CLASS,
+  NUM_CELL_CLASS,
+  NUM_HEAD_CLASS,
+} from "@/components/walkthroughs/table-classes"
 import {
   ASIDE,
   DEFINITION,
@@ -49,14 +57,6 @@ import {
   SOUTH_CLUSTER_VIEWBOX,
   THREE_LENSES,
 } from "./walkthroughs-nda-data"
-
-const HIGHLIGHT_ROW_CLASS =
-  "bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/30 dark:hover:bg-amber-950/40"
-const NUM_CELL_CLASS = "text-right font-mono tabular-nums"
-const NUM_HEAD_CLASS = "text-right"
-const COMPACT_CELL_CLASS = "px-2 py-1.5 text-[12.5px]"
-const COMPACT_HEAD_CLASS =
-  "h-8 px-2 text-[10.5px] font-semibold uppercase tracking-wide text-muted-foreground"
 
 function makeBinaryValueMap(
   acs: Set<number>,
@@ -124,57 +124,6 @@ function CohortMap({
         )
       }}
     />
-  )
-}
-
-/**
- * 2-column section: heading on top, then map | content side-by-side
- * on lg+. Stacks (map → content) on mobile. Used for cohort sections
- * where the map answers "where" and the content answers "what".
- *
- * Pass `id` to make the section anchor-linkable from elsewhere on the
- * page (e.g. clickable cohort names in the vote-share decomposition
- * tables jump back to the cohort detail).
- */
-function CohortSection({
-  id,
-  heading,
-  map,
-  mapCaption,
-  mapSide = "left",
-  children,
-}: {
-  id?: string
-  heading: string
-  map: ReactNode
-  mapCaption?: ReactNode
-  mapSide?: "left" | "right"
-  children: ReactNode
-}) {
-  return (
-    <section id={id} className="scroll-mt-20 border-t pt-10">
-      <h2 className="mb-5 font-heading text-xl font-semibold tracking-tight sm:text-2xl">
-        {heading}
-      </h2>
-      <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
-        <figure className={cn(mapSide === "right" ? "lg:order-2" : "")}>
-          <div className="rounded-sm border bg-card/40 p-3 sm:p-4">{map}</div>
-          {mapCaption && (
-            <figcaption className="mt-2 text-xs text-muted-foreground">
-              {mapCaption}
-            </figcaption>
-          )}
-        </figure>
-        <div
-          className={cn(
-            "min-w-0 space-y-3 text-sm leading-relaxed sm:text-[15px]",
-            mapSide === "right" ? "lg:order-1" : ""
-          )}
-        >
-          {children}
-        </div>
-      </div>
-    </section>
   )
 }
 

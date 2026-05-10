@@ -3,21 +3,56 @@ import { Link } from "react-router-dom"
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { ScatterWithTrend } from "@/components/charts/scatter-with-trend"
+import { CohortSection } from "@/components/walkthroughs/cohort-section"
 import { ConfidenceBadge } from "@/components/walkthroughs/confidence-badge"
 import { MethodologyPopover } from "@/components/walkthroughs/methodology-popover"
 import { SeatLink } from "@/components/walkthroughs/prose-link"
 import { PullQuote } from "@/components/walkthroughs/pull-quote"
 import { SeeAlsoQuestions } from "@/components/walkthroughs/see-also-questions"
+import {
+  COMPACT_CELL_CLASS,
+  COMPACT_HEAD_CLASS,
+  HIGHLIGHT_ROW_CLASS,
+  NUM_CELL_CLASS,
+  NUM_HEAD_CLASS,
+} from "@/components/walkthroughs/table-classes"
 import { ASIDE, SECTION_LEAD } from "@/components/walkthroughs/typography"
 import { WalkthroughSection } from "@/components/walkthroughs/walkthrough-section"
 import { PageRail } from "@/components/walkthroughs/walkthrough-rail"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
+import {
+  Sheet,
+  SheetBody,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTriggerButton,
+} from "@/components/ui/sheet"
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
 import { acDemo2025Meta, districtsMeta } from "@/lib/data/loaders"
 import {
   getAllACMetrics,
   getPerACWinner2026,
 } from "@/lib/data/walkthrough-metrics"
+import { cn } from "@/lib/utils"
+
+import {
+  CHRISTIAN_ALLIANCE_C3,
+  CHRISTIAN_BELT_36,
+  INC_CHRISTIAN_C3,
+  INC_HINDU_C3,
+  PERFORMANCE_C3,
+  PREMIUM_HISTORY,
+} from "./walkthroughs-udf-data"
 
 const OUTLIER_AC_NUMBERS = new Set([
   93, // Pala
@@ -226,8 +261,8 @@ export function WalkthroughsUDFPage() {
               </p>
               <p>
                 46% of UDF's 102-seat majority came from these 5 districts,
-                which contain 34% of Kerala's ACs. Stripping Central-5 from
-                the count: UDF would have 55 seats.{" "}
+                which contain 34% of Kerala's ACs. Stripping Central-5 from the
+                count: UDF would have 55 seats.{" "}
                 <strong>
                   Central Kerala provided the arithmetic difference between a
                   plurality and a majority government.
@@ -236,12 +271,11 @@ export function WalkthroughsUDFPage() {
             </WalkthroughSection>
 
             {/* SECTION 2 — Christian-belt premium */}
-            <WalkthroughSection
+            <CohortSection
               id="christian-belt"
               heading="The Christian-belt premium"
-              sectionType="foundational"
-              layout="stacked"
-              visual={
+              mapSide="left"
+              map={
                 <ScatterWithTrend
                   points={scatterPoints}
                   xLabel="Christian share (%)"
@@ -253,57 +287,422 @@ export function WalkthroughsUDFPage() {
                   ariaLabel="Christian share vs UDF Δshare, 140 ACs"
                 />
               }
-              caption="Each dot is one of 140 ACs. Outlier ACs (Pala, Poonjar, Thiruvalla, Udumbanchola, Puthuppally, Vengara) are highlighted with stronger styling."
+              mapCaption="Each dot is one of 140 ACs. Christian-heavy ACs (right side of x-axis) cluster above the trend, showing the premium on top of the statewide wave."
             >
               <p className={SECTION_LEAD}>
                 <strong>
-                  Christian-heavy ACs added a real, robust premium on top of the
-                  wave.
+                  Christians have voted UDF more than statewide in every cycle
+                  since 2011 — and in 2026 the premium doubled.
                 </strong>{" "}
-                The relationship survives the strictest geographic control
-                available at this resolution.
+                Christian-heavy ACs gained an extra ~3–4pp on top of the
+                baseline UDF lead they have always had.
               </p>
+
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Year</TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF ≥40% Chr
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF statewide
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      Premium
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {PREMIUM_HISTORY.map((row) => (
+                    <TableRow
+                      key={row.year}
+                      className={
+                        "highlight" in row && row.highlight
+                          ? HIGHLIGHT_ROW_CLASS
+                          : undefined
+                      }
+                    >
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.year}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.udfHigh}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.udfStatewide}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.premiumRaw}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+              <p className={ASIDE}>
+                "UDF ≥40% Chr" shows the raw mean / cleaned mean (outliers
+                dropped). Premium = raw mean − statewide. Cleaned 2026 premium:
+                +6.4pp.
+              </p>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                UDF's three Christian strategies
+              </h3>
               <p>
-                Pearson r = +0.20; under district fixed effects, β = +0.194 (p =
-                0.008). Within a Kerala district, ACs with higher Christian
-                share systematically swung more strongly to UDF.
+                Across the 36 Christian-belt ACs (≥30% Christian, plus the two
+                KEC seats below 30%), UDF used three distinct approaches. We
+                focus the analysis on the three adjacent central districts —{" "}
+                <strong>Idukki, Ernakulam, Kottayam</strong> — which hold 26 of
+                the 36 seats. (Wayanad and Malappuram are tracked in the Muslim
+                arc.){" "}
+                <Sheet>
+                  <SheetTriggerButton>
+                    See all 36 Christian-belt ACs →
+                  </SheetTriggerButton>
+                  <SheetContent side="right">
+                    <SheetHeader>
+                      <SheetTitle>
+                        The 36 Christian-belt ACs (≥30% Christian)
+                      </SheetTitle>
+                      <SheetDescription>
+                        Sorted by Christian share. Strategy column shows how UDF
+                        chose to contest each seat.
+                      </SheetDescription>
+                    </SheetHeader>
+                    <SheetBody>
+                      <Table>
+                        <TableHeader>
+                          <TableRow>
+                            <TableHead className={COMPACT_HEAD_CLASS}>
+                              District
+                            </TableHead>
+                            <TableHead className={COMPACT_HEAD_CLASS}>
+                              Name
+                            </TableHead>
+                            <TableHead className={COMPACT_HEAD_CLASS}>
+                              H/C/M
+                            </TableHead>
+                            <TableHead className={COMPACT_HEAD_CLASS}>
+                              Res
+                            </TableHead>
+                            <TableHead className={COMPACT_HEAD_CLASS}>
+                              Candidate
+                            </TableHead>
+                            <TableHead className={COMPACT_HEAD_CLASS}>
+                              Party
+                            </TableHead>
+                            <TableHead
+                              className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                            >
+                              UDF Δ
+                            </TableHead>
+                            <TableHead className={COMPACT_HEAD_CLASS}>
+                              Won?
+                            </TableHead>
+                            <TableHead className={COMPACT_HEAD_CLASS}>
+                              Strategy
+                            </TableHead>
+                          </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                          {CHRISTIAN_BELT_36.map((row) => (
+                            <TableRow key={row.ac}>
+                              <TableCell className={COMPACT_CELL_CLASS}>
+                                {row.district}
+                              </TableCell>
+                              <TableCell className={COMPACT_CELL_CLASS}>
+                                <SeatLink ac={row.ac}>{row.name}</SeatLink>
+                              </TableCell>
+                              <TableCell
+                                className={cn(
+                                  COMPACT_CELL_CLASS,
+                                  "font-mono tabular-nums"
+                                )}
+                              >
+                                {row.hcm}
+                              </TableCell>
+                              <TableCell className={COMPACT_CELL_CLASS}>
+                                {row.reservation ?? "—"}
+                              </TableCell>
+                              <TableCell className={COMPACT_CELL_CLASS}>
+                                {row.candidate}{" "}
+                                <span className="text-muted-foreground">
+                                  ({row.candidateReligion})
+                                </span>
+                              </TableCell>
+                              <TableCell className={COMPACT_CELL_CLASS}>
+                                {row.party}
+                              </TableCell>
+                              <TableCell
+                                className={cn(
+                                  COMPACT_CELL_CLASS,
+                                  NUM_CELL_CLASS
+                                )}
+                              >
+                                {row.udfDelta > 0
+                                  ? `+${row.udfDelta.toFixed(1)}`
+                                  : row.udfDelta.toFixed(1)}
+                              </TableCell>
+                              <TableCell className={COMPACT_CELL_CLASS}>
+                                {row.wonNote ?? (row.won ? "won" : "lost")}
+                              </TableCell>
+                              <TableCell className={COMPACT_CELL_CLASS}>
+                                {row.strategy}
+                              </TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    </SheetBody>
+                  </SheetContent>
+                </Sheet>
               </p>
-              <p>
-                About ~12% of the Christian-belt premium is mechanical KC(M)-
-                base movement: Kerala Congress (M) stayed alliance-tagged LDF in
-                both cycles, but its party-share dropped ~7pp on average across
-                the 12 ACs it contested, and that base partially defected to
-                UDF. The remaining ~88% is a non-KC(M) cross-community signal —
-                Christian-heavy ACs gained UDF beyond what KC(M) churn alone
-                explains.
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                Christian Alliance — KEC or KC-Jacob (5 seats in Central-3)
+              </h3>
+              <p className={ASIDE}>
+                UDF gave the seat to a Christian-affiliated alliance partner.
+                Won 5 of 5.
               </p>
-              <p>
-                Outliers visible on the chart:{" "}
-                <strong>
-                  <SeatLink ac={93}>Pala</SeatLink>
-                </strong>{" "}
-                (52% Christian, UDF −12.9pp) — Mani C. Kappan moved his personal
-                vote from UDF-side (NCK, 2021) to LDF-side (NCP-SP, 2026), and
-                BJP fielded marquee Christian candidate Shone George; see the{" "}
-                <Link
-                  to="/walkthroughs/nda-walkthrough#low-base-breakouts"
-                  className="font-medium text-foreground underline-offset-2 hover:underline"
-                >
-                  NDA walkthrough's low-base breakouts
-                </Link>{" "}
-                for the BJP angle.{" "}
-                <strong>
-                  <SeatLink ac={111}>Thiruvalla</SeatLink>
-                </strong>{" "}
-                (48% Christian, UDF +1.6pp, NDA +14.5pp; three-way fragmentation
-                — Kerala Congress (UDF) won by ~10k over BJP's Anoop Antony with
-                the LDF-Independent close third). On the gain side,{" "}
-                <strong>
-                  <SeatLink ac={89}>Udumbanchola</SeatLink>
-                </strong>{" "}
-                at 48% Christian had the largest single-AC swing (UDF +22.6pp).
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Seat</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Party (full)
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      Party 2021
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      Party 2026
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {CHRISTIAN_ALLIANCE_C3.map((row) => (
+                    <TableRow key={row.ac}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <SeatLink ac={row.ac}>{row.name}</SeatLink>
+                      </TableCell>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.partyFull}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.party2021.toFixed(1)}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.party2026.toFixed(1)}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        +{row.udfDelta.toFixed(1)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                INC-Christian — INC fields a Christian candidate (11 seats)
+              </h3>
+              <p className={ASIDE}>
+                UDF didn't delegate to an alliance; INC contested itself with a
+                Christian candidate. Won 11 of 11.
               </p>
-            </WalkthroughSection>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Seat</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Candidate
+                    </TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>H/C/M</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Res</TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {INC_CHRISTIAN_C3.map((row) => (
+                    <TableRow key={row.ac}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <SeatLink ac={row.ac}>{row.name}</SeatLink>
+                      </TableCell>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.candidate}
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          "font-mono tabular-nums"
+                        )}
+                      >
+                        {row.hcm}
+                      </TableCell>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.reservation ?? "—"}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        +{row.udfDelta.toFixed(1)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                INC-Hindu — INC fields a Hindu candidate (7 seats)
+              </h3>
+              <p className={ASIDE}>
+                INC contested with a Hindu candidate at seats where the Hindu
+                share matched or exceeded the Christian share. Won 7 of 7.
+              </p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Seat</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Candidate
+                    </TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>H/C/M</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Res</TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {INC_HINDU_C3.map((row) => (
+                    <TableRow key={row.ac}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <SeatLink ac={row.ac}>{row.name}</SeatLink>
+                      </TableCell>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.candidate}
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          "font-mono tabular-nums"
+                        )}
+                      >
+                        {row.hcm}
+                      </TableCell>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.reservation ?? "—"}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.udfDelta > 0
+                          ? `+${row.udfDelta.toFixed(1)}`
+                          : row.udfDelta.toFixed(1)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                Performance in Central-3
+              </h3>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Strategy
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      n
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      Won
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      Mean ΔUDF
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {PERFORMANCE_C3.map((row) => (
+                    <TableRow key={row.strategy}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <strong>{row.strategy}</strong>
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.n}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.won}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        +{row.meanUdfDelta.toFixed(1)}pp
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+              <p className={ASIDE}>Statewide ΔUDF reference: ~+7pp.</p>
+
+              <p className="mt-4">
+                <strong>
+                  UDF's "go get Christian votes ourselves via INC" out-performed
+                  its "delegate to KEC alliance" strategy.
+                </strong>{" "}
+                Within INC-direct, candidate religion didn't matter for swing
+                magnitude — Hindu INC slightly beat Christian INC, driven by
+                Udumbanchola (+22.6pp). All 18 INC-direct seats in Central-3
+                were UDF wins. Christians moved toward INC regardless of who INC
+                fielded.
+              </p>
+            </CohortSection>
 
             <PullQuote>
               UDF and LDF effectively traded efficiency between cycles. The same
