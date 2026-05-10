@@ -89,10 +89,7 @@ const RAIL_GROUPS = [
   },
   {
     label: "The mechanism",
-    items: [
-      { id: "fptp-amplification", label: "FPTP amplification" },
-      { id: "muslim-null", label: "Muslim-share null" },
-    ],
+    items: [{ id: "muslim-null", label: "Muslim-share null" }],
   },
   {
     label: "Caveats",
@@ -142,15 +139,6 @@ export function WalkthroughsUDFPage() {
       }
     })
     .filter((p) => p.x > 0 || p.y !== 0)
-
-  // Seat:vote-share efficiency-flip bars (numbers from
-  // vote-efficiency.md card).
-  const efficiencyGroups = [
-    { label: "UDF 2021", mean: 1.04, n: 41, color: "rgb(31, 119, 180)" },
-    { label: "UDF 2026", mean: 2.18, n: 102, color: "rgb(31, 119, 180)" },
-    { label: "LDF 2021", mean: 2.19, n: 99, color: "rgb(214, 39, 40)" },
-    { label: "LDF 2026", mean: 0.93, n: 35, color: "rgb(214, 39, 40)" },
-  ]
 
   // UDF Δshare by Muslim-share bin (numbers from A1 card)
   const muslimBinGroups = [
@@ -794,58 +782,7 @@ export function WalkthroughsUDFPage() {
               </p>
             </CohortSection>
 
-            {/* SECTION 3 — FPTP amplification */}
-            <WalkthroughSection
-              id="fptp-amplification"
-              heading="FPTP amplification"
-              sectionType="mechanism"
-              layout="visual-left"
-              visual={
-                <ComparisonBar
-                  groups={efficiencyGroups}
-                  yUnit=""
-                  yDecimals={2}
-                  ariaLabel="Seats per percentage point of statewide vote share — UDF and LDF, 2021 vs 2026"
-                  yDomain={[0, 2.5]}
-                />
-              }
-              caption="Seats won per percentage point of statewide vote share. UDF and LDF effectively traded efficiency between cycles. Higher = more seats per vote."
-            >
-              <p className={SECTION_LEAD}>
-                <strong>
-                  FPTP near threshold doubled UDF's seats-per-vote.
-                </strong>{" "}
-                A 7pp swing produced 61 additional UDF seats — six times the
-                proportional rate.
-              </p>
-              <p>
-                The mechanism: Kerala's vote distribution sat close to 50/50 in
-                many ACs in 2021, and a uniform 7pp swing crossed those
-                thresholds simultaneously.
-              </p>
-              <p>
-                UDF's seats-per-vote-share ratio more than doubled (1.04 →
-                2.18). LDF's halved (2.19 → 0.93). The two alliances effectively
-                swapped efficiency. Under a counterfactual where 2021 vote
-                shares had held statewide, UDF would have won 44 seats — not
-                102. About 58 of UDF's 102 seats are amplification beyond what
-                proportional representation would produce.
-              </p>
-              <p>
-                The combination is what produced the landslide. The{" "}
-                <Link
-                  to="/walkthroughs/ldf-walkthrough"
-                  className="font-medium text-foreground underline-offset-2 hover:underline"
-                >
-                  anti-LDF wave
-                </Link>{" "}
-                supplied the swing; Central-5's geography (sitting near
-                threshold) routed it into seat conversion. Neither alone
-                explains a 102-35-3 split — together they do.
-              </p>
-            </WalkthroughSection>
-
-            {/* SECTION 4 — Muslim-share null (falsification) */}
+            {/* SECTION 3 — Muslim-share null (falsification) */}
             <WalkthroughSection
               id="muslim-null"
               heading="Muslim share didn't add a separate premium"
