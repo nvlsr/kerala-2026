@@ -27,6 +27,10 @@ data/shrug/
 # the source PDFs are too large + redistribution-iffy.
 data/temp/
 
+# OSM Overpass snapshots — re-fetchable via scripts/fetch-osm-pow.ts.
+# Snapshot date + coverage stats live in data/raw/osm/README.md.
+data/raw/osm/*.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
