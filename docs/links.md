@@ -7,13 +7,12 @@ All data in this project comes from the two sources listed below. Every file und
 Authoritative source for candidate names, parties, vote counts, and margins.
 
 - Partywise summary: <https://results.eci.gov.in/ResultAcGenMay2026/partywiseresult-S11.htm>
-  - Saved raw at `data/raw/partywiseresult-S11.htm`
-  - Parsed into `data/parties-S11.json`
+  - Saved raw at `data/raw/eci-html/partywiseresult-S11.htm`
 - Partywise winners (per party): `https://results.eci.gov.in/ResultAcGenMay2026/partywisewinresult-{partyId}S11.htm`
-  - BJP example saved raw at `data/raw/partywisewinresult-369S11.htm`
+  - BJP example saved raw at `data/raw/eci-html/partywisewinresult-369S11.htm`
 - Constituency results: `https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11{N}.htm` for `N = 1..140`
   - Aggregated into `data/kerala-2026.json` (all 140)
-  - Split into `data/constituencies/S11-{N}.json` (one file per seat)
+  - Per-seat intermediate files at `data/raw/constituencies/S11-{N}.json`
 
 State code `S11` = Kerala. Party IDs are ECI's internal numbering (e.g. BJP = `369`).
 

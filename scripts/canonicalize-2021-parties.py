@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Canonicalize party names in data/scraped-2021/seat-N.json files.
+Canonicalize party names in data/raw/scraped-2021/seat-N.json files.
 
 The 2021 ECI scrape used short codes (BJP, T2P, INC, CPIM, ...) which
 forced every cross-cycle script to remember to handle both forms — and

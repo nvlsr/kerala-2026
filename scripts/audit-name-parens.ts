@@ -13,7 +13,7 @@ import * as path from "path"
 type Cand = { name: string; party: string; votes: number; pct: number }
 type Seat = { seat: number; constituencyName: string; candidates: Cand[] }
 
-const dir = "data/scraped-2021"
+const dir = "data/raw/scraped-2021"
 const files = fs
   .readdirSync(dir)
   .filter((f) => f.endsWith(".json"))

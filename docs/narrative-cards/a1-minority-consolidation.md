@@ -231,5 +231,5 @@ The Federal (5 May 2026), The Quint (May 2026), Outlook (May 2026), Times of Ind
 ## Reproduce
 
 - AC-level analysis: `bun run scripts/narrative-a1-ac-level.ts`
-- AC demographics build: `python3 scripts/build-ac-demographics.py` (requires `data/shrug/` from DDL + `data/census-c01/DDW32C-01-MDDS.XLS` from censusindia.gov.in)
+- AC demographics build: `python3 scripts/build-ac-demographics.py` (requires `data/shrug/` from DDL + `data/raw/census-c01/DDW32C-01-MDDS.XLS` from censusindia.gov.in)
 - Original district-level analysis: `bun run scripts/narrative-a1-minority-consolidation.ts`

@@ -1,7 +1,7 @@
 import * as fs from "fs"
 import * as path from "path"
 
-const OUT_DIR = "data/scraped-2021"
+const OUT_DIR = "data/raw/scraped-2021"
 const URL_BASE =
   "http://keralaassembly.org/election/2021/assembly_poll.php?year=2021&no="
 

@@ -177,7 +177,7 @@ type ScrapedSeat = {
   candidates: Array<{ name: string; party: string; votes: number; pct: number }>
 }
 
-const scrapeDir = "data/scraped-2021"
+const scrapeDir = "data/raw/scraped-2021"
 const histDir = "data/historical"
 
 let updatedFiles = 0

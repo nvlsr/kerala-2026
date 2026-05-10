@@ -25,7 +25,7 @@ How `data/ac-demographics.json` is produced, what's known to be incomplete, and 
 **Build script:** `scripts/build-ac-demographics.py`
 
 **Inputs:**
-- `data/census-c01/DDW32C-01-MDDS.XLS` — Kerala C-01 from censusindia.gov.in (committed; ~268KB)
+- `data/raw/census-c01/DDW32C-01-MDDS.XLS` — Kerala C-01 from censusindia.gov.in (committed; ~268KB)
 - `data/shrug/shrug-con-keys-csv/shrid_frag_con08_key.csv` — shrid → AC, with fragment weights
 - `data/shrug/shrug-pc-keys-csv/pc11r_shrid_key.csv` — rural shrids → village/sub-district codes
 - `data/shrug/shrug-pc-keys-csv/pc11u_shrid_key.csv` — urban shrids → town codes
