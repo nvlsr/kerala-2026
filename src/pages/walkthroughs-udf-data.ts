@@ -7,6 +7,15 @@
  * and update the constants below.
  */
 
+import {
+  INC_CHRISTIAN_BLUE,
+  INC_HINDU_EMERALD,
+  KEC_AMBER,
+  MUSLIM_BELT_GREEN,
+  SPECIAL_GRAY,
+  UDF_BLUE,
+} from "@/components/walkthroughs/colors"
+
 export type Strategy =
   | "Christian Alliance"
   | "INC-Christian"
@@ -817,10 +826,10 @@ export const CENTRAL_3_VIEWBOX: [number, number, number, number] = [
  * distinguishable.
  */
 export const STRATEGY_COLOURS: Record<Strategy, string> = {
-  "Christian Alliance": "#D97706", // amber-600
-  "INC-Christian": "#1F77B4", // UDF blue
-  "INC-Hindu": "#15B981", // emerald-500
-  Special: "#9CA3AF", // gray-400
+  "Christian Alliance": KEC_AMBER,
+  "INC-Christian": INC_CHRISTIAN_BLUE,
+  "INC-Hindu": INC_HINDU_EMERALD,
+  Special: SPECIAL_GRAY,
 }
 
 // ===========================================================================
@@ -1012,8 +1021,8 @@ export const MALAPPURAM_VIEWBOX: [number, number, number, number] = [
 
 /** Colour palette for the Muslim strategy choropleth. */
 export const MUSLIM_STRATEGY_COLOURS: Record<MuslimStrategy, string> = {
-  "Muslim Alliance": "#15B981", // emerald-500 (parallels Christian INC-Hindu)
-  "INC-Muslim": "#1F77B4", // UDF blue
-  "INC-Hindu": "#9CA3AF", // gray (would be amber but bucket is empty)
-  Special: "#9CA3AF", // gray-400
+  "Muslim Alliance": MUSLIM_BELT_GREEN,
+  "INC-Muslim": UDF_BLUE,
+  "INC-Hindu": SPECIAL_GRAY, // bucket is empty
+  Special: SPECIAL_GRAY,
 }
