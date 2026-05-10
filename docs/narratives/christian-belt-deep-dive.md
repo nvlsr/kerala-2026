@@ -19,18 +19,20 @@ share: UDF consistently does better at Christian-heavy ACs.
 
 **Christian premium = (UDF mean at ≥40% Christian) − (UDF statewide):**
 
-| Year | UDF at ≥40% Chr | UDF statewide | **Premium** |
-|---|---|---|---|
-| 2011 | 48.8% | 46.2% | +2.6pp |
-| 2016 | 42.2% | 39.3% | +2.9pp |
-| 2021 | 41.4% | 39.3% | +2.1pp |
-| **2026** | **51.2%** | **46.6%** | **+4.6pp** |
+| Year | UDF at ≥40% Chr | UDF statewide | Premium (all 21 ACs) | Premium (outliers dropped, 17 ACs) |
+|---|---|---|---|---|
+| 2011 | 48.8% / 49.2% | 46.2% | +2.6pp | +3.0pp |
+| 2016 | 42.2% / 43.4% | 39.3% | +2.9pp | +4.1pp |
+| 2021 | 41.4% / 41.9% | 39.3% | +2.1pp | +2.7pp |
+| **2026** | **51.2% / 53.1%** | **46.6%** | **+4.6pp** | **+6.4pp** |
 
-- The premium has been real but historically modest (~2–3pp).
-- **In 2026 it roughly doubled to +4.6pp.** This is the second story
-  of the Christian belt this cycle — UDF didn't just ride the
-  statewide wave at Christian-heavy ACs, it gained an additional
-  ~2.5pp on top of the baseline they have always had.
+- Outlier-dropped column excludes Pala, Poonjar, Devikulam, Peerumade
+  (personal-vote / reserved-seat distortions identified in §5).
+- The premium has been real but historically modest (~2.5–4pp).
+- **In 2026 it doubled to +4.6pp (raw) or +6.4pp (cleaned).** This is
+  the second story of the Christian belt this cycle — UDF didn't just
+  ride the statewide wave at Christian-heavy ACs, it gained an
+  additional ~3–4pp on top of the baseline they have always had.
 - This is consistent with Christians who voted LDF in 2021 swinging
   to UDF in 2026 (mechanism examined below).
 
@@ -102,10 +104,10 @@ the `(?)` and any others where I got it wrong.
 | 111 | Thiruvalla | 47.8 | Adv. Varghese Mammen (Christian) — KEC | Adv. Mathew T. Thomas (Christian) — Independent (was JD(S)/LDF in 2021) |
 | 91 | Idukki | 47.3 | Roy K. Paulose (Christian) — INC | Roshy Augustine (Christian) — KC(M) |
 | 112 | Ranni | 46.9 | Adv. Pazhakulam Madhu (Hindu) — INC | Adv. Pramod Narayan (Hindu) — KC(M) |
-| 137 | Parassala | 45.1 | Neyyattinkara Sanal (Hindu ?) — INC | C.K. Hareendran (Hindu) — CPI(M) |
+| 137 | Parassala | 45.1 | Neyyattinkara Sanal (Hindu) — INC | C.K. Hareendran (Hindu) — CPI(M) |
 | 96 | Ettumanoor | 44.6 | Nattakom Suresh (Hindu) — INC | V.N. Vasavan (Hindu) — CPI(M) |
-| 72 | Chalakudy | 44.4 | Saneeshkumar Joseph (Christian) — INC | Adv. Biju S. Chirayath (Hindu ?) — KC(M) |
-| 94 | Kaduthuruthy | 44.1 | Adv. Mons Joseph (Christian) — KEC | Nirmala Jimmy (Christian ?) — KC(M) |
+| 72 | Chalakudy | 44.4 | Saneeshkumar Joseph (Christian) — INC | Adv. Biju S. Chirayath (Christian) — KC(M) |
+| 94 | Kaduthuruthy | 44.1 | Adv. Mons Joseph (Christian) — KEC | Nirmala Jimmy (Christian) — KC(M) |
 | 99 | Changanassery | 43.5 | Vinu Job Kuzhimannil (Christian) — KEC | Adv. Job Maichil (Christian) — KC(M) |
 | 100 | Kanjirappally | 43.0 | Rony K. Baby (Christian) — INC | Dr. N. Jayaraj (Hindu) — KC(M) |
 | 85 | Piravom | 42.1 | Anoop Jacob (Christian) — KC(Jacob) | Sabu K. Jacob (Christian) — KC(M) |
@@ -224,10 +226,61 @@ These are the "personal vote bringing confusion to UDF impact analysis":
 | 92 | Peerumade | Reserved (SC). Same caveat — different dynamics. | Worth flagging, though Δ here was wave-sized. |
 | 111 | Thiruvalla | Three-way fragmentation: KEC won, BJP marquee Anoop Antony (Christian, +14.5pp NDA), JD(S) → Independent Mathew T. Thomas (Christian) split LDF vote. | Compresses ΔUDF at a KEC seat. |
 
-> **Suggested next step for §5**: recompute means with Pala, Poonjar,
-> Paravur, Devikulam, Peerumade dropped — see if the (a) vs (c) gap
-> widens or narrows. The current write-up holds the analytic claim only
-> if the gap survives outlier removal. Not yet done.
+### Recomputed means with outliers dropped
+
+Reproduce: `bun run scripts/recompute-christian-belt-no-outliers.ts`
+
+Outliers dropped: Pala (93), Poonjar (101), Paravur (78), Devikulam
+(88), Peerumade (92), Thiruvalla (111).
+
+| Subset | With outliers | **Without outliers** |
+|---|---|---|
+| 4a. KEC/KC-Jacob alliance | +8.78pp (n=5) | +8.78pp (n=5) — no outliers in this group |
+| 4b. LDF-Christian-only | +7.20pp (n=5) | **+11.39pp (n=3)** — Pala+Poonjar were dragging it down |
+| 4c. High-Christian, no Christian party | +11.86pp (n=16) | **+13.81pp (n=13)** — Paravur+Devikulam+Peerumade were dragging it down |
+
+After outlier removal:
+
+- **4b ≈ 4c**: When INC contests a Christian seat directly (whether
+  KC(M) is on the LDF side or not), UDF gains ~+11.4–13.8pp.
+- **4a is meaningfully lower**: KEC alliance seats only gain +8.8pp.
+- The (a) vs (c) gap was 3.1pp before outlier removal; **5.0pp after**.
+  Outlier removal *strengthens* the "INC-direct out-performed
+  KEC-alliance" claim.
+
+### Ceiling-adjusted view (Δ as % of headroom)
+
+To rule out the "high-baseline = less room to grow" alternative:
+divide ΔUDF by (100 − UDF2021) to express each gain as a fraction of
+the available headroom.
+
+| Subset | Mean UDF 2021 | ΔUDF | Δ as % of headroom |
+|---|---|---|---|
+| 4a. KEC alliance | 46.0% | +8.78pp | 16.2% |
+| 4b. LDF-only (cleaned) | 38.1% | +11.39pp | 18.6% |
+| 4c. No Christian party (cleaned) | 40.8% | +13.81pp | **23.1%** |
+| Muslim-heavy reference | 49.1% | +8.98pp | 17.6% |
+
+Even after controlling for headroom, (c) still gains markedly more
+than (a) — 23.1% of available headroom vs 16.2%. The "INC-direct"
+seats consumed roughly 7pp more of the headroom than KEC-alliance
+seats did. The high-baseline argument explains some of the gap, but
+not all of it. **The strategy claim survives both outlier removal and
+ceiling adjustment.**
+
+### Bin-sliced ΔUDF — outliers dropped (cleanest comparison)
+
+| Christian bin | All ACs in bin | Christian-party seat | No Christian party |
+|---|---|---|---|
+| <5% | n=44, +6.83pp | n=0, n/a | n=44, +6.83pp |
+| 5–15% | n=25, +5.38pp | n=1, +2.53pp | n=24, +5.50pp |
+| 15–30% | n=37, +6.95pp | n=4, +9.84pp | n=33, +6.60pp |
+| 30–40% | n=11, +11.27pp | n=2, +11.71pp | n=9, +11.18pp |
+| **≥40%** | **n=17, +11.22pp** | **n=8, +8.24pp** | **n=9, +13.86pp** |
+
+At ≥40% Christian (cleaned): no-Christian-party seats swung +13.86pp,
+Christian-party seats +8.24pp. **Gap of 5.6pp** — bigger than the raw
+gap (5.4pp before cleaning), much cleaner attribution.
 
 ---
 
@@ -247,14 +300,14 @@ absorb the swing into party-share.
 | 75 | Angamaly (Ernakulam) | 64.5 | Roji M. John (Christian) — INC | +8.3 | (BJP, no marquee) | 7.6% | +1.3 |
 | 77 | Kalamassery (Ernakulam) | 33.9 | Adv. V.E. Abdul Gafoor (Muslim) — IUML | +10.1 | BDJS | 8.7% | +1.5 |
 | 78 | Paravur (Ernakulam) | 33.5 | Adv. V.D. Satheesan (Hindu) — INC | **−2.3** | Valsala Prasannakumar (Hindu) — BJP | 12.8% | +4.7 |
-| 79 | Vypen (Ernakulam) | 41.0 | Tony Chammany (Christian) — INC | +15.5 | Anitha Thomas (Christian ?) — Twenty 20 | 10.4% | −12.7 |
+| 79 | Vypen (Ernakulam) | 41.0 | Tony Chammany (Christian) — INC | +15.5 | Anitha Thomas (Christian) — Twenty 20 | 10.4% | −12.7 |
 | 80 | Kochi (Ernakulam) | 40.0 | Mohammed Shiyas (Muslim) — INC | +16.7 | Adv. Xavier Julappan (Christian) — Twenty 20 | 8.9% | −14.9 |
-| 81 | Thripunithura (Ernakulam) | 33.9 | Deepak Joy (Christian ?) — INC | +3.7 | Anjali P.V. (Hindu) — Twenty 20 | 19.2% | +4.0 |
-| 82 | Eranakulam (Ernakulam) | 33.9 | T.J. Vinod (Hindu ?) — INC | +15.8 | P.R. Sivasankar (Hindu) — BJP | 18.0% | −6.3 |
+| 81 | Thripunithura (Ernakulam) | 33.9 | Deepak Joy (Christian) — INC | +3.7 | Anjali P.V. (Hindu) — Twenty 20 | 19.2% | +4.0 |
+| 82 | Eranakulam (Ernakulam) | 33.9 | T.J. Vinod (Hindu) — INC | +15.8 | P.R. Sivasankar (Hindu) — BJP | 18.0% | −6.3 |
 | 83 | Thrikkakara (Ernakulam) | 33.9 | Uma Thomas (Christian) — INC | +16.1 | Akhil Raj/Marar (Hindu) — Twenty 20 | 15.4% | −6.1 |
 | 84 | Kunnathunad (Ernakulam) | 34.7 | V.P. Sajeendran (Hindu) — INC | +11.9 | Babu Divakaran (Hindu) — Twenty 20 | 25.1% | −7.1 |
-| 86 | Muvattupuzha (Ernakulam) | 40.4 | Dr. Mathew Kuzhalnadan (Christian) — INC | +16.4 | Sunny Kadoothazhe (Christian ?) — Twenty 20 | 6.7% | −7.9 |
-| 88 | Devikulam (Idukki) — **ST reserved** | 31.8 | F. Raja (?) — INC | +1.2 | S. Rajendran (Hindu) — BJP | 13.5% | +13.5 |
+| 86 | Muvattupuzha (Ernakulam) | 40.4 | Dr. Mathew Kuzhalnadan (Christian) — INC | +16.4 | Sunny Kadoothazhe (Christian) — Twenty 20 | 6.7% | −7.9 |
+| 88 | Devikulam (Idukki) — **ST reserved** | 31.8 | F. Raja (Christian) — INC | +1.2 | S. Rajendran (Hindu) — BJP | 13.5% | +13.5 |
 | 89 | Udumbanchola (Idukki) | 48.3 | Adv. Senapathy Venu (Hindu) — INC | **+22.6** | Adv. Sangeetha Viswanadhan (Hindu) — BDJS | 8.4% | +2.7 |
 | 92 | Peerumade (Idukki) — **SC reserved** | 41.3 | Adv. Cyriac Thomas (Christian) — INC | +11.4 | Ratheesh Varakumala (Hindu) — BJP | 7.6% | +2.0 |
 | 96 | Ettumanoor (Kottayam) | 44.6 | Nattakom Suresh (Hindu) — INC | +17.5 | Athira D. Nair (Hindu) — Twenty 20 | 10.6% | −0.3 |
@@ -286,7 +339,18 @@ wave. That matches the +4.6pp 2026 Christian premium identified in §1.
 
 ## Open questions / next investigations
 
-1. **Verify candidate religion** in the §2.4 and §6 tables. Mark `(?)` are best-guesses; user to confirm or correct. (A few are clearly inferred from name conventions; some are ambiguous — Joy, Jacob, T.J. initials.)
-2. **Recompute §4 means after dropping personal-vote outliers** (Pala, Poonjar, Paravur, Devikulam, Peerumade) — does the (a) +8.8 vs (c) +11.9 gap widen or narrow? Test before publishing claims.
-3. **Ceiling-adjusted ΔUDF** — does the (a) vs (c) gap survive after controlling for 2021 UDF baseline (KEC seats started higher, less headroom)?
-4. **Site placement decision**: rewrite the Christian-belt section in place, expand to multi-section, or split off into `community-belts` page. Decide after #1–#3 settle.
+1. ✅ **Candidate religion verified** by user across §2.4 and §6.
+2. ✅ **Outlier-dropped recomputation** done — see §5. (a) vs (c) gap *widened* from 3.1pp to 5.0pp. Strategy claim strengthens.
+3. ✅ **Ceiling-adjusted view** done — see §5. Even controlling for headroom, (c) consumed 23.1% of available room vs (a)'s 16.2%. Strategy claim survives.
+4. **Site placement decision** — pending. Now that §1–§5 findings are stable: rewrite the Christian-belt section in place, expand to multi-section, or split off into `community-belts` page?
+
+## Stable findings (ready to promote, pending site-placement decision)
+
+1. Christians have voted UDF more than statewide in every cycle since 2011 — historical premium ~3pp (cleaned).
+2. **In 2026 the premium more than doubled** to +6.4pp (cleaned), or +4.6pp (raw). UDF gained an extra ~3–4pp on top of its historical Christian-belt baseline.
+3. **LDF Christian parties (KC(M), KC(B)) lost all 13 seats they contested.** UDF Christian parties (KEC, KC-Jacob) won 8 of 9. Where head-to-head (4 seats), KEC won by 7–30pp.
+4. **At KC(M) seats, ΔLDF = ΔKCM seat by seat.** LDF's loss in those seats was 100% KC(M)-specific.
+5. **The premium is mostly driven by INC-direct seats, not KEC-alliance seats.** Where INC fielded its own candidate at a high-Christian seat (often a Christian INC candidate), ΔUDF +13.8pp. Where UDF outsourced to KEC, ΔUDF +8.8pp. Gap survives outlier removal AND ceiling adjustment.
+6. **At ≥40% Christian + no Christian party either side, ΔUDF +13.86pp** — vs +8.24pp at the same bin where a Christian party contested. The 16-AC table in §6 is the clean evidence.
+7. **Pala is the structural counter-example** — Mani C. Kappan personal vote + Shone George BJP marquee broke the community-vote pattern.
+8. **The Muslim story is structurally different** — premium is bigger (+12.8pp at ≥70% Muslim) but more stable; the 2026 Muslim swing was wave-sized, not amplified. Should be its own section, not merged with Christian.
