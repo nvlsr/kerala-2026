@@ -1230,36 +1230,36 @@ export function WalkthroughsUDFPage() {
               </p>
             </CohortSection>
 
-            {/* Cross-references — synthesis pointing at the other walkthroughs */}
+            {/* Synthesis — recap with cross-walkthrough handoffs */}
             <section className="rounded-md border bg-card/50 p-5 sm:p-6">
               <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
-                Where this connects
+                Synthesis
               </p>
-              <ul className="mt-3 space-y-2 text-sm leading-relaxed">
-                <li>
-                  The supply side of UDF's amplification was the{" "}
-                  <Link
-                    to="/walkthroughs/ldf-walkthrough"
-                    className="font-medium text-foreground underline-offset-2 hover:underline"
-                  >
-                    anti-LDF wave
-                  </Link>
-                  . LDF lost ~7pp uniformly across nearly every constituency;
-                  UDF absorbed most of it (98% on average).
-                </li>
-                <li>
-                  In 21 southern Hindu-heavy seats, UDF lost the absorption
-                  competition to NDA. See the{" "}
-                  <Link
-                    to="/walkthroughs/nda-walkthrough#wave-capture"
-                    className="font-medium text-foreground underline-offset-2 hover:underline"
-                  >
-                    NDA walkthrough's wave-capture cohort
-                  </Link>{" "}
-                  — the seats where BJP and UDF directly bid for the same
-                  defectors and NDA out-bid.
-                </li>
-              </ul>
+              <p className="mt-3 text-sm leading-relaxed">
+                The supply side of UDF's amplification was the{" "}
+                <Link
+                  to="/walkthroughs/ldf-walkthrough"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  anti-LDF wave
+                </Link>
+                . LDF lost ~7pp uniformly across nearly every constituency;
+                UDF absorbed most of it (98% on average).
+              </p>
+              <p className="mt-3 text-sm leading-relaxed">
+                In 21 southern Hindu-heavy seats, UDF lost the absorption
+                competition to NDA — see the{" "}
+                <Link
+                  to="/walkthroughs/nda-walkthrough#wave-capture"
+                  className="font-medium text-foreground underline-offset-2 hover:underline"
+                >
+                  NDA walkthrough's wave-capture cohort
+                </Link>{" "}
+                for the seats where BJP and UDF bid for the same defectors and
+                NDA out-bid. But UDF{" "}
+                <strong>held strong in the two central-Kerala belts above</strong>
+                , catapulting them to a clear majority.
+              </p>
             </section>
 
             <SeeAlsoQuestions
