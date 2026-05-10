@@ -196,7 +196,7 @@ export function WalkthroughsNDAPage() {
         { label: "Walkthroughs", href: "/walkthroughs" },
         { label: "NDA" },
       ]}
-      title="BJP's 2026 performance — a data walkthrough"
+      title="BJP 2026: targeted consolidation, not statewide expansion"
     >
       <PageMain className="py-6 pb-12">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_180px]">

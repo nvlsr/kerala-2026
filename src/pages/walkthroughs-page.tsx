@@ -25,7 +25,7 @@ const SURPRISES = [
   },
   {
     title: "UDF wins not narrow on average",
-    body: "UDF's median winning margin is 12.19pp; LDF's is 6.99pp. UDF won by larger margins. The efficiency story is the seat:vote-share ratio flip (UDF 1.04 → 2.18), not 'tight wins'.",
+    body: "UDF's median winning margin is 12.19pp; LDF's is 6.99pp. UDF won by larger margins, not tight 1-2pp escapes. The 'tight wins' framing the press used doesn't fit the data.",
   },
   {
     title: "BJP aggregate: hides ±25pp AC reorganisation",
@@ -62,11 +62,12 @@ export function WalkthroughsPage() {
         <div className="space-y-3 text-sm leading-relaxed">
           <p>
             A constituency-level decomposition of Kerala 2026. Anti-LDF
-            anti-incumbency was the broad universal driver (~7pp uniform).
-            Central Kerala added a Christian-belt UDF premium that converted a
-            normal anti-incumbency election into a landslide. BJP's flat
-            statewide aggregate masked a major per-AC reorganisation in southern
-            and central Kerala.
+            anti-incumbency was the broad universal driver (~7pp uniform). Two
+            religious belts in central Kerala — Christian (Idukki, Ernakulam,
+            Kottayam) and Muslim (Wayanad, Malappuram) — delivered a 47-of-47
+            UDF sweep covering 46% of its majority margin. BJP's flat
+            statewide aggregate masked targeted consolidation in a 30-seat
+            target set, not statewide expansion.
           </p>
           <p className="border-t pt-3 text-muted-foreground">
             Each arc has its own page with choropleths and supporting charts.
@@ -92,12 +93,13 @@ export function WalkthroughsPage() {
       }
       subtitle={
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
-          Kerala 2026 is best read as three distinct patterns laid over the same
-          map. Anti-LDF anti-incumbency was the broad universal driver (~7pp
-          uniform). On top of that, Central Kerala added a Christian-belt UDF
-          premium that converted a normal anti-incumbency election into a
-          landslide. BJP's near-flat statewide aggregate (+0.18pp) hid a major
-          AC-level reshuffle, with concentrated wins in the Trivandrum belt.
+          Kerala 2026 is best read as three distinct patterns laid over the
+          same map. Anti-LDF anti-incumbency was the broad universal driver
+          (~7pp uniform). On top of that, two religious belts in central
+          Kerala — Christian (south) and Muslim (north) — gave UDF a
+          47-of-47 sweep that delivered 46% of its majority margin. BJP's
+          near-flat statewide aggregate (+0.18pp) hid targeted consolidation
+          in a 30-seat target set, not statewide expansion.
         </p>
       }
     >
@@ -162,23 +164,24 @@ export function WalkthroughsPage() {
             }
             summary={
               <>
-                Christian-heavy ACs added a robust ~3-4pp UDF premium on top of
-                the statewide wave (β=+0.19, p=0.008 with district FE). Combined
-                with FPTP amplification, the modest swing converted into a
-                102-seat majority. Muslim-share variation did not add a separate
-                detectable premium.
+                Two religious belts carried the sweep: the Christian belt
+                (Idukki, Ernakulam, Kottayam) where the historic UDF lead
+                doubled to +4.6pp in 2026, and the Muslim belt (Wayanad,
+                Malappuram) where UDF's stable +11pp lean held with a
+                wave-sized swing. UDF deployed different strategies in each
+                belt — and both delivered.
               </>
             }
             href="/walkthroughs/udf-walkthrough"
           />
           <WalkthroughCard
             arcNumber={3}
-            title="BJP's 2026 performance — a data walkthrough"
+            title="BJP 2026: targeted consolidation, not statewide expansion"
             confidence="Moderate-strong"
             headlineStat={
               <span className={ARC_KEY_STAT_CLASS}>
-                3 BJP wins; 6 cohorts trace where the party grew, declined, sat
-                out, and stayed locked out
+                Statewide BJP +0.3pp; inside a 30-seat target set, +5.2pp and
+                3 wins
               </span>
             }
             visual={
@@ -195,12 +198,12 @@ export function WalkthroughsPage() {
             }
             summary={
               <>
-                A guided tour of BJP's 2026 results, starting from the 3 wins
-                (Nemom, Chathannoor, Kazhakoottam) and expanding outward through
-                cohorts: mature-base growers, sustained multi-cycle builders,
-                low-base breakouts, declining mature seats, anti-LDF
-                wave-capture, and the negative-space terrain where BJP doesn't
-                compete. Data-first; no strategic reverse-engineering.
+                BJP traded breadth for intensity: fewer seats contested
+                (115 → 98 candidates), higher share where it does. A guided
+                tour through 6 cohorts — mature-base growers, multi-cycle
+                builders, low-base breakouts, declining mature seats,
+                anti-LDF wave-capture, and the negative-space terrain where
+                BJP doesn't compete.
               </>
             }
             href="/walkthroughs/nda-walkthrough"
@@ -214,17 +217,17 @@ export function WalkthroughsPage() {
         >
           <article className="rounded-sm border bg-card/50 p-6">
             <h2 className="font-heading text-base font-semibold tracking-tight">
-              Swing source vs seat amplification
+              Swing source vs geographic concentration
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               Two analytically separable layers explain the 2026 outcome. The{" "}
-              <em>swing source</em> — where votes came from, where they went —
-              is mostly LDF erosion landing on UDF (98% of LDF's loss; see Arc
-              1's flow decomposition). The <em>seat amplification</em> — how
-              FPTP plurality converted that vote movement into seats — turned a
-              7.4pp swing into +61 UDF seats (≈8 seats per pp, 6× the
-              proportional rate). Neither alone explains the landslide; together
-              they do.
+              <em>swing source</em> — where votes came from — was mostly LDF
+              erosion landing on UDF (98% of LDF's loss; see Arc 1). The{" "}
+              <em>geographic concentration</em> — where the swing landed
+              hardest — was the two religious belts in central Kerala
+              (47-of-47 UDF sweep; see Arc 2). A 7pp statewide swing alone
+              wouldn't have produced a 102-seat majority; the two-belt
+              concentration is what turned it into a landslide.
             </p>
           </article>
           <article className="rounded-sm border bg-card/50 p-6">
@@ -234,12 +237,13 @@ export function WalkthroughsPage() {
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               The catalog implies a calmer reading than the dominant press
               framing. LDF's loss had a tight distribution (SD 4.5pp); the
-              Christian-belt premium is modest (~3-4pp); BJP's pocket is
-              concentrated in 3 specific seats. A polarized communal-realignment
-              interpretation predicts bimodal distributions, large
-              within-district gradients, and broad-based BJP advance. None of
-              those show up. The 2026 result reads as a calm distribution shift
-              overlaid with modest local patterns.
+              Christian-belt premium is modest (+4.6pp); the Muslim-belt
+              swing was wave-sized; BJP's pocket is concentrated in 3
+              specific seats. A polarized communal-realignment interpretation
+              predicts bimodal distributions, large within-district gradients,
+              and broad-based BJP advance. None of those show up. The 2026
+              result reads as a calm distribution shift overlaid with modest
+              local patterns.
             </p>
           </article>
         </section>
