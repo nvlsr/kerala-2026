@@ -81,6 +81,9 @@ When components only need to dispatch (not read filter state), they take a typed
 | `historical.ts` | Vite glob loader for `data/historical/S11-*.json` + `getHistoricalFor`. Defines `HistoricalCandidate`, `HistoricalElection`, `HistoricalConstituency`. |
 | `aggregates.ts` | Cross-cutting aggregations: `getStateSummary`, `getAllianceBreakdown`, `getAllianceTrendData`, `getPartyTrendData`, `getTrendData`, `getPastCandidates`, `getPastWinners`, `get2021Baseline` |
 | `candidate-rows.ts` | `buildCandidateRows(scope)` and `CandidateRow` — the flat list used by the candidate table and (eventually) Insights/AC-map row derivations |
+| `religion-bins.ts` | AC sets for the legacy `ReligionMix` bins (muslim-majority, christian-heavy, hindu-heavy etc.) — coarse Census-share buckets. |
+| `religious-pois.ts` | OSM-derived per-AC sub-rite inventory + analysis accessors. Single source of truth for `getDominantChristianSubRite`, `getDominantMuslimSubRite`, `getReligiousSignatureForAC`, `getVoterShareBreakdown`. Locks `COHORT_YEAR=2025`, `COHORT_VOTER_SHARE_THRESHOLD=5%`, `MIN_CLASSIFIED_FOR_COHORT=3`. |
+| `subrite-bins.ts` | Cohort layer over `religious-pois.ts` — `christianSubRiteCohortFor`, `muslimSubRiteCohortFor`, `acsByChristianSubRite`, `acsByMuslimSubRite`, plus `CHRISTIAN_SUBRITE_COHORTS` / `MUSLIM_SUBRITE_COHORTS` metadata arrays for legends + walkthrough sectioning. |
 | `index.ts` | Barrel re-exports. Add new exports here when new symbols are introduced. |
 
 When adding new data:
@@ -255,6 +258,19 @@ ad-hoc analysis (not currently wired into walkthrough pages).
 
 End-to-end refresh: `bun run scripts/fetch-osm-pow.ts --full && bun run
 scripts/classify-osm-pow.ts && bun run scripts/aggregate-ac-religion-pois.ts`.
+
+### Consumers
+
+- `src/lib/data/religious-pois.ts` is the data-layer accessor for the
+  per-AC inventory. Combines OSM sub-rite POI counts with Census
+  religion shares to produce an "estimated voter share %" per
+  sub-rite per AC (`getVoterShareBreakdown`).
+- `src/lib/data/subrite-bins.ts` exposes cohort assignments (which
+  sub-rite dominates each AC, applying the 5% voter-share threshold +
+  3-POI minimum sample size).
+- `src/pages/religion-map-page.tsx` consumes these for the
+  Religious-sub-communities visualisation section.
+- Walkthrough pages + `/explore` consume the cohort layer (Sprint 2+).
 
 ## See also
 

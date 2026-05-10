@@ -16,6 +16,8 @@
  *                       see `aggregates/index.ts` for the layout)
  *   - candidate-rows.ts — flat row builder used by the candidate table
  *   - religion-bins.ts — AC sets for ReligionMix bins (2025 projection)
+ *   - religious-pois.ts — OSM-derived per-AC sub-rite inventory + accessors
+ *   - subrite-bins.ts  — AC cohorts by dominant sub-rite (5% threshold)
  */
 export * from "./alliances"
 export * from "./aggregates"
@@ -27,4 +29,6 @@ export * from "./format"
 export * from "./historical"
 export * from "./parties"
 export * from "./religion-bins"
+export * from "./religious-pois"
+export * from "./subrite-bins"
 export { demographicsYear } from "./demographics"
