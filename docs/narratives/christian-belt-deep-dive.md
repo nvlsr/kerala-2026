@@ -47,54 +47,52 @@ coalition allocation, not a Christian-belt seat.
 - **3c** — INC contested directly with a Hindu candidate
 - **sp** — special case (IUML alliance / INC-Muslim candidate / Independent)
 
-| AC | District | Name | H/C/M | Res | Strategy | UDF candidate (party) | UDF Δ | Won? |
-|---|---|---|---|---|---|---|---|---|
-| 75 | Ernakulam | Angamaly | 34/65/1 | — | 3b | Roji M. John (Christian) — INC | +8.3 | won |
-| 93 | Kottayam | Pala | 38/52/10 | — | sp | Mani C. Kappen (Christian) — Independent | −12.9 | won (Indep) |
-| 98 | Kottayam | Puthuppally | 49/49/2 | — | 3b | Chandy Oommen (Christian) — INC | +17.8 | won |
-| 89 | Idukki | Udumbanchola | 48/48/4 | — | 3c | Senapathy Venu (Hindu) — INC | +22.6 | won |
-| 111 | Pathanamthitta | Thiruvalla | 48/48/4 | — | 3a | Varghese Mammen (Christian) — KEC | +1.6 | won |
-| 91 | Idukki | Idukki | 48/47/5 | — | 3b | Roy K. Paulose (Christian) — INC | +12.0 | won |
-| 112 | Pathanamthitta | Ranni | 48/47/5 | — | 3c | Pazhakulam Madhu (Hindu) — INC | +4.1 | won |
-| 137 | Thiruvananthapuram | Parassala | 49/45/6 | — | 3c | Neyyattinkara Sanal (Hindu) — INC | +2.7 | **lost** |
-| 96 | Kottayam | Ettumanoor | 49/45/6 | — | 3c | Nattakom Suresh (Hindu) — INC | +17.5 | won |
-| 72 | Thrissur | Chalakudy | 49/44/7 | — | 3b | Saneeshkumar Joseph (Christian) — INC | +8.7 | won |
-| 94 | Kottayam | Kaduthuruthy | 53/44/3 | — | 3a | Mons Joseph (Christian) — KEC | +11.4 | won |
-| 99 | Kottayam | Changanassery | 46/44/11 | — | 3a | Vinu Job Kuzhimannil (Christian) — KEC | +6.5 | won |
-| 100 | Kottayam | Kanjirappally | 46/43/10 | — | 3b | Rony K. Baby (Christian) — INC | +8.1 | won |
-| 85 | Ernakulam | Piravom | 49/42/9 | — | 3a | Anoop Jacob (Christian) — KC-Jacob | +5.4 | won |
-| 101 | Kottayam | Poonjar | 42/41/16 | — | 3b | Sebastian M.J. (Christian) — INC | +14.7 | won |
-| 92 | Idukki | Peerumade | 51/41/8 | — | 3b | Cyriac Thomas (Christian) — INC | +11.4 | won |
-| 97 | Kottayam | Kottayam | 50/41/9 | — | 3c | Thiruvanchoor Radhakrishnan (Hindu) — INC | +7.2 | won |
-| 79 | Ernakulam | Vypen | 52/41/7 | — | 3b | Tony Chammany (Christian) — INC | +15.5 | won |
-| 90 | Idukki | Thodupuzha | 39/41/21 | — | 3a | Apu John Joseph (Christian) — KEC | +9.7 | won |
-| 86 | Ernakulam | Muvattupuzha | 35/40/24 | — | 3b | Mathew Kuzhalnadan (Christian) — INC | +16.4 | won |
-| 80 | Ernakulam | Kochi | 43/40/17 | — | sp | Mohammed Shiyas (Muslim) — INC | +16.7 | won |
-| 67 | Thrissur | Thrissur | 54/40/6 | — | 3c | Rajan J. Pallan (Hindu) — INC | +15.4 | won |
-| 74 | Ernakulam | Perumbavoor | 43/39/19 | — | 3c | Manoj Moothedan (Hindu) — INC | +14.1 | won |
-| 106 | Alappuzha | Kuttanad | 59/37/4 | — | 3a | Reji Cheriyan (Christian) — KEC | +9.3 | won |
-| 113 | Pathanamthitta | Aranmula | 55/36/8 | — | 3c (?) | Abin Varkey Kodiyattu (?) — INC | +10.1 | won |
-| 71 | Thrissur | Pudukkad | 59/36/6 | — | 3c | K.M. Baburajan (Hindu) — INC | +10.0 | **lost** |
-| 84 | Ernakulam | Kunnathunad | 45/35/20 | **SC** | 3c | V.P. Sajeendran (Hindu) — INC | +11.9 | won |
-| 77 | Ernakulam | Kalamassery | 45/34/21 | — | sp | V.E. Abdul Gafoor (Muslim) — IUML | +10.1 | won |
-| 81 | Ernakulam | Thripunithura | 45/34/21 | — | 3b | Deepak Joy (Christian) — INC | +3.7 | won |
-| 82 | Ernakulam | Eranakulam | 45/34/21 | — | 3c | T.J. Vinod (Hindu) — INC | +15.8 | won |
-| 83 | Ernakulam | Thrikkakara | 45/34/21 | — | 3b | Uma Thomas (Christian) — INC | +16.1 | won |
-| 78 | Ernakulam | Paravur | 59/33/7 | — | 3c | V.D. Satheesan (Hindu) — INC | −2.3 | won |
-| 114 | Pathanamthitta | Konni | 61/33/5 | — | 3c (?) | Satheesh Kochuparambil (?) — INC | +7.6 | **lost** |
-| 88 | Idukki | Devikulam | 61/32/7 | **SC** | 3b | F. Raja (Christian) — INC | +1.2 | won |
-| 87 | Ernakulam | Kothamangalam | 34/29/37 | — | 3a | Shibu Theckumpuram (Christian) — KEC | +10.9 | won |
-| 70 | Thrissur | Irinjalakuda | 64/27/10 | — | 3a | Thomas Unniyadan (Christian) — KEC | +7.3 | won |
-
-(?) = candidate religion not yet confirmed; might shift between 3b and 3c.
+| District | Name | H/C/M | Res | Strategy | UDF candidate (party) | UDF Δ | Won? |
+|---|---|---|---|---|---|---|---|
+| Ernakulam | Angamaly | 34/65/1 | — | 3b | Roji M. John (Christian) — INC | +8.3 | won |
+| Kottayam | Pala | 38/52/10 | — | sp | Mani C. Kappen (Christian) — Independent | −12.9 | won (Indep) |
+| Kottayam | Puthuppally | 49/49/2 | — | 3b | Chandy Oommen (Christian) — INC | +17.8 | won |
+| Idukki | Udumbanchola | 48/48/4 | — | 3c | Senapathy Venu (Hindu) — INC | +22.6 | won |
+| Pathanamthitta | Thiruvalla | 48/48/4 | — | 3a | Varghese Mammen (Christian) — KEC | +1.6 | won |
+| Idukki | Idukki | 48/47/5 | — | 3b | Roy K. Paulose (Christian) — INC | +12.0 | won |
+| Pathanamthitta | Ranni | 48/47/5 | — | 3c | Pazhakulam Madhu (Hindu) — INC | +4.1 | won |
+| Thiruvananthapuram | Parassala | 49/45/6 | — | 3c | Neyyattinkara Sanal (Hindu) — INC | +2.7 | **lost** |
+| Kottayam | Ettumanoor | 49/45/6 | — | 3c | Nattakom Suresh (Hindu) — INC | +17.5 | won |
+| Thrissur | Chalakudy | 49/44/7 | — | 3b | Saneeshkumar Joseph (Christian) — INC | +8.7 | won |
+| Kottayam | Kaduthuruthy | 53/44/3 | — | 3a | Mons Joseph (Christian) — KEC | +11.4 | won |
+| Kottayam | Changanassery | 46/44/11 | — | 3a | Vinu Job Kuzhimannil (Christian) — KEC | +6.5 | won |
+| Kottayam | Kanjirappally | 46/43/10 | — | 3b | Rony K. Baby (Christian) — INC | +8.1 | won |
+| Ernakulam | Piravom | 49/42/9 | — | 3a | Anoop Jacob (Christian) — KC-Jacob | +5.4 | won |
+| Kottayam | Poonjar | 42/41/16 | — | 3b | Sebastian M.J. (Christian) — INC | +14.7 | won |
+| Idukki | Peerumade | 51/41/8 | — | 3b | Cyriac Thomas (Christian) — INC | +11.4 | won |
+| Kottayam | Kottayam | 50/41/9 | — | 3c | Thiruvanchoor Radhakrishnan (Hindu) — INC | +7.2 | won |
+| Ernakulam | Vypen | 52/41/7 | — | 3b | Tony Chammany (Christian) — INC | +15.5 | won |
+| Idukki | Thodupuzha | 39/41/21 | — | 3a | Apu John Joseph (Christian) — KEC | +9.7 | won |
+| Ernakulam | Muvattupuzha | 35/40/24 | — | 3b | Mathew Kuzhalnadan (Christian) — INC | +16.4 | won |
+| Ernakulam | Kochi | 43/40/17 | — | sp | Mohammed Shiyas (Muslim) — INC | +16.7 | won |
+| Thrissur | Thrissur | 54/40/6 | — | 3c | Rajan J. Pallan (Hindu) — INC | +15.4 | won |
+| Ernakulam | Perumbavoor | 43/39/19 | — | 3c | Manoj Moothedan (Hindu) — INC | +14.1 | won |
+| Alappuzha | Kuttanad | 59/37/4 | — | 3a | Reji Cheriyan (Christian) — KEC | +9.3 | won |
+| Pathanamthitta | Aranmula | 55/36/8 | — | 3b | Abin Varkey Kodiyattu (Christian) — INC | +10.1 | won |
+| Thrissur | Pudukkad | 59/36/6 | — | 3c | K.M. Baburajan (Hindu) — INC | +10.0 | **lost** |
+| Ernakulam | Kunnathunad | 45/35/20 | **SC** | 3c | V.P. Sajeendran (Hindu) — INC | +11.9 | won |
+| Ernakulam | Kalamassery | 45/34/21 | — | sp | V.E. Abdul Gafoor (Muslim) — IUML | +10.1 | won |
+| Ernakulam | Thripunithura | 45/34/21 | — | 3b | Deepak Joy (Christian) — INC | +3.7 | won |
+| Ernakulam | Eranakulam | 45/34/21 | — | 3c | T.J. Vinod (Hindu) — INC | +15.8 | won |
+| Ernakulam | Thrikkakara | 45/34/21 | — | 3b | Uma Thomas (Christian) — INC | +16.1 | won |
+| Ernakulam | Paravur | 59/33/7 | — | 3c | V.D. Satheesan (Hindu) — INC | −2.3 | won |
+| Pathanamthitta | Konni | 61/33/5 | — | 3c | Satheesh Kochuparambil (Hindu) — INC | +7.6 | **lost** |
+| Idukki | Devikulam | 61/32/7 | **SC** | 3b | F. Raja (Christian) — INC | +1.2 | won |
+| Ernakulam | Kothamangalam | 34/29/37 | — | 3a | Shibu Theckumpuram (Christian) — KEC | +10.9 | won |
+| Thrissur | Irinjalakuda | 64/27/10 | — | 3a | Thomas Unniyadan (Christian) — KEC | +7.3 | won |
 
 ### Bucket counts (sum to 36)
 
 | Bucket | n | Won | Mean ΔUDF |
 |---|---|---|---|
 | 3a — Christian alliance (KEC / KC-Jacob) | 8 | 8 | **+7.8pp** |
-| 3b — INC direct, Christian candidate | 12 | 12 | **+11.2pp** |
-| 3c — INC direct, Hindu candidate | 13 | 10 | **+10.5pp** |
+| 3b — INC direct, Christian candidate | 13 | 13 | **+11.1pp** |
+| 3c — INC direct, Hindu candidate | 12 | 9 | **+10.6pp** |
 | sp — Special cases (IUML / INC-Muslim / Independent) | 3 | 3 | +4.6pp (Pala drags) |
 | **Total** | **36** | **33** | |
 
@@ -107,16 +105,16 @@ coalition allocation, not a Christian-belt seat.
 UDF's two Christian-affiliated alliance partners contested 8 Christian-
 belt seats. **8 of 8 won.** Mean ΔUDF +7.8pp.
 
-| AC | District | Name | H/C/M | Christian party (full name) | Party 2021 | Party 2026 | Δ | UDF Δ | Won? |
-|---|---|---|---|---|---|---|---|---|---|
-| 70 | Thrissur | Irinjalakuda | 64/27/10 | Kerala Congress (Joseph faction) | 36.4 | 43.8 | +7.3 | +7.3 | won |
-| 85 | Ernakulam | Piravom | 49/42/9 | Kerala Congress (Jacob) | 53.8 | 59.2 | +5.4 | +5.4 | won |
-| 87 | Ernakulam | Kothamangalam | 34/29/37 | Kerala Congress (Joseph faction) | 42.2 | 53.1 | +10.9 | +10.9 | won |
-| 90 | Idukki | Thodupuzha | 39/41/21 | Kerala Congress (Joseph faction) | 48.6 | 58.4 | +9.7 | +9.7 | won |
-| 94 | Kottayam | Kaduthuruthy | 53/44/3 | Kerala Congress (Joseph faction) | 45.4 | 56.8 | +11.4 | +11.4 | won |
-| 99 | Kottayam | Changanassery | 46/44/11 | Kerala Congress (Joseph faction) | 39.9 | 46.4 | +6.5 | +6.5 | won |
-| 106 | Alappuzha | Kuttanad | 59/37/4 | Kerala Congress (Joseph faction) | 41.3 | 50.6 | +9.3 | +9.3 | won |
-| 111 | Pathanamthitta | Thiruvalla | 48/48/4 | Kerala Congress (Joseph faction) | 36.4 | 38.0 | +1.6 | +1.6 | won |
+| District | Name | H/C/M | Christian party (full name) | Party 2021 | Party 2026 | Δ | UDF Δ | Won? |
+|---|---|---|---|---|---|---|---|---|
+| Thrissur | Irinjalakuda | 64/27/10 | Kerala Congress (Joseph faction) | 36.4 | 43.8 | +7.3 | +7.3 | won |
+| Ernakulam | Piravom | 49/42/9 | Kerala Congress (Jacob) | 53.8 | 59.2 | +5.4 | +5.4 | won |
+| Ernakulam | Kothamangalam | 34/29/37 | Kerala Congress (Joseph faction) | 42.2 | 53.1 | +10.9 | +10.9 | won |
+| Idukki | Thodupuzha | 39/41/21 | Kerala Congress (Joseph faction) | 48.6 | 58.4 | +9.7 | +9.7 | won |
+| Kottayam | Kaduthuruthy | 53/44/3 | Kerala Congress (Joseph faction) | 45.4 | 56.8 | +11.4 | +11.4 | won |
+| Kottayam | Changanassery | 46/44/11 | Kerala Congress (Joseph faction) | 39.9 | 46.4 | +6.5 | +6.5 | won |
+| Alappuzha | Kuttanad | 59/37/4 | Kerala Congress (Joseph faction) | 41.3 | 50.6 | +9.3 | +9.3 | won |
+| Pathanamthitta | Thiruvalla | 48/48/4 | Kerala Congress (Joseph faction) | 36.4 | 38.0 | +1.6 | +1.6 | won |
 
 7 KEC seats + 1 KC-Jacob (Piravom). Both Christian parties had high
 incumbency-style baselines (mean UDF21 = 46%) and won by big margins,
@@ -124,50 +122,44 @@ but the *additional* swing on top was modest.
 
 ### 3b. INC direct, Christian candidate
 
-12 Christian-belt seats where INC contested directly with a Christian
-candidate. **12 of 12 won.** Mean ΔUDF +11.2pp.
+13 Christian-belt seats where INC contested directly with a Christian
+candidate. **13 of 13 won.** Mean ΔUDF +11.1pp.
 
-| AC | District | Name | H/C/M | Res | Candidate (party) | UDF Δ | Won? |
-|---|---|---|---|---|---|---|---|
-| 75 | Ernakulam | Angamaly | 34/65/1 | — | Roji M. John — INC | +8.3 | won |
-| 98 | Kottayam | Puthuppally | 49/49/2 | — | Chandy Oommen — INC | +17.8 | won |
-| 91 | Idukki | Idukki | 48/47/5 | — | Roy K. Paulose — INC | +12.0 | won |
-| 72 | Thrissur | Chalakudy | 49/44/7 | — | Saneeshkumar Joseph — INC | +8.7 | won |
-| 100 | Kottayam | Kanjirappally | 46/43/10 | — | Rony K. Baby — INC | +8.1 | won |
-| 101 | Kottayam | Poonjar | 42/41/16 | — | Sebastian M.J. — INC | +14.7 | won |
-| 92 | Idukki | Peerumade | 51/41/8 | — | Cyriac Thomas — INC | +11.4 | won |
-| 79 | Ernakulam | Vypen | 52/41/7 | — | Tony Chammany — INC | +15.5 | won |
-| 86 | Ernakulam | Muvattupuzha | 35/40/24 | — | Mathew Kuzhalnadan — INC | +16.4 | won |
-| 81 | Ernakulam | Thripunithura | 45/34/21 | — | Deepak Joy — INC | +3.7 | won |
-| 83 | Ernakulam | Thrikkakara | 45/34/21 | — | Uma Thomas — INC | +16.1 | won |
-| 88 | Idukki | Devikulam | 61/32/7 | **SC** | F. Raja — INC | +1.2 | won |
+| District | Name | H/C/M | Res | Candidate (party) | UDF Δ | Won? |
+|---|---|---|---|---|---|---|
+| Ernakulam | Angamaly | 34/65/1 | — | Roji M. John — INC | +8.3 | won |
+| Kottayam | Puthuppally | 49/49/2 | — | Chandy Oommen — INC | +17.8 | won |
+| Idukki | Idukki | 48/47/5 | — | Roy K. Paulose — INC | +12.0 | won |
+| Thrissur | Chalakudy | 49/44/7 | — | Saneeshkumar Joseph — INC | +8.7 | won |
+| Kottayam | Kanjirappally | 46/43/10 | — | Rony K. Baby — INC | +8.1 | won |
+| Kottayam | Poonjar | 42/41/16 | — | Sebastian M.J. — INC | +14.7 | won |
+| Idukki | Peerumade | 51/41/8 | — | Cyriac Thomas — INC | +11.4 | won |
+| Ernakulam | Vypen | 52/41/7 | — | Tony Chammany — INC | +15.5 | won |
+| Ernakulam | Muvattupuzha | 35/40/24 | — | Mathew Kuzhalnadan — INC | +16.4 | won |
+| Ernakulam | Thripunithura | 45/34/21 | — | Deepak Joy — INC | +3.7 | won |
+| Ernakulam | Thrikkakara | 45/34/21 | — | Uma Thomas — INC | +16.1 | won |
+| Pathanamthitta | Aranmula | 55/36/8 | — | Abin Varkey Kodiyattu — INC | +10.1 | won |
+| Idukki | Devikulam | 61/32/7 | **SC** | F. Raja — INC | +1.2 | won |
 
 ### 3c. INC direct, Hindu candidate
 
-13 Christian-belt seats where INC contested directly with a Hindu
-candidate. **10 of 13 won.** Mean ΔUDF +10.5pp.
+12 Christian-belt seats where INC contested directly with a Hindu
+candidate. **9 of 12 won.** Mean ΔUDF +10.6pp.
 
-| AC | District | Name | H/C/M | Res | Candidate (party) | UDF Δ | Won? |
-|---|---|---|---|---|---|---|---|
-| 89 | Idukki | Udumbanchola | 48/48/4 | — | Senapathy Venu — INC | **+22.6** | won |
-| 112 | Pathanamthitta | Ranni | 48/47/5 | — | Pazhakulam Madhu — INC | +4.1 | won |
-| 137 | Thiruvananthapuram | Parassala | 49/45/6 | — | Neyyattinkara Sanal — INC | +2.7 | **lost** |
-| 96 | Kottayam | Ettumanoor | 49/45/6 | — | Nattakom Suresh — INC | +17.5 | won |
-| 97 | Kottayam | Kottayam | 50/41/9 | — | Thiruvanchoor Radhakrishnan — INC | +7.2 | won |
-| 67 | Thrissur | Thrissur | 54/40/6 | — | Rajan J. Pallan — INC | +15.4 | won |
-| 74 | Ernakulam | Perumbavoor | 43/39/19 | — | Manoj Moothedan — INC | +14.1 | won |
-| 113 | Pathanamthitta | Aranmula | 55/36/8 | — | Abin Varkey Kodiyattu (?) — INC | +10.1 | won |
-| 71 | Thrissur | Pudukkad | 59/36/6 | — | K.M. Baburajan — INC | +10.0 | **lost** |
-| 84 | Ernakulam | Kunnathunad | 45/35/20 | **SC** | V.P. Sajeendran — INC | +11.9 | won |
-| 82 | Ernakulam | Eranakulam | 45/34/21 | — | T.J. Vinod — INC | +15.8 | won |
-| 78 | Ernakulam | Paravur | 59/33/7 | — | V.D. Satheesan — INC | **−2.3** | won |
-| 114 | Pathanamthitta | Konni | 61/33/5 | — | Satheesh Kochuparambil (?) — INC | +7.6 | **lost** |
-
-> Two entries pending verification: **Aranmula (Abin Varkey Kodiyattu)**
-> and **Konni (Satheesh Kochuparambil)** — both names lean Christian
-> ("Varkey", "Kochuparambil" surnames). If confirmed Christian, they
-> shift from §3c to §3b (lifting §3b mean ΔUDF marginally and dropping
-> §3c's).
+| District | Name | H/C/M | Res | Candidate (party) | UDF Δ | Won? |
+|---|---|---|---|---|---|---|
+| Idukki | Udumbanchola | 48/48/4 | — | Senapathy Venu — INC | **+22.6** | won |
+| Pathanamthitta | Ranni | 48/47/5 | — | Pazhakulam Madhu — INC | +4.1 | won |
+| Thiruvananthapuram | Parassala | 49/45/6 | — | Neyyattinkara Sanal — INC | +2.7 | **lost** |
+| Kottayam | Ettumanoor | 49/45/6 | — | Nattakom Suresh — INC | +17.5 | won |
+| Kottayam | Kottayam | 50/41/9 | — | Thiruvanchoor Radhakrishnan — INC | +7.2 | won |
+| Thrissur | Thrissur | 54/40/6 | — | Rajan J. Pallan — INC | +15.4 | won |
+| Ernakulam | Perumbavoor | 43/39/19 | — | Manoj Moothedan — INC | +14.1 | won |
+| Thrissur | Pudukkad | 59/36/6 | — | K.M. Baburajan — INC | +10.0 | **lost** |
+| Ernakulam | Kunnathunad | 45/35/20 | **SC** | V.P. Sajeendran — INC | +11.9 | won |
+| Ernakulam | Eranakulam | 45/34/21 | — | T.J. Vinod — INC | +15.8 | won |
+| Ernakulam | Paravur | 59/33/7 | — | V.D. Satheesan — INC | **−2.3** | won |
+| Pathanamthitta | Konni | 61/33/5 | — | Satheesh Kochuparambil — INC | +7.6 | **lost** |
 
 ### Special cases (3 ACs, not in 3a/3b/3c)
 
@@ -187,16 +179,16 @@ candidate. **10 of 13 won.** Mean ΔUDF +10.5pp.
 | Strategy | n | Won | ΔUDF | Read |
 |---|---|---|---|---|
 | (a) Christian alliance (KEC/KC-Jacob) | 8 | 8 | **+7.8pp** | Wave-rate. High baselines = less ceiling. |
-| (b) INC direct, Christian candidate | 12 | 12 | **+11.2pp** | Above wave. 100% win rate. |
-| (c) INC direct, Hindu candidate | 13 | 10 | **+10.5pp** | Above wave (with Paravur dragging); win rate 77%. |
+| (b) INC direct, Christian candidate | 13 | 13 | **+11.1pp** | Above wave. 100% win rate. |
+| (c) INC direct, Hindu candidate | 12 | 9 | **+10.6pp** | Above wave (with Paravur dragging); win rate 75%. |
 | Special cases | 3 | 3 | mixed | Kalamassery IUML, Kochi INC-Muslim, Pala Indep |
 
 Statewide ΔUDF reference: ~+7pp.
 
 (b) and (c) both significantly outperformed (a). The candidate's
 religion within INC-direct (Christian vs Hindu) didn't matter much for
-the average swing — but Christian INC won 12/12 while Hindu INC won
-10/13. Win-rate gap might point to a candidate-religion effect at the
+the average swing — but Christian INC won 13/13 while Hindu INC won
+9/12. Win-rate gap might point to a candidate-religion effect at the
 margin (the 3 §3c losses — Parassala, Pudukkad, Konni — were uphill
 seats with low UDF baselines).
 
@@ -207,8 +199,8 @@ seats with low UDF baselines).
 | Strategy | ΔUDF | Interpretation |
 |---|---|---|
 | (a) KEC alliance | +7.8pp | Wave-rate. KEC won by big margins because of high baseline, but the *additional* swing on top of that baseline was modest. |
-| (b) INC direct, Christian INC | +11.2pp | INC fielding Christian candidates at high-Christian seats picked up the largest swings AND won every seat. |
-| (c) INC direct, Hindu INC | +10.5pp | Notably similar swing to (b) — community moved to UDF regardless of INC candidate religion. Lost 3 of 13 (uphill seats). |
+| (b) INC direct, Christian INC | +11.1pp | INC fielding Christian candidates at high-Christian seats picked up the largest swings AND won every seat (13/13). |
+| (c) INC direct, Hindu INC | +10.6pp | Notably similar swing to (b) — community moved to UDF regardless of INC candidate religion. Lost 3 of 12 (uphill seats). |
 
 **Reading the data**: where UDF kept the seat for INC and contested
 directly (regardless of candidate religion), the swing was +10–11pp.
@@ -230,14 +222,14 @@ ceiling-adjusted view below.
 
 ### Outliers — to identify and (optionally) drop
 
-| AC | Name | Why it's an outlier |
-|---|---|---|
-| 93 | Pala | Mani C. Kappan (Christian) ran as Independent and won; Jose K. Mani contested for KC(M); Shone George (Christian) was BJP marquee. Three-way personal-vote contest; alliance-tagging is broken. |
-| 101 | Poonjar | P.C. George moved his personal vote from KJ(S) (2021, OTHER) to BJP (2026, NDA), giving NDA +22.9pp. UDF still gained but the alliance Δ math is muddied. |
-| 78 | Paravur | V.D. Satheesan (Hindu, INC, Leader of Opposition) lost ground locally despite statewide UDF wave. Personality-of-the-LoP story; only UDF-direct seat with negative ΔUDF. |
-| 88 | Devikulam | **SC reserved** Idukki seat. Reserved-seat dynamics — different from religion-driven analysis. |
-| 84 | Kunnathunad | **SC reserved** Ernakulam seat. Same caveat. |
-| 111 | Thiruvalla | Three-way fragmentation: KEC won, BJP marquee Anoop Antony (Christian, +14.5pp NDA), JD(S) → Independent Mathew T. Thomas (Christian) split LDF vote. |
+| Name | Why it's an outlier |
+|---|---|
+| Pala | Mani C. Kappan (Christian) ran as Independent and won; Jose K. Mani contested for KC(M); Shone George (Christian) was BJP marquee. Three-way personal-vote contest; alliance-tagging is broken. |
+| Poonjar | P.C. George moved his personal vote from KJ(S) (2021, OTHER) to BJP (2026, NDA), giving NDA +22.9pp. UDF still gained but the alliance Δ math is muddied. |
+| Paravur | V.D. Satheesan (Hindu, INC, Leader of Opposition) lost ground locally despite statewide UDF wave. Personality-of-the-LoP story; only UDF-direct seat with negative ΔUDF. |
+| Devikulam | **SC reserved** Idukki seat. Reserved-seat dynamics — different from religion-driven analysis. |
+| Kunnathunad | **SC reserved** Ernakulam seat. Same caveat. |
+| Thiruvalla | Three-way fragmentation: KEC won, BJP marquee Anoop Antony (Christian, +14.5pp NDA), JD(S) → Independent Mathew T. Thomas (Christian) split LDF vote. |
 
 ### Recomputed means with outliers dropped
 
@@ -308,24 +300,24 @@ party either side — these are the cleanest test of cross-community
 Christian shift, because there's no Christian-party mechanic to
 absorb the swing into party-share.
 
-| AC | Name (district) | Chr% | UDF candidate (party) | ΔUDF | NDA candidate (party) | NDA 2026 | ΔNDA |
-|---|---|---|---|---|---|---|---|
-| 75 | Angamaly (Ernakulam) | 64.5 | Roji M. John (Christian) — INC | +8.3 | (BJP, no marquee) | 7.6% | +1.3 |
-| 77 | Kalamassery (Ernakulam) | 33.9 | Adv. V.E. Abdul Gafoor (Muslim) — IUML | +10.1 | BDJS | 8.7% | +1.5 |
-| 78 | Paravur (Ernakulam) | 33.5 | Adv. V.D. Satheesan (Hindu) — INC | **−2.3** | Valsala Prasannakumar (Hindu) — BJP | 12.8% | +4.7 |
-| 79 | Vypen (Ernakulam) | 41.0 | Tony Chammany (Christian) — INC | +15.5 | Anitha Thomas (Christian) — Twenty 20 | 10.4% | −12.7 |
-| 80 | Kochi (Ernakulam) | 40.0 | Mohammed Shiyas (Muslim) — INC | +16.7 | Adv. Xavier Julappan (Christian) — Twenty 20 | 8.9% | −14.9 |
-| 81 | Thripunithura (Ernakulam) | 33.9 | Deepak Joy (Christian) — INC | +3.7 | Anjali P.V. (Hindu) — Twenty 20 | 19.2% | +4.0 |
-| 82 | Eranakulam (Ernakulam) | 33.9 | T.J. Vinod (Hindu) — INC | +15.8 | P.R. Sivasankar (Hindu) — BJP | 18.0% | −6.3 |
-| 83 | Thrikkakara (Ernakulam) | 33.9 | Uma Thomas (Christian) — INC | +16.1 | Akhil Raj/Marar (Hindu) — Twenty 20 | 15.4% | −6.1 |
-| 84 | Kunnathunad (Ernakulam) — **SC reserved** | 34.7 | V.P. Sajeendran (Hindu) — INC | +11.9 | Babu Divakaran (Hindu) — Twenty 20 | 25.1% | −7.1 |
-| 86 | Muvattupuzha (Ernakulam) | 40.4 | Dr. Mathew Kuzhalnadan (Christian) — INC | +16.4 | Sunny Kadoothazhe (Christian) — Twenty 20 | 6.7% | −7.9 |
-| 88 | Devikulam (Idukki) — **SC reserved** | 31.8 | F. Raja (Christian) — INC | +1.2 | S. Rajendran (Hindu) — BJP | 13.5% | +13.5 |
-| 89 | Udumbanchola (Idukki) | 48.3 | Adv. Senapathy Venu (Hindu) — INC | **+22.6** | Adv. Sangeetha Viswanadhan (Hindu) — BDJS | 8.4% | +2.7 |
-| 92 | Peerumade (Idukki) | 41.3 | Adv. Cyriac Thomas (Christian) — INC | +11.4 | Ratheesh Varakumala (Hindu) — BJP | 7.6% | +2.0 |
-| 96 | Ettumanoor (Kottayam) | 44.6 | Nattakom Suresh (Hindu) — INC | +17.5 | Athira D. Nair (Hindu) — Twenty 20 | 10.6% | −0.3 |
-| 97 | Kottayam (Kottayam) | 41.1 | Thiruvanchoor Radhakrishnan (Hindu) — INC | +7.2 | P. Anilkumar (Hindu) — BDJS | 8.6% | +1.5 |
-| 98 | Puthuppally (Kottayam) | 49.1 | Adv. Chandy Oommen (Christian) — INC | +17.8 | Raveendranath Vakathanam (Hindu) — BJP | 9.0% | +0.2 |
+| Name (district) | Chr% | UDF candidate (party) | ΔUDF | NDA candidate (party) | NDA 2026 | ΔNDA |
+|---|---|---|---|---|---|---|
+| Angamaly (Ernakulam) | 64.5 | Roji M. John (Christian) — INC | +8.3 | (BJP, no marquee) | 7.6% | +1.3 |
+| Kalamassery (Ernakulam) | 33.9 | Adv. V.E. Abdul Gafoor (Muslim) — IUML | +10.1 | BDJS | 8.7% | +1.5 |
+| Paravur (Ernakulam) | 33.5 | Adv. V.D. Satheesan (Hindu) — INC | **−2.3** | Valsala Prasannakumar (Hindu) — BJP | 12.8% | +4.7 |
+| Vypen (Ernakulam) | 41.0 | Tony Chammany (Christian) — INC | +15.5 | Anitha Thomas (Christian) — Twenty 20 | 10.4% | −12.7 |
+| Kochi (Ernakulam) | 40.0 | Mohammed Shiyas (Muslim) — INC | +16.7 | Adv. Xavier Julappan (Christian) — Twenty 20 | 8.9% | −14.9 |
+| Thripunithura (Ernakulam) | 33.9 | Deepak Joy (Christian) — INC | +3.7 | Anjali P.V. (Hindu) — Twenty 20 | 19.2% | +4.0 |
+| Eranakulam (Ernakulam) | 33.9 | T.J. Vinod (Hindu) — INC | +15.8 | P.R. Sivasankar (Hindu) — BJP | 18.0% | −6.3 |
+| Thrikkakara (Ernakulam) | 33.9 | Uma Thomas (Christian) — INC | +16.1 | Akhil Raj/Marar (Hindu) — Twenty 20 | 15.4% | −6.1 |
+| Kunnathunad (Ernakulam) — **SC reserved** | 34.7 | V.P. Sajeendran (Hindu) — INC | +11.9 | Babu Divakaran (Hindu) — Twenty 20 | 25.1% | −7.1 |
+| Muvattupuzha (Ernakulam) | 40.4 | Dr. Mathew Kuzhalnadan (Christian) — INC | +16.4 | Sunny Kadoothazhe (Christian) — Twenty 20 | 6.7% | −7.9 |
+| Devikulam (Idukki) — **SC reserved** | 31.8 | F. Raja (Christian) — INC | +1.2 | S. Rajendran (Hindu) — BJP | 13.5% | +13.5 |
+| Udumbanchola (Idukki) | 48.3 | Adv. Senapathy Venu (Hindu) — INC | **+22.6** | Adv. Sangeetha Viswanadhan (Hindu) — BDJS | 8.4% | +2.7 |
+| Peerumade (Idukki) | 41.3 | Adv. Cyriac Thomas (Christian) — INC | +11.4 | Ratheesh Varakumala (Hindu) — BJP | 7.6% | +2.0 |
+| Ettumanoor (Kottayam) | 44.6 | Nattakom Suresh (Hindu) — INC | +17.5 | Athira D. Nair (Hindu) — Twenty 20 | 10.6% | −0.3 |
+| Kottayam (Kottayam) | 41.1 | Thiruvanchoor Radhakrishnan (Hindu) — INC | +7.2 | P. Anilkumar (Hindu) — BDJS | 8.6% | +1.5 |
+| Puthuppally (Kottayam) | 49.1 | Adv. Chandy Oommen (Christian) — INC | +17.8 | Raveendranath Vakathanam (Hindu) — BJP | 9.0% | +0.2 |
 
 ### Patterns visible in the table
 
@@ -355,15 +347,15 @@ wave. That matches the +4.6pp 2026 Christian premium identified in §1.
 1. ✅ **Candidate religion verified** by user across the §2 master table.
 2. ✅ **Outlier-dropped recomputation** done — see §5. (a) vs (c) gap *widened* from 3.1pp to 5.0pp. Strategy claim strengthens.
 3. ✅ **Ceiling-adjusted view** done — see §5. Even controlling for headroom, (c) consumed 23.1% of available room vs (a)'s 16.2%. Strategy claim survives.
-4. **Site placement decision** — pending. Now that §1–§5 findings are stable: rewrite the Christian-belt section in place, expand to multi-section, or split off into `community-belts` page?
-5. **Verify two ambiguous candidates in §3c**: Aranmula (Abin Varkey Kodiyattu) and Konni (Satheesh Kochuparambil) — likely Christian; if confirmed they move from §3c to §3b.
+4. ✅ **Two ambiguous candidates verified**: Aranmula (Abin Varkey Kodiyattu — Christian, moved to §3b) and Konni (Satheesh Kochuparambil — Hindu, stays in §3c).
+5. **Site placement decision** — pending. Now that §1–§5 findings are stable: rewrite the Christian-belt section in place, expand to multi-section, or split off into `community-belts` page?
 
 ## Stable findings (ready to promote, pending site-placement decision)
 
 1. Christians have voted UDF more than statewide in every cycle since 2011 — historical premium ~3pp (cleaned).
 2. **In 2026 the premium more than doubled** to +6.4pp (cleaned), or +4.6pp (raw). UDF gained an extra ~3–4pp on top of its historical Christian-belt baseline.
 3. **The UDF-Christian-strategy comparison: INC-direct (+11pp) substantially out-performed KEC-alliance (+8pp).** Gap survives outlier removal AND ceiling adjustment.
-4. **The candidate's religion within INC-direct didn't matter much for swing magnitude**: Hindu INC candidates (+10.5pp) gained almost as much as Christian INC candidates (+11.2pp). May matter at the win-margin (12/12 §3b vs 10/13 §3c). Community-driven swing, not candidate-driven.
+4. **The candidate's religion within INC-direct didn't matter much for swing magnitude**: Hindu INC candidates (+10.6pp) gained almost as much as Christian INC candidates (+11.1pp). May matter at the win-margin (13/13 §3b vs 9/12 §3c). Community-driven swing, not candidate-driven.
 5. **At ≥40% Christian + no Christian party either side, ΔUDF +13.86pp** — vs +8.24pp at the same bin where a Christian party contested. The 16-AC table in §6 is the clean evidence.
 6. **Pala is the structural counter-example** — Mani C. Kappan personal vote + Shone George BJP marquee broke the community-vote pattern.
 7. **The Muslim story is structurally different** — premium is bigger (+12.8pp at ≥70% Muslim) but more stable; the 2026 Muslim swing was wave-sized, not amplified. Should be its own section, not merged with Christian.
@@ -374,31 +366,31 @@ wave. That matches the +4.6pp 2026 Christian premium identified in §1.
 
 > For context only. Not part of the UDF-strategy analysis above.
 
-| AC | District | Name | Chr% | Party 2021 | Party 2026 | Δ | LDF Δ | Won? |
-|---|---|---|---|---|---|---|---|---|
-| 9 | Kannur | Irikkur | 28.1 | 43.8 | 32.1 | −11.6 | −11.6 | lost |
-| 72 | Thrissur | Chalakudy | 44.4 | 42.5 | 35.1 | −7.4 | −7.4 | lost |
-| 74 | Ernakulam | Perumbavoor | 38.6 | 35.1 | 31.8 | −3.3 | −3.3 | lost |
-| 85 | Ernakulam | Piravom | 42.1 | 37.8 | 29.7 | −8.1 | −8.1 | lost |
-| 90 | Idukki | Thodupuzha | 40.6 | 34.0 | 27.9 | −6.2 | −6.2 | lost |
-| 91 | Idukki | Idukki | 47.3 | 47.5 | 36.6 | −10.9 | −10.9 | lost |
-| 93 | Kottayam | Pala | 52.0 | 39.3 | 35.3 | −4.0 | −4.0 | lost |
-| 94 | Kottayam | Kaduthuruthy | 44.1 | 42.2 | 31.5 | −10.6 | −10.6 | lost |
-| 99 | Kottayam | Changanassery | 43.5 | 44.8 | 39.5 | −5.4 | −5.4 | lost |
-| 100 | Kottayam | Kanjirappally | 43.0 | 43.8 | 37.6 | −6.2 | −6.2 | lost |
-| 101 | Kottayam | Poonjar | 41.5 | 41.9 | 34.8 | −7.1 | −7.1 | lost |
-| 112 | Pathanamthitta | Ranni | 46.9 | 41.2 | 40.8 | −0.4 | −0.4 | lost |
-| 120 | Kollam | Pathanapuram (KC(B)) | 20.2 | 49.1 | 43.8 | −5.3 | −5.3 | lost |
+| District | Name | Chr% | Party 2021 | Party 2026 | Δ | LDF Δ | Won? |
+|---|---|---|---|---|---|---|---|
+| Kannur | Irikkur | 28.1 | 43.8 | 32.1 | −11.6 | −11.6 | lost |
+| Thrissur | Chalakudy | 44.4 | 42.5 | 35.1 | −7.4 | −7.4 | lost |
+| Ernakulam | Perumbavoor | 38.6 | 35.1 | 31.8 | −3.3 | −3.3 | lost |
+| Ernakulam | Piravom | 42.1 | 37.8 | 29.7 | −8.1 | −8.1 | lost |
+| Idukki | Thodupuzha | 40.6 | 34.0 | 27.9 | −6.2 | −6.2 | lost |
+| Idukki | Idukki | 47.3 | 47.5 | 36.6 | −10.9 | −10.9 | lost |
+| Kottayam | Pala | 52.0 | 39.3 | 35.3 | −4.0 | −4.0 | lost |
+| Kottayam | Kaduthuruthy | 44.1 | 42.2 | 31.5 | −10.6 | −10.6 | lost |
+| Kottayam | Changanassery | 43.5 | 44.8 | 39.5 | −5.4 | −5.4 | lost |
+| Kottayam | Kanjirappally | 43.0 | 43.8 | 37.6 | −6.2 | −6.2 | lost |
+| Kottayam | Poonjar | 41.5 | 41.9 | 34.8 | −7.1 | −7.1 | lost |
+| Pathanamthitta | Ranni | 46.9 | 41.2 | 40.8 | −0.4 | −0.4 | lost |
+| Kollam | Pathanapuram (KC(B)) | 20.2 | 49.1 | 43.8 | −5.3 | −5.3 | lost |
 
 **LDF Christian parties lost all 13.** Mean KCM/KCB drop −6.65pp.
 
 ### Head-to-head (KEC vs KC(M) at the same AC, 2026) — for reference
 
-| AC | Name | KEC vote | KCM vote | UDF margin |
-|---|---|---|---|---|
-| 85 | Piravom | 59.2 | 29.7 | +29.5pp |
-| 90 | Thodupuzha | 58.4 | 27.9 | +30.5pp |
-| 94 | Kaduthuruthy | 56.8 | 31.5 | +25.3pp |
-| 99 | Changanassery | 46.4 | 39.5 | +6.9pp |
+| Name | KEC vote | KCM vote | UDF margin |
+|---|---|---|---|
+| Piravom | 59.2 | 29.7 | +29.5pp |
+| Thodupuzha | 58.4 | 27.9 | +30.5pp |
+| Kaduthuruthy | 56.8 | 31.5 | +25.3pp |
+| Changanassery | 46.4 | 39.5 | +6.9pp |
 
 **KEC won all 4 head-to-heads.**
