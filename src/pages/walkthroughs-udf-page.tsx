@@ -367,7 +367,10 @@ export function WalkthroughsUDFPage() {
                   <SheetTriggerButton>
                     See all 36 Christian-belt ACs →
                   </SheetTriggerButton>
-                  <SheetContent side="right">
+                  <SheetContent
+                    side="right"
+                    className="sm:max-w-[75vw]"
+                  >
                     <SheetHeader>
                       <SheetTitle>
                         The 36 Christian-belt ACs (≥30% Christian)
