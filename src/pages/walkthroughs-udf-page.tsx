@@ -690,14 +690,12 @@ export function WalkthroughsUDFPage() {
 
               <p className="mt-4">
                 <strong>
-                  UDF's "go get Christian votes ourselves via INC" out-performed
-                  its "delegate to KEC alliance" strategy.
+                  Christians voted Congress, not a Christian candidate or a
+                  Christian party.
                 </strong>{" "}
-                Within INC-direct, candidate religion didn't matter for swing
-                magnitude — Hindu INC slightly beat Christian INC, driven by
-                Udumbanchola (+22.6pp). All 18 INC-direct seats in Central-3
-                were UDF wins. Christians moved toward INC regardless of who INC
-                fielded.
+                Where UDF contested directly via INC — with a Hindu or a
+                Christian — it gained ~3pp more than where it ceded the seat
+                to its Christian ally KEC.
               </p>
             </CohortSection>
 
