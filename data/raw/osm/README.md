@@ -147,3 +147,74 @@ Mujahid-vs-Sunni split in north Kerala where mapping is denser.
    tag entirely. Name-based inference can recover most:
    `Church/Chapel/Cathedral` → Christian; `Masjid/Mosque/Juma` → Muslim;
    `Temple/Kshetram/Devasthanam` → Hindu.
+
+## Phase 2 outputs
+
+The raw Overpass dump above feeds two derived files:
+
+- **`scripts/classify-osm-pow.ts`** → `data/places-of-worship.json`
+  (per-POI, gitignored — regenerable in ~30s)
+- **`scripts/aggregate-ac-religion-pois.ts`** → `data/ac-religious-poi-inventory.json`
+  (per-AC, committed — the canonical product)
+- **`scripts/validate-classified-pow.ts`** — spot-check classifier against
+  known religious geography (Pala = Syro-Malabar, Aranmula = Marthoma,
+  Manjeri = Muslim Sunni, etc.).
+
+### Classification pipeline
+
+1. **Dedup** — 30m BFS-cluster, prefer richest-tagged element, merge tags
+2. **Religion normalise** — OSM `religion` tag through a variant map; if
+   missing, infer from name keywords (`Church` / `Masjid` / `Temple`)
+3. **Denomination normalise** — variant→canonical map (~150 variants → ~20
+   buckets); strip deity-name leaks (`Shiva`, `Hanuman`, etc.)
+4. **Cross-religion sanity** — drop denominations that disagree with the
+   religion (e.g. `religion=muslim` + `denomination=pentecostal`)
+5. **Name-regex inference** — for unclassified Christians / Muslims, scan
+   name for sub-rite keywords (`Marthoma`, `Syro-Malabar`, `Jacobite`,
+   `Salafi`, `Mujahid`, `Jamaat-e-Islami`, etc.)
+6. **Catholic disambiguation** — generic `catholic` POIs assigned to the
+   dominant sub-rite of their district / AC (Latin / Syro-Malabar /
+   Syro-Malankara) via a hand-curated prior
+7. **Spatial join** — point-in-polygon against `data/kerala-constituencies.geojson`
+
+### Confidence levels in per-POI output
+
+- `tag` — denomination from OSM `denomination` tag (after normalisation)
+- `name_strong` — unambiguous keyword in name (`Marthoma`, `Jacobite`, etc.)
+- `name_weak` — weaker signal, including AC-prior-based Catholic assignment
+- `inferred_religion_only` — religion known, denomination unknown
+- `unknown` — no signal
+
+Distribution (full Kerala): tag 1,315 · name_strong 1,203 · name_weak 1,407
+· inferred_religion_only 17,031 · unknown 1,270.
+
+### AC aggregate dominant-rite distribution (140 ACs)
+
+**Christian** (top sub-rite per AC):
+- Syro-Malabar: 43 ACs (interior — Kottayam, Idukki, Ernakulam, Thrissur)
+- Latin Catholic: 36 ACs (coastal + northern Kerala)
+- Indian Orthodox: 25 ACs (central Travancore — Tiruvalla/Niranam belt)
+- CSI: 11 ACs
+- Jacobite Syrian: 6 ACs
+- Marthoma: 5 ACs (Pathanamthitta — Ranni, Aranmula)
+- Pentecostal / Other: 2 ACs
+
+**Muslim**:
+- Sunni: 72 ACs
+- Salafi/Mujahid: 26 ACs (north Kerala Malabar stronghold)
+- Ahmadiyya: 3 ACs
+
+### Caveats for downstream analysis
+
+- **POI count is not population share.** Hindu temples are smaller and far
+  more numerous than churches/mosques; counting POIs overstates Hindu
+  presence. Use POI counts to identify *dominant sub-rite* among that
+  religion's POIs, not to estimate religious composition of an AC.
+- **57 POIs unjoined** to any AC (border edge cases, very small fraction).
+- **Catholic disambiguation is prior-based, not parish-based.** For 1,113
+  generic-`catholic` POIs, sub-rite is inferred from district/AC. The same
+  district sometimes contains both Latin and Syro-Malabar parishes; the
+  prior picks the dominant one but is imperfect at the parish level.
+- **AC name typo in geojson**: `Ma njeshwar` (with space) is the actual
+  string in `data/kerala-constituencies.geojson` — preserved as-is rather
+  than fixed here.

@@ -1,0 +1,3684 @@
+[
+  {
+    "ac_id": 1,
+    "ac_name": "Ma njeshwar",
+    "district": "kasaragod",
+    "total_pois": 62,
+    "by_religion": {
+      "christian": 2,
+      "muslim": 23,
+      "hindu": 34,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "(none)": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 18,
+      "sunni": 3,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 2,
+    "ac_name": "Kasaragod",
+    "district": "kasaragod",
+    "total_pois": 154,
+    "by_religion": {
+      "christian": 9,
+      "muslim": 65,
+      "hindu": 77,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "(none)": 5,
+      "pentecostal": 1,
+      "marthoma": 1,
+      "latin_catholic": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 59,
+      "sunni": 5,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 3,
+    "ac_name": "Udma",
+    "district": "kasaragod",
+    "total_pois": 242,
+    "by_religion": {
+      "christian": 4,
+      "muslim": 79,
+      "hindu": 155,
+      "other": 0,
+      "unknown": 4
+    },
+    "by_christian_denomination": {
+      "(none)": 2,
+      "latin_catholic": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 73,
+      "sunni": 6
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 4,
+    "ac_name": "Kanhangad",
+    "district": "kasaragod",
+    "total_pois": 185,
+    "by_religion": {
+      "christian": 35,
+      "muslim": 27,
+      "hindu": 115,
+      "other": 0,
+      "unknown": 8
+    },
+    "by_christian_denomination": {
+      "(none)": 14,
+      "latin_catholic": 18,
+      "syro_malabar": 1,
+      "knanaya_catholic": 1,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 20,
+      "sunni": 7
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 5,
+    "ac_name": "Trikaripur",
+    "district": "kasaragod",
+    "total_pois": 177,
+    "by_religion": {
+      "christian": 21,
+      "muslim": 40,
+      "hindu": 113,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 12,
+      "(none)": 7,
+      "syro_malabar": 1,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 39,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 6,
+    "ac_name": "Payyannur",
+    "district": "kannur",
+    "total_pois": 206,
+    "by_religion": {
+      "christian": 33,
+      "muslim": 26,
+      "hindu": 133,
+      "other": 0,
+      "unknown": 14
+    },
+    "by_christian_denomination": {
+      "(none)": 27,
+      "latin_catholic": 4,
+      "syro_malabar": 1,
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 26
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 7,
+    "ac_name": "Kalliasseri",
+    "district": "kannur",
+    "total_pois": 216,
+    "by_religion": {
+      "christian": 12,
+      "muslim": 52,
+      "hindu": 142,
+      "other": 1,
+      "unknown": 9
+    },
+    "by_christian_denomination": {
+      "(none)": 10,
+      "marthoma": 1,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 44,
+      "salafi_mujahid": 2,
+      "sunni": 6
+    },
+    "dominant_christian_denomination": "marthoma",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 8,
+    "ac_name": "Taliparamba",
+    "district": "kannur",
+    "total_pois": 160,
+    "by_religion": {
+      "christian": 12,
+      "muslim": 72,
+      "hindu": 76,
+      "other": 0,
+      "unknown": 0
+    },
+    "by_christian_denomination": {
+      "(none)": 8,
+      "latin_catholic": 4
+    },
+    "by_muslim_denomination": {
+      "sunni": 26,
+      "(none)": 43,
+      "jamaat_islami": 1,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 9,
+    "ac_name": "Irikkur",
+    "district": "kannur",
+    "total_pois": 88,
+    "by_religion": {
+      "christian": 45,
+      "muslim": 21,
+      "hindu": 19,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 18,
+      "(none)": 23,
+      "syro_malabar": 3,
+      "knanaya_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 19,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 10,
+    "ac_name": "Azhikode",
+    "district": "kannur",
+    "total_pois": 113,
+    "by_religion": {
+      "christian": 3,
+      "muslim": 48,
+      "hindu": 62,
+      "other": 0,
+      "unknown": 0
+    },
+    "by_christian_denomination": {
+      "(none)": 3
+    },
+    "by_muslim_denomination": {
+      "(none)": 43,
+      "salafi_mujahid": 2,
+      "sunni": 3
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 11,
+    "ac_name": "Kannur",
+    "district": "kannur",
+    "total_pois": 104,
+    "by_religion": {
+      "christian": 11,
+      "muslim": 26,
+      "hindu": 64,
+      "other": 1,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "marthoma": 1,
+      "(none)": 5,
+      "indian_orthodox": 1,
+      "csi": 3,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 22,
+      "sunni": 4
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 12,
+    "ac_name": "Dharmadam",
+    "district": "kannur",
+    "total_pois": 79,
+    "by_religion": {
+      "christian": 1,
+      "muslim": 17,
+      "hindu": 57,
+      "other": 2,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "(none)": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 17
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 13,
+    "ac_name": "Thalassery",
+    "district": "kannur",
+    "total_pois": 78,
+    "by_religion": {
+      "christian": 3,
+      "muslim": 32,
+      "hindu": 42,
+      "other": 0,
+      "unknown": 1
+    },
+    "by_christian_denomination": {
+      "(none)": 2,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 28,
+      "sunni": 3,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 14,
+    "ac_name": "Kuthuparamba",
+    "district": "kannur",
+    "total_pois": 35,
+    "by_religion": {
+      "christian": 3,
+      "muslim": 7,
+      "hindu": 19,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "other_christian": 2,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 7
+    },
+    "dominant_christian_denomination": "other_christian",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 15,
+    "ac_name": "Mattannur",
+    "district": "kannur",
+    "total_pois": 87,
+    "by_religion": {
+      "christian": 6,
+      "muslim": 27,
+      "hindu": 51,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 3,
+      "indian_orthodox": 1,
+      "(none)": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 26,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 16,
+    "ac_name": "Peravoor",
+    "district": "kannur",
+    "total_pois": 110,
+    "by_religion": {
+      "christian": 54,
+      "muslim": 7,
+      "hindu": 42,
+      "other": 2,
+      "unknown": 5
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 29,
+      "(none)": 17,
+      "syro_malabar": 2,
+      "indian_orthodox": 5,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 7
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 17,
+    "ac_name": "Mananthavady (ST)",
+    "district": "wayanad",
+    "total_pois": 143,
+    "by_religion": {
+      "christian": 55,
+      "muslim": 45,
+      "hindu": 38,
+      "other": 0,
+      "unknown": 5
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 15,
+      "indian_orthodox": 3,
+      "(none)": 34,
+      "pentecostal": 1,
+      "other_christian": 1,
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 35,
+      "sunni": 10
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 18,
+    "ac_name": "Sulthanbathery (S",
+    "district": "wayanad",
+    "total_pois": 143,
+    "by_religion": {
+      "christian": 56,
+      "muslim": 23,
+      "hindu": 49,
+      "other": 0,
+      "unknown": 15
+    },
+    "by_christian_denomination": {
+      "(none)": 31,
+      "syro_malabar": 12,
+      "indian_orthodox": 7,
+      "jacobite_syrian": 4,
+      "knanaya_catholic": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 22,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 19,
+    "ac_name": "Kalpetta",
+    "district": "wayanad",
+    "total_pois": 97,
+    "by_religion": {
+      "christian": 32,
+      "muslim": 27,
+      "hindu": 32,
+      "other": 1,
+      "unknown": 5
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 4,
+      "(none)": 20,
+      "csi": 1,
+      "syro_malabar": 6,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 24,
+      "sunni": 2,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 20,
+    "ac_name": "Vadakara",
+    "district": "kozhikode",
+    "total_pois": 55,
+    "by_religion": {
+      "christian": 2,
+      "muslim": 22,
+      "hindu": 27,
+      "other": 0,
+      "unknown": 4
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 1,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 22
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 21,
+    "ac_name": "Kuttiadi",
+    "district": "kozhikode",
+    "total_pois": 42,
+    "by_religion": {
+      "christian": 0,
+      "muslim": 17,
+      "hindu": 23,
+      "other": 0,
+      "unknown": 2
+    },
+    "by_christian_denomination": {},
+    "by_muslim_denomination": {
+      "(none)": 13,
+      "sunni": 3,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 22,
+    "ac_name": "Nadapuram",
+    "district": "kozhikode",
+    "total_pois": 40,
+    "by_religion": {
+      "christian": 11,
+      "muslim": 17,
+      "hindu": 10,
+      "other": 0,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "(none)": 5,
+      "latin_catholic": 4,
+      "syro_malabar": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 16,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 23,
+    "ac_name": "Quilandy",
+    "district": "kozhikode",
+    "total_pois": 75,
+    "by_religion": {
+      "christian": 1,
+      "muslim": 26,
+      "hindu": 48,
+      "other": 0,
+      "unknown": 0
+    },
+    "by_christian_denomination": {
+      "(none)": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 22,
+      "sunni": 2,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 24,
+    "ac_name": "Perambra",
+    "district": "kozhikode",
+    "total_pois": 50,
+    "by_religion": {
+      "christian": 11,
+      "muslim": 13,
+      "hindu": 26,
+      "other": 0,
+      "unknown": 0
+    },
+    "by_christian_denomination": {
+      "other_christian": 1,
+      "latin_catholic": 9,
+      "indian_orthodox": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 9,
+      "sunni": 3,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 25,
+    "ac_name": "Balusseri (SC)",
+    "district": "kozhikode",
+    "total_pois": 100,
+    "by_religion": {
+      "christian": 19,
+      "muslim": 38,
+      "hindu": 42,
+      "other": 0,
+      "unknown": 1
+    },
+    "by_christian_denomination": {
+      "(none)": 13,
+      "indian_orthodox": 2,
+      "latin_catholic": 2,
+      "csi": 1,
+      "syro_malabar": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 37,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 26,
+    "ac_name": "Elathur",
+    "district": "kozhikode",
+    "total_pois": 107,
+    "by_religion": {
+      "christian": 0,
+      "muslim": 25,
+      "hindu": 75,
+      "other": 0,
+      "unknown": 7
+    },
+    "by_christian_denomination": {},
+    "by_muslim_denomination": {
+      "(none)": 23,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 27,
+    "ac_name": "Kozhikode North",
+    "district": "kozhikode",
+    "total_pois": 131,
+    "by_religion": {
+      "christian": 23,
+      "muslim": 43,
+      "hindu": 63,
+      "other": 0,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 10,
+      "(none)": 7,
+      "jacobite_syrian": 1,
+      "other_christian": 2,
+      "indian_orthodox": 1,
+      "syro_malabar": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 31,
+      "sunni": 6,
+      "salafi_mujahid": 4,
+      "other_muslim": 1,
+      "ahmadiyya": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 28,
+    "ac_name": "Kozhikode South",
+    "district": "kozhikode",
+    "total_pois": 76,
+    "by_religion": {
+      "christian": 4,
+      "muslim": 35,
+      "hindu": 36,
+      "other": 0,
+      "unknown": 1
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 1,
+      "latin_catholic": 3
+    },
+    "by_muslim_denomination": {
+      "(none)": 29,
+      "salafi_mujahid": 4,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 29,
+    "ac_name": "Beypore",
+    "district": "kozhikode",
+    "total_pois": 70,
+    "by_religion": {
+      "christian": 3,
+      "muslim": 33,
+      "hindu": 28,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "(none)": 2,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 31,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 30,
+    "ac_name": "Kunnamangalam",
+    "district": "kozhikode",
+    "total_pois": 128,
+    "by_religion": {
+      "christian": 11,
+      "muslim": 62,
+      "hindu": 54,
+      "other": 0,
+      "unknown": 1
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 3,
+      "(none)": 5,
+      "latin_catholic": 2,
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 42,
+      "other_muslim": 2,
+      "sunni": 13,
+      "jamaat_islami": 2,
+      "salafi_mujahid": 3
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 31,
+    "ac_name": "Koduvally",
+    "district": "kozhikode",
+    "total_pois": 120,
+    "by_religion": {
+      "christian": 17,
+      "muslim": 81,
+      "hindu": 20,
+      "other": 0,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 7,
+      "latin_catholic": 2,
+      "(none)": 8
+    },
+    "by_muslim_denomination": {
+      "(none)": 66,
+      "sunni": 11,
+      "salafi_mujahid": 3,
+      "other_muslim": 1
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 32,
+    "ac_name": "Thiruvambadi",
+    "district": "kozhikode",
+    "total_pois": 139,
+    "by_religion": {
+      "christian": 36,
+      "muslim": 77,
+      "hindu": 22,
+      "other": 0,
+      "unknown": 4
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 14,
+      "syro_malabar": 3,
+      "indian_orthodox": 9,
+      "(none)": 8,
+      "pentecostal": 1,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 10,
+      "salafi_mujahid": 7,
+      "(none)": 58,
+      "jamaat_islami": 2
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 33,
+    "ac_name": "Kondotty",
+    "district": "malappuram",
+    "total_pois": 112,
+    "by_religion": {
+      "christian": 0,
+      "muslim": 77,
+      "hindu": 29,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {},
+    "by_muslim_denomination": {
+      "(none)": 64,
+      "sunni": 12,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 34,
+    "ac_name": "Ernad",
+    "district": "malappuram",
+    "total_pois": 126,
+    "by_religion": {
+      "christian": 4,
+      "muslim": 99,
+      "hindu": 17,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "(none)": 4
+    },
+    "by_muslim_denomination": {
+      "(none)": 71,
+      "sunni": 17,
+      "salafi_mujahid": 11
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 35,
+    "ac_name": "Nilambur",
+    "district": "malappuram",
+    "total_pois": 86,
+    "by_religion": {
+      "christian": 26,
+      "muslim": 37,
+      "hindu": 22,
+      "other": 0,
+      "unknown": 1
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 9,
+      "syro_malabar": 6,
+      "(none)": 7,
+      "pentecostal": 4
+    },
+    "by_muslim_denomination": {
+      "(none)": 35,
+      "salafi_mujahid": 1,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 36,
+    "ac_name": "Wandoor (SC)",
+    "district": "malappuram",
+    "total_pois": 85,
+    "by_religion": {
+      "christian": 6,
+      "muslim": 67,
+      "hindu": 9,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "(none)": 5,
+      "syro_malabar": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 59,
+      "salafi_mujahid": 4,
+      "sunni": 4
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 37,
+    "ac_name": "Manjeri",
+    "district": "malappuram",
+    "total_pois": 131,
+    "by_religion": {
+      "christian": 7,
+      "muslim": 77,
+      "hindu": 41,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 2,
+      "(none)": 3,
+      "indian_orthodox": 1,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 67,
+      "sunni": 8,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 38,
+    "ac_name": "Perinthalmanna",
+    "district": "malappuram",
+    "total_pois": 127,
+    "by_religion": {
+      "christian": 5,
+      "muslim": 69,
+      "hindu": 35,
+      "other": 0,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "(none)": 3,
+      "indian_orthodox": 1,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 52,
+      "salafi_mujahid": 2,
+      "sunni": 15
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 39,
+    "ac_name": "Mankada",
+    "district": "malappuram",
+    "total_pois": 169,
+    "by_religion": {
+      "christian": 4,
+      "muslim": 122,
+      "hindu": 37,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "(none)": 2,
+      "indian_orthodox": 1,
+      "syro_malabar": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 100,
+      "sunni": 16,
+      "salafi_mujahid": 6
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 40,
+    "ac_name": "Malappuram",
+    "district": "malappuram",
+    "total_pois": 101,
+    "by_religion": {
+      "christian": 1,
+      "muslim": 77,
+      "hindu": 16,
+      "other": 0,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 32,
+      "(none)": 44,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 41,
+    "ac_name": "Vengara",
+    "district": "malappuram",
+    "total_pois": 106,
+    "by_religion": {
+      "christian": 2,
+      "muslim": 86,
+      "hindu": 9,
+      "other": 0,
+      "unknown": 9
+    },
+    "by_christian_denomination": {
+      "jacobite_syrian": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 66,
+      "sunni": 15,
+      "salafi_mujahid": 4,
+      "jamaat_islami": 1
+    },
+    "dominant_christian_denomination": "jacobite_syrian",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 42,
+    "ac_name": "Vallikunnu",
+    "district": "malappuram",
+    "total_pois": 84,
+    "by_religion": {
+      "christian": 1,
+      "muslim": 49,
+      "hindu": 28,
+      "other": 2,
+      "unknown": 4
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 36,
+      "sunni": 6,
+      "salafi_mujahid": 7
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 43,
+    "ac_name": "Tirurangadi",
+    "district": "malappuram",
+    "total_pois": 72,
+    "by_religion": {
+      "christian": 3,
+      "muslim": 59,
+      "hindu": 9,
+      "other": 0,
+      "unknown": 1
+    },
+    "by_christian_denomination": {
+      "csi": 1,
+      "(none)": 2
+    },
+    "by_muslim_denomination": {
+      "sunni": 31,
+      "(none)": 20,
+      "salafi_mujahid": 8
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 44,
+    "ac_name": "Tanur",
+    "district": "malappuram",
+    "total_pois": 59,
+    "by_religion": {
+      "christian": 0,
+      "muslim": 44,
+      "hindu": 13,
+      "other": 0,
+      "unknown": 2
+    },
+    "by_christian_denomination": {},
+    "by_muslim_denomination": {
+      "(none)": 34,
+      "salafi_mujahid": 5,
+      "sunni": 5
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 45,
+    "ac_name": "Tirur",
+    "district": "malappuram",
+    "total_pois": 91,
+    "by_religion": {
+      "christian": 6,
+      "muslim": 66,
+      "hindu": 16,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "pentecostal": 1,
+      "(none)": 3,
+      "syro_malabar": 1,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 13,
+      "(none)": 49,
+      "salafi_mujahid": 4
+    },
+    "dominant_christian_denomination": "pentecostal",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 46,
+    "ac_name": "Kottakkal",
+    "district": "malappuram",
+    "total_pois": 152,
+    "by_religion": {
+      "christian": 1,
+      "muslim": 104,
+      "hindu": 43,
+      "other": 0,
+      "unknown": 4
+    },
+    "by_christian_denomination": {
+      "(none)": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 88,
+      "sunni": 11,
+      "jamaat_islami": 2,
+      "salafi_mujahid": 3
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 47,
+    "ac_name": "Thavanur",
+    "district": "malappuram",
+    "total_pois": 75,
+    "by_religion": {
+      "christian": 0,
+      "muslim": 26,
+      "hindu": 44,
+      "other": 0,
+      "unknown": 5
+    },
+    "by_christian_denomination": {},
+    "by_muslim_denomination": {
+      "(none)": 22,
+      "sunni": 4
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 48,
+    "ac_name": "Ponnani",
+    "district": "malappuram",
+    "total_pois": 104,
+    "by_religion": {
+      "christian": 1,
+      "muslim": 61,
+      "hindu": 38,
+      "other": 1,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "(none)": 1
+    },
+    "by_muslim_denomination": {
+      "salafi_mujahid": 5,
+      "(none)": 48,
+      "sunni": 6,
+      "jamaat_islami": 2
+    },
+    "dominant_christian_denomination": null,
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 49,
+    "ac_name": "Thrithala",
+    "district": "palakkad",
+    "total_pois": 105,
+    "by_religion": {
+      "christian": 8,
+      "muslim": 34,
+      "hindu": 63,
+      "other": 0,
+      "unknown": 0
+    },
+    "by_christian_denomination": {
+      "(none)": 4,
+      "marthoma": 1,
+      "indian_orthodox": 2,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 29,
+      "salafi_mujahid": 4,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 50,
+    "ac_name": "Pattambi",
+    "district": "palakkad",
+    "total_pois": 89,
+    "by_religion": {
+      "christian": 1,
+      "muslim": 39,
+      "hindu": 47,
+      "other": 0,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 36,
+      "salafi_mujahid": 2,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "jacobite_syrian",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 51,
+    "ac_name": "Shornur",
+    "district": "palakkad",
+    "total_pois": 114,
+    "by_religion": {
+      "christian": 6,
+      "muslim": 22,
+      "hindu": 86,
+      "other": 0,
+      "unknown": 0
+    },
+    "by_christian_denomination": {
+      "(none)": 4,
+      "indian_orthodox": 1,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 19,
+      "salafi_mujahid": 1,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 52,
+    "ac_name": "Ottappalam",
+    "district": "palakkad",
+    "total_pois": 155,
+    "by_religion": {
+      "christian": 10,
+      "muslim": 25,
+      "hindu": 116,
+      "other": 0,
+      "unknown": 4
+    },
+    "by_christian_denomination": {
+      "(none)": 9,
+      "syro_malabar": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 25
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 53,
+    "ac_name": "Kongad(SC)",
+    "district": "palakkad",
+    "total_pois": 94,
+    "by_religion": {
+      "christian": 20,
+      "muslim": 24,
+      "hindu": 47,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 4,
+      "(none)": 11,
+      "syro_malabar": 3,
+      "marthoma": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 22,
+      "sunni": 1,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 54,
+    "ac_name": "Mannarkkad",
+    "district": "palakkad",
+    "total_pois": 104,
+    "by_religion": {
+      "christian": 22,
+      "muslim": 47,
+      "hindu": 32,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 9,
+      "syro_malabar": 3,
+      "marthoma": 2,
+      "(none)": 7,
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 8,
+      "(none)": 34,
+      "ahmadiyya": 2,
+      "salafi_mujahid": 3
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 55,
+    "ac_name": "Malampuzha",
+    "district": "palakkad",
+    "total_pois": 194,
+    "by_religion": {
+      "christian": 39,
+      "muslim": 21,
+      "hindu": 129,
+      "other": 0,
+      "unknown": 5
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 2,
+      "(none)": 28,
+      "marthoma": 1,
+      "pentecostal": 1,
+      "syro_malabar": 6,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "salafi_mujahid": 2,
+      "(none)": 17,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 56,
+    "ac_name": "Palakkad",
+    "district": "palakkad",
+    "total_pois": 130,
+    "by_religion": {
+      "christian": 12,
+      "muslim": 28,
+      "hindu": 88,
+      "other": 0,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "(none)": 6,
+      "syro_malabar": 3,
+      "csi": 1,
+      "jacobite_syrian": 1,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 22,
+      "sunni": 3,
+      "salafi_mujahid": 3
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 57,
+    "ac_name": "Tarur (SC)",
+    "district": "palakkad",
+    "total_pois": 78,
+    "by_religion": {
+      "christian": 8,
+      "muslim": 10,
+      "hindu": 57,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "(none)": 6,
+      "syro_malabar": 1,
+      "indian_orthodox": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 9,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 58,
+    "ac_name": "Chittur",
+    "district": "palakkad",
+    "total_pois": 68,
+    "by_religion": {
+      "christian": 6,
+      "muslim": 6,
+      "hindu": 54,
+      "other": 0,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 1,
+      "(none)": 3,
+      "latin_catholic": 1,
+      "indian_orthodox": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 1,
+      "(none)": 5
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 59,
+    "ac_name": "Nemmara",
+    "district": "palakkad",
+    "total_pois": 83,
+    "by_religion": {
+      "christian": 4,
+      "muslim": 12,
+      "hindu": 63,
+      "other": 1,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "(none)": 3,
+      "syro_malabar": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 11,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 60,
+    "ac_name": "Alathur",
+    "district": "palakkad",
+    "total_pois": 40,
+    "by_religion": {
+      "christian": 5,
+      "muslim": 3,
+      "hindu": 31,
+      "other": 0,
+      "unknown": 1
+    },
+    "by_christian_denomination": {
+      "(none)": 4,
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 3
+    },
+    "dominant_christian_denomination": "jacobite_syrian",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 61,
+    "ac_name": "Chelakkara (SC)",
+    "district": "thrissur",
+    "total_pois": 126,
+    "by_religion": {
+      "christian": 28,
+      "muslim": 20,
+      "hindu": 75,
+      "other": 1,
+      "unknown": 2
+    },
+    "by_christian_denomination": {
+      "(none)": 19,
+      "indian_orthodox": 4,
+      "jacobite_syrian": 3,
+      "syro_malabar": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 18,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 62,
+    "ac_name": "Kunnamkulam",
+    "district": "thrissur",
+    "total_pois": 278,
+    "by_religion": {
+      "christian": 94,
+      "muslim": 26,
+      "hindu": 137,
+      "other": 1,
+      "unknown": 20
+    },
+    "by_christian_denomination": {
+      "(none)": 58,
+      "indian_orthodox": 14,
+      "marthoma": 5,
+      "brethren": 1,
+      "pentecostal": 1,
+      "jacobite_syrian": 1,
+      "syro_malabar": 13,
+      "other_christian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 23,
+      "sunni": 1,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 63,
+    "ac_name": "Guruvayoor",
+    "district": "thrissur",
+    "total_pois": 118,
+    "by_religion": {
+      "christian": 17,
+      "muslim": 28,
+      "hindu": 67,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "(none)": 15,
+      "syro_malabar": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 23,
+      "sunni": 3,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 64,
+    "ac_name": "Manalur",
+    "district": "thrissur",
+    "total_pois": 258,
+    "by_religion": {
+      "christian": 66,
+      "muslim": 39,
+      "hindu": 141,
+      "other": 0,
+      "unknown": 12
+    },
+    "by_christian_denomination": {
+      "(none)": 55,
+      "syro_malabar": 10,
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 37,
+      "sunni": 1,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 65,
+    "ac_name": "Wadakkanchery",
+    "district": "thrissur",
+    "total_pois": 224,
+    "by_religion": {
+      "christian": 59,
+      "muslim": 18,
+      "hindu": 137,
+      "other": 1,
+      "unknown": 9
+    },
+    "by_christian_denomination": {
+      "(none)": 45,
+      "syro_malabar": 11,
+      "other_christian": 1,
+      "indian_orthodox": 1,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 17,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 66,
+    "ac_name": "Ollur",
+    "district": "thrissur",
+    "total_pois": 226,
+    "by_religion": {
+      "christian": 118,
+      "muslim": 12,
+      "hindu": 84,
+      "other": 0,
+      "unknown": 12
+    },
+    "by_christian_denomination": {
+      "(none)": 67,
+      "brethren": 5,
+      "syro_malabar": 20,
+      "pentecostal": 10,
+      "other_christian": 3,
+      "indian_orthodox": 7,
+      "jacobite_syrian": 2,
+      "syro_malankara": 1,
+      "marthoma": 2,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 12
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 67,
+    "ac_name": "Thrissur",
+    "district": "thrissur",
+    "total_pois": 210,
+    "by_religion": {
+      "christian": 66,
+      "muslim": 14,
+      "hindu": 111,
+      "other": 1,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 12,
+      "other_christian": 3,
+      "(none)": 46,
+      "indian_orthodox": 4,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 13,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 68,
+    "ac_name": "Nattika(SC)",
+    "district": "thrissur",
+    "total_pois": 216,
+    "by_religion": {
+      "christian": 36,
+      "muslim": 37,
+      "hindu": 133,
+      "other": 1,
+      "unknown": 9
+    },
+    "by_christian_denomination": {
+      "(none)": 30,
+      "syro_malabar": 5,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 33,
+      "salafi_mujahid": 2,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 69,
+    "ac_name": "Kaipamangalam",
+    "district": "thrissur",
+    "total_pois": 129,
+    "by_religion": {
+      "christian": 9,
+      "muslim": 44,
+      "hindu": 69,
+      "other": 0,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "(none)": 7,
+      "syro_malabar": 2
+    },
+    "by_muslim_denomination": {
+      "sunni": 3,
+      "(none)": 39,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 70,
+    "ac_name": "Irinjalakuda",
+    "district": "thrissur",
+    "total_pois": 253,
+    "by_religion": {
+      "christian": 88,
+      "muslim": 10,
+      "hindu": 136,
+      "other": 1,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 28,
+      "(none)": 58,
+      "indian_orthodox": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 2,
+      "(none)": 8
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 71,
+    "ac_name": "Puthukkad",
+    "district": "thrissur",
+    "total_pois": 209,
+    "by_religion": {
+      "christian": 66,
+      "muslim": 12,
+      "hindu": 112,
+      "other": 0,
+      "unknown": 19
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 18,
+      "(none)": 46,
+      "jacobite_syrian": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 11,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 72,
+    "ac_name": "Chalakudy",
+    "district": "thrissur",
+    "total_pois": 192,
+    "by_religion": {
+      "christian": 90,
+      "muslim": 6,
+      "hindu": 73,
+      "other": 0,
+      "unknown": 23
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 37,
+      "(none)": 43,
+      "latin_catholic": 5,
+      "indian_orthodox": 4,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 6
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 73,
+    "ac_name": "Kodungallur",
+    "district": "thrissur",
+    "total_pois": 250,
+    "by_religion": {
+      "christian": 66,
+      "muslim": 32,
+      "hindu": 135,
+      "other": 1,
+      "unknown": 16
+    },
+    "by_christian_denomination": {
+      "(none)": 37,
+      "latin_catholic": 23,
+      "syro_malabar": 3,
+      "brethren": 1,
+      "marthoma": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 29,
+      "sunni": 3
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 74,
+    "ac_name": "Perumbavoor",
+    "district": "ernakulam",
+    "total_pois": 210,
+    "by_religion": {
+      "christian": 87,
+      "muslim": 17,
+      "hindu": 86,
+      "other": 0,
+      "unknown": 20
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 4,
+      "syro_malabar": 11,
+      "marthoma": 6,
+      "csi": 1,
+      "(none)": 47,
+      "other_christian": 3,
+      "pentecostal": 4,
+      "brethren": 1,
+      "jacobite_syrian": 10
+    },
+    "by_muslim_denomination": {
+      "(none)": 17
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 75,
+    "ac_name": "Angamaly",
+    "district": "ernakulam",
+    "total_pois": 209,
+    "by_religion": {
+      "christian": 133,
+      "muslim": 2,
+      "hindu": 65,
+      "other": 0,
+      "unknown": 9
+    },
+    "by_christian_denomination": {
+      "(none)": 75,
+      "syro_malabar": 37,
+      "jacobite_syrian": 14,
+      "indian_orthodox": 3,
+      "other_christian": 1,
+      "brethren": 1,
+      "latin_catholic": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 76,
+    "ac_name": "Aluva",
+    "district": "ernakulam",
+    "total_pois": 243,
+    "by_religion": {
+      "christian": 78,
+      "muslim": 74,
+      "hindu": 81,
+      "other": 0,
+      "unknown": 10
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 1,
+      "(none)": 46,
+      "syro_malabar": 18,
+      "jacobite_syrian": 8,
+      "marthoma": 2,
+      "csi": 1,
+      "pentecostal": 2
+    },
+    "by_muslim_denomination": {
+      "sunni": 5,
+      "(none)": 64,
+      "salafi_mujahid": 4,
+      "jamaat_islami": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 77,
+    "ac_name": "Kalamassery",
+    "district": "ernakulam",
+    "total_pois": 154,
+    "by_religion": {
+      "christian": 43,
+      "muslim": 56,
+      "hindu": 50,
+      "other": 0,
+      "unknown": 5
+    },
+    "by_christian_denomination": {
+      "(none)": 30,
+      "syro_malabar": 5,
+      "indian_orthodox": 2,
+      "jacobite_syrian": 5,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 45,
+      "salafi_mujahid": 7,
+      "sunni": 4
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 78,
+    "ac_name": "Paravur",
+    "district": "ernakulam",
+    "total_pois": 261,
+    "by_religion": {
+      "christian": 99,
+      "muslim": 22,
+      "hindu": 121,
+      "other": 1,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "(none)": 77,
+      "syro_malabar": 21,
+      "indian_orthodox": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 22
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 79,
+    "ac_name": "Vypeen",
+    "district": "ernakulam",
+    "total_pois": 118,
+    "by_religion": {
+      "christian": 47,
+      "muslim": 8,
+      "hindu": 55,
+      "other": 0,
+      "unknown": 8
+    },
+    "by_christian_denomination": {
+      "jacobite_syrian": 3,
+      "(none)": 32,
+      "latin_catholic": 12
+    },
+    "by_muslim_denomination": {
+      "(none)": 8
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 80,
+    "ac_name": "Kochi",
+    "district": "ernakulam",
+    "total_pois": 130,
+    "by_religion": {
+      "christian": 61,
+      "muslim": 13,
+      "hindu": 47,
+      "other": 2,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "(none)": 39,
+      "latin_catholic": 19,
+      "pentecostal": 1,
+      "indian_orthodox": 2
+    },
+    "by_muslim_denomination": {
+      "ahmadiyya": 1,
+      "(none)": 12
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "ahmadiyya"
+  },
+  {
+    "ac_id": 81,
+    "ac_name": "Thripunithura",
+    "district": "ernakulam",
+    "total_pois": 155,
+    "by_religion": {
+      "christian": 40,
+      "muslim": 12,
+      "hindu": 97,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "(none)": 29,
+      "indian_orthodox": 3,
+      "jacobite_syrian": 1,
+      "latin_catholic": 3,
+      "syro_malabar": 4
+    },
+    "by_muslim_denomination": {
+      "(none)": 11,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 82,
+    "ac_name": "Ernakulam",
+    "district": "ernakulam",
+    "total_pois": 120,
+    "by_religion": {
+      "christian": 52,
+      "muslim": 20,
+      "hindu": 40,
+      "other": 2,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 17,
+      "syro_malabar": 2,
+      "(none)": 24,
+      "indian_orthodox": 2,
+      "other_christian": 4,
+      "brethren": 2,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 1,
+      "(none)": 15,
+      "salafi_mujahid": 3,
+      "ahmadiyya": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 83,
+    "ac_name": "Thrikkakara",
+    "district": "ernakulam",
+    "total_pois": 161,
+    "by_religion": {
+      "christian": 69,
+      "muslim": 26,
+      "hindu": 58,
+      "other": 1,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 23,
+      "(none)": 31,
+      "indian_orthodox": 4,
+      "pentecostal": 3,
+      "csi": 2,
+      "brethren": 1,
+      "knanaya_catholic": 1,
+      "marthoma": 2,
+      "latin_catholic": 1,
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 2,
+      "salafi_mujahid": 4,
+      "(none)": 19,
+      "ahmadiyya": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 84,
+    "ac_name": "Kunnathunad (SC)",
+    "district": "ernakulam",
+    "total_pois": 243,
+    "by_religion": {
+      "christian": 110,
+      "muslim": 29,
+      "hindu": 84,
+      "other": 2,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "jacobite_syrian": 24,
+      "(none)": 54,
+      "indian_orthodox": 15,
+      "pentecostal": 4,
+      "marthoma": 4,
+      "latin_catholic": 1,
+      "syro_malabar": 6,
+      "other_christian": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 28,
+      "ahmadiyya": 1
+    },
+    "dominant_christian_denomination": "jacobite_syrian",
+    "dominant_muslim_denomination": "ahmadiyya"
+  },
+  {
+    "ac_id": 85,
+    "ac_name": "Piravom",
+    "district": "ernakulam",
+    "total_pois": 399,
+    "by_religion": {
+      "christian": 235,
+      "muslim": 10,
+      "hindu": 141,
+      "other": 0,
+      "unknown": 13
+    },
+    "by_christian_denomination": {
+      "jacobite_syrian": 38,
+      "syro_malabar": 18,
+      "(none)": 124,
+      "indian_orthodox": 35,
+      "latin_catholic": 2,
+      "other_christian": 1,
+      "marthoma": 2,
+      "pentecostal": 9,
+      "brethren": 1,
+      "csi": 3,
+      "syro_malankara": 1,
+      "knanaya_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "salafi_mujahid": 1,
+      "(none)": 9
+    },
+    "dominant_christian_denomination": "jacobite_syrian",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 86,
+    "ac_name": "Muvattupuzha",
+    "district": "ernakulam",
+    "total_pois": 249,
+    "by_religion": {
+      "christian": 116,
+      "muslim": 49,
+      "hindu": 66,
+      "other": 0,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 31,
+      "(none)": 45,
+      "jacobite_syrian": 22,
+      "indian_orthodox": 11,
+      "csi": 2,
+      "pentecostal": 3,
+      "brethren": 1,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 5,
+      "(none)": 44
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 87,
+    "ac_name": "Kothamangalam",
+    "district": "ernakulam",
+    "total_pois": 179,
+    "by_religion": {
+      "christian": 81,
+      "muslim": 34,
+      "hindu": 43,
+      "other": 0,
+      "unknown": 21
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 17,
+      "(none)": 37,
+      "jacobite_syrian": 19,
+      "marthoma": 4,
+      "indian_orthodox": 3,
+      "other_christian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 30,
+      "sunni": 4
+    },
+    "dominant_christian_denomination": "jacobite_syrian",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 88,
+    "ac_name": "Devikulam (SC)",
+    "district": "idukki",
+    "total_pois": 123,
+    "by_religion": {
+      "christian": 61,
+      "muslim": 13,
+      "hindu": 37,
+      "other": 0,
+      "unknown": 12
+    },
+    "by_christian_denomination": {
+      "(none)": 30,
+      "jacobite_syrian": 10,
+      "csi": 3,
+      "syro_malabar": 12,
+      "indian_orthodox": 3,
+      "latin_catholic": 2,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 11,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 89,
+    "ac_name": "Udumbanchola",
+    "district": "idukki",
+    "total_pois": 127,
+    "by_religion": {
+      "christian": 71,
+      "muslim": 7,
+      "hindu": 32,
+      "other": 0,
+      "unknown": 17
+    },
+    "by_christian_denomination": {
+      "(none)": 38,
+      "syro_malabar": 20,
+      "marthoma": 2,
+      "indian_orthodox": 5,
+      "jacobite_syrian": 4,
+      "csi": 1,
+      "other_christian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 7
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 90,
+    "ac_name": "Thodupuzha",
+    "district": "idukki",
+    "total_pois": 224,
+    "by_religion": {
+      "christian": 106,
+      "muslim": 35,
+      "hindu": 65,
+      "other": 0,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 37,
+      "(none)": 57,
+      "csi": 3,
+      "indian_orthodox": 1,
+      "jacobite_syrian": 7,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 31,
+      "salafi_mujahid": 1,
+      "sunni": 3
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 91,
+    "ac_name": "Idukki",
+    "district": "idukki",
+    "total_pois": 220,
+    "by_religion": {
+      "christian": 132,
+      "muslim": 9,
+      "hindu": 59,
+      "other": 0,
+      "unknown": 20
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 33,
+      "(none)": 72,
+      "csi": 5,
+      "other_christian": 2,
+      "jacobite_syrian": 5,
+      "marthoma": 3,
+      "knanaya_catholic": 2,
+      "pentecostal": 5,
+      "indian_orthodox": 4,
+      "brethren": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 8,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 92,
+    "ac_name": "Peerumade",
+    "district": "idukki",
+    "total_pois": 147,
+    "by_religion": {
+      "christian": 82,
+      "muslim": 13,
+      "hindu": 34,
+      "other": 0,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "(none)": 42,
+      "indian_orthodox": 10,
+      "marthoma": 4,
+      "syro_malabar": 14,
+      "csi": 6,
+      "brethren": 1,
+      "latin_catholic": 2,
+      "jacobite_syrian": 1,
+      "other_christian": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 9,
+      "salafi_mujahid": 1,
+      "sunni": 3
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 93,
+    "ac_name": "Pala",
+    "district": "kottayam",
+    "total_pois": 234,
+    "by_religion": {
+      "christian": 149,
+      "muslim": 1,
+      "hindu": 68,
+      "other": 0,
+      "unknown": 16
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 63,
+      "(none)": 72,
+      "marthoma": 2,
+      "pentecostal": 2,
+      "csi": 7,
+      "knanaya_catholic": 1,
+      "latin_catholic": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 94,
+    "ac_name": "Kaduthuruthy",
+    "district": "kottayam",
+    "total_pois": 266,
+    "by_religion": {
+      "christian": 147,
+      "muslim": 2,
+      "hindu": 99,
+      "other": 0,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 35,
+      "(none)": 78,
+      "knanaya_catholic": 9,
+      "csi": 8,
+      "jacobite_syrian": 6,
+      "indian_orthodox": 6,
+      "other_christian": 1,
+      "syro_malankara": 1,
+      "latin_catholic": 2,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 95,
+    "ac_name": "Vaikom (SC)",
+    "district": "kottayam",
+    "total_pois": 176,
+    "by_religion": {
+      "christian": 41,
+      "muslim": 14,
+      "hindu": 113,
+      "other": 0,
+      "unknown": 8
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 7,
+      "(none)": 26,
+      "pentecostal": 1,
+      "indian_orthodox": 1,
+      "knanaya_catholic": 3,
+      "jacobite_syrian": 1,
+      "csi": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 13,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 96,
+    "ac_name": "Ettumanoor",
+    "district": "kottayam",
+    "total_pois": 209,
+    "by_religion": {
+      "christian": 91,
+      "muslim": 12,
+      "hindu": 91,
+      "other": 0,
+      "unknown": 15
+    },
+    "by_christian_denomination": {
+      "(none)": 52,
+      "knanaya_catholic": 8,
+      "pentecostal": 3,
+      "jacobite_syrian": 7,
+      "syro_malabar": 15,
+      "latin_catholic": 1,
+      "marthoma": 2,
+      "other_christian": 1,
+      "indian_orthodox": 1,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 12
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 97,
+    "ac_name": "Kottayam",
+    "district": "kottayam",
+    "total_pois": 235,
+    "by_religion": {
+      "christian": 122,
+      "muslim": 12,
+      "hindu": 86,
+      "other": 0,
+      "unknown": 15
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 16,
+      "syro_malabar": 13,
+      "(none)": 56,
+      "latin_catholic": 2,
+      "pentecostal": 8,
+      "jacobite_syrian": 7,
+      "knanaya_catholic": 4,
+      "csi": 7,
+      "marthoma": 6,
+      "other_christian": 1,
+      "knanaya_jacobite": 1,
+      "brethren": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 12
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 98,
+    "ac_name": "Puthuppally",
+    "district": "kottayam",
+    "total_pois": 326,
+    "by_religion": {
+      "christian": 201,
+      "muslim": 1,
+      "hindu": 100,
+      "other": 0,
+      "unknown": 24
+    },
+    "by_christian_denomination": {
+      "(none)": 97,
+      "indian_orthodox": 26,
+      "marthoma": 6,
+      "syro_malabar": 19,
+      "jacobite_syrian": 22,
+      "pentecostal": 19,
+      "latin_catholic": 2,
+      "csi": 5,
+      "other_christian": 1,
+      "brethren": 1,
+      "knanaya_catholic": 3
+    },
+    "by_muslim_denomination": {
+      "(none)": 1
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 99,
+    "ac_name": "Changanassery",
+    "district": "kottayam",
+    "total_pois": 187,
+    "by_religion": {
+      "christian": 87,
+      "muslim": 13,
+      "hindu": 64,
+      "other": 1,
+      "unknown": 22
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 30,
+      "indian_orthodox": 8,
+      "(none)": 40,
+      "csi": 3,
+      "marthoma": 1,
+      "latin_catholic": 1,
+      "pentecostal": 2,
+      "knanaya_catholic": 1,
+      "jacobite_syrian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 11,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 100,
+    "ac_name": "Kanjirappally",
+    "district": "kottayam",
+    "total_pois": 286,
+    "by_religion": {
+      "christian": 152,
+      "muslim": 26,
+      "hindu": 88,
+      "other": 0,
+      "unknown": 20
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 31,
+      "(none)": 66,
+      "jacobite_syrian": 6,
+      "csi": 11,
+      "marthoma": 7,
+      "pentecostal": 12,
+      "indian_orthodox": 12,
+      "other_christian": 6,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 24,
+      "salafi_mujahid": 2
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 101,
+    "ac_name": "Poonjar",
+    "district": "kottayam",
+    "total_pois": 182,
+    "by_religion": {
+      "christian": 78,
+      "muslim": 37,
+      "hindu": 53,
+      "other": 0,
+      "unknown": 14
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 30,
+      "(none)": 32,
+      "jacobite_syrian": 1,
+      "other_christian": 2,
+      "pentecostal": 3,
+      "indian_orthodox": 4,
+      "brethren": 1,
+      "csi": 1,
+      "syro_malankara": 2,
+      "latin_catholic": 1,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 35,
+      "salafi_mujahid": 1,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "syro_malabar",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 102,
+    "ac_name": "Aroor",
+    "district": "alappuzha",
+    "total_pois": 193,
+    "by_religion": {
+      "christian": 30,
+      "muslim": 17,
+      "hindu": 130,
+      "other": 0,
+      "unknown": 16
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 13,
+      "(none)": 16,
+      "syro_malabar": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 4,
+      "(none)": 13
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 103,
+    "ac_name": "Cherthala",
+    "district": "alappuzha",
+    "total_pois": 294,
+    "by_religion": {
+      "christian": 60,
+      "muslim": 6,
+      "hindu": 184,
+      "other": 0,
+      "unknown": 44
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 7,
+      "(none)": 50,
+      "syro_malabar": 2,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 6
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 104,
+    "ac_name": "Alappuzha",
+    "district": "alappuzha",
+    "total_pois": 194,
+    "by_religion": {
+      "christian": 68,
+      "muslim": 16,
+      "hindu": 102,
+      "other": 0,
+      "unknown": 8
+    },
+    "by_christian_denomination": {
+      "marthoma": 1,
+      "(none)": 44,
+      "csi": 2,
+      "latin_catholic": 16,
+      "syro_malabar": 1,
+      "other_christian": 2,
+      "indian_orthodox": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 16
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 105,
+    "ac_name": "Ambalappuzha",
+    "district": "alappuzha",
+    "total_pois": 161,
+    "by_religion": {
+      "christian": 27,
+      "muslim": 32,
+      "hindu": 82,
+      "other": 2,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 6,
+      "(none)": 17,
+      "other_christian": 1,
+      "marthoma": 1,
+      "syro_malabar": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 28,
+      "salafi_mujahid": 2,
+      "jamaat_islami": 1,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 106,
+    "ac_name": "Kuttanad",
+    "district": "alappuzha",
+    "total_pois": 155,
+    "by_religion": {
+      "christian": 72,
+      "muslim": 2,
+      "hindu": 65,
+      "other": 0,
+      "unknown": 16
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 8,
+      "marthoma": 5,
+      "(none)": 48,
+      "indian_orthodox": 4,
+      "knanaya_catholic": 3,
+      "syro_malabar": 2,
+      "other_christian": 1,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 2
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 107,
+    "ac_name": "Haripad",
+    "district": "alappuzha",
+    "total_pois": 148,
+    "by_religion": {
+      "christian": 28,
+      "muslim": 16,
+      "hindu": 94,
+      "other": 0,
+      "unknown": 10
+    },
+    "by_christian_denomination": {
+      "marthoma": 7,
+      "indian_orthodox": 8,
+      "latin_catholic": 2,
+      "(none)": 10,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 12,
+      "sunni": 4
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 108,
+    "ac_name": "Kayamkulam",
+    "district": "alappuzha",
+    "total_pois": 247,
+    "by_religion": {
+      "christian": 40,
+      "muslim": 19,
+      "hindu": 174,
+      "other": 0,
+      "unknown": 14
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 6,
+      "marthoma": 3,
+      "jacobite_syrian": 2,
+      "(none)": 19,
+      "other_christian": 2,
+      "csi": 3,
+      "latin_catholic": 4,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 19
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 109,
+    "ac_name": "Mavelikkara (SC)",
+    "district": "alappuzha",
+    "total_pois": 209,
+    "by_religion": {
+      "christian": 66,
+      "muslim": 13,
+      "hindu": 111,
+      "other": 1,
+      "unknown": 18
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 9,
+      "marthoma": 8,
+      "(none)": 28,
+      "pentecostal": 7,
+      "latin_catholic": 11,
+      "csi": 3
+    },
+    "by_muslim_denomination": {
+      "(none)": 12,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 110,
+    "ac_name": "Chengannur",
+    "district": "alappuzha",
+    "total_pois": 273,
+    "by_religion": {
+      "christian": 108,
+      "muslim": 5,
+      "hindu": 150,
+      "other": 0,
+      "unknown": 10
+    },
+    "by_christian_denomination": {
+      "csi": 3,
+      "syro_malankara": 2,
+      "marthoma": 18,
+      "indian_orthodox": 23,
+      "(none)": 42,
+      "jacobite_syrian": 6,
+      "pentecostal": 5,
+      "latin_catholic": 2,
+      "syro_malabar": 6,
+      "knanaya_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 5
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 111,
+    "ac_name": "Thiruvalla",
+    "district": "pathanamthitta",
+    "total_pois": 295,
+    "by_religion": {
+      "christian": 156,
+      "muslim": 4,
+      "hindu": 109,
+      "other": 1,
+      "unknown": 25
+    },
+    "by_christian_denomination": {
+      "other_christian": 6,
+      "marthoma": 21,
+      "pentecostal": 14,
+      "indian_orthodox": 42,
+      "(none)": 46,
+      "brethren": 1,
+      "csi": 2,
+      "knanaya_catholic": 3,
+      "syro_malankara": 14,
+      "syro_malabar": 2,
+      "latin_catholic": 1,
+      "jacobite_syrian": 4
+    },
+    "by_muslim_denomination": {
+      "(none)": 2,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 112,
+    "ac_name": "Ranni",
+    "district": "pathanamthitta",
+    "total_pois": 244,
+    "by_religion": {
+      "christian": 144,
+      "muslim": 14,
+      "hindu": 76,
+      "other": 0,
+      "unknown": 10
+    },
+    "by_christian_denomination": {
+      "csi": 2,
+      "syro_malabar": 23,
+      "marthoma": 32,
+      "(none)": 39,
+      "indian_orthodox": 15,
+      "other_christian": 3,
+      "pentecostal": 18,
+      "knanaya_catholic": 5,
+      "knanaya_jacobite": 1,
+      "brethren": 2,
+      "syro_malankara": 3,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 14
+    },
+    "dominant_christian_denomination": "marthoma",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 113,
+    "ac_name": "Aranmula",
+    "district": "pathanamthitta",
+    "total_pois": 343,
+    "by_religion": {
+      "christian": 192,
+      "muslim": 8,
+      "hindu": 118,
+      "other": 0,
+      "unknown": 25
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 36,
+      "marthoma": 43,
+      "syro_malankara": 22,
+      "pentecostal": 14,
+      "(none)": 56,
+      "other_christian": 6,
+      "csi": 6,
+      "knanaya_catholic": 1,
+      "brethren": 3,
+      "jacobite_syrian": 4,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 5,
+      "salafi_mujahid": 1,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "marthoma",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 114,
+    "ac_name": "Konni",
+    "district": "pathanamthitta",
+    "total_pois": 233,
+    "by_religion": {
+      "christian": 122,
+      "muslim": 13,
+      "hindu": 85,
+      "other": 1,
+      "unknown": 12
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 31,
+      "(none)": 36,
+      "brethren": 3,
+      "syro_malankara": 1,
+      "marthoma": 18,
+      "pentecostal": 7,
+      "jacobite_syrian": 4,
+      "syro_malabar": 17,
+      "latin_catholic": 1,
+      "csi": 3,
+      "knanaya_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 13
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 115,
+    "ac_name": "Adoor (SC)",
+    "district": "pathanamthitta",
+    "total_pois": 272,
+    "by_religion": {
+      "christian": 130,
+      "muslim": 14,
+      "hindu": 107,
+      "other": 0,
+      "unknown": 21
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 31,
+      "marthoma": 15,
+      "syro_malankara": 14,
+      "(none)": 47,
+      "csi": 4,
+      "pentecostal": 10,
+      "jacobite_syrian": 6,
+      "latin_catholic": 3
+    },
+    "by_muslim_denomination": {
+      "(none)": 13,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 116,
+    "ac_name": "Karunagappally",
+    "district": "kollam",
+    "total_pois": 189,
+    "by_religion": {
+      "christian": 11,
+      "muslim": 47,
+      "hindu": 120,
+      "other": 0,
+      "unknown": 11
+    },
+    "by_christian_denomination": {
+      "(none)": 8,
+      "marthoma": 1,
+      "csi": 1,
+      "latin_catholic": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 41,
+      "sunni": 5,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "marthoma",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 117,
+    "ac_name": "Chavara",
+    "district": "kollam",
+    "total_pois": 146,
+    "by_religion": {
+      "christian": 29,
+      "muslim": 16,
+      "hindu": 94,
+      "other": 0,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "(none)": 20,
+      "marthoma": 3,
+      "latin_catholic": 4,
+      "csi": 1,
+      "indian_orthodox": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 13,
+      "sunni": 2,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 118,
+    "ac_name": "Kunnathur (SC)",
+    "district": "kollam",
+    "total_pois": 179,
+    "by_religion": {
+      "christian": 50,
+      "muslim": 19,
+      "hindu": 96,
+      "other": 0,
+      "unknown": 14
+    },
+    "by_christian_denomination": {
+      "(none)": 24,
+      "csi": 2,
+      "marthoma": 4,
+      "pentecostal": 3,
+      "syro_malabar": 1,
+      "indian_orthodox": 8,
+      "latin_catholic": 8
+    },
+    "by_muslim_denomination": {
+      "(none)": 17,
+      "sunni": 2
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 119,
+    "ac_name": "Kottarakkara",
+    "district": "kollam",
+    "total_pois": 198,
+    "by_religion": {
+      "christian": 75,
+      "muslim": 8,
+      "hindu": 104,
+      "other": 0,
+      "unknown": 11
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 21,
+      "(none)": 22,
+      "pentecostal": 5,
+      "marthoma": 13,
+      "latin_catholic": 9,
+      "csi": 2,
+      "jacobite_syrian": 2,
+      "brethren": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 8
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 120,
+    "ac_name": "Pathanapuram",
+    "district": "kollam",
+    "total_pois": 176,
+    "by_religion": {
+      "christian": 82,
+      "muslim": 19,
+      "hindu": 68,
+      "other": 0,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "syro_malankara": 14,
+      "marthoma": 17,
+      "indian_orthodox": 19,
+      "latin_catholic": 1,
+      "(none)": 21,
+      "csi": 3,
+      "other_christian": 2,
+      "pentecostal": 5
+    },
+    "by_muslim_denomination": {
+      "(none)": 19
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 121,
+    "ac_name": "Punalur",
+    "district": "kollam",
+    "total_pois": 140,
+    "by_religion": {
+      "christian": 63,
+      "muslim": 18,
+      "hindu": 52,
+      "other": 0,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "syro_malabar": 1,
+      "latin_catholic": 14,
+      "(none)": 21,
+      "pentecostal": 6,
+      "indian_orthodox": 6,
+      "csi": 3,
+      "marthoma": 11,
+      "other_christian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 18
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 122,
+    "ac_name": "Chadayamangalam",
+    "district": "kollam",
+    "total_pois": 97,
+    "by_religion": {
+      "christian": 20,
+      "muslim": 29,
+      "hindu": 45,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 5,
+      "(none)": 7,
+      "marthoma": 4,
+      "pentecostal": 3,
+      "indian_orthodox": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 29
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 123,
+    "ac_name": "Kundara",
+    "district": "kollam",
+    "total_pois": 228,
+    "by_religion": {
+      "christian": 77,
+      "muslim": 33,
+      "hindu": 107,
+      "other": 0,
+      "unknown": 11
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 16,
+      "(none)": 47,
+      "pentecostal": 4,
+      "jacobite_syrian": 1,
+      "indian_orthodox": 6,
+      "marthoma": 2,
+      "csi": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 32,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 124,
+    "ac_name": "Kollam",
+    "district": "kollam",
+    "total_pois": 125,
+    "by_religion": {
+      "christian": 25,
+      "muslim": 13,
+      "hindu": 82,
+      "other": 0,
+      "unknown": 5
+    },
+    "by_christian_denomination": {
+      "(none)": 14,
+      "marthoma": 3,
+      "latin_catholic": 6,
+      "syro_malabar": 1,
+      "other_christian": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 12,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 125,
+    "ac_name": "Eravipuram",
+    "district": "kollam",
+    "total_pois": 166,
+    "by_religion": {
+      "christian": 22,
+      "muslim": 31,
+      "hindu": 104,
+      "other": 0,
+      "unknown": 9
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 7,
+      "other_christian": 1,
+      "(none)": 11,
+      "csi": 3
+    },
+    "by_muslim_denomination": {
+      "(none)": 30,
+      "ahmadiyya": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "ahmadiyya"
+  },
+  {
+    "ac_id": 126,
+    "ac_name": "Chathannoor",
+    "district": "kollam",
+    "total_pois": 102,
+    "by_religion": {
+      "christian": 25,
+      "muslim": 14,
+      "hindu": 63,
+      "other": 0,
+      "unknown": 0
+    },
+    "by_christian_denomination": {
+      "pentecostal": 3,
+      "indian_orthodox": 10,
+      "(none)": 4,
+      "latin_catholic": 5,
+      "marthoma": 3
+    },
+    "by_muslim_denomination": {
+      "(none)": 14
+    },
+    "dominant_christian_denomination": "indian_orthodox",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 127,
+    "ac_name": "Varkala",
+    "district": "thiruvananthapuram",
+    "total_pois": 146,
+    "by_religion": {
+      "christian": 2,
+      "muslim": 27,
+      "hindu": 109,
+      "other": 0,
+      "unknown": 8
+    },
+    "by_christian_denomination": {
+      "(none)": 1,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "sunni": 2,
+      "(none)": 25
+    },
+    "dominant_christian_denomination": "marthoma",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 128,
+    "ac_name": "Attingal (SC)",
+    "district": "thiruvananthapuram",
+    "total_pois": 162,
+    "by_religion": {
+      "christian": 5,
+      "muslim": 25,
+      "hindu": 129,
+      "other": 0,
+      "unknown": 3
+    },
+    "by_christian_denomination": {
+      "csi": 1,
+      "marthoma": 1,
+      "latin_catholic": 2,
+      "(none)": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 22,
+      "salafi_mujahid": 2,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 129,
+    "ac_name": "Chirayinkeezhu",
+    "district": "thiruvananthapuram",
+    "total_pois": 130,
+    "by_religion": {
+      "christian": 23,
+      "muslim": 26,
+      "hindu": 74,
+      "other": 0,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 6,
+      "(none)": 12,
+      "marthoma": 1,
+      "csi": 1,
+      "syro_malabar": 2,
+      "indian_orthodox": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 26
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 130,
+    "ac_name": "Nedumangad",
+    "district": "thiruvananthapuram",
+    "total_pois": 214,
+    "by_religion": {
+      "christian": 54,
+      "muslim": 41,
+      "hindu": 111,
+      "other": 0,
+      "unknown": 8
+    },
+    "by_christian_denomination": {
+      "other_christian": 1,
+      "(none)": 36,
+      "csi": 12,
+      "latin_catholic": 4,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 41
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 131,
+    "ac_name": "Vamanapuram",
+    "district": "thiruvananthapuram",
+    "total_pois": 114,
+    "by_religion": {
+      "christian": 17,
+      "muslim": 33,
+      "hindu": 48,
+      "other": 0,
+      "unknown": 16
+    },
+    "by_christian_denomination": {
+      "csi": 3,
+      "(none)": 8,
+      "latin_catholic": 3,
+      "marthoma": 1,
+      "other_christian": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 32,
+      "salafi_mujahid": 1
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": "salafi_mujahid"
+  },
+  {
+    "ac_id": 132,
+    "ac_name": "Kazhakoottam",
+    "district": "thiruvananthapuram",
+    "total_pois": 223,
+    "by_religion": {
+      "christian": 74,
+      "muslim": 12,
+      "hindu": 125,
+      "other": 0,
+      "unknown": 12
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 17,
+      "(none)": 33,
+      "pentecostal": 4,
+      "csi": 9,
+      "syro_malabar": 2,
+      "marthoma": 3,
+      "jacobite_syrian": 1,
+      "indian_orthodox": 2,
+      "other_christian": 3
+    },
+    "by_muslim_denomination": {
+      "(none)": 12
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 133,
+    "ac_name": "Vattiyoorkavu(SC)",
+    "district": "thiruvananthapuram",
+    "total_pois": 133,
+    "by_religion": {
+      "christian": 54,
+      "muslim": 6,
+      "hindu": 69,
+      "other": 0,
+      "unknown": 4
+    },
+    "by_christian_denomination": {
+      "other_christian": 4,
+      "(none)": 27,
+      "latin_catholic": 7,
+      "syro_malabar": 2,
+      "marthoma": 2,
+      "csi": 8,
+      "indian_orthodox": 2,
+      "pentecostal": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 6
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 134,
+    "ac_name": "Thiruvananthapura",
+    "district": "thiruvananthapuram",
+    "total_pois": 202,
+    "by_religion": {
+      "christian": 31,
+      "muslim": 19,
+      "hindu": 145,
+      "other": 1,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "indian_orthodox": 1,
+      "(none)": 14,
+      "csi": 4,
+      "latin_catholic": 7,
+      "jacobite_syrian": 1,
+      "marthoma": 1,
+      "knanaya_catholic": 1,
+      "syro_malabar": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 15,
+      "sunni": 4
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 135,
+    "ac_name": "Nemom",
+    "district": "thiruvananthapuram",
+    "total_pois": 99,
+    "by_religion": {
+      "christian": 9,
+      "muslim": 22,
+      "hindu": 64,
+      "other": 0,
+      "unknown": 4
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 2,
+      "csi": 3,
+      "(none)": 3,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 16,
+      "salafi_mujahid": 1,
+      "sunni": 5
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 136,
+    "ac_name": "Aruvikkara",
+    "district": "thiruvananthapuram",
+    "total_pois": 151,
+    "by_religion": {
+      "christian": 53,
+      "muslim": 22,
+      "hindu": 65,
+      "other": 0,
+      "unknown": 11
+    },
+    "by_christian_denomination": {
+      "(none)": 29,
+      "csi": 8,
+      "other_christian": 2,
+      "pentecostal": 5,
+      "latin_catholic": 5,
+      "marthoma": 2,
+      "syro_malabar": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 21,
+      "sunni": 1
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": "sunni"
+  },
+  {
+    "ac_id": 137,
+    "ac_name": "Parassala",
+    "district": "thiruvananthapuram",
+    "total_pois": 167,
+    "by_religion": {
+      "christian": 89,
+      "muslim": 4,
+      "hindu": 67,
+      "other": 0,
+      "unknown": 7
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 17,
+      "csi": 26,
+      "(none)": 34,
+      "other_christian": 5,
+      "syro_malankara": 1,
+      "pentecostal": 4,
+      "syro_malabar": 1,
+      "marthoma": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 4
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 138,
+    "ac_name": "Kattakkada",
+    "district": "thiruvananthapuram",
+    "total_pois": 156,
+    "by_religion": {
+      "christian": 56,
+      "muslim": 9,
+      "hindu": 71,
+      "other": 1,
+      "unknown": 19
+    },
+    "by_christian_denomination": {
+      "csi": 16,
+      "(none)": 33,
+      "latin_catholic": 4,
+      "indian_orthodox": 1,
+      "marthoma": 1,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 9
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 139,
+    "ac_name": "Kovalam",
+    "district": "thiruvananthapuram",
+    "total_pois": 143,
+    "by_religion": {
+      "christian": 71,
+      "muslim": 10,
+      "hindu": 46,
+      "other": 0,
+      "unknown": 16
+    },
+    "by_christian_denomination": {
+      "(none)": 33,
+      "csi": 15,
+      "latin_catholic": 15,
+      "marthoma": 2,
+      "other_christian": 5,
+      "pentecostal": 1
+    },
+    "by_muslim_denomination": {
+      "(none)": 10
+    },
+    "dominant_christian_denomination": "csi",
+    "dominant_muslim_denomination": null
+  },
+  {
+    "ac_id": 140,
+    "ac_name": "Neyyattinkara",
+    "district": "thiruvananthapuram",
+    "total_pois": 114,
+    "by_religion": {
+      "christian": 44,
+      "muslim": 3,
+      "hindu": 61,
+      "other": 0,
+      "unknown": 6
+    },
+    "by_christian_denomination": {
+      "latin_catholic": 10,
+      "(none)": 21,
+      "other_christian": 1,
+      "csi": 9,
+      "marthoma": 1,
+      "pentecostal": 2
+    },
+    "by_muslim_denomination": {
+      "(none)": 3
+    },
+    "dominant_christian_denomination": "latin_catholic",
+    "dominant_muslim_denomination": null
+  }
+]

@@ -235,9 +235,31 @@ Every cohort section (`mature-growers`, `low-base-breakouts`, `declining-mature`
 
 `bun run test` (vitest). Three suites under `src/lib/data/`: `data.test.ts`, `flows.test.ts`, `walkthrough-metrics.test.ts`. `bun test` (raw bun runner) does **not** work — bun's matcher is incompatible with vitest's; always go through the npm script.
 
+## OSM religious-POI inventory
+
+A separate pipeline pulls all religious places-of-worship across Kerala from
+OpenStreetMap and classifies them by sub-denomination. Output is consumed by
+ad-hoc analysis (not currently wired into walkthrough pages).
+
+| File | Role |
+|---|---|
+| `scripts/fetch-osm-pow.ts` | Overpass fetch (`--sample` district / `--full` state) — unions `amenity=place_of_worship`, building polygons, and wayside shrines |
+| `scripts/inspect-osm-pow.ts` | Coverage report + 30m BFS-cluster dedup |
+| `scripts/classify-osm-pow.ts` | Normalise religion + denomination, name-regex inference, Catholic disambiguation via district prior, spatial join to AC |
+| `scripts/aggregate-ac-religion-pois.ts` | Reduce per-POI dataset to per-AC summary |
+| `scripts/validate-classified-pow.ts` | Spot-check classifier against known religious geography |
+| `data/raw/osm/places-of-worship-kerala.json` | Raw Overpass dump (**gitignored**) |
+| `data/places-of-worship.json` | Per-POI classified dataset (**gitignored**, ~7 MB, regenerable) |
+| `data/ac-religious-poi-inventory.json` | Per-AC aggregate (**committed**, ~80 KB) — the canonical product |
+| `data/raw/osm/README.md` | Snapshot dates, exact Overpass queries, coverage stats, pipeline notes |
+
+End-to-end refresh: `bun run scripts/fetch-osm-pow.ts --full && bun run
+scripts/classify-osm-pow.ts && bun run scripts/aggregate-ac-religion-pois.ts`.
+
 ## See also
 
 - `docs/links.md` — data sources (ECI, Wikipedia, datameet, keralaassembly.org)
 - `docs/data-issues.md` — historical-data audit log + the AC #87 Kothamangalam dedupe rationale
 - `docs/scraping-requirements.md` — ECI scrape pipeline notes
 - `docs/roadmap.md` — completed and pending feature work
+- `data/raw/osm/README.md` — OSM religious-POI snapshot + classification pipeline notes

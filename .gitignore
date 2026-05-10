@@ -31,6 +31,10 @@ data/temp/
 # Snapshot date + coverage stats live in data/raw/osm/README.md.
 data/raw/osm/*.json
 
+# Per-POI classified dataset — derivable from data/raw/osm/ + the classify
+# script (≈30s). The AC-level aggregate is the canonical committed product.
+data/places-of-worship.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
