@@ -9,6 +9,7 @@ import {
   type GradientLevel,
   type GradientYear,
 } from "@/components/religion-gradient-map"
+import { ReligiousPOIsSection } from "@/components/religious-pois-section"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import casteData from "@data/hindu-caste-by-district.json"
 import districtPaths from "@data/kerala-districts-paths.json"
@@ -236,6 +237,11 @@ export function ReligionMapPage() {
           </ul>
         </section>
 
+        <ReligiousPOIsSection
+          hoveredSeat={hoveredSeat}
+          onAcHover={setHoveredSeat}
+        />
+
         <section>
           <header className="mb-3">
             <h2 className="font-heading text-xl font-semibold tracking-tight">
@@ -391,13 +397,33 @@ export function ReligionMapPage() {
             </p>
             <p>
               <span className="font-medium text-foreground">
-                What we can&apos;t see.
+                Christian + Muslim sub-rite — from OpenStreetMap.
               </span>{" "}
-              Christian denomination geography (Syro-Malabar / Latin / Marthoma
-              / Pentecostal) and Muslim sub-community geography (Sunni / Mujahid
-              / Salafi) are politically distinct in Kerala but Census
-              doesn&apos;t disaggregate. For qualitative sub-community
-              boundaries derived from academic literature, see{" "}
+              Census doesn&apos;t disaggregate Christian denomination or Muslim
+              sub-sect, so the section above is built from a different source:
+              ~22,000 religious places-of-worship in OpenStreetMap (Overpass
+              snapshot 2026-05-10), each classified by sub-rite via OSM tags,
+              name-regex inference, and a hand-curated diocesan prior for
+              generic-Catholic POIs. The aggregate lives at{" "}
+              <code className="rounded bg-muted px-1 py-0.5 text-[0.8em]">
+                data/ac-religious-poi-inventory.json
+              </code>
+              ; pipeline detail in{" "}
+              <a
+                href="https://github.com/nvlsr/kerala-2026/blob/main/data/raw/osm/README.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline-offset-2 hover:underline"
+              >
+                data/raw/osm/README.md
+              </a>
+              . The dataset has known limits: POI count is not population
+              share (Hindu temples are smaller and more numerous per capita);
+              ~33% of Christians and ~13% of Muslims have an explicit
+              denomination tag (the rest is name-inferred or prior-based);
+              EK-vs-AP Sunni and Hindu caste are not derivable. For
+              qualitative sub-community boundaries derived from academic
+              literature, see{" "}
               <Link to="/belts" className="underline-offset-2 hover:underline">
                 /belts
               </Link>
