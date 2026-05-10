@@ -232,7 +232,7 @@ export function WalkthroughsPage() {
           </article>
           <article className="rounded-sm border bg-card/50 p-6">
             <h2 className="font-heading text-base font-semibold tracking-tight">
-              Kerala 2026 was not highly polarized
+              Religious belts, not religious realignment
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               The catalog implies a calmer reading than the dominant press
