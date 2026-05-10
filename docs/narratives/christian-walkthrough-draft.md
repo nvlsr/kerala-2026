@@ -205,33 +205,37 @@ So:
 
 ---
 
-## §4 — Where did the BJP/NDA do well in Christian-cohort ACs?
+## §4 — NDA's Christian-cohort strategy in 2026 — four prongs
 
-> The party walkthroughs note BJP's targeted gains. Were the targets Christian-area? Which sub-rites?
+> Combining the NDA performance data with the cohort labels reveals NDA running four distinct strategies in Christian Kerala, with different vehicles and different success rates per cohort.
 
 ### NDA mean share per Christian cohort (2021 → 2026)
 
 | Cohort | NDA 2021 | NDA 2026 | Δ NDA | NDA wins 2026 |
 |---|---:|---:|---:|---:|
 | Latin Catholic | 13.2 | 13.7 | +0.5 | 1 (Kazhakkoottam) |
-| Syro-Malabar | 11.8 | 14.7 | +2.9 | 0 |
-| Indian Orthodox | 16.5 | 16.9 | +0.4 | 1 (TBD — likely Ranni or Konni adjacent) |
+| Syro-Malabar | 11.8 | 14.7 | **+2.9** | 0 |
+| Indian Orthodox | 16.5 | 16.9 | +0.4 | 0 |
 | Jacobite | 5.0 | 13.3 | **+8.3** | 0 (Twenty 20 effect) |
 | Marthoma | 16.7 | 18.5 | +1.8 | 0 |
 | **CSI** | **21.4** | **25.5** | **+4.2** | **1 (Nemom)** |
-| Below threshold | 11.4 | 13.5 | +2.1 | 0 (BJP elsewhere — Hindu seats) |
+| Below threshold | 11.4 | 13.5 | +2.1 | 0 |
 
-### Reading
+### Reading: four prongs
 
-- **NDA's only Christian-cohort wins are in the CSI cohort (Nemom)** and Latin Catholic cohort (Kazhakkoottam). Both are Trivandrum-district. NDA's Christian-area wins are entirely a **Trivandrum phenomenon**.
-- **Jacobite Syrian NDA share jumped +8.3pp** — almost entirely the Twenty 20 effect (Kunnathunad alone).
-- **Syro-Malabar NDA share crept up +2.9pp**, slightly above baseline (+2.1pp). Modest, no wins.
-- **Latin Catholic NDA was essentially flat** — community appears resistant to NDA absorption.
+**Prong A — CSI cohort: direct, Trivandrum-concentrated.** All 5 CSI cohort ACs are Trivandrum-district. NDA share 25.5% (highest of any Christian cohort) and the 1 NDA win (Nemom). Direct BJP candidate strategy in a geographic stronghold. Successful at the stronghold AC, modest elsewhere in the cluster.
+
+**Prong B — Jacobite Syrian: via Twenty 20 (the proxy).** Jacobite NDA share jumped +8.3pp, the biggest Christian-cohort NDA gain. Almost entirely the Twenty 20 effect: Kunnathunad alone delivered 25.1% Twenty 20 vote share. Twenty 20's Jacobite leadership + Kitex's Kunnathunad base do the work; pure BJP party share in Jacobite cohort is **0%**. Successful at concentrating Christian-leaning anti-incumbency votes into the NDA bloc without forcing the community to vote BJP directly.
+
+**Prong C — Syro-Malabar: dual approach.** Both direct BJP candidates AND Twenty 20 spillover (Ernakulam-district SM ACs saw Twenty 20 7-19%). NDA share crept up +2.9pp — modest, no wins, but slightly above the statewide baseline (+2.1pp). Plausibly building toward something for the next cycle.
+
+**Prong D — Latin Catholic: no inroads (and a geographic gradient — see §5).** NDA share went +0.5pp (basically flat) at the cohort level. Despite being the largest Christian cohort, NDA gained no traction during a cycle that pulled Latin Catholics out of LDF and toward UDF — they went UDF, not NDA. But the resistance isn't uniform: south Latin Kerala (TVM/Kollam) has structural NDA presence at 18% mean (§5), while north Latin Kerala (Kannur/Kasaragod) has NDA near-zero. Where NDA is present, the UDF swing was muted (+6.8pp); where NDA was absent, the UDF swing was bigger (+10pp). NDA appears to absorb part of the swing in south Latin, but elsewhere Latin Catholics are structurally NDA-resistant.
 
 ### Open follow-ups for §4
 
-- [ ] BJP party-share (vs NDA total) per cohort — separate out Twenty 20 effect to see "pure BJP" picture
-- [ ] Multi-cycle NDA trend per cohort — is Christian-area NDA growth a steady trend or 2016-era one-time?
+- [ ] BJP party-share (vs NDA total) per cohort — already partially in §5; consolidate to separate Twenty 20 effect from pure BJP
+- [ ] Multi-cycle NDA trend per cohort — is the CSI 21→26 a steady trend or 2016-era spike that plateaued?
+- [ ] Twenty 20 vote source — is it pulling LDF voters, UDF voters, or new voters? Candidate-level breakdown needed.
 
 ---
 
@@ -275,56 +279,41 @@ The Latin Catholic cohort splits **geographically** on BJP:
 
 So the more honest framing is: **"Latin Catholics in north Kerala don't support BJP. Latin Catholics in Trivandrum split between BJP and UDF."** The community isn't homogeneous; the south coast has structural BJP presence.
 
+### And — the UDF swing in Latin also splits the same way
+
+| Zone | n | Mean Δ UDF (2021→2026) | Mean NDA 2026 |
+|---|---:|---:|---:|
+| South (TVM + Kollam) | 11 | **+6.8pp** | 18.3% |
+| Central (Alappuzha + Ernakulam + Thrissur) | 10 | **+10.6pp** | 13.0% |
+| North (Kannur + Kasaragod + Kozhikode) | 7 | **+10.2pp** | 7.5% |
+
+The +9pp Latin Catholic cohort average disguises a strong geographic pattern:
+
+- **Central + North Latin flipped hard** (~+10pp swing, NDA at 7-13%). UDF absorbed almost all the anti-incumbency.
+- **South Latin partially flipped** (+6.8pp, NDA at 18%). NDA appears to absorb some of the would-be UDF swing in TVM/Kollam.
+
+So the "Latin flipped LDF→UDF in 2026" thesis is **strongest in central + north Latin Kerala** and **partial in south Latin Kerala**. South Latin is the contested geography where UDF, NDA, and LDF are all competitive.
+
+Notable per-AC moves:
+- **Cherthala −3.4pp** — the only Latin Catholic AC that *didn't* swing toward UDF. A.M. Arif's CPI-M stronghold; almost certainly candidate-driven anomaly.
+- **Payyannur +20.2pp** (Kannur), **Mattannur +17.1pp** (Kannur) — biggest swings, from very low UDF baselines (29% and 23% in 2021). Could be partly regression toward statewide mean.
+- **Attingal +2.8pp, Kazhakoottam +4.6pp** — smallest south-Latin swings. Both are NDA-competitive Trivandrum ACs (NDA 30-35%).
+
 ### Open follow-ups for §5
 
-- [ ] Repeat the within-cohort geographic split for Syro-Malabar and Orthodox — does the same north/south pattern appear?
+- [ ] Repeat the within-cohort geographic split for Syro-Malabar and Orthodox — does the same north/south pattern appear in Catholic cousins?
 - [ ] Is the south-coast BJP strength a Latin Catholic phenomenon or a generic-coastal-TVM phenomenon? Compare with non-Christian-cohort Trivandrum ACs.
+- [ ] Cherthala / Mavelikkara / Punalur LDF-retention deep-dive — are these all candidate-driven (CPI-M strongholds) or do they share something else?
 
 ---
 
-## §6 — Does UDF allocate Kerala Congress / KEC seats by denomination?
-
-> UDF includes INC + Kerala Congress factions (KEC, KC-Jacob, KC-B) + IUML + RSP + smaller allies. Is the Kerala-Congress allocation denomination-aligned?
-
-### UDF candidate party per Christian cohort (2026)
-
-| Cohort | n | INC | Kerala Congress | KC-Jacob | KEC + KC-J % | IUML | Other |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Latin Catholic | 28 | 18 | 2 | 0 | 7% | 2 | 6 |
-| Syro-Malabar | 31 | 25 | 4 | 0 | 13% | 1 | 1 |
-| Indian Orthodox | 10 | 9 | 1 | 0 | 10% | 0 | 0 |
-| Jacobite | 3 | 1 | 1 | 1 | 67% | 0 | 0 |
-| Marthoma | 2 | 2 | 0 | 0 | 0% | 0 | 0 |
-| CSI | 5 | 5 | 0 | 0 | 0% | 0 | 0 |
-| Below threshold | 61 | 32 | 0 | 0 | 0% | 23 | 6 |
-
-### Reading
-
-- **INC is the default UDF face everywhere** — 18/28 in Latin, 25/31 in SM, 5/5 in CSI, 32/61 in residual.
-- **Kerala Congress (the main faction) is allocated most in Syro-Malabar cohort** (4 of 31, ~13%). Matches the historical KEC base in Pala/Kanjirapally/Kottayam Syro-Malabar territory.
-- **Latin Catholic cohort has notably fewer KEC seats** (2/28, 7%) than Syro-Malabar. INC handles most Latin Catholic ACs directly.
-- **Jacobite cohort (n=3) gets the most denomination-matched allocation**: KEC + KC-Jacob = 2 of 3. KC-Jacob is the faction historically led by Anoop Jacob, a Jacobite-aligned politician.
-- **CSI + Marthoma cohorts get 100% INC.** No Kerala Congress allocation. These are Protestant cohorts; KEC's base is Catholic.
-
-### The cleanest finding here:
-
-**UDF's Kerala Congress allocation is *Catholic-aligned*, not pan-Christian.** Within Catholics, Syro-Malabar gets the larger share. Protestant Christian cohorts (CSI, Marthoma) get INC-only candidates. This mirrors the historical Catholic-faction politics of Kerala Congress.
-
-### Open follow-ups for §6
-
-- [ ] Compute KEC vote share per cohort (not candidate count) — does KEC actually win more seats in SM cohort?
-- [ ] Multi-cycle: when was KEC's Latin Catholic allocation last >10%? Has KEC's Catholic base narrowed to Syro-Malabar over time?
-- [ ] KC-Jacob in Piravom (Jacobite cohort) — is this a recent factional alignment or longstanding?
-
----
-
-## §7 — Three sub-rite profiles, reframed
+## §6 — Three sub-rite profiles, reframed
 
 > Sprint 2 framed this as "Catholics moved together, Orthodox stayed competitive, CSI barely moved". The deep-dive reframes it.
 
 ### Revised three profiles
 
-After §1-§6 above:
+After §1-§5 above:
 
 1. **UDF-historically-aligned cohorts that returned to UDF in 2026**:
    - Syro-Malabar (always UDF-leaning, +8.2 swing matches 2011 baseline)
@@ -352,24 +341,22 @@ After §1-§6 above:
 
 The Indian Orthodox cohort is a third type — it didn't flip, didn't return, just stayed close, with UDF nudging slightly ahead.
 
-### Open follow-ups for §7
+### Open follow-ups for §6
 
-- [ ] Validate the "return vs shift" framing — what was the 2006 / 2001 alliance pattern? If Latin Catholic was UDF-leaning in 2001, 2026 is also a "return".
-- [ ] Within Latin Catholic, separate the genuinely-shifted ACs from the regression-to-baseline ACs.
+- [ ] ~~Validate the "return vs shift" framing — what was the 2006 / 2001 alliance pattern?~~ **Data-blocked** — `data/historical/` only contains 2011, 2016, 2019 by-election, 2021. Pre-2011 baseline would need separate sourcing.
+- [ ] Within Latin Catholic, separate the genuinely-shifted ACs from the regression-to-baseline ACs (north / central / south split — see Open Data Needs).
 
 ---
 
 ## Synthesis candidates (running list)
 
-What story might tie the sections together?
+Two threads survive after review; both are kept and overlap heavily.
 
-1. **"The 2026 Christian swing was actually two stories":** SM/Jacobite returned to baseline; Latin Catholic/Marthoma shifted. The headline 'Christians moved to UDF' obscures this.
+1. **"The 2026 Christian swing was actually two stories":** SM/Jacobite returned to historical baselines after a 2-cycle LDF wobble; Latin Catholic/Marthoma genuinely flipped from LDF to UDF. The headline 'Christians moved to UDF' obscures this internal split.
 
-2. **"Sub-rite identity is a *historical* axis, not a *2026* axis":** Sub-rite explains *which* baseline each cohort returned to or shifted from. It doesn't explain the *direction* of 2026 movement — that's mostly statewide anti-incumbency.
+2. **"Sub-rite identity: how different rites historically aligned + their current preferences":** Each Christian sub-rite has a distinct multi-cycle alliance pattern. The walkthrough's value is making those patterns visible side-by-side — Christian Kerala has within-bloc political diversity that doesn't fit the "Catholic = UDF" frame.
 
-3. **"NDA's Christian-area wins are a Trivandrum-district story":** Both Christian-cohort NDA wins (Nemom, Kazhakkoottam) are TVM. North Kerala Latin is BJP-resistant. Sub-rite isn't the BJP-success variable; geography is.
-
-4. **"KEC/UDF candidate allocation is Catholic-aligned":** Kerala Congress factions cluster in Catholic cohorts (esp. Syro-Malabar) but are absent from Protestant cohorts (CSI, Marthoma). The UDF "Christian alliance party" is functionally Catholic-only.
+These two overlap by ~80%. The single-thesis version of the walkthrough would combine them: *Christian Kerala isn't politically monolithic; each sub-rite has its own historical alliance trajectory; in 2026 the sub-rites split between "returned to baseline" and "genuinely flipped" responses to the statewide anti-incumbency push.*
 
 ## Falsifiers / what would weaken the thesis
 
@@ -382,19 +369,120 @@ What story might tie the sections together?
 
 ## Open data needs / scripts to run
 
-- [ ] **Within-Latin north/south swing split** — does the +9pp Latin Catholic swing differ between TVM/Kollam coastal vs Kannur/Kasaragod coastal?
-- [ ] **2001/2006 Christian-cohort baseline** — was Latin LDF-leaning in 2001? Confirms or breaks the "return vs shift" framing
-- [ ] **District-fixed-effect regression** — model UDF 2026 with cohort + district FE; does cohort survive?
-- [ ] **NDA-target Christian ACs in 2026 vs 2021 vs 2016** — what's BJP's strategy in Christian ACs across cycles? Are the Trivandrum wins consolidating or static?
-- [ ] **Twenty 20 attribution** — within the Jacobite +8.3pp NDA jump, how much is Twenty 20 vs BJP?
+Prioritised by which would most sharpen the two surviving syntheses:
+
+- [ ] **Within-Latin north/south swing split** — does the +9pp Latin Catholic swing land uniformly across the coastal range, or concentrate in one geographic chunk? Directly tests the "Latin Catholic flipped" framing. If the swing is bimodal (e.g., 12pp central, 4pp north) the "Latin flipped" claim fragments.
+- [ ] **District-fixed-effect regression** — model UDF 2026 with cohort + district FE; does cohort survive after partialling out district?
+- [ ] **Multi-cycle NDA trend per cohort** — already partially in §1's tables; consolidate into a single chart-ready dataset.
+- [ ] **Twenty 20 attribution per cohort** — for the Jacobite +8.3pp NDA jump, how much is Twenty 20 vs direct BJP? Same for SM cohort. Needs party-level (not alliance-level) breakdown by AC.
+- ~~**2001/2006 Christian-cohort baseline**~~ — **data-blocked** (`data/historical/` only goes back to 2011). Would need separate sourcing (ECI scrapes, Wikipedia tables) to extend baselines back. Flag as a walkthrough caveat.
 
 ## Decisions log
 
 - **2026-05-10 (initial)**: draft seeded with Sprint 2 findings. Working thesis = three Christian profiles.
-- **2026-05-10 (revision after detail script)**: reframed around 7 question sections (Q1–Q7).
+- **2026-05-10 (revision after detail script)**: reframed around 7 question sections.
   - **CSI cohort is geographically confounded** (all 5 Trivandrum). The "CSI is LDF-leaning" framing dropped.
-  - **Multi-cycle revealed Latin Catholic was structurally LDF-leaning** through 2011–2021. The +9pp swing is more like a flip/return than a structural shift.
+  - **Multi-cycle revealed Latin Catholic was structurally LDF-leaning** through 2011–2021. The +9pp swing is more like a flip than a structural shift.
   - **Twenty 20 didn't target Jacobite denomination** but accidentally inflated Jacobite-cohort NDA via Kunnathunad concentration.
   - **Latin Catholic + BJP claim** is directionally correct but geographically uneven (south Latin coast has BJP; north Latin doesn't).
-  - **KEC allocation is Catholic-aligned**, with Syro-Malabar getting the most.
   - Provisional thesis revised to "sub-rite identity is a second-order historical-baseline variable, not a primary 2026-swing variable".
+- **2026-05-10 (review cleanup)**:
+  - Dropped §6 (UDF KEC allocation by denomination) — confirmed dead end.
+  - Reframed §4 (NDA performance) as a four-prong strategy (CSI direct / Jacobite via Twenty 20 / SM dual / Latin no-inroads).
+  - Dropped synthesis candidates #3 and #4; kept #1 and #2 (the latter rephrased to "How different rites historically aligned + their current preferences").
+  - Added a Walkthrough Outline section and a Key Insights summary at the bottom.
+- **2026-05-10 (Latin north/south swing drill)**:
+  - Within Latin Catholic, the +9pp swing splits geographically: south (+6.8pp), central (+10.6pp), north (+10.2pp).
+  - UDF swing inversely tracks NDA presence — south Latin (NDA 18%) absorbed less swing; north Latin (NDA 7%) flipped harder.
+  - "Latin flipped" thesis survives but refined: the flip is strongest in central + north; south Latin partially flipped with NDA capturing some swing.
+  - Cherthala (−3.4pp) is the only Latin AC that didn't swing UDF — A.M. Arif CPI-M stronghold, candidate-driven.
+
+---
+
+## Walkthrough outline (page structure draft)
+
+Sketch of what the actual `/walkthroughs/christian-communities` page would look like. Sections map roughly to the existing walkthrough template (`WalkthroughPageShell` + `ThesisLede` + `CohortSection` + `SynthesisCard` + `WhatWouldWeakenSection`).
+
+**Title**: *How Kerala's Christian sub-communities moved in 2026*
+
+**Eyebrow / breadcrumb**: Walkthrough · Christian communities
+
+**Thesis lede**: *"Christian Kerala isn't politically monolithic. Each sub-rite has its own historical alliance pattern — Syro-Malabar UDF-leaning, Latin Catholic LDF-leaning, Indian Orthodox 50/50. The 2026 'Christian swing toward UDF' was actually two distinct movements: a return to baseline for SM/Jacobite/Orthodox cohorts, and a genuine flip from LDF to UDF for Latin Catholic and Marthoma cohorts."* (confidence: moderate — 3-cycle data only)
+
+### Section 1 — Where each sub-community lives
+*Cohort map (from /religion-map's categorical view) + cohort size table.*
+Pull from `data/ac-religious-poi-inventory.json`. Show the n per cohort (SM 31, Latin 28, Orthodox 10, Jacobite 3, Marthoma 2, CSI 5, below-threshold 61). Caveat the OSM-derived nature + threshold rules.
+
+### Section 2 — Each rite's historical alliance pattern (4-cycle)
+*Small-multiples line chart, one per rite: UDF/LDF/NDA share over 2011, 2016, 2021, 2026.*
+Pull from `scripts/analyze-christian-cohort-detail.ts` output. Per-rite annotation:
+- **Syro-Malabar**: perennial UDF base (21 wins in 2011, 26 in 2026; LDF wobble in 2016/2021)
+- **Latin Catholic**: structurally LDF-leaning (just 4 of 28 UDF wins in both 2016 and 2021); 2026 was a flip
+- **Indian Orthodox**: perennial 50/50; UDF nudged ahead 5/4/1 in 2026
+- **Jacobite, Marthoma, CSI**: smaller, distinct trajectories
+
+### Section 3 — What changed in 2026: two stories
+*Two-column layout:*
+- **Story A — Restorations**: SM/Jacobite/Orthodox returned to long-run UDF baselines after a 2-cycle LDF wobble. Wins jumped because the 2016/2021 LDF lead was always thin.
+- **Story B — Flips**: 17 of 28 Latin Catholic ACs flipped LDF→UDF in 2026 — the genuinely new fact. Marthoma went 0→2/2.
+
+### Section 4 — NDA's Christian strategy: four prongs
+*Single composite figure or grouped cards, one per prong:*
+- **Prong A** — CSI cohort: direct, Trivandrum-concentrated. Nemom NDA win.
+- **Prong B** — Jacobite Syrian: via Twenty 20. Kunnathunad 25%.
+- **Prong C** — Syro-Malabar: dual (direct + Twenty 20 spillover). +2.9pp.
+- **Prong D** — Latin Catholic: no inroads. +0.5pp.
+
+Plus a sub-card: *Within Latin Catholic, the BJP/NDA gradient runs south (20-35%) → central (9-18%) → north (0-6%) Kerala. And the UDF swing inversely tracks it: north Latin flipped +10pp; south Latin only +6.8pp — partly because NDA absorbed some of the swing in TVM/Kollam.*
+
+### Section 5 — Synthesis
+*One-paragraph SynthesisCard:*
+Sub-rite identity is a historical-baseline variable. The 2026 movement direction was statewide (anti-incumbency + Bishops-Council shifts); what differed across cohorts is which baseline they snapped back to or flipped away from. Within Christian Kerala there are at least three distinct alliance histories — pretending they're one bloc obscures more than it explains.
+
+### Section 6 — What would weaken this view
+*Standard WhatWouldWeakenSection:*
+- 3-cycle data only. The "structurally LDF-leaning" claim for Latin Catholic could be 2011–2021-specific rather than truly structural; pre-2011 baseline isn't in our dataset.
+- District-fixed-effect not yet partialled out. Some cohort effects may be district effects in disguise (CSI = Trivandrum confirmed; SM ≈ Kottayam-Idukki, Latin ≈ coastal — still to test).
+- N=3 (Jacobite) and N=2 (Marthoma) cohorts carry directional claims only.
+- OSM POI-to-population proxy assumption: where each sub-rite's parishes are taken to indicate where its members live. Reasonable for Catholic/Orthodox (large parishes), weaker for Pentecostal (small parishes, may be over-mapped relative to membership).
+
+### Open question (not in page)
+Does this walkthrough sit alongside `/walkthroughs/udf` or replace any of its Christian-belt content? My pref: complementary — UDF walkthrough keeps Christian-belt as a sub-section of its strategy story; this page goes deeper on community-by-community.
+
+---
+
+## Key insights (running summary, easy scan)
+
+Curated list of the findings that have survived deep-dive. Keep this short; trim as new findings replace old ones.
+
+- **Sub-rite identity is a second-order variable.** Religion population share predicts UDF *level* better than sub-rite identity does. But sub-rite tracks *historical alignment* and *multi-cycle trajectory* — that's where the new data adds value.
+
+- **Latin Catholic was structurally LDF-leaning through 2011–2021** (just 4 of 28 UDF wins in both 2016 AND 2021), then flipped in 2026 (21 of 28). The biggest single sub-rite shift of 2026.
+
+- **Syro-Malabar has been UDF's most reliable Catholic base.** 21 wins in 2011, LDF wobble in 2016/2021, 26 in 2026 — the textbook return-to-baseline story.
+
+- **Indian Orthodox is the perennial swing** — always close to 50/50; even in UDF's best 2026, wins split 5/4/1.
+
+- **CSI cohort is really a Trivandrum-geographic cluster, not a denomination effect.** All 5 CSI cohort ACs are in Thiruvananthapuram district; the "CSI swing" is a TVM-interior swing.
+
+- **Twenty 20's geographic strategy is Ernakulam-district-centred, not Jacobite-denomination-centred.** Kunnathunad is their stronghold; spillover hit all Christian cohorts based on Ernakulam adjacency.
+
+- **NDA ran four distinct Christian-cohort strategies in 2026**:
+  - **CSI cohort** — direct, Trivandrum-concentrated. Nemom win.
+  - **Jacobite Syrian** — via Twenty 20 (proxy). Successful at vote consolidation; +8.3pp.
+  - **Syro-Malabar** — direct + Twenty 20 spillover. +2.9pp, no wins.
+  - **Latin Catholic** — no inroads. +0.5pp, community structurally resistant.
+
+- **Latin Catholic × NDA geographic gradient**:
+  - South coastal Latin (TVM / Kollam): BJP 20-35% — meaningful presence
+  - Central coastal Latin (Alappuzha / Kochi): BJP 9-18% — moderate
+  - North Kerala Latin (Kannur / Kasaragod / Kozhikode): BJP 0-6% — essentially absent
+  - More honest framing than "Latin Catholics don't support BJP": *Latin Catholics in north Kerala don't; Latin Catholics in TVM split with BJP.*
+
+- **And the UDF swing within Latin tracks inversely with NDA presence**:
+  - South Latin: +6.8pp UDF swing, 18% NDA
+  - Central Latin: +10.6pp UDF swing, 13% NDA
+  - North Latin: +10.2pp UDF swing, 7.5% NDA
+  - The Latin Catholic flip is strongest where NDA is weakest; in south Latin, NDA appears to absorb part of what would otherwise be a UDF swing.
+
+- **One Latin Catholic AC didn't swing UDF**: Cherthala (−3.4pp), held by A.M. Arif (CPI-M) — candidate-driven anomaly.
