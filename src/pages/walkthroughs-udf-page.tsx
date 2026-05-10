@@ -291,8 +291,9 @@ export function WalkthroughsUDFPage() {
             >
               <p className={SECTION_LEAD}>
                 <strong>
-                  Christians have voted UDF more than statewide in every cycle
-                  since 2011 — and in 2026 the premium doubled.
+                  In ACs with high Christian share, UDF's vote share has run
+                  ahead of its statewide average in every cycle since 2011 —
+                  and in 2026 that gap doubled.
                 </strong>{" "}
                 Christian-heavy ACs gained an extra ~3–4pp on top of the
                 baseline UDF lead they have always had.
