@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
-import { ComparisonBar } from "@/components/charts/comparison-bar"
 import { ScatterWithTrend } from "@/components/charts/scatter-with-trend"
 import { CohortSection } from "@/components/walkthroughs/cohort-section"
 import { ConfidenceBadge } from "@/components/walkthroughs/confidence-badge"
-import { MethodologyPopover } from "@/components/walkthroughs/methodology-popover"
 import { SeatLink } from "@/components/walkthroughs/prose-link"
 import { SeeAlsoQuestions } from "@/components/walkthroughs/see-also-questions"
 import {
@@ -50,6 +48,13 @@ import {
   CHRISTIAN_BELT_36,
   INC_CHRISTIAN_C3,
   INC_HINDU_C3,
+  INC_MUSLIM_MAL,
+  MALAPPURAM_VIEWBOX,
+  MUSLIM_ALLIANCE_MAL,
+  MUSLIM_PERFORMANCE_MAL,
+  MUSLIM_PREMIUM_HISTORY,
+  MUSLIM_SPECIAL_MAL,
+  MUSLIM_STRATEGY_COLOURS,
   PERFORMANCE_C3,
   PREMIUM_HISTORY,
   STRATEGY_COLOURS,
@@ -88,8 +93,8 @@ const RAIL_GROUPS = [
     ],
   },
   {
-    label: "The mechanism",
-    items: [{ id: "muslim-null", label: "Muslim-share null" }],
+    label: "The other half",
+    items: [{ id: "muslim-belt", label: "Muslim-belt premium" }],
   },
   {
     label: "Caveats",
@@ -139,33 +144,51 @@ export function WalkthroughsUDFPage() {
     })
     .filter((p) => p.x > 0 || p.y !== 0)
 
-  // UDF Δshare by Muslim-share bin (numbers from A1 card)
-  const muslimBinGroups = [
-    {
-      label: "Muslim ≥ 60% (n=16)",
-      mean: 8.98,
-      n: 16,
-      color: "rgb(31, 119, 180)",
-    },
-    {
-      label: "Muslim 40–60% (n=23)",
-      mean: 5.76,
-      n: 23,
-      color: "rgb(31, 119, 180)",
-    },
-    {
-      label: "Muslim 20–40% (n=44)",
-      mean: 7.8,
-      n: 44,
-      color: "rgb(31, 119, 180)",
-    },
-    {
-      label: "Low Muslim (<20%, n=57)",
-      mean: 7.03,
-      n: 57,
-      color: "rgb(31, 119, 180)",
-    },
-  ]
+  // Muslim-share × UDF Δshare scatter points (parallel to Christian scatter)
+  const muslimScatterPoints = all
+    .map((m) => {
+      const ac = acDemo2025Meta.constituencies[String(m.acNumber)]
+      const muslimPct = ac?.religions?.muslim ?? 0
+      return {
+        x: muslimPct,
+        y: m.deltas.UDF,
+        acNumber: m.acNumber,
+        acName: m.acName,
+        highlighted: false,
+      }
+    })
+    .filter((p) => p.x > 0 || p.y !== 0)
+
+  // Malappuram strategy choropleth data. 15 non-reserved ACs get
+  // strategy colours; Wandoor (SC reserved) is absent from the
+  // categorical map and therefore renders muted/outline.
+  const malappuramStrategyColors = new Map<number, string>()
+  const malappuramDeltaMap = new Map<number, number>()
+  const malappuramStrategyByAC = new Map<
+    number,
+    { name: string; strategy: string }
+  >()
+  for (const r of MUSLIM_ALLIANCE_MAL) {
+    malappuramStrategyColors.set(
+      r.ac,
+      MUSLIM_STRATEGY_COLOURS["Muslim Alliance"]
+    )
+    malappuramDeltaMap.set(r.ac, r.udfDelta)
+    malappuramStrategyByAC.set(r.ac, {
+      name: r.name,
+      strategy: "Muslim Alliance",
+    })
+  }
+  for (const r of INC_MUSLIM_MAL) {
+    malappuramStrategyColors.set(r.ac, MUSLIM_STRATEGY_COLOURS["INC-Muslim"])
+    malappuramDeltaMap.set(r.ac, r.udfDelta)
+    malappuramStrategyByAC.set(r.ac, { name: r.name, strategy: "INC-Muslim" })
+  }
+  for (const r of MUSLIM_SPECIAL_MAL) {
+    malappuramStrategyColors.set(r.ac, MUSLIM_STRATEGY_COLOURS.Special)
+    malappuramDeltaMap.set(r.ac, r.udfDelta)
+    malappuramStrategyByAC.set(r.ac, { name: r.name, strategy: "Special" })
+  }
 
   // Strategy choropleth data: each Christian-belt AC maps to its
   // strategy colour and ΔUDF (used for tooltip). Non-Christian-belt
@@ -767,55 +790,409 @@ export function WalkthroughsUDFPage() {
               </p>
             </CohortSection>
 
-            {/* SECTION 3 — Muslim-share null (falsification) */}
-            <WalkthroughSection
-              id="muslim-null"
-              heading="Muslim share didn't add a separate premium"
-              sectionType="falsification"
-              layout="visual-right"
-              visual={
-                <ComparisonBar
-                  groups={muslimBinGroups}
-                  yUnit="pp"
-                  yDecimals={1}
-                  baseline={7.29}
-                  baselineLabel="statewide mean +7.29pp"
-                  ariaLabel="UDF Δshare by Muslim-share bin"
-                  yDomain={[0, 12]}
-                />
+            {/* SECTION 3 — Muslim-belt premium */}
+            <CohortSection
+              id="muslim-belt"
+              heading="The Muslim-belt premium"
+              mapSide="left"
+              map={
+                <div className="space-y-6">
+                  <div>
+                    <ScatterWithTrend
+                      points={muslimScatterPoints}
+                      xLabel="Muslim share (%)"
+                      yLabel="UDF Δshare (pp)"
+                      xUnit="%"
+                      yUnit="pp"
+                      showTrend
+                      pointColor="rgb(31, 119, 180)"
+                      ariaLabel="Muslim share vs UDF Δshare, 140 ACs"
+                    />
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Each dot is one of 140 ACs. The high-Muslim cluster (right
+                      side) sits at high UDF baselines but the swing tracks the
+                      statewide wave — no Christian-belt-style surge.
+                    </p>
+                  </div>
+                  <div>
+                    <ChoroplethMap
+                      valueByAC={malappuramDeltaMap}
+                      colorScale="sequential"
+                      categoricalColors={malappuramStrategyColors}
+                      viewBox={MALAPPURAM_VIEWBOX}
+                      ariaLabel="Malappuram ACs coloured by UDF's 2026 Muslim strategy (non-reserved seats only)"
+                      unit="pp"
+                      decimals={1}
+                      tooltipFormat={(acNumber, value) => {
+                        const row = malappuramStrategyByAC.get(acNumber)
+                        return (
+                          <span>
+                            <span className="font-medium">
+                              {row?.name ?? `AC ${acNumber}`}
+                            </span>
+                            {row && (
+                              <>
+                                {" "}
+                                <span className="text-muted-foreground">
+                                  ({row.strategy})
+                                </span>
+                                {value != null && (
+                                  <>
+                                    :{" "}
+                                    <span className="font-mono">
+                                      {value >= 0 ? "+" : ""}
+                                      {value.toFixed(1)}pp
+                                    </span>
+                                  </>
+                                )}
+                              </>
+                            )}
+                          </span>
+                        )
+                      }}
+                    />
+                    <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px]">
+                      {(
+                        [
+                          [
+                            "Muslim Alliance",
+                            MUSLIM_STRATEGY_COLOURS["Muslim Alliance"],
+                          ],
+                          ["INC-Muslim", MUSLIM_STRATEGY_COLOURS["INC-Muslim"]],
+                          [
+                            "Special / excluded",
+                            MUSLIM_STRATEGY_COLOURS.Special,
+                          ],
+                        ] as [string, string][]
+                      ).map(([label, color]) => (
+                        <span
+                          key={label}
+                          className="inline-flex items-center gap-1.5"
+                        >
+                          <span
+                            className="inline-block h-3 w-3 rounded-sm"
+                            style={{ backgroundColor: color }}
+                          />
+                          <span className="text-muted-foreground">{label}</span>
+                        </span>
+                      ))}
+                    </div>
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Malappuram non-reserved seats coloured by UDF's 2026
+                      strategy. IUML covers nearly the whole district;
+                      INC-Muslim contests the eastern edge (Nilambur, Ponnani).
+                      Wandoor (SC reserved) is uncoloured. Wayanad is excluded
+                      from this analysis entirely.
+                    </p>
+                  </div>
+                </div>
               }
-              caption="Mean UDF Δshare by Muslim-share bin. Each bar's height shows mean UDF gain across the bin's ACs. Muslim-majority and low-Muslim bins both track the statewide mean."
             >
               <p className={SECTION_LEAD}>
                 <strong>
-                  Muslim share didn't predict differential UDF swing.
+                  The Muslim premium has been large and stable since 2011 —
+                  Muslim-heavy ACs lead UDF by ~+11pp above its statewide
+                  average every cycle, and in 2026 the gap nudged up to +12.8pp.
                 </strong>{" "}
-                The press's "minority consolidation" framing pools two distinct
-                phenomena; only one carries constituency-level signal.
+                Unlike the Christian belt, the Muslim swing in 2026 was
+                wave-sized: Muslims rode the wave from a higher baseline rather
+                than surging.
               </p>
-              <p>
-                Muslim-majority ACs (≥60%, n=16) gained +8.98pp UDF — slightly
-                above the statewide ~7.3pp baseline but within the noise. The
-                40-60% Muslim bin actually gained <em>less</em> (+5.76pp) than
-                the low-Muslim bin (+7.03pp). No monotonic relationship.
-              </p>
-              <p>
-                Once we account for{" "}
-                <MethodologyPopover term="fixed-effects">
-                  district-level differences
-                </MethodologyPopover>
-                , the Muslim-share coefficient on UDF Δshare collapses to β =
-                +0.016 (p = 0.795). Within a district, Muslim share has no
-                detectable predictive power. The simple-Pearson signal in the
-                raw data was driven entirely by between-district clustering —
-                primarily Malappuram. Muslim-heavy ACs participated in the
-                LDF→UDF wave at the statewide rate; they didn't supercharge it.
-              </p>
+
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Year</TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF ≥70% Mus
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF statewide
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      Premium
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {MUSLIM_PREMIUM_HISTORY.map((row) => (
+                    <TableRow
+                      key={row.year}
+                      className={
+                        "highlight" in row && row.highlight
+                          ? HIGHLIGHT_ROW_CLASS
+                          : undefined
+                      }
+                    >
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.year}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.udfHigh}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.udfStatewide}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.premium}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
               <p className={ASIDE}>
-                Numbers from the A1 minority-consolidation analysis. See
-                "Underlying analyses" at the bottom for the full derivation.
+                Premium = mean UDF at ≥70% Muslim − mean UDF statewide.
               </p>
-            </WalkthroughSection>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                UDF's strategies in non-reserved Malappuram
+              </h3>
+              <p>
+                The analysis universe is{" "}
+                <strong>Malappuram, non-reserved seats only — 15 ACs</strong>.
+                Wayanad (mixed-demographic, two ST seats) and Wandoor (SC
+                reserved) are filtered out — reservation forces candidate choice
+                and Wayanad's tribal-mixed dynamics don't fit the Muslim-belt
+                frame.
+              </p>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                Muslim Alliance — IUML (12 seats)
+              </h3>
+              <p className={ASIDE}>
+                UDF gave the seat to its Muslim-affiliated alliance partner.
+              </p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Seat</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>H/C/M</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Candidate
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {MUSLIM_ALLIANCE_MAL.map((row) => (
+                    <TableRow key={row.ac}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <SeatLink ac={row.ac}>{row.name}</SeatLink>
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          "font-mono tabular-nums"
+                        )}
+                      >
+                        {row.hcm}
+                      </TableCell>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.candidate}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        +{row.udfDelta.toFixed(1)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                INC-Muslim — INC fields a Muslim candidate (2 seats)
+              </h3>
+              <p className={ASIDE}>
+                INC contested itself with a Muslim candidate.
+              </p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Seat</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>H/C/M</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Candidate
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {INC_MUSLIM_MAL.map((row) => (
+                    <TableRow key={row.ac}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <SeatLink ac={row.ac}>{row.name}</SeatLink>
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          "font-mono tabular-nums"
+                        )}
+                      >
+                        {row.hcm}
+                      </TableCell>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.candidate}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        +{row.udfDelta.toFixed(1)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                INC-Hindu — empty bucket
+              </h3>
+              <p>
+                <strong>
+                  No non-reserved Muslim-majority Malappuram seat had a Hindu
+                  INC candidate in 2026.
+                </strong>{" "}
+                The bucket is empty by strategic choice — see closing.
+              </p>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                Special — Thavanur (1 seat)
+              </h3>
+              <p className={ASIDE}>
+                INC fielded a Christian candidate at a 67%-Muslim seat. Anomaly.
+              </p>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>Seat</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>H/C/M</TableHead>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Candidate
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      UDF Δ
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {MUSLIM_SPECIAL_MAL.map((row) => (
+                    <TableRow key={row.ac}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <SeatLink ac={row.ac}>{row.name}</SeatLink>
+                      </TableCell>
+                      <TableCell
+                        className={cn(
+                          COMPACT_CELL_CLASS,
+                          "font-mono tabular-nums"
+                        )}
+                      >
+                        {row.hcm}
+                      </TableCell>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        {row.candidate}{" "}
+                        <span className="text-muted-foreground">
+                          ({row.religion})
+                        </span>
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        +{row.udfDelta.toFixed(1)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+
+              <h3 className="mt-6 font-heading text-base font-semibold">
+                Performance summary
+              </h3>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className={COMPACT_HEAD_CLASS}>
+                      Strategy
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      n
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      Won
+                    </TableHead>
+                    <TableHead
+                      className={cn(COMPACT_HEAD_CLASS, NUM_HEAD_CLASS)}
+                    >
+                      Mean ΔUDF
+                    </TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {MUSLIM_PERFORMANCE_MAL.map((row) => (
+                    <TableRow key={row.strategy}>
+                      <TableCell className={COMPACT_CELL_CLASS}>
+                        <strong>{row.strategy}</strong>
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.n}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.n === 0 ? "—" : row.won}
+                      </TableCell>
+                      <TableCell
+                        className={cn(COMPACT_CELL_CLASS, NUM_CELL_CLASS)}
+                      >
+                        {row.meanUdfDelta == null
+                          ? "—"
+                          : `+${row.meanUdfDelta.toFixed(1)}pp`}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+              <p className={ASIDE}>Statewide ΔUDF reference: ~+7pp.</p>
+
+              <p className="mt-4">
+                <strong>
+                  In Muslim-Kerala UDF's playbook had two options — IUML or
+                  INC-Muslim. INC-Hindu wasn't on the menu.
+                </strong>{" "}
+                In Christian-belt seats UDF freely mixed candidate religions
+                inside INC. In non-reserved Muslim-majority Malappuram, UDF
+                didn't field a Hindu candidate in a single seat — either
+                alliance with IUML, or run a Muslim INC. The asymmetry IS the
+                strategy.
+              </p>
+            </CohortSection>
 
             {/* Cross-references — synthesis pointing at the other walkthroughs */}
             <section className="rounded-md border bg-card/50 p-5 sm:p-6">

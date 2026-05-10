@@ -822,3 +822,198 @@ export const STRATEGY_COLOURS: Record<Strategy, string> = {
   "INC-Hindu": "#15B981", // emerald-500
   Special: "#9CA3AF", // gray-400
 }
+
+// ===========================================================================
+// Muslim-belt section data (Malappuram, non-reserved seats)
+// ===========================================================================
+
+export type MuslimStrategy =
+  | "Muslim Alliance"
+  | "INC-Muslim"
+  | "INC-Hindu"
+  | "Special"
+
+/** UDF mean at ≥70% Muslim vs UDF statewide, by cycle. */
+export const MUSLIM_PREMIUM_HISTORY = [
+  {
+    year: 2011,
+    udfHigh: "57.0%",
+    udfStatewide: "46.2%",
+    premium: "+10.8pp",
+  },
+  {
+    year: 2016,
+    udfHigh: "50.0%",
+    udfStatewide: "39.3%",
+    premium: "+10.7pp",
+  },
+  {
+    year: 2021,
+    udfHigh: "50.6%",
+    udfStatewide: "39.3%",
+    premium: "+11.3pp",
+  },
+  {
+    year: 2026,
+    udfHigh: "59.4%",
+    udfStatewide: "46.6%",
+    premium: "+12.8pp",
+    highlight: true,
+  },
+] as const
+
+/** Muslim Alliance (IUML) cohort — Malappuram non-reserved (12 seats). */
+export const MUSLIM_ALLIANCE_MAL = [
+  {
+    ac: 41,
+    name: "Vengara",
+    hcm: "14/0/85",
+    candidate: "K.M. Shaji",
+    udfDelta: 3.2,
+  },
+  {
+    ac: 43,
+    name: "Tirurangadi",
+    hcm: "18/0/82",
+    candidate: "P.M.A. Sameer",
+    udfDelta: 14.1,
+  },
+  {
+    ac: 44,
+    name: "Tanur",
+    hcm: "18/0/82",
+    candidate: "P.K. Navas",
+    udfDelta: 7.9,
+  },
+  {
+    ac: 45,
+    name: "Tirur",
+    hcm: "21/1/78",
+    candidate: "Kurukkoli Moideen",
+    udfDelta: 5.4,
+  },
+  {
+    ac: 34,
+    name: "Ernad",
+    hcm: "22/1/77",
+    candidate: "P.K. Basheer",
+    udfDelta: 4.3,
+  },
+  {
+    ac: 46,
+    name: "Kottakkal",
+    hcm: "25/0/75",
+    candidate: "Prof. Abid Hussain Thangal",
+    udfDelta: 11.1,
+  },
+  {
+    ac: 39,
+    name: "Mankada",
+    hcm: "24/2/75",
+    candidate: "Manjalamkuzhi Ali",
+    udfDelta: 9.9,
+  },
+  {
+    ac: 37,
+    name: "Manjeri",
+    hcm: "24/1/75",
+    candidate: "Adv. M. Rahmathulla",
+    udfDelta: 10.6,
+  },
+  {
+    ac: 40,
+    name: "Malappuram",
+    hcm: "24/1/75",
+    candidate: "P.K. Kunhalikutty",
+    udfDelta: 9.8,
+  },
+  {
+    ac: 33,
+    name: "Kondotty",
+    hcm: "27/1/72",
+    candidate: "T.P. Ashrafali",
+    udfDelta: 9.9,
+  },
+  {
+    ac: 38,
+    name: "Perinthalmanna",
+    hcm: "27/2/71",
+    candidate: "Najeeb Kanthapuram",
+    udfDelta: 10.4,
+  },
+  {
+    ac: 42,
+    name: "Vallikunnu",
+    hcm: "30/1/69",
+    candidate: "T.V. Ibrahim",
+    udfDelta: 8.6,
+  },
+] as const
+
+/** INC-Muslim cohort — Malappuram non-reserved (2 seats). */
+export const INC_MUSLIM_MAL = [
+  {
+    ac: 48,
+    name: "Ponnani",
+    hcm: "33/0/67",
+    candidate: "K.P. Noushad Ali",
+    udfDelta: 10.4,
+  },
+  {
+    ac: 35,
+    name: "Nilambur",
+    hcm: "31/8/61",
+    candidate: "Aryadan Shoukath",
+    udfDelta: 15.4,
+  },
+] as const
+
+/** Thavanur — INC fielded a Christian candidate at a 67%-Muslim seat. */
+export const MUSLIM_SPECIAL_MAL = [
+  {
+    ac: 47,
+    name: "Thavanur",
+    hcm: "33/0/67",
+    candidate: "Adv. V.S. Joy",
+    religion: "Christian",
+    udfDelta: 4.1,
+  },
+] as const
+
+/** Performance summary for non-reserved Malappuram. */
+export const MUSLIM_PERFORMANCE_MAL = [
+  {
+    strategy: "Muslim Alliance" as MuslimStrategy,
+    n: 12,
+    won: 12,
+    meanUdfDelta: 8.8,
+  },
+  {
+    strategy: "INC-Muslim" as MuslimStrategy,
+    n: 2,
+    won: 2,
+    meanUdfDelta: 12.9,
+  },
+  {
+    strategy: "INC-Hindu" as MuslimStrategy,
+    n: 0,
+    won: 0,
+    meanUdfDelta: null as number | null,
+  },
+] as const
+
+/**
+ * Cropped viewBox for Malappuram. All 16 ACs render; non-analysis ACs
+ * (Wandoor SC reserved) are visible but uncoloured.
+ */
+export const MALAPPURAM_VIEWBOX: [number, number, number, number] = [
+  231, 246, 156, 185,
+]
+
+/** Colour palette for the Muslim strategy choropleth. */
+export const MUSLIM_STRATEGY_COLOURS: Record<MuslimStrategy, string> = {
+  "Muslim Alliance": "#15B981", // emerald-500 (parallels Christian INC-Hindu)
+  "INC-Muslim": "#1F77B4", // UDF blue
+  "INC-Hindu": "#9CA3AF", // gray (would be amber but bucket is empty)
+  Special: "#9CA3AF", // gray-400
+}
