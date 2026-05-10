@@ -7,7 +7,6 @@ import { CohortSection } from "@/components/walkthroughs/cohort-section"
 import { ConfidenceBadge } from "@/components/walkthroughs/confidence-badge"
 import { MethodologyPopover } from "@/components/walkthroughs/methodology-popover"
 import { SeatLink } from "@/components/walkthroughs/prose-link"
-import { PullQuote } from "@/components/walkthroughs/pull-quote"
 import { SeeAlsoQuestions } from "@/components/walkthroughs/see-also-questions"
 import {
   COMPACT_CELL_CLASS,
@@ -292,8 +291,8 @@ export function WalkthroughsUDFPage() {
               <p className={SECTION_LEAD}>
                 <strong>
                   In ACs with high Christian share, UDF's vote share has run
-                  ahead of its statewide average in every cycle since 2011 —
-                  and in 2026 that gap doubled.
+                  ahead of its statewide average in every cycle since 2011 — and
+                  in 2026 that gap doubled.
                 </strong>{" "}
                 Christian-heavy ACs gained an extra ~3–4pp on top of the
                 baseline UDF lead they have always had.
@@ -362,12 +361,8 @@ export function WalkthroughsUDFPage() {
                 UDF's three Christian strategies
               </h3>
               <p>
-                Across the 36 Christian-belt ACs (≥30% Christian, plus the two
-                KEC seats below 30%), UDF used three distinct approaches. We
-                focus the analysis on the three adjacent central districts —{" "}
-                <strong>Idukki, Ernakulam, Kottayam</strong> — which hold 26 of
-                the 36 seats. (Wayanad and Malappuram are tracked in the Muslim
-                arc.){" "}
+                Review the 36 Christian-belt ACs to identify UDF's three
+                distinct approaches listed below:{" "}
                 <Sheet>
                   <SheetTriggerButton>
                     See all 36 Christian-belt ACs →
@@ -472,11 +467,10 @@ export function WalkthroughsUDFPage() {
               </p>
 
               <h3 className="mt-6 font-heading text-base font-semibold">
-                Christian Alliance — KEC or KC-Jacob (5 seats in Central-3)
+                Christian Alliance — KEC or KC-Jacob
               </h3>
               <p className={ASIDE}>
-                UDF gave the seat to a Christian-affiliated alliance partner.
-                Won 5 of 5.
+                UDF gave these seat to a Christian-affiliated alliance partner.
               </p>
               <Table>
                 <TableHeader>
@@ -532,11 +526,10 @@ export function WalkthroughsUDFPage() {
               </Table>
 
               <h3 className="mt-6 font-heading text-base font-semibold">
-                INC-Christian — INC fields a Christian candidate (11 seats)
+                INC-Christian — INC fields a Christian candidate
               </h3>
               <p className={ASIDE}>
-                UDF didn't delegate to an alliance; INC contested itself with a
-                Christian candidate. Won 11 of 11.
+                INC contested itself with a Christian candidate.
               </p>
               <Table>
                 <TableHeader>
@@ -585,11 +578,11 @@ export function WalkthroughsUDFPage() {
               </Table>
 
               <h3 className="mt-6 font-heading text-base font-semibold">
-                INC-Hindu — INC fields a Hindu candidate (7 seats)
+                INC-Hindu — INC fields a Hindu candidate
               </h3>
               <p className={ASIDE}>
                 INC contested with a Hindu candidate at seats where the Hindu
-                share matched or exceeded the Christian share. Won 7 of 7.
+                share matched or exceeded the Christian share.
               </p>
               <Table>
                 <TableHeader>
@@ -640,7 +633,7 @@ export function WalkthroughsUDFPage() {
               </Table>
 
               <h3 className="mt-6 font-heading text-base font-semibold">
-                Performance in Central-3
+                Performance in Christian Districts
               </h3>
               <Table>
                 <TableHeader>
@@ -704,12 +697,6 @@ export function WalkthroughsUDFPage() {
                 fielded.
               </p>
             </CohortSection>
-
-            <PullQuote>
-              UDF and LDF effectively traded efficiency between cycles. The same
-              geographic vote distribution that wasted UDF's votes in 2021
-              converted them into seats in 2026.
-            </PullQuote>
 
             {/* SECTION 3 — FPTP amplification */}
             <WalkthroughSection
