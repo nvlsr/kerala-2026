@@ -1,7 +1,7 @@
 [
   {
     "ac_id": 1,
-    "ac_name": "Ma njeshwar",
+    "ac_name": "Manjeshwar",
     "district": "kasaragod",
     "total_pois": 62,
     "by_religion": {
@@ -388,7 +388,7 @@
   },
   {
     "ac_id": 17,
-    "ac_name": "Mananthavady (ST)",
+    "ac_name": "Mananthavady",
     "district": "wayanad",
     "total_pois": 143,
     "by_religion": {
@@ -415,7 +415,7 @@
   },
   {
     "ac_id": 18,
-    "ac_name": "Sulthanbathery (S",
+    "ac_name": "Sulthanbathery",
     "district": "wayanad",
     "total_pois": 143,
     "by_religion": {
@@ -584,7 +584,7 @@
   },
   {
     "ac_id": 25,
-    "ac_name": "Balusseri (SC)",
+    "ac_name": "Balusseri",
     "district": "kozhikode",
     "total_pois": 100,
     "by_religion": {
@@ -860,7 +860,7 @@
   },
   {
     "ac_id": 36,
-    "ac_name": "Wandoor (SC)",
+    "ac_name": "Wandoor",
     "district": "malappuram",
     "total_pois": 85,
     "by_religion": {
@@ -1266,7 +1266,7 @@
   },
   {
     "ac_id": 53,
-    "ac_name": "Kongad(SC)",
+    "ac_name": "Kongad",
     "district": "palakkad",
     "total_pois": 94,
     "by_religion": {
@@ -1375,7 +1375,7 @@
   },
   {
     "ac_id": 57,
-    "ac_name": "Tarur (SC)",
+    "ac_name": "Tarur",
     "district": "palakkad",
     "total_pois": 78,
     "by_religion": {
@@ -1469,7 +1469,7 @@
   },
   {
     "ac_id": 61,
-    "ac_name": "Chelakkara (SC)",
+    "ac_name": "Chelakkara",
     "district": "thrissur",
     "total_pois": 126,
     "by_religion": {
@@ -1655,7 +1655,7 @@
   },
   {
     "ac_id": 68,
-    "ac_name": "Nattika(SC)",
+    "ac_name": "Nattika",
     "district": "thrissur",
     "total_pois": 216,
     "by_religion": {
@@ -2079,7 +2079,7 @@
   },
   {
     "ac_id": 84,
-    "ac_name": "Kunnathunad (SC)",
+    "ac_name": "Kunnathunad",
     "district": "ernakulam",
     "total_pois": 243,
     "by_religion": {
@@ -2197,7 +2197,7 @@
   },
   {
     "ac_id": 88,
-    "ac_name": "Devikulam (SC)",
+    "ac_name": "Devikulam",
     "district": "idukki",
     "total_pois": 123,
     "by_religion": {
@@ -2399,7 +2399,7 @@
   },
   {
     "ac_id": 95,
-    "ac_name": "Vaikom (SC)",
+    "ac_name": "Vaikom",
     "district": "kottayam",
     "total_pois": 176,
     "by_religion": {
@@ -2800,7 +2800,7 @@
   },
   {
     "ac_id": 109,
-    "ac_name": "Mavelikkara (SC)",
+    "ac_name": "Mavelikkara",
     "district": "alappuzha",
     "total_pois": 209,
     "by_religion": {
@@ -2986,7 +2986,7 @@
   },
   {
     "ac_id": 115,
-    "ac_name": "Adoor (SC)",
+    "ac_name": "Adoor",
     "district": "pathanamthitta",
     "total_pois": 272,
     "by_religion": {
@@ -3068,7 +3068,7 @@
   },
   {
     "ac_id": 118,
-    "ac_name": "Kunnathur (SC)",
+    "ac_name": "Kunnathur",
     "district": "kollam",
     "total_pois": 179,
     "by_religion": {
@@ -3332,7 +3332,7 @@
   },
   {
     "ac_id": 128,
-    "ac_name": "Attingal (SC)",
+    "ac_name": "Attingal",
     "district": "thiruvananthapuram",
     "total_pois": 162,
     "by_religion": {
@@ -3465,7 +3465,7 @@
   },
   {
     "ac_id": 133,
-    "ac_name": "Vattiyoorkavu(SC)",
+    "ac_name": "Vattiyoorkavu",
     "district": "thiruvananthapuram",
     "total_pois": 133,
     "by_religion": {
@@ -3493,7 +3493,7 @@
   },
   {
     "ac_id": 134,
-    "ac_name": "Thiruvananthapura",
+    "ac_name": "Thiruvananthapuram",
     "district": "thiruvananthapuram",
     "total_pois": 202,
     "by_religion": {

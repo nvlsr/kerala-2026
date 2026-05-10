@@ -215,6 +215,3 @@ Distribution (full Kerala): tag 1,315 · name_strong 1,203 · name_weak 1,407
   generic-`catholic` POIs, sub-rite is inferred from district/AC. The same
   district sometimes contains both Latin and Syro-Malabar parishes; the
   prior picks the dominant one but is imperfect at the parish level.
-- **AC name typo in geojson**: `Ma njeshwar` (with space) is the actual
-  string in `data/kerala-constituencies.geojson` — preserved as-is rather
-  than fixed here.

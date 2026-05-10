@@ -55,10 +55,9 @@ const CHECKS: Array<{
   { ac: "Vamanapuram", expectedReligion: "hindu", note: "Interior TVM Hindu-majority" },
   { ac: "Wadakkanchery", expectedReligion: "hindu", note: "Thrissur interior Hindu (geojson spelling)" },
 
-  // Edge: misspelled geojson AC name — just check it produces output, no religion expectation
-  // (small POI count, hindu/muslim/christian tightly competitive; reality is Muslim plurality
-  // by population but Hindu plurality by POI count.)
-  { ac: "Ma njeshwar", note: "Kasaragod (geojson has typo 'Ma njeshwar'); checking POIs flow through" },
+  // Manjeshwar — small POI count, hindu/muslim/christian tightly competitive
+  // (Muslim plurality by population but Hindu plurality by POI count).
+  { ac: "Manjeshwar", note: "Kasaragod; small POI count, no religion plurality expected" },
 ]
 
 const acData = new Map<string, ClassifiedPOI[]>()
