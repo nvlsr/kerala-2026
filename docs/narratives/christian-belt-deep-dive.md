@@ -81,7 +81,6 @@ Sorted by Christian share. **Strategy** classifies UDF's approach:
 - **Alliance** — UDF gave the seat to a Christian-affiliated ally (KEC or KC-Jacob).
 - **INC-Christian** — INC contested directly with a Christian candidate.
 - **INC-Hindu** — INC contested directly with a Hindu candidate.
-- **Special** — non-Christian alliance (IUML) / INC-Muslim candidate / Independent. Footnoted at the end of the doc; not part of the main analysis.
 
 ---
 
@@ -91,7 +90,7 @@ The strategies discovered above now applied to **Central-3** (Idukki,
 Ernakulam, Kottayam) — the three adjacent central districts. 26 of
 the 36 Christian-belt seats are here.
 
-### 3a. Alliance — KEC or KC-Jacob (5 seats in Central-3)
+### 3a. Christian Alliance — KEC or KC-Jacob (5 seats in Central-3)
 
 | District | Name | H/C/M | Christian party (full name) | Party 2021 | Party 2026 | Δ | UDF Δ | Won? |
 |---|---|---|---|---|---|---|---|---|
@@ -100,8 +99,6 @@ the 36 Christian-belt seats are here.
 | Idukki | Thodupuzha | 39/41/21 | Kerala Congress (Joseph faction) | 48.6 | 58.4 | +9.7 | +9.7 | won |
 | Kottayam | Kaduthuruthy | 53/44/3 | Kerala Congress (Joseph faction) | 45.4 | 56.8 | +11.4 | +11.4 | won |
 | Kottayam | Changanassery | 46/44/11 | Kerala Congress (Joseph faction) | 39.9 | 46.4 | +6.5 | +6.5 | won |
-
-**5 of 5 won.**
 
 ### 3b. INC-Christian (11 seats in Central-3)
 
@@ -119,8 +116,6 @@ the 36 Christian-belt seats are here.
 | Ernakulam | Thrikkakara | 45/34/21 | — | Uma Thomas | +16.1 | won |
 | Idukki | Devikulam | 61/32/7 | **SC** | F. Raja | +1.2 | won |
 
-**11 of 11 won.**
-
 ### 3c. INC-Hindu (7 seats in Central-3)
 
 | District | Name | H/C/M | Res | Candidate | UDF Δ | Won? |
@@ -133,83 +128,22 @@ the 36 Christian-belt seats are here.
 | Ernakulam | Eranakulam | 45/34/21 | — | T.J. Vinod | +15.8 | won |
 | Ernakulam | Paravur | 59/33/7 | — | V.D. Satheesan | **−2.3** | won |
 
-**7 of 7 won.**
-
 ---
 
 ## 4. Performance of each cohort in Central-3
 
 | Strategy | n | Won | Mean ΔUDF | Read |
 |---|---|---|---|---|
-| **Alliance (KEC / KC-Jacob)** | 5 | 5 | **+8.8pp** | Wave-rate. KEC/KC-Jacob won by big margins because of high baselines, but the *additional* swing on top of those baselines was modest. Christian allies were par this cycle. |
-| **INC-Christian** | 11 | 11 | **+11.4pp** | INC's own Christian candidates picked up large swings — and won every seat. |
-| **INC-Hindu** | 7 | 7 | **+12.4pp** | At mixed-population seats where Hindu share matched or exceeded Christian share, Hindu INC candidates gained even *more* than Christian INC. **Christians moved toward INC regardless of who INC fielded** — community-driven swing, not candidate-driven. |
+| **Christian Alliance** | 5 | 5 | **+8.8pp** | Wave-rate. KEC/KC-Jacob won by big margins because of high baselines, but the *additional* swing on top of those baselines was modest. Christian allies were par this cycle. |
+| **INC-Christian** | 11 | 11 | **+11.4pp** | INC's own Christian candidates picked up large swings. |
+| **INC-Hindu** | 7 | 7 | **+12.4pp** | **Christians moved toward INC regardless of who INC fielded** |
 
 Statewide ΔUDF reference: ~+7pp.
 
 **Takeaway.** UDF's "go get Christian votes ourselves via INC"
 out-performed its "delegate to KEC alliance" strategy in Central-3.
 Within INC-direct, candidate religion didn't matter for swing
-magnitude — Hindu INC actually beat Christian INC by ~1pp on
-average, driven by Udumbanchola (+22.6pp). All 23 INC-direct seats
-in Central-3 were UDF wins.
-
----
-
-## 5. Application to the Central-3 districts
-
-[todo] how difficult is this? Please apply the 3 cohorts we identified above. Build a table exactly the same as 4 above, but just for the 3 districts.
-
-**Idukki, Ernakulam, Kottayam** — three adjacent districts that hold
-**26 of the 36** Christian-belt ACs. UDF won **25 of 26**¹ in these
-three districts.
-
-¹ Pala (Kottayam) was won by Mani C. Kappen as Independent — the
-single non-formally-UDF win. See special-cases footnote.
-
-### 5a. Strong Christian shift to UDF
-
-| District | n in Christian-belt | Won | Mean ΔUDF |
-|---|---|---|---|
-| Ernakulam | 13 | 13 | +11.4pp |
-| Kottayam | 8 | 7 | +9.0pp (or +12.2pp without Pala) |
-| Idukki | 5 | 5 | +11.4pp |
-| **Central-3 total** | **26** | **25** | **+10.4pp** |
-
-Mean swing across the three central districts is ~+10pp — about 3pp
-above the statewide wave (+7pp), matching the size of the 2026
-premium identified in §1.
-
-### 5b. Biggest swings — Ernakulam city + central Kottayam, all INC-direct
-
-The largest UDF swings inside Central-3 cluster geographically:
-
-**Ernakulam city cluster** (urban / semi-urban, INC-direct):
-
-| Name | UDF Δ | Strategy | Candidate |
-|---|---|---|---|
-| Vypen | +15.5 | 3b | Tony Chammany (Christian) |
-| Eranakulam | +15.8 | 3c | T.J. Vinod (Hindu) |
-| Thrikkakara | +16.1 | 3b | Uma Thomas (Christian) |
-| Muvattupuzha | +16.4 | 3b | Mathew Kuzhalnadan (Christian) |
-| Kochi | +16.7 | sp | Mohammed Shiyas (Muslim) |
-
-**Central Kottayam cluster** (semi-urban, INC-direct):
-
-| Name | UDF Δ | Strategy | Candidate |
-|---|---|---|---|
-| Ettumanoor | +17.5 | 3c | Nattakom Suresh (Hindu) |
-| Puthuppally | +17.8 | 3b | Chandy Oommen (Christian) |
-
-**Idukki anchor**:
-
-| Name | UDF Δ | Strategy | Candidate |
-|---|---|---|---|
-| Udumbanchola | +22.6 | 3c | Senapathy Venu (Hindu) — biggest swing in Kerala |
-
-All of these are **INC-direct seats** — none were given to KEC. The
-biggest UDF gains in the Christian belt came where INC kept the seat
-for itself, regardless of whether it fielded a Christian or a Hindu.
+magnitude.
 
 ---
 
@@ -252,27 +186,3 @@ INC-direct strategy still gained markedly more.
   sibling)?
 
 ---
-
-## Appendix A. LDF Christian-party seats (context only)
-
-> Not part of the UDF-strategy analysis above. Included for
-> background — LDF's Christian vehicles (KC(M) + KC(B)) lost all 13
-> seats they contested.
-
-| District | Name | Chr% | Party 2021 | Party 2026 | Δ | LDF Δ | Won? |
-|---|---|---|---|---|---|---|---|
-| Kannur | Irikkur | 28.1 | 43.8 | 32.1 | −11.6 | −11.6 | lost |
-| Thrissur | Chalakudy | 44.4 | 42.5 | 35.1 | −7.4 | −7.4 | lost |
-| Ernakulam | Perumbavoor | 38.6 | 35.1 | 31.8 | −3.3 | −3.3 | lost |
-| Ernakulam | Piravom | 42.1 | 37.8 | 29.7 | −8.1 | −8.1 | lost |
-| Idukki | Thodupuzha | 40.6 | 34.0 | 27.9 | −6.2 | −6.2 | lost |
-| Idukki | Idukki | 47.3 | 47.5 | 36.6 | −10.9 | −10.9 | lost |
-| Kottayam | Pala | 52.0 | 39.3 | 35.3 | −4.0 | −4.0 | lost |
-| Kottayam | Kaduthuruthy | 44.1 | 42.2 | 31.5 | −10.6 | −10.6 | lost |
-| Kottayam | Changanassery | 43.5 | 44.8 | 39.5 | −5.4 | −5.4 | lost |
-| Kottayam | Kanjirappally | 43.0 | 43.8 | 37.6 | −6.2 | −6.2 | lost |
-| Kottayam | Poonjar | 41.5 | 41.9 | 34.8 | −7.1 | −7.1 | lost |
-| Pathanamthitta | Ranni | 46.9 | 41.2 | 40.8 | −0.4 | −0.4 | lost |
-| Kollam | Pathanapuram (KC(B)) | 20.2 | 49.1 | 43.8 | −5.3 | −5.3 | lost |
-
-Mean KCM/KCB drop −6.65pp.
