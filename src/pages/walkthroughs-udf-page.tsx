@@ -99,9 +99,8 @@ const RAIL_GROUPS = [
 
 /**
  * Arc 2 — Central Kerala UDF amplification. The 47-of-47 sweep across
- * 5 districts + the Christian-belt premium (β=+0.19, p=0.008 with
- * district FE) + the FPTP mechanism (UDF seat:vote-share ratio
- * 1.04 → 2.18) that turned a 7pp swing into a 102-seat majority.
+ * 5 districts plus the Christian-belt premium that delivered ~46% of
+ * UDF's majority margin.
  */
 export function WalkthroughsUDFPage() {
   const all = getAllACMetrics()
@@ -226,21 +225,7 @@ export function WalkthroughsUDFPage() {
                 >
                   anti-LDF wave
                 </Link>
-                .{" "}
-                <strong>
-                  FPTP amplified the combined swing into a 2× seat-conversion
-                  ratio
-                </strong>{" "}
-                — doubling UDF's seats-per-vote-share from 1.04 (in 2021) to
-                2.18 (in 2026).
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-[14.5px]">
-                Behind the landslide is a less-romantic finding: UDF didn't win
-                mostly on tight margins (median UDF margin was 12.19pp). The
-                mechanism is the <strong>seat:vote-share ratio flip</strong> —
-                UDF and LDF effectively traded efficiency between cycles. The
-                same vote distribution that wasted UDF's votes in 2021 converted
-                them in 2026.
+                .
               </p>
             </section>
 
@@ -847,8 +832,7 @@ export function WalkthroughsUDFPage() {
                     anti-LDF wave
                   </Link>
                   . LDF lost ~7pp uniformly across nearly every constituency;
-                  UDF absorbed most of it (98% on average) and FPTP did the
-                  rest.
+                  UDF absorbed most of it (98% on average).
                 </li>
                 <li>
                   In 21 southern Hindu-heavy seats, UDF lost the absorption
@@ -925,14 +909,6 @@ export function WalkthroughsUDFPage() {
                   </strong>{" "}
                   — would suggest 2026 was anti-incumbency channelled through
                   the Christian belt, not a structural re-alignment.
-                </li>
-                <li>
-                  <strong className="font-medium text-foreground">
-                    Multi-cycle FPTP analysis showing Kerala's vote distribution
-                    doesn't typically sit near threshold
-                  </strong>{" "}
-                  — would suggest the 2026 amplification was an unusual
-                  configuration that won't recur.
                 </li>
               </ul>
             </section>
