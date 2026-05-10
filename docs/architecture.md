@@ -158,15 +158,37 @@ If it's a per-constituency aggregate:
 
 ## Walkthrough pages
 
-The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance walkthrough pages (LDF, UDF, NDA) plus an index, a methodology page, and an interactive insights page (`/walkthroughs/insights`) for cohort-overlap exploration. Each walkthrough page composes a small set of building blocks:
+The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance walkthrough pages (LDF, UDF, NDA) plus an index, a methodology page, and an interactive insights page (`/walkthroughs/insights`) for cohort-overlap exploration. Each arc page composes a small set of shared building blocks under `src/components/walkthroughs/`:
+
+**Page chrome:**
+
+- `WalkthroughPageShell` — outer wrapper for the LDF / NDA / UDF arc pages. Bundles the breadcrumb + title + 1fr+180px grid + section-stack + sticky right rail. Pages pass `breadcrumbLeaf`, `title`, `railGroups`, plus children. Methodology and Insights pages have different layouts and don't use this shell.
+- `PageRail` — sticky right-rail navigation; an `id`-anchor list grouped under labels. Active section is highlighted via IntersectionObserver.
+
+**Section building-blocks (compose inside the shell):**
 
 - `WalkthroughSection` — heading + prose + optional visual (`visual-right` / `visual-left` / `stacked` layout).
-- `ChoroplethMap` — the standard map; takes a `valueByAC: Map<number, number>`, a colour scale, optional `highlightSeats: Set<number>` for outlining a subset, and optional `viewBox` to crop into a region (e.g. Trivandrum + Kollam for the NDA page).
-- `CohortSection` (NDA page only, currently) — domain-specific 2-column variant: heading on top, then map | content side-by-side, with `id` for anchor linking. See `walkthroughs-nda-page.tsx`.
-- `Table` (shadcn) — built-in horizontal scroll on overflow; styled compactly via the `COMPACT_HEAD_CLASS` / `COMPACT_CELL_CLASS` shared constants.
+- `CohortSection` — 2-column layout (visual on one side, prose+tables on the other) at a 2:3 column ratio. Used by NDA + UDF for cohort drill-downs.
+- `EyebrowCard` (with `ThesisLede` / `SynthesisCard` presets) — bordered card with an uppercase eyebrow label and an optional right-aligned slot. Used at the top (Thesis) and end (Synthesis) of arc pages.
+- `WhatWouldWeakenSection` — terminal "What would weaken this conclusion" section. Pages pass a typed `Weakener[]` array (`{ lead, rest }`) instead of open-coding the markup.
+
+**Visuals:**
+
+- `ChoroplethMap` — the standard map; takes a `valueByAC: Map<number, number>`, a colour scale (sequential / diverging), optional `categoricalColors: Map<number, string>` for qualitative classifications (e.g. UDF strategy buckets), `highlightSeats: Set<number>` for outlining a subset, and optional `viewBox` to crop into a region.
+- `ScatterWithTrend`, `ComparisonBar`, `Histogram`, etc. — chart components in `src/components/charts/`.
+
+**Inline:**
+
+- `Table` (shadcn) — built-in horizontal scroll on overflow; styled compactly via the `COMPACT_HEAD_CLASS` / `COMPACT_CELL_CLASS` constants in `src/components/walkthroughs/table-classes.ts`. Use `HIGHLIGHT_ROW_CLASS` to amber-emphasise a row, `NUM_HEAD_CLASS` / `NUM_CELL_CLASS` for right-aligned numeric columns.
 - `SeatLink` / `PartyLink` / `ProseLink` — subtle inline anchor links to `/explore?seat=N`, party views, etc.
 
-**Cohort data convention.** Cohort row tables for the NDA page live in `src/pages/walkthroughs-nda-data.ts`, separated from the page component so the page itself stays scannable. Each cohort defines:
+**Centralised tokens** in `src/components/walkthroughs/`:
+
+- `colors.ts` — alliance hues (UDF_BLUE, LDF_RED, NDA_ORANGE) and walkthrough-specific palette (CHRISTIAN_BELT_BLUE, MUSLIM_BELT_GREEN, KEC_AMBER, INC_CHRISTIAN_BLUE, INC_HINDU_EMERALD, SPECIAL_GRAY). Used both in JSX (`style`/`categoricalColors`) and in data files (e.g. STRATEGY_COLOURS in `walkthroughs-udf-data`).
+- `table-classes.ts` — compact-table styling tokens.
+- `typography.ts` — named-tier typography constants (see below).
+
+**Cohort data convention.** Cohort row tables for the NDA page live in `src/pages/walkthroughs-nda-data.ts`, separated from the page component so the page itself stays scannable. UDF follows the same split with `walkthroughs-udf-data.ts`. Each cohort defines:
 
 - A `*_ROWS` array (typed) — the table data.
 - A `*_ACS` set derived from `_ROWS` — used to drive the binary-highlight choropleth map for that cohort.
@@ -175,7 +197,7 @@ Per-cohort vote-share aggregates (BJP / NDA Δ) are pre-computed and live in the
 
 ### Typography system
 
-Each walkthrough page applies a small named-tier typography system rather than ad-hoc inline classes. The NDA page is the reference implementation; the constants live at the top of `walkthroughs-nda-page.tsx` and can be promoted to a shared `src/components/walkthroughs/typography.ts` when other walkthrough pages adopt them.
+Each walkthrough page applies a small named-tier typography system rather than ad-hoc inline classes. Constants live in `src/components/walkthroughs/typography.ts` and are imported across the arc pages.
 
 Five tiers, applied consistently so the reader's eye learns the hierarchy quickly:
 
