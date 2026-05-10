@@ -39,7 +39,6 @@ const ARC_KEY_STAT_CLASS = "text-base font-semibold"
  * Top page of the /walkthroughs surface. Hero + 3 arc cards + sidebar
  * callouts. The reader should grasp the three-arc thesis in 90s.
  *
- * Built per docs/walkthroughs-publish-plan.md Phase 5.
  */
 export function WalkthroughsPage() {
   // Composite hero: 3 small Kerala maps side-by-side, one per arc.

@@ -112,7 +112,6 @@ const acByNumber = new Map(constituencies.map((c) => [c.constituencyNumber, c]))
  * scale). Hover shows a tooltip; supports an optional set of ACs
  * to outline as highlights.
  *
- * Built per docs/walkthroughs-publish-plan.md Phase 3.
  */
 export function ChoroplethMap({
   valueByAC,

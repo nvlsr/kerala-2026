@@ -61,7 +61,7 @@ describe("flow detection — pattern counts", () => {
   })
 
   test("the three canonical validation cases stay classified as expected", () => {
-    // Spot-checks tied to docs/vote-flows.md. These three seats were
+    // Spot-checks for canonical validation cases. These three seats were
     // the original threshold-tuning examples and are the most-cited
     // patterns; if any of them stops classifying, the methodology
     // probably needs revisiting.

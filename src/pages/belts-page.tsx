@@ -159,16 +159,6 @@ export function BeltsPage() {
               <Link to="/drifts" className="underline-offset-2 hover:underline">
                 /drifts
               </Link>
-              . The future religion-gradient page (planned, not built) is
-              sketched in{" "}
-              <a
-                href="https://github.com/nvlsr/kerala-2026/blob/main/docs/religion-map.md"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-offset-2 hover:underline"
-              >
-                docs/religion-map.md
-              </a>
               .
             </p>
           </MethodologyDisclosure>

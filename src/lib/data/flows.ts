@@ -13,10 +13,9 @@
  *    moving in the same direction as the cumulative drift (filters out
  *    single-cycle anomalies). See `classifyMultiCycleDrift`.
  *
- * Caveats: see `docs/vote-flows.md`. Critical one — these are *inferred*
- * flows from net share changes. Individual voter movement isn't observable
- * from results data; we surface seats whose alliance-level deltas suggest
- * a flow.
+ * Critical caveat — these are *inferred* flows from net share changes.
+ * Individual voter movement isn't observable from results data; we
+ * surface seats whose alliance-level deltas suggest a flow.
  *
  * Logic ported from `scripts/detect-flows.ts`. The script is the working
  * tool for ad-hoc analysis and threshold tuning; this module is the runtime

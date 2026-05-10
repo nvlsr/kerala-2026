@@ -272,19 +272,6 @@ export function DriftsPage() {
               </a>{" "}
               — open to challenge and PRs.
             </p>
-            <p>
-              The full methodology document (with caveats and validation cases)
-              lives at{" "}
-              <a
-                href="https://github.com/nvlsr/kerala-2026/blob/main/docs/vote-flows.md"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-offset-2 hover:underline"
-              >
-                docs/vote-flows.md
-              </a>
-              .
-            </p>
           </MethodologyDisclosure>
         </section>
       </PageMain>
