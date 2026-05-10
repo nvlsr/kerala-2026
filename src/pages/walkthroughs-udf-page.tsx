@@ -85,19 +85,19 @@ const MUSLIM_BELT_COLOUR = "#15B981" // emerald — IUML / Muslim-belt
 /** Right-rail nav anchors for this page. Each id matches a `<section id="...">` below. */
 const RAIL_GROUPS = [
   {
-    label: "The geography",
+    label: "The argument",
     items: [
       { id: "central-5-sweep", label: "Central-5 sweep" },
       { id: "christian-belt", label: "Christian-belt premium" },
+      { id: "muslim-belt", label: "Muslim-belt premium" },
     ],
   },
   {
-    label: "The other half",
-    items: [{ id: "muslim-belt", label: "Muslim-belt premium" }],
-  },
-  {
-    label: "Caveats",
-    items: [{ id: "what-would-weaken", label: "What would weaken this" }],
+    label: "Wrap-up",
+    items: [
+      { id: "synthesis", label: "Synthesis" },
+      { id: "what-would-weaken", label: "What would weaken this" },
+    ],
   },
 ] as const
 
@@ -1231,7 +1231,10 @@ export function WalkthroughsUDFPage() {
             </CohortSection>
 
             {/* Synthesis — recap with cross-walkthrough handoffs */}
-            <section className="rounded-md border bg-card/50 p-5 sm:p-6">
+            <section
+              id="synthesis"
+              className="scroll-mt-20 rounded-md border bg-card/50 p-5 sm:p-6"
+            >
               <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
                 Synthesis
               </p>
@@ -1270,15 +1273,15 @@ export function WalkthroughsUDFPage() {
                   hint: "Direct seat-level evidence on the Christian-belt premium.",
                 },
                 {
+                  id: "udf-gains-muslim-majority",
+                  label: "Where did UDF gain most in Muslim-majority seats?",
+                  hint: "Direct seat-level evidence on the Muslim-belt premium.",
+                },
+                {
                   id: "ldf-collapse-christian-heavy",
                   label:
                     "Where did LDF collapse most in Christian-heavy seats?",
                   hint: "Mirror image of the UDF gains in the same belt.",
-                },
-                {
-                  id: "udf-gains-muslim-majority",
-                  label: "Where did UDF gain most in Muslim-majority seats?",
-                  hint: "Cross-checks the 'minority consolidation' framing.",
                 },
                 {
                   id: "udf-underperformed-christian-heavy",
@@ -1308,7 +1311,7 @@ export function WalkthroughsUDFPage() {
                 </li>
                 <li>
                   <strong className="font-medium text-foreground">
-                    Sub-community survey microdata
+                    Sub-community microdata
                   </strong>{" "}
                   showing the Christian-belt premium is concentrated in one
                   denomination (e.g. Latin Catholic Munambam backlash,
@@ -1318,10 +1321,30 @@ export function WalkthroughsUDFPage() {
                 </li>
                 <li>
                   <strong className="font-medium text-foreground">
-                    A 2031 Christian-belt revert
+                    Coalition-arithmetic alternative for the Muslim-belt
+                    finding
+                  </strong>{" "}
+                  — the "INC-Hindu wasn't on the menu" claim assumes UDF chose
+                  who to field. If IUML's seat-share agreement simply doesn't
+                  leave non-reserved Malappuram seats for INC to contest with
+                  whatever candidate INC wants, the finding becomes coalition
+                  bookkeeping, not community-pressure read.
+                </li>
+                <li>
+                  <strong className="font-medium text-foreground">
+                    A 2031 reversion in either belt
                   </strong>{" "}
                   — would suggest 2026 was anti-incumbency channelled through
-                  the Christian belt, not a structural re-alignment.
+                  the central-Kerala belts, not a structural re-alignment.
+                </li>
+                <li>
+                  <strong className="font-medium text-foreground">
+                    Candidate-religion misclassification
+                  </strong>{" "}
+                  — religion inferred from name in some cases. Several wrong
+                  classifications could shift the strategy bucket means,
+                  particularly for the smaller buckets (INC-Muslim n=2;
+                  INC-Hindu n=11 in Christian-belt).
                 </li>
               </ul>
             </section>
