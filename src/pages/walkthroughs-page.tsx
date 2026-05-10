@@ -16,8 +16,8 @@ const SURPRISES = [
     body: "Press framing predicted larger LDF losses in pilgrim-route ACs. Data shows -3.6pp vs -7.3pp in matched controls — LDF lost LESS in route ACs. NDA share also fell there, opposite of the prediction.",
   },
   {
-    title: "Muslim-share gradient: collapses under district FE",
-    body: "Simple Pearson r ≈ 0; once district fixed effects are added, β=+0.016, p=0.795. Within a district, Muslim share doesn't predict UDF Δshare.",
+    title: "Muslim-belt: stable lead, ordinary swing",
+    body: 'Muslim-heavy ACs lead UDF by ~+11pp every cycle (the level). In 2026 they swung at the wave rate, not above it (the gradient). Press "minority consolidation" framings conflate the two — the data supports the first, not the second.',
   },
   {
     title: "Cabinet-status: no penalty above the LDF baseline",
