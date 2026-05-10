@@ -70,18 +70,17 @@ const OUTLIER_AC_NUMBERS = new Set([
 ])
 
 /**
- * The five districts where UDF swept 47-of-47: Idukki, Ernakulam,
- * Wayanad, Malappuram, Kottayam. Drives the binary highlight on the
- * Central-5 sweep choropleth — only ACs in these districts get
- * coloured; the rest of the state is muted.
+ * Christian-belt and Muslim-belt sub-clusters within Central-5.
+ * The Central-5 sweep choropleth colours each AC by its sub-cluster
+ * to telegraph the two subsequent sections (Christian-belt premium,
+ * Muslim-belt premium). Christian-belt = the 3 adjacent southern
+ * districts; Muslim-belt = the 2 northern districts.
  */
-const CENTRAL_5_DISTRICTS = new Set([
-  "idukki",
-  "ernakulam",
-  "wayanad",
-  "malappuram",
-  "kottayam",
-])
+const CHRISTIAN_BELT_DISTRICTS = new Set(["idukki", "ernakulam", "kottayam"])
+const MUSLIM_BELT_DISTRICTS = new Set(["wayanad", "malappuram"])
+
+const CHRISTIAN_BELT_COLOUR = "#1F77B4" // UDF blue — Christian-belt
+const MUSLIM_BELT_COLOUR = "#15B981" // emerald — IUML / Muslim-belt
 
 /** Right-rail nav anchors for this page. Each id matches a `<section id="...">` below. */
 const RAIL_GROUPS = [
@@ -114,19 +113,26 @@ export function WalkthroughsUDFPage() {
   for (const [acNumber, alliance] of winner2026.entries()) {
     if (alliance === "UDF") udfWins.add(acNumber)
   }
-  // Binary map: 1 if AC is in one of the Central-5 districts, 0 otherwise.
-  // UDF won all 47 of these — the sweep IS the cohort, so highlighting
-  // by district is equivalent to highlighting UDF wins inside Central-5.
+  // Two-belt categorical map for the Central-5 sweep choropleth.
+  // Christian-belt districts (Idukki, Ernakulam, Kottayam) get the
+  // Christian-belt colour; Muslim-belt districts (Wayanad, Malappuram)
+  // get the Muslim-belt colour. Other ACs are absent from the map and
+  // render with the default muted/outline fill.
   const central5Acs = new Set<number>()
-  for (const m of all) {
-    const district = districtsMeta.constituencyToDistrict[String(m.acNumber)]
-    if (district && CENTRAL_5_DISTRICTS.has(district)) {
-      central5Acs.add(m.acNumber)
-    }
-  }
+  const central5Colours = new Map<number, string>()
   const central5ValueMap = new Map<number, number>()
   for (const m of all) {
-    central5ValueMap.set(m.acNumber, central5Acs.has(m.acNumber) ? 1 : 0)
+    const district = districtsMeta.constituencyToDistrict[String(m.acNumber)]
+    if (!district) continue
+    if (CHRISTIAN_BELT_DISTRICTS.has(district)) {
+      central5Acs.add(m.acNumber)
+      central5Colours.set(m.acNumber, CHRISTIAN_BELT_COLOUR)
+      central5ValueMap.set(m.acNumber, 1)
+    } else if (MUSLIM_BELT_DISTRICTS.has(district)) {
+      central5Acs.add(m.acNumber)
+      central5Colours.set(m.acNumber, MUSLIM_BELT_COLOUR)
+      central5ValueMap.set(m.acNumber, 1)
+    }
   }
 
   // Christian-share × UDF Δshare scatter points
@@ -265,14 +271,33 @@ export function WalkthroughsUDFPage() {
                     colorScale="sequential"
                     domain={[0, 1]}
                     sequentialColor="#1F77B4"
-                    ariaLabel="Kerala constituencies; the 5 districts where UDF swept 47-of-47 (Idukki, Ernakulam, Wayanad, Malappuram, Kottayam) highlighted in blue"
+                    categoricalColors={central5Colours}
+                    ariaLabel="Kerala constituencies; the 5 districts where UDF swept 47-of-47 highlighted in two colours — blue for the southern Christian belt (Idukki, Ernakulam, Kottayam) and emerald for the northern Muslim belt (Wayanad, Malappuram)"
                     unit=""
                     decimals={0}
                     highlightSeats={central5Acs}
                   />
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px]">
+                    <span className="inline-flex items-center gap-1.5">
+                      <span
+                        className="inline-block h-3 w-3 rounded-sm"
+                        style={{ backgroundColor: CHRISTIAN_BELT_COLOUR }}
+                      />
+                      <span className="text-muted-foreground">
+                        Christian belt
+                      </span>
+                    </span>
+                    <span className="inline-flex items-center gap-1.5">
+                      <span
+                        className="inline-block h-3 w-3 rounded-sm"
+                        style={{ backgroundColor: MUSLIM_BELT_COLOUR }}
+                      />
+                      <span className="text-muted-foreground">Muslim belt</span>
+                    </span>
+                  </div>
                 </div>
               }
-              caption="The 5 districts where UDF swept 47-of-47 — Idukki, Ernakulam, Wayanad, Malappuram, Kottayam — highlighted in blue across the full state. The non-contiguous geography is itself part of the story."
+              caption="The 5 districts where UDF swept 47-of-47, split into two sub-clusters: the southern Christian belt (Idukki, Ernakulam, Kottayam — blue) and the northern Muslim belt (Wayanad, Malappuram — emerald). The two belts are analysed separately in the next two sections."
             >
               <p className={SECTION_LEAD}>
                 <strong>Five districts went UDF in every seat.</strong> 47 of
@@ -290,6 +315,22 @@ export function WalkthroughsUDFPage() {
                   Central Kerala provided the arithmetic difference between a
                   plurality and a majority government.
                 </strong>
+              </p>
+              <p>
+                The 5 districts split into two distinct sub-clusters: the{" "}
+                <strong>
+                  <span style={{ color: CHRISTIAN_BELT_COLOUR }}>
+                    southern Christian belt
+                  </span>
+                </strong>{" "}
+                (Idukki, Ernakulam, Kottayam) and the{" "}
+                <strong>
+                  <span style={{ color: MUSLIM_BELT_COLOUR }}>
+                    northern Muslim belt
+                  </span>
+                </strong>{" "}
+                (Wayanad, Malappuram). Different communities, different UDF
+                strategies, different stories — analysed in turn below.
               </p>
             </WalkthroughSection>
 
