@@ -45,12 +45,14 @@ import {
 import { cn } from "@/lib/utils"
 
 import {
+  CENTRAL_3_VIEWBOX,
   CHRISTIAN_ALLIANCE_C3,
   CHRISTIAN_BELT_36,
   INC_CHRISTIAN_C3,
   INC_HINDU_C3,
   PERFORMANCE_C3,
   PREMIUM_HISTORY,
+  STRATEGY_COLOURS,
 } from "./walkthroughs-udf-data"
 
 const OUTLIER_AC_NUMBERS = new Set([
@@ -178,6 +180,32 @@ export function WalkthroughsUDFPage() {
     },
   ]
 
+  // Strategy choropleth data: each Christian-belt AC maps to its
+  // strategy colour and ΔUDF (used for tooltip). Non-Christian-belt
+  // ACs in Central-3 (Aluva, Vaikom) get an outline-only / muted
+  // treatment by virtue of being absent from the categorical map.
+  const christianBeltStrategyColors = new Map<number, string>()
+  const christianBeltDeltaMap = new Map<number, number>()
+  const central3StrategyByAC = new Map<
+    number,
+    { name: string; strategy: string }
+  >()
+  for (const row of CHRISTIAN_BELT_36) {
+    const district = row.district.toLowerCase()
+    if (
+      district !== "idukki" &&
+      district !== "ernakulam" &&
+      district !== "kottayam"
+    )
+      continue
+    christianBeltStrategyColors.set(row.ac, STRATEGY_COLOURS[row.strategy])
+    christianBeltDeltaMap.set(row.ac, row.udfDelta)
+    central3StrategyByAC.set(row.ac, {
+      name: row.name,
+      strategy: row.strategy,
+    })
+  }
+
   return (
     <PageShell
       breadcrumbs={[
@@ -275,18 +303,88 @@ export function WalkthroughsUDFPage() {
               heading="The Christian-belt premium"
               mapSide="left"
               map={
-                <ScatterWithTrend
-                  points={scatterPoints}
-                  xLabel="Christian share (%)"
-                  yLabel="UDF Δshare (pp)"
-                  xUnit="%"
-                  yUnit="pp"
-                  showTrend
-                  pointColor="rgb(31, 119, 180)"
-                  ariaLabel="Christian share vs UDF Δshare, 140 ACs"
-                />
+                <div className="space-y-6">
+                  <div>
+                    <ScatterWithTrend
+                      points={scatterPoints}
+                      xLabel="Christian share (%)"
+                      yLabel="UDF Δshare (pp)"
+                      xUnit="%"
+                      yUnit="pp"
+                      showTrend
+                      pointColor="rgb(31, 119, 180)"
+                      ariaLabel="Christian share vs UDF Δshare, 140 ACs"
+                    />
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Each dot is one of 140 ACs. Christian-heavy ACs (right
+                      side of x-axis) cluster above the trend, showing the
+                      premium on top of the statewide wave.
+                    </p>
+                  </div>
+                  <div>
+                    <ChoroplethMap
+                      valueByAC={christianBeltDeltaMap}
+                      colorScale="sequential"
+                      categoricalColors={christianBeltStrategyColors}
+                      viewBox={CENTRAL_3_VIEWBOX}
+                      ariaLabel="Central-3 districts (Idukki, Ernakulam, Kottayam) coloured by UDF's 2026 Christian strategy"
+                      unit="pp"
+                      decimals={1}
+                      tooltipFormat={(acNumber, value) => {
+                        const row = central3StrategyByAC.get(acNumber)
+                        return (
+                          <span>
+                            <span className="font-medium">
+                              {row?.name ?? `AC ${acNumber}`}
+                            </span>
+                            {row && (
+                              <>
+                                {" "}
+                                <span className="text-muted-foreground">
+                                  ({row.strategy})
+                                </span>
+                                :{" "}
+                                {value != null && (
+                                  <span className="font-mono">
+                                    {value >= 0 ? "+" : ""}
+                                    {value.toFixed(1)}pp
+                                  </span>
+                                )}
+                              </>
+                            )}
+                          </span>
+                        )
+                      }}
+                    />
+                    <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px]">
+                      {(
+                        Object.entries(STRATEGY_COLOURS) as [
+                          keyof typeof STRATEGY_COLOURS,
+                          string,
+                        ][]
+                      ).map(([label, color]) => (
+                        <span
+                          key={label}
+                          className="inline-flex items-center gap-1.5"
+                        >
+                          <span
+                            className="inline-block h-3 w-3 rounded-sm"
+                            style={{ backgroundColor: color }}
+                          />
+                          <span className="text-muted-foreground">{label}</span>
+                        </span>
+                      ))}
+                    </div>
+                    <p className="mt-2 text-xs text-muted-foreground">
+                      Idukki, Ernakulam, Kottayam — the 3 adjacent central
+                      districts. ACs with ≥30% Christian share coloured by UDF's
+                      2026 strategy. Christian Alliance seats cluster eastern;
+                      INC-Hindu hugs Ernakulam city; INC-Christian fills the
+                      rest.
+                    </p>
+                  </div>
+                </div>
               }
-              mapCaption="Each dot is one of 140 ACs. Christian-heavy ACs (right side of x-axis) cluster above the trend, showing the premium on top of the statewide wave."
             >
               <p className={SECTION_LEAD}>
                 <strong>
@@ -367,10 +465,7 @@ export function WalkthroughsUDFPage() {
                   <SheetTriggerButton>
                     See all 36 Christian-belt ACs →
                   </SheetTriggerButton>
-                  <SheetContent
-                    side="right"
-                    className="sm:max-w-[75vw]"
-                  >
+                  <SheetContent side="right" className="sm:max-w-[75vw]">
                     <SheetHeader>
                       <SheetTitle>
                         The 36 Christian-belt ACs (≥30% Christian)
@@ -694,8 +789,8 @@ export function WalkthroughsUDFPage() {
                   Christian party.
                 </strong>{" "}
                 Where UDF contested directly via INC — with a Hindu or a
-                Christian — it gained ~3pp more than where it ceded the seat
-                to its Christian ally KEC.
+                Christian — it gained ~3pp more than where it ceded the seat to
+                its Christian ally KEC.
               </p>
             </CohortSection>
 

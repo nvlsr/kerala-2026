@@ -25,6 +25,18 @@ type Props = {
   divergingMidpoint?: number
   /** Hue for sequential scale. Defaults to a blue tone. */
   sequentialColor?: string
+  /**
+   * Optional categorical-color mode. When supplied, each AC's fill is
+   * read from this map directly instead of being computed from
+   * `valueByAC` + `colorScale`. ACs missing from the map render with
+   * the same neutral muted fill as missing-data ACs. Use this for
+   * qualitative classifications (e.g. UDF strategy buckets) where
+   * the numeric scales don't apply.
+   *
+   * `valueByAC` is still consulted for tooltip values, so callers
+   * should pass a meaningful numeric (e.g. UDF Δshare) alongside.
+   */
+  categoricalColors?: Map<number, string>
   /** Optional set of ACs to highlight with a heavier outline (e.g.
    *  the 3 BJP wins on the BJP-pocket arc page). */
   highlightSeats?: Set<number>
@@ -108,6 +120,7 @@ export function ChoroplethMap({
   domain,
   divergingMidpoint = 0,
   sequentialColor = "#1F77B4",
+  categoricalColors,
   highlightSeats,
   tooltipFormat,
   unit = "",
@@ -192,7 +205,10 @@ export function ChoroplethMap({
 
             let fill: string
             let fillOpacity: number = 1
-            if (!hasValue) {
+            const categoricalFill = categoricalColors?.get(acNum)
+            if (categoricalFill != null) {
+              fill = categoricalFill
+            } else if (!hasValue) {
               fill = "var(--muted)"
               fillOpacity = 0.4
             } else if (colorScale === "diverging") {

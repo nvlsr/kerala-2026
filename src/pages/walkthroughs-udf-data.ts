@@ -800,3 +800,25 @@ export const PERFORMANCE_C3 = [
     read: "Christians moved toward INC regardless of who INC fielded.",
   },
 ] as const
+
+/**
+ * Cropped viewBox for Idukki + Ernakulam + Kottayam (Central-3).
+ * Coordinate space matches `kerala-constituencies-paths.json`
+ * (canvas 600 × 900). Computed from the 26 Central-3 ACs with a
+ * 5% margin around the bounding box.
+ */
+export const CENTRAL_3_VIEWBOX: [number, number, number, number] = [
+  293, 478, 269, 238,
+]
+
+/**
+ * Colour palette for the strategy choropleth. Distinct hues so all
+ * three INC-direct vs alliance vs special buckets are easily
+ * distinguishable.
+ */
+export const STRATEGY_COLOURS: Record<Strategy, string> = {
+  "Christian Alliance": "#D97706", // amber-600
+  "INC-Christian": "#1F77B4", // UDF blue
+  "INC-Hindu": "#15B981", // emerald-500
+  Special: "#9CA3AF", // gray-400
+}
