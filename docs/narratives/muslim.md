@@ -19,7 +19,7 @@
 - **No Muslim hereditary seats** (0 of 6 documented family successions). All 5 UDF dynasties are Christian-belt. **Muslim Malappuram = institutional IUML rotation; Christian-belt UDF = personal-coalition dynasties.** Different organisational logic between the two UDF heartlands.
 - **NDA is structurally locked out of Muslim Kerala** — 113 of 140 ACs block-NDA mechanically; 61 of those via Muslim ≥ 25 %. **0 always-NDA seats exist anywhere in our 3-cycle window with measurable Muslim presence.**
 - **BJP is building Hindu vote share inside Muslim-blocked seats** in 11 ACs (Kozhikode N+S the headlines), but no measurable progress in Malappuram itself.
-- **BJP's most strategically valuable Kerala target is the Christian-Muslim coalition belt**, not Muslim or pure-Hindu Kerala. Peeling 8-10 % of Christian sub-rite voters in ~28 central-Kerala ACs would shrink the minority-coalition block from "blocking" to "competitive" — and **reduce Muslim coalitional leverage** without ever needing to win a Muslim voter.
+- **BJP's most strategically valuable Kerala target is the Christian-Muslim coalition belt**, not Muslim or pure-Hindu Kerala. The Twenty20 precedent (Kunnathunad 2021 — T20 absorbed 25 % vote share, seat flipped UDF→LDF) is the only real-data evidence we have that **Christian central-Kerala vote is moveable at meaningful magnitude** — and fragmenting it indirectly weakens Muslim coalitional leverage without ever needing to win a Muslim voter.
 
 ---
 
@@ -53,70 +53,46 @@ CR sub-types where this mode applies:
 - `mixed-muslim` Kannur + Kozhikode (n=22; mostly UDF-leaning but historically LDF-competitive via Ezhava-Tiyya Hindu base)
 - `cosmopolitan` ACs with Muslim 15-45 % (n=~25)
 
-### 1c. Punch-above-weight mechanism in action — AC 53 KONGAD (Palakkad)
+### 1c. How the mechanism works — concentration + Hindu vote not consolidated
 
-A worked example showing **how a 29 % minority Muslim community can be the decisive vote** in a 71 % Hindu-Christian AC.
+Two reinforcing factors produce the disproportionate leverage:
 
-**Data sources for the table below**:
-- **2026 vote shares (UDF / LDF / NDA)** — *measured*. From `data/results-2026.json` (ECI-published).
-- **Community shares (Muslim, Christian, Hindu)** — *measured*. From `data/ac-religion-2025.json` (Census 2025 projection).
-- **Within-community vote splits (Muslim 70 / 20 / 10, Christian 60 / 30 / 10)** — **assumed**, not measured. Illustrative averages based on §1d-bis statewide back-calculation; real splits vary by AC.
-- **Hindu vote split** — *derived*. Back-calculated from total vote shares minus assumed Muslim+Christian contributions.
-- **Counterfactual** — *mathematical inference* given the assumptions above.
+1. **Muslim community is the most bloc-organised voting group in Kerala** via the IUML institutional structure (80 % strike rate in 2026). When the Muslim share in an AC is 25-40 %, that bloc-voting concentration is itself a political force.
+2. **The non-Muslim vote — predominantly Hindu — is not consolidated.** No alliance has unified the Hindu vote in Kerala. Hindu sub-castes align with different parties (Ezhava-Tiyya with CPI(M), Nair-Brahmin with conservative-Congress / BJP-curious, etc. — see §1e), and no IUML-equivalent partisan vehicle exists for Hindus.
 
-**AC 53 Kongad context**:
-- Muslim 29 %, Christian 5 %, Hindu ~66 % (Palakkad cosmopolitan, no Hindu sub-caste lock).
-- History: LDF won in 2016 and 2021. **2026: UDF flipped the seat by +2.5 pp.**
-- 2026 vote: UDF 42.2 % / LDF 39.7 % / NDA 16.8 %.
+The combination — one community votes ~bloc-style while the larger majority splits ~3 ways — is what makes a 25-40 % minority community decisive. **This isn't a precision claim about individual voter behaviour; it's an observation about institutional alignment and aggregate outcomes.**
 
-**Decomposition** (within-community → AC share):
+### 1d. Direct evidence the Hindu vote is not consolidated
 
-| Community | AC share | → UDF | → LDF | → NDA |
-| --- | ---: | ---: | ---: | ---: |
-| Muslim (29 %) | | **20.3** | 5.8 | 2.9 |
-| Christian (5 %) | | 3.0 | 1.5 | 0.5 |
-| Hindu (66 %, back-calculated) | | 18.9 | 32.4 | 13.4 |
-| **2026 actual** | | **42.2 %** | **39.7 %** | **16.8 %** |
+We can't observe how individual Hindus vote (we don't use exit polls). But the aggregate vote pattern *forces* the conclusion that Hindu Kerala doesn't vote as a unified bloc:
 
-The Hindu vote splits **29 % UDF / 49 % LDF / 20 % NDA** — Hindu Kongad is fundamentally an LDF seat (almost half going LDF). UDF wins this AC because **Muslim community (29 %) delivers 20 of the 42 UDF pp** — almost half of UDF's total share.
+**Argument 1 — LDF's persistent ~37-45 % vote share is structurally Hindu**
 
-**Counterfactual** — if the 29 % Muslim community had voted 50 / 50 UDF / LDF instead of 70 / 20 / 10:
-- UDF: 14.5 + 3.0 + 18.9 = **36.4 %**
-- LDF: 14.5 + 1.5 + 32.4 = **48.4 %**
-- LDF would win by **+12 pp** instead of losing by 2.5 pp.
+- LDF has won 35-50 % statewide vote share for 70+ years (verifiable from ECI archives).
+- Muslim community (~28 % of Kerala population) historically votes UDF at high rates; even at LDF's highest plausible Muslim share, the math constrains LDF's Muslim contribution to at most ~5 % of statewide vote.
+- **Therefore LDF's base must be majority-Hindu.** Hindu vote is *not NDA-consolidated*, and LDF's persistence shows it's *not UDF-consolidated either*.
 
-**The Muslim community at 29 % of the AC delivered a 14 pp swing** (LDF +12 → UDF +2.5) — equivalent to roughly half the AC's effective political weight. **That's "punching above weight": 29 % of voters producing ~50 % of the effective political force.**
+**Argument 2 — NDA's vote share is bounded by district Hindu sub-caste mix**
 
-### 1d. Why the punch works — the Hindu vote splits ~3 ways (data-supported)
+NDA's AC-level vote share varies sharply by district Hindu profile (REAL DATA, no back-calc — sourced directly from `data/results-2026.json`):
 
-The Muslim community delivers 70-85 % UDF via IUML's institutional bloc-voting. But that alone wouldn't generate disproportionate leverage — it would just match their demographic share. The leverage comes from the **other half of the equation**: the Hindu vote splits ~3 ways while the Muslim vote concentrates.
+| District Hindu profile | n ACs | NDA share (mean) | NDA range |
+| --- | ---: | ---: | --- |
+| nair-heavy (Trivandrum/Pathanamthitta) | 19 | **23 %** | 8–41 % |
+| mixed-fragmented (Kasaragod) | 5 | **21 %** | 5–36 % |
+| ezhava-heavy (Idukki/Thrissur/Kottayam) | 18 | 15 % | 7–29 % |
+| mixed-nair-ezhava (Kollam) | 11 | 14 % | 5–38 % |
+| sc-st-heavy (Wayanad) | 3 | 14 % | 11–18 % |
+| ezhava-very-heavy (Kannur/Kozhikode/Alappuzha) | 33 | **12 %** | 5–28 % |
+| mixed-ezhava-leaning (Malappuram/Ernakulam) | 51 | 12 % | 3–33 % |
 
-**Statewide 2026 back-calculation** (same illustrative-assumption method as §1c, applied to all 140 ACs):
+NDA's ceiling depends entirely on Hindu sub-caste demographics. In Nair-heavy + Kasaragod districts NDA can reach 35-41 %; in Ezhava-Tiyya-dominant districts NDA struggles past 15 %. **No district profile gives NDA more than ~23 % AC-vote-share on average.** A consolidated Hindu pro-NDA vote would push these numbers much higher in nair-heavy districts and weaken less elsewhere — neither has happened.
 
-| Statewide | UDF | LDF | NDA |
-| --- | ---: | ---: | ---: |
-| All voters | 46.5 % | 37.6 % | 14.2 % |
-| **Hindu vote alone** | **27 %** | **51 %** | **19 %** |
+**Argument 3 — 70 years of UDF / LDF alternation**
 
-No alliance gets a majority of the Hindu vote anywhere; LDF leads at ~51 % statewide but with significant UDF + NDA presence. **The Hindu vote breaking 3-ways means each individual Hindu sub-bloc is too small to dominate a Kerala AC alone.**
+Kerala has alternated UDF and LDF in roughly 50/50 cycles since the late 1970s, with no third front displacing either. **A consolidated Hindu vote would have ended this alternation by giving one alliance a permanent edge.** The alternation is itself a structural signal that the Hindu vote is split between the two non-NDA fronts (with sub-caste-driven sub-patterns) and remains broadly non-consolidated for either.
 
-**Hindu vote split by district sub-caste profile** (back-calculated, n = 128 of 140 ACs with Hindu ≥ 30 %):
-
-| District Hindu profile | n ACs | Hindu → UDF | Hindu → LDF | Hindu → NDA |
-| --- | ---: | ---: | ---: | ---: |
-| ezhava-very-heavy (Kannur/Kozhikode/Alappuzha) | 33 | 28 % | **55 %** | 15 % |
-| mixed-ezhava-leaning (Malappuram/Ernakulam) | 39 | 28 % | 49 % | 19 % |
-| ezhava-heavy (Idukki/Thrissur/Kottayam) | 18 | 27 % | 50 % | 20 % |
-| mixed-nair-ezhava (Kollam) | 11 | 31 % | 49 % | 17 % |
-| sc-st-heavy (Wayanad) | 3 | 27 % | 50 % | 19 % |
-| nair-heavy (Trivandrum/Pathanamthitta) | 19 | 23 % | 44 % | **30 %** |
-| mixed-fragmented (Kasaragod) | 5 | 22 % | 40 % | **36 %** |
-
-**Three structural takeaways**:
-
-1. **No district profile has any alliance above 55 % of the Hindu vote.** Hindu Kerala is genuinely 3-way everywhere.
-2. **The split skews by sub-caste demographics** — Ezhava-Tiyya-dominant districts lean LDF (Hindu LDF share 50-55 %); Nair-heavy + Kasaragod fragmented districts have NDA at 30-36 % of the Hindu vote.
-3. **NDA's Hindu vote share is bounded between ~15 % (ezhava-very-heavy) and ~36 % (mixed-fragmented Kasaragod)** — a 21 pp range across the state, but no district giving them a Hindu majority.
+**What we can say honestly**: Hindu Kerala votes 3-way (UDF / LDF / NDA), with the proportions varying by district sub-caste mix. We cannot quantify the exact within-Hindu split per AC without exit-poll data we don't use; but the aggregate patterns above are sufficient to support the "Hindu vote isn't consolidated" claim without any back-calculation.
 
 ### 1e. Why the Hindu vote splits 3 ways — structural reasons
 
@@ -286,112 +262,82 @@ Of 16 non-reserved Malappuram ACs, NDA trend distribution: **0 rising, 11 flat (
 
 ⚠️ **Note on framing**: this doesn't mean Sangh outreach in Malappuram is producing nothing — just no measurable vote-share shift in our 3-cycle window. Worth softening "essentially noise" framing to "no measurable progress despite Sangh outreach" — leaves space for the trend to change in 2031.
 
-### 4c. Rising NDA inside Muslim-blocked seats (12 ACs — with breakthrough math)
+### 4c. Rising NDA inside Muslim-blocked seats (12 ACs — gap to winner)
 
-NDA share is rising in 12 Muslim-presence ACs while the mechanical Muslim block holds. The interesting question: **how much Hindu vote would NDA need to consolidate to actually break through?**
+NDA share is rising in 12 Muslim-presence ACs while the mechanical Muslim block holds. **Real-data observation only**: how big is NDA's current vote-share gap to the winning alliance? (Smaller gap = closer to flippable, given continued NDA growth + no major minority defection.)
 
-**Method**: assume Muslim community votes 70/20/10 UDF/LDF/NDA in cosmopolitan and mixed-muslim ACs (85/12/3 in iuml-stronghold); assume Christian votes 60/30/10; back-calculate Hindu vote split from actual 2026 AC vote shares; compute the Hindu-share NDA would need to overtake the current winner. ⚠️ These splits are **illustrative assumptions**, not measured — the within-Muslim and within-Christian distribution is not in our data layer.
+| AC | M% / C% / H% | 2026 vote (U/L/N) | NDA gap to winner |
+| --- | --- | --- | ---: |
+| **27 Kozhikode N** | 41 / 2 / 57 | 36 / 35 / 28 (UDF) | **−8 pp** |
+| **56 Palakkad** | 34 / 3 / 63 | 42 / 23 / 33 (UDF) | **−9 pp** |
+| **68 Nattika** | 20 / 16 / 64 | 33 / 37 / 29 (LDF) | **−8 pp** |
+| **28 Kozhikode S** | 41 / 2 / 57 | 41 / 33 / 25 (UDF) | −16 pp |
+| 127 Varkala | 25 / 4 / 71 | 39 / 40 / 20 (LDF) | −20 pp |
+| 101 Poonjar | 16 / 41 / 42 | 39 / 35 / 25 (UDF) | −14 pp |
+| 52 Ottappalam | 44 / 2 / 54 | 29 / 44 / 25 (LDF) | −19 pp |
+| 61 Chelakkara | 29 / 10 / 61 | 29 / 47 / 23 (LDF) | −24 pp |
+| 84 Kunnathunad | 20 / 35 / 45 | 44 / 30 / 25 (UDF) | −19 pp |
+| 116 Karunagappally | 29 / 5 / 66 | 48 / 32 / 19 (UDF) | −29 pp |
+| 121 Punalur | 21 / 21 / 58 | 35 / 50 / 11 (LDF) | −39 pp |
+| 82 Eranakulam | 21 / 34 / 45 | 57 / 23 / 18 (UDF) | −39 pp |
 
-| AC | M% / C% / H% | 2026 vote (U/L/N) | Hindu→NDA today | Hindu→NDA needed | Δ needed |
-| --- | --- | --- | ---: | ---: | ---: |
-| **27 Kozhikode N** | 41 / 2 / 57 | 36 / 35 / 28 | 42 % | 56 % | **+14 pp** |
-| **56 Palakkad** | 34 / 3 / 63 | 42 / 23 / 33 | 47 % | 62 % | **+15 pp** |
-| **68 Nattika** | 20 / 16 / 64 | 33 / 37 / 29 | 39 % | 54 % | **+14 pp** |
-| **28 Kozhikode S** | 41 / 2 / 57 | 41 / 33 / 25 | 37 % | 66 % | +29 pp |
-| 127 Varkala | 25 / 4 / 71 | 39 / 40 / 20 | 24 % | 53 % | +29 pp |
-| 101 Poonjar | 16 / 41 / 42 | 39 / 35 / 25 | 45 % | 80 % | +35 pp |
-| 52 Ottappalam | 44 / 2 / 54 | 29 / 44 / 25 | 38 % | 74 % | +37 pp |
-| 61 Chelakkara | 29 / 10 / 61 | 29 / 47 / 23 | 31 % | 70 % | +40 pp |
-| 84 Kunnathunad | 20 / 35 / 45 | 44 / 30 / 25 | 43 % | 86 % | +43 pp |
-| 116 Karunagappally | 29 / 5 / 66 | 48 / 32 / 19 | 23 % | 68 % | +45 pp |
-| 121 Punalur | 21 / 21 / 58 | 35 / 50 / 11 | 11 % | 81 % | +70 pp |
-| 82 Eranakulam | 21 / 34 / 45 | 57 / 23 / 18 | 27 % | >100 % | impossible |
+**Three observed patterns**:
 
-**Three patterns**:
+1. **Closest gap (≤10 pp)** — **Kozhikode N + Palakkad + Nattika**. NDA at 28-33 % AC-share; the winning alliance at 36-42 %. Three of the closest-to-flippable seats among Muslim-presence ACs. **Genuine 2031 watch-list.**
 
-1. **Within reach (Δ ≤ 15 pp)** — **Kozhikode N + Palakkad + Nattika**. NDA already has 28-33 % AC vote share and ~40-47 % of the Hindu vote. To win, they need to consolidate roughly two-thirds of Hindus (62 % at Palakkad, 56 % at Kozhikode N). Significant lift but **not implausible at 2031 trajectory**, especially given Mujahid-BJP softening (see §2f).
+2. **Medium gap (14-29 pp)** — **Kozhikode S, Varkala, Poonjar, Ottappalam, Chelakkara, Kunnathunad, Karunagappally**. NDA needs sustained multi-cycle growth to close. Not impossible but unprecedented in Kerala.
 
-2. **Far reach (Δ 25-45 pp)** — **Kozhikode S, Varkala, Poonjar, Ottappalam, Chelakkara, Kunnathunad, Karunagappally**. NDA would need 65-86 % of the Hindu vote — would require both breaking the Ezhava-LDF alignment AND consolidating Nair vote behind BJP. Not impossible but unprecedented in Kerala.
+3. **Large gap (≥39 pp)** — **Punalur, Eranakulam**. NDA's vote share is structurally constrained by the very high UDF or LDF concentration here.
 
-3. **Out of reach (Δ > 50 pp)** — **Punalur, Eranakulam**. Punalur's NDA share collapsed to 11 % in 2026 (declining trajectory under noise). Eranakulam is structurally hostile to NDA (UDF 57 % from large Christian + Muslim minority).
+**What we don't claim**: we don't compute exact "Hindu vote share NDA needs to consolidate" because that requires assumed within-community voting splits we don't have. The gap-to-winner is the honest observable quantity. **Closing it requires NDA to gain at the expense of either UDF or LDF (or both) within a fixed AC voter pool — that's the structural challenge §1d describes.**
 
-**Implication**: even *rising* NDA in Muslim-blocked seats is mostly within-noise gain at current trajectories. **The 3 ACs in the "within reach" tier are the genuine 2031 watch-list seats** — and they're concentrated where Muslim is not the dominant minority blocker (Palakkad 34 %, Nattika 20 %, Kozhikode N 41 % mixed-muslim where Muslim community is internally split). The Malappuram iuml-stronghold zone has no AC in any reach tier.
+### 4d. Kozhikode N — observable structural read
 
-### 4d. Worked example — what does it take for NDA to win Kozhikode N?
+**What we know from real data** (Kozhikode N, AC 27):
+- Muslim 41 %, Christian 2 %, Hindu ~57 % (Kozhikode is ezhava-very-heavy at the district level — Ezhava-Tiyya CPI(M) base structurally dominates the Hindu vote here)
+- 2026: UDF 36 / LDF 35 / NDA 28 (UDF won by 1 pp, flipping from 2021 LDF)
+- NDA trajectory 23 → 23 → 28 % over 10 years — rising
 
-**Kozhikode N 2026 actuals** (approximate):
+**What we cannot directly observe**: the within-community vote splits (how much of UDF's 36 % comes from Muslim vs Hindu, etc.).
 
-| Voter group | Share of AC | UDF | LDF | NDA |
-| --- | ---: | ---: | ---: | ---: |
-| Muslim | 41 % | ~31 % AC | ~7 % AC | ~2 % AC |
-| Christian | 4 % | ~3 % AC | ~1 % AC | ~0 % AC |
-| Hindu | 55 % | ~2.5 % AC | ~26.5 % AC | ~26 % AC |
-| **Total AC** | **100 %** | **~36.5 %** | **~35 %** | **~28 %** |
+**What we can structurally infer**:
+- The Muslim community here splits between IUML/UDF and LDF-aligned INL/NSC (mixed-muslim sub-type, §2d). The EK/AP factional dynamics (§2a) shape the split.
+- LDF's traditional base in Kozhikode is the Ezhava-Tiyya CPI(M) alignment, which has been politically dominant for 70+ years in this region.
+- NDA's growth from 23 → 28 % over 10 years has come substantially from within the Hindu vote (where else would it come from given Muslim/Christian vote against NDA?). Hindu-vote NDA growth at this rate is meaningful but not yet decisive.
 
-(Within-Hindu split: 5 % UDF / 48 % LDF / **47 % NDA** of the Hindu vote — already near-50/50 LDF vs NDA.)
+**For NDA to win Kozhikode N**, the math is irreducible: NDA needs to overtake the winning alliance (UDF won by 1 pp in 2026; in 2031, either UDF or LDF will likely win again unless NDA breaks ~38 % AC vote). Achieving 38 % from today's 28 % requires NDA to gain 10 pp from somewhere — almost certainly the Hindu Ezhava-Tiyya LDF vote, which has been structurally aligned for decades.
 
-**Implication**: **the Muslim community is the entire UDF base in Kozhikode N. Hindu vote is essentially LDF-vs-NDA contest with LDF barely edging.**
-
-**For NDA to overtake UDF and win** (need NDA > UDF and NDA > LDF):
-- At NDA = 35 % AC (62 % of Hindu vote — gaining from LDF), still loses by 1-2 pp
-- **Breakpoint**: NDA ≈ 38 % AC = **~65 % of the Hindu vote**
-
-⚠️ **The earlier "75 %" estimate was rough back-of-envelope; the corrected number is ~65 %.** Still substantial but not impossible — particularly given Mujahid-BJP softening (§2f) and ongoing Sangh outreach.
-
-**What this analysis CANNOT model**:
-- Within-Hindu sub-caste shifts (Ezhava-Tiyya defection from LDF, Nair consolidation behind BJP) — we have no AC-level Hindu sub-caste data
-- Cross-cutting national-issue effects
-- Jamaat / WPI 2031 behaviour (could move 5-10 % of Muslim vote either direction)
+**Honest read**: Kozhikode N is in the §4c "closest gap" tier, but NDA's path requires breaking a structural alignment (Ezhava-Tiyya ↔ CPI(M)/LDF) that has been the most durable feature of Hindu Kerala politics for half a century. Not impossible — Mujahid-BJP softening (§2f) and Sangh outreach hint at directional change — but **the historical record offers no precedent for a 10-pp single-decade Ezhava-LDF defection.** 2031 watch-list, not 2031 forecast.
 
 ### 4e. BJP's most strategically valuable Kerala target — Christian-Muslim coalition belt
 
-BJP cannot win Muslim Kerala (mode (a) lock). Pure-Hindu Kerala is saturated (Ezhava-LDF + Nair-BJP-curious already polarised). **The actionable target is the Christian-Muslim coalition belt of central Kerala** — 44 ACs where Christian ≥ 15 % AND Muslim ≥ 10 % co-anchor a minority block.
+BJP cannot win Muslim Kerala (mode (a) lock — see §1b). Pure-Hindu Kerala is constrained by the Hindu 3-way split (see §1d) — Sangh's Ezhava/Nair consolidation play is real but slow. **The most actionable BJP target is the Christian-Muslim coalition belt of central Kerala** — ~44 ACs where Christian ≥ 15 % AND Muslim ≥ 10 % co-anchor a minority block (concentrated in Kottayam / Ernakulam / Pathanamthitta / Idukki / Kollam / Alappuzha).
 
-**Quantitative test — what does a 10 % Christian defection from UDF actually do?**
+The strategic claim is structural: **if BJP fragments the Christian sub-rite vote in these ACs, the minority-coalition block weakens.** We don't model the precise effect with hypothetical defection scenarios (those depend on assumed within-community vote splits we don't have). Instead, we anchor the claim in real precedent.
 
-We modelled: for each of the 44 coalition-belt ACs, shift 10 % of Christian voters from UDF to NDA. Result:
+### 4e-bis. The Twenty20 case — real precedent for Christian-vote fragmentation
 
-- **3 ACs flip outright** — Pala, Kanjirappally, Chirayinkeezhu.
-- **Mechanism is mostly UDF→LDF (spoiler effect), not UDF→NDA direct.** Pala flips UDF→LDF because NDA gains push UDF below LDF in a 3-way race. Only in the highest-Christian ACs (Pala 52 %, Kanjirappally 43 %, Poonjar 41 %) does even a modest defection matter.
-- **Most coalition-belt ACs are robust to 10 % Christian defection** — UDF margins are 8-25 pp, and 1.6-4.0 pp of NDA gain isn't enough.
+The Kitex / Sabu Jacob group launched Twenty20 (T20) as a state-level political experiment in 2015. In 2021, T20 contested 8 central-Kerala ACs and produced measurable, ECI-recorded effects on Christian vote share:
 
-| Outcome | n | Note |
-| --- | ---: | --- |
-| UDF wins → still UDF wins | 30 | Robust |
-| LDF wins → still LDF wins | 9 | Robust |
-| UDF wins → LDF wins (NDA spoiler) | 3 | **Pala, Kanjirappally, Chirayinkeezhu** |
-| UDF wins → NDA wins (direct flip) | 0 | None |
-| LDF wins → NDA wins | 0 | None |
-| Other | 2 | Already-NDA seats unaffected |
+- **Kunnathunad 2021** — T20 came 2nd with **37 % vote share**. Conventional UDF vote share collapsed ~25 pp from 2016. **LDF won the seat from UDF.**
+- **Piravom 2021** — T20 came 3rd at 17 %.
+- **Poonjar, Kothamangalam, etc.** — T20 picked up 10-25 % vote share.
+- **In 2026** — T20 essentially absent. Those voters mostly went back to UDF, visible in our framework as the *post-T20 rebound* (Poonjar NDA 14 → 2 → 25 %, Kunnathunad NDA 11 → 5 → 25 %).
 
-**Honest finding**: 10 % Christian defection alone *doesn't dramatically flip the coalition belt*. Earlier drafts claimed "8-10 % Christian peel-off reduces the block from 'blocking' to 'competitive' in ~28 ACs" — **this overstated the effect**. The actual mechanism is more selective: only the heavily-Christian Kottayam-Idukki sub-belt (Pala / Kanjirappally / Poonjar / Thodupuzha / Pathanamthitta) is highly leveraged on Christian alignment.
+**What this real-precedent demonstrates** (no back-calc needed — all numbers from ECI):
 
-**What would actually break the belt at scale**: ≥ 25-30 % Christian defection — which is what **Twenty20 demonstrated as conceptually feasible**.
+1. **Christian voters in central Kerala are moveable** — the absorbing party doesn't need to win, only to demonstrate identity-adjacent appeal.
+2. **At 25 % defection magnitude, UDF coalition breaks** — Kunnathunad flipped UDF→LDF in 2021, a real ECI-recorded outcome with T20 as the only meaningful change in the AC dynamic.
+3. **Fragmentation effects are reversible if the alternative party vanishes** — T20's near-disappearance in 2026 saw the voters mostly return UDF, not migrate to NDA.
 
-### 4e-bis. The Twenty20 case — proof-of-concept for fragmentation
-
-The Kitex / Sabu Jacob group launched Twenty20 (T20) as a state-level political experiment in 2015. In 2021, T20 contested 8 central-Kerala ACs and made a serious dent:
-
-- **Kunnathunad 2021**: T20 came 2nd with **37 % vote share**. Conventional UDF vote share collapsed by ~25 pp. LDF won the seat from UDF.
-- **Piravom 2021**: T20 came 3rd at 17 %, splitting the Christian vote.
-- **Poonjar, Kothamangalam, etc.**: T20 picked up 10-25 % Christian/business-elite vote share.
-- **In 2026**: T20 essentially absent. Those voters mostly went back to UDF — visible in our framework as the *post-T20 rebound* (Poonjar NDA 14 → 2 → 25 %, Kunnathunad NDA 11 → 5 → 25 %).
-
-**Why this is strategic brilliance (from a fragment-the-coalition perspective)**:
-
-1. **T20 didn't try to WIN — it tried to fragment.** Their candidates weren't expected to govern; their effect was to shatter UDF's Christian-business-elite coalition.
-2. **The fragmentation actually worked.** Kunnathunad flipped UDF→LDF in 2021 because T20 absorbed 25 % of UDF's Christian base. That's 5× more defection than our 10 % modelling — and it produced exactly the outcome the model predicts at that magnitude.
-3. **T20's voters didn't go to BJP** — they went to LDF or back to UDF. But BJP didn't need them to. T20 demonstrated that **Christian voters in central Kerala are moveable** with the right candidate, the right framing, and a religious-identity-adjacent appeal.
-4. **BJP's CSI / Latin Catholic outreach is the second-generation version of the T20 playbook** — except BJP wants to ABSORB the voters rather than just fragment them. That's a harder ask, but T20 proved the underlying vote-share elasticity exists.
-
-**Strategic implication**: T20's lesson for BJP isn't "build a proxy party" — it's "the Christian central-Kerala vote is the most actionable target in Kerala, and 25 % defection is achievable with the right vehicle." BJP's Christian play (CSI fragmentation per `christian.md` §3, Latin Catholic outreach via NDA candidates) operates on the same hypothesis with a harder absorption goal.
+**BJP's CSI / Latin Catholic outreach (see `christian.md` §3)** operates on the same hypothesis as T20: Christian central-Kerala votes are moveable with the right framing. The harder problem for BJP is *absorbing* rather than *fragmenting* — T20's voters returned to UDF when T20 vanished, suggesting that fragmentation isn't durable without a sustained alternative vehicle.
 
 ### 4e-ter. What this means for Muslim political influence
 
-The Muslim community's two modes (per §1b) split sharply here:
+The Muslim community's two modes (per §1b) react differently to a fragmenting Christian coalition:
 
-- **Direct-majority mode (Malappuram)** — entirely unaffected by Christian shifts. NDA-block holds mechanically; the Muslim-establishment IUML axis is robust.
-- **Coalition-partner mode (central Kerala)** — **highly exposed** if BJP succeeds at T20-magnitude Christian fragmentation. The coalition that gives Muslim community its swing-bloc leverage in 50 mixed-Christian-Muslim ACs depends on Christian community staying UDF-coalitional. Pala alone shows the mechanism: if Christian-business-elite fragments (T20-style or BJP-direct), Muslim community's coalitional contribution falls below the deciding threshold.
+- **Direct-majority mode (Malappuram)** — entirely unaffected. Christian share is essentially zero in iuml-stronghold ACs; the NDA-block holds mechanically; the Muslim-establishment IUML axis is robust.
+- **Coalition-partner mode (central Kerala)** — **exposed** if BJP succeeds at sustained T20-magnitude Christian fragmentation. The minority coalition that gives Muslim community its swing-bloc leverage in central-Kerala ACs depends on Christian community staying UDF-coalitional. If Christian-business-elite fragments durably (sustained alternative vehicle, BJP absorption, or coordinated CSI outreach), Muslim community's coalitional contribution falls below the deciding threshold in some ACs.
 
 **Counter-intuitive implication**: the strongest defense of Muslim political influence in Kerala isn't a Muslim mobilisation campaign. It's **preserving Christian-Muslim coalitional alignment**. BJP's Christian sub-rite play (CSI fragmentation, Latin Catholic outreach) is **also the most effective indirect attack on Muslim coalitional leverage** — even though it never wins a Muslim vote.
 
