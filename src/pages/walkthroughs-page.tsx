@@ -237,12 +237,14 @@ export function WalkthroughsPage() {
                 </span>
               }
               visual={
-                <ReligionCategoricalMap
-                  acValues={COHORT_BY_AC}
-                  bucketColors={CHRISTIAN_SUBRITE_COLORS}
-                  noDataColor={NO_DATA_GRAY}
-                  ariaLabel="Kerala constituencies coloured by dominant Christian sub-rite"
-                />
+                <div className="max-h-44 w-auto [&_svg]:max-h-44 [&_svg]:w-auto">
+                  <ReligionCategoricalMap
+                    acValues={COHORT_BY_AC}
+                    bucketColors={CHRISTIAN_SUBRITE_COLORS}
+                    noDataColor={NO_DATA_GRAY}
+                    ariaLabel="Kerala constituencies coloured by dominant Christian sub-rite"
+                  />
+                </div>
               }
               summary={
                 <>
