@@ -1729,7 +1729,7 @@
   },
   {
     "ac_id": 71,
-    "ac_name": "Puthukkad",
+    "ac_name": "Pudukkad",
     "district": "thrissur",
     "total_pois": 209,
     "by_religion": {
@@ -1942,7 +1942,7 @@
   },
   {
     "ac_id": 79,
-    "ac_name": "Vypeen",
+    "ac_name": "Vypen",
     "district": "ernakulam",
     "total_pois": 118,
     "by_religion": {
@@ -2016,7 +2016,7 @@
   },
   {
     "ac_id": 82,
-    "ac_name": "Ernakulam",
+    "ac_name": "Eranakulam",
     "district": "ernakulam",
     "total_pois": 120,
     "by_religion": {

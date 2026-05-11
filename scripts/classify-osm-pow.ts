@@ -430,8 +430,8 @@ const CATHOLIC_PRIOR_BY_DISTRICT: Record<string, string> = {
 const CATHOLIC_AC_OVERRIDE: Record<string, string> = {
   // Ernakulam coastal Latin (Verapoly archdiocese, est. 1659)
   "Kochi": "latin_catholic",
-  "Vypeen": "latin_catholic",
-  "Ernakulam": "latin_catholic",
+  "Vypen": "latin_catholic",
+  "Eranakulam": "latin_catholic",
   // Trivandrum interior — Malayalam SMK pockets, but Latin dominates broadly
   // (no override needed)
   // Pathanamthitta has SM as well as SMK; coarsen to SMK only at district level

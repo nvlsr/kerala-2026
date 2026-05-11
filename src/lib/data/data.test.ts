@@ -445,6 +445,47 @@ describe("historical candidate names have no unrecovered parenthetical party tag
   })
 })
 
+describe("AC display-name invariants across data sources", () => {
+  // kerala-constituencies-paths.json drives map tooltips / aria-labels
+  // (constituency-map.tsx: <title> + aria-label). constituency-names.json
+  // drives every other label site (breadcrumbs, tables, sheets). Both
+  // must agree, otherwise a hovered seat name differs from the same
+  // seat's name in the breadcrumb.
+  test("paths.json .name matches constituency-names.primary for all 140 ACs", async () => {
+    const paths = (await import("@data/kerala-constituencies-paths.json"))
+      .default as {
+      constituencies: Array<{ constituencyNumber: number; name: string }>
+    }
+    const { constituencyNames } = await import("./loaders")
+    const offenders: string[] = []
+    for (const p of paths.constituencies) {
+      const canonical = constituencyNames[String(p.constituencyNumber)]?.primary
+      if (canonical !== p.name) {
+        offenders.push(
+          `AC ${p.constituencyNumber}: paths.json="${p.name}" vs primary="${canonical}"`
+        )
+      }
+    }
+    expect(offenders, offenders.join("\n")).toEqual([])
+  })
+
+  test("ac-religious-poi-inventory.ac_name matches constituency-names.primary", async () => {
+    const inventory = (await import("@data/ac-religious-poi-inventory.json"))
+      .default as Array<{ ac_id: number; ac_name: string }>
+    const { constituencyNames } = await import("./loaders")
+    const offenders: string[] = []
+    for (const row of inventory) {
+      const canonical = constituencyNames[String(row.ac_id)]?.primary
+      if (canonical !== row.ac_name) {
+        offenders.push(
+          `AC ${row.ac_id}: inventory="${row.ac_name}" vs primary="${canonical}"`
+        )
+      }
+    }
+    expect(offenders, offenders.join("\n")).toEqual([])
+  })
+})
+
 describe("party listings always have matching candidates", () => {
   const all2026 = buildCandidateRows(null)
   for (const allianceCode of MAIN_FRONT_CODES) {
