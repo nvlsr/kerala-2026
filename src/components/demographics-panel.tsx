@@ -173,14 +173,16 @@ function ReligionTable({
                   CHRISTIAN_SUBRITE_LABEL.get(
                     christianSub.code as never
                   ),
-                  christianSub.voterSharePct
+                  christianSub.voterSharePct,
+                  sig?.christian.confidence === "low"
                 )
               : r.key === "muslim" && muslimSub
                 ? renderSubRiteRow(
                     MUSLIM_SUBRITE_LABEL.get(
                       muslimSub.code as never
                     ),
-                    muslimSub.voterSharePct
+                    muslimSub.voterSharePct,
+                    sig?.muslim.confidence === "low"
                   )
                 : null
           return (
@@ -204,7 +206,8 @@ function ReligionTable({
 /** Indented sub-rite row rendered immediately under its parent religion. */
 function renderSubRiteRow(
   meta: { label: string; color: string } | undefined,
-  voterSharePct: number
+  voterSharePct: number,
+  lowConfidence: boolean
 ) {
   if (!meta) return null
   return (
@@ -222,7 +225,9 @@ function renderSubRiteRow(
           />
           <span className="text-muted-foreground">
             {meta.label}{" "}
-            <span className="text-muted-foreground/70">(dominant)</span>
+            <span className="text-muted-foreground/70">
+              ({lowConfidence ? "dominant, small sample" : "dominant"})
+            </span>
           </span>
         </span>
       </td>
