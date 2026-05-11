@@ -116,6 +116,11 @@ interface CommunityRelevanceRecord {
   }
   durabilityCategory: DurabilityCategory
 
+  // ── NDA vote-share trajectory (orthogonal to winner history) ────────
+  // Tells "is BJP building here?" — independent of who actually won.
+  ndaShareTrajectory: NdaTrajectory
+  ndaTrend: NdaTrend
+
   // ── FORWARD stability (structural blocker pattern) ──────────────────
   // Which alliance is structurally favoured *regardless of cycle*?
   // UDF when both NDA + LDF are blocked and UDF has no blocker; symmetric for LDF/NDA.
@@ -139,6 +144,17 @@ type DurabilityCategory =
   | "udf-since-2021" | "ldf-since-2021" | "nda-since-2021"  // 2021 == 2026, 2016 different
   | "flipped-2026"        // 2021 != 2026
   | "other"               // missing data or OTHER alliance in 2016/2021
+
+/**
+ * NDA vote-share trajectory across 3 cycles + a coarse trend tag.
+ * `rising` / `declining` are set on a 10-year delta of ≥±3 pp; otherwise `flat`.
+ */
+interface NdaTrajectory {
+  y2016: number | null
+  y2021: number | null
+  y2026: number
+}
+type NdaTrend = "rising" | "flat" | "declining" | "unknown"
 
 // ── Helpers ───────────────────────────────────────────────────────────
 
@@ -392,25 +408,45 @@ function assembleNote(args: {
 
 const acMargin = new Map<number, number>()
 const acWinner = new Map<number, AllianceCode>()
+const acNdaShare2026 = new Map<number, number>()
 for (const c of constituencies) {
   const total = c.candidates.reduce((s, x) => s + x.votes, 0)
   if (!total) continue
   const sorted = [...c.candidates].sort((a: Candidate, b: Candidate) => b.votes - a.votes)
   acMargin.set(c.constituencyNumber, ((sorted[0].votes - sorted[1].votes) / total) * 100)
   acWinner.set(c.constituencyNumber, sorted[0].alliance as AllianceCode)
+  const ndaVotes = c.candidates.filter((x: Candidate) => x.alliance === "NDA").reduce((s, x) => s + x.votes, 0)
+  acNdaShare2026.set(c.constituencyNumber, (ndaVotes / total) * 100)
 }
 
-// Historical winners (2016 + 2021) — for 3-cycle durability category
+// Historical winners (2016 + 2021) + NDA vote shares
 const historical = loadHistorical()
 const acYearWinner = new Map<number, { y2016: AllianceCode | null; y2021: AllianceCode | null }>()
+const acHistoricalNdaShare = new Map<number, { y2016: number | null; y2021: number | null }>()
 for (const [acNum, h] of historical.entries()) {
-  const find = (year: number) => {
+  const findWinner = (year: number) => {
     const e = h.elections.find(e => e.year === year && e.type === "general")
     if (!e) return null
     const sorted = [...e.candidates].sort((a, b) => b.votes - a.votes)
     return (sorted[0]?.alliance as AllianceCode) ?? null
   }
-  acYearWinner.set(acNum, { y2016: find(2016), y2021: find(2021) })
+  const findNda = (year: number) => {
+    const e = h.elections.find(e => e.year === year && e.type === "general")
+    if (!e) return null
+    return e.candidates
+      .filter(x => x.alliance === "NDA")
+      .reduce((s, x) => s + (x.votePct ?? 0), 0)
+  }
+  acYearWinner.set(acNum, { y2016: findWinner(2016), y2021: findWinner(2021) })
+  acHistoricalNdaShare.set(acNum, { y2016: findNda(2016), y2021: findNda(2021) })
+}
+
+function ndaTrendOf(traj: NdaTrajectory): NdaTrend {
+  if (traj.y2016 == null) return "unknown"
+  const delta = traj.y2026 - traj.y2016
+  if (delta >= 3) return "rising"
+  if (delta <= -3) return "declining"
+  return "flat"
 }
 
 function durabilityCategoryOf(
@@ -526,6 +562,15 @@ for (const c of constituencies) {
   const history = { y2016: yearWinners.y2016, y2021: yearWinners.y2021, y2026: winner }
   const durabilityCategory = durabilityCategoryOf(history.y2016, history.y2021, winner)
 
+  // NDA vote-share trajectory
+  const histNda = acHistoricalNdaShare.get(c.constituencyNumber) ?? { y2016: null, y2021: null }
+  const ndaShareTrajectory: NdaTrajectory = {
+    y2016: histNda.y2016,
+    y2021: histNda.y2021,
+    y2026: acNdaShare2026.get(c.constituencyNumber) ?? 0,
+  }
+  const ndaTrend = ndaTrendOf(ndaShareTrajectory)
+
   // Alliance roles
   const allianceRoles = computeAllianceRoles({
     winner, margin, cAggShare, cAggTag: cAggR.tag,
@@ -559,7 +604,9 @@ for (const c of constituencies) {
     },
     hindu,
     primaryDriver, confidence, netTag,
-    history, durabilityCategory, stableFor,
+    history, durabilityCategory,
+    ndaShareTrajectory, ndaTrend,
+    stableFor,
     allianceRoles, note,
   })
 }
@@ -577,7 +624,10 @@ const byTag = new Map<string, number>()
 const byCoord = new Map<string, number>()
 const byDurability = new Map<string, number>()
 const byStableFor = new Map<string, number>()
+const byNdaTrend = new Map<string, number>()
 let withCandReligion = 0
+let ndaAbove15In2026 = 0, ndaAbove25In2026 = 0
+let ndaRisingAndAbove10 = 0
 for (const r of records) {
   byDriver.set(r.primaryDriver, (byDriver.get(r.primaryDriver) ?? 0) + 1)
   byConf.set(r.confidence, (byConf.get(r.confidence) ?? 0) + 1)
@@ -587,6 +637,10 @@ for (const r of records) {
   byDurability.set(r.durabilityCategory, (byDurability.get(r.durabilityCategory) ?? 0) + 1)
   const sf = r.stableFor ?? "none"
   byStableFor.set(sf, (byStableFor.get(sf) ?? 0) + 1)
+  byNdaTrend.set(r.ndaTrend, (byNdaTrend.get(r.ndaTrend) ?? 0) + 1)
+  if (r.ndaShareTrajectory.y2026 >= 15) ndaAbove15In2026++
+  if (r.ndaShareTrajectory.y2026 >= 25) ndaAbove25In2026++
+  if (r.ndaTrend === "rising" && r.ndaShareTrajectory.y2026 >= 10) ndaRisingAndAbove10++
   if (r.winnerCandidateReligion) withCandReligion++
 }
 console.log("By driver:", Object.fromEntries(byDriver))
@@ -595,6 +649,9 @@ console.log("By net tag:", Object.fromEntries(byTag))
 console.log("By coordination:", Object.fromEntries(byCoord))
 console.log("By durability category:", Object.fromEntries(byDurability))
 console.log("By stableFor:", Object.fromEntries(byStableFor))
+console.log("By NDA trend:", Object.fromEntries(byNdaTrend))
+console.log(`NDA ≥15% in 2026: ${ndaAbove15In2026} · ≥25%: ${ndaAbove25In2026}`)
+console.log(`NDA rising AND ≥10% in 2026: ${ndaRisingAndAbove10}`)
 console.log(`With winner-candidate-religion: ${withCandReligion}`)
 console.log("")
 
@@ -605,6 +662,8 @@ for (const acNum of [1, 12, 28, 52, 102, 135]) {
   if (!r) continue
   console.log(`\nAC ${acNum} ${r.name} [${r.confidence}/${r.netTag}]`)
   console.log(`  History: 2016=${r.history.y2016 ?? "?"} 2021=${r.history.y2021 ?? "?"} 2026=${r.history.y2026} → ${r.durabilityCategory}`)
+  const t = r.ndaShareTrajectory
+  console.log(`  NDA share: ${t.y2016?.toFixed(1) ?? "?"}% → ${t.y2021?.toFixed(1) ?? "?"}% → ${t.y2026.toFixed(1)}% (${r.ndaTrend})`)
   console.log(`  StableFor: ${r.stableFor ?? "—"}`)
   console.log(`  Note: ${r.note}`)
   console.log(`  Alliance roles:`)

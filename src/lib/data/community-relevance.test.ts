@@ -203,6 +203,52 @@ describe("community-relevance — 3-cycle history + durability category", () => 
   })
 })
 
+describe("community-relevance — NDA vote-share trajectory", () => {
+  test("y2026 is always populated (current-cycle data we have)", () => {
+    for (const r of communityRelevance) {
+      expect(
+        typeof r.ndaShareTrajectory.y2026 === "number",
+        `AC ${r.ac} ${r.name} y2026 not a number`
+      ).toBe(true)
+      expect(r.ndaShareTrajectory.y2026).toBeGreaterThanOrEqual(0)
+      expect(r.ndaShareTrajectory.y2026).toBeLessThanOrEqual(100)
+    }
+  })
+
+  test("ndaTrend is one of the valid values", () => {
+    const valid = new Set(["rising", "flat", "declining", "unknown"])
+    for (const r of communityRelevance) {
+      expect(valid.has(r.ndaTrend), `AC ${r.ac} ${r.name}`).toBe(true)
+    }
+  })
+
+  test("ndaTrend=rising implies y2026 - y2016 ≥ 3pp (when y2016 present)", () => {
+    for (const r of communityRelevance) {
+      if (r.ndaTrend !== "rising") continue
+      expect(r.ndaShareTrajectory.y2016).not.toBeNull()
+      const delta = r.ndaShareTrajectory.y2026 - (r.ndaShareTrajectory.y2016 ?? 0)
+      expect(delta, `AC ${r.ac} ${r.name} rising but delta=${delta.toFixed(1)}`).toBeGreaterThanOrEqual(3)
+    }
+  })
+
+  test("ndaTrend=declining implies y2026 - y2016 ≤ -3pp", () => {
+    for (const r of communityRelevance) {
+      if (r.ndaTrend !== "declining") continue
+      expect(r.ndaShareTrajectory.y2016).not.toBeNull()
+      const delta = r.ndaShareTrajectory.y2026 - (r.ndaShareTrajectory.y2016 ?? 0)
+      expect(delta, `AC ${r.ac} ${r.name} declining but delta=${delta.toFixed(1)}`).toBeLessThanOrEqual(-3)
+    }
+  })
+
+  test("ndaTrend=unknown only when y2016 is null", () => {
+    for (const r of communityRelevance) {
+      if (r.ndaTrend === "unknown") {
+        expect(r.ndaShareTrajectory.y2016, `AC ${r.ac} ${r.name}`).toBeNull()
+      }
+    }
+  })
+})
+
 describe("community-relevance — stableFor (structural)", () => {
   test("stableFor=X requires the other two alliances to be blocked AND X not blocked", () => {
     for (const r of communityRelevance) {

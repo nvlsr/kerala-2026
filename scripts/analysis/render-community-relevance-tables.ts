@@ -10,6 +10,14 @@ const historyToken = (h: { y2016: string | null; y2021: string | null; y2026: st
 
 const stableToken = (s: string | null) => s ? `→${s}` : "—"
 
+const trendArrow = (t: string) =>
+  t === "rising" ? "↑" : t === "declining" ? "↓" : t === "flat" ? "→" : "?"
+
+const ndaToken = (
+  traj: { y2016: number | null; y2021: number | null; y2026: number },
+  trend: string,
+) => `${traj.y2026.toFixed(0)}% ${trendArrow(trend)}`
+
 const driverShort: Record<string, string> = {
   "both-christian-muslim": "Christian + Muslim",
   "christian-subrite": "Christian (sub-rite)",
@@ -53,15 +61,16 @@ for (const [district, acs] of districtOrder) {
   const name = DISTRICT_DISPLAY[district] ?? district
   console.log(`### ${name} (${acs.length} ACs)`)
   console.log("")
-  console.log("| AC | Name | Margin | Tag | Conf | History | Stable | Driver | Note |")
-  console.log("| ---: | --- | ---: | --- | :---: | :---: | :---: | --- | --- |")
+  console.log("| AC | Name | Margin | Tag | Conf | History | NDA% | Stable | Driver | Note |")
+  console.log("| ---: | --- | ---: | --- | :---: | :---: | :---: | :---: | --- | --- |")
   for (const r of acs) {
     const marginStr = `${r.margin >= 0 ? "+" : ""}${r.margin.toFixed(1)}pp ${r.winner}`
     const conf = tierStars(r.confidence)
     const hist = historyToken(r.history)
     const stable = stableToken(r.stableFor)
+    const nda = ndaToken(r.ndaShareTrajectory, r.ndaTrend)
     const driver = driverShort[r.primaryDriver] ?? r.primaryDriver
-    console.log(`| ${r.ac} | ${r.name} | ${marginStr} | ${r.netTag} | ${conf} | ${hist} | ${stable} | ${driver} | ${r.note} |`)
+    console.log(`| ${r.ac} | ${r.name} | ${marginStr} | ${r.netTag} | ${conf} | ${hist} | ${nda} | ${stable} | ${driver} | ${r.note} |`)
   }
   console.log("")
 }
@@ -71,3 +80,5 @@ console.log("")
 console.log("**History column legend**: `2016-2021-2026` → letters are first character of alliance (`U`=UDF, `L`=LDF, `N`=NDA, `O`=OTHER, `?`=missing). e.g. `U-L-U` = UDF in 2016, LDF in 2021, UDF in 2026 (flipped-2026 returning to 2016 pattern).")
 console.log("")
 console.log("**Stable column**: `stableFor` derived from blocker pattern. `→UDF` means NDA + LDF both have structural blockers, UDF does not.")
+console.log("")
+console.log("**NDA% column**: 2026 NDA vote-share % + 10-year trend arrow (`↑` = rising ≥+3pp, `↓` = declining ≤−3pp, `→` = flat). Full trajectory (2016 / 2021 / 2026) lives in `data/community-relevance.json:ndaShareTrajectory`.")

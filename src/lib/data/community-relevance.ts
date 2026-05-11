@@ -64,6 +64,14 @@ export type DurabilityCategory =
   | "flipped-2026"
   | "other"
 
+export type NdaTrajectory = {
+  y2016: number | null
+  y2021: number | null
+  y2026: number
+}
+/** NDA vote-share direction over 2016 → 2026 (≥+3pp / ≤−3pp / otherwise). */
+export type NdaTrend = "rising" | "flat" | "declining" | "unknown"
+
 export type CommunityRelevanceRecord = {
   ac: number
   name: string
@@ -104,6 +112,11 @@ export type CommunityRelevanceRecord = {
   }
   /** Categorical past-stability reading. */
   durabilityCategory: DurabilityCategory
+
+  /** NDA vote-share % across 3 cycles. */
+  ndaShareTrajectory: NdaTrajectory
+  /** Coarse NDA direction over 2016 → 2026. */
+  ndaTrend: NdaTrend
 
   /**
    * FORWARD stability — which alliance is structurally favoured
