@@ -7,17 +7,195 @@ Run: `bun run scripts/analysis/audit-candidate-names.ts` — regenerates `data/c
 ## Headline numbers
 
 - Total top-3 appearances: **1731**
-- Unique normalised keys: **1235**
-- Candidates appearing ≥ 2 times: **339**
-- Suspected missed matches: **165**
-  - same-AC: 45 (likely tenure-detection gaps)
-  - cross-AC same-alliance: 120 (likely cross-constituency name drift)
+- Unique normalised keys: **1230**
+- Candidates appearing ≥ 2 times: **340**
+  - of which **multi-alliance** (priority review — likely different people sharing a normalised name): **24**
+  - single-alliance multi-appearance: 316
+- Suspected missed matches: **172**
+  - same-AC: 44 (likely tenure-detection gaps)
+  - cross-AC same-alliance: 128 (likely cross-constituency name drift)
+
+### Caste-suffix distribution
+
+Detected via `extractCasteSuffix()` (trailing token only). Recorded per-appearance in `data/candidate-continuity.json` for future analysis.
+
+| Suffix | Count |
+| --- | ---: |
+| `NAIR` | 15 |
+| `PILLAI` | 7 |
+| `MENON` | 3 |
+| `NAMBOOTHIRI` | 1 |
 
 ---
 
-## A. Multi-appearance candidates the normaliser caught
+## A.1 Multi-alliance multi-appearance keys (priority review)
 
-Each block: one normalised key + every top-3 appearance attributed to it. Scan for **false positives** — different people the normaliser collapsed.
+These normalised keys appeared under **two or more main alliances** (UDF/LDF/NDA). Most are different people with the same common name. Scan each block; if it's actually the same person who switched alliances, note it — otherwise confirm they're distinct.
+
+### `K BABU` — 6 appearances · 3 ACs · alliances: **LDF / UDF / NDA**
+
+- 2009 by-bye · AC 104 ALAPPUZHA (NDA, rank 3): `K. Babu`
+- 2011 · AC 81 THRIPUNITHURA (UDF, rank 1): `K. Babu`
+- 2016 · AC 59 NEMMARA (LDF, rank 1): `K. Babu`
+- 2016 · AC 81 THRIPUNITHURA (UDF, rank 2): `K. Babu`
+- 2021 · AC 59 NEMMARA (LDF, rank 1): `K. Babu`
+- 2021 · AC 81 THRIPUNITHURA (UDF, rank 1): `K. Babu`
+
+### `K C JOSEPH` — 4 appearances · 3 ACs · alliances: **UDF / LDF**
+
+- 2011 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
+- 2011 · AC 106 KUTTANAD (UDF, rank 2): `K. C. Joseph`
+- 2016 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
+- 2016 · AC 99 CHANGANASSERY (LDF, rank 2): `K. C. Joseph`
+
+### `ROSHY AUGUSTINE` — 4 appearances · 1 AC · alliances: **UDF / LDF**
+Raw name variants: `Roshy Augustine`, `ROSHY AUGUSTINE`
+
+- 2011 · AC 91 IDUKKI (UDF, rank 1): `Roshy Augustine`
+- 2016 · AC 91 IDUKKI (UDF, rank 1): `Roshy Augustine`
+- 2021 · AC 91 IDUKKI (LDF, rank 1): `Roshy Augustine`
+- 2026 · AC 91 IDUKKI (LDF, rank 2): `ROSHY AUGUSTINE`
+
+### `N JAYARAJ` — 4 appearances · 1 AC · alliances: **UDF / LDF**
+Raw name variants: `N. Jayaraj`, `DR. N. JAYARAJ`
+
+- 2011 · AC 100 KANJIRAPPALLY (UDF, rank 1): `N. Jayaraj`
+- 2016 · AC 100 KANJIRAPPALLY (UDF, rank 1): `N. Jayaraj`
+- 2021 · AC 100 KANJIRAPPALLY (LDF, rank 1): `N. Jayaraj`
+- 2026 · AC 100 KANJIRAPPALLY (LDF, rank 2): `DR. N. JAYARAJ`
+
+### `K SIVADASAN` — 4 appearances · 2 ACs · alliances: **UDF / NDA**
+Raw name variants: `K. Sivadasan Nair`, `K. Sivadasan`
+Caste suffix(es) seen: `NAIR`
+
+- 2011 · AC 113 ARANMULA (UDF, rank 1): `K. Sivadasan Nair`
+- 2016 · AC 113 ARANMULA (UDF, rank 2): `K. Sivadasan Nair`
+- 2016 · AC 122 CHADAYAMANGALAM (NDA, rank 3): `K. Sivadasan`
+- 2021 · AC 113 ARANMULA (UDF, rank 2): `K. Sivadasan Nair`
+
+### `K B GANESH KUMAR` — 4 appearances · 1 AC · alliances: **UDF / LDF**
+Raw name variants: `K. B. Ganesh Kumar`, `K B GANESH KUMAR`
+
+- 2011 · AC 120 PATHANAPURAM (UDF, rank 1): `K. B. Ganesh Kumar`
+- 2016 · AC 120 PATHANAPURAM (LDF, rank 1): `K. B. Ganesh Kumar`
+- 2021 · AC 120 PATHANAPURAM (LDF, rank 1): `K. B. Ganesh Kumar`
+- 2026 · AC 120 PATHANAPURAM (LDF, rank 2): `K B GANESH KUMAR`
+
+### `R SELVARAJ` — 4 appearances · 1 AC · alliances: **LDF / UDF**
+
+- 2011 · AC 140 NEYYATTINKARA (LDF, rank 1): `R. Selvaraj`
+- 2012 by-bye · AC 140 NEYYATTINKARA (UDF, rank 1): `R. Selvaraj`
+- 2016 · AC 140 NEYYATTINKARA (UDF, rank 2): `R. Selvaraj`
+- 2021 · AC 140 NEYYATTINKARA (UDF, rank 2): `R. Selvaraj`
+
+### `K P MOHANAN` — 3 appearances · 1 AC · alliances: **UDF / LDF**
+
+- 2011 · AC 14 KUTHUPARAMBA (UDF, rank 1): `K. P. Mohanan`
+- 2016 · AC 14 KUTHUPARAMBA (UDF, rank 2): `K. P. Mohanan`
+- 2021 · AC 14 KUTHUPARAMBA (LDF, rank 1): `K. P. Mohanan`
+
+### `K RADHAKRISHNAN` — 3 appearances · 2 ACs · alliances: **LDF / NDA**
+
+- 2011 · AC 61 CHELAKKARA (LDF, rank 1): `K. Radhakrishnan`
+- 2011 · AC 87 KOTHAMANGALAM (NDA, rank 3): `K. Radhakrishnan`
+- 2021 · AC 61 CHELAKKARA (LDF, rank 1): `K. Radhakrishnan`
+
+### `PADMAJA VENUGOPAL` — 3 appearances · 1 AC · alliances: **UDF / NDA**
+Raw name variants: `Padmaja Venugopal`, `PADMAJA VENUGOPAL`
+
+- 2016 · AC 67 THRISSUR (UDF, rank 2): `Padmaja Venugopal`
+- 2021 · AC 67 THRISSUR (UDF, rank 2): `Padmaja Venugopal`
+- 2026 · AC 67 THRISSUR (NDA, rank 3): `PADMAJA VENUGOPAL`
+
+### `S RAJENDRAN` — 3 appearances · 1 AC · alliances: **LDF / NDA**
+Raw name variants: `S. Rajendran`, `S.RAJENDRAN`
+
+- 2011 · AC 88 DEVIKULAM (LDF, rank 1): `S. Rajendran`
+- 2016 · AC 88 DEVIKULAM (LDF, rank 1): `S. Rajendran`
+- 2026 · AC 88 DEVIKULAM (NDA, rank 3): `S.RAJENDRAN`
+
+### `P C GEORGE` — 3 appearances · 1 AC · alliances: **UDF / NDA**
+Raw name variants: `P. C. George`, `P.C. GEORGE`
+
+- 2011 · AC 101 POONJAR (UDF, rank 1): `P. C. George`
+- 2016 · AC 101 POONJAR (OTHER, rank 1): `P. C. George`
+- 2026 · AC 101 POONJAR (NDA, rank 3): `P.C. GEORGE`
+
+### `G SUDHAKARAN` — 3 appearances · 1 AC · alliances: **LDF / UDF**
+Raw name variants: `G. Sudhakaran`, `G.SUDHAKARAN`
+
+- 2011 · AC 105 AMBALAPPUZHA (LDF, rank 1): `G. Sudhakaran`
+- 2016 · AC 105 AMBALAPPUZHA (LDF, rank 1): `G. Sudhakaran`
+- 2026 · AC 105 AMBALAPPUZHA (UDF, rank 1): `G.SUDHAKARAN`
+
+### `P AISHA POTTY` — 3 appearances · 1 AC · alliances: **LDF / UDF**
+Raw name variants: `P. Aisha Potty`, `ADV.P. AISHA POTTY`
+
+- 2011 · AC 119 KOTTARAKKARA (LDF, rank 1): `P. Aisha Potty`
+- 2016 · AC 119 KOTTARAKKARA (LDF, rank 1): `P. Aisha Potty`
+- 2026 · AC 119 KOTTARAKKARA (UDF, rank 2): `ADV.P. AISHA POTTY`
+
+### `K MOHANDAS` — 2 appearances · 2 ACs · alliances: **NDA / LDF**
+
+- 2016 · AC 17 MANANTHAVADY (NDA, rank 3): `K. Mohandas`
+- 2016 · AC 37 MANJERI (LDF, rank 2): `K. Mohandas`
+
+### `P SARIN` — 2 appearances · 2 ACs · alliances: **UDF / LDF**
+
+- 2021 · AC 52 OTTAPPALAM (UDF, rank 2): `P. Sarin`
+- 2024 by-bye · AC 56 PALAKKAD (LDF, rank 3): `P. Sarin`
+
+### `ROY VARICATTU` — 2 appearances · 1 AC · alliances: **LDF / NDA**
+Raw name variants: `Roy Varicattu`, `ADV. ROY VARICATTU`
+
+- 2016 · AC 90 THODUPUZHA (LDF, rank 2): `Roy Varicattu`
+- 2026 · AC 90 THODUPUZHA (NDA, rank 3): `ADV. ROY VARICATTU`
+
+### `K FRANCIS GEORGE` — 2 appearances · 1 AC · alliances: **LDF / UDF**
+
+- 2016 · AC 91 IDUKKI (LDF, rank 2): `K. Francis George`
+- 2021 · AC 91 IDUKKI (UDF, rank 2): `K. Francis George`
+
+### `K AJITH` — 2 appearances · 1 AC · alliances: **LDF / NDA**
+Raw name variants: `K. Ajith`, `K AJITH`
+
+- 2011 · AC 95 VAIKOM (LDF, rank 1): `K. Ajith`
+- 2026 · AC 95 VAIKOM (NDA, rank 3): `K AJITH`
+
+### `R RESMI` — 2 appearances · 1 AC · alliances: **UDF / NDA**
+Raw name variants: `R. Resmi`, `R. RESMI`
+
+- 2021 · AC 119 KOTTARAKKARA (UDF, rank 2): `R. Resmi`
+- 2026 · AC 119 KOTTARAKKARA (NDA, rank 3): `R. RESMI`
+
+### `A A AZEEZ` — 2 appearances · 1 AC · alliances: **LDF / UDF**
+
+- 2011 · AC 125 ERAVIPURAM (LDF, rank 1): `A. A. Azeez`
+- 2016 · AC 125 ERAVIPURAM (UDF, rank 2): `A. A. Azeez`
+
+### `BABU DIVAKARAN` — 2 appearances · 2 ACs · alliances: **UDF / NDA**
+Raw name variants: `Babu Divakaran`, `BABU DIVAKARAN`
+
+- 2021 · AC 125 ERAVIPURAM (UDF, rank 2): `Babu Divakaran`
+- 2026 · AC 84 KUNNATHUNAD (NDA, rank 3): `BABU DIVAKARAN`
+
+### `B S ANOOP` — 2 appearances · 1 AC · alliances: **UDF / NDA**
+Raw name variants: `B. S. Anoop`, `B. S. ANOOP`
+
+- 2021 · AC 129 CHIRAYINKEEZHU (UDF, rank 2): `B. S. Anoop`
+- 2026 · AC 129 CHIRAYINKEEZHU (NDA, rank 3): `B. S. ANOOP`
+
+### `V SURENDRAN` — 2 appearances · 2 ACs · alliances: **LDF / UDF**
+Caste suffix(es) seen: `PILLAI`
+
+- 2011 · AC 134 THIRUVANANTHAPURAM (LDF, rank 2): `V. Surendran Pillai`
+- 2016 · AC 135 NEMOM (UDF, rank 3): `V. Surendran Pillai`
+
+---
+
+## A.2 Single-alliance multi-appearance candidates
+
+Each block: one normalised key + every top-3 appearance attributed to it. All within a single main alliance (or OTHER/NOTA). Scan for **false positives** — different people the normaliser collapsed.
 
 Showing the top 200 by appearance count.
 
@@ -31,16 +209,6 @@ Raw name variants: `K. Surendran`, `K SURENDRAN`
 - 2021 · AC 114 KONNI (NDA, rank 3): `K. Surendran`
 - 2026 · AC 1 MANJESHWAR (NDA, rank 2): `K SURENDRAN`
 
-### `K BABU` — 6 appearances across 3 ACs
-Alliances seen: LDF, UDF, NDA
-
-- 2009 by-bye · AC 104 ALAPPUZHA (NDA, rank 3): `K. Babu`
-- 2011 · AC 81 THRIPUNITHURA (UDF, rank 1): `K. Babu`
-- 2016 · AC 59 NEMMARA (LDF, rank 1): `K. Babu`
-- 2016 · AC 81 THRIPUNITHURA (UDF, rank 2): `K. Babu`
-- 2021 · AC 59 NEMMARA (LDF, rank 1): `K. Babu`
-- 2021 · AC 81 THRIPUNITHURA (UDF, rank 1): `K. Babu`
-
 ### `A N RADHAKRISHNAN` — 5 appearances across 3 ACs
 
 - 2011 · AC 64 MANALUR (NDA, rank 3): `A. N. Radhakrishnan`
@@ -48,14 +216,6 @@ Alliances seen: LDF, UDF, NDA
 - 2016 · AC 64 MANALUR (NDA, rank 3): `A. N. Radhakrishnan`
 - 2021 · AC 64 MANALUR (NDA, rank 3): `A. N. Radhakrishnan`
 - 2022 by-bye · AC 83 THRIKKAKARA (NDA, rank 3): `A. N. Radhakrishnan`
-
-### `K C JOSEPH` — 4 appearances across 3 ACs
-Alliances seen: UDF, LDF
-
-- 2011 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
-- 2011 · AC 106 KUTTANAD (UDF, rank 2): `K. C. Joseph`
-- 2016 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
-- 2016 · AC 99 CHANGANASSERY (LDF, rank 2): `K. C. Joseph`
 
 ### `K M SHAJI` — 4 appearances across 2 ACs
 Raw name variants: `K. M. Shaji`, `K.M. SHAJI`
@@ -72,6 +232,14 @@ Raw name variants: `V. K. Sajeevan`, `ADV.V. K. SAJEEVAN`
 - 2016 · AC 13 THALASSERY (NDA, rank 3): `V. K. Sajeevan`
 - 2021 · AC 30 KUNNAMANGALAM (NDA, rank 3): `V. K. Sajeevan`
 - 2026 · AC 30 KUNNAMANGALAM (NDA, rank 3): `ADV.V. K. SAJEEVAN`
+
+### `K K SHAILAJA` — 4 appearances across 3 ACs
+Raw name variants: `K. K. Shailaja`, `K. K. Shailaja Teacher`, `K K SHAILAJA TEACHER`
+
+- 2011 · AC 16 PERAVOOR (LDF, rank 2): `K. K. Shailaja`
+- 2016 · AC 14 KUTHUPARAMBA (LDF, rank 1): `K. K. Shailaja`
+- 2021 · AC 15 MATTANNUR (LDF, rank 1): `K. K. Shailaja Teacher`
+- 2026 · AC 16 PERAVOOR (LDF, rank 2): `K K SHAILAJA TEACHER`
 
 ### `BIJU ELAKKUZHI` — 4 appearances across 1 AC
 Raw name variants: `Biju Elakkuzhi`, `BIJU ELAKKUZHI`
@@ -185,15 +353,6 @@ Raw name variants: `Anoop Jacob`, `ANOOP JACOB`
 - 2021 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
 - 2026 · AC 85 PIRAVOM (UDF, rank 1): `ANOOP JACOB`
 
-### `ROSHY AUGUSTINE` — 4 appearances across 1 AC
-Raw name variants: `Roshy Augustine`, `ROSHY AUGUSTINE`
-Alliances seen: UDF, LDF
-
-- 2011 · AC 91 IDUKKI (UDF, rank 1): `Roshy Augustine`
-- 2016 · AC 91 IDUKKI (UDF, rank 1): `Roshy Augustine`
-- 2021 · AC 91 IDUKKI (LDF, rank 1): `Roshy Augustine`
-- 2026 · AC 91 IDUKKI (LDF, rank 2): `ROSHY AUGUSTINE`
-
 ### `MONS JOSEPH` — 4 appearances across 1 AC
 Raw name variants: `Mons Joseph`, `ADV.MONS JOSEPH`
 
@@ -209,15 +368,6 @@ Raw name variants: `Thiruvanchoor Radhakrishnan`, `THIRUVANCHOOR RADHAKRISHNAN`
 - 2016 · AC 97 KOTTAYAM (UDF, rank 1): `Thiruvanchoor Radhakrishnan`
 - 2021 · AC 97 KOTTAYAM (UDF, rank 1): `Thiruvanchoor Radhakrishnan`
 - 2026 · AC 97 KOTTAYAM (UDF, rank 1): `THIRUVANCHOOR RADHAKRISHNAN`
-
-### `N JAYARAJ` — 4 appearances across 1 AC
-Raw name variants: `N. Jayaraj`, `DR. N. JAYARAJ`
-Alliances seen: UDF, LDF
-
-- 2011 · AC 100 KANJIRAPPALLY (UDF, rank 1): `N. Jayaraj`
-- 2016 · AC 100 KANJIRAPPALLY (UDF, rank 1): `N. Jayaraj`
-- 2021 · AC 100 KANJIRAPPALLY (LDF, rank 1): `N. Jayaraj`
-- 2026 · AC 100 KANJIRAPPALLY (LDF, rank 2): `DR. N. JAYARAJ`
 
 ### `M LIJU` — 4 appearances across 2 ACs
 Raw name variants: `M. Liju`, `ADV.M.LIJU`
@@ -267,15 +417,6 @@ Raw name variants: `Raji Prasad`, `RAJI  PRASAD`
 - 2021 · AC 118 KUNNATHUR (NDA, rank 3): `Raji Prasad`
 - 2026 · AC 118 KUNNATHUR (NDA, rank 3): `RAJI  PRASAD`
 
-### `K B GANESH KUMAR` — 4 appearances across 1 AC
-Raw name variants: `K. B. Ganesh Kumar`, `K B GANESH KUMAR`
-Alliances seen: UDF, LDF
-
-- 2011 · AC 120 PATHANAPURAM (UDF, rank 1): `K. B. Ganesh Kumar`
-- 2016 · AC 120 PATHANAPURAM (LDF, rank 1): `K. B. Ganesh Kumar`
-- 2021 · AC 120 PATHANAPURAM (LDF, rank 1): `K. B. Ganesh Kumar`
-- 2026 · AC 120 PATHANAPURAM (LDF, rank 2): `K B GANESH KUMAR`
-
 ### `K MURALEEDHARAN` — 4 appearances across 2 ACs
 Raw name variants: `K. Muraleedharan`, `K. MURALEEDHARAN`
 
@@ -315,14 +456,6 @@ Raw name variants: `P. K. Krishnadas`, `P. K. KRISHNADAS`
 - 2021 · AC 138 KATTAKKADA (NDA, rank 3): `P. K. Krishnadas`
 - 2026 · AC 138 KATTAKKADA (NDA, rank 3): `P. K. KRISHNADAS`
 
-### `R SELVARAJ` — 4 appearances across 1 AC
-Alliances seen: LDF, UDF
-
-- 2011 · AC 140 NEYYATTINKARA (LDF, rank 1): `R. Selvaraj`
-- 2012 by-bye · AC 140 NEYYATTINKARA (UDF, rank 1): `R. Selvaraj`
-- 2016 · AC 140 NEYYATTINKARA (UDF, rank 2): `R. Selvaraj`
-- 2021 · AC 140 NEYYATTINKARA (UDF, rank 2): `R. Selvaraj`
-
 ### `C H KUNHAMBU` — 3 appearances across 2 ACs
 Raw name variants: `C. H. Kunhambu`, `C H KUNHAMBU`
 
@@ -361,13 +494,6 @@ Raw name variants: `Pinarayi Vijayan`, `PINARAYI VIJAYAN`
 - 2011 · AC 30 KUNNAMANGALAM (NDA, rank 3): `C. K. Padmanabhan`
 - 2016 · AC 30 KUNNAMANGALAM (NDA, rank 3): `C. K. Padmanabhan`
 - 2021 · AC 12 DHARMADAM (NDA, rank 3): `C. K. Padmanabhan`
-
-### `K P MOHANAN` — 3 appearances across 1 AC
-Alliances seen: UDF, LDF
-
-- 2011 · AC 14 KUTHUPARAMBA (UDF, rank 1): `K. P. Mohanan`
-- 2016 · AC 14 KUTHUPARAMBA (UDF, rank 2): `K. P. Mohanan`
-- 2021 · AC 14 KUTHUPARAMBA (LDF, rank 1): `K. P. Mohanan`
 
 ### `O R KELU` — 3 appearances across 1 AC
 Raw name variants: `O. R. Kelu`, `O R KELU`
@@ -500,13 +626,6 @@ Raw name variants: `Sobha Surendran`, `SOBHA SURENDRAN`
 - 2016 · AC 56 PALAKKAD (NDA, rank 2): `Sobha Surendran`
 - 2026 · AC 56 PALAKKAD (NDA, rank 2): `SOBHA SURENDRAN`
 
-### `K RADHAKRISHNAN` — 3 appearances across 2 ACs
-Alliances seen: LDF, NDA
-
-- 2011 · AC 61 CHELAKKARA (LDF, rank 1): `K. Radhakrishnan`
-- 2011 · AC 87 KOTHAMANGALAM (NDA, rank 3): `K. Radhakrishnan`
-- 2021 · AC 61 CHELAKKARA (LDF, rank 1): `K. Radhakrishnan`
-
 ### `U R PRADEEP` — 3 appearances across 1 AC
 Raw name variants: `U. R. Pradeep`, `U R PRADEEP`
 
@@ -556,20 +675,20 @@ Raw name variants: `B. Gopalakrishnan`, `ADV. B. GOPALAKRISHNAN`
 - 2021 · AC 66 OLLUR (NDA, rank 3): `B. Gopalakrishnan`
 - 2026 · AC 63 GURUVAYOOR (NDA, rank 3): `ADV. B. GOPALAKRISHNAN`
 
-### `PADMAJA VENUGOPAL` — 3 appearances across 1 AC
-Raw name variants: `Padmaja Venugopal`, `PADMAJA VENUGOPAL`
-Alliances seen: UDF, NDA
-
-- 2016 · AC 67 THRISSUR (UDF, rank 2): `Padmaja Venugopal`
-- 2021 · AC 67 THRISSUR (UDF, rank 2): `Padmaja Venugopal`
-- 2026 · AC 67 THRISSUR (NDA, rank 3): `PADMAJA VENUGOPAL`
-
 ### `E T TAISON` — 3 appearances across 2 ACs
 Raw name variants: `E. T. Taison`, `E. T. Taison Master`, `E.T.TAISON MASTER`
 
 - 2016 · AC 69 KAIPAMANGALAM (LDF, rank 1): `E. T. Taison`
 - 2021 · AC 69 KAIPAMANGALAM (LDF, rank 1): `E. T. Taison Master`
 - 2026 · AC 78 PARAVUR (LDF, rank 2): `E.T.TAISON MASTER`
+
+### `K K RAMACHANDRAN` — 3 appearances across 2 ACs
+Raw name variants: `K. K. Ramachandran`, `K. K. Ramachandran Nair`, `K K RAMACHANDRAN`
+Caste suffix(es) seen: `NAIR`
+
+- 2016 · AC 110 CHENGANNUR (LDF, rank 1): `K. K. Ramachandran Nair`
+- 2021 · AC 71 PUDUKKAD (LDF, rank 1): `K. K. Ramachandran`
+- 2026 · AC 71 PUDUKKAD (LDF, rank 1): `K K RAMACHANDRAN`
 
 ### `V R SUNIL KUMAR` — 3 appearances across 1 AC
 Raw name variants: `V. R. Sunil Kumar`, `ADV. V R SUNIL KUMAR`
@@ -618,14 +737,6 @@ Raw name variants: `Antony John`, `ANTONY JOHN`
 - 2021 · AC 87 KOTHAMANGALAM (LDF, rank 1): `Antony John`
 - 2026 · AC 87 KOTHAMANGALAM (LDF, rank 2): `ANTONY JOHN`
 
-### `S RAJENDRAN` — 3 appearances across 1 AC
-Raw name variants: `S. Rajendran`, `S.RAJENDRAN`
-Alliances seen: LDF, NDA
-
-- 2011 · AC 88 DEVIKULAM (LDF, rank 1): `S. Rajendran`
-- 2016 · AC 88 DEVIKULAM (LDF, rank 1): `S. Rajendran`
-- 2026 · AC 88 DEVIKULAM (NDA, rank 3): `S.RAJENDRAN`
-
 ### `P J JOSEPH` — 3 appearances across 1 AC
 
 - 2011 · AC 90 THODUPUZHA (UDF, rank 1): `P. J. Joseph`
@@ -663,28 +774,12 @@ Raw name variants: `V. N. Vasavan`, `V. N. VASAVAN`
 - 2021 · AC 98 PUTHUPPALLY (LDF, rank 2): `Jaick C. Thomas`
 - 2023 by-bye · AC 98 PUTHUPPALLY (LDF, rank 2): `Jaick C. Thomas`
 
-### `P C GEORGE` — 3 appearances across 1 AC
-Raw name variants: `P. C. George`, `P.C. GEORGE`
-Alliances seen: UDF, OTHER, NDA
-
-- 2011 · AC 101 POONJAR (UDF, rank 1): `P. C. George`
-- 2016 · AC 101 POONJAR (OTHER, rank 1): `P. C. George`
-- 2026 · AC 101 POONJAR (NDA, rank 3): `P.C. GEORGE`
-
 ### `P PRASAD` — 3 appearances across 2 ACs
 Raw name variants: `P. Prasad`, `P. PRASAD`
 
 - 2016 · AC 107 HARIPAD (LDF, rank 2): `P. Prasad`
 - 2021 · AC 103 CHERTHALA (LDF, rank 1): `P. Prasad`
 - 2026 · AC 103 CHERTHALA (LDF, rank 1): `P. PRASAD`
-
-### `G SUDHAKARAN` — 3 appearances across 1 AC
-Raw name variants: `G. Sudhakaran`, `G.SUDHAKARAN`
-Alliances seen: LDF, UDF
-
-- 2011 · AC 105 AMBALAPPUZHA (LDF, rank 1): `G. Sudhakaran`
-- 2016 · AC 105 AMBALAPPUZHA (LDF, rank 1): `G. Sudhakaran`
-- 2026 · AC 105 AMBALAPPUZHA (UDF, rank 1): `G.SUDHAKARAN`
 
 ### `U PRATHIBHA` — 3 appearances across 1 AC
 Raw name variants: `U. Prathibha`, `ADV.U.PRATHIBHA`
@@ -704,12 +799,6 @@ Raw name variants: `U. Prathibha`, `ADV.U.PRATHIBHA`
 - 2011 · AC 110 CHENGANNUR (UDF, rank 1): `P. C. Vishnunath`
 - 2016 · AC 110 CHENGANNUR (UDF, rank 2): `P. C. Vishnunath`
 - 2021 · AC 123 KUNDARA (UDF, rank 1): `P. C. Vishnunath`
-
-### `K SIVADASAN NAIR` — 3 appearances across 1 AC
-
-- 2011 · AC 113 ARANMULA (UDF, rank 1): `K. Sivadasan Nair`
-- 2016 · AC 113 ARANMULA (UDF, rank 2): `K. Sivadasan Nair`
-- 2021 · AC 113 ARANMULA (UDF, rank 2): `K. Sivadasan Nair`
 
 ### `VEENA GEORGE` — 3 appearances across 1 AC
 Raw name variants: `Veena George`, `VEENA GEORGE`
@@ -744,14 +833,6 @@ Raw name variants: `C. R. Mahesh`, `C.R. MAHESH`
 - 2016 · AC 116 KARUNAGAPPALLY (UDF, rank 2): `C. R. Mahesh`
 - 2021 · AC 116 KARUNAGAPPALLY (UDF, rank 1): `C. R. Mahesh`
 - 2026 · AC 116 KARUNAGAPPALLY (UDF, rank 1): `C.R. MAHESH`
-
-### `P AISHA POTTY` — 3 appearances across 1 AC
-Raw name variants: `P. Aisha Potty`, `ADV.P. AISHA POTTY`
-Alliances seen: LDF, UDF
-
-- 2011 · AC 119 KOTTARAKKARA (LDF, rank 1): `P. Aisha Potty`
-- 2016 · AC 119 KOTTARAKKARA (LDF, rank 1): `P. Aisha Potty`
-- 2026 · AC 119 KOTTARAKKARA (UDF, rank 2): `ADV.P. AISHA POTTY`
 
 ### `M NOUSHAD` — 3 appearances across 1 AC
 Raw name variants: `M. Noushad`, `M.NOUSHAD`
@@ -869,6 +950,12 @@ Raw name variants: `A. K. M. Ashraf`, `A K M ASHRAF`
 - 2011 · AC 6 PAYYANNUR (LDF, rank 1): `C. Krishnan`
 - 2016 · AC 6 PAYYANNUR (LDF, rank 1): `C. Krishnan`
 
+### `ANIAMMA` — 2 appearances across 2 ACs
+Raw name variants: `Aniamma`, `Aniamma Teacher`
+
+- 2016 · AC 6 PAYYANNUR (NDA, rank 3): `Aniamma`
+- 2021 · AC 9 IRIKKUR (NDA, rank 3): `Aniamma Teacher`
+
 ### `T I MADHUSOODANAN` — 2 appearances across 1 AC
 Raw name variants: `T. I. Madhusoodanan`, `T. I. MADHUSOODANAN`
 
@@ -935,11 +1022,6 @@ Raw name variants: `K. Ranjith`, `K. RANJITH`
 - 2016 · AC 13 THALASSERY (LDF, rank 1): `A. N. Shamseer`
 - 2021 · AC 13 THALASSERY (LDF, rank 1): `A. N. Shamseer`
 
-### `K K SHAILAJA` — 2 appearances across 2 ACs
-
-- 2011 · AC 16 PERAVOOR (LDF, rank 2): `K. K. Shailaja`
-- 2016 · AC 14 KUTHUPARAMBA (LDF, rank 1): `K. K. Shailaja`
-
 ### `C SADANANDAN` — 2 appearances across 1 AC
 
 - 2016 · AC 14 KUTHUPARAMBA (NDA, rank 3): `C. Sadanandan Master`
@@ -950,22 +1032,10 @@ Raw name variants: `K. Ranjith`, `K. RANJITH`
 - 2011 · AC 15 MATTANNUR (LDF, rank 1): `E. P. Jayarajan`
 - 2016 · AC 15 MATTANNUR (LDF, rank 1): `E. P. Jayarajan`
 
-### `K K SHAILAJA TEACHER` — 2 appearances across 2 ACs
-Raw name variants: `K. K. Shailaja Teacher`, `K K SHAILAJA TEACHER`
-
-- 2021 · AC 15 MATTANNUR (LDF, rank 1): `K. K. Shailaja Teacher`
-- 2026 · AC 16 PERAVOOR (LDF, rank 2): `K K SHAILAJA TEACHER`
-
 ### `P K JAYALAKSHMI` — 2 appearances across 1 AC
 
 - 2011 · AC 17 MANANTHAVADY (UDF, rank 1): `P. K. Jayalakshmi`
 - 2016 · AC 17 MANANTHAVADY (UDF, rank 2): `P. K. Jayalakshmi`
-
-### `K MOHANDAS` — 2 appearances across 2 ACs
-Alliances seen: NDA, LDF
-
-- 2016 · AC 17 MANANTHAVADY (NDA, rank 3): `K. Mohandas`
-- 2016 · AC 37 MANJERI (LDF, rank 2): `K. Mohandas`
 
 ### `C K JANU` — 2 appearances across 1 AC
 
@@ -1296,12 +1366,6 @@ Raw name variants: `K. Premkumar`, `ADV. K. PREMKUMAR`
 - 2021 · AC 52 OTTAPPALAM (LDF, rank 1): `K. Premkumar`
 - 2026 · AC 52 OTTAPPALAM (LDF, rank 1): `ADV. K. PREMKUMAR`
 
-### `P SARIN` — 2 appearances across 2 ACs
-Alliances seen: UDF, LDF
-
-- 2021 · AC 52 OTTAPPALAM (UDF, rank 2): `P. Sarin`
-- 2024 by-bye · AC 56 PALAKKAD (LDF, rank 3): `P. Sarin`
-
 ### `K V VIJAYADAS` — 2 appearances across 1 AC
 
 - 2011 · AC 53 KONGAD (LDF, rank 1): `K. V. Vijayadas`
@@ -1312,7 +1376,91 @@ Alliances seen: UDF, LDF
 - 2011 · AC 115 ADOOR (UDF, rank 2): `Pandalam Sudhakaran`
 - 2016 · AC 53 KONGAD (UDF, rank 2): `Pandalam Sudhakaran`
 
-_… and 139 more in `data/candidate-continuity.json`._
+### `RENU SURESH` — 2 appearances across 1 AC
+Raw name variants: `Renu Suresh`, `DR. RENU SURESH`
+
+- 2016 · AC 53 KONGAD (NDA, rank 3): `Renu Suresh`
+- 2026 · AC 53 KONGAD (NDA, rank 3): `DR. RENU SURESH`
+
+### `K SANTHAKUMARI` — 2 appearances across 1 AC
+Raw name variants: `K. Santhakumari`, `ADV. K.SANTHAKUMARI`
+
+- 2021 · AC 53 KONGAD (LDF, rank 1): `K. Santhakumari`
+- 2026 · AC 53 KONGAD (LDF, rank 2): `ADV. K.SANTHAKUMARI`
+
+### `V S ACHUTHANANDAN` — 2 appearances across 1 AC
+
+- 2011 · AC 55 MALAMPUZHA (LDF, rank 1): `V. S. Achuthanandan`
+- 2016 · AC 55 MALAMPUZHA (LDF, rank 1): `V. S. Achuthanandan`
+
+### `V S JOY` — 2 appearances across 2 ACs
+Raw name variants: `V. S. Joy`, `ADV. V S JOY`
+
+- 2016 · AC 55 MALAMPUZHA (UDF, rank 3): `V. S. Joy`
+- 2026 · AC 47 THAVANUR (UDF, rank 1): `ADV. V S JOY`
+
+### `A PRABHAKARAN` — 2 appearances across 1 AC
+Raw name variants: `A. Prabhakaran`, `A PRABHAKARAN`
+
+- 2021 · AC 55 MALAMPUZHA (LDF, rank 1): `A. Prabhakaran`
+- 2026 · AC 55 MALAMPUZHA (LDF, rank 1): `A PRABHAKARAN`
+
+### `A K BALAN` — 2 appearances across 1 AC
+
+- 2011 · AC 57 TARUR (LDF, rank 1): `A. K. Balan`
+- 2016 · AC 57 TARUR (LDF, rank 1): `A. K. Balan`
+
+### `K ACHUTHAN` — 2 appearances across 1 AC
+
+- 2011 · AC 58 CHITTUR (UDF, rank 1): `K. Achuthan`
+- 2016 · AC 58 CHITTUR (UDF, rank 2): `K. Achuthan`
+
+### `SUMESH ACHUTHAN` — 2 appearances across 1 AC
+Raw name variants: `Sumesh Achuthan`, `ADV. SUMESH ACHUTHAN`
+
+- 2021 · AC 58 CHITTUR (UDF, rank 2): `Sumesh Achuthan`
+- 2026 · AC 58 CHITTUR (UDF, rank 1): `ADV. SUMESH ACHUTHAN`
+
+### `N SIVARAJAN` — 2 appearances across 1 AC
+
+- 2011 · AC 59 NEMMARA (NDA, rank 3): `N. Sivarajan`
+- 2016 · AC 59 NEMMARA (NDA, rank 3): `N. Sivarajan`
+
+### `A N ANURAG` — 2 appearances across 1 AC
+Raw name variants: `A. N. Anurag`, `A.N.ANURAG`
+
+- 2021 · AC 59 NEMMARA (NDA, rank 3): `A. N. Anurag`
+- 2026 · AC 59 NEMMARA (NDA, rank 3): `A.N.ANURAG`
+
+### `K KUSALAKUMAR` — 2 appearances across 1 AC
+
+- 2011 · AC 60 ALATHUR (UDF, rank 2): `K. Kusalakumar`
+- 2016 · AC 60 ALATHUR (UDF, rank 2): `K. Kusalakumar`
+
+### `K D PRASENAN` — 2 appearances across 1 AC
+
+- 2016 · AC 60 ALATHUR (LDF, rank 1): `K. D. Prasenan`
+- 2021 · AC 60 ALATHUR (LDF, rank 1): `K. D. Prasenan`
+
+### `THULASI` — 2 appearances across 2 ACs
+Raw name variants: `Thulasi`, `THULASI TEACHER`
+
+- 2016 · AC 61 CHELAKKARA (UDF, rank 2): `Thulasi`
+- 2026 · AC 53 KONGAD (UDF, rank 1): `THULASI TEACHER`
+
+### `RAMYA HARIDAS` — 2 appearances across 2 ACs
+Raw name variants: `Ramya Haridas`, `RAMYA HARIDAS`
+
+- 2024 by-bye · AC 61 CHELAKKARA (UDF, rank 2): `Ramya Haridas`
+- 2026 · AC 129 CHIRAYINKEEZHU (UDF, rank 1): `RAMYA HARIDAS`
+
+### `K BALAKRISHNAN` — 2 appearances across 1 AC
+Raw name variants: `K. Balakrishnan`, `K BALAKRISHNAN`
+
+- 2024 by-bye · AC 61 CHELAKKARA (NDA, rank 3): `K. Balakrishnan`
+- 2026 · AC 61 CHELAKKARA (NDA, rank 3): `K BALAKRISHNAN`
+
+_… and 116 more in `data/candidate-continuity.json`._
 
 ---
 
@@ -1320,7 +1468,7 @@ _… and 139 more in `data/candidate-continuity.json`._
 
 Pairs of different canonical keys with high token overlap (Jaccard ≥ 0.5 same-AC, ≥ 0.6 cross-AC). Each pair is **probably the same person but didn't merge** — review the patterns to extend `normalizeName()` rules.
 
-### B.1 Same-AC suspected matches (45)
+### B.1 Same-AC suspected matches (44)
 
 Highest priority — these would expand tenure detection if fixed.
 
@@ -1353,6 +1501,9 @@ Highest priority — these would expand tenure detection if fixed.
     - B: 2011 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
     - B: 2016 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
     - B: 2021 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
+- **`CHENKAL RAJASEKHARAN`** ↔ **`CHENKAL S RAJASEKHARAN`** (Jaccard 1.00, shared: `CHENKAL`, `RAJASEKHARAN`)
+    - A: 2026 · AC 140 NEYYATTINKARA (NDA, rank 3): `CHENKAL RAJASEKHARAN`
+    - B: 2021 · AC 140 NEYYATTINKARA (NDA, rank 3): `Chenkal S. Rajasekharan Nair`
 - **`K A UNNIKRISHNAN`** ↔ **`UNNIKRISHNAN K A`** (Jaccard 1.00, shared: `UNNIKRISHNAN`)
     - A: 2021 · AC 72 CHALAKUDY (NDA, rank 3): `K. A. Unnikrishnan`
     - B: 2016 · AC 72 CHALAKUDY (NDA, rank 3): `Unnikrishnan K. A.`
@@ -1371,9 +1522,6 @@ Highest priority — these would expand tenure detection if fixed.
 - **`P P SUMOD`** ↔ **`SUMOD`** (Jaccard 1.00, shared: `SUMOD`)
     - A: 2021 · AC 57 TARUR (LDF, rank 1): `P. P. Sumod`
     - B: 2026 · AC 57 TARUR (LDF, rank 1): `SUMOD`
-- **`CHENKAL RAJASEKHARAN`** ↔ **`CHENKAL S RAJASEKHARAN NAIR`** (Jaccard 0.67, shared: `CHENKAL`, `RAJASEKHARAN`)
-    - A: 2026 · AC 140 NEYYATTINKARA (NDA, rank 3): `CHENKAL RAJASEKHARAN`
-    - B: 2021 · AC 140 NEYYATTINKARA (NDA, rank 3): `Chenkal S. Rajasekharan Nair`
 - **`A D THOMAS`** ↔ **`T M THOMAS ISAAC`** (Jaccard 0.50, shared: `THOMAS`)
     - A: 2026 · AC 104 ALAPPUZHA (UDF, rank 1): `A.D THOMAS`
     - B: 2011 · AC 104 ALAPPUZHA (LDF, rank 1): `T. M. Thomas Isaac`
@@ -1429,11 +1577,6 @@ Highest priority — these would expand tenure detection if fixed.
     - A: 2016 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
     - B: 2021 · AC 9 IRIKKUR (UDF, rank 1): `Sajeev Joseph`
     - B: 2026 · AC 9 IRIKKUR (UDF, rank 1): `ADV. SAJEEV JOSEPH`
-- **`K K SHAILAJA`** ↔ **`K K SHAILAJA TEACHER`** (Jaccard 0.50, shared: `SHAILAJA`)
-    - A: 2011 · AC 16 PERAVOOR (LDF, rank 2): `K. K. Shailaja`
-    - A: 2016 · AC 14 KUTHUPARAMBA (LDF, rank 1): `K. K. Shailaja`
-    - B: 2021 · AC 15 MATTANNUR (LDF, rank 1): `K. K. Shailaja Teacher`
-    - B: 2026 · AC 16 PERAVOOR (LDF, rank 2): `K K SHAILAJA TEACHER`
 - **`K M MANI`** ↔ **`MANI C KAPPAN`** (Jaccard 0.50, shared: `MANI`)
     - A: 2011 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - A: 2016 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
@@ -1513,7 +1656,7 @@ Highest priority — these would expand tenure detection if fixed.
     - B: 2021 · AC 106 KUTTANAD (LDF, rank 1): `Thomas K. Thomas`
     - B: 2026 · AC 106 KUTTANAD (LDF, rank 2): `THOMAS K. THOMAS`
 
-### B.2 Cross-AC same-alliance suspected matches (120)
+### B.2 Cross-AC same-alliance suspected matches (128)
 
 Same alliance, different ACs, high token overlap. Most useful for identifying candidates who appeared under different name spellings across constituencies (e.g. K. Surendran across multiple BJP runs).
 
@@ -1664,14 +1807,26 @@ Same alliance, different ACs, high token overlap. Most useful for identifying ca
     - A: 2016 · AC 14 KUTHUPARAMBA (NDA, rank 3): `C. Sadanandan Master`
     - A: 2021 · AC 14 KUTHUPARAMBA (NDA, rank 3): `C. Sadanandan Master`
     - B: 2016 · AC 19 KALPETTA (NDA, rank 3): `K. Sadanandan`
+- **`E K VIJAYAN`** ↔ **`N VIJAYAN`** (Jaccard 1.00, shared: `VIJAYAN`)
+    - A: 2011 · AC 22 NADAPURAM (LDF, rank 1): `E. K. Vijayan`
+    - A: 2016 · AC 22 NADAPURAM (LDF, rank 1): `E. K. Vijayan`
+    - A: 2021 · AC 22 NADAPURAM (LDF, rank 1): `E. K. Vijayan`
+    - B: 2016 · AC 117 CHAVARA (LDF, rank 1): `N. Vijayan Pillai`
 - **`E SREEDHARAN`** ↔ **`K K SREEDHARAN`** (Jaccard 1.00, shared: `SREEDHARAN`)
     - A: 2021 · AC 56 PALAKKAD (NDA, rank 2): `E. Sreedharan`
     - B: 2021 · AC 6 PAYYANNUR (NDA, rank 3): `K. K. Sreedharan`
+- **`E SREEDHARAN`** ↔ **`P S SREEDHARAN`** (Jaccard 1.00, shared: `SREEDHARAN`)
+    - A: 2021 · AC 56 PALAKKAD (NDA, rank 2): `E. Sreedharan`
+    - B: 2016 · AC 110 CHENGANNUR (NDA, rank 3): `P. S. Sreedharan Pillai`
+    - B: 2018 by-bye · AC 110 CHENGANNUR (NDA, rank 3): `P. S. Sreedharan Pillai`
 - **`G HARI`** ↔ **`N HARI`** (Jaccard 1.00, shared: `HARI`)
     - A: 2011 · AC 124 KOLLAM (NDA, rank 3): `G. Hari`
     - B: 2016 · AC 93 PALA (NDA, rank 3): `N. Hari`
     - B: 2019 by-bye · AC 93 PALA (NDA, rank 3): `N. Hari`
     - B: 2021 · AC 98 PUTHUPPALLY (NDA, rank 3): `N. Hari`
+- **`G RAMAN`** ↔ **`T K RAMAN`** (Jaccard 1.00, shared: `RAMAN`)
+    - A: 2021 · AC 99 CHANGANASSERY (NDA, rank 3): `G. Raman Nair`
+    - B: 2011 · AC 25 BALUSSERI (NDA, rank 3): `T. K. Raman`
 - **`G SUDHAKARAN`** ↔ **`K SUDHAKARAN`** (Jaccard 1.00, shared: `SUDHAKARAN`)
     - A: 2011 · AC 105 AMBALAPPUZHA (LDF, rank 1): `G. Sudhakaran`
     - A: 2016 · AC 105 AMBALAPPUZHA (LDF, rank 1): `G. Sudhakaran`
@@ -1746,6 +1901,9 @@ Same alliance, different ACs, high token overlap. Most useful for identifying ca
 - **`K C VENU`** ↔ **`VENU`** (Jaccard 1.00, shared: `VENU`)
     - A: 2011 · AC 70 IRINJALAKUDA (NDA, rank 3): `K. C. Venu`
     - B: 2026 · AC 131 VAMANAPURAM (NDA, rank 3): `VENU`
+- **`K CHANDRAN`** ↔ **`M CHANDRAN`** (Jaccard 1.00, shared: `CHANDRAN`)
+    - A: 2011 · AC 77 KALAMASSERY (LDF, rank 2): `K. Chandran Pillai`
+    - B: 2011 · AC 60 ALATHUR (LDF, rank 1): `M. Chandran`
 - **`K G BABU`** ↔ **`P J BABU`** (Jaccard 1.00, shared: `BABU`)
     - A: 2016 · AC 11 KANNUR (NDA, rank 3): `K. G. Babu`
     - B: 2016 · AC 75 ANGAMALY (NDA, rank 3): `P. J. Babu`
@@ -1761,14 +1919,21 @@ Same alliance, different ACs, high token overlap. Most useful for identifying ca
 - **`K JAYAPRAKASH`** ↔ **`V T JAYAPRAKASH`** (Jaccard 1.00, shared: `JAYAPRAKASH`)
     - A: 2011 · AC 8 TALIPARAMBA (NDA, rank 3): `K. Jayaprakash`
     - B: 2011 · AC 48 PONNANI (NDA, rank 3): `V. T. Jayaprakash`
+- **`K K RAMACHANDRAN`** ↔ **`P RAMACHANDRAN`** (Jaccard 1.00, shared: `RAMACHANDRAN`)
+    - A: 2016 · AC 110 CHENGANNUR (LDF, rank 1): `K. K. Ramachandran Nair`
+    - A: 2021 · AC 71 PUDUKKAD (LDF, rank 1): `K. K. Ramachandran`
+    - A: 2026 · AC 71 PUDUKKAD (LDF, rank 1): `K K RAMACHANDRAN`
+    - B: 2011 · AC 130 NEDUMANGAD (LDF, rank 2): `P. Ramachandran Nair`
 - **`K K RAMACHANDRAN`** ↔ **`R RAMACHANDRAN`** (Jaccard 1.00, shared: `RAMACHANDRAN`)
+    - A: 2016 · AC 110 CHENGANNUR (LDF, rank 1): `K. K. Ramachandran Nair`
     - A: 2021 · AC 71 PUDUKKAD (LDF, rank 1): `K. K. Ramachandran`
     - A: 2026 · AC 71 PUDUKKAD (LDF, rank 1): `K K RAMACHANDRAN`
     - B: 2016 · AC 116 KARUNAGAPPALLY (LDF, rank 1): `R. Ramachandran`
     - B: 2021 · AC 116 KARUNAGAPPALLY (LDF, rank 2): `R. Ramachandran`
-- **`K K RAMACHANDRAN NAIR`** ↔ **`P RAMACHANDRAN NAIR`** (Jaccard 1.00, shared: `RAMACHANDRAN`, `NAIR`)
-    - A: 2016 · AC 110 CHENGANNUR (LDF, rank 1): `K. K. Ramachandran Nair`
-    - B: 2011 · AC 130 NEDUMANGAD (LDF, rank 2): `P. Ramachandran Nair`
+- **`K K SREEDHARAN`** ↔ **`P S SREEDHARAN`** (Jaccard 1.00, shared: `SREEDHARAN`)
+    - A: 2021 · AC 6 PAYYANNUR (NDA, rank 3): `K. K. Sreedharan`
+    - B: 2016 · AC 110 CHENGANNUR (NDA, rank 3): `P. S. Sreedharan Pillai`
+    - B: 2018 by-bye · AC 110 CHENGANNUR (NDA, rank 3): `P. S. Sreedharan Pillai`
 - **`K K SURENDRAN`** ↔ **`K SURENDRAN`** (Jaccard 1.00, shared: `SURENDRAN`)
     - A: 2011 · AC 46 KOTTAKKAL (NDA, rank 3): `K. K. Surendran`
     - A: 2016 · AC 48 PONNANI (NDA, rank 3): `K. K. Surendran`
@@ -1799,6 +1964,10 @@ Same alliance, different ACs, high token overlap. Most useful for identifying ca
     - A: 2016 · AC 17 MANANTHAVADY (NDA, rank 3): `K. Mohandas`
     - A: 2016 · AC 37 MANJERI (LDF, rank 2): `K. Mohandas`
     - B: 2016 · AC 82 ERANAKULAM (NDA, rank 3): `N. K. Mohandas`
+- **`K NARAYANAN`** ↔ **`NARAYANAN`** (Jaccard 1.00, shared: `NARAYANAN`)
+    - A: 2021 · AC 44 TANUR (NDA, rank 3): `K. Narayanan Master`
+    - A: 2026 · AC 45 TIRUR (NDA, rank 3): `K.NARAYANAN MASTER`
+    - B: 2011 · AC 97 KOTTAYAM (NDA, rank 3): `Narayanan Namboothiri`
 - **`K P MOHANAN`** ↔ **`T O MOHANAN`** (Jaccard 1.00, shared: `MOHANAN`)
     - A: 2011 · AC 14 KUTHUPARAMBA (UDF, rank 1): `K. P. Mohanan`
     - A: 2016 · AC 14 KUTHUPARAMBA (UDF, rank 2): `K. P. Mohanan`
@@ -1866,6 +2035,10 @@ Same alliance, different ACs, high token overlap. Most useful for identifying ca
     - A: 2016 · AC 105 AMBALAPPUZHA (NDA, rank 3): `L. P. Jayachandran`
     - B: 2011 · AC 23 QUILANDY (NDA, rank 3): `T. P. Jayachandran`
     - B: 2021 · AC 26 ELATHUR (NDA, rank 3): `T. P. Jayachandran Master`
+- **`M A SURENDRAN`** ↔ **`V SURENDRAN`** (Jaccard 1.00, shared: `SURENDRAN`)
+    - A: 2011 · AC 84 KUNNATHUNAD (LDF, rank 2): `M. A. Surendran`
+    - B: 2011 · AC 134 THIRUVANANTHAPURAM (LDF, rank 2): `V. Surendran Pillai`
+    - B: 2016 · AC 135 NEMOM (UDF, rank 3): `V. Surendran Pillai`
 - **`M ANIL KUMAR`** ↔ **`P K ANIL KUMAR`** (Jaccard 1.00, shared: `ANIL`, `KUMAR`)
     - A: 2016 · AC 82 ERANAKULAM (LDF, rank 2): `M. Anil Kumar`
     - B: 2026 · AC 19 KALPETTA (LDF, rank 2): `P K ANIL KUMAR`
@@ -1911,34 +2084,4 @@ Same alliance, different ACs, high token overlap. Most useful for identifying ca
     - B: 2016 · AC 139 KOVALAM (UDF, rank 1): `M. Vincent`
     - B: 2021 · AC 139 KOVALAM (UDF, rank 1): `M. Vincent`
     - B: 2026 · AC 139 KOVALAM (UDF, rank 1): `ADV. M.VINCENT`
-- **`M S RAJENDRAN`** ↔ **`R RAJENDRAN`** (Jaccard 1.00, shared: `RAJENDRAN`)
-    - A: 2011 · AC 114 KONNI (LDF, rank 2): `M. S. Rajendran`
-    - B: 2026 · AC 126 CHATHANNOOR (LDF, rank 2): `ADV.R.RAJENDRAN`
-- **`M S RAJENDRAN`** ↔ **`S RAJENDRAN`** (Jaccard 1.00, shared: `RAJENDRAN`)
-    - A: 2011 · AC 114 KONNI (LDF, rank 2): `M. S. Rajendran`
-    - B: 2011 · AC 88 DEVIKULAM (LDF, rank 1): `S. Rajendran`
-    - B: 2016 · AC 88 DEVIKULAM (LDF, rank 1): `S. Rajendran`
-    - B: 2026 · AC 88 DEVIKULAM (NDA, rank 3): `S.RAJENDRAN`
-- **`M THOMAS MATHEW`** ↔ **`MATHEW T THOMAS`** (Jaccard 1.00, shared: `THOMAS`, `MATHEW`)
-    - A: 2011 · AC 35 NILAMBUR (LDF, rank 2): `M. Thomas Mathew`
-    - B: 2011 · AC 111 THIRUVALLA (LDF, rank 1): `Mathew T. Thomas`
-    - B: 2016 · AC 111 THIRUVALLA (LDF, rank 1): `Mathew T. Thomas`
-    - B: 2021 · AC 111 THIRUVALLA (LDF, rank 1): `Mathew T. Thomas`
-- **`M UMMER`** ↔ **`V M UMMER`** (Jaccard 1.00, shared: `UMMER`)
-    - A: 2011 · AC 37 MANJERI (UDF, rank 1): `M. Ummer`
-    - A: 2016 · AC 37 MANJERI (UDF, rank 1): `M. Ummer`
-    - B: 2011 · AC 31 KODUVALLY (UDF, rank 1): `V. M. Ummer`
-    - B: 2016 · AC 32 THIRUVAMBADI (UDF, rank 2): `V. M. Ummer`
-- **`M V GOPAKUMAR`** ↔ **`V G GOPAKUMAR`** (Jaccard 1.00, shared: `GOPAKUMAR`)
-    - A: 2021 · AC 110 CHENGANNUR (NDA, rank 3): `M. V. Gopakumar`
-    - A: 2026 · AC 110 CHENGANNUR (NDA, rank 3): `M. V .GOPAKUMAR`
-    - B: 2011 · AC 96 ETTUMANOOR (NDA, rank 3): `V. G. Gopakumar`
-- **`M V GOPAKUMAR`** ↔ **`V GOPAKUMAR`** (Jaccard 1.00, shared: `GOPAKUMAR`)
-    - A: 2021 · AC 110 CHENGANNUR (NDA, rank 3): `M. V. Gopakumar`
-    - A: 2026 · AC 110 CHENGANNUR (NDA, rank 3): `M. V .GOPAKUMAR`
-    - B: 2016 · AC 77 KALAMASSERY (NDA, rank 3): `V. Gopakumar`
-- **`MAMMIKUTTY P`** ↔ **`P MAMMIKUTTY`** (Jaccard 1.00, shared: `MAMMIKUTTY`)
-    - A: 2011 · AC 49 THRITHALA (LDF, rank 2): `Mammikutty P.`
-    - B: 2021 · AC 51 SHORNUR (LDF, rank 1): `P. Mammikutty`
-    - B: 2026 · AC 51 SHORNUR (LDF, rank 1): `P.MAMMIKUTTY`
-- _… 20 more in `data/candidate-continuity.json`._
+- _… 28 more in `data/candidate-continuity.json`._

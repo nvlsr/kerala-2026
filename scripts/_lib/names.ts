@@ -24,12 +24,55 @@ const HONORIFIC_PREFIXES = new Set([
 ])
 
 /**
- * Suffix titles dropped between cycles. ECI 2026 publications sometimes
- * include `"Master"` (an Indian honorific for teachers) which the same
- * person didn't carry in earlier cycles. Strip only at the trailing
- * position so we don't lose actual surnames.
+ * Suffix honorifics dropped between cycles. Both `"Master"` and
+ * `"Teacher"` are Malayalam-political honorifics for someone who was
+ * formerly a school teacher (the most common path into LDF/UDF Kerala
+ * politics through trade-union/local-leadership work). ECI sometimes
+ * publishes them and sometimes doesn't — strip from the trailing
+ * position only, so we don't mangle real surnames.
  */
-const HONORIFIC_SUFFIXES = new Set(["MASTER"])
+const HONORIFIC_SUFFIXES = new Set(["MASTER", "TEACHER"])
+
+/**
+ * Hindu caste-name suffixes. Tracked SEPARATELY from honorifics so we
+ * can preserve the information for future analyses (e.g. "all Nair
+ * candidates in Trivandrum 2026"). `normalizeName()` strips them from
+ * the canonical key, but `extractCasteSuffix()` records what was
+ * stripped.
+ *
+ * Conservative list: Hindu caste-names with strong empirical evidence
+ * of appearing as trailing-suffix-only (not first-name or middle-name)
+ * in Kerala ECI publications. We deliberately exclude ambiguous cases
+ * like THANGAL (Muslim Sayyid title) — these would go in a future
+ * `RELIGIOUS_TITLES` set if needed.
+ */
+const CASTE_SUFFIXES = new Set([
+  "NAIR",
+  "PILLAI",
+  "MENON",
+  "IYER",
+  "NAMPOOTHIRI",
+  "NAMBOOTHIRI",
+])
+
+/**
+ * Extract the trailing caste suffix from a raw candidate name, if any.
+ * Returns the suffix as found in `CASTE_SUFFIXES` (uppercase) or null.
+ *
+ * Mirrors the trailing-token check inside `normalizeName()`, so a name
+ * and its caste suffix together fully reconstruct the original.
+ */
+export function extractCasteSuffix(name: string): string | null {
+  const tokens = name
+    .replace(/\./g, " ")
+    .replace(/[,'"`]/g, "")
+    .toUpperCase()
+    .split(/\s+/)
+    .filter(t => t.length > 0)
+  if (tokens.length === 0) return null
+  const last = tokens[tokens.length - 1]
+  return CASTE_SUFFIXES.has(last) ? last : null
+}
 
 /**
  * Canonical key for cross-cycle equality matching.
@@ -41,11 +84,15 @@ const HONORIFIC_SUFFIXES = new Set(["MASTER"])
  *  2. strip remaining punctuation (commas, quotes, backticks)
  *  3. uppercase + collapse whitespace
  *  4. drop leading honorific tokens (Dr / Adv / Prof / etc.)
- *  5. drop trailing honorific tokens (Master)
+ *  5. drop trailing honorific tokens (Master, Teacher)
+ *  6. drop trailing caste-name suffix (Nair, Pillai, Menon, Iyer,
+ *     Nampoothiri/Namboothiri) — preserved separately via
+ *     `extractCasteSuffix()` for downstream analysis
  *
  * `"Adv. K. K. Sasi"` → `"K K SASI"`.
  * `"Adv.K. Anilkumar"` ↔ `"K. Anilkumar"` → both `"K ANILKUMAR"`.
  * `"E. T. Taison Master"` ↔ `"E. T. Taison"` → both `"E T TAISON"`.
+ * `"Chenkal S. Rajasekharan Nair"` ↔ `"Chenkal Rajasekharan"` → both `"CHENKAL S RAJASEKHARAN"` and `"CHENKAL RAJASEKHARAN"` respectively (caste stripped but token-count still differs).
  */
 export function normalizeName(name: string): string {
   const upper = name
@@ -62,7 +109,13 @@ export function normalizeName(name: string): string {
     start++
   }
   let end = tokens.length
-  while (end > start && HONORIFIC_SUFFIXES.has(tokens[end - 1])) {
+  // Drop trailing honorific + caste suffix tokens (in either order —
+  // both "X Master" and "X Nair" or even theoretical "X Master Nair")
+  while (
+    end > start &&
+    (HONORIFIC_SUFFIXES.has(tokens[end - 1]) ||
+      CASTE_SUFFIXES.has(tokens[end - 1]))
+  ) {
     end--
   }
   return tokens.slice(start, end).join(" ")

@@ -22,7 +22,7 @@
 import { constituencies, type Candidate } from "@/lib/data/constituencies"
 
 import { loadHistorical } from "../_lib/load"
-import { nameSimilarity, normalizeName } from "../_lib/names"
+import { extractCasteSuffix, nameSimilarity, normalizeName } from "../_lib/names"
 import { saveJson } from "../_lib/save"
 
 interface Appearance {
@@ -34,6 +34,8 @@ interface Appearance {
   alliance: string
   rawName: string
   normKey: string
+  /** Caste suffix detected on the raw name (NAIR / PILLAI / etc.) or null. */
+  casteSuffix: string | null
 }
 
 const appearances: Appearance[] = []
@@ -60,6 +62,7 @@ for (const [acNum, h] of historical.entries()) {
         alliance: cand.alliance ?? "OTHER",
         rawName: cand.name,
         normKey: normalizeName(cand.name),
+        casteSuffix: extractCasteSuffix(cand.name),
       })
     })
   }
@@ -80,6 +83,7 @@ for (const c of constituencies) {
       alliance: cand.alliance ?? "OTHER",
       rawName: cand.name,
       normKey: normalizeName(cand.name),
+      casteSuffix: extractCasteSuffix(cand.name),
     })
   })
 }
@@ -92,19 +96,33 @@ for (const a of appearances) {
   byKey.get(a.normKey)!.push(a)
 }
 
+// Treat NOTA / OTHER as "non-main"; alliance-conflict is interesting only
+// for UDF/LDF/NDA mixing.
+const MAIN_ALLIANCES = new Set(["UDF", "LDF", "NDA"])
+
 const multiAppearance = [...byKey.entries()]
   .filter(([_, hits]) => hits.length >= 2)
-  .map(([key, hits]) => ({
-    normKey: key,
-    appearanceCount: hits.length,
-    distinctRawNames: [...new Set(hits.map(h => h.rawName))],
-    distinctAlliances: [...new Set(hits.map(h => h.alliance))],
-    distinctACs: [...new Set(hits.map(h => h.ac))].length,
-    hits: hits.sort((a, b) =>
-      a.year !== b.year ? a.year - b.year : a.ac - b.ac
-    ),
-  }))
+  .map(([key, hits]) => {
+    const distinctAlliances = [...new Set(hits.map(h => h.alliance))]
+    const mainAlliancesSeen = distinctAlliances.filter(a => MAIN_ALLIANCES.has(a))
+    return {
+      normKey: key,
+      appearanceCount: hits.length,
+      distinctRawNames: [...new Set(hits.map(h => h.rawName))],
+      distinctAlliances,
+      mainAlliancesSeen,
+      distinctACs: [...new Set(hits.map(h => h.ac))].length,
+      isMultiAlliance: mainAlliancesSeen.length > 1,
+      casteSuffixes: [...new Set(hits.map(h => h.casteSuffix).filter(Boolean) as string[])],
+      hits: hits.sort((a, b) =>
+        a.year !== b.year ? a.year - b.year : a.ac - b.ac
+      ),
+    }
+  })
   .sort((a, b) => b.appearanceCount - a.appearanceCount)
+
+const multiAlliance = multiAppearance.filter(e => e.isMultiAlliance)
+const singleAlliance = multiAppearance.filter(e => !e.isMultiAlliance)
 
 // ── Suspected missed matches ─────────────────────────────────────────
 //
@@ -189,11 +207,21 @@ suspected.sort((x, y) => {
 
 // ── Write structured output ──────────────────────────────────────────
 
+// Caste-suffix distribution (for §A.3 in the markdown + future analysis)
+const casteSuffixCounts = new Map<string, number>()
+for (const a of appearances) {
+  if (a.casteSuffix) {
+    casteSuffixCounts.set(a.casteSuffix, (casteSuffixCounts.get(a.casteSuffix) ?? 0) + 1)
+  }
+}
+
 saveJson("data/candidate-continuity.json", {
   totalAppearances: appearances.length,
   uniqueNormalisedKeys: byKey.size,
   multiAppearanceCount: multiAppearance.length,
+  multiAllianceCount: multiAlliance.length,
   suspectedMissedMatchesCount: suspected.length,
+  casteSuffixCounts: Object.fromEntries(casteSuffixCounts),
   multiAppearance,
   suspectedMissedMatches: suspected,
 })
@@ -221,6 +249,8 @@ lines.push("")
 lines.push(`- Total top-3 appearances: **${appearances.length}**`)
 lines.push(`- Unique normalised keys: **${byKey.size}**`)
 lines.push(`- Candidates appearing ≥ 2 times: **${multiAppearance.length}**`)
+lines.push(`  - of which **multi-alliance** (priority review — likely different people sharing a normalised name): **${multiAlliance.length}**`)
+lines.push(`  - single-alliance multi-appearance: ${singleAlliance.length}`)
 lines.push(`- Suspected missed matches: **${suspected.length}**`)
 lines.push(
   `  - same-AC: ${suspected.filter(s => s.scope === "same-ac").length} (likely tenure-detection gaps)`
@@ -229,20 +259,65 @@ lines.push(
   `  - cross-AC same-alliance: ${suspected.filter(s => s.scope === "cross-ac").length} (likely cross-constituency name drift)`
 )
 lines.push("")
+lines.push(`### Caste-suffix distribution`)
+lines.push("")
+lines.push("Detected via `extractCasteSuffix()` (trailing token only). Recorded per-appearance in `data/candidate-continuity.json` for future analysis.")
+lines.push("")
+lines.push("| Suffix | Count |")
+lines.push("| --- | ---: |")
+for (const [suffix, count] of [...casteSuffixCounts.entries()].sort((a, b) => b[1] - a[1])) {
+  lines.push(`| \`${suffix}\` | ${count} |`)
+}
+lines.push("")
 lines.push("---")
 lines.push("")
 
-// §A
-lines.push("## A. Multi-appearance candidates the normaliser caught")
+// §A.1 — MULTI-ALLIANCE (priority — likely different people)
+lines.push("## A.1 Multi-alliance multi-appearance keys (priority review)")
 lines.push("")
 lines.push(
-  "Each block: one normalised key + every top-3 appearance attributed to it. Scan for **false positives** — different people the normaliser collapsed."
+  "These normalised keys appeared under **two or more main alliances** (UDF/LDF/NDA). Most are different people with the same common name. Scan each block; if it's actually the same person who switched alliances, note it — otherwise confirm they're distinct."
 )
 lines.push("")
-lines.push(`Showing the top ${Math.min(multiAppearance.length, 200)} by appearance count.`)
+
+for (const entry of multiAlliance) {
+  lines.push(
+    `### \`${entry.normKey}\` — ${entry.appearanceCount} appearances · ${entry.distinctACs} AC${entry.distinctACs === 1 ? "" : "s"} · alliances: **${entry.mainAlliancesSeen.join(" / ")}**`
+  )
+  if (entry.distinctRawNames.length > 1) {
+    lines.push(
+      `Raw name variants: ${entry.distinctRawNames.map(n => `\`${n}\``).join(", ")}`
+    )
+  }
+  if (entry.casteSuffixes.length > 0) {
+    lines.push(`Caste suffix(es) seen: ${entry.casteSuffixes.map(s => `\`${s}\``).join(", ")}`)
+  }
+  lines.push("")
+  for (const h of entry.hits) {
+    lines.push(`- ${fmtAppearance(h)}`)
+  }
+  lines.push("")
+}
+
+if (multiAlliance.length === 0) {
+  lines.push("_None._")
+  lines.push("")
+}
+
+lines.push("---")
 lines.push("")
 
-for (const entry of multiAppearance.slice(0, 200)) {
+// §A.2 — SINGLE-ALLIANCE multi-appearance (the bulk)
+lines.push("## A.2 Single-alliance multi-appearance candidates")
+lines.push("")
+lines.push(
+  "Each block: one normalised key + every top-3 appearance attributed to it. All within a single main alliance (or OTHER/NOTA). Scan for **false positives** — different people the normaliser collapsed."
+)
+lines.push("")
+lines.push(`Showing the top ${Math.min(singleAlliance.length, 200)} by appearance count.`)
+lines.push("")
+
+for (const entry of singleAlliance.slice(0, 200)) {
   lines.push(
     `### \`${entry.normKey}\` — ${entry.appearanceCount} appearances across ${entry.distinctACs} AC${entry.distinctACs === 1 ? "" : "s"}`
   )
@@ -254,6 +329,9 @@ for (const entry of multiAppearance.slice(0, 200)) {
   if (entry.distinctAlliances.length > 1) {
     lines.push(`Alliances seen: ${entry.distinctAlliances.join(", ")}`)
   }
+  if (entry.casteSuffixes.length > 0) {
+    lines.push(`Caste suffix(es) seen: ${entry.casteSuffixes.map(s => `\`${s}\``).join(", ")}`)
+  }
   lines.push("")
   for (const h of entry.hits) {
     lines.push(`- ${fmtAppearance(h)}`)
@@ -261,9 +339,9 @@ for (const entry of multiAppearance.slice(0, 200)) {
   lines.push("")
 }
 
-if (multiAppearance.length > 200) {
+if (singleAlliance.length > 200) {
   lines.push(
-    `_… and ${multiAppearance.length - 200} more in \`data/candidate-continuity.json\`._`
+    `_… and ${singleAlliance.length - 200} more in \`data/candidate-continuity.json\`._`
   )
   lines.push("")
 }
@@ -327,14 +405,19 @@ import { writeFileSync } from "fs"
 writeFileSync("docs/candidate-continuity-audit.md", lines.join("\n"))
 
 console.log(
-  `Wrote data/candidate-continuity.json (${appearances.length} appearances → ${byKey.size} unique keys, ${multiAppearance.length} multi-appearance, ${suspected.length} suspected misses)`
+  `Wrote data/candidate-continuity.json (${appearances.length} appearances → ${byKey.size} unique keys, ${multiAppearance.length} multi-appearance, ${multiAlliance.length} multi-alliance, ${suspected.length} suspected misses)`
 )
 console.log(`Wrote docs/candidate-continuity-audit.md`)
 console.log("")
-console.log(`Top 10 multi-appearance candidates:`)
-for (const e of multiAppearance.slice(0, 10)) {
+console.log(`Caste suffixes detected:`)
+for (const [s, c] of [...casteSuffixCounts.entries()].sort((a, b) => b[1] - a[1])) {
+  console.log(`  ${s}: ${c}`)
+}
+console.log("")
+console.log(`Top 10 multi-alliance candidates (priority review):`)
+for (const e of multiAlliance.slice(0, 10)) {
   console.log(
-    `  ${e.appearanceCount}× \`${e.normKey}\` — ${e.distinctRawNames.length} raw variant(s), ${e.distinctACs} AC(s)`
+    `  ${e.appearanceCount}× \`${e.normKey}\` — ${e.mainAlliancesSeen.join("/")}, ${e.distinctACs} AC(s)`
   )
 }
 console.log("")
