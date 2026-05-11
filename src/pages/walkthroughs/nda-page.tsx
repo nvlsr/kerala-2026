@@ -1,6 +1,7 @@
-import { Fragment, useState, type ReactNode } from "react"
+import { Fragment, useState } from "react"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
+import { CohortLink, CohortMap } from "@/components/walkthroughs/cohort-map"
 import { CohortSection } from "@/components/walkthroughs/cohort-section"
 import { ProseLink, SeatLink } from "@/components/walkthroughs/prose-link"
 import {
@@ -31,6 +32,7 @@ import {
   getPerACAllianceShare,
   getPerACWinner2026,
 } from "@/lib/data/walkthrough-metrics"
+import { fmtPp } from "@/lib/data/format"
 import { cn } from "@/lib/utils"
 
 import {
@@ -55,75 +57,6 @@ import {
   SOUTH_CLUSTER_VIEWBOX,
   THREE_LENSES,
 } from "./nda-data"
-
-function makeBinaryValueMap(
-  acs: Set<number>,
-  allACs: number[]
-): Map<number, number> {
-  const out = new Map<number, number>()
-  for (const ac of allACs) out.set(ac, acs.has(ac) ? 1 : 0)
-  return out
-}
-
-function CohortLink({ slug, children }: { slug: string; children: ReactNode }) {
-  return (
-    <a
-      href={`#${slug}`}
-      className="font-medium text-foreground underline decoration-foreground/30 decoration-[1.5px] underline-offset-2 hover:text-foreground hover:decoration-foreground"
-    >
-      {children}
-    </a>
-  )
-}
-
-function fmtPp(value: number): string {
-  const s = value.toFixed(1)
-  return value > 0 ? `+${s}` : s
-}
-
-function CohortMap({
-  valueByAC,
-  acs,
-  color,
-  ariaLabel,
-  acNameLookup,
-  badgeLabel,
-}: {
-  valueByAC: Map<number, number>
-  acs: Set<number>
-  color: string
-  ariaLabel: string
-  acNameLookup: Map<number, string>
-  badgeLabel: string
-}) {
-  return (
-    <ChoroplethMap
-      valueByAC={valueByAC}
-      colorScale="sequential"
-      domain={[0, 1]}
-      sequentialColor={color}
-      highlightSeats={acs}
-      ariaLabel={ariaLabel}
-      unit=""
-      decimals={0}
-      tooltipFormat={(acNumber, value) => {
-        const inCohort = (value ?? 0) > 0.5
-        return (
-          <span>
-            <span className="font-medium">
-              {acNameLookup.get(acNumber) ?? `AC ${acNumber}`}
-            </span>
-            {inCohort && (
-              <span className="ml-1 rounded-sm bg-foreground/10 px-1.5 py-0.5 text-[10px]">
-                {badgeLabel}
-              </span>
-            )}
-          </span>
-        )
-      }}
-    />
-  )
-}
 
 /** Right-rail nav anchors for this page. Each id matches a `<section id="...">` below. */
 const RAIL_GROUPS = [
@@ -169,18 +102,9 @@ export function WalkthroughsNDAPage() {
   }
 
   const ndaShare2026 = getPerACAllianceShare("NDA", 2026)
+  // Used by the hero NDA-share choropleth tooltip (the cohort binary
+  // maps below source names from the shared CohortMap component).
   const acNameLookup = new Map(all.map((m) => [m.acNumber, m.acName]))
-
-  const allACNumbers = all.map((m) => m.acNumber)
-  const matureGrowersValues = makeBinaryValueMap(
-    MATURE_GROWERS_ACS,
-    allACNumbers
-  )
-  const cohort3Values = makeBinaryValueMap(COHORT_3_ACS, allACNumbers)
-  const cohort4aValues = makeBinaryValueMap(COHORT_4A_ACS, allACNumbers)
-  const cohort6Values = makeBinaryValueMap(COHORT_6_ACS, allACNumbers)
-  const cohort5aValues = makeBinaryValueMap(COHORT_5A_ACS, allACNumbers)
-  const cohort5bValues = makeBinaryValueMap(COHORT_5B_ACS, allACNumbers)
 
   const [showAllCohort6, setShowAllCohort6] = useState(false)
   const COHORT_6_INITIAL = 10
@@ -385,11 +309,9 @@ export function WalkthroughsNDAPage() {
           mapSide="left"
           map={
             <CohortMap
-              valueByAC={matureGrowersValues}
               acs={MATURE_GROWERS_ACS}
               color="#2563EB"
               ariaLabel="Mature growers + multi-cycle builders"
-              acNameLookup={acNameLookup}
               badgeLabel="grower"
             />
           }
@@ -499,11 +421,9 @@ export function WalkthroughsNDAPage() {
           mapSide="right"
           map={
             <CohortMap
-              valueByAC={cohort3Values}
               acs={COHORT_3_ACS}
               color="#0891B2"
               ariaLabel="Low-base breakouts — 3 seats"
-              acNameLookup={acNameLookup}
               badgeLabel="breakout"
             />
           }
@@ -617,11 +537,9 @@ export function WalkthroughsNDAPage() {
           mapSide="left"
           map={
             <CohortMap
-              valueByAC={cohort4aValues}
               acs={COHORT_4A_ACS}
               color="#DC2626"
               ariaLabel="Declining-mature seats"
-              acNameLookup={acNameLookup}
               badgeLabel="declining"
             />
           }
@@ -713,11 +631,9 @@ export function WalkthroughsNDAPage() {
           mapSide="right"
           map={
             <CohortMap
-              valueByAC={cohort6Values}
               acs={COHORT_6_ACS}
               color="#D97706"
               ariaLabel="Wave-capture — 21 seats where NDA out-captured UDF in the anti-LDF wave"
-              acNameLookup={acNameLookup}
               badgeLabel="wave-capture"
             />
           }
@@ -872,11 +788,9 @@ export function WalkthroughsNDAPage() {
           mapSide="left"
           map={
             <CohortMap
-              valueByAC={cohort5aValues}
               acs={COHORT_5A_ACS}
               color="#8B5CF6"
               ariaLabel="Strategic-abstention seats highlighted"
-              acNameLookup={acNameLookup}
               badgeLabel="abstention"
             />
           }
@@ -947,11 +861,9 @@ export function WalkthroughsNDAPage() {
           mapSide="right"
           map={
             <CohortMap
-              valueByAC={cohort5bValues}
               acs={COHORT_5B_ACS}
               color="#991B1B"
               ariaLabel="Structural-exclusion seats highlighted"
-              acNameLookup={acNameLookup}
               badgeLabel="exclusion"
             />
           }

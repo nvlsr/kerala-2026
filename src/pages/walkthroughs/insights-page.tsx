@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react"
 
-import { ChoroplethMap } from "@/components/charts/choropleth-map"
+import { CohortMap } from "@/components/walkthroughs/cohort-map"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
@@ -188,64 +188,15 @@ const DEMO_COHORTS: DemoCohortOption[] = [
   },
 ]
 
-const acByNumber = new Map(constituencies.map((c) => [c.constituencyNumber, c]))
-
-function makeBinaryValueMap(acs: Set<number>): Map<number, number> {
-  const out = new Map<number, number>()
-  for (const c of constituencies) {
-    out.set(c.constituencyNumber, acs.has(c.constituencyNumber) ? 1 : 0)
-  }
-  return out
-}
-
-function CohortMap({
-  acs,
-  color,
-  ariaLabel,
-  badgeLabel,
-}: {
-  acs: Set<number>
-  color: string
-  ariaLabel: string
-  badgeLabel: string
-}) {
-  const valueByAC = useMemo(() => makeBinaryValueMap(acs), [acs])
-  return (
-    <ChoroplethMap
-      valueByAC={valueByAC}
-      colorScale="sequential"
-      domain={[0, 1]}
-      sequentialColor={color}
-      highlightSeats={acs}
-      ariaLabel={ariaLabel}
-      unit=""
-      decimals={0}
-      tooltipFormat={(acNumber, value) => {
-        const ac = acByNumber.get(acNumber)
-        const inCohort = (value ?? 0) > 0.5
-        return (
-          <span>
-            <span className="font-medium">
-              {ac?.constituencyName ?? `AC ${acNumber}`}
-            </span>
-            {inCohort && (
-              <span className="ml-1 rounded-sm bg-foreground/10 px-1.5 py-0.5 text-[10px]">
-                {badgeLabel}
-              </span>
-            )}
-          </span>
-        )
-      }}
-    />
-  )
-}
-
 function findOption<T extends { value: string }>(
   options: T[],
   value: string
 ): T {
   return options.find((o) => o.value === value) ?? options[0]
 }
+
+// Used by the intersection-list rendering below to label ACs by name.
+const acByNumber = new Map(constituencies.map((c) => [c.constituencyNumber, c]))
 
 export function WalkthroughsInsightsPage() {
   const [bjpValue, setBjpValueRaw] = useState<string>("mature")
