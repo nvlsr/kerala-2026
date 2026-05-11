@@ -141,13 +141,19 @@ export const COHORT_SIZE: Record<ChristianSubRiteCohort, number> = (() => {
   return out
 })()
 
+function emptyCohortMap<T>(make: () => T): Record<ChristianSubRiteCohort, T> {
+  const result = {} as Record<ChristianSubRiteCohort, T>
+  for (const meta of CHRISTIAN_SUBRITE_COHORTS) {
+    result[meta.code] = make()
+  }
+  return result
+}
+
 export const COHORT_TRAJECTORY: Record<
   ChristianSubRiteCohort,
   CohortCyclePoint[]
 > = (() => {
-  const result = Object.fromEntries(
-    CHRISTIAN_SUBRITE_COHORTS.map((c) => [c.code, [] as CohortCyclePoint[]])
-  ) as unknown as Record<ChristianSubRiteCohort, CohortCyclePoint[]>
+  const result = emptyCohortMap<CohortCyclePoint[]>(() => [])
 
   for (const cohort of CHRISTIAN_SUBRITE_COHORTS.map((c) => c.code)) {
     const acsInCohort = constituencies
@@ -280,9 +286,7 @@ export type CohortAC = {
 
 export const COHORT_AC_LIST: Record<ChristianSubRiteCohort, CohortAC[]> =
   (() => {
-    const out = Object.fromEntries(
-      CHRISTIAN_SUBRITE_COHORTS.map((c) => [c.code, [] as CohortAC[]])
-    ) as unknown as Record<ChristianSubRiteCohort, CohortAC[]>
+    const out = emptyCohortMap<CohortAC[]>(() => [])
     for (const c of constituencies) {
       const cohort = christianSubRiteCohortFor(c.constituencyNumber)
       const sig = getReligiousSignatureForAC(c.constituencyNumber)
