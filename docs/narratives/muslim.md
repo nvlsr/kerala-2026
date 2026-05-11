@@ -382,30 +382,48 @@ Plus a handful of additional Trivandrum/coastal-Hindu ACs where NDA is competiti
 
 ## §5 — Open hypotheses (to revisit post-walkthrough)
 
-### Hypothesis A — Sunni stability + Mujahid swing (preferred working thesis)
+**Re-tag**: per §2a-bis, hypotheses A / B / C are **mechanism hypotheses, not directly testable from our data**. They attribute observed cohort-level patterns to a specific cause (theological identity) when the actual cause may be a different cleavage (EK / AP factional split, Jamaat / WPI consolidation) that our OSM cohort layer cannot distinguish. Treat them as candidate explanations; the data confirms the *pattern* (cohort Δ direction + LDF retention rate) but not the *mechanism*. Hypothesis D is forward-looking and directly testable against 2031 actuals.
 
-The 2026 Muslim-belt UDF margin reflects **Sunni stability + Mujahid swing**, not uniform mobilisation. Evidence:
-- Sunni cohort Δ UDF +6.5 pp (close to statewide baseline)
-- Mujahid cohort Δ UDF +8.7 pp (above baseline)
-- 36 % of Mujahid ACs went LDF vs 15 % Sunni → Mujahid structurally more competitive
+### Hypothesis A — Sunni stability + Mujahid swing (cohort-level pattern; mechanism hypothesis)
 
-⚠️ Caveated by §2a multi-cleavage problem: the "cohort signal" may reflect EK/AP factional split + Jamaat consolidation, not pure Mujahid identity. Hypothesis remains directionally correct but mechanism is uncertain.
+**Pattern (data-confirmed)**: Sunni cohort Δ UDF +6.5 pp; Mujahid cohort Δ UDF +8.7 pp; 36 % of Mujahid ACs went LDF vs 15 % Sunni — Mujahid-labelled ACs are structurally more competitive than Sunni-labelled ACs.
 
-### Hypothesis B — Mujahid as the swing voter
+**Mechanism hypothesis (not directly testable from our data)**: 2026 Muslim-belt UDF margin reflects *Sunni stability + Mujahid swing* — i.e., Mujahid theological identity is the proximate cause of the differential.
 
-The 14 Mujahid-cohort ACs are the marginal seats in Muslim Kerala. Whoever wins Mujahid wins the Muslim-belt margin.
+**Alternative mechanisms (consistent with same pattern, equally unobserved)**:
+- EK/AP factional split inside Mujahid: AP-Mujahid was LDF-tactical pre-2016 merger; post-merger residual loyalty may still pull LDF
+- AP-Sunni voters residing in Mujahid-cohort ACs would also pull LDF in those cohorts
+- Jamaat-e-Islami / WPI presence in Mujahid-cohort ACs followed by 2026 UDF consolidation (Nilambur precedent) would produce the same cohort signal
 
-⚠️ Same caveat — "Mujahid" here is the cohort label, which conflates theological and factional.
+What we can say: *Mujahid-cohort ACs behave differently from Sunni-cohort ACs.* What we can't say: *because they're Mujahid.* Could be AP-faction, could be Jamaat, could be Mujahid identity, could be a mix.
 
-### Hypothesis C — Two Muslim Keralas vote differently
+### Hypothesis B — Mujahid as the swing voter (cohort-level pattern; mechanism hypothesis)
 
-Sunni Kerala is a UDF stronghold; Mujahid Kerala is competitive. IUML's organisational reach is structurally different across sub-sects.
+**Pattern**: The 14 Mujahid-cohort ACs are the marginal seats — both UDF and LDF win subsets, margins are tighter than in Sunni-cohort.
 
-⚠️ Per Wikipedia + Organiser, the distinction *within* IUML is between Sunni-establishment (firm IUML control) and Mujahid (treated as a "pressure group within IUML"). Hypothesis C aligns with institutional observation.
+**Mechanism hypothesis (not directly testable)**: Whoever wins the Mujahid voter wins the Muslim-belt margin.
 
-### Hypothesis D (NEW — proposed for 2031 watch)
+**Caveat**: Same as A. "Mujahid voter" may be a stand-in for "AP-faction voter" or "Jamaat-influenced voter" who happens to live in Mujahid-cohort ACs.
 
-The 11 ACs where NDA share is rising despite structural block (§4c) are the early indicators of whether the structural-exclusion finding holds for 2031. If 2-3 of these cross the 35 % AC-vote threshold, the Kozhikode mixed-muslim cluster becomes genuinely competitive even with intact Muslim community support.
+### Hypothesis C — Two Muslim Keralas vote differently (cohort-level pattern; mechanism hypothesis)
+
+**Pattern**: Sunni-cohort ACs are UDF strongholds; Mujahid-cohort ACs are competitive.
+
+**Mechanism hypothesis**: IUML's organisational reach is structurally different across theological sub-sects.
+
+**Alternative reading consistent with institutional commentary** (Wikipedia / Organiser): the meaningful divide is *EK-Samasta-establishment-within-IUML* vs *Mujahid-as-pressure-group-within-IUML* — and crucially, the same EK/AP factional split exists *within* Sunni too (Kanthapuram AP-Samasta is LDF-tactical). Hypothesis C is directionally aligned with institutional observation but the cleanest framing is **two Muslim Keralas: institutional (EK Samasta + IUML, firm UDF) vs factional/dissident (AP Samasta + Mujahid + Jamaat, competitive)** — a cross-cutting cleavage our data cannot directly observe.
+
+### Hypothesis D — 2031 NDA breakthrough watch-list (forward-looking, testable)
+
+**Claim (testable against 2031 actuals)**: Of the 12 ACs where NDA share is rising despite a Muslim-presence structural block (§4c), three are in genuine breakthrough reach by 2031: **Kozhikode N, Palakkad, Nattika**. If 1-2 cross 35 % AC-vote in 2031, the structural-block reading needs revision. If none cross, the block reading holds.
+
+**Why testable**: this is a specific quantitative prediction with a 5-year measurement window. Not subject to the mechanism-attribution problem because we're predicting AC-vote share, not within-community behaviour.
+
+**Falsifiers**: any of the 3 reach-tier ACs crossing 35 % AC-vote by 2031 = block reading weakened; all 3 staying < 30 % = block reading strengthened.
+
+### Why hypotheses A-C still matter despite mechanism uncertainty
+
+We retain A-C because the *patterns* are real (cohort Δ direction + LDF retention rate), and any walkthrough page must explain them. The honest framing is: "Mujahid-cohort ACs behave differently from Sunni-cohort ACs in this measurable way; here are the candidate explanations; we cannot directly attribute." This is more useful than either omitting the finding (loses real signal) or overstating the mechanism (claims more than data supports).
 
 ---
 
