@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react"
 
-import { WalkthroughsTeaser } from "@/components/walkthroughs-teaser"
+import { WalkthroughsTeaser } from "@/components/walkthroughs/teaser"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import { QuestionCard } from "@/components/question-card"

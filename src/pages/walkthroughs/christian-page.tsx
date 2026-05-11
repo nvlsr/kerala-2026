@@ -48,7 +48,7 @@ import {
   M_EVIDENCE,
   REAL_COHORTS,
   type CohortRow,
-} from "@/pages/walkthroughs-christian-data"
+} from "@/pages/walkthroughs/christian-data"
 import type { ChristianSubRiteCohort } from "@/lib/data/subrite-bins"
 
 const WEAKENERS: ReadonlyArray<Weakener> = [

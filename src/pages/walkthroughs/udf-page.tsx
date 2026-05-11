@@ -67,7 +67,7 @@ import {
   PERFORMANCE_C3,
   PREMIUM_HISTORY,
   STRATEGY_COLOURS,
-} from "./walkthroughs-udf-data"
+} from "./udf-data"
 
 const OUTLIER_AC_NUMBERS = new Set([
   93, // Pala

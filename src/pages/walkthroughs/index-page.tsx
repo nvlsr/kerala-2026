@@ -14,7 +14,7 @@ import {
   getPerACBJPDelta,
   getPerACWinner2026,
 } from "@/lib/data/walkthrough-metrics"
-import { COHORT_BY_AC } from "@/pages/walkthroughs-christian-data"
+import { COHORT_BY_AC } from "@/pages/walkthroughs/christian-data"
 
 const SURPRISES = [
   {

@@ -9,7 +9,7 @@ import {
   CYCLE_YEARS,
   LATIN_ZONE_BREAKDOWN,
   M_EVIDENCE,
-} from "./walkthroughs-christian-data"
+} from "./christian-data"
 
 // Reference numbers come from the analysis scripts (scripts/analyze-
 // subrite-cohorts.ts + analyze-christian-cohort-detail.ts + analyze-

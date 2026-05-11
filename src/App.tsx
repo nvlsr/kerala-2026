@@ -38,37 +38,37 @@ const ReligionMapPage = lazy(() =>
 // pages. Top page summarises; alliance pages carry choropleths +
 // supporting charts.
 const WalkthroughsPage = lazy(() =>
-  import("@/pages/walkthroughs-page").then((m) => ({
+  import("@/pages/walkthroughs/index-page").then((m) => ({
     default: m.WalkthroughsPage,
   }))
 )
 const WalkthroughsLDFPage = lazy(() =>
-  import("@/pages/walkthroughs-ldf-page").then((m) => ({
+  import("@/pages/walkthroughs/ldf-page").then((m) => ({
     default: m.WalkthroughsLDFPage,
   }))
 )
 const WalkthroughsUDFPage = lazy(() =>
-  import("@/pages/walkthroughs-udf-page").then((m) => ({
+  import("@/pages/walkthroughs/udf-page").then((m) => ({
     default: m.WalkthroughsUDFPage,
   }))
 )
 const WalkthroughsNDAPage = lazy(() =>
-  import("@/pages/walkthroughs-nda-page").then((m) => ({
+  import("@/pages/walkthroughs/nda-page").then((m) => ({
     default: m.WalkthroughsNDAPage,
   }))
 )
 const WalkthroughsChristianPage = lazy(() =>
-  import("@/pages/walkthroughs-christian-page").then((m) => ({
+  import("@/pages/walkthroughs/christian-page").then((m) => ({
     default: m.WalkthroughsChristianPage,
   }))
 )
 const WalkthroughsMethodologyPage = lazy(() =>
-  import("@/pages/walkthroughs-methodology-page").then((m) => ({
+  import("@/pages/walkthroughs/methodology-page").then((m) => ({
     default: m.WalkthroughsMethodologyPage,
   }))
 )
 const WalkthroughsInsightsPage = lazy(() =>
-  import("@/pages/walkthroughs-insights-page").then((m) => ({
+  import("@/pages/walkthroughs/insights-page").then((m) => ({
     default: m.WalkthroughsInsightsPage,
   }))
 )

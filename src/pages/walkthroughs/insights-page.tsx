@@ -26,7 +26,7 @@ import {
   COHORT_5B_ACS,
   COHORT_6_ACS,
   MATURE_GROWERS_ACS,
-} from "./walkthroughs-nda-data"
+} from "./nda-data"
 
 /**
  * BJP cohort options for the left selector. The "targeted" option is

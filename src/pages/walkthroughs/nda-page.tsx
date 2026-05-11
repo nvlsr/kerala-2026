@@ -54,7 +54,7 @@ import {
   PARTY_DECOMPOSITION,
   SOUTH_CLUSTER_VIEWBOX,
   THREE_LENSES,
-} from "./walkthroughs-nda-data"
+} from "./nda-data"
 
 function makeBinaryValueMap(
   acs: Set<number>,
