@@ -612,4 +612,40 @@ Curated list of the findings that have survived deep-dive. Keep this short; trim
 
 - **One Latin Catholic AC didn't swing UDF**: Cherthala (−3.4pp), held by A.M. Arif (CPI-M) — candidate-driven anomaly.
 
+---
+
+## Proposed walkthrough — title, thesis, and sequence of insights
+
+**Title (proposed)**: *How Kerala's Christian sub-communities moved in 2026*
+
+**Core thesis (provisional)**: *Christian Kerala isn't politically monolithic — each sub-rite has its own historical alliance pattern. The 2026 'Christian swing toward UDF' was actually two distinct movements: a return to baseline for Syro-Malabar / Jacobite / Orthodox cohorts, and a genuine flip from LDF to UDF for Latin Catholic and Marthoma. The cohort effect is Christian-driven, not a district or share artefact.*
+
+**Sequence of insights** (proposed walkthrough flow — bullets only, decide which fit / drop / reorder):
+
+1. Kerala Christians = ~18% of population but politically diverse — not a monolithic bloc.
+2. Each Christian sub-rite lives in a distinct geographic cluster (OSM-derived sub-rite map, first AC-level data of its kind).
+3. Each sub-rite has its own multi-cycle alliance pattern (4-cycle UDF/LDF/NDA trajectory chart).
+4. Syro-Malabar: UDF-leaning historically (won 21/31 in 2011, 26/31 in 2026).
+5. Latin Catholic: structurally LDF-leaning 2011-2021 (won just 4/28 in 2016 AND 2021).
+6. Indian Orthodox: perennial 50/50 across cycles.
+7. Jacobite, Marthoma, CSI: smaller cohorts, distinct trajectories (sample sizes flagged).
+8. 2026 Story A — SM / Jacobite / Orthodox cohorts *returned* to historical UDF baselines (continuity).
+9. 2026 Story B — Latin Catholic and Marthoma cohorts *flipped* from LDF to UDF (17 of 28 Latin ACs flipped LDF→UDF).
+10. The 2026 swing intensity is dose-responsive to Christian share — within-cohort, high-Christian-share ACs swung +5pp more than low-share ACs (M3 evidence the swing is Christian-driven).
+11. The cohort effect survives same-district control — within Ernakulam, Latin +16.0pp vs SM +8.8pp (M2).
+12. Hindu-NDA absorption is geographically separate from the Christian-cohort story (Thrissur Hindu ACs +10.8pp NDA; Thrissur SM ACs −0.9pp NDA).
+13. CSI cohort caveat: all 5 ACs are Trivandrum-district — denomination effect not separable from district. Cohort label dropped at high confidence.
+14. NDA's Christian-cohort strategy was 4-pronged: CSI direct (Trivandrum) / Jacobite via Twenty 20 / SM dual / Latin Catholic = no inroads.
+15. Within Latin Catholic, BJP support has a south-to-north gradient: TVM Latin 20-35% BJP; north Kerala Latin 0-6%.
+16. Twenty 20 (Jacobite-led NDA partner) is geographically Ernakulam-centred (Kunnathunad 25%), not Jacobite-denomination-centred.
+17. Sub-rite identity is a historical-baseline variable, not a 2026-swing direction. The 2026 movement direction was statewide anti-incumbency; what differed across cohorts is *which baseline they snapped back to or flipped away from*.
+18. Caveats: ecological fallacy (AC-aggregate, not individual); 3-cycle data only (no pre-2011 baseline); small-n cohorts (Jacobite n=3, Marthoma n=2, CSI n=5).
+
+**Bullets to discuss**:
+- Which insights are essential to the thesis? (probably 4-5, 8-11, 17)
+- Which are interesting but tangential? (CSI caveat, Twenty 20 finding, Latin × BJP gradient)
+- Which can be dropped / footnoted? (small-cohort trajectories?)
+- Are any missing? (e.g., do we need to mention specific candidates or 2026 wins?)
+- What's the right ordering — chronological (history → 2026)? Or thesis-first (state the two stories, then provide evidence)?
+
 - **Mitigation tests** (§A): the cohort framework was checked for ecological-fallacy confounding via three tests. (M1) The "south Latin Hindus shifted to NDA" alternative is partially supported (south Latin NDA +2pp, central+north Latin NDA negative) — accounts for ~2pp of the south-vs-rest gap; the rest is a smaller Christian swing. (M2) Same-district Ernakulam comparison: Latin-cohort ACs swung +16.0pp UDF vs SM-cohort's +8.8pp — a 7pp gap inside one district; cohort effect survives district control with a wide margin. (M3) Within-cohort heterogeneity by Christian share: high-Christian-share half swings +5pp more than low-Christian-share half across every Christian cohort, while the non-Christian below-threshold cohort shows no such gradient — the dose-response signature is exactly what a Christian-driven swing predicts. Hindu-NDA absorption happens in Hindu-majority ACs (Thrissur below-threshold +10.8pp NDA) — geographically separate from the Christian-cohort story.
