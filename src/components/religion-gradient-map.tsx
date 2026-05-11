@@ -1,7 +1,7 @@
-import { useRef, useState } from "react"
-import { IconPlus, IconMinus, IconRefresh } from "@tabler/icons-react"
 import paths from "@data/kerala-constituencies-paths.json"
 
+import { ACMapZoomControls } from "@/components/charts/ac-map-zoom-controls"
+import { useACMapViewport } from "@/components/charts/use-ac-map-viewport"
 import { acDemo2025Meta, acDemoMeta, districtsMeta } from "@/lib/data/loaders"
 import { demoMeta } from "@/lib/data/loaders"
 import type { ReligionCode } from "@/lib/data/demographics"
@@ -9,11 +9,6 @@ import { cn } from "@/lib/utils"
 
 export type GradientLevel = "district" | "ac"
 export type GradientYear = 2011 | 2025
-
-type ViewBox = { x: number; y: number; w: number; h: number }
-const FULL_VIEW: ViewBox = { x: 0, y: 0, w: paths.width, h: paths.height }
-const ZOOM_FACTOR = 1.5
-const MIN_W = paths.width / 8 // max zoom = 8×
 
 type Props = {
   religion: ReligionCode
@@ -119,65 +114,8 @@ export function ReligionGradientMap({
   const usingOverride = acValuesOverride != null
   // Independent zoom state per map instance — each of the 3 religion
   // maps on /religion-map can be zoomed/panned to a different region.
-  // Stored as a viewBox so the SVG natively renders at any zoom.
-  const [viewBox, setViewBox] = useState<ViewBox>(FULL_VIEW)
-  const isZoomed = viewBox.w < paths.width
-  const dragRef = useRef<{
-    startClientX: number
-    startClientY: number
-    startVbX: number
-    startVbY: number
-  } | null>(null)
-  const [isDragging, setIsDragging] = useState(false)
-
-  const zoomBy = (factor: number) => {
-    setViewBox((v) => {
-      const newW = clamp(v.w * factor, MIN_W, paths.width)
-      const newH = (newW / paths.width) * paths.height
-      const cx = v.x + v.w / 2
-      const cy = v.y + v.h / 2
-      let nx = cx - newW / 2
-      let ny = cy - newH / 2
-      // Clamp so we never pan beyond the map's bounds
-      nx = clamp(nx, 0, paths.width - newW)
-      ny = clamp(ny, 0, paths.height - newH)
-      return { x: nx, y: ny, w: newW, h: newH }
-    })
-  }
-
-  const handlePointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
-    if (!zoomable || !isZoomed) return
-    // Don't start a drag from a button click etc.; only the SVG body itself
-    if ((e.target as Element).tagName === "BUTTON") return
-    e.currentTarget.setPointerCapture(e.pointerId)
-    dragRef.current = {
-      startClientX: e.clientX,
-      startClientY: e.clientY,
-      startVbX: viewBox.x,
-      startVbY: viewBox.y,
-    }
-    setIsDragging(true)
-  }
-  const handlePointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
-    if (!dragRef.current) return
-    const rect = e.currentTarget.getBoundingClientRect()
-    const dx =
-      ((e.clientX - dragRef.current.startClientX) / rect.width) * viewBox.w
-    const dy =
-      ((e.clientY - dragRef.current.startClientY) / rect.height) * viewBox.h
-    setViewBox((v) => ({
-      ...v,
-      x: clamp(dragRef.current!.startVbX - dx, 0, paths.width - v.w),
-      y: clamp(dragRef.current!.startVbY - dy, 0, paths.height - v.h),
-    }))
-  }
-  const handlePointerUp = (e: React.PointerEvent<SVGSVGElement>) => {
-    if (e.currentTarget.hasPointerCapture(e.pointerId)) {
-      e.currentTarget.releasePointerCapture(e.pointerId)
-    }
-    dragRef.current = null
-    setIsDragging(false)
-  }
+  // Viewport state + zoom + drag-to-pan lives in useACMapViewport.
+  const vp = useACMapViewport(zoomable)
   // Anchor the gradient to the actual range of the metric so mid-share
   // ACs/districts read as mid-saturated rather than faint. For AC
   // level, we measure against the AC max (which is higher than district
@@ -198,21 +136,14 @@ export function ReligionGradientMap({
 
   const svg = (
     <svg
-      viewBox={`${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`}
+      viewBox={vp.viewBoxAttr}
       role="img"
       aria-label={ariaLabel}
-      className={cn(
-        "h-auto w-full select-none",
-        zoomable && isZoomed
-          ? isDragging
-            ? "cursor-grabbing"
-            : "cursor-grab"
-          : ""
-      )}
-      onPointerDown={handlePointerDown}
-      onPointerMove={handlePointerMove}
-      onPointerUp={handlePointerUp}
-      onPointerCancel={handlePointerUp}
+      className={cn("h-auto w-full select-none", vp.cursorClass)}
+      onPointerDown={vp.onPointerDown}
+      onPointerMove={vp.onPointerMove}
+      onPointerUp={vp.onPointerUp}
+      onPointerCancel={vp.onPointerUp}
       // Clear hover state ONLY when cursor leaves the whole SVG.
       // Moving between adjacent path elements would otherwise fire each
       // path's own mouseLeave on its way to the next path's mouseEnter,
@@ -303,44 +234,17 @@ export function ReligionGradientMap({
   )
 
   if (!zoomable) return svg
-
-  // Zoomable wrapper: relative container with absolute-positioned controls
   return (
     <div className="relative">
       {svg}
-      <div className="absolute top-2 right-2 flex flex-col gap-1 rounded-md border bg-background/85 p-0.5 shadow-sm supports-backdrop-filter:backdrop-blur">
-        <button
-          type="button"
-          onClick={() => zoomBy(1 / ZOOM_FACTOR)}
-          disabled={viewBox.w <= MIN_W}
-          aria-label="Zoom in"
-          className="inline-flex h-6 w-6 items-center justify-center rounded text-muted-foreground transition-colors hover:bg-foreground/5 hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40"
-        >
-          <IconPlus className="h-3.5 w-3.5" aria-hidden />
-        </button>
-        <button
-          type="button"
-          onClick={() => zoomBy(ZOOM_FACTOR)}
-          disabled={!isZoomed}
-          aria-label="Zoom out"
-          className="inline-flex h-6 w-6 items-center justify-center rounded text-muted-foreground transition-colors hover:bg-foreground/5 hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40"
-        >
-          <IconMinus className="h-3.5 w-3.5" aria-hidden />
-        </button>
-        <button
-          type="button"
-          onClick={() => setViewBox(FULL_VIEW)}
-          disabled={!isZoomed}
-          aria-label="Reset zoom"
-          className="inline-flex h-6 w-6 items-center justify-center rounded text-muted-foreground transition-colors hover:bg-foreground/5 hover:text-foreground disabled:cursor-not-allowed disabled:opacity-40"
-        >
-          <IconRefresh className="h-3.5 w-3.5" aria-hidden />
-        </button>
-      </div>
+      <ACMapZoomControls
+        zoomIn={vp.zoomIn}
+        zoomOut={vp.zoomOut}
+        reset={vp.reset}
+        zoomInDisabled={vp.zoomInDisabled}
+        zoomOutDisabled={vp.zoomOutDisabled}
+        resetDisabled={vp.resetDisabled}
+      />
     </div>
   )
-}
-
-function clamp(n: number, min: number, max: number): number {
-  return Math.max(min, Math.min(max, n))
 }
