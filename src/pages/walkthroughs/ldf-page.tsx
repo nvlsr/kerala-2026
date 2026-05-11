@@ -14,6 +14,9 @@ import { WalkthroughPageShell } from "@/components/walkthroughs/walkthrough-page
 import { WalkthroughSection } from "@/components/walkthroughs/walkthrough-section"
 import { WhatWouldWeakenSection } from "@/components/walkthroughs/what-would-weaken"
 import {
+  DELTA_DOMAIN,
+} from "@/components/walkthroughs/colors"
+import {
   getAllACMetrics,
   getPerACAllianceDelta,
 } from "@/lib/data/walkthrough-metrics"
@@ -85,14 +88,14 @@ export function WalkthroughsLDFPage() {
             <ChoroplethMap
               valueByAC={ldfDeltaMap}
               colorScale="diverging"
-              domain={[-25, 25]}
+              domain={DELTA_DOMAIN}
               ariaLabel="Kerala constituencies shaded by LDF Δshare 2021 → 2026"
               unit="pp"
               decimals={1}
             />
             <ChoroplethLegend
               colorScale="diverging"
-              domain={[-25, 25]}
+              domain={DELTA_DOMAIN}
               unit="pp"
               decimals={0}
             />

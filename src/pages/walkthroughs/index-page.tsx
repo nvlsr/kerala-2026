@@ -4,6 +4,7 @@ import { ChoroplethMap } from "@/components/charts/choropleth-map"
 import { ReligionCategoricalMap } from "@/components/religion-categorical-map"
 import {
   CHRISTIAN_SUBRITE_COLORS,
+  DELTA_DOMAIN,
   NO_DATA_GRAY,
 } from "@/components/walkthroughs/colors"
 import { WalkthroughCard } from "@/components/walkthroughs/walkthrough-card"
@@ -126,7 +127,7 @@ export function WalkthroughsPage() {
               <ChoroplethMap
                 valueByAC={ldfDelta}
                 colorScale="diverging"
-                domain={[-25, 25]}
+                domain={DELTA_DOMAIN}
                 ariaLabel="Kerala constituencies shaded by LDF Δshare 2021 → 2026"
                 unit="pp"
                 decimals={1}
@@ -158,7 +159,7 @@ export function WalkthroughsPage() {
               <ChoroplethMap
                 valueByAC={udfDelta}
                 colorScale="diverging"
-                domain={[-25, 25]}
+                domain={DELTA_DOMAIN}
                 ariaLabel="Kerala constituencies shaded by UDF Δshare 2021 → 2026"
                 unit="pp"
                 decimals={1}
@@ -190,7 +191,7 @@ export function WalkthroughsPage() {
               <ChoroplethMap
                 valueByAC={bjpDelta}
                 colorScale="diverging"
-                domain={[-25, 25]}
+                domain={DELTA_DOMAIN}
                 highlightSeats={bjpWins}
                 ariaLabel="Kerala constituencies shaded by BJP party-share Δ 2021 → 2026; BJP wins outlined"
                 unit="pp"

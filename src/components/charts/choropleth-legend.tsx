@@ -5,7 +5,7 @@ type ColorScale = "diverging" | "sequential"
 type Props = {
   colorScale: ColorScale
   /** Min and max of the data domain. */
-  domain: [number, number]
+  domain: readonly [number, number]
   /** Sequential single-hue color. */
   sequentialColor?: string
   /** Suffix on the labels. E.g. "pp" for percentage points. */

@@ -20,6 +20,15 @@ import {
 } from "@/components/walkthroughs/typography"
 import { WalkthroughPageShell } from "@/components/walkthroughs/walkthrough-page-shell"
 import {
+  COHORT_ABSTAIN_VIOLET,
+  COHORT_BREAKOUT_CYAN,
+  COHORT_DECLINING_RED,
+  COHORT_EXCLUSION_RED,
+  COHORT_GROWER_BLUE,
+  COHORT_WAVE_AMBER,
+  NDA_ORANGE,
+} from "@/components/walkthroughs/colors"
+import {
   Table,
   TableBody,
   TableCell,
@@ -157,7 +166,7 @@ export function WalkthroughsNDAPage() {
               valueByAC={ndaShare2026}
               colorScale="sequential"
               domain={[0, 45]}
-              sequentialColor="#FF7F0E"
+              sequentialColor={NDA_ORANGE}
               highlightSeats={bjpWins}
               viewBox={SOUTH_CLUSTER_VIEWBOX}
               ariaLabel="NDA vote share in Trivandrum and Kollam districts in 2026; 3 BJP wins outlined"
@@ -310,7 +319,7 @@ export function WalkthroughsNDAPage() {
           map={
             <CohortMap
               acs={MATURE_GROWERS_ACS}
-              color="#2563EB"
+              color={COHORT_GROWER_BLUE}
               ariaLabel="Mature growers + multi-cycle builders"
               badgeLabel="grower"
             />
@@ -422,7 +431,7 @@ export function WalkthroughsNDAPage() {
           map={
             <CohortMap
               acs={COHORT_3_ACS}
-              color="#0891B2"
+              color={COHORT_BREAKOUT_CYAN}
               ariaLabel="Low-base breakouts — 3 seats"
               badgeLabel="breakout"
             />
@@ -538,7 +547,7 @@ export function WalkthroughsNDAPage() {
           map={
             <CohortMap
               acs={COHORT_4A_ACS}
-              color="#DC2626"
+              color={COHORT_DECLINING_RED}
               ariaLabel="Declining-mature seats"
               badgeLabel="declining"
             />
@@ -632,7 +641,7 @@ export function WalkthroughsNDAPage() {
           map={
             <CohortMap
               acs={COHORT_6_ACS}
-              color="#D97706"
+              color={COHORT_WAVE_AMBER}
               ariaLabel="Wave-capture — 21 seats where NDA out-captured UDF in the anti-LDF wave"
               badgeLabel="wave-capture"
             />
@@ -789,7 +798,7 @@ export function WalkthroughsNDAPage() {
           map={
             <CohortMap
               acs={COHORT_5A_ACS}
-              color="#8B5CF6"
+              color={COHORT_ABSTAIN_VIOLET}
               ariaLabel="Strategic-abstention seats highlighted"
               badgeLabel="abstention"
             />
@@ -862,7 +871,7 @@ export function WalkthroughsNDAPage() {
           map={
             <CohortMap
               acs={COHORT_5B_ACS}
-              color="#991B1B"
+              color={COHORT_EXCLUSION_RED}
               ariaLabel="Structural-exclusion seats highlighted"
               badgeLabel="exclusion"
             />

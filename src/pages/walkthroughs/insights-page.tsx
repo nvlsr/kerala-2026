@@ -1,6 +1,10 @@
 import { useMemo, useState } from "react"
 
 import { CohortMap } from "@/components/walkthroughs/cohort-map"
+import {
+  COHORT_GROWER_BLUE,
+  NDA_ORANGE,
+} from "@/components/walkthroughs/colors"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
@@ -266,7 +270,7 @@ export function WalkthroughsInsightsPage() {
               <div className="mx-auto max-w-sm">
                 <CohortMap
                   acs={bjp.acs}
-                  color="#FF7F0E"
+                  color={NDA_ORANGE}
                   ariaLabel={`Map highlighting ${bjp.label}`}
                   badgeLabel="BJP cohort"
                 />
@@ -287,7 +291,7 @@ export function WalkthroughsInsightsPage() {
               <div className="mx-auto max-w-sm">
                 <CohortMap
                   acs={demo.acs}
-                  color="#2563EB"
+                  color={COHORT_GROWER_BLUE}
                   ariaLabel={`Map highlighting ${demo.label}`}
                   badgeLabel="Demographic cohort"
                 />

@@ -20,7 +20,7 @@ type Props = {
   colorScale: ColorScale
   /** Color domain. If omitted, derived from the value distribution
    *  (symmetric around 0 for diverging, [0, max] for sequential). */
-  domain?: [number, number]
+  domain?: readonly [number, number]
   /** Center point for the diverging scale. Defaults to 0. */
   divergingMidpoint?: number
   /** Hue for sequential scale. Defaults to a blue tone. */

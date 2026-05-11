@@ -6,6 +6,7 @@ import { CohortSection } from "@/components/walkthroughs/cohort-section"
 import {
   CHRISTIAN_BELT_BLUE,
   MUSLIM_BELT_GREEN,
+  UDF_BLUE,
 } from "@/components/walkthroughs/colors"
 import {
   SynthesisCard,
@@ -282,7 +283,7 @@ export function WalkthroughsUDFPage() {
               valueByAC={central5ValueMap}
               colorScale="sequential"
               domain={[0, 1]}
-              sequentialColor="#1F77B4"
+              sequentialColor={UDF_BLUE}
               categoricalColors={central5Colours}
               ariaLabel="Kerala constituencies; the 5 districts where UDF swept 47-of-47 highlighted in two colours — blue for the southern Christian belt (Idukki, Ernakulam, Kottayam) and emerald for the northern Muslim belt (Wayanad, Malappuram)"
               unit=""
