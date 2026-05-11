@@ -72,6 +72,26 @@ export type NdaTrajectory = {
 /** NDA vote-share direction over 2016 → 2026 (≥+3pp / ≤−3pp / otherwise). */
 export type NdaTrend = "rising" | "flat" | "declining" | "unknown"
 
+/**
+ * Hereditary succession at an AC (father→son, husband→wife, sibling, etc.).
+ * Derived from the candidate-name audit + manual classifications.
+ */
+export type HereditarySuccession = {
+  primaryAlliance: AllianceCode
+  totalFamilyCycles: number
+  totalFamilyWins: number
+  earliestYear: number
+  latestYear: number
+  family: Array<{
+    displayName: string
+    cycles: number
+    wins: number
+    earliestYear: number
+    latestYear: number
+  }>
+  notes: string[]
+}
+
 export type CommunityRelevanceRecord = {
   ac: number
   name: string
@@ -125,6 +145,9 @@ export type CommunityRelevanceRecord = {
    * and this alliance has none.
    */
   stableFor: AllianceCode | null
+
+  /** Hereditary succession at this AC (null when no family pattern). */
+  hereditarySuccession: HereditarySuccession | null
 
   allianceRoles: {
     UDF: AllianceRoleCell

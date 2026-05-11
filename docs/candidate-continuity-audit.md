@@ -1592,191 +1592,236 @@ _… and 116 more in `data/candidate-continuity.json`._
 
 Pairs of different canonical keys with high token overlap (Jaccard ≥ 0.5 same-AC, ≥ 0.6 cross-AC). Each pair is **probably the same person but didn't merge** — review the patterns to extend `normalizeName()` rules.
 
-### B.1 Same-AC suspected matches (44 — 0 classified · 44 unclassified)
+### B.1 Same-AC suspected matches (44 — 44 classified · 0 unclassified)
 
 Pairs of normalised keys with high token overlap in the same AC. Could be: (a) same person with word-order or initial drift (extend normaliser), (b) hereditary succession (father-son), or (c) coincidental surname-sharers.
 
-#### ❓ Unclassified — needs review
 
-- **`A RAJA`** ↔ **`F RAJA`** (Jaccard 1.00, shared: `RAJA`) — ❓ **NEEDS REVIEW**
+#### ✓ Already classified
+
+- **`A RAJA`** ↔ **`F RAJA`** (Jaccard 1.00, shared: `RAJA`) — 🟰 different people · same name
+    > Devikulam 2026 — A. Raja LDF rank 2 (2021 winner) vs F. Raja UDF rank 1 (2026 winner). Different people.
     - A: 2021 · AC 88 DEVIKULAM (LDF, rank 1): `A. Raja`
     - A: 2026 · AC 88 DEVIKULAM (LDF, rank 2): `ADV. A. RAJA`
     - B: 2026 · AC 88 DEVIKULAM (UDF, rank 1): `F. RAJA`
-- **`ABDUL HAMEED`** ↔ **`P ABDUL HAMEED`** (Jaccard 1.00, shared: `ABDUL`, `HAMEED`) — ❓ **NEEDS REVIEW**
+- **`ABDUL HAMEED`** ↔ **`P ABDUL HAMEED`** (Jaccard 1.00, shared: `ABDUL`, `HAMEED`) — ✅ same person (initial dropped/added)
+    > Vallikunnu UDF rank 1 — `P. Abdul Hameed` (2016) became `Abdul Hameed Master` (2021). Initial dropped + Master honorific added.
     - A: 2021 · AC 42 VALLIKUNNU (UDF, rank 1): `Abdul Hameed Master`
     - B: 2016 · AC 42 VALLIKUNNU (UDF, rank 1): `P. Abdul Hameed`
-- **`ABID HUSSAIN THANGAL`** ↔ **`K K ABID HUSSAIN THANGAL`** (Jaccard 1.00, shared: `ABID`, `HUSSAIN`, `THANGAL`) — ❓ **NEEDS REVIEW**
+- **`ABID HUSSAIN THANGAL`** ↔ **`K K ABID HUSSAIN THANGAL`** (Jaccard 1.00, shared: `ABID`, `HUSSAIN`, `THANGAL`) — ✅ same person (initial dropped/added)
+    > Kottakkal UDF rank 1 — same person across 2016/2021/2026. K.K. initials dropped between 2016 and 2021.
     - A: 2021 · AC 46 KOTTAKKAL (UDF, rank 1): `Abid Hussain Thangal`
     - A: 2026 · AC 46 KOTTAKKAL (UDF, rank 1): `PROF. ABID HUSSAIN THANGAL`
     - B: 2016 · AC 46 KOTTAKKAL (UDF, rank 1): `K. K. Abid Hussain Thangal`
-- **`ADAM MULSI M P`** ↔ **`M P ADAM MULSI`** (Jaccard 1.00, shared: `ADAM`, `MULSI`) — ❓ **NEEDS REVIEW**
+- **`ADAM MULSI M P`** ↔ **`M P ADAM MULSI`** (Jaccard 1.00, shared: `ADAM`, `MULSI`) — ✅ same person (initial dropped/added)
+    > Beypore UDF rank 2 — same person, ECI swapped name order between 2011 and 2016.
     - A: 2011 · AC 29 BEYPORE (UDF, rank 2): `Adam Mulsi M. P.`
     - B: 2016 · AC 29 BEYPORE (UDF, rank 2): `M. P. Adam Mulsi`
-- **`AJI S R M`** ↔ **`S AJI`** (Jaccard 1.00, shared: `AJI`) — ❓ **NEEDS REVIEW**
+- **`AJI S R M`** ↔ **`S AJI`** (Jaccard 1.00, shared: `AJI`) — ✅ same person (initial dropped/added)
+    > Varkala NDA rank 3 — same person across 2016/2021.
     - A: 2016 · AC 127 VARKALA (NDA, rank 3): `Aji S. R. M.`
     - B: 2021 · AC 127 VARKALA (NDA, rank 3): `S. Aji`
-- **`ANIYAPPAN`** ↔ **`T ANIYAPPAN`** (Jaccard 1.00, shared: `ANIYAPPAN`) — ❓ **NEEDS REVIEW**
+- **`ANIYAPPAN`** ↔ **`T ANIYAPPAN`** (Jaccard 1.00, shared: `ANIYAPPAN`) — ✅ same person (initial dropped/added)
+    > Aroor NDA rank 3 — same person, initial T. dropped.
     - A: 2021 · AC 102 AROOR (NDA, rank 3): `Aniyappan`
     - B: 2016 · AC 102 AROOR (NDA, rank 3): `T. Aniyappan`
-- **`C SIVANKUTTY`** ↔ **`SIVANKUTTY C`** (Jaccard 1.00, shared: `SIVANKUTTY`) — ❓ **NEEDS REVIEW**
+- **`C SIVANKUTTY`** ↔ **`SIVANKUTTY C`** (Jaccard 1.00, shared: `SIVANKUTTY`) — ✅ same person (initial dropped/added)
+    > Aruvikkara NDA rank 3 — same person, name order swapped.
     - A: 2021 · AC 136 ARUVIKKARA (NDA, rank 3): `C. Sivankutty`
     - B: 2011 · AC 136 ARUVIKKARA (NDA, rank 3): `Sivankutty C.`
-- **`CHANDY OOMMEN`** ↔ **`OOMMEN CHANDY`** (Jaccard 1.00, shared: `CHANDY`, `OOMMEN`) — ❓ **NEEDS REVIEW**
+- **`CHANDY OOMMEN`** ↔ **`OOMMEN CHANDY`** (Jaccard 1.00, shared: `CHANDY`, `OOMMEN`) — 👨‍👦 hereditary succession · different people
+    > Puthuppally UDF. Oommen Chandy (legendary CM, 1970-2021 across 12+ cycles) → son Chandy Oommen (2023 by-poll + 2026).
     - A: 2023 by-bye · AC 98 PUTHUPPALLY (UDF, rank 1): `Chandy Oommen`
     - A: 2026 · AC 98 PUTHUPPALLY (UDF, rank 1): `ADV. CHANDY OOMMEN`
     - B: 2011 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
     - B: 2016 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
     - B: 2021 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
-- **`CHENKAL RAJASEKHARAN`** ↔ **`CHENKAL S RAJASEKHARAN`** (Jaccard 1.00, shared: `CHENKAL`, `RAJASEKHARAN`) — ❓ **NEEDS REVIEW**
+- **`CHENKAL RAJASEKHARAN`** ↔ **`CHENKAL S RAJASEKHARAN`** (Jaccard 1.00, shared: `CHENKAL`, `RAJASEKHARAN`) — ✅ same person (initial dropped/added)
+    > Neyyattinkara NDA rank 3 — same person, S. initial dropped + Nair caste suffix dropped between 2021 and 2026.
     - A: 2026 · AC 140 NEYYATTINKARA (NDA, rank 3): `CHENKAL RAJASEKHARAN`
     - B: 2021 · AC 140 NEYYATTINKARA (NDA, rank 3): `Chenkal S. Rajasekharan Nair`
-- **`K A UNNIKRISHNAN`** ↔ **`UNNIKRISHNAN K A`** (Jaccard 1.00, shared: `UNNIKRISHNAN`) — ❓ **NEEDS REVIEW**
+- **`K A UNNIKRISHNAN`** ↔ **`UNNIKRISHNAN K A`** (Jaccard 1.00, shared: `UNNIKRISHNAN`) — ✅ same person (initial dropped/added)
+    > Chalakudy NDA rank 3 — same person, name order swapped.
     - A: 2021 · AC 72 CHALAKUDY (NDA, rank 3): `K. A. Unnikrishnan`
     - B: 2016 · AC 72 CHALAKUDY (NDA, rank 3): `Unnikrishnan K. A.`
-- **`K ANILKUMAR`** ↔ **`P ANILKUMAR`** (Jaccard 1.00, shared: `ANILKUMAR`) — ❓ **NEEDS REVIEW**
+- **`K ANILKUMAR`** ↔ **`P ANILKUMAR`** (Jaccard 1.00, shared: `ANILKUMAR`) — 🟰 different people · same name
+    > Kottayam 2026 — `K. Anilkumar` and `ADV.K. ANILKUMAR` are the same person (LDF rank 2). `P ANILKUMAR` (NDA rank 3) is a different person.
     - A: 2021 · AC 97 KOTTAYAM (LDF, rank 2): `K. Anilkumar`
     - A: 2026 · AC 97 KOTTAYAM (LDF, rank 2): `ADV.K. ANILKUMAR`
     - B: 2026 · AC 97 KOTTAYAM (NDA, rank 3): `P ANILKUMAR`
-- **`K PADMAKUMAR`** ↔ **`PADMAKUMAR K`** (Jaccard 1.00, shared: `PADMAKUMAR`) — ❓ **NEEDS REVIEW**
+- **`K PADMAKUMAR`** ↔ **`PADMAKUMAR K`** (Jaccard 1.00, shared: `PADMAKUMAR`) — ✅ same person (initial dropped/added)
+    > Ranni NDA rank 3 — same person, name order swapped.
     - A: 2021 · AC 112 RANNI (NDA, rank 3): `K. Padmakumar`
     - B: 2016 · AC 112 RANNI (NDA, rank 3): `Padmakumar K.`
-- **`M J JACOB`** ↔ **`T M JACOB`** (Jaccard 1.00, shared: `JACOB`) — ❓ **NEEDS REVIEW**
+- **`M J JACOB`** ↔ **`T M JACOB`** (Jaccard 1.00, shared: `JACOB`) — 🟰 different people · same name
+    > Piravom 2011 — M.J. Jacob (LDF rank 2) and T.M. Jacob (UDF rank 1) are different people, both ran the same election.
     - A: 2011 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2012 by-bye · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2016 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2011 · AC 85 PIRAVOM (UDF, rank 1): `T. M. Jacob`
-- **`P P SUMOD`** ↔ **`SUMOD`** (Jaccard 1.00, shared: `SUMOD`) — ❓ **NEEDS REVIEW**
+- **`P P SUMOD`** ↔ **`SUMOD`** (Jaccard 1.00, shared: `SUMOD`) — ✅ same person (word order)
+    > Tarur LDF rank 1 — same person, initials dropped between 2021 and 2026.
     - A: 2021 · AC 57 TARUR (LDF, rank 1): `P. P. Sumod`
     - B: 2026 · AC 57 TARUR (LDF, rank 1): `SUMOD`
-- **`A D THOMAS`** ↔ **`T M THOMAS ISAAC`** (Jaccard 0.50, shared: `THOMAS`) — ❓ **NEEDS REVIEW**
+- **`A D THOMAS`** ↔ **`T M THOMAS ISAAC`** (Jaccard 0.50, shared: `THOMAS`) — 🟰 different people · same name
+    > Alappuzha — A.D. Thomas (UDF 2026 winner) is a different person from T.M. Thomas Isaac (LDF 2011/2016 winner, former finance minister).
     - A: 2026 · AC 104 ALAPPUZHA (UDF, rank 1): `A.D THOMAS`
     - B: 2011 · AC 104 ALAPPUZHA (LDF, rank 1): `T. M. Thomas Isaac`
     - B: 2016 · AC 104 ALAPPUZHA (LDF, rank 1): `T. M. Thomas Isaac`
-- **`ABDURAHIMAN RANDATHANI`** ↔ **`V ABDURAHIMAN`** (Jaccard 0.50, shared: `ABDURAHIMAN`) — ❓ **NEEDS REVIEW**
+- **`ABDURAHIMAN RANDATHANI`** ↔ **`V ABDURAHIMAN`** (Jaccard 0.50, shared: `ABDURAHIMAN`) — ✅ same person (initial dropped/added)
+    > Tanur seat — same person across cycles. Surname "Randathani" (place name) dropped; V. initial used in later cycles.
     - A: 2011 · AC 44 TANUR (UDF, rank 1): `Abdurahiman Randathani`
     - A: 2016 · AC 44 TANUR (UDF, rank 2): `Abdurahiman Randathani`
     - B: 2016 · AC 44 TANUR (LDF, rank 1): `V. Abdurahiman`
     - B: 2021 · AC 44 TANUR (LDF, rank 1): `V. Abdurahiman`
     - B: 2026 · AC 45 TIRUR (LDF, rank 2): `V.ABDURAHIMAN`
-- **`ANOOP JACOB`** ↔ **`M J JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
+- **`ANOOP JACOB`** ↔ **`M J JACOB`** (Jaccard 0.50, shared: `JACOB`) — 🟰 different people · same name
+    > Piravom — Anoop Jacob (UDF rank 1) and M.J. Jacob (LDF rank 2) are different people.
     - A: 2012 by-bye · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - A: 2016 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - A: 2021 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - B: 2011 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2012 by-bye · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2016 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
-- **`ANOOP JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
+- **`ANOOP JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — 👨‍👦 hereditary succession · different people
+    > Piravom UDF — T.M. Jacob (longtime UDF MLA, died) → son Anoop Jacob inherited the seat via 2012 by-poll + held 2016/2021.
     - A: 2012 by-bye · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - A: 2016 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - A: 2021 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - B: 2011 · AC 85 PIRAVOM (UDF, rank 1): `T. M. Jacob`
-- **`ARUN KAITHAPRAM`** ↔ **`K P ARUN`** (Jaccard 0.50, shared: `ARUN`) — ❓ **NEEDS REVIEW**
+- **`ARUN KAITHAPRAM`** ↔ **`K P ARUN`** (Jaccard 0.50, shared: `ARUN`) — ✅ same person (initial dropped/added)
+    > Kalliasseri NDA rank 3 — same person, K.P. initials replaced with surname "Kaithapram".
     - A: 2021 · AC 7 KALLIASSERI (NDA, rank 3): `Arun Kaithapram`
     - B: 2016 · AC 7 KALLIASSERI (NDA, rank 3): `K. P. Arun`
-- **`C P VIPIN CHANDRAN`** ↔ **`V M CHANDRAN`** (Jaccard 0.50, shared: `CHANDRAN`) — ❓ **NEEDS REVIEW**
+- **`C P VIPIN CHANDRAN`** ↔ **`V M CHANDRAN`** (Jaccard 0.50, shared: `CHANDRAN`) — 🟰 different people · same name
+    > Nadapuram — different people, common Chandran surname.
     - A: 2026 · AC 22 NADAPURAM (NDA, rank 3): `C.P. VIPIN CHANDRAN`
     - B: 2011 · AC 22 NADAPURAM (UDF, rank 2): `V. M. Chandran`
-- **`DHANYA SURESH`** ↔ **`P V SURESH`** (Jaccard 0.50, shared: `SURESH`) — ❓ **NEEDS REVIEW**
+- **`DHANYA SURESH`** ↔ **`P V SURESH`** (Jaccard 0.50, shared: `SURESH`) — 🟰 different people · same name
+    > Kanhangad UDF rank 2 — different people.
     - A: 2016 · AC 4 KANHANGAD (UDF, rank 2): `Dhanya Suresh`
     - B: 2021 · AC 4 KANHANGAD (UDF, rank 2): `P. V. Suresh`
-- **`IRUMUTTOOR KUNHIRAMAN`** ↔ **`K C KUNHIRAMAN`** (Jaccard 0.50, shared: `KUNHIRAMAN`) — ❓ **NEEDS REVIEW**
+- **`IRUMUTTOOR KUNHIRAMAN`** ↔ **`K C KUNHIRAMAN`** (Jaccard 0.50, shared: `KUNHIRAMAN`) — 🟰 different people · same name
+    > Mananthavady 2011 — different people, both ran the same election (NDA rank 3 vs LDF rank 2).
     - A: 2011 · AC 17 MANANTHAVADY (NDA, rank 3): `Irumuttoor Kunhiraman`
     - B: 2011 · AC 17 MANANTHAVADY (LDF, rank 2): `K. C. Kunhiraman`
-- **`JOSE K MANI`** ↔ **`K M MANI`** (Jaccard 0.50, shared: `MANI`) — ❓ **NEEDS REVIEW**
+- **`JOSE K MANI`** ↔ **`K M MANI`** (Jaccard 0.50, shared: `MANI`) — 👨‍👦 hereditary succession · different people
+    > Pala — K.M. Mani (founder of Kerala Congress(M), MLA since 1965 across ~13 cycles) → son Jose K. Mani took over the family party and the seat. Father UDF, son LDF after KC(M) joined LDF.
     - A: 2021 · AC 93 PALA (LDF, rank 2): `Jose K. Mani`
     - A: 2026 · AC 93 PALA (LDF, rank 2): `JOSE K MANI`
     - B: 2011 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - B: 2016 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
-- **`JOSEPH AUGUSTINE`** ↔ **`P J JOSEPH`** (Jaccard 0.50, shared: `JOSEPH`) — ❓ **NEEDS REVIEW**
+- **`JOSEPH AUGUSTINE`** ↔ **`P J JOSEPH`** (Jaccard 0.50, shared: `JOSEPH`) — 🟰 different people · same name
+    > Thodupuzha — different people, P.J. Joseph is the longtime UDF MLA.
     - A: 2011 · AC 90 THODUPUZHA (LDF, rank 2): `Joseph Augustine`
     - B: 2011 · AC 90 THODUPUZHA (UDF, rank 1): `P. J. Joseph`
     - B: 2016 · AC 90 THODUPUZHA (UDF, rank 1): `P. J. Joseph`
     - B: 2021 · AC 90 THODUPUZHA (UDF, rank 1): `P. J. Joseph`
-- **`K ACHUTHAN`** ↔ **`SUMESH ACHUTHAN`** (Jaccard 0.50, shared: `ACHUTHAN`) — ❓ **NEEDS REVIEW**
+- **`K ACHUTHAN`** ↔ **`SUMESH ACHUTHAN`** (Jaccard 0.50, shared: `ACHUTHAN`) — 👨‍👦 hereditary succession · different people
+    > Chittur UDF — K. Achuthan (UDF, 2011/2016) → son Sumesh Achuthan (UDF, 2021/2026).
     - A: 2011 · AC 58 CHITTUR (UDF, rank 1): `K. Achuthan`
     - A: 2016 · AC 58 CHITTUR (UDF, rank 2): `K. Achuthan`
     - B: 2021 · AC 58 CHITTUR (UDF, rank 2): `Sumesh Achuthan`
     - B: 2026 · AC 58 CHITTUR (UDF, rank 1): `ADV. SUMESH ACHUTHAN`
-- **`K C JOSEPH`** ↔ **`SAJEEV JOSEPH`** (Jaccard 0.50, shared: `JOSEPH`) — ❓ **NEEDS REVIEW**
+- **`K C JOSEPH`** ↔ **`SAJEEV JOSEPH`** (Jaccard 0.50, shared: `JOSEPH`) — 🟰 different people · same name
+    > Irikkur UDF rank 1 — K.C. Joseph (2011/2016) vs Sajeev Joseph (2021/2026). Likely candidate-change within UDF, not hereditary.
     - A: 2011 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
     - A: 2011 · AC 106 KUTTANAD (UDF, rank 2): `K. C. Joseph`
     - A: 2016 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
     - B: 2021 · AC 9 IRIKKUR (UDF, rank 1): `Sajeev Joseph`
     - B: 2026 · AC 9 IRIKKUR (UDF, rank 1): `ADV. SAJEEV JOSEPH`
-- **`K M MANI`** ↔ **`MANI C KAPPAN`** (Jaccard 0.50, shared: `MANI`) — ❓ **NEEDS REVIEW**
+- **`K M MANI`** ↔ **`MANI C KAPPAN`** (Jaccard 0.50, shared: `MANI`) — 🟰 different people · same name
+    > Pala 2011/2016 — K.M. Mani (UDF rank 1, the legend) vs Mani C. Kappan (LDF rank 2). Different people.
     - A: 2011 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - A: 2016 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - B: 2011 · AC 93 PALA (LDF, rank 2): `Mani C. Kappan`
     - B: 2016 · AC 93 PALA (LDF, rank 2): `Mani C. Kappan`
     - B: 2019 by-bye · AC 93 PALA (LDF, rank 1): `Mani C. Kappan`
-- **`K M MANI`** ↔ **`MANI C KAPPEN`** (Jaccard 0.50, shared: `MANI`) — ❓ **NEEDS REVIEW**
+- **`K M MANI`** ↔ **`MANI C KAPPEN`** (Jaccard 0.50, shared: `MANI`) — 🟰 different people · same name
+    > Pala — K.M. Mani vs Mani C. Kappen. Different people. (Mani C. Kappen / Kappan spelling drift — see separate pair.)
     - A: 2011 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - A: 2016 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - B: 2021 · AC 93 PALA (UDF, rank 1): `Mani C. Kappen`
     - B: 2026 · AC 93 PALA (UDF, rank 1): `MANI C KAPPEN`
-- **`K N A KHADER`** ↔ **`K V ABDUL KHADER`** (Jaccard 0.50, shared: `KHADER`) — ❓ **NEEDS REVIEW**
+- **`K N A KHADER`** ↔ **`K V ABDUL KHADER`** (Jaccard 0.50, shared: `KHADER`) — 🟰 different people · same name
+    > Guruvayoor — different people, both UDF/LDF Muslim MLAs sharing the Khader surname.
     - A: 2011 · AC 42 VALLIKUNNU (UDF, rank 1): `K. N. A. Khader`
     - A: 2017 by-bye · AC 41 VENGARA (UDF, rank 1): `K. N. A. Khader`
     - A: 2021 · AC 63 GURUVAYOOR (UDF, rank 2): `K. N. A. Khader`
     - B: 2011 · AC 63 GURUVAYOOR (LDF, rank 1): `K. V. Abdul Khader`
     - B: 2016 · AC 63 GURUVAYOOR (LDF, rank 1): `K. V. Abdul Khader`
-- **`K R RAJENDRA PRASAD`** ↔ **`P PRASAD`** (Jaccard 0.50, shared: `PRASAD`) — ❓ **NEEDS REVIEW**
+- **`K R RAJENDRA PRASAD`** ↔ **`P PRASAD`** (Jaccard 0.50, shared: `PRASAD`) — 🟰 different people · same name
+    > Cherthala 2026 — K.R. Rajendra Prasad (UDF rank 2) vs P. Prasad (LDF rank 1). Different people.
     - A: 2026 · AC 103 CHERTHALA (UDF, rank 2): `K.R. RAJENDRA PRASAD`
     - B: 2016 · AC 107 HARIPAD (LDF, rank 2): `P. Prasad`
     - B: 2021 · AC 103 CHERTHALA (LDF, rank 1): `P. Prasad`
     - B: 2026 · AC 103 CHERTHALA (LDF, rank 1): `P. PRASAD`
-- **`KARAT RAZAK`** ↔ **`M A RAZAK`** (Jaccard 0.50, shared: `RAZAK`) — ❓ **NEEDS REVIEW**
+- **`KARAT RAZAK`** ↔ **`M A RAZAK`** (Jaccard 0.50, shared: `RAZAK`) — 🟰 different people · same name
+    > Koduvally — Karat Razak (LDF) vs M.A. Razak (UDF). Different people.
     - A: 2016 · AC 31 KODUVALLY (LDF, rank 1): `Karat Razak`
     - A: 2021 · AC 31 KODUVALLY (LDF, rank 2): `Karat Razak`
     - B: 2016 · AC 31 KODUVALLY (UDF, rank 2): `M. A. Razak`
     - B: 2026 · AC 30 KUNNAMANGALAM (UDF, rank 1): `M.A. RAZAK MASTER`
-- **`M A SURENDRAN`** ↔ **`SUJITH P SURENDRAN`** (Jaccard 0.50, shared: `SURENDRAN`) — ❓ **NEEDS REVIEW**
+- **`M A SURENDRAN`** ↔ **`SUJITH P SURENDRAN`** (Jaccard 0.50, shared: `SURENDRAN`) — 🟰 different people · same name
+    > Kunnathunad — different people.
     - A: 2011 · AC 84 KUNNATHUNAD (LDF, rank 2): `M. A. Surendran`
     - B: 2021 · AC 84 KUNNATHUNAD (OTHER, rank 3): `Sujith P. Surendran`
-- **`M G KANNAN`** ↔ **`PRIJI KANNAN`** (Jaccard 0.50, shared: `KANNAN`) — ❓ **NEEDS REVIEW**
+- **`M G KANNAN`** ↔ **`PRIJI KANNAN`** (Jaccard 0.50, shared: `KANNAN`) — 🟰 different people · same name
+    > Adoor — different people, common Kannan surname.
     - A: 2021 · AC 115 ADOOR (UDF, rank 2): `M. G. Kannan`
     - B: 2026 · AC 115 ADOOR (LDF, rank 2): `PRIJI KANNAN`
-- **`M J JACOB`** ↔ **`SABU K JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
+- **`M J JACOB`** ↔ **`SABU K JACOB`** (Jaccard 0.50, shared: `JACOB`) — 🟰 different people · same name
+    > Piravom LDF rank 2 — different LDF candidates across cycles.
     - A: 2011 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2012 by-bye · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2016 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2026 · AC 85 PIRAVOM (LDF, rank 2): `SABU K JACOB`
-- **`M J JACOB`** ↔ **`SINDHUMOL JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
+- **`M J JACOB`** ↔ **`SINDHUMOL JACOB`** (Jaccard 0.50, shared: `JACOB`) — 🟰 different people · same name
+    > Piravom LDF — different people.
     - A: 2011 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2012 by-bye · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2016 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2021 · AC 85 PIRAVOM (LDF, rank 2): `Sindhumol Jacob`
-- **`N SAJI KUMAR`** ↔ **`S SAJI`** (Jaccard 0.50, shared: `SAJI`) — ❓ **NEEDS REVIEW**
+- **`N SAJI KUMAR`** ↔ **`S SAJI`** (Jaccard 0.50, shared: `SAJI`) — 🟰 different people · same name
+    > Thrikkakara NDA rank 3 — different people.
     - A: 2011 · AC 83 THRIKKAKARA (NDA, rank 3): `N. Saji Kumar`
     - B: 2016 · AC 83 THRIKKAKARA (NDA, rank 3): `S. Saji`
     - B: 2021 · AC 83 THRIKKAKARA (NDA, rank 3): `S. Saji`
-- **`P C GEORGE`** ↔ **`P C GEORGE PLATHOTTAM`** (Jaccard 0.50, shared: `GEORGE`) — ❓ **NEEDS REVIEW**
+- **`P C GEORGE`** ↔ **`P C GEORGE PLATHOTTAM`** (Jaccard 0.50, shared: `GEORGE`) — ✅ same person (initial dropped/added)
+    > Poonjar — same person, family name "Plathottam" sometimes appended.
     - A: 2011 · AC 101 POONJAR (UDF, rank 1): `P. C. George`
     - A: 2016 · AC 101 POONJAR (OTHER, rank 1): `P. C. George`
     - A: 2026 · AC 101 POONJAR (NDA, rank 3): `P.C. GEORGE`
     - B: 2021 · AC 101 POONJAR (OTHER, rank 2): `P. C. George Plathottam`
-- **`P T THOMAS`** ↔ **`UMA THOMAS`** (Jaccard 0.50, shared: `THOMAS`) — ❓ **NEEDS REVIEW**
+- **`P T THOMAS`** ↔ **`UMA THOMAS`** (Jaccard 0.50, shared: `THOMAS`) — 👨‍👦 hereditary succession · different people
+    > Thrikkakara UDF — P.T. Thomas (UDF MLA 2016/2021, died) → wife Uma Thomas won the 2022 by-poll + held 2026. Classic spousal succession.
     - A: 2016 · AC 83 THRIKKAKARA (UDF, rank 1): `P. T. Thomas`
     - A: 2021 · AC 83 THRIKKAKARA (UDF, rank 1): `P. T. Thomas`
     - B: 2022 by-bye · AC 83 THRIKKAKARA (UDF, rank 1): `Uma Thomas`
     - B: 2026 · AC 83 THRIKKAKARA (UDF, rank 1): `UMA THOMAS`
-- **`SABU K JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
+- **`SABU K JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — 🟰 different people · same name
+    > Piravom — Sabu K. Jacob (LDF 2026) vs T.M. Jacob (UDF 2011, died). Different people.
     - A: 2026 · AC 85 PIRAVOM (LDF, rank 2): `SABU K JACOB`
     - B: 2011 · AC 85 PIRAVOM (UDF, rank 1): `T. M. Jacob`
-- **`SEBASTIAN KULATHUNKAL`** ↔ **`SEBASTIAN M J`** (Jaccard 0.50, shared: `SEBASTIAN`) — ❓ **NEEDS REVIEW**
+- **`SEBASTIAN KULATHUNKAL`** ↔ **`SEBASTIAN M J`** (Jaccard 0.50, shared: `SEBASTIAN`) — 🟰 different people · same name
+    > Poonjar 2026 — different Sebastians in opposing fronts.
     - A: 2021 · AC 101 POONJAR (LDF, rank 1): `Sebastian Kulathunkal`
     - A: 2026 · AC 101 POONJAR (LDF, rank 2): `ADV. SEBASTIAN KULATHUNKAL`
     - B: 2026 · AC 101 POONJAR (UDF, rank 1): `ADV.SEBASTIAN M.J`
-- **`SHAJUMON P P`** ↔ **`SHAJUMON VATTEKKAD`** (Jaccard 0.50, shared: `SHAJUMON`) — ❓ **NEEDS REVIEW**
+- **`SHAJUMON P P`** ↔ **`SHAJUMON VATTEKKAD`** (Jaccard 0.50, shared: `SHAJUMON`) — 🟰 different people · same name
+    > Chelakkara NDA rank 3 — different people across 2016/2021.
     - A: 2016 · AC 61 CHELAKKARA (NDA, rank 3): `Shajumon P. P.`
     - B: 2021 · AC 61 CHELAKKARA (NDA, rank 3): `Shajumon Vattekkad`
-- **`SINDHUMOL JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
+- **`SINDHUMOL JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — 👨‍👦 hereditary succession · different people
+    > Piravom — Sindhumol Jacob (LDF 2021 rank 2) is family of T.M. Jacob — likely the second hereditary line in the Piravom Jacob family.
     - A: 2021 · AC 85 PIRAVOM (LDF, rank 2): `Sindhumol Jacob`
     - B: 2011 · AC 85 PIRAVOM (UDF, rank 1): `T. M. Jacob`
-- **`T K RAMAN`** ↔ **`U C RAMAN PADANILAM`** (Jaccard 0.50, shared: `RAMAN`) — ❓ **NEEDS REVIEW**
+- **`T K RAMAN`** ↔ **`U C RAMAN PADANILAM`** (Jaccard 0.50, shared: `RAMAN`) — 🟰 different people · same name
+    > Balusseri 2011/2016 — different people.
     - A: 2011 · AC 25 BALUSSERI (NDA, rank 3): `T. K. Raman`
     - B: 2016 · AC 25 BALUSSERI (UDF, rank 2): `U. C. Raman Padanilam`
-- **`THOMAS CHANDY`** ↔ **`THOMAS K THOMAS`** (Jaccard 0.50, shared: `THOMAS`) — ❓ **NEEDS REVIEW**
+- **`THOMAS CHANDY`** ↔ **`THOMAS K THOMAS`** (Jaccard 0.50, shared: `THOMAS`) — 👨‍👦 hereditary succession · different people
+    > Kuttanad LDF — Thomas Chandy (NCP, 2011/2016 winner, died) → brother Thomas K. Thomas inherited via 2021 candidacy. Sibling succession (not father-son).
     - A: 2011 · AC 106 KUTTANAD (LDF, rank 1): `Thomas Chandy`
     - A: 2016 · AC 106 KUTTANAD (LDF, rank 1): `Thomas Chandy`
     - B: 2021 · AC 106 KUTTANAD (LDF, rank 1): `Thomas K. Thomas`

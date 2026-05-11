@@ -9,6 +9,38 @@ import { describe, expect, test } from "vitest"
 
 import { communityRelevance, getCommunityRelevance } from "./community-relevance"
 
+describe("community-relevance — hereditary succession", () => {
+  test("known hereditary ACs are flagged", () => {
+    // 6 ACs marked hereditary-different-people in candidate-classifications.json
+    const expectedACs = [58, 83, 85, 93, 98, 106]
+    for (const acNum of expectedACs) {
+      const r = getCommunityRelevance(acNum)
+      expect(r, `AC ${acNum} missing`).toBeDefined()
+      expect(
+        r!.hereditarySuccession,
+        `AC ${acNum} ${r!.name} should have hereditary succession`
+      ).not.toBeNull()
+    }
+  })
+
+  test("hereditary records have ≥ 2 family members + monotonic year ranges", () => {
+    for (const r of communityRelevance) {
+      if (!r.hereditarySuccession) continue
+      const h = r.hereditarySuccession
+      expect(h.family.length, `AC ${r.ac} ${r.name}`).toBeGreaterThanOrEqual(2)
+      expect(h.earliestYear).toBeLessThanOrEqual(h.latestYear)
+      expect(h.totalFamilyWins).toBeLessThanOrEqual(h.totalFamilyCycles)
+    }
+  })
+
+  test("hereditary stories mention 'Hereditary'", () => {
+    for (const r of communityRelevance) {
+      if (!r.hereditarySuccession) continue
+      expect(r.story.includes("Hereditary"), `AC ${r.ac} ${r.name} story missing 'Hereditary'`).toBe(true)
+    }
+  })
+})
+
 describe("community-relevance — story", () => {
   test("every AC has a non-empty story", () => {
     for (const r of communityRelevance) {

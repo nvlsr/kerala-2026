@@ -99,5 +99,182 @@
       "note": "Trivandrum LDF 2011 → Nemom UDF 2016 (V. Surendran Pillai). Two different ACs but same person."
     }
   },
-  "suspectedMatch": {}
+  "suspectedMatch": {
+    "A RAJA|F RAJA": {
+      "verdict": "different-people-same-name",
+      "note": "Devikulam 2026 — A. Raja LDF rank 2 (2021 winner) vs F. Raja UDF rank 1 (2026 winner). Different people."
+    },
+    "ABDUL HAMEED|P ABDUL HAMEED": {
+      "verdict": "initial-changed-same-person",
+      "note": "Vallikunnu UDF rank 1 — `P. Abdul Hameed` (2016) became `Abdul Hameed Master` (2021). Initial dropped + Master honorific added."
+    },
+    "ABID HUSSAIN THANGAL|K K ABID HUSSAIN THANGAL": {
+      "verdict": "initial-changed-same-person",
+      "note": "Kottakkal UDF rank 1 — same person across 2016/2021/2026. K.K. initials dropped between 2016 and 2021."
+    },
+    "ADAM MULSI M P|M P ADAM MULSI": {
+      "verdict": "initial-changed-same-person",
+      "note": "Beypore UDF rank 2 — same person, ECI swapped name order between 2011 and 2016."
+    },
+    "AJI S R M|S AJI": {
+      "verdict": "initial-changed-same-person",
+      "note": "Varkala NDA rank 3 — same person across 2016/2021."
+    },
+    "ANIYAPPAN|T ANIYAPPAN": {
+      "verdict": "initial-changed-same-person",
+      "note": "Aroor NDA rank 3 — same person, initial T. dropped."
+    },
+    "C SIVANKUTTY|SIVANKUTTY C": {
+      "verdict": "initial-changed-same-person",
+      "note": "Aruvikkara NDA rank 3 — same person, name order swapped."
+    },
+    "CHANDY OOMMEN|OOMMEN CHANDY": {
+      "verdict": "hereditary-different-people",
+      "note": "Puthuppally UDF. Oommen Chandy (legendary CM, 1970-2021 across 12+ cycles) → son Chandy Oommen (2023 by-poll + 2026)."
+    },
+    "CHENKAL RAJASEKHARAN|CHENKAL S RAJASEKHARAN": {
+      "verdict": "initial-changed-same-person",
+      "note": "Neyyattinkara NDA rank 3 — same person, S. initial dropped + Nair caste suffix dropped between 2021 and 2026."
+    },
+    "K A UNNIKRISHNAN|UNNIKRISHNAN K A": {
+      "verdict": "initial-changed-same-person",
+      "note": "Chalakudy NDA rank 3 — same person, name order swapped."
+    },
+    "K ANILKUMAR|P ANILKUMAR": {
+      "verdict": "different-people-same-name",
+      "note": "Kottayam 2026 — `K. Anilkumar` and `ADV.K. ANILKUMAR` are the same person (LDF rank 2). `P ANILKUMAR` (NDA rank 3) is a different person."
+    },
+    "K PADMAKUMAR|PADMAKUMAR K": {
+      "verdict": "initial-changed-same-person",
+      "note": "Ranni NDA rank 3 — same person, name order swapped."
+    },
+    "M J JACOB|T M JACOB": {
+      "verdict": "different-people-same-name",
+      "note": "Piravom 2011 — M.J. Jacob (LDF rank 2) and T.M. Jacob (UDF rank 1) are different people, both ran the same election."
+    },
+    "P P SUMOD|SUMOD": {
+      "verdict": "word-order-swap-same-person",
+      "note": "Tarur LDF rank 1 — same person, initials dropped between 2021 and 2026."
+    },
+    "A D THOMAS|T M THOMAS ISAAC": {
+      "verdict": "different-people-same-name",
+      "note": "Alappuzha — A.D. Thomas (UDF 2026 winner) is a different person from T.M. Thomas Isaac (LDF 2011/2016 winner, former finance minister)."
+    },
+    "ABDURAHIMAN RANDATHANI|V ABDURAHIMAN": {
+      "verdict": "initial-changed-same-person",
+      "note": "Tanur seat — same person across cycles. Surname \"Randathani\" (place name) dropped; V. initial used in later cycles."
+    },
+    "ANOOP JACOB|M J JACOB": {
+      "verdict": "different-people-same-name",
+      "note": "Piravom — Anoop Jacob (UDF rank 1) and M.J. Jacob (LDF rank 2) are different people."
+    },
+    "ANOOP JACOB|T M JACOB": {
+      "verdict": "hereditary-different-people",
+      "note": "Piravom UDF — T.M. Jacob (longtime UDF MLA, died) → son Anoop Jacob inherited the seat via 2012 by-poll + held 2016/2021."
+    },
+    "ARUN KAITHAPRAM|K P ARUN": {
+      "verdict": "initial-changed-same-person",
+      "note": "Kalliasseri NDA rank 3 — same person, K.P. initials replaced with surname \"Kaithapram\"."
+    },
+    "C P VIPIN CHANDRAN|V M CHANDRAN": {
+      "verdict": "different-people-same-name",
+      "note": "Nadapuram — different people, common Chandran surname."
+    },
+    "DHANYA SURESH|P V SURESH": {
+      "verdict": "different-people-same-name",
+      "note": "Kanhangad UDF rank 2 — different people."
+    },
+    "IRUMUTTOOR KUNHIRAMAN|K C KUNHIRAMAN": {
+      "verdict": "different-people-same-name",
+      "note": "Mananthavady 2011 — different people, both ran the same election (NDA rank 3 vs LDF rank 2)."
+    },
+    "JOSE K MANI|K M MANI": {
+      "verdict": "hereditary-different-people",
+      "note": "Pala — K.M. Mani (founder of Kerala Congress(M), MLA since 1965 across ~13 cycles) → son Jose K. Mani took over the family party and the seat. Father UDF, son LDF after KC(M) joined LDF."
+    },
+    "JOSEPH AUGUSTINE|P J JOSEPH": {
+      "verdict": "different-people-same-name",
+      "note": "Thodupuzha — different people, P.J. Joseph is the longtime UDF MLA."
+    },
+    "K ACHUTHAN|SUMESH ACHUTHAN": {
+      "verdict": "hereditary-different-people",
+      "note": "Chittur UDF — K. Achuthan (UDF, 2011/2016) → son Sumesh Achuthan (UDF, 2021/2026)."
+    },
+    "K C JOSEPH|SAJEEV JOSEPH": {
+      "verdict": "different-people-same-name",
+      "note": "Irikkur UDF rank 1 — K.C. Joseph (2011/2016) vs Sajeev Joseph (2021/2026). Likely candidate-change within UDF, not hereditary."
+    },
+    "K M MANI|MANI C KAPPAN": {
+      "verdict": "different-people-same-name",
+      "note": "Pala 2011/2016 — K.M. Mani (UDF rank 1, the legend) vs Mani C. Kappan (LDF rank 2). Different people."
+    },
+    "K M MANI|MANI C KAPPEN": {
+      "verdict": "different-people-same-name",
+      "note": "Pala — K.M. Mani vs Mani C. Kappen. Different people. (Mani C. Kappen / Kappan spelling drift — see separate pair.)"
+    },
+    "K N A KHADER|K V ABDUL KHADER": {
+      "verdict": "different-people-same-name",
+      "note": "Guruvayoor — different people, both UDF/LDF Muslim MLAs sharing the Khader surname."
+    },
+    "K R RAJENDRA PRASAD|P PRASAD": {
+      "verdict": "different-people-same-name",
+      "note": "Cherthala 2026 — K.R. Rajendra Prasad (UDF rank 2) vs P. Prasad (LDF rank 1). Different people."
+    },
+    "KARAT RAZAK|M A RAZAK": {
+      "verdict": "different-people-same-name",
+      "note": "Koduvally — Karat Razak (LDF) vs M.A. Razak (UDF). Different people."
+    },
+    "M A SURENDRAN|SUJITH P SURENDRAN": {
+      "verdict": "different-people-same-name",
+      "note": "Kunnathunad — different people."
+    },
+    "M G KANNAN|PRIJI KANNAN": {
+      "verdict": "different-people-same-name",
+      "note": "Adoor — different people, common Kannan surname."
+    },
+    "M J JACOB|SABU K JACOB": {
+      "verdict": "different-people-same-name",
+      "note": "Piravom LDF rank 2 — different LDF candidates across cycles."
+    },
+    "M J JACOB|SINDHUMOL JACOB": {
+      "verdict": "different-people-same-name",
+      "note": "Piravom LDF — different people."
+    },
+    "N SAJI KUMAR|S SAJI": {
+      "verdict": "different-people-same-name",
+      "note": "Thrikkakara NDA rank 3 — different people."
+    },
+    "P C GEORGE|P C GEORGE PLATHOTTAM": {
+      "verdict": "initial-changed-same-person",
+      "note": "Poonjar — same person, family name \"Plathottam\" sometimes appended."
+    },
+    "P T THOMAS|UMA THOMAS": {
+      "verdict": "hereditary-different-people",
+      "note": "Thrikkakara UDF — P.T. Thomas (UDF MLA 2016/2021, died) → wife Uma Thomas won the 2022 by-poll + held 2026. Classic spousal succession."
+    },
+    "SABU K JACOB|T M JACOB": {
+      "verdict": "different-people-same-name",
+      "note": "Piravom — Sabu K. Jacob (LDF 2026) vs T.M. Jacob (UDF 2011, died). Different people."
+    },
+    "SEBASTIAN KULATHUNKAL|SEBASTIAN M J": {
+      "verdict": "different-people-same-name",
+      "note": "Poonjar 2026 — different Sebastians in opposing fronts."
+    },
+    "SHAJUMON P P|SHAJUMON VATTEKKAD": {
+      "verdict": "different-people-same-name",
+      "note": "Chelakkara NDA rank 3 — different people across 2016/2021."
+    },
+    "SINDHUMOL JACOB|T M JACOB": {
+      "verdict": "hereditary-different-people",
+      "note": "Piravom — Sindhumol Jacob (LDF 2021 rank 2) is family of T.M. Jacob — likely the second hereditary line in the Piravom Jacob family."
+    },
+    "T K RAMAN|U C RAMAN PADANILAM": {
+      "verdict": "different-people-same-name",
+      "note": "Balusseri 2011/2016 — different people."
+    },
+    "THOMAS CHANDY|THOMAS K THOMAS": {
+      "verdict": "hereditary-different-people",
+      "note": "Kuttanad LDF — Thomas Chandy (NCP, 2011/2016 winner, died) → brother Thomas K. Thomas inherited via 2021 candidacy. Sibling succession (not father-son)."
+    }
+  }
 }

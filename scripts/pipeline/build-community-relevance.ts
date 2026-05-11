@@ -20,6 +20,8 @@ import { religiousPOIs, getVoterShareBreakdown, COHORT_YEAR } from "@/lib/data/r
 import { constituencies, type Candidate } from "@/lib/data/constituencies"
 import { acDemo2025Meta, districtsMeta, casteByDistrictMeta, beltsMeta } from "@/lib/data/loaders"
 import { CHRISTIAN_BELT_36 } from "@/pages/walkthroughs/udf-data"
+import { existsSync, readFileSync } from "fs"
+
 import { loadHistorical } from "../_lib/load"
 import { normalizeName } from "../_lib/names"
 import { saveJson } from "../_lib/save"
@@ -127,6 +129,9 @@ interface CommunityRelevanceRecord {
   // UDF when both NDA + LDF are blocked and UDF has no blocker; symmetric for LDF/NDA.
   stableFor: AllianceCode | null
 
+  /** Hereditary succession at this AC (null when no family pattern detected). */
+  hereditarySuccession: HereditarySuccession | null
+
   allianceRoles: {
     UDF: AllianceRoleCell
     LDF: AllianceRoleCell
@@ -164,6 +169,26 @@ interface NdaTrajectory {
   y2026: number
 }
 type NdaTrend = "rising" | "flat" | "declining" | "unknown"
+
+/**
+ * Hereditary succession at an AC (father→son, husband→wife, sibling→sibling,
+ * etc.). Derived from `data/hereditary-seats.json` via candidate-name audit.
+ */
+interface HereditarySuccession {
+  primaryAlliance: AllianceCode
+  totalFamilyCycles: number
+  totalFamilyWins: number
+  earliestYear: number
+  latestYear: number
+  family: Array<{
+    displayName: string
+    cycles: number
+    wins: number
+    earliestYear: number
+    latestYear: number
+  }>
+  notes: string[]
+}
 
 // ── Helpers ───────────────────────────────────────────────────────────
 
@@ -536,6 +561,53 @@ function durabilityCategoryOf(
  * An alliance is `stableFor` when the *other two* are both blocked
  * AND it has no structural blocker itself.
  */
+// ── Load hereditary-seats index ──────────────────────────────────────
+
+interface HereditarySeatsFile {
+  totalSeats: number
+  seats: Array<{
+    ac: number
+    name: string
+    district: string
+    family: Array<{
+      displayName: string
+      normKey: string
+      cycles: Array<{ year: number; cycleType: string; alliance: string; rank: number }>
+      earliestYear: number
+      latestYear: number
+      winsCount: number
+    }>
+    primaryAlliance: string
+    earliestYear: number
+    latestYear: number
+    totalFamilyCycles: number
+    totalFamilyWins: number
+    notes: string[]
+  }>
+}
+
+const hereditaryByAc = new Map<number, HereditarySuccession>()
+if (existsSync("data/hereditary-seats.json")) {
+  const hereditaryData = JSON.parse(readFileSync("data/hereditary-seats.json", "utf-8")) as HereditarySeatsFile
+  for (const seat of hereditaryData.seats) {
+    hereditaryByAc.set(seat.ac, {
+      primaryAlliance: seat.primaryAlliance as AllianceCode,
+      totalFamilyCycles: seat.totalFamilyCycles,
+      totalFamilyWins: seat.totalFamilyWins,
+      earliestYear: seat.earliestYear,
+      latestYear: seat.latestYear,
+      family: seat.family.map(m => ({
+        displayName: m.displayName,
+        cycles: m.cycles.length,
+        wins: m.winsCount,
+        earliestYear: m.earliestYear,
+        latestYear: m.latestYear,
+      })),
+      notes: seat.notes,
+    })
+  }
+}
+
 function stableForOf(roles: CommunityRelevanceRecord["allianceRoles"]): AllianceCode | null {
   const udfBlocked = !!roles.UDF.blockFrom
   const ldfBlocked = !!roles.LDF.blockFrom
@@ -624,6 +696,7 @@ function buildStory(args: {
   allianceRoles: CommunityRelevanceRecord["allianceRoles"]
   tenure: IncumbentTenure | null
   winnerCandidateReligion: "Christian" | "Hindu" | "Muslim" | null
+  hereditarySuccession: HereditarySuccession | null
 }): string {
   const sentences: string[] = []
   const m = args.margin
@@ -645,6 +718,17 @@ function buildStory(args: {
   }
   const headline = `${W} ${marginStr} — ${cycleStory}.${tenurePhrase(args.tenure, W)}`
   sentences.push(headline)
+
+  // ── Hereditary succession (inserted right after headline when present)
+  if (args.hereditarySuccession) {
+    const h = args.hereditarySuccession
+    const fam = h.family
+      .map(m => `${m.displayName} (${m.wins}W/${m.cycles} cycles, ${m.earliestYear}–${m.latestYear})`)
+      .join(" → ")
+    sentences.push(
+      `Hereditary ${h.primaryAlliance} seat: ${fam}. Family controlled ${h.totalFamilyWins} of the last ${h.totalFamilyCycles} top-3 appearances across ${h.earliestYear}–${h.latestYear}.`
+    )
+  }
 
   // ── Sentence 2: driver detail (which community / sub-rites, with %)
   const driverParts: string[] = []
@@ -854,6 +938,9 @@ for (const c of constituencies) {
   // Structural stability (forward-looking) — derived from blocker pattern
   const stableFor = stableForOf(allianceRoles)
 
+  // Hereditary succession (if detected via candidate-classifications)
+  const hereditarySuccession = hereditaryByAc.get(c.constituencyNumber) ?? null
+
   const relevantSubs = subRites.filter(s => s.tag === "decisive" || s.tag === "blocking")
   const note = assembleNote({
     cIsRelevant, relevantSubs, cAggShare, cAggTag: cAggR.tag, coordination, hasCSI,
@@ -874,6 +961,7 @@ for (const c of constituencies) {
     stableFor, allianceRoles,
     tenure: acTenure.get(c.constituencyNumber) ?? null,
     winnerCandidateReligion: CANDIDATE_RELIGION_OVERRIDES[c.constituencyNumber] ?? null,
+    hereditarySuccession,
   })
 
   records.push({
@@ -893,6 +981,7 @@ for (const c of constituencies) {
     history, durabilityCategory,
     ndaShareTrajectory, ndaTrend,
     stableFor,
+    hereditarySuccession,
     allianceRoles, note, story,
   })
 }
