@@ -29,6 +29,13 @@ type Props = {
   hoveredSeat?: number | null
   onAcHover?: (seat: number | null) => void
   zoomable?: boolean
+  /**
+   * Optional className applied to the wrapping <svg>. Use to cap
+   * display size — e.g. `max-h-44` for the small variant on the
+   * /walkthroughs index card. The SVG's default `h-auto w-full`
+   * sizing is preserved; any classes added here compose on top.
+   */
+  className?: string
   ariaLabel: string
 }
 
@@ -39,6 +46,7 @@ export function ReligionCategoricalMap({
   hoveredSeat,
   onAcHover,
   zoomable = false,
+  className,
   ariaLabel,
 }: Props) {
   const [viewBox, setViewBox] = useState<ViewBox>(FULL_VIEW)
@@ -111,7 +119,8 @@ export function ReligionCategoricalMap({
           ? isDragging
             ? "cursor-grabbing"
             : "cursor-grab"
-          : ""
+          : "",
+        className
       )}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
