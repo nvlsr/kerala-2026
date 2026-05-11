@@ -659,11 +659,41 @@ To regenerate after data changes: `bun run scripts/pipeline/build-community-rele
 
 ---
 
-## 8. Phase 4 — surface in the app (not yet started)
+## 8. Future work
 
-Optional follow-up after this framework is stable:
+### 8a. UI integration
 
-- Per-AC badge on `/explore` seat detail showing primary driver + confidence + alliance roles
-- New `/community-relevance` overlay map (140 ACs colour-coded by primary driver)
-- Cross-filter on `/walkthroughs/insights`: pick an AC, see its community profile
-- Per-AC drilldown panel showing the 6 alliance-roles cells + the multi-sub-rite breakdown
+- **Tier 1 — rich-story page at `/community-relevance`** ✅ **DONE.** Story-card list with filters (winner, tag, driver, stableFor, NDA-trend). Each card renders the 5-sentence narrative composed from every framework dimension (driver, history, trajectory, structural lock, hereditary succession). Rows deep-link to `/explore?seat=N`. See `src/pages/community-relevance-page.tsx`.
+- **Tier 2 — choropleth map.** 140-AC map at `/community-relevance` colour-coded by primary driver, with a dropdown to swap the colour layer (driver / netTag / stableFor / ndaTrend / durabilityCategory). Click an AC → side panel with the rich story + 6-cell alliance-roles matrix.
+- **Tier 3 — integrate into existing pages.** Per-AC badge on `/explore` seat detail showing driver + confidence + structural lock. Cross-filter on `/walkthroughs/insights`: pick an AC, see its community profile inline. Surface relevant community-relevance stories inside each `/walkthroughs/<arc>-walkthrough` page when the reader's context matches.
+
+### 8b. Identity-aware cross-cycle analyses
+
+After the candidate-name audit (see `docs/candidate-continuity-audit.md`), we have a `personId` layer that resolves the same person across alliance switches, initial changes, etc. This unlocks two analyses worth exploring:
+
+#### Alliance-switcher analysis — AC-level preference signal
+
+Use confirmed `same-person-switched` candidates (Roshy Augustine, N. Jayaraj, K B Ganesh Kumar, Padmaja Venugopal, etc.) as **natural experiments**:
+
+> *Hold the candidate constant, change the alliance — does the seat follow them?*
+
+If an MLA wins under UDF in 2016, switches to LDF in 2021, and still wins, the AC's voters are tracking the **person** more than the **alliance**. If they switch and lose by a wider margin than expected, the AC is tracking the **alliance**.
+
+Across our 18 documented alliance-switchers, we can compute a "candidate vs alliance" preference index per AC and per district. Falsifiable signal because the candidate is the same — most variation cleanly attributable to alliance-loyalty shift.
+
+Output: per-AC `candidatePreferenceIndex` field showing how much of the seat's behaviour is candidate-driven vs alliance-driven. Aggregates roll up to district-level "voter-loyalty type" classifications.
+
+#### Dynasty analysis — projection of hereditary seats
+
+The 6 documented hereditary seats (Puthuppally, Pala, Piravom, Thrikkakara, Chittur, Kuttanad) are concentrated in central-Kerala Christian belt. The forward-looking questions:
+
+- **Continuity probability**: given a family has held a seat for N cycles, what's the conditional probability they hold it again? (Bayesian update on Kerala's specific patterns.)
+- **Belt expansion**: which currently-stable seats are likely to *become* hereditary in 2031? Look for sitting MLAs with adult children active in party politics, late-career MLAs in family-strong seats, etc.
+- **Alliance-attribution of dynasties**: 5 of 6 current dynasties are UDF/KC(M)-linked. Is hereditary politics a UDF-specific phenomenon, or are we under-detecting LDF dynasties?
+- **Religion / caste correlation**: the 6 current dynasties are overwhelmingly Christian. Confirm or refute via systematic count.
+
+Output: per-AC `dynastyPotential` field flagging likely-future hereditary seats; aggregate dynasty-belt map; per-alliance dynasty intensity score.
+
+### 8c. Identity layer (prerequisite for 8b)
+
+Both analyses in §8b assume a `personId` layer that merges candidate appearances across alliance switches and name variations. Spec: `data/candidate-identities.json` derived from `candidate-classifications.json` + appearance walk, exposing `getCandidateIdentity({ year, ac, rawName })` for downstream scripts. Discussed but not yet built — see project memory for the architecture.
