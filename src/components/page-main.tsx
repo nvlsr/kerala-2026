@@ -18,8 +18,8 @@ type Props = {
  * Standard `<main>` wrapper for routed pages. Lives next to PageShell
  * but stays a separate component because not every page wants a
  * `<main>` — /explore renders a series of <Section> components
- * directly without one, and pages with a teaser footer (DriftsTeaser,
- * FlowsTeaser) need PageMain to close before the teaser.
+ * directly without one, and pages with a teaser footer (e.g.
+ * WalkthroughsTeaser) need PageMain to close before the teaser.
  */
 export function PageMain({ children, className }: Props) {
   return (

@@ -2,10 +2,10 @@ import { Link } from "react-router-dom"
 import { IconKey } from "@tabler/icons-react"
 
 /**
- * Bottom-of-/questions link to /walkthroughs. Replaces the previous
- * FlowsTeaser. Same minimal one-line treatment: visible to readers
- * who finished the curated questions, easy to ignore otherwise. The
- * IconKey is preserved as a quiet "next layer" affordance.
+ * Bottom-of-/questions link to /walkthroughs. Minimal one-line
+ * treatment: visible to readers who finished the curated questions,
+ * easy to ignore otherwise. The IconKey is a quiet "next layer"
+ * affordance.
  */
 export function WalkthroughsTeaser() {
   return (

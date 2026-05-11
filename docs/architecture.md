@@ -109,7 +109,7 @@ const opacity = Math.min(0.95, 0.2 + (value / max) * 0.75)
 
 ## Components
 
-- `Section` / `Stat` / `DeltaPercent` / `AlliancePill` / `PartyLink` / `InfoIcon` — small reusables in `src/components/`. Use them rather than reinventing.
+- `Section` / `Stat` / `DeltaPercent` / `AlliancePill` / `InfoIcon` — small reusables in `src/components/`. Use them rather than reinventing.
 - `KeralaMap` and `ConstituencyMap` — both render SVG paths from pre-projected JSON files in `data/`. Same pattern: hover/click states, ARIA roles, side panel with details. If a third map appears, extract a `<ChoroplethMap>` shell.
 - `HistoricalChart` / `AllianceHistoricalChart` / `PartyHistoricalChart` — three line charts over recharts. They look similar but each handles a different data shape (multi-line w/ by-election dots, multi-line w/ highlight, single-line). Don't try to unify; the abstraction would over-fit.
 - `InsightsChips` — chip strip above the candidate table. Each chip has a preset that's `dispatch`'d as `apply-preset`.
@@ -183,7 +183,7 @@ The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance 
 **Inline:**
 
 - `Table` (shadcn) — built-in horizontal scroll on overflow; styled compactly via the `COMPACT_HEAD_CLASS` / `COMPACT_CELL_CLASS` constants in `src/components/walkthroughs/table-classes.ts`. Use `HIGHLIGHT_ROW_CLASS` to amber-emphasise a row, `NUM_HEAD_CLASS` / `NUM_CELL_CLASS` for right-aligned numeric columns.
-- `SeatLink` / `PartyLink` / `ProseLink` — subtle inline anchor links to `/explore?seat=N`, party views, etc.
+- `SeatLink` / `ProseLink` — subtle inline anchor links to `/explore?seat=N`, party views, etc.
 
 **Centralised tokens** in `src/components/walkthroughs/`:
 
