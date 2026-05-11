@@ -82,7 +82,7 @@ This is consistent with: ceiling effects in already-pro-UDF Muslim areas, IUML's
 
 ## §3 — Sub-sect cohort × UDF performance (Sprint 2)
 
-From `scripts/analyze-subrite-cohorts.ts`:
+From `scripts/analysis/analyze-subrite-cohorts.ts`:
 
 | Cohort | n | UDF 2026 | UDF 2021 | Δ UDF | LDF 2026 | LDF 2021 | Δ LDF | Wins (U/L/N) |
 |---|---:|---:|---:|---:|---:|---:|---:|:---:|
@@ -259,7 +259,7 @@ Sunni Kerala is a UDF stronghold; Mujahid Kerala is competitive. IUML's organisa
 - [ ] **Multi-cycle swing per cohort** — re-run cohort × UDF margin for 2011/2016/2021/2026. Is the +8.7 Mujahid 2026 swing unusual vs cohort history?
 - [ ] **Mujahid LDF-winner identification** — list the 5 LDF-winning Mujahid ACs by name/district/margin. Look for a common factor.
 - [ ] **Welfare Party / SDPI / minor-Muslim-party share, per cohort, 2021** — did minor parties cluster in Mujahid ACs in 2021? Did they disappear in 2026?
-- [ ] **Swing R² for Muslim cohort** — extend `scripts/analyze-subrite-cohorts.ts` to compute Δ UDF R² for Muslim cohort vs Muslim share.
+- [ ] **Swing R² for Muslim cohort** — extend `scripts/analysis/analyze-subrite-cohorts.ts` to compute Δ UDF R² for Muslim cohort vs Muslim share.
 - [ ] **Sunni LDF-winner identification** — list 7 LDF-winning Sunni ACs. Are they Muslim-minority ACs where Sunni is technically dominant but Muslim share is low?
 - [ ] **OSM Mujahid coverage audit** — how many of 14 Mujahid-cohort ACs have classified Muslim N ≥ 10 (vs 3-9)? Robustness check.
 - [ ] **IUML / INC / WPI candidate breakdown by cohort** — did the UDF candidate in Mujahid ACs differ from the UDF candidate in Sunni ACs (party / Muslim-identity / etc.)?
@@ -339,8 +339,8 @@ METHODOLOGY:
 |---|---|
 | Per-AC sub-sect cohort | `subrite-bins.ts` (`muslimSubRiteCohortFor`) |
 | Per-AC voter-share | `religious-pois.ts` (`getReligiousSignatureForAC`) |
-| Sprint 2 analysis | `scripts/analyze-subrite-cohorts.ts` |
-| Muslim-belt premium (pre-OSM) | `scripts/analyze-muslim-belt.ts` |
+| Sprint 2 analysis | `scripts/analysis/analyze-subrite-cohorts.ts` |
+| Muslim-belt premium (pre-OSM) | `scripts/analysis/analyze-muslim-belt.ts` |
 | OSM raw | `data/raw/osm/places-of-worship-kerala.json` (gitignored) |
 | OSM classified inventory | `data/ac-religious-poi-inventory.json` |
 | Tests | `src/lib/data/religious-pois.test.ts` (cohort sizes assertions) |
@@ -373,14 +373,14 @@ LOW_CONFIDENCE_CLASSIFIED_N = 10
 
 ### Muslim-belt analysis universe
 
-`scripts/analyze-muslim-belt.ts` uses:
+`scripts/analysis/analyze-muslim-belt.ts` uses:
 - ≥70% Muslim ACs (n=11 across Kerala) for the "premium" history
 - Malappuram non-reserved (n=15) for the strategy analysis
 - Excludes Wayanad's 3 ST seats + Wandoor SC seat (reservation forces candidate choice)
 
 ### Cohort layer (OSM-derived)
 
-Same pipeline as Christian (`scripts/classify-osm-pow.ts`). Muslim-specific notes:
+Same pipeline as Christian (`scripts/pipeline/classify-osm-pow.ts`). Muslim-specific notes:
 - Mosque tagging less consistent than church tagging in OSM. Many mosques tagged just `amenity=place_of_worship` + `religion=muslim` without `denomination=*`.
 - Sub-sect inference relies on `denomination` tag where present, plus name-regex patterns (e.g. "Mujahid", "Salafi", "Jamia", "Sunni" in mosque names).
 - Coverage of sub-sect-specific tagging is thinner in southern Kerala than in Malappuram/Malabar. Northern Kerala mosques tend to have richer tagging.

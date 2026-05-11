@@ -17,7 +17,7 @@
  * Individual voter movement isn't observable from results data; we
  * surface seats whose alliance-level deltas suggest a flow.
  *
- * Logic ported from `scripts/detect-flows.ts`. The script is the working
+ * Logic originally prototyped in scripts/ before being baked into the runtime. The runtime here is the
  * tool for ad-hoc analysis and threshold tuning; this module is the runtime
  * version that the `/flows` page reads from.
  */

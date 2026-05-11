@@ -393,10 +393,10 @@ Removing the 7.4pp swing unwinds nearly all of UDF's gains. Roughly **58 of UDF'
 | Source | Path |
 |---|---|
 | Per-AC LDF Δ (computed) | `getPerACAllianceDelta("LDF")` in `src/lib/data/walkthrough-metrics.ts` |
-| Distribution stats | `scripts/narrative-ldf-shallow-distribution.py` (legacy) |
-| Sabarimala-route test | `scripts/narrative-a2-sabarimala.ts` |
-| Cabinet collapse test | `scripts/narrative-a6-cabinet-collapse.ts` + `data/ldf-ministers-2021.json` |
-| Flow decomposition | `scripts/narrative-anti-ldf-flow.py` |
+| Distribution stats | `scripts/analysis/narrative-ldf-shallow-distribution.py` (legacy) |
+| Sabarimala-route test | `scripts/analysis/narrative-a2-sabarimala.ts` |
+| Cabinet collapse test | `scripts/analysis/narrative-a6-cabinet-collapse.ts` + `data/ldf-ministers-2021.json` |
+| Flow decomposition | `scripts/analysis/narrative-anti-ldf-flow.py` |
 | Religion-share AC data | `data/ac-demographics.json` + `data/ac-demographics-2025.json` |
 | Caste-share district data | `data/hindu-caste-by-district.json` (Zachariah/KSI 2000) |
 | 2021 historical shares | `data/historical/S11-*.json` |

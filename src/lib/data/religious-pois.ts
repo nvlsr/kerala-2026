@@ -2,8 +2,8 @@
  * Religious place-of-worship inventory (from OpenStreetMap).
  *
  * Source: `data/ac-religious-poi-inventory.json` — derived from the
- * Overpass dump via `scripts/classify-osm-pow.ts` +
- * `scripts/aggregate-ac-religion-pois.ts`. See `data/raw/osm/README.md`.
+ * Overpass dump via `scripts/pipeline/classify-osm-pow.ts` +
+ * `scripts/pipeline/aggregate-ac-religion-pois.ts`. See `data/raw/osm/README.md`.
  *
  * The primary metric exposed here is **estimated sub-rite share of
  * total voters per AC** = `(sub-rite POI share among religion's POIs)

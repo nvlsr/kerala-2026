@@ -416,7 +416,7 @@ describe("historical candidate names have no unrecovered parenthetical party tag
   // keralaassembly.org's 2021 scrape sometimes records the alliance code
   // (LDF/UDF/NDA) in the party field and disambiguates the actual party
   // via a parenthetical in the candidate name — e.g. "K. T. Abdul
-  // Rahiman (CPI)". scripts/merge-2021.ts now extracts and resolves
+  // Rahiman (CPI)". scripts/pipeline/merge-2021.ts now extracts and resolves
   // those parentheticals. This test guards against a regression where
   // a future scrape introduces a new paren-tagged candidate that the
   // merge logic doesn't know how to resolve, leaving the parenthetical

@@ -442,15 +442,15 @@ Pattern 2 is this file's headline. Pattern 1 + 2 combined: a ~7pp uniform swing 
 | Source | Path |
 |---|---|
 | AC-level alliance metrics | `getAllACMetrics()`, `getPerACAllianceDelta("UDF")` in `src/lib/data/walkthrough-metrics.ts` |
-| Christian-belt analysis | `scripts/analyze-christian-belt.ts` + `scripts/recompute-christian-belt-no-outliers.ts` |
-| Muslim-belt analysis | `scripts/analyze-muslim-belt.ts` |
-| Minority consolidation (A1) | `scripts/narrative-a1-ac-level.ts` (+ `--exclude-reserved` flag for reserved-seat robustness; `--baseline-2011` for raw 2011) |
-| District-FE regression | `scripts/narrative-regression.py` |
-| Caste analysis (B3+B4) | `scripts/narrative-b3b4-caste.ts` |
-| KC(M)-stripped recompute | `scripts/narrative-a1-no-kcm.py` |
-| Central-Kerala kingmaker | `scripts/narrative-a8-central-kerala.ts` |
-| Vote efficiency | `scripts/narrative-vote-efficiency.py` |
-| AC religion data (build) | `python3 scripts/build-ac-demographics.py` (needs `data/shrug/` + `data/raw/census-c01/`) |
+| Christian-belt analysis | `scripts/analysis/analyze-christian-belt.ts` |
+| Muslim-belt analysis | `scripts/analysis/analyze-muslim-belt.ts` |
+| Minority consolidation (A1) | `scripts/analysis/narrative-a1-ac-level.ts` (+ `--exclude-reserved` flag for reserved-seat robustness; `--baseline-2011` for raw 2011) |
+| District-FE regression | `scripts/analysis/narrative-regression.py` |
+| Caste analysis (B3+B4) | `scripts/analysis/narrative-b3b4-caste.ts` |
+| KC(M)-stripped recompute | `scripts/analysis/narrative-a1-no-kcm.py` |
+| Central-Kerala kingmaker | `scripts/analysis/narrative-a8-central-kerala.ts` |
+| Vote efficiency | `scripts/analysis/narrative-vote-efficiency.py` |
+| AC religion data (build) | `python3 scripts/pipeline/build-ac-demographics.py` (needs `data/shrug/` + `data/raw/census-c01/`) |
 | AC religion data (consumed) | `data/ac-demographics.json` + `data/ac-demographics-2025.json` |
 | Caste district data | `data/hindu-caste-by-district.json` |
 | Page | `src/pages/walkthroughs-udf-page.tsx` + `src/pages/walkthroughs-udf-data.ts` |

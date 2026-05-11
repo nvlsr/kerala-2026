@@ -198,7 +198,7 @@ export const LATIN_ZONE_BREAKDOWN: readonly LatinZoneRow[] = (() => {
 })()
 
 // ── Mitigation evidence (M1, M2, M3) for §11 + §12 ───────────────────
-// Numbers computed by scripts/analyze-christian-mitigations.ts.
+// Numbers computed by scripts/analysis/analyze-christian-mitigations.ts.
 
 export const M_EVIDENCE = {
   // M2: Ernakulam same-district

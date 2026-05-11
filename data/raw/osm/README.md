@@ -1,7 +1,7 @@
 # OSM Place-of-Worship Inventory (Phase 1 raw)
 
 Raw Overpass-API dumps of religious POIs across Kerala. Files are gitignored
-(re-fetchable via `scripts/fetch-osm-pow.ts`). This README captures the
+(re-fetchable via `scripts/pipeline/fetch-osm-pow.ts`). This README captures the
 snapshot date, exact queries, and coverage stats so the pull is reproducible.
 
 ## Snapshot
@@ -52,8 +52,8 @@ Result is a flat element list with some spatial duplication; the
 ## Re-fetching
 
 ```bash
-bun run scripts/fetch-osm-pow.ts --sample   # Kottayam district
-bun run scripts/fetch-osm-pow.ts --full     # entire Kerala state
+bun run scripts/pipeline/fetch-osm-pow.ts --sample   # Kottayam district
+bun run scripts/pipeline/fetch-osm-pow.ts --full     # entire Kerala state
 ```
 
 ## Coverage snapshot (Kerala-wide, after 30m dedup)
@@ -152,11 +152,11 @@ Mujahid-vs-Sunni split in north Kerala where mapping is denser.
 
 The raw Overpass dump above feeds two derived files:
 
-- **`scripts/classify-osm-pow.ts`** → `data/places-of-worship.json`
+- **`scripts/pipeline/classify-osm-pow.ts`** → `data/places-of-worship.json`
   (per-POI, gitignored — regenerable in ~30s)
-- **`scripts/aggregate-ac-religion-pois.ts`** → `data/ac-religious-poi-inventory.json`
+- **`scripts/pipeline/aggregate-ac-religion-pois.ts`** → `data/ac-religious-poi-inventory.json`
   (per-AC, committed — the canonical product)
-- **`scripts/validate-classified-pow.ts`** — spot-check classifier against
+- **`scripts/pipeline/validate-classified-pow.ts`** — spot-check classifier against
   known religious geography (Pala = Syro-Malabar, Aranmula = Marthoma,
   Manjeri = Muslim Sunni, etc.).
 

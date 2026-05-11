@@ -68,8 +68,8 @@ Source: <https://projects.datameet.org/maps/> · repo: <https://github.com/datam
 Used for the interactive Kerala map at the top of the page. Specifically the `Districts/Census_2011/2011_Dist.shp` file (Census 2011 boundaries) is filtered to the 14 Kerala features and projected at build time.
 
 Pipeline:
-- `scripts/extract-kerala-map.py` — reads the shapefile, simplifies geometry, writes `data/kerala-districts.geojson`
-- `scripts/build-kerala-map-paths.ts` — projects with `d3-geo` and writes `data/kerala-districts-paths.json` (the runtime artifact, no `d3-geo` dependency at runtime)
+- `scripts/pipeline/extract-kerala-map.py` — reads the shapefile, simplifies geometry, writes `data/kerala-districts.geojson`
+- `scripts/pipeline/build-kerala-map-paths.ts` — projects with `d3-geo` and writes `data/kerala-districts-paths.json` (the runtime artifact, no `d3-geo` dependency at runtime)
 
 The source `data/maps-master/` directory is `.gitignore`d (486 MB) — re-clone the upstream repo if you need to re-run the extraction. Licensed CC-BY 2.5 IN.
 

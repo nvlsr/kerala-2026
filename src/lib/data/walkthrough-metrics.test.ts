@@ -1,7 +1,7 @@
 /**
  * Sanity-check that walkthrough-metrics.ts produces statewide
  * constituency-equal aggregates matching the Python analysis
- * scripts (scripts/narrative-regression.py et al.) within
+ * scripts (scripts/analysis/narrative-regression.py et al.) within
  * rounding.
  */
 import { describe, expect, test } from "vitest"

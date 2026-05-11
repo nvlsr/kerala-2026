@@ -19,10 +19,11 @@ Each file follows the same skeleton: TL;DR → sub-findings (with data tables) �
 ## Other key docs
 
 - [`docs/architecture.md`](docs/architecture.md) — page layout, section template, state conventions, walkthrough component system, typography tiers, test setup. **Read before adding a new section, overlay, chip, or data field.**
-- [`docs/data-pipeline.md`](docs/data-pipeline.md) — ingest → enrich → bundle flow, where the raw sources live, how Supabase rows become `src/lib/data/*`.
+- [`docs/data-pipeline.md`](docs/data-pipeline.md) — the four pipelines that produce `data/` (election results, AC religion demographics, OSM POIs, maps).
 - [`docs/data-audit.md`](docs/data-audit.md) — known data caveats and gaps.
 - [`docs/caste-data.md`](docs/caste-data.md) — district-level Hindu sub-community shares (Nair/Ezhava/etc.), what's rendered where.
-- [`docs/links.md`](docs/links.md) — outbound URL inventory.
+- [`docs/links.md`](docs/links.md) — outbound URL inventory + raw-source catalog.
+- [`scripts/README.md`](scripts/README.md) — split between `scripts/pipeline/` (data producers) and `scripts/analysis/` (narrative evidence generators).
 - [`MEMORY.md`](MEMORY.md) — does not exist at project root; the project-scoped memory index lives at `~/.claude/projects/-Users-admin-Projects-Vite-kerala-2026/memory/MEMORY.md` and is auto-loaded.
 
 ## Code conventions (quick reminders — full text in `architecture.md`)
@@ -38,4 +39,4 @@ Each file follows the same skeleton: TL;DR → sub-findings (with data tables) �
 
 1. If the displayed data on a walkthrough page changes, update the corresponding `docs/narratives/<page>.md` in the same commit.
 2. Cross-page findings (e.g. caste, vote-efficiency) are distributed into the relevant pages — `udf.md §5` holds the caste geography reference; vote-efficiency lives under each alliance's reference.
-3. Scripts referenced in narratives live under `scripts/` (named `narrative-*` or `analysis-*`). Use `bun run scripts/<file>.ts`.
+3. Scripts referenced in narratives live under `scripts/analysis/` (one-off evidence generators). Pipeline scripts that build `data/` live under `scripts/pipeline/`. Use `bun run scripts/<dir>/<file>.ts` or `python3 scripts/<dir>/<file>.py`.

@@ -248,18 +248,18 @@ ad-hoc analysis (not currently wired into walkthrough pages).
 
 | File | Role |
 |---|---|
-| `scripts/fetch-osm-pow.ts` | Overpass fetch (`--sample` district / `--full` state) — unions `amenity=place_of_worship`, building polygons, and wayside shrines |
-| `scripts/inspect-osm-pow.ts` | Coverage report + 30m BFS-cluster dedup |
-| `scripts/classify-osm-pow.ts` | Normalise religion + denomination, name-regex inference, Catholic disambiguation via district prior, spatial join to AC |
-| `scripts/aggregate-ac-religion-pois.ts` | Reduce per-POI dataset to per-AC summary |
-| `scripts/validate-classified-pow.ts` | Spot-check classifier against known religious geography |
+| `scripts/pipeline/fetch-osm-pow.ts` | Overpass fetch (`--sample` district / `--full` state) — unions `amenity=place_of_worship`, building polygons, and wayside shrines |
+| `scripts/pipeline/inspect-osm-pow.ts` | Coverage report + 30m BFS-cluster dedup |
+| `scripts/pipeline/classify-osm-pow.ts` | Normalise religion + denomination, name-regex inference, Catholic disambiguation via district prior, spatial join to AC |
+| `scripts/pipeline/aggregate-ac-religion-pois.ts` | Reduce per-POI dataset to per-AC summary |
+| `scripts/pipeline/validate-classified-pow.ts` | Spot-check classifier against known religious geography |
 | `data/raw/osm/places-of-worship-kerala.json` | Raw Overpass dump (**gitignored**) |
 | `data/places-of-worship.json` | Per-POI classified dataset (**gitignored**, ~7 MB, regenerable) |
 | `data/ac-religious-poi-inventory.json` | Per-AC aggregate (**committed**, ~80 KB) — the canonical product |
 | `data/raw/osm/README.md` | Snapshot dates, exact Overpass queries, coverage stats, pipeline notes |
 
-End-to-end refresh: `bun run scripts/fetch-osm-pow.ts --full && bun run
-scripts/classify-osm-pow.ts && bun run scripts/aggregate-ac-religion-pois.ts`.
+End-to-end refresh: `bun run scripts/pipeline/fetch-osm-pow.ts --full && bun run
+scripts/pipeline/classify-osm-pow.ts && bun run scripts/pipeline/aggregate-ac-religion-pois.ts`.
 
 ### Consumers
 

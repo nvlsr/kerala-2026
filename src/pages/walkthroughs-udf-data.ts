@@ -3,7 +3,7 @@
  * walkthrough.
  *
  * Source: `docs/narratives/udf.md §3` (Christian-belt strategy detail)
- * + `scripts/analyze-christian-belt.ts`. To refresh, re-run the script
+ * + `scripts/analysis/analyze-christian-belt.ts`. To refresh, re-run the script
  * and update the constants below.
  */
 
