@@ -180,7 +180,7 @@ Spot-check (Manjeshwar AC 1): our projection said H 44.2% / M 53.1% / C 2.7%; an
 
 ### 🔴 Tier D (deferred, ~3-4 weeks effort) — district-specific drift via NFHS-5 microdata
 
-NFHS-5 District Fact Sheets don't publish religion shares (health-only template). NFHS microdata via [DHS Program](https://dhsprogram.com/data/available-datasets.cfm) does include religion in household roster, allows district-level computation. Requires registration + research justification + approval (2-4 weeks). Sample sizes ~700-1000 per district give ±3-5pp confidence intervals — modest improvement over Tier C's uniform projection.
+NFHS-5 District Fact Sheets don't publish religion shares (health-only template). NFHS microdata via the DHS Program does include religion in household roster, allows district-level computation. Requires registration + research justification + approval (2-4 weeks). Sample sizes ~700-1000 per district give ±3-5pp confidence intervals — modest improvement over Tier C's uniform projection.
 
 **When to pursue:** if a specific narrative card requires defensible district-religion drift estimates (e.g., "Has Malappuram's Muslim share grown faster than Kasaragod's?").
 
