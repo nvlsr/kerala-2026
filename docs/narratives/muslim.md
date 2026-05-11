@@ -55,14 +55,21 @@ CR sub-types where this mode applies:
 
 ### 1c. Punch-above-weight mechanism in action — AC 53 KONGAD (Palakkad)
 
-A worked example showing **how a 29 % minority Muslim community can be the decisive vote** in a 71 % Hindu-Christian AC:
+A worked example showing **how a 29 % minority Muslim community can be the decisive vote** in a 71 % Hindu-Christian AC.
+
+**Data sources for the table below**:
+- **2026 vote shares (UDF / LDF / NDA)** — *measured*. From `data/results-2026.json` (ECI-published).
+- **Community shares (Muslim, Christian, Hindu)** — *measured*. From `data/ac-religion-2025.json` (Census 2025 projection).
+- **Within-community vote splits (Muslim 70 / 20 / 10, Christian 60 / 30 / 10)** — **assumed**, not measured. Illustrative averages based on §1d-bis statewide back-calculation; real splits vary by AC.
+- **Hindu vote split** — *derived*. Back-calculated from total vote shares minus assumed Muslim+Christian contributions.
+- **Counterfactual** — *mathematical inference* given the assumptions above.
 
 **AC 53 Kongad context**:
-- **Demographics**: Muslim 29 %, Christian 5 %, Hindu ~66 % (Palakkad cosmopolitan, no Hindu sub-caste lock).
-- **History**: LDF won in 2016 and 2021 (Hindu Ezhava-Tiyya CPI(M) base). **2026: UDF flipped the seat by +2.5 pp.**
-- **2026 vote split**: UDF 42.2 % / LDF 39.7 % / NDA 16.8 %.
+- Muslim 29 %, Christian 5 %, Hindu ~66 % (Palakkad cosmopolitan, no Hindu sub-caste lock).
+- History: LDF won in 2016 and 2021. **2026: UDF flipped the seat by +2.5 pp.**
+- 2026 vote: UDF 42.2 % / LDF 39.7 % / NDA 16.8 %.
 
-**Decomposed within-community contribution to UDF** (illustrative assumptions: Muslim 70/20/10, Christian 60/30/10):
+**Decomposition** (within-community → AC share):
 
 | Community | AC share | → UDF | → LDF | → NDA |
 | --- | ---: | ---: | ---: | ---: |
@@ -73,14 +80,59 @@ A worked example showing **how a 29 % minority Muslim community can be the decis
 
 The Hindu vote splits **29 % UDF / 49 % LDF / 20 % NDA** — Hindu Kongad is fundamentally an LDF seat (almost half going LDF). UDF wins this AC because **Muslim community (29 %) delivers 20 of the 42 UDF pp** — almost half of UDF's total share.
 
-**Counterfactual** — if the 29 % Muslim community had voted 50/50 UDF/LDF instead of 70/20/10:
-- UDF: 14.5 (Muslim) + 3.0 (Christian) + 18.9 (Hindu) = **36.4 %**
+**Counterfactual** — if the 29 % Muslim community had voted 50 / 50 UDF / LDF instead of 70 / 20 / 10:
+- UDF: 14.5 + 3.0 + 18.9 = **36.4 %**
 - LDF: 14.5 + 1.5 + 32.4 = **48.4 %**
 - LDF would win by **+12 pp** instead of losing by 2.5 pp.
 
 **The Muslim community at 29 % of the AC delivered a 14 pp swing** (LDF +12 → UDF +2.5) — equivalent to roughly half the AC's effective political weight. **That's "punching above weight": 29 % of voters producing ~50 % of the effective political force.**
 
-Same mechanism, less cleanly: AC 8 Taliparamba (Muslim 37 %, UDF +6.5 pp flipped), AC 73 Kodungallur (Muslim 22 % + Christian 22 % combined, UDF +5.6 pp flipped). The structural pattern: **bloc-organised Muslim community at 20-40 % AC share routinely punches at 40-60 % of effective political weight**, because they vote ~70-85 % UDF (bloc-style via IUML) while the Hindu majority splits roughly 3 ways.
+### 1d. Why the punch works — the Hindu vote splits ~3 ways (data-supported)
+
+The Muslim community delivers 70-85 % UDF via IUML's institutional bloc-voting. But that alone wouldn't generate disproportionate leverage — it would just match their demographic share. The leverage comes from the **other half of the equation**: the Hindu vote splits ~3 ways while the Muslim vote concentrates.
+
+**Statewide 2026 back-calculation** (same illustrative-assumption method as §1c, applied to all 140 ACs):
+
+| Statewide | UDF | LDF | NDA |
+| --- | ---: | ---: | ---: |
+| All voters | 46.5 % | 37.6 % | 14.2 % |
+| **Hindu vote alone** | **27 %** | **51 %** | **19 %** |
+
+No alliance gets a majority of the Hindu vote anywhere; LDF leads at ~51 % statewide but with significant UDF + NDA presence. **The Hindu vote breaking 3-ways means each individual Hindu sub-bloc is too small to dominate a Kerala AC alone.**
+
+**Hindu vote split by district sub-caste profile** (back-calculated, n = 128 of 140 ACs with Hindu ≥ 30 %):
+
+| District Hindu profile | n ACs | Hindu → UDF | Hindu → LDF | Hindu → NDA |
+| --- | ---: | ---: | ---: | ---: |
+| ezhava-very-heavy (Kannur/Kozhikode/Alappuzha) | 33 | 28 % | **55 %** | 15 % |
+| mixed-ezhava-leaning (Malappuram/Ernakulam) | 39 | 28 % | 49 % | 19 % |
+| ezhava-heavy (Idukki/Thrissur/Kottayam) | 18 | 27 % | 50 % | 20 % |
+| mixed-nair-ezhava (Kollam) | 11 | 31 % | 49 % | 17 % |
+| sc-st-heavy (Wayanad) | 3 | 27 % | 50 % | 19 % |
+| nair-heavy (Trivandrum/Pathanamthitta) | 19 | 23 % | 44 % | **30 %** |
+| mixed-fragmented (Kasaragod) | 5 | 22 % | 40 % | **36 %** |
+
+**Three structural takeaways**:
+
+1. **No district profile has any alliance above 55 % of the Hindu vote.** Hindu Kerala is genuinely 3-way everywhere.
+2. **The split skews by sub-caste demographics** — Ezhava-Tiyya-dominant districts lean LDF (Hindu LDF share 50-55 %); Nair-heavy + Kasaragod fragmented districts have NDA at 30-36 % of the Hindu vote.
+3. **NDA's Hindu vote share is bounded between ~15 % (ezhava-very-heavy) and ~36 % (mixed-fragmented Kasaragod)** — a 21 pp range across the state, but no district giving them a Hindu majority.
+
+### 1e. Why the Hindu vote splits 3 ways — structural reasons
+
+Three reinforcing factors explain why no single alliance has consolidated the Hindu vote in Kerala:
+
+1. **No equivalent of IUML for Hindu voters.** Muslim community has a unifying political vehicle (IUML, ~80 % strike rate in 2026) backed by an institutional religious body (Samastha Sunni). Hindu Kerala has the SNDP (Ezhava social organisation), NSS (Nair Service Society), and various caste associations, but **none of these is a partisan political party**. SNDP is broadly LDF-aligned but doesn't whip Hindu voters as a bloc; NSS is officially non-partisan and historically tilts conservative without endorsing.
+2. **Sub-caste-based historical political alignments differ.** Each major Hindu sub-caste has a distinct historical political home:
+    - **Ezhava-Tiyya** (~26 % of Kerala pop) → CPI(M)/LDF via 70+ years of organising in Travancore-Cochin and Malabar, plus SNDP-CPI(M) social-political overlap.
+    - **Nair** (~14 %) → mixed; historically conservative-Congress, increasingly BJP-curious in urban Trivandrum + Pathanamthitta.
+    - **SC/ST + smaller castes** → varied; LDF historically strong, NDA making local inroads.
+   No single Hindu identity-political project has unified these into a bloc the way the IUML+Samastha axis unifies Muslim political identity.
+3. **Class + ideology divergence.** Hindus span the full Kerala political spectrum from CPI(M) cadres to Congress moderates to RSS/BJP supporters. Muslim community in Kerala is more class-homogeneous (smaller share at the very top and very bottom of the economic distribution) and politically anchored by religious identity in a way Hindu Kerala isn't.
+
+**The 2026 BJP Hindu-consolidation play attempts to break this** — Sangh outreach into Ezhava (via Hindu cultural framing) and Nair (via professional-class politics) is the strategic project. So far the math (§1d table) shows the Hindu 3-way split persisting: NDA at 14-36 % of Hindus by district, never crossing majority.
+
+**Implication for Muslim political influence**: as long as the Hindu vote stays 3-way split, Muslim community's 70-85 % UDF bloc-voting can be the decisive force in ACs where they're 25-40 % of voters. **The day BJP successfully consolidates 50 %+ of Hindu vote, Muslim leverage in the swing-bloc mode (§1b mode b) contracts sharply.** That day isn't 2031 at current trajectories — but it's the right long-run threat to track. (See §4c for which 3 ACs are closest to that boundary.)
 
 ---
 
@@ -190,33 +242,7 @@ UDF's approach to Muslim Kerala is built around three structural choices: **IUML
 
 **The single most important strategic claim**: **UDF's strategy menu in Muslim Malappuram is structurally narrower than in the Christian belt** — IUML or INC-Muslim only. The "empty INC-Hindu bucket" is the structural fingerprint of how UDF treats Muslim political identity as non-substitutable. In 16 non-reserved Malappuram ACs across all of our data, **UDF never put a Hindu candidate in front of Muslim voters.** The one INC-Christian exception (Thavanur, Adv. V.S. Joy) swung only +4.1 pp vs the cohort's +8.8 pp — the rule punishes deviations.
 
-### 3b. The 15 Malappuram non-reserved ACs (worked detail)
-
-For completeness, the 15-AC analysis in `analyze-muslim-belt.ts`:
-
-| Strategy | n | Won | Mean Δ UDF |
-|---|---:|---:|---:|
-| **Muslim Alliance (IUML)** | 12 | 12 | **+8.8 pp** |
-| **INC-Muslim** | 2 | 2 | **+12.9 pp** |
-| **INC-Hindu** | **0** | — | — |
-| Special (INC-Christian: Thavanur) | 1 | 1 | +4.1 pp |
-| **Total** | **15** | **15** | |
-
-UDF won 15 of 15. INC-direct beat IUML alliance by ~4 pp (parallel to Christian-belt finding). The Thavanur exception underperformed the cohort — INC-Christian at a 67 %-Muslim seat doesn't get the same swing as INC-Muslim.
-
-### 3c. Sampling caveat on the "no Muslim dynasties" claim
-
-The hereditary audit is top-3-per-cycle 2011-2026 only. Muslim political families with cousins / second-generation politicians who don't break top-3 wouldn't appear. Kunhalikutty / Hameed / Madani / Basheer family lines worth manual sanity-check before publication. The "institutional vs dynastic" contrast is robust at the documented-hereditary level; deserves the caveat at the broader-family-political-influence level.
-
-### 3d. Why Muslim Kerala is institutional (not dynastic) — interpretation
-
-The Sunni-establishment-Samastha relationship with IUML enforces candidate selection at the party level rather than family level. IUML's institutional discipline produces:
-
-- Multi-cycle candidate rotation (no figure becomes a permanent seat-owner the way Mani / Chandy / Jacob did in Kottayam / Ernakulam)
-- Cross-AC candidate placement (P.K. Kunhalikutty has run from Vengara + Malappuram across cycles; not anchored to one constituency)
-- Lower vulnerability to personality-based defections (the IUML structure absorbs candidate exit better than personal-coalition KC factions)
-
-By contrast, Christian-belt UDF's KC + INC personal-coalition model concentrates political capital in family lines — strong when the founding figure is in their prime, vulnerable to succession discontinuities (the Pala 2021 KC(M) faction shift to LDF being the marquee case).
+⚠️ **Caveat on "no Muslim dynasties"**: the hereditary audit is top-3-per-cycle 2011-2026. Muslim political families with cousins / second-generation politicians who don't break top-3 wouldn't appear. Kunhalikutty / Hameed / Madani / Basheer family lines worth manual sanity-check before publication.
 
 ---
 
