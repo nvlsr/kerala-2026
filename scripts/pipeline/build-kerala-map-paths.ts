@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url"
 
 import { geoMercator, geoPath, type GeoPermissibleObjects } from "d3-geo"
 
-const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..")
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..")
 
 type FeatureCollection<Props> = {
   type: "FeatureCollection"

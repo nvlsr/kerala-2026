@@ -29,7 +29,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 
 # State-level uniform drift multipliers (2011 → 2025)
 MULT = {

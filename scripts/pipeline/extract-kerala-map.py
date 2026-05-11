@@ -33,7 +33,7 @@ import shapefile
 from shapely.geometry import shape, mapping
 from shapely import simplify
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 DIST_SHP = ROOT / "data/maps-master/Districts/Census_2011/2011_Dist.shp"
 AC_SHP = ROOT / "data/maps-master/assembly-constituencies/India_AC.shp"
 DIST_OUT = ROOT / "data/kerala-districts.geojson"

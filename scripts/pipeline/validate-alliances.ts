@@ -18,7 +18,7 @@
 import { readFileSync } from "node:fs"
 import { join } from "node:path"
 
-const ROOT = join(import.meta.dir, "..")
+const ROOT = join(import.meta.dir, "..", "..")
 
 type AllianceCode = "UDF" | "LDF" | "NDA" | "OTHER" | "NOTA"
 const VALID: ReadonlySet<string> = new Set([

@@ -105,12 +105,12 @@ How `data/ac-demographics.json` is produced, what's known to be incomplete, and 
 
 **Inputs:**
 - `data/raw/census-c01/DDW32C-01-MDDS.XLS` — Kerala C-01 from censusindia.gov.in (committed; ~268KB)
-- `data/shrug/shrug-con-keys-csv/shrid_frag_con08_key.csv` — shrid → AC, with fragment weights
-- `data/shrug/shrug-pc-keys-csv/pc11r_shrid_key.csv` — rural shrids → village/sub-district codes
-- `data/shrug/shrug-pc-keys-csv/pc11u_shrid_key.csv` — urban shrids → town codes
-- `data/shrug/shrug-pca11-csv/pc11_pca_clean_shrid.csv` — population per shrid
+- `data/shrug/shrug-con-keys-csv/shrid_frag_con08_key.csv` (73 MB) — shrid → AC, with fragment weights
+- `data/shrug/shrug-pc-keys-csv/pc11r_shrid_key.csv` (33 MB) — rural shrids → village/sub-district codes
+- `data/shrug/shrug-pc-keys-csv/pc11u_shrid_key.csv` (0.4 MB) — urban shrids → town codes
+- `data/shrug/shrug-pca11-csv/pc11_pca_clean_shrid.csv` (259 MB) — population per shrid
 
-SHRUG data is gitignored (DDL CC-BY-NC-SA license restricts redistribution); re-download from [devdatalab.org/shrug_download](https://www.devdatalab.org/shrug_download/).
+SHRUG data is gitignored (DDL CC-BY-NC-SA license restricts redistribution); re-download just these four files from [devdatalab.org/shrug_download](https://www.devdatalab.org/shrug_download/) — selecting Population (PCA) and Location Keys modules. The full SHRUG download is ~1 GB across many modules; this pipeline only needs ~365 MB. District-name → Census-district-code mapping (previously read from `shrug-shrid-keys-csv/shrid_loc_names.csv`) is now hardcoded in the script as a 14-row table since Kerala's districts are post-1956 stable.
 
 ## Coverage
 

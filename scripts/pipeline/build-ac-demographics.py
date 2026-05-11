@@ -25,7 +25,7 @@ from pathlib import Path
 
 import pandas as pd
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 SHRUG = ROOT / "data" / "shrug"
 KERALA_STATE_CODE = "32"  # Census 2011 state code for Kerala
 RELIGIONS = ["hindu", "muslim", "christian", "sikh", "buddhist", "jain", "other"]
@@ -63,7 +63,7 @@ def parse_c01() -> tuple[dict, dict, dict, dict, dict]:
     (which averages rural + urban populations of the whole district).
     """
     df = pd.read_excel(
-        ROOT / "data" / "census-c01" / "DDW32C-01-MDDS.XLS",
+        ROOT / "data" / "raw" / "census-c01" / "DDW32C-01-MDDS.XLS",
         sheet_name="C01",
         header=None,
     )
@@ -306,20 +306,30 @@ def main() -> None:
         int(k): v for k, v in districts_data["constituencyToDistrict"].items()
     }
 
-    # Map district name (lowercase) → census district code via SHRUG location names
-    loc_names = pd.read_csv(
-        SHRUG / "shrug-shrid-keys-csv" / "shrid_loc_names.csv",
-        dtype=str,
-        usecols=["shrid2", "state_name", "district_name"],
-    )
-    loc_names = loc_names[loc_names["shrid2"].str.startswith("11-32-")]
-    # Map district code (3rd segment of shrid) → district_name
-    loc_names["dist_code"] = loc_names["shrid2"].str.split("-").str[2]
-    name_to_code = (
-        loc_names.drop_duplicates("dist_code")
-        .set_index("district_name")["dist_code"]
-        .to_dict()
-    )
+    # Our internal district id → Kerala Census 2011 district code (the
+    # `Distt. Code` column in C-01). Codes verified by inspecting
+    # `data/raw/census-c01/DDW32C-01-MDDS.XLS` directly — 14 stable
+    # post-1956 districts; no boundary changes since the 2008
+    # delimitation. Previously this map was derived at runtime from
+    # SHRUG's `shrug-shrid-keys-csv/shrid_loc_names.csv` (~224 MB) just
+    # to look up these 14 entries; hardcoding eliminates the
+    # dependency.
+    DISTRICT_ID_TO_CENSUS_CODE: dict[str, str] = {
+        "kasaragod": "588",
+        "kannur": "589",
+        "wayanad": "590",
+        "kozhikode": "591",
+        "malappuram": "592",
+        "palakkad": "593",
+        "thrissur": "594",
+        "ernakulam": "595",
+        "idukki": "596",
+        "kottayam": "597",
+        "alappuzha": "598",
+        "pathanamthitta": "599",
+        "kollam": "600",
+        "thiruvananthapuram": "601",
+    }
 
     fallback_count = 0
     for ac_num in range(1, 141):
@@ -328,17 +338,8 @@ def main() -> None:
         district_id = const_to_dist.get(ac_num)
         if not district_id:
             continue
-        # Map our internal district id (e.g. "thiruvananthapuram") → census name
-        # The names should match closely; lowercase compare
-        cand_names = [district_id.lower(), district_id.replace("-", " ").lower()]
-        # SHRUG district_name is also lowercase
-        census_dist_code = None
-        for cn in cand_names:
-            census_dist_code = name_to_code.get(cn)
-            if census_dist_code:
-                break
+        census_dist_code = DISTRICT_ID_TO_CENSUS_CODE.get(district_id)
         if not census_dist_code:
-            # Try direct match in district_rel by hand-mapping a couple cases
             print(f"  (no census code for district '{district_id}')", file=sys.stderr)
             continue
 

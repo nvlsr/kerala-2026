@@ -24,9 +24,9 @@ import os
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).resolve().parent.parent.parent
 ALLIANCES_PATH = ROOT / "data" / "alliances.json"
-SCRAPED_DIR = ROOT / "data" / "scraped-2021"
+SCRAPED_DIR = ROOT / "data" / "raw" / "scraped-2021"
 
 
 def build_variant_to_canonical(alliances_doc):
