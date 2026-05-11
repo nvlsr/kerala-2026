@@ -17,44 +17,17 @@
  * Run: bun run scripts/analysis/narrative-a6-cabinet-collapse.ts
  */
 import * as fs from "fs"
-import * as path from "path"
+import {
+  load2026,
+  loadHistorical,
+  type Candidate2026 as Cand,
+  type Constituency2026 as C2026,
+  type HistoricalConstituency as Hist,
+} from "../_lib/load"
 
-type Cand = {
-  name: string
-  party: string
-  alliance: string
-  votes: number
-  isNota?: boolean
-  status?: string
-}
-type C2026 = {
-  constituencyNumber: number
-  constituencyName: string
-  candidates: Cand[]
-}
-type Hist = {
-  constituencyNumber: number
-  constituencyName: string
-  elections: { year: number; type?: string; candidates: Cand[] }[]
-}
-type Minister = {
-  name: string
-  party: string
-  portfolio: string
-  constituency: string
-  constituencyNumber: number
-}
-
-const data2026: C2026[] = JSON.parse(
-  fs.readFileSync("data/results-2026.json", "utf8")
-)
-const hist: Hist[] = fs
-  .readdirSync("data/historical")
-  .filter((f) => f.startsWith("S11-"))
-  .map((f) =>
-    JSON.parse(fs.readFileSync(path.join("data/historical", f), "utf8"))
-  )
-const histByNum = new Map(hist.map((h) => [h.constituencyNumber, h]))
+const data2026: C2026[] = load2026()
+const histByNum: Map<number, Hist> = loadHistorical()
+const hist: Hist[] = [...histByNum.values()]
 const ministers: Minister[] = JSON.parse(
   fs.readFileSync("data/ldf-ministers-2021.json", "utf8")
 ).ministers

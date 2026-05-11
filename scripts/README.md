@@ -23,6 +23,11 @@ Evidence generators cited in [`docs/narratives/`](../docs/narratives/). Each scr
 | Christian deep-dives | `analyze-christian-belt.ts`, `analyze-christian-cohort-detail.ts`, `analyze-christian-mitigations.ts` |
 | Muslim + sub-rite cohorts | `analyze-muslim-belt.ts`, `analyze-subrite-cohorts.ts` |
 
-## Caveat
+## Helpers
 
-Several `analysis/` scripts and `validate-alliances.ts` still read `data/results-2026.json` directly and reference fields that were denormalized in commit ac1d440 (per-candidate `alliance`, `isNota`, `status`, `margin`; top-level `constituency`, `state`, `source`, `checksum`). They won't run as-is — fix by importing from the runtime (`src/lib/data/...`) which rehydrates the full shape, or rehydrate inline using the formula in `src/lib/data/constituencies.ts:hydrateConstituency`. Pipeline scripts that *write* `data/results-2026.json` already emit the new trimmed shape.
+All scripts that consume `data/results-2026.json` / `data/ac-history.json` / `data/alliances.json` import from `_lib/`:
+
+- [`_lib/load.ts`](_lib/load.ts) (bun) and [`_lib/load.py`](_lib/load.py) (python) — `load2026()` / `loadHistorical()` / `loadAlliances()` return the legacy array/Map shape with per-candidate `alliance` / `status` / `margin` / `isNota` rehydrated from the trimmed JSON.
+- [`_lib/save.ts`](_lib/save.ts) — `saveJson(path, obj)` writes **compact** JSON (all committed `data/*.json` is stored without pretty-printing — 30-40% smaller per file; see commit 88d0501).
+
+If you add a new analysis script, prefer these over reading the raw JSON directly. They mirror `src/lib/data/constituencies.ts:hydrateConstituency`; if the source schema changes, update the helper in one place.

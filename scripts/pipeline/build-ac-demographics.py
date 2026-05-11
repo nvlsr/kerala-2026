@@ -387,7 +387,7 @@ def main() -> None:
     }
 
     out_path = ROOT / "data" / "ac-religion.json"
-    out_path.write_text(json.dumps(output, indent=2) + "\n")
+    out_path.write_text(json.dumps(output, separators=(",", ":")))
     print(f"\nWrote {out_path}", file=sys.stderr)
     print(f"Total ACs: {len(output_acs)}/140", file=sys.stderr)
     aggregated = sum(1 for v in output_acs.values() if v["source"] == "shrug-c01-aggregated")

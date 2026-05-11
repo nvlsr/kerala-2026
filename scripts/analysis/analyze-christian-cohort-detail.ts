@@ -15,7 +15,6 @@
  *
  * Usage: bun run scripts/analysis/analyze-christian-cohort-detail.ts
  */
-import { readdirSync } from "node:fs"
 
 import {
   CHRISTIAN_SUBRITE_COHORTS,
@@ -29,38 +28,18 @@ import {
   winnerOf,
   type AllianceShares,
 } from "@/lib/data/alliance-shares-core"
+import {
+  load2026,
+  loadHistorical,
+  type Candidate2026,
+  type Constituency2026,
+  type HistoricalCandidate,
+  type HistoricalElection,
+  type HistoricalConstituency,
+} from "../_lib/load"
 
 // ── Types ─────────────────────────────────────────────────────────────
 // AllianceShares + share-math: see @/lib/data/alliance-shares-core.
-type Candidate2026 = {
-  alliance?: string
-  isNota?: boolean
-  votes: number
-  party: string
-  candidate?: string
-}
-type Constituency2026 = {
-  constituencyNumber: number
-  constituencyName: string
-  district?: string
-  candidates: Candidate2026[]
-}
-type HistoricalCandidate = {
-  name: string
-  party: string
-  alliance: string
-  votes: number
-}
-type HistoricalElection = {
-  year: number
-  type: string
-  candidates: HistoricalCandidate[]
-}
-type HistoricalConstituency = {
-  constituencyNumber: number
-  constituencyName: string
-  elections: HistoricalElection[]
-}
 
 const TARGET_YEARS = [2011, 2016, 2021] as const
 
@@ -116,21 +95,8 @@ const signed = (x: number, dp = 1) =>
   `${x >= 0 ? "+" : ""}${x.toFixed(dp)}`
 
 // ── Load data ─────────────────────────────────────────────────────────
-const constituencies2026 = (await Bun.file(
-  "data/results-2026.json"
-).json()) as Constituency2026[]
-
-const historicalByAc = new Map<number, HistoricalConstituency>()
-const histFiles = readdirSync("data/historical").filter(
-  (f) => f.startsWith("S11-") && f.endsWith(".json")
-)
-for (const f of histFiles) {
-  const data = (await Bun.file(`data/historical/${f}`).json()) as
-    | HistoricalConstituency
-    | { default: HistoricalConstituency }
-  const c = "default" in data ? data.default : data
-  historicalByAc.set(c.constituencyNumber, c)
-}
+const constituencies2026 = load2026()
+const historicalByAc = loadHistorical()
 
 const c2026ByAc = new Map<number, Constituency2026>(
   constituencies2026.map((c) => [c.constituencyNumber, c])

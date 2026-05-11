@@ -15,12 +15,8 @@
  *   4. Prints Independent winners with their tagged alliance for a spot-check.
  */
 
-import { readFileSync } from "node:fs"
-import { join } from "node:path"
+import { load2026, loadAlliances, type AllianceCode } from "../_lib/load"
 
-const ROOT = join(import.meta.dir, "..", "..")
-
-type AllianceCode = "UDF" | "LDF" | "NDA" | "OTHER" | "NOTA"
 const VALID: ReadonlySet<string> = new Set([
   "UDF",
   "LDF",
@@ -29,25 +25,8 @@ const VALID: ReadonlySet<string> = new Set([
   "NOTA",
 ])
 
-const all = JSON.parse(
-  readFileSync(join(ROOT, "data", "results-2026.json"), "utf8")
-) as Array<{
-  constituencyNumber: number
-  constituencyName: string
-  candidates: Array<{
-    name: string
-    party: string
-    alliance: string
-    votes: number
-    status: string
-  }>
-}>
-
-const meta = JSON.parse(
-  readFileSync(join(ROOT, "data", "alliances.json"), "utf8")
-) as {
-  partyToAlliance: Record<string, string>
-}
+const all = load2026()
+const meta = loadAlliances()
 
 const issues: string[] = []
 

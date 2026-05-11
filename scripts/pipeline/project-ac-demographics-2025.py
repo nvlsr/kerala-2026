@@ -93,7 +93,7 @@ def main() -> None:
     }
 
     out_path = ROOT / "data" / "ac-religion-2025.json"
-    out_path.write_text(json.dumps(output, indent=2) + "\n")
+    out_path.write_text(json.dumps(output, separators=(",", ":")))
     print(f"Wrote {out_path}")
     print(f"  ACs projected: {len(out_constituencies)}")
 

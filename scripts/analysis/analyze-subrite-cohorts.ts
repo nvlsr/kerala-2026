@@ -15,7 +15,6 @@
  * that module transitively imports historical.ts which uses Vite's
  * import.meta.glob (browser-only). Keep the logic here in sync.
  */
-import { readdirSync } from "node:fs"
 
 import {
   CHRISTIAN_SUBRITE_COHORTS,
@@ -36,34 +35,18 @@ import {
   winnerOf,
   type AllianceShares,
 } from "@/lib/data/alliance-shares-core"
+import {
+  load2026,
+  loadHistorical,
+  type Candidate2026,
+  type Constituency2026,
+  type HistoricalCandidate,
+  type HistoricalElection,
+  type HistoricalConstituency,
+} from "../_lib/load"
 
 // ── Share computation wrappers ────────────────────────────────────────
 // Share-math is shared with the runtime app via alliance-shares-core.
-type Candidate2026 = {
-  alliance?: string
-  isNota?: boolean
-  votes: number
-  party: string
-}
-type Constituency2026 = {
-  constituencyNumber: number
-  constituencyName: string
-  district?: string
-  candidates: Candidate2026[]
-}
-type HistoricalCandidate = {
-  alliance: string
-  votes: number
-}
-type HistoricalElection = {
-  year: number
-  type: string
-  candidates: HistoricalCandidate[]
-}
-type HistoricalConstituency = {
-  constituencyNumber: number
-  elections: HistoricalElection[]
-}
 
 const shares2026 = (c: Constituency2026): AllianceShares =>
   shares2026FromCandidates(c.candidates)
@@ -80,21 +63,8 @@ const winner2026Of = (s: AllianceShares): keyof AllianceShares | null =>
   winnerOf(s)
 
 // ── Load data ─────────────────────────────────────────────────────────
-const constituencies2026 = (await Bun.file(
-  "data/results-2026.json"
-).json()) as Constituency2026[]
-
-const historicalByAc = new Map<number, HistoricalConstituency>()
-const histFiles = readdirSync("data/historical").filter(
-  (f) => f.startsWith("S11-") && f.endsWith(".json")
-)
-for (const f of histFiles) {
-  const data = (await Bun.file(`data/historical/${f}`).json()) as
-    | HistoricalConstituency
-    | { default: HistoricalConstituency }
-  const c = "default" in data ? data.default : data
-  historicalByAc.set(c.constituencyNumber, c)
-}
+const constituencies2026 = load2026()
+const historicalByAc = loadHistorical()
 
 console.log(
   `[analysis] loaded ${constituencies2026.length} 2026 ACs + ${historicalByAc.size} historical entries`

@@ -16,7 +16,6 @@
  *
  * Usage: bun run scripts/analysis/analyze-christian-mitigations.ts
  */
-import { readdirSync } from "node:fs"
 
 import {
   christianSubRiteCohortFor,
@@ -30,29 +29,17 @@ import {
   sharesHistoricalFromCandidates,
   type AllianceShares,
 } from "@/lib/data/alliance-shares-core"
+import {
+  load2026,
+  loadHistorical,
+  type Candidate2026,
+  type Constituency2026,
+  type HistoricalCandidate,
+  type HistoricalElection,
+  type HistoricalConstituency,
+} from "../_lib/load"
 
 // AllianceShares + share-math: see @/lib/data/alliance-shares-core.
-type Candidate2026 = {
-  alliance?: string
-  isNota?: boolean
-  votes: number
-  party: string
-}
-type Constituency2026 = {
-  constituencyNumber: number
-  constituencyName: string
-  candidates: Candidate2026[]
-}
-type HistoricalCandidate = { alliance: string; votes: number }
-type HistoricalElection = {
-  year: number
-  type: string
-  candidates: HistoricalCandidate[]
-}
-type HistoricalConstituency = {
-  constituencyNumber: number
-  elections: HistoricalElection[]
-}
 
 // ZONE map now lives in src/lib/data/zones.ts (sanity-checked against
 // districts.json on import).
@@ -67,20 +54,8 @@ const shares2021 = (h: HistoricalConstituency): AllianceShares | null => {
 }
 
 // Load
-const cs = (await Bun.file(
-  "data/results-2026.json"
-).json()) as Constituency2026[]
-
-const historicalByAc = new Map<number, HistoricalConstituency>()
-for (const f of readdirSync("data/historical").filter(
-  (x) => x.startsWith("S11-") && x.endsWith(".json")
-)) {
-  const d = (await Bun.file(`data/historical/${f}`).json()) as
-    | HistoricalConstituency
-    | { default: HistoricalConstituency }
-  const c = "default" in d ? d.default : d
-  historicalByAc.set(c.constituencyNumber, c)
-}
+const cs = load2026()
+const historicalByAc = loadHistorical()
 
 const geo = (await Bun.file("data/ac.geojson").json()) as {
   features: Array<{

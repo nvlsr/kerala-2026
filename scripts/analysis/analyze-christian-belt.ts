@@ -13,44 +13,17 @@
  */
 import * as fs from "fs"
 import * as path from "path"
+import {
+  load2026,
+  loadHistorical,
+  type Candidate2026 as Cand,
+  type Constituency2026 as C2026,
+  type HistoricalConstituency as Hist,
+} from "../_lib/load"
 
-type Cand = {
-  name: string
-  party: string
-  alliance?: string
-  votes: number
-  status?: string
-  isNota?: boolean
-}
-type C2026 = {
-  constituencyNumber: number
-  constituencyName: string
-  candidates: Cand[]
-}
-type HistElection = {
-  year: number
-  type?: string
-  candidates: Cand[]
-}
-type Hist = {
-  constituencyNumber: number
-  constituencyName: string
-  elections: HistElection[]
-}
-
-// --- Load data ---------------------------------------------------------
-
-const data2026: C2026[] = JSON.parse(
-  fs.readFileSync("data/results-2026.json", "utf8")
-)
-const histByNum = new Map<number, Hist>()
-for (const f of fs.readdirSync("data/historical")) {
-  if (!f.startsWith("S11-")) continue
-  const h: Hist = JSON.parse(
-    fs.readFileSync(path.join("data/historical", f), "utf8")
-  )
-  histByNum.set(h.constituencyNumber, h)
-}
+const data2026: C2026[] = load2026()
+const histByNum: Map<number, Hist> = loadHistorical()
+const hist: Hist[] = [...histByNum.values()]
 
 const acDemo = JSON.parse(
   fs.readFileSync("data/ac-religion-2025.json", "utf8")

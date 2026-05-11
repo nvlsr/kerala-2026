@@ -1,22 +1,25 @@
 /**
  * Aggregate the classified per-POI inventory into per-AC summary.
  *
- *   in:  data/places-of-worship.json (per-POI, ~22k rows)
- *   out: data/ac-religious-pois.json (140 ACs)
+ *   in:  data/places-of-worship.json (per-POI, ~22k rows; gitignored)
+ *   out: data/ac-religious-pois.json (140 ACs, keyed by AC#)
  *
- * Output schema (per AC):
- *   {
- *     ac_id, ac_name, district,
- *     total_pois,
- *     by_religion:               { christian, muslim, hindu, other, unknown },
- *     by_christian_denomination: { syro_malabar, latin_catholic, …, "(none)" },
- *     by_muslim_denomination:    { sunni, salafi_mujahid, …, "(none)" },
- *     dominant_christian_denomination: <bucket or null>,
- *     dominant_muslim_denomination:    <bucket or null>
+ * Output schema (per AC, keyed by string AC number):
+ *   "1": {
+ *     totalPois,
+ *     byReligion:        { christian, muslim, hindu, other, unknown },
+ *     christianByDenom:  { syro_malabar, latin_catholic, …, "(none)" },
+ *     muslimByDenom:     { sunni, salafi_mujahid, …, "(none)" },
+ *     dominantChristian: <bucket or null>,
+ *     dominantMuslim:    <bucket or null>
  *   }
+ *
+ * `ac_name` + `district` are NOT stored — they're rehydrated at load
+ * time from `data/ac-names.json` + `data/districts.json`.
  *
  * Usage: bun run scripts/pipeline/aggregate-ac-religion-pois.ts
  */
+import { saveJson } from "../_lib/save"
 
 type ClassifiedPOI = {
   religion: "christian" | "muslim" | "hindu" | "other" | "unknown"
@@ -28,15 +31,12 @@ type ClassifiedPOI = {
 }
 
 type ACSummary = {
-  ac_id: number
-  ac_name: string
-  district: string
-  total_pois: number
-  by_religion: Record<string, number>
-  by_christian_denomination: Record<string, number>
-  by_muslim_denomination: Record<string, number>
-  dominant_christian_denomination: string | null
-  dominant_muslim_denomination: string | null
+  totalPois: number
+  byReligion: Record<string, number>
+  christianByDenom: Record<string, number>
+  muslimByDenom: Record<string, number>
+  dominantChristian: string | null
+  dominantMuslim: string | null
 }
 
 const INPUT = "data/places-of-worship.json"
@@ -48,12 +48,10 @@ console.log(`[aggregate] ${data.length} POIs in`)
 
 // Group by AC
 const groups = new Map<number, ClassifiedPOI[]>()
-const acMeta = new Map<number, { name: string; district: string }>()
 for (const p of data) {
-  if (p.ac_id == null || !p.ac_name || !p.district) continue
+  if (p.ac_id == null) continue
   if (!groups.has(p.ac_id)) groups.set(p.ac_id, [])
   groups.get(p.ac_id)!.push(p)
-  acMeta.set(p.ac_id, { name: p.ac_name, district: p.district })
 }
 
 const ACS = [...groups.keys()].sort((a, b) => a - b)
@@ -81,10 +79,9 @@ function dominantDenom(
   return { hist, top }
 }
 
-const summaries: ACSummary[] = []
+const summaries: Record<string, ACSummary> = {}
 for (const acId of ACS) {
   const pois = groups.get(acId)!
-  const meta = acMeta.get(acId)!
 
   const byReligion: Record<string, number> = {
     christian: 0,
@@ -98,35 +95,34 @@ for (const acId of ACS) {
   const christian = dominantDenom(pois, "christian")
   const muslim = dominantDenom(pois, "muslim")
 
-  summaries.push({
-    ac_id: acId,
-    ac_name: meta.name,
-    district: meta.district,
-    total_pois: pois.length,
-    by_religion: byReligion,
-    by_christian_denomination: christian.hist,
-    by_muslim_denomination: muslim.hist,
-    dominant_christian_denomination: christian.top,
-    dominant_muslim_denomination: muslim.top,
-  })
+  summaries[String(acId)] = {
+    totalPois: pois.length,
+    byReligion,
+    christianByDenom: christian.hist,
+    muslimByDenom: muslim.hist,
+    dominantChristian: christian.top,
+    dominantMuslim: muslim.top,
+  }
 }
 
-await Bun.write(OUTPUT, JSON.stringify(summaries, null, 2))
-console.log(`[aggregate] wrote ${summaries.length} AC summaries to ${OUTPUT}`)
+saveJson(OUTPUT, summaries)
+console.log(
+  `[aggregate] wrote ${Object.keys(summaries).length} AC summaries to ${OUTPUT}`
+)
 
 // ── Summary stats ─────────────────────────────────────────────────────
 const dominantChristian = new Map<string, number>()
 const dominantMuslim = new Map<string, number>()
-for (const s of summaries) {
-  if (s.dominant_christian_denomination)
+for (const s of Object.values(summaries)) {
+  if (s.dominantChristian)
     dominantChristian.set(
-      s.dominant_christian_denomination,
-      (dominantChristian.get(s.dominant_christian_denomination) ?? 0) + 1
+      s.dominantChristian,
+      (dominantChristian.get(s.dominantChristian) ?? 0) + 1
     )
-  if (s.dominant_muslim_denomination)
+  if (s.dominantMuslim)
     dominantMuslim.set(
-      s.dominant_muslim_denomination,
-      (dominantMuslim.get(s.dominant_muslim_denomination) ?? 0) + 1
+      s.dominantMuslim,
+      (dominantMuslim.get(s.dominantMuslim) ?? 0) + 1
     )
 }
 

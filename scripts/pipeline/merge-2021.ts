@@ -1,5 +1,6 @@
 /**
- * Merge scraped 2021 data into historical files.
+ * Merge scraped 2021 data into the consolidated historical record at
+ * `data/ac-history.json`.
  *
  * Strategy: REPLACE the 2021 general election candidates list per seat
  * with the scrape (which is comprehensive and matches Wikipedia's totals).
@@ -10,6 +11,12 @@
  */
 import * as fs from "fs"
 import * as path from "path"
+
+import { saveJson } from "../_lib/save"
+import { join, dirname } from "node:path"
+import { fileURLToPath } from "node:url"
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..")
 
 type Alliance = "UDF" | "LDF" | "NDA" | "OTHER" | "NOTA"
 type Mapped = { canonicalName: string; alliance: Alliance }
@@ -177,22 +184,39 @@ type ScrapedSeat = {
   candidates: Array<{ name: string; party: string; votes: number; pct: number }>
 }
 
-const scrapeDir = "data/raw/scraped-2021"
-const histDir = "data/historical"
+const scrapeDir = path.join(ROOT, "data/raw/scraped-2021")
+const HISTORY_FILE = path.join(ROOT, "data/ac-history.json")
+
+type HistEntry = {
+  elections: Array<{
+    year: number
+    type: string
+    reason: string | null
+    candidates: unknown[]
+    margin: number | null
+    marginPct: number | null
+    turnout: number | null
+    turnoutPct: number | null
+    result: string | null
+  }>
+}
+const acHistory = JSON.parse(fs.readFileSync(HISTORY_FILE, "utf8")) as Record<
+  string,
+  HistEntry
+>
 
 let updatedFiles = 0
 const unchangedFiles = 0
 
 for (let n = 1; n <= 140; n++) {
   const scrapeFile = path.join(scrapeDir, `seat-${n}.json`)
-  const histFile = path.join(histDir, `S11-${n}.json`)
-  if (!fs.existsSync(scrapeFile) || !fs.existsSync(histFile)) continue
+  if (!fs.existsSync(scrapeFile)) continue
+  const hist = acHistory[String(n)]
+  if (!hist) continue
 
   const scrape = JSON.parse(fs.readFileSync(scrapeFile, "utf8")) as ScrapedSeat
-  const hist = JSON.parse(fs.readFileSync(histFile, "utf8"))
   const e2021Idx = (hist.elections || []).findIndex(
-    (e: { year: number; type: string }) =>
-      e.year === 2021 && e.type === "general"
+    (e) => e.year === 2021 && e.type === "general"
   )
   if (e2021Idx < 0) continue
   const old = hist.elections[e2021Idx]
@@ -254,12 +278,11 @@ for (let n = 1; n <= 140; n++) {
     turnoutPct: scrape.pollingPct ?? old.turnoutPct,
     result: old.result ?? null,
   }
-
-  fs.writeFileSync(histFile, JSON.stringify(hist, null, 2) + "\n")
   updatedFiles++
 }
 
-console.log(`Updated ${updatedFiles} historical files`)
+saveJson("data/ac-history.json", acHistory)
+console.log(`Updated ${updatedFiles} AC entries in data/ac-history.json`)
 console.log(`Unchanged: ${unchangedFiles}`)
 console.log("")
 if (unmappedCodes.size > 0) {

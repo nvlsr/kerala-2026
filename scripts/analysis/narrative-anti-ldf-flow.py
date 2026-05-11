@@ -17,15 +17,15 @@ Run: python3 scripts/analysis/narrative-anti-ldf-flow.py
 import json
 import os
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from _lib.load import load_2026, load_historical
+
 
 # ─── Load data ────────────────────────────────────────────────────────
-data2026 = json.load(open("data/results-2026.json"))
-hist = {}
-for f in os.listdir("data/historical"):
-    if not f.startswith("S11-"):
-        continue
-    h = json.load(open(f"data/historical/{f}"))
-    hist[h["constituencyNumber"]] = h
+data2026 = load_2026()
+hist = load_historical()
 
 ac_demo = json.load(open("data/ac-religion-2025.json"))
 districts_meta = json.load(open("data/districts.json"))
