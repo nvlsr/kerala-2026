@@ -161,7 +161,7 @@ If it's a per-constituency aggregate:
 
 ## Walkthrough pages
 
-The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance walkthrough pages (LDF, UDF, NDA) plus an index, a methodology page, and an interactive insights page (`/walkthroughs/insights`) for cohort-overlap exploration. Each arc page composes a small set of shared building blocks under `src/components/walkthroughs/`:
+The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance walkthrough pages (LDF, UDF, NDA), one by-religion walkthrough (Christian), plus an index, a methodology page, and an interactive insights page (`/walkthroughs/insights`) for cohort-overlap exploration. Each walkthrough page composes a small set of shared building blocks under `src/components/walkthroughs/`:
 
 **Page chrome:**
 
@@ -197,6 +197,8 @@ The `/walkthroughs` surface is a separate UX from the dashboard. Three alliance 
 - A `*_ACS` set derived from `_ROWS` — used to drive the binary-highlight choropleth map for that cohort.
 
 Per-cohort vote-share aggregates (BJP / NDA Δ) are pre-computed and live in the same data file alongside the row arrays.
+
+**By-religion walkthroughs.** Built on top of the OSM-derived sub-rite cohort layer (`subrite-bins.ts` + `religious-pois.ts`). Each by-religion page lives in `src/pages/walkthroughs-<religion>-page.tsx` with a sibling `walkthroughs-<religion>-data.ts` holding pre-computed cohort × cycle trajectories, zone breakdowns, and mitigation-evidence constants for the page's three confounder-test panels (district control, dose-response by religion-share, Hindu-NDA separation). Currently shipped: `walkthroughs-christian-page` at `/walkthroughs/christian-walkthrough` — uses `TrajectoryLines` for the multi-cycle UDF charts, `ReligionCategoricalMap` for the cohort-geography map, and a clickable shadcn-`Table` + `Sheet` for the cohort drilldown listing per-AC details. Confidence vocabulary is locked to `"strong" | "tentative"` matching the `ThesisLede` types.
 
 ### Typography system
 
