@@ -414,22 +414,46 @@ export function WalkthroughsChristianPage() {
           edge in these cohorts was a 2-cycle dip; 2026 closed it.
         </p>
         <p>
-          The shape is <em>continuity</em>, not realignment:
+          The shape is <em>continuity</em>, not realignment — each
+          cohort's 2026 column matches its 2011 column:
         </p>
-        <ul className="ml-4 list-disc space-y-1.5 marker:text-muted-foreground">
-          <li>
-            Syro-Malabar UDF: 49 → 41 → 40 → <strong>48</strong>. Wins:
-            21 → 14 → 13 → <strong>26</strong>.
-          </li>
-          <li>
-            Jacobite UDF: 50 → 42 → 43 → <strong>52</strong>. Wins: 3 →
-            2 → 1 → <strong>3</strong>.
-          </li>
-          <li>
-            Indian Orthodox UDF: 48 → 39 → 38 → <strong>45</strong>.
-            Wins: 5 → 3 → 2 → <strong>5</strong>.
-          </li>
-        </ul>
+        <div className="not-prose -mx-2 mt-2 overflow-hidden rounded-md border">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="h-8 px-3 text-[11px] uppercase tracking-wide text-muted-foreground">
+                  Cohort
+                </TableHead>
+                <TableHead className="h-8 px-2 text-right text-[11px] uppercase tracking-wide text-muted-foreground">
+                  2011
+                </TableHead>
+                <TableHead className="h-8 px-2 text-right text-[11px] uppercase tracking-wide text-muted-foreground">
+                  2016
+                </TableHead>
+                <TableHead className="h-8 px-2 text-right text-[11px] uppercase tracking-wide text-muted-foreground">
+                  2021
+                </TableHead>
+                <TableHead className="h-8 px-2 text-right text-[11px] uppercase tracking-wide text-muted-foreground">
+                  2026
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {STORY_A_COHORTS.map((cohort) => (
+                <TrajectoryTableRow
+                  key={cohort}
+                  cohort={cohort}
+                  label={COHORT_LABEL[cohort]}
+                  color={COHORT_COLOR[cohort]}
+                />
+              ))}
+            </TableBody>
+          </Table>
+          <p className="border-t bg-muted/30 px-3 py-1.5 text-[11px] text-muted-foreground">
+            Each cell shows mean UDF vote share, with AC wins
+            (UDF/total) underneath.
+          </p>
+        </div>
       </WalkthroughSection>
 
       {/* §9 — Story B: Flips */}
@@ -638,6 +662,49 @@ export function WalkthroughsChristianPage() {
       {/* What would weaken this view */}
       <WhatWouldWeakenSection bullets={WEAKENERS} />
     </WalkthroughPageShell>
+  )
+}
+
+function TrajectoryTableRow({
+  cohort,
+  label,
+  color,
+}: {
+  cohort: ChristianSubRiteCohort
+  label: string
+  color: string
+}) {
+  const points = COHORT_TRAJECTORY[cohort]
+  const cohortSize = COHORT_SIZE[cohort]
+  return (
+    <TableRow>
+      <TableCell className="py-1.5">
+        <span className="inline-flex items-center gap-2">
+          <span
+            className="inline-block h-3 w-3 shrink-0 rounded-sm"
+            style={{ backgroundColor: color }}
+            aria-hidden
+          />
+          <span className="font-medium text-foreground">{label}</span>
+        </span>
+      </TableCell>
+      {points.map((p, i) => {
+        const isLast = i === points.length - 1
+        return (
+          <TableCell
+            key={p.year}
+            className="py-1.5 px-2 text-right tabular-nums"
+          >
+            <div className={isLast ? "font-semibold text-foreground" : ""}>
+              {p.UDF.toFixed(0)}%
+            </div>
+            <div className="text-[11px] text-muted-foreground">
+              {p.udfWins}/{cohortSize}
+            </div>
+          </TableCell>
+        )
+      })}
+    </TableRow>
   )
 }
 
