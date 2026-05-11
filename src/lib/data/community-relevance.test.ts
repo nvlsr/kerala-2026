@@ -153,20 +153,80 @@ describe("community-relevance — alliance roles", () => {
   })
 })
 
-describe("community-relevance — durable flag", () => {
-  test("durable is true | false (no nulls expected given 2021 coverage)", () => {
+describe("community-relevance — 3-cycle history + durability category", () => {
+  const validCategories = new Set([
+    "always-UDF", "always-LDF", "always-NDA",
+    "udf-since-2021", "ldf-since-2021", "nda-since-2021",
+    "flipped-2026", "other",
+  ])
+
+  test("history.y2026 matches the winner field", () => {
+    for (const r of communityRelevance) {
+      expect(r.history.y2026, `AC ${r.ac} ${r.name}`).toBe(r.winner)
+    }
+  })
+
+  test("durabilityCategory is a valid value", () => {
     for (const r of communityRelevance) {
       expect(
-        [true, false, null].includes(r.durable),
-        `AC ${r.ac} ${r.name} invalid durable: ${r.durable}`
+        validCategories.has(r.durabilityCategory),
+        `AC ${r.ac} ${r.name} invalid durabilityCategory: ${r.durabilityCategory}`
       ).toBe(true)
     }
   })
 
-  test("durable=true count + durable=false count = 140", () => {
-    const t = communityRelevance.filter((r) => r.durable === true).length
-    const f = communityRelevance.filter((r) => r.durable === false).length
-    const n = communityRelevance.filter((r) => r.durable === null).length
-    expect(t + f + n).toBe(140)
+  test("always-X categories: all three cycles equal X", () => {
+    for (const r of communityRelevance) {
+      const c = r.durabilityCategory
+      if (!c.startsWith("always-")) continue
+      const alliance = c.split("-")[1]
+      expect(r.history.y2016, `AC ${r.ac}`).toBe(alliance)
+      expect(r.history.y2021, `AC ${r.ac}`).toBe(alliance)
+      expect(r.history.y2026, `AC ${r.ac}`).toBe(alliance)
+    }
+  })
+
+  test("flipped-2026: y2021 !== y2026", () => {
+    for (const r of communityRelevance) {
+      if (r.durabilityCategory !== "flipped-2026") continue
+      expect(r.history.y2021, `AC ${r.ac} ${r.name}`).not.toBe(r.history.y2026)
+    }
+  })
+
+  test("x-since-2021: y2021 == y2026, y2016 different/missing", () => {
+    for (const r of communityRelevance) {
+      const c = r.durabilityCategory
+      if (!c.endsWith("-since-2021")) continue
+      expect(r.history.y2021, `AC ${r.ac} ${r.name}`).toBe(r.history.y2026)
+      expect(r.history.y2016 !== r.history.y2026, `AC ${r.ac} ${r.name}`).toBe(true)
+    }
+  })
+})
+
+describe("community-relevance — stableFor (structural)", () => {
+  test("stableFor=X requires the other two alliances to be blocked AND X not blocked", () => {
+    for (const r of communityRelevance) {
+      if (r.stableFor == null) continue
+      const others = (["UDF","LDF","NDA"] as const).filter((a) => a !== r.stableFor)
+      for (const a of others) {
+        expect(
+          r.allianceRoles[a].blockFrom,
+          `AC ${r.ac} ${r.name} stableFor=${r.stableFor} but ${a} not blocked`
+        ).not.toBeNull()
+      }
+      expect(
+        r.allianceRoles[r.stableFor as "UDF" | "LDF" | "NDA"].blockFrom,
+        `AC ${r.ac} ${r.name} stableFor=${r.stableFor} but it has its own blocker`
+      ).toBeNull()
+    }
+  })
+
+  test("stableFor is independent from durabilityCategory (decoupled dimensions)", () => {
+    // Sanity-check that some 'flipped-2026' ACs still have stableFor set —
+    // this is the whole point of the two-dimension design.
+    const flippedWithStable = communityRelevance.filter(
+      (r) => r.durabilityCategory === "flipped-2026" && r.stableFor != null
+    )
+    expect(flippedWithStable.length).toBeGreaterThan(0)
   })
 })

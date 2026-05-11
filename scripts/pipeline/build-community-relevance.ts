@@ -7,7 +7,7 @@
  *   - data/district-hindu-castes.json (Hindu sub-caste district profile)
  *   - data/community-belts.json (Muslim sub-type via district belt)
  *   - data/results-2026.json (margins + winners)
- *   - data/ac-history.json (2021 winners for durable flag)
+ *   - data/ac-history.json (2016 + 2021 winners for 3-cycle history)
  *   - src/pages/walkthroughs/udf-data.ts:CHRISTIAN_BELT_36 (winner candidate religion)
  *
  * Writes:
@@ -107,7 +107,19 @@ interface CommunityRelevanceRecord {
   primaryDriver: string
   confidence: Tier | "UNKNOWN"
   netTag: Tag | "hindu-driven" | "diffuse"
-  durable: boolean | null
+
+  // ── PAST stability (3-cycle winner history) ─────────────────────────
+  history: {
+    y2016: AllianceCode | null
+    y2021: AllianceCode | null
+    y2026: AllianceCode
+  }
+  durabilityCategory: DurabilityCategory
+
+  // ── FORWARD stability (structural blocker pattern) ──────────────────
+  // Which alliance is structurally favoured *regardless of cycle*?
+  // UDF when both NDA + LDF are blocked and UDF has no blocker; symmetric for LDF/NDA.
+  stableFor: AllianceCode | null
 
   allianceRoles: {
     UDF: AllianceRoleCell
@@ -117,6 +129,16 @@ interface CommunityRelevanceRecord {
 
   note: string
 }
+
+/**
+ * 3-cycle (2016 → 2021 → 2026) durability of the WINNER alliance.
+ * Independent from the structural `stableFor` field.
+ */
+type DurabilityCategory =
+  | "always-UDF" | "always-LDF" | "always-NDA"        // all three cycles same
+  | "udf-since-2021" | "ldf-since-2021" | "nda-since-2021"  // 2021 == 2026, 2016 different
+  | "flipped-2026"        // 2021 != 2026
+  | "other"               // missing data or OTHER alliance in 2016/2021
 
 // ── Helpers ───────────────────────────────────────────────────────────
 
@@ -329,6 +351,8 @@ function assembleNote(args: {
   hinduProf: string
   nairPct: number
   ezhavaPct: number
+  allianceRoles: CommunityRelevanceRecord["allianceRoles"]
+  stableFor: AllianceCode | null
 }): string {
   const parts: string[] = []
   if (args.cIsRelevant) {
@@ -348,7 +372,20 @@ function assembleNote(args: {
     parts.push(`Hindu context: ${args.hinduProf} district`)
   }
   if (parts.length === 0) parts.push("No identified relevant community")
-  return parts.join(" + ")
+
+  // Alliance-role tokens (compact). Order: flip-to first, then block-from.
+  const roleTokens: string[] = []
+  for (const a of ["UDF","LDF","NDA"] as const) {
+    if (args.allianceRoles[a].flipTo) roleTokens.push(`flip→${a}`)
+  }
+  for (const a of ["UDF","LDF","NDA"] as const) {
+    if (args.allianceRoles[a].blockFrom) roleTokens.push(`block-${a}`)
+  }
+  if (args.stableFor) roleTokens.push(`stable-${args.stableFor}`)
+
+  return roleTokens.length === 0
+    ? parts.join(" + ")
+    : `${parts.join(" + ")} · ${roleTokens.join(", ")}`
 }
 
 // ── Main build ────────────────────────────────────────────────────────
@@ -363,14 +400,55 @@ for (const c of constituencies) {
   acWinner.set(c.constituencyNumber, sorted[0].alliance as AllianceCode)
 }
 
-// 2021 winners — for durable flag
+// Historical winners (2016 + 2021) — for 3-cycle durability category
 const historical = loadHistorical()
-const ac2021Winner = new Map<number, AllianceCode>()
+const acYearWinner = new Map<number, { y2016: AllianceCode | null; y2021: AllianceCode | null }>()
 for (const [acNum, h] of historical.entries()) {
-  const e2021 = h.elections.find(e => e.year === 2021 && e.type === "general")
-  if (!e2021) continue
-  const sorted = [...e2021.candidates].sort((a, b) => b.votes - a.votes)
-  if (sorted[0]) ac2021Winner.set(acNum, sorted[0].alliance as AllianceCode)
+  const find = (year: number) => {
+    const e = h.elections.find(e => e.year === year && e.type === "general")
+    if (!e) return null
+    const sorted = [...e.candidates].sort((a, b) => b.votes - a.votes)
+    return (sorted[0]?.alliance as AllianceCode) ?? null
+  }
+  acYearWinner.set(acNum, { y2016: find(2016), y2021: find(2021) })
+}
+
+function durabilityCategoryOf(
+  y2016: AllianceCode | null,
+  y2021: AllianceCode | null,
+  y2026: AllianceCode,
+): DurabilityCategory {
+  // Treat OTHER / null as "missing" for durability purposes
+  const valid = (x: AllianceCode | null) => x && x !== "OTHER"
+  if (!valid(y2021)) return "other"
+  if (y2021 !== y2026) return "flipped-2026"
+  // y2021 === y2026 (same winner across last 2 cycles)
+  if (!valid(y2016)) return "other"
+  if (y2016 === y2026) {
+    if (y2026 === "UDF") return "always-UDF"
+    if (y2026 === "LDF") return "always-LDF"
+    if (y2026 === "NDA") return "always-NDA"
+  }
+  // 2021 == 2026, 2016 different
+  if (y2026 === "UDF") return "udf-since-2021"
+  if (y2026 === "LDF") return "ldf-since-2021"
+  if (y2026 === "NDA") return "nda-since-2021"
+  return "other"
+}
+
+/**
+ * Structural stability (forward-looking). Derived from the blocker cells.
+ * An alliance is `stableFor` when the *other two* are both blocked
+ * AND it has no structural blocker itself.
+ */
+function stableForOf(roles: CommunityRelevanceRecord["allianceRoles"]): AllianceCode | null {
+  const udfBlocked = !!roles.UDF.blockFrom
+  const ldfBlocked = !!roles.LDF.blockFrom
+  const ndaBlocked = !!roles.NDA.blockFrom
+  if (ldfBlocked && ndaBlocked && !udfBlocked) return "UDF"
+  if (udfBlocked && ndaBlocked && !ldfBlocked) return "LDF"
+  if (udfBlocked && ldfBlocked && !ndaBlocked) return "NDA"
+  return null
 }
 
 const TIER_RANK: Record<Tier, number> = { HIGH: 3, MEDIUM: 2, LOW: 1 }
@@ -443,11 +521,10 @@ for (const c of constituencies) {
     confidence = tiers.length > 0 ? tiers.reduce((acc, t) => TIER_RANK[t] > TIER_RANK[acc] ? t : acc, "LOW" as Tier) : "LOW"
   }
 
-  // Durable flag — 2026 winner same as 2021 winner?
-  const w2021 = ac2021Winner.get(c.constituencyNumber)
-  let durable: boolean | null
-  if (!w2021 || w2021 === "OTHER") durable = null
-  else durable = winner === w2021
+  // History — 3-cycle winner record
+  const yearWinners = acYearWinner.get(c.constituencyNumber) ?? { y2016: null, y2021: null }
+  const history = { y2016: yearWinners.y2016, y2021: yearWinners.y2021, y2026: winner }
+  const durabilityCategory = durabilityCategoryOf(history.y2016, history.y2021, winner)
 
   // Alliance roles
   const allianceRoles = computeAllianceRoles({
@@ -457,11 +534,15 @@ for (const c of constituencies) {
     hinduProf: hindu.profile, ezhavaPct: hindu.ezhava, nairPct: hindu.nair,
   })
 
+  // Structural stability (forward-looking) — derived from blocker pattern
+  const stableFor = stableForOf(allianceRoles)
+
   const relevantSubs = subRites.filter(s => s.tag === "decisive" || s.tag === "blocking")
   const note = assembleNote({
     cIsRelevant, relevantSubs, cAggShare, cAggTag: cAggR.tag, coordination, hasCSI,
     mIsRelevant, mAggShare, mSubType, primaryDriver,
     hinduProf: hindu.profile, nairPct: hindu.nair, ezhavaPct: hindu.ezhava,
+    allianceRoles, stableFor,
   })
 
   records.push({
@@ -477,7 +558,8 @@ for (const c of constituencies) {
       subType: mSubType,
     },
     hindu,
-    primaryDriver, confidence, netTag, durable,
+    primaryDriver, confidence, netTag,
+    history, durabilityCategory, stableFor,
     allianceRoles, note,
   })
 }
@@ -493,7 +575,8 @@ const byDriver = new Map<string, number>()
 const byConf = new Map<string, number>()
 const byTag = new Map<string, number>()
 const byCoord = new Map<string, number>()
-let durableTrue = 0, durableFalse = 0, durableNull = 0
+const byDurability = new Map<string, number>()
+const byStableFor = new Map<string, number>()
 let withCandReligion = 0
 for (const r of records) {
   byDriver.set(r.primaryDriver, (byDriver.get(r.primaryDriver) ?? 0) + 1)
@@ -501,25 +584,28 @@ for (const r of records) {
   byTag.set(r.netTag, (byTag.get(r.netTag) ?? 0) + 1)
   const co = r.christian.coordination ?? "none"
   byCoord.set(co, (byCoord.get(co) ?? 0) + 1)
-  if (r.durable === true) durableTrue++
-  else if (r.durable === false) durableFalse++
-  else durableNull++
+  byDurability.set(r.durabilityCategory, (byDurability.get(r.durabilityCategory) ?? 0) + 1)
+  const sf = r.stableFor ?? "none"
+  byStableFor.set(sf, (byStableFor.get(sf) ?? 0) + 1)
   if (r.winnerCandidateReligion) withCandReligion++
 }
 console.log("By driver:", Object.fromEntries(byDriver))
 console.log("By confidence:", Object.fromEntries(byConf))
 console.log("By net tag:", Object.fromEntries(byTag))
 console.log("By coordination:", Object.fromEntries(byCoord))
-console.log(`Durable: true=${durableTrue} false=${durableFalse} null=${durableNull}`)
+console.log("By durability category:", Object.fromEntries(byDurability))
+console.log("By stableFor:", Object.fromEntries(byStableFor))
 console.log(`With winner-candidate-religion: ${withCandReligion}`)
 console.log("")
 
 // Spot-check the 5 reality-check ACs
 console.log("=== Reality-check spot tests ===")
-for (const acNum of [12, 28, 52, 102, 135]) {
+for (const acNum of [1, 12, 28, 52, 102, 135]) {
   const r = records.find(rec => rec.ac === acNum)
   if (!r) continue
-  console.log(`\nAC ${acNum} ${r.name} [${r.confidence}/${r.netTag}/durable=${r.durable}]`)
+  console.log(`\nAC ${acNum} ${r.name} [${r.confidence}/${r.netTag}]`)
+  console.log(`  History: 2016=${r.history.y2016 ?? "?"} 2021=${r.history.y2021 ?? "?"} 2026=${r.history.y2026} → ${r.durabilityCategory}`)
+  console.log(`  StableFor: ${r.stableFor ?? "—"}`)
   console.log(`  Note: ${r.note}`)
   console.log(`  Alliance roles:`)
   for (const a of ["UDF","LDF","NDA"] as const) {

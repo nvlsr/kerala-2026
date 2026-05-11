@@ -52,6 +52,18 @@ export type AllianceRoleCell = {
   blockFrom: string | null
 }
 
+/**
+ * 3-cycle durability of the WINNER alliance (past stability).
+ *
+ * Distinct from `stableFor`, which is the *forward-looking* structural
+ * reading derived from blocker cells.
+ */
+export type DurabilityCategory =
+  | "always-UDF" | "always-LDF" | "always-NDA"
+  | "udf-since-2021" | "ldf-since-2021" | "nda-since-2021"
+  | "flipped-2026"
+  | "other"
+
 export type CommunityRelevanceRecord = {
   ac: number
   name: string
@@ -83,7 +95,23 @@ export type CommunityRelevanceRecord = {
   primaryDriver: string
   confidence: Tier | "UNKNOWN"
   netTag: Tag | "hindu-driven" | "diffuse"
-  durable: boolean | null
+
+  /** PAST stability — alliance winners across 3 cycles. */
+  history: {
+    y2016: AllianceCode | null
+    y2021: AllianceCode | null
+    y2026: AllianceCode
+  }
+  /** Categorical past-stability reading. */
+  durabilityCategory: DurabilityCategory
+
+  /**
+   * FORWARD stability — which alliance is structurally favoured
+   * regardless of cycle, derived from the blocker pattern.
+   * Set when the other two alliances both have structural blockers
+   * and this alliance has none.
+   */
+  stableFor: AllianceCode | null
 
   allianceRoles: {
     UDF: AllianceRoleCell
