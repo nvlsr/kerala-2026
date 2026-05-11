@@ -5,12 +5,6 @@ import type { ReactNode } from "react"
 import { cn } from "@/lib/utils"
 
 type Props = {
-  /**
-   * Numeric arc prefix shown in the eyebrow (e.g. "Arc 4"). Arcs 1-3
-   * are the alliance walkthroughs (LDF, UDF, NDA); arcs 4+ are the
-   * by-community walkthroughs (Christian, Muslim, …).
-   */
-  arcNumber: 1 | 2 | 3 | 4 | 5
   /** Short title — fits on one line at md+. */
   title: string
   /** One-clause headline statistic — bold, foregrounded. */
@@ -19,9 +13,10 @@ type Props = {
   summary: ReactNode
   /** Visual rendered above the summary text. Typically a small map. */
   visual: ReactNode
-  /** Confidence label — "Strong", "Moderate-strong", "Strong (descriptive)". */
-  confidence: string
-  /** Internal route to the arc page. */
+  /** Confidence label — uses the same vocabulary as the page-level
+   *  ThesisLede ("Strong" or "Tentative"). */
+  confidence: "Strong" | "Tentative"
+  /** Internal route to the walkthrough page. */
   href: string
 }
 
@@ -32,7 +27,6 @@ type Props = {
  * summary + read-more link.
  */
 export function WalkthroughCard({
-  arcNumber,
   title,
   headlineStat,
   summary,
@@ -49,7 +43,7 @@ export function WalkthroughCard({
     >
       <header>
         <p className="text-xs font-medium tracking-wider text-muted-foreground/80 uppercase">
-          Arc {arcNumber} · {confidence}
+          {confidence}
         </p>
         <h2 className="mt-1 font-heading text-lg leading-tight font-semibold tracking-tight sm:text-xl">
           {title}

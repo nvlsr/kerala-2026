@@ -115,7 +115,6 @@ export function WalkthroughsPage() {
           className="grid grid-cols-1 gap-5 lg:grid-cols-3"
         >
           <WalkthroughCard
-            arcNumber={1}
             title="The anti-LDF wave was uniform"
             confidence="Strong"
             headlineStat={
@@ -147,7 +146,6 @@ export function WalkthroughsPage() {
             href="/walkthroughs/ldf-walkthrough"
           />
           <WalkthroughCard
-            arcNumber={2}
             title="Central Kerala provided nearly half the majority margin"
             confidence="Strong"
             headlineStat={
@@ -180,9 +178,8 @@ export function WalkthroughsPage() {
             href="/walkthroughs/udf-walkthrough"
           />
           <WalkthroughCard
-            arcNumber={3}
             title="BJP 2026: targeted consolidation, not statewide expansion"
-            confidence="Moderate-strong"
+            confidence="Strong"
             headlineStat={
               <span className={ARC_KEY_STAT_CLASS}>
                 Statewide BJP +0.3pp; inside a 30-seat target set, +5.2pp and
@@ -215,22 +212,17 @@ export function WalkthroughsPage() {
           />
         </section>
 
-        {/* By-community walkthroughs */}
-        <section aria-label="By-community walkthroughs">
+        {/* By-religion walkthroughs */}
+        <section aria-label="By-religion walkthroughs">
           <header className="mb-4">
             <h2 className="font-heading text-lg font-semibold tracking-tight sm:text-xl">
-              By community
+              By religion
             </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Same election, different axis. These walkthroughs slice 2026
-              by sub-community using the OSM-derived sub-rite cohort layer.
-            </p>
           </header>
-          <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
             <WalkthroughCard
-              arcNumber={4}
               title="How Kerala's Christian sub-communities moved in 2026"
-              confidence="Moderate"
+              confidence="Tentative"
               headlineStat={
                 <span className={ARC_KEY_STAT_CLASS}>
                   Each sub-rite has its own historical alliance pattern
