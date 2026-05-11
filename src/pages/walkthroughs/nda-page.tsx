@@ -17,6 +17,7 @@ import {
   PREVIEW_LIST,
   SECTION_LEAD,
   SUB_HEADING,
+  SURFACE_CARD,
 } from "@/components/walkthroughs/typography"
 import { WalkthroughPageShell } from "@/components/walkthroughs/walkthrough-page-shell"
 import {
@@ -129,7 +130,7 @@ export function WalkthroughsNDAPage() {
     >
       <>
         {/* THESIS LEDE */}
-        <section className="rounded-md border bg-card/50 p-5 sm:p-6">
+        <section className={SURFACE_CARD}>
           <p className="text-base leading-relaxed font-medium text-foreground sm:text-[16.5px]">
             BJP's 2026 performance was <strong>not statewide expansion</strong>.
             It was <strong>targeted consolidation</strong> inside a limited
@@ -1321,7 +1322,7 @@ export function WalkthroughsNDAPage() {
         </section>
 
         {/* Cross-references — synthesis pointing at the other walkthroughs */}
-        <section className="rounded-md border bg-card/50 p-5 sm:p-6">
+        <section className={SURFACE_CARD}>
           <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
             Where this connects
           </p>

@@ -33,7 +33,7 @@ export function getAllianceBreakdown(
   const map = new Map<string, PartyBreakdown>()
   for (const c of list) {
     for (const cand of c.candidates) {
-      const a = allianceForCandidate(c, cand)
+      const a = allianceForCandidate(cand)
       if (a !== code) continue
       const existing = map.get(cand.party) ?? {
         party: cand.party,

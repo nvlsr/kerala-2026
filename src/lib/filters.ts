@@ -299,7 +299,7 @@ export function getFilteredConstituencyNumbers(filters: Filters): Set<number> {
       if (filters.result === "losers" && cand.status === "won") continue
       if (
         filters.alliance &&
-        allianceForCandidate(c, cand) !== filters.alliance
+        allianceForCandidate(cand) !== filters.alliance
       )
         continue
       if (filters.party && canonicalPartyName(cand.party) !== filters.party)

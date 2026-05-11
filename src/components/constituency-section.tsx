@@ -181,7 +181,6 @@ function RosterTable({ constituency }: { constituency: Constituency }) {
           <RosterRow
             key={c.name + c.party}
             candidate={c}
-            constituency={constituency}
             winner={winner}
             total={total}
           />
@@ -193,16 +192,14 @@ function RosterTable({ constituency }: { constituency: Constituency }) {
 
 function RosterRow({
   candidate,
-  constituency,
   winner,
   total,
 }: {
   candidate: Candidate
-  constituency: Constituency
   winner: Candidate
   total: number
 }) {
-  const allianceCode = allianceForCandidate(constituency, candidate)
+  const allianceCode = allianceForCandidate(candidate)
   const meta = getAlliance(allianceCode)
   const main = isMainFront(allianceCode)
   const isWinner = candidate === winner

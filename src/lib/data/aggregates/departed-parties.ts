@@ -38,7 +38,7 @@ export function getDepartedAllianceParties(
   const currentParties = new Set<string>()
   for (const c of list) {
     for (const cand of c.candidates) {
-      const a = allianceForCandidate(c, cand)
+      const a = allianceForCandidate(cand)
       if (a === code) currentParties.add(cand.party)
     }
   }

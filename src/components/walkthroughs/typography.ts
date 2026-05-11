@@ -36,3 +36,11 @@ export const DEFINITION =
 export const PREVIEW_LIST =
   "my-3 list-inside list-decimal space-y-0.5 text-[14px] text-muted-foreground"
 export const ASIDE = "text-[12.5px] text-muted-foreground"
+
+/**
+ * Surface class for "card-shaped" sections (thesis ledes, synthesis
+ * recaps, "where this connects" callouts, the questions-page header
+ * card). Same visual as EyebrowCard's wrapper. Use when the section
+ * doesn't need an eyebrow label; reach for EyebrowCard when it does.
+ */
+export const SURFACE_CARD = "rounded-md border bg-card/50 p-5 sm:p-6"

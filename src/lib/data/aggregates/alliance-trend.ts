@@ -78,7 +78,7 @@ export function getAllianceTrendData(
 
     const entry2026 = ensureYear(2026)
     for (const cand of c.candidates) {
-      const a = allianceForCandidate(c, cand)
+      const a = allianceForCandidate(cand)
       entry2026.perAlliance[a].contested++
       entry2026.perAlliance[a].votes += cand.votes
       entry2026.totalVotes += cand.votes

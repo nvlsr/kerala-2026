@@ -5,6 +5,8 @@ import {
   COHORT_GROWER_BLUE,
   NDA_ORANGE,
 } from "@/components/walkthroughs/colors"
+import { SURFACE_CARD } from "@/components/walkthroughs/typography"
+import { cn } from "@/lib/utils"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
 import {
@@ -311,7 +313,7 @@ export function WalkthroughsInsightsPage() {
         </div>
 
         {/* Overlap stat */}
-        <div className="min-h-[5rem] rounded-md border bg-card/50 p-5 sm:p-6">
+        <div className={cn("min-h-[5rem]", SURFACE_CARD)}>
           <p className="text-sm leading-relaxed sm:text-[15px]">
             <strong className="font-semibold">
               {intersection.size}{" "}
@@ -401,7 +403,7 @@ export function WalkthroughsInsightsPage() {
         </section>
 
         {/* Feedback callout */}
-        <section className="rounded-md border bg-card/50 p-5 sm:p-6">
+        <section className={SURFACE_CARD}>
           <h2 className="mb-2 font-heading text-base font-semibold tracking-tight">
             Have an idea for a cohort overlay?
           </h2>

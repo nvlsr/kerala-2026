@@ -33,7 +33,7 @@ type Props = {
  */
 export function SeatPreviewCard({ constituency }: Props) {
   const winner = winnerOf(constituency)
-  const allianceCode = allianceForCandidate(constituency, winner)
+  const allianceCode = allianceForCandidate(winner)
   const total = totalVotesIn(constituency)
   const sharePct = total > 0 ? (winner.votes / total) * 100 : 0
   const marginPct = total > 0 ? (winner.margin / total) * 100 : 0

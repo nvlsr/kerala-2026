@@ -35,7 +35,7 @@ export function getStateSummary(
   let totalVotes = 0
   for (const c of list) {
     for (const cand of c.candidates) {
-      const a = allianceForCandidate(c, cand)
+      const a = allianceForCandidate(cand)
       votes[a] += cand.votes
       totalVotes += cand.votes
       if (cand.status === "won") seats[a]++

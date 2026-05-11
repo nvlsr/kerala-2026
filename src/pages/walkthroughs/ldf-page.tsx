@@ -9,7 +9,11 @@ import { MethodologyPopover } from "@/components/walkthroughs/methodology-popove
 import { SeatLink } from "@/components/walkthroughs/prose-link"
 import { PullQuote } from "@/components/walkthroughs/pull-quote"
 import { SeeAlsoQuestions } from "@/components/walkthroughs/see-also-questions"
-import { ASIDE, SECTION_LEAD } from "@/components/walkthroughs/typography"
+import {
+  ASIDE,
+  SECTION_LEAD,
+  SURFACE_CARD,
+} from "@/components/walkthroughs/typography"
 import { WalkthroughPageShell } from "@/components/walkthroughs/walkthrough-page-shell"
 import { WalkthroughSection } from "@/components/walkthroughs/walkthrough-section"
 import { WhatWouldWeakenSection } from "@/components/walkthroughs/what-would-weaken"
@@ -356,7 +360,7 @@ export function WalkthroughsLDFPage() {
       </WalkthroughSection>
 
       {/* Cross-references — synthesis pointing at the other walkthroughs */}
-      <section className="rounded-md border bg-card/50 p-5 sm:p-6">
+      <section className={SURFACE_CARD}>
         <p className="text-[10px] font-semibold tracking-widest text-muted-foreground uppercase">
           Where this connects
         </p>

@@ -57,7 +57,7 @@ export function buildCandidateRows(scope: string | null): CandidateRow[] {
         candidateDisplay: normalizeCandidateName(cand.name),
         party: partyCanonical,
         partyShort: partyShort(cand.party),
-        allianceCode: allianceForCandidate(c, cand),
+        allianceCode: allianceForCandidate(cand),
         votes: cand.votes,
         share,
         shareDelta2021,

@@ -49,14 +49,13 @@ export function isMainFront(code: AllianceCode): boolean {
 }
 
 /**
- * The alliance is the candidate's own attribute now — we just read it. The
- * `c` parameter (Constituency) is retained for API compatibility but
- * unused; can be dropped in a follow-up if the call sites are tidied.
+ * The alliance lives directly on the candidate record (rehydrated by
+ * `hydrateConstituency` from the canonical party→alliance map). This
+ * helper just reads it through, kept as a named function so call sites
+ * read intent ("alliance for THIS candidate") rather than dotting into
+ * a generic field.
  */
-export function allianceForCandidate(
-  _c: unknown,
-  candidate: Candidate
-): AllianceCode {
+export function allianceForCandidate(candidate: Candidate): AllianceCode {
   return candidate.alliance
 }
 
