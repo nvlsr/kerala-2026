@@ -232,3 +232,142 @@ This pilot produced:
 5. (Aspirational) Find an AC-level Hindu sub-community proxy: candidate-surname analysis on multi-cycle data could give a coarse cohort split (Nair-leaning ACs vs Ezhava-leaning ACs).
 
 Nothing here ships yet — this document records what the pilot demonstrated, so the next pass starts from solid ground.
+
+---
+
+## 9. v2 — Expanded framework (aggregate Christian + aggregate Muslim)
+
+The v1 sections above run the test only on individual Christian sub-rites. As §6 noted, this misses **dispersed-but-aggregate-decisive** ACs like Kanjirappally (4 sub-rites at 5–15 % each, aggregate Christian 43 %, but no individual sub-rite passes the per-sub-rite test). v2 adds two religion-level aggregate communities to catch these:
+
+### 9a. New tags
+
+For every AC, in addition to the per-sub-rite Christian tags, compute:
+
+- **`christian_aggregate`** — voter-share = Census 2025 Christian share of the AC (from `ac-religion-2025.json`). Apply the same decisiveness math.
+- **`muslim_aggregate`** — voter-share = Census 2025 Muslim share. Apply the same math.
+
+No Muslim sub-rite tagging — per the pilot (sub-rite cohort analysis), the Sunni/Mujahid distinction didn't show predictive power for 2026 swing, so religion-level Muslim is the right granularity.
+
+No Hindu tagging — Hindu vote is not politically organised as a religion-level bloc; sub-caste data is district-level only. Both reasons mean a Hindu aggregate tag would mostly mis-fire.
+
+### 9b. Headline coverage (all 140 ACs)
+
+| Category | Count |
+| --- | ---: |
+| **ACs with ≥ 1 community tagged decisive** | **58** |
+| ACs with blocking but no decisive | 69 |
+| **ACs with ≥ 1 relevant community (decisive OR blocking)** | **127** |
+| Religion-blind ACs (no Christian/Muslim ≥ 5 % electorally relevant) | **13** |
+
+The 58 decisive ACs match the original framing of "50–70 seats where a particular Christian sub-rite, collection of sub-rites, or Muslim has election impact" closely. Adding the 69 blocking-only seats covers durable strategic relevance (parties have to address these communities even in safe seats) and brings total coverage to 127 of 140 ACs.
+
+### 9c. Source breakdown for the 58 decisive ACs
+
+| Source of decisiveness | Count |
+| --- | ---: |
+| Christian + Muslim BOTH decisive (mixed-religion swing seats) | 10 |
+| Christian only (aggregate OR sub-rite) | 17 |
+| Muslim only | 31 |
+
+So religion-level Muslim is the single biggest source of community-decisive AC tagging (41 of 58 decisive ACs have Muslim aggregate decisive). That fits the intuition: Muslim Kerala is politically organised (IUML, INL, marginal LDF-aligned NSC), large enough to swing many ACs, and concentrated in Malappuram + northern districts.
+
+### 9d. What aggregate Christian caught that per-sub-rite missed
+
+13 ACs were tagged decisive at the aggregate Christian level but had no individual sub-rite cross the per-sub-rite decisiveness bar. These are the "dispersed but aggregate-decisive" pattern v1 was missing:
+
+| AC | Name | Margin | Christian agg | Sub-rite mix (≥ 5 %) |
+| ---: | --- | ---: | ---: | --- |
+| 14 | Kuthuparamba | 0.8 pp | 6 % | (none ≥ 5 %) |
+| 136 | Aruvikkara | 1.9 pp | 14 % | (none ≥ 5 %) |
+| 62 | Kunnamkulam | 3.0 pp | 21 % | indian_orthodox 8 %, syro_malabar 8 % |
+| 126 | Chathannoor | 3.2 pp | 13 % | indian_orthodox 6 % |
+| 135 | Nemom | 3.5 pp | 17 % | csi 8 %, latin_catholic 6 % |
+| 100 | Kanjirappally | 4.2 pp | 43 % | syro_malabar 15 %, indian_orthodox 6 %, pentecostal 6 %, csi 5 % |
+| 88 | Devikulam | 4.7 pp | 32 % | syro_malabar 12 %, jacobite 10 % |
+| 138 | Kattakkada | 4.9 pp | 25 % | csi 18 % |
+| 102 | Aroor | 5.8 pp | 24 % | latin_catholic 22 % |
+| 66 | Ollur | 5.8 pp | 24 % | syro_malabar 9 % |
+| 115 | Adoor | 6.9 pp | 28 % | indian_orthodox 10 %, marthoma 5 % |
+| 111 | Thiruvalla | 7.2 pp | 48 % | indian_orthodox 18 %, marthoma 9 %, syro_malankara 6 %, pentecostal 6 % |
+| 137 | Parassala | 9.7 pp | 45 % | csi 21 %, latin_catholic 14 % |
+
+Kanjirappally and Thiruvalla are particularly clear cases: very high aggregate Christian (43 % and 48 %), close-to-medium margins, but the Christian vote is *split four ways* by sub-rite. The framework correctly tags the aggregate as decisive while showing every individual sub-rite below the per-sub-rite bar.
+
+### 9e. The 13 religion-blind ACs
+
+ACs where neither Christian nor Muslim aggregate (nor any Christian sub-rite) crosses the relevance threshold. These are the ACs where intra-Hindu dynamics (Nair / Ezhava / SC etc.) presumably drive electoral outcomes — exactly the case where our data is insufficient and the framework explicitly punts.
+
+| AC | Name | District | Margin | Christian % | Muslim % |
+| ---: | --- | --- | ---: | ---: | ---: |
+| 4 | Kanhangad | kasaragod | 8.7 pp | 12 | 18 |
+| 103 | Cherthala | alappuzha | 8.4 pp | 18 | 15 |
+| 104 | Alappuzha | alappuzha | 13.3 pp | 18 | 15 |
+| 107 | Haripad | alappuzha | 16.1 pp | 9 | 12 |
+| 108 | Kayamkulam | alappuzha | 10.0 pp | 7 | 10 |
+| 109 | Mavelikkara | alappuzha | 11.0 pp | 18 | 8 |
+| 118 | Kunnathur | kollam | 15.4 pp | 14 | 19 |
+| 122 | Chadayamangalam | kollam | 4.9 pp | 17 | 17 |
+| 128 | Attingal | thiruvananthapuram | 8.9 pp | 17 | 14 |
+| 133 | Vattiyoorkavu | thiruvananthapuram | 4.2 pp | 16 | 15 |
+| 134 | Thiruvananthapuram | thiruvananthapuram | 8.2 pp | 17 | 14 |
+| 139 | Kovalam | thiruvananthapuram | 21.1 pp | 17 | 14 |
+| 140 | Neyyattinkara | thiruvananthapuram | 5.2 pp | 17 | 14 |
+
+Striking geographic concentration: **5 in Alappuzha, 5 in Trivandrum, 2 in Kollam, 1 in Kasaragod**. These are exactly the **southern coastal Hindu-Ezhava-Nair-mixed** zone (and the corresponding northern strip of Kasaragod). The framework's silence on these ACs is correct — Christian/Muslim aren't the relevant cleavage here. They're also the ACs the existing analysis flagged as Nair-heavy or Ezhava-heavy in `docs/caste-data.md` and `docs/narratives/udf.md §5`.
+
+This is a useful negative result: when our framework is silent, it's silent in geographically coherent ways. The 13 silent ACs aren't random gaps; they're the systematic Hindu-vote zone where our data has nothing to say.
+
+### 9f. Margin distribution of the 58 decisive ACs
+
+| Margin bucket | Count |
+| --- | ---: |
+| < 1 pp | 6 |
+| 1–3 pp | 14 |
+| 3–5 pp | 13 |
+| 5–7 pp | 14 |
+| 7–10 pp | 7 |
+| 10–15 pp | 1 |
+| > 15 pp | 3 |
+
+**74 % of the decisive ACs have margin ≤ 7 pp** — the framework appropriately concentrates the "could plausibly flip" tag on the marginal seats. The 4 ACs with > 10 pp margin tagged decisive are cases with very large communities (≥ 50 % share) where even a moderate community swing crosses the margin.
+
+---
+
+## 10. Refined coverage answer
+
+The user's intuition was 50–70 ACs with election-relevant communities. The framework gives:
+
+- **58 decisive ACs** — communities large enough to plausibly flip the 2026 outcome under a ≤ 25 pp community swing. **This is the right number for "election-relevant in 2026".**
+- **127 ACs with any relevant community** (decisive + blocking) — communities large enough to matter strategically over the medium term even if not 2026-decisive. **This is the right number for "election-relevant in candidate-selection terms".**
+- **13 religion-blind ACs** — clean negative space; Hindu-vote zone.
+
+The bifurcation is itself a finding. Looking at the relationship:
+
+- The 27 + 14 + 13 = 54 ACs in the 1–7 pp margin range with a decisive Christian or Muslim community are the **2026 marginal swing seats** where minority-community behavior was at the centre of the contest.
+- The remaining 69 blocking-only ACs are mostly **incumbent-safe seats** where minority communities form a durable strategic base but the 2026 wave was wide enough that no community could have flipped the result. Many of the long-standing Christian-belt UDF strongholds (Angamaly, Thrikkakara, Eranakulam) fall here.
+
+Together, these two cuts answer two different policy questions: *which seats were swing-decided by religious community in 2026?* (decisive list) and *which seats need a minority-community-aware candidate strategy in the next cycle?* (decisive + blocking list).
+
+---
+
+## 11. Updated framework limitations + next steps
+
+The framework now covers the cases the v1 pilot identified as gaps. Remaining limitations:
+
+### What's still missing
+
+1. **Within-community split votes.** Konni has 3 sub-rites simultaneously decisive; they almost certainly don't vote together. The framework tags the *capacity to swing* — it doesn't know which way each sub-rite actually swung. Multi-cycle Δ data per sub-rite (which we have in `christian-data.ts`) could overlay this.
+2. **The 25-pp plausible swing threshold is still hand-picked.** It's roughly the observed max sub-rite swing in 2026 (Latin Catholic + 14.7 pp UDF was the largest). Should be calibrated against historical sub-rite swings across 2011/2016/2021 cycles for a more rigorous bound.
+3. **Hindu sub-community is data-blocked.** The 13 religion-blind ACs are where we'd need AC-level Hindu sub-caste data to make claims. Candidate-surname analysis is the only reachable proxy without a survey.
+4. **Confidence flag for SHRUG-fallback ACs.** 26 ACs use district-urban-fallback for AC religion. Their aggregate Christian/Muslim numbers carry more uncertainty. Could surface a `low-confidence` flag for these (though notably, ~10 of these 26 are in the Christian belt where our analysis specifically needs them — Kochi, Ernakulam, Thrikkakara, Kalamassery etc.).
+
+### Suggested next moves
+
+1. **Bake the framework as a runtime module.** `src/lib/data/community-relevance.ts` exposing `getRelevantCommunities(acNumber): Array<{community, share, tag}>`. Computation cost is trivial (< 5 ms across all 140 ACs).
+2. **Surface in the app**: a per-AC community-relevance badge in the explore page's seat detail, plus an overlay on the `/walkthroughs/insights` choropleth ("which ACs have ≥ 1 decisive minority community").
+3. **Validate with multi-cycle Δ.** Cross-check the decisive-tagged ACs against actual 2021 → 2026 swing magnitudes by religion share. Communities tagged decisive should show *systematic* swing patterns; communities tagged blocking-only should show smaller / noisier swings.
+4. **Defer Hindu coverage** until either:
+   - Candidate-surname analysis surfaces an AC-level Nair/Ezhava cohort proxy, OR
+   - A future survey gives district-or-better Hindu sub-community vote-intent data.
+
+The framework is now functionally complete for the Christian and Muslim layers. The next pass should focus on **shipping** this into the app surface and **validating** against the multi-cycle swing data rather than further extending the tagging logic.
