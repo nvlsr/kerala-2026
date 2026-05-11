@@ -16,7 +16,7 @@ Findings tagged `[Sprint 2]` predate the per-AC community-relevance framework. F
 - `[Sprint 2]` **UDF's strategy menu in Muslim Malappuram is structurally narrower than in Christian belt**: IUML alliance OR INC-Muslim. INC-Hindu was NEVER on the menu at non-reserved Muslim-majority seats. (Compare: Christian-belt UDF freely mixed INC-Hindu and INC-Christian.)
 - `[Sprint 2]` **Variance-explained R² heavily favours religion-share over sub-sect cohort for Muslim level** (Muslim % R² 0.237 vs cohort R² 0.014). Sub-sect distinction is mostly noise once you control for Muslim %.
 - `[Sprint 2]` **The empty INC-Hindu bucket in Muslim Malappuram is itself a structural finding** — UDF was not willing to put a Hindu candidate in front of Muslim voters at non-reserved seats.
-- `[NEW · CR]` **The "Kozhikode/Kannur Muslim flip" was structural restoration, not a new swing.** 13 ACs flipped LDF→UDF; 12 of 13 are `stableFor: UDF` (Muslim ≥40% mechanically blocks NDA + Muslim-via-IUML blocks LDF). The 2021 LDF wins were anomalies; 2026 is a return to structural equilibrium.
+- `[NEW · CR]` ⚠️ **PARTIALLY CONTRADICTED by external commentary** — see §10b: The "Kozhikode/Kannur flip is structural restoration" framing doesn't hold up. Per Outlook (May 2026), Congress hadn't won a Kozhikode seat in 20+ years; LDF was NOT anomalously winning 2021 — it had structural Ezhava-Tiyya dominance. The 2026 flip is a **new dynamic** (Muslim swing + Jamaat consolidation + anti-incumbency), not a structural return. The community-relevance framework's `block-LDF` rule over-claims in mixed-muslim + ezhava-very-heavy districts.
 - `[NEW · CR]` **No Muslim hereditary seats.** 0 of the 6 documented hereditary successions are Muslim. By contrast, 5 of 6 are Christian-belt UDF. Muslim politics is candidate-of-the-cycle, not dynasty-driven — a stark contrast to Christian-belt Kerala.
 - `[NEW · CR]` **BJP is building Hindu vote share inside Muslim-blocked seats.** 11 Muslim-presence ACs have rising NDA share while structurally locked away from NDA — including Kozhikode N + S (Muslim 41 %, NDA 17→21→25 % and 23→23→28 %). The structural lock holds; the trajectory under it shifts.
 - `[Joint]` **Standing political assumption**: IUML's Sunni-establishment relationship is firmer than its Mujahid-faction relationship. Cohort analysis and community-relevance both consistent with this — Sunni cohort 77 % stableFor:UDF vs Mujahid 64 %, and Sunni durability skews more to always-UDF.
@@ -391,6 +391,58 @@ Christian-belt UDF politics runs on dynasties (the Chandy and Mani names alone s
 This is a previously-undocumented contrast between the two UDF heartlands. Worth interrogating: is it (a) IUML's institutional discipline preventing dynasties, (b) Muslim socio-religious norms about family-political-inheritance, (c) sampling artefact (we only looked at 3 cycles), or some mix?
 
 Falsifier: an audit including all Malappuram candidates over more cycles might surface within-IUML hereditary patterns (e.g., the Hameed family in some Malappuram seats, the P.K. Kunhalikutty / P.K. Basheer lineage if related). Current audit is 2011–2026 + top-3-per-cycle only; cousins / second-generation politicians who don't break top-3 wouldn't appear.
+
+---
+
+## §10b — External-commentary verification (web search, May 2026)
+
+Verified our Sprint-2 + community-relevance findings against political commentary (Wikipedia, India Seminar, Hudson Institute, The Federal, ThePrint, Outlook, Onmanorama, Scroll). Three confirmations, two refinements, one likely contradiction.
+
+### ✓ CONFIRMED
+
+- **"Mujahid more bipartisan than Sunni" — confirmed.** India Seminar (R. Santhosh): the A.P. Samasta faction "forged a political affiliation to the LDF, especially to CPI(M), as a tactical move to checkmate the E.K. Samasta faction." Wikipedia on KNM: "EK faction is politically aligned with the IUML while the AP faction mainly supports the CPI(M)-led LDF." Our cohort-level finding tracks the institutional split.
+- **"IUML's Sunni-establishment relationship is firmer than its Mujahid relationship" — confirmed.** Organiser.org: "Most Sunnis are critical of the increasing leadership role assumed by the reformist Mujahids in the party." Mujahid is described as a "pressure group within IUML" rather than a fully-merged identity. Mainstream Sunni body Samastha periodically issues "warning against political Islam" aimed at Jamaat-e-Islami / Mujahid drift.
+- **"No INC-Hindu candidates in non-reserved Muslim Malappuram" — confirmed.** Every news source on 2026 Malappuram mentions IUML or INC-Muslim candidates; no INC-Hindu candidate referenced in the 16 non-reserved Malappuram seats. P.K. Kunhalikutty (IUML, +85,327 margin in Malappuram) symbolises the institutional pattern.
+
+### ⚠ REFINED — our cohort layer is missing the more politically-relevant split
+
+- **The politically-meaningful Muslim cleavage is EK vs AP factionalism, NOT Sunni vs Mujahid.** Both Sunni and Mujahid communities have an EK faction (IUML/UDF-aligned) and an AP faction (LDF-tactical or LDF-leaning). The OSM-derived cohort layer in `subrite-bins.ts` only sees Sunni vs Mujahid — it doesn't distinguish EK Samasta from AP Samasta, nor EK Mujahid from AP Mujahid. **The "Mujahid 36% LDF retention" likely reflects the EK/AP split inside the Mujahid cohort plus AP-Sunni voters who happen to live in Mujahid-cohort ACs.** Our "sub-sect explains swing" claim should be reframed as "factional alignment explains swing, sub-sect is a noisy proxy." Variance-explained R² 0.014 (§3) is consistent with this.
+- **The 2016 KNM merger (EK Mujahid + AP Mujahid factions) is a political-realignment event we didn't account for.** Pre-2016: AP Mujahid was LDF-aligned. Post-2016 unified KNM: nominally IUML-aligned. Our 3-cycle window straddles this — pre-merger 2011 data may not be comparable to post-merger 2026 for the Mujahid cohort. Need to check: was the Mujahid LDF retention rate (36%) higher in 2011-2016 (when AP faction was independent) than 2021-2026 (after merger)?
+- **2026 saw Welfare Party / Jamaat-e-Islami consolidating BEHIND UDF**, against IUML's wishes. Per The Federal + Onmanorama: WPI announced UDF support at the Nilambur by-poll (March 2026), "displeased the IUML." This is a NEW factional dynamic in 2026 — Jamaat voters who were politically homeless or partially LDF-aligned in 2021 went UDF in 2026. **Our 2026 Muslim swing has a Jamaat-consolidation component we didn't isolate.**
+
+### ✗ LIKELY CONTRADICTED — our "structural restoration" framing for Kozhikode
+
+- **Per Outlook (May 2026)**: *"Kozhikode is a district where the Congress had not won a single seat in at least two decades, with P. Sankaran being the last Congress MLA who won from Koyilandy in 2001."* This contradicts our community-relevance framing that the 2021 LDF wave in Kozhikode was the *anomaly* and 2026 is the *structural restoration*. LDF wasn't anomalously winning Kozhikode in 2021 — they had been winning it for 20+ years.
+- **The likely correct framing**: Kozhikode is ezhava-very-heavy (Ezhava 52% of Hindus); LDF's Hindu Ezhava-Tiyya base has been structurally dominant for decades. The Muslim community (~40% in Kozhikode mixed-muslim ACs) DOES mechanically block NDA, but it doesn't structurally block LDF — LDF's own Hindu base anchors it. The 2026 UDF flip is a *new dynamic*, driven by Muslim community swinging UDF + Jamaat consolidation + anti-incumbency wave, not a return to structural equilibrium.
+- **This means the `community-relevance` framework's `block-LDF` rule for mixed-muslim ACs is over-aggressive.** It fires when Muslim ≥ 25 % under the assumption that Muslim community votes UDF — but in Kozhikode + Kannur ezhava-very-heavy districts, this oversimplifies. Mixed-muslim sub-type + ezhava-very-heavy Hindu district = TWO structural anchors competing, not one. Worth refining the framework rule to set `stableFor: null` (contested) when both Muslim ≥ 25 % AND ezhava-very-heavy Hindu profile apply.
+
+### NEW dynamics from commentary not currently in our analysis
+
+- **Mujahid-BJP softening** (per Hudson Institute + The Federal): "KNM's softened stance towards the BJP has not gone down well with the majority of the other Muslim organisations." Some KNM leaders are warming to BJP. This may partially explain rising NDA share in Mujahid-cohort cosmopolitan ACs (4 of 14 Mujahid ACs are NDA-rising — see §9b).
+- **Samastha politicisation** (per The South First): institutional Sunni leadership has become more political across 2021-2026, including direct intervention in candidate selection. May explain part of the IUML-Sunni alignment hardening.
+
+### Implications for the walkthrough page
+
+1. **Drop "structural restoration" as the framing for Kozhikode**. Use "new dynamic + minority-coalition consolidation" instead. The community-relevance framework's stableFor:UDF reading is partially wrong for Kozhikode.
+2. **Add the EK/AP factional layer as a methodology caveat.** Our cohort layer can't see this; commentary suggests it's the more important political cleavage.
+3. **Add the Jamaat / Welfare Party dimension.** 2026 saw Jamaat-e-Islami consolidating behind UDF — a factor we haven't measured but commentary confirms.
+4. **Consider mentioning Mujahid-BJP softening** as a watch-list item for the rising-NDA-in-Muslim-ACs subset.
+5. **The "Mujahid is more bipartisan than Sunni" finding is real but underspecified.** Better framing: the bipartisan-ness reflects the EK-vs-AP factional alignment inside both Sunni and Mujahid, which our cohort layer flattens.
+
+### Sources
+
+- [The churn in Muslim politics in Kerala (R. Santhosh, India Seminar 2022)](https://india-seminar.com/2022/758/758-08%20R.%20SANTHOSH.htm)
+- [Strategic Muslim Voting Patterns in Kerala (Organiser, 2024)](https://organiser.org/2024/07/14/247222/bharat/strategic-muslim-voting-patterns-in-kerala-how-community-interests-influence-local-state-and-national-elections/)
+- [Salafism and Pragmatic Politics in India (Hudson Institute)](https://www.hudson.org/democracy/salafism-pragmatic-politics-india-mohammed-sinan-siyech)
+- [Kerala Nadvathul Mujahideen — Wikipedia](https://en.wikipedia.org/wiki/Kerala_Nadvathul_Mujahideen)
+- [Indian Union Muslim League — Wikipedia](https://en.wikipedia.org/wiki/Indian_Union_Muslim_League)
+- [Mujahid-BJP bonhomie causes tremors in Kerala (The Federal, 2024)](https://thefederal.com/states/south/kerala/kerala-knm-conference-sparks-fresh-debate-over-its-ties-with-sangh-parivar)
+- [Big deal: Merger of two factions of a Muslim group (Scroll, 2017)](https://scroll.in/article/865455/big-deal-merger-of-two-factions-of-a-muslim-group-could-realign-political-forces-in-kerala)
+- [Why Samastha mum on Welfare Party's support to UDF? (Onmanorama, March 2026)](https://www.onmanorama.com/news/kerala/2026/03/29/jamaat-e-islami-politicak-wing-welfare-party-supports-udf-assembly-polls-samastha.html)
+- [Nilambur by-poll campaign: Welfare Party offers support to UDF (The Federal)](https://thefederal.com/category/states/south/kerala/nilambur-by-poll-welfare-party-supports-udf-campaign-polarising-turn-191791)
+- [IUML Emerges Kingmaker As Congress-Led UDF Sweeps Kerala (Outlook, May 2026)](https://www.outlookindia.com/national/iuml-emerges-kingmaker-as-congress-led-udf-sweeps-kerala)
+- [Analysis | Candidate selection, youth push turbocharge IUML (Onmanorama, May 2026)](https://www.onmanorama.com/news/kerala/2026/05/05/analysis-candidate-selection-youth-push-turbocharge-iuml.html)
+- [How A Century-Old Sunni Body's 'Warning Against Political Islam' (Swarajya)](https://swarajyamag.com/kerala/how-a-century-old-sunni-bodys-warning-against-political-islam-revealed-the-fault-lines-within-keralas-muslims)
 
 ---
 
