@@ -44,7 +44,7 @@ State-level numbers (Nair 21.6%, Ezhava 39.2%, SC 16.9%, ST 1.2%) match well-kno
 
 - **`data/hindu-caste-by-district.json`** — full data, all 9 columns retained even though only Nair/Ezhava are currently visualised
 - **`/religion-map` page** — Nair and Ezhava district-shaded gradient maps in the "Hindu sub-communities" section. The other castes (Brahmin, Nadar, Viswakarma, Barber, SC, ST, Other) are in the JSON but not rendered yet — easy to add when needed.
-- **Analytical findings** — see `docs/narrative-cards/b3b4-caste-shifts.md` for the v1 verdict on B3/B4 (Ezhava base erosion + Nair UDF lean): both narratives reverse or wash out at this resolution. **Headline:** Nair-heavy areas saw smaller UDF gains (LDF→NDA outpaced LDF→UDF in Trivandrum); Ezhava share doesn't differentially predict the 2026 swing.
+- **Analytical findings** — see `docs/narratives/udf.md §5` (caste-share geography) for the geography-overlap analysis. **Headline:** Nair-heavy districts saw smaller UDF gains and larger NDA gains; Ezhava share doesn't differentially predict the 2026 swing. Caste-voter behaviour cannot be tested at AC granularity (district-level data only).
 
 ## Notable district patterns (assuming numbers hold)
 

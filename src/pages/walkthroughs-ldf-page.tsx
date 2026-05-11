@@ -458,49 +458,15 @@ export function WalkthroughsLDFPage() {
           <strong className="font-medium text-foreground">
             Underlying analyses.
           </strong>{" "}
+          Full data tables (distribution, falsifier tests, flow decomposition,
+          per-cohort outliers) live in{" "}
           <a
-            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a1-minority-consolidation.md"
+            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narratives/ldf.md"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-foreground underline-offset-2 hover:underline"
           >
-            A1 — Minority consolidation
-          </a>
-          {" · "}
-          <a
-            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a2-sabarimala-route.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground underline-offset-2 hover:underline"
-          >
-            A2 — Sabarimala-route falsification
-          </a>
-          {" · "}
-          <a
-            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a6-cabinet-collapse.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground underline-offset-2 hover:underline"
-          >
-            A6 — Cabinet-status null
-          </a>
-          {" · "}
-          <a
-            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/ldf-shallow-distribution.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground underline-offset-2 hover:underline"
-          >
-            LDF shallow distribution
-          </a>
-          {" · "}
-          <a
-            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/anti-ldf-flow.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground underline-offset-2 hover:underline"
-          >
-            Anti-LDF flow
+            docs/narratives/ldf.md
           </a>
           .
         </p>

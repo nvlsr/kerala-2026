@@ -155,9 +155,9 @@ const RAIL_GROUPS = [
 ] as const
 
 /**
- * Arc 3 — BJP's 2026 performance walkthrough. Data-first tour through
- * the 3 wins and 6 cohort archetypes; no interpretive leaps. Source
- * markdown: `docs/narrative-cards/bjp-performance-walkthrough.md`.
+ * BJP's 2026 performance walkthrough. Data-first tour through the 3 wins
+ * and 6 cohort archetypes; no interpretive leaps. Deeper reference:
+ * `docs/narratives/nda.md` (full per-cohort tables + methodology).
  */
 export function WalkthroughsNDAPage() {
   const all = getAllACMetrics()

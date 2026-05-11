@@ -18,12 +18,8 @@ const TOC = [
  * link to specific sections instead of inline-explaining ecological
  * fallacy / FE controls / counterfactual logic / etc.
  *
- * Mirrors content from:
- *   - docs/narrative-cards/methodology-core-concepts.md
- *   - docs/narrative-cards/methodology-gradient-vs-cluster.md
- * Source documents in the repo remain the canonical version with
- * fuller examples; this page surfaces the operative parts for web
- * readers.
+ * This page is the canonical methodology surface — the deeper analytical
+ * notes per page now live in `docs/narratives/{ldf,udf,nda,christian,muslim}.md`.
  */
 export function WalkthroughsMethodologyPage() {
   return (
@@ -411,32 +407,23 @@ export function WalkthroughsMethodologyPage() {
         <section className="rounded-sm border bg-muted/30 p-6 text-xs text-muted-foreground">
           <p>
             <strong className="font-medium text-foreground">
-              Source documents.
+              Per-page deep reference.
             </strong>{" "}
-            Full canonical methodology lives in the repo at{" "}
+            Each walkthrough has a companion markdown reference under{" "}
             <a
-              href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/methodology-core-concepts.md"
+              href="https://github.com/nvlsr/kerala-2026/tree/main/docs/narratives"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-foreground underline-offset-2 hover:underline"
             >
-              methodology-core-concepts.md
+              docs/narratives/
             </a>{" "}
-            and{" "}
-            <a
-              href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/methodology-gradient-vs-cluster.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-foreground underline-offset-2 hover:underline"
-            >
-              methodology-gradient-vs-cluster.md
-            </a>
-            . This page surfaces the operative parts; the source documents have
-            fuller examples and per-card mappings.
+            — full data tables, mitigation tests, per-cohort breakdowns, and
+            cross-references that don't make it onto the page itself.
           </p>
           <p className="mt-2">
             <strong className="font-medium text-foreground">Reproduce.</strong>{" "}
-            Python analysis scripts are under{" "}
+            Analysis scripts are under{" "}
             <a
               href="https://github.com/nvlsr/kerala-2026/tree/main/scripts"
               target="_blank"
@@ -445,7 +432,7 @@ export function WalkthroughsMethodologyPage() {
             >
               scripts/
             </a>
-            . Each card lists its specific reproduction command.
+            . Each narrative file lists its reproduction commands.
           </p>
           <Link
             to="/walkthroughs"

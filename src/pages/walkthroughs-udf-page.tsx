@@ -1170,31 +1170,16 @@ export function WalkthroughsUDFPage() {
           <strong className="font-medium text-foreground">
             Underlying analyses.
           </strong>{" "}
+          Full data tables (Christian-belt premium history + strategy
+          deep-dive, Central-5 kingmaker arithmetic, vote-efficiency
+          decomposition, district-FE regressions) live in{" "}
           <a
-            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a1-minority-consolidation.md"
+            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narratives/udf.md"
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-foreground underline-offset-2 hover:underline"
           >
-            A1 — Minority consolidation
-          </a>
-          {" · "}
-          <a
-            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/a8-central-kerala-kingmaker.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground underline-offset-2 hover:underline"
-          >
-            A8 — Central Kerala kingmaker
-          </a>
-          {" · "}
-          <a
-            href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/vote-efficiency.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-foreground underline-offset-2 hover:underline"
-          >
-            Vote efficiency
+            docs/narratives/udf.md
           </a>
           .
         </p>

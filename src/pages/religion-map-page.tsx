@@ -376,12 +376,12 @@ export function ReligionMapPage() {
               </a>{" "}
               for source notes;{" "}
               <a
-                href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narrative-cards/b3b4-caste-shifts.md"
+                href="https://github.com/nvlsr/kerala-2026/blob/main/docs/narratives/udf.md#5-caste-share-geography-district-level-exploratory"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline-offset-2 hover:underline"
               >
-                docs/narrative-cards/b3b4-caste-shifts.md
+                docs/narratives/udf.md §5 (caste-share geography)
               </a>{" "}
               for what the data implies for the 2026 swing.
             </p>

@@ -85,12 +85,12 @@ export function WalkthroughsPage() {
             </Link>
             ; full underlying analyses live in{" "}
             <a
-              href="https://github.com/nvlsr/kerala-2026/tree/main/docs/narrative-cards"
+              href="https://github.com/nvlsr/kerala-2026/tree/main/docs/narratives"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-foreground underline-offset-2 hover:underline"
             >
-              docs/narrative-cards/
+              docs/narratives/
             </a>{" "}
             on GitHub.
           </p>
