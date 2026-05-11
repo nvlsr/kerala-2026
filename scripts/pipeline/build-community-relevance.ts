@@ -132,7 +132,15 @@ interface CommunityRelevanceRecord {
     NDA: AllianceRoleCell
   }
 
+  /** Compact one-line note (community presence + alliance-role tokens). */
   note: string
+
+  /**
+   * 5-sentence narrative composed from every framework dimension —
+   * the primary surface for the /community-relevance UI. See
+   * `buildStory()` in this file for composition rules.
+   */
+  story: string
 }
 
 /**
@@ -406,8 +414,23 @@ function assembleNote(args: {
 
 // ── Main build ────────────────────────────────────────────────────────
 
+/**
+ * Normalise candidate names across cycles. ECI / ac-history.json use
+ * inconsistent formats — "A K M ASHRAF" vs "A. K. M. Ashraf" vs
+ * "A.K.M. Ashraf". Strip periods + uppercase + collapse spaces gives a
+ * stable comparable key.
+ */
+function normalizeName(name: string): string {
+  return name
+    .toUpperCase()
+    .replace(/[.,'"`]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+}
+
 const acMargin = new Map<number, number>()
 const acWinner = new Map<number, AllianceCode>()
+const acWinnerName = new Map<number, string>()
 const acNdaShare2026 = new Map<number, number>()
 for (const c of constituencies) {
   const total = c.candidates.reduce((s, x) => s + x.votes, 0)
@@ -415,6 +438,7 @@ for (const c of constituencies) {
   const sorted = [...c.candidates].sort((a: Candidate, b: Candidate) => b.votes - a.votes)
   acMargin.set(c.constituencyNumber, ((sorted[0].votes - sorted[1].votes) / total) * 100)
   acWinner.set(c.constituencyNumber, sorted[0].alliance as AllianceCode)
+  acWinnerName.set(c.constituencyNumber, sorted[0].name)
   const ndaVotes = c.candidates.filter((x: Candidate) => x.alliance === "NDA").reduce((s, x) => s + x.votes, 0)
   acNdaShare2026.set(c.constituencyNumber, (ndaVotes / total) * 100)
 }
@@ -447,6 +471,54 @@ function ndaTrendOf(traj: NdaTrajectory): NdaTrend {
   if (delta >= 3) return "rising"
   if (delta <= -3) return "declining"
   return "flat"
+}
+
+/**
+ * Detect candidate-level tenure: how many consecutive cycles back (from
+ * 2026) the same person has won this AC. Counts general + by-election
+ * cycles found in `ac-history.json`. Names are normalised; returns the
+ * earliest year and the count, plus a friendly tenure string.
+ *
+ * Falls back gracefully when 2026 winner name isn't matchable in history.
+ */
+interface IncumbentTenure {
+  candidateName: string
+  consecutiveWins: number   // includes 2026
+  firstWinYear: number      // earliest year in the current streak
+  isLongTenure: boolean     // ≥ 2 consecutive general/by-election wins
+}
+
+const acTenure = new Map<number, IncumbentTenure | null>()
+for (const [acNum, h] of historical.entries()) {
+  const winner2026Name = acWinnerName.get(acNum)
+  if (!winner2026Name) { acTenure.set(acNum, null); continue }
+  const winner2026Norm = normalizeName(winner2026Name)
+
+  // Walk historical elections back from most-recent, matching by name
+  const elections = [...h.elections]
+    .filter(e => e.type === "general" || e.type === "by-election")
+    .sort((a, b) => b.year - a.year)  // newest first, but all are < 2026
+
+  let consecutive = 1   // 2026 itself
+  let firstYear = 2026
+  for (const e of elections) {
+    const sorted = [...e.candidates].sort((a, b) => b.votes - a.votes)
+    const top = sorted[0]
+    if (!top) break
+    if (normalizeName(top.name) === winner2026Norm) {
+      consecutive++
+      firstYear = e.year
+    } else {
+      break  // streak broken
+    }
+  }
+
+  acTenure.set(acNum, {
+    candidateName: winner2026Name,
+    consecutiveWins: consecutive,
+    firstWinYear: firstYear,
+    isLongTenure: consecutive >= 2,
+  })
 }
 
 function durabilityCategoryOf(
@@ -485,6 +557,219 @@ function stableForOf(roles: CommunityRelevanceRecord["allianceRoles"]): Alliance
   if (udfBlocked && ndaBlocked && !ldfBlocked) return "LDF"
   if (udfBlocked && ldfBlocked && !ndaBlocked) return "NDA"
   return null
+}
+
+// ── Rich 5-sentence story composer ───────────────────────────────────
+
+const DISTRICT_DISPLAY: Record<string, string> = {
+  kasaragod: "Kasaragod", kannur: "Kannur", wayanad: "Wayanad",
+  kozhikode: "Kozhikode", malappuram: "Malappuram", palakkad: "Palakkad",
+  thrissur: "Thrissur", ernakulam: "Ernakulam", idukki: "Idukki",
+  kottayam: "Kottayam", alappuzha: "Alappuzha", pathanamthitta: "Pathanamthitta",
+  kollam: "Kollam", thiruvananthapuram: "Trivandrum",
+}
+
+const SUBRITE_DISPLAY: Record<ChristianSubrite, string> = {
+  latin_catholic: "Latin Catholic", syro_malabar: "Syro-Malabar",
+  syro_malankara: "Syro-Malankara", knanaya_catholic: "Knanaya Catholic",
+  marthoma: "Marthoma", indian_orthodox: "Indian Orthodox",
+  jacobite_syrian: "Jacobite Syrian", knanaya_jacobite: "Knanaya Jacobite",
+  csi: "CSI", pentecostal: "Pentecostal",
+  brethren: "Brethren", other_christian: "Other Christian",
+}
+
+const MUSLIM_SUBTYPE_GLOSS: Record<CommunityRelevanceRecord["muslim"]["subType"], string> = {
+  "iuml-stronghold": "iuml-stronghold (Muslim community votes near-unanimously through IUML — UDF lock by demography)",
+  "mixed-muslim": "mixed-muslim (Muslim vote splits between IUML/UDF and LDF-aligned INL/NSC, ratio determines outcome)",
+  "mixed-muslim-wayanad": "mixed-muslim-wayanad (Sunni-organised, Wayanad-specific dynamics distinct from north-Kerala Muslim politics)",
+  "cosmopolitan": "cosmopolitan (Muslim share is a constituent piece of urban/mixed ACs, lower bloc-voting)",
+}
+
+const HINDU_PROFILE_GLOSS: Record<string, string> = {
+  "nair-heavy": "nair-heavy (Nair Service Society organisation, BJP-curious in the elite layer)",
+  "ezhava-very-heavy": "ezhava-very-heavy (Ezhava-Tiyya CPI(M)-aligned base, structural LDF foundation)",
+  "ezhava-heavy": "ezhava-heavy (Ezhava plurality, mixed alignment)",
+  "mixed-nair-ezhava": "mixed-nair-ezhava (Nair + Ezhava both ≥25%, balanced competition)",
+  "mixed-ezhava-leaning": "mixed-ezhava-leaning (Ezhava plurality, less monolithic)",
+  "mixed-fragmented": "mixed-fragmented (no dominant Hindu sub-caste)",
+  "sc-st-heavy": "sc-st-heavy (Wayanad's scheduled-caste/tribe share dominates Hindu identity)",
+  "unknown": "Hindu sub-caste profile unknown",
+}
+
+function tenurePhrase(t: IncumbentTenure | null, _winner: AllianceCode): string {
+  if (!t || !t.isLongTenure) return ""
+  const years = 2026 - t.firstWinYear
+  if (t.consecutiveWins === 2) {
+    return ` ${t.candidateName} won re-election (first elected ${t.firstWinYear}).`
+  }
+  if (t.consecutiveWins >= 3) {
+    return ` ${t.candidateName} has held the seat across ${t.consecutiveWins} consecutive cycles since ${t.firstWinYear} (${years}-year tenure).`
+  }
+  return ""
+}
+
+function buildStory(args: {
+  ac: number
+  name: string
+  district: string
+  margin: number
+  winner: AllianceCode
+  history: { y2016: AllianceCode | null; y2021: AllianceCode | null; y2026: AllianceCode }
+  durabilityCategory: DurabilityCategory
+  ndaShareTrajectory: NdaTrajectory
+  ndaTrend: NdaTrend
+  cAggShare: number
+  cIsRelevant: boolean
+  cIsDecisive: boolean
+  cIsBlocking: boolean
+  relevantSubs: SubRite[]
+  coordination: Coordination | null
+  hasCSI: boolean
+  mAggShare: number
+  mIsRelevant: boolean
+  mIsDecisive: boolean
+  mSubType: CommunityRelevanceRecord["muslim"]["subType"]
+  hindu: { profile: string; nair: number; ezhava: number; sc: number }
+  primaryDriver: string
+  netTag: string
+  confidence: string
+  stableFor: AllianceCode | null
+  allianceRoles: CommunityRelevanceRecord["allianceRoles"]
+  tenure: IncumbentTenure | null
+  winnerCandidateReligion: "Christian" | "Hindu" | "Muslim" | null
+}): string {
+  const sentences: string[] = []
+  const m = args.margin
+  const W = args.winner
+  const dc = args.durabilityCategory
+
+  // ── Sentence 1: headline (margin + cycle story + tenure if relevant)
+  const marginStr = `${m >= 0 ? "+" : "−"}${Math.abs(m).toFixed(1)} pp`
+  let cycleStory: string
+  if (dc.startsWith("always-")) {
+    cycleStory = `third consecutive ${W} cycle`
+  } else if (dc.endsWith("-since-2021")) {
+    cycleStory = `held by ${W} since 2021 (different alliance in 2016)`
+  } else if (dc === "flipped-2026") {
+    const from = args.history.y2021 ?? "?"
+    cycleStory = `flipped from ${from} to ${W} in 2026`
+  } else {
+    cycleStory = `${W} hold (incomplete history)`
+  }
+  const headline = `${W} ${marginStr} — ${cycleStory}.${tenurePhrase(args.tenure, W)}`
+  sentences.push(headline)
+
+  // ── Sentence 2: driver detail (which community / sub-rites, with %)
+  const driverParts: string[] = []
+  if (args.relevantSubs.length > 0) {
+    const subList = args.relevantSubs
+      .map(s => `${SUBRITE_DISPLAY[s.name]} ${s.share.toFixed(0)}% (${s.direction}${s.tier ? `, ${s.tier}-conf` : ""})`)
+      .join(", ")
+    const coord =
+      args.coordination === "coordinated" ? "all moving same direction" :
+      args.coordination === "fractured" ? "fractured (CSI NDA-leaning cancels UDF-up sub-rites)" :
+      args.coordination === "single" ? "single tagged sub-rite" : ""
+    driverParts.push(
+      `Christian community ${args.cAggShare.toFixed(0)}% aggregate, ${subList}${coord ? ` — ${coord}` : ""}`
+    )
+  } else if (args.cIsRelevant) {
+    const fracNote =
+      args.coordination === "fractured" ? " — FRACTURED (CSI NDA-leaning + UDF-up cancel)" : " (dispersed across sub-rites)"
+    driverParts.push(`Aggregate Christian ${args.cAggShare.toFixed(0)}%${fracNote}`)
+  } else if (args.coordination === "fractured" && args.hasCSI) {
+    driverParts.push(`Christian ${args.cAggShare.toFixed(0)}% present but fractured (CSI + UDF-up sub-rites cancel)`)
+  }
+  if (args.mIsRelevant) {
+    driverParts.push(`Muslim community ${args.mAggShare.toFixed(0)}%`)
+  } else if (args.mAggShare >= 15) {
+    driverParts.push(`Muslim ${args.mAggShare.toFixed(0)}% (large but not tier-relevant given margin)`)
+  }
+  if (driverParts.length === 0) {
+    driverParts.push("No tier-relevant Christian or Muslim community — Hindu sub-caste pattern is the only handle")
+  }
+  const tagLabel =
+    args.netTag === "decisive" ? "Tagged decisive (community could plausibly have flipped 2026)" :
+    args.netTag === "blocking" ? "Tagged blocking (community too large to flip 2026 margin but too large to ignore)" :
+    args.netTag === "hindu-driven" ? "Hindu-driven (district-level overlay only — no AC-level Hindu sub-caste data)" :
+    "Diffuse — framework cannot tag a primary driver"
+  sentences.push(`${tagLabel}: ${driverParts.join("; ")}.`)
+
+  // ── Sentence 3: geographic context (Muslim sub-type + Hindu profile)
+  const ctxParts: string[] = []
+  if (args.mAggShare >= 10) {
+    ctxParts.push(`Muslim sub-type ${MUSLIM_SUBTYPE_GLOSS[args.mSubType]}`)
+  }
+  const hinduProf = args.hindu.profile
+  if (hinduProf !== "unknown" && hinduProf !== "mixed-fragmented") {
+    ctxParts.push(
+      `${DISTRICT_DISPLAY[args.district] ?? args.district} is ${HINDU_PROFILE_GLOSS[hinduProf] ?? hinduProf} — Nair ${args.hindu.nair.toFixed(0)}% / Ezhava ${args.hindu.ezhava.toFixed(0)}% of Hindus`
+    )
+  } else if (ctxParts.length === 0) {
+    ctxParts.push(`${DISTRICT_DISPLAY[args.district] ?? args.district} has no consolidated Hindu sub-caste`)
+  }
+  sentences.push(`${ctxParts.join(". ")}.`)
+
+  // ── Sentence 4: structural reading (stableFor + blocker analysis)
+  const r = args.allianceRoles
+  const blockedAlliances: string[] = []
+  for (const a of ["UDF", "LDF", "NDA"] as const) {
+    if (r[a].blockFrom) blockedAlliances.push(a)
+  }
+  // Trim the parenthetical explanations from blockFrom strings to keep
+  // structural sentence tight, but preserve nested-paren cases (CPI(M)).
+  // Strip only one trailing ` (...)` per cell where the prefix is the
+  // descriptive head ("Muslim community @53% (mechanically blocks…)").
+  const trimBlock = (s: string): string => {
+    // Drop a trailing parenthetical only when it appears at the end and
+    // doesn't contain a nested paren (preserves "CPI(M) organisational…")
+    const m = s.match(/^(.*?)\s+\(([^()]*)\)\s*$/)
+    return m ? m[1] : s
+  }
+
+  let structural: string
+  if (args.stableFor) {
+    const blockDetail = blockedAlliances
+      .filter(a => a !== args.stableFor)
+      .map(a => `${a} blocked by ${trimBlock(r[a].blockFrom!)}`)
+      .join("; ")
+    structural = `Structurally locked for ${args.stableFor} — ${blockDetail}.`
+  } else if (blockedAlliances.length === 0) {
+    structural = `No structural lock — all three alliances have credible paths (rare; AC sits in the contested middle).`
+  } else {
+    const blockDetail = blockedAlliances
+      .map(a => `${a} blocked by ${trimBlock(r[a].blockFrom!)}`)
+      .join("; ")
+    structural = `Structurally contested (no clean lock) — ${blockDetail}.`
+  }
+  sentences.push(structural)
+
+  // ── Sentence 5: trajectory + 2031 watch
+  const trajParts: string[] = []
+  const hist = args.history
+  const h2016 = hist.y2016 ?? "?"
+  const h2021 = hist.y2021 ?? "?"
+  const h2026 = hist.y2026
+  trajParts.push(`History ${h2016}→${h2021}→${h2026}`)
+  const nda = args.ndaShareTrajectory
+  const ndaStr = `NDA share ${nda.y2016?.toFixed(0) ?? "?"}→${nda.y2021?.toFixed(0) ?? "?"}→${nda.y2026.toFixed(0)}%`
+  const trendGloss =
+    args.ndaTrend === "rising" ? "rising — BJP credibly building" :
+    args.ndaTrend === "declining" ? "declining — BJP losing 2nd-place ground" :
+    args.ndaTrend === "flat" ? "flat — BJP plateaued" : "unknown"
+  trajParts.push(`${ndaStr} (${trendGloss})`)
+
+  // 2031 watch — close margins flag it
+  let watch = ""
+  if (Math.abs(m) <= 3) {
+    watch = " Knife-edge — small community shift flips this in 2031."
+  } else if (Math.abs(m) <= 7 && args.stableFor && args.stableFor !== W) {
+    watch = ` Won by ${W} this cycle but structural lock is ${args.stableFor} — anomaly.`
+  } else if (args.ndaTrend === "rising" && nda.y2026 >= 15 && W !== "NDA") {
+    watch = " Watch BJP build-up — rising NDA share against a non-NDA winner."
+  }
+  sentences.push(`${trajParts.join(". ")}.${watch}`)
+
+  return sentences.join(" ")
 }
 
 const TIER_RANK: Record<Tier, number> = { HIGH: 3, MEDIUM: 2, LOW: 1 }
@@ -590,6 +875,20 @@ for (const c of constituencies) {
     allianceRoles, stableFor,
   })
 
+  const story = buildStory({
+    ac: c.constituencyNumber, name: c.constituencyName, district: districtId,
+    margin, winner,
+    history, durabilityCategory,
+    ndaShareTrajectory, ndaTrend,
+    cAggShare, cIsRelevant, cIsDecisive, cIsBlocking,
+    relevantSubs, coordination, hasCSI,
+    mAggShare, mIsRelevant, mIsDecisive, mSubType,
+    hindu, primaryDriver, netTag, confidence,
+    stableFor, allianceRoles,
+    tenure: acTenure.get(c.constituencyNumber) ?? null,
+    winnerCandidateReligion: CANDIDATE_RELIGION_OVERRIDES[c.constituencyNumber] ?? null,
+  })
+
   records.push({
     ac: c.constituencyNumber, name: c.constituencyName, district: districtId,
     margin, winner,
@@ -607,7 +906,7 @@ for (const c of constituencies) {
     history, durabilityCategory,
     ndaShareTrajectory, ndaTrend,
     stableFor,
-    allianceRoles, note,
+    allianceRoles, note, story,
   })
 }
 
@@ -655,21 +954,11 @@ console.log(`NDA rising AND ≥10% in 2026: ${ndaRisingAndAbove10}`)
 console.log(`With winner-candidate-religion: ${withCandReligion}`)
 console.log("")
 
-// Spot-check the 5 reality-check ACs
-console.log("=== Reality-check spot tests ===")
-for (const acNum of [1, 12, 28, 52, 102, 135]) {
+// Spot-check the 5 reality-check ACs — print the rich story
+console.log("=== Reality-check spot tests (rich story) ===")
+for (const acNum of [1, 2, 14, 28, 52, 102, 114, 135]) {
   const r = records.find(rec => rec.ac === acNum)
   if (!r) continue
-  console.log(`\nAC ${acNum} ${r.name} [${r.confidence}/${r.netTag}]`)
-  console.log(`  History: 2016=${r.history.y2016 ?? "?"} 2021=${r.history.y2021 ?? "?"} 2026=${r.history.y2026} → ${r.durabilityCategory}`)
-  const t = r.ndaShareTrajectory
-  console.log(`  NDA share: ${t.y2016?.toFixed(1) ?? "?"}% → ${t.y2021?.toFixed(1) ?? "?"}% → ${t.y2026.toFixed(1)}% (${r.ndaTrend})`)
-  console.log(`  StableFor: ${r.stableFor ?? "—"}`)
-  console.log(`  Note: ${r.note}`)
-  console.log(`  Alliance roles:`)
-  for (const a of ["UDF","LDF","NDA"] as const) {
-    const cell = r.allianceRoles[a]
-    if (cell.flipTo) console.log(`    flip-to-${a}: ${cell.flipTo}`)
-    if (cell.blockFrom) console.log(`    block-${a}:   ${cell.blockFrom}`)
-  }
+  console.log(`\n────── AC ${acNum} ${r.name} ──────`)
+  console.log(r.story)
 }

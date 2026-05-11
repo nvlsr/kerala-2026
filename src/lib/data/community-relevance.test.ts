@@ -9,6 +9,28 @@ import { describe, expect, test } from "vitest"
 
 import { communityRelevance, getCommunityRelevance } from "./community-relevance"
 
+describe("community-relevance — story", () => {
+  test("every AC has a non-empty story", () => {
+    for (const r of communityRelevance) {
+      expect(typeof r.story).toBe("string")
+      expect(r.story.length, `AC ${r.ac} ${r.name} empty story`).toBeGreaterThan(50)
+    }
+  })
+
+  test("every story mentions the winner alliance", () => {
+    for (const r of communityRelevance) {
+      expect(r.story.includes(r.winner), `AC ${r.ac} ${r.name} story missing winner`).toBe(true)
+    }
+  })
+
+  test("stories with decisive tag mention 'decisive'", () => {
+    for (const r of communityRelevance) {
+      if (r.netTag !== "decisive") continue
+      expect(r.story.toLowerCase().includes("decisive"), `AC ${r.ac} ${r.name}`).toBe(true)
+    }
+  })
+})
+
 describe("community-relevance — structural invariants", () => {
   test("140 records covering all ACs 1..140", () => {
     expect(communityRelevance.length).toBe(140)

@@ -132,7 +132,15 @@ export type CommunityRelevanceRecord = {
     NDA: AllianceRoleCell
   }
 
+  /** Compact one-line note — community presence + alliance-role tokens. */
   note: string
+
+  /**
+   * 5-sentence narrative composed from every framework dimension.
+   * The primary insight surface for the /community-relevance UI.
+   * Includes candidate tenure where the same MLA has won ≥2 consecutive cycles.
+   */
+  story: string
 }
 
 const records = communityRelevanceJson as unknown as CommunityRelevanceRecord[]
