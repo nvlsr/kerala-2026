@@ -20,6 +20,7 @@ import {
   christianSubRiteCohortFor,
   type ChristianSubRiteCohort,
 } from "@/lib/data/subrite-bins"
+import { ZONE, type Zone } from "@/lib/data/zones"
 
 export type CycleYear = 2011 | 2016 | 2021 | 2026
 export const CYCLE_YEARS: readonly CycleYear[] = [2011, 2016, 2021, 2026]
@@ -172,24 +173,10 @@ export const COHORT_TRAJECTORY: Record<
 })()
 
 // ── Latin Catholic geographic zone breakdown (§10) ───────────────────
-const ZONE: Record<string, "south" | "central" | "north"> = {
-  thiruvananthapuram: "south",
-  kollam: "south",
-  pathanamthitta: "south",
-  alappuzha: "central",
-  kottayam: "central",
-  ernakulam: "central",
-  thrissur: "central",
-  idukki: "central",
-  palakkad: "central",
-  kozhikode: "north",
-  malappuram: "north",
-  kannur: "north",
-  kasaragod: "north",
-  wayanad: "north",
-}
+// ZONE map lives in src/lib/data/zones.ts (sanity-checked against
+// districts.json on import).
 
-export type ZoneLabel = "south" | "central" | "north"
+export type ZoneLabel = Zone
 export type LatinZoneRow = {
   zone: ZoneLabel
   n: number

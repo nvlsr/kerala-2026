@@ -24,6 +24,7 @@ import {
   type ChristianSubRiteCohort,
 } from "@/lib/data/subrite-bins"
 import { getReligiousSignatureForAC } from "@/lib/data/religious-pois"
+import { ZONE, type Zone } from "@/lib/data/zones"
 
 type AllianceShares = { UDF: number; LDF: number; NDA: number; OTHER: number }
 type Candidate2026 = {
@@ -48,22 +49,8 @@ type HistoricalConstituency = {
   elections: HistoricalElection[]
 }
 
-const ZONE: Record<string, "south" | "central" | "north"> = {
-  thiruvananthapuram: "south",
-  kollam: "south",
-  pathanamthitta: "south",
-  alappuzha: "central",
-  kottayam: "central",
-  ernakulam: "central",
-  thrissur: "central",
-  idukki: "central",
-  palakkad: "central",
-  kozhikode: "north",
-  malappuram: "north",
-  kannur: "north",
-  kasaragod: "north",
-  wayanad: "north",
-}
+// ZONE map now lives in src/lib/data/zones.ts (sanity-checked against
+// districts.json on import).
 
 function shares2026(c: Constituency2026): AllianceShares {
   let total = 0
@@ -133,7 +120,7 @@ type Row = {
   acNumber: number
   acName: string
   district: string
-  zone: "south" | "central" | "north" | "(unzoned)"
+  zone: Zone | "(unzoned)"
   cohort: ReturnType<typeof christianSubRiteCohortFor>
   christianPct: number
   s2021: AllianceShares
