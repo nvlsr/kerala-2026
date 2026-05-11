@@ -19,7 +19,7 @@
  * evidence, to avoid mangling real name tokens.
  */
 const HONORIFIC_PREFIXES = new Set([
-  "DR", "ADV", "MR", "MRS", "MS",
+  "DR", "ADV", "ADVOCATE", "MR", "MRS", "MS",
   "SRI", "SHRI", "SMT", "PROF",
 ])
 

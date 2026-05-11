@@ -482,28 +482,88 @@ if (sameAcSuspected.length === 0) {
 }
 lines.push("")
 
+// Cross-AC split: ≥2 shared tokens (priority review) vs 1 shared token
+// (mostly common-surname false positives). The latter set is collapsed
+// to a summary; the former is shown in full.
+const crossAcMultiToken = crossAcSuspected.filter(s => s.sharedTokensSample.length >= 2)
+const crossAcSingleToken = crossAcSuspected.filter(s => s.sharedTokensSample.length < 2)
+
+const classifiedCross = crossAcMultiToken.filter(s =>
+  classifications.suspectedMatch[pairKey(s.keyA, s.keyB)]
+)
+const unclassifiedCross = crossAcMultiToken.filter(s =>
+  !classifications.suspectedMatch[pairKey(s.keyA, s.keyB)]
+)
+
 lines.push(`### B.2 Cross-AC same-alliance suspected matches (${crossAcSuspected.length})`)
 lines.push("")
-if (crossAcSuspected.length === 0) {
-  lines.push("_None._")
-} else {
-  lines.push(
-    "Same alliance, different ACs, high token overlap. Most useful for identifying candidates who appeared under different name spellings across constituencies (e.g. K. Surendran across multiple BJP runs)."
+lines.push(
+  `Same alliance, different ACs, token overlap. Split by token-count: pairs with ≥2 shared tokens are likely same person (name drift across constituencies); pairs with only 1 shared token are mostly different people sharing a common Kerala surname.`
+)
+lines.push("")
+
+lines.push(`#### B.2.a Multi-token cross-AC pairs (${crossAcMultiToken.length}) — priority review`)
+lines.push("")
+lines.push(
+  `Two or more name tokens shared across ACs. High probability of being the same person under different name spellings (e.g. word-order swap, initials dropped between constituencies).`
+)
+lines.push("")
+
+function renderCrossPair(s: typeof crossAcMultiToken[number]): string[] {
+  const out: string[] = []
+  const cls = classifications.suspectedMatch[pairKey(s.keyA, s.keyB)]
+  const badge = cls ? VERDICT_BADGE[cls.verdict] : "❓ **NEEDS REVIEW**"
+  out.push(
+    `- **\`${s.keyA}\`** ↔ **\`${s.keyB}\`** (Jaccard ${s.jaccard.toFixed(2)}, shared: ${s.sharedTokensSample.map(t => `\`${t}\``).join(", ")}) — ${badge}`
   )
+  if (cls?.note) out.push(`    > ${cls.note}`)
+  for (const h of s.examplesA) out.push(`    - A: ${fmtAppearance(h)}`)
+  for (const h of s.examplesB) out.push(`    - B: ${fmtAppearance(h)}`)
+  return out
+}
+
+if (crossAcMultiToken.length === 0) {
+  lines.push("_None._")
   lines.push("")
-  for (const s of crossAcSuspected.slice(0, 100)) {
-    lines.push(
-      `- **\`${s.keyA}\`** ↔ **\`${s.keyB}\`** (Jaccard ${s.jaccard.toFixed(2)}, shared: ${s.sharedTokensSample.map(t => `\`${t}\``).join(", ")})`
-    )
-    for (const h of s.examplesA) lines.push(`    - A: ${fmtAppearance(h)}`)
-    for (const h of s.examplesB) lines.push(`    - B: ${fmtAppearance(h)}`)
+} else {
+  if (unclassifiedCross.length > 0) {
+    lines.push("##### ❓ Unclassified")
+    lines.push("")
+    for (const s of unclassifiedCross) {
+      for (const l of renderCrossPair(s)) lines.push(l)
+    }
+    lines.push("")
   }
-  if (crossAcSuspected.length > 100) {
-    lines.push(
-      `- _… ${crossAcSuspected.length - 100} more in \`data/candidate-continuity.json\`._`
-    )
+  if (classifiedCross.length > 0) {
+    lines.push("##### ✓ Already classified")
+    lines.push("")
+    for (const s of classifiedCross) {
+      for (const l of renderCrossPair(s)) lines.push(l)
+    }
+    lines.push("")
   }
 }
+
+// Surface common-surname false positives in summary form
+lines.push(
+  `#### B.2.b Single-token cross-AC pairs (${crossAcSingleToken.length}) — surname collisions`
+)
+lines.push("")
+lines.push(
+  "These pairs share only one token (a surname). Almost all are different people coincidentally sharing a common Kerala surname. Collapsed to a summary; full pair list lives in `data/candidate-continuity.json`."
+)
+lines.push("")
+const tokenFreq = new Map<string, number>()
+for (const s of crossAcSingleToken) {
+  const t = s.sharedTokensSample[0] ?? "?"
+  tokenFreq.set(t, (tokenFreq.get(t) ?? 0) + 1)
+}
+const sortedTokens = [...tokenFreq.entries()].sort((a, b) => b[1] - a[1])
+lines.push("Surnames driving these false positives:")
+lines.push("")
+lines.push("| Surname | Pair count |")
+lines.push("| --- | ---: |")
+for (const [t, c] of sortedTokens) lines.push(`| \`${t}\` | ${c} |`)
 lines.push("")
 
 import { writeFileSync } from "fs"
