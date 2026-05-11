@@ -279,6 +279,38 @@
     "E K VIJAYAN|N VIJAYAN": {
       "verdict": "different-people-same-name",
       "note": "Different people in different parts of Kerala. E. K. Vijayan (LDF, Nadapuram in north Malabar) won 3 consecutive cycles 2011/2016/2021. N. Vijayan Pillai (LDF, Chavara in Kollam ~300km south) appears only in 2016. Pillai caste suffix on N. Vijayan further distinguishes him from E. K. Vijayan."
+    },
+    "BRIJESH KUMAR|K BRIJESH KUMAR": {
+      "verdict": "initial-changed-same-person",
+      "note": "Same person — Kannur-area UDF candidate. K. Brijesh Kumar (Payyannur UDF rank 2, 2011) → Brijesh Kumar (Kalliasseri UDF rank 2, 2021) — adjacent ACs, initial dropped between cycles."
+    },
+    "K P PRAKASH BABU|PRAKASH BABU": {
+      "verdict": "initial-changed-same-person",
+      "note": "Same person — NDA cadre rotating constituencies. K. P. Prakash Babu / Prakash Babu — appeared in Nadapuram 2011, Beypore 2016/2021, Aroor 2019 by-poll, all NDA rank 3. ECI inconsistently published with or without the K.P. prefix."
+    },
+    "A P ANIL KUMAR|K P ANIL KUMAR": {
+      "verdict": "different-people-same-name",
+      "note": "Different people — both ran in 2011 in different ACs (A.P. Anil Kumar in Wandoor UDF rank 1, K.P. Anil Kumar in Quilandy UDF rank 2). Same-year-different-ACs makes same-person impossible."
+    },
+    "M ANIL KUMAR|P K ANIL KUMAR": {
+      "verdict": "different-people-same-name",
+      "note": "Different people. M. Anil Kumar (Eranakulam LDF rank 2, 2016) vs P. K. Anil Kumar (Kalpetta LDF rank 2, 2026). Different ACs, different initials, 10-year gap."
+    },
+    "M THOMAS MATHEW|MATHEW T THOMAS": {
+      "verdict": "different-people-same-name",
+      "note": "Different people — both ran in 2011 in different ACs (M. Thomas Mathew at Nilambur LDF rank 2, Mathew T. Thomas at Thiruvalla LDF rank 1). Same-year-different-ACs makes same-person impossible. Mathew T. Thomas is the longtime NCP MLA in Thiruvalla."
+    },
+    "M THOMAS MATHEW|RAJAJI MATHEW THOMAS": {
+      "verdict": "different-people-same-name",
+      "note": "Different people — both ran in 2011 in different ACs (Nilambur vs Ollur). Same-year-different-ACs proves they are distinct."
+    },
+    "MATHEW T THOMAS|RAJAJI MATHEW THOMAS": {
+      "verdict": "different-people-same-name",
+      "note": "Different people — both ran in 2011 in different ACs (Thiruvalla LDF rank 1 vs Ollur LDF rank 2). Same-year-different-ACs proves they are distinct."
+    },
+    "V R SUNIL KUMAR|V S SUNIL KUMAR": {
+      "verdict": "different-people-same-name",
+      "note": "Different people — both ran in 2016 in different ACs (V.R. Sunil Kumar in Kodungallur LDF rank 1, V.S. Sunil Kumar in Thrissur LDF rank 1). Same-year-different-ACs proves they are distinct."
     }
   }
 }
