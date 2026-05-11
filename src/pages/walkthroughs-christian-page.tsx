@@ -203,7 +203,7 @@ export function WalkthroughsChristianPage() {
         id="trajectories"
         heading="Each sub-rite has its own multi-cycle alliance pattern"
         sectionType="foundational"
-        layout="stacked"
+        layout="visual-left"
         visual={
           <TrajectoryLines
             cycles={[...CYCLE_YEARS]}
@@ -260,7 +260,7 @@ export function WalkthroughsChristianPage() {
         id="restorations"
         heading="2026 Story A — Restorations"
         sectionType="mechanism"
-        layout="stacked"
+        layout="visual-right"
         visual={
           <TrajectoryLines
             cycles={[...CYCLE_YEARS]}
@@ -304,7 +304,7 @@ export function WalkthroughsChristianPage() {
         id="flips"
         heading="2026 Story B — Flips"
         sectionType="mechanism"
-        layout="stacked"
+        layout="visual-left"
         visual={
           <TrajectoryLines
             cycles={[...CYCLE_YEARS]}
