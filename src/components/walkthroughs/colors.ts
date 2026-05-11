@@ -33,21 +33,24 @@ export const INC_HINDU_EMERALD = MUSLIM_BELT_GREEN
 export const SPECIAL_GRAY = "#9CA3AF" // gray-400 — for the special-case bucket
 
 // ── Sub-rite palette (OSM religious-POI inventory) ───────────────────
-// Used on /religion-map for the categorical dominant-sub-rite maps and
-// the per-sub-rite gradient grid. Christian buckets pick warm/blue
-// hues; Muslim buckets pick green family.
+// Used on /religion-map and /walkthroughs/christian-walkthrough for
+// the categorical dominant-sub-rite maps and the per-sub-rite gradient
+// grid. The 6 visible Christian cohorts get six maximally distinct
+// hues (spaced ~60° apart on the colour wheel) for clear contrast on
+// dense maps. Less-frequent cohorts get the residual hues.
 export const CHRISTIAN_SUBRITE_COLORS: Record<string, string> = {
-  latin_catholic: "#1F77B4", // UDF blue — coastal Latin diocesan
-  syro_malabar: "#7C3AED", // violet-600 — interior Syro-Malabar belt
-  syro_malankara: "#EC4899", // pink-500 — small Tiruvalla-belt presence
-  knanaya_catholic: "#F59E0B", // amber-500 — Kottayam-Changanacherry endemic
-  marthoma: "#10B981", // emerald-500 — Pathanamthitta corridor
-  indian_orthodox: "#0EA5E9", // sky-500 — central Travancore
-  jacobite_syrian: "#06B6D4", // cyan-500 — central Kerala
-  knanaya_jacobite: "#F97316", // orange-500 — rare
-  csi: "#A855F7", // purple-500
-  pentecostal: "#DC2626", // red-600
-  brethren: "#6B7280", // gray-500
+  syro_malabar: "#7C3AED", // violet — biggest cohort, interior central Kerala
+  latin_catholic: "#2563EB", // royal blue — coastal Latin diocesan
+  indian_orthodox: "#F59E0B", // amber — central Travancore
+  jacobite_syrian: "#DC2626", // red — small central Kerala cohort
+  marthoma: "#10B981", // emerald — Pathanamthitta corridor
+  csi: "#EC4899", // pink — Trivandrum cluster (geographically confounded)
+  // Less-frequent cohorts (small n or zero dominant ACs).
+  syro_malankara: "#EA580C", // orange — small Tiruvalla-belt presence
+  knanaya_catholic: "#FACC15", // yellow — Kottayam-Changanacherry endemic
+  knanaya_jacobite: "#0D9488", // teal — rare
+  pentecostal: "#A855F7", // light purple
+  brethren: "#6B7280", // gray
   other_christian: SPECIAL_GRAY,
 }
 
