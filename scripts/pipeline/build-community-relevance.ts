@@ -314,7 +314,18 @@ function computeAllianceRoles(args: {
     if (W === "UDF" && args.cIsRelevant && args.coordination !== "fractured") {
       r.LDF.blockFrom = `Christian community @${args.cAggShare.toFixed(0)}% (UDF-aligned in 2026)`
     } else if (W === "UDF" && args.mAggShare >= 25) {
-      r.LDF.blockFrom = `Muslim community @${args.mAggShare.toFixed(0)}% (UDF-aligned)`
+      // Refinement (per external commentary verification, May 2026):
+      // In mixed-muslim districts that are ALSO ezhava-very-heavy (Kannur,
+      // Kozhikode, Alappuzha), the Muslim community has NOT been
+      // historically UDF-locked — LDF has its own structural anchor via
+      // the Ezhava-Tiyya Hindu base. Don't claim block-LDF in those cases;
+      // leave LDF's path open. See docs/narratives/muslim.md §10b.
+      const muslimIsContestedThere =
+        args.mSubType === "mixed-muslim" &&
+        args.hinduProf === "ezhava-very-heavy"
+      if (!muslimIsContestedThere) {
+        r.LDF.blockFrom = `Muslim community @${args.mAggShare.toFixed(0)}% (UDF-aligned)`
+      }
     } else if (W === "NDA" && args.hinduProf === "nair-heavy") {
       r.LDF.blockFrom = `Hindu Nair NDA-curious vote + organised BJP`
     }

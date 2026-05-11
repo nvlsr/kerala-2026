@@ -16,7 +16,8 @@ Findings tagged `[Sprint 2]` predate the per-AC community-relevance framework. F
 - `[Sprint 2]` **UDF's strategy menu in Muslim Malappuram is structurally narrower than in Christian belt**: IUML alliance OR INC-Muslim. INC-Hindu was NEVER on the menu at non-reserved Muslim-majority seats. (Compare: Christian-belt UDF freely mixed INC-Hindu and INC-Christian.)
 - `[Sprint 2]` **Variance-explained R² heavily favours religion-share over sub-sect cohort for Muslim level** (Muslim % R² 0.237 vs cohort R² 0.014). Sub-sect distinction is mostly noise once you control for Muslim %.
 - `[Sprint 2]` **The empty INC-Hindu bucket in Muslim Malappuram is itself a structural finding** — UDF was not willing to put a Hindu candidate in front of Muslim voters at non-reserved seats.
-- `[NEW · CR]` ⚠️ **PARTIALLY CONTRADICTED by external commentary** — see §10b: The "Kozhikode/Kannur flip is structural restoration" framing doesn't hold up. Per Outlook (May 2026), Congress hadn't won a Kozhikode seat in 20+ years; LDF was NOT anomalously winning 2021 — it had structural Ezhava-Tiyya dominance. The 2026 flip is a **new dynamic** (Muslim swing + Jamaat consolidation + anti-incumbency), not a structural return. The community-relevance framework's `block-LDF` rule over-claims in mixed-muslim + ezhava-very-heavy districts.
+- `[NEW · CR]` **Muslim voters punch above their weight by 2.3× their demographic share** — see §10c Theme 1. Muslim community has structurally measurable influence in ~91 of 140 ACs (65 %) despite being ~28 % of population. Two distinct modes: (a) direct-majority lock in Malappuram-style ACs, (b) coalition-partner swing-bloc in mixed-muslim + Christian-Muslim ACs. UDF and LDF both must compete for Muslim votes in (b); NDA is mechanically locked out of both modes.
+- `[CORRECTED]` ⚠️ Earlier draft claimed "Kozhikode/Kannur flip is structural restoration" — **corrected after external commentary** (§10b). LDF wasn't anomalously winning Kozhikode in 2021 — it had structural Ezhava-Tiyya dominance for 20+ years. The 2026 flip is a **new dynamic** (Muslim swing + Jamaat-WPI consolidation + anti-incumbency), not a return. The community-relevance framework's `block-LDF` rule has been **fixed** for ezhava-very-heavy + mixed-muslim ACs — they now correctly read as `stableFor: null` (contested) rather than `stableFor: UDF`. Affects 14 ACs in Kannur + Kozhikode.
 - `[NEW · CR]` **No Muslim hereditary seats.** 0 of the 6 documented hereditary successions are Muslim. By contrast, 5 of 6 are Christian-belt UDF. Muslim politics is candidate-of-the-cycle, not dynasty-driven — a stark contrast to Christian-belt Kerala.
 - `[NEW · CR]` **BJP is building Hindu vote share inside Muslim-blocked seats.** 11 Muslim-presence ACs have rising NDA share while structurally locked away from NDA — including Kozhikode N + S (Muslim 41 %, NDA 17→21→25 % and 23→23→28 %). The structural lock holds; the trajectory under it shifts.
 - `[Joint]` **Standing political assumption**: IUML's Sunni-establishment relationship is firmer than its Mujahid-faction relationship. Cohort analysis and community-relevance both consistent with this — Sunni cohort 77 % stableFor:UDF vs Mujahid 64 %, and Sunni durability skews more to always-UDF.
@@ -443,6 +444,73 @@ Verified our Sprint-2 + community-relevance findings against political commentar
 - [IUML Emerges Kingmaker As Congress-Led UDF Sweeps Kerala (Outlook, May 2026)](https://www.outlookindia.com/national/iuml-emerges-kingmaker-as-congress-led-udf-sweeps-kerala)
 - [Analysis | Candidate selection, youth push turbocharge IUML (Onmanorama, May 2026)](https://www.onmanorama.com/news/kerala/2026/05/05/analysis-candidate-selection-youth-push-turbocharge-iuml.html)
 - [How A Century-Old Sunni Body's 'Warning Against Political Islam' (Swarajya)](https://swarajyamag.com/kerala/how-a-century-old-sunni-bodys-warning-against-political-islam-revealed-the-fault-lines-within-keralas-muslims)
+
+---
+
+## §10c — Three open themes for the walkthrough (May 2026 discussion)
+
+After the external-commentary verification (§10b), three analytical themes are worth surfacing on the walkthrough — they're intuitive to most observers but need framework-level data to anchor.
+
+### Theme 1 — Muslim voters punch above their weight
+
+**Claim**: Kerala Muslims are ~28% of the population but politically relevant in ~65% of ACs — 2.3× their demographic share. The community-relevance framework actually quantifies this, but the muslim.md doesn't currently lead with it.
+
+**Framework-derived count** (per `data/community-relevance.json`):
+
+| Mode of Muslim political influence | n (of 140 ACs) | Mechanism |
+| --- | ---: | --- |
+| Muslim community is the **primary driver** (`primaryDriver: muslim`) | **65** | Muslim share large enough to determine the AC outcome |
+| Muslim is a **co-primary driver** with Christian (`both-christian-muslim`) | **26** | Christian + Muslim coalition determines outcome |
+| Muslim mechanically **blocks NDA** (≥25 % share) | **61** | NDA cannot reach majority without Muslim defection, which historically doesn't happen ("barring a minuscule minority favouring the Left" — Wikipedia on KNM) |
+| Muslim contributes to **combined minority block-NDA** (Christian + Muslim ≥30 %, neither alone ≥25 %) | ~20 | The minority coalition rule fires |
+| **Total ACs where Muslim community has structurally measurable influence** | **~91** | (overlaps; ≈ 65 % of all Kerala ACs) |
+
+**Two modes of Muslim political influence:**
+
+1. **Direct-majority mode** — In Malappuram + a few Kasaragod / Wayanad ACs (16 iuml-stronghold + 3 mixed-muslim-wayanad + ~10 mixed-muslim with Muslim ≥50%), Muslim community alone determines the outcome. UDF must field a Muslim candidate or lose. **NDA structurally cannot win.** **LDF can't win unless the Muslim community fractures along EK/AP factional lines** (per §10b).
+
+2. **Coalition-partner mode** — In central Kerala + Kannur + Kozhikode + Trivandrum cosmopolitan ACs (Muslim 15-45 %), Muslim community is a constituent piece of a UDF-leaning coalition. Their vote share is necessary for UDF, but not sufficient — UDF needs Christian or Hindu sub-caste votes to add up to victory. **In these seats, Muslim community's political bargaining position is amplified by being the swing-bloc that determines which non-NDA alliance wins.**
+
+**Implication for walkthrough**: open with this. It's the most underdocumented headline finding — the political influence is genuinely larger than the population share suggests, but the framework's structural-blocker math demonstrates the mechanism. Both UDF AND LDF must satisfy Muslim community demands in (1); both have to compete for Muslim swing votes in (2); NDA is mechanically locked out of both modes.
+
+### Theme 2 — What if NDA consolidates the Hindu vote in mixed-muslim ACs? (Kozhikode N/S as the canonical case)
+
+**Question**: In a Kozhikode-N-style AC (Muslim 41 %, Hindu ~55 %, Christian ~4 %, NDA share rose 23 → 23 → 28 %), what does the math say if NDA consolidates more Hindu vote?
+
+**What the framework can answer**:
+
+- **Mechanical block-NDA still holds at moderate consolidation.** Even at NDA 40 % AC-level vote share (vs current 28 %), Muslim community + IUML organisational depth typically delivers 35-40 % of AC for UDF. LDF still gets 20-25 % on Hindu Ezhava-Tiyya base. NDA at 40 % is **still ~5pp short** in a 3-way race.
+- **The structural-block threshold is NDA ≈ 45 % AC-level.** At that level, the math breaks — Muslim community alone can't out-vote the Hindu bloc. This would require NDA to consolidate ~75 % of the Hindu vote, which is far from today's pattern (per the NDA trajectory data, Kozhikode N went from ~40 % Hindu-NDA-share to ~50 % over 10 years).
+- **What our data DOESN'T resolve**: the within-Hindu vote split. Kerala Hindus aren't a homogeneous bloc — Ezhava-Tiyya CPI(M)-aligned base + Nair NSS-organised + SC/ST + Christian-adjacent castes each behave differently. The community-relevance framework treats Hindu as a district-level overlay; we have **no AC-level Hindu sub-caste resolution**.
+
+**Honest read**: the framework can rule out NDA winning Kozhikode N at current trajectories (28 → ~35 % NDA over 5 more years would still be a loss). It **cannot** confidently model what happens if BJP launches a successful Hindu-consolidation campaign that breaks the Ezhava-LDF alignment. That's outside the data layer's resolution.
+
+**For the walkthrough**: present the question, present what the data shows (mechanical block holds at current trajectories), and explicitly mark the within-Hindu-vote dynamic as **not measurable from our data**. Useful framing: "Hindu vote in mixed-muslim ACs is currently 3-way split; for NDA to win, they'd need to consolidate one side of the LDF/UDF Hindu split, which has no historical precedent in Kerala."
+
+### Theme 3 — Does BJP's Christian sub-rite mobilisation reduce Muslim political influence?
+
+**Question**: BJP has been making outreach to specific Christian sub-rites (Latin Catholic, CSI). If they successfully peel off 5-10 % of Christian vote in central Kerala, what happens to Muslim political influence?
+
+**Framework-level reasoning**:
+
+The Muslim community's two modes (per Theme 1) react differently:
+
+1. **Direct-majority mode (Malappuram + Muslim-majority Kasaragod)** — **No effect.** Christian share is essentially zero in iuml-stronghold ACs. BJP gaining Christian votes doesn't change anything in Malappuram.
+
+2. **Coalition-partner mode (central Kerala mixed-muslim, Christian-belt+Muslim seats)** — **Real effect.** The framework's `block-NDA via combined Christian + Muslim ≥30%` rule fires in ~28 ACs. If BJP wins 8-10 % of the Christian vote in those seats, the combined-minority threshold may no longer fire. Result: NDA becomes plausibly competitive in seats where Muslim alone is 15-25 % (not enough to block).
+
+**Quantitative read** (`data/community-relevance.json`):
+
+- **28 ACs currently have `block-NDA via Christian + Muslim combined`** (neither alone ≥25 %, combined ≥30 %). These are concentrated in Kottayam (5), Ernakulam (6), Pathanamthitta (4), Idukki (5), Kollam (3), Alappuzha (5).
+- **In these 28 ACs, Muslim's political bargaining position depends on Christian alignment with the same alliance.** If BJP peels off Latin Catholic + CSI voters in coastal-Kollam / Trivandrum, the coalition fragments and Muslim alone may not deliver UDF wins.
+
+**Implication**: BJP's most strategically valuable target in Kerala is NOT Muslim Kerala (impossible) and NOT pure-Hindu Kerala (saturated with Ezhava-LDF + Nair-BJP-curious already polarised). It's the **Christian-Muslim coalition belt of central Kerala**, where peeling off 8-10 % of Christian sub-rite voters reduces the size of the minority-coalition block from "blocking" to "competitive."
+
+**The Muslim political influence effect**: in these 28 ACs, Muslim influence is *amplified* by being part of a 30 %+ minority coalition. Break the coalition (by BJP gaining Christian votes), and Muslim community's political weight contracts toward its direct-share (15-25 %). Their bargaining power per Muslim voter doesn't change, but their *coalitional* leverage does.
+
+**For the walkthrough**: this is the most counter-intuitive theme. The argument goes: *the safest defense of Muslim political influence in Kerala isn't a stronger Muslim mobilisation campaign — it's preserving the Christian + Muslim coalition.* If BJP successfully fragments Christian sub-rites, Muslim influence retreats to its direct-share modes.
+
+This connects directly to the Christian walkthrough's findings on CSI fragmentation (the 8 fractured-Christian ACs we already identified). BJP's most actionable Christian play is in the CSI / Latin Catholic belt; if successful, it not only hurts UDF directly but **reduces Muslim political bargaining power in central Kerala by fragmenting the minority coalition.**
 
 ---
 
