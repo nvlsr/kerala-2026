@@ -21,9 +21,50 @@
  */
 import { constituencies, type Candidate } from "@/lib/data/constituencies"
 
+import { existsSync, readFileSync } from "fs"
+
 import { loadHistorical } from "../_lib/load"
 import { extractCasteSuffix, nameSimilarity, normalizeName } from "../_lib/names"
 import { saveJson } from "../_lib/save"
+
+// ── Manual classifications (persist across re-runs) ──────────────────
+
+type Verdict = "same-person-switched" | "different-people-same-name" |
+  "word-order-swap-same-person" | "initial-changed-same-person" |
+  "hereditary-different-people" | "spelling-drift-same-person" |
+  "needs-more-info"
+
+interface Classification {
+  verdict: Verdict
+  note?: string
+}
+
+interface ClassificationsFile {
+  version: number
+  description?: string
+  multiAlliance: Record<string, Classification>
+  suspectedMatch: Record<string, Classification>
+}
+
+const CLASSIFICATIONS_PATH = "data/candidate-classifications.json"
+let classifications: ClassificationsFile = {
+  version: 1,
+  multiAlliance: {},
+  suspectedMatch: {},
+}
+if (existsSync(CLASSIFICATIONS_PATH)) {
+  classifications = JSON.parse(readFileSync(CLASSIFICATIONS_PATH, "utf-8"))
+}
+
+const VERDICT_BADGE: Record<Verdict, string> = {
+  "same-person-switched": "✅ same person (alliance switch)",
+  "different-people-same-name": "🟰 different people · same name",
+  "word-order-swap-same-person": "✅ same person (word order)",
+  "initial-changed-same-person": "✅ same person (initial dropped/added)",
+  "hereditary-different-people": "👨‍👦 hereditary succession · different people",
+  "spelling-drift-same-person": "✅ same person (spelling drift)",
+  "needs-more-info": "❔ needs more info",
+}
 
 interface Appearance {
   year: number
@@ -273,30 +314,63 @@ lines.push("---")
 lines.push("")
 
 // §A.1 — MULTI-ALLIANCE (priority — likely different people)
+const classifiedMA = multiAlliance.filter(e => classifications.multiAlliance[e.normKey])
+const unclassifiedMA = multiAlliance.filter(e => !classifications.multiAlliance[e.normKey])
+
 lines.push("## A.1 Multi-alliance multi-appearance keys (priority review)")
 lines.push("")
 lines.push(
-  "These normalised keys appeared under **two or more main alliances** (UDF/LDF/NDA). Most are different people with the same common name. Scan each block; if it's actually the same person who switched alliances, note it — otherwise confirm they're distinct."
+  "Normalised keys appearing under **≥ 2 main alliances** (UDF/LDF/NDA). Mix of (a) same person who genuinely switched fronts (Kerala Congress factions, defections), and (b) different people sharing a common name. Verdicts persisted in `data/candidate-classifications.json` — survive audit re-runs."
 )
 lines.push("")
+lines.push(`**${classifiedMA.length} classified · ${unclassifiedMA.length} unclassified · ${multiAlliance.length} total.**`)
+lines.push("")
 
-for (const entry of multiAlliance) {
-  lines.push(
+// Unclassified first (need attention), then classified (already done)
+function renderMultiAllianceEntry(entry: typeof multiAlliance[number]): string[] {
+  const out: string[] = []
+  const cls = classifications.multiAlliance[entry.normKey]
+  const badge = cls ? VERDICT_BADGE[cls.verdict] : "❓ **NEEDS REVIEW**"
+  out.push(
     `### \`${entry.normKey}\` — ${entry.appearanceCount} appearances · ${entry.distinctACs} AC${entry.distinctACs === 1 ? "" : "s"} · alliances: **${entry.mainAlliancesSeen.join(" / ")}**`
   )
+  out.push("")
+  out.push(`**Verdict:** ${badge}`)
+  if (cls?.note) {
+    out.push("")
+    out.push(`> ${cls.note}`)
+  }
+  out.push("")
   if (entry.distinctRawNames.length > 1) {
-    lines.push(
+    out.push(
       `Raw name variants: ${entry.distinctRawNames.map(n => `\`${n}\``).join(", ")}`
     )
   }
   if (entry.casteSuffixes.length > 0) {
-    lines.push(`Caste suffix(es) seen: ${entry.casteSuffixes.map(s => `\`${s}\``).join(", ")}`)
+    out.push(`Caste suffix(es) seen: ${entry.casteSuffixes.map(s => `\`${s}\``).join(", ")}`)
   }
-  lines.push("")
+  out.push("")
   for (const h of entry.hits) {
-    lines.push(`- ${fmtAppearance(h)}`)
+    out.push(`- ${fmtAppearance(h)}`)
   }
+  out.push("")
+  return out
+}
+
+if (unclassifiedMA.length > 0) {
+  lines.push("### ❓ Unclassified — needs review")
   lines.push("")
+  for (const entry of unclassifiedMA) {
+    for (const l of renderMultiAllianceEntry(entry)) lines.push(l)
+  }
+}
+
+if (classifiedMA.length > 0) {
+  lines.push("### ✓ Already classified")
+  lines.push("")
+  for (const entry of classifiedMA) {
+    for (const l of renderMultiAllianceEntry(entry)) lines.push(l)
+  }
 }
 
 if (multiAlliance.length === 0) {
@@ -360,19 +434,50 @@ lines.push("")
 const sameAcSuspected = suspected.filter(s => s.scope === "same-ac")
 const crossAcSuspected = suspected.filter(s => s.scope === "cross-ac")
 
-lines.push(`### B.1 Same-AC suspected matches (${sameAcSuspected.length})`)
+function pairKey(a: string, b: string): string {
+  return a < b ? `${a}|${b}` : `${b}|${a}`
+}
+
+const classifiedSame = sameAcSuspected.filter(s =>
+  classifications.suspectedMatch[pairKey(s.keyA, s.keyB)]
+)
+const unclassifiedSame = sameAcSuspected.filter(s =>
+  !classifications.suspectedMatch[pairKey(s.keyA, s.keyB)]
+)
+
+lines.push(`### B.1 Same-AC suspected matches (${sameAcSuspected.length} — ${classifiedSame.length} classified · ${unclassifiedSame.length} unclassified)`)
 lines.push("")
 if (sameAcSuspected.length === 0) {
   lines.push("_None._")
 } else {
-  lines.push("Highest priority — these would expand tenure detection if fixed.")
+  lines.push("Pairs of normalised keys with high token overlap in the same AC. Could be: (a) same person with word-order or initial drift (extend normaliser), (b) hereditary succession (father-son), or (c) coincidental surname-sharers.")
   lines.push("")
-  for (const s of sameAcSuspected) {
-    lines.push(
-      `- **\`${s.keyA}\`** ↔ **\`${s.keyB}\`** (Jaccard ${s.jaccard.toFixed(2)}, shared: ${s.sharedTokensSample.map(t => `\`${t}\``).join(", ")})`
+  function renderSuspectedPair(s: typeof sameAcSuspected[number]): string[] {
+    const out: string[] = []
+    const cls = classifications.suspectedMatch[pairKey(s.keyA, s.keyB)]
+    const badge = cls ? VERDICT_BADGE[cls.verdict] : "❓ **NEEDS REVIEW**"
+    out.push(
+      `- **\`${s.keyA}\`** ↔ **\`${s.keyB}\`** (Jaccard ${s.jaccard.toFixed(2)}, shared: ${s.sharedTokensSample.map(t => `\`${t}\``).join(", ")}) — ${badge}`
     )
-    for (const h of s.examplesA) lines.push(`    - A: ${fmtAppearance(h)}`)
-    for (const h of s.examplesB) lines.push(`    - B: ${fmtAppearance(h)}`)
+    if (cls?.note) out.push(`    > ${cls.note}`)
+    for (const h of s.examplesA) out.push(`    - A: ${fmtAppearance(h)}`)
+    for (const h of s.examplesB) out.push(`    - B: ${fmtAppearance(h)}`)
+    return out
+  }
+  if (unclassifiedSame.length > 0) {
+    lines.push("#### ❓ Unclassified — needs review")
+    lines.push("")
+    for (const s of unclassifiedSame) {
+      for (const l of renderSuspectedPair(s)) lines.push(l)
+    }
+  }
+  if (classifiedSame.length > 0) {
+    lines.push("")
+    lines.push("#### ✓ Already classified")
+    lines.push("")
+    for (const s of classifiedSame) {
+      for (const l of renderSuspectedPair(s)) lines.push(l)
+    }
   }
 }
 lines.push("")

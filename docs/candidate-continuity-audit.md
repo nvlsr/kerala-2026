@@ -30,9 +30,18 @@ Detected via `extractCasteSuffix()` (trailing token only). Recorded per-appearan
 
 ## A.1 Multi-alliance multi-appearance keys (priority review)
 
-These normalised keys appeared under **two or more main alliances** (UDF/LDF/NDA). Most are different people with the same common name. Scan each block; if it's actually the same person who switched alliances, note it — otherwise confirm they're distinct.
+Normalised keys appearing under **≥ 2 main alliances** (UDF/LDF/NDA). Mix of (a) same person who genuinely switched fronts (Kerala Congress factions, defections), and (b) different people sharing a common name. Verdicts persisted in `data/candidate-classifications.json` — survive audit re-runs.
+
+**24 classified · 0 unclassified · 24 total.**
+
+### ✓ Already classified
 
 ### `K BABU` — 6 appearances · 3 ACs · alliances: **LDF / UDF / NDA**
+
+**Verdict:** 🟰 different people · same name
+
+> Confirmed via Wikipedia — Thripunithura's K. Babu (UDF, MLA 1991-2011, 2026) is a different person from Nemmara's K. Babu (LDF). Also a third K. Babu in Alappuzha 2009 by-poll.
+
 
 - 2009 by-bye · AC 104 ALAPPUZHA (NDA, rank 3): `K. Babu`
 - 2011 · AC 81 THRIPUNITHURA (UDF, rank 1): `K. Babu`
@@ -43,12 +52,22 @@ These normalised keys appeared under **two or more main alliances** (UDF/LDF/NDA
 
 ### `K C JOSEPH` — 4 appearances · 3 ACs · alliances: **UDF / LDF**
 
+**Verdict:** 🟰 different people · same name
+
+> Common Kerala Christian name; different ACs (Irikkur UDF, Kuttanad UDF, Changanassery LDF).
+
+
 - 2011 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
 - 2011 · AC 106 KUTTANAD (UDF, rank 2): `K. C. Joseph`
 - 2016 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
 - 2016 · AC 99 CHANGANASSERY (LDF, rank 2): `K. C. Joseph`
 
 ### `ROSHY AUGUSTINE` — 4 appearances · 1 AC · alliances: **UDF / LDF**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Kerala Congress(M) faction switch. Assembly history: 2001 UDF (won, +13,719) → 2006 UDF (won, +16,340) → 2011 UDF (won, +15,806) → 2016 UDF (won, +9,333) → 2021 LDF (won, +5,573) → 2026 LDF (lost by 23,822). All in Idukki.
+
 Raw name variants: `Roshy Augustine`, `ROSHY AUGUSTINE`
 
 - 2011 · AC 91 IDUKKI (UDF, rank 1): `Roshy Augustine`
@@ -57,6 +76,11 @@ Raw name variants: `Roshy Augustine`, `ROSHY AUGUSTINE`
 - 2026 · AC 91 IDUKKI (LDF, rank 2): `ROSHY AUGUSTINE`
 
 ### `N JAYARAJ` — 4 appearances · 1 AC · alliances: **UDF / LDF**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Same KC(M) faction switch — Kanjirappally seat. UDF in 2011/2016, LDF in 2021/2026.
+
 Raw name variants: `N. Jayaraj`, `DR. N. JAYARAJ`
 
 - 2011 · AC 100 KANJIRAPPALLY (UDF, rank 1): `N. Jayaraj`
@@ -65,6 +89,11 @@ Raw name variants: `N. Jayaraj`, `DR. N. JAYARAJ`
 - 2026 · AC 100 KANJIRAPPALLY (LDF, rank 2): `DR. N. JAYARAJ`
 
 ### `K SIVADASAN` — 4 appearances · 2 ACs · alliances: **UDF / NDA**
+
+**Verdict:** 🟰 different people · same name
+
+> Aranmula UDF (K. Sivadasan Nair) is a different person from Chadayamangalam NDA (K. Sivadasan). Caste suffix mismatch supports the distinction.
+
 Raw name variants: `K. Sivadasan Nair`, `K. Sivadasan`
 Caste suffix(es) seen: `NAIR`
 
@@ -74,6 +103,11 @@ Caste suffix(es) seen: `NAIR`
 - 2021 · AC 113 ARANMULA (UDF, rank 2): `K. Sivadasan Nair`
 
 ### `K B GANESH KUMAR` — 4 appearances · 1 AC · alliances: **UDF / LDF**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Kerala Congress(B) joined LDF — Pathanapuram seat. UDF 2011, LDF 2016/2021/2026.
+
 Raw name variants: `K. B. Ganesh Kumar`, `K B GANESH KUMAR`
 
 - 2011 · AC 120 PATHANAPURAM (UDF, rank 1): `K. B. Ganesh Kumar`
@@ -83,6 +117,11 @@ Raw name variants: `K. B. Ganesh Kumar`, `K B GANESH KUMAR`
 
 ### `R SELVARAJ` — 4 appearances · 1 AC · alliances: **LDF / UDF**
 
+**Verdict:** ✅ same person (alliance switch)
+
+> Won 2011 as LDF, defected, won 2012 by-poll as UDF; ran UDF in 2016/2021. Neyyattinkara seat.
+
+
 - 2011 · AC 140 NEYYATTINKARA (LDF, rank 1): `R. Selvaraj`
 - 2012 by-bye · AC 140 NEYYATTINKARA (UDF, rank 1): `R. Selvaraj`
 - 2016 · AC 140 NEYYATTINKARA (UDF, rank 2): `R. Selvaraj`
@@ -90,17 +129,32 @@ Raw name variants: `K. B. Ganesh Kumar`, `K B GANESH KUMAR`
 
 ### `K P MOHANAN` — 3 appearances · 1 AC · alliances: **UDF / LDF**
 
+**Verdict:** ✅ same person (alliance switch)
+
+> UDF 2011/2016, LDF 2021 — Kuthuparamba seat.
+
+
 - 2011 · AC 14 KUTHUPARAMBA (UDF, rank 1): `K. P. Mohanan`
 - 2016 · AC 14 KUTHUPARAMBA (UDF, rank 2): `K. P. Mohanan`
 - 2021 · AC 14 KUTHUPARAMBA (LDF, rank 1): `K. P. Mohanan`
 
 ### `K RADHAKRISHNAN` — 3 appearances · 2 ACs · alliances: **LDF / NDA**
 
+**Verdict:** 🟰 different people · same name
+
+> Chelakkara LDF (SC-reserved) is a different person from Kothamangalam NDA.
+
+
 - 2011 · AC 61 CHELAKKARA (LDF, rank 1): `K. Radhakrishnan`
 - 2011 · AC 87 KOTHAMANGALAM (NDA, rank 3): `K. Radhakrishnan`
 - 2021 · AC 61 CHELAKKARA (LDF, rank 1): `K. Radhakrishnan`
 
 ### `PADMAJA VENUGOPAL` — 3 appearances · 1 AC · alliances: **UDF / NDA**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> INC → BJP defection (well-documented 2024). Thrissur seat. UDF 2016/2021 (rank 2), NDA 2026 (rank 3).
+
 Raw name variants: `Padmaja Venugopal`, `PADMAJA VENUGOPAL`
 
 - 2016 · AC 67 THRISSUR (UDF, rank 2): `Padmaja Venugopal`
@@ -108,6 +162,11 @@ Raw name variants: `Padmaja Venugopal`, `PADMAJA VENUGOPAL`
 - 2026 · AC 67 THRISSUR (NDA, rank 3): `PADMAJA VENUGOPAL`
 
 ### `S RAJENDRAN` — 3 appearances · 1 AC · alliances: **LDF / NDA**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Devikulam seat. LDF 2011/2016 (won), NDA 2026 (rank 3).
+
 Raw name variants: `S. Rajendran`, `S.RAJENDRAN`
 
 - 2011 · AC 88 DEVIKULAM (LDF, rank 1): `S. Rajendran`
@@ -115,6 +174,11 @@ Raw name variants: `S. Rajendran`, `S.RAJENDRAN`
 - 2026 · AC 88 DEVIKULAM (NDA, rank 3): `S.RAJENDRAN`
 
 ### `P C GEORGE` — 3 appearances · 1 AC · alliances: **UDF / NDA**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Poonjar seat. UDF 2011, OTHER (independent) 2016, NDA 2026.
+
 Raw name variants: `P. C. George`, `P.C. GEORGE`
 
 - 2011 · AC 101 POONJAR (UDF, rank 1): `P. C. George`
@@ -122,6 +186,11 @@ Raw name variants: `P. C. George`, `P.C. GEORGE`
 - 2026 · AC 101 POONJAR (NDA, rank 3): `P.C. GEORGE`
 
 ### `G SUDHAKARAN` — 3 appearances · 1 AC · alliances: **LDF / UDF**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Ambalappuzha seat. LDF 2011/2016, UDF 2026.
+
 Raw name variants: `G. Sudhakaran`, `G.SUDHAKARAN`
 
 - 2011 · AC 105 AMBALAPPUZHA (LDF, rank 1): `G. Sudhakaran`
@@ -129,6 +198,11 @@ Raw name variants: `G. Sudhakaran`, `G.SUDHAKARAN`
 - 2026 · AC 105 AMBALAPPUZHA (UDF, rank 1): `G.SUDHAKARAN`
 
 ### `P AISHA POTTY` — 3 appearances · 1 AC · alliances: **LDF / UDF**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Kottarakkara seat. LDF 2011/2016 (won), UDF 2026 (rank 2).
+
 Raw name variants: `P. Aisha Potty`, `ADV.P. AISHA POTTY`
 
 - 2011 · AC 119 KOTTARAKKARA (LDF, rank 1): `P. Aisha Potty`
@@ -137,15 +211,30 @@ Raw name variants: `P. Aisha Potty`, `ADV.P. AISHA POTTY`
 
 ### `K MOHANDAS` — 2 appearances · 2 ACs · alliances: **NDA / LDF**
 
+**Verdict:** 🟰 different people · same name
+
+> Mananthavady NDA and Manjeri LDF — different people, different districts.
+
+
 - 2016 · AC 17 MANANTHAVADY (NDA, rank 3): `K. Mohandas`
 - 2016 · AC 37 MANJERI (LDF, rank 2): `K. Mohandas`
 
 ### `P SARIN` — 2 appearances · 2 ACs · alliances: **UDF / LDF**
 
+**Verdict:** 🟰 different people · same name
+
+> Ottappalam UDF 2021 and Palakkad LDF 2024 by-poll — different people.
+
+
 - 2021 · AC 52 OTTAPPALAM (UDF, rank 2): `P. Sarin`
 - 2024 by-bye · AC 56 PALAKKAD (LDF, rank 3): `P. Sarin`
 
 ### `ROY VARICATTU` — 2 appearances · 1 AC · alliances: **LDF / NDA**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Thodupuzha seat. LDF 2016, NDA 2026.
+
 Raw name variants: `Roy Varicattu`, `ADV. ROY VARICATTU`
 
 - 2016 · AC 90 THODUPUZHA (LDF, rank 2): `Roy Varicattu`
@@ -153,16 +242,31 @@ Raw name variants: `Roy Varicattu`, `ADV. ROY VARICATTU`
 
 ### `K FRANCIS GEORGE` — 2 appearances · 1 AC · alliances: **LDF / UDF**
 
+**Verdict:** ✅ same person (alliance switch)
+
+> Idukki seat. LDF 2016, UDF 2021. KC(J) → INC.
+
+
 - 2016 · AC 91 IDUKKI (LDF, rank 2): `K. Francis George`
 - 2021 · AC 91 IDUKKI (UDF, rank 2): `K. Francis George`
 
 ### `K AJITH` — 2 appearances · 1 AC · alliances: **LDF / NDA**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Vaikom seat. LDF 2011, NDA 2026.
+
 Raw name variants: `K. Ajith`, `K AJITH`
 
 - 2011 · AC 95 VAIKOM (LDF, rank 1): `K. Ajith`
 - 2026 · AC 95 VAIKOM (NDA, rank 3): `K AJITH`
 
 ### `R RESMI` — 2 appearances · 1 AC · alliances: **UDF / NDA**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Kottarakkara seat. UDF 2021, NDA 2026.
+
 Raw name variants: `R. Resmi`, `R. RESMI`
 
 - 2021 · AC 119 KOTTARAKKARA (UDF, rank 2): `R. Resmi`
@@ -170,22 +274,42 @@ Raw name variants: `R. Resmi`, `R. RESMI`
 
 ### `A A AZEEZ` — 2 appearances · 1 AC · alliances: **LDF / UDF**
 
+**Verdict:** ✅ same person (alliance switch)
+
+> Eravipuram seat. LDF 2011 (won), UDF 2016 (rank 2).
+
+
 - 2011 · AC 125 ERAVIPURAM (LDF, rank 1): `A. A. Azeez`
 - 2016 · AC 125 ERAVIPURAM (UDF, rank 2): `A. A. Azeez`
 
 ### `BABU DIVAKARAN` — 2 appearances · 2 ACs · alliances: **UDF / NDA**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Eravipuram UDF 2021 → Kunnathunad NDA 2026 (different ACs).
+
 Raw name variants: `Babu Divakaran`, `BABU DIVAKARAN`
 
 - 2021 · AC 125 ERAVIPURAM (UDF, rank 2): `Babu Divakaran`
 - 2026 · AC 84 KUNNATHUNAD (NDA, rank 3): `BABU DIVAKARAN`
 
 ### `B S ANOOP` — 2 appearances · 1 AC · alliances: **UDF / NDA**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Chirayinkeezhu seat. UDF 2021, NDA 2026.
+
 Raw name variants: `B. S. Anoop`, `B. S. ANOOP`
 
 - 2021 · AC 129 CHIRAYINKEEZHU (UDF, rank 2): `B. S. Anoop`
 - 2026 · AC 129 CHIRAYINKEEZHU (NDA, rank 3): `B. S. ANOOP`
 
 ### `V SURENDRAN` — 2 appearances · 2 ACs · alliances: **LDF / UDF**
+
+**Verdict:** ✅ same person (alliance switch)
+
+> Trivandrum LDF 2011 → Nemom UDF 2016 (V. Surendran Pillai). Two different ACs but same person.
+
 Caste suffix(es) seen: `PILLAI`
 
 - 2011 · AC 134 THIRUVANANTHAPURAM (LDF, rank 2): `V. Surendran Pillai`
@@ -1468,189 +1592,191 @@ _… and 116 more in `data/candidate-continuity.json`._
 
 Pairs of different canonical keys with high token overlap (Jaccard ≥ 0.5 same-AC, ≥ 0.6 cross-AC). Each pair is **probably the same person but didn't merge** — review the patterns to extend `normalizeName()` rules.
 
-### B.1 Same-AC suspected matches (44)
+### B.1 Same-AC suspected matches (44 — 0 classified · 44 unclassified)
 
-Highest priority — these would expand tenure detection if fixed.
+Pairs of normalised keys with high token overlap in the same AC. Could be: (a) same person with word-order or initial drift (extend normaliser), (b) hereditary succession (father-son), or (c) coincidental surname-sharers.
 
-- **`A RAJA`** ↔ **`F RAJA`** (Jaccard 1.00, shared: `RAJA`)
+#### ❓ Unclassified — needs review
+
+- **`A RAJA`** ↔ **`F RAJA`** (Jaccard 1.00, shared: `RAJA`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 88 DEVIKULAM (LDF, rank 1): `A. Raja`
     - A: 2026 · AC 88 DEVIKULAM (LDF, rank 2): `ADV. A. RAJA`
     - B: 2026 · AC 88 DEVIKULAM (UDF, rank 1): `F. RAJA`
-- **`ABDUL HAMEED`** ↔ **`P ABDUL HAMEED`** (Jaccard 1.00, shared: `ABDUL`, `HAMEED`)
+- **`ABDUL HAMEED`** ↔ **`P ABDUL HAMEED`** (Jaccard 1.00, shared: `ABDUL`, `HAMEED`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 42 VALLIKUNNU (UDF, rank 1): `Abdul Hameed Master`
     - B: 2016 · AC 42 VALLIKUNNU (UDF, rank 1): `P. Abdul Hameed`
-- **`ABID HUSSAIN THANGAL`** ↔ **`K K ABID HUSSAIN THANGAL`** (Jaccard 1.00, shared: `ABID`, `HUSSAIN`, `THANGAL`)
+- **`ABID HUSSAIN THANGAL`** ↔ **`K K ABID HUSSAIN THANGAL`** (Jaccard 1.00, shared: `ABID`, `HUSSAIN`, `THANGAL`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 46 KOTTAKKAL (UDF, rank 1): `Abid Hussain Thangal`
     - A: 2026 · AC 46 KOTTAKKAL (UDF, rank 1): `PROF. ABID HUSSAIN THANGAL`
     - B: 2016 · AC 46 KOTTAKKAL (UDF, rank 1): `K. K. Abid Hussain Thangal`
-- **`ADAM MULSI M P`** ↔ **`M P ADAM MULSI`** (Jaccard 1.00, shared: `ADAM`, `MULSI`)
+- **`ADAM MULSI M P`** ↔ **`M P ADAM MULSI`** (Jaccard 1.00, shared: `ADAM`, `MULSI`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 29 BEYPORE (UDF, rank 2): `Adam Mulsi M. P.`
     - B: 2016 · AC 29 BEYPORE (UDF, rank 2): `M. P. Adam Mulsi`
-- **`AJI S R M`** ↔ **`S AJI`** (Jaccard 1.00, shared: `AJI`)
+- **`AJI S R M`** ↔ **`S AJI`** (Jaccard 1.00, shared: `AJI`) — ❓ **NEEDS REVIEW**
     - A: 2016 · AC 127 VARKALA (NDA, rank 3): `Aji S. R. M.`
     - B: 2021 · AC 127 VARKALA (NDA, rank 3): `S. Aji`
-- **`ANIYAPPAN`** ↔ **`T ANIYAPPAN`** (Jaccard 1.00, shared: `ANIYAPPAN`)
+- **`ANIYAPPAN`** ↔ **`T ANIYAPPAN`** (Jaccard 1.00, shared: `ANIYAPPAN`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 102 AROOR (NDA, rank 3): `Aniyappan`
     - B: 2016 · AC 102 AROOR (NDA, rank 3): `T. Aniyappan`
-- **`C SIVANKUTTY`** ↔ **`SIVANKUTTY C`** (Jaccard 1.00, shared: `SIVANKUTTY`)
+- **`C SIVANKUTTY`** ↔ **`SIVANKUTTY C`** (Jaccard 1.00, shared: `SIVANKUTTY`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 136 ARUVIKKARA (NDA, rank 3): `C. Sivankutty`
     - B: 2011 · AC 136 ARUVIKKARA (NDA, rank 3): `Sivankutty C.`
-- **`CHANDY OOMMEN`** ↔ **`OOMMEN CHANDY`** (Jaccard 1.00, shared: `CHANDY`, `OOMMEN`)
+- **`CHANDY OOMMEN`** ↔ **`OOMMEN CHANDY`** (Jaccard 1.00, shared: `CHANDY`, `OOMMEN`) — ❓ **NEEDS REVIEW**
     - A: 2023 by-bye · AC 98 PUTHUPPALLY (UDF, rank 1): `Chandy Oommen`
     - A: 2026 · AC 98 PUTHUPPALLY (UDF, rank 1): `ADV. CHANDY OOMMEN`
     - B: 2011 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
     - B: 2016 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
     - B: 2021 · AC 98 PUTHUPPALLY (UDF, rank 1): `Oommen Chandy`
-- **`CHENKAL RAJASEKHARAN`** ↔ **`CHENKAL S RAJASEKHARAN`** (Jaccard 1.00, shared: `CHENKAL`, `RAJASEKHARAN`)
+- **`CHENKAL RAJASEKHARAN`** ↔ **`CHENKAL S RAJASEKHARAN`** (Jaccard 1.00, shared: `CHENKAL`, `RAJASEKHARAN`) — ❓ **NEEDS REVIEW**
     - A: 2026 · AC 140 NEYYATTINKARA (NDA, rank 3): `CHENKAL RAJASEKHARAN`
     - B: 2021 · AC 140 NEYYATTINKARA (NDA, rank 3): `Chenkal S. Rajasekharan Nair`
-- **`K A UNNIKRISHNAN`** ↔ **`UNNIKRISHNAN K A`** (Jaccard 1.00, shared: `UNNIKRISHNAN`)
+- **`K A UNNIKRISHNAN`** ↔ **`UNNIKRISHNAN K A`** (Jaccard 1.00, shared: `UNNIKRISHNAN`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 72 CHALAKUDY (NDA, rank 3): `K. A. Unnikrishnan`
     - B: 2016 · AC 72 CHALAKUDY (NDA, rank 3): `Unnikrishnan K. A.`
-- **`K ANILKUMAR`** ↔ **`P ANILKUMAR`** (Jaccard 1.00, shared: `ANILKUMAR`)
+- **`K ANILKUMAR`** ↔ **`P ANILKUMAR`** (Jaccard 1.00, shared: `ANILKUMAR`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 97 KOTTAYAM (LDF, rank 2): `K. Anilkumar`
     - A: 2026 · AC 97 KOTTAYAM (LDF, rank 2): `ADV.K. ANILKUMAR`
     - B: 2026 · AC 97 KOTTAYAM (NDA, rank 3): `P ANILKUMAR`
-- **`K PADMAKUMAR`** ↔ **`PADMAKUMAR K`** (Jaccard 1.00, shared: `PADMAKUMAR`)
+- **`K PADMAKUMAR`** ↔ **`PADMAKUMAR K`** (Jaccard 1.00, shared: `PADMAKUMAR`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 112 RANNI (NDA, rank 3): `K. Padmakumar`
     - B: 2016 · AC 112 RANNI (NDA, rank 3): `Padmakumar K.`
-- **`M J JACOB`** ↔ **`T M JACOB`** (Jaccard 1.00, shared: `JACOB`)
+- **`M J JACOB`** ↔ **`T M JACOB`** (Jaccard 1.00, shared: `JACOB`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2012 by-bye · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2016 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2011 · AC 85 PIRAVOM (UDF, rank 1): `T. M. Jacob`
-- **`P P SUMOD`** ↔ **`SUMOD`** (Jaccard 1.00, shared: `SUMOD`)
+- **`P P SUMOD`** ↔ **`SUMOD`** (Jaccard 1.00, shared: `SUMOD`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 57 TARUR (LDF, rank 1): `P. P. Sumod`
     - B: 2026 · AC 57 TARUR (LDF, rank 1): `SUMOD`
-- **`A D THOMAS`** ↔ **`T M THOMAS ISAAC`** (Jaccard 0.50, shared: `THOMAS`)
+- **`A D THOMAS`** ↔ **`T M THOMAS ISAAC`** (Jaccard 0.50, shared: `THOMAS`) — ❓ **NEEDS REVIEW**
     - A: 2026 · AC 104 ALAPPUZHA (UDF, rank 1): `A.D THOMAS`
     - B: 2011 · AC 104 ALAPPUZHA (LDF, rank 1): `T. M. Thomas Isaac`
     - B: 2016 · AC 104 ALAPPUZHA (LDF, rank 1): `T. M. Thomas Isaac`
-- **`ABDURAHIMAN RANDATHANI`** ↔ **`V ABDURAHIMAN`** (Jaccard 0.50, shared: `ABDURAHIMAN`)
+- **`ABDURAHIMAN RANDATHANI`** ↔ **`V ABDURAHIMAN`** (Jaccard 0.50, shared: `ABDURAHIMAN`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 44 TANUR (UDF, rank 1): `Abdurahiman Randathani`
     - A: 2016 · AC 44 TANUR (UDF, rank 2): `Abdurahiman Randathani`
     - B: 2016 · AC 44 TANUR (LDF, rank 1): `V. Abdurahiman`
     - B: 2021 · AC 44 TANUR (LDF, rank 1): `V. Abdurahiman`
     - B: 2026 · AC 45 TIRUR (LDF, rank 2): `V.ABDURAHIMAN`
-- **`ANOOP JACOB`** ↔ **`M J JACOB`** (Jaccard 0.50, shared: `JACOB`)
+- **`ANOOP JACOB`** ↔ **`M J JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
     - A: 2012 by-bye · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - A: 2016 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - A: 2021 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - B: 2011 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2012 by-bye · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2016 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
-- **`ANOOP JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`)
+- **`ANOOP JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
     - A: 2012 by-bye · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - A: 2016 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - A: 2021 · AC 85 PIRAVOM (UDF, rank 1): `Anoop Jacob`
     - B: 2011 · AC 85 PIRAVOM (UDF, rank 1): `T. M. Jacob`
-- **`ARUN KAITHAPRAM`** ↔ **`K P ARUN`** (Jaccard 0.50, shared: `ARUN`)
+- **`ARUN KAITHAPRAM`** ↔ **`K P ARUN`** (Jaccard 0.50, shared: `ARUN`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 7 KALLIASSERI (NDA, rank 3): `Arun Kaithapram`
     - B: 2016 · AC 7 KALLIASSERI (NDA, rank 3): `K. P. Arun`
-- **`C P VIPIN CHANDRAN`** ↔ **`V M CHANDRAN`** (Jaccard 0.50, shared: `CHANDRAN`)
+- **`C P VIPIN CHANDRAN`** ↔ **`V M CHANDRAN`** (Jaccard 0.50, shared: `CHANDRAN`) — ❓ **NEEDS REVIEW**
     - A: 2026 · AC 22 NADAPURAM (NDA, rank 3): `C.P. VIPIN CHANDRAN`
     - B: 2011 · AC 22 NADAPURAM (UDF, rank 2): `V. M. Chandran`
-- **`DHANYA SURESH`** ↔ **`P V SURESH`** (Jaccard 0.50, shared: `SURESH`)
+- **`DHANYA SURESH`** ↔ **`P V SURESH`** (Jaccard 0.50, shared: `SURESH`) — ❓ **NEEDS REVIEW**
     - A: 2016 · AC 4 KANHANGAD (UDF, rank 2): `Dhanya Suresh`
     - B: 2021 · AC 4 KANHANGAD (UDF, rank 2): `P. V. Suresh`
-- **`IRUMUTTOOR KUNHIRAMAN`** ↔ **`K C KUNHIRAMAN`** (Jaccard 0.50, shared: `KUNHIRAMAN`)
+- **`IRUMUTTOOR KUNHIRAMAN`** ↔ **`K C KUNHIRAMAN`** (Jaccard 0.50, shared: `KUNHIRAMAN`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 17 MANANTHAVADY (NDA, rank 3): `Irumuttoor Kunhiraman`
     - B: 2011 · AC 17 MANANTHAVADY (LDF, rank 2): `K. C. Kunhiraman`
-- **`JOSE K MANI`** ↔ **`K M MANI`** (Jaccard 0.50, shared: `MANI`)
+- **`JOSE K MANI`** ↔ **`K M MANI`** (Jaccard 0.50, shared: `MANI`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 93 PALA (LDF, rank 2): `Jose K. Mani`
     - A: 2026 · AC 93 PALA (LDF, rank 2): `JOSE K MANI`
     - B: 2011 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - B: 2016 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
-- **`JOSEPH AUGUSTINE`** ↔ **`P J JOSEPH`** (Jaccard 0.50, shared: `JOSEPH`)
+- **`JOSEPH AUGUSTINE`** ↔ **`P J JOSEPH`** (Jaccard 0.50, shared: `JOSEPH`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 90 THODUPUZHA (LDF, rank 2): `Joseph Augustine`
     - B: 2011 · AC 90 THODUPUZHA (UDF, rank 1): `P. J. Joseph`
     - B: 2016 · AC 90 THODUPUZHA (UDF, rank 1): `P. J. Joseph`
     - B: 2021 · AC 90 THODUPUZHA (UDF, rank 1): `P. J. Joseph`
-- **`K ACHUTHAN`** ↔ **`SUMESH ACHUTHAN`** (Jaccard 0.50, shared: `ACHUTHAN`)
+- **`K ACHUTHAN`** ↔ **`SUMESH ACHUTHAN`** (Jaccard 0.50, shared: `ACHUTHAN`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 58 CHITTUR (UDF, rank 1): `K. Achuthan`
     - A: 2016 · AC 58 CHITTUR (UDF, rank 2): `K. Achuthan`
     - B: 2021 · AC 58 CHITTUR (UDF, rank 2): `Sumesh Achuthan`
     - B: 2026 · AC 58 CHITTUR (UDF, rank 1): `ADV. SUMESH ACHUTHAN`
-- **`K C JOSEPH`** ↔ **`SAJEEV JOSEPH`** (Jaccard 0.50, shared: `JOSEPH`)
+- **`K C JOSEPH`** ↔ **`SAJEEV JOSEPH`** (Jaccard 0.50, shared: `JOSEPH`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
     - A: 2011 · AC 106 KUTTANAD (UDF, rank 2): `K. C. Joseph`
     - A: 2016 · AC 9 IRIKKUR (UDF, rank 1): `K. C. Joseph`
     - B: 2021 · AC 9 IRIKKUR (UDF, rank 1): `Sajeev Joseph`
     - B: 2026 · AC 9 IRIKKUR (UDF, rank 1): `ADV. SAJEEV JOSEPH`
-- **`K M MANI`** ↔ **`MANI C KAPPAN`** (Jaccard 0.50, shared: `MANI`)
+- **`K M MANI`** ↔ **`MANI C KAPPAN`** (Jaccard 0.50, shared: `MANI`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - A: 2016 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - B: 2011 · AC 93 PALA (LDF, rank 2): `Mani C. Kappan`
     - B: 2016 · AC 93 PALA (LDF, rank 2): `Mani C. Kappan`
     - B: 2019 by-bye · AC 93 PALA (LDF, rank 1): `Mani C. Kappan`
-- **`K M MANI`** ↔ **`MANI C KAPPEN`** (Jaccard 0.50, shared: `MANI`)
+- **`K M MANI`** ↔ **`MANI C KAPPEN`** (Jaccard 0.50, shared: `MANI`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - A: 2016 · AC 93 PALA (UDF, rank 1): `K. M. Mani`
     - B: 2021 · AC 93 PALA (UDF, rank 1): `Mani C. Kappen`
     - B: 2026 · AC 93 PALA (UDF, rank 1): `MANI C KAPPEN`
-- **`K N A KHADER`** ↔ **`K V ABDUL KHADER`** (Jaccard 0.50, shared: `KHADER`)
+- **`K N A KHADER`** ↔ **`K V ABDUL KHADER`** (Jaccard 0.50, shared: `KHADER`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 42 VALLIKUNNU (UDF, rank 1): `K. N. A. Khader`
     - A: 2017 by-bye · AC 41 VENGARA (UDF, rank 1): `K. N. A. Khader`
     - A: 2021 · AC 63 GURUVAYOOR (UDF, rank 2): `K. N. A. Khader`
     - B: 2011 · AC 63 GURUVAYOOR (LDF, rank 1): `K. V. Abdul Khader`
     - B: 2016 · AC 63 GURUVAYOOR (LDF, rank 1): `K. V. Abdul Khader`
-- **`K R RAJENDRA PRASAD`** ↔ **`P PRASAD`** (Jaccard 0.50, shared: `PRASAD`)
+- **`K R RAJENDRA PRASAD`** ↔ **`P PRASAD`** (Jaccard 0.50, shared: `PRASAD`) — ❓ **NEEDS REVIEW**
     - A: 2026 · AC 103 CHERTHALA (UDF, rank 2): `K.R. RAJENDRA PRASAD`
     - B: 2016 · AC 107 HARIPAD (LDF, rank 2): `P. Prasad`
     - B: 2021 · AC 103 CHERTHALA (LDF, rank 1): `P. Prasad`
     - B: 2026 · AC 103 CHERTHALA (LDF, rank 1): `P. PRASAD`
-- **`KARAT RAZAK`** ↔ **`M A RAZAK`** (Jaccard 0.50, shared: `RAZAK`)
+- **`KARAT RAZAK`** ↔ **`M A RAZAK`** (Jaccard 0.50, shared: `RAZAK`) — ❓ **NEEDS REVIEW**
     - A: 2016 · AC 31 KODUVALLY (LDF, rank 1): `Karat Razak`
     - A: 2021 · AC 31 KODUVALLY (LDF, rank 2): `Karat Razak`
     - B: 2016 · AC 31 KODUVALLY (UDF, rank 2): `M. A. Razak`
     - B: 2026 · AC 30 KUNNAMANGALAM (UDF, rank 1): `M.A. RAZAK MASTER`
-- **`M A SURENDRAN`** ↔ **`SUJITH P SURENDRAN`** (Jaccard 0.50, shared: `SURENDRAN`)
+- **`M A SURENDRAN`** ↔ **`SUJITH P SURENDRAN`** (Jaccard 0.50, shared: `SURENDRAN`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 84 KUNNATHUNAD (LDF, rank 2): `M. A. Surendran`
     - B: 2021 · AC 84 KUNNATHUNAD (OTHER, rank 3): `Sujith P. Surendran`
-- **`M G KANNAN`** ↔ **`PRIJI KANNAN`** (Jaccard 0.50, shared: `KANNAN`)
+- **`M G KANNAN`** ↔ **`PRIJI KANNAN`** (Jaccard 0.50, shared: `KANNAN`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 115 ADOOR (UDF, rank 2): `M. G. Kannan`
     - B: 2026 · AC 115 ADOOR (LDF, rank 2): `PRIJI KANNAN`
-- **`M J JACOB`** ↔ **`SABU K JACOB`** (Jaccard 0.50, shared: `JACOB`)
+- **`M J JACOB`** ↔ **`SABU K JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2012 by-bye · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2016 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2026 · AC 85 PIRAVOM (LDF, rank 2): `SABU K JACOB`
-- **`M J JACOB`** ↔ **`SINDHUMOL JACOB`** (Jaccard 0.50, shared: `JACOB`)
+- **`M J JACOB`** ↔ **`SINDHUMOL JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2012 by-bye · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - A: 2016 · AC 85 PIRAVOM (LDF, rank 2): `M. J. Jacob`
     - B: 2021 · AC 85 PIRAVOM (LDF, rank 2): `Sindhumol Jacob`
-- **`N SAJI KUMAR`** ↔ **`S SAJI`** (Jaccard 0.50, shared: `SAJI`)
+- **`N SAJI KUMAR`** ↔ **`S SAJI`** (Jaccard 0.50, shared: `SAJI`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 83 THRIKKAKARA (NDA, rank 3): `N. Saji Kumar`
     - B: 2016 · AC 83 THRIKKAKARA (NDA, rank 3): `S. Saji`
     - B: 2021 · AC 83 THRIKKAKARA (NDA, rank 3): `S. Saji`
-- **`P C GEORGE`** ↔ **`P C GEORGE PLATHOTTAM`** (Jaccard 0.50, shared: `GEORGE`)
+- **`P C GEORGE`** ↔ **`P C GEORGE PLATHOTTAM`** (Jaccard 0.50, shared: `GEORGE`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 101 POONJAR (UDF, rank 1): `P. C. George`
     - A: 2016 · AC 101 POONJAR (OTHER, rank 1): `P. C. George`
     - A: 2026 · AC 101 POONJAR (NDA, rank 3): `P.C. GEORGE`
     - B: 2021 · AC 101 POONJAR (OTHER, rank 2): `P. C. George Plathottam`
-- **`P T THOMAS`** ↔ **`UMA THOMAS`** (Jaccard 0.50, shared: `THOMAS`)
+- **`P T THOMAS`** ↔ **`UMA THOMAS`** (Jaccard 0.50, shared: `THOMAS`) — ❓ **NEEDS REVIEW**
     - A: 2016 · AC 83 THRIKKAKARA (UDF, rank 1): `P. T. Thomas`
     - A: 2021 · AC 83 THRIKKAKARA (UDF, rank 1): `P. T. Thomas`
     - B: 2022 by-bye · AC 83 THRIKKAKARA (UDF, rank 1): `Uma Thomas`
     - B: 2026 · AC 83 THRIKKAKARA (UDF, rank 1): `UMA THOMAS`
-- **`SABU K JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`)
+- **`SABU K JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
     - A: 2026 · AC 85 PIRAVOM (LDF, rank 2): `SABU K JACOB`
     - B: 2011 · AC 85 PIRAVOM (UDF, rank 1): `T. M. Jacob`
-- **`SEBASTIAN KULATHUNKAL`** ↔ **`SEBASTIAN M J`** (Jaccard 0.50, shared: `SEBASTIAN`)
+- **`SEBASTIAN KULATHUNKAL`** ↔ **`SEBASTIAN M J`** (Jaccard 0.50, shared: `SEBASTIAN`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 101 POONJAR (LDF, rank 1): `Sebastian Kulathunkal`
     - A: 2026 · AC 101 POONJAR (LDF, rank 2): `ADV. SEBASTIAN KULATHUNKAL`
     - B: 2026 · AC 101 POONJAR (UDF, rank 1): `ADV.SEBASTIAN M.J`
-- **`SHAJUMON P P`** ↔ **`SHAJUMON VATTEKKAD`** (Jaccard 0.50, shared: `SHAJUMON`)
+- **`SHAJUMON P P`** ↔ **`SHAJUMON VATTEKKAD`** (Jaccard 0.50, shared: `SHAJUMON`) — ❓ **NEEDS REVIEW**
     - A: 2016 · AC 61 CHELAKKARA (NDA, rank 3): `Shajumon P. P.`
     - B: 2021 · AC 61 CHELAKKARA (NDA, rank 3): `Shajumon Vattekkad`
-- **`SINDHUMOL JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`)
+- **`SINDHUMOL JACOB`** ↔ **`T M JACOB`** (Jaccard 0.50, shared: `JACOB`) — ❓ **NEEDS REVIEW**
     - A: 2021 · AC 85 PIRAVOM (LDF, rank 2): `Sindhumol Jacob`
     - B: 2011 · AC 85 PIRAVOM (UDF, rank 1): `T. M. Jacob`
-- **`T K RAMAN`** ↔ **`U C RAMAN PADANILAM`** (Jaccard 0.50, shared: `RAMAN`)
+- **`T K RAMAN`** ↔ **`U C RAMAN PADANILAM`** (Jaccard 0.50, shared: `RAMAN`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 25 BALUSSERI (NDA, rank 3): `T. K. Raman`
     - B: 2016 · AC 25 BALUSSERI (UDF, rank 2): `U. C. Raman Padanilam`
-- **`THOMAS CHANDY`** ↔ **`THOMAS K THOMAS`** (Jaccard 0.50, shared: `THOMAS`)
+- **`THOMAS CHANDY`** ↔ **`THOMAS K THOMAS`** (Jaccard 0.50, shared: `THOMAS`) — ❓ **NEEDS REVIEW**
     - A: 2011 · AC 106 KUTTANAD (LDF, rank 1): `Thomas Chandy`
     - A: 2016 · AC 106 KUTTANAD (LDF, rank 1): `Thomas Chandy`
     - B: 2021 · AC 106 KUTTANAD (LDF, rank 1): `Thomas K. Thomas`

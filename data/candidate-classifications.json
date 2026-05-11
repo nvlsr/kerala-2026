@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "description": "Manual verdicts on candidate-name audit cases. The audit markdown (docs/candidate-continuity-audit.md) is auto-generated; this file is the truth source for human classifications and survives re-runs. Keys for multi-alliance entries are the normalised key; keys for suspected-match pairs are 'keyA|keyB' (sorted alphabetically).",
+  "multiAlliance": {
+    "K BABU": {
+      "verdict": "different-people-same-name",
+      "note": "Confirmed via Wikipedia — Thripunithura's K. Babu (UDF, MLA 1991-2011, 2026) is a different person from Nemmara's K. Babu (LDF). Also a third K. Babu in Alappuzha 2009 by-poll."
+    },
+    "K C JOSEPH": {
+      "verdict": "different-people-same-name",
+      "note": "Common Kerala Christian name; different ACs (Irikkur UDF, Kuttanad UDF, Changanassery LDF)."
+    },
+    "ROSHY AUGUSTINE": {
+      "verdict": "same-person-switched",
+      "note": "Kerala Congress(M) faction switch. Assembly history: 2001 UDF (won, +13,719) → 2006 UDF (won, +16,340) → 2011 UDF (won, +15,806) → 2016 UDF (won, +9,333) → 2021 LDF (won, +5,573) → 2026 LDF (lost by 23,822). All in Idukki."
+    },
+    "N JAYARAJ": {
+      "verdict": "same-person-switched",
+      "note": "Same KC(M) faction switch — Kanjirappally seat. UDF in 2011/2016, LDF in 2021/2026."
+    },
+    "K SIVADASAN": {
+      "verdict": "different-people-same-name",
+      "note": "Aranmula UDF (K. Sivadasan Nair) is a different person from Chadayamangalam NDA (K. Sivadasan). Caste suffix mismatch supports the distinction."
+    },
+    "K B GANESH KUMAR": {
+      "verdict": "same-person-switched",
+      "note": "Kerala Congress(B) joined LDF — Pathanapuram seat. UDF 2011, LDF 2016/2021/2026."
+    },
+    "R SELVARAJ": {
+      "verdict": "same-person-switched",
+      "note": "Won 2011 as LDF, defected, won 2012 by-poll as UDF; ran UDF in 2016/2021. Neyyattinkara seat."
+    },
+    "K P MOHANAN": {
+      "verdict": "same-person-switched",
+      "note": "UDF 2011/2016, LDF 2021 — Kuthuparamba seat."
+    },
+    "K RADHAKRISHNAN": {
+      "verdict": "different-people-same-name",
+      "note": "Chelakkara LDF (SC-reserved) is a different person from Kothamangalam NDA."
+    },
+    "PADMAJA VENUGOPAL": {
+      "verdict": "same-person-switched",
+      "note": "INC → BJP defection (well-documented 2024). Thrissur seat. UDF 2016/2021 (rank 2), NDA 2026 (rank 3)."
+    },
+    "S RAJENDRAN": {
+      "verdict": "same-person-switched",
+      "note": "Devikulam seat. LDF 2011/2016 (won), NDA 2026 (rank 3)."
+    },
+    "P C GEORGE": {
+      "verdict": "same-person-switched",
+      "note": "Poonjar seat. UDF 2011, OTHER (independent) 2016, NDA 2026."
+    },
+    "G SUDHAKARAN": {
+      "verdict": "same-person-switched",
+      "note": "Ambalappuzha seat. LDF 2011/2016, UDF 2026."
+    },
+    "P AISHA POTTY": {
+      "verdict": "same-person-switched",
+      "note": "Kottarakkara seat. LDF 2011/2016 (won), UDF 2026 (rank 2)."
+    },
+    "K MOHANDAS": {
+      "verdict": "different-people-same-name",
+      "note": "Mananthavady NDA and Manjeri LDF — different people, different districts."
+    },
+    "P SARIN": {
+      "verdict": "different-people-same-name",
+      "note": "Ottappalam UDF 2021 and Palakkad LDF 2024 by-poll — different people."
+    },
+    "ROY VARICATTU": {
+      "verdict": "same-person-switched",
+      "note": "Thodupuzha seat. LDF 2016, NDA 2026."
+    },
+    "K FRANCIS GEORGE": {
+      "verdict": "same-person-switched",
+      "note": "Idukki seat. LDF 2016, UDF 2021. KC(J) → INC."
+    },
+    "K AJITH": {
+      "verdict": "same-person-switched",
+      "note": "Vaikom seat. LDF 2011, NDA 2026."
+    },
+    "R RESMI": {
+      "verdict": "same-person-switched",
+      "note": "Kottarakkara seat. UDF 2021, NDA 2026."
+    },
+    "A A AZEEZ": {
+      "verdict": "same-person-switched",
+      "note": "Eravipuram seat. LDF 2011 (won), UDF 2016 (rank 2)."
+    },
+    "BABU DIVAKARAN": {
+      "verdict": "same-person-switched",
+      "note": "Eravipuram UDF 2021 → Kunnathunad NDA 2026 (different ACs)."
+    },
+    "B S ANOOP": {
+      "verdict": "same-person-switched",
+      "note": "Chirayinkeezhu seat. UDF 2021, NDA 2026."
+    },
+    "V SURENDRAN": {
+      "verdict": "same-person-switched",
+      "note": "Trivandrum LDF 2011 → Nemom UDF 2016 (V. Surendran Pillai). Two different ACs but same person."
+    }
+  },
+  "suspectedMatch": {}
+}
