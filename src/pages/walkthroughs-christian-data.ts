@@ -25,34 +25,20 @@ import { ZONE, type Zone } from "@/lib/data/zones"
 export type CycleYear = 2011 | 2016 | 2021 | 2026
 export const CYCLE_YEARS: readonly CycleYear[] = [2011, 2016, 2021, 2026]
 
-export type AllianceShares = {
-  UDF: number
-  LDF: number
-  NDA: number
-  OTHER: number
-}
+// Re-export from alliance-shares-core for backwards compatibility.
+export type { AllianceShares } from "@/lib/data/alliance-shares-core"
+import {
+  shares2026FromCandidates,
+  sharesHistoricalFromCandidates,
+  winnerOf,
+  type AllianceShares,
+} from "@/lib/data/alliance-shares-core"
 
 // ── Share computation per AC per year ─────────────────────────────────
 function shares2026Of(acNumber: number): AllianceShares | null {
   const c = constituencies.find((x) => x.constituencyNumber === acNumber)
   if (!c) return null
-  let total = 0
-  for (const cand of c.candidates) {
-    if (cand.isNota) continue
-    total += cand.votes
-  }
-  if (total === 0) return null
-  const out: AllianceShares = { UDF: 0, LDF: 0, NDA: 0, OTHER: 0 }
-  for (const cand of c.candidates) {
-    if (cand.isNota) continue
-    const a = cand.alliance
-    if (a === "UDF" || a === "LDF" || a === "NDA") {
-      out[a] += (cand.votes / total) * 100
-    } else {
-      out.OTHER += (cand.votes / total) * 100
-    }
-  }
-  return out
+  return shares2026FromCandidates(c.candidates)
 }
 
 function sharesHistoricalOf(
@@ -63,38 +49,13 @@ function sharesHistoricalOf(
   if (!hist) return null
   const e = hist.elections.find((e) => e.year === year && e.type === "general")
   if (!e) return null
-  let total = 0
-  for (const c of e.candidates) total += c.votes
-  if (total === 0) return null
-  const out: AllianceShares = { UDF: 0, LDF: 0, NDA: 0, OTHER: 0 }
-  for (const c of e.candidates) {
-    if (c.alliance === "NOTA") continue
-    const pct = (c.votes / total) * 100
-    if (c.alliance === "UDF" || c.alliance === "LDF" || c.alliance === "NDA") {
-      out[c.alliance] += pct
-    } else {
-      out.OTHER += pct
-    }
-  }
-  return out
+  return sharesHistoricalFromCandidates(e.candidates)
 }
 
 function sharesFor(acNumber: number, year: CycleYear): AllianceShares | null {
   return year === 2026
     ? shares2026Of(acNumber)
     : sharesHistoricalOf(acNumber, year)
-}
-
-function winnerOf(s: AllianceShares): keyof AllianceShares {
-  let best: keyof AllianceShares = "UDF"
-  let bestVal = -Infinity
-  for (const a of ["UDF", "LDF", "NDA", "OTHER"] as const) {
-    if (s[a] > bestVal) {
-      bestVal = s[a]
-      best = a
-    }
-  }
-  return best
 }
 
 const mean = (xs: number[]) =>

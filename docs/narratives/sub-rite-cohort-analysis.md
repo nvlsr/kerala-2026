@@ -1,6 +1,6 @@
 # Sub-rite cohort × UDF performance — Sprint 2 analysis
 
-**Generated:** 2026-05-10 by `scripts/analyze-subrite-cohorts.ts`
+**Generated:** 2026-05-11 by `scripts/analyze-subrite-cohorts.ts`
 
 First quantitative pass over the new OSM-derived sub-rite cohort layer
 (`src/lib/data/subrite-bins.ts`) against alliance performance.

@@ -23,9 +23,15 @@ import {
   type ChristianSubRiteCohort,
 } from "@/lib/data/subrite-bins"
 import { getReligiousSignatureForAC } from "@/lib/data/religious-pois"
+import {
+  shares2026FromCandidates,
+  sharesHistoricalFromCandidates,
+  winnerOf,
+  type AllianceShares,
+} from "@/lib/data/alliance-shares-core"
 
 // ── Types ─────────────────────────────────────────────────────────────
-type AllianceShares = { UDF: number; LDF: number; NDA: number; OTHER: number }
+// AllianceShares + share-math: see @/lib/data/alliance-shares-core.
 type Candidate2026 = {
   alliance?: string
   isNota?: boolean
@@ -59,45 +65,16 @@ type HistoricalConstituency = {
 const TARGET_YEARS = [2011, 2016, 2021] as const
 
 // ── Helpers ───────────────────────────────────────────────────────────
-function shares2026(c: Constituency2026): AllianceShares {
-  let total = 0
-  for (const cand of c.candidates) {
-    if (!cand.isNota) total += cand.votes
-  }
-  const out: AllianceShares = { UDF: 0, LDF: 0, NDA: 0, OTHER: 0 }
-  if (total === 0) return out
-  for (const cand of c.candidates) {
-    if (cand.isNota) continue
-    const a = cand.alliance
-    if (a === "UDF" || a === "LDF" || a === "NDA") {
-      out[a] += (cand.votes / total) * 100
-    } else {
-      out.OTHER += (cand.votes / total) * 100
-    }
-  }
-  return out
-}
+const shares2026 = (c: Constituency2026): AllianceShares =>
+  shares2026FromCandidates(c.candidates)
 
-function sharesHistorical(
+const sharesHistorical = (
   hist: HistoricalConstituency,
   year: number
-): AllianceShares | null {
+): AllianceShares | null => {
   const e = hist.elections.find((e) => e.year === year && e.type === "general")
   if (!e) return null
-  let total = 0
-  for (const c of e.candidates) total += c.votes
-  if (total === 0) return null
-  const out: AllianceShares = { UDF: 0, LDF: 0, NDA: 0, OTHER: 0 }
-  for (const c of e.candidates) {
-    if (c.alliance === "NOTA") continue
-    const pct = (c.votes / total) * 100
-    if (c.alliance === "UDF" || c.alliance === "LDF" || c.alliance === "NDA") {
-      out[c.alliance as keyof AllianceShares] += pct
-    } else {
-      out.OTHER += pct
-    }
-  }
-  return out
+  return sharesHistoricalFromCandidates(e.candidates)
 }
 
 function partySharesHistorical(
@@ -130,17 +107,7 @@ function partyShares2026(c: Constituency2026): Map<string, number> {
   return out
 }
 
-function winnerOf(s: AllianceShares): keyof AllianceShares | null {
-  let best: keyof AllianceShares | null = null
-  let bestVal = -Infinity
-  for (const a of ["UDF", "LDF", "NDA", "OTHER"] as const) {
-    if (s[a] > bestVal) {
-      bestVal = s[a]
-      best = a
-    }
-  }
-  return best
-}
+// winnerOf imported from alliance-shares-core.
 
 const mean = (xs: number[]) =>
   xs.length === 0 ? 0 : xs.reduce((a, b) => a + b, 0) / xs.length

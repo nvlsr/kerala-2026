@@ -47,13 +47,10 @@ export function getRegionForAC(acNumber: number): Region | null {
   return null
 }
 
-export type AllianceShares = {
-  UDF: number
-  LDF: number
-  NDA: number
-  /** Aggregate of OTHER + NOTA (small-party + independent + NOTA). */
-  OTHER: number
-}
+// AllianceShares type lives in alliance-shares-core; re-export for
+// backwards compatibility with existing arc-page imports.
+export type { AllianceShares } from "@/lib/data/alliance-shares-core"
+import type { AllianceShares } from "@/lib/data/alliance-shares-core"
 
 export type ACMetrics = {
   acNumber: number
@@ -74,34 +71,18 @@ export type ACMetrics = {
 
 const BJP_PARTY = "Bharatiya Janata Party"
 
+// Re-export from alliance-shares-core so this module remains the
+// single import boundary for walkthrough-internal callers; the core
+// helpers are pure and live in `src/lib/data/alliance-shares-core.ts`
+// because they're also consumed by Bun analysis scripts that can't
+// import historical.ts (Vite-only `import.meta.glob`).
+import {
+  shares2026FromCandidates,
+  sharesHistoricalFromCandidates,
+} from "@/lib/data/alliance-shares-core"
+
 function shares2026Of(c: Constituency): AllianceShares {
-  // Convention: shares are computed with NOTA EXCLUDED from the
-  // denominator (matches the Python analysis scripts and standard
-  // political-analysis practice — alliance shares of valid party
-  // votes, not of total ballots cast). NOTA is reported separately
-  // via the OTHER bucket here? No — NOTA is excluded entirely. The
-  // OTHER bucket represents non-aligned independents and small
-  // parties.
-  let total = 0
-  for (const cand of c.candidates) {
-    if (cand.isNota) continue
-    total += cand.votes
-  }
-  const out: AllianceShares = { UDF: 0, LDF: 0, NDA: 0, OTHER: 0 }
-  if (total === 0) return out
-  for (const cand of c.candidates) {
-    if (cand.isNota) continue
-    if (
-      cand.alliance === "UDF" ||
-      cand.alliance === "LDF" ||
-      cand.alliance === "NDA"
-    ) {
-      out[cand.alliance] += (cand.votes / total) * 100
-    } else {
-      out.OTHER += (cand.votes / total) * 100
-    }
-  }
-  return out
+  return shares2026FromCandidates(c.candidates)
 }
 
 function shares2021Of(acNumber: number): AllianceShares | null {
@@ -111,39 +92,7 @@ function shares2021Of(acNumber: number): AllianceShares | null {
     (e) => e.year === 2021 && e.type === "general"
   )
   if (!election) return null
-
-  // 2021 denominator includes NOTA. The Python analysis scripts
-  // filter NOTA via `cand.get("isNota")` which is true on 2026 NOTA
-  // (which has isNota:true) but falsy on 2021 historical NOTA
-  // (which only has alliance:"NOTA", no isNota field). To match
-  // the Python numbers exactly, this implementation reproduces
-  // the asymmetry: 2026 excludes NOTA from denominator, 2021
-  // includes NOTA.
-  //
-  // The asymmetry has a real-world cost (2021 alliance shares are
-  // dragged down by ~0.2-0.4pp of NOTA), but stays consistent with
-  // the upstream analysis catalogue.
-  let total = 0
-  for (const cand of election.candidates) {
-    total += cand.votes
-  }
-  if (total === 0) return null
-
-  const out: AllianceShares = { UDF: 0, LDF: 0, NDA: 0, OTHER: 0 }
-  for (const cand of election.candidates) {
-    if (cand.alliance === "NOTA") continue
-    const pct = (cand.votes / total) * 100
-    if (
-      cand.alliance === "UDF" ||
-      cand.alliance === "LDF" ||
-      cand.alliance === "NDA"
-    ) {
-      out[cand.alliance] += pct
-    } else {
-      out.OTHER += pct
-    }
-  }
-  return out
+  return sharesHistoricalFromCandidates(election.candidates)
 }
 
 function bjpShare2026Of(c: Constituency): number {
