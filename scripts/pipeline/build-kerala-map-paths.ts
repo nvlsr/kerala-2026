@@ -2,12 +2,12 @@
  * Pre-project Kerala GeoJSON files into SVG path strings.
  *
  * Reads:
- *   data/kerala-districts.geojson
- *   data/kerala-constituencies.geojson
+ *   data/district.geojson
+ *   data/ac.geojson
  *
  * Writes:
- *   data/kerala-districts-paths.json
- *   data/kerala-constituencies-paths.json
+ *   data/district-paths.json
+ *   data/ac-paths.json
  *
  * Run: bun run scripts/pipeline/build-kerala-map-paths.ts
  */
@@ -48,7 +48,7 @@ function project<Props>(
 // id key is emitted; the display name lives in `data/districts.json`.
 {
   const fc = JSON.parse(
-    readFileSync(resolve(ROOT, "data/kerala-districts.geojson"), "utf8")
+    readFileSync(resolve(ROOT, "data/district.geojson"), "utf8")
   ) as FeatureCollection<{
     id: string
     name: string
@@ -63,7 +63,7 @@ function project<Props>(
   }))
 
   const out = { width, height, districts }
-  const path = resolve(ROOT, "data/kerala-districts-paths.json")
+  const path = resolve(ROOT, "data/district-paths.json")
   writeFileSync(path, JSON.stringify(out))
   console.log(
     `✓ ${path.replace(ROOT + "/", "")}: ${districts.length} districts, ${(JSON.stringify(out).length / 1024).toFixed(1)} KB`
@@ -72,10 +72,10 @@ function project<Props>(
 
 // Constituencies — 140 polygons, used for the per-AC analytical map. Only
 // the AC number key is emitted; display name + districtId live in
-// `constituency-names.json` + `districts.json` respectively.
+// `ac-names.json` + `districts.json` respectively.
 {
   const fc = JSON.parse(
-    readFileSync(resolve(ROOT, "data/kerala-constituencies.geojson"), "utf8")
+    readFileSync(resolve(ROOT, "data/ac.geojson"), "utf8")
   ) as FeatureCollection<{
     constituencyNumber: number
     name: string
@@ -90,7 +90,7 @@ function project<Props>(
   }))
 
   const out = { width, height, constituencies }
-  const path = resolve(ROOT, "data/kerala-constituencies-paths.json")
+  const path = resolve(ROOT, "data/ac-paths.json")
   writeFileSync(path, JSON.stringify(out))
   console.log(
     `✓ ${path.replace(ROOT + "/", "")}: ${constituencies.length} constituencies, ${(JSON.stringify(out).length / 1024).toFixed(1)} KB`

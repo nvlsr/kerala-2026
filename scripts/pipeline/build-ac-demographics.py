@@ -6,7 +6,7 @@ Build AC-level religion demographics for Kerala by joining:
   - SHRUG shrid population (PCA totals)
   - Census 2011 Table C-01 religion shares (town + sub-district level)
 
-Output: data/ac-demographics.json with religion shares per AC.
+Output: data/ac-religion.json with religion shares per AC.
 
 Resolution:
   - Urban shrids match towns directly (town-level religion data)
@@ -386,7 +386,7 @@ def main() -> None:
         },
     }
 
-    out_path = ROOT / "data" / "ac-demographics.json"
+    out_path = ROOT / "data" / "ac-religion.json"
     out_path.write_text(json.dumps(output, indent=2) + "\n")
     print(f"\nWrote {out_path}", file=sys.stderr)
     print(f"Total ACs: {len(output_acs)}/140", file=sys.stderr)

@@ -447,7 +447,7 @@ describe("historical candidate names have no unrecovered parenthetical party tag
 
 describe("AC display-name invariants across data sources", () => {
   // After P1+P2 denormalization, AC display names live in
-  // constituency-names.json only; paths.json carries no `name` field and
+  // ac-names.json only; paths.json carries no `name` field and
   // map tooltips/aria-labels resolve via displayConstituencyName(). The
   // religiousPOIs loader rehydrates ac_name from the registry, so this
   // test guards the rehydration path.

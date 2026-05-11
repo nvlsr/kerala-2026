@@ -37,7 +37,7 @@ type Hist = {
 }
 
 const data2026: C2026[] = JSON.parse(
-  fs.readFileSync("data/kerala-2026.json", "utf8")
+  fs.readFileSync("data/results-2026.json", "utf8")
 )
 const hist: Hist[] = fs
   .readdirSync("data/historical")
@@ -59,8 +59,8 @@ const excludeReserved = process.argv.includes("--exclude-reserved")
 // absolute-share claims and external cross-checks.
 const useBaseline2011 = process.argv.includes("--baseline-2011")
 const baselineFile = useBaseline2011
-  ? "data/ac-demographics.json"
-  : "data/ac-demographics-2025.json"
+  ? "data/ac-religion.json"
+  : "data/ac-religion-2025.json"
 
 const acDemo = JSON.parse(fs.readFileSync(baselineFile, "utf8"))
 type AcRel = {

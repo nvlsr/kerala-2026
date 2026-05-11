@@ -5,15 +5,15 @@
  * single boundary between "static JSON" and "typed runtime values used by the
  * app".
  */
-import acDemographicsJson from "@data/ac-demographics.json"
-import acDemographics2025Json from "@data/ac-demographics-2025.json"
+import acDemographicsJson from "@data/ac-religion.json"
+import acDemographics2025Json from "@data/ac-religion-2025.json"
 import alliancesJson from "@data/alliances.json"
 import candidateAliasesJson from "@data/candidate-aliases.json"
-import casteByDistrictJson from "@data/hindu-caste-by-district.json"
+import casteByDistrictJson from "@data/district-hindu-castes.json"
 import communityBeltsJson from "@data/community-belts.json"
-import constituenciesJson from "@data/kerala-2026.json"
-import constituencyNamesJson from "@data/constituency-names.json"
-import demographicsJson from "@data/demographics.json"
+import constituenciesJson from "@data/results-2026.json"
+import constituencyNamesJson from "@data/ac-names.json"
+import demographicsJson from "@data/district-religion.json"
 import districtsJson from "@data/districts.json"
 import reservationsJson from "@data/reservations.json"
 
@@ -31,6 +31,8 @@ export type RawConstituency = {
   constituencyNumber: number
   candidates: RawCandidate[]
 }
+
+type RawResultsFile = Record<string, { candidates: RawCandidate[] }>
 
 export const alliancesMeta = alliancesJson as {
   alliances: Record<AllianceCode, Alliance>
@@ -56,12 +58,45 @@ export type ConstituencyNameEntry = {
   aliases?: string[]
 }
 
-export const constituencyNames = constituencyNamesJson as Record<
-  string,
-  ConstituencyNameEntry
->
+type RawAcNameEntry = {
+  primary: string
+  wikipedia?: string
+  aliases?: string[]
+}
 
-export const rawConstituencies = constituenciesJson as RawConstituency[]
+const rawAcNames = constituencyNamesJson as Record<string, RawAcNameEntry>
+
+/**
+ * AC display-name registry. `eci` (uppercase form) and `wikipediaUrl` are
+ * derived: ECI form is always the uppercase primary, and the Wikipedia URL
+ * follows the stable pattern `https://en.wikipedia.org/wiki/{wikipedia}_Assembly_constituency`.
+ */
+export const constituencyNames: Record<string, ConstituencyNameEntry> =
+  Object.fromEntries(
+    Object.entries(rawAcNames).map(([k, v]) => [
+      k,
+      {
+        primary: v.primary,
+        eci: v.primary.toUpperCase(),
+        ...(v.wikipedia
+          ? {
+              wikipedia: v.wikipedia,
+              wikipediaUrl: `https://en.wikipedia.org/wiki/${v.wikipedia}_Assembly_constituency`,
+            }
+          : {}),
+        ...(v.aliases ? { aliases: v.aliases } : {}),
+      },
+    ])
+  )
+
+const rawResults = constituenciesJson as RawResultsFile
+
+export const rawConstituencies: RawConstituency[] = Object.entries(
+  rawResults
+).map(([k, v]) => ({
+  constituencyNumber: Number(k),
+  candidates: v.candidates,
+}))
 
 export const districtsMeta = districtsJson as {
   districts: District[]

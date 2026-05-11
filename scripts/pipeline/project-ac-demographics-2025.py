@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build a 2025-projected version of data/ac-demographics.json by applying
+Build a 2025-projected version of data/ac-religion.json by applying
 state-level uniform multipliers to each AC's religion shares.
 
 Multipliers come from the cohort projection in
@@ -19,7 +19,7 @@ Limitations baked into the output's `note` field:
   - Census 2011 baseline + simple cohort progression; not a
     formally-validated demographic model.
 
-Output: data/ac-demographics-2025.json with same shape as the 2011
+Output: data/ac-religion-2025.json with same shape as the 2011
 file (constituencies keyed by AC number, religion shares, source).
 The renormalization step preserves the "other"/sikh/buddhist/jain
 buckets and ensures every AC's shares sum to 100%.
@@ -61,7 +61,7 @@ def project(rel: dict) -> dict:
 
 
 def main() -> None:
-    src = json.loads((ROOT / "data" / "ac-demographics.json").read_text())
+    src = json.loads((ROOT / "data" / "ac-religion.json").read_text())
     out_constituencies = {}
     for ac_num, entry in src["constituencies"].items():
         out_constituencies[ac_num] = {
@@ -73,7 +73,7 @@ def main() -> None:
         "year": 2025,
         "baseYear": 2011,
         "source": (
-            "Projected from data/ac-demographics.json (Census 2011 + SHRUG) "
+            "Projected from data/ac-religion.json (Census 2011 + SHRUG) "
             "using state-level uniform cohort multipliers derived from "
             "Kerala CRS births by religion 2011-2023 + Census 2011 "
             "starting populations + crude death rate ~7/1000."
@@ -92,7 +92,7 @@ def main() -> None:
         "constituencies": out_constituencies,
     }
 
-    out_path = ROOT / "data" / "ac-demographics-2025.json"
+    out_path = ROOT / "data" / "ac-religion-2025.json"
     out_path.write_text(json.dumps(output, indent=2) + "\n")
     print(f"Wrote {out_path}")
     print(f"  ACs projected: {len(out_constituencies)}")

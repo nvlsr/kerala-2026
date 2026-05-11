@@ -87,7 +87,7 @@ const BJP_COHORTS: BJPCohortOption[] = [
 
 /**
  * Demographic cohort options for the right selector. Three groups:
- * Religion mix (AC-level, derived from ac-demographics-2025.json),
+ * Religion mix (AC-level, derived from ac-religion-2025.json),
  * Community belts (district-level, from community-belts.json),
  * and Reservation (AC-level, from reservations.json).
  */

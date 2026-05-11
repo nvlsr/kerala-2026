@@ -255,7 +255,7 @@ ad-hoc analysis (not currently wired into walkthrough pages).
 | `scripts/pipeline/validate-classified-pow.ts` | Spot-check classifier against known religious geography |
 | `data/raw/osm/places-of-worship-kerala.json` | Raw Overpass dump (**gitignored**) |
 | `data/places-of-worship.json` | Per-POI classified dataset (**gitignored**, ~7 MB, regenerable) |
-| `data/ac-religious-poi-inventory.json` | Per-AC aggregate (**committed**, ~80 KB) — the canonical product |
+| `data/ac-religious-pois.json` | Per-AC aggregate (**committed**, ~80 KB) — the canonical product |
 | `data/raw/osm/README.md` | Snapshot dates, exact Overpass queries, coverage stats, pipeline notes |
 
 End-to-end refresh: `bun run scripts/pipeline/fetch-osm-pow.ts --full && bun run

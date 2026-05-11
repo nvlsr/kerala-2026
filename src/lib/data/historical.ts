@@ -1,3 +1,5 @@
+import acHistoryJson from "@data/ac-history.json"
+
 import { constituencyNames } from "@/lib/data/loaders"
 
 import type { AllianceCode } from "@/lib/data/alliances"
@@ -30,28 +32,20 @@ export type HistoricalConstituency = {
   elections: HistoricalElection[]
 }
 
-type RawHistoricalConstituency = {
-  constituencyNumber: number
-  elections: HistoricalElection[]
-}
+type RawAcHistory = Record<string, { elections: HistoricalElection[] }>
 
-const historicalModules = import.meta.glob<{
-  default: RawHistoricalConstituency
-}>("../../../data/historical/S11-*.json", { eager: true })
+const rawHistory = acHistoryJson as RawAcHistory
 
 const historicalByNumber = new Map<number, HistoricalConstituency>()
-for (const path in historicalModules) {
-  const mod = historicalModules[path] as
-    | { default: RawHistoricalConstituency }
-    | RawHistoricalConstituency
-  const data = "default" in mod ? mod.default : mod
-  const entry = constituencyNames[String(data.constituencyNumber)]
-  historicalByNumber.set(data.constituencyNumber, {
-    constituencyNumber: data.constituencyNumber,
+for (const [k, v] of Object.entries(rawHistory)) {
+  const acNum = Number(k)
+  const entry = constituencyNames[k]
+  historicalByNumber.set(acNum, {
+    constituencyNumber: acNum,
     constituencyName: entry?.eci ?? "",
     wikipediaName: entry?.wikipedia ?? "",
     wikipediaUrl: entry?.wikipediaUrl ?? "",
-    elections: data.elections,
+    elections: v.elections,
   })
 }
 

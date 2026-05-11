@@ -4,9 +4,9 @@ Three independent pipelines feed the data files this app consumes. Each turns ex
 
 | Pipeline | External source | Output |
 | --- | --- | --- |
-| 1. Election results | ECI 2026 + keralaassembly.org (historical) | `data/kerala-2026.json` + `data/historical/S11-*.json` |
-| 2. AC religion demographics | Census 2011 C-01 + SHRUG location keys | `data/ac-demographics.json` + `data/ac-demographics-2025.json` |
-| 3. Religious POIs | OpenStreetMap Overpass API | `data/places-of-worship.json` (gitignored) + `data/ac-religious-poi-inventory.json` |
+| 1. Election results | ECI 2026 + keralaassembly.org (historical) | `data/results-2026.json` + `data/historical/S11-*.json` |
+| 2. AC religion demographics | Census 2011 C-01 + SHRUG location keys | `data/ac-religion.json` + `data/ac-religion-2025.json` |
+| 3. Religious POIs | OpenStreetMap Overpass API | `data/places-of-worship.json` (gitignored) + `data/ac-religious-pois.json` |
 | 4. Maps (one-off) | Datameet shapefiles | `data/kerala-*.geojson` + `data/kerala-*-paths.json` |
 
 Source URLs live in [`docs/links.md`](links.md). For each pipeline, that document tells you where the raw data comes from; this document tells you how to turn it into committed JSON.
@@ -31,7 +31,7 @@ ECI 2026 candidate pages              keralaassembly.org per-seat tables
         │ (aggregation: manual — no committed script)
         │                                       ▼
         ▼                            merge-2021.ts merges into historical/
-   data/kerala-2026.json
+   data/results-2026.json
                                                 ▼
                                       data/historical/S11-{N}.json
                                       (years: 2011, 2016, 2019, 2021)
@@ -39,7 +39,7 @@ ECI 2026 candidate pages              keralaassembly.org per-seat tables
 
 ## 2026 results
 
-ECI's per-constituency HTML pages are scraped via the in-page browser (Chrome) because direct `curl`/`fetch` returns HTTP 403. Per-seat JSON intermediates land in `data/raw/constituencies/S11-{N}.json` and are aggregated by hand into `data/kerala-2026.json` — there is no committed aggregation script at this time. The raw per-seat files use the same shape (the trimmed shape after P1: `constituencyNumber` + `candidates: [{name, party, votes}]`); `kerala-2026.json` is the concatenated array.
+ECI's per-constituency HTML pages are scraped via the in-page browser (Chrome) because direct `curl`/`fetch` returns HTTP 403. Per-seat JSON intermediates land in `data/raw/constituencies/S11-{N}.json` and are aggregated by hand into `data/results-2026.json` — there is no committed aggregation script at this time. The raw per-seat files use the same shape (the trimmed shape after P1: `constituencyNumber` + `candidates: [{name, party, votes}]`); `results-2026.json` is the concatenated array.
 
 Source URLs: `https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11{N}.htm` for N = 1..140. State code `S11` = Kerala. Two raw HTML reference files are committed at `data/raw/eci-html/` (partywise summary + partywise winners).
 
@@ -55,7 +55,7 @@ Three steps:
 
 ## Validation
 
-`scripts/pipeline/validate-alliances.ts` checks: every party in `data/alliances.json` has a registered alliance + abbreviation; every party appearing in `kerala-2026.json` is registered; per-candidate alliance labels are consistent.
+`scripts/pipeline/validate-alliances.ts` checks: every party in `data/alliances.json` has a registered alliance + abbreviation; every party appearing in `results-2026.json` is registered; per-candidate alliance labels are consistent.
 
 ## Re-running
 
@@ -79,7 +79,7 @@ For 2026, currently no scripted re-runner — the per-seat ECI scrape is browser
 
 # Pipeline 2 — AC religion demographics (Census 2011 + SHRUG)
 
-How `data/ac-demographics.json` is produced, what's known to be incomplete, and what we'd improve next.
+How `data/ac-religion.json` is produced, what's known to be incomplete, and what we'd improve next.
 
 ## Architecture
 
@@ -98,7 +98,7 @@ How `data/ac-demographics.json` is produced, what's known to be incomplete, and 
                        ↓
                  Aggregate to AC
                        ↓
-              ac-demographics.json (140 ACs)
+              ac-religion.json (140 ACs)
 ```
 
 **Build script:** `scripts/pipeline/build-ac-demographics.py`
@@ -163,7 +163,7 @@ Tier B would get us to ~95% high-quality population coverage. Skip until a speci
 
 ### ✅ Tier C (current default) — 2025 projection
 
-Implemented in `scripts/pipeline/project-ac-demographics-2025.py`. State-level uniform multipliers from cohort projection (Hindu × 0.9591, Muslim × 1.1166, Christian × 0.9712) applied to all AC shares with per-AC renormalization. Output: `data/ac-demographics-2025.json` alongside the raw 2011 baseline at `data/ac-demographics.json`.
+Implemented in `scripts/pipeline/project-ac-demographics-2025.py`. State-level uniform multipliers from cohort projection (Hindu × 0.9591, Muslim × 1.1166, Christian × 0.9712) applied to all AC shares with per-AC renormalization. Output: `data/ac-religion-2025.json` alongside the raw 2011 baseline at `data/ac-religion.json`.
 
 Multipliers come from the cohort projection in `scripts/cohort-project-2011-to-2025.py`: Census 2011 starting populations + Kerala CRS births by religion 2011-2023 + crude death rate ~7/1000.
 
@@ -198,7 +198,7 @@ When India's delayed 2026 Census data publishes (probably 2027-28), the entire p
 
 # Pipeline 3 — Religious POI inventory (OpenStreetMap)
 
-How `data/ac-religious-poi-inventory.json` is produced — the AC × sub-rite POI counts that drive the cohort layer in [`src/lib/data/subrite-bins.ts`](../src/lib/data/subrite-bins.ts) and the by-religion walkthroughs.
+How `data/ac-religious-pois.json` is produced — the AC × sub-rite POI counts that drive the cohort layer in [`src/lib/data/subrite-bins.ts`](../src/lib/data/subrite-bins.ts) and the by-religion walkthroughs.
 
 ## Architecture
 
@@ -225,7 +225,7 @@ data/places-of-worship.json (per-POI, ~22k rows)
         │
         ▼  aggregate-ac-religion-pois.ts
         │
-data/ac-religious-poi-inventory.json (committed; 140 AC × bucket counts)
+data/ac-religious-pois.json (committed; 140 AC × bucket counts)
 ```
 
 ## Fetch
@@ -253,7 +253,7 @@ Key choices in the classifier:
 
 `scripts/pipeline/aggregate-ac-religion-pois.ts` reduces the per-POI classified dataset to per-AC summary: total POIs, by religion (christian / muslim / hindu / other / unknown), by Christian denomination, by Muslim denomination, and a `dominant_*_denomination` field per religion.
 
-`data/ac-religious-poi-inventory.json` is the committed product. At runtime [`src/lib/data/religious-pois.ts`](../src/lib/data/religious-pois.ts) loads it and rehydrates `ac_name` + `district` from the canonical registries (so the inventory file carries only `ac_id` + counts).
+`data/ac-religious-pois.json` is the committed product. At runtime [`src/lib/data/religious-pois.ts`](../src/lib/data/religious-pois.ts) loads it and rehydrates `ac_name` + `district` from the canonical registries (so the inventory file carries only `ac_id` + counts).
 
 ## Validation
 
@@ -292,14 +292,14 @@ Datameet shapefiles (CC-BY 2.5 IN; gitignored at data/maps-master/)
        │
        ▼  extract-kerala-map.py (filter to Kerala, simplify geometry)
        │
-data/kerala-districts.geojson + data/kerala-constituencies.geojson  (committed)
+data/district.geojson + data/ac.geojson  (committed)
        │
        ▼  build-kerala-map-paths.ts (Mercator-project via d3-geo)
        │
-data/kerala-districts-paths.json + data/kerala-constituencies-paths.json  (committed)
+data/district-paths.json + data/ac-paths.json  (committed)
        └─ runtime artifact — no d3-geo dep at runtime, just SVG path strings
 ```
 
 Source: [`projects.datameet.org/maps`](https://projects.datameet.org/maps/) · repo: [`datameet/maps`](https://github.com/datameet/maps).
 
-The `data/maps-master/` directory is gitignored (486 MB). Re-clone the upstream repo if you need to re-run extraction. After re-running `build-kerala-map-paths.ts`, the `data.test.ts` invariants will fail if any AC name in the geojson drifts from `constituency-names.json` (see commit 0968bc2 for the 3-AC reconciliation pass).
+The `data/maps-master/` directory is gitignored (486 MB). Re-clone the upstream repo if you need to re-run extraction. After re-running `build-kerala-map-paths.ts`, the `data.test.ts` invariants will fail if any AC name in the geojson drifts from `ac-names.json` (see commit 0968bc2 for the 3-AC reconciliation pass).

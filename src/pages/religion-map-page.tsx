@@ -11,7 +11,7 @@ import {
 } from "@/components/religion-gradient-map"
 import { ReligiousPOIsSection } from "@/components/religious-pois-section"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
-import casteData from "@data/hindu-caste-by-district.json"
+import casteData from "@data/district-hindu-castes.json"
 import {
   acDemo2025Meta,
   acDemoMeta,
@@ -405,7 +405,7 @@ export function ReligionMapPage() {
               name-regex inference, and a hand-curated diocesan prior for
               generic-Catholic POIs. The aggregate lives at{" "}
               <code className="rounded bg-muted px-1 py-0.5 text-[0.8em]">
-                data/ac-religious-poi-inventory.json
+                data/ac-religious-pois.json
               </code>
               ; pipeline detail in{" "}
               <a

@@ -12,7 +12,7 @@ Each entry below shows: the missing alliance, and the seat's OTHER candidates ra
 
 ## How to fix an entry
 
-Each candidate's alliance lives directly on their record in `data/kerala-2026.json` (for 2026) or `data/historical/S11-<N>.json` (for cycles 2011–2021). To fix a misclassification, edit the `alliance` field on that record. Valid values: `UDF`, `LDF`, `NDA`, `OTHER`, `NOTA`.
+Each candidate's alliance lives directly on their record in `data/results-2026.json` (for 2026) or `data/historical/S11-<N>.json` (for cycles 2011–2021). To fix a misclassification, edit the `alliance` field on that record. Valid values: `UDF`, `LDF`, `NDA`, `OTHER`, `NOTA`.
 
 ## Summary
 

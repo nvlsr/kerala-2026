@@ -482,7 +482,7 @@ Caveat: one-way ANOVA inflates R² with many categories. Fair contest would appl
 | Source | Path |
 |---|---|
 | OSM POI inventory (raw) | `data/raw/osm/places-of-worship-kerala.json` (gitignored; re-fetchable) |
-| OSM POI inventory (classified, per-AC) | `data/ac-religious-poi-inventory.json` |
+| OSM POI inventory (classified, per-AC) | `data/ac-religious-pois.json` |
 | Cohort layer | `src/lib/data/subrite-bins.ts` (`christianSubRiteCohortFor(acNumber)`) |
 | Per-AC voter-share computation | `src/lib/data/religious-pois.ts` (`getReligiousSignatureForAC`) |
 | Cohort × cycle trajectories | `src/pages/walkthroughs-christian-data.ts` (`COHORT_TRAJECTORY`) |

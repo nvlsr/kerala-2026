@@ -4,12 +4,10 @@ import type { Constituency } from "@/lib/data/constituencies"
 export type District = {
   id: string
   name: string
-  order: number
 }
 
-export const districts: District[] = districtsMeta.districts
-  .slice()
-  .sort((a, b) => a.order - b.order)
+// Districts are stored in display order in districts.json; preserve.
+export const districts: District[] = districtsMeta.districts.slice()
 
 export function getDistrict(id: string): District | null {
   return districts.find((d) => d.id === id) ?? null

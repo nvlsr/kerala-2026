@@ -9,12 +9,12 @@ Confirmed via cross-citation in the [Wikipedia "Demographics of Nair community"]
 **Caveats baked into use:**
 - **Year:** 2000 baseline. ~25 years old as of 2026. Differential fertility has shifted absolute shares; geographic rank is generally stable.
 - **Methodology:** Sample-based household survey, not Census. Has confidence intervals we don't have specific numbers for.
-- **Denominator:** percentages are of the district's **Hindu population**, not total population. To convert to total-district share, multiply by the district's Hindu share from `data/demographics.json`.
+- **Denominator:** percentages are of the district's **Hindu population**, not total population. To convert to total-district share, multiply by the district's Hindu share from `data/district-religion.json`.
 - **Granularity:** district-level only. Within-district AC variation (Pala vs rural Kottayam) invisible. Subject to the same ecological-fallacy caveat as our v1 religion analysis.
 
 ## What the table covers
 
-District-level percentages of Hindu sub-communities. **Denominator = Hindu population in that district**, not total population. To convert to district-as-fraction-of-total, multiply by the district's overall Hindu share from `data/demographics.json`.
+District-level percentages of Hindu sub-communities. **Denominator = Hindu population in that district**, not total population. To convert to district-as-fraction-of-total, multiply by the district's overall Hindu share from `data/district-religion.json`.
 
 State-level numbers (Nair 21.6%, Ezhava 39.2%, SC 16.9%, ST 1.2%) match well-known Kerala estimates and corroborate the academic provenance.
 
@@ -42,7 +42,7 @@ State-level numbers (Nair 21.6%, Ezhava 39.2%, SC 16.9%, ST 1.2%) match well-kno
 
 ## What's surfaced where
 
-- **`data/hindu-caste-by-district.json`** — full data, all 9 columns retained even though only Nair/Ezhava are currently visualised
+- **`data/district-hindu-castes.json`** — full data, all 9 columns retained even though only Nair/Ezhava are currently visualised
 - **`/religion-map` page** — Nair and Ezhava district-shaded gradient maps in the "Hindu sub-communities" section. The other castes (Brahmin, Nadar, Viswakarma, Barber, SC, ST, Other) are in the JSON but not rendered yet — easy to add when needed.
 - **Analytical findings** — see `docs/narratives/udf.md §5` (caste-share geography) for the geography-overlap analysis. **Headline:** Nair-heavy districts saw smaller UDF gains and larger NDA gains; Ezhava share doesn't differentially predict the 2026 swing. Caste-voter behaviour cannot be tested at AC granularity (district-level data only).
 

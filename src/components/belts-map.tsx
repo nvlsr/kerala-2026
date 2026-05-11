@@ -1,4 +1,4 @@
-import paths from "@data/kerala-constituencies-paths.json"
+import { acPaths as paths } from "@/lib/data/maps"
 
 import { constituencies } from "@/lib/data/constituencies"
 import { beltForConstituency } from "@/lib/data/belts"

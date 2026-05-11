@@ -11,7 +11,7 @@ Authoritative source for candidate names, parties, vote counts, and margins.
 - Partywise winners (per party): `https://results.eci.gov.in/ResultAcGenMay2026/partywisewinresult-{partyId}S11.htm`
   - BJP example saved raw at `data/raw/eci-html/partywisewinresult-369S11.htm`
 - Constituency results: `https://results.eci.gov.in/ResultAcGenMay2026/candidateswise-S11{N}.htm` for `N = 1..140`
-  - Aggregated into `data/kerala-2026.json` (all 140)
+  - Aggregated into `data/results-2026.json` (all 140)
   - Per-seat intermediate files at `data/raw/constituencies/S11-{N}.json`
 
 State code `S11` = Kerala. Party IDs are ECI's internal numbering (e.g. BJP = `369`).
@@ -28,7 +28,7 @@ Source: <https://en.wikipedia.org/wiki/2026_Kerala_Legislative_Assembly_election
 
 The "Left Democratic Front", "United Democratic Front", "National Democratic Alliance", and "Others" lists were copied from this page and used to build:
 
-- `data/alliances.json` — party abbreviations, party→current-alliance map (used for chart line colours), and alliance metadata (color, code, name, led-by). Per-cycle alliance assignment lives on each candidate record directly: `alliance` field on every entry in `data/kerala-2026.json` and `data/historical/S11-*.json`. Independent candidates and front-aligned mid-cycle defectors are tagged in the same place — no separate override block.
+- `data/alliances.json` — party abbreviations, party→current-alliance map (used for chart line colours), and alliance metadata (color, code, name, led-by). Per-cycle alliance assignment lives on each candidate record directly: `alliance` field on every entry in `data/results-2026.json` and `data/historical/S11-*.json`. Independent candidates and front-aligned mid-cycle defectors are tagged in the same place — no separate override block.
 
 ### 2b. Constituency → district mapping
 
@@ -59,7 +59,7 @@ Per-district Wikipedia pages, Demographics → Religion subsection. Each page re
 | Kollam | <https://en.wikipedia.org/wiki/Kollam_district> |
 | Thiruvananthapuram | <https://en.wikipedia.org/wiki/Thiruvananthapuram_district> |
 
-Output file: `data/demographics.json` (population + Hindu/Muslim/Christian/Other percentages per district).
+Output file: `data/district-religion.json` (population + Hindu/Muslim/Christian/Other percentages per district).
 
 ## 3. Datameet — district boundaries
 
@@ -68,8 +68,8 @@ Source: <https://projects.datameet.org/maps/> · repo: <https://github.com/datam
 Used for the interactive Kerala map at the top of the page. Specifically the `Districts/Census_2011/2011_Dist.shp` file (Census 2011 boundaries) is filtered to the 14 Kerala features and projected at build time.
 
 Pipeline:
-- `scripts/pipeline/extract-kerala-map.py` — reads the shapefile, simplifies geometry, writes `data/kerala-districts.geojson`
-- `scripts/pipeline/build-kerala-map-paths.ts` — projects with `d3-geo` and writes `data/kerala-districts-paths.json` (the runtime artifact, no `d3-geo` dependency at runtime)
+- `scripts/pipeline/extract-kerala-map.py` — reads the shapefile, simplifies geometry, writes `data/district.geojson`
+- `scripts/pipeline/build-kerala-map-paths.ts` — projects with `d3-geo` and writes `data/district-paths.json` (the runtime artifact, no `d3-geo` dependency at runtime)
 
 The source `data/maps-master/` directory is `.gitignore`d (486 MB) — re-clone the upstream repo if you need to re-run the extraction. Licensed CC-BY 2.5 IN.
 

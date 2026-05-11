@@ -1,6 +1,6 @@
 import { useMemo } from "react"
 
-import paths from "@data/kerala-constituencies-paths.json"
+import { acPaths as paths } from "@/lib/data/maps"
 import {
   buildMapData,
   NEGATIVE_HUE,

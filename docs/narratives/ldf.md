@@ -397,10 +397,10 @@ Removing the 7.4pp swing unwinds nearly all of UDF's gains. Roughly **58 of UDF'
 | Sabarimala-route test | `scripts/analysis/narrative-a2-sabarimala.ts` |
 | Cabinet collapse test | `scripts/analysis/narrative-a6-cabinet-collapse.ts` + `data/ldf-ministers-2021.json` |
 | Flow decomposition | `scripts/analysis/narrative-anti-ldf-flow.py` |
-| Religion-share AC data | `data/ac-demographics.json` + `data/ac-demographics-2025.json` |
-| Caste-share district data | `data/hindu-caste-by-district.json` (Zachariah/KSI 2000) |
+| Religion-share AC data | `data/ac-religion.json` + `data/ac-religion-2025.json` |
+| Caste-share district data | `data/district-hindu-castes.json` (Zachariah/KSI 2000) |
 | 2021 historical shares | `data/historical/S11-*.json` |
-| 2026 shares | `data/kerala-2026.json` |
+| 2026 shares | `data/results-2026.json` |
 | Page | `src/pages/walkthroughs-ldf-page.tsx` |
 
 ---

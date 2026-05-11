@@ -342,7 +342,7 @@ METHODOLOGY:
 | Sprint 2 analysis | `scripts/analysis/analyze-subrite-cohorts.ts` |
 | Muslim-belt premium (pre-OSM) | `scripts/analysis/analyze-muslim-belt.ts` |
 | OSM raw | `data/raw/osm/places-of-worship-kerala.json` (gitignored) |
-| OSM classified inventory | `data/ac-religious-poi-inventory.json` |
+| OSM classified inventory | `data/ac-religious-pois.json` |
 | Tests | `src/lib/data/religious-pois.test.ts` (cohort sizes assertions) |
 | Page (NOT YET BUILT) | `src/pages/walkthroughs-muslim-page.tsx` (planned) |
 | Page data (NOT YET BUILT) | `src/pages/walkthroughs-muslim-data.ts` (planned) |

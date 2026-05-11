@@ -426,7 +426,7 @@ const CATHOLIC_PRIOR_BY_DISTRICT: Record<string, string> = {
 }
 
 // AC-level overrides where the district default is wrong. Use the AC name
-// exactly as it appears in `data/kerala-constituencies.geojson`.
+// exactly as it appears in `data/ac.geojson`.
 const CATHOLIC_AC_OVERRIDE: Record<string, string> = {
   // Ernakulam coastal Latin (Verapoly archdiocese, est. 1659)
   "Kochi": "latin_catholic",
@@ -747,7 +747,7 @@ function classify(e: OsmElement, acs: ACFeature[]): ClassifiedPOI | null {
 // ── Main ──────────────────────────────────────────────────────────────
 const INPUT = "data/raw/osm/places-of-worship-kerala.json"
 const OUTPUT = "data/places-of-worship.json"
-const GEOJSON = "data/kerala-constituencies.geojson"
+const GEOJSON = "data/ac.geojson"
 
 console.log(`[classify-osm-pow] reading ${INPUT}`)
 const raw = (await Bun.file(INPUT).json()) as { elements?: OsmElement[] }

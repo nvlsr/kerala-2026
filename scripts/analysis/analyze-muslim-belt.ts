@@ -34,7 +34,7 @@ type Hist = {
 }
 
 const data2026: C2026[] = JSON.parse(
-  fs.readFileSync("data/kerala-2026.json", "utf8")
+  fs.readFileSync("data/results-2026.json", "utf8")
 )
 const histByNum = new Map<number, Hist>()
 for (const f of fs.readdirSync("data/historical")) {
@@ -45,7 +45,7 @@ for (const f of fs.readdirSync("data/historical")) {
   histByNum.set(h.constituencyNumber, h)
 }
 const acDemo = JSON.parse(
-  fs.readFileSync("data/ac-demographics-2025.json", "utf8")
+  fs.readFileSync("data/ac-religion-2025.json", "utf8")
 ).constituencies as Record<
   string,
   { religions: { hindu: number; muslim: number; christian: number } }

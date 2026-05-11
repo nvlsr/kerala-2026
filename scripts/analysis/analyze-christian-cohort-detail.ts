@@ -117,7 +117,7 @@ const signed = (x: number, dp = 1) =>
 
 // ── Load data ─────────────────────────────────────────────────────────
 const constituencies2026 = (await Bun.file(
-  "data/kerala-2026.json"
+  "data/results-2026.json"
 ).json()) as Constituency2026[]
 
 const historicalByAc = new Map<number, HistoricalConstituency>()

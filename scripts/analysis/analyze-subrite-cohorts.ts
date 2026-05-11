@@ -81,7 +81,7 @@ const winner2026Of = (s: AllianceShares): keyof AllianceShares | null =>
 
 // ── Load data ─────────────────────────────────────────────────────────
 const constituencies2026 = (await Bun.file(
-  "data/kerala-2026.json"
+  "data/results-2026.json"
 ).json()) as Constituency2026[]
 
 const historicalByAc = new Map<number, HistoricalConstituency>()
@@ -348,7 +348,7 @@ meet both fall into the "below threshold" residual bucket.
 For each AC:
 - **Cohort**: dominant sub-rite among that religion's classified POIs,
   weighted by Census religion share to estimate "share of voters".
-- **Alliance shares**: 2026 vote share from \`data/kerala-2026.json\`;
+- **Alliance shares**: 2026 vote share from \`data/results-2026.json\`;
   2021 baseline from \`data/historical/S11-*.json\`. Δ = 2026 − 2021,
   percentage points.
 - **Winner**: 2026 alliance with the highest share.

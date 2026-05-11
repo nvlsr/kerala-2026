@@ -68,7 +68,7 @@ const shares2021 = (h: HistoricalConstituency): AllianceShares | null => {
 
 // Load
 const cs = (await Bun.file(
-  "data/kerala-2026.json"
+  "data/results-2026.json"
 ).json()) as Constituency2026[]
 
 const historicalByAc = new Map<number, HistoricalConstituency>()
@@ -82,7 +82,7 @@ for (const f of readdirSync("data/historical").filter(
   historicalByAc.set(c.constituencyNumber, c)
 }
 
-const geo = (await Bun.file("data/kerala-constituencies.geojson").json()) as {
+const geo = (await Bun.file("data/ac.geojson").json()) as {
   features: Array<{
     properties: { constituencyNumber: number; name: string; districtId: string }
   }>

@@ -28,7 +28,7 @@ import numpy as np
 
 
 # ─── Load data ────────────────────────────────────────────────────────
-data2026 = json.load(open("data/kerala-2026.json"))
+data2026 = json.load(open("data/results-2026.json"))
 hist = {}
 for f in os.listdir("data/historical"):
     if not f.startswith("S11-"):
@@ -36,9 +36,9 @@ for f in os.listdir("data/historical"):
     h = json.load(open(f"data/historical/{f}"))
     hist[h["constituencyNumber"]] = h
 
-ac_demo = json.load(open("data/ac-demographics-2025.json"))
+ac_demo = json.load(open("data/ac-religion-2025.json"))
 districts_meta = json.load(open("data/districts.json"))
-caste_data = json.load(open("data/hindu-caste-by-district.json"))
+caste_data = json.load(open("data/district-hindu-castes.json"))
 
 
 # Region partition (3 belts of Kerala)

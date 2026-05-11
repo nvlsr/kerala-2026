@@ -10,7 +10,7 @@
  * toggle) and shares the viewport machinery via `useACMapViewport` +
  * `ACMapZoomControls` while keeping its own SVG render.
  */
-import paths from "@data/kerala-constituencies-paths.json"
+import { acPaths as paths } from "@/lib/data/maps"
 
 import { ACMapZoomControls } from "@/components/charts/ac-map-zoom-controls"
 import { useACMapViewport } from "@/components/charts/use-ac-map-viewport"

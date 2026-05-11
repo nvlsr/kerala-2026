@@ -3,9 +3,9 @@
  * B3 (Ezhava base erosion + BJP encroachment) and B4 (Nair UDF lean).
  *
  * Inputs:
- * - data/hindu-caste-by-district.json (Zachariah 2003, ~2000 survey)
- * - data/demographics.json (district Hindu shares — to weight)
- * - data/kerala-2026.json + data/historical/ (alliance Δ per AC)
+ * - data/district-hindu-castes.json (Zachariah 2003, ~2000 survey)
+ * - data/district-religion.json (district Hindu shares — to weight)
+ * - data/results-2026.json + data/historical/ (alliance Δ per AC)
  *
  * For each AC:
  *   x_nair    = (district Nair % of Hindu) × (district Hindu % of total)
@@ -46,7 +46,7 @@ type Hist = {
 }
 
 const data2026: C2026[] = JSON.parse(
-  fs.readFileSync("data/kerala-2026.json", "utf8")
+  fs.readFileSync("data/results-2026.json", "utf8")
 )
 const hist: Hist[] = fs
   .readdirSync("data/historical")
@@ -57,9 +57,9 @@ const hist: Hist[] = fs
 const histByNum = new Map(hist.map((h) => [h.constituencyNumber, h]))
 
 const caste = JSON.parse(
-  fs.readFileSync("data/hindu-caste-by-district.json", "utf8")
+  fs.readFileSync("data/district-hindu-castes.json", "utf8")
 )
-const demo = JSON.parse(fs.readFileSync("data/demographics.json", "utf8"))
+const demo = JSON.parse(fs.readFileSync("data/district-religion.json", "utf8"))
 const districtData = JSON.parse(fs.readFileSync("data/districts.json", "utf8"))
 const distByConst = new Map<number, string>()
 for (const [k, v] of Object.entries(districtData.constituencyToDistrict)) {

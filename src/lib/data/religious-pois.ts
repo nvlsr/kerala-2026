@@ -1,7 +1,7 @@
 /**
  * Religious place-of-worship inventory (from OpenStreetMap).
  *
- * Source: `data/ac-religious-poi-inventory.json` — derived from the
+ * Source: `data/ac-religious-pois.json` — derived from the
  * Overpass dump via `scripts/pipeline/classify-osm-pow.ts` +
  * `scripts/pipeline/aggregate-ac-religion-pois.ts`. See `data/raw/osm/README.md`.
  *
@@ -17,7 +17,7 @@
  * (Hindu temples are smaller and more numerous per capita) and the
  * Census religion share carries the load.
  */
-import inventoryJson from "@data/ac-religious-poi-inventory.json"
+import inventoryJson from "@data/ac-religious-pois.json"
 
 import { constituencyNames, districtsMeta } from "@/lib/data/loaders"
 import { getReligionForAC } from "@/lib/data/demographics"
@@ -65,14 +65,29 @@ export type ACReligiousInventory = {
   dominant_muslim_denomination: MuslimDenomination | null
 }
 
-type RawACReligiousInventory = Omit<ACReligiousInventory, "ac_name" | "district">
+type RawInventoryRow = {
+  totalPois: number
+  byReligion: ACReligiousInventory["by_religion"]
+  christianByDenom: Record<string, number>
+  muslimByDenom: Record<string, number>
+  dominantChristian: ChristianDenomination | null
+  dominantMuslim: MuslimDenomination | null
+}
 
-export const religiousPOIs: ACReligiousInventory[] = (
-  inventoryJson as unknown as RawACReligiousInventory[]
-).map((r) => ({
-  ...r,
-  ac_name: constituencyNames[String(r.ac_id)]?.primary ?? "",
-  district: districtsMeta.constituencyToDistrict[String(r.ac_id)] ?? "",
+const rawInventory = inventoryJson as unknown as Record<string, RawInventoryRow>
+
+export const religiousPOIs: ACReligiousInventory[] = Object.entries(
+  rawInventory
+).map(([k, r]) => ({
+  ac_id: Number(k),
+  ac_name: constituencyNames[k]?.primary ?? "",
+  district: districtsMeta.constituencyToDistrict[k] ?? "",
+  total_pois: r.totalPois,
+  by_religion: r.byReligion,
+  by_christian_denomination: r.christianByDenom,
+  by_muslim_denomination: r.muslimByDenom,
+  dominant_christian_denomination: r.dominantChristian,
+  dominant_muslim_denomination: r.dominantMuslim,
 }))
 
 const byAc = new Map<number, ACReligiousInventory>(

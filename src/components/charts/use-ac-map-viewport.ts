@@ -9,7 +9,7 @@
  */
 import { useRef, useState } from "react"
 
-import paths from "@data/kerala-constituencies-paths.json"
+import { acPaths as paths } from "@/lib/data/maps"
 
 export type ViewBox = { x: number; y: number; w: number; h: number }
 export const FULL_VIEW: ViewBox = { x: 0, y: 0, w: paths.width, h: paths.height }

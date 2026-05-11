@@ -30,7 +30,7 @@ const VALID: ReadonlySet<string> = new Set([
 ])
 
 const all = JSON.parse(
-  readFileSync(join(ROOT, "data", "kerala-2026.json"), "utf8")
+  readFileSync(join(ROOT, "data", "results-2026.json"), "utf8")
 ) as Array<{
   constituencyNumber: number
   constituencyName: string

@@ -11,8 +11,8 @@ Reads:
   data/maps-master/assembly-constituencies/India_AC.shp
 
 Writes:
-  data/kerala-districts.geojson
-  data/kerala-constituencies.geojson
+  data/district.geojson
+  data/ac.geojson
 
 Usage:
   git clone https://github.com/datameet/maps data/maps-master
@@ -36,8 +36,8 @@ from shapely import simplify
 ROOT = Path(__file__).resolve().parent.parent.parent
 DIST_SHP = ROOT / "data/maps-master/Districts/Census_2011/2011_Dist.shp"
 AC_SHP = ROOT / "data/maps-master/assembly-constituencies/India_AC.shp"
-DIST_OUT = ROOT / "data/kerala-districts.geojson"
-AC_OUT = ROOT / "data/kerala-constituencies.geojson"
+DIST_OUT = ROOT / "data/district.geojson"
+AC_OUT = ROOT / "data/ac.geojson"
 DISTRICTS_JSON = ROOT / "data/districts.json"
 
 # District simplify is permissive (~500m); AC needs finer detail (~150m) since

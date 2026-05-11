@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react"
-import paths from "@data/kerala-constituencies-paths.json"
+import { acPaths as paths } from "@/lib/data/maps"
 
 import { constituencies } from "@/lib/data"
 import { cn } from "@/lib/utils"

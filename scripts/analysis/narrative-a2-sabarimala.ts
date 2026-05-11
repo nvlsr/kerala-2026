@@ -52,7 +52,7 @@ type Hist = {
 }
 
 const data2026: C2026[] = JSON.parse(
-  fs.readFileSync("data/kerala-2026.json", "utf8")
+  fs.readFileSync("data/results-2026.json", "utf8")
 )
 const hist: Hist[] = fs
   .readdirSync("data/historical")
@@ -62,7 +62,7 @@ const hist: Hist[] = fs
   )
 const histByNum = new Map(hist.map((h) => [h.constituencyNumber, h]))
 const acDemo = JSON.parse(
-  fs.readFileSync("data/ac-demographics-2025.json", "utf8")
+  fs.readFileSync("data/ac-religion-2025.json", "utf8")
 )
 
 // Treatment groups

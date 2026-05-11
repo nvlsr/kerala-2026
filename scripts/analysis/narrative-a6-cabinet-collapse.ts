@@ -46,7 +46,7 @@ type Minister = {
 }
 
 const data2026: C2026[] = JSON.parse(
-  fs.readFileSync("data/kerala-2026.json", "utf8")
+  fs.readFileSync("data/results-2026.json", "utf8")
 )
 const hist: Hist[] = fs
   .readdirSync("data/historical")

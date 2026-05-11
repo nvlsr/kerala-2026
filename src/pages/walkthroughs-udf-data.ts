@@ -812,7 +812,7 @@ export const PERFORMANCE_C3 = [
 
 /**
  * Cropped viewBox for Idukki + Ernakulam + Kottayam (Central-3).
- * Coordinate space matches `kerala-constituencies-paths.json`
+ * Coordinate space matches `ac-paths.json`
  * (canvas 600 × 900). Computed from the 26 Central-3 ACs with a
  * 5% margin around the bounding box.
  */

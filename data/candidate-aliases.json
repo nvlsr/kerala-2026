@@ -1,10 +1,1 @@
-{
-  "_comment": "Maps candidate name variants to a single canonical display form. Use only for cases the heuristic in `normalizeCandidateName` cannot resolve (e.g. genuine spelling variants like Kappan vs Kappen, or full-form vs short-form like 'P. C. George Plathottam' vs 'P.C. George'). Capitalization, period placement, and double-letter differences for initials are handled by the heuristic and don't need to be listed. These aliases are critical for cross-cycle candidate continuity tracking — without them, the same individual appearing in 2021 and 2026 under different name forms (or different party labels) is invisible to analyses that match on name.",
-  "aliases": {
-    "Mani C. Kappan": "Mani C. Kappen",
-    "P. C. George Plathottam": "P.C. George",
-    "P.C. George Plathottam": "P.C. George",
-    "P. C. George": "P.C. George",
-    "Chenkal S. Rajasekharan Nair": "Chenkal Rajasekharan"
-  }
-}
+{"aliases":{"Mani C. Kappan":"Mani C. Kappen","P. C. George Plathottam":"P.C. George","P.C. George Plathottam":"P.C. George","P. C. George":"P.C. George","Chenkal S. Rajasekharan Nair":"Chenkal Rajasekharan"}}

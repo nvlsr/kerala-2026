@@ -26,7 +26,7 @@ import os
 
 
 # ─── Load data ────────────────────────────────────────────────────────
-data2026 = json.load(open("data/kerala-2026.json"))
+data2026 = json.load(open("data/results-2026.json"))
 hist = {}
 for f in os.listdir("data/historical"):
     if not f.startswith("S11-"):

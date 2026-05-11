@@ -3,7 +3,7 @@
  * walkthrough page. Extracted into a sibling file so the page
  * component itself stays scannable. All numbers are pre-computed
  * from canonical year-aware alliance attribution in
- * `data/historical/` and `data/kerala-2026.json`.
+ * `data/historical/` and `data/results-2026.json`.
  */
 
 /**
@@ -877,7 +877,7 @@ export const COHORT_5B_ACS = new Set(COHORT_5B_ROWS.map((r) => r.ac))
 
 /**
  * Bounding box for Trivandrum + Kollam districts in the
- * `kerala-constituencies-paths.json` coordinate space (canvas
+ * `ac-paths.json` coordinate space (canvas
  * 600 × 900). Used to zoom the "3 wins" map to the southern
  * cluster instead of showing the full state. Computed from the
  * 25 ACs in those two districts with a 5% margin.
@@ -889,7 +889,7 @@ export const SOUTH_CLUSTER_VIEWBOX: [number, number, number, number] = [
 /**
  * Pre-computed vote-share decomposition data. Source: scripts in
  * `/tmp/nda_vote_share.py` running over `data/historical/` (canonical
- * year-aware alliance attribution) and `data/kerala-2026.json`.
+ * year-aware alliance attribution) and `data/results-2026.json`.
  * Methodology details inline in the page body.
  */
 export type ThreeLensRow = {

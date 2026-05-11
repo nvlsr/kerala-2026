@@ -154,7 +154,7 @@ The raw Overpass dump above feeds two derived files:
 
 - **`scripts/pipeline/classify-osm-pow.ts`** → `data/places-of-worship.json`
   (per-POI, gitignored — regenerable in ~30s)
-- **`scripts/pipeline/aggregate-ac-religion-pois.ts`** → `data/ac-religious-poi-inventory.json`
+- **`scripts/pipeline/aggregate-ac-religion-pois.ts`** → `data/ac-religious-pois.json`
   (per-AC, committed — the canonical product)
 - **`scripts/pipeline/validate-classified-pow.ts`** — spot-check classifier against
   known religious geography (Pala = Syro-Malabar, Aranmula = Marthoma,
@@ -175,7 +175,7 @@ The raw Overpass dump above feeds two derived files:
 6. **Catholic disambiguation** — generic `catholic` POIs assigned to the
    dominant sub-rite of their district / AC (Latin / Syro-Malabar /
    Syro-Malankara) via a hand-curated prior
-7. **Spatial join** — point-in-polygon against `data/kerala-constituencies.geojson`
+7. **Spatial join** — point-in-polygon against `data/ac.geojson`
 
 ### Confidence levels in per-POI output
 

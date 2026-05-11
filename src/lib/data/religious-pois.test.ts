@@ -19,7 +19,7 @@ import {
 } from "@/lib/data/subrite-bins"
 
 // Reference AC numbers (canonical primary names from
-// data/constituency-names.json — keep this stable across renames).
+// data/ac-names.json — keep this stable across renames).
 const AC = {
   Pala: 93,
   Kochi: 80,

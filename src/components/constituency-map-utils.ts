@@ -3,7 +3,7 @@
  * component file only exports React components (required for fast-refresh
  * to work cleanly under Vite/HMR).
  */
-import paths from "@data/kerala-constituencies-paths.json"
+import { acPaths as paths } from "@/lib/data/maps"
 
 import type { EncodingMode } from "@/lib/seat-encoding"
 import type { Filters, SortColumn } from "@/lib/filters"

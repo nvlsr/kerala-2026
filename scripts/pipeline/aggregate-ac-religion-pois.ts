@@ -2,7 +2,7 @@
  * Aggregate the classified per-POI inventory into per-AC summary.
  *
  *   in:  data/places-of-worship.json (per-POI, ~22k rows)
- *   out: data/ac-religious-poi-inventory.json (140 ACs)
+ *   out: data/ac-religious-pois.json (140 ACs)
  *
  * Output schema (per AC):
  *   {
@@ -40,7 +40,7 @@ type ACSummary = {
 }
 
 const INPUT = "data/places-of-worship.json"
-const OUTPUT = "data/ac-religious-poi-inventory.json"
+const OUTPUT = "data/ac-religious-pois.json"
 
 console.log(`[aggregate] reading ${INPUT}`)
 const data = (await Bun.file(INPUT).json()) as ClassifiedPOI[]

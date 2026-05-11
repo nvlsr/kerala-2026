@@ -451,8 +451,8 @@ Pattern 2 is this file's headline. Pattern 1 + 2 combined: a ~7pp uniform swing 
 | Central-Kerala kingmaker | `scripts/analysis/narrative-a8-central-kerala.ts` |
 | Vote efficiency | `scripts/analysis/narrative-vote-efficiency.py` |
 | AC religion data (build) | `python3 scripts/pipeline/build-ac-demographics.py` (needs `data/shrug/` + `data/raw/census-c01/`) |
-| AC religion data (consumed) | `data/ac-demographics.json` + `data/ac-demographics-2025.json` |
-| Caste district data | `data/hindu-caste-by-district.json` |
+| AC religion data (consumed) | `data/ac-religion.json` + `data/ac-religion-2025.json` |
+| Caste district data | `data/district-hindu-castes.json` |
 | Page | `src/pages/walkthroughs-udf-page.tsx` + `src/pages/walkthroughs-udf-data.ts` |
 
 ---
