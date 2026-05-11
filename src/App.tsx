@@ -34,6 +34,15 @@ const ReligionMapPage = lazy(() =>
   }))
 )
 
+// Per-AC community-relevance framework — sortable/filterable table of
+// all 140 ACs (driver, tag, history, NDA trajectory, stable-for,
+// alliance roles). Top-level route; rows deep-link to /explore?seat=N.
+const CommunityRelevancePage = lazy(() =>
+  import("@/pages/community-relevance-page").then((m) => ({
+    default: m.CommunityRelevancePage,
+  }))
+)
+
 // Entry point for readers arriving from the kerala-vote-forecast project
 // (kerala.jillen.com). Bridges the pre-election forecast post-mortem and
 // the post-election analysis. Not linked from main nav — reachable only
@@ -120,6 +129,7 @@ export function App() {
           <Route path="/drifts" element={<DriftsPage />} />
           <Route path="/belts" element={<BeltsPage />} />
           <Route path="/religion-map" element={<ReligionMapPage />} />
+          <Route path="/community-relevance" element={<CommunityRelevancePage />} />
           <Route path="/from-forecast" element={<FromForecastPage />} />
           <Route path="/walkthroughs" element={<WalkthroughsPage />} />
           <Route
