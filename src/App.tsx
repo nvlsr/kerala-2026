@@ -34,6 +34,16 @@ const ReligionMapPage = lazy(() =>
   }))
 )
 
+// Entry point for readers arriving from the kerala-vote-forecast project
+// (kerala.jillen.com). Bridges the pre-election forecast post-mortem and
+// the post-election analysis. Not linked from main nav — reachable only
+// via deep link from the forecast site.
+const FromForecastPage = lazy(() =>
+  import("@/pages/from-forecast-page").then((m) => ({
+    default: m.FromForecastPage,
+  }))
+)
+
 // Walkthroughs — public-facing analytical surface with three alliance
 // pages. Top page summarises; alliance pages carry choropleths +
 // supporting charts.
@@ -110,6 +120,7 @@ export function App() {
           <Route path="/drifts" element={<DriftsPage />} />
           <Route path="/belts" element={<BeltsPage />} />
           <Route path="/religion-map" element={<ReligionMapPage />} />
+          <Route path="/from-forecast" element={<FromForecastPage />} />
           <Route path="/walkthroughs" element={<WalkthroughsPage />} />
           <Route
             path="/walkthroughs/ldf-walkthrough"
