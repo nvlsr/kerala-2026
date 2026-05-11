@@ -12,7 +12,6 @@ import {
 import { ReligiousPOIsSection } from "@/components/religious-pois-section"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import casteData from "@data/hindu-caste-by-district.json"
-import districtPaths from "@data/kerala-districts-paths.json"
 import {
   acDemo2025Meta,
   acDemoMeta,
@@ -499,7 +498,7 @@ function ReligionMapCaption({
     const d = demoMeta.districts[hoveredDistrictId]
     if (!d) return null
     const name =
-      districtPaths.districts.find((p) => p.id === hoveredDistrictId)?.name ??
+      districtsMeta.districts.find((d) => d.id === hoveredDistrictId)?.name ??
       hoveredDistrictId
     return (
       <p className="mt-2 text-xs">
@@ -538,7 +537,7 @@ function ReligionMapCaption({
   }
   const entries = Object.entries(demoMeta.districts).map(([id, d]) => ({
     id,
-    name: districtPaths.districts.find((p) => p.id === id)?.name ?? id,
+    name: districtsMeta.districts.find((d) => d.id === id)?.name ?? id,
     pct: d.religions[religion],
   }))
   entries.sort((a, b) => b.pct - a.pct)
@@ -566,7 +565,7 @@ function CasteMapCaption({
     const pct = CASTE_DISTRICT_VALUES[caste][hoveredDistrictId]
     if (pct == null) return null
     const name =
-      districtPaths.districts.find((p) => p.id === hoveredDistrictId)?.name ??
+      districtsMeta.districts.find((d) => d.id === hoveredDistrictId)?.name ??
       hoveredDistrictId
     return (
       <p className="mt-2 text-xs">
@@ -581,7 +580,7 @@ function CasteMapCaption({
   const entries = Object.entries(CASTE_DISTRICT_VALUES[caste]).map(
     ([id, pct]) => ({
       id,
-      name: districtPaths.districts.find((p) => p.id === id)?.name ?? id,
+      name: districtsMeta.districts.find((d) => d.id === id)?.name ?? id,
       pct,
     })
   )

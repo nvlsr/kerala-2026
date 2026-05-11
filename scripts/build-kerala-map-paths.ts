@@ -44,7 +44,8 @@ function project<Props>(
   }))
 }
 
-// Districts — 14 polygons, used for the top-of-page choropleth
+// Districts — 14 polygons, used for the top-of-page choropleth. Only the
+// id key is emitted; the display name lives in `data/districts.json`.
 {
   const fc = JSON.parse(
     readFileSync(resolve(ROOT, "data/kerala-districts.geojson"), "utf8")
@@ -58,7 +59,6 @@ function project<Props>(
   const height = 600
   const districts = project(fc, width, height).map((f) => ({
     id: f.properties.id,
-    name: f.properties.name,
     pathD: f.pathD,
   }))
 
@@ -70,7 +70,9 @@ function project<Props>(
   )
 }
 
-// Constituencies — 140 polygons, used for the per-AC analytical map
+// Constituencies — 140 polygons, used for the per-AC analytical map. Only
+// the AC number key is emitted; display name + districtId live in
+// `constituency-names.json` + `districts.json` respectively.
 {
   const fc = JSON.parse(
     readFileSync(resolve(ROOT, "data/kerala-constituencies.geojson"), "utf8")
@@ -84,8 +86,6 @@ function project<Props>(
   const height = 900
   const constituencies = project(fc, width, height).map((f) => ({
     constituencyNumber: f.properties.constituencyNumber,
-    name: f.properties.name,
-    districtId: f.properties.districtId,
     pathD: f.pathD,
   }))
 

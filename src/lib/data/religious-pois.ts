@@ -19,6 +19,7 @@
  */
 import inventoryJson from "@data/ac-religious-poi-inventory.json"
 
+import { constituencyNames, districtsMeta } from "@/lib/data/loaders"
 import { getReligionForAC } from "@/lib/data/demographics"
 
 export type ChristianDenomination =
@@ -64,7 +65,15 @@ export type ACReligiousInventory = {
   dominant_muslim_denomination: MuslimDenomination | null
 }
 
-export const religiousPOIs = inventoryJson as unknown as ACReligiousInventory[]
+type RawACReligiousInventory = Omit<ACReligiousInventory, "ac_name" | "district">
+
+export const religiousPOIs: ACReligiousInventory[] = (
+  inventoryJson as unknown as RawACReligiousInventory[]
+).map((r) => ({
+  ...r,
+  ac_name: constituencyNames[String(r.ac_id)]?.primary ?? "",
+  district: districtsMeta.constituencyToDistrict[String(r.ac_id)] ?? "",
+}))
 
 const byAc = new Map<number, ACReligiousInventory>(
   religiousPOIs.map((r) => [r.ac_id, r])

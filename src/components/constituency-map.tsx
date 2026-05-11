@@ -9,6 +9,7 @@ import {
 } from "@/lib/seat-encoding"
 import type { Filters } from "@/lib/filters"
 import { getAlliance, MAIN_FRONT_CODES } from "@/lib/data"
+import { displayConstituencyName } from "@/lib/data/format"
 
 type Props = {
   filters: Filters
@@ -50,6 +51,7 @@ export function ConstituencyMap({
       >
         {paths.constituencies.map((c) => {
           const num = c.constituencyNumber
+          const name = displayConstituencyName(num)
           const isSelected = selectedSeat === num
           const isHovered = hoveredSeat === num
           const fill = fills.get(num) ?? {
@@ -62,7 +64,7 @@ export function ConstituencyMap({
               key={num}
               d={c.pathD}
               role="button"
-              aria-label={`${c.name} (${num})`}
+              aria-label={`${name} (${num})`}
               aria-pressed={isSelected}
               tabIndex={0}
               fill={fill.color}
@@ -85,7 +87,7 @@ export function ConstituencyMap({
                 }
               }}
             >
-              <title>{c.name}</title>
+              <title>{name}</title>
             </path>
           )
         })}

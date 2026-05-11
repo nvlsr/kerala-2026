@@ -1,7 +1,11 @@
 import {
-  constituenciesData,
+  alliancesMeta,
+  constituencyNames,
   districtsMeta,
+  rawConstituencies,
   reservationsMeta,
+  type RawCandidate,
+  type RawConstituency,
   type ReservationCode,
 } from "@/lib/data/loaders"
 
@@ -18,17 +22,67 @@ export type Candidate = {
 }
 
 export type Constituency = {
-  constituency: string
   constituencyNumber: number
   constituencyName: string
-  state: string
   candidates: Candidate[]
-  checksum: { computedMarginsMatchScraped: boolean; mismatches: unknown[] }
-  source: string
 }
 
-export const constituencies: Constituency[] = constituenciesData
-  .slice()
+/**
+ * Hydrate a raw constituency into the runtime Constituency shape, deriving
+ * `constituencyName` from the canonical registry and per-candidate
+ * `alliance` / `isNota` / `status` / `margin` from the rank + party tables.
+ *
+ * Margin convention (matches the source ECI data):
+ *   - winner.margin = winner.votes - second.votes (second is 2nd by votes,
+ *     possibly NOTA)
+ *   - everyone else.margin = self.votes - winner.votes (always ≤ 0)
+ */
+function hydrateConstituency(raw: RawConstituency): Constituency {
+  const sorted = raw.candidates.slice().sort((a, b) => b.votes - a.votes)
+  const winner = sorted[0]
+  const second = sorted[1]
+  const winnerVotes = winner?.votes ?? 0
+  const secondVotes = second?.votes ?? 0
+  const candidates: Candidate[] = sorted.map((c, i) =>
+    hydrateCandidate(c, i, winnerVotes, secondVotes)
+  )
+  const eci = constituencyNames[String(raw.constituencyNumber)]?.eci ?? ""
+  return {
+    constituencyNumber: raw.constituencyNumber,
+    constituencyName: eci,
+    candidates,
+  }
+}
+
+function hydrateCandidate(
+  c: RawCandidate,
+  rank: number,
+  winnerVotes: number,
+  secondVotes: number
+): Candidate {
+  const isNota = c.name === "NOTA"
+  const status: Candidate["status"] = isNota
+    ? "nota"
+    : rank === 0
+      ? "won"
+      : "lost"
+  const margin = rank === 0 ? winnerVotes - secondVotes : c.votes - winnerVotes
+  const alliance =
+    (alliancesMeta.partyToAlliance[c.party] as AllianceCode | undefined) ??
+    "OTHER"
+  return {
+    name: c.name,
+    party: c.party,
+    alliance: isNota ? ("NOTA" as AllianceCode) : alliance,
+    votes: c.votes,
+    margin,
+    status,
+    isNota,
+  }
+}
+
+export const constituencies: Constituency[] = rawConstituencies
+  .map(hydrateConstituency)
   .sort((a, b) => a.constituencyNumber - b.constituencyNumber)
 
 export function constituenciesIn(districtId: string | null): Constituency[] {

@@ -18,9 +18,19 @@ import districtsJson from "@data/districts.json"
 import reservationsJson from "@data/reservations.json"
 
 import type { Alliance, AllianceCode } from "@/lib/data/alliances"
-import type { Constituency } from "@/lib/data/constituencies"
 import type { District } from "@/lib/data/districts"
 import type { ReligionCode } from "@/lib/data/demographics"
+
+export type RawCandidate = {
+  name: string
+  party: string
+  votes: number
+}
+
+export type RawConstituency = {
+  constituencyNumber: number
+  candidates: RawCandidate[]
+}
 
 export const alliancesMeta = alliancesJson as {
   alliances: Record<AllianceCode, Alliance>
@@ -51,8 +61,7 @@ export const constituencyNames = constituencyNamesJson as Record<
   ConstituencyNameEntry
 >
 
-export const constituenciesData =
-  constituenciesJson as unknown as Constituency[]
+export const rawConstituencies = constituenciesJson as RawConstituency[]
 
 export const districtsMeta = districtsJson as {
   districts: District[]

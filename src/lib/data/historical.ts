@@ -1,3 +1,5 @@
+import { constituencyNames } from "@/lib/data/loaders"
+
 import type { AllianceCode } from "@/lib/data/alliances"
 
 export type HistoricalCandidate = {
@@ -28,18 +30,29 @@ export type HistoricalConstituency = {
   elections: HistoricalElection[]
 }
 
-const historicalModules = import.meta.glob<{ default: HistoricalConstituency }>(
-  "../../../data/historical/S11-*.json",
-  { eager: true }
-)
+type RawHistoricalConstituency = {
+  constituencyNumber: number
+  elections: HistoricalElection[]
+}
+
+const historicalModules = import.meta.glob<{
+  default: RawHistoricalConstituency
+}>("../../../data/historical/S11-*.json", { eager: true })
 
 const historicalByNumber = new Map<number, HistoricalConstituency>()
 for (const path in historicalModules) {
   const mod = historicalModules[path] as
-    | { default: HistoricalConstituency }
-    | HistoricalConstituency
+    | { default: RawHistoricalConstituency }
+    | RawHistoricalConstituency
   const data = "default" in mod ? mod.default : mod
-  historicalByNumber.set(data.constituencyNumber, data)
+  const entry = constituencyNames[String(data.constituencyNumber)]
+  historicalByNumber.set(data.constituencyNumber, {
+    constituencyNumber: data.constituencyNumber,
+    constituencyName: entry?.eci ?? "",
+    wikipediaName: entry?.wikipedia ?? "",
+    wikipediaUrl: entry?.wikipediaUrl ?? "",
+    elections: data.elections,
+  })
 }
 
 export function getHistoricalFor(

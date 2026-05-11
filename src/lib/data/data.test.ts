@@ -446,35 +446,16 @@ describe("historical candidate names have no unrecovered parenthetical party tag
 })
 
 describe("AC display-name invariants across data sources", () => {
-  // kerala-constituencies-paths.json drives map tooltips / aria-labels
-  // (constituency-map.tsx: <title> + aria-label). constituency-names.json
-  // drives every other label site (breadcrumbs, tables, sheets). Both
-  // must agree, otherwise a hovered seat name differs from the same
-  // seat's name in the breadcrumb.
-  test("paths.json .name matches constituency-names.primary for all 140 ACs", async () => {
-    const paths = (await import("@data/kerala-constituencies-paths.json"))
-      .default as {
-      constituencies: Array<{ constituencyNumber: number; name: string }>
-    }
+  // After P1+P2 denormalization, AC display names live in
+  // constituency-names.json only; paths.json carries no `name` field and
+  // map tooltips/aria-labels resolve via displayConstituencyName(). The
+  // religiousPOIs loader rehydrates ac_name from the registry, so this
+  // test guards the rehydration path.
+  test("religiousPOIs[*].ac_name rehydrates to constituency-names.primary", async () => {
+    const { religiousPOIs } = await import("./religious-pois")
     const { constituencyNames } = await import("./loaders")
     const offenders: string[] = []
-    for (const p of paths.constituencies) {
-      const canonical = constituencyNames[String(p.constituencyNumber)]?.primary
-      if (canonical !== p.name) {
-        offenders.push(
-          `AC ${p.constituencyNumber}: paths.json="${p.name}" vs primary="${canonical}"`
-        )
-      }
-    }
-    expect(offenders, offenders.join("\n")).toEqual([])
-  })
-
-  test("ac-religious-poi-inventory.ac_name matches constituency-names.primary", async () => {
-    const inventory = (await import("@data/ac-religious-poi-inventory.json"))
-      .default as Array<{ ac_id: number; ac_name: string }>
-    const { constituencyNames } = await import("./loaders")
-    const offenders: string[] = []
-    for (const row of inventory) {
+    for (const row of religiousPOIs) {
       const canonical = constituencyNames[String(row.ac_id)]?.primary
       if (canonical !== row.ac_name) {
         offenders.push(

@@ -1,8 +1,6 @@
 [
   {
     "ac_id": 1,
-    "ac_name": "Manjeshwar",
-    "district": "kasaragod",
     "total_pois": 62,
     "by_religion": {
       "christian": 2,
@@ -24,8 +22,6 @@
   },
   {
     "ac_id": 2,
-    "ac_name": "Kasaragod",
-    "district": "kasaragod",
     "total_pois": 154,
     "by_religion": {
       "christian": 9,
@@ -50,8 +46,6 @@
   },
   {
     "ac_id": 3,
-    "ac_name": "Udma",
-    "district": "kasaragod",
     "total_pois": 242,
     "by_religion": {
       "christian": 4,
@@ -73,8 +67,6 @@
   },
   {
     "ac_id": 4,
-    "ac_name": "Kanhangad",
-    "district": "kasaragod",
     "total_pois": 185,
     "by_religion": {
       "christian": 35,
@@ -99,8 +91,6 @@
   },
   {
     "ac_id": 5,
-    "ac_name": "Trikaripur",
-    "district": "kasaragod",
     "total_pois": 177,
     "by_religion": {
       "christian": 21,
@@ -124,8 +114,6 @@
   },
   {
     "ac_id": 6,
-    "ac_name": "Payyannur",
-    "district": "kannur",
     "total_pois": 206,
     "by_religion": {
       "christian": 33,
@@ -148,8 +136,6 @@
   },
   {
     "ac_id": 7,
-    "ac_name": "Kalliasseri",
-    "district": "kannur",
     "total_pois": 216,
     "by_religion": {
       "christian": 12,
@@ -173,8 +159,6 @@
   },
   {
     "ac_id": 8,
-    "ac_name": "Taliparamba",
-    "district": "kannur",
     "total_pois": 160,
     "by_religion": {
       "christian": 12,
@@ -198,8 +182,6 @@
   },
   {
     "ac_id": 9,
-    "ac_name": "Irikkur",
-    "district": "kannur",
     "total_pois": 88,
     "by_religion": {
       "christian": 45,
@@ -223,8 +205,6 @@
   },
   {
     "ac_id": 10,
-    "ac_name": "Azhikode",
-    "district": "kannur",
     "total_pois": 113,
     "by_religion": {
       "christian": 3,
@@ -246,8 +226,6 @@
   },
   {
     "ac_id": 11,
-    "ac_name": "Kannur",
-    "district": "kannur",
     "total_pois": 104,
     "by_religion": {
       "christian": 11,
@@ -272,8 +250,6 @@
   },
   {
     "ac_id": 12,
-    "ac_name": "Dharmadam",
-    "district": "kannur",
     "total_pois": 79,
     "by_religion": {
       "christian": 1,
@@ -293,8 +269,6 @@
   },
   {
     "ac_id": 13,
-    "ac_name": "Thalassery",
-    "district": "kannur",
     "total_pois": 78,
     "by_religion": {
       "christian": 3,
@@ -317,8 +291,6 @@
   },
   {
     "ac_id": 14,
-    "ac_name": "Kuthuparamba",
-    "district": "kannur",
     "total_pois": 35,
     "by_religion": {
       "christian": 3,
@@ -339,8 +311,6 @@
   },
   {
     "ac_id": 15,
-    "ac_name": "Mattannur",
-    "district": "kannur",
     "total_pois": 87,
     "by_religion": {
       "christian": 6,
@@ -363,8 +333,6 @@
   },
   {
     "ac_id": 16,
-    "ac_name": "Peravoor",
-    "district": "kannur",
     "total_pois": 110,
     "by_religion": {
       "christian": 54,
@@ -388,8 +356,6 @@
   },
   {
     "ac_id": 17,
-    "ac_name": "Mananthavady",
-    "district": "wayanad",
     "total_pois": 143,
     "by_religion": {
       "christian": 55,
@@ -415,8 +381,6 @@
   },
   {
     "ac_id": 18,
-    "ac_name": "Sulthanbathery",
-    "district": "wayanad",
     "total_pois": 143,
     "by_religion": {
       "christian": 56,
@@ -442,8 +406,6 @@
   },
   {
     "ac_id": 19,
-    "ac_name": "Kalpetta",
-    "district": "wayanad",
     "total_pois": 97,
     "by_religion": {
       "christian": 32,
@@ -469,8 +431,6 @@
   },
   {
     "ac_id": 20,
-    "ac_name": "Vadakara",
-    "district": "kozhikode",
     "total_pois": 55,
     "by_religion": {
       "christian": 2,
@@ -491,8 +451,6 @@
   },
   {
     "ac_id": 21,
-    "ac_name": "Kuttiadi",
-    "district": "kozhikode",
     "total_pois": 42,
     "by_religion": {
       "christian": 0,
@@ -512,8 +470,6 @@
   },
   {
     "ac_id": 22,
-    "ac_name": "Nadapuram",
-    "district": "kozhikode",
     "total_pois": 40,
     "by_religion": {
       "christian": 11,
@@ -536,8 +492,6 @@
   },
   {
     "ac_id": 23,
-    "ac_name": "Quilandy",
-    "district": "kozhikode",
     "total_pois": 75,
     "by_religion": {
       "christian": 1,
@@ -559,8 +513,6 @@
   },
   {
     "ac_id": 24,
-    "ac_name": "Perambra",
-    "district": "kozhikode",
     "total_pois": 50,
     "by_religion": {
       "christian": 11,
@@ -584,8 +536,6 @@
   },
   {
     "ac_id": 25,
-    "ac_name": "Balusseri",
-    "district": "kozhikode",
     "total_pois": 100,
     "by_religion": {
       "christian": 19,
@@ -610,8 +560,6 @@
   },
   {
     "ac_id": 26,
-    "ac_name": "Elathur",
-    "district": "kozhikode",
     "total_pois": 107,
     "by_religion": {
       "christian": 0,
@@ -630,8 +578,6 @@
   },
   {
     "ac_id": 27,
-    "ac_name": "Kozhikode North",
-    "district": "kozhikode",
     "total_pois": 131,
     "by_religion": {
       "christian": 23,
@@ -660,8 +606,6 @@
   },
   {
     "ac_id": 28,
-    "ac_name": "Kozhikode South",
-    "district": "kozhikode",
     "total_pois": 76,
     "by_religion": {
       "christian": 4,
@@ -684,8 +628,6 @@
   },
   {
     "ac_id": 29,
-    "ac_name": "Beypore",
-    "district": "kozhikode",
     "total_pois": 70,
     "by_religion": {
       "christian": 3,
@@ -707,8 +649,6 @@
   },
   {
     "ac_id": 30,
-    "ac_name": "Kunnamangalam",
-    "district": "kozhikode",
     "total_pois": 128,
     "by_religion": {
       "christian": 11,
@@ -735,8 +675,6 @@
   },
   {
     "ac_id": 31,
-    "ac_name": "Koduvally",
-    "district": "kozhikode",
     "total_pois": 120,
     "by_religion": {
       "christian": 17,
@@ -761,8 +699,6 @@
   },
   {
     "ac_id": 32,
-    "ac_name": "Thiruvambadi",
-    "district": "kozhikode",
     "total_pois": 139,
     "by_religion": {
       "christian": 36,
@@ -790,8 +726,6 @@
   },
   {
     "ac_id": 33,
-    "ac_name": "Kondotty",
-    "district": "malappuram",
     "total_pois": 112,
     "by_religion": {
       "christian": 0,
@@ -811,8 +745,6 @@
   },
   {
     "ac_id": 34,
-    "ac_name": "Ernad",
-    "district": "malappuram",
     "total_pois": 126,
     "by_religion": {
       "christian": 4,
@@ -834,8 +766,6 @@
   },
   {
     "ac_id": 35,
-    "ac_name": "Nilambur",
-    "district": "malappuram",
     "total_pois": 86,
     "by_religion": {
       "christian": 26,
@@ -860,8 +790,6 @@
   },
   {
     "ac_id": 36,
-    "ac_name": "Wandoor",
-    "district": "malappuram",
     "total_pois": 85,
     "by_religion": {
       "christian": 6,
@@ -884,8 +812,6 @@
   },
   {
     "ac_id": 37,
-    "ac_name": "Manjeri",
-    "district": "malappuram",
     "total_pois": 131,
     "by_religion": {
       "christian": 7,
@@ -910,8 +836,6 @@
   },
   {
     "ac_id": 38,
-    "ac_name": "Perinthalmanna",
-    "district": "malappuram",
     "total_pois": 127,
     "by_religion": {
       "christian": 5,
@@ -935,8 +859,6 @@
   },
   {
     "ac_id": 39,
-    "ac_name": "Mankada",
-    "district": "malappuram",
     "total_pois": 169,
     "by_religion": {
       "christian": 4,
@@ -960,8 +882,6 @@
   },
   {
     "ac_id": 40,
-    "ac_name": "Malappuram",
-    "district": "malappuram",
     "total_pois": 101,
     "by_religion": {
       "christian": 1,
@@ -983,8 +903,6 @@
   },
   {
     "ac_id": 41,
-    "ac_name": "Vengara",
-    "district": "malappuram",
     "total_pois": 106,
     "by_religion": {
       "christian": 2,
@@ -1008,8 +926,6 @@
   },
   {
     "ac_id": 42,
-    "ac_name": "Vallikunnu",
-    "district": "malappuram",
     "total_pois": 84,
     "by_religion": {
       "christian": 1,
@@ -1031,8 +947,6 @@
   },
   {
     "ac_id": 43,
-    "ac_name": "Tirurangadi",
-    "district": "malappuram",
     "total_pois": 72,
     "by_religion": {
       "christian": 3,
@@ -1055,8 +969,6 @@
   },
   {
     "ac_id": 44,
-    "ac_name": "Tanur",
-    "district": "malappuram",
     "total_pois": 59,
     "by_religion": {
       "christian": 0,
@@ -1076,8 +988,6 @@
   },
   {
     "ac_id": 45,
-    "ac_name": "Tirur",
-    "district": "malappuram",
     "total_pois": 91,
     "by_religion": {
       "christian": 6,
@@ -1102,8 +1012,6 @@
   },
   {
     "ac_id": 46,
-    "ac_name": "Kottakkal",
-    "district": "malappuram",
     "total_pois": 152,
     "by_religion": {
       "christian": 1,
@@ -1126,8 +1034,6 @@
   },
   {
     "ac_id": 47,
-    "ac_name": "Thavanur",
-    "district": "malappuram",
     "total_pois": 75,
     "by_religion": {
       "christian": 0,
@@ -1146,8 +1052,6 @@
   },
   {
     "ac_id": 48,
-    "ac_name": "Ponnani",
-    "district": "malappuram",
     "total_pois": 104,
     "by_religion": {
       "christian": 1,
@@ -1170,8 +1074,6 @@
   },
   {
     "ac_id": 49,
-    "ac_name": "Thrithala",
-    "district": "palakkad",
     "total_pois": 105,
     "by_religion": {
       "christian": 8,
@@ -1196,8 +1098,6 @@
   },
   {
     "ac_id": 50,
-    "ac_name": "Pattambi",
-    "district": "palakkad",
     "total_pois": 89,
     "by_religion": {
       "christian": 1,
@@ -1219,8 +1119,6 @@
   },
   {
     "ac_id": 51,
-    "ac_name": "Shornur",
-    "district": "palakkad",
     "total_pois": 114,
     "by_religion": {
       "christian": 6,
@@ -1244,8 +1142,6 @@
   },
   {
     "ac_id": 52,
-    "ac_name": "Ottappalam",
-    "district": "palakkad",
     "total_pois": 155,
     "by_religion": {
       "christian": 10,
@@ -1266,8 +1162,6 @@
   },
   {
     "ac_id": 53,
-    "ac_name": "Kongad",
-    "district": "palakkad",
     "total_pois": 94,
     "by_religion": {
       "christian": 20,
@@ -1292,8 +1186,6 @@
   },
   {
     "ac_id": 54,
-    "ac_name": "Mannarkkad",
-    "district": "palakkad",
     "total_pois": 104,
     "by_religion": {
       "christian": 22,
@@ -1320,8 +1212,6 @@
   },
   {
     "ac_id": 55,
-    "ac_name": "Malampuzha",
-    "district": "palakkad",
     "total_pois": 194,
     "by_religion": {
       "christian": 39,
@@ -1348,8 +1238,6 @@
   },
   {
     "ac_id": 56,
-    "ac_name": "Palakkad",
-    "district": "palakkad",
     "total_pois": 130,
     "by_religion": {
       "christian": 12,
@@ -1375,8 +1263,6 @@
   },
   {
     "ac_id": 57,
-    "ac_name": "Tarur",
-    "district": "palakkad",
     "total_pois": 78,
     "by_religion": {
       "christian": 8,
@@ -1399,8 +1285,6 @@
   },
   {
     "ac_id": 58,
-    "ac_name": "Chittur",
-    "district": "palakkad",
     "total_pois": 68,
     "by_religion": {
       "christian": 6,
@@ -1424,8 +1308,6 @@
   },
   {
     "ac_id": 59,
-    "ac_name": "Nemmara",
-    "district": "palakkad",
     "total_pois": 83,
     "by_religion": {
       "christian": 4,
@@ -1447,8 +1329,6 @@
   },
   {
     "ac_id": 60,
-    "ac_name": "Alathur",
-    "district": "palakkad",
     "total_pois": 40,
     "by_religion": {
       "christian": 5,
@@ -1469,8 +1349,6 @@
   },
   {
     "ac_id": 61,
-    "ac_name": "Chelakkara",
-    "district": "thrissur",
     "total_pois": 126,
     "by_religion": {
       "christian": 28,
@@ -1494,8 +1372,6 @@
   },
   {
     "ac_id": 62,
-    "ac_name": "Kunnamkulam",
-    "district": "thrissur",
     "total_pois": 278,
     "by_religion": {
       "christian": 94,
@@ -1524,8 +1400,6 @@
   },
   {
     "ac_id": 63,
-    "ac_name": "Guruvayoor",
-    "district": "thrissur",
     "total_pois": 118,
     "by_religion": {
       "christian": 17,
@@ -1548,8 +1422,6 @@
   },
   {
     "ac_id": 64,
-    "ac_name": "Manalur",
-    "district": "thrissur",
     "total_pois": 258,
     "by_religion": {
       "christian": 66,
@@ -1573,8 +1445,6 @@
   },
   {
     "ac_id": 65,
-    "ac_name": "Wadakkanchery",
-    "district": "thrissur",
     "total_pois": 224,
     "by_religion": {
       "christian": 59,
@@ -1599,8 +1469,6 @@
   },
   {
     "ac_id": 66,
-    "ac_name": "Ollur",
-    "district": "thrissur",
     "total_pois": 226,
     "by_religion": {
       "christian": 118,
@@ -1629,8 +1497,6 @@
   },
   {
     "ac_id": 67,
-    "ac_name": "Thrissur",
-    "district": "thrissur",
     "total_pois": 210,
     "by_religion": {
       "christian": 66,
@@ -1655,8 +1521,6 @@
   },
   {
     "ac_id": 68,
-    "ac_name": "Nattika",
-    "district": "thrissur",
     "total_pois": 216,
     "by_religion": {
       "christian": 36,
@@ -1680,8 +1544,6 @@
   },
   {
     "ac_id": 69,
-    "ac_name": "Kaipamangalam",
-    "district": "thrissur",
     "total_pois": 129,
     "by_religion": {
       "christian": 9,
@@ -1704,8 +1566,6 @@
   },
   {
     "ac_id": 70,
-    "ac_name": "Irinjalakuda",
-    "district": "thrissur",
     "total_pois": 253,
     "by_religion": {
       "christian": 88,
@@ -1729,8 +1589,6 @@
   },
   {
     "ac_id": 71,
-    "ac_name": "Pudukkad",
-    "district": "thrissur",
     "total_pois": 209,
     "by_religion": {
       "christian": 66,
@@ -1753,8 +1611,6 @@
   },
   {
     "ac_id": 72,
-    "ac_name": "Chalakudy",
-    "district": "thrissur",
     "total_pois": 192,
     "by_religion": {
       "christian": 90,
@@ -1778,8 +1634,6 @@
   },
   {
     "ac_id": 73,
-    "ac_name": "Kodungallur",
-    "district": "thrissur",
     "total_pois": 250,
     "by_religion": {
       "christian": 66,
@@ -1805,8 +1659,6 @@
   },
   {
     "ac_id": 74,
-    "ac_name": "Perumbavoor",
-    "district": "ernakulam",
     "total_pois": 210,
     "by_religion": {
       "christian": 87,
@@ -1834,8 +1686,6 @@
   },
   {
     "ac_id": 75,
-    "ac_name": "Angamaly",
-    "district": "ernakulam",
     "total_pois": 209,
     "by_religion": {
       "christian": 133,
@@ -1862,8 +1712,6 @@
   },
   {
     "ac_id": 76,
-    "ac_name": "Aluva",
-    "district": "ernakulam",
     "total_pois": 243,
     "by_religion": {
       "christian": 78,
@@ -1892,8 +1740,6 @@
   },
   {
     "ac_id": 77,
-    "ac_name": "Kalamassery",
-    "district": "ernakulam",
     "total_pois": 154,
     "by_religion": {
       "christian": 43,
@@ -1919,8 +1765,6 @@
   },
   {
     "ac_id": 78,
-    "ac_name": "Paravur",
-    "district": "ernakulam",
     "total_pois": 261,
     "by_religion": {
       "christian": 99,
@@ -1942,8 +1786,6 @@
   },
   {
     "ac_id": 79,
-    "ac_name": "Vypen",
-    "district": "ernakulam",
     "total_pois": 118,
     "by_religion": {
       "christian": 47,
@@ -1965,8 +1807,6 @@
   },
   {
     "ac_id": 80,
-    "ac_name": "Kochi",
-    "district": "ernakulam",
     "total_pois": 130,
     "by_religion": {
       "christian": 61,
@@ -1990,8 +1830,6 @@
   },
   {
     "ac_id": 81,
-    "ac_name": "Thripunithura",
-    "district": "ernakulam",
     "total_pois": 155,
     "by_religion": {
       "christian": 40,
@@ -2016,8 +1854,6 @@
   },
   {
     "ac_id": 82,
-    "ac_name": "Eranakulam",
-    "district": "ernakulam",
     "total_pois": 120,
     "by_religion": {
       "christian": 52,
@@ -2046,8 +1882,6 @@
   },
   {
     "ac_id": 83,
-    "ac_name": "Thrikkakara",
-    "district": "ernakulam",
     "total_pois": 161,
     "by_religion": {
       "christian": 69,
@@ -2079,8 +1913,6 @@
   },
   {
     "ac_id": 84,
-    "ac_name": "Kunnathunad",
-    "district": "ernakulam",
     "total_pois": 243,
     "by_religion": {
       "christian": 110,
@@ -2108,8 +1940,6 @@
   },
   {
     "ac_id": 85,
-    "ac_name": "Piravom",
-    "district": "ernakulam",
     "total_pois": 399,
     "by_religion": {
       "christian": 235,
@@ -2141,8 +1971,6 @@
   },
   {
     "ac_id": 86,
-    "ac_name": "Muvattupuzha",
-    "district": "ernakulam",
     "total_pois": 249,
     "by_religion": {
       "christian": 116,
@@ -2170,8 +1998,6 @@
   },
   {
     "ac_id": 87,
-    "ac_name": "Kothamangalam",
-    "district": "ernakulam",
     "total_pois": 179,
     "by_religion": {
       "christian": 81,
@@ -2197,8 +2023,6 @@
   },
   {
     "ac_id": 88,
-    "ac_name": "Devikulam",
-    "district": "idukki",
     "total_pois": 123,
     "by_religion": {
       "christian": 61,
@@ -2225,8 +2049,6 @@
   },
   {
     "ac_id": 89,
-    "ac_name": "Udumbanchola",
-    "district": "idukki",
     "total_pois": 127,
     "by_religion": {
       "christian": 71,
@@ -2252,8 +2074,6 @@
   },
   {
     "ac_id": 90,
-    "ac_name": "Thodupuzha",
-    "district": "idukki",
     "total_pois": 224,
     "by_religion": {
       "christian": 106,
@@ -2280,8 +2100,6 @@
   },
   {
     "ac_id": 91,
-    "ac_name": "Idukki",
-    "district": "idukki",
     "total_pois": 220,
     "by_religion": {
       "christian": 132,
@@ -2311,8 +2129,6 @@
   },
   {
     "ac_id": 92,
-    "ac_name": "Peerumade",
-    "district": "idukki",
     "total_pois": 147,
     "by_religion": {
       "christian": 82,
@@ -2342,8 +2158,6 @@
   },
   {
     "ac_id": 93,
-    "ac_name": "Pala",
-    "district": "kottayam",
     "total_pois": 234,
     "by_religion": {
       "christian": 149,
@@ -2369,8 +2183,6 @@
   },
   {
     "ac_id": 94,
-    "ac_name": "Kaduthuruthy",
-    "district": "kottayam",
     "total_pois": 266,
     "by_religion": {
       "christian": 147,
@@ -2399,8 +2211,6 @@
   },
   {
     "ac_id": 95,
-    "ac_name": "Vaikom",
-    "district": "kottayam",
     "total_pois": 176,
     "by_religion": {
       "christian": 41,
@@ -2427,8 +2237,6 @@
   },
   {
     "ac_id": 96,
-    "ac_name": "Ettumanoor",
-    "district": "kottayam",
     "total_pois": 209,
     "by_religion": {
       "christian": 91,
@@ -2457,8 +2265,6 @@
   },
   {
     "ac_id": 97,
-    "ac_name": "Kottayam",
-    "district": "kottayam",
     "total_pois": 235,
     "by_religion": {
       "christian": 122,
@@ -2489,8 +2295,6 @@
   },
   {
     "ac_id": 98,
-    "ac_name": "Puthuppally",
-    "district": "kottayam",
     "total_pois": 326,
     "by_religion": {
       "christian": 201,
@@ -2520,8 +2324,6 @@
   },
   {
     "ac_id": 99,
-    "ac_name": "Changanassery",
-    "district": "kottayam",
     "total_pois": 187,
     "by_religion": {
       "christian": 87,
@@ -2550,8 +2352,6 @@
   },
   {
     "ac_id": 100,
-    "ac_name": "Kanjirappally",
-    "district": "kottayam",
     "total_pois": 286,
     "by_religion": {
       "christian": 152,
@@ -2580,8 +2380,6 @@
   },
   {
     "ac_id": 101,
-    "ac_name": "Poonjar",
-    "district": "kottayam",
     "total_pois": 182,
     "by_religion": {
       "christian": 78,
@@ -2613,8 +2411,6 @@
   },
   {
     "ac_id": 102,
-    "ac_name": "Aroor",
-    "district": "alappuzha",
     "total_pois": 193,
     "by_religion": {
       "christian": 30,
@@ -2637,8 +2433,6 @@
   },
   {
     "ac_id": 103,
-    "ac_name": "Cherthala",
-    "district": "alappuzha",
     "total_pois": 294,
     "by_religion": {
       "christian": 60,
@@ -2661,8 +2455,6 @@
   },
   {
     "ac_id": 104,
-    "ac_name": "Alappuzha",
-    "district": "alappuzha",
     "total_pois": 194,
     "by_religion": {
       "christian": 68,
@@ -2689,8 +2481,6 @@
   },
   {
     "ac_id": 105,
-    "ac_name": "Ambalappuzha",
-    "district": "alappuzha",
     "total_pois": 161,
     "by_religion": {
       "christian": 27,
@@ -2718,8 +2508,6 @@
   },
   {
     "ac_id": 106,
-    "ac_name": "Kuttanad",
-    "district": "alappuzha",
     "total_pois": 155,
     "by_religion": {
       "christian": 72,
@@ -2746,8 +2534,6 @@
   },
   {
     "ac_id": 107,
-    "ac_name": "Haripad",
-    "district": "alappuzha",
     "total_pois": 148,
     "by_religion": {
       "christian": 28,
@@ -2772,8 +2558,6 @@
   },
   {
     "ac_id": 108,
-    "ac_name": "Kayamkulam",
-    "district": "alappuzha",
     "total_pois": 247,
     "by_religion": {
       "christian": 40,
@@ -2800,8 +2584,6 @@
   },
   {
     "ac_id": 109,
-    "ac_name": "Mavelikkara",
-    "district": "alappuzha",
     "total_pois": 209,
     "by_religion": {
       "christian": 66,
@@ -2827,8 +2609,6 @@
   },
   {
     "ac_id": 110,
-    "ac_name": "Chengannur",
-    "district": "alappuzha",
     "total_pois": 273,
     "by_religion": {
       "christian": 108,
@@ -2857,8 +2637,6 @@
   },
   {
     "ac_id": 111,
-    "ac_name": "Thiruvalla",
-    "district": "pathanamthitta",
     "total_pois": 295,
     "by_religion": {
       "christian": 156,
@@ -2890,8 +2668,6 @@
   },
   {
     "ac_id": 112,
-    "ac_name": "Ranni",
-    "district": "pathanamthitta",
     "total_pois": 244,
     "by_religion": {
       "christian": 144,
@@ -2922,8 +2698,6 @@
   },
   {
     "ac_id": 113,
-    "ac_name": "Aranmula",
-    "district": "pathanamthitta",
     "total_pois": 343,
     "by_religion": {
       "christian": 192,
@@ -2955,8 +2729,6 @@
   },
   {
     "ac_id": 114,
-    "ac_name": "Konni",
-    "district": "pathanamthitta",
     "total_pois": 233,
     "by_religion": {
       "christian": 122,
@@ -2986,8 +2758,6 @@
   },
   {
     "ac_id": 115,
-    "ac_name": "Adoor",
-    "district": "pathanamthitta",
     "total_pois": 272,
     "by_religion": {
       "christian": 130,
@@ -3015,8 +2785,6 @@
   },
   {
     "ac_id": 116,
-    "ac_name": "Karunagappally",
-    "district": "kollam",
     "total_pois": 189,
     "by_religion": {
       "christian": 11,
@@ -3041,8 +2809,6 @@
   },
   {
     "ac_id": 117,
-    "ac_name": "Chavara",
-    "district": "kollam",
     "total_pois": 146,
     "by_religion": {
       "christian": 29,
@@ -3068,8 +2834,6 @@
   },
   {
     "ac_id": 118,
-    "ac_name": "Kunnathur",
-    "district": "kollam",
     "total_pois": 179,
     "by_religion": {
       "christian": 50,
@@ -3096,8 +2860,6 @@
   },
   {
     "ac_id": 119,
-    "ac_name": "Kottarakkara",
-    "district": "kollam",
     "total_pois": 198,
     "by_religion": {
       "christian": 75,
@@ -3124,8 +2886,6 @@
   },
   {
     "ac_id": 120,
-    "ac_name": "Pathanapuram",
-    "district": "kollam",
     "total_pois": 176,
     "by_religion": {
       "christian": 82,
@@ -3152,8 +2912,6 @@
   },
   {
     "ac_id": 121,
-    "ac_name": "Punalur",
-    "district": "kollam",
     "total_pois": 140,
     "by_religion": {
       "christian": 63,
@@ -3180,8 +2938,6 @@
   },
   {
     "ac_id": 122,
-    "ac_name": "Chadayamangalam",
-    "district": "kollam",
     "total_pois": 97,
     "by_religion": {
       "christian": 20,
@@ -3205,8 +2961,6 @@
   },
   {
     "ac_id": 123,
-    "ac_name": "Kundara",
-    "district": "kollam",
     "total_pois": 228,
     "by_religion": {
       "christian": 77,
@@ -3233,8 +2987,6 @@
   },
   {
     "ac_id": 124,
-    "ac_name": "Kollam",
-    "district": "kollam",
     "total_pois": 125,
     "by_religion": {
       "christian": 25,
@@ -3259,8 +3011,6 @@
   },
   {
     "ac_id": 125,
-    "ac_name": "Eravipuram",
-    "district": "kollam",
     "total_pois": 166,
     "by_religion": {
       "christian": 22,
@@ -3284,8 +3034,6 @@
   },
   {
     "ac_id": 126,
-    "ac_name": "Chathannoor",
-    "district": "kollam",
     "total_pois": 102,
     "by_religion": {
       "christian": 25,
@@ -3309,8 +3057,6 @@
   },
   {
     "ac_id": 127,
-    "ac_name": "Varkala",
-    "district": "thiruvananthapuram",
     "total_pois": 146,
     "by_religion": {
       "christian": 2,
@@ -3332,8 +3078,6 @@
   },
   {
     "ac_id": 128,
-    "ac_name": "Attingal",
-    "district": "thiruvananthapuram",
     "total_pois": 162,
     "by_religion": {
       "christian": 5,
@@ -3358,8 +3102,6 @@
   },
   {
     "ac_id": 129,
-    "ac_name": "Chirayinkeezhu",
-    "district": "thiruvananthapuram",
     "total_pois": 130,
     "by_religion": {
       "christian": 23,
@@ -3384,8 +3126,6 @@
   },
   {
     "ac_id": 130,
-    "ac_name": "Nedumangad",
-    "district": "thiruvananthapuram",
     "total_pois": 214,
     "by_religion": {
       "christian": 54,
@@ -3409,8 +3149,6 @@
   },
   {
     "ac_id": 131,
-    "ac_name": "Vamanapuram",
-    "district": "thiruvananthapuram",
     "total_pois": 114,
     "by_religion": {
       "christian": 17,
@@ -3436,8 +3174,6 @@
   },
   {
     "ac_id": 132,
-    "ac_name": "Kazhakoottam",
-    "district": "thiruvananthapuram",
     "total_pois": 223,
     "by_religion": {
       "christian": 74,
@@ -3465,8 +3201,6 @@
   },
   {
     "ac_id": 133,
-    "ac_name": "Vattiyoorkavu",
-    "district": "thiruvananthapuram",
     "total_pois": 133,
     "by_religion": {
       "christian": 54,
@@ -3493,8 +3227,6 @@
   },
   {
     "ac_id": 134,
-    "ac_name": "Thiruvananthapuram",
-    "district": "thiruvananthapuram",
     "total_pois": 202,
     "by_religion": {
       "christian": 31,
@@ -3523,8 +3255,6 @@
   },
   {
     "ac_id": 135,
-    "ac_name": "Nemom",
-    "district": "thiruvananthapuram",
     "total_pois": 99,
     "by_religion": {
       "christian": 9,
@@ -3549,8 +3279,6 @@
   },
   {
     "ac_id": 136,
-    "ac_name": "Aruvikkara",
-    "district": "thiruvananthapuram",
     "total_pois": 151,
     "by_religion": {
       "christian": 53,
@@ -3577,8 +3305,6 @@
   },
   {
     "ac_id": 137,
-    "ac_name": "Parassala",
-    "district": "thiruvananthapuram",
     "total_pois": 167,
     "by_religion": {
       "christian": 89,
@@ -3605,8 +3331,6 @@
   },
   {
     "ac_id": 138,
-    "ac_name": "Kattakkada",
-    "district": "thiruvananthapuram",
     "total_pois": 156,
     "by_religion": {
       "christian": 56,
@@ -3631,8 +3355,6 @@
   },
   {
     "ac_id": 139,
-    "ac_name": "Kovalam",
-    "district": "thiruvananthapuram",
     "total_pois": 143,
     "by_religion": {
       "christian": 71,
@@ -3657,8 +3379,6 @@
   },
   {
     "ac_id": 140,
-    "ac_name": "Neyyattinkara",
-    "district": "thiruvananthapuram",
     "total_pois": 114,
     "by_religion": {
       "christian": 44,
