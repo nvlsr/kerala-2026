@@ -57,6 +57,11 @@ const WalkthroughsNDAPage = lazy(() =>
     default: m.WalkthroughsNDAPage,
   }))
 )
+const WalkthroughsChristianPage = lazy(() =>
+  import("@/pages/walkthroughs-christian-page").then((m) => ({
+    default: m.WalkthroughsChristianPage,
+  }))
+)
 const WalkthroughsMethodologyPage = lazy(() =>
   import("@/pages/walkthroughs-methodology-page").then((m) => ({
     default: m.WalkthroughsMethodologyPage,
@@ -117,6 +122,10 @@ export function App() {
           <Route
             path="/walkthroughs/nda-walkthrough"
             element={<WalkthroughsNDAPage />}
+          />
+          <Route
+            path="/walkthroughs/christian-walkthrough"
+            element={<WalkthroughsChristianPage />}
           />
           <Route
             path="/walkthroughs/methodology"

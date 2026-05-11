@@ -5,7 +5,12 @@ import type { ReactNode } from "react"
 import { cn } from "@/lib/utils"
 
 type Props = {
-  arcNumber: 1 | 2 | 3
+  /**
+   * Numeric arc prefix shown in the eyebrow (e.g. "Arc 4"). Arcs 1-3
+   * are the alliance walkthroughs (LDF, UDF, NDA); arcs 4+ are the
+   * by-community walkthroughs (Christian, Muslim, …).
+   */
+  arcNumber: 1 | 2 | 3 | 4 | 5
   /** Short title — fits on one line at md+. */
   title: string
   /** One-clause headline statistic — bold, foregrounded. */

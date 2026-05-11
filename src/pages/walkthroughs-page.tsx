@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
 
 import { ChoroplethMap } from "@/components/charts/choropleth-map"
+import { ReligionCategoricalMap } from "@/components/religion-categorical-map"
+import {
+  CHRISTIAN_SUBRITE_COLORS,
+  NO_DATA_GRAY,
+} from "@/components/walkthroughs/colors"
 import { WalkthroughCard } from "@/components/walkthroughs/walkthrough-card"
 import { PageMain } from "@/components/page-main"
 import { PageShell } from "@/components/page-shell"
@@ -9,6 +14,7 @@ import {
   getPerACBJPDelta,
   getPerACWinner2026,
 } from "@/lib/data/walkthrough-metrics"
+import { COHORT_BY_AC } from "@/pages/walkthroughs-christian-data"
 
 const SURPRISES = [
   {
@@ -207,6 +213,53 @@ export function WalkthroughsPage() {
             }
             href="/walkthroughs/nda-walkthrough"
           />
+        </section>
+
+        {/* By-community walkthroughs */}
+        <section aria-label="By-community walkthroughs">
+          <header className="mb-4">
+            <h2 className="font-heading text-lg font-semibold tracking-tight sm:text-xl">
+              By community
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Same election, different axis. These walkthroughs slice 2026
+              by sub-community using the OSM-derived sub-rite cohort layer.
+            </p>
+          </header>
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
+            <WalkthroughCard
+              arcNumber={4}
+              title="How Kerala's Christian sub-communities moved in 2026"
+              confidence="Moderate"
+              headlineStat={
+                <span className={ARC_KEY_STAT_CLASS}>
+                  Each sub-rite has its own historical alliance pattern
+                </span>
+              }
+              visual={
+                <ReligionCategoricalMap
+                  acValues={COHORT_BY_AC}
+                  bucketColors={CHRISTIAN_SUBRITE_COLORS}
+                  noDataColor={NO_DATA_GRAY}
+                  ariaLabel="Kerala constituencies coloured by dominant Christian sub-rite"
+                />
+              }
+              summary={
+                <>
+                  Christian Kerala isn't a single bloc. Across 4 cycles, the
+                  six sub-rite cohorts trace distinct trajectories.
+                  Syro-Malabar, Jacobite, and Indian Orthodox cohorts{" "}
+                  <em>returned</em> to their 2011-era UDF baselines in 2026.
+                  Latin Catholic and Marthoma cohorts{" "}
+                  <em>flipped</em> from structurally LDF-leaning territory —
+                  17 of 28 Latin ACs swung LDF→UDF. Three confounder tests
+                  document why the cohort effect is community-driven, not
+                  district or share artefact.
+                </>
+              }
+              href="/walkthroughs/christian-walkthrough"
+            />
+          </div>
         </section>
 
         {/* Sidebar callouts */}
