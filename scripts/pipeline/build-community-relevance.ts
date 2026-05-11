@@ -21,6 +21,7 @@ import { constituencies, type Candidate } from "@/lib/data/constituencies"
 import { acDemo2025Meta, districtsMeta, casteByDistrictMeta, beltsMeta } from "@/lib/data/loaders"
 import { CHRISTIAN_BELT_36 } from "@/pages/walkthroughs/udf-data"
 import { loadHistorical } from "../_lib/load"
+import { normalizeName } from "../_lib/names"
 import { saveJson } from "../_lib/save"
 
 // ── Constants ─────────────────────────────────────────────────────────
@@ -413,20 +414,6 @@ function assembleNote(args: {
 }
 
 // ── Main build ────────────────────────────────────────────────────────
-
-/**
- * Normalise candidate names across cycles. ECI / ac-history.json use
- * inconsistent formats — "A K M ASHRAF" vs "A. K. M. Ashraf" vs
- * "A.K.M. Ashraf". Strip periods + uppercase + collapse spaces gives a
- * stable comparable key.
- */
-function normalizeName(name: string): string {
-  return name
-    .toUpperCase()
-    .replace(/[.,'"`]/g, "")
-    .replace(/\s+/g, " ")
-    .trim()
-}
 
 const acMargin = new Map<number, number>()
 const acWinner = new Map<number, AllianceCode>()

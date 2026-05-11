@@ -1,0 +1,343 @@
+/**
+ * Audit candidate-name normalisation across cycles.
+ *
+ * Walks every top-3 finisher in every general / by-election cycle
+ * (2011, 2016, 2019 by-elections, 2021) plus 2026, computes the
+ * canonical key via `normalizeName()`, and emits two outputs:
+ *
+ *  - `data/candidate-continuity.json` — structured per-key index of
+ *    every appearance (year, AC, alliance, position, raw name).
+ *
+ *  - `docs/candidate-continuity-audit.md` — human-reviewable markdown:
+ *      §A  multi-appearance candidates the normaliser detected (>= 2 hits)
+ *      §B  suspected matches the normaliser missed (Jaccard ≥ 0.5,
+ *          different canonical keys, same AC OR same alliance + same surname)
+ *
+ * §A is for spotting false positives (different people the normaliser
+ * collapsed); §B is for spotting false negatives (same person the
+ * normaliser kept apart, prompting normaliser refinement).
+ *
+ * Run: `bun run scripts/analysis/audit-candidate-names.ts`
+ */
+import { constituencies, type Candidate } from "@/lib/data/constituencies"
+
+import { loadHistorical } from "../_lib/load"
+import { nameSimilarity, normalizeName } from "../_lib/names"
+import { saveJson } from "../_lib/save"
+
+interface Appearance {
+  year: number
+  cycleType: "general" | "by-election"
+  ac: number
+  acName: string
+  rank: 1 | 2 | 3
+  alliance: string
+  rawName: string
+  normKey: string
+}
+
+const appearances: Appearance[] = []
+
+// ── 2011 / 2016 / 2019-bye / 2021 from ac-history.json ───────────────
+
+const historical = loadHistorical()
+const acNameById = new Map<number, string>(
+  constituencies.map(c => [c.constituencyNumber, c.constituencyName])
+)
+
+for (const [acNum, h] of historical.entries()) {
+  for (const e of h.elections) {
+    if (e.type !== "general" && e.type !== "by-election") continue
+    const sorted = [...e.candidates].sort((a, b) => b.votes - a.votes)
+    const top3 = sorted.slice(0, 3)
+    top3.forEach((cand, idx) => {
+      appearances.push({
+        year: e.year,
+        cycleType: e.type as "general" | "by-election",
+        ac: acNum,
+        acName: acNameById.get(acNum) ?? `AC-${acNum}`,
+        rank: (idx + 1) as 1 | 2 | 3,
+        alliance: cand.alliance ?? "OTHER",
+        rawName: cand.name,
+        normKey: normalizeName(cand.name),
+      })
+    })
+  }
+}
+
+// ── 2026 from constituencies ─────────────────────────────────────────
+
+for (const c of constituencies) {
+  const sorted = [...c.candidates].sort((a: Candidate, b: Candidate) => b.votes - a.votes)
+  const top3 = sorted.slice(0, 3)
+  top3.forEach((cand, idx) => {
+    appearances.push({
+      year: 2026,
+      cycleType: "general",
+      ac: c.constituencyNumber,
+      acName: c.constituencyName,
+      rank: (idx + 1) as 1 | 2 | 3,
+      alliance: cand.alliance ?? "OTHER",
+      rawName: cand.name,
+      normKey: normalizeName(cand.name),
+    })
+  })
+}
+
+// ── Group by normalised key (the "duplicates" found) ─────────────────
+
+const byKey = new Map<string, Appearance[]>()
+for (const a of appearances) {
+  if (!byKey.has(a.normKey)) byKey.set(a.normKey, [])
+  byKey.get(a.normKey)!.push(a)
+}
+
+const multiAppearance = [...byKey.entries()]
+  .filter(([_, hits]) => hits.length >= 2)
+  .map(([key, hits]) => ({
+    normKey: key,
+    appearanceCount: hits.length,
+    distinctRawNames: [...new Set(hits.map(h => h.rawName))],
+    distinctAlliances: [...new Set(hits.map(h => h.alliance))],
+    distinctACs: [...new Set(hits.map(h => h.ac))].length,
+    hits: hits.sort((a, b) =>
+      a.year !== b.year ? a.year - b.year : a.ac - b.ac
+    ),
+  }))
+  .sort((a, b) => b.appearanceCount - a.appearanceCount)
+
+// ── Suspected missed matches ─────────────────────────────────────────
+//
+// Build candidate "key contexts": one entry per (normKey, surname-token,
+// alliance, AC-or-cross-AC). We then walk pairs of different keys and
+// check Jaccard similarity. To control noise, we gate suspected matches:
+//   - Same AC (any years): Jaccard ≥ 0.5  — likely tenure-detection gap
+//   - Cross-AC: Jaccard ≥ 0.6 AND same alliance — likely candidate-name
+//     drift across constituencies
+//
+// We also dedupe symmetric pairs (A, B) ↔ (B, A).
+
+interface SuspectedPair {
+  keyA: string
+  keyB: string
+  jaccard: number
+  scope: "same-ac" | "cross-ac"
+  sharedTokensSample: string[]
+  examplesA: Appearance[]
+  examplesB: Appearance[]
+}
+
+const keys = [...byKey.keys()].sort()
+const suspected: SuspectedPair[] = []
+const seenPair = new Set<string>()
+
+for (let i = 0; i < keys.length; i++) {
+  for (let j = i + 1; j < keys.length; j++) {
+    const a = keys[i]
+    const b = keys[j]
+    if (a === b) continue
+    const sim = nameSimilarity(a, b)
+    if (sim < 0.5) continue
+
+    const hitsA = byKey.get(a)!
+    const hitsB = byKey.get(b)!
+
+    // Are there hits in the SAME AC?
+    const acsA = new Set(hitsA.map(h => h.ac))
+    const acsB = new Set(hitsB.map(h => h.ac))
+    const sharedACs = [...acsA].filter(ac => acsB.has(ac))
+    const sameAC = sharedACs.length > 0
+
+    // Cross-AC: require same alliance to filter noise
+    const alliancesA = new Set(hitsA.map(h => h.alliance))
+    const alliancesB = new Set(hitsB.map(h => h.alliance))
+    const sharedAlliance = [...alliancesA].some(al => alliancesB.has(al))
+
+    const shouldFlag = sameAC
+      ? sim >= 0.5
+      : sim >= 0.6 && sharedAlliance
+
+    if (!shouldFlag) continue
+
+    const pairKey = a < b ? `${a}|${b}` : `${b}|${a}`
+    if (seenPair.has(pairKey)) continue
+    seenPair.add(pairKey)
+
+    // Sample shared tokens for the audit narrative
+    const tokensA = new Set(a.split(" ").filter(t => t.length >= 2))
+    const tokensB = new Set(b.split(" ").filter(t => t.length >= 2))
+    const shared = [...tokensA].filter(t => tokensB.has(t))
+
+    suspected.push({
+      keyA: a,
+      keyB: b,
+      jaccard: sim,
+      scope: sameAC ? "same-ac" : "cross-ac",
+      sharedTokensSample: shared,
+      examplesA: hitsA.slice(0, 3),
+      examplesB: hitsB.slice(0, 3),
+    })
+  }
+}
+
+// Order suspected pairs: same-ac first (higher review priority), then
+// by Jaccard descending
+suspected.sort((x, y) => {
+  if (x.scope !== y.scope) return x.scope === "same-ac" ? -1 : 1
+  return y.jaccard - x.jaccard
+})
+
+// ── Write structured output ──────────────────────────────────────────
+
+saveJson("data/candidate-continuity.json", {
+  totalAppearances: appearances.length,
+  uniqueNormalisedKeys: byKey.size,
+  multiAppearanceCount: multiAppearance.length,
+  suspectedMissedMatchesCount: suspected.length,
+  multiAppearance,
+  suspectedMissedMatches: suspected,
+})
+
+// ── Render markdown audit ────────────────────────────────────────────
+
+function fmtAppearance(h: Appearance): string {
+  const cycleTag = h.cycleType === "by-election" ? " by-bye" : ""
+  return `${h.year}${cycleTag} · AC ${h.ac} ${h.acName} (${h.alliance}, rank ${h.rank}): \`${h.rawName}\``
+}
+
+const lines: string[] = []
+lines.push("# Candidate-name normalisation audit")
+lines.push("")
+lines.push(
+  "Auto-generated. Walks every top-3 finisher across 2011 / 2016 / 2019-bye / 2021 / 2026 cycles, normalises names via `scripts/_lib/names.ts:normalizeName()`, and reports cross-cycle matches the normaliser caught (§A) and likely-same-person pairs it missed (§B)."
+)
+lines.push("")
+lines.push(
+  `Run: \`bun run scripts/analysis/audit-candidate-names.ts\` — regenerates \`data/candidate-continuity.json\` and this file.`
+)
+lines.push("")
+lines.push("## Headline numbers")
+lines.push("")
+lines.push(`- Total top-3 appearances: **${appearances.length}**`)
+lines.push(`- Unique normalised keys: **${byKey.size}**`)
+lines.push(`- Candidates appearing ≥ 2 times: **${multiAppearance.length}**`)
+lines.push(`- Suspected missed matches: **${suspected.length}**`)
+lines.push(
+  `  - same-AC: ${suspected.filter(s => s.scope === "same-ac").length} (likely tenure-detection gaps)`
+)
+lines.push(
+  `  - cross-AC same-alliance: ${suspected.filter(s => s.scope === "cross-ac").length} (likely cross-constituency name drift)`
+)
+lines.push("")
+lines.push("---")
+lines.push("")
+
+// §A
+lines.push("## A. Multi-appearance candidates the normaliser caught")
+lines.push("")
+lines.push(
+  "Each block: one normalised key + every top-3 appearance attributed to it. Scan for **false positives** — different people the normaliser collapsed."
+)
+lines.push("")
+lines.push(`Showing the top ${Math.min(multiAppearance.length, 200)} by appearance count.`)
+lines.push("")
+
+for (const entry of multiAppearance.slice(0, 200)) {
+  lines.push(
+    `### \`${entry.normKey}\` — ${entry.appearanceCount} appearances across ${entry.distinctACs} AC${entry.distinctACs === 1 ? "" : "s"}`
+  )
+  if (entry.distinctRawNames.length > 1) {
+    lines.push(
+      `Raw name variants: ${entry.distinctRawNames.map(n => `\`${n}\``).join(", ")}`
+    )
+  }
+  if (entry.distinctAlliances.length > 1) {
+    lines.push(`Alliances seen: ${entry.distinctAlliances.join(", ")}`)
+  }
+  lines.push("")
+  for (const h of entry.hits) {
+    lines.push(`- ${fmtAppearance(h)}`)
+  }
+  lines.push("")
+}
+
+if (multiAppearance.length > 200) {
+  lines.push(
+    `_… and ${multiAppearance.length - 200} more in \`data/candidate-continuity.json\`._`
+  )
+  lines.push("")
+}
+
+lines.push("---")
+lines.push("")
+
+// §B
+lines.push("## B. Suspected missed matches (normaliser kept apart)")
+lines.push("")
+lines.push(
+  "Pairs of different canonical keys with high token overlap (Jaccard ≥ 0.5 same-AC, ≥ 0.6 cross-AC). Each pair is **probably the same person but didn't merge** — review the patterns to extend `normalizeName()` rules."
+)
+lines.push("")
+
+const sameAcSuspected = suspected.filter(s => s.scope === "same-ac")
+const crossAcSuspected = suspected.filter(s => s.scope === "cross-ac")
+
+lines.push(`### B.1 Same-AC suspected matches (${sameAcSuspected.length})`)
+lines.push("")
+if (sameAcSuspected.length === 0) {
+  lines.push("_None._")
+} else {
+  lines.push("Highest priority — these would expand tenure detection if fixed.")
+  lines.push("")
+  for (const s of sameAcSuspected) {
+    lines.push(
+      `- **\`${s.keyA}\`** ↔ **\`${s.keyB}\`** (Jaccard ${s.jaccard.toFixed(2)}, shared: ${s.sharedTokensSample.map(t => `\`${t}\``).join(", ")})`
+    )
+    for (const h of s.examplesA) lines.push(`    - A: ${fmtAppearance(h)}`)
+    for (const h of s.examplesB) lines.push(`    - B: ${fmtAppearance(h)}`)
+  }
+}
+lines.push("")
+
+lines.push(`### B.2 Cross-AC same-alliance suspected matches (${crossAcSuspected.length})`)
+lines.push("")
+if (crossAcSuspected.length === 0) {
+  lines.push("_None._")
+} else {
+  lines.push(
+    "Same alliance, different ACs, high token overlap. Most useful for identifying candidates who appeared under different name spellings across constituencies (e.g. K. Surendran across multiple BJP runs)."
+  )
+  lines.push("")
+  for (const s of crossAcSuspected.slice(0, 100)) {
+    lines.push(
+      `- **\`${s.keyA}\`** ↔ **\`${s.keyB}\`** (Jaccard ${s.jaccard.toFixed(2)}, shared: ${s.sharedTokensSample.map(t => `\`${t}\``).join(", ")})`
+    )
+    for (const h of s.examplesA) lines.push(`    - A: ${fmtAppearance(h)}`)
+    for (const h of s.examplesB) lines.push(`    - B: ${fmtAppearance(h)}`)
+  }
+  if (crossAcSuspected.length > 100) {
+    lines.push(
+      `- _… ${crossAcSuspected.length - 100} more in \`data/candidate-continuity.json\`._`
+    )
+  }
+}
+lines.push("")
+
+import { writeFileSync } from "fs"
+writeFileSync("docs/candidate-continuity-audit.md", lines.join("\n"))
+
+console.log(
+  `Wrote data/candidate-continuity.json (${appearances.length} appearances → ${byKey.size} unique keys, ${multiAppearance.length} multi-appearance, ${suspected.length} suspected misses)`
+)
+console.log(`Wrote docs/candidate-continuity-audit.md`)
+console.log("")
+console.log(`Top 10 multi-appearance candidates:`)
+for (const e of multiAppearance.slice(0, 10)) {
+  console.log(
+    `  ${e.appearanceCount}× \`${e.normKey}\` — ${e.distinctRawNames.length} raw variant(s), ${e.distinctACs} AC(s)`
+  )
+}
+console.log("")
+console.log(
+  `Suspected misses: ${sameAcSuspected.length} same-AC + ${crossAcSuspected.length} cross-AC`
+)
