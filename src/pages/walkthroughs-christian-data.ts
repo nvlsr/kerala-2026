@@ -11,8 +11,10 @@
  */
 
 import { constituencies } from "@/lib/data/constituencies"
+import { displayConstituencyName } from "@/lib/data/format"
 import { getHistoricalFor } from "@/lib/data/historical"
 import { districtsMeta } from "@/lib/data/loaders"
+import { getReligiousSignatureForAC } from "@/lib/data/religious-pois"
 import {
   CHRISTIAN_SUBRITE_COHORTS,
   christianSubRiteCohortFor,
@@ -279,3 +281,96 @@ export const COHORT_BY_AC: Record<string, ChristianSubRiteCohort> = (() => {
   }
   return out
 })()
+
+// ── Cohort → AC list (for sheet drilldown) ───────────────────────────
+export type CohortAC = {
+  acNumber: number
+  acName: string
+  district: string
+  christianPct: number
+  voterSharePct: number // dominant sub-rite voter share in this AC
+}
+
+export const COHORT_AC_LIST: Record<ChristianSubRiteCohort, CohortAC[]> =
+  (() => {
+    const out = Object.fromEntries(
+      CHRISTIAN_SUBRITE_COHORTS.map((c) => [c.code, [] as CohortAC[]])
+    ) as unknown as Record<ChristianSubRiteCohort, CohortAC[]>
+    for (const c of constituencies) {
+      const cohort = christianSubRiteCohortFor(c.constituencyNumber)
+      const sig = getReligiousSignatureForAC(c.constituencyNumber)
+      if (!sig) continue
+      const districtId =
+        districtsMeta.constituencyToDistrict[String(c.constituencyNumber)] ??
+        ""
+      out[cohort].push({
+        acNumber: c.constituencyNumber,
+        acName: displayConstituencyName(c.constituencyNumber),
+        district: districtId,
+        christianPct: sig.religionPopPct.christian,
+        voterSharePct: sig.christian.dominant?.voterSharePct ?? 0,
+      })
+    }
+    // Sort each cohort's list by Christian share desc — most "purely
+    // Christian" ACs at the top
+    for (const k of Object.keys(out) as ChristianSubRiteCohort[]) {
+      out[k].sort((a, b) => b.christianPct - a.christianPct)
+    }
+    return out
+  })()
+
+// ── Cohort metadata for the §geography table ─────────────────────────
+export type CohortRow = {
+  code: ChristianSubRiteCohort
+  label: string
+  color: string
+  n: number
+  anchor: string
+}
+
+const COHORT_TABLE_SPECS: ReadonlyArray<{
+  code: ChristianSubRiteCohort
+  label: string
+  anchor: string
+}> = [
+  {
+    code: "syro_malabar",
+    label: "Syro-Malabar",
+    anchor: "Central Kerala interior — Kottayam, Idukki, Ernakulam interior",
+  },
+  {
+    code: "latin_catholic",
+    label: "Latin Catholic",
+    anchor: "Coastal corridor — Trivandrum, Alleppey, Kochi, Kannur coast",
+  },
+  {
+    code: "indian_orthodox",
+    label: "Indian Orthodox",
+    anchor: "Central Travancore — Tiruvalla / Niranam / Aranmula belt",
+  },
+  {
+    code: "csi",
+    label: "CSI",
+    anchor: "Trivandrum district (5/5 ACs — geographically confounded)",
+  },
+  {
+    code: "jacobite_syrian",
+    label: "Jacobite Syrian",
+    anchor: "Ernakulam — Kunnathunad / Piravom / Kothamangalam",
+  },
+  {
+    code: "marthoma",
+    label: "Marthoma",
+    anchor: "Pathanamthitta — Aranmula / Ranni corridor",
+  },
+]
+
+export const COHORT_TABLE_ROWS: readonly CohortRow[] = COHORT_TABLE_SPECS.map(
+  (row) => ({
+    code: row.code,
+    label: row.label,
+    anchor: row.anchor,
+    color: COHORT_COLOR[row.code],
+    n: COHORT_SIZE[row.code],
+  })
+)

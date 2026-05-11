@@ -1,3 +1,6 @@
+import { useState } from "react"
+import { IconChevronRight } from "@tabler/icons-react"
+
 import {
   ReligionCategoricalMap,
   bucketCounts,
@@ -16,16 +19,37 @@ import {
   type Weakener,
 } from "@/components/walkthroughs/what-would-weaken"
 import {
+  Sheet,
+  SheetBody,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+} from "@/components/ui/sheet"
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+import { Link } from "react-router-dom"
+import {
+  COHORT_AC_LIST,
   COHORT_BY_AC,
   COHORT_COLOR,
   COHORT_LABEL,
   COHORT_SIZE,
+  COHORT_TABLE_ROWS,
   COHORT_TRAJECTORY,
   CYCLE_YEARS,
   LATIN_ZONE_BREAKDOWN,
   M_EVIDENCE,
   REAL_COHORTS,
+  type CohortRow,
 } from "@/pages/walkthroughs-christian-data"
+import type { ChristianSubRiteCohort } from "@/lib/data/subrite-bins"
 
 const WEAKENERS: ReadonlyArray<Weakener> = [
   {
@@ -96,6 +120,13 @@ const STORY_B_COHORTS = ["latin_catholic", "marthoma"] as const
  * stories (restorations + flips).
  */
 export function WalkthroughsChristianPage() {
+  const [openCohort, setOpenCohort] =
+    useState<ChristianSubRiteCohort | null>(null)
+  const openRow = openCohort
+    ? COHORT_TABLE_ROWS.find((r) => r.code === openCohort)
+    : null
+  const openList = openCohort ? COHORT_AC_LIST[openCohort] : []
+
   return (
     <WalkthroughPageShell
       breadcrumbLeaf="Christian communities"
@@ -187,16 +218,118 @@ export function WalkthroughsChristianPage() {
           voters).
         </p>
         <p>
-          The biggest cohorts are <strong>Syro-Malabar</strong> (n=
-          {COHORT_SIZE.syro_malabar}, central Kerala interior),{" "}
-          <strong>Latin Catholic</strong> (n={COHORT_SIZE.latin_catholic},
-          coastal corridor), and{" "}
-          <strong>Indian Orthodox</strong> (n={COHORT_SIZE.indian_orthodox},
-          central Travancore — Tiruvalla / Niranam belt). Three smaller
-          cohorts — Jacobite (3), Marthoma (2), CSI (5) — round out the
-          picture.
+          The cohorts (largest to smallest), with their geographic
+          anchors. Click any row for the list of ACs in that cohort:
         </p>
+        <div className="not-prose -mx-2 mt-2 overflow-hidden rounded-md border">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="h-8 px-3 text-[11px] uppercase tracking-wide text-muted-foreground">
+                  Sub-rite
+                </TableHead>
+                <TableHead className="h-8 px-3 text-right text-[11px] uppercase tracking-wide text-muted-foreground">
+                  ACs
+                </TableHead>
+                <TableHead className="h-8 px-3 text-[11px] uppercase tracking-wide text-muted-foreground">
+                  Geographic anchor
+                </TableHead>
+                <TableHead className="h-8 w-8 px-2" aria-hidden />
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {COHORT_TABLE_ROWS.map((row) => (
+                <CohortTableRow
+                  key={row.code}
+                  row={row}
+                  onOpen={() => setOpenCohort(row.code)}
+                />
+              ))}
+            </TableBody>
+          </Table>
+        </div>
       </WalkthroughSection>
+
+      <Sheet
+        open={openCohort != null}
+        onOpenChange={(v) => {
+          if (!v) setOpenCohort(null)
+        }}
+      >
+        <SheetContent side="right" className="sm:max-w-md">
+          {openRow && (
+            <>
+              <SheetHeader>
+                <SheetTitle>
+                  <span className="inline-flex items-center gap-2">
+                    <span
+                      className="inline-block h-3 w-3 rounded-sm"
+                      style={{ backgroundColor: openRow.color }}
+                      aria-hidden
+                    />
+                    {openRow.label}{" "}
+                    <span className="font-normal text-muted-foreground">
+                      · {openRow.n} ACs
+                    </span>
+                  </span>
+                </SheetTitle>
+                <SheetDescription>{openRow.anchor}</SheetDescription>
+              </SheetHeader>
+              <SheetBody>
+                <Table>
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="h-8 text-[11px] uppercase tracking-wide text-muted-foreground">
+                        AC
+                      </TableHead>
+                      <TableHead className="h-8 text-[11px] uppercase tracking-wide text-muted-foreground">
+                        District
+                      </TableHead>
+                      <TableHead className="h-8 text-right text-[11px] uppercase tracking-wide text-muted-foreground">
+                        Christian
+                      </TableHead>
+                      <TableHead className="h-8 text-right text-[11px] uppercase tracking-wide text-muted-foreground">
+                        {openRow.label} voters
+                      </TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {openList.map((ac) => (
+                      <TableRow key={ac.acNumber}>
+                        <TableCell className="py-1.5">
+                          <Link
+                            to={`/explore?seat=${ac.acNumber}`}
+                            className="font-medium text-foreground hover:underline"
+                          >
+                            {ac.acName}
+                          </Link>
+                        </TableCell>
+                        <TableCell className="py-1.5 text-xs capitalize text-muted-foreground">
+                          {ac.district}
+                        </TableCell>
+                        <TableCell className="py-1.5 text-right tabular-nums text-muted-foreground">
+                          {ac.christianPct.toFixed(1)}%
+                        </TableCell>
+                        <TableCell className="py-1.5 text-right tabular-nums">
+                          {ac.voterSharePct.toFixed(1)}%
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+                <p className="mt-3 text-[11px] text-muted-foreground">
+                  Sorted by Christian population share (descending).
+                  "Christian" is the AC's overall Christian population
+                  percentage (Census 2025 projection); "{openRow.label}{" "}
+                  voters" is the estimated share of total voters belonging
+                  to this sub-rite (Census religion share × OSM sub-rite
+                  POI mix).
+                </p>
+              </SheetBody>
+            </>
+          )}
+        </SheetContent>
+      </Sheet>
 
       {/* §3-§7 — Multi-cycle trajectories per cohort */}
       <WalkthroughSection
@@ -505,5 +638,43 @@ export function WalkthroughsChristianPage() {
       {/* What would weaken this view */}
       <WhatWouldWeakenSection bullets={WEAKENERS} />
     </WalkthroughPageShell>
+  )
+}
+
+function CohortTableRow({
+  row,
+  onOpen,
+}: {
+  row: CohortRow
+  onOpen: () => void
+}) {
+  return (
+    <TableRow
+      className="cursor-pointer transition-colors hover:bg-muted/50"
+      onClick={onOpen}
+    >
+      <TableCell className="py-2">
+        <span className="inline-flex items-center gap-2">
+          <span
+            className="inline-block h-3 w-3 shrink-0 rounded-sm"
+            style={{ backgroundColor: row.color }}
+            aria-hidden
+          />
+          <span className="font-medium text-foreground">{row.label}</span>
+        </span>
+      </TableCell>
+      <TableCell className="py-2 text-right text-muted-foreground tabular-nums">
+        {row.n}
+      </TableCell>
+      <TableCell className="py-2 text-xs leading-snug text-muted-foreground">
+        {row.anchor}
+      </TableCell>
+      <TableCell className="py-2 pr-3 text-right">
+        <IconChevronRight
+          className="ml-auto h-3.5 w-3.5 text-muted-foreground/60"
+          aria-hidden
+        />
+      </TableCell>
+    </TableRow>
   )
 }
