@@ -136,7 +136,7 @@ export function DemographicsPanel({ scope }: Props) {
       )}
       {activeView === "caste" && <CasteTable caste={caste} />}
       {activeView === "summary" && summary && (
-        <p className="text-sm leading-relaxed text-foreground">
+        <p className="text-xs leading-relaxed text-foreground">
           {summary.summary}
         </p>
       )}
