@@ -4,12 +4,14 @@ An interactive results dashboard for the 2026 Kerala Legislative Assembly electi
 
 ## What's in it
 
-- **District map** — clickable choropleth that scopes every section below it.
-- **Alliance + party tables** — seat tallies, vote shares, and 2021→2026 deltas, with sparkline trend charts for selected fronts/parties.
-- **Candidate table** — every contesting candidate with vote share, margin, and Δ-from-2021 columns; full text search; result and sort filters with shareable URLs.
-- **Constituency map** — 140-AC choropleth whose color encoding tracks the active filter (winning alliance / runner-up alliance / magnitude / gain-loss diverging) so the spatial view always matches the table.
-- **Insights chips** — curated combos like "BJP gains 2021→2026" or "Closest contests" that apply multiple filters at once.
-- **Per-seat detail** — clicking a constituency opens an inline panel with a candidate roster, past winners, and a multi-cycle trend chart.
+- **District map + alliance/party tables** at `/` — clickable choropleth that scopes every section below; seat tallies, vote shares, and 2021→2026 deltas with sparkline trends.
+- **Candidate table** at `/explore` — every contesting candidate with vote share, margin, and Δ-from-2021 columns; full text search; result and sort filters with shareable URLs. Per-AC detail panel includes a demographics card (Composition / Caste / Summary tabs), historical chart, and past-winners table.
+- **Walkthroughs** at `/walkthroughs` — guided narratives for each alliance (`/walkthroughs/{ldf,udf,nda}-walkthrough`) and the Christian-belt sub-rite story (`/walkthroughs/christian-walkthrough`). Each backed by a comprehensive reference doc under `docs/narratives/`.
+- **Community relevance** at `/community-relevance` — per-AC framework view (driver, durability, alliance-roles matrix, NDA-share trajectory) covering all 140 ACs. Framework doc at `docs/community-relevance.md`.
+- **Religion map** at `/religion-map` — religious-composition choropleth with sub-rite cohort overlays from the OSM places-of-worship inventory.
+- **Belt overlays** at `/belts` — district-level community-belt patterns.
+- **Insights chips** — curated multi-filter combos like "BJP gains 2021→2026" or "Closest contests" that scope the candidate table in one click.
+- **Forecast post-mortem** at `/from-forecast` — comparison of the pre-election forecast against actual results.
 
 All filter state is URL-synced, so any view is shareable as a link.
 

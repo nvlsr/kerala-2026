@@ -1,6 +1,7 @@
 {
   "version": "v4-manually-reviewed",
   "method": "Hand-composed per-AC reading data/community-relevance.json + per-AC NDA cohort tags from src/pages/walkthroughs/nda-data.ts + hereditary lineage from data/hereditary-seats.json + Christian sub-rite tags. Each summary is self-contained — no cross-references to walkthroughs, cohorts, or framework jargon — designed to live in a /explore demographics card. v4: full 14-batch manual review (data + summary side-by-side for all 140 ACs) catching narrative misframings, comparative-claim errors, tier-label slips, history-cycle counts, hereditary-lineage details, and broken self-containedness.",
+  "regen": "Summaries are hand-composed prose, not auto-generated. When upstream data refreshes (community-relevance, hereditary-seats, NDA cohorts), the existing prose may drift. To audit: run `bun run scripts/analysis/build-ac-summary-prep.ts` to regenerate data/temp/ac-summary-prep.json — the compact joined input table. Then diff per-AC facts in the prep file against the corresponding summary text. The 14-batch review checklist (per-AC factual + comparative + tier + history + framing) is documented in commit 005f106.",
   "summaries": [
     {
       "ac": 1,

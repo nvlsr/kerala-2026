@@ -1,6 +1,6 @@
 # Data pipelines
 
-Three independent pipelines feed the data files this app consumes. Each turns external raw sources into committed JSON in `data/`. All pipeline code lives under [`scripts/pipeline/`](../scripts/pipeline/); analysis scripts that *consume* this data are under [`scripts/analysis/`](../scripts/analysis/).
+Four independent pipelines feed the primary data files this app consumes. Each turns external raw sources into committed JSON in `data/`. A fifth *derived* layer builds analytical artifacts on top of pipeline outputs (no external source). All pipeline code lives under [`scripts/pipeline/`](../scripts/pipeline/); derived builders and analysis scripts that *consume* this data are under [`scripts/analysis/`](../scripts/analysis/).
 
 | Pipeline | External source | Output |
 | --- | --- | --- |
@@ -8,6 +8,7 @@ Three independent pipelines feed the data files this app consumes. Each turns ex
 | 2. AC religion demographics | Census 2011 C-01 + SHRUG location keys | `data/ac-religion.json` + `data/ac-religion-2025.json` |
 | 3. Religious POIs | OpenStreetMap Overpass API | `data/places-of-worship.json` (gitignored) + `data/ac-religious-pois.json` |
 | 4. Maps (one-off) | Datameet shapefiles | `data/kerala-*.geojson` + `data/kerala-*-paths.json` |
+| 5. Derived analytical layer | Pipelines 1-3 (no external source) | `data/community-relevance.json`, `data/hereditary-seats.json`, `data/candidate-continuity.json`, `data/ac-summaries.json` |
 
 Source URLs live in [`docs/links.md`](links.md). For each pipeline, that document tells you where the raw data comes from; this document tells you how to turn it into committed JSON.
 
@@ -303,3 +304,78 @@ data/district-paths.json + data/ac-paths.json  (committed)
 Source: [`projects.datameet.org/maps`](https://projects.datameet.org/maps/) · repo: [`datameet/maps`](https://github.com/datameet/maps).
 
 The `data/maps-master/` directory is gitignored (486 MB). Re-clone the upstream repo if you need to re-run extraction. After re-running `build-kerala-map-paths.ts`, the `data.test.ts` invariants will fail if any AC name in the geojson drifts from `ac-names.json` (see commit 0968bc2 for the 3-AC reconciliation pass).
+
+---
+
+# Pipeline 5 — Derived analytical layer
+
+Four committed data files in `data/` are *derived* — built from the outputs of pipelines 1-3, no external source. These power the `/community-relevance` page, the candidate-continuity audit, the hereditary-seats analytical layer, and the AC summary tab on `/explore`.
+
+Each output below is built by a single script and depends only on already-committed JSON. Re-running these is cheap and deterministic.
+
+| Output | Builder | Inputs |
+| --- | --- | --- |
+| `data/community-relevance.json` | `scripts/pipeline/build-community-relevance.ts` | `results-2026.json`, `ac-history.json`, `ac-religion-2025.json`, `district-hindu-castes.json`, `ac-religious-pois.json`, `community-belts.json` |
+| `data/candidate-continuity.json` + `docs/candidate-continuity-audit.md` | `scripts/analysis/audit-candidate-names.ts` | `results-2026.json`, `ac-history.json`, `data/candidate-classifications.json` (manual verdicts) |
+| `data/hereditary-seats.json` | `scripts/analysis/build-hereditary-seats.ts` | `data/candidate-continuity.json` (union-find over same-person verdicts) |
+| `data/ac-summaries.json` | **None — hand-composed prose.** Use `scripts/analysis/build-ac-summary-prep.ts` to regenerate `data/temp/ac-summary-prep.json` (the audit-input table) | `data/community-relevance.json`, `data/hereditary-seats.json`, NDA cohort definitions parsed from `src/pages/walkthroughs/nda-data.ts` |
+
+## Community-relevance framework
+
+`build-community-relevance.ts` assigns each AC a primary driver (christian-subrite / christian-aggregate / muslim / both-christian-muslim / hindu-district / diffuse), a durability category (always-X / flipped-2026 / X-since-2021 / ldf-since-2021), a stable-for reading (UDF/LDF/NDA/null), an alliance-roles matrix (flipTo/blockFrom per UDF/LDF/NDA), and a 3-cycle NDA trajectory.
+
+Framework documentation lives in [`docs/community-relevance.md`](community-relevance.md). The runtime page reads through `src/lib/data/community-relevance.ts`.
+
+Re-run:
+```bash
+bun run scripts/pipeline/build-community-relevance.ts
+```
+
+## Candidate-continuity audit
+
+`audit-candidate-names.ts` normalises every top-3 finisher across 2011/2016/2019-bye/2021/2026 cycles via `scripts/_lib/names.ts:normalizeName()`. Reports:
+- §A: matches the normaliser caught (same-name across cycles)
+- §B: likely-same-person pairs the normaliser missed (suspected via Jaccard token similarity)
+- §C: multi-alliance suspects (same name running for different alliances in different cycles)
+
+Manual verdicts (`same-person-switched`, `different-people-same-name`, `hereditary-different-people`, etc.) persist in `data/candidate-classifications.json`. Re-running the audit preserves prior verdicts and only re-evaluates new pairs.
+
+Re-run:
+```bash
+bun run scripts/analysis/audit-candidate-names.ts
+```
+
+## Hereditary seats
+
+`build-hereditary-seats.ts` runs union-find over the `same-person-switched` and `hereditary-different-people` verdicts in `data/candidate-classifications.json`, grouping candidates into family lineages per AC. Six confirmed seats: Chittur (AC 58), Thrikkakara (83), Piravom (85), Pala (93), Puthuppally (98), Kuttanad (106).
+
+Re-run after the audit:
+```bash
+bun run scripts/analysis/build-hereditary-seats.ts
+```
+
+## AC summaries (hand-composed)
+
+`data/ac-summaries.json` contains 140 hand-written 4-6 sentence narrative summaries — one per AC. Used by the `/explore` DemographicsPanel "Summary" tab. **No script regenerates the prose.**
+
+When upstream data refreshes, summaries can drift silently. The intended audit flow:
+
+```bash
+# 1. Regenerate the joined input table (gitignored, in data/temp/)
+bun run scripts/analysis/build-ac-summary-prep.ts
+
+# 2. Read data/temp/ac-summary-prep.json side-by-side against
+#    data/ac-summaries.json, checking per-AC facts:
+#      - 2026 winner + margin
+#      - NDA trajectory (NN>NN>NN)
+#      - Christian/Muslim/Hindu shares + tier labels
+#      - durability + history framing (always-X, since-X, flipped)
+#      - hereditary lineage where applicable
+#      - NDA cohort tags (declining-mature, wave-capture, etc.)
+#      - any superlative or comparative claims ("largest", "narrowest")
+# 3. Update affected summaries manually.
+```
+
+The 14-batch review checklist used to ship v4 is documented in commit `005f106` (the original ac-summaries.json commit) and `2316bba` (final review pass). Word-count budget: 80-120 words per summary.
+
+The summary schema is `{ ac, name, summary }` only — minimal by design so the JSON file size stays small and the prose is the only thing that can drift.

@@ -84,6 +84,8 @@ When components only need to dispatch (not read filter state), they take a typed
 | `religion-bins.ts` | AC sets for the legacy `ReligionMix` bins (muslim-majority, christian-heavy, hindu-heavy etc.) — coarse Census-share buckets. |
 | `religious-pois.ts` | OSM-derived per-AC sub-rite inventory + analysis accessors. Single source of truth for `getDominantChristianSubRite`, `getDominantMuslimSubRite`, `getReligiousSignatureForAC`, `getVoterShareBreakdown`. Locks `COHORT_YEAR=2025`, `COHORT_VOTER_SHARE_THRESHOLD=5%`, `MIN_CLASSIFIED_FOR_COHORT=3`. |
 | `subrite-bins.ts` | Cohort layer over `religious-pois.ts` — `christianSubRiteCohortFor`, `muslimSubRiteCohortFor`, `acsByChristianSubRite`, `acsByMuslimSubRite`, plus `CHRISTIAN_SUBRITE_COHORTS` / `MUSLIM_SUBRITE_COHORTS` metadata arrays for legends + walkthrough sectioning. |
+| `community-relevance.ts` | Loads `data/community-relevance.json`. Exports `communityRelevance` (readonly array of per-AC framework records: driver, durability, stableFor, alliance-roles matrix, NDA trajectory) and `getCommunityRelevance(ac)`. Framework doc: `docs/community-relevance.md`. |
+| `ac-summaries.ts` | Exports `getSummaryForAC(ac)` returning the hand-composed 80-120 word narrative summary used in the `/explore` DemographicsPanel "Summary" tab. Backed by `data/ac-summaries.json` via `loaders.ts`. |
 | `index.ts` | Barrel re-exports. Add new exports here when new symbols are introduced. |
 
 When adding new data:
@@ -273,6 +275,20 @@ scripts/pipeline/classify-osm-pow.ts && bun run scripts/pipeline/aggregate-ac-re
 - `src/pages/religion-map-page.tsx` consumes these for the
   Religious-sub-communities visualisation section.
 - Walkthrough pages + `/explore` consume the cohort layer (Sprint 2+).
+
+## DemographicsPanel (the per-AC card on `/explore`)
+
+`src/components/demographics-panel.tsx` is the demographics card rendered inside `ConstituencySection`. It exposes a 3-tab toggle:
+
+| Tab | Source | Shows |
+| --- | --- | --- |
+| **Composition** | Census 2011 + 2025 CRS-births projection (religion); OSM POI mix × Census (Muslim/Christian sub-rite); Zachariah/KSI 2000 district survey (Hindu top caste, when ≥25% of total) | Hindu/Muslim/Christian/Other with indented sub-row for the dominant sub-group: sub-rite for Muslim/Christian (with "est. voters" %), label-only for Hindu top caste (no %, to avoid mixing AC-level and district-level numbers) |
+| **Caste** | Zachariah/KSI 2000 district survey scaled by district Hindu share | All castes (Nair, Ezhava, Brahmin, Nadar, Viswakarma, SC, ST) at district resolution |
+| **Summary** | `data/ac-summaries.json` (hand-composed prose), conditionally rendered when `scope.kind === "ac"` | 80-120 word narrative summary at `text-xs leading-relaxed` |
+
+The Summary tab is only present for `kind: "ac"` scopes; for district/state scopes it's hidden (no aggregate summary exists). If a user has the Summary tab selected and scope changes, `activeView` falls back to "religion".
+
+The Composition tab is the renamed former "Religion" tab (renamed in commit `d70ab75` when Hindu top-caste sub-rows were added — "Religion" was no longer accurate).
 
 ## See also
 
