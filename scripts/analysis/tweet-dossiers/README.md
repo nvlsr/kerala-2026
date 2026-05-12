@@ -32,6 +32,7 @@ scripts/analysis/tweet-dossiers/
 ├── build-alliance-dossiers.ts         ← Phase 1: 3 alliance dossiers
 ├── build-lookups.ts                   ← Phase 1: flat aggregate TSV + party-alliance JSON
 ├── build-community-dossiers.ts        ← Phase 2: 10 community dossiers
+├── build-district-dossiers.ts         ← Phase 3: 14 district dossiers
 └── lib/
     ├── replay-questions.ts            ← shared: replays /questions cards' filter+sort+top-5
     └── canonical-names.ts             ← shared: cross-cycle name resolution via normalizeName()
