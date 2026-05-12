@@ -33,6 +33,7 @@ Each file follows the same skeleton: TL;DR → sub-findings (with data tables) �
 - All filter state for the dashboard goes through the reducer at `src/lib/filters.ts`.
 - Tests: `bun run test` (vitest). `bun test` does **not** work.
 - Builds: `bun run build`. Pre-push runs full build + tests.
+- **Git workflow**: commit and push directly to `main`. No feature branches, no PRs — single-user project. Skip the default "branch first" step.
 
 ## Data layer conventions
 
