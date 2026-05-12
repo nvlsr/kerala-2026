@@ -20,7 +20,7 @@ const phases: Array<{ name: string; script: string; phase: string }> = [
   { phase: "2", name: "Community dossiers (10)", script: "build-community-dossiers.ts" },
   { phase: "3", name: "District dossiers (14)", script: "build-district-dossiers.ts" },
   { phase: "4", name: "Party dossiers (10)", script: "build-party-dossiers.ts" },
-  // Phase 5 scripts go here as they are built.
+  { phase: "5", name: "Candidate dossiers (curated)", script: "build-candidate-dossiers.ts" },
 ]
 
 for (const p of phases) {

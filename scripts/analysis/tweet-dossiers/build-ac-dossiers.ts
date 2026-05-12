@@ -176,6 +176,7 @@ function renderFrontmatter(ctx: any): string {
   lines.push(`margin_2026_pp: ${ctx.margin2026.toFixed(2)}`)
   lines.push(`nda_share_eci_2026: ${ctx.shareEci2026.NDA.toFixed(2)}`)
   lines.push(`nda_share_major_2026: ${ctx.shareMajor2026.NDA.toFixed(2)}`)
+  lines.push(`nda_gap_to_winner_2026: ${ctx.ndaGapToWinner2026 == null ? "null" : ctx.ndaGapToWinner2026.toFixed(2)}`)
   lines.push(`ldf_share_eci_2026: ${ctx.shareEci2026.LDF.toFixed(2)}`)
   lines.push(`udf_share_eci_2026: ${ctx.shareEci2026.UDF.toFixed(2)}`)
   lines.push("")
@@ -193,6 +194,9 @@ function renderFrontmatter(ctx: any): string {
     if (cr.christian) {
       lines.push(`christian_pct: ${cr.christian.aggregateShare?.toFixed(2)}`)
       lines.push(`christian_coordination: ${cr.christian.coordination ?? ""}`)
+    }
+    if (ctx.acReligion?.religions?.hindu != null) {
+      lines.push(`hindu_pct: ${ctx.acReligion.religions.hindu.toFixed(2)}`)
     }
     if (cr.hindu) {
       lines.push(`hindu_profile: ${cr.hindu.profile ?? ""}`)
@@ -571,6 +575,18 @@ function buildContext(
     party: winner.party,
   }
 
+  // NDA's best-candidate gap to winner — distinct from `margin_2026_pp` which
+  // is (winner − runner-up). When NDA is 3rd or lower, this gap is larger than
+  // the contest margin. Important for "could BJP/NDA have won?" counterfactuals.
+  const sortedCands = [...candidates2026].sort((a, b) => b.votes - a.votes)
+  const ndaBest = sortedCands.find((c) => getAllianceFor(c.party) === "NDA")
+  const ndaGapToWinner2026 =
+    ndaBest === undefined
+      ? null
+      : ndaBest === sortedCands[0]
+        ? 0
+        : ((sortedCands[0].votes - ndaBest.votes) / total) * 100
+
   // ── 2026 candidates with alliance tag ──
   const candidates2026Tagged = candidates2026.map((c) => ({
     ...c,
@@ -672,6 +688,7 @@ function buildContext(
     reservation,
     winner2026,
     margin2026,
+    ndaGapToWinner2026,
     shareEci2026,
     shareMajor2026,
     total2026: total,

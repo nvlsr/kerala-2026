@@ -21,6 +21,7 @@ import { mkdirSync, writeFileSync } from "node:fs"
 import { resolve } from "node:path"
 
 import results2026 from "../../../data/results-2026.json"
+import acReligion from "../../../data/ac-religion.json"
 import history from "../../../data/ac-history.json"
 import names from "../../../data/ac-names.json"
 import districts from "../../../data/districts.json"
@@ -416,6 +417,11 @@ function renderFrontmatter(ctx: any): string {
   lines.push(`top_ac_2026: ${ctx.top2026[0]?.name ?? "—"}`)
   lines.push(`top_ac_2026_share: ${fmtPct(ctx.top2026[0]?.share)}`)
   lines.push("")
+  lines.push(`avg_religion_of_contested_2026:`)
+  lines.push(`  hindu_pct: ${fmtPct(ctx.avgReligion.hindu, 1)}`)
+  lines.push(`  muslim_pct: ${fmtPct(ctx.avgReligion.muslim, 1)}`)
+  lines.push(`  christian_pct: ${fmtPct(ctx.avgReligion.christian, 1)}`)
+  lines.push("")
   lines.push(`multi_cycle_candidate_count: ${ctx.multiCycleCandidates.length}`)
   lines.push("")
   lines.push(`related:`)
@@ -531,6 +537,39 @@ function renderDossier(ctx: any): string {
 
 // ─── per-party orchestration ─────────────────────────────────────────────────
 
+/**
+ * Average religion shares across the 2026 ACs this party contested.
+ * Surfaces "what kind of seats does this party fight?" — useful for
+ * coalition-comparison tweets (e.g. T20 vs BDJS demographic profile).
+ */
+function avgReligionOfContested2026(party: PartyDef): {
+  hindu: number
+  muslim: number
+  christian: number
+  count: number
+} {
+  let hindu = 0,
+    muslim = 0,
+    christian = 0,
+    count = 0
+  for (const [acStr, payload] of Object.entries(results2026 as any)) {
+    const cands = (payload as any).candidates as { party: string }[]
+    if (!cands.some((c) => party.aliases.includes(c.party))) continue
+    const r = (acReligion as any).constituencies[acStr]?.religions
+    if (!r) continue
+    hindu += r.hindu ?? 0
+    muslim += r.muslim ?? 0
+    christian += r.christian ?? 0
+    count++
+  }
+  return {
+    hindu: count === 0 ? 0 : hindu / count,
+    muslim: count === 0 ? 0 : muslim / count,
+    christian: count === 0 ? 0 : christian / count,
+    count,
+  }
+}
+
 function buildContext(party: PartyDef) {
   const stats = {
     2011: cycleStats(party, 2011),
@@ -539,6 +578,7 @@ function buildContext(party: PartyDef) {
     2026: cycleStats(party, 2026),
   }
   const top2026 = topAcsForParty(party)
+  const avgReligion = avgReligionOfContested2026(party)
   const allCandidates = candidatesForParty(party)
   const multiCycleCandidates = allCandidates.filter((c) => c.appearances.length >= 2)
 
@@ -572,6 +612,7 @@ function buildContext(party: PartyDef) {
     ...party,
     stats,
     top2026,
+    avgReligion,
     multiCycleCandidates,
     partyQuestions,
     related,
