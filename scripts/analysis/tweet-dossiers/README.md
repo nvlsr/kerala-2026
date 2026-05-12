@@ -31,6 +31,7 @@ scripts/analysis/tweet-dossiers/
 ├── build-ac-dossiers.ts               ← Phase 1: 140 AC dossiers
 ├── build-alliance-dossiers.ts         ← Phase 1: 3 alliance dossiers
 ├── build-lookups.ts                   ← Phase 1: flat aggregate TSV + party-alliance JSON
+├── build-community-dossiers.ts        ← Phase 2: 10 community dossiers
 └── lib/
     ├── replay-questions.ts            ← shared: replays /questions cards' filter+sort+top-5
     └── canonical-names.ts             ← shared: cross-cycle name resolution via normalizeName()
@@ -41,7 +42,7 @@ scripts/analysis/tweet-dossiers/
 | Phase | Entities | Status |
 | --- | --- | --- |
 | **1** | 140 AC dossiers + 3 alliance dossiers + flat ac-table.tsv | ✅ complete |
-| 2 | ~10 community dossiers (Nair, Ezhava, SC, CSI, Latin Catholic, Syro-Malabar, Malabar-bloc Muslim, Cosmopolitan Muslim, …) | not started |
+| **2** | 10 community dossiers (Nair, Ezhava, SC, ST, Nadar, Brahmin, Syro-Malabar, Latin Catholic, CSI, Muslim) | ✅ complete |
 | 3 | ~10 key party dossiers (BJP, INC, CPI(M), IUML, KEC factions, RSP, …) | not started |
 | 4 | ~20-30 curated candidate dossiers | not started |
 | 5 | 14 district dossiers | not started |
