@@ -15,6 +15,7 @@ const HERE = resolve(__dirname)
 
 const phases: Array<{ name: string; script: string; phase: string }> = [
   { phase: "1", name: "AC dossiers (140)", script: "build-ac-dossiers.ts" },
+  { phase: "1", name: "Alliance dossiers (3)", script: "build-alliance-dossiers.ts" },
   { phase: "1", name: "Flat lookups (ac-table.tsv + party-alliance.json)", script: "build-lookups.ts" },
   // Phase 2-5 scripts go here as they are built.
 ]
