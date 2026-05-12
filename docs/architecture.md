@@ -2,6 +2,25 @@
 
 A short tour of how the app is organized. Read this before adding a new section, overlay, chip, or data field — most of the code conventions are deliberately consistent so changes go in predictably.
 
+## Routes
+
+All routes mounted in `src/App.tsx`. The site doesn't have a top-level nav bar — pages reach each other through inline links and teaser components. Two routes are intentionally unlinked: they exist as URL-addressable views but aren't promoted from the rest of the UI. The breadcrumb in `page-shell.tsx` only goes back to `/`.
+
+| Route | Page component | Reached from | Notes |
+| --- | --- | --- | --- |
+| `/` | `dashboard-page.tsx` | (home) — linked from `components/page-shell.tsx` breadcrumb | Primary entry. Hosts ExploreLink + several teasers. |
+| `/explore` | `explore-page.tsx` | dashboard + walkthroughs index + NDA walkthrough | Candidate table + per-AC detail panel with DemographicsPanel. |
+| `/walkthroughs` | `pages/walkthroughs/index-page.tsx` | walkthroughs teaser + methodology + from-forecast | Hub for the 4 walkthrough arcs. |
+| `/questions` | `questions-page.tsx` | questions-teaser + NDA walkthrough | |
+| `/flows` | `flows-page.tsx` | drifts + religion-map | Religion-analysis cluster — these 4 pages cross-link each other. |
+| `/drifts` | `drifts-page.tsx` | drifts-teaser + flows + belts + religion-map | Religion-analysis cluster. |
+| `/belts` | `belts-page.tsx` | drifts + religion-map | Religion-analysis cluster. |
+| `/religion-map` | `religion-map-page.tsx` | religion-overlay-section + flows | Religion-analysis cluster. |
+| `/community-relevance` | `community-relevance-page.tsx` | **(unlinked — direct URL only)** | Per-AC framework view. Lives separately from walkthroughs because it's a structured table, not a narrative arc. Discoverable via `/community-relevance` directly or via dev/internal sharing. |
+| `/from-forecast` | `from-forecast-page.tsx` | **(unlinked — direct URL only)** | Pre-election forecast vs actual post-mortem. One-time analysis; not promoted from the main flow. |
+
+When adding a new route: mount in `App.tsx`, then decide whether it's a primary view (link from dashboard or a teaser component) or a direct-URL-only artifact (skip the link). Inbound links are how the cluster pages stay discoverable — `/community-relevance` and `/from-forecast` chose not to wire that.
+
 ## Page layout
 
 Top to bottom:
