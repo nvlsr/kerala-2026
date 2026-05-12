@@ -52,3 +52,7 @@ docs/narratives/sub-rite-cohort-analysis.md
 
 __pycache__/
 *.pyc
+
+# Twitter-response working folder — drafts of replies + supporting stats.
+# Not part of the deployed site; promotion content, not source.
+twitter-responses/

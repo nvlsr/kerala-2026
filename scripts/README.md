@@ -27,6 +27,7 @@ Evidence generators cited in [`docs/narratives/`](../docs/narratives/). Each scr
 | Hereditary seats | `build-hereditary-seats.ts` — produces `data/hereditary-seats.json` from union-find over same-person verdicts in the candidate-continuity audit. Six confirmed family-succession seats. |
 | Community-relevance reporting | `render-community-relevance-tables.ts` — pretty-prints the framework output for review. |
 | AC summary prep | `build-ac-summary-prep.ts` — joins `data/community-relevance.json` + `data/hereditary-seats.json` + NDA cohort memberships into `data/temp/ac-summary-prep.json` (gitignored). Input table for hand-composing or auditing `data/ac-summaries.json`. The summaries themselves are prose; this script is the *audit helper*, not a regenerator. |
+| Tweet-response dossiers | [`tweet-dossiers/`](analysis/tweet-dossiers/) — pipeline that builds per-AC markdown dossiers + flat aggregate TSV at `twitter-responses/data/`. Joins every site data source for one consolidated narrative-friendly view per entity. Used by the Twitter-response workflow; gitignored output. Run with `bun run scripts/analysis/tweet-dossiers/build-all.ts`. |
 
 ## Helpers
 
@@ -36,3 +37,5 @@ All scripts that consume `data/results-2026.json` / `data/ac-history.json` / `da
 - [`_lib/save.ts`](_lib/save.ts) — `saveJson(path, obj)` writes **compact** JSON (all committed `data/*.json` is stored without pretty-printing — 30-40% smaller per file; see commit 88d0501).
 
 If you add a new analysis script, prefer these over reading the raw JSON directly. They mirror `src/lib/data/constituencies.ts:hydrateConstituency`; if the source schema changes, update the helper in one place.
+
+**Candidate-name normalisation**: any script that compares candidate names across cycles must use [`_lib/names.ts:normalizeName()`](_lib/names.ts) — never compare raw strings. ECI publishes the same person's name inconsistently (case, periods, honorifics, caste suffixes) and a raw equality check fragments the same candidate across multiple keys. Pair with `data/candidate-aliases.json` for spelling variants the normaliser can't fix (e.g. `Kappan` ↔ `Kappen`). The util also exports `extractCasteSuffix()` and `nameSimilarity()`; the canonical reference implementation is [`audit-candidate-names.ts`](analysis/audit-candidate-names.ts).
