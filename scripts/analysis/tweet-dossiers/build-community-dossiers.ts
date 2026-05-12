@@ -22,6 +22,11 @@ import districtHinduCastes from "../../../data/district-hindu-castes.json"
 import districtReligion from "../../../data/district-religion.json"
 import communityRelevance from "../../../data/community-relevance.json"
 import acReligiousPois from "../../../data/ac-religious-pois.json"
+import results2026 from "../../../data/results-2026.json"
+import history from "../../../data/ac-history.json"
+import alliancesMeta from "../../../data/alliances.json"
+
+const partyToAlliance: Record<string, string> = (alliancesMeta as any).partyToAlliance
 
 const PROJECT_ROOT = resolve(__dirname, "..", "..", "..")
 const OUT_DIR = resolve(PROJECT_ROOT, "twitter-responses", "data", "communities")
@@ -185,6 +190,68 @@ function roleStringMatches(text: string | null | undefined, keywords: string[]):
   return keywords.some((kw) => lower.includes(kw.toLowerCase()))
 }
 
+// ─── alliance-share aggregation across a community-driven AC set ─────────────
+
+type AllianceShares = { NDA: number; LDF: number; UDF: number; totalPolled: number }
+
+/**
+ * Sum alliance votes across the given AC set for a cycle, then express each
+ * alliance as % of total polled in those ACs. Used to render the "alliance
+ * trajectory in [community]-driven ACs" table — the recurring gap surfaced
+ * by tweet #003 (Ezhava-heavy vs Nair-heavy NDA share over cycles).
+ */
+function allianceSharesInAcs(
+  acs: number[],
+  cycle: 2011 | 2016 | 2021 | 2026
+): AllianceShares {
+  let totalPolled = 0,
+    ndaVotes = 0,
+    ldfVotes = 0,
+    udfVotes = 0
+
+  for (const ac of acs) {
+    const acStr = String(ac)
+    if (cycle === 2026) {
+      const r = (results2026 as any)[acStr]
+      if (!r) continue
+      for (const c of r.candidates as { party: string; votes: number }[]) {
+        totalPolled += c.votes
+        const al = partyToAlliance[c.party] ?? "OTHER"
+        if (al === "NDA") ndaVotes += c.votes
+        if (al === "LDF") ldfVotes += c.votes
+        if (al === "UDF") udfVotes += c.votes
+      }
+    } else {
+      const ev = (history as any)[acStr]?.elections.find(
+        (e: any) => e.year === cycle && e.type === "general"
+      )
+      if (!ev) continue
+      for (const c of ev.candidates as { alliance: string; votes: number }[]) {
+        totalPolled += c.votes
+        if (c.alliance === "NDA") ndaVotes += c.votes
+        if (c.alliance === "LDF") ldfVotes += c.votes
+        if (c.alliance === "UDF") udfVotes += c.votes
+      }
+    }
+  }
+
+  return {
+    totalPolled,
+    NDA: totalPolled > 0 ? (ndaVotes / totalPolled) * 100 : 0,
+    LDF: totalPolled > 0 ? (ldfVotes / totalPolled) * 100 : 0,
+    UDF: totalPolled > 0 ? (udfVotes / totalPolled) * 100 : 0,
+  }
+}
+
+function trajectoryAcrossCycles(acs: number[]): Record<2011 | 2016 | 2021 | 2026, AllianceShares> {
+  return {
+    2011: allianceSharesInAcs(acs, 2011),
+    2016: allianceSharesInAcs(acs, 2016),
+    2021: allianceSharesInAcs(acs, 2021),
+    2026: allianceSharesInAcs(acs, 2026),
+  }
+}
+
 // ─── per-community context ───────────────────────────────────────────────────
 
 function buildHinduContext(comm: CommunityDef) {
@@ -220,10 +287,13 @@ function buildHinduContext(comm: CommunityDef) {
     }))
     .sort((a, b) => (b.shareOfHindu ?? 0) - (a.shareOfHindu ?? 0))
 
+  const trajectory = trajectoryAcrossCycles(drivenACs.map((r) => r.ac))
+
   return {
     districtRows,
     stateAgg,
     drivenACs,
+    trajectory,
   }
 }
 
@@ -281,12 +351,15 @@ function buildChristianContext(comm: CommunityDef) {
     (p: any) => p.dominantChristian === key
   ).length
 
+  const trajectory = trajectoryAcrossCycles(directedACs.map((r) => r.ac))
+
   return {
     directedACs,
     directionCounts,
     poiACs,
     totalPois,
     dominantInAcCount,
+    trajectory,
   }
 }
 
@@ -372,7 +445,14 @@ function buildMuslimContext() {
   poiACs.sort((a, b) => b.muslim - a.muslim)
   const totalMuslimPois = poiACs.reduce((s, r) => s + r.muslim, 0)
 
-  return { bySubType, poiACs, totalMuslimPois }
+  // Per-sub-type alliance trajectory across cycles — most useful Muslim view
+  const trajectoryBySubType: Record<string, Record<number, AllianceShares>> = {}
+  for (const [subType, list] of Object.entries(bySubType)) {
+    if (list.length === 0) continue
+    trajectoryBySubType[subType] = trajectoryAcrossCycles(list.map((r) => r.ac))
+  }
+
+  return { bySubType, poiACs, totalMuslimPois, trajectoryBySubType }
 }
 
 function buildAllianceRoleCounts(comm: CommunityDef) {
@@ -615,6 +695,70 @@ function renderMuslimPOIs(ctx: any): string {
   return out.join("\n")
 }
 
+function renderTrajectoryTable(
+  title: string,
+  trajectory: Record<number, AllianceShares>,
+  acCount: number,
+  description: string
+): string {
+  const out: string[] = []
+  out.push(`\n## ${title}\n`)
+  out.push(`${description}\n`)
+  out.push(`| Year | NDA % | LDF % | UDF % | Total polled in ${acCount} ACs |`)
+  out.push(`| --- | --- | --- | --- | --- |`)
+  for (const yr of [2011, 2016, 2021, 2026] as const) {
+    const s = trajectory[yr]
+    if (!s || s.totalPolled === 0) {
+      out.push(`| ${yr} | — | — | — | — |`)
+      continue
+    }
+    out.push(
+      `| ${yr} | ${fmtPct(s.NDA)}% | ${fmtPct(s.LDF)}% | ${fmtPct(s.UDF)}% | ${s.totalPolled.toLocaleString()} |`
+    )
+  }
+  return out.join("\n")
+}
+
+function renderCommunityTrajectory(ctx: any): string {
+  if (ctx.kind === "hindu-caste") {
+    if (!ctx.trajectory || ctx.drivenACs.length === 0) return ""
+    return renderTrajectoryTable(
+      `Alliance share in ${ctx.name}-driven ACs (4 cycles)`,
+      ctx.trajectory,
+      ctx.drivenACs.length,
+      `Aggregate NDA/LDF/UDF share across the ${ctx.drivenACs.length} ACs where ${ctx.name} is the structural Hindu-profile driver (\`hindu.profile === "${ctx.caste_field}-heavy"\`). ECI-format denominator.`
+    )
+  }
+  if (ctx.kind === "christian-subrite") {
+    if (!ctx.trajectory || ctx.directedACs.length === 0) return ""
+    return renderTrajectoryTable(
+      `Alliance share in ${ctx.name}-tagged ACs (4 cycles)`,
+      ctx.trajectory,
+      ctx.directedACs.length,
+      `Aggregate NDA/LDF/UDF share across the ${ctx.directedACs.length} ACs where ${ctx.name} has a direction tag in \`community-relevance.json:christian.subRites\`. ECI-format denominator.`
+    )
+  }
+  if (ctx.kind === "muslim") {
+    if (!ctx.trajectoryBySubType) return ""
+    const out: string[] = []
+    for (const st of MUSLIM_SUBTYPES) {
+      const tr = ctx.trajectoryBySubType[st.key]
+      const list = ctx.bySubType[st.key] ?? []
+      if (!tr || list.length === 0) continue
+      out.push(
+        renderTrajectoryTable(
+          `Alliance share in ${st.label} ACs (4 cycles)`,
+          tr,
+          list.length,
+          `Aggregate NDA/LDF/UDF share across the ${list.length} ${st.key} sub-type ACs. ECI-format denominator.`
+        )
+      )
+    }
+    return out.join("\n")
+  }
+  return ""
+}
+
 function renderAllianceRoles(ctx: any): string {
   const out: string[] = []
   out.push(`\n## Alliance roles (text-match on community-relevance allianceRoles)\n`)
@@ -675,6 +819,7 @@ function renderDossier(ctx: any): string {
     parts.push(renderMuslimPOIs(ctx))
   }
 
+  parts.push(renderCommunityTrajectory(ctx))
   parts.push(renderAllianceRoles(ctx))
   parts.push(renderNarrative(ctx))
   parts.push("")
