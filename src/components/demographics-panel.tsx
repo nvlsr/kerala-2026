@@ -100,9 +100,11 @@ export function DemographicsPanel({ scope }: Props) {
           <p className="text-[10px] font-medium tracking-wider text-muted-foreground/80 uppercase">
             Demographics
           </p>
-          <p className="truncate text-sm font-medium text-foreground">
-            {scopeLabel}
-          </p>
+          {scope.kind !== "ac" && (
+            <p className="truncate text-sm font-medium text-foreground">
+              {scopeLabel}
+            </p>
+          )}
         </div>
         <ToggleGroup
           value={[view]}
@@ -116,7 +118,7 @@ export function DemographicsPanel({ scope }: Props) {
           aria-label="Demographic dimension"
         >
           <ToggleGroupItem value="religion" className="rounded-full text-xs">
-            Religion
+            Composition
           </ToggleGroupItem>
           <ToggleGroupItem value="caste" className="rounded-full text-xs">
             Caste
@@ -132,6 +134,7 @@ export function DemographicsPanel({ scope }: Props) {
         <ReligionTable
           religion={religion}
           acNumber={scope.kind === "ac" ? scope.acNumber : undefined}
+          caste={caste}
         />
       )}
       {activeView === "caste" && <CasteTable caste={caste} />}
@@ -148,8 +151,10 @@ export function DemographicsPanel({ scope }: Props) {
             {scope.kind === "ac" && (
               <>
                 {" "}
-                Sub-rite: OSM place-of-worship POI mix × Census religion
-                share. ≥5% est. voters + ≥3 POIs to display.
+                Muslim/Christian sub-rite: OSM place-of-worship POI mix ×
+                Census religion share. Hindu caste sub-row: Zachariah/KSI
+                2000 district-level survey, top caste shown when ≥25% of
+                total.
               </>
             )}
           </>
@@ -176,9 +181,11 @@ export function DemographicsPanel({ scope }: Props) {
 function ReligionTable({
   religion,
   acNumber,
+  caste,
 }: {
   religion: Record<"hindu" | "muslim" | "christian" | "other", number>
   acNumber?: number
+  caste?: HinduCasteShares
 }) {
   // Sub-rite rows are AC-only — district/state dominant sub-rite
   // doesn't have a clean definition.
@@ -186,29 +193,41 @@ function ReligionTable({
     acNumber != null ? getReligiousSignatureForAC(acNumber) : null
   const christianSub = sig?.christian.dominant ?? null
   const muslimSub = sig?.muslim.dominant ?? null
+
+  // Hindu sub-row: dominant caste from CASTE_ROWS when ≥25% of total
+  // population. District-level data (Zachariah/KSI 2000) scaled to %
+  // of total — flagged with "(district avg)" caveat.
+  const hinduDominant = caste
+    ? CASTE_ROWS.map((r) => ({ row: r, value: caste[r.key] ?? 0 }))
+        .filter((c) => c.value >= 25)
+        .sort((a, b) => b.value - a.value)[0] ?? null
+    : null
+
   return (
     <table className="w-full text-sm tabular-nums">
       <tbody>
         {RELIGION_ROWS.map((r) => {
           const value = religion[r.key]
           const subRow =
-            r.key === "christian" && christianSub
-              ? renderSubRiteRow(
-                  CHRISTIAN_SUBRITE_LABEL.get(
-                    christianSub.code as never
-                  ),
-                  christianSub.voterSharePct,
-                  sig?.christian.confidence === "low"
-                )
-              : r.key === "muslim" && muslimSub
+            r.key === "hindu" && hinduDominant
+              ? renderHinduCasteRow(hinduDominant.row, hinduDominant.value)
+              : r.key === "christian" && christianSub
                 ? renderSubRiteRow(
-                    MUSLIM_SUBRITE_LABEL.get(
-                      muslimSub.code as never
+                    CHRISTIAN_SUBRITE_LABEL.get(
+                      christianSub.code as never
                     ),
-                    muslimSub.voterSharePct,
-                    sig?.muslim.confidence === "low"
+                    christianSub.voterSharePct,
+                    sig?.christian.confidence === "low"
                   )
-                : null
+                : r.key === "muslim" && muslimSub
+                  ? renderSubRiteRow(
+                      MUSLIM_SUBRITE_LABEL.get(
+                        muslimSub.code as never
+                      ),
+                      muslimSub.voterSharePct,
+                      sig?.muslim.confidence === "low"
+                    )
+                  : null
           return (
             <>
               <Row
@@ -260,6 +279,43 @@ function renderSubRiteRow(
           {formatPercent(voterSharePct / 100, 1)}
         </span>{" "}
         <span className="text-muted-foreground/60">est. voters</span>
+      </td>
+    </tr>
+  )
+}
+
+/**
+ * Hindu dominant-caste sub-row. Same indent + styling as the
+ * Muslim/Christian sub-rite rows, but flagged "(district avg)"
+ * because the source is district-level (Zachariah/KSI 2000), not
+ * the AC-level POI mix that drives the other sub-rites.
+ */
+function renderHinduCasteRow(meta: CasteRow, valuePctOfTotal: number) {
+  return (
+    <tr
+      key={`hindu-caste-${meta.label}`}
+      className="border-b border-border/40 last:border-b-0"
+    >
+      <td className="py-1 pr-2 pl-6">
+        <span className="inline-flex items-center gap-2 text-xs">
+          <span className="text-muted-foreground/60">↳</span>
+          <span
+            className="inline-block h-1.5 w-1.5 rounded-full"
+            style={{ backgroundColor: meta.color }}
+            aria-hidden
+          />
+          <span className="text-muted-foreground">
+            {meta.label}{" "}
+            <span className="text-muted-foreground/70">
+              (dominant, district avg)
+            </span>
+          </span>
+        </span>
+      </td>
+      <td className="py-1 text-right text-xs text-muted-foreground">
+        <span className="tabular-nums">
+          {valuePctOfTotal.toFixed(1)}%
+        </span>
       </td>
     </tr>
   )
