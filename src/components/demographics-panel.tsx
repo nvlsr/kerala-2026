@@ -10,6 +10,7 @@ import {
   getDistrict,
   getReligionForAC,
   getReligiousSignatureForAC,
+  getSummaryForAC,
 } from "@/lib/data"
 import {
   CHRISTIAN_SUBRITE_COHORTS,
@@ -55,7 +56,7 @@ const RELIGION_ROWS: ReligionRow[] = [
   { key: "other", label: "Other", color: "#6B7280" },
 ]
 
-type View = "religion" | "caste"
+type View = "religion" | "caste" | "summary"
 
 type Props = {
   /**
@@ -85,6 +86,12 @@ export function DemographicsPanel({ scope }: Props) {
   const [view, setView] = useState<View>("religion")
 
   const { religion, caste, scopeLabel, fallbackNote } = useScopedData(scope)
+  const summary =
+    scope.kind === "ac" ? getSummaryForAC(scope.acNumber) : null
+
+  // If the scope changed and "summary" tab is no longer available,
+  // fall back to "religion" for rendering.
+  const activeView: View = view === "summary" && !summary ? "religion" : view
 
   return (
     <div className="flex flex-col gap-3 rounded-lg border bg-muted/40 p-4">
@@ -114,18 +121,27 @@ export function DemographicsPanel({ scope }: Props) {
           <ToggleGroupItem value="caste" className="rounded-full text-xs">
             Caste
           </ToggleGroupItem>
+          {summary && (
+            <ToggleGroupItem value="summary" className="rounded-full text-xs">
+              Summary
+            </ToggleGroupItem>
+          )}
         </ToggleGroup>
       </header>
-      {view === "religion" ? (
+      {activeView === "religion" && (
         <ReligionTable
           religion={religion}
           acNumber={scope.kind === "ac" ? scope.acNumber : undefined}
         />
-      ) : (
-        <CasteTable caste={caste} />
+      )}
+      {activeView === "caste" && <CasteTable caste={caste} />}
+      {activeView === "summary" && summary && (
+        <p className="text-sm leading-relaxed text-foreground">
+          {summary.summary}
+        </p>
       )}
       <footer className="text-[10px] leading-snug text-muted-foreground/80">
-        {view === "religion" ? (
+        {activeView === "religion" && (
           <>
             Religion: Census 2011 + 2025 cohort projection (CRS births by
             religion). {fallbackNote}
@@ -137,11 +153,19 @@ export function DemographicsPanel({ scope }: Props) {
               </>
             )}
           </>
-        ) : (
+        )}
+        {activeView === "caste" && (
           <>
             Source: Zachariah/KSI 2000 household survey. Caste data is
             district-level only; values shown are % of total population
             (caste-share-of-Hindus × district Hindu share).
+          </>
+        )}
+        {activeView === "summary" && (
+          <>
+            Composed from per-AC structured data: 2026 result, three-cycle
+            history, community-relevance driver + durability, NDA share
+            trajectory, and (where applicable) hereditary lineage.
           </>
         )}
       </footer>

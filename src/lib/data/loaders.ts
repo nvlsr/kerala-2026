@@ -7,6 +7,7 @@
  */
 import acDemographicsJson from "@data/ac-religion.json"
 import acDemographics2025Json from "@data/ac-religion-2025.json"
+import acSummariesJson from "@data/ac-summaries.json"
 import alliancesJson from "@data/alliances.json"
 import candidateAliasesJson from "@data/candidate-aliases.json"
 import casteByDistrictJson from "@data/district-hindu-castes.json"
@@ -216,3 +217,19 @@ export const reservationsMeta = reservationsJson as {
   counts: { SC: number; ST: number; total: number }
   constituencyToReservation: Record<string, ReservationCode>
 }
+
+export type AcSummary = {
+  ac: number
+  name: string
+  summary: string
+}
+
+const acSummariesMeta = acSummariesJson as {
+  version: string
+  method: string
+  summaries: AcSummary[]
+}
+
+export const acSummaries: Record<number, AcSummary> = Object.fromEntries(
+  acSummariesMeta.summaries.map((s) => [s.ac, s])
+)

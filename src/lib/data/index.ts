@@ -18,7 +18,9 @@
  *   - religion-bins.ts — AC sets for ReligionMix bins (2025 projection)
  *   - religious-pois.ts — OSM-derived per-AC sub-rite inventory + accessors
  *   - subrite-bins.ts  — AC cohorts by dominant sub-rite (5% threshold)
+ *   - ac-summaries.ts  — per-AC 4-6 sentence narrative summaries
  */
+export * from "./ac-summaries"
 export * from "./alliances"
 export * from "./aggregates"
 export * from "./candidate-rows"
