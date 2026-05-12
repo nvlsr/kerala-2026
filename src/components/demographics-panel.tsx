@@ -149,9 +149,9 @@ export function DemographicsPanel({ scope }: Props) {
               <>
                 {" "}
                 Muslim/Christian sub-rite: OSM place-of-worship POI mix ×
-                Census religion share. Hindu caste sub-row: Zachariah/KSI
-                2000 district-level survey, top caste shown when ≥25% of
-                total.
+                Census religion share. Hindu dominant-caste row named when
+                the district top caste is electorally significant — see
+                Caste tab for the actual district shares.
               </>
             )}
           </>
@@ -207,7 +207,7 @@ function ReligionTable({
           const value = religion[r.key]
           const subRow =
             r.key === "hindu" && hinduDominant
-              ? renderHinduCasteRow(hinduDominant.row, hinduDominant.value)
+              ? renderHinduCasteRow(hinduDominant.row)
               : r.key === "christian" && christianSub
                 ? renderSubRiteRow(
                     CHRISTIAN_SUBRITE_LABEL.get(
@@ -282,18 +282,19 @@ function renderSubRiteRow(
 }
 
 /**
- * Hindu dominant-caste sub-row. Same indent + styling as the
- * Muslim/Christian sub-rite rows, but flagged "(district avg)"
- * because the source is district-level (Zachariah/KSI 2000), not
- * the AC-level POI mix that drives the other sub-rites.
+ * Hindu dominant-caste sub-row. Label-only — no percentage, to
+ * avoid mixing district-level caste data with the AC-level religion
+ * row above. Readers see "Ezhava (dominant)" and can flip to the
+ * Caste tab for the actual district-level share. The ≥25% threshold
+ * upstream keeps this row to electorally significant castes.
  */
-function renderHinduCasteRow(meta: CasteRow, valuePctOfTotal: number) {
+function renderHinduCasteRow(meta: CasteRow) {
   return (
     <tr
       key={`hindu-caste-${meta.label}`}
       className="border-b border-border/40 last:border-b-0"
     >
-      <td className="py-1 pr-2 pl-6">
+      <td className="py-1 pr-2 pl-6" colSpan={2}>
         <span className="inline-flex items-center gap-2 text-xs">
           <span className="text-muted-foreground/60">↳</span>
           <span
@@ -303,15 +304,8 @@ function renderHinduCasteRow(meta: CasteRow, valuePctOfTotal: number) {
           />
           <span className="text-muted-foreground">
             {meta.label}{" "}
-            <span className="text-muted-foreground/70">
-              (dominant, district avg)
-            </span>
+            <span className="text-muted-foreground/70">(dominant)</span>
           </span>
-        </span>
-      </td>
-      <td className="py-1 text-right text-xs text-muted-foreground">
-        <span className="tabular-nums">
-          {valuePctOfTotal.toFixed(1)}%
         </span>
       </td>
     </tr>
