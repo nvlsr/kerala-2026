@@ -1,0 +1,706 @@
+{
+  "version": "v4-manually-reviewed",
+  "method": "Hand-composed per-AC reading data/community-relevance.json + per-AC NDA cohort tags from src/pages/walkthroughs/nda-data.ts + hereditary lineage from data/hereditary-seats.json + Christian sub-rite tags. Each summary is self-contained — no cross-references to walkthroughs, cohorts, or framework jargon — designed to live in a /explore demographics card. v4: full 14-batch manual review (data + summary side-by-side for all 140 ACs) catching narrative misframings, comparative-claim errors, tier-label slips, history-cycle counts, hereditary-lineage details, and broken self-containedness.",
+  "summaries": [
+    {
+      "ac": 1,
+      "name": "MANJESHWAR",
+      "summary": "Manjeshwar is a Muslim-majority (53%) UDF stronghold — third consecutive UDF cycle, +15.6pp margin in 2026. The Muslim community here is mixed-muslim sub-type (vote splits between IUML/UDF and INL/LDF), but the UDF-aligned segment has held the seat across cycles. What sets it apart from the rest of Muslim-majority Kerala is the unusually high NDA floor: 36-38% across three cycles, sustained by the Tulu/Konkani Hindu base on the Karnataka border. The minority block is mechanical — Muslim share alone is enough to keep LDF out and the Hindu-only NDA path closed. BJP's vote is high but flat, not climbing, so the seat reads UDF-safe for the medium term despite its anomalous BJP floor."
+    },
+    {
+      "ac": 2,
+      "name": "KASARAGOD",
+      "summary": "Kasaragod town is another always-UDF Muslim-majority seat (54%, +13.4pp in 2026), but the interesting story isn't UDF's dominance — it's BJP's slow erosion. NDA went 39% → 35% → 32% across three cycles: a mature base going backwards, the same Mangalore-Hindu border fuel as Manjeshwar but trending the opposite way. The UDF lock comes from the standard minority block (Muslim 54% keeps both LDF and Hindu-only NDA out). With BJP losing ground rather than gaining, the seat is structurally UDF for the medium term and the BJP collapse leaves UDF an even wider margin to defend."
+    },
+    {
+      "ac": 3,
+      "name": "UDMA",
+      "summary": "Udma flipped LDF→UDF in 2026 on a 2.7pp knife-edge after two cycles in LDF hands — Muslim share at 41% finally broke decisively for the UDF this cycle. The forward read is UDF-locked because the district is mixed-fragmented rather than Ezhava-heavy, so there's no large Hindu base for LDF to fall back on. But the mechanism is fragile: a swing-back of the LDF-aligned Muslim segment (INL/NSC) would reverse this in 2031. NDA is irrelevant — flat 12-15% with no climb. The 'durable past flipped recent' shape is the most reversible class of seat."
+    },
+    {
+      "ac": 4,
+      "name": "KANHANGAD",
+      "summary": "Kanhangad is the contested middle — no community is large enough to dominate (Muslim 18%, Christian 12%, Hindu fragmented), and all three alliances have credible paths in. LDF has held it three cycles (+8.7pp in 2026), but the underlying NDA dynamic is striking: in 2026, BJP out-captured UDF in absorbing LDF's loss (NDA +2.6pp vs UDF +2.5pp, LDF −5.0pp). BJP isn't winning here — share is still only 15% — but the alliance is the one picking up LDF defectors at the margin. The seat could break in any direction in 2031."
+    },
+    {
+      "ac": 5,
+      "name": "TRIKARIPUR",
+      "summary": "Trikaripur flipped LDF→UDF in 2026 on a 2.6pp margin, but the more durable fact is BJP's structural absence: NDA has stayed under 8% across 2016, 2021, and 2026, well below the threshold to matter under first-past-the-post. That locks the contest to a two-horse UDF/LDF race. Muslim share at 21% was just enough to tip the seat UDF this cycle, but Hindu-fragmented Kasaragod gives LDF a genuine swing-back path. Expect this seat to oscillate between UDF and LDF cycle-to-cycle for the foreseeable future — there's no structural moat for either side."
+    },
+    {
+      "ac": 6,
+      "name": "PAYYANNUR",
+      "summary": "Payyannur flipped LDF→UDF in 2026 (+4.8pp) — a surprising result in Kannur, the Ezhava-Tiyya (65% of Hindus) heartland that is supposed to be LDF's structural foundation. The flip mechanism was the minority coalition: Christian 18% + Muslim 20% combined to 38%, mechanically blocking any Hindu-only NDA path and assembling enough non-LDF vote to flip. BJP is in retreat (11% → 8% → 5%), the kind of decline that suggests no organic base. UDF can't lock this forward — the Ezhava-LDF base could reassert in 2031 if either UDF coordination breaks or the Muslim vote splits LDF-ward via INL/NSC."
+    },
+    {
+      "ac": 7,
+      "name": "KALLIASSERI",
+      "summary": "Kalliasseri is the Ezhava-LDF stronghold archetype that makes Kannur unusual: 41% Muslim, but UDF can't break in. The Ezhava-Tiyya 65% Hindu base plus LDF's deep organisational network override the usual mixed-muslim → UDF tilt that fires in Kasaragod next door. Always-LDF across three cycles (+11.5pp in 2026), with UDF held off not by demographics alone but by CPI(M) cadre depth. BJP is flat 8% across cycles, structurally absent. This is the seat that justifies treating mixed-muslim Kannur differently from mixed-muslim Kasaragod when reading forward stability."
+    },
+    {
+      "ac": 8,
+      "name": "TALIPARAMBA",
+      "summary": "Taliparamba flipped LDF→UDF in 2026 (+6.5pp) — same Kannur Ezhava-Tiyya district as Kalliasseri (which stayed LDF) but the opposite outcome despite very similar demographics: 37% Muslim here vs 41% in Kalliasseri, both inside the same Ezhava-very-heavy Hindu base. The flip mechanism was the Muslim coordination breaking decisively UDF-ward this cycle, against the district's structural LDF pull. The forward read is contested rather than UDF-locked: the LDF-aligned Muslim segment plus the Ezhava-Tiyya base remains a credible re-flip path. BJP flat 7-9% across cycles, no role. The contrast with neighbouring Kalliasseri shows how thin the structural margin is in mixed-muslim Kannur — a few percentage points of community share decides whether the district pattern holds or breaks."
+    },
+    {
+      "ac": 9,
+      "name": "IRIKKUR",
+      "summary": "Irikkur is the both-Christian-Muslim archetype reaching this far north: Christian 28% (Latin Catholic, UDF-up, single coordination) + Muslim 22% combine to deliver UDF its largest margin in this corner of the state (+28.0pp in 2026, third consecutive UDF cycle). Both communities are large enough to block on their own — Christian 28% keeps both LDF and NDA out independently. BJP has never been a factor here either, with NDA stuck under 8% across three cycles. This is the safest UDF seat in northern Kerala; nothing in 2026 came close to threatening it, and nothing structural is changing for 2031."
+    },
+    {
+      "ac": 10,
+      "name": "AZHIKODE",
+      "summary": "Azhikode produced the narrowest finish in the Kasaragod-Kannur stretch — LDF won by 0.2pp in 2026, after taking the seat from UDF in 2021. Muslim share at 40% keeps the seat in the swing-bloc bucket: Muslim coordination decides which way it goes, and the Ezhava-Tiyya Kannur base gives LDF the edge in the multi-cleavage contest. The forward read is LDF-locked, but the 0.2pp margin makes that read fragile. NDA is climbing slowly (9% → 11% → 12%), still nominally flat but at the higher end for the Kannur cluster. This is the most reversible seat in northern Kerala."
+    },
+    {
+      "ac": 11,
+      "name": "KANNUR",
+      "summary": "Kannur town flipped LDF→UDF in 2026 (+13.2pp) — another flip inside the Ezhava-Tiyya heartland, with Muslim share at 43% large enough to block the NDA path and pull the seat UDF-ward this cycle. The flip is decisive in scale (13pp is comfortable) but the forward read remains contested rather than locked: the Ezhava-LDF foundation could reassert in 2031. BJP flat 9-11%, no role in the contest. Like several other Kannur seats this cycle, the LDF-vs-Muslim balance broke against the district's normal pattern — and unless LDF reorganises, UDF has a credible base to defend from."
+    },
+    {
+      "ac": 12,
+      "name": "DHARMADAM",
+      "summary": "Dharmadam — the seat of the LDF's central political leadership in Kannur for multiple cycles — held with +11.2pp in 2026, third consecutive LDF win. The lock is structural: 65% Ezhava-Tiyya Hindu base in the district plus CPI(M) organisational depth keeps UDF blocked, despite Muslim share at 31% that would tip many comparable seats UDF-ward elsewhere. BJP flat 8-11% across cycles, no presence. This is the cleanest example of LDF's 'organisational moat' archetype: minority demographics that normally favour UDF coexist with a durable LDF win because the Hindu base + cadre is dense enough to override the usual pattern."
+    },
+    {
+      "ac": 13,
+      "name": "THALASSERY",
+      "summary": "Thalassery held LDF +14.2pp in 2026, third consecutive LDF cycle — standard for the Ezhava-Tiyya Kannur cluster, with Muslim share at 37% blocking the NDA path and the LDF base holding off UDF. The wrinkle is BJP's NDA trajectory: 17% → 0% (BJP fielded no candidate in 2021) → 16% in 2026. The 2026 climb registers as wave-capture mathematically, but the underlying story is BJP returning to the ballot rather than organic growth — comparing 2026 to the 2016 baseline, BJP is roughly flat. Worth watching whether that pattern hardens by 2031."
+    },
+    {
+      "ac": 14,
+      "name": "KUTHUPARAMBA",
+      "summary": "Kuthuparamba is one of the narrowest LDF wins in Kerala — +0.8pp in 2026, holding the seat for a third consecutive cycle but barely. The setup is unusual: Christian 6% + Muslim 37% combine to a meaningful minority block, but the seat sits inside Kannur's Ezhava-very-heavy district, so LDF's structural anchor still wins out. BJP's NDA share went 17% → 14% → 14% — modest decline from a real 2016 baseline, in a seat where BJP isn't competitive but isn't absent either. At 0.8pp, the LDF lock here is among the most fragile in the Kannur cluster (only Azhikode at 0.2pp is tighter)."
+    },
+    {
+      "ac": 15,
+      "name": "MATTANNUR",
+      "summary": "Mattannur held LDF +8.3pp in 2026, third consecutive LDF cycle — a textbook Ezhava-Tiyya Kannur seat where the 65% Ezhava base plus CPI(M) organisation locks UDF out despite Muslim share at 31%. There's a small Christian community (10% aggregate, Latin Catholic 7% latent) but not large enough to matter. NDA flat 10-13% across cycles, no inroad. Nothing distinctive in the data — the seat is structurally LDF-locked for the medium term and the 2026 margin (8pp) reads as a comfortable defense rather than a contest. Read this as a baseline for what 'LDF holds via organisation' looks like."
+    },
+    {
+      "ac": 16,
+      "name": "PERAVOOR",
+      "summary": "Peravoor is the UDF island inside Kannur — third consecutive UDF cycle (+9.8pp in 2026) — held by Christian 23% (Latin Catholic UDF-up) plus Muslim 25%, the both-Christian-Muslim combination that breaks the district's normal LDF tilt. Christian share at 23% is large enough to block LDF on its own. BJP is structurally absent: NDA stuck under 8% across three cycles, well below the threshold to matter. The forward read is UDF-locked. This is the second UDF lock in the Kannur cluster (alongside Irikkur) where Christian + Muslim communities pool enough to override the Ezhava-LDF base."
+    },
+    {
+      "ac": 17,
+      "name": "MANANTHAVADY",
+      "summary": "Mananthavady flipped LDF→UDF in 2026 (+6.4pp) — the Wayanad hill seat where Christian 23% (Syro-Malabar the dominant sub-rite at 16%, UDF-up) combined with Muslim 33% to tip the seat. The Wayanad-specific Muslim sub-type is more Sunni-organised than the rest of the state, with dynamics distinct from northern mixed-muslim. The forward read is UDF-locked because Christian 23% blocks LDF independently. BJP flat 9-12% across cycles, no presence. The Hindu profile (35% SC) is unusual for Kerala and adds a third axis that's hard to read in detail — but the minority coalition is large enough that this hasn't mattered for 2026."
+    },
+    {
+      "ac": 18,
+      "name": "SULTHANBATHERY",
+      "summary": "Sulthanbathery is always-UDF Wayanad (+9.4pp in 2026), held by Christian 24% (Syro-Malabar and Indian Orthodox both UDF-up) blocking both LDF and NDA. The interesting wrinkle is BJP's wave-capture pattern: NDA went 16% → 9% → 18% across three cycles — not a high level but the alliance picked up more of LDF's 2026 retreat than UDF did, against the statewide trend. BJP isn't a contender here (UDF margin is too wide) but the cycle-on-cycle build is worth watching in a seat where Christian Wayanad usually shuts NDA out cleanly. The forward read remains UDF-locked."
+    },
+    {
+      "ac": 19,
+      "name": "KALPETTA",
+      "summary": "Kalpetta is UDF since 2021 (+26.0pp in 2026, having flipped from LDF in 2021 and held it big this cycle) — Muslim share at 45% is large enough to block both LDF and the NDA path independently. The Wayanad Muslim sub-type (Sunni-organised, not IUML-bloc-style like Malappuram) means the mechanism is slightly different but the outcome is the same: UDF lock. BJP flat 9-11% across cycles, no presence. The 26pp margin makes this one of the most decisive UDF holds in north-central Kerala. Structurally UDF-locked; nothing in the data suggests pressure for 2031."
+    },
+    {
+      "ac": 20,
+      "name": "VADAKARA",
+      "summary": "Vadakara has held UDF since 2021 (flipped from LDF that cycle, retained by +10.4pp in 2026), with Muslim share at 37% blocking the NDA path. The forward read is contested rather than locked because the district is 52% Ezhava-Tiyya — LDF retains a credible structural path if minority coordination breaks. BJP flat 7-11% across cycles, no role. The 10pp margin gives UDF room but the underlying community pattern is the same as several other Kozhikode-belt seats: mixed-muslim Kannur-style demographics with LDF's organisational fallback. Reversible in 2031 if the Ezhava-LDF base reasserts."
+    },
+    {
+      "ac": 21,
+      "name": "KUTTIADI",
+      "summary": "Kuttiadi flipped to UDF in 2026 (+6.1pp), recovering from a 2021 LDF win — Muslim share at 39% was just enough to tip the seat in a Kozhikode district where the 52% Ezhava-Tiyya base normally tilts LDF. The forward read is contested, not UDF-locked, because of that Hindu base. BJP is structurally absent: NDA has stayed under 8% across three cycles, well below the threshold to matter. The seat is locked to a two-horse UDF/LDF contest at the margin, with the Muslim/Ezhava balance deciding each cycle. Reversible in 2031."
+    },
+    {
+      "ac": 22,
+      "name": "NADAPURAM",
+      "summary": "Nadapuram flipped LDF→UDF in 2026 (+12.5pp) — a comfortable margin in a Kozhikode seat where Muslim share at 44% finally tipped against the LDF base in the Ezhava-very-heavy district. Christian and BJP both irrelevant: Christian 2%, NDA flat 6-9% across cycles. The 12pp margin is large enough that the flip isn't fragile, but the structural read remains contested rather than locked because the Ezhava-Tiyya foundation could reassert. The Muslim community here votes through both IUML (UDF) and INL/NSC (LDF) in proportions that determine the outcome — and 2026 broke decisively UDF-ward."
+    },
+    {
+      "ac": 23,
+      "name": "QUILANDY",
+      "summary": "Quilandy flipped LDF→UDF in 2026 (+7.0pp) — same mixed-muslim Kozhikode pattern as the cluster around it, with Muslim share at 41% breaking decisively against the district's Ezhava-LDF base. BJP irrelevant: NDA flat 11-14% across cycles, no climb. Christian under 3%. The forward read is contested rather than UDF-locked because the Ezhava-Tiyya foundation in Kozhikode remains intact — if the Muslim community splits more evenly across IUML and INL in 2031, LDF can win this back. A standard mixed-muslim Kozhikode flip with no distinctive feature beyond the cycle's broader anti-LDF wave."
+    },
+    {
+      "ac": 24,
+      "name": "PERAMBRA",
+      "summary": "Perambra flipped LDF→UDF in 2026 (+3.0pp) — a narrow win in a mixed-muslim Kozhikode seat where Muslim share at 41% tipped just enough to break the district's normal LDF pattern. BJP is structurally absent: NDA has stayed under 8% across three cycles, well below the threshold to matter. The contest is locked to a two-horse UDF/LDF race, and at 3pp the flip is fragile — the LDF Hindu base plus an LDF-aligned Muslim segment could reverse this in 2031. The forward read is contested, not UDF-locked. Watch for incumbent effects."
+    },
+    {
+      "ac": 25,
+      "name": "BALUSSERI",
+      "summary": "Balusseri flipped LDF→UDF in 2026 (+8.9pp) — Muslim share at 36% combined with the broader anti-LDF wave to break the district's Ezhava-LDF base. BJP flat 9-11% across cycles, no inroad. Christian 4%. The forward read is contested rather than UDF-locked because the Ezhava-Tiyya foundation gives LDF a credible path back. The 9pp margin gives UDF comfortable room to defend, but if the LDF-aligned Muslim segment regrows or the Hindu base re-coordinates with LDF cadre, 2031 could see this revert. A typical Kozhikode mixed-muslim flip without distinctive features."
+    },
+    {
+      "ac": 26,
+      "name": "ELATHUR",
+      "summary": "Elathur flipped LDF→UDF in 2026 (+6.8pp), Muslim share at 41% the proximate cause. The distinctive feature is NDA's level rather than its trajectory: BJP sits at 18-19% across three cycles — high enough to extract Hindu vote from both UDF and LDF without ever threatening the seat, but flat enough that the alliance isn't building further. The forward read is contested, not UDF-locked, because the Kozhikode Ezhava-LDF foundation remains intact. The Muslim/Hindu split-vote dynamic here is more complex than in the lower-NDA Kozhikode seats because BJP's 19% is a real third-place wedge."
+    },
+    {
+      "ac": 27,
+      "name": "KOZHIKODE NORTH",
+      "summary": "Kozhikode North flipped LDF→UDF in 2026 by 1.0pp — the closest finish in the Kozhikode urban cluster, with Muslim share at 41% just barely tipping the seat against the district's Ezhava-LDF base. The real story is BJP: NDA went 23% → 22% → 28% across three cycles — a third-place share large enough that BJP shifts the Hindu vote distribution between UDF and LDF, even though they can't win. In 2026, BJP picked up more of LDF's losses than UDF did. At 1.0pp margin with NDA climbing, this is among the most volatile seats in the Kozhikode belt for 2031."
+    },
+    {
+      "ac": 28,
+      "name": "KOZHIKODE SOUTH",
+      "summary": "Kozhikode South flipped LDF→UDF in 2026 (+8.4pp) — Muslim share at 41% the formal driver, but BJP's climb is the more substantive movement: NDA went 17% → 21% → 25% across three cycles, a steady build inside an urban Muslim-heavy seat where BJP shouldn't be growing. The forward read is contested rather than UDF-locked. The 8pp UDF margin in 2026 obscures the underlying three-way fragmentation: Muslim vote plus Ezhava-LDF plus a real (and growing) Hindu BJP segment that's pulling votes from both alliances. This is a seat where the second-place dynamic could matter by 2031."
+    },
+    {
+      "ac": 29,
+      "name": "BEYPORE",
+      "summary": "Beypore is the only LDF win in mid-Kozhikode (+4.0pp in 2026, third consecutive LDF cycle) — Muslim share at 41% combined with the Ezhava-very-heavy Kozhikode base to lock LDF in. BJP's NDA share went 18% → 16% → 14%: a real third-place vote that's declining cycle on cycle, not because the seat is hostile but because the BJP base isn't growing. The forward read is LDF-locked, the cleanest exception in the Kozhikode cluster where the surrounding seats all flipped UDF in 2026. CPI(M) organisational depth plus the Muslim INL/NSC segment is the mechanism."
+    },
+    {
+      "ac": 30,
+      "name": "KUNNAMANGALAM",
+      "summary": "Kunnamangalam flipped LDF→UDF in 2026 (+6.4pp), Muslim share at 45% the driver. BJP runs at 14-18% — a meaningful third-place share that pulls Hindu vote in a complex pattern, never threatening the seat directly. Christian under 3%. The forward read is contested rather than UDF-locked because the Kozhikode Ezhava-Tiyya base provides LDF a credible structural path. At 6pp the margin is comfortable but not safe. The Muslim community here votes through both UDF (IUML) and LDF (INL/NSC) in proportions that decide the outcome cycle-to-cycle, and 2026 broke UDF-ward."
+    },
+    {
+      "ac": 31,
+      "name": "KODUVALLY",
+      "summary": "Koduvally has held UDF since 2021 (+22.1pp in 2026) — Muslim share at 41% locks both NDA and the alternative LDF path out, and the 22pp margin is comfortable. The seat reads stable for UDF on demographics alone in the medium term, though it doesn't lock cleanly because the Kozhikode Ezhava-LDF base could theoretically reassert. BJP flat 6-8% across cycles, no role. There's nothing distinctive in the data — the Muslim share is large enough to dominate while still mixed enough to mean LDF has theoretical paths back. Worth treating as a comfortable UDF defense."
+    },
+    {
+      "ac": 32,
+      "name": "THIRUVAMBADI",
+      "summary": "Thiruvambadi flipped LDF→UDF in 2026 by 4.3pp — Muslim share at 54% the mechanical driver, with the Kozhikode Ezhava-LDF base providing the LDF a credible path back in 2031. BJP is structurally absent: NDA has stayed under 8% across three cycles, well below the threshold to matter. The contest is locked to a two-horse UDF/LDF race. At 4pp, the margin is uncomfortable for a UDF that just took the seat — the LDF-aligned Muslim segment plus the Hindu base remains a real reversal threat. Volatile for 2031 even with the Muslim majority."
+    },
+    {
+      "ac": 33,
+      "name": "KONDOTTY",
+      "summary": "Kondotty is the pure IUML-stronghold archetype: 72% Muslim, voting near-unanimously through the Muslim League, delivering UDF its third consecutive win here at a +29.2pp margin in 2026. The lock is mechanical — Muslim share alone blocks both LDF and any Hindu-aligned path. BJP has never been a factor; NDA stays at 7-8% across three cycles, far below the threshold to win in a first-past-the-post race. There's nothing to mine from candidate selection or margin shifts — the seat is demographically pre-determined for UDF. Worth treating as a baseline of what 'Muslim-decides' looks like when nothing else is moving."
+    },
+    {
+      "ac": 34,
+      "name": "ERNAD",
+      "summary": "Ernad is an even purer IUML stronghold than Kondotty next door — 77% Muslim, +24.5pp UDF margin in 2026, third consecutive UDF cycle. The Muslim community votes near-unanimously through IUML, and the demographics alone shut both LDF and any NDA path out. BJP has stayed under 8% across three cycles, structurally absent in a seat where the alliance simply has no constituency. The 24pp margin in 2026 is comfortably below the Malappuram cluster's peak (Malappuram itself at +43pp) but enormous in absolute terms. Nothing meaningful to read beyond the demographic lock; the seat is UDF for the long term."
+    },
+    {
+      "ac": 35,
+      "name": "NILAMBUR",
+      "summary": "Nilambur is one of the rare Malappuram flips — LDF held it through 2016 and 2021 (the seat had been LDF's foothold in the IUML belt), but in 2026 UDF took it by a decisive +28.9pp. The 61% Muslim share is at the lower end of the Malappuram cluster (most IUML-belt seats are 70-85%, with Nilambur, Wandoor, Thavanur, and Ponnani all in the 60-67% range), which is what historically gave LDF a path through Hindu-base coordination. The 2026 reversal closes that path. BJP structurally absent under 8% across cycles. The forward read is UDF-locked: with a 28pp margin and the Muslim coordination broken away from LDF, this is now a standard Malappuram IUML seat going forward."
+    },
+    {
+      "ac": 36,
+      "name": "WANDOOR",
+      "summary": "Wandoor is always-UDF Malappuram (+23.6pp in 2026, third consecutive UDF cycle) — Muslim 62%, the standard IUML lock. The slightly distinctive feature is 8% Syro-Malabar Christian — small but present, voting UDF-up alongside the Muslim block. BJP is in retreat from a low base: NDA went 6% → 4% → 3% across three cycles, halving its share in a seat where it was already structurally absent. With both Muslim demography and the BJP collapse pointing the same way, this is one of the safest UDF seats in the state. Nothing to watch for 2031."
+    },
+    {
+      "ac": 37,
+      "name": "MANJERI",
+      "summary": "Manjeri delivered +30.5pp for UDF in 2026, third consecutive UDF cycle and among the largest margins anywhere in the IUML belt. 75% Muslim, voting near-unanimously through IUML, and BJP flat 7-8% across three cycles. The demographics make this seat one of the most predictable in Kerala: nothing in the candidate, margin, or community data suggests any pressure for 2031. The Hindu base (Ezhava-leaning, 38% Ezhava) is too small to matter against the Muslim bloc. Reads as a baseline Malappuram seat — the IUML/UDF lock holds via demography alone with no organisational or sub-rite complexity."
+    },
+    {
+      "ac": 38,
+      "name": "PERINTHALMANNA",
+      "summary": "Perinthalmanna had one of the narrower 2026 margins among the always-UDF Malappuram seats (+17.4pp) — still comfortable in absolute terms, but small relative to the cluster (most always-UDF Malappuram seats land in the +24-43 range). The 71% Muslim base delivers the standard IUML lock, with BJP at 4-5% across cycles below any threshold to matter. NDA structurally excluded under 8% across three cycles. There's no distinctive pattern in the data — the smaller margin doesn't reflect any structural vulnerability, just whatever local-candidate dynamics played out in 2026. UDF-locked for 2031."
+    },
+    {
+      "ac": 39,
+      "name": "MANKADA",
+      "summary": "Mankada held UDF +24.3pp in 2026, third consecutive UDF cycle — 75% Muslim, the IUML lock, BJP flat 4-5% across three cycles and structurally excluded. Nothing distinctive in the data. Like most always-UDF Malappuram seats, Mankada is demographically pre-determined for UDF and reads as a baseline rather than a contest. The candidate matters for incumbency reasons but not for the alliance outcome. Read this as a Malappuram seat operating exactly as the IUML-stronghold model predicts; the only data layer that varies cycle-to-cycle is the precise margin within the +20-30pp band."
+    },
+    {
+      "ac": 40,
+      "name": "MALAPPURAM",
+      "summary": "Malappuram (the namesake seat of the district) delivered +43.3pp for UDF in 2026, the largest margin anywhere in Kerala — 75% Muslim, IUML-locked, BJP at 4-5% across cycles and structurally absent. The 43pp margin is so large it has no analytic meaning beyond the demographic ceiling: when you remove Muslim bloc-voting from the contest, what's left isn't a competitive race. The seat reads as the IUML belt's most decisive lock. There's no useful insight to extract on candidate effects, NDA trajectory, or 2031 risk; all three are below the threshold to matter."
+    },
+    {
+      "ac": 41,
+      "name": "VENGARA",
+      "summary": "Vengara has the highest Muslim share in Kerala (85%) but the 2026 UDF margin was a relatively modest +17.8pp — smaller than several lower-share Malappuram seats. The IUML lock is absolute: BJP structurally excluded under 8% across cycles, LDF also marginal. The narrow-by-Malappuram-standards margin likely reflects local candidate dynamics rather than any structural pressure. Demographically pre-determined for UDF; the data offers nothing to mine on the alliance outcome. This is one of the seats where the share-margin disconnect is most striking — 85% Muslim should imply +30pp, but local factors matter once you're inside the IUML belt."
+    },
+    {
+      "ac": 42,
+      "name": "VALLIKUNNU",
+      "summary": "Vallikunnu held UDF +28.3pp in 2026, third consecutive UDF cycle — but the BJP story here is unusual for Malappuram: NDA went 17% → 13% → 13%, a real third-place vote that's declining from a meaningfully higher 2016 baseline. Most Malappuram seats have BJP under 8% as a flat structural exclusion; Vallikunnu had a real 17% Hindu BJP base in 2016 and is losing it. Muslim 69% delivers the standard IUML lock, so the seat isn't competitive — but the BJP collapse is an unusual signal worth filing. Otherwise UDF-locked on demography."
+    },
+    {
+      "ac": 43,
+      "name": "TIRURANGADI",
+      "summary": "Tirurangadi held UDF +36.0pp in 2026, third consecutive UDF cycle — 82% Muslim, IUML-locked, BJP structurally excluded under 8% across cycles. The 36pp margin is among the largest in the IUML belt. There's nothing in the data to mine: the demographics shut all other paths and the BJP base is too small to matter. Read as a baseline Malappuram seat operating exactly as the IUML model predicts. The Muslim community here is 82%+ across three cycles, with no internal cleavage or coordination issue that would create a contest. UDF for the long term."
+    },
+    {
+      "ac": 44,
+      "name": "TANUR",
+      "summary": "Tanur is a rare Malappuram flip — held by LDF in 2016 and 2021 but UDF reclaimed it in 2026 by +15.7pp. The 82% Muslim share would normally read as IUML-locked, but LDF had been holding it through a sub-segment of LDF-aligned Muslim community (INL/NSC). The 2026 result closes that path. BJP flat 7-8% across cycles, structurally absent. The forward read is UDF-locked because the Muslim coordination broke decisively. One of the few Malappuram seats where the LDF-LDF-UDF history matters — most others are UDF-UDF-UDF — but going forward it now matches the cluster pattern."
+    },
+    {
+      "ac": 45,
+      "name": "TIRUR",
+      "summary": "Tirur held UDF +12.2pp in 2026 — modest margin by Malappuram standards but comfortable. 78% Muslim, IUML-locked, BJP structurally excluded under 8% across cycles. The smaller-than-typical margin doesn't reflect any structural vulnerability; the seat is demographically pre-determined for UDF and the variation is just local candidate dynamics. Reads as a standard Malappuram IUML seat with no distinctive feature in the data. The Muslim community here votes near-unanimously through IUML; nothing in the trajectory or candidate selection suggests pressure for 2031."
+    },
+    {
+      "ac": 46,
+      "name": "KOTTAKKAL",
+      "summary": "Kottakkal held UDF +32.8pp in 2026, third consecutive UDF cycle — 75% Muslim, IUML-locked, with BJP in retreat (NDA went 9% → 7% → 6%) from an already-low base. The 33pp margin places this in the Malappuram cluster's high-margin tier. Demographically pre-determined for UDF; nothing in the data to mine. Like most always-UDF Malappuram seats, the seat reads as a baseline rather than a contest. The cycle-on-cycle BJP decline here is one of several Malappuram seats where NDA share is slowly eroding from low baselines (most other Malappuram seats are flat rather than declining). UDF for the long term."
+    },
+    {
+      "ac": 47,
+      "name": "THAVANUR",
+      "summary": "Thavanur flipped LDF→UDF in 2026 (+8.9pp) — one of the rare Malappuram seats LDF had been holding through 2016 and 2021. The 67% Muslim share is at the lower end for the IUML belt (Nilambur, Wandoor, and Ponnani run lower) and was where LDF maintained its foothold via the INL/NSC-aligned Muslim segment plus Hindu base coordination. The 2026 reversal indicates that segment broke UDF-ward this cycle. BJP flat 7-11% across cycles, no role. The 9pp margin is comfortable but smaller than the typical Malappuram UDF win — reflecting the Muslim/LDF balance being closer here than in higher-share IUML seats."
+    },
+    {
+      "ac": 48,
+      "name": "PONNANI",
+      "summary": "Ponnani flipped LDF→UDF in 2026 (+8.2pp) — like neighboring Thavanur, this was an LDF foothold inside the IUML belt that broke UDF-ward this cycle. Muslim share at 67% is at the lower end for Malappuram, which is what gave LDF a path through coordinated Muslim sub-segment plus Hindu base. BJP flat 5-8% across cycles, structurally absent. The 8pp margin is comfortable but small by Malappuram standards. The forward read is UDF-locked now that the LDF coordination broke; the seat joins the standard Malappuram pattern going into 2031."
+    },
+    {
+      "ac": 49,
+      "name": "THRITHALA",
+      "summary": "Thrithala flipped LDF→UDF in 2026 (+5.2pp) — a Palakkad seat where Muslim share at 47% was just enough to break against the district's mixed Hindu base. The forward read is UDF-locked because the Palakkad Hindu profile (mixed-ezhava-leaning) doesn't give LDF the same Ezhava-Tiyya structural anchor that Kannur or Kozhikode does. BJP flat 8-10% across cycles, no presence. The 5pp margin is uncomfortable for a fresh flip but the demographic foundation should hold. This is the cleanest 'Muslim-share-tips-it-decisively' archetype in Palakkad."
+    },
+    {
+      "ac": 50,
+      "name": "PATTAMBI",
+      "summary": "Pattambi is the unusual Palakkad case — Muslim share at 51% but always-LDF (+5.6pp in 2026, third consecutive LDF cycle). The mechanism is the LDF-aligned Muslim segment (INL/NSC) plus the district's mixed-ezhava-leaning Hindu base, which together hold off UDF despite the IUML pull. The forward read is LDF-locked, which is striking for a Muslim-majority seat. BJP flat 9-11% across cycles, no inroad. This is one of very few Muslim-majority seats in Kerala that LDF can defend on structural grounds — and the 5pp margin gives LDF enough room but the structural advantage is thin."
+    },
+    {
+      "ac": 51,
+      "name": "SHORNUR",
+      "summary": "Shornur held LDF +10.3pp in 2026, third consecutive LDF cycle — Muslim 38%, mixed-ezhava-leaning district, the LDF coalition combining Muslim (INL/NSC segment) plus Hindu base. The interesting feature is BJP's NDA share: 20% → 24% → 21% across three cycles, a real third-place vote that holds steady at the 20% level without ever threatening to win. BJP had been climbing through 2021 but eroded slightly in 2026, the mature-base-losing-ground pattern. The forward read is LDF-locked, but the BJP 21% wedge is structurally a constant factor in how UDF and LDF split the remaining 80%."
+    },
+    {
+      "ac": 52,
+      "name": "OTTAPPALAM",
+      "summary": "Ottappalam held LDF +15.7pp in 2026, third consecutive LDF cycle — Muslim share at 44%, LDF-aligned segment plus the district's Hindu base, standard mechanism. The distinctive feature is NDA's climb: 18% → 16% → 25% across three cycles, a meaningful third-place build that picked up more of LDF's 2026 retreat than UDF did. BJP isn't competitive but is the alliance gaining ground here, against the statewide trend. The forward read is LDF-locked at the seat level but the second-place layer is in flux. Worth watching for 2031 whether BJP keeps climbing or plateaus."
+    },
+    {
+      "ac": 53,
+      "name": "KONGAD",
+      "summary": "Kongad flipped LDF→UDF in 2026 (+2.5pp) — a SC-reserved Palakkad seat where Muslim share at 29% combined with the broader anti-LDF wave to break the seat against the district's mixed Hindu base. BJP runs at 17-20% across cycles, a meaningful third-place vote that complicates the Hindu vote split and never quite threatens to win. At 2.5pp the margin is fragile, and the seat could swing back to LDF in 2031 if either Muslim coordination shifts or BJP's third-place vote redistributes. Treat as recently locked rather than structurally secure."
+    },
+    {
+      "ac": 54,
+      "name": "MANNARKKAD",
+      "summary": "Mannarkkad held UDF +15.3pp in 2026, third consecutive UDF cycle — 49% Muslim, the standard IUML/UDF lock for a mixed-muslim seat at this share. The distinctive feature is BJP's pattern: NDA has fielded zero BJP candidates across 2016, 2021, and 2026 (the alliance carrying the slot via BDJS or small allies), AND combined NDA share has stayed under 8% across cycles. So this is both a 'BJP-stays-out' seat and a 'NDA-can't-break-through' seat. Demographically UDF-locked; the third-place dynamic is a no-go zone for the alliance. Nothing for 2031 to watch."
+    },
+    {
+      "ac": 55,
+      "name": "MALAMPUZHA",
+      "summary": "Malampuzha held LDF +12.2pp in 2026, third consecutive LDF cycle — Muslim share at 34% combined with the district's mixed-ezhava-leaning Hindu base in standard LDF coalition fashion. The distinctive feature is BJP's NDA share: 29-31% across three cycles, among the highest sustained BJP third-place votes in mid-Kerala (only Palakkad town next door runs slightly higher), holding remarkably steady. BJP isn't winning but is permanently embedded as a 30% wedge that pulls Hindu vote out of the LDF-UDF binary contest. The forward read is LDF-locked but the seat operates as a three-way race at the share level even if the outcome doesn't show it."
+    },
+    {
+      "ac": 56,
+      "name": "PALAKKAD",
+      "summary": "Palakkad town held UDF +8.9pp in 2026, third consecutive UDF cycle — Muslim 34% blocking LDF, with the mixed-ezhava-leaning Hindu base providing the supporting layer. The substantive movement is BJP: NDA went 29% → 35% → 33% across three cycles, among the highest BJP third-place shares in any UDF-won seat (Manjeshwar on the Karnataka border is similar). BJP shifted from a 2016 baseline to a 2021 peak and has held steady at 33%. The forward read is UDF-locked but the seat is genuinely three-cornered at the share level. BJP is permanent furniture here, and the 9pp UDF margin is what's left after BJP's claim on the Hindu vote."
+    },
+    {
+      "ac": 57,
+      "name": "TARUR",
+      "summary": "Tarur held LDF +9.0pp in 2026, third consecutive LDF cycle — Muslim 21%, the lower end of meaningful share, with the LDF coalition winning through the district's Hindu base plus a smaller Muslim segment. The distinctive feature is BJP's climb: NDA went 12% → 14% → 16% across three cycles, a steady third-place build inside an LDF stronghold. The forward read is contested rather than LDF-locked because the Muslim base alone is too small to block — LDF's hold depends on Hindu base coordination. If BJP keeps climbing, the Hindu vote split widens and the seat opens up further."
+    },
+    {
+      "ac": 58,
+      "name": "CHITTUR",
+      "summary": "Chittur flipped LDF→UDF in 2026 (+4.4pp) — and the seat sits inside the Achuthan family lineage: K. Achuthan held it UDF in 2011, ran second in 2016, and his son Adv. Sumesh Achuthan ran second in 2021 before winning the seat back this cycle. Muslim share at 18% is small but enough to tip a narrow contest. BJP flat 8-10% across cycles, no role. The forward read is contested rather than UDF-locked — the LDF Hindu base in Palakkad gives a credible return path. At 4pp margin and a family in its second generation, the hereditary continuity matters as much as the demographic mechanics."
+    },
+    {
+      "ac": 59,
+      "name": "NEMMARA",
+      "summary": "Nemmara held LDF +2.2pp in 2026, the narrowest LDF win in Palakkad — third consecutive LDF cycle but only just, with Muslim share at 13% (too small to drive the contest) and the Hindu base providing the structural anchor. There's a small Christian community (6% Syro-Malabar latent) but not in volumes that matter. BJP flat 11-15% across cycles, no inroad. The 2pp margin makes this the most reversible LDF seat in Palakkad — the contest hinges on Hindu base coordination, which is intrinsically more volatile than minority-community demographics. Watch for 2031."
+    },
+    {
+      "ac": 60,
+      "name": "ALATHUR",
+      "summary": "Alathur held LDF +6.4pp in 2026, third consecutive LDF cycle — Muslim 22% (large enough to block NDA but not large enough to dominate), with the district's mixed-ezhava-leaning Hindu base providing the LDF anchor. BJP flat 13-15% across cycles, a meaningful third-place share that holds steady without growing. The forward read is contested rather than LDF-locked because Muslim share is moderate, not majority. The 6pp margin gives LDF room but not a structural moat. Standard LDF stronghold mechanics in a mid-Palakkad seat with no distinctive features beyond the BJP third-place persistence."
+    },
+    {
+      "ac": 61,
+      "name": "CHELAKKARA",
+      "summary": "Chelakkara held LDF +18.0pp in 2026, third consecutive LDF cycle — Muslim 29% combined with the Ezhava-heavy Thrissur Hindu base in standard LDF coalition fashion. The distinctive feature is BJP's climb: NDA went 16% → 16% → 23% across three cycles, with the 2026 jump picking up more of UDF's retreat than LDF's — a wave-capture pattern even though LDF kept the seat. The forward read is LDF-locked at the seat level but BJP is genuinely building toward becoming a third-place wedge that could matter by 2031 if the Hindu vote splits further."
+    },
+    {
+      "ac": 62,
+      "name": "KUNNAMKULAM",
+      "summary": "Kunnamkulam is a narrow LDF hold (+3.0pp in 2026, third consecutive LDF cycle) — Christian 21% (dispersed across Indian Orthodox and Syro-Malabar) plus Muslim 22%, the both-Christian-Muslim combination that elsewhere pulls a seat UDF-ward. The exception here is LDF's organisational depth in Ezhava-heavy Thrissur, which holds despite the minority shares. BJP went 19% → 18% → 11%, a meaningful decline from a real 2016 baseline — the kind of erosion that suggests no organic base. The 3pp margin makes this one of the most reversible LDF seats in Thrissur (Manalur, Guruvayoor and Pudukkad are tighter), and a Christian/Muslim coordination shift could flip it in 2031."
+    },
+    {
+      "ac": 63,
+      "name": "GURUVAYOOR",
+      "summary": "Guruvayoor held LDF by a hair in 2026 — +1.2pp, among the five narrowest LDF wins anywhere in the state. The structural pull here is unusual: 53% Muslim, which would normally read as IUML-stronghold UDF territory. Instead, LDF holds through the Ezhava-heavy Thrissur Hindu base plus an LDF-aligned Muslim segment. BJP went from 17% in 2016 to 0% in 2021 to 18% in 2026 — the alliance dipped out and reasserted itself with wave-capture pattern (picking up more of UDF's retreat than LDF's). The 1pp margin makes this among the most volatile seats in Kerala for 2031."
+    },
+    {
+      "ac": 64,
+      "name": "MANALUR",
+      "summary": "Manalur produced the closest LDF win anywhere in 2026 — +0.1pp, holding the seat for a third consecutive cycle by 100 votes' worth of margin. The structural setup is striking: 20% Christian (Syro-Malabar at 18% HIGH-tier UDF-up coordination) + 24% Muslim, a both-Christian-Muslim combination that would normally pull a seat UDF-ward decisively. LDF holds via the Ezhava-heavy Thrissur base. BJP stable 22-23% across cycles, a permanent third-place wedge. The 0.1pp margin means this is the most reversible LDF seat in Kerala for 2031 — any shift in any community segment flips it."
+    },
+    {
+      "ac": 65,
+      "name": "WADAKKANCHERY",
+      "summary": "Wadakkanchery is LDF since 2021 (+3.5pp in 2026, having flipped UDF→LDF that cycle) — driven by 26% Christian share (Syro-Malabar at 20% MEDIUM-tier in coordinated UDF-up direction), which would normally lock the seat UDF. The exception is LDF's organisational depth plus a coordinated Christian segment that has aligned LDF-ward at this seat specifically. BJP's NDA share went 17% → 13% → 16% across three cycles, a wave-capture pattern in 2026 even though LDF kept the seat. The forward read is contested rather than LDF-locked; the Christian/LDF coordination is the seat's defining variable for 2031."
+    },
+    {
+      "ac": 66,
+      "name": "OLLUR",
+      "summary": "Ollur held LDF +5.8pp in 2026, third consecutive LDF cycle — Christian 24% (Syro-Malabar UDF-up) plus Muslim 20%, the same both-Christian-Muslim combination as Kunnamkulam next door. LDF holds via the Ezhava-heavy Thrissur Hindu base plus organisation. BJP flat 12-14% across cycles, no role. The forward read is LDF-locked but the structural moat depends on the Christian + LDF coordination holding — if any of the Christian sub-rites breaks UDF-ward in 2031 (especially Syro-Malabar moving with the rest of the central Kerala flip pattern), the seat opens up. Worth treating as quietly contested."
+    },
+    {
+      "ac": 67,
+      "name": "THRISSUR",
+      "summary": "Thrissur flipped LDF→UDF in 2026 (+21.6pp) on the back of a Syro-Malabar Catholic consolidation — 24% of the AC, all voting UDF-up in coordinated direction. Aggregate Christian share is 40%, large enough on its own to block both LDF and any Hindu-only NDA path. But BJP isn't sitting still: NDA went 19% → 31% → 23% across three cycles, third-place but climbing into real contention. The 2026 result reflects two simultaneous movements — the Christian community moving UDF-ward, and BJP building toward a future Christian-vote vulnerability. UDF's lock holds for now; Thrissur is the watch-seat for 2031."
+    },
+    {
+      "ac": 68,
+      "name": "NATTIKA",
+      "summary": "Nattika held LDF +4.5pp in 2026, third consecutive LDF cycle — Muslim 20%, with Christian 16% (Syro-Malabar 14% latent) adding to a combined minority share that blocks NDA but doesn't tip UDF-ward. The distinctive feature is BJP's climb: NDA went 22% → 22% → 29% across three cycles, with the 2026 jump picking up more of UDF's retreat than LDF's — wave-capture inside an LDF hold. The forward read is contested rather than LDF-locked because Muslim share is too small to dominate. If BJP keeps climbing past 30%, the Hindu vote split widens and the seat opens up."
+    },
+    {
+      "ac": 69,
+      "name": "KAIPAMANGALAM",
+      "summary": "Kaipamangalam held LDF +7.0pp in 2026, third consecutive LDF cycle — Muslim 41% paired with the Ezhava-heavy Thrissur base in standard LDF coalition fashion. The distinctive feature is BJP's odd trajectory: NDA went 22% → 7% → 14% across three cycles, with BJP fielding zero candidates across all three (the alliance carrying the slot via BDJS and small partners). The 2016-to-2021 collapse and 2021-to-2026 partial recovery is alliance-vehicle volatility, not organic BJP movement. The forward read is LDF-locked; the BJP third-place dynamic is essentially noise around the structural LDF win."
+    },
+    {
+      "ac": 70,
+      "name": "IRINJALAKUDA",
+      "summary": "Irinjalakuda flipped LDF→UDF in 2026 (+6.7pp) — driven by 27% Christian share (Syro-Malabar at 25% MEDIUM-tier UDF-up coordination), exactly the pattern that turned several central-Kerala Syro-Malabar seats UDF this cycle. BJP's NDA share went 20% → 22% → 18% — a mature 22% base that lost ground in 2026, the declining-from-real-base pattern. The forward read is UDF-locked because the Christian 27% blocks both LDF and the NDA path independently. With Christian community coordinated UDF-ward and BJP eroding, this is a comfortable forward UDF defense."
+    },
+    {
+      "ac": 71,
+      "name": "PUDUKKAD",
+      "summary": "Pudukkad held LDF +1.9pp in 2026, third consecutive LDF cycle — but unusually for a seat with 36% Christian share (Syro-Malabar at 32% HIGH-tier UDF-up coordination). The Syro-Malabar consolidation that flipped Thrissur next door didn't reach Pudukkad; LDF held via Ezhava-heavy Thrissur base + organisational strength. BJP went 23% → 22% → 18%, a mature third-place vote losing ground from a real base. The forward read is contested rather than LDF-locked because the Christian community could yet break UDF-ward in 2031. At 2pp margin, the LDF defense here is among the most fragile in the Christian belt."
+    },
+    {
+      "ac": 72,
+      "name": "CHALAKUDY",
+      "summary": "Chalakudy is UDF since 2021 (+16.8pp in 2026, having flipped LDF→UDF that cycle) — 44% Christian (Syro-Malabar at 35% HIGH-tier UDF-up single coordination), the classic Syro-Malabar UDF lock at its strongest. BJP fielded zero candidates across all three cycles, with NDA declining 17% → 12% → 12% via BDJS-only alliance vehicles. The forward read is UDF-locked: Christian 44% blocks both LDF and the alliance-vehicle NDA path independently. The 17pp margin is comfortable. This is the cleanest 'Syro-Malabar single coordination + BJP stays out' archetype in central Kerala."
+    },
+    {
+      "ac": 73,
+      "name": "KODUNGALLUR",
+      "summary": "Kodungallur flipped LDF→UDF in 2026 (+5.6pp) — Christian 22% (Latin Catholic at 17% UDF-up) plus Muslim 22%, the both-Christian-Muslim combination tipping the seat against the Ezhava-heavy Thrissur Hindu base. BJP's NDA share went 22% → 19% → 16%, a mature third-place vote in steady decline. The forward read is UDF-locked because Christian 22% blocks LDF independently. At 5pp the margin is comfortable but small enough that any reversal in either the Christian or Muslim coordination could flip the seat back. Worth treating as recently locked rather than structurally secure."
+    },
+    {
+      "ac": 74,
+      "name": "PERUMBAVOOR",
+      "summary": "Perumbavoor is always-UDF (+19.3pp in 2026, third consecutive UDF cycle) — Christian 39% (dispersed across Syro-Malabar, Jacobite, Marthoma) plus Muslim 19%, both blocking LDF and the NDA path. BJP's NDA share is meaningful at 10-15% across cycles but doesn't threaten the seat. The 19pp margin is comfortable. Standard mixed-Christian-Muslim UDF lock with no distinctive feature in the data — the seat operates as expected and is structurally UDF-locked for the medium term. The dispersed Christian coordination (no single sub-rite dominant) means UDF doesn't need to manage cross-sub-rite coalition dynamics here."
+    },
+    {
+      "ac": 75,
+      "name": "ANGAMALY",
+      "summary": "Angamaly is always-UDF (+28.3pp in 2026, third consecutive UDF cycle) and one of the most decisive Christian locks in Kerala — 65% Christian, with Syro-Malabar at 41% HIGH-tier UDF-up coordination and Jacobite at 16% adding to the bloc. The Christian community alone is over half the AC, large enough to settle the seat on demographics. BJP is structurally absent: NDA has stayed under 8% across three cycles. There's nothing for 2031 to watch — UDF-locked on community alone, and the alliance-vehicle BJP base is too thin to ever matter. This is the central-Kerala Christian-belt archetype at its purest."
+    },
+    {
+      "ac": 76,
+      "name": "ALUVA",
+      "summary": "Aluva is always-UDF (+18.3pp in 2026, third consecutive UDF cycle) — Christian 27% (Syro-Malabar plus Jacobite) plus Muslim 34%, the both-Christian-Muslim combination that locks UDF in via independent blocking on both sides. BJP flat 11-13% across cycles, never threatening the seat. The 18pp margin is comfortable. Standard mixed-minority UDF lock with no distinctive feature beyond the Muslim share being unusually high for an Ernakulam-belt seat (34% is higher than most Ernakulam ACs and approaches Kothamangalam's 37% as the district's peak). The seat reads as structurally UDF-locked for the medium term, with the Christian + Muslim balance allowing UDF to navigate either community's local pressures."
+    },
+    {
+      "ac": 77,
+      "name": "KALAMASSERY",
+      "summary": "Kalamassery flipped LDF→UDF in 2026 (+10.0pp) — recovering a seat that had been UDF in 2016, lost to LDF in 2021, and reclaimed this cycle. Christian 34% (dispersed) plus Muslim 21% delivers a both-Christian-Muslim block. BJP fielded zero candidates across all three cycles, with NDA at 7-16% via alliance vehicles only — strategic abstention in a Christian-mixed seat where BJP has chosen not to compete directly. The forward read is UDF-locked because Christian 34% blocks LDF independently. The 10pp margin is comfortable; the seat returns to the standard mixed-minority UDF mode."
+    },
+    {
+      "ac": 78,
+      "name": "PARAVUR",
+      "summary": "Paravur is always-UDF (+12.9pp in 2026, third consecutive UDF cycle) — Christian 33% (Syro-Malabar at 32% HIGH-tier UDF-up in single coordination), the classic Syro-Malabar UDF lock. BJP went 18% → 8% → 13% across cycles — a 2016 high that dipped sharply in 2021 and partly recovered in 2026, but net down from the 2016 baseline. The forward read is UDF-locked on Christian demography. Standard central-Kerala Syro-Malabar archetype with no distinctive feature beyond the BJP decline, which is consistent with the broader pattern of mature BJP bases eroding in central Christian-belt seats."
+    },
+    {
+      "ac": 79,
+      "name": "VYPEN",
+      "summary": "Vypen flipped LDF→UDF in 2026 (+11.9pp) — 41% Christian, with Latin Catholic at 33% HIGH-tier UDF-up coordination, the cleanest 'Latin Catholic flip from LDF to UDF' archetype in central Kerala. The Latin Catholic community historically split or leaned LDF; in 2026 it broke decisively UDF-ward, taking the seat with it. BJP flat 8-10% across cycles, no role. The forward read is UDF-locked. This is the central-Kerala Latin Catholic flip story at its sharpest — a sub-rite that had been politically distinct from Syro-Malabar finally coordinating UDF-ward in this cycle."
+    },
+    {
+      "ac": 80,
+      "name": "KOCHI",
+      "summary": "Kochi flipped LDF→UDF in 2026 (+6.1pp) — 40% Christian (Latin Catholic at 35% MEDIUM-tier UDF-up single coordination), the urban-coast Latin Catholic flip. Muslim share at 17% adds to a combined 57% minority bloc that mechanically blocks NDA. BJP's NDA went 12% → 9% → 9%, a steady decline from a low base. The forward read is UDF-locked. The 6pp margin is comfortable but small enough that the Latin Catholic coordination needs to hold — if the sub-rite reverts toward LDF in 2031 the seat could flip back. This is the same Vypen-style flip mechanism in the urban core."
+    },
+    {
+      "ac": 81,
+      "name": "THRIPUNITHURA",
+      "summary": "Thripunithura is UDF since 2021 (+12.0pp in 2026, having flipped LDF→UDF that cycle and held it bigger this time) — Christian 34% (dispersed across Syro-Malabar, Latin, Indian Orthodox) plus Muslim 21%, both-Christian-Muslim block. BJP went 19% → 15% → 19%, a stable third-place wedge with a wave-capture pattern in 2026 (picking up more of LDF's loss than UDF did). The forward read is UDF-locked because Christian 34% blocks LDF independently. The 12pp margin is comfortable but the BJP 19% wedge means the Hindu vote stays three-way split in this seat."
+    },
+    {
+      "ac": 82,
+      "name": "ERANAKULAM",
+      "summary": "Eranakulam (the urban core) is always-UDF (+33.6pp in 2026, third consecutive UDF cycle, among the largest margins in the Ernakulam district alongside Thrikkakara's +35.7pp) — 34% Christian (Latin Catholic at 21% MEDIUM-tier UDF-up single coordination) plus Muslim 21%. BJP went 13% → 15% → 18% across cycles, climbing in an urban seat where the alliance is building toward becoming a third-place wedge. The forward read is UDF-locked; the 33pp margin is structurally safe. BJP's climb here is a watch-signal but won't shift the outcome — it indicates BJP is finding urban Hindu vote, which matters more for surrounding Trivandrum-style seats than for this one."
+    },
+    {
+      "ac": 83,
+      "name": "THRIKKAKARA",
+      "summary": "Thrikkakara is always-UDF (+35.7pp in 2026, third consecutive UDF cycle) — Christian 34% (Syro-Malabar at 20% MEDIUM-tier UDF-up single coordination) plus Muslim 21%, the both-Christian-Muslim combination. The seat is held by Uma Thomas, who inherited it after her husband P.T. Thomas's death — Thrikkakara is one of the six confirmed hereditary seats in Kerala. BJP flat 11-16% across cycles, no role. The 35pp margin is structurally safe. Standard Ernakulam-belt UDF lock plus a family continuity that simplifies UDF's candidate-selection calculus going into 2031."
+    },
+    {
+      "ac": 84,
+      "name": "KUNNATHUNAD",
+      "summary": "Kunnathunad flipped LDF→UDF in 2026 (+13.2pp), recovering from a 2021 LDF win — Christian 35% (Jacobite plus Indian Orthodox) plus Muslim 20%, the standard both-Christian-Muslim block. The striking number is BJP: NDA went 11% → 5% → 25% across three cycles, a sharp 20pp single-cycle climb — likely reflecting the local Twenty 20 vehicle's role in this Kizhakkambalam-adjacent seat. The forward read is UDF-locked on Christian demography, but the BJP jump complicates the Hindu vote in a way that didn't exist in 2021. Watch whether the 25% is durable or a one-cycle local-candidate effect."
+    },
+    {
+      "ac": 85,
+      "name": "PIRAVOM",
+      "summary": "Piravom has been Anoop Jacob's seat since 2012 — he took over after his father T.M. Jacob's death and has now won four consecutive cycles, including +29.3pp in 2026. The structural read matches: 42% Christian (dispersed across Jacobite, Orthodox, and Syro-Malabar sub-rites) is enough on its own to block both LDF and NDA. The hereditary continuity isn't decorative — Anoop's long incumbency lets him hold a cross-sub-rite Christian coalition that another UDF candidate would have to rebuild from scratch. BJP doesn't register here; NDA sits at 7-11% with no upward trend. The cleanest example of 'Christian-aggregate + family-seat lock' in central Kerala."
+    },
+    {
+      "ac": 86,
+      "name": "MUVATTUPUZHA",
+      "summary": "Muvattupuzha is UDF since 2021 (+28.9pp in 2026, having flipped LDF→UDF that cycle and held big this time) — Christian 40% (dispersed across Syro-Malabar, Jacobite, Indian Orthodox) plus Muslim 24%, both-Christian-Muslim block. BJP is structurally absent: NDA flat 5-7% across cycles, well under the threshold to matter. The 29pp margin is comfortably safe. The forward read is UDF-locked. Standard central-Kerala dispersed-Christian-plus-Muslim archetype with no distinctive feature beyond the unusually low BJP presence — the alliance simply has no foothold in this seat."
+    },
+    {
+      "ac": 87,
+      "name": "KOTHAMANGALAM",
+      "summary": "Kothamangalam flipped LDF→UDF in 2026 (+12.1pp) — Christian 29% (Jacobite plus Syro-Malabar) plus Muslim 37%, both-Christian-Muslim block. BJP fielded zero candidates across all three cycles, with NDA at 3-10% via alliance vehicles only, AND total NDA stayed under 8% in 2021 and 2026 — both 'strategic abstention' and 'structural exclusion' apply to this Christian-mixed seat. The forward read is UDF-locked because Muslim 37% blocks the NDA path even on the alliance-vehicle level, and Christian 29% blocks LDF independently. The seat returns to standard UDF lock after one cycle of LDF holding it."
+    },
+    {
+      "ac": 88,
+      "name": "DEVIKULAM",
+      "summary": "Devikulam flipped LDF→UDF in 2026 (+4.7pp) — the SC-reserved Idukki hill seat where 32% Christian share (across Syro-Malabar and Jacobite) was just enough to tip a thin margin against the Ezhava-heavy Hindu base. The contest is genuinely three-way: no community is dominant enough to lock the seat, so nothing structural is keeping UDF here for 2031. The unusual story is BJP — NDA share went 8% → 0% (no candidate in 2021) → 13% in 2026, a rebuild that suggests organic reach into Idukki hill geography. Volatile seat for the next cycle: thin margin already, and BJP newly climbing into the picture."
+    },
+    {
+      "ac": 89,
+      "name": "UDUMBANCHOLA",
+      "summary": "Udumbanchola flipped LDF→UDF in 2026 (+16.5pp) — 48% Christian (Syro-Malabar at 29% HIGH-tier UDF-up single coordination), the Idukki hill Syro-Malabar flip pattern. BJP fielded zero candidates across all three cycles, with NDA declining 17% → 6% → 8% via BDJS-only vehicles — strategic abstention combined with vehicle erosion. The forward read is UDF-locked because Christian 48% blocks both LDF and the alliance-vehicle NDA path independently. The 16pp margin is comfortable. Standard Idukki Syro-Malabar archetype with BJP staying out as a structural feature of the seat."
+    },
+    {
+      "ac": 90,
+      "name": "THODUPUZHA",
+      "summary": "Thodupuzha is always-UDF (+30.3pp in 2026, third consecutive UDF cycle) — 41% Christian (Syro-Malabar at 31% HIGH-tier UDF-up single coordination) plus Muslim 21%, both-Christian-Muslim block. The distinctive feature is BJP's collapse: NDA went 20% → 15% → 9% across three cycles, a mature 20% base that has eroded to single digits. The forward read is UDF-locked, made stronger by BJP's exit from the third-place layer. The 30pp margin is structurally safe. With Christian Syro-Malabar coordinated and BJP retreating, this is one of the cleanest UDF defenses in the Idukki belt."
+    },
+    {
+      "ac": 91,
+      "name": "IDUKKI",
+      "summary": "Idukki flipped LDF→UDF in 2026 (+18.5pp), reversing the 2021 LDF win — 47% Christian (Syro-Malabar at 26% HIGH-tier UDF-up single coordination), the Idukki Syro-Malabar flip pattern again. BJP fielded zero candidates across all three cycles, with NDA going 19% → 7% → 7% via alliance vehicles only — strategic abstention with steep vehicle erosion. The forward read is UDF-locked because Christian 47% blocks LDF independently. The 18pp margin is comfortable. This is the Idukki belt's central seat returning to its underlying Christian-belt pattern after the 2021 LDF interlude."
+    },
+    {
+      "ac": 92,
+      "name": "PEERUMADE",
+      "summary": "Peerumade flipped LDF→UDF in 2026 (+22.5pp) — 41% Christian, but distinctively fractured (Syro-Malabar UDF-up, Indian Orthodox UDF-up, but CSI 6% NDA-leaning). The fractured coordination means the Christian community doesn't function as a single voting bloc, and the seat is contested rather than UDF-locked. BJP flat 6-9% across cycles, no role in the contest. The 22pp margin in 2026 is comfortable but the underlying structural pattern is more fragile than the margin suggests — if the Syro-Malabar/Indian Orthodox coordination breaks, the fractured Christian community can't deliver UDF on demography alone."
+    },
+    {
+      "ac": 93,
+      "name": "PALA",
+      "summary": "Pala is the marquee Christian Syro-Malabar seat: 43% Syro-Malabar Catholic alone, plus the K.M. Mani → Jose K. Mani family legacy (the family party, Kerala Congress Mani, has held office here across decades — Jose split away to LDF in 2021). UDF held it for a third consecutive cycle in 2026 but only by 2.2pp. The striking number is BJP: NDA went 18% → 8% → 26%, an 18-point single-cycle jump in a Christian-majority seat where they had never been competitive — one of the largest BJP cycle-to-cycle builds in central Kerala (Poonjar next door went even higher, 2% → 25%). UDF retains the lock on demographics, but BJP's surprise capture of third place means the next UDF defense will not be routine."
+    },
+    {
+      "ac": 94,
+      "name": "KADUTHURUTHY",
+      "summary": "Kaduthuruthy is always-UDF (+25.1pp in 2026, third consecutive UDF cycle) — 44% Christian, but fractured (Syro-Malabar UDF-up MEDIUM-tier, Knanaya UDF-up, but CSI 5% NDA-leaning). The fracture is small enough that the Christian aggregate still functions as a UDF block in practice. BJP's NDA share went 14% → 9% → 10%, a real but eroded third-place vote. The forward read is contested rather than UDF-locked because the Christian fracture means the seat depends on the dominant sub-rite coordination holding. The 25pp margin obscures that underlying fragility — if Syro-Malabar coordination weakens, the seat opens up."
+    },
+    {
+      "ac": 95,
+      "name": "VAIKOM",
+      "summary": "Vaikom flipped LDF→UDF in 2026 by 1.1pp — the narrowest UDF win in Kottayam, driven by 24% Christian share (Syro-Malabar at 11% MEDIUM-tier UDF-up single coordination). BJP's NDA share went 23% → 9% → 16%, a high 2016 base that collapsed in 2021 and partly recovered in 2026 — the kind of trajectory that suggests volatility, not organic build. The forward read is contested rather than UDF-locked: at 1pp margin with BJP holding 16% as a third-place wedge, the Christian + Hindu vote distribution decides the seat each cycle. Among the most reversible UDF flips in central Kerala for 2031."
+    },
+    {
+      "ac": 96,
+      "name": "ETTUMANOOR",
+      "summary": "Ettumanoor flipped LDF→UDF in 2026 (+16.1pp) — 45% Christian (dispersed across Syro-Malabar, Knanaya, Jacobite) blocking both LDF and the NDA path. The Christian aggregate is large enough to lock UDF even though no single sub-rite dominates. BJP went 21% → 11% → 11%, a third-place vote that halved between 2016 and 2021 and has held flat since. The forward read is UDF-locked because the dispersed Christian community still aggregates to over the threshold. The 16pp margin is comfortable. Standard Kottayam Christian-belt seat returning to UDF after one cycle of LDF holding it; nothing for 2031 to watch beyond standard incumbent dynamics."
+    },
+    {
+      "ac": 97,
+      "name": "KOTTAYAM",
+      "summary": "Kottayam town is always-UDF (+31.6pp in 2026, third consecutive UDF cycle) — 41% Christian (dispersed across Indian Orthodox and Syro-Malabar) blocking both LDF and the NDA path independently. BJP flat 7-10% across cycles, no role. The 32pp margin is structurally safe. Standard Kottayam Christian-belt UDF lock with no distinctive feature in the data beyond the comfortably large margin. The dispersed Christian sub-rite coordination means UDF doesn't depend on any single community segment — the demographics aggregate to the lock regardless of which sub-rite moves cycle-to-cycle. UDF for the long term."
+    },
+    {
+      "ac": 98,
+      "name": "PUTHUPPALLY",
+      "summary": "Puthuppally is the late Oommen Chandy's seat — held by him across decades, inherited by his son Adv. Chandy Oommen in the 2023 by-poll after his father's death, and retained at +41.3pp in 2026, the second-largest margin in Kerala this cycle. The structural setup matches the hereditary lock: 49% Christian (dispersed across Indian Orthodox, Jacobite, Syro-Malabar, Pentecostal) plus a candidate who is the inheritor of one of Kerala's most prominent political legacies. BJP flat 9-12% across cycles, structurally absent. The forward read is UDF-locked on every dimension — demographics, organisation, family continuity. Among the safest seats in Kerala for 2031."
+    },
+    {
+      "ac": 99,
+      "name": "CHANGANASSERY",
+      "summary": "Changanassery flipped LDF→UDF in 2026 (+6.9pp), reversing the 2021 LDF win — 44% Christian (Syro-Malabar at 28% LOW-tier UDF-up single coordination), the central-Kerala Syro-Malabar flip pattern. BJP went 17% → 12% → 12%, a declining third-place vote. The forward read is contested rather than UDF-locked because the seat had been won by LDF in 2021 — a recent counter-example to the Christian/UDF coordination that returned in 2026. The 7pp margin is comfortable but small enough that any sub-rite coordination shift could reverse it. Standard Kottayam Syro-Malabar flip with a notable historical caveat."
+    },
+    {
+      "ac": 100,
+      "name": "KANJIRAPPALLY",
+      "summary": "Kanjirappally flipped LDF→UDF in 2026 (+4.2pp) — 43% Christian, but fractured (Syro-Malabar UDF-up, Indian Orthodox UDF-up, Pentecostal UDF-up, CSI 5% NDA-leaning). The fracture is small enough that the Christian aggregate still pulls UDF-ward. BJP's NDA share went 23% → 21% → 20%, a mature third-place vote that's declining slowly but steadily — eroding from a real base. The forward read is contested rather than UDF-locked because of the Christian fracture plus the persistent 20% BJP wedge. At 4pp margin, this is among the more reversible Christian-belt seats for 2031."
+    },
+    {
+      "ac": 101,
+      "name": "POONJAR",
+      "summary": "Poonjar flipped LDF→UDF in 2026 (+4.6pp) — 41% Christian (Syro-Malabar at 27% MEDIUM-tier UDF-up single coordination), the central-Kerala Syro-Malabar flip pattern. The striking number is BJP: NDA went 14% → 2% → 25% across three cycles, a 23-point single-cycle jump from a near-zero 2021 base. Like Pala next door, BJP found wave-capture territory in the Kottayam Christian-belt this cycle. The forward read is UDF-locked because Christian 41% plus Muslim 16% combine to block NDA at 58%, and Christian blocks LDF independently. But the BJP jump is the most striking feature — Poonjar joins Pala as a Kottayam BJP-build watch-seat for 2031."
+    },
+    {
+      "ac": 102,
+      "name": "AROOR",
+      "summary": "Aroor flipped LDF→UDF in 2026 (+5.8pp) — 24% Christian (Latin Catholic at 22% MEDIUM-tier UDF-up single coordination), the Alappuzha-coast Latin Catholic flip pattern. BJP fielded zero candidates across all three cycles, with NDA declining 17% → 11% → 13% via BDJS-only vehicles — strategic abstention in a Christian-mixed Alappuzha seat. The forward read is UDF-locked because Christian 24% blocks LDF independently. The 6pp margin is comfortable but recent — the Latin Catholic coordination is what's holding the seat, and if that breaks LDF-ward in 2031, the seat reverts. Standard Alappuzha-coast Latin Catholic archetype."
+    },
+    {
+      "ac": 103,
+      "name": "CHERTHALA",
+      "summary": "Cherthala held LDF +8.4pp in 2026, third consecutive LDF cycle — Hindu-driven (district overlay only, no clear AC-level minority dominance), with Muslim 15% and Christian 18% both below the threshold to lock. The Ezhava-very-heavy (55% Ezhava) Alappuzha base holds LDF in. BJP fielded zero candidates across all three cycles, with NDA at 8-11% via BDJS-only vehicles — strategic abstention. The forward read is LDF-locked. Standard Alappuzha-coast LDF stronghold with the Ezhava structural anchor doing the work and minority shares both too small to flip it. Nothing distinctive in the data."
+    },
+    {
+      "ac": 104,
+      "name": "ALAPPUZHA",
+      "summary": "Alappuzha town flipped LDF→UDF in 2026 (+13.3pp) — a surprising result because the district is 55% Ezhava-Tiyya, the structural CPI(M) base. No community is large enough to lock the seat: Muslim 15%, Christian 18%, neither big enough to mechanically dominate. The Hindu vote is the driver, and it broke against LDF this cycle for reasons that aren't visible in religion data alone — local candidate, incumbency fatigue, urban issues, or some combination. BJP sits at 10-14% flat across three cycles, never breaking out. Alappuzha is a Hindu-mood barometer: it flipped easily because nothing structural was holding it, and could flip back in 2031 just as easily."
+    },
+    {
+      "ac": 105,
+      "name": "AMBALAPPUZHA",
+      "summary": "Ambalappuzha flipped LDF→UDF in 2026 (+19.8pp) — Christian 23% (Latin Catholic 14% UDF-up) plus Muslim 23%, the both-Christian-Muslim block. The Latin Catholic component is the same coastal coordination that flipped Aroor and other Alappuzha seats this cycle. BJP's NDA share went 17% → 16% → 12%, a declining third-place vote. The forward read is UDF-locked because Christian 23% blocks LDF independently. The 20pp margin is comfortable. Standard Alappuzha both-Christian-Muslim flip with no distinctive feature beyond the comfortable margin — the cycle's Latin Catholic UDF coordination delivered decisively here."
+    },
+    {
+      "ac": 106,
+      "name": "KUTTANAD",
+      "summary": "Kuttanad flipped LDF→UDF in 2026 (+18.3pp) — 37% Christian (dispersed across Latin Catholic, Marthoma, Indian Orthodox, all UDF-up) blocking both LDF and the NDA path. The seat is also one of Kerala's six confirmed hereditary seats: Thomas Chandy held it, succeeded by his brother Thomas K. Thomas — both LDF historically, but the seat broke decisively UDF-ward in 2026 along with the rest of the Alappuzha Christian coast. BJP fielded zero candidates across all three cycles, with NDA declining 25% → 12% → 15% via alliance vehicles. The forward read is UDF-locked; the family lineage is now competing inside a different alliance frame."
+    },
+    {
+      "ac": 107,
+      "name": "HARIPAD",
+      "summary": "Haripad is always-UDF (+16.1pp in 2026, third consecutive UDF cycle) — Hindu-driven (district overlay, no community lock) but holding the seat through the Alappuzha Hindu base coordinating UDF-ward across cycles. The substantive movement is BJP: NDA went 9% → 12% → 21% across three cycles, a steady climb that picked up wave-capture in 2026 (more of LDF's loss than UDF's). The forward read is contested rather than UDF-locked because there's no demographic moat — the seat depends on Hindu coordination. With BJP climbing toward becoming a real third-place wedge, the Hindu vote split could open up by 2031."
+    },
+    {
+      "ac": 108,
+      "name": "KAYAMKULAM",
+      "summary": "Kayamkulam flipped LDF→UDF in 2026 (+10.0pp) — Hindu-driven (district overlay, no clear minority lock), with the Ezhava-very-heavy Alappuzha base breaking against LDF this cycle. BJP fielded zero candidates across all three cycles, with NDA at 7-13% via BDJS-only vehicles — strategic abstention. The forward read is contested rather than UDF-locked because there's no demographic moat for either alliance. The 10pp margin is comfortable but the Hindu vote that drove the flip could reverse just as easily in 2031 — this is the same Hindu-mood-barometer pattern as Alappuzha town next door."
+    },
+    {
+      "ac": 109,
+      "name": "MAVELIKKARA",
+      "summary": "Mavelikkara held LDF +11.0pp in 2026, third consecutive LDF cycle — Hindu-driven (district overlay), with the Ezhava-very-heavy Alappuzha base providing the LDF structural anchor. The distinctive feature is BJP: NDA went 21% → 21% → 16% across three cycles, a mature third-place vote that lost ground in 2026 after holding steady through two cycles. The forward read is contested rather than LDF-locked because Hindu coordination is the only mechanism keeping LDF in. The 11pp margin is comfortable but the seat lacks a demographic moat — LDF's hold depends on the Ezhava base staying with the alliance rather than fragmenting. The BJP retreat in 2026 suggests that fragmentation hasn't accelerated, but it remains the seat's main forward-looking risk."
+    },
+    {
+      "ac": 110,
+      "name": "CHENGANNUR",
+      "summary": "Chengannur held LDF +7.5pp in 2026, third consecutive LDF cycle — Christian 29% (Indian Orthodox plus Marthoma) sitting alongside the Ezhava-very-heavy Alappuzha base. The Christian aggregate would normally pull UDF-ward, but LDF holds through the dense Ezhava base and CPI(M) organisation. BJP's NDA share went 29% → 24% → 23%, a real but slowly eroding third-place vote — high enough to fragment the Hindu/Christian alignment but not enough to win. The forward read is LDF-locked, made more durable by BJP's slow decline. Standard southern-Alappuzha LDF stronghold with a high BJP wedge that complicates the share-level dynamic without changing the outcome."
+    },
+    {
+      "ac": 111,
+      "name": "THIRUVALLA",
+      "summary": "Thiruvalla flipped LDF→UDF in 2026 (+7.2pp) — 48% Christian (dispersed across Indian Orthodox, Marthoma, Syro-Malabar, Pentecostal) blocking LDF, the Pathanamthitta Christian-belt coordination. The striking number is BJP: NDA went 22% → 16% → 31% across three cycles, a 15-point single-cycle climb. Thiruvalla joins Pala and Poonjar as a Christian-belt seat where BJP made unusually large gains in 2026. The forward read is contested rather than UDF-locked because the BJP 31% wedge fragments the Hindu vote in ways that could destabilise the Christian + UDF coordination in 2031. Watch-seat for the next cycle."
+    },
+    {
+      "ac": 112,
+      "name": "RANNI",
+      "summary": "Ranni flipped LDF→UDF in 2026 (+3.5pp) — 47% Christian (Marthoma at 14% UDF-up plus Syro-Malabar at 10% UDF-up and Pentecostal at 8% UDF-up, in single coordination) blocking LDF. BJP fielded zero candidates across all three cycles, with NDA going 21% → 15% → 15% via alliance vehicles only — strategic abstention with a meaningful BDJS-vehicle base. The forward read is contested rather than UDF-locked because the 3pp margin is fragile and BJP's 15% via the alliance vehicle could redistribute. Standard Pathanamthitta Christian-belt flip but with a thinner margin than the cluster norm."
+    },
+    {
+      "ac": 113,
+      "name": "ARANMULA",
+      "summary": "Aranmula flipped LDF→UDF in 2026 (+12.1pp) — 36% Christian (dispersed across Marthoma, Indian Orthodox, Syro-Malabar) blocking both LDF and the NDA path. BJP's NDA share went 23% → 18% → 22%, a flat third-place vote with no climb. The forward read is UDF-locked because Christian 36% is large enough to block LDF independently. The 12pp margin is comfortable. Standard Pathanamthitta Christian-belt flip with no distinctive feature in the data beyond the comfortable margin — the cycle's Christian UDF coordination delivered cleanly here without the BJP-rising complication that affects nearby Thiruvalla."
+    },
+    {
+      "ac": 114,
+      "name": "KONNI",
+      "summary": "Konni is LDF since 2021 (+1.4pp in 2026, second consecutive LDF cycle after flipping from UDF in 2021) — 33% Christian (Indian Orthodox at 12% HIGH-tier UDF-up coordinated direction), the kind of coordinated Christian sub-rite that would normally lock UDF. The exception is LDF's CPI(M) organisational depth plus a Christian segment that's aligned LDF-ward at this specific seat. BJP went 12% → 22% → 11%, a 2021 high that fully eroded back to baseline — unusual volatility suggesting a 2021 candidate effect that didn't sustain. The forward read is contested rather than LDF-locked; the 1pp margin and Christian coordination both pose real reversal risk for 2031."
+    },
+    {
+      "ac": 115,
+      "name": "ADOOR",
+      "summary": "Adoor flipped LDF→UDF in 2026 (+6.9pp) — 28% Christian (Indian Orthodox plus Marthoma, UDF-up) decisive in tipping the seat against the Pathanamthitta Hindu base. BJP's NDA share went 17% → 15% → 18%, a flat third-place vote with no climb. The forward read is contested rather than UDF-locked because 28% Christian is on the lower side of the blocking-threshold and the demographic mechanism isn't a sure thing. The 7pp margin is comfortable but recent — the seat hadn't been UDF in 2016 or 2021. Standard Pathanamthitta Christian-belt flip with thinner-than-typical Christian share."
+    },
+    {
+      "ac": 116,
+      "name": "KARUNAGAPPALLY",
+      "summary": "Karunagappally has been with UDF since 2021 (flipped from LDF that cycle, retained by +15.4pp in 2026), with 29% Muslim share blocking any LDF route back. The interesting movement is BJP: NDA went 12% → 7% → 19% across three cycles, climbing back above the 2016 baseline and into double digits — real organic growth, not just BDJS picking up the BJP slot. The Hindu base is balanced Nair-Ezhava (32% / 31%), so BJP isn't constrained by an Ezhava-LDF ceiling like in Kannur. UDF's lock holds for now; if BJP keeps climbing, the seat starts to look genuinely three-cornered by 2031."
+    },
+    {
+      "ac": 117,
+      "name": "CHAVARA",
+      "summary": "Chavara flipped LDF→UDF in 2026 (+13.0pp) — Muslim share at 27% the mechanical driver, blocking the NDA path and tipping the seat. BJP flat 7-10% across cycles, no role. Christian 13% aggregate (Latin Catholic 6% the tagged sub-rite), adding to the minority share but not large enough to lock independently. The forward read is UDF-locked because Muslim 27% blocks LDF. The 13pp margin is comfortable. Standard mixed-muslim Kollam flip with no distinctive feature beyond the comfortable margin — the cycle's anti-LDF wave plus the Muslim share delivered a clean UDF win."
+    },
+    {
+      "ac": 118,
+      "name": "KUNNATHUR",
+      "summary": "Kunnathur flipped LDF→UDF in 2026 (+15.4pp) — diffuse driver (no community lock at all), with Muslim 19% and Christian 14% both below the threshold to dominate. The Kollam mixed-Nair-Ezhava district provides the Hindu base, which broke UDF-ward this cycle. BJP flat 14-15% across cycles, a meaningful third-place vote that fragments the Hindu vote without ever threatening to win. The forward read is contested rather than UDF-locked because there's no demographic moat — the seat depends on Hindu coordination, which is intrinsically volatile. The 15pp margin is comfortable but reversible in 2031."
+    },
+    {
+      "ac": 119,
+      "name": "KOTTARAKKARA",
+      "summary": "Kottarakkara held LDF +0.7pp in 2026, the narrowest LDF win in Kollam and among the narrowest in the state — third consecutive LDF cycle but on the edge of reversal. Christian 18% (Indian Orthodox UDF-up, single coordination) plus Muslim 17%, the both-Christian-Muslim combination that elsewhere pulls a seat UDF-ward. LDF holds via the Kollam Hindu base plus organisational depth. BJP flat 14-16% across cycles, a permanent third-place wedge. The 0.7pp margin makes this the most reversible LDF seat in Kollam — any shift in any community could flip it in 2031."
+    },
+    {
+      "ac": 120,
+      "name": "PATHANAPURAM",
+      "summary": "Pathanapuram flipped LDF→UDF in 2026 (+6.0pp) — 20% Christian (dispersed across Indian Orthodox and Marthoma, blocking-tier) plus 20% Muslim (latent-tier, additive but not independently dominant). BJP's NDA share went 8% → 9% → 5%, a declining third-place vote with no climb. The forward read is UDF-locked because Christian 20% blocks LDF independently. The 6pp margin is comfortable. Standard Kollam-belt Christian-Muslim flip with no distinctive feature beyond the BJP exit; the cycle delivered a clean reversal of the 2021 LDF win."
+    },
+    {
+      "ac": 121,
+      "name": "PUNALUR",
+      "summary": "Punalur is an LDF seat that has stayed LDF across three cycles (+15.1pp in 2026), despite a combined Christian+Muslim 42% — minority shares that elsewhere would pull a seat UDF-ward. The difference here is LDF's organisational depth in Kollam: CPI(M) cadre plus a local Christian segment that has aligned with the LDF block over multiple cycles, blocking UDF from converting minority share into a flip. NDA went 7% → 14% → 11%, suggesting BJP found a foothold in 2021 but couldn't push it further. UDF won't crack this seat on demographics alone — it would need an organisational shift or a candidate effect to override LDF's structural grip."
+    },
+    {
+      "ac": 122,
+      "name": "CHADAYAMANGALAM",
+      "summary": "Chadayamangalam flipped LDF→UDF in 2026 (+4.9pp) — diffuse driver, with Muslim 17% and Christian 17% both below the threshold to dominate. The Kollam mixed-Nair-Ezhava base provided the Hindu vote that broke UDF-ward. BJP flat 13-15% across cycles, a permanent third-place wedge. The forward read is contested rather than UDF-locked because there's no community moat. The 5pp margin is uncomfortable for a fresh flip and the seat could revert in 2031 if Hindu coordination returns to LDF. Standard Kollam diffuse-middle flip with no distinctive feature."
+    },
+    {
+      "ac": 123,
+      "name": "KUNDARA",
+      "summary": "Kundara is UDF since 2021 (+19.8pp in 2026, having flipped LDF→UDF that cycle and held it big this time) — Muslim share at 29% blocking the LDF return path. BJP's NDA share went 13% → 4% → 12%, a volatile pattern that probably reflects local-candidate dynamics rather than organic build. The forward read is UDF-locked because Muslim 29% mechanically blocks both LDF and the NDA path. The 20pp margin is comfortable. Standard mixed-muslim Kollam UDF lock with no distinctive feature beyond the unusually large margin — UDF defended the 2021 flip decisively."
+    },
+    {
+      "ac": 124,
+      "name": "KOLLAM",
+      "summary": "Kollam town flipped LDF→UDF in 2026 (+13.0pp) — Muslim share at 21% plus Christian 18% (Latin Catholic plus Marthoma, both UDF-up) combining to 40% combined minority share. BJP flat 11-14% across cycles, a meaningful third-place wedge. The forward read is contested rather than UDF-locked because neither community alone is unambiguously decisive at these shares (Muslim 21% sits right at the blocking threshold) — the seat depends on combined-minority coordination, which is more fragile. The 13pp margin is comfortable but small enough that any Christian or Muslim segment shift could reverse it. The Latin Catholic UDF coordination is the key variable for 2031."
+    },
+    {
+      "ac": 125,
+      "name": "ERAVIPURAM",
+      "summary": "Eravipuram flipped LDF→UDF in 2026 (+6.6pp) — Muslim share at 28% the driver, blocking the NDA path and tipping the seat. The Christian community (19%) is fractured (Latin Catholic UDF-up, CSI 5% NDA-leaning) and doesn't add to the UDF block cleanly. BJP fielded zero candidates across all three cycles, with NDA declining 16% → 7% → 8% via alliance vehicles only — strategic abstention with steep vehicle erosion. The forward read is UDF-locked because Muslim 28% blocks LDF. The 7pp margin is comfortable, and the BJP exit simplifies the contest to a two-horse UDF/LDF race going forward."
+    },
+    {
+      "ac": 126,
+      "name": "CHATHANNOOR",
+      "summary": "Chathannoor is BJP's narrow 2026 capture in Kollam — NDA won by 3.2pp, flipping the seat from LDF after two cycles. BJP's NDA went 25% → 31% → 38% across three cycles, a sustained 13-point climb that finally crossed the threshold to win. Christian 13% plus Muslim 15% (both decisive-tier) sit below the level to block, and the Kollam mixed-Nair-Ezhava Hindu base provided the surrounding Hindu votes that swung BJP-ward. The forward read is contested rather than NDA-locked because the BJP rise is recent — UDF or LDF can reclaim if minority coordination consolidates. One of only three NDA wins in Kerala in 2026."
+    },
+    {
+      "ac": 127,
+      "name": "VARKALA",
+      "summary": "Varkala held LDF +1.5pp in 2026 — the narrowest LDF win in Trivandrum district, third consecutive LDF cycle but on the edge of reversal. The interesting story is BJP's climb: NDA went 16% → 8% → 20% across three cycles, with the 2026 jump picking up real ground (wave-capture pattern: NDA out-captured UDF in LDF's retreat). Muslim share at 25% plus the Nair-heavy Trivandrum base normally favor LDF, but the BJP build complicates the Hindu vote distribution. The forward read is LDF-locked at the seat level but the 1.5pp margin plus BJP's climb means real volatility for 2031."
+    },
+    {
+      "ac": 128,
+      "name": "ATTINGAL",
+      "summary": "Attingal held LDF +8.9pp in 2026, third consecutive LDF cycle — Hindu-driven (district overlay, no clear minority lock), with the Nair-heavy Trivandrum base providing the structural anchor. The distinctive feature is BJP's climb: NDA went 20% → 26% → 31% across three cycles, among the steepest sustained BJP builds in Kerala (Chathannoor and Haripad also climbed similarly) — and Attingal is the rare case where LDF still holds despite the climb. BJP picked up wave-capture in 2026 (more of UDF's loss than LDF's). The forward read is contested rather than LDF-locked because the 31% BJP wedge is large enough to fragment the Hindu vote in ways that could open the seat by 2031."
+    },
+    {
+      "ac": 129,
+      "name": "CHIRAYINKEEZHU",
+      "summary": "Chirayinkeezhu flipped LDF→UDF in 2026 by 1.0pp — Christian 17% (Latin Catholic at 9% MEDIUM-tier UDF-up single coordination) plus Muslim 14% combining for both-Christian-Muslim decisive driver. BJP went 14% → 21% → 22% across three cycles, a steady third-place build that pulled Hindu vote in 2026. The forward read is contested rather than UDF-locked because Christian and Muslim shares are both moderate (neither at the blocking threshold independently) and the 1pp margin is intrinsically fragile. The seat could swing back to LDF in 2031 if Latin Catholic coordination breaks or BJP keeps climbing."
+    },
+    {
+      "ac": 130,
+      "name": "NEDUMANGAD",
+      "summary": "Nedumangad held LDF +13.6pp in 2026, third consecutive LDF cycle — Muslim share at 24% the formal driver, but the Nair-heavy Trivandrum Hindu base is what holds the seat. The distinctive feature is BJP's level: NDA went 23% → 18% → 25%, a meaningful third-place vote that wave-captured in 2026 (more of UDF's loss than LDF's). There's also a small CSI Christian community (9% NDA-leaning) that complicates the share-level picture. The forward read is contested rather than LDF-locked because BJP at 25% means the Hindu vote is permanently three-way split. Watch the BJP trajectory for 2031."
+    },
+    {
+      "ac": 131,
+      "name": "VAMANAPURAM",
+      "summary": "Vamanapuram flipped LDF→UDF in 2026 (+8.2pp) — Muslim share at 23% the mechanical driver in a Trivandrum nair-heavy district where BJP would normally be a threat. The seat is safe from BJP because the alliance has fielded zero candidates across all three cycles, with NDA at 4-10% via alliance vehicles only — strategic abstention. The forward read is contested rather than UDF-locked because Muslim 23% is moderate and the Nair-heavy Hindu base could swing back. The 8pp margin is comfortable. Standard Trivandrum-northern mixed-muslim flip with the BJP abstention as the most distinctive feature."
+    },
+    {
+      "ac": 132,
+      "name": "KAZHAKOOTTAM",
+      "summary": "Kazhakoottam is BJP's narrow 2026 capture — they won by 0.3pp, flipping the seat from LDF after two cycles in CPI(M) hands. The mechanism is clean: 39% Nair Hindu base in Trivandrum, organised BJP presence going back to 2016, and NDA share climbing 32% → 29% → 35% across three cycles. Christian (17%) and Muslim (14%) shares are large enough to matter at the margin but not enough to lock the seat against the Nair vote. This is one of the few seats in Kerala where the structural read tilts NDA going forward — but at 0.3pp, that read is provisional. UDF can flip it back in 2031 if it consolidates the minority vote behind a single strong candidate."
+    },
+    {
+      "ac": 133,
+      "name": "VATTIYOORKAVU",
+      "summary": "Vattiyoorkavu flipped LDF→UDF in 2026 (+4.2pp) — Hindu-driven, with the Nair-heavy Trivandrum base providing the structural pull. The distinctive feature is BJP's level: NDA went 32% → 29% → 29% across three cycles, a high third-place vote that's slightly declining but still substantial. BJP doesn't threaten this seat but is a permanent 30% wedge. The forward read is contested rather than UDF-locked because there's no demographic moat and BJP fragments the Hindu vote. The 4pp margin is uncomfortable for a fresh flip — Hindu coordination decides, and that's volatile by definition."
+    },
+    {
+      "ac": 134,
+      "name": "THIRUVANANTHAPURAM",
+      "summary": "Thiruvananthapuram city flipped LDF→UDF in 2026 (+8.2pp) — Hindu-driven, with the Nair-heavy Trivandrum base swinging UDF-ward this cycle. BJP holds at 27-29% across three cycles, the high sustained third-place share that defines the Trivandrum urban belt. The forward read is contested rather than UDF-locked because BJP at 29% means the Hindu vote stays three-way split and the seat has no demographic moat. The 8pp margin is comfortable but the seat could swing back to LDF or even BJP in 2031 depending on Hindu coordination. The urban core of Trivandrum operates as a genuinely three-cornered contest."
+    },
+    {
+      "ac": 135,
+      "name": "NEMOM",
+      "summary": "Nemom is BJP's iconic Kerala seat — held in 2016, lost 2021, recaptured in 2026 by 3.5pp. NDA share is the highest in any non-Christian-majority seat (40%+ across cycles), but the trajectory tells a 2016 high (47%) followed by decline — BJP held on through erosion, not growth. The Christian community (17%) is fractured in a way unusual for Kerala: CSI Christians lean NDA, Latin Catholics lean UDF, and the two cancel rather than coordinate. The decisive base is the 39% Nair Hindu vote plus BJP's organised cadre going back two decades. NDA-locked while these conditions hold, but further CSI vote erosion or any Nair-community cooling toward BJP would make the seat contested again in 2031."
+    },
+    {
+      "ac": 136,
+      "name": "ARUVIKKARA",
+      "summary": "Aruvikkara is LDF since 2021 (+1.9pp in 2026, second consecutive LDF cycle after flipping from UDF in 2021) — Christian 14% plus Muslim 22%, both-Christian-Muslim decisive driver, held by LDF via the Trivandrum nair-heavy district plus CPI(M) organisation. The distinctive feature is BJP's wave-capture pattern in 2026: NDA went 14% → 11% → 16%, picking up more of UDF's retreat than LDF's. The forward read is contested rather than LDF-locked because the 2pp margin is intrinsically fragile and BJP is climbing. Among the most reversible LDF seats in Trivandrum for 2031, with any of three alliances potentially gaining in a multi-cleavage contest."
+    },
+    {
+      "ac": 137,
+      "name": "PARASSALA",
+      "summary": "Parassala held LDF +9.7pp in 2026, third consecutive LDF cycle — 45% Christian, but fractured (CSI at 21% MEDIUM-tier NDA-leaning, Latin Catholic at 14% UDF-up). The two sub-rites pull in opposite alliance directions and cancel rather than coordinate, which means the Christian aggregate doesn't function as a UDF block. LDF holds via CPI(M) organisational depth — not a natural Hindu-base advantage, since Trivandrum is Nair-heavy and would normally favor BJP at this share level. BJP flat 18-21% across cycles, a real third-place vote that the CSI lean partly feeds. The forward read is contested rather than LDF-locked because the Christian fracture means no community is voting bloc-style for any alliance. Watch for CSI/Latin Catholic coordination shifts in 2031."
+    },
+    {
+      "ac": 138,
+      "name": "KATTAKKADA",
+      "summary": "Kattakkada flipped LDF→UDF in 2026 (+4.9pp) — Christian 25% (CSI at 18% LOW-tier NDA-leaning), the unusual case where Christian share is meaningful but the sub-rite direction works against UDF. Despite the CSI lean, the broader Christian aggregate plus the Trivandrum nair-heavy Hindu base broke UDF-ward this cycle. BJP at 24-27% across cycles, a real third-place vote that the CSI lean feeds. The forward read is contested rather than UDF-locked because of the Christian sub-rite directional mismatch — if CSI consolidates more decisively NDA-ward, this seat opens up for BJP. The 5pp margin is fragile."
+    },
+    {
+      "ac": 139,
+      "name": "KOVALAM",
+      "summary": "Kovalam is always-UDF (+21.1pp in 2026, third consecutive UDF cycle) — Hindu-driven, with the Nair-heavy Trivandrum base providing the structural pull alongside a modest Christian/Muslim minority share that doesn't lock independently. BJP's NDA share went 20% → 12% → 16% across three cycles — a real 2016 base that collapsed in 2021 and partly recovered in 2026, net down from the 2016 high. The Christian community (17%) is fractured (Latin Catholic UDF-up, CSI NDA-leaning) so doesn't function as a bloc. The forward read is contested rather than UDF-locked because there's no demographic moat, but the 21pp margin gives UDF room and BJP's decline simplifies the defense."
+    },
+    {
+      "ac": 140,
+      "name": "NEYYATTINKARA",
+      "summary": "Neyyattinkara flipped LDF→UDF in 2026 (+5.2pp) — Hindu-driven (district overlay), with the Nair-heavy Trivandrum base swinging UDF-ward this cycle. The substantive movement is BJP: NDA went 12% → 15% → 16% across three cycles, a steady climb in a seat where the alliance hadn't been a real factor. Christian 17% (Latin Catholic UDF-up plus CSI NDA-leaning) is fractured and doesn't function as a bloc. The forward read is contested rather than UDF-locked because Hindu coordination is volatile and BJP is climbing. At 5pp margin with BJP rising, this is among the more reversible UDF flips in Trivandrum for 2031."
+    }
+  ]
+}
