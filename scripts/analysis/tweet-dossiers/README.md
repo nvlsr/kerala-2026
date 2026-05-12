@@ -33,6 +33,7 @@ scripts/analysis/tweet-dossiers/
 ├── build-lookups.ts                   ← Phase 1: flat aggregate TSV + party-alliance JSON
 ├── build-community-dossiers.ts        ← Phase 2: 10 community dossiers
 ├── build-district-dossiers.ts         ← Phase 3: 14 district dossiers
+├── build-party-dossiers.ts            ← Phase 4: 10 party dossiers
 └── lib/
     ├── replay-questions.ts            ← shared: replays /questions cards' filter+sort+top-5
     └── canonical-names.ts             ← shared: cross-cycle name resolution via normalizeName()
@@ -45,7 +46,7 @@ scripts/analysis/tweet-dossiers/
 | **1** | 140 AC dossiers + 3 alliance dossiers + flat ac-table.tsv | ✅ complete |
 | **2** | 10 community dossiers (Nair, Ezhava, SC, ST, Nadar, Brahmin, Syro-Malabar, Latin Catholic, CSI, Muslim) | ✅ complete |
 | **3** | 14 district dossiers | ✅ complete |
-| 4 | ~10 key party dossiers (BJP, INC, CPI(M), IUML, KEC factions, RSP, …) | not started |
+| **4** | 10 party dossiers (BJP, INC, CPI(M), CPI, IUML, KEC(M), KEC, BDJS, RSP, Twenty 20) | ✅ complete |
 | 5 | ~20-30 curated candidate dossiers | demand-driven |
 
 Later phases add a `build-<entity>-dossiers.ts` here + a corresponding entry in `build-all.ts`. The orchestrator runs only the phases that exist — no "not implemented" errors.
