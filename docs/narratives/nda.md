@@ -337,7 +337,6 @@ All 3 NDA wins under 4pp margin. Kazhakoottam was 428 votes (~0.33pp).
 - **`ldf.md §6 (per-region absorption)`** — South Kerala absorbed 45% of LDF loss into NDA (vs 28% statewide). Geographic complement to this file's 3-wins-in-TVM finding.
 - **`udf.md §1 (Christian × UDF differential)`** — Christian-share doesn't predict NDA Δ under district FE (β=+0.07 simple, not robust). Christian terrain is structurally NDA-resistant outside the marquee-candidate exceptions (Pala, Thiruvalla).
 - **`christian.md §4 (NDA's Christian-cohort strategy)`** — re-decomposes NDA's Christian-area approach into 4 prongs (CSI direct / Jacobite via T20 / SM dual / Latin no inroads). Latin Catholic is where BJP's 2026 surge structurally didn't land.
-- **`muslim.md §5 (Salafi/Mujahid cohort)`** — NDA structurally excluded from Malappuram (cohort 6 above), but the Mujahid sub-sect within the Muslim Δ has its own dynamics.
 
 ---
 

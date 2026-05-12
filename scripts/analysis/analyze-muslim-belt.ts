@@ -6,8 +6,6 @@
  *   - Per-AC UDF candidate / party / strategy / ΔUDF / won
  *   - Strategy bucket means (Muslim Alliance / INC-Muslim / INC-Hindu / Special)
  *
- * Source for the markdown at docs/narratives/muslim-belt-deep-dive.md.
- *
  * Run: bun run scripts/analysis/analyze-muslim-belt.ts
  */
 import * as fs from "fs"

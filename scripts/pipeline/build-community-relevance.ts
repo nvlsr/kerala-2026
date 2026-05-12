@@ -314,12 +314,11 @@ function computeAllianceRoles(args: {
     if (W === "UDF" && args.cIsRelevant && args.coordination !== "fractured") {
       r.LDF.blockFrom = `Christian community @${args.cAggShare.toFixed(0)}% (UDF-aligned in 2026)`
     } else if (W === "UDF" && args.mAggShare >= 25) {
-      // Refinement (per external commentary verification, May 2026):
       // In mixed-muslim districts that are ALSO ezhava-very-heavy (Kannur,
       // Kozhikode, Alappuzha), the Muslim community has NOT been
       // historically UDF-locked — LDF has its own structural anchor via
       // the Ezhava-Tiyya Hindu base. Don't claim block-LDF in those cases;
-      // leave LDF's path open. See docs/narratives/muslim.md §10b.
+      // leave LDF's path open.
       const muslimIsContestedThere =
         args.mSubType === "mixed-muslim" &&
         args.hinduProf === "ezhava-very-heavy"

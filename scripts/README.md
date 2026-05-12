@@ -15,7 +15,7 @@ Generates committed JSON in `data/`. App + analysis scripts depend on the output
 
 ## [`analysis/`](analysis/) — consumes data files
 
-Evidence generators cited in [`docs/narratives/`](../docs/narratives/). Each script produces tables / numbers that show up in one of the five narrative reference files (`ldf.md`, `udf.md`, `nda.md`, `christian.md`, `muslim.md`).
+Evidence generators cited in [`docs/narratives/`](../docs/narratives/). Each script produces tables / numbers that show up in one of the four narrative reference files (`ldf.md`, `udf.md`, `nda.md`, `christian.md`).
 
 | Group | Scripts |
 | --- | --- |

@@ -512,7 +512,6 @@ LOW_CONFIDENCE_CLASSIFIED_N = 10      // POIs (flag, not exclude)
 - **`udf.md §1–§3`** — Christian-belt premium (AC-level minority-consolidation analysis) and Central-3 strategy detail. Sub-rite cohort findings here are the within-Christian decomposition of that premium.
 - **`ldf.md §6`** — flow-decomposition showing Christian-heavy ACs absorbed 122% of LDF loss. The Latin Catholic flip is mostly LDF→UDF transfer.
 - **`nda.md §4 + §5 + §7`** — declining-mature (Christian Hindu+terrain), Wave-capture (Pala +18 marquee Christian), Twenty 20's geographic strategy.
-- **`muslim.md`** — sibling reference for Muslim sub-rite cohort layer.
 - **`data/raw/osm/README.md`** — full pipeline documentation for the OSM POI classification.
 
 ---

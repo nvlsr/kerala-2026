@@ -461,7 +461,6 @@ Pattern 2 is this file's headline. Pattern 1 + 2 combined: a ~7pp uniform swing 
 
 - **`ldf.md §6`** — flow-decomposition from LDF side. UDF absorbed 122% of LDF loss in Christian-heavy ACs (110% in Central Kerala region) — sets the geographic frame for this file's Central-5 thesis.
 - **`christian.md`** — sub-rite resolution: the Christian-belt premium splits into Catholic restorations (SM/Jacobite/Orthodox returned to 2011 baselines) + Latin/Marthoma flips (LDF→UDF for first time in 4-cycle window).
-- **`muslim.md`** — Muslim-belt analysis at sub-sect resolution.
 - **`nda.md`** — BJP's NDA Δ +2pp aggregate hid +5.2pp in the 30-AC targeted set; UDF's near-flat NDA-Δ in central Latin Kerala (per `christian.md §6`) is the geographic complement.
 - **`docs/data-pipeline.md`** — methodology for AC-level religion + caste data sources.
 

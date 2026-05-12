@@ -12,7 +12,6 @@ One file per walkthrough page. Each is a comprehensive reference (data tables, s
 | `/walkthroughs/udf-walkthrough` | [`docs/narratives/udf.md`](docs/narratives/udf.md) |
 | `/walkthroughs/nda-walkthrough` | [`docs/narratives/nda.md`](docs/narratives/nda.md) |
 | `/walkthroughs/christian-walkthrough` | [`docs/narratives/christian.md`](docs/narratives/christian.md) |
-| `/walkthroughs/muslim-walkthrough` (planning) | [`docs/narratives/muslim.md`](docs/narratives/muslim.md) |
 
 Each file follows the same skeleton: TL;DR → sub-findings (with data tables) → methodology → cross-refs to sibling pages → scripts/data pointers.
 
