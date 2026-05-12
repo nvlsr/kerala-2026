@@ -44,9 +44,9 @@ scripts/analysis/tweet-dossiers/
 | --- | --- | --- |
 | **1** | 140 AC dossiers + 3 alliance dossiers + flat ac-table.tsv | ✅ complete |
 | **2** | 10 community dossiers (Nair, Ezhava, SC, ST, Nadar, Brahmin, Syro-Malabar, Latin Catholic, CSI, Muslim) | ✅ complete |
-| 3 | ~10 key party dossiers (BJP, INC, CPI(M), IUML, KEC factions, RSP, …) | not started |
-| 4 | ~20-30 curated candidate dossiers | not started |
-| 5 | 14 district dossiers | not started |
+| **3** | 14 district dossiers | ✅ complete |
+| 4 | ~10 key party dossiers (BJP, INC, CPI(M), IUML, KEC factions, RSP, …) | not started |
+| 5 | ~20-30 curated candidate dossiers | demand-driven |
 
 Later phases add a `build-<entity>-dossiers.ts` here + a corresponding entry in `build-all.ts`. The orchestrator runs only the phases that exist — no "not implemented" errors.
 
