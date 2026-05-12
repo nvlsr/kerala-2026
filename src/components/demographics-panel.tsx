@@ -97,9 +97,6 @@ export function DemographicsPanel({ scope }: Props) {
     <div className="flex flex-col gap-3 rounded-lg border bg-muted/40 p-4">
       <header className="flex items-center justify-between gap-2">
         <div className="min-w-0">
-          <p className="text-[10px] font-medium tracking-wider text-muted-foreground/80 uppercase">
-            Demographics
-          </p>
           {scope.kind !== "ac" && (
             <p className="truncate text-sm font-medium text-foreground">
               {scopeLabel}
