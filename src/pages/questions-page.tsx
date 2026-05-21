@@ -18,7 +18,13 @@ import {
 
 export function QuestionsPage() {
   const [partyFilter, setPartyFilter] = useState<PartyFilter>("all")
-  const [themeFilter, setThemeFilter] = useState<ThemeFilter>("all")
+  // Default to the "margins" theme so the page lands at ~10 cards instead of
+  // 51 — reduces fatigue before the WalkthroughsTeaser at the bottom. When a
+  // hash anchor is present (deep-link from a tweet to e.g. #bjp-gains), fall
+  // back to "all" so the targeted card isn't filtered out.
+  const [themeFilter, setThemeFilter] = useState<ThemeFilter>(() =>
+    window.location.hash ? "all" : "margins"
+  )
 
   /**
    * Browsers evaluate :target before React mounts the cards on initial load,
